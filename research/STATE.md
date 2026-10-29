@@ -72,3 +72,7 @@ reports/functional-data-inventory: seis fichas de ensayo/versión de cuatro fami
 ## QC de identidad de genes — 29/10/2026
 
 reports/author-gene-ambiguity:33de36claves tienen ENSG/locus confirmado;3deENSG00000276256ausente en v47con procedencia GTF GEO recuperada. Las278claves autoras ambiguas permanecen sin resolución única; no forzar por proximidad. Una clave GTPBP6chrYcondicional adicional, comprobada en3filasS8, dependiente de locus declarado y sin auditoría de lecturasX/Y.354estrictas originales intactas; sensibilidad355no las reemplaza.149tests técnicos locales, cuatroTSVidénticos en dos pasadas. Siguiente tarea segura: auditar74claves con coordenadas atribuidas a otro gen, conservar conflictos no resolubles; después cobertura/#14. No significado funcional, novedad, replicación nueva o autorización de laboratorio/merge.
+
+## Conflictos de gen auditados — 29/10/2026
+
+reports/author-gene-conflicts:74claves/23genes,298referencias a56filas autoras originales comprobadas.73uniones ya anotadas exactamente en v47bajo gen autor; en ambosGTFtambién existen modelos de los dos genes. Una unión deENSG00000278915frenteaENSG00000278946no encontrada bajo ninguno en v47, persiste conflicto. No reasignar ni inferir origen molecular;354estrictas intactas.156tests técnicos locales. Resultado limita reclamo de novedad basado en no encontrado para mismo gen. Siguiente tarea segura: geometría exacta contra todos los genes de v47para1901claves, sin restricción de gen candidato/autor; después cobertura/#14. No clínica, contactos, laboratorio, gasto o merge.

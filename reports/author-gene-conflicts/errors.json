@@ -1,0 +1,14 @@
+{
+  "execution_errors": [],
+  "unresolved_conflicts": 74,
+  "neither_reference_gene_key": [
+    "ENSG00000278915",
+    "chr5",
+    140871438,
+    140875240,
+    "-"
+  ],
+  "true_gene_assignment_not_established": true,
+  "known_other_gene_geometry_not_promoted_to_novelty": 73,
+  "clinical_data_used": false
+}

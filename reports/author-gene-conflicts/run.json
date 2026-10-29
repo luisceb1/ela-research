@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-29",
+  "python": "3.12.14",
+  "tests": 156,
+  "new_tests": 7,
+  "commands": [
+    "python scripts/audit_gene_conflicts.py --cache ../ela-research/data/cache --author-cache data/cache/author-supplements",
+    "python scripts/audit_gene_conflicts.py --cache ../ela-research/data/cache",
+    "python -m unittest discover -s tests -v"
+  ],
+  "primary_source_references_verified": 298,
+  "distinct_author_rows_verified": 56,
+  "sha256": {
+    "scripts/audit_gene_conflicts.py": "3bde1957273cae96bc3b623edc51625f6b77f899caf796ace71436423520babe",
+    "tests/test_gene_conflicts.py": "520c9f9f1a74411e0bcef9c96b2cd6fd082eaf9f3b9aa0708aa9ce2088266c94",
+    "research/plans/2026-10-29-gene-conflicts.md": "3f31564a874db59a8f1cc21a73c851d9f92567222763dfb77de7371d39903778",
+    "reports/author-gene-conflicts/DATA_DICTIONARY.md": "2e9d154027ddb6c713b66a95bc6b1da8fdb4e255e5a7420e7752ebfaba732360",
+    "reports/author-gene-conflicts/REPORT.md": "4f1c10037ae03accedb7d57039932de8a30b9ec4839b5e62954f2db3c63b4872",
+    "reports/author-gene-conflicts/conflicts.tsv": "655e6727f8531d73279b0e7e222dc299928899738ac0ca2815ace6e5252bcf82",
+    "reports/author-gene-conflicts/errors.json": "fd3800f892fa5f38052726628ab4c98cd02bfe076bc4b3b94a2005eea1277f71",
+    "reports/author-gene-conflicts/primary_rows.json": "096e3feb5581b973e8ad6d142e3842e12878dc16f6b6cadf082b6f4270d315ab",
+    "reports/author-gene-conflicts/sources.json": "6c242219791cdaabb11634725c16a5b643a43822cad8cc5237b7b214d7228855",
+    "reports/author-gene-conflicts/summary.json": "24be9569deac16d8999cbc1012000f7082f7979ee12ec6ee12d57e1a4b01aa09",
+    "reports/author-gene-conflicts/tests.txt": "d6f0d41887aa82e1145f39ab8e9028d3c22e660865f7b008e089dd922f3c0bb2",
+    "research/STATE.md": "6aeb29376d01f379d0ced0d0e4ad03b24574ef25a6ab63906ff19bd1fcc0f41a",
+    "research/BACKLOG.md": "aea3369b3ce3a332626cd61822f8ec99936e8bcaedfa2204f626490b82984e27",
+    "research/MASTER_EVIDENCE.md": "cba82368b7ad0282a67ad31017bcb854a8f4e691392a2b8fe0bcd4c26693e91d"
+  }
+}

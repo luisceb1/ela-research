@@ -1,0 +1,30 @@
+{
+  "gencode_url": "https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_47/gencode.v47.annotation.gtf.gz",
+  "geo_manifest": "research/references/geo_isoseq_sources_20261029.json",
+  "author_manifest": "research/references/bolger_author_catalog_v1.json",
+  "parent_pins": {
+    "matches.tsv": "d6a5730a03cf0241147d3bc6c4456cb1691443d0f5a62c436f103fe97c4c46f6",
+    "evidence.tsv": "b04796b59aa7c039cd0ab8c5380484e2f0e3416d43e26100d8dfca37a54b3e65"
+  },
+  "source_qc": [
+    {
+      "source": "GENCODE",
+      "file": "gencode.v47.annotation.gtf.gz",
+      "sha256": "df11938c66d2b39f8ebbdb5f1720919321f9cf9d58f02b019753f6a24ca3db24",
+      "target_transcript_groups": 634
+    },
+    {
+      "source": "GSE310723",
+      "file": "GSE310723_i3N_isoseq_extended_annotations.gtf.gz",
+      "sha256": "4a72d89df3f76c55694a53cca4462b53e5b1fc6cb4c3d931b26dd8402ac6e288",
+      "target_transcript_groups": 666
+    },
+    {
+      "source": "GSE315972",
+      "file": "GSE315972_NYGC_isoseq_extended_annotations.gtf.gz",
+      "sha256": "53bbd59fd8e3bbf558a9c5a60e6af0e3c658455d6b7db8e2b86c2420051e0976",
+      "target_transcript_groups": 680
+    }
+  ],
+  "raw_sources_not_republished": true
+}

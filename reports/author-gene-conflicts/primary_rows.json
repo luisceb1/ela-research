@@ -1,0 +1,287 @@
+{
+  "rows": [
+    {
+      "sheet": "S7A",
+      "row": 7076,
+      "evidence_references": 6
+    },
+    {
+      "sheet": "S7A",
+      "row": 16928,
+      "evidence_references": 6
+    },
+    {
+      "sheet": "S7A",
+      "row": 24697,
+      "evidence_references": 2
+    },
+    {
+      "sheet": "S7A",
+      "row": 34400,
+      "evidence_references": 2
+    },
+    {
+      "sheet": "S7A",
+      "row": 43013,
+      "evidence_references": 1
+    },
+    {
+      "sheet": "S7A",
+      "row": 58993,
+      "evidence_references": 12
+    },
+    {
+      "sheet": "S7A",
+      "row": 58994,
+      "evidence_references": 13
+    },
+    {
+      "sheet": "S7A",
+      "row": 58995,
+      "evidence_references": 15
+    },
+    {
+      "sheet": "S7A",
+      "row": 58996,
+      "evidence_references": 16
+    },
+    {
+      "sheet": "S7A",
+      "row": 58997,
+      "evidence_references": 13
+    },
+    {
+      "sheet": "S7A",
+      "row": 61233,
+      "evidence_references": 1
+    },
+    {
+      "sheet": "S7A",
+      "row": 62478,
+      "evidence_references": 2
+    },
+    {
+      "sheet": "S7A",
+      "row": 64622,
+      "evidence_references": 1
+    },
+    {
+      "sheet": "S7A",
+      "row": 68997,
+      "evidence_references": 2
+    },
+    {
+      "sheet": "S7A",
+      "row": 72362,
+      "evidence_references": 4
+    },
+    {
+      "sheet": "S7A",
+      "row": 72363,
+      "evidence_references": 3
+    },
+    {
+      "sheet": "S7A",
+      "row": 72364,
+      "evidence_references": 3
+    },
+    {
+      "sheet": "S7A",
+      "row": 72916,
+      "evidence_references": 7
+    },
+    {
+      "sheet": "S7B",
+      "row": 40439,
+      "evidence_references": 5
+    },
+    {
+      "sheet": "S7B",
+      "row": 47697,
+      "evidence_references": 1
+    },
+    {
+      "sheet": "S7B",
+      "row": 58433,
+      "evidence_references": 1
+    },
+    {
+      "sheet": "S7B",
+      "row": 58435,
+      "evidence_references": 1
+    },
+    {
+      "sheet": "S7B",
+      "row": 59629,
+      "evidence_references": 2
+    },
+    {
+      "sheet": "S7B",
+      "row": 63902,
+      "evidence_references": 1
+    },
+    {
+      "sheet": "S7B",
+      "row": 90843,
+      "evidence_references": 3
+    },
+    {
+      "sheet": "S7B",
+      "row": 102345,
+      "evidence_references": 1
+    },
+    {
+      "sheet": "S7B",
+      "row": 144368,
+      "evidence_references": 7
+    },
+    {
+      "sheet": "S7B",
+      "row": 144369,
+      "evidence_references": 7
+    },
+    {
+      "sheet": "S7B",
+      "row": 146984,
+      "evidence_references": 14
+    },
+    {
+      "sheet": "S7B",
+      "row": 146985,
+      "evidence_references": 13
+    },
+    {
+      "sheet": "S7B",
+      "row": 146994,
+      "evidence_references": 5
+    },
+    {
+      "sheet": "S7B",
+      "row": 176963,
+      "evidence_references": 1
+    },
+    {
+      "sheet": "S7B",
+      "row": 181104,
+      "evidence_references": 4
+    },
+    {
+      "sheet": "S7C",
+      "row": 5482,
+      "evidence_references": 2
+    },
+    {
+      "sheet": "S7C",
+      "row": 13094,
+      "evidence_references": 7
+    },
+    {
+      "sheet": "S7C",
+      "row": 13095,
+      "evidence_references": 7
+    },
+    {
+      "sheet": "S7C",
+      "row": 14472,
+      "evidence_references": 2
+    },
+    {
+      "sheet": "S7C",
+      "row": 19340,
+      "evidence_references": 1
+    },
+    {
+      "sheet": "S7C",
+      "row": 19341,
+      "evidence_references": 2
+    },
+    {
+      "sheet": "S7C",
+      "row": 19342,
+      "evidence_references": 2
+    },
+    {
+      "sheet": "S7C",
+      "row": 19343,
+      "evidence_references": 1
+    },
+    {
+      "sheet": "S7C",
+      "row": 27658,
+      "evidence_references": 4
+    },
+    {
+      "sheet": "S7C",
+      "row": 46150,
+      "evidence_references": 7
+    },
+    {
+      "sheet": "S7C",
+      "row": 57810,
+      "evidence_references": 4
+    },
+    {
+      "sheet": "S7D",
+      "row": 29048,
+      "evidence_references": 7
+    },
+    {
+      "sheet": "S7D",
+      "row": 53389,
+      "evidence_references": 1
+    },
+    {
+      "sheet": "S7D",
+      "row": 61181,
+      "evidence_references": 5
+    },
+    {
+      "sheet": "S7D",
+      "row": 65676,
+      "evidence_references": 2
+    },
+    {
+      "sheet": "S7D",
+      "row": 102923,
+      "evidence_references": 7
+    },
+    {
+      "sheet": "S7D",
+      "row": 102924,
+      "evidence_references": 7
+    },
+    {
+      "sheet": "S7D",
+      "row": 104773,
+      "evidence_references": 16
+    },
+    {
+      "sheet": "S7D",
+      "row": 104774,
+      "evidence_references": 15
+    },
+    {
+      "sheet": "S7D",
+      "row": 104775,
+      "evidence_references": 15
+    },
+    {
+      "sheet": "S7D",
+      "row": 108804,
+      "evidence_references": 1
+    },
+    {
+      "sheet": "S7D",
+      "row": 129314,
+      "evidence_references": 7
+    },
+    {
+      "sheet": "S8B",
+      "row": 12959,
+      "evidence_references": 1
+    }
+  ],
+  "rows_verified": 56,
+  "evidence_references_verified": 298,
+  "checks": "Pinned original XLSX blocks, eligible label geometry, gene and transcript fields"
+}

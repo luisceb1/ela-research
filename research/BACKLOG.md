@@ -4,7 +4,7 @@ Consultar STATE.md, MASTER_EVIDENCE.md y reports/repository-integration. Las iss
 
 | Prioridad | Tarea | Estado y siguiente avance |
 |---|---|---|
-| P0 | Originalidad — solicitud Luis | Auditoría dirigida entregada en reports/originality-audit; reclamos amplios descartados. Cierre documental acotado en FOLLOWUP.md; CTR2026 calendario indexado verificado, Guo final y solapamiento siguen limitados. Protocolo v0.4 incremental. Inventario funcional completado: seis fichas sin contraste posdéficit reconstruible; cierre acotado y sin certificación de novedad. QC de identidades completado en author-gene-ambiguity; próximo74conflictos de gen/cobertura |
+| P0 | Originalidad — solicitud Luis | Auditoría dirigida entregada en reports/originality-audit; reclamos amplios descartados. Cierre documental acotado en FOLLOWUP.md; CTR2026 calendario indexado verificado, Guo final y solapamiento siguen limitados. Protocolo v0.4 incremental. Inventario funcional completado: seis fichas sin contraste posdéficit reconstruible; cierre acotado y sin certificación de novedad. QC de identidades completado en author-gene-ambiguity; 74conflictos auditados (73geometrías ya anotadas en otro gen); próximo control global de geometría v47/cobertura |
 | P0 | Consolidación | Completada mediante PR #26: main verificado, 15 cabezas incluidas, 105 tests en Python 3.11/3.12 y dos auditorías GEO exitosas; PR dependientes cerrados por incorporación |
 | P0 | #1 GEO | Inventario y enlace técnico ejecutados; integración no valida calidad biológica completa |
 | P0 | #2/#17/#19 mapeo | Ejecutado por ENSG; controles positivos; incidente cero objetivos resuelto técnicamente |
@@ -34,3 +34,7 @@ reports/functional-data-inventory: seis fichas de ensayo/versión de cuatro fami
 ## QC de identidad de genes — 29/10/2026
 
 reports/author-gene-ambiguity:33de36claves tienen ENSG/locus confirmado;3deENSG00000276256ausente en v47con procedencia GTF GEO recuperada. Las278claves autoras ambiguas permanecen sin resolución única; no forzar por proximidad. Una clave GTPBP6chrYcondicional adicional, comprobada en3filasS8, dependiente de locus declarado y sin auditoría de lecturasX/Y.354estrictas originales intactas; sensibilidad355no las reemplaza.149tests técnicos locales, cuatroTSVidénticos en dos pasadas. Siguiente tarea segura: auditar74claves con coordenadas atribuidas a otro gen, conservar conflictos no resolubles; después cobertura/#14. No significado funcional, novedad, replicación nueva o autorización de laboratorio/merge.
+
+## Conflictos de gen auditados — 29/10/2026
+
+reports/author-gene-conflicts:74claves/23genes,298referencias a56filas autoras originales comprobadas.73uniones ya anotadas exactamente en v47bajo gen autor; en ambosGTFtambién existen modelos de los dos genes. Una unión deENSG00000278915frenteaENSG00000278946no encontrada bajo ninguno en v47, persiste conflicto. No reasignar ni inferir origen molecular;354estrictas intactas.156tests técnicos locales. Resultado limita reclamo de novedad basado en no encontrado para mismo gen. Siguiente tarea segura: geometría exacta contra todos los genes de v47para1901claves, sin restricción de gen candidato/autor; después cobertura/#14. No clínica, contactos, laboratorio, gasto o merge.
