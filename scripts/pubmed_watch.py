@@ -1,72 +1,99 @@
 #!/usr/bin/env python3
-"""Vigilancia de publicaciones PubMed; no implica evaluación científica."""
+"""Inventario automático de registros PubMed mediante Europe PMC (SRC:MED)."""
 import datetime as dt
+import html
 import json
-import os
+import re
+import time
 from pathlib import Path
+from urllib.error import HTTPError, URLError
 from urllib.parse import urlencode
 from urllib.request import Request, urlopen
 
 ROOT = Path(__file__).resolve().parents[1]
 STATE = ROOT / "state/seen_pubmed_ids.json"
 REPORTS = ROOT / "reports"
+BASE = "https://www.ebi.ac.uk/europepmc/webservices/rest/search"
 QUERIES = {
-    "STMN2_UNC13A": '(TARDBP[All Fields] OR "TDP-43"[All Fields]) AND (STMN2[All Fields] OR UNC13A[All Fields])',
-    "cryptic_splicing": '(TARDBP[All Fields] OR "TDP-43"[All Fields]) AND ("cryptic exon"[All Fields] OR "cryptic splicing"[All Fields])',
-    "long_reads": '"amyotrophic lateral sclerosis"[All Fields] AND ("long-read"[All Fields] OR "isoform"[All Fields])',
+    "STMN2_UNC13A": '(TARDBP OR "TDP-43") AND (STMN2 OR UNC13A)',
+    "cryptic_splicing": '(TARDBP OR "TDP-43") AND ("cryptic exon" OR "cryptic splicing")',
+    "long_reads": '"amyotrophic lateral sclerosis" AND ("long-read" OR isoform)',
 }
 
-def fetch(endpoint, params):
-    params = dict(params)
-    params["tool"] = "ELAResearchWatcher"
-    if os.environ.get("NCBI_CONTACT_EMAIL"):
-        params["email"] = os.environ["NCBI_CONTACT_EMAIL"]
-    url = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/" + endpoint + "?" + urlencode(params)
-    req = Request(url, headers={"User-Agent": "ELAResearchWatcher/0.1"})
-    with urlopen(req, timeout=30) as response:
-        return json.load(response)
+def request_json(url):
+    """Retry transient network failures; do not retry invalid responses."""
+    req = Request(url, headers={"User-Agent": "ELAResearchWatcher/0.2 (bibliographic metadata)"})
+    for retry in range(4):
+        try:
+            with urlopen(req, timeout=35) as response:
+                return json.load(response)
+        except HTTPError as exc:
+            if exc.code not in (429, 500, 502, 503, 504) or retry == 3:
+                raise
+        except (URLError, TimeoutError):
+            if retry == 3:
+                raise
+        time.sleep((1, 3, 9)[retry])
+    raise RuntimeError("Unreachable retry state")
+
+def search_pubmed(query):
+    params = {
+        "query": f"({query}) AND SRC:MED",
+        "format": "json",
+        "resultType": "lite",
+        "pageSize": 25,
+        "sort": "P_PDATE_D desc",
+    }
+    url = BASE + "?" + urlencode(params)
+    data = request_json(url)
+    if not isinstance(data, dict) or not isinstance(data.get("resultList"), dict):
+        raise ValueError("Invalid Europe PMC response: resultList missing")
+    records = data["resultList"].get("result")
+    if not isinstance(records, list):
+        raise ValueError("Invalid Europe PMC response: result missing")
+    return [r for r in records if r.get("source") == "MED" and str(r.get("id", "")).isdigit()]
+
+def clean_title(title):
+    """Escape untrusted bibliographic text before Markdown reporting."""
+    plain = html.unescape(re.sub(r"<[^>]*>", "", str(title)))
+    return re.sub(r"\s+", " ", plain).replace("[", r"\[").replace("]", r"\]").strip()[:500]
 
 def main():
     previous = set(json.loads(STATE.read_text(encoding="utf-8")) if STATE.exists() else [])
-    categories, ids_seen = {}, set()
-    for label, query in QUERIES.items():
-        payload = fetch("esearch.fcgi", {
-            "db": "pubmed", "term": query, "sort": "pub date",
-            "retmax": 25, "retmode": "json"
-        })
-        ids = payload["esearchresult"]["idlist"]
-        categories[label] = ids
-        ids_seen.update(ids)
-    fresh = sorted(ids_seen - previous, key=int)
-    details = {}
-    for offset in range(0, len(fresh), 50):
-        chunk = fresh[offset:offset+50]
-        payload = fetch("esummary.fcgi", {
-            "db": "pubmed", "id": ",".join(chunk), "retmode": "json"
-        })
-        details.update(payload.get("result", {}))
+    categories, details, seen = {}, {}, set()
+    for name, query in QUERIES.items():
+        records = search_pubmed(query)
+        categories[name] = [str(item["id"]) for item in records]
+        for item in records:
+            pmid = str(item["id"])
+            details[pmid] = item
+            seen.add(pmid)
+    new_ids = seen - previous
     date = dt.datetime.now(dt.timezone.utc).date().isoformat()
-    lines = [f"# PubMed — {date}", "",
-             "Solo inventario automático: no significa que los trabajos sean concluyentes.",
-             "", f"PMIDs nuevos respecto al registro: {len(fresh)}", ""]
-    for category, ids in categories.items():
-        lines.extend([f"## {category}", ""])
-        selected = [x for x in ids if x in fresh]
+    lines = [
+        f"# Publicaciones PubMed — {date}", "",
+        "Fuente: Europe PMC REST API, filtrada por SRC:MED (registros PubMed).",
+        "Metadatos automatizados no equivalen a lectura crítica o validación científica.",
+        "", f"Identificadores nuevos desde la última comprobación: {len(new_ids)}", ""
+    ]
+    for name, ids in categories.items():
+        lines += [f"## {name}", ""]
+        selected = [x for x in ids if x in new_ids]
         if not selected:
-            lines.extend(["No se identificaron PMID nuevos entre los 25 registros consultados.", ""])
+            lines += ["Sin PMID nuevos en los últimos 25 resultados recuperados.", ""]
         for pmid in selected:
-            data = details.get(pmid, {})
-            title = str(data.get("title", "Título desconocido")).replace("\n", " ")
-            lines.append(f"- [{pmid}](https://pubmed.ncbi.nlm.nih.gov/{pmid}/) — {title} ({data.get('pubdate', 'fecha desconocida')})")
-        if selected:
-            lines.append("")
+            item = details[pmid]
+            title = clean_title(item.get("title", "Título no recuperado"))
+            date_text = item.get("firstPublicationDate", item.get("pubYear", "sin fecha"))
+            lines.append(f"- PMID [{pmid}](https://pubmed.ncbi.nlm.nih.gov/{pmid}/) — {title} ({date_text})")
+        lines.append("")
     REPORTS.mkdir(parents=True, exist_ok=True)
-    path = REPORTS / f"{date}-pubmed.md"
-    if fresh or not path.exists():
-        path.write_text("\n".join(lines) + "\n", encoding="utf-8")
+    report = REPORTS / f"{date}-pubmed.md"
+    if new_ids or not report.exists():
+        report.write_text("\n".join(lines) + "\n", encoding="utf-8")
     STATE.parent.mkdir(parents=True, exist_ok=True)
-    STATE.write_text(json.dumps(sorted(previous | ids_seen, key=int), indent=2) + "\n", encoding="utf-8")
-    print(f"Reviewed {len(ids_seen)} PubMed identifiers; {len(fresh)} new.")
+    STATE.write_text(json.dumps(sorted(previous | seen, key=int), indent=2) + "\n", encoding="utf-8")
+    print(f"Europe PMC SRC:MED: checked {len(seen)} PMID, new {len(new_ids)}.")
 
 if __name__ == "__main__":
     main()
