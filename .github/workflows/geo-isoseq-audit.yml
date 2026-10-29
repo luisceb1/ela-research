@@ -5,6 +5,7 @@ on:
     paths:
       - '.github/workflows/geo-isoseq-audit.yml'
       - 'scripts/map_isoseq_gtf.py'
+      - 'scripts/export_target_isoforms.py'
       - 'tests/test_map_isoseq_gtf.py'
 jobs:
   geo-audit:
@@ -52,6 +53,8 @@ jobs:
           python -m unittest discover -s tests -p 'test_map_isoseq_gtf.py' -v
           python scripts/map_isoseq_gtf.py --counts inputs/GSE310723_i3N_isoseq_uniqueCounts_transcript.txt.gz --gtf inputs/GSE310723_i3N_isoseq_extended_annotations.gtf.gz --out outputs/GSE310723_STMN2_UNC13A.tsv | tee outputs/GSE310723_summary.txt
           python scripts/map_isoseq_gtf.py --counts inputs/GSE315972_NYGC_isoseq_uniqueCounts_transcript.txt.gz --gtf inputs/GSE315972_NYGC_isoseq_extended_annotations.gtf.gz --out outputs/GSE315972_STMN2_UNC13A.tsv | tee outputs/GSE315972_summary.txt
+          python scripts/export_target_isoforms.py --counts inputs/GSE310723_i3N_isoseq_uniqueCounts_transcript.txt.gz --gtf inputs/GSE310723_i3N_isoseq_extended_annotations.gtf.gz --out outputs/GSE310723_details
+          python scripts/export_target_isoforms.py --counts inputs/GSE315972_NYGC_isoseq_uniqueCounts_transcript.txt.gz --gtf inputs/GSE315972_NYGC_isoseq_extended_annotations.gtf.gz --out outputs/GSE315972_details
           wc -l outputs/*.tsv | tee outputs/rowcounts.txt
       - name: Store research artifacts
         if: always()
