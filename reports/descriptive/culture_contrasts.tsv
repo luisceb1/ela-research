@@ -1,0 +1,133 @@
+symbol	txname	measure	metric	arm	control_value	kd_value	kd_to_control_ratio	direction
+STMN2	BambuTx9249	uniqueCounts	raw	5Aza	4.0	10.0	2.5	higher
+STMN2	BambuTx9249	uniqueCounts	raw	noAza	0.0	24.0		higher
+STMN2	BambuTx9249	uniqueCounts	per_million_assigned	5Aza	10.614246441573881	30.296970908848532	2.854368520235347	higher
+STMN2	BambuTx9249	uniqueCounts	per_million_assigned	noAza	0.0	49.604814974040146		higher
+STMN2	BambuTx9249	uniqueCounts	share_of_gene_assigned	5Aza	0.022988505747126436	0.3125	13.59375	higher
+STMN2	BambuTx9249	uniqueCounts	share_of_gene_assigned	noAza	0.0	0.41379310344827586		higher
+STMN2	ENST00000220876.12	uniqueCounts	raw	5Aza	162.0	22.0	0.13580246913580246	lower
+STMN2	ENST00000220876.12	uniqueCounts	raw	noAza	154.0	34.0	0.22077922077922077	lower
+STMN2	ENST00000220876.12	uniqueCounts	per_million_assigned	5Aza	429.87698088374214	66.65333599946678	0.15505211714858677	lower
+STMN2	ENST00000220876.12	uniqueCounts	per_million_assigned	noAza	365.00329451025567	70.27348787989021	0.19252836600880519	lower
+STMN2	ENST00000220876.12	uniqueCounts	share_of_gene_assigned	5Aza	0.9310344827586207	0.6875	0.7384259259259259	lower
+STMN2	ENST00000220876.12	uniqueCounts	share_of_gene_assigned	noAza	0.9625	0.5862068965517241	0.6090461262875055	lower
+UNC13A	ENST00000517497.2	uniqueCounts	raw	5Aza	0.0	0.0		equal
+UNC13A	ENST00000517497.2	uniqueCounts	raw	noAza	0.0	0.0		equal
+UNC13A	ENST00000517497.2	uniqueCounts	per_million_assigned	5Aza	0.0	0.0		equal
+UNC13A	ENST00000517497.2	uniqueCounts	per_million_assigned	noAza	0.0	0.0		equal
+UNC13A	ENST00000517497.2	uniqueCounts	share_of_gene_assigned	5Aza	0.0	0.0		equal
+UNC13A	ENST00000517497.2	uniqueCounts	share_of_gene_assigned	noAza	0.0	0.0		equal
+STMN2	ENST00000518111.5	uniqueCounts	raw	5Aza	2.0	0.0	0.0	lower
+STMN2	ENST00000518111.5	uniqueCounts	raw	noAza	2.0	0.0	0.0	lower
+STMN2	ENST00000518111.5	uniqueCounts	per_million_assigned	5Aza	5.3071232207869405	0.0	0.0	lower
+STMN2	ENST00000518111.5	uniqueCounts	per_million_assigned	noAza	4.740302526107216	0.0	0.0	lower
+STMN2	ENST00000518111.5	uniqueCounts	share_of_gene_assigned	5Aza	0.011494252873563218	0.0	0.0	lower
+STMN2	ENST00000518111.5	uniqueCounts	share_of_gene_assigned	noAza	0.0125	0.0	0.0	lower
+STMN2	ENST00000518491.1	uniqueCounts	raw	5Aza	6.0	0.0	0.0	lower
+STMN2	ENST00000518491.1	uniqueCounts	raw	noAza	4.0	0.0	0.0	lower
+STMN2	ENST00000518491.1	uniqueCounts	per_million_assigned	5Aza	15.92136966236082	0.0	0.0	lower
+STMN2	ENST00000518491.1	uniqueCounts	per_million_assigned	noAza	9.480605052214433	0.0	0.0	lower
+STMN2	ENST00000518491.1	uniqueCounts	share_of_gene_assigned	5Aza	0.034482758620689655	0.0	0.0	lower
+STMN2	ENST00000518491.1	uniqueCounts	share_of_gene_assigned	noAza	0.025	0.0	0.0	lower
+UNC13A	ENST00000519716.7	uniqueCounts	raw	5Aza	56.0	50.0	0.8928571428571429	lower
+UNC13A	ENST00000519716.7	uniqueCounts	raw	noAza	28.0	40.0	1.4285714285714286	higher
+UNC13A	ENST00000519716.7	uniqueCounts	per_million_assigned	5Aza	148.59945018203433	151.48485454424267	1.019417328655481	higher
+UNC13A	ENST00000519716.7	uniqueCounts	per_million_assigned	noAza	66.36423536550103	82.67469162340025	1.2457717800569748	higher
+UNC13A	ENST00000519716.7	uniqueCounts	share_of_gene_assigned	5Aza	0.9333333333333333	1.0	1.0714285714285714	higher
+UNC13A	ENST00000519716.7	uniqueCounts	share_of_gene_assigned	noAza	0.9333333333333333	1.0	1.0714285714285714	higher
+UNC13A	ENST00000523229.1	uniqueCounts	raw	5Aza	0.0	0.0		equal
+UNC13A	ENST00000523229.1	uniqueCounts	raw	noAza	0.0	0.0		equal
+UNC13A	ENST00000523229.1	uniqueCounts	per_million_assigned	5Aza	0.0	0.0		equal
+UNC13A	ENST00000523229.1	uniqueCounts	per_million_assigned	noAza	0.0	0.0		equal
+UNC13A	ENST00000523229.1	uniqueCounts	share_of_gene_assigned	5Aza	0.0	0.0		equal
+UNC13A	ENST00000523229.1	uniqueCounts	share_of_gene_assigned	noAza	0.0	0.0		equal
+UNC13A	ENST00000550896.1	uniqueCounts	raw	5Aza	4.0	0.0	0.0	lower
+UNC13A	ENST00000550896.1	uniqueCounts	raw	noAza	0.0	0.0		equal
+UNC13A	ENST00000550896.1	uniqueCounts	per_million_assigned	5Aza	10.614246441573881	0.0	0.0	lower
+UNC13A	ENST00000550896.1	uniqueCounts	per_million_assigned	noAza	0.0	0.0		equal
+UNC13A	ENST00000550896.1	uniqueCounts	share_of_gene_assigned	5Aza	0.06666666666666667	0.0	0.0	lower
+UNC13A	ENST00000550896.1	uniqueCounts	share_of_gene_assigned	noAza	0.0	0.0		equal
+UNC13A	ENST00000551649.5	uniqueCounts	raw	5Aza	0.0	0.0		equal
+UNC13A	ENST00000551649.5	uniqueCounts	raw	noAza	2.0	0.0	0.0	lower
+UNC13A	ENST00000551649.5	uniqueCounts	per_million_assigned	5Aza	0.0	0.0		equal
+UNC13A	ENST00000551649.5	uniqueCounts	per_million_assigned	noAza	4.740302526107216	0.0	0.0	lower
+UNC13A	ENST00000551649.5	uniqueCounts	share_of_gene_assigned	5Aza	0.0	0.0		equal
+UNC13A	ENST00000551649.5	uniqueCounts	share_of_gene_assigned	noAza	0.06666666666666667	0.0	0.0	lower
+UNC13A	ENST00000552293.5	uniqueCounts	raw	5Aza	0.0	0.0		equal
+UNC13A	ENST00000552293.5	uniqueCounts	raw	noAza	0.0	0.0		equal
+UNC13A	ENST00000552293.5	uniqueCounts	per_million_assigned	5Aza	0.0	0.0		equal
+UNC13A	ENST00000552293.5	uniqueCounts	per_million_assigned	noAza	0.0	0.0		equal
+UNC13A	ENST00000552293.5	uniqueCounts	share_of_gene_assigned	5Aza	0.0	0.0		equal
+UNC13A	ENST00000552293.5	uniqueCounts	share_of_gene_assigned	noAza	0.0	0.0		equal
+UNC13A	ENST00000601528.1	uniqueCounts	raw	5Aza	0.0	0.0		equal
+UNC13A	ENST00000601528.1	uniqueCounts	raw	noAza	0.0	0.0		equal
+UNC13A	ENST00000601528.1	uniqueCounts	per_million_assigned	5Aza	0.0	0.0		equal
+UNC13A	ENST00000601528.1	uniqueCounts	per_million_assigned	noAza	0.0	0.0		equal
+UNC13A	ENST00000601528.1	uniqueCounts	share_of_gene_assigned	5Aza	0.0	0.0		equal
+UNC13A	ENST00000601528.1	uniqueCounts	share_of_gene_assigned	noAza	0.0	0.0		equal
+STMN2	BambuTx9249	counts	raw	5Aza	4.04542	10.0	2.471931220985707	higher
+STMN2	BambuTx9249	counts	raw	noAza	0.0	24.0		higher
+STMN2	BambuTx9249	counts	per_million_assigned	5Aza	6.366509198946223	17.33456759150347	2.7227742943295623	higher
+STMN2	BambuTx9249	counts	per_million_assigned	noAza	0.0	26.741423843064208		higher
+STMN2	BambuTx9249	counts	share_of_gene_assigned	5Aza	0.021749571061804893	0.2777777777777778	12.771643955111928	higher
+STMN2	BambuTx9249	counts	share_of_gene_assigned	noAza	0.0	0.3870967741935484		higher
+STMN2	ENST00000220876.12	counts	raw	5Aza	173.55335	26.0	0.14980984233378383	lower
+STMN2	ENST00000220876.12	counts	raw	noAza	154.0	38.0	0.24675324675324675	lower
+STMN2	ENST00000220876.12	counts	per_million_assigned	5Aza	273.13084902999776	45.06987573790902	0.16501202957472969	lower
+STMN2	ENST00000220876.12	counts	per_million_assigned	noAza	202.51113855732564	42.34058775151833	0.20907782185784712	lower
+STMN2	ENST00000220876.12	counts	share_of_gene_assigned	5Aza	0.9330825770474502	0.7222222222222222	0.7740174771107048	lower
+STMN2	ENST00000220876.12	counts	share_of_gene_assigned	noAza	0.9625	0.6129032258064516	0.6367825722664432	lower
+UNC13A	ENST00000517497.2	counts	raw	5Aza	0.0	0.0		equal
+UNC13A	ENST00000517497.2	counts	raw	noAza	0.0	0.0		equal
+UNC13A	ENST00000517497.2	counts	per_million_assigned	5Aza	0.0	0.0		equal
+UNC13A	ENST00000517497.2	counts	per_million_assigned	noAza	0.0	0.0		equal
+UNC13A	ENST00000517497.2	counts	share_of_gene_assigned	5Aza	0.0	0.0		equal
+UNC13A	ENST00000517497.2	counts	share_of_gene_assigned	noAza	0.0	0.0		equal
+STMN2	ENST00000518111.5	counts	raw	5Aza	2.04553	0.0	0.0	lower
+STMN2	ENST00000518111.5	counts	raw	noAza	2.0	0.0	0.0	lower
+STMN2	ENST00000518111.5	counts	per_million_assigned	5Aza	3.219167740734081	0.0	0.0	lower
+STMN2	ENST00000518111.5	counts	per_million_assigned	noAza	2.6300147864587746	0.0	0.0	lower
+STMN2	ENST00000518111.5	counts	share_of_gene_assigned	5Aza	0.010997473709541595	0.0	0.0	lower
+STMN2	ENST00000518111.5	counts	share_of_gene_assigned	noAza	0.0125	0.0	0.0	lower
+STMN2	ENST00000518491.1	counts	raw	5Aza	6.35569	0.0	0.0	lower
+STMN2	ENST00000518491.1	counts	raw	noAza	4.0	0.0	0.0	lower
+STMN2	ENST00000518491.1	counts	per_million_assigned	5Aza	10.002313443511555	0.0	0.0	lower
+STMN2	ENST00000518491.1	counts	per_million_assigned	noAza	5.260029572917549	0.0	0.0	lower
+STMN2	ENST00000518491.1	counts	share_of_gene_assigned	5Aza	0.03417037818120312	0.0	0.0	lower
+STMN2	ENST00000518491.1	counts	share_of_gene_assigned	noAza	0.025	0.0	0.0	lower
+UNC13A	ENST00000519716.7	counts	raw	5Aza	66.0	72.0	1.0909090909090908	higher
+UNC13A	ENST00000519716.7	counts	raw	noAza	44.8	42.0	0.9375000000000001	lower
+UNC13A	ENST00000519716.7	counts	per_million_assigned	5Aza	103.86798085994796	124.80888665882499	1.201610791174549	higher
+UNC13A	ENST00000519716.7	counts	per_million_assigned	noAza	58.91233121667655	46.79749172536236	0.7943581718612285	lower
+UNC13A	ENST00000519716.7	counts	share_of_gene_assigned	5Aza	0.9428571428571428	1.0	1.0606060606060606	higher
+UNC13A	ENST00000519716.7	counts	share_of_gene_assigned	noAza	0.9333333333333332	1.0	1.0714285714285716	higher
+UNC13A	ENST00000523229.1	counts	raw	5Aza	0.0	0.0		equal
+UNC13A	ENST00000523229.1	counts	raw	noAza	0.0	0.0		equal
+UNC13A	ENST00000523229.1	counts	per_million_assigned	5Aza	0.0	0.0		equal
+UNC13A	ENST00000523229.1	counts	per_million_assigned	noAza	0.0	0.0		equal
+UNC13A	ENST00000523229.1	counts	share_of_gene_assigned	5Aza	0.0	0.0		equal
+UNC13A	ENST00000523229.1	counts	share_of_gene_assigned	noAza	0.0	0.0		equal
+UNC13A	ENST00000550896.1	counts	raw	5Aza	4.0	0.0	0.0	lower
+UNC13A	ENST00000550896.1	counts	raw	noAza	0.0	0.0		equal
+UNC13A	ENST00000550896.1	counts	per_million_assigned	5Aza	6.29502914302715	0.0	0.0	lower
+UNC13A	ENST00000550896.1	counts	per_million_assigned	noAza	0.0	0.0		equal
+UNC13A	ENST00000550896.1	counts	share_of_gene_assigned	5Aza	0.05714285714285714	0.0	0.0	lower
+UNC13A	ENST00000550896.1	counts	share_of_gene_assigned	noAza	0.0	0.0		equal
+UNC13A	ENST00000551649.5	counts	raw	5Aza	0.0	0.0		equal
+UNC13A	ENST00000551649.5	counts	raw	noAza	3.2	0.0	0.0	lower
+UNC13A	ENST00000551649.5	counts	per_million_assigned	5Aza	0.0	0.0		equal
+UNC13A	ENST00000551649.5	counts	per_million_assigned	noAza	4.20802365833404	0.0	0.0	lower
+UNC13A	ENST00000551649.5	counts	share_of_gene_assigned	5Aza	0.0	0.0		equal
+UNC13A	ENST00000551649.5	counts	share_of_gene_assigned	noAza	0.06666666666666667	0.0	0.0	lower
+UNC13A	ENST00000552293.5	counts	raw	5Aza	0.0	0.0		equal
+UNC13A	ENST00000552293.5	counts	raw	noAza	0.0	0.0		equal
+UNC13A	ENST00000552293.5	counts	per_million_assigned	5Aza	0.0	0.0		equal
+UNC13A	ENST00000552293.5	counts	per_million_assigned	noAza	0.0	0.0		equal
+UNC13A	ENST00000552293.5	counts	share_of_gene_assigned	5Aza	0.0	0.0		equal
+UNC13A	ENST00000552293.5	counts	share_of_gene_assigned	noAza	0.0	0.0		equal
+UNC13A	ENST00000601528.1	counts	raw	5Aza	0.0	0.0		equal
+UNC13A	ENST00000601528.1	counts	raw	noAza	0.0	0.0		equal
+UNC13A	ENST00000601528.1	counts	per_million_assigned	5Aza	0.0	0.0		equal
+UNC13A	ENST00000601528.1	counts	per_million_assigned	noAza	0.0	0.0		equal
+UNC13A	ENST00000601528.1	counts	share_of_gene_assigned	5Aza	0.0	0.0		equal
+UNC13A	ENST00000601528.1	counts	share_of_gene_assigned	noAza	0.0	0.0		equal

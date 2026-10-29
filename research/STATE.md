@@ -45,3 +45,12 @@ Inventario estructural GEO completado por primera ejecución de GitHub Actions. 
 - Diez cadenas ENST compartidas reflejan anotación común y no validación de expresión independiente. No hay demostración de rescate funcional.
 - PR #3 de auditoría: CI offline de GitHub completada con éxito. Mapeo: 25 pruebas offline pasan.
 - Siguiente tarea segura seleccionada: P1 descriptivo de GSE310723 y sensibilidad de GSE315972, según plan `research/plans/2026-10-29-descriptive.md` (entrega en PR posterior).
+
+## Ciclo Work — P1 descriptivo y sensibilidad (pendiente revisión)
+
+- `reports/descriptive/` contiene 132 contrastes de cultivo y 180 filas de sensibilidad cerebral. Son cálculos, no réplicas. `scripts/describe_targets.py` ejecutado dos veces; tablas idénticas por SHA256; 30 pruebas offline pasan.
+- Patrón STMN2 candidato/ENST principal de dirección consistente bajo medidas y denominadores examinados en cultivo; sin p-valores ni replicación independiente. BambuTx9249 sigue sin atribución críptica validada.
+- UNC13A ENST principal cambia de dirección con counts/uniqueCounts en cultivo sin 5Aza y en cerebro ALS/CTL; en este último, los rangos al retirar bibliotecas cruzan 1. Resultado negativo de robustez registrado.
+- GCD=2 en cada columna de uniqueCounts de ambas series. Causa no verificada; conservar unidades y no interpretar como moléculas independientes.
+- PR #4 de mapeo: CI offline exitosa; depende del PR #3. Ningún PR fusionado ni issue cerrada.
+- Siguiente tarea segura: coordenadas independientes del candidato STMN2 y semántica/escala de uniqueCounts; si bloqueada, evidencia funcional publicada. Mantener PR pendientes como parte del estado al reanudar la tarea Work diaria.
