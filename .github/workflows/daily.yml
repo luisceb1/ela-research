@@ -1,6 +1,12 @@
 name: ELA source watch
 on:
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/**'
+      - 'tests/**'
+      - '.github/workflows/daily.yml'
   schedule:
     - cron: '17 7 * * *'
 permissions:
