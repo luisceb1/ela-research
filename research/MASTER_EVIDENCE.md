@@ -4,9 +4,9 @@ Este registro sustituye los estados históricos. Reproducción técnica no equiv
 
 | ID | Línea | Estado verificable | Pendiente o limitación |
 |---|---|---|---|
-| ELA-01 | GSE126542 expresión | Paquete previo inventariado en reports/prior-work-reconciliation | Reejecutar y auditar; porcentajes narrados previamente no están reproducidos aquí |
+| ELA-01 | GSE126542 expresión | Reproducción agregada de 45 campos numéricos, sin discrepancias, en reports/issue14-reproduction | Misma cohorte publicada; no ARN canónico/proteína/función; sensibilidad de TARDBP a normalización |
 | ELA-02 | GSE126542 uniones | Fuentes previas inventariadas | Deduplicación, denominadores y PSI por verificar; no importar datos clínicos |
-| ELA-03 | GSE121569 | Paquete previo inventariado | Reproducción y sensibilidad; dos diferenciaciones no equivalen a seis réplicas biológicas |
+| ELA-03 | GSE121569 | Extracción DEXSeq reproducida: 102 fragmentos y 18 campos agregados; no refit | Dos experimentos declarados; mapa biblioteca/diferenciación pendiente. No PSI de CE |
 | ELA-04 | Genética | Existencia de material previo registrada | Sin hallazgo validado; revisión permitida de fuentes y proyecciones no personales |
 | ELA-05 | CAMK2B | reports/camk2b-reproduction: resultado estructural agregado reproducido | Evento no reconstruido en catálogo cerebral; no ausencia molecular ni validación independiente |
 | ELA-06 | Péptidos crípticos | Material inventariado | Sin espectrometría independiente ni validación proteómica propia |
@@ -26,3 +26,8 @@ Este registro sustituye los estados históricos. Reproducción técnica no equiv
 - Los números de tests documentan controles de software, no cantidad de evidencia experimental.
 - Informes antiguos conservan resultados/versiones y pendientes de entonces. STATE.md y este registro contienen los pendientes actuales.
 - Para promover evidencia: fuente verificable, hash, código ejecutado, controles, tablas, sensibilidad y revisión con el alcance explícito. Una integración no aporta revisión científica externa.
+
+
+## Fase #14 — reproducción agregada, rama independiente desde main
+
+29/10/2026: reports/issue14-reproduction reproduce63campos agregados (45expresión/18extracciónDEXSeq) sin discrepancias. Fuentes GEO descargadas y fijadas; código recibido conservado sin ejecutar, sin tablas por caso/clínicas/genéticas importadas. STMN2/UNC13A mantienen dirección entre CPM/MR; TARDBP cambia de signo. DEXSeq102fragmentos, no refit niPSI; doce columnas de contraste no son doce diferenciaciones. Nueve tests nuevos sobre105de main:114OK. PR28con166tests sigue separado y no fusionado: contiene originalidad/crypTE/QCglobal posteriores al estado base de main. Leer ambos PR y reconciliar estados al integrar; no declarar esos informes ya incorporados. Issue14no se cierra: próximos BED/RdeFratta, deduplicación/denominadores y mapa de diferenciación121569. Sin nuevas cohortes, hallazgos clínicos, contactos, gasto, laboratorio o merge automático.

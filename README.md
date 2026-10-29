@@ -39,3 +39,6 @@ Originales fuera de git en data/, URL/SHA256 en manifiestos. Informes histórico
 ## Límites
 
 No datos clínicos personales, contactos externos, publicación de hallazgos, costes o laboratorio sin autorización. No inferencia con n=1, cuentas asignadas como lecturas de unión o equivalencia entre ARN, proteína, recuperación neuronal y beneficio clínico.
+
+
+Fase #14: [reproducción agregada](reports/issue14-reproduction/REPORT.md),63campos concordantes y114tests (105base+9nuevos). Entrega independiente desde main; PR28sigue pendiente de integración. No refitDEXSeqni nueva replicación.

@@ -1,0 +1,4 @@
+gene	fragments	provided_padj_evaluable	provided_padj_missing	provided_padj_below_0_05	provided_padj_below_0_10	min_provided_padj
+STMN2	10	10	0	3	4	1.1477797063422889e-08
+UNC13A	62	58	4	1	1	2.2126657297202636e-06
+TARDBP	30	26	4	0	0	0.2951028206734334

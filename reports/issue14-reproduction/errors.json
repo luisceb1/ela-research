@@ -1,0 +1,11 @@
+{
+  "execution_errors": [],
+  "aggregate_comparison_mismatches": 0,
+  "direct_editorial_access": "Nature redirected to inaccessible identity provider; targeted primary indexed caption used, not full paper read",
+  "DEXSeq_refit": "not performed; mapping of libraries to independent differentiations unresolved",
+  "CE_intervals": "reproduced as received assumptions, not independently validated",
+  "junction_BED_and_R_formulas": "pending separate issue14 step",
+  "issue14_complete": false,
+  "clinical_variables_used": false,
+  "per_case_outputs_exported": false
+}
