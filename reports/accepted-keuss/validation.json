@@ -1,0 +1,6 @@
+{
+  "curation": "manual; methods and table crosschecked",
+  "input_sha256": "092850a125f900bb7b07c43b508bfab8dedf3847ee17a9d1a35eb5b8b065329e",
+  "experiments_in_table": 5,
+  "clinical_efficacy_inferred": false
+}

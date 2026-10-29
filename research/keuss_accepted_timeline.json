@@ -1,0 +1,7 @@
+[
+ {"assay":"iNeuron RNA/protein","kd_day":14,"aso_day":14,"locator":"PDF p20 lines570-575","note":"concurrent; not a delayed functional rescue experiment"},
+ {"assay":"MEA early KD","kd_day":14,"aso_day":14,"locator":"PDF p25 lines720-740 and p62 Table6","note":"concurrent; same MEA ASO schedule specified"},
+ {"assay":"MEA late KD","kd_day":33,"aso_day":14,"locator":"PDF p11 lines285-294; p25 lines720-740; p62 Table6","note":"ASO predates KD by19days; late describes KD, not ASO"},
+ {"assay":"iNeuron autaptic","kd_day":14,"aso_day":14,"locator":"PDF p27 lines780-784; p62 Table6","note":"concurrent; functional recordings after maturation"},
+ {"assay":"spinal motor neuron autaptic","kd_day":45,"aso_day":45,"locator":"PDF p20-21 lines589-595; p62 Table6","note":"concurrent gapmer and splice correction; not delayed reversal"}
+]

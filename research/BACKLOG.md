@@ -37,3 +37,5 @@ Los PR #3 y #4 están abiertos, con CI offline exitosa; los nuevos análisis des
 - **Próxima tarea segura: evidencia funcional independiente publicada**, separar rescate de ARN/proteína/función y auditar temporalidad/controles. No esperar a resolver la escala para revisar literatura funcional.
 
 P1 evidencia funcional: primera auditoría completada con límites de acceso; reports/functional-evidence. Temporalidad neuronal Keuss2024 concurrente; aceptado2026 pendiente texto completo. Próximo: fuente pública alternativa del aceptado y diagrama temporal, sin extrapolar versiones ni eficacia clínica.
+
+Aceptado Keuss: lectura resuelta con copia aportada; MEA con KD tardío no es ASO tardío (14frente33). Tabla de calendario en reports/accepted-keuss. Próximo: evidencia pública de intervención tras déficit verificado y ficha de pregunta discriminante, sin laboratorio ni contacto externo.

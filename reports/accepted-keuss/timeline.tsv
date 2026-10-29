@@ -1,0 +1,6 @@
+assay	kd_day	aso_day	locator	note	aso_minus_kd_days	timing
+iNeuron RNA/protein	14	14	PDF p20 lines570-575	concurrent; not a delayed functional rescue experiment	0	concurrent
+MEA early KD	14	14	PDF p25 lines720-740 and p62 Table6	concurrent; same MEA ASO schedule specified	0	concurrent
+MEA late KD	33	14	PDF p11 lines285-294; p25 lines720-740; p62 Table6	ASO predates KD by19days; late describes KD, not ASO	-19	before_perturbation
+iNeuron autaptic	14	14	PDF p27 lines780-784; p62 Table6	concurrent; functional recordings after maturation	0	concurrent
+spinal motor neuron autaptic	45	45	PDF p20-21 lines589-595; p62 Table6	concurrent gapmer and splice correction; not delayed reversal	0	concurrent

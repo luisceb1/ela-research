@@ -75,3 +75,9 @@ Inventario estructural GEO completado por primera ejecución de GitHub Actions. 
 - Keuss2024 neuronal: ASO inicia junto a PROTAC; no verifica rescate diferido tras basal deficitario. Otro preprint2025 inicia ASO antes de shRNA.
 - Baughn2023: resumen respalda función celular; cronología completa bloqueada HTTP500. Keuss2026 aceptado: registro verificado, PDF HTTP403; no transferir calendario del preprint a la versión aceptada.
 - Próxima tarea segura: recuperar manuscrito aceptado y auditar figuras/calendario; especificar contraste de rescate diferido sin iniciar laboratorio. Estado completo en rama research/functional-evidence-20261029, dependiente del PR6.
+
+## Manuscrito aceptado Keuss: bloqueo de lectura resuelto con copia del usuario
+- reports/accepted-keuss: portada peer-reviewed/registro institucional cotejados; no igualdad de bytes con endpoint público403. Lectura de métodos/resultados y Table6 con páginas explícitas.
+- MEA: ASO desdeDIV14, KD tardíoDIV33. Tratamiento19días antes de la perturbación; no rescate diferido. Autapsis espinales: corrector y gapmer concurrentesDIV45.
+- Recuperación de liberación en sinapsis restantes no restituye densidad sináptica. Conflicto de la fila de imagen Table6 conservado sin adjudicar calendario.
+- 45 pruebas offline pasan; tabla manual y cálculo reproducible. Siguiente: localizar datos públicos de tratamiento diferido; en su ausencia ficha de colaboración sin envío. Rama research/accepted-keuss-timeline-20261029.
