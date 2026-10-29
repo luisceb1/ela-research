@@ -27,3 +27,12 @@ Fecha de arranque del repositorio: 2026-10-29.
 
 ## Estado operativo
 Inventario estructural GEO completado por primera ejecución de GitHub Actions. Aún no se ha auditado la calidad biológica, ni realizado análisis diferencial ni validación independiente.
+
+## Ciclo Work — 2026-10-29: auditoría #1 (pendiente revisión)
+
+- Auditoría técnica completa de 12 bibliotecas GSM y 6 archivos de datos, con manifiesto SHA256, diccionario y QC en `reports/geo-audit/`.
+- Enlace exacto de los 392.871 / 401.720 TXNAME al GTF de cada serie: cero ausentes, cero genes discordantes, cero IDs duplicados. `uniqueCounts <= counts` en todas las celdas; counts contiene valores fraccionarios.
+- La serie cerebral informa ocho muestras de donante; las etiquetas ALS-C9 mezclan clasificación cognitiva. No tratar los cuatro grupos como estratos homogéneos ni los cultivos sin réplicas como replicados.
+- Estado: listo para revisión técnica en PR, sin validación funcional ni inferencia clínica. Límites biológicos y de metadatos en `reports/geo-audit/REPORT.md`.
+- Siguiente tarea segura: #2, mapeo por serie y verificación externa GENCODE v47 según `research/plans/2026-10-29-isoforms.md` (el plan y los resultados de #2 se entregarán en PR dependiente).
+- Work: tarea diaria creada, mañana ~08:00 Europe/Madrid; incluye resumen de siete días cuando sea viernes. No se pudo crear una segunda tarea por límite de cinco activas. La ejecución futura debe comprobar herramientas/acceso cada vez; no hay garantía de cómputo continuo entre ejecuciones.

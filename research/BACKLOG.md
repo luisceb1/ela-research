@@ -1,7 +1,8 @@
 # Cola priorizada de investigación
 
-**P0 — Auditoría de GEO** [pendiente]
+**P0 — Auditoría de GEO** [ejecutada; pendiente revisión PR]
 Inventariar GSE310723 y GSE315972: muestras GSM, grupos, profundidad y estructura de uniqueCounts y GTF. Crear diccionario de datos y control de calidad.
+Entregado: `reports/geo-audit/` y `scripts/geo_audit.py`; controles técnicos completos, independencia/covariables limitadas por metadatos depositados.
 
 **P0 — Mapeo transcriptos/genes** [pendiente]
 Vincular identificadores de isoformas a GTF, centrado en STMN2, UNC13A y otros transcritos crípticos. Registrar los no asignados.
