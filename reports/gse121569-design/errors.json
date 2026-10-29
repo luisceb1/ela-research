@@ -13,5 +13,10 @@
     "action": "Initial HTML parser",
     "error": "ModuleNotFoundError bs4 before network read",
     "resolution": "stdlib XML/ZIP; no installation required"
+  },
+  {
+    "action": "Remote blob verification",
+    "error": "Two TSVs differed only by csv default CRLF versus text payload LF normalization",
+    "resolution": "Explicit LF lineterminator in writer; local TSV bytes normalized to remote LF; all blob hashes rechecked"
   }
 ]

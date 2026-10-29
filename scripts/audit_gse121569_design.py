@@ -112,7 +112,7 @@ def main():
     a.out.mkdir(parents=True, exist_ok=True)
     for name, rows in [('culture_libraries.tsv', records), ('dexseq_column_map.tsv', linked)]:
         with (a.out/name).open('w', newline='') as f:
-            w = csv.DictWriter(f, fieldnames=list(rows[0]), delimiter='\t'); w.writeheader(); w.writerows(rows)
+            w = csv.DictWriter(f, fieldnames=list(rows[0]), delimiter='\t', lineterminator='\n'); w.writeheader(); w.writerows(rows)
     summary = audit(records, linked)
     (a.out/'summary.json').write_text(json.dumps(summary, indent=2)+'\n')
     sources = []
