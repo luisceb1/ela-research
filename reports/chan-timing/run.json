@@ -1,0 +1,14 @@
+{
+  "python": "3.12.14",
+  "pdftotext": "pdftotext version 24.02.0",
+  "execution": "python scripts/audit_chan_timing.py",
+  "repeated_audit_identical": true,
+  "audit_sha256": "42b45f7710c2d2254b0ac57f10f32b9b69f4aed9c1ad32614a70c3ed06389603",
+  "tests_passed": 72,
+  "new_technical_tests": 9,
+  "new_effect_sizes_or_pvalues_computed": false,
+  "source_workbook_edited": false,
+  "manual_caption_replication_curation": true,
+  "random_seed": null,
+  "status": "technical audit complete; inferential reanalysis blocked on independent-unit mapping"
+}

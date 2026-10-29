@@ -1,0 +1,17 @@
+[
+  {
+    "step": "optional report-generation dependency",
+    "issue": "tabulate not installed",
+    "resolution": "not required by tests/core; report-generation function not executed; no installation"
+  },
+  {
+    "step": "adversarial fixtures",
+    "issue": "original validation accepted six invalid fixtures; downstream KeyError/ValueError or misleadingly ordinary labels",
+    "resolution": "preserved as counterexamples in audit.json; new structural preflight rejects them"
+  },
+  {
+    "step": "sensitivity boundary fixture",
+    "issue": "reported analyzable blocks do not measure available contrasts under complete loss",
+    "resolution": "recorded; original sources unchanged; inference not enabled"
+  }
+]

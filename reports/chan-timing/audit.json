@@ -1,0 +1,461 @@
+{
+  "doi": "10.1038/s42003-026-10832-6",
+  "pdf_sha256": "c951fe81e865b857bd3daef296eb86f00796e1b195fa23703f9ccea5e15113bb",
+  "workbook_sha256": "65841277c4f8f3164487d7c13902dbbeec717f7fe7cac90d24c83f6112800281",
+  "figure7": {
+    "single_dose_DIV": [
+      4
+    ],
+    "repeated_doses_DIV": [
+      4,
+      7
+    ],
+    "delayed_initiation_arm_verified": null,
+    "persistent_functional_deficit_eligibility_verified": null,
+    "pdf_pages": [
+      12
+    ],
+    "normalized_caption_sha256": "7ee07f3462c75a91d11ff80340013a3cc15af80a243f8313bdd17eb855a7f6a9",
+    "scope": "f-i only; n not transferred from other panels",
+    "independent_experiments_reported": 3,
+    "wells_range_reported": [
+      3,
+      5
+    ],
+    "independent_differentiations_verified": null
+  },
+  "figure8": {
+    "axotomy_DIV": 14,
+    "first_ASO_DIV": 14,
+    "postinjury_treatment_order_explicit": true,
+    "injury_to_ASO_days_exact": null,
+    "timing_category": "immediate_postinjury",
+    "endpoint_days_after_injury": 3,
+    "endpoint_DIV": 17,
+    "persistent_functional_deficit_eligibility_verified": null,
+    "pdf_pages": [
+      13
+    ],
+    "normalized_caption_sha256": "a5ed604a0a6f63fe22e68077235a9fea5de87be8e84197d86116ac4547d2c69e",
+    "independent_experiments_reported": 2,
+    "chips_range_reported": [
+      3,
+      5
+    ],
+    "independent_differentiations_verified": null
+  },
+  "replication_numbers_method": "manual transcription from captions, visually verified; not independently reproduced experiments",
+  "workbook": {
+    "total_sheets": 83,
+    "selected_sheets": [
+      {
+        "sheet": "Figure 7f",
+        "xml_member": "xl/worksheets/sheet46.xml",
+        "dimension": "A1:O59",
+        "labels": [
+          {
+            "cell": "A1",
+            "text": "Neurite Outgrowth"
+          },
+          {
+            "cell": "A2",
+            "text": "ASO 10 (Single dose - 0.5 μM)"
+          },
+          {
+            "cell": "A3",
+            "text": "Neurite length / cell body area (mm/mm2)"
+          },
+          {
+            "cell": "A4",
+            "text": "DIV"
+          },
+          {
+            "cell": "B4",
+            "text": "TDP-43WT+ASO Ctrl (0.5 μM)"
+          },
+          {
+            "cell": "E4",
+            "text": "TDP-43ΔNLS+ASO Ctrl (0.5 μM)"
+          },
+          {
+            "cell": "H4",
+            "text": "TDP-43ΔNLS+ASO 10 (0.5 μM)"
+          }
+        ],
+        "numeric_cells_by_column_not_replicates": {
+          "A": 7,
+          "B": 55,
+          "C": 55,
+          "D": 55,
+          "E": 45,
+          "F": 45,
+          "G": 55,
+          "H": 55,
+          "I": 55,
+          "J": 55,
+          "K": 55,
+          "L": 55
+        },
+        "explicit_DIV_labels_only_no_interpolation": [
+          {
+            "cell": "A5",
+            "DIV": 0.0
+          },
+          {
+            "cell": "A13",
+            "DIV": 2.0
+          },
+          {
+            "cell": "A21",
+            "DIV": 4.0
+          },
+          {
+            "cell": "A29",
+            "DIV": 6.0
+          },
+          {
+            "cell": "A37",
+            "DIV": 8.0
+          },
+          {
+            "cell": "A45",
+            "DIV": 10.0
+          },
+          {
+            "cell": "A53",
+            "DIV": 12.0
+          }
+        ],
+        "formula_cells": [],
+        "experiment_or_differentiation_mapping_verified": false
+      },
+      {
+        "sheet": "Figure 7g",
+        "xml_member": "xl/worksheets/sheet47.xml",
+        "dimension": "A1:L59",
+        "labels": [
+          {
+            "cell": "A1",
+            "text": "Neurite Outgrowth"
+          },
+          {
+            "cell": "A2",
+            "text": "ASO 10 (Single dose - 1 μM)"
+          },
+          {
+            "cell": "A3",
+            "text": "Neurite length / cell body area (mm/mm2)"
+          },
+          {
+            "cell": "A4",
+            "text": "DIV"
+          },
+          {
+            "cell": "B4",
+            "text": "TDP-43WT+ASO Ctrl (1 μM)"
+          },
+          {
+            "cell": "D4",
+            "text": "TDP-43ΔNLS+ASO Ctrl (1 μM)"
+          },
+          {
+            "cell": "H4",
+            "text": "TDP-43ΔNLS+ASO 10 (1 μM)"
+          }
+        ],
+        "numeric_cells_by_column_not_replicates": {
+          "A": 8,
+          "B": 55,
+          "C": 55,
+          "D": 54,
+          "E": 55,
+          "F": 53,
+          "G": 55,
+          "H": 55,
+          "I": 55,
+          "J": 55,
+          "K": 55,
+          "L": 55
+        },
+        "explicit_DIV_labels_only_no_interpolation": [
+          {
+            "cell": "A5",
+            "DIV": 0.0
+          },
+          {
+            "cell": "A13",
+            "DIV": 2.0
+          },
+          {
+            "cell": "A21",
+            "DIV": 4.0
+          },
+          {
+            "cell": "A29",
+            "DIV": 6.0
+          },
+          {
+            "cell": "A37",
+            "DIV": 8.0
+          },
+          {
+            "cell": "A45",
+            "DIV": 10.0
+          },
+          {
+            "cell": "A53",
+            "DIV": 12.0
+          },
+          {
+            "cell": "A57",
+            "DIV": 13.0
+          }
+        ],
+        "formula_cells": [],
+        "experiment_or_differentiation_mapping_verified": false
+      },
+      {
+        "sheet": "Figure 7h",
+        "xml_member": "xl/worksheets/sheet48.xml",
+        "dimension": "A1:P59",
+        "labels": [
+          {
+            "cell": "A1",
+            "text": "Neurite Outgrowth"
+          },
+          {
+            "cell": "A2",
+            "text": "ASO 10 (2 doses - 0.5 μM)"
+          },
+          {
+            "cell": "A3",
+            "text": "Neurite length / cell body area (mm/mm2)"
+          },
+          {
+            "cell": "A4",
+            "text": "DIV"
+          },
+          {
+            "cell": "B4",
+            "text": "TDP-43WT+ASO Ctrl (0.5 μM)"
+          },
+          {
+            "cell": "G4",
+            "text": "TDP-43ΔNLS+ASO Ctrl (0.5 μM)"
+          },
+          {
+            "cell": "L4",
+            "text": "TDP-43ΔNLS+ASO 10 (0.5 μM)"
+          }
+        ],
+        "numeric_cells_by_column_not_replicates": {
+          "A": 7,
+          "B": 55,
+          "C": 55,
+          "D": 55,
+          "E": 55,
+          "F": 55,
+          "G": 55,
+          "H": 55,
+          "I": 55,
+          "J": 55,
+          "K": 55,
+          "L": 55,
+          "M": 55,
+          "N": 55,
+          "O": 55,
+          "P": 55
+        },
+        "explicit_DIV_labels_only_no_interpolation": [
+          {
+            "cell": "A5",
+            "DIV": 0.0
+          },
+          {
+            "cell": "A13",
+            "DIV": 2.0
+          },
+          {
+            "cell": "A21",
+            "DIV": 4.0
+          },
+          {
+            "cell": "A29",
+            "DIV": 6.0
+          },
+          {
+            "cell": "A37",
+            "DIV": 8.0
+          },
+          {
+            "cell": "A45",
+            "DIV": 10.0
+          },
+          {
+            "cell": "A53",
+            "DIV": 12.0
+          }
+        ],
+        "formula_cells": [],
+        "experiment_or_differentiation_mapping_verified": false
+      },
+      {
+        "sheet": "Figure 7i",
+        "xml_member": "xl/worksheets/sheet49.xml",
+        "dimension": "A1:P59",
+        "labels": [
+          {
+            "cell": "A1",
+            "text": "Neurite Outgrowth"
+          },
+          {
+            "cell": "A2",
+            "text": "ASO 10 (2 doses - 1 μM)"
+          },
+          {
+            "cell": "A3",
+            "text": "Neurite length / cell body area (mm/mm2)"
+          },
+          {
+            "cell": "A4",
+            "text": "DIV"
+          },
+          {
+            "cell": "B4",
+            "text": "TDP-43WT+ASO Ctrl (1 μM)"
+          },
+          {
+            "cell": "G4",
+            "text": "TDP-43ΔNLS+ASO Ctrl (1 μM)"
+          },
+          {
+            "cell": "L4",
+            "text": "TDP-43ΔNLS+ASO 10 (1 μM)"
+          }
+        ],
+        "numeric_cells_by_column_not_replicates": {
+          "A": 7,
+          "B": 55,
+          "C": 55,
+          "D": 55,
+          "E": 55,
+          "F": 55,
+          "G": 55,
+          "H": 55,
+          "I": 55,
+          "J": 55,
+          "K": 55,
+          "L": 55,
+          "M": 55,
+          "N": 55,
+          "O": 55,
+          "P": 55
+        },
+        "explicit_DIV_labels_only_no_interpolation": [
+          {
+            "cell": "A5",
+            "DIV": 0.0
+          },
+          {
+            "cell": "A13",
+            "DIV": 2.0
+          },
+          {
+            "cell": "A21",
+            "DIV": 4.0
+          },
+          {
+            "cell": "A29",
+            "DIV": 6.0
+          },
+          {
+            "cell": "A37",
+            "DIV": 8.0
+          },
+          {
+            "cell": "A45",
+            "DIV": 10.0
+          },
+          {
+            "cell": "A53",
+            "DIV": 12.0
+          }
+        ],
+        "formula_cells": [],
+        "experiment_or_differentiation_mapping_verified": false
+      },
+      {
+        "sheet": "Figure 8b",
+        "xml_member": "xl/worksheets/sheet55.xml",
+        "dimension": "A1:C8",
+        "labels": [
+          {
+            "cell": "A1",
+            "text": "Axonal regeneration after injury"
+          },
+          {
+            "cell": "A2",
+            "text": "Neurite length / cell body area (mm/mm2)"
+          },
+          {
+            "cell": "A3",
+            "text": "TDP-43WT+Injury+ASO Ctrl"
+          },
+          {
+            "cell": "B3",
+            "text": "TDP-43ΔNLS+Injury+ASO Ctrl"
+          },
+          {
+            "cell": "C3",
+            "text": "TDP-43ΔNLS+Injury+ASO 10"
+          }
+        ],
+        "numeric_cells_by_column_not_replicates": {
+          "A": 5,
+          "B": 5,
+          "C": 5
+        },
+        "explicit_DIV_labels_only_no_interpolation": [],
+        "formula_cells": [],
+        "experiment_or_differentiation_mapping_verified": false
+      },
+      {
+        "sheet": "Figure 8c",
+        "xml_member": "xl/worksheets/sheet56.xml",
+        "dimension": "A1:C8",
+        "labels": [
+          {
+            "cell": "A1",
+            "text": "STMN2"
+          },
+          {
+            "cell": "A2",
+            "text": "# of Spots / 20 μm Axon"
+          },
+          {
+            "cell": "A3",
+            "text": "TDP-43WT+Injury+ASO Ctrl"
+          },
+          {
+            "cell": "B3",
+            "text": "TDP-43ΔNLS+Injury+ASO Ctrl"
+          },
+          {
+            "cell": "C3",
+            "text": "TDP-43ΔNLS+Injury+ASO 10"
+          }
+        ],
+        "numeric_cells_by_column_not_replicates": {
+          "A": 5,
+          "B": 5,
+          "C": 5
+        },
+        "explicit_DIV_labels_only_no_interpolation": [],
+        "formula_cells": [],
+        "experiment_or_differentiation_mapping_verified": false
+      }
+    ]
+  },
+  "new_effect_sizes_or_pvalues_computed": false,
+  "clinical_efficacy_assessed": false
+}

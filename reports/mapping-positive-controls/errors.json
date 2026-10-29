@@ -1,0 +1,14 @@
+{
+  "unexpected_runtime_failures": [],
+  "recovered_access_issue": {
+    "route": "workflow filename-specific runs endpoint",
+    "error": "GitHub connector INVALID_ARGUMENT/400",
+    "resolution": "used actions/runs collection and fetched job logs with service tool"
+  },
+  "historical_incidents": [
+    "name-only selector returns zero targets despite exact TXNAME mapping",
+    "no-gene_name regression test not discovered and uses literal separators",
+    "legacy CLI can succeed with zero targets"
+  ],
+  "resolution": "positive-control gate, versioned IDs, real regression tests and atomic accepted output"
+}

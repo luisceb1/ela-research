@@ -1,0 +1,1046 @@
+{
+  "main_sha": "13ccbc5c9f1c9744c57ed9abb822d169772e32a5",
+  "legacy_head": "e3ca351d5bf79430abf283b12f65862e363bc707",
+  "recent_head": "963b176436907be0ba265bd2ff9c4a2f2e05d45a",
+  "pull_requests": [
+    {
+      "number": 25,
+      "title": "Anotar 1901 uniones: 17 coincidencias GENCODE y catálogo de autores pendiente",
+      "head": "963b176436907be0ba265bd2ff9c4a2f2e05d45a",
+      "branch": "research/gencode-junction-annotation-20261029",
+      "base": "research/junction-filter-reconciliation-20261029"
+    },
+    {
+      "number": 24,
+      "title": "Resolver 21/1910: el parser original perdía exones y referencias ENST (#20)",
+      "head": "fc2c2d2c05b7ac3f8033ab6d76becb9db69faf7d",
+      "branch": "research/junction-filter-reconciliation-20261029",
+      "base": "research/mapping-positive-controls-20261029"
+    },
+    {
+      "number": 23,
+      "title": "Evitar éxito con cero genes objetivo y reconciliar la corrección ENSG (#19)",
+      "head": "057c4370de54c12002b294eaae3540c29856849f",
+      "branch": "research/mapping-positive-controls-20261029",
+      "base": "main"
+    },
+    {
+      "number": 22,
+      "title": "Auditar MEA sintético: seis fallos de entrada y denominador de bloques",
+      "head": "e3ca351d5bf79430abf283b12f65862e363bc707",
+      "branch": "research/mea-software-audit-20261029",
+      "base": "research/camk2b-aggregate-reproduction-20261029"
+    },
+    {
+      "number": 13,
+      "title": "Reproducir CAMK2B previo con salidas agregadas y controles estructurales",
+      "head": "b40105d35f617b621caf26438d2706be62ae8a4b",
+      "branch": "research/camk2b-aggregate-reproduction-20261029",
+      "base": "research/chan-rescue-timing-20261029"
+    },
+    {
+      "number": 12,
+      "title": "Precisar antecedente Chan: ASO inmediato poslesión y curvas previas",
+      "head": "1f180a821d928e30d83082c665856079a08ef45f",
+      "branch": "research/chan-rescue-timing-20261029",
+      "base": "research/prior-chat-reconciliation-20261029"
+    },
+    {
+      "number": 11,
+      "title": "Reconciliar paquetes de otros chats y evitar duplicar evidencia",
+      "head": "e813b9a1e1ef6daff2a76b9ace37bbfe160baadb",
+      "branch": "research/prior-chat-reconciliation-20261029",
+      "base": "research/image-metadata-qc-20261029"
+    },
+    {
+      "number": 10,
+      "title": "Auditar calibración TIFF y unidades experimentales de Figure7",
+      "head": "e33e8d77b3d872a44d3daaf4889ca8d1b7b5e5ed",
+      "branch": "research/image-metadata-qc-20261029",
+      "base": "research/reversal-design-20261029"
+    },
+    {
+      "number": 9,
+      "title": "Especificar rescate diferido e inventariar datos públicos de regeneración",
+      "head": "9377a51f4b20c02c1ae49c2ef3a7d4bba82eee0f",
+      "branch": "research/reversal-design-20261029",
+      "base": "research/accepted-keuss-timeline-20261029"
+    },
+    {
+      "number": 8,
+      "title": "Aclarar calendario del aceptado Keuss: KD tardío no implica ASO tardío",
+      "head": "d289e38c543caf4301cc443568dce83f2370a833",
+      "branch": "research/accepted-keuss-timeline-20261029",
+      "base": "research/functional-evidence-20261029"
+    },
+    {
+      "number": 7,
+      "title": "Auditar evidencia funcional y distinguir prevención de rescate diferido",
+      "head": "64b8e1cfffce426f460409c83c519105fbfc6aa7",
+      "branch": "research/functional-evidence-20261029",
+      "base": "research/event-reference-and-count-scale-20261029"
+    },
+    {
+      "number": 6,
+      "title": "Contrastar unión STMN2 conocida, soporte full-length y CPM publicado",
+      "head": "6ea5ae638de3d9adb22817af9c021f110f6bac0a",
+      "branch": "research/event-reference-and-count-scale-20261029",
+      "base": "research/descriptive-sensitivity-20261029"
+    },
+    {
+      "number": 5,
+      "title": "P1: sensibilidad descriptiva a conteos, normalización y bibliotecas",
+      "head": "724584491b86d85ce197fc922e92b32afc93a2b3",
+      "branch": "research/descriptive-sensitivity-20261029",
+      "base": "research/stmn2-unc13a-20261029"
+    },
+    {
+      "number": 4,
+      "title": "Mapeo estructural STMN2/UNC13A y control GENCODE v47 (#2)",
+      "head": "fb8a8857b30ef73c9f15680766723b63b88c705b",
+      "branch": "research/stmn2-unc13a-20261029",
+      "base": "research/geo-audit-20261029"
+    },
+    {
+      "number": 3,
+      "title": "Auditoría reproducible de muestras, GTF y conteos GEO (#1)",
+      "head": "d445c63f1f48aee647f48be903ca93c5a166b177",
+      "branch": "research/geo-audit-20261029",
+      "base": "main"
+    }
+  ],
+  "incoming_files": {
+    ".github/workflows/daily.yml": {
+      "sha": "a631e23f03462504967e1aa5e1e42927812c4b82",
+      "source": "963b176436907be0ba265bd2ff9c4a2f2e05d45a"
+    },
+    ".github/workflows/tests.yml": {
+      "sha": "d685b630c340beecfa99c06b7427af503332c21d",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    ".gitignore": {
+      "sha": "8b50095772bd1ed4c65376e26397c6dd9af715b6",
+      "source": "963b176436907be0ba265bd2ff9c4a2f2e05d45a"
+    },
+    "AGENTS.md": {
+      "sha": "d2f10245f2e42d65b73fb9d1610968049cb35c20",
+      "source": "963b176436907be0ba265bd2ff9c4a2f2e05d45a"
+    },
+    "README.md": {
+      "sha": "277cbb0829b76c55b88bcc3864f4903613b8cefa",
+      "source": "963b176436907be0ba265bd2ff9c4a2f2e05d45a"
+    },
+    "reports/2026-10-29-pubmed.md": {
+      "sha": "5570940b840a1179b9e7142a9a523cc3cfe5b96e",
+      "source": "963b176436907be0ba265bd2ff9c4a2f2e05d45a"
+    },
+    "reports/accepted-keuss/REPORT.md": {
+      "sha": "b0b28829c4f483e61b9d1b38fd17edcf914fa9f5",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "reports/accepted-keuss/tests.txt": {
+      "sha": "8fc90fe97b462449ffb6eb5e22b63ad4d21f29b4",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "reports/accepted-keuss/timeline.tsv": {
+      "sha": "d4d00b2465ac5718945aa92b3135446930663d57",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "reports/accepted-keuss/validation.json": {
+      "sha": "c9c4de323e4bb17c557ac979700233098f5779a9",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "reports/camk2b-reproduction/DATA_DICTIONARY.md": {
+      "sha": "4717e520db835b8f7d87a18223824ca73b97d11c",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "reports/camk2b-reproduction/REPORT.md": {
+      "sha": "51d653f748a933afd334181ed08650dfcf457d97",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "reports/camk2b-reproduction/audit.json": {
+      "sha": "0cd0293938d1d480528237661161075fe2e3ab0d",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "reports/camk2b-reproduction/errors.json": {
+      "sha": "27c144363e1aafbfa25eed1a9d2d14cb9b7f9dd6",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "reports/camk2b-reproduction/prior_package_check.json": {
+      "sha": "3c734d72b5117c8961483e73078203eecf9459e0",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "reports/camk2b-reproduction/run.json": {
+      "sha": "bde31accd66dc9c5143f800ca16b17fb2c8d22f0",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "reports/camk2b-reproduction/summary.tsv": {
+      "sha": "9344d2ba6f536abe3fc24d8755a8499163dff258",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "reports/camk2b-reproduction/tests.txt": {
+      "sha": "7565786e695946edca429a47286bbdab43ff0185",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "reports/chan-timing/DATA_DICTIONARY.md": {
+      "sha": "87eb0e345f89071307b25dc4325d4523662a4a1a",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "reports/chan-timing/REPORT.md": {
+      "sha": "5698571de0738fe200d2359e50ea6b110e154934",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "reports/chan-timing/audit.json": {
+      "sha": "d4aec49b2841b92e92c9e79399ae53b15bffdcc9",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "reports/chan-timing/errors.json": {
+      "sha": "e2fa846ea4d5bd1e17c71f79450ea552f9403db2",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "reports/chan-timing/matrix.tsv": {
+      "sha": "ebbcd4e29f330dfc65d39b68b2352847cf0d45cf",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "reports/chan-timing/run.json": {
+      "sha": "a88233414c8d2c2593c3aefbc0d4212184ee4401",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "reports/chan-timing/sources.json": {
+      "sha": "0ae33ca6d142b5d699041626b5d8ccbdb32d170a",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "reports/chan-timing/tests.txt": {
+      "sha": "c46d3bda1f4456bf4c65f351cf62a98690cb7e1f",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "reports/descriptive/DATA_DICTIONARY.md": {
+      "sha": "1a4b8a2660a0f9c1a9cb7c042792741eae22db8a",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "reports/descriptive/REPORT.md": {
+      "sha": "400eec925655f9cdce257f416db1bc74a3ed51d9",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "reports/descriptive/brain_sensitivity.tsv": {
+      "sha": "8ac5f5f2b463f3ebdaf280d36d989439e134afa1",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "reports/descriptive/count_scale.tsv": {
+      "sha": "b907f65a93a0f69f5f69fc275023e8c9db77a0b2",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "reports/descriptive/culture_contrasts.tsv": {
+      "sha": "1b488e3bf59e13533d8590b6c42f6f566aad65fd",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "reports/descriptive/errors.json": {
+      "sha": "fe51488c7066f6687ef680d6bfaa4f7768ef205c",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "reports/descriptive/reproducibility.json": {
+      "sha": "2ab7b755a643a261d7e56751e73eecc602a535a2",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "reports/descriptive/run.json": {
+      "sha": "d4be851000a0e527d9905236ce1ac74eb5df949a",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "reports/descriptive/tests.txt": {
+      "sha": "27dd8cb2ba88f7fd255ddf468d4d2c4ff9a13a8e",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "reports/descriptive/values.tsv": {
+      "sha": "aa737be0d7eb0bfe4ef2790688d480055caeae97",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "reports/event-reference/DATA_DICTIONARY.md": {
+      "sha": "e0cd8b1313786e12279ca504de6e810283e4c828",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "reports/event-reference/EXECUTION_NOTES.md": {
+      "sha": "d7670c132f1eaaed06be0acfc74d3d22de3ad45e",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "reports/event-reference/REPORT.md": {
+      "sha": "1774a7f791bb30f310862e848976000d0842eeba",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "reports/event-reference/deposited_cpm_contrasts.tsv": {
+      "sha": "c76a8ded9d13501158cee1454d7aa5a6e765f7da",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "reports/event-reference/depth_and_cpm.tsv": {
+      "sha": "6411858f5a8955c62c3485718a6702aeba65a435",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "reports/event-reference/errors.json": {
+      "sha": "fe51488c7066f6687ef680d6bfaa4f7768ef205c",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "reports/event-reference/event_matches.tsv": {
+      "sha": "d41c76932b0e797d7b6e5450a7669fedde70f752",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "reports/event-reference/paper_evidence.json": {
+      "sha": "c251febc4e4e296e2f0114583e775a63f8d90e28",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "reports/event-reference/quant_violations.tsv": {
+      "sha": "9fbdf958f6df94e8c742d8d63839cf9bec3a5d50",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "reports/event-reference/run.json": {
+      "sha": "206c180042f53dedc29921e264bc73a8a41312d3",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "reports/event-reference/sources.json": {
+      "sha": "9d5d719539b22e5df87237c702d9956df4636a0f",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "reports/event-reference/summary.json": {
+      "sha": "ce938e878526f79989c1909cf7b1893efc6beb14",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "reports/event-reference/target_full_length_support.tsv": {
+      "sha": "8ab0d0aa09fb7ac1f2ed1e07dd29959271e9270e",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "reports/event-reference/tests.txt": {
+      "sha": "0f46eb498ab149cdbd16108ac6d284c0d52730a6",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "reports/functional-evidence/REPORT.md": {
+      "sha": "394b1d8a17dc4517292e1472a822101b33a07f74",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "reports/functional-evidence/matrix.tsv": {
+      "sha": "8cad4e9c0f51c1dfaedc9cabad909fda730e5632",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "reports/functional-evidence/sources.json": {
+      "sha": "2ad984b5b2bdb051a78eeba3a70b932b159791da",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "reports/functional-evidence/tests.txt": {
+      "sha": "8972a8724877a6501fc9a45792ac919383366c7b",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "reports/functional-evidence/validation.json": {
+      "sha": "e00f2b967b734cc5a3c4796c3740d472798869b3",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "reports/geo-audit/DATA_DICTIONARY.md": {
+      "sha": "a2b5f27061283314527712791f4ded25e78d3751",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "reports/geo-audit/EXECUTION_NOTES.md": {
+      "sha": "57b304ca1b6f5333356791879a04316a92c34037",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "reports/geo-audit/REPORT.md": {
+      "sha": "37e0f18cefc42088cc7b0f720a57cf5c49abc432",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "reports/geo-audit/depth.tsv": {
+      "sha": "056aab853c3ce45feb655348a2d8bc37471e5be2",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "reports/geo-audit/errors.json": {
+      "sha": "fe51488c7066f6687ef680d6bfaa4f7768ef205c",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "reports/geo-audit/gene_mismatches.tsv": {
+      "sha": "96b79c04251cc7d0c768a7cdb792dd852daf2e83",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "reports/geo-audit/qc.json": {
+      "sha": "9f3446bd2fb0e8a216511c05824a17f984de5911",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "reports/geo-audit/run.json": {
+      "sha": "d3acfd7c57241356deb06542d3991d2097010623",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "reports/geo-audit/samples.tsv": {
+      "sha": "0ecb7a9b04a371616b23ca91fd3621d968c6e368",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "reports/geo-audit/sources.json": {
+      "sha": "d29174be299b36a79ab51ca247514c1797f05c8e",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "reports/geo-audit/tests.txt": {
+      "sha": "5a2bac31e4dc92556eae0de067aef156e65d29c5",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "reports/geo-audit/unmapped.tsv": {
+      "sha": "c413ff241e480edfcb817cf7acdf44ddab4e6066",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "reports/geo-inventory.md": {
+      "sha": "139035418f7b0b6972f3ae8f290658d3b923a4ef",
+      "source": "963b176436907be0ba265bd2ff9c4a2f2e05d45a"
+    },
+    "reports/image-metadata-qc/DATA_DICTIONARY.md": {
+      "sha": "06cb0978c7c6af63bc8b2539b3f089952b0cc0f5",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "reports/image-metadata-qc/REPORT.md": {
+      "sha": "e46cfc7418352af0ca3fa5d7a6fc9ef81a038c6a",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "reports/image-metadata-qc/errors.json": {
+      "sha": "fe51488c7066f6687ef680d6bfaa4f7768ef205c",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "reports/image-metadata-qc/figure7_workbook_cells.tsv": {
+      "sha": "86164f906e130ae7be35d08416ab7bfb7199da72",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "reports/image-metadata-qc/run.json": {
+      "sha": "6c9855a48630b2e97d0750303436143782eccf9b",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "reports/image-metadata-qc/sources.json": {
+      "sha": "56f5fd7bf4241f24c13316e966f62f778146e4bd",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "reports/image-metadata-qc/summary.json": {
+      "sha": "4901f4aff3916be297384b89babc38276c004720",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "reports/image-metadata-qc/tests.txt": {
+      "sha": "b54aaa56d7502167c2cc2bbad76ab36214ca69f9",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "reports/image-metadata-qc/tiff_headers.json": {
+      "sha": "394819f377a6ddee38f65c773e68ebc05d7483c8",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "reports/isoforms/DATA_DICTIONARY.md": {
+      "sha": "d000c61a3f26f611eea2550b94b241b982adb230",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "reports/isoforms/REPORT.md": {
+      "sha": "3623aed835ab771b6555d51c09188de528f4eaaf",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "reports/isoforms/errors.json": {
+      "sha": "fe51488c7066f6687ef680d6bfaa4f7768ef205c",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "reports/isoforms/exons.tsv": {
+      "sha": "0a9ca85a8c8bde24b7a5c321557a2ae3232db4e5",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "reports/isoforms/junctions.tsv": {
+      "sha": "d3dec866d1fb83e253cba7bb483ee8f6779cbda1",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "reports/isoforms/mapping_controls.tsv": {
+      "sha": "4a267fac74af57871862eb6f85f39450f1ef79bc",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "reports/isoforms/other_gene_locus_overlaps.tsv": {
+      "sha": "e9569d4790e2fde6c8f66b7c5b4f94a41bcbcaa6",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "reports/isoforms/reference_source.json": {
+      "sha": "119afb427d7063978d9e9e6c19c22cb9b454bf5f",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "reports/isoforms/run.json": {
+      "sha": "e5404a746b8ca5dbd3687257ca8b7a5026c7c879",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "reports/isoforms/shared_full_chains.tsv": {
+      "sha": "ce7c0e5a2e8b623e70b7760dffd8ddf8e1b4e89f",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "reports/isoforms/summary.json": {
+      "sha": "282c0535961f5ef1017be303578844ed3f3a79f2",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "reports/isoforms/support.tsv": {
+      "sha": "21038123180c73b0275d34b49fe9b88b7ce5c442",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "reports/isoforms/tests.txt": {
+      "sha": "3e23ee6374a18fe26d2fdccbce85020dcc8d3586",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "reports/isoforms/transcripts.tsv": {
+      "sha": "5391044ba4a7b770247b6c7e38b28d8f7b4c7b48",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "reports/mea-software-audit/DATA_DICTIONARY.md": {
+      "sha": "e5832019b360d0ec390ffcf878faaaf68b5e2e06",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "reports/mea-software-audit/REPORT.md": {
+      "sha": "9bdae3abc4beda2258c235ef783af9e3c3392e40",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "reports/mea-software-audit/audit.json": {
+      "sha": "f2a49d7d0747c077665b67865b885572178974da",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "reports/mea-software-audit/environment.json": {
+      "sha": "1ffb58e7d226cf9c6279824f15f3d30c1a6be947",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "reports/mea-software-audit/errors.json": {
+      "sha": "8ea2a55e318dccc73571d2ea5b1f8f4005bd502a",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "reports/mea-software-audit/original_base_tests.txt": {
+      "sha": "8783ce77d3067a7713c7e095cf9aad09799b06e7",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "reports/mea-software-audit/original_sensitivity_tests.txt": {
+      "sha": "a8add91d1b6cf49f0987dfc3b95032a65007738e",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "reports/mea-software-audit/remote_state_snapshot.json": {
+      "sha": "a1ac21ab923cbd59d1b78d8f7b5e7ec6498ac878",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "reports/mea-software-audit/repository_tests.txt": {
+      "sha": "69eb4af5c099119ec285eab31f0aff8a48d10897",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "reports/mea-software-audit/run.json": {
+      "sha": "eedcf660fdb5fab61061b81d24582951c13ed587",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "reports/prior-work-reconciliation/REPORT.md": {
+      "sha": "38408c8440b01a6a87580dab17b128bf42047b42",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "reports/prior-work-reconciliation/inventory.json": {
+      "sha": "c2c14732203bb157e27039536824514ac81e76b1",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "reports/prior-work-reconciliation/run.json": {
+      "sha": "9012b6105e355aa0cb8b86cc87093c39a7dc1b17",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "reports/prior-work-reconciliation/tests.txt": {
+      "sha": "d6dc42d992286ac405a15336241682601dd26368",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "reports/reversal-design/EXPERIMENT_SPEC.md": {
+      "sha": "a8d5cab1389ac240554ae813added78a67dddbac",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "reports/reversal-design/REPORT.md": {
+      "sha": "44b28820d43b911a72a46cf4d848ab5906fdaae4",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "reports/reversal-design/figure7_file_groups.tsv": {
+      "sha": "690445d79409af6736a8f804db6f2ab40355c7f2",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "reports/reversal-design/inventory_summary.json": {
+      "sha": "039ed15358fa7a9dda35cad393d8a49ea187fd86",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "reports/reversal-design/regeneration_timing.json": {
+      "sha": "90c264b68225e8e0f22b0ef70f2a7073b61704a6",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "reports/reversal-design/source.json": {
+      "sha": "7ae6f680c76a007fb170517a5bb27ecd2e5549dd",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "reports/reversal-design/tests.txt": {
+      "sha": "57e17d30a5fcb8e8a7c9b1795190cf26504a2b29",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "reports/reversal-design/zenodo_inventory.json": {
+      "sha": "16d10e8051e441187ea1f2bb083592144beeb4cf",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "research/BACKLOG.md": {
+      "sha": "d5edf86eaf4ee5e882087f1cb991d6b7e2a314bd",
+      "source": "963b176436907be0ba265bd2ff9c4a2f2e05d45a"
+    },
+    "research/PROTOCOL.md": {
+      "sha": "b878ea6d015072425f8230df3ea3f971748feac6",
+      "source": "963b176436907be0ba265bd2ff9c4a2f2e05d45a"
+    },
+    "research/STATE.md": {
+      "sha": "6b4f15a8c089452bb30d73c59fdf620485568d87",
+      "source": "963b176436907be0ba265bd2ff9c4a2f2e05d45a"
+    },
+    "research/bambu326_source_index.json": {
+      "sha": "a8299844e6bfb56e692c0e779c970006017f56d9",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "research/functional_evidence.json": {
+      "sha": "bcf92ad06d444f58721ec8d05d0986794a804279",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "research/keuss_accepted_timeline.json": {
+      "sha": "8d992bdce04f04a583ada12ed6f1329bda9c590e",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "research/plans/2026-10-29-accepted-keuss.md": {
+      "sha": "6456d19247bbd315ecea5593f2a4eef7b9cb95ad",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "research/plans/2026-10-29-audit.md": {
+      "sha": "754ccdf02e4b0a604358a0b9f6a03cf8abfd5516",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "research/plans/2026-10-29-camk2b-reproduction.md": {
+      "sha": "997fadd457bdf073c40442e4c16cff12604e0053",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "research/plans/2026-10-29-chan-timing.md": {
+      "sha": "af061d38c64fcba6ae7607be7a42092a85eb2a0a",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "research/plans/2026-10-29-descriptive.md": {
+      "sha": "8441b7b5ffde7ecf2ca1f41462f4f02c85dfbcd4",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "research/plans/2026-10-29-event-reference.md": {
+      "sha": "e73d962e10672bdc9d3306997a8745884b81ac85",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "research/plans/2026-10-29-functional-evidence.md": {
+      "sha": "8f4fdc48085ed514c00a9fadf8265fa5777138e1",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "research/plans/2026-10-29-image-metadata-qc.md": {
+      "sha": "12cb2690ebdf8170553ffbb820e2efdb478f85b6",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "research/plans/2026-10-29-isoforms.md": {
+      "sha": "6d09e0f51d72fcc4dd7161ef8e524b0d6bc3e57c",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "research/plans/2026-10-29-mea-software-audit.md": {
+      "sha": "c3b62e82b131cd1e86c2b5d21fb3378d91f86319",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "research/plans/2026-10-29-prior-work-reconciliation.md": {
+      "sha": "17362656722fa077800e8df79fde0d27a651766b",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "research/plans/2026-10-29-reversal-design.md": {
+      "sha": "0e31cabf20a35280adf0af2b73a9103fb9840566",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "research/prototypes/mea_synthetic/README.md": {
+      "sha": "3de8adf4a3f18cff73213dca6c27c54cd6b69813",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "research/prototypes/mea_synthetic/base/src/analizar_csv_estandarizado.py": {
+      "sha": "cee561d4f343d162d4700765cfde65525953b37a",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "research/prototypes/mea_synthetic/base/src/mea_pipeline.py": {
+      "sha": "047e10c012e8020c3d77f6788029d5fcc6c594f0",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "research/prototypes/mea_synthetic/base/tests/test_design.py": {
+      "sha": "97375f50dc2fc1a3c71d54fc0768540f6ba5f3b1",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "research/prototypes/mea_synthetic/requirements-audited.txt": {
+      "sha": "0b9a45705bc35b97cfb45716caea4a120d74f094",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "research/prototypes/mea_synthetic/sensitivity/analisis_sensibilidad.py": {
+      "sha": "16355694ba9eb85ca294a8fd55a462d33a4bd4b2",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "research/prototypes/mea_synthetic/sensitivity/test_sensibilidad.py": {
+      "sha": "5385c55792d2879e33b9897208a975b692b3a0c1",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "research/prototypes/mea_synthetic/source_manifest.json": {
+      "sha": "2d8054e82f4f4fb9f911e4c5dd9d3b2a05d64cd5",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "scripts/audit_chan_timing.py": {
+      "sha": "cd485ed3304515026808991ed6198b1bca0946f4",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "scripts/audit_functional_evidence.py": {
+      "sha": "1af5497d5958177fa991b25cc1656674c90a5eb1",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "scripts/audit_mea_software.py": {
+      "sha": "bc17afec6625d9c86fc3037feb9e39379926101d",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "scripts/audit_regeneration_timing.py": {
+      "sha": "b3214cd658662926838ed5b62181c6ae11ccb058",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "scripts/check_event_reference.py": {
+      "sha": "dd301cf166370e6638b0205f65dcd956cc45d68f",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "scripts/describe_targets.py": {
+      "sha": "7aa6b84a5104311e704e6fd676318a49a3455f47",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "scripts/geo_audit.py": {
+      "sha": "f89d03f0cdeb84db0458971e6dd001307e56aafe",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "scripts/geo_inventory.py": {
+      "sha": "f278265d6e7212a4296ed64ca33b7786192e16bc",
+      "source": "963b176436907be0ba265bd2ff9c4a2f2e05d45a"
+    },
+    "scripts/image_metadata_qc.py": {
+      "sha": "bdb0cc52ef2b8ff28a380b3082c4d2fe0aa5f703",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "scripts/inventory_prior_work.py": {
+      "sha": "3bb370e9a9dfe2c30f927497477264336f86945f",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "scripts/inventory_regeneration_data.py": {
+      "sha": "d6fa77d057a9b2e423e74bf563a44e1a8033e596",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "scripts/keuss_timeline.py": {
+      "sha": "e5ac869241b5fa7c9a4a66da0a12641b3dab2ab9",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "scripts/map_isoforms.py": {
+      "sha": "14bed6a155077d7f80b9df0323daee6899122c96",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "scripts/mea_audit_fixtures.py": {
+      "sha": "1a29e5f91eea5e0c40012f29c85accb55c1fa099",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "scripts/mea_input_qc.py": {
+      "sha": "b5bbc601265b8745fb8d1eb2f8831774cd62b298",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "scripts/pubmed_watch.py": {
+      "sha": "006b33cb6b460644c7e918519cd567a8b885d939",
+      "source": "963b176436907be0ba265bd2ff9c4a2f2e05d45a"
+    },
+    "scripts/reproduce_camk2b.py": {
+      "sha": "54d7eae07a2efb0842b1116d084f5b7240249290",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "state/seen_pubmed_ids.json": {
+      "sha": "a5cc23b23e1908947ff857516292b8ccffe86370",
+      "source": "963b176436907be0ba265bd2ff9c4a2f2e05d45a"
+    },
+    "tests/test_camk2b_reproduction.py": {
+      "sha": "2df0970e125f0a9fb90bb5df4594c65437054dc1",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "tests/test_chan_timing.py": {
+      "sha": "c7afcaabc6b81b4212a42c8104d9bb6dcf35ad4d",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "tests/test_descriptive.py": {
+      "sha": "e74f8943c3932bca58b6f1b4d3bfd86fe87eb128",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "tests/test_event_reference.py": {
+      "sha": "c87076ee9e14875d30c2df3f1612c78539ca5bc9",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "tests/test_functional_evidence.py": {
+      "sha": "a677a6afb464ae8f1ffac068de00875e2610024d",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "tests/test_geo_audit.py": {
+      "sha": "a6b403f00472290183d36c7ad6cda4360c2463d8",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "tests/test_image_metadata_qc.py": {
+      "sha": "462a62ac5123ef5f8c6a08cc94121833ff137484",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "tests/test_isoforms.py": {
+      "sha": "d71474f3db271880a08afb52c62b329ecc54dfca",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "tests/test_keuss_timeline.py": {
+      "sha": "cf6c689d6068c612eab03e623af58b396d5f26d2",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "tests/test_mea_input_qc.py": {
+      "sha": "c6bb5585dcd365c3758f334f0fed9ed053e144bb",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "tests/test_prior_work_inventory.py": {
+      "sha": "b04404863dc2d2e357bfc396d27db50048b45e2a",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "tests/test_regeneration_timing.py": {
+      "sha": "da9869f4299656f4ddddccf21e24a04253d89ad7",
+      "source": "e3ca351d5bf79430abf283b12f65862e363bc707"
+    },
+    "tests/test_watchers.py": {
+      "sha": "fb854c0a0f25485acf5809a2d9574fbeedc1c83c",
+      "source": "963b176436907be0ba265bd2ff9c4a2f2e05d45a"
+    },
+    ".github/workflows/geo-isoseq-audit.yml": {
+      "sha": "0ba0fe940fa85318a6ea6bf3b0feefd74da96b62",
+      "source": "963b176436907be0ba265bd2ff9c4a2f2e05d45a"
+    },
+    ".github/workflows/isoseq-tests.yml": {
+      "sha": "57c6dc1b9233daeb3bbd71b5d17e66fb34e62fe0",
+      "source": "963b176436907be0ba265bd2ff9c4a2f2e05d45a"
+    },
+    ".github/workflows/shared-junctions.yml": {
+      "sha": "5fd211ccfe411b42a5c081c1b740ab08a0def949",
+      "source": "963b176436907be0ba265bd2ff9c4a2f2e05d45a"
+    },
+    "reports/ALS_CI_metadata_correction_2026-10-29.md": {
+      "sha": "d225e3316653596ab5a8f92ab0a83c6eb189ba1a",
+      "source": "963b176436907be0ba265bd2ff9c4a2f2e05d45a"
+    },
+    "reports/gencode-junction-annotation/REPORT.md": {
+      "sha": "42a0857d1335ad856b61c119e3d6686ee2e8d2df",
+      "source": "963b176436907be0ba265bd2ff9c4a2f2e05d45a"
+    },
+    "reports/gencode-junction-annotation/annotation.tsv": {
+      "sha": "30815000902b594b4a7676565de2a47242a4fc94",
+      "source": "963b176436907be0ba265bd2ff9c4a2f2e05d45a"
+    },
+    "reports/gencode-junction-annotation/author_supplement_inventory.json": {
+      "sha": "64d7465b351261e6845ebe9958dfe7bf91444fd6",
+      "source": "963b176436907be0ba265bd2ff9c4a2f2e05d45a"
+    },
+    "reports/gencode-junction-annotation/errors.json": {
+      "sha": "c422f99b7355232a0ec86f7c52f773ad732c4560",
+      "source": "963b176436907be0ba265bd2ff9c4a2f2e05d45a"
+    },
+    "reports/gencode-junction-annotation/run.json": {
+      "sha": "f726910a7afd353c5f0f0f9730252d20f44817b0",
+      "source": "963b176436907be0ba265bd2ff9c4a2f2e05d45a"
+    },
+    "reports/gencode-junction-annotation/summary.json": {
+      "sha": "9eb2a56975e46135f74a155699595d3f4f20968b",
+      "source": "963b176436907be0ba265bd2ff9c4a2f2e05d45a"
+    },
+    "reports/gencode-junction-annotation/tests.txt": {
+      "sha": "c4eed85decabc79e60cbf52461cc027a671bb038",
+      "source": "963b176436907be0ba265bd2ff9c4a2f2e05d45a"
+    },
+    "reports/isoseq-target-evidence-2026-10-29.md": {
+      "sha": "8f18b1e2295484ed596b6f191927496ee50d3f68",
+      "source": "963b176436907be0ba265bd2ff9c4a2f2e05d45a"
+    },
+    "reports/junction-filter-reconciliation/DATA_DICTIONARY.md": {
+      "sha": "e89defb930abde7727e30de27d59a6c26bbe64bd",
+      "source": "963b176436907be0ba265bd2ff9c4a2f2e05d45a"
+    },
+    "reports/junction-filter-reconciliation/REPORT.md": {
+      "sha": "8e56b978fdc6758f317aa2f1deec625f5a7f397d",
+      "source": "963b176436907be0ba265bd2ff9c4a2f2e05d45a"
+    },
+    "reports/junction-filter-reconciliation/errors.json": {
+      "sha": "c625b09f983b2faa0f19aa841409aaa4cad40b8f",
+      "source": "963b176436907be0ba265bd2ff9c4a2f2e05d45a"
+    },
+    "reports/junction-filter-reconciliation/original_21_structural_keys.tsv": {
+      "sha": "6ac85957dee96a06cfd746b38383131a5a5ed842",
+      "source": "963b176436907be0ba265bd2ff9c4a2f2e05d45a"
+    },
+    "reports/junction-filter-reconciliation/reconciliation.json": {
+      "sha": "3f3bea921669fcf9f587776c81a03e4642b1b585",
+      "source": "963b176436907be0ba265bd2ff9c4a2f2e05d45a"
+    },
+    "reports/junction-filter-reconciliation/repeat_verification.json": {
+      "sha": "7625d9d2e8f8b7bb4e0be97b97b055414cd4c845",
+      "source": "963b176436907be0ba265bd2ff9c4a2f2e05d45a"
+    },
+    "reports/junction-filter-reconciliation/run.json": {
+      "sha": "df81543cbe03101ff22c4a2475473417fd288780",
+      "source": "963b176436907be0ba265bd2ff9c4a2f2e05d45a"
+    },
+    "reports/junction-filter-reconciliation/source_inventory.json": {
+      "sha": "d16d298ef0edf4c5ef2395be0913d53235b5062e",
+      "source": "963b176436907be0ba265bd2ff9c4a2f2e05d45a"
+    },
+    "reports/junction-filter-reconciliation/structural_membership.tsv": {
+      "sha": "239816e0c1fe1de972e14faf7c86f57ee3fb1116",
+      "source": "963b176436907be0ba265bd2ff9c4a2f2e05d45a"
+    },
+    "reports/junction-filter-reconciliation/tests.txt": {
+      "sha": "e5d78cdb2084b3020e8f547f60bb66ac6709af74",
+      "source": "963b176436907be0ba265bd2ff9c4a2f2e05d45a"
+    },
+    "reports/junction-filter-verification-2026-10-29.md": {
+      "sha": "df70d9a72510bca7555c5ed65b44cde04cf1056f",
+      "source": "963b176436907be0ba265bd2ff9c4a2f2e05d45a"
+    },
+    "reports/mapping-positive-controls/GSE310723_historical_name_only.tsv": {
+      "sha": "9e751d2a3c9f6073d88289ea5336a81f3da82bef",
+      "source": "963b176436907be0ba265bd2ff9c4a2f2e05d45a"
+    },
+    "reports/mapping-positive-controls/GSE310723_main_before_hardening.tsv": {
+      "sha": "ccf0fd642e603580185f205f6becfc06f036e4dd",
+      "source": "963b176436907be0ba265bd2ff9c4a2f2e05d45a"
+    },
+    "reports/mapping-positive-controls/GSE310723_targets.tsv": {
+      "sha": "ccf0fd642e603580185f205f6becfc06f036e4dd",
+      "source": "963b176436907be0ba265bd2ff9c4a2f2e05d45a"
+    },
+    "reports/mapping-positive-controls/GSE315972_historical_name_only.tsv": {
+      "sha": "9e751d2a3c9f6073d88289ea5336a81f3da82bef",
+      "source": "963b176436907be0ba265bd2ff9c4a2f2e05d45a"
+    },
+    "reports/mapping-positive-controls/GSE315972_main_before_hardening.tsv": {
+      "sha": "a9c80453fd2a8dfdce452d2f998f8bdae70e3e6d",
+      "source": "963b176436907be0ba265bd2ff9c4a2f2e05d45a"
+    },
+    "reports/mapping-positive-controls/GSE315972_targets.tsv": {
+      "sha": "a9c80453fd2a8dfdce452d2f998f8bdae70e3e6d",
+      "source": "963b176436907be0ba265bd2ff9c4a2f2e05d45a"
+    },
+    "reports/mapping-positive-controls/REPORT.md": {
+      "sha": "65ea82ce27073245e8c155f4ef8a0ffe55775c10",
+      "source": "963b176436907be0ba265bd2ff9c4a2f2e05d45a"
+    },
+    "reports/mapping-positive-controls/errors.json": {
+      "sha": "4e216c66477a160dee24b55b4172d6b804e01672",
+      "source": "963b176436907be0ba265bd2ff9c4a2f2e05d45a"
+    },
+    "reports/mapping-positive-controls/remote_evidence.json": {
+      "sha": "42141cbdde67588d41a95b2b1df7677ea98ccea3",
+      "source": "963b176436907be0ba265bd2ff9c4a2f2e05d45a"
+    },
+    "reports/mapping-positive-controls/reproduction.json": {
+      "sha": "2fc09d3bb2aada2c98e224664df535a67c23269e",
+      "source": "963b176436907be0ba265bd2ff9c4a2f2e05d45a"
+    },
+    "reports/mapping-positive-controls/run.json": {
+      "sha": "ed5de5dc8fc3d5f7904005103da2d73d1dc85934",
+      "source": "963b176436907be0ba265bd2ff9c4a2f2e05d45a"
+    },
+    "reports/mapping-positive-controls/tests.txt": {
+      "sha": "dcace119270b1ef6df8464b6b9d66bcc4ef225d6",
+      "source": "963b176436907be0ba265bd2ff9c4a2f2e05d45a"
+    },
+    "reports/shared-junctions-independent-audit-2026-10-29.md": {
+      "sha": "4ed6e5fb24b458e6ce82298762d8d81a5375a50e",
+      "source": "963b176436907be0ba265bd2ff9c4a2f2e05d45a"
+    },
+    "research/AGRN_CAMK2B_EVIDENCE_2026-10-29.md": {
+      "sha": "0d2663f965be473e4162af947a7d98afd7695f30",
+      "source": "963b176436907be0ba265bd2ff9c4a2f2e05d45a"
+    },
+    "research/AUDIT_2026-10-29.md": {
+      "sha": "b9ae51040f544d625b865575b902b61d5ea1d715",
+      "source": "963b176436907be0ba265bd2ff9c4a2f2e05d45a"
+    },
+    "research/GSE315972_GSM_GROUPS.md": {
+      "sha": "c2345b9af1392e3c6a6f1536c80b69a498fd6d4f",
+      "source": "963b176436907be0ba265bd2ff9c4a2f2e05d45a"
+    },
+    "research/KEUSS_GUO_TIMELINE_AUDIT_2026-10-29.md": {
+      "sha": "b84c00ae89bbed4524e0b5edb7cac335b775cd9f",
+      "source": "963b176436907be0ba265bd2ff9c4a2f2e05d45a"
+    },
+    "research/MASTER_EVIDENCE.md": {
+      "sha": "165771de93853381a5d88bb4af2cadfac1dccf16",
+      "source": "963b176436907be0ba265bd2ff9c4a2f2e05d45a"
+    },
+    "research/TDP43_FUNCTIONAL_RESCUE_EVIDENCE_MATRIX_2026-10-29.md": {
+      "sha": "6055313daf7745324f059b10c6dce008412cf44a",
+      "source": "963b176436907be0ba265bd2ff9c4a2f2e05d45a"
+    },
+    "research/UNC13A_POST_DEFICIT_PROTOCOL_v0.1.md": {
+      "sha": "3912e0c1a9e77101fe96d3477493a1cd0edcb9e4",
+      "source": "963b176436907be0ba265bd2ff9c4a2f2e05d45a"
+    },
+    "research/UNC13A_POST_DEFICIT_PROTOCOL_v0.2.md": {
+      "sha": "475af54a25fad903f60999ef28bd54c9b26ff93c",
+      "source": "963b176436907be0ba265bd2ff9c4a2f2e05d45a"
+    },
+    "research/UNC13A_POST_DEFICIT_PROTOCOL_v0.3.md": {
+      "sha": "61f749efac38bf93ad31f148c9aea87f0a24c901",
+      "source": "963b176436907be0ba265bd2ff9c4a2f2e05d45a"
+    },
+    "research/plans/2026-10-29-gencode-junctions.md": {
+      "sha": "3fee1db0d0357e96e2b53f7fb34c5a256b72be47",
+      "source": "963b176436907be0ba265bd2ff9c4a2f2e05d45a"
+    },
+    "research/plans/2026-10-29-junction-filter-reconciliation.md": {
+      "sha": "5d82b7017c8c7884f05c5809631ce57be75d9035",
+      "source": "963b176436907be0ba265bd2ff9c4a2f2e05d45a"
+    },
+    "research/plans/2026-10-29-main-mapping-reconciliation.md": {
+      "sha": "544d71b67cffacbe1185862b2c2a10ece40c8ab8",
+      "source": "963b176436907be0ba265bd2ff9c4a2f2e05d45a"
+    },
+    "research/prototypes/junction_streaming_legacy.py": {
+      "sha": "f3820c7c2583821840b320ddaaef247a0d4a3215",
+      "source": "963b176436907be0ba265bd2ff9c4a2f2e05d45a"
+    },
+    "research/references/geo_isoseq_sources_20261029.json": {
+      "sha": "1b5bb3b06db9f580d01fb3d7fe5687ebd2858f71",
+      "source": "963b176436907be0ba265bd2ff9c4a2f2e05d45a"
+    },
+    "research/references/target_gene_ids_gencode_v47.json": {
+      "sha": "8ee6b358c76845aba289e8e2ef25232b1b37ab0d",
+      "source": "963b176436907be0ba265bd2ff9c4a2f2e05d45a"
+    },
+    "scripts/annotate_gencode_junctions.py": {
+      "sha": "a7dd7fde8913d5a44cd0d0742429aa9ece2fb262",
+      "source": "963b176436907be0ba265bd2ff9c4a2f2e05d45a"
+    },
+    "scripts/audit_shared_junctions.py": {
+      "sha": "541a0738d3b47f28a4209d3a644ef5f04d13018d",
+      "source": "963b176436907be0ba265bd2ff9c4a2f2e05d45a"
+    },
+    "scripts/export_target_isoforms.py": {
+      "sha": "77355f7268e2c6fe47a48f642770797d384880b5",
+      "source": "963b176436907be0ba265bd2ff9c4a2f2e05d45a"
+    },
+    "scripts/filter_shared_junctions.py": {
+      "sha": "d4c40712b24efacad2fb521ae8a9cb2e1fe3001a",
+      "source": "963b176436907be0ba265bd2ff9c4a2f2e05d45a"
+    },
+    "scripts/map_isoseq_gtf.py": {
+      "sha": "e433758e358f19724d42d336b840362ba2a225b4",
+      "source": "963b176436907be0ba265bd2ff9c4a2f2e05d45a"
+    },
+    "scripts/reconcile_shared_junctions.py": {
+      "sha": "de387c5e56d153301db899e377b9cdb61b6f6ffc",
+      "source": "963b176436907be0ba265bd2ff9c4a2f2e05d45a"
+    },
+    "scripts/reproduce_mapping_controls.py": {
+      "sha": "b0f7c97794410fcb7ced76bd6ed87cd5593b7ab9",
+      "source": "963b176436907be0ba265bd2ff9c4a2f2e05d45a"
+    },
+    "tests/test_gencode_junctions.py": {
+      "sha": "425aedf4e2f49f3a5bed02a19eb333eb446e7bb1",
+      "source": "963b176436907be0ba265bd2ff9c4a2f2e05d45a"
+    },
+    "tests/test_map_isoseq_gtf.py": {
+      "sha": "b60809a1ee6211f29e69bc9f172dfea3bc4ac6f2",
+      "source": "963b176436907be0ba265bd2ff9c4a2f2e05d45a"
+    },
+    "tests/test_shared_junction_reconciliation.py": {
+      "sha": "7114915df9b330e310dd68addfb86b7ebb160077",
+      "source": "963b176436907be0ba265bd2ff9c4a2f2e05d45a"
+    }
+  },
+  "shared_resolution_paths": [
+    ".github/workflows/daily.yml",
+    "README.md",
+    "reports/2026-10-29-pubmed.md",
+    "research/BACKLOG.md",
+    "research/STATE.md",
+    "state/seen_pubmed_ids.json"
+  ]
+}

@@ -1,0 +1,11 @@
+test_duplication_not_allowed (test_design.TestModel.test_duplication_not_allowed) ... ok
+test_eligibility_precedes_treatment (test_design.TestModel.test_eligibility_precedes_treatment) ... ok
+test_mortality_not_excluded (test_design.TestModel.test_mortality_not_excluded) ... ok
+test_randomization_balance_by_stratum (test_design.TestModel.test_randomization_balance_by_stratum) ... ok
+test_scenarios_separated (test_design.TestModel.test_scenarios_separated) ... ok
+test_well_not_electrode_is_analysis_unit (test_design.TestModel.test_well_not_electrode_is_analysis_unit) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 1.183s
+
+OK

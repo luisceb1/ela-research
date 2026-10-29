@@ -1,0 +1,2 @@
+gse	txname	symbol	chrom	strand	left_exonic_boundary	right_exonic_boundary	evidence	doi	full_transcript_identity	polyA_site
+GSE310723	BambuTx9249	STMN2	chr8	+	79611214	79616822	exact_junction_match_to_independent_primary_paper	10.1186/s13024-025-00820-5	not_established	not_established

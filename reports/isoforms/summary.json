@@ -1,0 +1,66 @@
+{
+  "datasets": {
+    "GSE310723": {
+      "STMN2": {
+        "ENST": 3,
+        "at_least_2_unique_in_any_sample": 4,
+        "detected_any_sample": 4,
+        "full_chain_in_gencode_v47": 3,
+        "non_ENST": 1,
+        "transcripts": 4,
+        "transcripts_with_unannotated_internal_exons": 0
+      },
+      "UNC13A": {
+        "ENST": 7,
+        "at_least_2_unique_in_any_sample": 3,
+        "detected_any_sample": 3,
+        "full_chain_in_gencode_v47": 7,
+        "non_ENST": 0,
+        "transcripts": 7,
+        "transcripts_with_unannotated_internal_exons": 0
+      }
+    },
+    "GSE315972": {
+      "STMN2": {
+        "ENST": 3,
+        "at_least_2_unique_in_any_sample": 3,
+        "detected_any_sample": 3,
+        "full_chain_in_gencode_v47": 3,
+        "non_ENST": 0,
+        "transcripts": 3,
+        "transcripts_with_unannotated_internal_exons": 0
+      },
+      "UNC13A": {
+        "ENST": 7,
+        "at_least_2_unique_in_any_sample": 3,
+        "detected_any_sample": 3,
+        "full_chain_in_gencode_v47": 7,
+        "non_ENST": 0,
+        "transcripts": 7,
+        "transcripts_with_unannotated_internal_exons": 0
+      }
+    }
+  },
+  "reference": {
+    "ACTB": {
+      "gene": "ENSG00000075624",
+      "transcripts": 23
+    },
+    "GAPDH": {
+      "gene": "ENSG00000111640",
+      "transcripts": 11
+    },
+    "STMN2": {
+      "gene": "ENSG00000104435",
+      "transcripts": 3
+    },
+    "UNC13A": {
+      "gene": "ENSG00000130477",
+      "transcripts": 7
+    }
+  },
+  "shared_full_chains": {
+    "STMN2": 3,
+    "UNC13A": 7
+  }
+}

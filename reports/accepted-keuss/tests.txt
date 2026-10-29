@@ -1,0 +1,50 @@
+test_all_zero_controls_are_not_finite_fold_change (test_descriptive.DescriptiveTests.test_all_zero_controls_are_not_finite_fold_change) ... ok
+test_single_library_group_rejected (test_descriptive.DescriptiveTests.test_single_library_group_rejected) ... ok
+test_small_group_loo_can_reverse_direction (test_descriptive.DescriptiveTests.test_small_group_loo_can_reverse_direction) ... ok
+test_zero_baseline_is_na_not_pseudocount (test_descriptive.DescriptiveTests.test_zero_baseline_is_na_not_pseudocount) ... ok
+test_zero_control_deletion_not_silently_removed (test_descriptive.DescriptiveTests.test_zero_control_deletion_not_silently_removed) ... ok
+test_exact_junction_and_negative_controls (test_event_reference.EventReferenceTests.test_exact_junction_and_negative_controls) ... ok
+test_full_length_and_unique_are_not_nested (test_event_reference.EventReferenceTests.test_full_length_and_unique_are_not_nested) ... ok
+test_missing_and_ambiguous_coordinates_rejected (test_event_reference.EventReferenceTests.test_missing_and_ambiguous_coordinates_rejected) ... ok
+test_primary_source_projection_retains_coordinates_not_subjects (test_event_reference.EventReferenceTests.test_primary_source_projection_retains_coordinates_not_subjects) ... ok
+test_rounding_tolerance_does_not_hide_material_violations (test_event_reference.EventReferenceTests.test_rounding_tolerance_does_not_hide_material_violations) ... ok
+test_scalar_source_formula_does_not_require_even_output (test_event_reference.EventReferenceTests.test_scalar_source_formula_does_not_require_even_output) ... ok
+test_wrong_assembly_and_doi_rejected (test_event_reference.EventReferenceTests.test_wrong_assembly_and_doi_rejected) ... ok
+test_cells_cannot_be_promoted_to_clinical_efficacy (test_functional_evidence.EvidenceTests.test_cells_cannot_be_promoted_to_clinical_efficacy) ... ok
+test_concurrent_cannot_be_promoted_to_delayed (test_functional_evidence.EvidenceTests.test_concurrent_cannot_be_promoted_to_delayed) ... ok
+test_curated_matrix_consistent (test_functional_evidence.EvidenceTests.test_curated_matrix_consistent) ... ok
+test_duplicate_units_rejected (test_functional_evidence.EvidenceTests.test_duplicate_units_rejected) ... ok
+test_bad_counts_fail_closed (test_geo_audit.AuditTests.test_bad_counts_fail_closed) ... ok
+test_bad_gzip_rejected (test_geo_audit.AuditTests.test_bad_gzip_rejected) ... ok
+test_bambutx_ids_are_dataset_scoped (test_geo_audit.AuditTests.test_bambutx_ids_are_dataset_scoped) ... ok
+test_cache_hash_mismatch (test_geo_audit.AuditTests.test_cache_hash_mismatch) ... ok
+test_count_order_mismatch_rejected (test_geo_audit.AuditTests.test_count_order_mismatch_rejected) ... ok
+test_gtf_attribute_inventory_counts_rows (test_geo_audit.AuditTests.test_gtf_attribute_inventory_counts_rows) ... ok
+test_gtf_conflicting_identity (test_geo_audit.AuditTests.test_gtf_conflicting_identity) ... ok
+test_invalid_gtf_coords (test_geo_audit.AuditTests.test_invalid_gtf_coords) ... ok
+test_mapping_exact_versions_and_gene_conflicts (test_geo_audit.AuditTests.test_mapping_exact_versions_and_gene_conflicts) ... ok
+test_metadata_allowlist (test_geo_audit.AuditTests.test_metadata_allowlist) ... ok
+test_ragged_and_duplicate_ids (test_geo_audit.AuditTests.test_ragged_and_duplicate_ids) ... ok
+test_unique_counts_cannot_exceed_total (test_geo_audit.AuditTests.test_unique_counts_cannot_exceed_total) ... ok
+test_unknown_treatment_and_ambiguous_sample_fail (test_geo_audit.AuditTests.test_unknown_treatment_and_ambiguous_sample_fail) ... ok
+test_annotated_exons_do_not_imply_annotated_chain (test_isoforms.IsoformTests.test_annotated_exons_do_not_imply_annotated_chain) ... ok
+test_chain_validation (test_isoforms.IsoformTests.test_chain_validation) ... ok
+test_external_symbol_disagreement_fails (test_isoforms.IsoformTests.test_external_symbol_disagreement_fails) ... ok
+test_gencode_repeated_tag_is_valid (test_isoforms.IsoformTests.test_gencode_repeated_tag_is_valid) ... ok
+test_junction_boundaries_not_intron_coordinates (test_isoforms.IsoformTests.test_junction_boundaries_not_intron_coordinates) ... ok
+test_overlap_is_not_target_assignment (test_isoforms.IsoformTests.test_overlap_is_not_target_assignment) ... ok
+test_strand_is_part_of_identity (test_isoforms.IsoformTests.test_strand_is_part_of_identity) ... ok
+test_terminal_difference_not_internal_exon (test_isoforms.IsoformTests.test_terminal_difference_not_internal_exon) ... ok
+test_after_kd_is_not_automatically_reversal (test_keuss_timeline.TimelineTests.test_after_kd_is_not_automatically_reversal) ... ok
+test_concurrent (test_keuss_timeline.TimelineTests.test_concurrent) ... ok
+test_invalid_day (test_keuss_timeline.TimelineTests.test_invalid_day) ... ok
+test_late_kd_with_early_aso_is_prevention (test_keuss_timeline.TimelineTests.test_late_kd_with_early_aso_is_prevention) ... ok
+test_structure (test_watchers.TestGeo.test_structure) ... ok
+test_bad_response_rejected (test_watchers.TestPubmed.test_bad_response_rejected) ... ok
+test_filters_non_pubmed_records (test_watchers.TestPubmed.test_filters_non_pubmed_records) ... ok
+test_untrusted_title_sanitized (test_watchers.TestPubmed.test_untrusted_title_sanitized) ... ok
+
+----------------------------------------------------------------------
+Ran 45 tests in 0.011s
+
+OK

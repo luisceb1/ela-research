@@ -1,0 +1,82 @@
+{
+  "scope": "software audit only; no biological or experimental validation",
+  "source_hashes_verified": 5,
+  "original_unit_tests": [
+    {
+      "suite": "base",
+      "returncode": 0,
+      "tests_run": 6,
+      "passed": true
+    },
+    {
+      "suite": "sensitivity",
+      "returncode": 0,
+      "tests_run": 5,
+      "passed": true
+    }
+  ],
+  "adversarial_fixtures": [
+    {
+      "fixture": "valid",
+      "data_type": "explicitly_artificial_minimal_counterexample",
+      "original_validation": "accepted",
+      "original_downstream": "recuperación funcional compatible (simulada)",
+      "strict_preflight": "accepted_structurally_only"
+    },
+    {
+      "fixture": "fractional_t0",
+      "data_type": "explicitly_artificial_minimal_counterexample",
+      "original_validation": "accepted",
+      "original_downstream": "recuperación funcional compatible (simulada)",
+      "strict_preflight": "rejected: t0_index: finite integer required"
+    },
+    {
+      "fixture": "no_valid_baseline",
+      "data_type": "explicitly_artificial_minimal_counterexample",
+      "original_validation": "accepted",
+      "original_downstream": "KeyError: ('synthetic_fixture', 'synthetic_D', 'synthetic_late_ASO')",
+      "strict_preflight": "rejected: Three valid observed baseline records required by this prototype"
+    },
+    {
+      "fixture": "missing_sham_time",
+      "data_type": "explicitly_artificial_minimal_counterexample",
+      "original_validation": "accepted",
+      "original_downstream": "KeyError: ('synthetic_fixture', 'synthetic_D', 8)",
+      "strict_preflight": "rejected: Missing valid same-block sham at a required time"
+    },
+    {
+      "fixture": "revival",
+      "data_type": "explicitly_artificial_minimal_counterexample",
+      "original_validation": "accepted",
+      "original_downstream": "sin evidencia del beneficio exigido (simulado)",
+      "strict_preflight": "rejected: Death is absorbing; later status cannot revive a well"
+    },
+    {
+      "fixture": "invalid_viability",
+      "data_type": "explicitly_artificial_minimal_counterexample",
+      "original_validation": "accepted",
+      "original_downstream": "recuperación funcional compatible (simulada)",
+      "strict_preflight": "rejected: viability or qc_ok outside prototype domain"
+    },
+    {
+      "fixture": "missing_control_arm",
+      "data_type": "explicitly_artificial_minimal_counterexample",
+      "original_validation": "accepted",
+      "original_downstream": "ValueError: No randomized differentiation blocks",
+      "strict_preflight": "rejected: Each analyzed block requires both randomized arms"
+    }
+  ],
+  "full_montecarlo_rerun": false,
+  "sensitivity_denominator_counterexample": {
+    "fixture": "all_followups_technically_missing_no_deaths",
+    "seed": 13,
+    "technical_missing_probability": 1.0,
+    "mortality_hazard": 0.0,
+    "reported_n_analyzable_blocks": 8,
+    "finite_mean_contrasts": 0,
+    "evidence_recovery": false,
+    "finding": "reported block count is formed records, not complete analyzable contrasts"
+  },
+  "plots_generated": false,
+  "real_data_import_enabled": false
+}

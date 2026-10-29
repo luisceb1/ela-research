@@ -1,0 +1,10 @@
+{
+  "argv": [
+    "scripts/describe_targets.py"
+  ],
+  "inference": "none; leave-one-out ranges are not confidence intervals",
+  "python": "3.12.14",
+  "randomness": "none",
+  "status": "generated",
+  "utc": "2026-10-29T10:09:10.529732+00:00"
+}

@@ -1,0 +1,19 @@
+{
+  "reference": "GENCODE v47, GRCh38",
+  "source_url": "https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_47/gencode.v47.annotation.gtf.gz",
+  "source_sha256": "df11938c66d2b39f8ebbdb5f1720919321f9cf9d58f02b019753f6a24ca3db24",
+  "source_bytes": 58953903,
+  "panel": {
+    "STMN2": {
+      "gene_id": "ENSG00000104435",
+      "chrom": "chr8",
+      "strand": "+"
+    },
+    "UNC13A": {
+      "gene_id": "ENSG00000130477",
+      "chrom": "chr19",
+      "strand": "-"
+    }
+  },
+  "validation": "Independently rechecked from cached GENCODE gene rows by this task; reference is not an expression cohort"
+}

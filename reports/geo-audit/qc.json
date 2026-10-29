@@ -1,0 +1,114 @@
+{
+  "GSE310723": {
+    "comparison": {
+      "compared_rows": 392871,
+      "counts_fractional_cells": 133040,
+      "unique_le_counts": true
+    },
+    "gtf_attribute_counts": {
+      "exon_number": 2232577,
+      "gene_id": 2625448,
+      "transcript_id": 2625448
+    },
+    "gtf_features": {
+      "exon": 2232577,
+      "transcript": 392871
+    },
+    "gtf_transcripts": 392871,
+    "uniqueCounts": {
+      "assigned_counts": [
+        376852.0,
+        421914.0,
+        330066.0,
+        483824.0
+      ],
+      "columns": [
+        "TXNAME",
+        "GENEID",
+        "i3N_Ctrl_5Aza_hg38_minimap2",
+        "i3N_Ctrl_noAza_hg38_minimap2",
+        "i3N_TDP43KD_5Aza_hg38_minimap2",
+        "i3N_TDP43KD_noAza_hg38_minimap2"
+      ],
+      "detected_transcripts": [
+        39100,
+        40864,
+        35322,
+        39966
+      ],
+      "genes": 77973,
+      "gtf_not_in_counts": 0,
+      "noninteger_counts": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "rows": 392871
+    }
+  },
+  "GSE315972": {
+    "comparison": {
+      "compared_rows": 401720,
+      "counts_fractional_cells": 258417,
+      "unique_le_counts": true
+    },
+    "gtf_attribute_counts": {
+      "exon_number": 2266926,
+      "gene_id": 2668646,
+      "transcript_id": 2668646
+    },
+    "gtf_features": {
+      "exon": 2266926,
+      "transcript": 401720
+    },
+    "gtf_transcripts": 401720,
+    "uniqueCounts": {
+      "assigned_counts": [
+        306834.0,
+        354276.0,
+        327254.0,
+        341072.0,
+        261270.0,
+        230530.0,
+        373122.0,
+        433750.0
+      ],
+      "columns": [
+        "TXNAME",
+        "GENEID",
+        "ALS-C9_02759_clustered_hg38_minimap2",
+        "ALS-C9_03363_clustered_hg38_minimap2",
+        "ALS-ci_02988_clustered_hg38_minimap2",
+        "ALS-ci_04118_clustered_hg38_minimap2",
+        "ALS_02763_clustered_hg38_minimap2",
+        "ALS_03634_clustered_hg38_minimap2",
+        "CTL_03374_clustered_hg38_minimap2",
+        "CTL_03662_clustered_hg38_minimap2"
+      ],
+      "detected_transcripts": [
+        39393,
+        44170,
+        38452,
+        42292,
+        34300,
+        30316,
+        42482,
+        47291
+      ],
+      "genes": 79571,
+      "gtf_not_in_counts": 0,
+      "noninteger_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "rows": 401720
+    }
+  }
+}

@@ -1,30 +1,28 @@
-# Registro maestro de evidencia ELA — v0.1 (2026-10-29)
+# Registro maestro de evidencia — 29/10/2026
 
-Este inventario distingue **resultados comunicados en análisis previos** de resultados **reproducidos desde este repositorio**. No atribuir validación independiente a un resultado hasta ejecutar aquí su código sobre sus datos y auditar los outputs.
+Este registro sustituye los estados históricos. Reproducción técnica no equivale a replicación independiente, descubrimiento o eficacia. Ninguna línea acredita beneficio clínico propio.
 
-| ID | Línea | Fuente | Observación previa / objetivo | Estado de reproducción en repositorio |
-|---|---|---|---|---|
-| ELA-01 | GSE126542 expresión | Núcleos corticales, 7 pares TDP-43 nuclear +/- | STMN2 -51,5% con median-of-ratios, descenso en 7/7; UNC13A ARN nuclear total +41,8%; TARDBP no consistente | **PENDIENTE** importar código, recuentos y reejecutar |
-| ELA-02 | GSE126542 uniones | Datos secundarios publicados por Fratta | Cuantificación de uniones crípticas STMN2/UNC13A; inspeccionar deduplicación y denominadores | **PENDIENTE** auditar original, script, uniones y PSI |
-| ELA-03 | GSE121569 expresión | Motoneuronas cultivadas siTDP43 / siScr | STMN2 -55,1%; UNC13A -9,2%; TARDBP -59,8%; dos diferenciaciones, no seis réplicas biológicas | **PENDIENTE** reejecutar y auditar pseudorreplicación |
-| ELA-04 | GSE126542 genética | Paquete de análisis previo | Hipótesis exploratoria; no se afirma un hallazgo hasta inspección | **PENDIENTE** recuperar artefactos |
-| ELA-05 | CAMK2B | Paquete de validación independiente previo | Resultado y controles no verificados en GitHub | **PENDIENTE** recuperar artefactos |
-| ELA-06 | Péptidos crípticos | Paquete de cribado previo | Solo candidatos exploratorios, sin prueba proteómica | **PENDIENTE** recuperar artefactos |
-| ELA-07 | UNC13A MEA | Simulador y sensibilidad previos | Diferenciar recuperación, protección y ausencia de efecto; efectos supuestos, no medidos | **PENDIENTE** importar simulador y pruebas |
-| ELA-08 | GSE310723 Iso-Seq | GEO, i3N 4 condiciones | 392871 filas de transcritos en uniqueCounts; inventario estructural | **ESTRUCTURA VERIFICADA**; bio-QC y mapping pendientes |
-| ELA-09 | GSE315972 Iso-Seq | GEO, tejido humano 8 columnas | 401720 filas de transcritos; grupos clínicos no confirmados | **ESTRUCTURA VERIFICADA**; bio-QC y mapping pendientes |
-| ELA-10 | Rescate STMN2/UNC13A | Propuestas para colaboración | Intervención posterior a déficit; dianas moleculares y medidas funcionales | **PROPUESTA**, no prueba experimental |
+| ID | Línea | Estado verificable | Pendiente o limitación |
+|---|---|---|---|
+| ELA-01 | GSE126542 expresión | Paquete previo inventariado en reports/prior-work-reconciliation | Reejecutar y auditar; porcentajes narrados previamente no están reproducidos aquí |
+| ELA-02 | GSE126542 uniones | Fuentes previas inventariadas | Deduplicación, denominadores y PSI por verificar; no importar datos clínicos |
+| ELA-03 | GSE121569 | Paquete previo inventariado | Reproducción y sensibilidad; dos diferenciaciones no equivalen a seis réplicas biológicas |
+| ELA-04 | Genética | Existencia de material previo registrada | Sin hallazgo validado; revisión permitida de fuentes y proyecciones no personales |
+| ELA-05 | CAMK2B | reports/camk2b-reproduction: resultado estructural agregado reproducido | Evento no reconstruido en catálogo cerebral; no ausencia molecular ni validación independiente |
+| ELA-06 | Péptidos crípticos | Material inventariado | Sin espectrometría independiente ni validación proteómica propia |
+| ELA-07 | UNC13A MEA | reports/mea-software-audit: pruebas y contraejemplos del software sintético | Corregir denominadores/completitud antes de reutilizar; no potencia o eficacia experimental |
+| ELA-08 | GSE310723 | reports/geo-audit, isoforms y mapping-positive-controls: estructura y mapeo ejecutados | Una biblioteca por condición; sin inferencia diferencial |
+| ELA-09 | GSE315972 | Estructura/mapeo ejecutados; corrección agregada 3 CI / 3 no CI / 2 CTL en informe de metadatos | Tejido heterogéneo, covariables/QC biológico incompletos; etiquetas históricas no son grupos cognitivos |
+| ELA-10 | Rescate STMN2/UNC13A | Auditorías Keuss/Chan y propuestas en reports/accepted-keuss, chan-timing y reversal-design | Propuesta funcional, no ensayo; originalidad no certificada |
+| ELA-11 | Uniones compartidas | reports/junction-filter-reconciliation: 21 antiguas reproducidas; pérdida de exones explica discrepancia. 1910 agrupadas, 1901 con soporte asignado positivo | Antiguas 21 no son cribado exhaustivo; modelos/soporte asignado no son lecturas directas |
+| ELA-12 | GENCODE externa | reports/gencode-junction-annotation: 17 exactas / 1881 no encontradas para mismo gen / 3 de gen ausente | Catálogo de autores pendiente. Ausencia en v47 no prueba novedad |
+| ELA-13 | AGRN | Antecedentes publicados y pregunta funcional en research/AGRN_CAMK2B_EVIDENCE_2026-10-29.md | Verificar isoforma/soporte y ensayos previos antes de proponer experimento |
 
-## Interpretación obligatoria
-- Reproducción descriptiva de hechos ya publicados NO equivale a descubrimiento nuevo.
-- ARN total ≠ isoforma funcional ≠ proteína ≠ recuperación de actividad neuronal ≠ beneficio clínico.
-- Los porcentajes ELA-01/03 son observaciones de análisis anteriores, **no verificadas aquí**.
-- Las simulaciones UNC13A MEA no aportan eficacia biológica.
-- El repositorio no almacena información personal de pacientes ni sugiere tratamientos.
-- Para promover estado: script + fuente verificable (GSE/GSM) + hash + tests + tablas + sensibilidad + revisión.
+## Reglas de interpretación
 
-## Próximo ciclo
-1. Ejecutar auditoría de GTF y correspondencia TXNAME/GENEID (Issue #2) tras metadatos y QC (Issue #1).
-2. Importar paquetes originales de análisis previo, preservar artefactos y registrar hashes antes de reproducirlos.
-3. Auditar originalidad con fuentes primarias; jerarquizar candidatos por evidencia, no por novedad aparente.
-4. Presentar a laboratorio una sola hipótesis falsable con controles y endpoints predefinidos.
+- ARN total, isoforma funcional, proteína, recuperación neuronal y beneficio clínico son niveles distintos.
+- Las dos series Iso-Seq del mismo estudio no constituyen validación independiente por su intersección.
+- Datos repetidos en varios paquetes/ejecuciones no son nuevas muestras.
+- Los números de tests documentan controles de software, no cantidad de evidencia experimental.
+- Informes antiguos conservan resultados/versiones y pendientes de entonces. STATE.md y este registro contienen los pendientes actuales.
+- Para promover evidencia: fuente verificable, hash, código ejecutado, controles, tablas, sensibilidad y revisión con el alcance explícito. Una integración no aporta revisión científica externa.

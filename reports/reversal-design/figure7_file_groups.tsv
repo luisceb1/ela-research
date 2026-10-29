@@ -1,0 +1,10 @@
+condition_from_filename	label_not_verified_replicate	times_hours	complete_0_24_48	bytes
+KO_mscarlet	01	0,24,48	True	1321534593
+KO_mscarlet	02	0,24,48	True	1321534143
+KO_tbnmscarlet	01	0,24,48	True	1321534143
+KO_tbnmscarlet	02	0,24,48	True	1321534143
+KO_wtmscarlet	01	0,24,48	True	1321534785
+KO_wtmscarlet	02	0,24,48	True	1321534141
+KO_wtmscarlet	03	0,24,48	True	1321534143
+WT_mscarlet	01	0,24,48	True	1321534143
+WT_mscarlet	02	0,24,48	True	1321534143

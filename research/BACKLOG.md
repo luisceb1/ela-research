@@ -1,21 +1,19 @@
-# Cola priorizada de investigación
+# Backlog vigente — 29/10/2026
 
-**P0 — Auditoría de GEO** [pendiente]
-Inventariar GSE310723 y GSE315972: muestras GSM, grupos, profundidad y estructura de uniqueCounts y GTF. Crear diccionario de datos y control de calidad.
+Consultar STATE.md, MASTER_EVIDENCE.md y reports/repository-integration. Las issues históricas describen incidentes iniciales; no repetir correcciones ya ejecutadas.
 
-**P0 — Mapeo transcriptos/genes** [pendiente]
-Vincular identificadores de isoformas a GTF, centrado en STMN2, UNC13A y otros transcritos crípticos. Registrar los no asignados.
+| Prioridad | Tarea | Estado y siguiente avance |
+|---|---|---|
+| P0 | Consolidación | Autorizada por Luis. Verificar conservación, suite y CI; integrar preservando historia y comprobar estado remoto |
+| P0 | #1 GEO | Inventario y enlace técnico ejecutados; integración no valida calidad biológica completa |
+| P0 | #2/#17/#19 mapeo | Ejecutado por ENSG; controles positivos; incidente cero objetivos resuelto técnicamente |
+| P0 | #20 catálogo | 21/1910 explicado y GENCODE ejecutada; pendiente catálogo de autores y filtros sobre universo corregido |
+| P1 | Suplementos Bolger/crypTE | Próxima tarea científica: descripción/esquema, hashes y convenciones antes de cotejar 1901 claves. No importar tablas clínicas |
+| P1 | #14 GSE126542/GSE121569 | Paquetes inventariados; reproducción completa pendiente. Auditar procedencia, licencia, réplicas, denominadores y sensibilidad |
+| P1 | Descriptivos/escala | Ejecutados; paridad sin explicación. Etiquetas depositadas no equivalen a CI/no CI. No inferencia con n=1 |
+| P1 | #15 CAMK2B/péptidos | CAMK2B estructural reproducido; genética/péptidos pendientes; sin validación proteómica independiente |
+| P1 | #16 MEA | Software auditado; denominadores/completitud y protocolo experimental pendientes. Prototipo solo sintético |
+| P1 | #21 AGRN | Verificar isoforma, soporte y antecedentes antes de priorizar ensayo funcional |
+| P2 | #18 colaboración | Elegir pregunta falsable y controles; borrador sin envío, gasto o laboratorio |
 
-**P1 — Comparación descriptiva de GSE310723** [pendiente]
-Comparar condiciones experimentales sin p-valores espurios; comprobar profundidad, normalización y alternativas.
-
-**P1 — Consistencia de GSE315972** [pendiente]
-Analizar distribución entre muestras, sensibilidad a atípicos, replicación y heterogeneidad celular.
-
-**P1 — Evidencia funcional independiente** [pendiente]
-Contrastar hallazgos moleculares con experimentos de rescate y métricas de función neuronal publicados.
-
-**P2 — Preparación de colaboración** [pendiente]
-Proponer una hipótesis falsable y protocolo mínimo; redactar un correo, pero no enviarlo sin autorización.
-
-Regla antiestancamiento: si una tarea falla por falta de datos o acceso, dejar constancia y avanzar a la siguiente segura. Registrar el estado de cada tarea solo después de producir artefactos comprobables.
+Si hay bloqueo: registrar fuente, intento y motivo verificable; avanzar por otra vía segura. Persistir fuentes, parámetros, versiones, errores y negativos. Ramas breves desde main; esta consolidación no autoriza futuros merges sin revisión ni cierres automáticos.

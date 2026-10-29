@@ -1,0 +1,5 @@
+{
+  "with_zip_and_without_zip_results_identical_except_verification_flag": true,
+  "structural_membership_sha256": "fd06303e8b030383b60a70e91dde8509951d0d2e20b29c021f67736b820dd0a4",
+  "safe_structural_projection_reproduces_original_keys": true
+}

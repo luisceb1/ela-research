@@ -1,0 +1,8 @@
+# Incidencias y límites de ejecución
+
+- La consulta de tags por el conector GitHub devolvió INVALID_ARGUMENT (endpoint no permitido); una consulta pública de metadatos resolvió los tags, que no incluían 3.2.6. No se confundió la etiqueta 3.2.4 con la versión requerida.
+- Las URLs de tarball Bioconductor 3.17/3.18 para bambu_3.2.6 devolvieron HTTP 403. Alternativa: rama RELEASE_3_17 del espejo oficial bioc/bambu, fijada al commit 2fb886442096896807f44191ad2d1e00b43ceadd. DESCRIPTION confirma Version: 3.2.6. Los seis archivos consultados se comprobaron por Git blob SHA y SHA256; no se incorporan sus fuentes completas al repositorio de investigación.
+- El lector web no mostró algunos archivos fuente de GitHub; el conector de archivos sí permitió leer el contenido exacto de esa revisión. No se ejecutaron instrucciones del repositorio externo.
+- El manuscrito independiente se leyó mediante el XML oficial Europe PMC de PMC12023386. Se procesó en memoria y solo se conservó una proyección de DOI, ensamblaje y unión de Figura 5, junto al hash del XML; no se retuvieron tablas clínicas individuales.
+- R no está instalado en este entorno. No se ejecutó bambu ni se reprodujo el pipeline de alineamiento. La inspección de fuente y el ejemplo algebraico se etiquetan como tales. El ejemplo no permite explicar causalmente la paridad observada en el depósito.
+- La escala de uniqueCounts queda bloqueada a falta de trazabilidad de entradas/objetos intermedios/exportación específica del estudio. No se dividieron cuentas por dos ni se reetiquetaron como moléculas independientes. Se continúa con la evidencia de uniones/full-length y la comprobación de denominadores, que sí es verificable con los archivos públicos disponibles.

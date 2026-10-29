@@ -1,0 +1,7 @@
+# Tablas descriptivas
+
+- `values.tsv`: valor por biblioteca/transcrito/medida/denominador. `raw` conserva la matriz original, `per_million_assigned` divide por la suma de cuentas de transcritos de esa **misma medida y biblioteca**, y `share_of_gene_assigned` divide por la suma de cuentas de transcritos del mismo gen. No PSI ni CPM depositado. Vacío = NA, no cero imputado.
+- `culture_contrasts.tsv`: compara las dos bibliotecas Ctrl/KD dentro de cada brazo 5Aza/sin 5Aza. Cociente NA si control=0; dirección aritmética no implica significación estadística. No estimación de interacción factorial ni réplicas simuladas.
+- `brain_sensitivity.tsv`: medias/mínimos/máximos de cada etiqueta, media CTL, cociente completo y extremos al retirar una biblioteca de uno de los dos grupos. `undefined_ratios` registra cocientes no finitos por denominador cero; nunca se elimina silenciosamente esa advertencia. `direction_spans_one` solo indica extremos estrictamente a ambos lados de 1; si hay NA debe leerse junto a `undefined_ratios`. Rangos distintos de intervalos de confianza; bibliotecas distintas de réplicas experimentales verificadas.
+- `count_scale.tsv`: GCD de los valores no nulos de uniqueCounts por biblioteca; no infiere moléculas ni corrige la escala.
+- `reproducibility.json`: hashes de tablas iguales en dos ejecuciones, hash del script y manifiesto de fuentes. `run.json`/`errors.json`: entorno, parámetros y resultado final. `tests.txt`: pruebas offline ejecutadas, no validación de enfermedad.

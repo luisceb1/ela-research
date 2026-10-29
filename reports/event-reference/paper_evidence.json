@@ -1,0 +1,15 @@
+{
+  "assembly": "GRCh38",
+  "chrom": "chr8",
+  "claim_scope": "junction_identity_only_not_full_transcript_or_polyA",
+  "coordinate_convention": "reported splice junction endpoints; exact comparison to GTF exonic boundaries",
+  "doi": "10.1186/s13024-025-00820-5",
+  "figure": "Fig5",
+  "left_exonic_boundary": 79611214,
+  "pmcid": "PMC12023386",
+  "pmid": "40275359",
+  "retention": "molecular coordinate projection only; no individual clinical tables retained",
+  "right_exonic_boundary": 79616822,
+  "strand_in_caption": null,
+  "symbol": "STMN2"
+}
