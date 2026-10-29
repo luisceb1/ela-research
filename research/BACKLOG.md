@@ -41,3 +41,5 @@ P1 evidencia funcional: primera auditoría completada con límites de acceso; re
 Aceptado Keuss: lectura resuelta con copia aportada; MEA con KD tardío no es ASO tardío (14frente33). Tabla de calendario en reports/accepted-keuss. Próximo: evidencia pública de intervención tras déficit verificado y ficha de pregunta discriminante, sin laboratorio ni contacto externo.
 
 P1 reversibilidad: cronología PNAS2025 y ficha conceptual completadas; reports/reversal-design. Próximo inventario Zenodo15346391/unidad experimental y modelo humano2026. Búsqueda dirigida no demuestra ausencia universal de rescate diferido. Sin ejecución de laboratorio ni contacto.
+
+P1 imagen: auditoría TIFF/hoja realizada, reports/image-metadata-qc. Solo4/27calibrados; independencia y enlace longitudinal no resueltos. Próximo suplemento alternativo e inspección visual de par calibrado; no inferencia grupal ni valores físicos imputados a23archivos.

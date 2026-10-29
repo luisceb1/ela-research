@@ -1,0 +1,9 @@
+{
+  "zenodo_url": "https://zenodo.org/api/records/15346391",
+  "metadata_sha256": "78b6bf1b7869ad802d83b0e7ccfea7fad885dd7e3733876cb0f1f9f27ef1872d",
+  "xlsx_url": "https://zenodo.org/api/records/15346391/files/Beccari_et_al_RawData.xlsx/content",
+  "xlsx_published_checksum": "md5:c412091bf194672d57371a9ce6c93a97",
+  "xlsx_bytes": 171253,
+  "source_paper": "10.1073/pnas.2502294122",
+  "supplement_attempt": "HTML returned, not PDF; no supplement source validated"
+}

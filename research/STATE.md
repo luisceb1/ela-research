@@ -88,3 +88,9 @@ Inventario estructural GEO completado por primera ejecución de GitHub Actions. 
 - Misma unidad longitudinal preferible para MEA, no requisito universal: cohortes paralelas comparables pueden establecer rescate.
 - 48 pruebas locales pasan. Próximo: inventario Zenodo15346391 y reanalizabilidad; si bloqueado modelo humano2026 DOI10.1038/s42003-026-10832-6. Rama research/reversal-design-20261029.
 - Inventario Zenodo ejecutado:100archivos/15.009.420.706bytes;27imágenes Figure7 en9seriesnominales0/24/48h. No son9réplicas biológicas verificadas; artículo declara2diferenciaciones. Imágenes no descargadas. Próximo resolver unidad/escala/metadatos antes de medir efectos.
+
+## TIFF y hoja de Figure7 auditados
+- reports/image-metadata-qc:27cabeceras/1.769.472bytes por HTTP206; todas27740×7940/16bit. Solo4con escala0,325µm/píxel;23sin resolución física;0con fecha TIFF. No hay triplete completamente calibrado.
+- RawData.xlsx verificado por MD5; Figure7 tiene conteos distintos de longitudes24/48 y carece de IDs para enlazar axón/imagen/diferenciación. Dos diferenciaciones según artículo; no transformar nueve etiquetas ni cientos de longitudes en réplicas.
+- Calibración no transferida por igualdad de tamaño; sin efectos biológicos ni p-valores.59pruebas locales pasan. Originales fuera de git.
+- Próximo: suplemento por otra fuente pública e inspección visual de par calibrado, verificar registro/orientación antes de segmentar. Inferencia grupal sigue bloqueada por correspondencia experimental. Rama research/image-metadata-qc-20261029.
