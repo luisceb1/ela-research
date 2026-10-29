@@ -6,8 +6,7 @@ on:
     paths:
       - 'scripts/pubmed_watch.py'
       - 'scripts/geo_inventory.py'
-      - 'tests/test_pubmed_watch.py'
-      - 'tests/test_geo_inventory.py'
+      - 'tests/test_watchers.py'
       - '.github/workflows/daily.yml'
   schedule:
     - cron: '17 7 * * *'
