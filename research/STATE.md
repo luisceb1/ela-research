@@ -1,6 +1,6 @@
 # Estado actual del proyecto ELA
 
-Actualizado: 29/10/2026. Sustituye los puntos de continuación históricos de las ramas. La consolidación está preparada para main: comprobar su PR/historial remoto antes de asumir integración.
+Actualizado: 29/10/2026. Sustituye los puntos de continuación históricos de las ramas. Consolidación integrada mediante PR #26, merge 2c0ef89207e81194f6d167f4ef3b01929a672f82. Ambas cadenas están incorporadas a main y sus 15 PR originales están cerrados; los dependientes documentan su incorporación mediante #26.
 
 ## Pregunta y nivel de evidencia
 
@@ -26,7 +26,7 @@ Tenemos auditorías técnicas, observaciones descriptivas y propuestas. No una n
 
 ## Próximas tareas
 
-1. Completar consolidación autorizada: verificar main, checks y procedencia de las 15 ramas. Conservar commits y PR; no reescribir historia.
+1. Base operativa consolidada: partir de main y comprobar su cabeza actual. Las ramas originales son referencias históricas incorporadas, no tareas activas; no reabrir sus PR para repetir trabajo.
 2. Suplementos Bolger/crypTE: XML primario y 17 medios inventariados; tablas aún no descargadas/cotejadas. Verificar esquema, ensamblaje, coordenadas, gen/transcrito y evento antes del cruce; un intervalo TE no equivale a un intrón.
 3. Revaluar filtros y prioridades sobre catálogo corregido. El cero histórico de intersección estricta no valida el parser defectuoso ni descarta un mecanismo.
 4. Reproducir GSE126542/GSE121569 (#14), diferenciando cohortes reutilizadas, diferenciaciones y lecturas de unión. Solo fuentes/proyecciones permitidas, sin filas clínicas personales.
@@ -43,6 +43,6 @@ Tenemos auditorías técnicas, observaciones descriptivas y propuestas. No una n
 
 Suite conjunta: 105 tests técnicos existentes (85 + 24 menos cuatro compartidos). CI unificada Python 3.11/3.12. Los 11 tests originales MEA son una ejecución histórica separada; no experimentos.
 
-Tras integración, main será el punto de partida. Usar ramas breves, revisión y pruebas antes de merge. Esta consolidación está autorizada por Luis; no concede autorización general para merges futuros. Las issues no se cierran automáticamente.
+Main es el punto de partida. Usar ramas breves, revisión y pruebas antes de merge. Esta consolidación está autorizada por Luis; no concede autorización general para merges futuros. Las issues no se cierran automáticamente.
 
 Work diario a las 08:00 Europe/Madrid y resumen los viernes. Releer fuentes remotas y comprobar acceso/herramientas en cada ejecución; no hay cómputo continuo garantizado. Informes antiguos conservan contexto/hashes; este estado y MASTER_EVIDENCE.md indican pendientes actuales.

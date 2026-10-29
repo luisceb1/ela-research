@@ -4,7 +4,7 @@ Proyecto sobre pérdida nuclear de TDP-43, splicing STMN2/UNC13A y recuperación
 
 ## Continuidad
 
-Leer [AGENTS.md](AGENTS.md), [estado](research/STATE.md), [backlog](research/BACKLOG.md), [protocolo](research/PROTOCOL.md), [evidencia](research/MASTER_EVIDENCE.md) e issues/PR remotos. Tras integrar la consolidación, main será la base común; comprobar PR/historial antes de asumirlo.
+Leer [AGENTS.md](AGENTS.md), [estado](research/STATE.md), [backlog](research/BACKLOG.md), [protocolo](research/PROTOCOL.md), [evidencia](research/MASTER_EVIDENCE.md) e issues/PR remotos. Main contiene ambas cadenas mediante el PR #26; es la base común. Los PR originales están cerrados y las ramas conservadas son referencias históricas. Comprobar siempre su cabeza actual antes de trabajar.
 
 Próxima tarea científica: tablas y convenciones del catálogo crypTE antes del cruce con 1901 uniones. Las 1881 sin coincidencia para el mismo gen en GENCODE v47 no son automáticamente nuevas.
 

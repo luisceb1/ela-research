@@ -43,9 +43,43 @@
   "all_scripts_tests_and_data_tables_preserved": true,
   "tests_passed": 105,
   "compileall_exit_code": 0,
-  "ci_pending": true,
+  "ci_pending": false,
   "scientific_reanalysis_performed": false,
   "clinical_data_imported": false,
   "interpretation": "repository integration and technical checks; no new biological evidence",
-  "all_main_paths_preserved_except_replaced_duplicate_ci_workflow": true
+  "all_main_paths_preserved_except_replaced_duplicate_ci_workflow": true,
+  "validated_remote_head": "f9ea90099cc52af3ae2801f627189ad0d51e4ab6",
+  "merge_pr": 26,
+  "merge_sha": "2c0ef89207e81194f6d167f4ef3b01929a672f82",
+  "remote_tree": "709936bcd7b83598db9ae9cd899f8f52fa2c100b",
+  "remote_files_verified_against_local": 236,
+  "ci": [
+    {
+      "job": 123537617242,
+      "name": "unit-tests Python3.11",
+      "conclusion": "success",
+      "tests": 105
+    },
+    {
+      "job": 123537616712,
+      "name": "unit-tests Python3.12",
+      "conclusion": "success",
+      "tests": 105
+    },
+    {
+      "job": 123537588089,
+      "name": "cross-dataset audit",
+      "conclusion": "success"
+    },
+    {
+      "job": 123537587366,
+      "name": "GEO mapping audit",
+      "conclusion": "success"
+    }
+  ],
+  "incoming_heads_verified_as_ancestors": 15,
+  "original_prs_closed": 15,
+  "scientific_issues_closed": 0,
+  "original_branch_refs_deleted": 0,
+  "original_branch_refs_reason": "No safe deletion operation exposed by connector; preserved as incorporated historical refs."
 }
