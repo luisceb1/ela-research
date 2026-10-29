@@ -1,9 +1,9 @@
 # Cola priorizada de investigación
 
-**P0 — Auditoría de GEO** [pendiente]
+**P0 — Auditoría de GEO** [inventario y enlace técnico ejecutados; revisión/integración pendientes]
 Inventariar GSE310723 y GSE315972: muestras GSM, grupos, profundidad y estructura de uniqueCounts y GTF. Crear diccionario de datos y control de calidad.
 
-**P0 — Mapeo transcriptos/genes** [pendiente]
+**P0 — Mapeo transcriptos/genes** [STMN2/UNC13A ejecutados por ENSG; controles reforzados, pendiente revisión]
 Vincular identificadores de isoformas a GTF, centrado en STMN2, UNC13A y otros transcritos crípticos. Registrar los no asignados.
 
 **P1 — Comparación descriptiva de GSE310723** [pendiente]
@@ -19,3 +19,8 @@ Contrastar hallazgos moleculares con experimentos de rescate y métricas de func
 Proponer una hipótesis falsable y protocolo mínimo; redactar un correo, pero no enviarlo sin autorización.
 
 Regla antiestancamiento: si una tarea falla por falta de datos o acceso, dejar constancia y avanzar a la siguiente segura. Registrar el estado de cada tarea solo después de producir artefactos comprobables.
+
+## Continuación tras reconciliar issue19 (29/10/2026)
+reports/mapping-positive-controls confirma que la selección cero ya se corrigió en main y reproduce11/10modelos con fuentes fijadas. Se corrige la prueba que no se descubría y se añade fallo ante salida vacía/conflictiva. Resultados concordantes con PR4; no representan otra réplica.
+
+Próximo P0: issue20, recuperar ZIP original del cribado y explicar21vs1910mediante filtros explícitos. No duplicar la corrección ENSG ni la de ALS-CI ya ejecutadas; verificar siempre su estado actual. Leer PR3–13/#22además de main para conservar los análisis pendientes. MEA sigue siendo simulación/software, y las propuestas requieren laboratorio autorizado para validarse. No cerrar issues o fusionar automáticamente.

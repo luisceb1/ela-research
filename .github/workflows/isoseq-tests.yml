@@ -4,6 +4,7 @@ on:
     paths:
       - 'scripts/map_isoseq_gtf.py'
       - 'tests/test_map_isoseq_gtf.py'
+      - 'research/references/target_gene_ids_gencode_v47.json'
       - '.github/workflows/isoseq-tests.yml'
   pull_request:
   workflow_dispatch:

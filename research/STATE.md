@@ -26,14 +26,14 @@ Fecha de arranque del repositorio: 2026-10-29.
 - No extrapolar observaciones moleculares a efectos clínicos.
 
 ## Estado operativo
-Inventario estructural GEO completado por primera ejecución de GitHub Actions. Aún no se ha auditado la calidad biológica, ni realizado análisis diferencial ni validación independiente.
+Inventario estructural y mapeo por IDs de genes ejecutados en GitHub Actions. El run40870066862 recupera11objetivos en cultivo y10en cerebro; la reproducción y controles actuales están en reports/mapping-positive-controls. No confundir selección de transcritos con validación biológica, diferencial o funcional. Las auditorías adicionales de PR3–13y22siguen pendientes de revisión e integración.
 
 ## Actualización de auditoría (29-10-2026)
 - Se identificó un análisis Iso-Seq externo al repositorio, en `INFORME_CIENTIFICO.md`, que comunica 21 uniones compartidas entre GSE310723/GSE315972, 20 genes y **cero eventos** que superen simultáneamente los filtros preespecificados celular y tejido; **no reejecutado en el repositorio**.
 - MAP6D1 y ZNF317 no son candidatos de alta prioridad con la evidencia actual. El primer conjunto presenta un problema de ausencia de cobertura en controles; el segundo no reproduce inducción en i3N tras reducción de TDP-43.
 - Informes previos sobre péptidos crípticos, CAMK2B, MEA y auditoría Keuss/Chan están sintetizados en `research/AUDIT_2026-10-29.md`.
-- Pruebas unitarias del script `scripts/map_isoseq_gtf.py` superadas en GitHub Actions (run 40868184532); **no se ha ejecutado el mapeo con GTF reales**.
-- Bloqueo comprobado: los archivos antiguos de la biblioteca no pudieron materializarse como bytes para reejecución local; tampoco hubo resolución DNS para el FTP público GEO en el entorno de ejecución.
+- El primer run de mapeo40868865843 produjo0objetivos por dependencia de gene_name; el posterior40870066862 ya recuperó11/10por ENSG con GTF reales. Este estado sustituye la nota histórica de que el mapeo real no se había ejecutado; issue19 documenta el incidente original.
+- Bloqueo histórico de aquel entorno: no se pudieron materializar archivos antiguos ni resolver el FTP GEO. La reproducción actual dispone de los cuatro archivos GEO y GENCODEv47 verificados por hash en caché; eso no resuelve todavía el acceso al ZIP original del cribado de21uniones.
 - Prioridad de investigación: verificar y reproducir el cribado negativo existente, en lugar de repetirlo como investigación nueva. Se mantiene propuesta condicional de estudio UNC13A posterior a déficit funcional documentado, pendiente de laboratorio.
 
 ## Actualización científica: 29-10-2026 — AGRN/CAMK2B y control de calidad
@@ -42,3 +42,9 @@ Inventario estructural GEO completado por primera ejecución de GitHub Actions. 
 - Revisión de literatura dirigida: `research/AGRN_CAMK2B_EVIDENCE_2026-10-29.md`. AGRN y CAMK2B tienen antecedentes de eventos crípticos y péptidos; no candidatos nuevos descubiertos aquí.
 - AGRN priorizada solo como **pregunta funcional de la unión neuromuscular** por testar; CAMK2B requiere auditoría isoforma-específica. UNC13A conserva la propuesta funcional posdéficit.
 - Bloqueo pendiente: acceso al ZIP original del cribado de 21 uniones y reproducción exacta de filtros; no fusionar 21 y 1910 como si provinieran del mismo algoritmo.
+
+## Reconciliación técnica con ramas de investigación — issue19
+- Corrección ENSG ya existente confirmada en logs y reproducción local:392871/401720TXNAME enlazados,11/10objetivos; STMN2=4/3yUNC13A=7/7. gene_name ausente en todos los TXNAME de ambas matrices; no ausencia biológica.
+- Panel GENCODEv47 fijado por hash y recontrastado. Nuevos controles de selección positiva/identidad/valores; test sin gene_name ahora se descubre; fallo explícito y escritura atómica ante salida inválida.16tests de este main pasan; no son la suite85de la ramaMEA.
+- TSV iguales a la selección de main anterior y concordantes con IDs/exones/sumas de PR4. No fusionar estados ni omitir informes de PR3–13/#22, que continúan pendientes.
+- Siguiente: issue20, ZIP original y filtros21vs1910, con metadatos publicados ya corregidos en main. Sin nueva inferencia biológica, cierre automático de issues o merge.

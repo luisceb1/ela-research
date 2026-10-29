@@ -1,0 +1,18 @@
+{
+  "python": "3.12.14",
+  "scope": "technical mapping reconciliation; no new biological inference",
+  "main_snapshot": "13ccbc5c9f1c9744c57ed9abb822d169772e32a5",
+  "tests_total": 16,
+  "mapping_tests": 12,
+  "other_tests": 4,
+  "reproduction_repeated_identical_bytes": true,
+  "reproduction_sha256": "4b9dca2f51bedbd3cb4f23d22118a5ad0ed75114e6cd1ae37298d2c0d5d25862",
+  "all_current_outputs_identical_to_main_baseline": true,
+  "prior_branch_transcript_ids_exon_counts_and_sums_match": true,
+  "gencode_panel_rechecked_from_original": true,
+  "individual_rows_exported": false,
+  "clinical_data_used": false,
+  "new_pvalues": false,
+  "genome": "GRCh38",
+  "reference": "GENCODE v47"
+}

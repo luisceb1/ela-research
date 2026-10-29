@@ -1,0 +1,35 @@
+{
+  "main_snapshot": "13ccbc5c9f1c9744c57ed9abb822d169772e32a5",
+  "historical_run": {
+    "id": 40868865843,
+    "sha": "d42fdac375ba71f5aaf01a952bc73b9796118bce",
+    "result": "success",
+    "url": "https://github.com/luisceb1/ela-research/actions/runs/40868865843"
+  },
+  "corrected_run": {
+    "id": 40870066862,
+    "sha": "671da1d49f9a07c14c3d3976e8cbae43a0488a78",
+    "job_id": 123434549173,
+    "url": "https://github.com/luisceb1/ela-research/actions/runs/40870066862",
+    "mapper_blob_matches_snapshot": true
+  },
+  "selected_log_lines": [
+    "2026-10-29T12:02:52.9136883Z 4a72d89df3f76c55694a53cca4462b53e5b1fc6cb4c3d931b26dd8402ac6e288  inputs/GSE310723_i3N_isoseq_extended_annotations.gtf.gz",
+    "2026-10-29T12:02:52.9156987Z 8f348f9caceece0ac92c0df35afcf9312fd7182ed0f03a200235b439f5066c8d  inputs/GSE310723_i3N_isoseq_uniqueCounts_transcript.txt.gz",
+    "2026-10-29T12:02:52.9313025Z 53bbd59fd8e3bbf558a9c5a60e6af0e3c658455d6b7db8e2b86c2420051e0976  inputs/GSE315972_NYGC_isoseq_extended_annotations.gtf.gz",
+    "2026-10-29T12:02:52.9339658Z 9f87f6ee77597a0aa0284f1379ddb0cd212d7dc212d22d745d350e23e22670a1  inputs/GSE315972_NYGC_isoseq_uniqueCounts_transcript.txt.gz",
+    "2026-10-29T12:03:04.7672229Z {'total': 392871, 'gtf_matched': 392871, 'target_transcripts': 11, 'gene_id_conflicts': 0, 'gtf_missing_gene_names': 392871, 'by_target': {'STMN2': 4, 'UNC13A': 7}}",
+    "2026-10-29T12:03:16.5564706Z {'total': 401720, 'gtf_matched': 401720, 'target_transcripts': 10, 'gene_id_conflicts': 0, 'gtf_missing_gene_names': 401720, 'by_target': {'STMN2': 3, 'UNC13A': 7}}"
+  ],
+  "original_discovery_log_lines": [
+    "2026-10-29T12:02:53.0355807Z test_conflict (test_map_isoseq_gtf.TestIsoSeqMapping.test_conflict) ... ok",
+    "2026-10-29T12:02:53.0359603Z test_match_and_conflict (test_map_isoseq_gtf.TestIsoSeqMapping.test_match_and_conflict) ... ok",
+    "2026-10-29T12:02:53.0362483Z Ran 2 tests in 0.001s"
+  ],
+  "source_snapshots": {
+    "current_mapper_blob": "a172b05b2fb64302acb6f4054a32ae372a73b6e0",
+    "historical_mapper_blob": "9a66dafe09ce35594f67a6524c1f00dbd8eb24ce",
+    "current_test_blob": "ddb61fcda11752b280db34fb9ca27d874c2dbcc3"
+  },
+  "scope": "Only selected hash/summary/test lines retained, not full job logs"
+}

@@ -1,0 +1,126 @@
+{
+  "baseline_comparison_method": "same validated GTF index; unchanged baseline map_counts functions",
+  "baseline_source_sha256": {
+    "historical_name_only": "a4c4e5a6fc7257a5c0bb030754684bb845764d33a7b0aa72621f9b34e707d454",
+    "main_before_hardening": "def788f5794d93ac738f59c9729df55808b5fdb0d36ceea926758d6b6b8004ed"
+  },
+  "datasets": {
+    "GSE310723": {
+      "baseline_summaries": {
+        "historical_name_only": {
+          "gene_id_conflicts": 0,
+          "gtf_matched": 392871,
+          "target_transcripts": 0,
+          "total": 392871
+        },
+        "main_before_hardening": {
+          "by_target": {
+            "STMN2": 4,
+            "UNC13A": 7
+          },
+          "gene_id_conflicts": 0,
+          "gtf_matched": 392871,
+          "gtf_missing_gene_names": 392871,
+          "target_transcripts": 11,
+          "total": 392871
+        }
+      },
+      "hardened": {
+        "by_target": {
+          "STMN2": 4,
+          "UNC13A": 7
+        },
+        "gene_id_conflicts": 0,
+        "gtf_matched": 392871,
+        "gtf_missing_gene_names": 392871,
+        "symbol_id_conflicts": 0,
+        "target_transcripts": 11,
+        "total": 392871
+      },
+      "main_output_identical_bytes": true,
+      "matches_prior_isoform_ids_symbols_exon_counts_and_sums": true,
+      "output_sha256": "5ab2a78d4a92ca81da5aa27d583e02854986330bb901de8ef0ba389c3b88e1b3"
+    },
+    "GSE315972": {
+      "baseline_summaries": {
+        "historical_name_only": {
+          "gene_id_conflicts": 0,
+          "gtf_matched": 401720,
+          "target_transcripts": 0,
+          "total": 401720
+        },
+        "main_before_hardening": {
+          "by_target": {
+            "STMN2": 3,
+            "UNC13A": 7
+          },
+          "gene_id_conflicts": 0,
+          "gtf_matched": 401720,
+          "gtf_missing_gene_names": 401720,
+          "target_transcripts": 10,
+          "total": 401720
+        }
+      },
+      "hardened": {
+        "by_target": {
+          "STMN2": 3,
+          "UNC13A": 7
+        },
+        "gene_id_conflicts": 0,
+        "gtf_matched": 401720,
+        "gtf_missing_gene_names": 401720,
+        "symbol_id_conflicts": 0,
+        "target_transcripts": 10,
+        "total": 401720
+      },
+      "main_output_identical_bytes": true,
+      "matches_prior_isoform_ids_symbols_exon_counts_and_sums": true,
+      "output_sha256": "35bd90e02ba27c10d84616a4adeb156f8d1740c31c88e6aedf9e11f562acab33"
+    }
+  },
+  "individual_rows_exported": false,
+  "prior_transcripts_sha256": "9f5eec0c5a2c322d91e9bb4e8171ca53cdca8d306c1ea5758874b5c404215a7b",
+  "python": "3.12.14",
+  "reference": {
+    "panel_verified": {
+      "STMN2": {
+        "chrom": "chr8",
+        "gene_id": "ENSG00000104435",
+        "strand": "+"
+      },
+      "UNC13A": {
+        "chrom": "chr19",
+        "gene_id": "ENSG00000130477",
+        "strand": "-"
+      }
+    },
+    "source_sha256": "df11938c66d2b39f8ebbdb5f1720919321f9cf9d58f02b019753f6a24ca3db24"
+  },
+  "scope": "technical selection reproduction, not independent biology",
+  "sources": [
+    {
+      "bytes": 19318707,
+      "file": "GSE310723_i3N_isoseq_extended_annotations.gtf.gz",
+      "sha256": "4a72d89df3f76c55694a53cca4462b53e5b1fc6cb4c3d931b26dd8402ac6e288",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE310nnn/GSE310723/suppl/GSE310723_i3N_isoseq_extended_annotations.gtf.gz"
+    },
+    {
+      "bytes": 2568038,
+      "file": "GSE310723_i3N_isoseq_uniqueCounts_transcript.txt.gz",
+      "sha256": "8f348f9caceece0ac92c0df35afcf9312fd7182ed0f03a200235b439f5066c8d",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE310nnn/GSE310723/suppl/GSE310723_i3N_isoseq_uniqueCounts_transcript.txt.gz"
+    },
+    {
+      "bytes": 19689732,
+      "file": "GSE315972_NYGC_isoseq_extended_annotations.gtf.gz",
+      "sha256": "53bbd59fd8e3bbf558a9c5a60e6af0e3c658455d6b7db8e2b86c2420051e0976",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE315nnn/GSE315972/suppl/GSE315972_NYGC_isoseq_extended_annotations.gtf.gz"
+    },
+    {
+      "bytes": 2862110,
+      "file": "GSE315972_NYGC_isoseq_uniqueCounts_transcript.txt.gz",
+      "sha256": "9f87f6ee77597a0aa0284f1379ddb0cd212d7dc212d22d745d350e23e22670a1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE315nnn/GSE315972/suppl/GSE315972_NYGC_isoseq_uniqueCounts_transcript.txt.gz"
+    }
+  ]
+}

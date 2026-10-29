@@ -1,0 +1,21 @@
+test_cli_valid_target_commits_complete_output (test_map_isoseq_gtf.TestIsoSeqMapping.test_cli_valid_target_commits_complete_output) ... ok
+test_cli_zero_targets_fails_without_new_output (test_map_isoseq_gtf.TestIsoSeqMapping.test_cli_zero_targets_fails_without_new_output) ... ok
+test_conflicting_gene_ids_not_exported (test_map_isoseq_gtf.TestIsoSeqMapping.test_conflicting_gene_ids_not_exported) ... ok
+test_conflicting_gtf_identity_rejected (test_map_isoseq_gtf.TestIsoSeqMapping.test_conflicting_gtf_identity_rejected) ... ok
+test_duplicate_count_ids_rejected (test_map_isoseq_gtf.TestIsoSeqMapping.test_duplicate_count_ids_rejected) ... ok
+test_each_requested_positive_control_required (test_map_isoseq_gtf.TestIsoSeqMapping.test_each_requested_positive_control_required) ... ok
+test_ensembl_id_without_gene_name (test_map_isoseq_gtf.TestIsoSeqMapping.test_ensembl_id_without_gene_name) ... ok
+test_known_symbol_and_versioned_ids_agree (test_map_isoseq_gtf.TestIsoSeqMapping.test_known_symbol_and_versioned_ids_agree) ... ok
+test_nonfinite_negative_and_empty_counts_rejected (test_map_isoseq_gtf.TestIsoSeqMapping.test_nonfinite_negative_and_empty_counts_rejected) ... ok
+test_symbol_cannot_override_wrong_ensembl_id (test_map_isoseq_gtf.TestIsoSeqMapping.test_symbol_cannot_override_wrong_ensembl_id) ... ok
+test_unknown_target_not_silent_empty_output (test_map_isoseq_gtf.TestIsoSeqMapping.test_unknown_target_not_silent_empty_output) ... ok
+test_wrong_symbol_for_correct_id_rejected (test_map_isoseq_gtf.TestIsoSeqMapping.test_wrong_symbol_for_correct_id_rejected) ... ok
+test_structure (test_watchers.TestGeo.test_structure) ... ok
+test_bad_response_rejected (test_watchers.TestPubmed.test_bad_response_rejected) ... ok
+test_filters_non_pubmed_records (test_watchers.TestPubmed.test_filters_non_pubmed_records) ... ok
+test_untrusted_title_sanitized (test_watchers.TestPubmed.test_untrusted_title_sanitized) ... ok
+
+----------------------------------------------------------------------
+Ran 16 tests in 0.091s
+
+OK
