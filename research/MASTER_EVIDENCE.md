@@ -32,3 +32,7 @@ Cruce de autores: representación en subconjunto reconstruible del mismo estudio
 ## Originalidad — prioridad29/10/2026
 
 Auditoría dirigida en reports/originality-audit/REPORT.md y registro originality_evidence_20261029.json.12familias focales,8reivindicaciones,133tests técnicos; ninguna certificada original. STMN2/UNC13A, combinación, rescate postKD/poslesión/sintomático tienen antecedentes. AGRNfunción/secreción ya pregunta publicada. Próximo cerrar acceso/calendario/solapamiento de fuentes faltantes y reformular extensión antes de nueva línea. Revisión exploratoria, no sistemática exhaustiva ni dictamen legal.
+
+## Cierre documental de originalidad y propuesta vigente
+
+Ciclo29/10/2026: reports/originality-audit/FOLLOWUP.md. CTR2026: métodos primarios indexados verifican administración a seis semanas con temblor; solapamiento de datos con CTR2025no resuelto, sin sumar replicaciones. Guo final sigue sin métodos accesibles; no trasladar preprint. Autoría bibliográfica corregida con PubMed/Stanford y original conservado en closure.json. Protocolo vigente v0.4 como extensión, originalidad no certificada; registros del mismo pozo son medidas repetidas. El cierre documental es acotado con bloqueos explícitos, no declaración de novedad. Siguiente tarea segura: inventario de disponibilidad de datos funcionales para unidad/basal/primera dosis; sin efectos hasta enlace de unidades. Si no hay brazo posdéficit reconstruible, documentarlo y volver al QC del backlog. Sin autorización de laboratorio/contactos/merge.

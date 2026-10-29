@@ -77,3 +77,5 @@ Referencias focales en formato BibTeX obtenidas de scite: `research/references/o
 - Peethambaran Mallika, A., et al. (2025). Symptomatic treatment by a BBB-permeable AAV engineered to restore TDP-43 function slows motor neuron disease and prevents paralysis [Preprint]. https://doi.org/10.1101/2025.08.14.670400
 - Peethambaran Mallika, A., et al. (2026). Restoring multiple TDP-43 cryptic targets, but not solely Unc13a, rescues motor neuron disease [Preprint]. https://doi.org/10.64898/2026.09.11.751082
 - Seddighi, S., et al. (2024). Mis-spliced transcripts generate de novo proteins in TDP-43–related ALS/FTD. *Science Translational Medicine*. https://doi.org/10.1126/scitranslmed.adg7162
+
+Actualización29/10/2026: véase reports/originality-audit/FOLLOWUP.md para calendario CTR2026verificado por métodos primarios indexados, límites de acceso/solapamiento y corrección de metadatos Guo. Propuesta vigente: research/UNC13A_POST_DEFICIT_PROTOCOL_v0.4.md. Dos registros del mismo pozo son medidas repetidas, no réplicas independientes. La revisión inicial y run.json se conservan como historial.

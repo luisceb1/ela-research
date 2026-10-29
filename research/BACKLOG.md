@@ -4,7 +4,7 @@ Consultar STATE.md, MASTER_EVIDENCE.md y reports/repository-integration. Las iss
 
 | Prioridad | Tarea | Estado y siguiente avance |
 |---|---|---|
-| P0 | Originalidad — solicitud Luis | Auditoría dirigida entregada en reports/originality-audit; reclamos amplios descartados. Cerrar métodos/versiones faltantes de C3 y reformular extensión antes de otra línea; no certificación de novedad |
+| P0 | Originalidad — solicitud Luis | Auditoría dirigida entregada en reports/originality-audit; reclamos amplios descartados. Cierre documental acotado en FOLLOWUP.md; CTR2026 calendario indexado verificado, Guo final y solapamiento siguen limitados. Protocolo v0.4 incremental. Próximo inventario de datos funcionales/unidades, sin certificación de novedad |
 | P0 | Consolidación | Completada mediante PR #26: main verificado, 15 cabezas incluidas, 105 tests en Python 3.11/3.12 y dos auditorías GEO exitosas; PR dependientes cerrados por incorporación |
 | P0 | #1 GEO | Inventario y enlace técnico ejecutados; integración no valida calidad biológica completa |
 | P0 | #2/#17/#19 mapeo | Ejecutado por ENSG; controles positivos; incidente cero objetivos resuelto técnicamente |
@@ -22,3 +22,7 @@ Si hay bloqueo: registrar fuente, intento y motivo verificable; avanzar por otra
 Auditoría crypTE en rama breve desde main,115tests locales. Fuentes verificadas recuperables con --fetch del script audit_author_catalog.py; S7/S8 contienen filas no reconstruibles y siete etiquetas intrónicas no explicadas. Corregir cobertura/unidades antes de priorización; no producir coincidencias por proximidad ni reparar tablas silenciosamente.
 
 Ampliación de PR28:125tests y354coincidencias estrictas en subconjunto de cultivo(284S8+70soloS7);1159no encontradas no son nuevas ni ausentes. Control STMN2canónico recuperado; críptico excluido por bloques inválidos. Revisar conflictos de gen y cobertura mediante fuente primaria trazable antes de filtros/priorización; alternativa segura #14 si falta enlace de modelos. No crear otra cadena de PR dependientes.
+
+## Cierre documental de originalidad y propuesta vigente
+
+Ciclo29/10/2026: reports/originality-audit/FOLLOWUP.md. CTR2026: métodos primarios indexados verifican administración a seis semanas con temblor; solapamiento de datos con CTR2025no resuelto, sin sumar replicaciones. Guo final sigue sin métodos accesibles; no trasladar preprint. Autoría bibliográfica corregida con PubMed/Stanford y original conservado en closure.json. Protocolo vigente v0.4 como extensión, originalidad no certificada; registros del mismo pozo son medidas repetidas. El cierre documental es acotado con bloqueos explícitos, no declaración de novedad. Siguiente tarea segura: inventario de disponibilidad de datos funcionales para unidad/basal/primera dosis; sin efectos hasta enlace de unidades. Si no hay brazo posdéficit reconstruible, documentarlo y volver al QC del backlog. Sin autorización de laboratorio/contactos/merge.

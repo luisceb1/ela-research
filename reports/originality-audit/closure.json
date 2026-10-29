@@ -1,0 +1,105 @@
+{
+  "date": "2026-10-29",
+  "scope": "Targeted methods access and version closure, not systematic originality certification",
+  "queries": [
+    {
+      "engine": "scite",
+      "doi": "10.1126/scitranslmed.aeb8517",
+      "term": "ASO treatment day methods",
+      "hits": 1,
+      "fulltext": false
+    },
+    {
+      "engine": "scite",
+      "doi": "10.64898/2026.09.11.751082",
+      "term": "six weeks symptomatic",
+      "hits": 1,
+      "fulltext": false
+    },
+    {
+      "engine": "web_primary",
+      "query": "\"Restoring multiple TDP-43\" methods treatment weeks",
+      "result": "indexed primary methods retrieved"
+    },
+    {
+      "engine": "web_primary",
+      "queries": [
+        "\"10.1126/scitranslmed.aeb8517\" methods antisense day",
+        "\"aeb8517\" \"supplementary\" methods",
+        "\"aeb8517\" \"day 3\"",
+        "\"Cryptic splicing in synaptic and membrane excitability genes\" \"pdf\""
+      ],
+      "result": "No verified final methods retrieved; preprint not substituted"
+    },
+    {
+      "engine": "web_primary",
+      "query": "\"2026.09.11.751082\" \"2025.08.14\"",
+      "result": "No explicit cohort identity resolved"
+    }
+  ],
+  "editorial_checks": {
+    "dois": [
+      "10.1126/scitranslmed.aeb8517",
+      "10.1101/2025.08.14.670400",
+      "10.64898/2026.09.11.751082"
+    ],
+    "has_retraction": 0,
+    "has_concern": 0,
+    "has_correction": 0,
+    "has_erratum": 0,
+    "interpretation": "No indexed notices returned, not universal absence"
+  },
+  "access": [
+    {
+      "url": "https://www.science.org/doi/10.1126/scitranslmed.aeb8517",
+      "status": 403,
+      "conclusion": "final methods unresolved"
+    },
+    {
+      "url": "https://www.biorxiv.org/content/10.64898/2026.09.11.751082v1.full",
+      "direct_status": 403,
+      "indexed_sections": [
+        "Results systemic delivery",
+        "Methods Viral Vector Packaging and Delivery",
+        "Experimental Design",
+        "Fig2"
+      ],
+      "conclusion": "targeted timing verified, not full paper read"
+    }
+  ],
+  "ctr_comparison": [
+    {
+      "field": "intervention_age_weeks",
+      "ctr2025": 6,
+      "ctr2026": 6
+    },
+    {
+      "field": "reported_transduction_percent",
+      "ctr2025": "79±6.2, Fig1 n=3",
+      "ctr2026": "79±6.2, Fig2 n=5"
+    },
+    {
+      "field": "written_groups",
+      "ctr2025": "4 groups n=20 each",
+      "ctr2026": "3 groups n=20 each; control treatments combined"
+    },
+    {
+      "field": "survival_caption_n",
+      "ctr2025": 15,
+      "ctr2026": 15
+    }
+  ],
+  "independence": "Unresolved. Shared numeric summaries, model and authors do not authenticate identity; changing n does not prove independent cohorts.",
+  "bibliography_correction": {
+    "doi": "10.1126/scitranslmed.aeb8517",
+    "original_scite_author_field": "Guo, Caiwei and Chen, Kuchuan and Vatsavayai, Sarat C. and Liu, Chang and Zeng, Yi and Sianto, Odilia and Bombosch, Juliane and Powell, Rasheen and Zhen, Shannon and Mekhoubad, Shila and Morrie, Ryan D. and Miller, Georgiana and Green, Eric M. and Petrucelli, Leonard and Seeley, William W. and Gitler, Aaron D.",
+    "corrected_author_field": "Guo, Caiwei and Chen, Kuchuan and Vatsavayai, Sarat and Akiyama, Tetsuya and Liu, Chang and Zeng, Yi and Sianto, Odilia and Yang, Edith and Bombosch, Juliane and Powell, Rasheen and Zhen, Shannon and Mekhoubad, Shila and Morrie, Ryan D. and Miller, Georgiana and Ilic, Dragana and Boll, Moritz and Parnell, Euan and Penzes, Peter and Lipstein, Noa and Green, Eric M. and Petrucelli, Leonard and Seeley, William W. and Gitler, Aaron D.",
+    "source_urls": [
+      "https://pubmed.ncbi.nlm.nih.gov/42234776/",
+      "https://brainresilience.stanford.edu/publications/cryptic-splicing-synaptic-and-membrane-excitability-genes-links-tdp-43-loss-neuronal-dysfunction-0"
+    ],
+    "original_author_count": 16,
+    "corrected_author_count": 23
+  },
+  "protocol_correction": "Two observations from the same well are correlated repeated measures, not biological replicates; v0.4 supersedes v0.3. No experimental effect estimated."
+}

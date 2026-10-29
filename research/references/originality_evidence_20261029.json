@@ -85,11 +85,12 @@
       "versions": [
         "10.64898/2026.09.11.751082"
       ],
-      "access": "abstract",
+      "access": "abstract_and_indexed_primary_methods",
       "methods_verified": false,
-      "after_measured_deficit": "unresolved_methods",
-      "locator": "scite abstract; primary bioRxiv indexed Results/Discussion; PubMed42779622",
-      "evidence": "Reports Unc13a-only versus multiple cryptic-target rescue in motor-neuron disease model. Indexed primary text says CTR delivered after symptoms. Shared group/platform with ctr2025; possible reuse/overlap unresolved; not independent replication."
+      "after_measured_deficit": "symptomatic_animals",
+      "locator": "Primary indexed bioRxiv v1: Results systemic delivery; Methods Viral Vector Packaging and Delivery; Fig2; direct page403; reports/originality-audit/FOLLOWUP.md",
+      "evidence": "Targeted indexed primary methods verify IV AAV-PHP.eB-CTR at six weeks, when tremor is already present. Full article not read. Conditional mouse model and symptomatic treatment precede project. Animal/data overlap with ctr2025 remains unresolved; not independent replication.",
+      "targeted_methods_verified": true
     },
     {
       "id": "seddighi2024",
@@ -245,5 +246,6 @@
       ],
       "status": "possible_overlap_not_independent_until_resolved"
     }
-  ]
+  ],
+  "followup": "reports/originality-audit/FOLLOWUP.md"
 }
