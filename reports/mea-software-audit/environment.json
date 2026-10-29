@@ -1,0 +1,13 @@
+{
+  "python": "3.12.14",
+  "dependencies": {
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "scipy": "1.17.0",
+    "matplotlib": "3.10.8"
+  },
+  "fixture_bootstrap_seed": 42,
+  "fixture_bootstrap_draws": 20,
+  "original_test_seeds": "preserved in hash-pinned test sources",
+  "scope": "bootstrap only exercises code branches on artificial fixture, not an inferential estimate"
+}

@@ -1,0 +1,30 @@
+$ python -m unittest discover -s tests -p test_geo_audit.py -v
+test_bad_counts_fail_closed (test_geo_audit.AuditTests.test_bad_counts_fail_closed) ... ok
+test_bad_gzip_rejected (test_geo_audit.AuditTests.test_bad_gzip_rejected) ... ok
+test_bambutx_ids_are_dataset_scoped (test_geo_audit.AuditTests.test_bambutx_ids_are_dataset_scoped) ... ok
+test_cache_hash_mismatch (test_geo_audit.AuditTests.test_cache_hash_mismatch) ... ok
+test_count_order_mismatch_rejected (test_geo_audit.AuditTests.test_count_order_mismatch_rejected) ... ok
+test_gtf_attribute_inventory_counts_rows (test_geo_audit.AuditTests.test_gtf_attribute_inventory_counts_rows) ... ok
+test_gtf_conflicting_identity (test_geo_audit.AuditTests.test_gtf_conflicting_identity) ... ok
+test_invalid_gtf_coords (test_geo_audit.AuditTests.test_invalid_gtf_coords) ... ok
+test_mapping_exact_versions_and_gene_conflicts (test_geo_audit.AuditTests.test_mapping_exact_versions_and_gene_conflicts) ... ok
+test_metadata_allowlist (test_geo_audit.AuditTests.test_metadata_allowlist) ... ok
+test_ragged_and_duplicate_ids (test_geo_audit.AuditTests.test_ragged_and_duplicate_ids) ... ok
+test_unique_counts_cannot_exceed_total (test_geo_audit.AuditTests.test_unique_counts_cannot_exceed_total) ... ok
+test_unknown_treatment_and_ambiguous_sample_fail (test_geo_audit.AuditTests.test_unknown_treatment_and_ambiguous_sample_fail) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 0.007s
+
+OK
+
+$ python -m unittest discover -s tests -p test_watchers.py -v
+test_structure (test_watchers.TestGeo.test_structure) ... ok
+test_bad_response_rejected (test_watchers.TestPubmed.test_bad_response_rejected) ... ok
+test_filters_non_pubmed_records (test_watchers.TestPubmed.test_filters_non_pubmed_records) ... ok
+test_untrusted_title_sanitized (test_watchers.TestPubmed.test_untrusted_title_sanitized) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.001s
+
+OK

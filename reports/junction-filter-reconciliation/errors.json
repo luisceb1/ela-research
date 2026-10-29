@@ -1,0 +1,21 @@
+{
+  "unexpected_runtime_failures": [],
+  "resolved_source_access": "Original ZIP recovered; exact identity and safe projection pinned",
+  "historical_defects": [
+    {
+      "defect": "Consecutive-exon assumption with dictionary overwrite",
+      "observed": "9403/16321Bambu ENSG models have multiple exon-bearing runs; legacy loses structure",
+      "resolution": "Group all exons by transcript; order-invariance regression test"
+    },
+    {
+      "defect": "Same streaming assumption in ENST reference exclusion",
+      "observed": "3packaged junctions present in grouped ENST reference,0found by legacy method",
+      "resolution": "Use grouped reference; corrected memberships exported"
+    },
+    {
+      "defect": "Non-ENSG counter counts blocks rather than distinct transcript IDs",
+      "resolution": "Legacy counter retained with explicit scope; not used as unique exclusions"
+    }
+  ],
+  "plan_sequence_note": "An initial structural diagnostic preceded the minimal fixture; fixtures passed before the full staged reconciliation and no interpretation was issued before controls."
+}

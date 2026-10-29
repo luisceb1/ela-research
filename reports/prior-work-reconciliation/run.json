@@ -1,0 +1,13 @@
+{
+  "python": "3.12.14",
+  "method": "ZIP/PDF hash inventory, ZIP CRC, documentary reconciliation",
+  "repeated_inventory_identical": true,
+  "inventory_sha256": "020c22153434e4c47450403e501571ba8303ee48adca3815ff1ce0177397fbca",
+  "packages": 11,
+  "zip_members": 114,
+  "errors": [],
+  "tests_passed": 63,
+  "new_technical_tests": 4,
+  "received_analysis_scripts_executed": false,
+  "biological_results_reproduced": false
+}

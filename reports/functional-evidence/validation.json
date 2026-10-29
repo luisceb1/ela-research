@@ -1,0 +1,8 @@
+{
+  "units": 5,
+  "input_sha256": "b30455e09f2c7af28d2b5b99fe822f79229c4435cdd9a601f48758476eb1c50d",
+  "python": "3.12.14",
+  "curation": "manual; source-level limits retained",
+  "delayed_reversal_verified": 0,
+  "clinical_efficacy_inferred": false
+}

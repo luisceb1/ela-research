@@ -1,5 +1,7 @@
 # Filtros explícitos para cribado Iso-Seq · 2026-10-29
 
+**Actualización posterior:** la clasificación ALS-CI literal de dos columnas fue corregida en reports/ALS_CI_metadata_correction_2026-10-29.md. La fuente21se recuperó y su fallo de agrupación se explica en reports/junction-filter-reconciliation. No interpretar las cifras históricas siguientes como estado más reciente ni como validación del parser antiguo.
+
 **Reproducción ejecutada:** [GitHub Actions 40871481382](https://github.com/luisceb1/ela-research/actions/runs/40871481382), resultado **success**, artefacto `cross-dataset-junction-audit` id `12896421253`.
 
 ## Conteos auditados (desde `filter_audit.json`)

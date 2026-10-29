@@ -1,0 +1,79 @@
+{
+  "name": "ELA_06_cruce_sistematico_longread_2026-10-29.zip",
+  "bytes": 15185,
+  "sha256": "73edc0006287f355001f968ce12f54d38a148535c05f7195f2db83e636215393",
+  "library_file_id": "libfile_b0b07020d0f48191afce7ad75f34304d",
+  "members": [
+    {
+      "name": "ELA_06_cruce_longread_2026-10-29/cruzar_uniones.py",
+      "bytes": 10582,
+      "sha256": "ae467f2f223a7b70a57107aea60d822805e8af05794753888964cd8725c0744b"
+    },
+    {
+      "name": "ELA_06_cruce_longread_2026-10-29/INFORME_CIENTIFICO.md",
+      "bytes": 8528,
+      "sha256": "deec1a5aab755f0065a25dc2e430bd2cc40a52738c9906fe2eb86ae2707ad7b3"
+    },
+    {
+      "name": "ELA_06_cruce_longread_2026-10-29/resultados/eventos_para_auditoria.csv",
+      "bytes": 898,
+      "sha256": "ca9e6e8c9ceaa78cf60b51c9e29eb8c061960f97dd8f1f81c71a98639b02242b"
+    },
+    {
+      "name": "ELA_06_cruce_longread_2026-10-29/resultados/auditoria.json",
+      "bytes": 2454,
+      "sha256": "306430f6c85ff2a365d7dd9488cc008e1906a65450d61114d5e4543b5af94219"
+    },
+    {
+      "name": "ELA_06_cruce_longread_2026-10-29/resultados/uniones_compartidas_todas.csv",
+      "bytes": 4905,
+      "sha256": "df108d86cd85633e0b85d2cfbb694a91df437b2dd55be655b912ae8d89da8929"
+    },
+    {
+      "name": "ELA_06_cruce_longread_2026-10-29/README.md",
+      "bytes": 1623,
+      "sha256": "da006bf4dcca03f86473dd8941e6e866359a18f2805e953b67d6b5ca9997984d"
+    },
+    {
+      "name": "ELA_06_cruce_longread_2026-10-29/verificar_resultados.py",
+      "bytes": 2509,
+      "sha256": "cbbaa0c50ccef4f89a0cbe022b8b1a8aff375b7d37e57d7e70ef54866d1b37f3"
+    }
+  ],
+  "scope": "Recovered ZIP verified by CRC/SHA256; reviewed core functions executed, no reporting CLI or individual-count export",
+  "reviewed_function_excerpts": [
+    {
+      "function": "attr_value",
+      "start_line": 26,
+      "end_line": 30,
+      "source_segment_sha256": "30c46f460a4172b674c3b2d45d26efc213fc9853b2034b832b2cf835951c399a"
+    },
+    {
+      "function": "parse_bambu",
+      "start_line": 43,
+      "end_line": 72,
+      "source_segment_sha256": "91c3b4d6840d90c7c80dc3222bfa3fc3cbda0738644ee8547eb531c4b4707c78"
+    },
+    {
+      "function": "tx_junctions",
+      "start_line": 74,
+      "end_line": 80,
+      "source_segment_sha256": "a1ed548798bfbbc651e738b29412afe859fe976213dc3116b5aaa318c514c12d"
+    },
+    {
+      "function": "internal_ref",
+      "start_line": 82,
+      "end_line": 102,
+      "source_segment_sha256": "61f44f012af0389fea7f9c0844f5c59a85048793362d4ea2c11d00982980ac1f"
+    }
+  ],
+  "reviewed_core_functions_executed": true,
+  "original_cli_executed": false,
+  "original_module_loaded_for_initial_diagnostic": true,
+  "safe_projection": {
+    "path": "reports/junction-filter-reconciliation/original_21_structural_keys.tsv",
+    "sha256": "9c7f5261cdb45454ccb672d5a02a40e15a23f2133980a04d3b1ab9af73af9b6e",
+    "rows": 21,
+    "fields": "structural identity only; no clinical labels or individual counts"
+  }
+}

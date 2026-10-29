@@ -1,0 +1,318 @@
+{
+  "scope": "technical reproduction on identical public processed files; not independent biological replication",
+  "coordinate_system": "GRCh38 GTF exonic boundary bases, 1-based inclusive, sorted genomic order even on minus strand",
+  "sources": [
+    {
+      "file": "GSE310723_i3N_isoseq_extended_annotations.gtf.gz",
+      "sha256": "4a72d89df3f76c55694a53cca4462b53e5b1fc6cb4c3d931b26dd8402ac6e288",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE310nnn/GSE310723/suppl/GSE310723_i3N_isoseq_extended_annotations.gtf.gz",
+      "matches_prior_geo_audit": true
+    },
+    {
+      "file": "GSE310723_i3N_isoseq_uniqueCounts_transcript.txt.gz",
+      "sha256": "8f348f9caceece0ac92c0df35afcf9312fd7182ed0f03a200235b439f5066c8d",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE310nnn/GSE310723/suppl/GSE310723_i3N_isoseq_uniqueCounts_transcript.txt.gz",
+      "matches_prior_geo_audit": true
+    },
+    {
+      "file": "GSE315972_NYGC_isoseq_extended_annotations.gtf.gz",
+      "sha256": "53bbd59fd8e3bbf558a9c5a60e6af0e3c658455d6b7db8e2b86c2420051e0976",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE315nnn/GSE315972/suppl/GSE315972_NYGC_isoseq_extended_annotations.gtf.gz",
+      "matches_prior_geo_audit": true
+    },
+    {
+      "file": "GSE315972_NYGC_isoseq_uniqueCounts_transcript.txt.gz",
+      "sha256": "9f87f6ee77597a0aa0284f1379ddb0cd212d7dc212d22d745d350e23e22670a1",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE315nnn/GSE315972/suppl/GSE315972_NYGC_isoseq_uniqueCounts_transcript.txt.gz",
+      "matches_prior_geo_audit": true
+    }
+  ],
+  "summary": [
+    {
+      "dataset": "GSE310723",
+      "gene": "CAMK2B",
+      "models": 50,
+      "ENST_models": 49,
+      "CAMK2B_target_matches": 1,
+      "CAMK2B_target_transcript_assigned_sum": 32.0,
+      "libraries": 4,
+      "libraries_with_positive_gene_sum": 4,
+      "gene_assigned_count_sum": 162.0
+    },
+    {
+      "dataset": "GSE310723",
+      "gene": "STMN2",
+      "models": 4,
+      "ENST_models": 3,
+      "CAMK2B_target_matches": null,
+      "CAMK2B_target_transcript_assigned_sum": null,
+      "libraries": 4,
+      "libraries_with_positive_gene_sum": 4,
+      "gene_assigned_count_sum": 424.0
+    },
+    {
+      "dataset": "GSE310723",
+      "gene": "HDGFL2",
+      "models": 11,
+      "ENST_models": 10,
+      "CAMK2B_target_matches": null,
+      "CAMK2B_target_transcript_assigned_sum": null,
+      "libraries": 4,
+      "libraries_with_positive_gene_sum": 3,
+      "gene_assigned_count_sum": 44.0
+    },
+    {
+      "dataset": "GSE315972",
+      "gene": "CAMK2B",
+      "models": 49,
+      "ENST_models": 49,
+      "CAMK2B_target_matches": 0,
+      "CAMK2B_target_transcript_assigned_sum": 0.0,
+      "libraries": 8,
+      "libraries_with_positive_gene_sum": 8,
+      "gene_assigned_count_sum": 1084.0
+    },
+    {
+      "dataset": "GSE315972",
+      "gene": "STMN2",
+      "models": 3,
+      "ENST_models": 3,
+      "CAMK2B_target_matches": null,
+      "CAMK2B_target_transcript_assigned_sum": null,
+      "libraries": 8,
+      "libraries_with_positive_gene_sum": 8,
+      "gene_assigned_count_sum": 758.0
+    },
+    {
+      "dataset": "GSE315972",
+      "gene": "HDGFL2",
+      "models": 11,
+      "ENST_models": 10,
+      "CAMK2B_target_matches": null,
+      "CAMK2B_target_transcript_assigned_sum": null,
+      "libraries": 8,
+      "libraries_with_positive_gene_sum": 8,
+      "gene_assigned_count_sum": 64.0
+    }
+  ],
+  "candidate_junctions": [
+    {
+      "gene": "CAMK2B",
+      "cell_candidate_txname": "BambuTx9181",
+      "chrom": "chr7",
+      "strand": "-",
+      "left_exonic_boundary_1based": 44219522,
+      "right_exonic_boundary_1based": 44220060,
+      "brain_models_with_exact_junction": 23,
+      "brain_assigned_sum_matching_models_not_junction_reads": 862.0
+    },
+    {
+      "gene": "CAMK2B",
+      "cell_candidate_txname": "BambuTx9181",
+      "chrom": "chr7",
+      "strand": "-",
+      "left_exonic_boundary_1based": 44220294,
+      "right_exonic_boundary_1based": 44220616,
+      "brain_models_with_exact_junction": 35,
+      "brain_assigned_sum_matching_models_not_junction_reads": 1056.0
+    },
+    {
+      "gene": "CAMK2B",
+      "cell_candidate_txname": "BambuTx9181",
+      "chrom": "chr7",
+      "strand": "-",
+      "left_exonic_boundary_1based": 44220710,
+      "right_exonic_boundary_1based": 44220826,
+      "brain_models_with_exact_junction": 33,
+      "brain_assigned_sum_matching_models_not_junction_reads": 1038.0
+    },
+    {
+      "gene": "CAMK2B",
+      "cell_candidate_txname": "BambuTx9181",
+      "chrom": "chr7",
+      "strand": "-",
+      "left_exonic_boundary_1based": 44220901,
+      "right_exonic_boundary_1based": 44222117,
+      "brain_models_with_exact_junction": 0,
+      "brain_assigned_sum_matching_models_not_junction_reads": 0.0
+    },
+    {
+      "gene": "STMN2",
+      "cell_candidate_txname": "BambuTx9249",
+      "chrom": "chr8",
+      "strand": "+",
+      "left_exonic_boundary_1based": 79611214,
+      "right_exonic_boundary_1based": 79616822,
+      "brain_models_with_exact_junction": 0,
+      "brain_assigned_sum_matching_models_not_junction_reads": 0.0
+    },
+    {
+      "gene": "HDGFL2",
+      "cell_candidate_txname": "BambuTx8683",
+      "chrom": "chr19",
+      "strand": "+",
+      "left_exonic_boundary_1based": 4472422,
+      "right_exonic_boundary_1based": 4475275,
+      "brain_models_with_exact_junction": 3,
+      "brain_assigned_sum_matching_models_not_junction_reads": 2.0
+    },
+    {
+      "gene": "HDGFL2",
+      "cell_candidate_txname": "BambuTx8683",
+      "chrom": "chr19",
+      "strand": "+",
+      "left_exonic_boundary_1based": 4475351,
+      "right_exonic_boundary_1based": 4475445,
+      "brain_models_with_exact_junction": 6,
+      "brain_assigned_sum_matching_models_not_junction_reads": 24.0
+    },
+    {
+      "gene": "HDGFL2",
+      "cell_candidate_txname": "BambuTx8683",
+      "chrom": "chr19",
+      "strand": "+",
+      "left_exonic_boundary_1based": 4475583,
+      "right_exonic_boundary_1based": 4488676,
+      "brain_models_with_exact_junction": 5,
+      "brain_assigned_sum_matching_models_not_junction_reads": 24.0
+    },
+    {
+      "gene": "HDGFL2",
+      "cell_candidate_txname": "BambuTx8683",
+      "chrom": "chr19",
+      "strand": "+",
+      "left_exonic_boundary_1based": 4488876,
+      "right_exonic_boundary_1based": 4491566,
+      "brain_models_with_exact_junction": 5,
+      "brain_assigned_sum_matching_models_not_junction_reads": 24.0
+    },
+    {
+      "gene": "HDGFL2",
+      "cell_candidate_txname": "BambuTx8683",
+      "chrom": "chr19",
+      "strand": "+",
+      "left_exonic_boundary_1based": 4491682,
+      "right_exonic_boundary_1based": 4491764,
+      "brain_models_with_exact_junction": 4,
+      "brain_assigned_sum_matching_models_not_junction_reads": 24.0
+    },
+    {
+      "gene": "HDGFL2",
+      "cell_candidate_txname": "BambuTx8683",
+      "chrom": "chr19",
+      "strand": "+",
+      "left_exonic_boundary_1based": 4491835,
+      "right_exonic_boundary_1based": 4492015,
+      "brain_models_with_exact_junction": 0,
+      "brain_assigned_sum_matching_models_not_junction_reads": 0.0
+    },
+    {
+      "gene": "HDGFL2",
+      "cell_candidate_txname": "BambuTx8683",
+      "chrom": "chr19",
+      "strand": "+",
+      "left_exonic_boundary_1based": 4492152,
+      "right_exonic_boundary_1based": 4493703,
+      "brain_models_with_exact_junction": 0,
+      "brain_assigned_sum_matching_models_not_junction_reads": 0.0
+    },
+    {
+      "gene": "HDGFL2",
+      "cell_candidate_txname": "BambuTx8683",
+      "chrom": "chr19",
+      "strand": "+",
+      "left_exonic_boundary_1based": 4493862,
+      "right_exonic_boundary_1based": 4493982,
+      "brain_models_with_exact_junction": 4,
+      "brain_assigned_sum_matching_models_not_junction_reads": 46.0
+    },
+    {
+      "gene": "HDGFL2",
+      "cell_candidate_txname": "BambuTx8683",
+      "chrom": "chr19",
+      "strand": "+",
+      "left_exonic_boundary_1based": 4494057,
+      "right_exonic_boundary_1based": 4494166,
+      "brain_models_with_exact_junction": 4,
+      "brain_assigned_sum_matching_models_not_junction_reads": 46.0
+    },
+    {
+      "gene": "HDGFL2",
+      "cell_candidate_txname": "BambuTx8683",
+      "chrom": "chr19",
+      "strand": "+",
+      "left_exonic_boundary_1based": 4494475,
+      "right_exonic_boundary_1based": 4496302,
+      "brain_models_with_exact_junction": 4,
+      "brain_assigned_sum_matching_models_not_junction_reads": 46.0
+    },
+    {
+      "gene": "HDGFL2",
+      "cell_candidate_txname": "BambuTx8683",
+      "chrom": "chr19",
+      "strand": "+",
+      "left_exonic_boundary_1based": 4496405,
+      "right_exonic_boundary_1based": 4497958,
+      "brain_models_with_exact_junction": 4,
+      "brain_assigned_sum_matching_models_not_junction_reads": 24.0
+    },
+    {
+      "gene": "HDGFL2",
+      "cell_candidate_txname": "BambuTx8683",
+      "chrom": "chr19",
+      "strand": "+",
+      "left_exonic_boundary_1based": 4498031,
+      "right_exonic_boundary_1based": 4498306,
+      "brain_models_with_exact_junction": 5,
+      "brain_assigned_sum_matching_models_not_junction_reads": 46.0
+    },
+    {
+      "gene": "HDGFL2",
+      "cell_candidate_txname": "BambuTx8683",
+      "chrom": "chr19",
+      "strand": "+",
+      "left_exonic_boundary_1based": 4498376,
+      "right_exonic_boundary_1based": 4498814,
+      "brain_models_with_exact_junction": 6,
+      "brain_assigned_sum_matching_models_not_junction_reads": 64.0
+    },
+    {
+      "gene": "HDGFL2",
+      "cell_candidate_txname": "BambuTx8683",
+      "chrom": "chr19",
+      "strand": "+",
+      "left_exonic_boundary_1based": 4498915,
+      "right_exonic_boundary_1based": 4499491,
+      "brain_models_with_exact_junction": 6,
+      "brain_assigned_sum_matching_models_not_junction_reads": 64.0
+    },
+    {
+      "gene": "HDGFL2",
+      "cell_candidate_txname": "BambuTx8683",
+      "chrom": "chr19",
+      "strand": "+",
+      "left_exonic_boundary_1based": 4499704,
+      "right_exonic_boundary_1based": 4501191,
+      "brain_models_with_exact_junction": 6,
+      "brain_assigned_sum_matching_models_not_junction_reads": 64.0
+    },
+    {
+      "gene": "HDGFL2",
+      "cell_candidate_txname": "BambuTx8683",
+      "chrom": "chr19",
+      "strand": "+",
+      "left_exonic_boundary_1based": 4501317,
+      "right_exonic_boundary_1based": 4501911,
+      "brain_models_with_exact_junction": 3,
+      "brain_assigned_sum_matching_models_not_junction_reads": 46.0
+    }
+  ],
+  "prior_report_predictions": {
+    "cell_matching_models_is_1": true,
+    "cell_target_assigned_sum_is_32": true,
+    "brain_CAMK2B_models_is_49": true,
+    "brain_matching_models_is_0": true
+  },
+  "new_pvalues_or_effect_sizes": false,
+  "individual_rows_exported": false
+}

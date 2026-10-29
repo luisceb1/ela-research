@@ -1,0 +1,35 @@
+{
+  "package_name": "ELA_06_CAMK2B_validacion_independiente_2026-10-29(1).zip",
+  "package_sha256": "c0aa6007bd26cfebfe6dbbcd411e4ad209c4b3895da84ad0079af1a785044801",
+  "matches_prior_inventory": true,
+  "received_script_sha256": "2242d24912db60152a98dee6006a8a77c0757d803724b875eab4e36d3dd305a5",
+  "received_script_executed": false,
+  "verification_member": "resultados/verificacion.txt",
+  "source_checks": [
+    {
+      "source": "GSE310723_i3N_isoseq_extended_annotations.gtf.gz",
+      "prior_declared_sha256": "4a72d89df3f76c55694a53cca4462b53e5b1fc6cb4c3d931b26dd8402ac6e288",
+      "current_sha256": "4a72d89df3f76c55694a53cca4462b53e5b1fc6cb4c3d931b26dd8402ac6e288",
+      "matches": true
+    },
+    {
+      "source": "GSE310723_i3N_isoseq_uniqueCounts_transcript.txt.gz",
+      "prior_declared_sha256": "8f348f9caceece0ac92c0df35afcf9312fd7182ed0f03a200235b439f5066c8d",
+      "current_sha256": "8f348f9caceece0ac92c0df35afcf9312fd7182ed0f03a200235b439f5066c8d",
+      "matches": true
+    },
+    {
+      "source": "GSE315972_NYGC_isoseq_extended_annotations.gtf.gz",
+      "prior_declared_sha256": "53bbd59fd8e3bbf558a9c5a60e6af0e3c658455d6b7db8e2b86c2420051e0976",
+      "current_sha256": "53bbd59fd8e3bbf558a9c5a60e6af0e3c658455d6b7db8e2b86c2420051e0976",
+      "matches": true
+    },
+    {
+      "source": "GSE315972_NYGC_isoseq_uniqueCounts_transcript.txt.gz",
+      "prior_declared_sha256": "9f87f6ee77597a0aa0284f1379ddb0cd212d7dc212d22d745d350e23e22670a1",
+      "current_sha256": "9f87f6ee77597a0aa0284f1379ddb0cd212d7dc212d22d745d350e23e22670a1",
+      "matches": true
+    }
+  ],
+  "method": "zipfile read of received script and verificacion.txt, regex SHA256 extraction, exact comparison to audit.json; no individual tables read/copied"
+}

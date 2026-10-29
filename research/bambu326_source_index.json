@@ -1,0 +1,37 @@
+{
+  "repository": "bioc/bambu",
+  "commit": "2fb886442096896807f44191ad2d1e00b43ceadd",
+  "verified_description_version": "3.2.6",
+  "files": [
+    {
+      "path": "R/bambu-quantify.R",
+      "blob_sha": "fa5a079dc25da9ae07634a513208ab96f8f19bd5",
+      "url": "https://raw.githubusercontent.com/bioc/bambu/2fb886442096896807f44191ad2d1e00b43ceadd/R/bambu-quantify.R"
+    },
+    {
+      "path": "R/bambu-quantify_utilityFunctions.R",
+      "blob_sha": "39a48c9ab0c0360c8727181513e9737fdc888c33",
+      "url": "https://raw.githubusercontent.com/bioc/bambu/2fb886442096896807f44191ad2d1e00b43ceadd/R/bambu-quantify_utilityFunctions.R"
+    },
+    {
+      "path": "R/readWrite.R",
+      "blob_sha": "44e98de90ef60dc78d2bf8128e59a86077918aa4",
+      "url": "https://raw.githubusercontent.com/bioc/bambu/2fb886442096896807f44191ad2d1e00b43ceadd/R/readWrite.R"
+    },
+    {
+      "path": "man/bambu.Rd",
+      "blob_sha": "e3f4eca464804ff31c01a06e71553ac193d2a454",
+      "url": "https://raw.githubusercontent.com/bioc/bambu/2fb886442096896807f44191ad2d1e00b43ceadd/man/bambu.Rd"
+    },
+    {
+      "path": "DESCRIPTION",
+      "blob_sha": "46c9d258fbfd286ac2654d4e70894793c642324d",
+      "url": "https://raw.githubusercontent.com/bioc/bambu/2fb886442096896807f44191ad2d1e00b43ceadd/DESCRIPTION"
+    },
+    {
+      "path": "src/em.cpp",
+      "blob_sha": "2f640e57ed227d2de1dc8ab00015281326f9cdd0",
+      "url": "https://raw.githubusercontent.com/bioc/bambu/2fb886442096896807f44191ad2d1e00b43ceadd/src/em.cpp"
+    }
+  ]
+}

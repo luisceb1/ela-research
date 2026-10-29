@@ -1,0 +1,13 @@
+gse	column	assigned_unique_counts	detected_transcripts	fractional_unique_cells
+GSE310723	i3N_Ctrl_5Aza_hg38_minimap2	376852.0	39100	0
+GSE310723	i3N_Ctrl_noAza_hg38_minimap2	421914.0	40864	0
+GSE310723	i3N_TDP43KD_5Aza_hg38_minimap2	330066.0	35322	0
+GSE310723	i3N_TDP43KD_noAza_hg38_minimap2	483824.0	39966	0
+GSE315972	ALS-C9_02759_clustered_hg38_minimap2	306834.0	39393	0
+GSE315972	ALS-C9_03363_clustered_hg38_minimap2	354276.0	44170	0
+GSE315972	ALS-ci_02988_clustered_hg38_minimap2	327254.0	38452	0
+GSE315972	ALS-ci_04118_clustered_hg38_minimap2	341072.0	42292	0
+GSE315972	ALS_02763_clustered_hg38_minimap2	261270.0	34300	0
+GSE315972	ALS_03634_clustered_hg38_minimap2	230530.0	30316	0
+GSE315972	CTL_03374_clustered_hg38_minimap2	373122.0	42482	0
+GSE315972	CTL_03662_clustered_hg38_minimap2	433750.0	47291	0

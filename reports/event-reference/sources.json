@@ -1,0 +1,113 @@
+{
+  "DESCRIPTION": {
+    "cache_bytes": 2284,
+    "cache_sha256": "36680d87311e02f48afff2813c3db8651924256ca78c32c9d3598d60d94cff4f",
+    "git_blob_sha": "46c9d258fbfd286ac2654d4e70894793c642324d",
+    "git_commit": "2fb886442096896807f44191ad2d1e00b43ceadd",
+    "projection": "original",
+    "retrieved_utc": "2026-10-29T10:17:41.629466+00:00",
+    "source_bytes": 2284,
+    "source_sha256": "36680d87311e02f48afff2813c3db8651924256ca78c32c9d3598d60d94cff4f",
+    "url": "https://raw.githubusercontent.com/bioc/bambu/2fb886442096896807f44191ad2d1e00b43ceadd/DESCRIPTION"
+  },
+  "GSE310723_i3N_isoseq_CPM_transcript.txt.gz": {
+    "cache_bytes": 3237177,
+    "cache_sha256": "6966f8abbcbfd851e5b8a99bda265b5e3926297e6fa92ffa387dde9311af3e2d",
+    "projection": "original",
+    "retrieved_utc": "2026-10-29T10:16:13.325304+00:00",
+    "source_bytes": 3237177,
+    "source_sha256": "6966f8abbcbfd851e5b8a99bda265b5e3926297e6fa92ffa387dde9311af3e2d",
+    "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE310nnn/GSE310723/suppl/GSE310723_i3N_isoseq_CPM_transcript.txt.gz"
+  },
+  "GSE310723_i3N_isoseq_fullLengthCounts_transcript.txt.gz": {
+    "cache_bytes": 2563934,
+    "cache_sha256": "39955b0a5f7b5202d7d954779e0b3d6e92ebd898c2f72c33b66bea4c461ee52d",
+    "projection": "original",
+    "retrieved_utc": "2026-10-29T10:16:07.357128+00:00",
+    "source_bytes": 2563934,
+    "source_sha256": "39955b0a5f7b5202d7d954779e0b3d6e92ebd898c2f72c33b66bea4c461ee52d",
+    "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE310nnn/GSE310723/suppl/GSE310723_i3N_isoseq_fullLengthCounts_transcript.txt.gz"
+  },
+  "GSE315972_NYGC_isoseq_CPM_transcript.txt.gz": {
+    "cache_bytes": 4232328,
+    "cache_sha256": "b18045798d79f15dd59b90c3eb5097cd7a0eb9917b0a20f841e20d71fbee8c92",
+    "projection": "original",
+    "retrieved_utc": "2026-10-29T10:16:24.852691+00:00",
+    "source_bytes": 4232328,
+    "source_sha256": "b18045798d79f15dd59b90c3eb5097cd7a0eb9917b0a20f841e20d71fbee8c92",
+    "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE315nnn/GSE315972/suppl/GSE315972_NYGC_isoseq_CPM_transcript.txt.gz"
+  },
+  "GSE315972_NYGC_isoseq_fullLengthCounts_transcript.txt.gz": {
+    "cache_bytes": 2838315,
+    "cache_sha256": "c06cf3d9690972b0cf3976e1bdf120a64ad861ad7d98677bf95bbb6dd9ee8ee3",
+    "projection": "original",
+    "retrieved_utc": "2026-10-29T10:16:19.021990+00:00",
+    "source_bytes": 2838315,
+    "source_sha256": "c06cf3d9690972b0cf3976e1bdf120a64ad861ad7d98677bf95bbb6dd9ee8ee3",
+    "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE315nnn/GSE315972/suppl/GSE315972_NYGC_isoseq_fullLengthCounts_transcript.txt.gz"
+  },
+  "PMC12023386.event_projection.json": {
+    "cache_bytes": 551,
+    "cache_sha256": "b3a69dbc6f8054642958c853f50292c4c5f726c32383b8217a5f0925ca7b5438",
+    "projection": "molecular_coordinate_projection",
+    "retrieved_utc": "2026-10-29T10:19:20.376276+00:00",
+    "source_bytes": 244402,
+    "source_sha256": "90d0a44cd0aab2f0be6008a1d3fe2659548351a55c914ec5f69fcba6c2a7a270",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12023386/fullTextXML"
+  },
+  "bambu-quantify.R": {
+    "cache_bytes": 4128,
+    "cache_sha256": "92e1e02939c92f5f3e3342d30178bc338300e4417437bab2dee740e8b436360d",
+    "git_blob_sha": "fa5a079dc25da9ae07634a513208ab96f8f19bd5",
+    "git_commit": "2fb886442096896807f44191ad2d1e00b43ceadd",
+    "projection": "original",
+    "retrieved_utc": "2026-10-29T10:17:41.629266+00:00",
+    "source_bytes": 4128,
+    "source_sha256": "92e1e02939c92f5f3e3342d30178bc338300e4417437bab2dee740e8b436360d",
+    "url": "https://raw.githubusercontent.com/bioc/bambu/2fb886442096896807f44191ad2d1e00b43ceadd/R/bambu-quantify.R"
+  },
+  "bambu-quantify_utilityFunctions.R": {
+    "cache_bytes": 19418,
+    "cache_sha256": "aecc493b937b5771cff252e2026963fddb5018696ccf2f1f1b02f7e16141d442",
+    "git_blob_sha": "39a48c9ab0c0360c8727181513e9737fdc888c33",
+    "git_commit": "2fb886442096896807f44191ad2d1e00b43ceadd",
+    "projection": "original",
+    "retrieved_utc": "2026-10-29T10:17:41.629363+00:00",
+    "source_bytes": 19418,
+    "source_sha256": "aecc493b937b5771cff252e2026963fddb5018696ccf2f1f1b02f7e16141d442",
+    "url": "https://raw.githubusercontent.com/bioc/bambu/2fb886442096896807f44191ad2d1e00b43ceadd/R/bambu-quantify_utilityFunctions.R"
+  },
+  "bambu.Rd": {
+    "cache_bytes": 7873,
+    "cache_sha256": "1c96338cbaf5db4bbe3c4dc334844f8f09dc7a845f208537c2d08402636182a1",
+    "git_blob_sha": "e3f4eca464804ff31c01a06e71553ac193d2a454",
+    "git_commit": "2fb886442096896807f44191ad2d1e00b43ceadd",
+    "projection": "original",
+    "retrieved_utc": "2026-10-29T10:17:41.629444+00:00",
+    "source_bytes": 7873,
+    "source_sha256": "1c96338cbaf5db4bbe3c4dc334844f8f09dc7a845f208537c2d08402636182a1",
+    "url": "https://raw.githubusercontent.com/bioc/bambu/2fb886442096896807f44191ad2d1e00b43ceadd/man/bambu.Rd"
+  },
+  "em.cpp": {
+    "cache_bytes": 3663,
+    "cache_sha256": "50b805c264ae1a95ba3a179b330042952395a351f915b2c3746e63c0c90a2f5b",
+    "git_blob_sha": "2f640e57ed227d2de1dc8ab00015281326f9cdd0",
+    "git_commit": "2fb886442096896807f44191ad2d1e00b43ceadd",
+    "projection": "original",
+    "retrieved_utc": "2026-10-29T10:17:41.629519+00:00",
+    "source_bytes": 3663,
+    "source_sha256": "50b805c264ae1a95ba3a179b330042952395a351f915b2c3746e63c0c90a2f5b",
+    "url": "https://raw.githubusercontent.com/bioc/bambu/2fb886442096896807f44191ad2d1e00b43ceadd/src/em.cpp"
+  },
+  "readWrite.R": {
+    "cache_bytes": 7798,
+    "cache_sha256": "3819f37bd2042f435557497f920adc6a57ce7e0cbc49dc7779f416086201b238",
+    "git_blob_sha": "44e98de90ef60dc78d2bf8128e59a86077918aa4",
+    "git_commit": "2fb886442096896807f44191ad2d1e00b43ceadd",
+    "projection": "original",
+    "retrieved_utc": "2026-10-29T10:17:41.629411+00:00",
+    "source_bytes": 7798,
+    "source_sha256": "3819f37bd2042f435557497f920adc6a57ce7e0cbc49dc7779f416086201b238",
+    "url": "https://raw.githubusercontent.com/bioc/bambu/2fb886442096896807f44191ad2d1e00b43ceadd/R/readWrite.R"
+  }
+}

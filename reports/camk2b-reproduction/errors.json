@@ -1,0 +1,7 @@
+[
+  {
+    "step": "prior-package verification member lookup",
+    "error": "KeyError for root verificacion.txt",
+    "resolution": "found resultados/verificacion.txt from ZIP inventory, then four source hashes matched"
+  }
+]

@@ -1,0 +1,15 @@
+{
+  "algebraic_scalar_witness": {
+    "observed_count": 1,
+    "scope": "algebra only; package R/C++ NOT executed; does not trace deposited pipeline",
+    "unique_output_of_scalar_expression": 1.0
+  },
+  "bambu_commit": "2fb886442096896807f44191ad2d1e00b43ceadd",
+  "bambu_version": "3.2.6",
+  "event_matches": 1,
+  "full_transcript_or_polyA_validated": false,
+  "gene_strand_from_gencode": "+",
+  "libraries": 12,
+  "quant_violations": 0,
+  "unique_count_scale_cause": "unresolved"
+}

@@ -1,0 +1,11 @@
+{
+  "gencode.v47.annotation.gtf.gz": {
+    "cache_bytes": 58953903,
+    "cache_sha256": "df11938c66d2b39f8ebbdb5f1720919321f9cf9d58f02b019753f6a24ca3db24",
+    "projection": "original",
+    "retrieved_utc": "2026-10-29T09:58:32.774840+00:00",
+    "source_bytes": 58953903,
+    "source_sha256": "df11938c66d2b39f8ebbdb5f1720919321f9cf9d58f02b019753f6a24ca3db24",
+    "url": "https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_47/gencode.v47.annotation.gtf.gz"
+  }
+}

@@ -1,0 +1,32 @@
+[
+  {
+    "step": "web article/PDF/figure endpoints",
+    "error": "search service returned redirect/500 or DisabledError",
+    "resolution": "download via Python and publisher-disclosed reference PDF link"
+  },
+  {
+    "step": "canonical PDF URL Python",
+    "error": "initial timeout; subsequent response200 was HTML, not PDF",
+    "resolution": "rejected as full PDF; _reference.pdf verified %PDF signature and DOI"
+  },
+  {
+    "step": "EuropePMC DOI search",
+    "error": "hitCount0",
+    "resolution": "no PMC identity inferred; primary publisher used"
+  },
+  {
+    "step": "HTML extraction",
+    "error": "bs4 unavailable; HTML contains abstract/metadata without full methods",
+    "resolution": "no dependency added; full primary PDF read with Poppler"
+  },
+  {
+    "step": "reporting summary text",
+    "error": "pdftotext returned no useful text",
+    "resolution": "page2 rendered, OCR inspected and visually verified"
+  },
+  {
+    "step": "timing8 initial parser",
+    "error": "ValueError: Injury or endpoint timing missing, due to PDF word hyphenation",
+    "resolution": "alphabetic line-end joining, regression test, successful full-source rerun"
+  }
+]

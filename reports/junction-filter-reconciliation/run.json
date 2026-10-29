@@ -1,0 +1,19 @@
+{
+  "python": "3.12.14",
+  "command": "python scripts/reconcile_shared_junctions.py --cache PUBLIC_CACHE [--original-zip ORIGINAL_ZIP]",
+  "tests_total": 20,
+  "new_junction_tests": 4,
+  "mapping_tests": 12,
+  "other_tests": 4,
+  "original_zip_recovered_and_verified_initially": true,
+  "last_run_verified_zip": false,
+  "legacy_function_excerpts_verified": 4,
+  "safe_projection_verified": true,
+  "zip_and_public_projection_modes_same_structural_results": true,
+  "membership_sha256": "fd06303e8b030383b60a70e91dde8509951d0d2e20b29c021f67736b820dd0a4",
+  "last_result_sha256": "8f9b3a4b3779a805721e90f438fb9e76bb2ed6007ed65432c203bdd77bc8d6b4",
+  "no_individual_counts_exported": true,
+  "pvalues_computed": false,
+  "biological_replication_added": false,
+  "main_source_inherited_from": "PR23 based on main13ccbc5c9f1c9744c57ed9abb822d169772e32a5"
+}

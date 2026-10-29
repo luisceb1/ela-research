@@ -1,0 +1,11 @@
+{
+  "python": "3.12.14",
+  "tests_passed": 24,
+  "new_tests": 4,
+  "annotation_sha256": "d8e28f96f5a3257766d79321a554f54b87233d3095962a33871bcbea357fad23",
+  "missing_gene_ids": [
+    "ENSG00000276256"
+  ],
+  "novelty_assessed": false,
+  "author_catalog_compared": false
+}

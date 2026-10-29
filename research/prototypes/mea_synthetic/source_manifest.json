@@ -1,0 +1,42 @@
+[
+  {
+    "local_path": "research/prototypes/mea_synthetic/base/src/mea_pipeline.py",
+    "package": "ELA_MEA_simulador_UNC13A_2026-10-29(1).zip",
+    "package_sha256": "34665193fd4ccb450e5c95c9e1832346c25ef5dbafdcc9dd1cd121c62c9ee36a",
+    "member": "ELA_MEA_simulador_UNC13A_2026-10-29/src/mea_pipeline.py",
+    "sha256": "fefa4709093aaae4cdd4e5d9a58b557f8f92ae25b09cd32c656cb5d902de74e7",
+    "executed_scope": "unit tests and reviewed computational core only; no CLI, chart or report writers"
+  },
+  {
+    "local_path": "research/prototypes/mea_synthetic/base/src/analizar_csv_estandarizado.py",
+    "package": "ELA_MEA_simulador_UNC13A_2026-10-29(1).zip",
+    "package_sha256": "34665193fd4ccb450e5c95c9e1832346c25ef5dbafdcc9dd1cd121c62c9ee36a",
+    "member": "ELA_MEA_simulador_UNC13A_2026-10-29/src/analizar_csv_estandarizado.py",
+    "sha256": "bf52c897c95c4384981ef633d9ed50c38cf91ec3acef7291c94bed6c8334315d",
+    "executed_scope": "unit tests and reviewed computational core only; no CLI, chart or report writers"
+  },
+  {
+    "local_path": "research/prototypes/mea_synthetic/base/tests/test_design.py",
+    "package": "ELA_MEA_simulador_UNC13A_2026-10-29(1).zip",
+    "package_sha256": "34665193fd4ccb450e5c95c9e1832346c25ef5dbafdcc9dd1cd121c62c9ee36a",
+    "member": "ELA_MEA_simulador_UNC13A_2026-10-29/tests/test_design.py",
+    "sha256": "24fb322bce79ed8be5723c70aaa3bb0d58b5d787bc33b48f8c841d889ae73a32",
+    "executed_scope": "unit tests and reviewed computational core only; no CLI, chart or report writers"
+  },
+  {
+    "local_path": "research/prototypes/mea_synthetic/sensitivity/analisis_sensibilidad.py",
+    "package": "ELA_UNC13A_MEA_simulacion_sensibilidad_2026-10-29(1).zip",
+    "package_sha256": "1b9454282a8fec62f171ba3232b9e4516d758a6f599767852a32730515aef04a",
+    "member": "ELA_UNC13A_MEA_sensibilidad_2026-10-29/analisis_sensibilidad.py",
+    "sha256": "2b8c1a871ebdd5e733a5d055dfcc5a262fe06f36975f4d54d42bd6a16362b9e9",
+    "executed_scope": "unit tests and reviewed computational core only; no CLI, chart or report writers"
+  },
+  {
+    "local_path": "research/prototypes/mea_synthetic/sensitivity/test_sensibilidad.py",
+    "package": "ELA_UNC13A_MEA_simulacion_sensibilidad_2026-10-29(1).zip",
+    "package_sha256": "1b9454282a8fec62f171ba3232b9e4516d758a6f599767852a32730515aef04a",
+    "member": "ELA_UNC13A_MEA_sensibilidad_2026-10-29/test_sensibilidad.py",
+    "sha256": "9a44930b9a9006c5110e4a601039323df49236bd14635dd88f8c78fa0b1699ab",
+    "executed_scope": "unit tests and reviewed computational core only; no CLI, chart or report writers"
+  }
+]

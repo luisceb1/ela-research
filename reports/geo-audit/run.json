@@ -1,0 +1,11 @@
+{
+  "argv": [
+    "scripts/geo_audit.py"
+  ],
+  "inference": "descriptive only",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "python": "3.12.14",
+  "randomness": "none",
+  "status": "technical audit generated; review metadata caveats",
+  "utc": "2026-10-29T10:02:30.821699+00:00"
+}

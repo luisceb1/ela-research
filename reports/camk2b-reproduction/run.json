@@ -1,0 +1,11 @@
+{
+  "python": "3.12.14",
+  "command": "python scripts/reproduce_camk2b.py",
+  "audit_sha256": "025e39e6e46df9954fcb28848688bea056c686e401035016d8bbe5efbfb850cf",
+  "identical_repeat_by_bytes": true,
+  "tests_passed": 77,
+  "new_technical_tests": 5,
+  "prior_predictions_all_match": true,
+  "independent_biological_replication": false,
+  "individual_rows_exported": false
+}

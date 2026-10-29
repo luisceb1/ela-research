@@ -1,44 +1,48 @@
-# Estado del proyecto ELA
+# Estado actual del proyecto ELA
 
-Fecha de arranque del repositorio: 2026-10-29.
+Actualizado: 29/10/2026. Sustituye los puntos de continuación históricos de las ramas. La consolidación está preparada para main: comprobar su PR/historial remoto antes de asumir integración.
 
-## Pregunta central
-¿Qué cambios de splicing asociados a pérdida nuclear de TDP-43 se observan de manera consistente en datasets publicados, y qué experimento distinguiría restauración de ARN de recuperación funcional neuronal?
+## Pregunta y nivel de evidencia
 
-## Datasets prioritarios
-- **GSE310723:** modelos neuronales i3N; secuenciación Iso-Seq.
-  https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE310723
-- **GSE315972:** tejido cerebral humano Iso-Seq.
-  https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE315972
+¿Qué alteraciones de splicing asociadas a pérdida nuclear de TDP-43 resisten controles técnicos y contraste publicado, y qué experimento distinguiría restauración de ARN de recuperación funcional neuronal?
 
-## Primer inventario técnico realizado (2026-10-29)
-- GSE310723: archivo uniqueCounts de 2.568.038 bytes comprimidos; 392.871 filas de transcritos y 4 columnas de condiciones, más TXNAME y GENEID.
-- Condiciones etiquetadas: Ctrl ± 5Aza y TDP43KD ± 5Aza; una columna por condición.
-- GSE315972: archivo uniqueCounts de 2.862.110 bytes comprimidos; 401.720 filas, 8 columnas de muestras y TXNAME / GENEID.
-- Etiquetas de muestras: 2 ALS-C9, 2 ALS-ci, 2 ALS, 2 CTL. **Esto refleja nombres de columna, no verificación de la categorización clínica.**
-- Inventario y nombres exactos: `reports/geo-inventory.md`.
+Tenemos auditorías técnicas, observaciones descriptivas y propuestas. No una nueva diana validada, intervención experimental propia o evidencia clínica. Repetir cálculos o cruzar dos series del mismo estudio no crea replicación independiente.
 
-## Restricciones
-- Una columna por condición en GSE310723; no estimar significación estadística como si hubiera réplicas biológicas.
-- No asumir equivalencia entre neuronas i3N cultivadas y tejido cerebral humano.
-- Auditar identificadores TXNAME y GENEID contra GTF antes de atribuir isoformas a STMN2/UNC13A.
-- `uniqueCounts`, `counts`, `CPM` y otros conteos no son intercambiables.
-- No extrapolar observaciones moleculares a efectos clínicos.
+## Resultados ejecutados
 
-## Estado operativo
-Inventario estructural GEO completado por primera ejecución de GitHub Actions. Aún no se ha auditado la calidad biológica, ni realizado análisis diferencial ni validación independiente.
+| Línea | Evidencia y localización | Límite vigente |
+|---|---|---|
+| GEO, #1 | reports/geo-audit: 12 bibliotecas, 392871/401720 TXNAME enlazados, cero discordancias de gen | QC técnico; RIN, composición y lecturas crudas no auditados completamente |
+| STMN2/UNC13A, #2/#17/#19 | reports/isoforms y reports/mapping-positive-controls: STMN2 4/3 modelos y UNC13A 7/7 cultivo/cerebro; selector ENSG con controles positivos | Modelos asignados, no validación del transcrito completo ni lecturas de cada unión |
+| Descriptivos | reports/descriptive y reports/event-reference: sensibilidad a medidas/denominadores y unión conocida STMN2 contrastada | Una biblioteca por condición en cultivo. Etiquetas cerebrales ALS/ALS-ci/ALS-C9 no son estratos cognitivos |
+| Metadatos cerebrales | reports/ALS_CI_metadata_correction_2026-10-29.md: corrección agregada 3 CI / 3 no CI / 2 controles | No ampliar datos clínicos personales |
+| 21 frente a 1910, #20 | reports/junction-filter-reconciliation: ZIP recuperado; parser consecutivo perdía exones y referencias. 1910 uniones agrupadas; 1901 con soporte asignado positivo en ambas series | Las 21 no forman cribado exhaustivo válido; 3 eran referencia ENST interna |
+| GENCODE | reports/gencode-junction-annotation: 17 coincidencias exactas, 1881 no encontradas para el mismo gen y 3 de un gen ausente de v47 | Ausencia no prueba novedad, crypticidad, traducción o función |
+| CAMK2B, #15 parcial | reports/camk2b-reproduction: resultado estructural previo reproducido | Ausencia de modelo cerebral no prueba ausencia biológica o de lecturas |
+| MEA, #16 parcial | reports/mea-software-audit: 11 tests recibidos y seis contraejemplos; control separado solo sintético | Simulación; validadores/denominadores históricos no habilitados para datos reales |
+| Función | reports/functional-evidence, accepted-keuss, chan-timing y reversal-design | Keuss: ASO anterior al KD tardío; Chan incluye ASO inmediatamente poslesión. No certificar originalidad del rescate diferido |
+| Imágenes | reports/image-metadata-qc: 27 cabeceras, 4 con escala física; falta mapa de unidades | Sin inferencia grupal o transferencia de calibración por tamaño |
+| Otros chats | reports/prior-work-reconciliation: 8 ZIP y 3 PDF inventariados; reproducciones posteriores arriba | GSE126542/GSE121569 y péptidos pendientes de reproducción completa; no sumar cohortes reutilizadas |
 
-## Actualización de auditoría (29-10-2026)
-- Se identificó un análisis Iso-Seq externo al repositorio, en `INFORME_CIENTIFICO.md`, que comunica 21 uniones compartidas entre GSE310723/GSE315972, 20 genes y **cero eventos** que superen simultáneamente los filtros preespecificados celular y tejido; **no reejecutado en el repositorio**.
-- MAP6D1 y ZNF317 no son candidatos de alta prioridad con la evidencia actual. El primer conjunto presenta un problema de ausencia de cobertura en controles; el segundo no reproduce inducción en i3N tras reducción de TDP-43.
-- Informes previos sobre péptidos crípticos, CAMK2B, MEA y auditoría Keuss/Chan están sintetizados en `research/AUDIT_2026-10-29.md`.
-- Pruebas unitarias del script `scripts/map_isoseq_gtf.py` superadas en GitHub Actions (run 40868184532); **no se ha ejecutado el mapeo con GTF reales**.
-- Bloqueo comprobado: los archivos antiguos de la biblioteca no pudieron materializarse como bytes para reejecución local; tampoco hubo resolución DNS para el FTP público GEO en el entorno de ejecución.
-- Prioridad de investigación: verificar y reproducir el cribado negativo existente, en lugar de repetirlo como investigación nueva. Se mantiene propuesta condicional de estudio UNC13A posterior a déficit funcional documentado, pendiente de laboratorio.
+## Próximas tareas
 
-## Actualización científica: 29-10-2026 — AGRN/CAMK2B y control de calidad
-- Auditoría de grupos clínicos GSE315972 corregida y reejecutada (GitHub Actions 40872016985): 1910 uniones compartidas bajo filtro amplio, 9 filtro celular, 100 filtro cerebral, **0 intersección estricta**, no validación de ausencia de mecanismo ni reconstrucción exacta del cribado original de 21.
-- Nuevo informe: `reports/ALS_CI_metadata_correction_2026-10-29.md`; clasificación ALS-CI n=3, ALS-nonCI n=3 y controles n=2 por GSM/donante.
-- Revisión de literatura dirigida: `research/AGRN_CAMK2B_EVIDENCE_2026-10-29.md`. AGRN y CAMK2B tienen antecedentes de eventos crípticos y péptidos; no candidatos nuevos descubiertos aquí.
-- AGRN priorizada solo como **pregunta funcional de la unión neuromuscular** por testar; CAMK2B requiere auditoría isoforma-específica. UNC13A conserva la propuesta funcional posdéficit.
-- Bloqueo pendiente: acceso al ZIP original del cribado de 21 uniones y reproducción exacta de filtros; no fusionar 21 y 1910 como si provinieran del mismo algoritmo.
+1. Completar consolidación autorizada: verificar main, checks y procedencia de las 15 ramas. Conservar commits y PR; no reescribir historia.
+2. Suplementos Bolger/crypTE: XML primario y 17 medios inventariados; tablas aún no descargadas/cotejadas. Verificar esquema, ensamblaje, coordenadas, gen/transcrito y evento antes del cruce; un intervalo TE no equivale a un intrón.
+3. Revaluar filtros y prioridades sobre catálogo corregido. El cero histórico de intersección estricta no valida el parser defectuoso ni descarta un mecanismo.
+4. Reproducir GSE126542/GSE121569 (#14), diferenciando cohortes reutilizadas, diferenciaciones y lecturas de unión. Solo fuentes/proyecciones permitidas, sin filas clínicas personales.
+5. Evaluar AGRN (#21) y elegir propuesta funcional (#18) tras contraste estructural y de antecedentes. UNC13A_POST_DEFICIT_PROTOCOL_v0.3.md es propuesta; actualizar su brecha histórica con auditorías Keuss/Chan.
+
+## Bloqueos y restricciones
+
+- Escala par de uniqueCounts sin causa establecida. No dividir por dos ni llamar moléculas a cuentas asignadas. counts, uniqueCounts, fullLengthCounts y CPM no son intercambiables.
+- BAM/FASTQ y extremos completos no auditados; un cero o modelo ausente no demuestra ausencia molecular.
+- Cultivo y cerebro se analizan por separado, sin p-valores artificiales o función inferida de ARN.
+- Sin autorización aplicable: no contactos, publicaciones de resultados, gastos, laboratorio ni datos clínicos personales.
+
+## Operación
+
+Suite conjunta: 105 tests técnicos existentes (85 + 24 menos cuatro compartidos). CI unificada Python 3.11/3.12. Los 11 tests originales MEA son una ejecución histórica separada; no experimentos.
+
+Tras integración, main será el punto de partida. Usar ramas breves, revisión y pruebas antes de merge. Esta consolidación está autorizada por Luis; no concede autorización general para merges futuros. Las issues no se cierran automáticamente.
+
+Work diario a las 08:00 Europe/Madrid y resumen los viernes. Releer fuentes remotas y comprobar acceso/herramientas en cada ejecución; no hay cómputo continuo garantizado. Informes antiguos conservan contexto/hashes; este estado y MASTER_EVIDENCE.md indican pendientes actuales.

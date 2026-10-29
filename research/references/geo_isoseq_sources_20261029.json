@@ -1,0 +1,38 @@
+{
+  "GSE310723_i3N_isoseq_extended_annotations.gtf.gz": {
+    "cache_bytes": 19318707,
+    "cache_sha256": "4a72d89df3f76c55694a53cca4462b53e5b1fc6cb4c3d931b26dd8402ac6e288",
+    "projection": "original",
+    "retrieved_utc": "2026-10-29T09:54:59.730169+00:00",
+    "source_bytes": 19318707,
+    "source_sha256": "4a72d89df3f76c55694a53cca4462b53e5b1fc6cb4c3d931b26dd8402ac6e288",
+    "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE310nnn/GSE310723/suppl/GSE310723_i3N_isoseq_extended_annotations.gtf.gz"
+  },
+  "GSE310723_i3N_isoseq_uniqueCounts_transcript.txt.gz": {
+    "cache_bytes": 2568038,
+    "cache_sha256": "8f348f9caceece0ac92c0df35afcf9312fd7182ed0f03a200235b439f5066c8d",
+    "projection": "original",
+    "retrieved_utc": "2026-10-29T09:54:50.924887+00:00",
+    "source_bytes": 2568038,
+    "source_sha256": "8f348f9caceece0ac92c0df35afcf9312fd7182ed0f03a200235b439f5066c8d",
+    "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE310nnn/GSE310723/suppl/GSE310723_i3N_isoseq_uniqueCounts_transcript.txt.gz"
+  },
+  "GSE315972_NYGC_isoseq_extended_annotations.gtf.gz": {
+    "cache_bytes": 19689732,
+    "cache_sha256": "53bbd59fd8e3bbf558a9c5a60e6af0e3c658455d6b7db8e2b86c2420051e0976",
+    "projection": "original",
+    "retrieved_utc": "2026-10-29T09:59:48.071324+00:00",
+    "source_bytes": 19689732,
+    "source_sha256": "53bbd59fd8e3bbf558a9c5a60e6af0e3c658455d6b7db8e2b86c2420051e0976",
+    "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE315nnn/GSE315972/suppl/GSE315972_NYGC_isoseq_extended_annotations.gtf.gz"
+  },
+  "GSE315972_NYGC_isoseq_uniqueCounts_transcript.txt.gz": {
+    "cache_bytes": 2862110,
+    "cache_sha256": "9f87f6ee77597a0aa0284f1379ddb0cd212d7dc212d22d745d350e23e22670a1",
+    "projection": "original",
+    "retrieved_utc": "2026-10-29T09:59:30.017038+00:00",
+    "source_bytes": 2862110,
+    "source_sha256": "9f87f6ee77597a0aa0284f1379ddb0cd212d7dc212d22d745d350e23e22670a1",
+    "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE315nnn/GSE315972/suppl/GSE315972_NYGC_isoseq_uniqueCounts_transcript.txt.gz"
+  }
+}

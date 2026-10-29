@@ -1,0 +1,28 @@
+{
+  "selected_files": 27,
+  "parsed_headers": 27,
+  "range_bytes_total": 1769472,
+  "all_pixel_sizes": [
+    [
+      27740,
+      7940
+    ]
+  ],
+  "headers_with_resolution_tags": 4,
+  "headers_with_datetime": 0,
+  "full_file_md5_verified": false,
+  "workbook_md5_verified": true,
+  "workbook_sha256": "94cb3ebf59f41cbaa760bb0b62aa957390c608ab02e69999665ac1c1b7e0c339",
+  "length_observations_by_column_not_replicates": {
+    "A": 133,
+    "B": 33,
+    "C": 127,
+    "D": 167,
+    "E": 141,
+    "F": 64,
+    "G": 157,
+    "H": 217
+  },
+  "biological_replication_verified": false,
+  "new_biological_effects_estimated": false
+}

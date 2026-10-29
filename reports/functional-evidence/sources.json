@@ -1,0 +1,14 @@
+{
+  "PMC11230273": {
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11230273/fullTextXML",
+    "sha256": "e90aa2ee8c8df84748ae7ad957fee7531eb1deaa5f0cce565dfa9b5a28514f22",
+    "bytes": 109092,
+    "status": "retrieved"
+  },
+  "PMC12424808": {
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12424808/fullTextXML",
+    "sha256": "2288f098489ec18f0b4461ed42299f70159fdca4c25a9a1e08a84b6cc1469249",
+    "bytes": 136829,
+    "status": "retrieved"
+  }
+}

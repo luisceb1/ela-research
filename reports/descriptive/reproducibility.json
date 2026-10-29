@@ -1,0 +1,14 @@
+{
+  "deterministic_outputs_match": true,
+  "output_sha256": {
+    "values.tsv": "efb482f6b40f83e30bffe5eba81585458b83c3e7ed2cd783b30b6efffa0c945d",
+    "culture_contrasts.tsv": "f248d4006fc0ab3e99b46279e4a542e67469b0c205f9c137288845ee2d9f565e",
+    "brain_sensitivity.tsv": "d9b70f2788b62f6c489d20a8535886a7db02a248b45c1b43b2b85adcb45bc11c",
+    "count_scale.tsv": "00adddc35a33c3c35c03faa56efd7855b7a4a276d84d6952e6c994adf16485ea"
+  },
+  "python_dependencies": "standard library only",
+  "pseudocounts": false,
+  "statistical_inference": false,
+  "script_sha256": "f285ba75c48dd60cdeb765bfe5ce0e9818634cb257c6a52a36db0aba11ab1a21",
+  "input_manifest_sha256": "d1dacbdd34d1969fe8c757f334a5abe9ed6f30d18fb756c88d39f7aa634bf19f"
+}

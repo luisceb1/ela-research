@@ -1,0 +1,14 @@
+{
+  "annotation_runtime_errors": [],
+  "source_access": [
+    {
+      "endpoint": "PMC HTML",
+      "result": "recaptcha wall"
+    },
+    {
+      "endpoint": "EuropePMC fullTextXML",
+      "result": "success, seventeen distinct supplementary media links; tables/schema not yet retrieved"
+    }
+  ],
+  "remaining": "Author-table coordinate and event definitions must be verified before matching"
+}

@@ -1,0 +1,51 @@
+{
+  "checked_utc": "2026-10-29T15:12:15.088720+00:00",
+  "python": "3.12.14",
+  "incoming_files": 231,
+  "preserved_byte_identical_files": 222,
+  "changed_files": {
+    ".github/workflows/tests.yml": {
+      "input_blob": "d685b630c340beecfa99c06b7427af503332c21d",
+      "output_blob": "03f1ab797aa2e09d1724999ca4abd87f2afaf3d7"
+    },
+    "README.md": {
+      "input_blob": "277cbb0829b76c55b88bcc3864f4903613b8cefa",
+      "output_blob": "2067dcfffe9b3348a11d69894d9660c4fb21bc6a"
+    },
+    "reports/descriptive/REPORT.md": {
+      "input_blob": "400eec925655f9cdce257f416db1bc74a3ed51d9",
+      "output_blob": "e0121e08730b6438f6dd54724c0c2958afe2ba2b"
+    },
+    "reports/geo-audit/REPORT.md": {
+      "input_blob": "37e0f18cefc42088cc7b0f720a57cf5c49abc432",
+      "output_blob": "4cf597bf638e698ab4620355fd3ab7ec6545e1cc"
+    },
+    "research/BACKLOG.md": {
+      "input_blob": "d5edf86eaf4ee5e882087f1cb991d6b7e2a314bd",
+      "output_blob": "361df1c17bc869b528b54620ec3c99543643fbef"
+    },
+    "research/STATE.md": {
+      "input_blob": "6b4f15a8c089452bb30d73c59fdf620485568d87",
+      "output_blob": "8e553e01c4987d61a82cfaf8a1b89568e5c7365e"
+    },
+    "research/MASTER_EVIDENCE.md": {
+      "input_blob": "165771de93853381a5d88bb4af2cadfac1dccf16",
+      "output_blob": "9154d80177467b1cbdcee3929de83d7d752d3624"
+    },
+    "research/UNC13A_POST_DEFICIT_PROTOCOL_v0.3.md": {
+      "input_blob": "61f749efac38bf93ad31f148c9aea87f0a24c901",
+      "output_blob": "b180b43e353b55f82d52d206fb15ab5b0c7749d2"
+    }
+  },
+  "removed_files": [
+    ".github/workflows/isoseq-tests.yml"
+  ],
+  "all_scripts_tests_and_data_tables_preserved": true,
+  "tests_passed": 105,
+  "compileall_exit_code": 0,
+  "ci_pending": true,
+  "scientific_reanalysis_performed": false,
+  "clinical_data_imported": false,
+  "interpretation": "repository integration and technical checks; no new biological evidence",
+  "all_main_paths_preserved_except_replaced_duplicate_ci_workflow": true
+}

@@ -1,0 +1,16 @@
+{
+  "python": "3.12.14",
+  "command": "python scripts/audit_mea_software.py",
+  "audit_sha256": "b25674388a6ffe1449125f345af0bc407a0af89da73b53a5c284671076e7995e",
+  "repeated_audit_identical": true,
+  "repository_tests_passed": 85,
+  "received_base_tests_passed": 6,
+  "received_sensitivity_tests_passed": 5,
+  "new_repository_test_methods": 8,
+  "invalid_minimal_fixtures_rejected": 6,
+  "full_montecarlo_reproduced": false,
+  "experimental_validation": false,
+  "new_plots_generated": false,
+  "received_sources_preserved_byte_for_byte": 5,
+  "clinical_data_used": false
+}

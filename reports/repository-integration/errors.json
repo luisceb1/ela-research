@@ -1,0 +1,9 @@
+{
+  "scientific_errors": [],
+  "integration_errors": [],
+  "operational_notes": [
+    "Initial local materialization had final-newline differences in original documents; exact remote bytes restored before validation.",
+    "Initial apply_patch replacement form was rejected before changing files; corrected locally.",
+    "Branch deletion is not exposed by the GitHub connector; preserve original refs rather than rewriting them."
+  ]
+}

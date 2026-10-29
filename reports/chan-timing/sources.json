@@ -1,0 +1,49 @@
+{
+  "doi": "10.1038/s42003-026-10832-6",
+  "title": "Human iPSC-derived motor neurons with TDP-43 nuclear loss present early ALS pathological phenotypes",
+  "authors": "Chan et al.",
+  "publication_date": "2026-10-10",
+  "version": "peer-reviewed accepted/article in press, subject to editing",
+  "sources": [
+    {
+      "file": "chan2026.html",
+      "url": "https://www.nature.com/articles/s42003-026-10832-6",
+      "retrieved_utc_date": "2026-10-29",
+      "bytes": 260605,
+      "sha256": "39a3e879d5c721dbca43402c58411b63831b4dfc2185d24046913d28fd678ed5",
+      "scope": "metadata and abstract only, no full methods in HTML"
+    },
+    {
+      "file": "chan2026_reference.pdf",
+      "url": "https://www.nature.com/articles/s42003-026-10832-6_reference.pdf",
+      "retrieved_utc_date": "2026-10-29",
+      "bytes": 3901363,
+      "sha256": "c951fe81e865b857bd3daef296eb86f00796e1b195fa23703f9ccea5e15113bb",
+      "scope": "article in press; figures7/8 visually reviewed, methods and discussion read"
+    },
+    {
+      "file": "chan2026_supplement.pdf",
+      "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs42003-026-10832-6/MediaObjects/42003_2026_10832_MOESM1_ESM.pdf",
+      "retrieved_utc_date": "2026-10-29",
+      "bytes": 732893,
+      "sha256": "6f58b074c1cbb29b3f813a5bddb2ad3fa5789bade53d13a436ad8d2c0ce32ee5",
+      "scope": "Supplementary Figure6 caption and relevant text"
+    },
+    {
+      "file": "chan2026_reporting.pdf",
+      "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs42003-026-10832-6/MediaObjects/42003_2026_10832_MOESM6_ESM.pdf",
+      "retrieved_utc_date": "2026-10-29",
+      "bytes": 2674075,
+      "sha256": "78826b8e54ee5d6a8b7e9da3f7f9ae118fd3ddfb172e84f77948956f7eafcc9f",
+      "scope": "page2 OCR then visual verification"
+    },
+    {
+      "file": "chan2026_source_data.xlsx",
+      "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs42003-026-10832-6/MediaObjects/42003_2026_10832_MOESM3_ESM.xlsx",
+      "retrieved_utc_date": "2026-10-29",
+      "bytes": 434970,
+      "sha256": "65841277c4f8f3164487d7c13902dbbeec717f7fe7cac90d24c83f6112800281",
+      "scope": "83 sheet names, metadata six selected sheets; no new effects"
+    }
+  ]
+}

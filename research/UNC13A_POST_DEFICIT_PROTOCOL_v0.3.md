@@ -1,5 +1,7 @@
 # UNC13A — protocolo v0.3, primera dosis después de deterioro documentado
 
+> Nota de consolidación (29/10/2026): la brecha de literatura al final de esta versión es histórica. La copia aceptada Keuss ya se auditó en reports/accepted-keuss; Chan incluye intervención inmediatamente poslesión y curvas previas en reports/chan-timing. Consultar ambos antes de afirmar originalidad. Este documento sigue siendo propuesta sin validación experimental.
+
 **Estado:** propuesta de investigación para revisión; no se ha realizado intervención, ni se declara beneficio humano. Basado en `research/KEUSS_GUO_TIMELINE_AUDIT_2026-10-29.md`.
 
 ## Cambio fundamental respecto a v0.2
