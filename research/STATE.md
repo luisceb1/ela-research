@@ -27,3 +27,11 @@ Fecha de arranque del repositorio: 2026-10-29.
 
 ## Estado operativo
 Inventario estructural GEO completado por primera ejecución de GitHub Actions. Aún no se ha auditado la calidad biológica, ni realizado análisis diferencial ni validación independiente.
+
+## Actualización de auditoría (29-10-2026)
+- Se identificó un análisis Iso-Seq externo al repositorio, en `INFORME_CIENTIFICO.md`, que comunica 21 uniones compartidas entre GSE310723/GSE315972, 20 genes y **cero eventos** que superen simultáneamente los filtros preespecificados celular y tejido; **no reejecutado en el repositorio**.
+- MAP6D1 y ZNF317 no son candidatos de alta prioridad con la evidencia actual. El primer conjunto presenta un problema de ausencia de cobertura en controles; el segundo no reproduce inducción en i3N tras reducción de TDP-43.
+- Informes previos sobre péptidos crípticos, CAMK2B, MEA y auditoría Keuss/Chan están sintetizados en `research/AUDIT_2026-10-29.md`.
+- Pruebas unitarias del script `scripts/map_isoseq_gtf.py` superadas en GitHub Actions (run 40868184532); **no se ha ejecutado el mapeo con GTF reales**.
+- Bloqueo comprobado: los archivos antiguos de la biblioteca no pudieron materializarse como bytes para reejecución local; tampoco hubo resolución DNS para el FTP público GEO en el entorno de ejecución.
+- Prioridad de investigación: verificar y reproducir el cribado negativo existente, en lugar de repetirlo como investigación nueva. Se mantiene propuesta condicional de estudio UNC13A posterior a déficit funcional documentado, pendiente de laboratorio.
