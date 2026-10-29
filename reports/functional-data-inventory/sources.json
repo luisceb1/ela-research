@@ -1,0 +1,53 @@
+{
+  "date": "2026-10-29",
+  "sources": [
+    {
+      "file": "keuss2024_supplement.pdf",
+      "url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC11230273.1/media-1.pdf",
+      "bytes": 3272060,
+      "sha256": "b5319cef383db704843c17fc4f62c6c95557d663eed08a7b512fdc21a14ae283",
+      "scope": "new supplement text inspection"
+    },
+    {
+      "file": "PMC11230273_listing.xml",
+      "url": "https://pmc-oa-opendata.s3.amazonaws.com/?list-type=2&prefix=PMC11230273.&max-keys=100",
+      "bytes": 3140,
+      "sha256": "08a416341bff158167a92ed388147cd4f253db46fd2b68e6e52b3ba140dfcb58",
+      "scope": "snapshot object index"
+    },
+    {
+      "file": "PMC10148063_listing.xml",
+      "url": "https://pmc-oa-opendata.s3.amazonaws.com/?list-type=2&prefix=PMC10148063.&max-keys=100",
+      "bytes": 1193,
+      "sha256": "add5cb1e97cef94ebabf0082e2815d9cc52368e7e98d620505c2646be436bddb",
+      "scope": "snapshot object index"
+    },
+    {
+      "file": "baughn2023.xml",
+      "url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC10148063.1/PMC10148063.1.xml",
+      "bytes": 138129,
+      "sha256": "52929e64b9b48918412e5ef3865a5bc78713bfd7deab19c6d063ecfefa7ea6bb",
+      "scope": "author manuscript availability and reference"
+    },
+    {
+      "file": "chan2026_source_data.xlsx",
+      "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs42003-026-10832-6/MediaObjects/42003_2026_10832_MOESM3_ESM.xlsx",
+      "bytes": 434970,
+      "sha256": "65841277c4f8f3164487d7c13902dbbeec717f7fe7cac90d24c83f6112800281",
+      "scope": "cached workbook; reuse six-sheet metadata projection"
+    },
+    {
+      "file": "Beccari_et_al_RawData.xlsx",
+      "url": "https://zenodo.org/api/records/15346391/files/Beccari_et_al_RawData.xlsx/content",
+      "bytes": 171253,
+      "sha256": "94cb3ebf59f41cbaa760bb0b62aa957390c608ab02e69999665ac1c1b7e0c339",
+      "scope": "cached workbook; reuse Figure7 projection"
+    }
+  ],
+  "prior_projections": [
+    "reports/chan-timing/audit.json",
+    "reports/image-metadata-qc/summary.json",
+    "research/keuss_accepted_timeline.json"
+  ],
+  "raw_sources_not_republished": true
+}
