@@ -36,3 +36,12 @@ Inventario estructural GEO completado por primera ejecución de GitHub Actions. 
 - Estado: listo para revisión técnica en PR, sin validación funcional ni inferencia clínica. Límites biológicos y de metadatos en `reports/geo-audit/REPORT.md`.
 - Siguiente tarea segura: #2, mapeo por serie y verificación externa GENCODE v47 según `research/plans/2026-10-29-isoforms.md` (el plan y los resultados de #2 se entregarán en PR dependiente).
 - Work: tarea diaria creada, mañana ~08:00 Europe/Madrid; incluye resumen de siete días cuando sea viernes. No se pudo crear una segunda tarea por límite de cinco activas. La ejecución futura debe comprobar herramientas/acceso cada vez; no hay garantía de cómputo continuo entre ejecuciones.
+
+## Ciclo Work — mapeo #2 (pendiente revisión)
+
+- Informe y tablas: `reports/isoforms/`; plan previo: `research/plans/2026-10-29-isoforms.md`. Referencia oficial GENCODE v47 descargada y fijada por hash; símbolos STMN2/UNC13A y controles ACTB/GAPDH verificados.
+- STMN2: 4 transcritos en cultivo (3 ENST + BambuTx9249), 3 ENST en cerebro. UNC13A: 7 ENST en cada catálogo; solo 3 con cuenta única positiva por serie.
+- BambuTx9249: cadena de dos exones y unión no anotada en GENCODE v47; etiqueta críptica NO validada. No aparece en el GTF cerebral asignada a STMN2. Cero otros transcritos de distinta asignación en la misma hebra que solapen los loci diana, según control del catálogo.
+- Diez cadenas ENST compartidas reflejan anotación común y no validación de expresión independiente. No hay demostración de rescate funcional.
+- PR #3 de auditoría: CI offline de GitHub completada con éxito. Mapeo: 25 pruebas offline pasan.
+- Siguiente tarea segura seleccionada: P1 descriptivo de GSE310723 y sensibilidad de GSE315972, según plan `research/plans/2026-10-29-descriptive.md` (entrega en PR posterior).

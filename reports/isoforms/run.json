@@ -1,0 +1,10 @@
+{
+  "argv": [
+    "scripts/map_isoforms.py"
+  ],
+  "evidence": "exploratory",
+  "python": "3.12.14",
+  "randomness": "none",
+  "status": "generated",
+  "utc": "2026-10-29T10:05:16.815081+00:00"
+}

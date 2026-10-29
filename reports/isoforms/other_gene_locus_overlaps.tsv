@@ -1,0 +1,5 @@
+gse	symbol_locus	txname	assigned_geneid	chrom	strand	start_1based	end_1based	same_strand_as_target	assignment	sum_unique_counts	samples_gt0
+GSE310723	UNC13A	ENST00000600512.1	ENSG00000269752.1	chr19	+	17613722	17614430	False	not_reassigned_overlap_only	2.0	1
+GSE310723	UNC13A	ENST00000624803.1	ENSG00000279300.1	chr19	+	17622447	17623338	False	not_reassigned_overlap_only	2.0	1
+GSE315972	UNC13A	ENST00000600512.1	ENSG00000269752.1	chr19	+	17613722	17614430	False	not_reassigned_overlap_only	0.0	0
+GSE315972	UNC13A	ENST00000624803.1	ENSG00000279300.1	chr19	+	17622447	17623338	False	not_reassigned_overlap_only	0.0	0
