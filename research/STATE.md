@@ -54,3 +54,9 @@ Inventario estructural GEO completado por primera ejecución de GitHub Actions. 
 - GCD=2 en cada columna de uniqueCounts de ambas series. Causa no verificada; conservar unidades y no interpretar como moléculas independientes.
 - PR #4 de mapeo: CI offline exitosa; depende del PR #3. Ningún PR fusionado ni issue cerrada.
 - Siguiente tarea segura: coordenadas independientes del candidato STMN2 y semántica/escala de uniqueCounts; si bloqueada, evidencia funcional publicada. Mantener PR pendientes como parte del estado al reanudar la tarea Work diaria.
+
+## Punto de continuación persistente
+
+- PR abiertos y encadenados: #3 → #4 → #5. CI `unit-tests` completada con éxito en los tres. Revisar en ese orden; sin fusión ni publicación pública de hallazgos.
+- Los 49 archivos nuevos/modificados de la entrega se verificaron contra los blobs almacenados en GitHub. Tres documentos iniciales de la instantánea local diferían solo por salto de línea final respecto a sus originales remotos; AGENTS.md y PROTOCOL.md se conservaron intactos en GitHub.
+- Para reanudar sin perder estado, usar la rama `research/descriptive-sensitivity-20261029` hasta que sus PR se integren; main todavía no incluye estos análisis.

@@ -37,3 +37,22 @@ Se recomiendan PR revisables y no conceder a un agente permisos irrestrictos sob
 No subir datos sanitarios personales. No enviar correos, gastar dinero, publicar hallazgos ni cambiar recomendaciones clínicas automáticamente. La cantidad de réplicas y los metadatos de cada muestra deben comprobarse antes de inferir diferencias biológicas.
 
 **La instalación del workflow no constituye una validación de GSE310723 o GSE315972.**
+
+## Ciclo computacional de 29/10/2026 (PR pendientes)
+
+Resultados revisables: [#3 auditoría](https://github.com/luisceb1/ela-research/pull/3) → [#4 mapeo](https://github.com/luisceb1/ela-research/pull/4) → [#5 sensibilidad](https://github.com/luisceb1/ela-research/pull/5). Los PR están encadenados: revisar/integrar en ese orden y actualizar la base del siguiente a main tras integrar su dependencia. No están fusionados automáticamente.
+
+Desde la rama que contiene los tres análisis:
+
+```bash
+python -m unittest discover -s tests -v
+python scripts/geo_audit.py
+python scripts/map_isoforms.py
+python scripts/describe_targets.py
+```
+
+Python 3.12, biblioteca estándar. La primera ejecución descarga fuentes públicas; manifiestos fijados por SHA256, caché verificada en `data/cache/` (fuera de git). `--refresh` en la auditoría consulta de nuevo y rechaza cambios de fuente respecto al hash fijado. Consultar `reports/geo-audit/REPORT.md`, `reports/isoforms/REPORT.md` y `reports/descriptive/REPORT.md`, con planes previos, errores y pruebas.
+
+Las 30 pruebas offline y las CI de los tres PR pasan. La auditoría confirma integridad/enlace técnico; el mapeo y los contrastes son exploratorios. La atribución críptica del candidato STMN2, la escala de uniqueCounts y la validación funcional siguen pendientes. No inferir significación de los contrastes de cultivo ni de los rangos de retirada cerebral.
+
+Work tiene una tarea diaria configurada para la mañana (aproximadamente 08:00–09:00 Europe/Madrid), que incluye informe semanal los viernes. Cada ejecución debe volver a comprobar acceso y herramientas, leer también los PR pendientes y registrar avances en GitHub. No hay cómputo continuo entre ejecuciones ni garantía de éxito de una ejecución futura. Estado, próxima tarea y restricciones en `research/STATE.md`/`BACKLOG.md`/`AGENTS.md`.
