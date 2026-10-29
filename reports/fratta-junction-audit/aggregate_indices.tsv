@@ -1,0 +1,3 @@
+gene	formula	n_pairs	mean_TP	mean_TN	mean_delta_percentage_points	median_delta_percentage_points	TN_min	TN_max	increasing_pairs	min_TP_junction_denominator	min_TN_junction_denominator	exploratory_signflip_p	exploratory_wilcoxon_exact_p
+STMN2	Rmd_2693_2694_three_UNC13A_classes	7	0.008912562092285595	0.6565074174487182	64.75948553564325	71.7948717948718	0.4205607476635514	0.84375	7	33	39	0.015625	0.015625
+UNC13A	Rmd_2693_2694_three_UNC13A_classes	7	0.011991343378701086	0.7387251750898669	72.67338317111658	76.14678899082568	0.3116883116883117	1.0	7	72	109	0.015625	0.015625

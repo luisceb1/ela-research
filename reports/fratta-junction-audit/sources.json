@@ -1,0 +1,33 @@
+{
+  "date": "2026-10-29",
+  "repository": "https://github.com/frattalab/unc13a_cryptic_splicing",
+  "observed_tree": "e05e8723e3d18e64c6c559db18de423282511c91",
+  "license": "Not independently confirmed; full source data/Rmd not republished",
+  "sources": [
+    {
+      "path": "data/liu_stmn2_and_unc13aaggregated.clean.annotated.bed",
+      "bytes": 18037,
+      "sha256": "b9a46c7e4f388d1e871a293b0b6da5c7ae5689ace7fc82d8ead38d3e41a6b447",
+      "git_blob_sha": "89de715d8640382800cef959be064b3af8e76eee",
+      "immutable_api_url": "https://api.github.com/repos/frattalab/unc13a_cryptic_splicing/git/blobs/89de715d8640382800cef959be064b3af8e76eee"
+    },
+    {
+      "path": "paper_figures.Rmd",
+      "bytes": 148855,
+      "sha256": "3c46c164af6572bef28507b707f39d996d687abb06da00bf5468f89d0d491502",
+      "git_blob_sha": "1534a7312bcee102fae9a60bb450ddd37da5c96c",
+      "immutable_api_url": "https://api.github.com/repos/frattalab/unc13a_cryptic_splicing/git/blobs/1534a7312bcee102fae9a60bb450ddd37da5c96c"
+    }
+  ],
+  "localizers": {
+    "unique_and_pivot": [
+      2685,
+      2690
+    ],
+    "three_class_UNC13A_formula": 2694,
+    "two_class_UNC13A_formula": 2766
+  },
+  "allelic_data_read": false,
+  "clinical_covariates_used": false,
+  "opaque_sample_ids_not_exported": true
+}

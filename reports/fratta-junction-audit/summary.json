@@ -1,0 +1,62 @@
+{
+  "raw_rows": 241,
+  "unique_rows": 69,
+  "exact_duplicate_rows_removed": 172,
+  "technical_samples": 16,
+  "paired_samples": 14,
+  "independent_pairs_not_new_cohort": 7,
+  "unsorted_excluded": 2,
+  "observed_sample_class_cells": 69,
+  "zero_filled_missing_cells_per_author_pivot": 27,
+  "explicit_zero_count_source_rows": 0,
+  "unique_rows_per_label": {
+    "UNC13A_3prime": 11,
+    "UNC13A_annotated": 15,
+    "UNC13A_5prime": 9,
+    "UNC13A_5prime_2": 6,
+    "STMN2_cryptic": 12,
+    "STMN2_annotated": 16
+  },
+  "raw_rows_per_label": {
+    "UNC13A_3prime": 22,
+    "UNC13A_annotated": 75,
+    "UNC13A_5prime": 36,
+    "UNC13A_5prime_2": 24,
+    "STMN2_cryptic": 36,
+    "STMN2_annotated": 48
+  },
+  "sample_class_pivot_collisions": 0,
+  "duplicate_multiplicity_per_label": {
+    "STMN2_annotated": [
+      3
+    ],
+    "STMN2_cryptic": [
+      3
+    ],
+    "UNC13A_3prime": [
+      2
+    ],
+    "UNC13A_5prime": [
+      4
+    ],
+    "UNC13A_5prime_2": [
+      4
+    ],
+    "UNC13A_annotated": [
+      5
+    ]
+  },
+  "numeric_fields_compared": 24,
+  "comparison_mismatches": 0,
+  "Rmd_primary_formula_lines": [
+    2685,
+    2694
+  ],
+  "Rmd_alternative_formula_line": 2766,
+  "expected_aggregate_sha256": "ff7d0fbcb4c3dfc8fde3c2e386af7fdf71778c06609dab6e8069829aae8942ec",
+  "package_sha256": "9d2121d2b2a0872a04e8e6f7f9e6a944e64d27e9ee4c3eabfe9c44e06fb91fbc",
+  "coordinate_convention_converted": false,
+  "allelic_or_clinical_files_read": false,
+  "individual_rows_exported": false,
+  "interpretation": "Read-junction indices and formula sensitivity, not molecular isoform fractions, function, titration or new replication"
+}

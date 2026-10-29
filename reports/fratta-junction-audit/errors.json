@@ -1,0 +1,27 @@
+{
+  "transport_errors": [
+    {
+      "type": "JSON decode of raw connector content",
+      "resolution": "Detected raw text response; parsed BED/Rmd directly"
+    },
+    {
+      "type": "Argument list too long writing Rmd cache",
+      "resolution": "Wrote bounded chunks; verified complete SHA256 and Git blob afterwards",
+      "analysis_affected": false
+    }
+  ],
+  "failed_analysis_attempts": [
+    {
+      "type": "Over-restrictive uniform technical-name prefix assumption",
+      "resolution": "Preserved full opaque unit keys and accepted exact known source patterns; added nonmerging-prefix regression test",
+      "source_data_modified": false
+    }
+  ],
+  "remaining_limits": [
+    "read-junction index is not molecular isoform fraction",
+    "27 zero-filled absent combinations are not explicit zero observations",
+    "two UNC13A formulas in different Rmd blocks",
+    "same cohort as expression; no independent replication"
+  ],
+  "current_run_errors": []
+}
