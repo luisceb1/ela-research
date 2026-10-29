@@ -81,3 +81,10 @@ Inventario estructural GEO completado por primera ejecución de GitHub Actions. 
 - MEA: ASO desdeDIV14, KD tardíoDIV33. Tratamiento19días antes de la perturbación; no rescate diferido. Autapsis espinales: corrector y gapmer concurrentesDIV45.
 - Recuperación de liberación en sinapsis restantes no restituye densidad sináptica. Conflicto de la fila de imagen Table6 conservado sin adjudicar calendario.
 - 45 pruebas offline pasan; tabla manual y cálculo reproducible. Siguiente: localizar datos públicos de tratamiento diferido; en su ausencia ficha de colaboración sin envío. Rama research/accepted-keuss-timeline-20261029.
+
+## Diseño discriminante de reversión
+- PNAS2025 PMC12130871 Fig7: expresión3días antes de lesión en fondo STMN2 nulo; distinguir lesión de inicio de deficiencia genética. XML/hash y extracción en reports/reversal-design.
+- EXPERIMENT_SPEC.md: contraste concurrente/diferido, control temporal, viabilidad, acción molecular/proteica y dependencia por diferenciación; sin cifras simuladas ni laboratorio.
+- Misma unidad longitudinal preferible para MEA, no requisito universal: cohortes paralelas comparables pueden establecer rescate.
+- 48 pruebas locales pasan. Próximo: inventario Zenodo15346391 y reanalizabilidad; si bloqueado modelo humano2026 DOI10.1038/s42003-026-10832-6. Rama research/reversal-design-20261029.
+- Inventario Zenodo ejecutado:100archivos/15.009.420.706bytes;27imágenes Figure7 en9seriesnominales0/24/48h. No son9réplicas biológicas verificadas; artículo declara2diferenciaciones. Imágenes no descargadas. Próximo resolver unidad/escala/metadatos antes de medir efectos.

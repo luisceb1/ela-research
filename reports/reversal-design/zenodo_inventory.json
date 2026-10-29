@@ -1,0 +1,607 @@
+{
+  "url": "https://zenodo.org/api/records/15346391",
+  "source_sha256": "78b6bf1b7869ad802d83b0e7ccfea7fad885dd7e3733876cb0f1f9f27ef1872d",
+  "title": "Stathmin-2 enhances motor axon regeneration after injury independent of its binding to tubulin",
+  "files": [
+    {
+      "key": "Figure4_Nocodazole_Live_WT_t048.tif",
+      "size": 1665229,
+      "checksum": "md5:a9436d866e6461368670752ac60cabcc",
+      "url": "https://zenodo.org/api/records/15346391/files/Figure4_Nocodazole_Live_WT_t048.tif/content"
+    },
+    {
+      "key": "Figure3_Kymo_WT_EB3mNG_plate2_3Zst_3min_022_01.tif",
+      "size": 477802,
+      "checksum": "md5:c3715bdef0e87a9872ac75babde7273d",
+      "url": "https://zenodo.org/api/records/15346391/files/Figure3_Kymo_WT_EB3mNG_plate2_3Zst_3min_022_01.tif/content"
+    },
+    {
+      "key": "Figure4_20x_KO_2hNocod_wellC4_Extracted_DAPI_DM1A.488_NFHch.647_01.tif",
+      "size": 12587555,
+      "checksum": "md5:764ef83dd8d56ca4e6e32d87bf88c193",
+      "url": "https://zenodo.org/api/records/15346391/files/Figure4_20x_KO_2hNocod_wellC4_Extracted_DAPI_DM1A.488_NFHch.647_01.tif/content"
+    },
+    {
+      "key": "Figure4_20x_WT_DMSO_wellC2_Extracted_DAPI_DM1A.488_NFHch.647_01.tif",
+      "size": 12587537,
+      "checksum": "md5:f3d552074dd2d6961adbac618211b28c",
+      "url": "https://zenodo.org/api/records/15346391/files/Figure4_20x_WT_DMSO_wellC2_Extracted_DAPI_DM1A.488_NFHch.647_01.tif/content"
+    },
+    {
+      "key": "Fig1_Hom19L2_Composite.tif",
+      "size": 47762919,
+      "checksum": "md5:3a7059dccaaebb30f7840812b2bb5d96",
+      "url": "https://zenodo.org/api/records/15346391/files/Fig1_Hom19L2_Composite.tif/content"
+    },
+    {
+      "key": "Fig1_Het12R2_Composite.tif",
+      "size": 47762918,
+      "checksum": "md5:eab5f89dfe1ad7e72286fbc56c49859e",
+      "url": "https://zenodo.org/api/records/15346391/files/Fig1_Het12R2_Composite.tif/content"
+    },
+    {
+      "key": "Fig1_Hom19L_Composite.tif",
+      "size": 378264569,
+      "checksum": "md5:5c4a1ef6a3c0db622efce1cdc2a527de",
+      "url": "https://zenodo.org/api/records/15346391/files/Fig1_Hom19L_Composite.tif/content"
+    },
+    {
+      "key": "Fig1_Het12L_Composite.tif",
+      "size": 95045317,
+      "checksum": "md5:bcf9b3f8f743e2e92edc28918d119f51",
+      "url": "https://zenodo.org/api/records/15346391/files/Fig1_Het12L_Composite.tif/content"
+    },
+    {
+      "key": "Figure4_20x_KO_2hNocod_wellC5_Extracted_DAPI_DM1A.488_NFHch.647_01.tif",
+      "size": 12587555,
+      "checksum": "md5:12b5117231dfe8a4ea67c8b1dfab5b14",
+      "url": "https://zenodo.org/api/records/15346391/files/Figure4_20x_KO_2hNocod_wellC5_Extracted_DAPI_DM1A.488_NFHch.647_01.tif/content"
+    },
+    {
+      "key": "Figure4_20x_WT_DMSO_wellB1_NoExt_DAPI_DM1A.488_NFHch.647_01.tif",
+      "size": 12587537,
+      "checksum": "md5:ea1492f453c1e8424012122e8971ed19",
+      "url": "https://zenodo.org/api/records/15346391/files/Figure4_20x_WT_DMSO_wellB1_NoExt_DAPI_DM1A.488_NFHch.647_01.tif/content"
+    },
+    {
+      "key": "Fig1_Hom19L_Composite 2.tif",
+      "size": 189610119,
+      "checksum": "md5:d38b92937e980efa73126d8bf03875c1",
+      "url": "https://zenodo.org/api/records/15346391/files/Fig1_Hom19L_Composite%202.tif/content"
+    },
+    {
+      "key": "Figure3_Kymo_WT_EB3mNG_plate2_3Zst_3min_023_03.tif",
+      "size": 359242,
+      "checksum": "md5:9e7487625622bb1e83da5464d729d4e5",
+      "url": "https://zenodo.org/api/records/15346391/files/Figure3_Kymo_WT_EB3mNG_plate2_3Zst_3min_023_03.tif/content"
+    },
+    {
+      "key": "Figure4_20x_WT_2hNocod_wellB2_NoExt_DAPI_DM1A.488_NFHch.647_01.tif",
+      "size": 12587555,
+      "checksum": "md5:6337372d2c14fc63127bb9dc77ecd42d",
+      "url": "https://zenodo.org/api/records/15346391/files/Figure4_20x_WT_2hNocod_wellB2_NoExt_DAPI_DM1A.488_NFHch.647_01.tif/content"
+    },
+    {
+      "key": "Fig1_Hom19R_Composite.tif",
+      "size": 354742117,
+      "checksum": "md5:dc5556d7a0bb96b5c8f0a6679e54de24",
+      "url": "https://zenodo.org/api/records/15346391/files/Fig1_Hom19R_Composite.tif/content"
+    },
+    {
+      "key": "Figure3_Kymo_KO_EB3mNG_plate4_3Zst_3min_031_01.tif",
+      "size": 688728,
+      "checksum": "md5:17814e3db5d82d6da685570f1aa36d09",
+      "url": "https://zenodo.org/api/records/15346391/files/Figure3_Kymo_KO_EB3mNG_plate4_3Zst_3min_031_01.tif/content"
+    },
+    {
+      "key": "Fig6_Kymo_NMNAT2_KO_1min_34_01.tif",
+      "size": 582546,
+      "checksum": "md5:74c919f6ad0506bd13797e9fe5338632",
+      "url": "https://zenodo.org/api/records/15346391/files/Fig6_Kymo_NMNAT2_KO_1min_34_01.tif/content"
+    },
+    {
+      "key": "Fig1_WT3L_Composite.tif",
+      "size": 95045319,
+      "checksum": "md5:79e85854c6b2adae1fb3e865fa68ca94",
+      "url": "https://zenodo.org/api/records/15346391/files/Fig1_WT3L_Composite.tif/content"
+    },
+    {
+      "key": "Fig1_WT3R_Composite.tif",
+      "size": 473304519,
+      "checksum": "md5:4d765344c90c332e3567735d725587ab",
+      "url": "https://zenodo.org/api/records/15346391/files/Fig1_WT3R_Composite.tif/content"
+    },
+    {
+      "key": "Figure4_20x_WT_DMSO_wellC1_Extracted_DAPI_DM1A.488_NFHch.647_01.tif",
+      "size": 12587537,
+      "checksum": "md5:3fdcd8d96948e7a4b37140f3d6c1ddcf",
+      "url": "https://zenodo.org/api/records/15346391/files/Figure4_20x_WT_DMSO_wellC1_Extracted_DAPI_DM1A.488_NFHch.647_01.tif/content"
+    },
+    {
+      "key": "Fig6_Kymo_NMNAT2_KO_1min_32_01.tif",
+      "size": 657649,
+      "checksum": "md5:0844ba7063e5ed6fc0e570d076c7175c",
+      "url": "https://zenodo.org/api/records/15346391/files/Fig6_Kymo_NMNAT2_KO_1min_32_01.tif/content"
+    },
+    {
+      "key": "Figure3_Kymo_WT_EB3mNG_plate2_3Zst_3min_023_01.tif",
+      "size": 394538,
+      "checksum": "md5:1ae1edcf8c793c87b9cedd36b322bbf1",
+      "url": "https://zenodo.org/api/records/15346391/files/Figure3_Kymo_WT_EB3mNG_plate2_3Zst_3min_023_01.tif/content"
+    },
+    {
+      "key": "Fig4BC_Macro.ijm",
+      "size": 939,
+      "checksum": "md5:aec8108180290ef813e5351089d09c5e",
+      "url": "https://zenodo.org/api/records/15346391/files/Fig4BC_Macro.ijm/content"
+    },
+    {
+      "key": "Figure3_Kymo_KO_EB3mNG_plate4_3Zst_3min_032_01.tif",
+      "size": 479051,
+      "checksum": "md5:776d99ced5edb31993e9aa36b70b7ac5",
+      "url": "https://zenodo.org/api/records/15346391/files/Figure3_Kymo_KO_EB3mNG_plate4_3Zst_3min_032_01.tif/content"
+    },
+    {
+      "key": "Figure3_Kymo_WT_EB3mNG_plate2_3Zst_3min_023_02.tif",
+      "size": 662538,
+      "checksum": "md5:82da86d8f97cdd3bc9f2eb987679e0da",
+      "url": "https://zenodo.org/api/records/15346391/files/Figure3_Kymo_WT_EB3mNG_plate2_3Zst_3min_023_02.tif/content"
+    },
+    {
+      "key": "Figure4_20x_KO_DMSO_wellB5_NoExt_DAPI_DM1A.488_NFHch.647_01.tif",
+      "size": 12587537,
+      "checksum": "md5:2372c4e0fb24a02ced068f81736bc549",
+      "url": "https://zenodo.org/api/records/15346391/files/Figure4_20x_KO_DMSO_wellB5_NoExt_DAPI_DM1A.488_NFHch.647_01.tif/content"
+    },
+    {
+      "key": "Figure4_20x_KO_2hNocod_wellB5_NoExt_DAPI_DM1A.488_NFHch.647_01.tif",
+      "size": 12587555,
+      "checksum": "md5:a6523a3f7e5c27e1374a6a2784c070a8",
+      "url": "https://zenodo.org/api/records/15346391/files/Figure4_20x_KO_2hNocod_wellB5_NoExt_DAPI_DM1A.488_NFHch.647_01.tif/content"
+    },
+    {
+      "key": "Figure4_20x_KO_2hNocod_wellB6_NoExt_DAPI_DM1A.488_NFHch.647_01.tif",
+      "size": 12587555,
+      "checksum": "md5:2d1f0e2b85baeb77c01de5b0115c7609",
+      "url": "https://zenodo.org/api/records/15346391/files/Figure4_20x_KO_2hNocod_wellB6_NoExt_DAPI_DM1A.488_NFHch.647_01.tif/content"
+    },
+    {
+      "key": "Figure3_Kymo_WT_EB3mNG_plate2_3Zst_3min_025_01.tif",
+      "size": 600032,
+      "checksum": "md5:810339775771c03b0363747cf964330d",
+      "url": "https://zenodo.org/api/records/15346391/files/Figure3_Kymo_WT_EB3mNG_plate2_3Zst_3min_025_01.tif/content"
+    },
+    {
+      "key": "Figure4_20x_WT_DMSO_wellB2_NoExt_DAPI_DM1A.488_NFHch.647_01.tif",
+      "size": 12587537,
+      "checksum": "md5:3c2dbc3d46e135d7ade49750d2805f82",
+      "url": "https://zenodo.org/api/records/15346391/files/Figure4_20x_WT_DMSO_wellB2_NoExt_DAPI_DM1A.488_NFHch.647_01.tif/content"
+    },
+    {
+      "key": "Figure4_20x_KO_2hNocod_wellC6_Extracted_DAPI_DM1A.488_NFHch.647_02.tif",
+      "size": 12587555,
+      "checksum": "md5:ea6a1a7f5ec94dfa7fd28fe981a79433",
+      "url": "https://zenodo.org/api/records/15346391/files/Figure4_20x_KO_2hNocod_wellC6_Extracted_DAPI_DM1A.488_NFHch.647_02.tif/content"
+    },
+    {
+      "key": "Figure4_20x_KO_DMSO_wellB4_NoExt_DAPI_DM1A.488_NFHch.647_01.tif",
+      "size": 12587537,
+      "checksum": "md5:d7d319f9fc25661cf65630c72235f41a",
+      "url": "https://zenodo.org/api/records/15346391/files/Figure4_20x_KO_DMSO_wellB4_NoExt_DAPI_DM1A.488_NFHch.647_01.tif/content"
+    },
+    {
+      "key": "Figure4_20x_WT_2hNocod_wellC2_Extracted_DAPI_DM1A.488_NFHch.647_01.tif",
+      "size": 12587555,
+      "checksum": "md5:e5685c87af540ba0bc8f61e7b5d204e2",
+      "url": "https://zenodo.org/api/records/15346391/files/Figure4_20x_WT_2hNocod_wellC2_Extracted_DAPI_DM1A.488_NFHch.647_01.tif/content"
+    },
+    {
+      "key": "Figure4_20x_KO_DMSO_wellC4_Extracted_DAPI_DM1A.488_NFHch.647_01.tif",
+      "size": 12587537,
+      "checksum": "md5:7f530513da7098cf93d5f886660a7a15",
+      "url": "https://zenodo.org/api/records/15346391/files/Figure4_20x_KO_DMSO_wellC4_Extracted_DAPI_DM1A.488_NFHch.647_01.tif/content"
+    },
+    {
+      "key": "Figure4_20x_WT_2hNocod_wellB3_NoExt_DAPI_DM1A.488_NFHch.647_01.tif",
+      "size": 12587555,
+      "checksum": "md5:5c145c2ee66dcd81459ff39761a5fb6e",
+      "url": "https://zenodo.org/api/records/15346391/files/Figure4_20x_WT_2hNocod_wellB3_NoExt_DAPI_DM1A.488_NFHch.647_01.tif/content"
+    },
+    {
+      "key": "Fig6_Kymo_NMNAT2_KO_1min_34_02.tif",
+      "size": 694483,
+      "checksum": "md5:1445750442634a0961d2e2fb3f811986",
+      "url": "https://zenodo.org/api/records/15346391/files/Fig6_Kymo_NMNAT2_KO_1min_34_02.tif/content"
+    },
+    {
+      "key": "Fig6_Kymo_NMNAT2_KO_1min_34_03.tif",
+      "size": 686620,
+      "checksum": "md5:5abe38af4ee1a7de504d719043151188",
+      "url": "https://zenodo.org/api/records/15346391/files/Fig6_Kymo_NMNAT2_KO_1min_34_03.tif/content"
+    },
+    {
+      "key": "Figure4_20x_KO_DMSO_wellB6_NoExt_DAPI_DM1A.488_NFHch.647_01.tif",
+      "size": 12587537,
+      "checksum": "md5:a800f32cd5475c8e418851d3df61b53b",
+      "url": "https://zenodo.org/api/records/15346391/files/Figure4_20x_KO_DMSO_wellB6_NoExt_DAPI_DM1A.488_NFHch.647_01.tif/content"
+    },
+    {
+      "key": "Figure4_20x_WT_DMSO_wellC3_Extracted_DAPI_DM1A.488_NFHch.647_01.tif",
+      "size": 12587537,
+      "checksum": "md5:bcf4f8a78e02342f680e5bc4e1ca23de",
+      "url": "https://zenodo.org/api/records/15346391/files/Figure4_20x_WT_DMSO_wellC3_Extracted_DAPI_DM1A.488_NFHch.647_01.tif/content"
+    },
+    {
+      "key": "Figure4_20x_WT_2hNocod_wellB1_NoExt_DAPI_DM1A.488_NFHch.647_01.tif",
+      "size": 12587555,
+      "checksum": "md5:1e23493fc42c4d3daa30618b46317ffe",
+      "url": "https://zenodo.org/api/records/15346391/files/Figure4_20x_WT_2hNocod_wellB1_NoExt_DAPI_DM1A.488_NFHch.647_01.tif/content"
+    },
+    {
+      "key": "Figure4_20x_KO_DMSO_wellC6_Extracted_DAPI_DM1A.488_NFHch.647_01.tif",
+      "size": 12587537,
+      "checksum": "md5:d699c659fa948e611c3fc5a702df4f4d",
+      "url": "https://zenodo.org/api/records/15346391/files/Figure4_20x_KO_DMSO_wellC6_Extracted_DAPI_DM1A.488_NFHch.647_01.tif/content"
+    },
+    {
+      "key": "Figure4_20x_WT_2hNocod_wellC1_Extracted_DAPI_DM1A.488_NFHch.647_01.tif",
+      "size": 12587555,
+      "checksum": "md5:f176742253f6bce06d428ff289b13311",
+      "url": "https://zenodo.org/api/records/15346391/files/Figure4_20x_WT_2hNocod_wellC1_Extracted_DAPI_DM1A.488_NFHch.647_01.tif/content"
+    },
+    {
+      "key": "Figure4_20x_WT_DMSO_wellB3_NoExt_DAPI_DM1A.488_NFHch.647_01.tif",
+      "size": 12587537,
+      "checksum": "md5:443500ad06a9dc7c6e51be1d5cedb334",
+      "url": "https://zenodo.org/api/records/15346391/files/Figure4_20x_WT_DMSO_wellB3_NoExt_DAPI_DM1A.488_NFHch.647_01.tif/content"
+    },
+    {
+      "key": "Figure4_DMSOCtrl_Live_t001-048.mp4",
+      "size": 64562326,
+      "checksum": "md5:04ddb77a7d660c69ed08633969b225c8",
+      "url": "https://zenodo.org/api/records/15346391/files/Figure4_DMSOCtrl_Live_t001-048.mp4/content"
+    },
+    {
+      "key": "Fig6_Kymo_NMNAT2_WT_1min_23_02.tif",
+      "size": 639817,
+      "checksum": "md5:ba043a2a99f10a24ec5c2f1387101912",
+      "url": "https://zenodo.org/api/records/15346391/files/Fig6_Kymo_NMNAT2_WT_1min_23_02.tif/content"
+    },
+    {
+      "key": "Figure4_DMSOCtrl_Live_t001.tif",
+      "size": 1665229,
+      "checksum": "md5:05bda7998039f578deae92ecf18fcb50",
+      "url": "https://zenodo.org/api/records/15346391/files/Figure4_DMSOCtrl_Live_t001.tif/content"
+    },
+    {
+      "key": "Fig6_Kymo_NMNAT2_WT_1min_22_01.tif",
+      "size": 653668,
+      "checksum": "md5:03005081cafa2b0f8188ea5778045128",
+      "url": "https://zenodo.org/api/records/15346391/files/Fig6_Kymo_NMNAT2_WT_1min_22_01.tif/content"
+    },
+    {
+      "key": "Figure4_DMSOCtrl_Live_t025.tif",
+      "size": 1665229,
+      "checksum": "md5:893b0cd14f8cb228f898cd55a219a716",
+      "url": "https://zenodo.org/api/records/15346391/files/Figure4_DMSOCtrl_Live_t025.tif/content"
+    },
+    {
+      "key": "Figure4_Nocodazole_Live_KO_t001-048.mp4",
+      "size": 28071663,
+      "checksum": "md5:c4aa55f3492d9e5f200a2b10c1a6dcfb",
+      "url": "https://zenodo.org/api/records/15346391/files/Figure4_Nocodazole_Live_KO_t001-048.mp4/content"
+    },
+    {
+      "key": "Figure4_DMSOCtrl_Live_t048.tif",
+      "size": 1665229,
+      "checksum": "md5:531bcdf6bd3d2f7c5cfc65fc5bd16227",
+      "url": "https://zenodo.org/api/records/15346391/files/Figure4_DMSOCtrl_Live_t048.tif/content"
+    },
+    {
+      "key": "Figure4_Nocodazole_Live_KO_t001.tif",
+      "size": 1665229,
+      "checksum": "md5:79ddc8fa88832b139392b013efb7df30",
+      "url": "https://zenodo.org/api/records/15346391/files/Figure4_Nocodazole_Live_KO_t001.tif/content"
+    },
+    {
+      "key": "Figure4_Nocodazole_Live_WT_t001.tif",
+      "size": 1665229,
+      "checksum": "md5:ffa00bfd2d8bf5e8a967a277cfd33b72",
+      "url": "https://zenodo.org/api/records/15346391/files/Figure4_Nocodazole_Live_WT_t001.tif/content"
+    },
+    {
+      "key": "Figure4_Nocodazole_Live_KO_t025.tif",
+      "size": 1665229,
+      "checksum": "md5:e020c847a57e8669fe406bd224cb1e62",
+      "url": "https://zenodo.org/api/records/15346391/files/Figure4_Nocodazole_Live_KO_t025.tif/content"
+    },
+    {
+      "key": "Figure4_Nocodazole_Live_WT_t025.tif",
+      "size": 1665229,
+      "checksum": "md5:238c1b397475e041bd225922c1109c4e",
+      "url": "https://zenodo.org/api/records/15346391/files/Figure4_Nocodazole_Live_WT_t025.tif/content"
+    },
+    {
+      "key": "Figure4_Nocodazole_Live_WT_t001-048.mp4",
+      "size": 28752248,
+      "checksum": "md5:07d1bc43c0a0eaf464363c471ae43811",
+      "url": "https://zenodo.org/api/records/15346391/files/Figure4_Nocodazole_Live_WT_t001-048.mp4/content"
+    },
+    {
+      "key": "Fig6_Kymo_NMNAT2_KO_1min_35_01.tif",
+      "size": 709923,
+      "checksum": "md5:58dbcf9ff6b9b817aa056ff8c1cd7517",
+      "url": "https://zenodo.org/api/records/15346391/files/Fig6_Kymo_NMNAT2_KO_1min_35_01.tif/content"
+    },
+    {
+      "key": "Figure7_KO_mScarlet_0h_01.tif",
+      "size": 440511445,
+      "checksum": "md5:9cfb7be0568bd98621a8171dc7ba1b5d",
+      "url": "https://zenodo.org/api/records/15346391/files/Figure7_KO_mScarlet_0h_01.tif/content"
+    },
+    {
+      "key": "Fig6_Kymo_NMNAT2_WT_1min_23_01.tif",
+      "size": 715588,
+      "checksum": "md5:28cbbbe543dbb48b54fada3c8ca1559b",
+      "url": "https://zenodo.org/api/records/15346391/files/Fig6_Kymo_NMNAT2_WT_1min_23_01.tif/content"
+    },
+    {
+      "key": "Fig6_Kymo_NMNAT2_WT_1min_23_03.tif",
+      "size": 689828,
+      "checksum": "md5:25663e84ad1a6ae8590808c59d5d2e38",
+      "url": "https://zenodo.org/api/records/15346391/files/Fig6_Kymo_NMNAT2_WT_1min_23_03.tif/content"
+    },
+    {
+      "key": "Fig6_Kymo_NMNAT2_WT_1min_22_02.tif",
+      "size": 709272,
+      "checksum": "md5:6f88fc3fb957b6a75cf02f837d79639c",
+      "url": "https://zenodo.org/api/records/15346391/files/Fig6_Kymo_NMNAT2_WT_1min_22_02.tif/content"
+    },
+    {
+      "key": "Figure7_KO_mScarlet_24h_02.tif",
+      "size": 440511381,
+      "checksum": "md5:07757e7068fa078059a35e1ed63d0952",
+      "url": "https://zenodo.org/api/records/15346391/files/Figure7_KO_mScarlet_24h_02.tif/content"
+    },
+    {
+      "key": "Figure7_KO_TBNmscarlet_0h_02.tif",
+      "size": 440511381,
+      "checksum": "md5:33485fad23ee823e785cf5944bb1ab97",
+      "url": "https://zenodo.org/api/records/15346391/files/Figure7_KO_TBNmscarlet_0h_02.tif/content"
+    },
+    {
+      "key": "Figure7_KO_TBNmScarlet_48h_01.tif",
+      "size": 440511381,
+      "checksum": "md5:621c374c7b87bb131af1ed62be234d3d",
+      "url": "https://zenodo.org/api/records/15346391/files/Figure7_KO_TBNmScarlet_48h_01.tif/content"
+    },
+    {
+      "key": "Figure7_KO_TBNmscarlet_48h_02.tif",
+      "size": 440511381,
+      "checksum": "md5:89406058cc8df96168522212eb728659",
+      "url": "https://zenodo.org/api/records/15346391/files/Figure7_KO_TBNmscarlet_48h_02.tif/content"
+    },
+    {
+      "key": "Figure7_KO_WTmScarlet_48h_02.tif",
+      "size": 440511381,
+      "checksum": "md5:c430394f523551b4bde329a46b5a933b",
+      "url": "https://zenodo.org/api/records/15346391/files/Figure7_KO_WTmScarlet_48h_02.tif/content"
+    },
+    {
+      "key": "Figure7_KO_WTmScarlet_24h_01.tif",
+      "size": 440511444,
+      "checksum": "md5:ecfeaf6ee202e8abe09441809450a8e8",
+      "url": "https://zenodo.org/api/records/15346391/files/Figure7_KO_WTmScarlet_24h_01.tif/content"
+    },
+    {
+      "key": "Figure7_WT_mscarlet_0h_02.tif",
+      "size": 440511381,
+      "checksum": "md5:b3653182b3666d653d8c670dce8189ed",
+      "url": "https://zenodo.org/api/records/15346391/files/Figure7_WT_mscarlet_0h_02.tif/content"
+    },
+    {
+      "key": "Beccari_et_al_RawData.xlsx",
+      "size": 171253,
+      "checksum": "md5:c412091bf194672d57371a9ce6c93a97",
+      "url": "https://zenodo.org/api/records/15346391/files/Beccari_et_al_RawData.xlsx/content"
+    },
+    {
+      "key": "Figure3_Kymo_KO_EB3mNG_plate4_3Zst_3min_032_02.tif",
+      "size": 491931,
+      "checksum": "md5:346fc5a12825a9be0e0f08196405218d",
+      "url": "https://zenodo.org/api/records/15346391/files/Figure3_Kymo_KO_EB3mNG_plate4_3Zst_3min_032_02.tif/content"
+    },
+    {
+      "key": "Figure4_20x_KO_DMSO_wellC5_Extracted_DAPI_DM1A.488_NFHch.647_01.tif",
+      "size": 12587537,
+      "checksum": "md5:608804215914747e824cd3aba3e897e4",
+      "url": "https://zenodo.org/api/records/15346391/files/Figure4_20x_KO_DMSO_wellC5_Extracted_DAPI_DM1A.488_NFHch.647_01.tif/content"
+    },
+    {
+      "key": "Figure4_Nocodazole_Live_KO_t048.tif",
+      "size": 1665229,
+      "checksum": "md5:62400083ee9dfb3de8399b4bf834d30a",
+      "url": "https://zenodo.org/api/records/15346391/files/Figure4_Nocodazole_Live_KO_t048.tif/content"
+    },
+    {
+      "key": "Figure3_Kymo_WT_EB3mNG_plate2_3Zst_3min_020_01.tif",
+      "size": 410138,
+      "checksum": "md5:2566a3a4cb741658ce50832e4491afa2",
+      "url": "https://zenodo.org/api/records/15346391/files/Figure3_Kymo_WT_EB3mNG_plate2_3Zst_3min_020_01.tif/content"
+    },
+    {
+      "key": "Figure4_20x_KO_2hNocod_wellB4_NoExt_DAPI_DM1A.488_NFHch.647_01.tif",
+      "size": 12587555,
+      "checksum": "md5:a3696677ea48fac2a8939afb847cb3f7",
+      "url": "https://zenodo.org/api/records/15346391/files/Figure4_20x_KO_2hNocod_wellB4_NoExt_DAPI_DM1A.488_NFHch.647_01.tif/content"
+    },
+    {
+      "key": "Fig1_Hom17R_Composite.tif",
+      "size": 95045319,
+      "checksum": "md5:60fc78d1e4413e6611c1be4ecca2f6df",
+      "url": "https://zenodo.org/api/records/15346391/files/Fig1_Hom17R_Composite.tif/content"
+    },
+    {
+      "key": "Figure7_WT_mscarlet_48h_02.tif",
+      "size": 440511381,
+      "checksum": "md5:c07af699181873708a96b313d86f9a87",
+      "url": "https://zenodo.org/api/records/15346391/files/Figure7_WT_mscarlet_48h_02.tif/content"
+    },
+    {
+      "key": "Fig1_Hom19L4_Composite.tif",
+      "size": 283937319,
+      "checksum": "md5:d171a1ef7591cbd96e5d71c0020b63e9",
+      "url": "https://zenodo.org/api/records/15346391/files/Fig1_Hom19L4_Composite.tif/content"
+    },
+    {
+      "key": "Figure7_KO_WTmScarlet_0h_02.tif",
+      "size": 440511380,
+      "checksum": "md5:acc4a7b480891e749e2576990b7e1ab3",
+      "url": "https://zenodo.org/api/records/15346391/files/Figure7_KO_WTmScarlet_0h_02.tif/content"
+    },
+    {
+      "key": "Figure7_KO_mScarlet_48h_01.tif",
+      "size": 440511381,
+      "checksum": "md5:0e5f47d640561120aa5fc7227515b40d",
+      "url": "https://zenodo.org/api/records/15346391/files/Figure7_KO_mScarlet_48h_01.tif/content"
+    },
+    {
+      "key": "Figure7_KO_WTmscarlet_0h_03.tif",
+      "size": 440511381,
+      "checksum": "md5:d3f322e8d4ab8be784bf714396a4f512",
+      "url": "https://zenodo.org/api/records/15346391/files/Figure7_KO_WTmscarlet_0h_03.tif/content"
+    },
+    {
+      "key": "Fig1_Hom13L_Composite.tif",
+      "size": 142327717,
+      "checksum": "md5:15d7deb9f9f96503b4d8f9e8773966b6",
+      "url": "https://zenodo.org/api/records/15346391/files/Fig1_Hom13L_Composite.tif/content"
+    },
+    {
+      "key": "Fig1_WT1L_Composite.tif",
+      "size": 189610118,
+      "checksum": "md5:55cbb610c166b067b8a82f2ef8b6a343",
+      "url": "https://zenodo.org/api/records/15346391/files/Fig1_WT1L_Composite.tif/content"
+    },
+    {
+      "key": "Figure7_KO_mScarlet_0h_02.tif",
+      "size": 440511381,
+      "checksum": "md5:362b1627f85e711990412384078029fb",
+      "url": "https://zenodo.org/api/records/15346391/files/Figure7_KO_mScarlet_0h_02.tif/content"
+    },
+    {
+      "key": "Fig1_Hom19L3_Composite.tif",
+      "size": 95045317,
+      "checksum": "md5:82152cd8ffdbe68288846a0c92068635",
+      "url": "https://zenodo.org/api/records/15346391/files/Fig1_Hom19L3_Composite.tif/content"
+    },
+    {
+      "key": "Figure7_KO_TBNmScarlet_0h_01.tif",
+      "size": 440511381,
+      "checksum": "md5:d2169449cdf2bf3c6fc2eb04ef7ade8e",
+      "url": "https://zenodo.org/api/records/15346391/files/Figure7_KO_TBNmScarlet_0h_01.tif/content"
+    },
+    {
+      "key": "Figure7_WT_mscarlet_24h_02.tif",
+      "size": 440511381,
+      "checksum": "md5:7e08b8813bc4b1b1a5096913e03d50a2",
+      "url": "https://zenodo.org/api/records/15346391/files/Figure7_WT_mscarlet_24h_02.tif/content"
+    },
+    {
+      "key": "Fig1_WT1R_Composite.tif",
+      "size": 142327719,
+      "checksum": "md5:7dff801c9dab84d0a091ab096c0fa3a1",
+      "url": "https://zenodo.org/api/records/15346391/files/Fig1_WT1R_Composite.tif/content"
+    },
+    {
+      "key": "Figure3_Kymo_KO_EB3mNG_plate4_3Zst_3min_030_02.tif",
+      "size": 384413,
+      "checksum": "md5:2938bdb0c6a996571f6af5f3689188c0",
+      "url": "https://zenodo.org/api/records/15346391/files/Figure3_Kymo_KO_EB3mNG_plate4_3Zst_3min_030_02.tif/content"
+    },
+    {
+      "key": "Figure7_KO_TBNmscarlet_24h_02.tif",
+      "size": 440511381,
+      "checksum": "md5:aad8be3128513f46b0435f05e4db8de4",
+      "url": "https://zenodo.org/api/records/15346391/files/Figure7_KO_TBNmscarlet_24h_02.tif/content"
+    },
+    {
+      "key": "Figure7_KO_mScarlet_24h_01.tif",
+      "size": 440511767,
+      "checksum": "md5:5847bb8813833b5b46486c5c53737b40",
+      "url": "https://zenodo.org/api/records/15346391/files/Figure7_KO_mScarlet_24h_01.tif/content"
+    },
+    {
+      "key": "Figure7_KO_WTmscarlet_48h_03.tif",
+      "size": 440511381,
+      "checksum": "md5:6393d63831330bfc8567b9642f4b5f3c",
+      "url": "https://zenodo.org/api/records/15346391/files/Figure7_KO_WTmscarlet_48h_03.tif/content"
+    },
+    {
+      "key": "Figure7_KO_WTmScarlet_48h_01.tif",
+      "size": 440511960,
+      "checksum": "md5:356cc2546b83921c0e9d6007a7ee5be0",
+      "url": "https://zenodo.org/api/records/15346391/files/Figure7_KO_WTmScarlet_48h_01.tif/content"
+    },
+    {
+      "key": "Figure7_WT_mScarlet_0h_01.tif",
+      "size": 440511381,
+      "checksum": "md5:9aabe168fb889725244c4eaaaba5de04",
+      "url": "https://zenodo.org/api/records/15346391/files/Figure7_WT_mScarlet_0h_01.tif/content"
+    },
+    {
+      "key": "Figure7_KO_WTmscarlet_24h_03.tif",
+      "size": 440511381,
+      "checksum": "md5:63aa281fd2c620c5983c8ca8e5353ede",
+      "url": "https://zenodo.org/api/records/15346391/files/Figure7_KO_WTmscarlet_24h_03.tif/content"
+    },
+    {
+      "key": "Figure7_WT_mScarlet_48h_01.tif",
+      "size": 440511381,
+      "checksum": "md5:e6f8f0416f518518330e1277f72eda4b",
+      "url": "https://zenodo.org/api/records/15346391/files/Figure7_WT_mScarlet_48h_01.tif/content"
+    },
+    {
+      "key": "Fig1_HOM17R2_Composite.tif",
+      "size": 47762919,
+      "checksum": "md5:c78c63dbcf34c9866edb55aee6d2c5f8",
+      "url": "https://zenodo.org/api/records/15346391/files/Fig1_HOM17R2_Composite.tif/content"
+    },
+    {
+      "key": "Figure3_Kymo_KO_EB3mNG_plate3_3Zst_3min_017_02.tif",
+      "size": 271258,
+      "checksum": "md5:657f53f249efc32ebb49ff10b803bd24",
+      "url": "https://zenodo.org/api/records/15346391/files/Figure3_Kymo_KO_EB3mNG_plate3_3Zst_3min_017_02.tif/content"
+    },
+    {
+      "key": "Figure7_KO_WTmScarlet_24h_02.tif",
+      "size": 440511380,
+      "checksum": "md5:0faa0ed19f86e394c547d27da47e7dea",
+      "url": "https://zenodo.org/api/records/15346391/files/Figure7_KO_WTmScarlet_24h_02.tif/content"
+    },
+    {
+      "key": "Figure7_WT_mScarlet_24h_01.tif",
+      "size": 440511381,
+      "checksum": "md5:c0c1bde8e2f12a4865c7ba888866d671",
+      "url": "https://zenodo.org/api/records/15346391/files/Figure7_WT_mScarlet_24h_01.tif/content"
+    },
+    {
+      "key": "Figure7_KO_mScarlet_48h_02.tif",
+      "size": 440511381,
+      "checksum": "md5:066d46218a7f100d1a503db1aff0419a",
+      "url": "https://zenodo.org/api/records/15346391/files/Figure7_KO_mScarlet_48h_02.tif/content"
+    },
+    {
+      "key": "Figure7_KO_WTmScarlet_0h_01.tif",
+      "size": 440511381,
+      "checksum": "md5:8b0d5a20c6e25e1257935d0e0698e94d",
+      "url": "https://zenodo.org/api/records/15346391/files/Figure7_KO_WTmScarlet_0h_01.tif/content"
+    },
+    {
+      "key": "Figure7_KO_TBNmScarlet_24h_01.tif",
+      "size": 440511381,
+      "checksum": "md5:dd25ccd08a0e43c417c76d2786cd01db",
+      "url": "https://zenodo.org/api/records/15346391/files/Figure7_KO_TBNmScarlet_24h_01.tif/content"
+    }
+  ]
+}

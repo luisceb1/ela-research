@@ -39,3 +39,5 @@ Los PR #3 y #4 están abiertos, con CI offline exitosa; los nuevos análisis des
 P1 evidencia funcional: primera auditoría completada con límites de acceso; reports/functional-evidence. Temporalidad neuronal Keuss2024 concurrente; aceptado2026 pendiente texto completo. Próximo: fuente pública alternativa del aceptado y diagrama temporal, sin extrapolar versiones ni eficacia clínica.
 
 Aceptado Keuss: lectura resuelta con copia aportada; MEA con KD tardío no es ASO tardío (14frente33). Tabla de calendario en reports/accepted-keuss. Próximo: evidencia pública de intervención tras déficit verificado y ficha de pregunta discriminante, sin laboratorio ni contacto externo.
+
+P1 reversibilidad: cronología PNAS2025 y ficha conceptual completadas; reports/reversal-design. Próximo inventario Zenodo15346391/unidad experimental y modelo humano2026. Búsqueda dirigida no demuestra ausencia universal de rescate diferido. Sin ejecución de laboratorio ni contacto.

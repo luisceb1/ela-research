@@ -1,0 +1,7 @@
+{
+  "intervention_minus_axotomy_days": -3,
+  "time_origin": "axotomy, not genetic deficiency",
+  "delayed_postinjury_intervention": false,
+  "source_sha256": "edcdc946f3971d4175b4fb230f83764a048413b6cb69d1560278320bc68f463b",
+  "locator": "Figure7 caption"
+}
