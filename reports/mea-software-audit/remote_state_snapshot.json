@@ -1,0 +1,43 @@
+{
+  "read_date": "2026-10-29",
+  "main_commit_at_check": "13ccbc5c9f1c9744c57ed9abb822d169772e32a5",
+  "files": [
+    {
+      "path": "AGENTS.md",
+      "blob_sha": "d2f10245f2e42d65b73fb9d1610968049cb35c20"
+    },
+    {
+      "path": "research/STATE.md",
+      "blob_sha": "86b62c425b43df0c0626e11a0481e2021c044491"
+    },
+    {
+      "path": "research/BACKLOG.md",
+      "blob_sha": "79de6dcce78d684e3889a7dcb37b23d78b3c937e"
+    },
+    {
+      "path": "research/PROTOCOL.md",
+      "blob_sha": "b878ea6d015072425f8230df3ea3f971748feac6"
+    }
+  ],
+  "open_issue_context": [
+    {
+      "number": 16,
+      "title": "P1 — Reproducir simulador UNC13A-MEA y preparar ensayo funcional",
+      "state": "open",
+      "url": "https://github.com/luisceb1/ela-research/issues/16"
+    },
+    {
+      "number": 19,
+      "title": "P0 BUG — mapeo GTF identifica 100 % TXNAME pero cero genes objetivo",
+      "state": "open",
+      "url": "https://github.com/luisceb1/ela-research/issues/19"
+    },
+    {
+      "number": 20,
+      "title": "P0 — Resolver discrepancia 21 vs 1910 uniones Iso-Seq y verificar metadatos ALS-CI",
+      "state": "open",
+      "url": "https://github.com/luisceb1/ela-research/issues/20"
+    }
+  ],
+  "interpretation": "main advanced concurrently with unmerged research branches; verify current P0 status before duplicating work"
+}

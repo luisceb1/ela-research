@@ -55,3 +55,5 @@ Validación del inventario: cuatro pruebas nuevas de límites de entrada/identid
 ## Actualización posterior: una reproducción completada
 
 `reports/camk2b-reproduction` reproduce la comparación estructural agregada CAMK2B con GTF/uniqueCounts públicos fijados por hash. Las predicciones del paquete coinciden:1modelo celular con la unión y32unidades asignadas;0de49modelos cerebrales. Se mantiene la ausencia de modelo como resultado de catálogo, no ausencia biológica. Este pendiente concreto pasa de lectura documental a reproducción técnica; los demás pipelines recibidos permanecen pendientes. `reports/chan-timing` también confirma el antecedente de las propuestas mediante fuente primaria, sin constituir un experimento nuevo.
+
+`reports/mea-software-audit` reproduce las11pruebas originales de ambos prototipos MEA y detecta6entradas inválidas aceptadas y un denominador de bloques mal nombrado ante pérdidas totales. Se entregan controles previos y fixtures de regresión; no se reproduce la ejecución completa de7560simulaciones ni se validan los porcentajes de los informes. Las simulaciones siguen sin aportar evidencia experimental.

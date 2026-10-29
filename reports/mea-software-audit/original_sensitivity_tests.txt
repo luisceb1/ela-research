@@ -1,0 +1,10 @@
+test_biological_units (test_sensibilidad.SensitivityTests.test_biological_units) ... ok
+test_composites_mortality_not_technical_failure (test_sensibilidad.SensitivityTests.test_composites_mortality_not_technical_failure) ... ok
+test_scenarios_have_clear_labelling (test_sensibilidad.SensitivityTests.test_scenarios_have_clear_labelling) ... ok
+test_seed_reproducibility (test_sensibilidad.SensitivityTests.test_seed_reproducibility) ... ok
+test_strong_effect_not_weaker_than_null_in_same_seed (test_sensibilidad.SensitivityTests.test_strong_effect_not_weaker_than_null_in_same_seed) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.165s
+
+OK
