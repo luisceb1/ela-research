@@ -4,6 +4,8 @@ on:
   push:
     paths:
       - '.github/workflows/geo-isoseq-audit.yml'
+      - 'scripts/map_isoseq_gtf.py'
+      - 'tests/test_map_isoseq_gtf.py'
 jobs:
   geo-audit:
     runs-on: ubuntu-latest
