@@ -36,8 +36,11 @@ def index_gtf(path):
                 x["exons"].add((p[3], p[4]))
     return out
 
+GENE_IDS = {"STMN2": "ENSG00000104435", "UNC13A": "ENSG00000130477"}  # NCBI Gene/HGNC, GRCh38
+
 def map_counts(counts, index, output, targets):
-    total = matched = selected = mismatches = 0
+    total = matched = selected = mismatches = missing_names = 0
+    by_target = {t: 0 for t in targets}
     with read_text(counts) as f, open(output, "w", newline="", encoding="utf-8") as o:
         r = csv.DictReader(f, delimiter="\t")
         if not {"TXNAME", "GENEID"}.issubset(set(r.fieldnames or [])):
@@ -54,14 +57,19 @@ def map_counts(counts, index, output, targets):
             status = "unmapped" if not g else ("matched" if row["GENEID"].split(".")[0] == g["gene_id"].split(".")[0] else "gene_id_conflict")
             if status == "gene_id_conflict":
                 mismatches += 1
-            if g and g["gene_name"].upper() in targets:
+            if g and not g["gene_name"]:
+                missing_names += 1
+            ens = row["GENEID"].split(".")[0]
+            target = next((symbol for symbol in targets if ens == GENE_IDS.get(symbol) or (g and g["gene_name"].upper() == symbol)), None)
+            if g and target:
                 selected += 1
+                by_target[target] += 1
                 try:
                     cs = sum(float(row[k] or 0) for k in cols)
                 except ValueError as e:
                     raise ValueError(f"Non-numeric count for {tx}") from e
-                w.writerow([tx, row["GENEID"], g["gene_id"], g["gene_name"], len(g["exons"]), cs, status])
-    return {"total": total, "gtf_matched": matched, "target_transcripts": selected, "gene_id_conflicts": mismatches}
+                w.writerow([tx, row["GENEID"], g["gene_id"], target, len(g["exons"]), cs, status])
+    return {"total": total, "gtf_matched": matched, "target_transcripts": selected, "gene_id_conflicts": mismatches, "gtf_missing_gene_names": missing_names, "by_target": by_target}
 
 def main():
     ap = argparse.ArgumentParser()
