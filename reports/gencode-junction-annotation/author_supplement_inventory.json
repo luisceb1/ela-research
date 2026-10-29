@@ -1,0 +1,212 @@
+{
+  "xml_source": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12803201/fullTextXML",
+  "xml_sha256": "02b9ce8a1667ca63c150fcdec69883d3b5abc7142ec3820861743f8cd267016b",
+  "supplements": [
+    {
+      "id": "SD1",
+      "description": "Supplement 1",
+      "links": [
+        {
+          "id": "d67e1207",
+          "{http://www.w3.org/1999/xlink}href": "media-1.docx",
+          "mimetype": "application",
+          "mime-subtype": "vnd.openxmlformats-officedocument.wordprocessingml.document"
+        }
+      ]
+    },
+    {
+      "id": "SD2",
+      "description": "Supplement 2",
+      "links": [
+        {
+          "id": "d67e1210",
+          "{http://www.w3.org/1999/xlink}href": "media-2.xlsx",
+          "mimetype": "application",
+          "mime-subtype": "vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+        }
+      ]
+    },
+    {
+      "id": "SD3",
+      "description": "Supplement 3",
+      "links": [
+        {
+          "id": "d67e1213",
+          "{http://www.w3.org/1999/xlink}href": "media-3.xlsx",
+          "mimetype": "application",
+          "mime-subtype": "vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+        }
+      ]
+    },
+    {
+      "id": "SD4",
+      "description": "Supplement 4",
+      "links": [
+        {
+          "id": "d67e1216",
+          "{http://www.w3.org/1999/xlink}href": "media-4.xlsx",
+          "mimetype": "application",
+          "mime-subtype": "vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+        }
+      ]
+    },
+    {
+      "id": "SD5",
+      "description": "Supplement 5",
+      "links": [
+        {
+          "id": "d67e1219",
+          "{http://www.w3.org/1999/xlink}href": "media-5.xlsx",
+          "mimetype": "application",
+          "mime-subtype": "vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+        }
+      ]
+    },
+    {
+      "id": "SD6",
+      "description": "Supplement 6",
+      "links": [
+        {
+          "id": "d67e1222",
+          "{http://www.w3.org/1999/xlink}href": "media-6.xlsx",
+          "mimetype": "application",
+          "mime-subtype": "vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+        }
+      ]
+    },
+    {
+      "id": "SD7",
+      "description": "Supplement 7",
+      "links": [
+        {
+          "id": "d67e1225",
+          "{http://www.w3.org/1999/xlink}href": "media-7.xlsx",
+          "mimetype": "application",
+          "mime-subtype": "vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+        }
+      ]
+    },
+    {
+      "id": "SD8",
+      "description": "Supplement 8",
+      "links": [
+        {
+          "id": "d67e1228",
+          "{http://www.w3.org/1999/xlink}href": "media-8.xlsx",
+          "mimetype": "application",
+          "mime-subtype": "vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+        }
+      ]
+    },
+    {
+      "id": "SD9",
+      "description": "Supplement 9",
+      "links": [
+        {
+          "id": "d67e1231",
+          "{http://www.w3.org/1999/xlink}href": "media-9.xlsx",
+          "mimetype": "application",
+          "mime-subtype": "vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+        }
+      ]
+    },
+    {
+      "id": "SD10",
+      "description": "Supplement 10",
+      "links": [
+        {
+          "id": "d67e1234",
+          "{http://www.w3.org/1999/xlink}href": "media-10.xlsx",
+          "mimetype": "application",
+          "mime-subtype": "vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+        }
+      ]
+    },
+    {
+      "id": "SD11",
+      "description": "Supplement 11",
+      "links": [
+        {
+          "id": "d67e1238",
+          "{http://www.w3.org/1999/xlink}href": "media-11.xlsx",
+          "mimetype": "application",
+          "mime-subtype": "vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+        }
+      ]
+    },
+    {
+      "id": "SD12",
+      "description": "Supplement 12",
+      "links": [
+        {
+          "id": "d67e1241",
+          "{http://www.w3.org/1999/xlink}href": "media-12.xlsx",
+          "mimetype": "application",
+          "mime-subtype": "vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+        }
+      ]
+    },
+    {
+      "id": "SD13",
+      "description": "Supplement 13",
+      "links": [
+        {
+          "id": "d67e1244",
+          "{http://www.w3.org/1999/xlink}href": "media-13.xlsx",
+          "mimetype": "application",
+          "mime-subtype": "vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+        }
+      ]
+    },
+    {
+      "id": "SD14",
+      "description": "Supplement 14",
+      "links": [
+        {
+          "id": "d67e1247",
+          "{http://www.w3.org/1999/xlink}href": "media-14.xlsx",
+          "mimetype": "application",
+          "mime-subtype": "vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+        }
+      ]
+    },
+    {
+      "id": "SD15",
+      "description": "Supplement 15",
+      "links": [
+        {
+          "id": "d67e1250",
+          "{http://www.w3.org/1999/xlink}href": "media-15.xlsx",
+          "mimetype": "application",
+          "mime-subtype": "vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+        }
+      ]
+    },
+    {
+      "id": "SD16",
+      "description": "Supplement 16",
+      "links": [
+        {
+          "id": "d67e1253",
+          "{http://www.w3.org/1999/xlink}href": "media-16.xlsx",
+          "mimetype": "application",
+          "mime-subtype": "vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+        }
+      ]
+    },
+    {
+      "id": "SD17",
+      "description": "Supplement 17",
+      "links": [
+        {
+          "id": "d67e1256",
+          "{http://www.w3.org/1999/xlink}href": "media-17.xlsx",
+          "mimetype": "application",
+          "mime-subtype": "vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+        }
+      ]
+    }
+  ],
+  "tables_downloaded_or_matched": false,
+  "unique_media_files": 17
+}

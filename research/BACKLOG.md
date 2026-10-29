@@ -29,3 +29,5 @@ Próximo P0: issue20, recuperar ZIP original del cribado y explicar21vs1910media
 reports/junction-filter-reconciliation recupera ZIP y reproduce21claves: parser consecutivo fragmenta exones/referencias.1910reproducidas con agrupación,1901con soporte positivo;3de las21eran referenciaENSTy18se conservan. No usar lista21como cribado exhaustivo o evidencia de novedad.20tests pasan; proyección estructural sin filas personales y extractos de código quedan por hash.
 
 Siguiente tarea segura: anotar1901contraGENCODEv47completa y catálogo público del estudio antes de priorizar candidatos/AGRN#21. No nueva búsqueda por fuerza bruta ni inferencia con n=1. Cierre de#20e integración de PR requieren revisión; revisar también estados de ramas anteriores.
+
+GENCODE externa completada:17exactas/1881no encontradas para gen/3sin gen en v47;24tests, reports/gencode-junction-annotation. Cotejo con autores sigue pendiente:17medios identificados en XML primario, recuperar descripción y esquema antes de alinear intervalos TE/exón con uniones. No considerar ausencia de coincidencia como novedad.

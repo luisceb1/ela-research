@@ -55,3 +55,8 @@ Inventario estructural y mapeo por IDs de genes ejecutados en GitHub Actions. El
 - Catálogo noENST compartido1910(1255genes); soporte positivo en ambas series1901(1250genes). De21antiguas,18permanecen y3sí están en referenciasENSTinternas. Excluir cuentas0solo elimina9del catálogo, no explica21.
 - Proyección segura21claves y cuatro funciones por hash permiten repetir desde GitHub+GEO sin ZIPprivado; el JSON distingue verificación opcional del original.20tests en esta rama. No pvalores, traducción, novedad ni evidencia terapéutica.
 - Siguiente: GENCODEv47completa/catálogo publicado de origen para1901claves, antes de priorizarAGRN(#21)u otras dianas. #19/#20pendientes de revisión, sin cierre/merge automático.
+
+## GENCODEv47 externa ejecutada
+- reports/gencode-junction-annotation:1901uniones;17coinciden exactamente por gen/cromosoma/hebra/intrón,1881no encontradas para gen reconocido y3de un gen ausente de v47.1249/1250genes reconocidos. Sin novedad o función inferida.
+-24tests locales pasan; hashes de referencia/entrada verificados. Se recuperó XML de Bolger e inventariaron17medios suplementarios distintos; tablas aún no descargadas/cotejadas.
+- Siguiente: descripción/esquema de suplementos, ensamblaje y convención de coordenadas antes de comparar con crypTE. No llamar nuevas a1881por ausencia de coincidencia en esta versión.

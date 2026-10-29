@@ -1,0 +1,16 @@
+{
+  "scope": "annotation lookup only; not novel/cryptic/protein validation",
+  "input_junctions": 1901,
+  "input_genes": 1250,
+  "reference_recognized_genes": 1249,
+  "statuses": {
+    "exact_same_gene_junction": 17,
+    "gene_not_in_v47": 3,
+    "junction_not_found_same_gene": 1881
+  },
+  "input_sha256": "fd06303e8b030383b60a70e91dde8509951d0d2e20b29c021f67736b820dd0a4",
+  "reference_sha256": "df11938c66d2b39f8ebbdb5f1720919321f9cf9d58f02b019753f6a24ca3db24",
+  "reference_url": "https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_47/gencode.v47.annotation.gtf.gz",
+  "catalog_of_authors_compared": false,
+  "individual_data_exported": false
+}
