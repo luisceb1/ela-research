@@ -1,0 +1,61 @@
+name: GEO Iso-Seq real-data audit
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/geo-isoseq-audit.yml'
+jobs:
+  geo-audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Download published GEO input data
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p inputs outputs
+          python - <<'PY'
+          from pathlib import Path
+          import urllib.request, time
+          root='https://ftp.ncbi.nlm.nih.gov/geo/series/'
+          inputs=[
+            ('GSE310nnn/GSE310723/suppl/','GSE310723_i3N_isoseq_uniqueCounts_transcript.txt.gz'),
+            ('GSE310nnn/GSE310723/suppl/','GSE310723_i3N_isoseq_extended_annotations.gtf.gz'),
+            ('GSE315nnn/GSE315972/suppl/','GSE315972_NYGC_isoseq_uniqueCounts_transcript.txt.gz'),
+            ('GSE315nnn/GSE315972/suppl/','GSE315972_NYGC_isoseq_extended_annotations.gtf.gz'),
+          ]
+          for prefix,name in inputs:
+              url=root+prefix+name
+              for attempt in range(3):
+                  try:
+                      urllib.request.urlretrieve(url,Path('inputs')/name)
+                      print('Downloaded',url,flush=True)
+                      break
+                  except Exception as exc:
+                      if attempt==2: raise
+                      print('Retry',name,repr(exc),flush=True)
+                      time.sleep(3*(attempt+1))
+          PY
+          sha256sum inputs/* | tee outputs/input_sha256.txt
+      - name: Run matching checks on real annotations
+        shell: bash
+        run: |
+          set -euo pipefail
+          python -m unittest discover -s tests -p 'test_map_isoseq_gtf.py' -v
+          python scripts/map_isoseq_gtf.py --counts inputs/GSE310723_i3N_isoseq_uniqueCounts_transcript.txt.gz --gtf inputs/GSE310723_i3N_isoseq_extended_annotations.gtf.gz --out outputs/GSE310723_STMN2_UNC13A.tsv | tee outputs/GSE310723_summary.txt
+          python scripts/map_isoseq_gtf.py --counts inputs/GSE315972_NYGC_isoseq_uniqueCounts_transcript.txt.gz --gtf inputs/GSE315972_NYGC_isoseq_extended_annotations.gtf.gz --out outputs/GSE315972_STMN2_UNC13A.tsv | tee outputs/GSE315972_summary.txt
+          wc -l outputs/*.tsv | tee outputs/rowcounts.txt
+      - name: Store research artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: geo-isoseq-audit
+          path: outputs/
+          if-no-files-found: warn
+          retention-days: 30
