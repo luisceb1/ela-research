@@ -35,3 +35,5 @@ Los PR #3 y #4 están abiertos, con CI offline exitosa; los nuevos análisis des
 - CPM original auditado: denominador documentado incluye incompatibles; contraste STMN2 conserva dirección.
 - Semántica bambu 3.2.6 revisada por commit; causa de uniqueCounts par **bloqueada** sin trazabilidad de entradas/objetos intermedios. No corregir cuentas por suposición.
 - **Próxima tarea segura: evidencia funcional independiente publicada**, separar rescate de ARN/proteína/función y auditar temporalidad/controles. No esperar a resolver la escala para revisar literatura funcional.
+
+P1 evidencia funcional: primera auditoría completada con límites de acceso; reports/functional-evidence. Temporalidad neuronal Keuss2024 concurrente; aceptado2026 pendiente texto completo. Próximo: fuente pública alternativa del aceptado y diagrama temporal, sin extrapolar versiones ni eficacia clínica.

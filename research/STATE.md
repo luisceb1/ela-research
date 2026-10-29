@@ -69,3 +69,9 @@ Inventario estructural GEO completado por primera ejecución de GitHub Actions. 
 - Cuatro matrices por serie: IDs/columnas coinciden; cero violaciones unique<=counts o fullLength<=counts (tolerancia 1e-4). CPM real usa otro denominador; no revierte dirección STMN2 en cultivo.
 - Código exacto bambu 3.2.6 fijado a commit 2fb886442096896807f44191ad2d1e00b43ceadd. Exportación sin factor2 explícito; paridad sigue sin causa establecida. R no ejecutado. Bloqueo e incidencias documentados, sin modificar escala original.
 - 37 pruebas offline pasan. Siguiente tarea segura seleccionada: evidencia funcional publicada, con separación ARN/proteína/función, temporalidad y controles.
+
+## Auditoría funcional — siguiente ciclo
+- reports/functional-evidence: cinco unidades curadas, sin contarlas como estudios independientes. Código de validación ejecutado; 41 pruebas pasan.
+- Keuss2024 neuronal: ASO inicia junto a PROTAC; no verifica rescate diferido tras basal deficitario. Otro preprint2025 inicia ASO antes de shRNA.
+- Baughn2023: resumen respalda función celular; cronología completa bloqueada HTTP500. Keuss2026 aceptado: registro verificado, PDF HTTP403; no transferir calendario del preprint a la versión aceptada.
+- Próxima tarea segura: recuperar manuscrito aceptado y auditar figuras/calendario; especificar contraste de rescate diferido sin iniciar laboratorio. Estado completo en rama research/functional-evidence-20261029, dependiente del PR6.
