@@ -35,3 +35,10 @@ Inventario estructural GEO completado por primera ejecución de GitHub Actions. 
 - Pruebas unitarias del script `scripts/map_isoseq_gtf.py` superadas en GitHub Actions (run 40868184532); **no se ha ejecutado el mapeo con GTF reales**.
 - Bloqueo comprobado: los archivos antiguos de la biblioteca no pudieron materializarse como bytes para reejecución local; tampoco hubo resolución DNS para el FTP público GEO en el entorno de ejecución.
 - Prioridad de investigación: verificar y reproducir el cribado negativo existente, en lugar de repetirlo como investigación nueva. Se mantiene propuesta condicional de estudio UNC13A posterior a déficit funcional documentado, pendiente de laboratorio.
+
+## Actualización científica: 29-10-2026 — AGRN/CAMK2B y control de calidad
+- Auditoría de grupos clínicos GSE315972 corregida y reejecutada (GitHub Actions 40872016985): 1910 uniones compartidas bajo filtro amplio, 9 filtro celular, 100 filtro cerebral, **0 intersección estricta**, no validación de ausencia de mecanismo ni reconstrucción exacta del cribado original de 21.
+- Nuevo informe: `reports/ALS_CI_metadata_correction_2026-10-29.md`; clasificación ALS-CI n=3, ALS-nonCI n=3 y controles n=2 por GSM/donante.
+- Revisión de literatura dirigida: `research/AGRN_CAMK2B_EVIDENCE_2026-10-29.md`. AGRN y CAMK2B tienen antecedentes de eventos crípticos y péptidos; no candidatos nuevos descubiertos aquí.
+- AGRN priorizada solo como **pregunta funcional de la unión neuromuscular** por testar; CAMK2B requiere auditoría isoforma-específica. UNC13A conserva la propuesta funcional posdéficit.
+- Bloqueo pendiente: acceso al ZIP original del cribado de 21 uniones y reproducción exacta de filtros; no fusionar 21 y 1910 como si provinieran del mismo algoritmo.
