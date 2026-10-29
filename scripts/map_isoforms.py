@@ -77,9 +77,9 @@ def read_reference(path):
     return ref
 
 
-def read_local_exons(path):
+def read_local_exons(path, gene_ids=None):
     txs = {}
-    wanted = set(GENES.values())
+    wanted = set(GENES.values()) if gene_ids is None else set(gene_ids)
     with gzip.open(path, 'rt') as f:
         for line in f:
             if line.startswith('#') or not line.strip():

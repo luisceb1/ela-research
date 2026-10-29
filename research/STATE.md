@@ -108,3 +108,9 @@ Inventario estructural GEO completado por primera ejecución de GitHub Actions. 
 - SupplementaryData1(83hojas) recuperada; metadatos de6hojas auditados. EtiquetasDIV dispersas y sin mapa experimento/diferenciación/pozo en las etiquetas seleccionadas; no interpolar tiempos ni asumir réplicas. Sin nuevos efectos/pvalores.
 - Modelo basal no presenta CE UNC13A según discusión/SuppFig6; KD adicional cambia condición. No transferir idoneidad de STMN2 a UNC13A por suposición.
 - Parser corregido por guion de fin de línea y prueba de regresión;72pruebas técnicas pasan. Próximo: reproducir CAMK2B estructural agregado con GTF públicos, sin tablas individuales. Curvas Chan condicionadas a resolver unidades/tiempos. Rama research/chan-rescue-timing-20261029, dependientePR11.
+
+## CAMK2B previo reproducido en este repositorio
+- reports/camk2b-reproduction: mismo evento chr7−44220901/44222117;1modelo celular/suma32unidades uniqueCounts,0de49modelos cerebrales. CAMK2B cuantificado en8/8bibliotecas cerebrales. Cero modelos no significa cero lecturas directas ni ausencia biológica.
+- Otras3uniones de ese modelo sí coinciden; HDGFL2 comparte14/16uniones del candidato, no cadena completa. STMN2 candidato tampoco en catálogo cerebral. Sin inferencia clínica, pvalores o filas individuales.
+- Cuatro hashes coinciden con auditoría GEO y paquete previo; código recibido leído pero no ejecutado. Comparación reproducida dos veces con bytes idénticos y77pruebas técnicas pasan, no validación biológica independiente. Actualiza el pendiente documental de PR11.
+- Próxima tarea segura: leer/auditar y reproducir pruebas de los pipelines MEA sintéticos de otros chats, por separado y sin convertirlos en potencia/tamaño muestral reales. Rama research/camk2b-aggregate-reproduction-20261029, dependientePR12.
