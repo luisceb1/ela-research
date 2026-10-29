@@ -1,0 +1,63 @@
+{
+  "source_sha256": "19a3e1edc7b857fec3fb96649344a02ef5e80e3899d5c8f0b28415675fb2d411",
+  "rows": [
+    {
+      "sheet": "S8A",
+      "row": 16245,
+      "fields": {
+        "A": "chrY",
+        "B": "304754",
+        "C": "318171",
+        "D": "transcript/369559",
+        "F": "-",
+        "J": "11",
+        "K": "443,153,149,209,159,68,131,71,138,206,54",
+        "L": "0,2605,2977,6664,8011,9395,10135,10474,12159,12524,13363",
+        "M": "GTPBP6",
+        "N": "chrY:317051-317279(-);chrY:317484-318118(-)",
+        "O": "NovelExon"
+      },
+      "target_intronic_key_recovered": true,
+      "excluded_labels": 0
+    },
+    {
+      "sheet": "S8A",
+      "row": 16246,
+      "fields": {
+        "A": "chrY",
+        "B": "304759",
+        "C": "318171",
+        "D": "transcript/344260",
+        "F": "-",
+        "J": "11",
+        "K": "438,153,149,209,393,68,131,71,138,141,54",
+        "L": "0,2600,2972,6659,7772,9390,10130,10469,12154,12519,13358",
+        "M": "GTPBP6",
+        "N": "chrY:311627-312532(-);chrY:317051-317279(-);chrY:317419-318118(-)",
+        "O": "NovelExon"
+      },
+      "target_intronic_key_recovered": true,
+      "excluded_labels": 0
+    },
+    {
+      "sheet": "S8D",
+      "row": 13754,
+      "fields": {
+        "A": "chrY",
+        "B": "304759",
+        "C": "318762",
+        "D": "transcript/281711",
+        "F": "-",
+        "J": "11",
+        "K": "438,153,149,209,159,68,131,71,138,206,324",
+        "L": "0,2600,2972,6659,8006,9390,10130,10469,12154,12519,13679",
+        "M": "GTPBP6",
+        "N": "chrY:317051-317279(-);chrY:317484-318439(-)",
+        "O": "NovelExon"
+      },
+      "target_intronic_key_recovered": true,
+      "excluded_labels": 0
+    }
+  ],
+  "interpretation": "Direct eligible-block/label check; not raw-read chromosomal assignment"
+}

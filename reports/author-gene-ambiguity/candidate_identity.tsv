@@ -1,0 +1,37 @@
+gene_id	chrom	intron_start	intron_end	strand	previous_status	candidate_id_state	conditional_same_rows	conditional_s8_rows	conditional_s7_rows	evidence_rows	row_states_json	source_symbol	reference_symbol	global_symbol_ids
+ENSG00000080947	chr1	16486662	16490617	-	reference_identity_unresolved	candidate_id_locus_confirmed	0	0	0	4	"{""multiple_ids_at_chrom_strand"": 4}"	CROCCP3	CROCCP3	ENSG00000080947;ENSG00000290842
+ENSG00000169084	chrX	2266948	2408744	-	reference_identity_unresolved	candidate_id_locus_confirmed	0	0	0	0	{}	DHRSX	DHRSX	ENSG00000169084;ENSG00000292338
+ENSG00000268592	chr6	149864383	149885584	+	reference_identity_unresolved	candidate_id_locus_confirmed	0	0	0	0	{}	RAET1E-AS1	RAET1E-AS1	ENSG00000223701;ENSG00000268592
+ENSG00000268592	chr6	149885674	149919186	+	reference_identity_unresolved	candidate_id_locus_confirmed	0	0	0	0	{}	RAET1E-AS1	RAET1E-AS1	ENSG00000223701;ENSG00000268592
+ENSG00000271816	chr10	73713333	73719159	-	reference_identity_unresolved	candidate_id_locus_confirmed	0	0	0	0	{}	BMS1P4	BMS1P4	ENSG00000242338;ENSG00000271816
+ENSG00000271816	chr10	73722578	73724774	-	reference_identity_unresolved	candidate_id_locus_confirmed	0	0	0	0	{}	BMS1P4	BMS1P4	ENSG00000242338;ENSG00000271816
+ENSG00000276256	chrUn_GL000195v1	49120	74120	-	reference_identity_unresolved	reference_gene_missing	0	0	0	0	{}		.	.
+ENSG00000276256	chrUn_GL000195v1	49120	86517	-	reference_identity_unresolved	reference_gene_missing	0	0	0	3	"{""unresolved_token"": 3}"		.	.
+ENSG00000276256	chrUn_GL000195v1	74181	86517	-	reference_identity_unresolved	reference_gene_missing	0	0	0	0	{}		.	.
+ENSG00000285793	chr2	87023534	87031815	-	reference_identity_unresolved	candidate_id_locus_confirmed	0	0	0	27	"{""multiple_ids_at_chrom_strand"": 27}"	ANAPC1P2	ANAPC1P2	ENSG00000231259;ENSG00000285793
+ENSG00000286112	chr9	128823864	128824071	-	reference_identity_unresolved	candidate_id_locus_confirmed	0	0	0	1	"{""multiple_ids_at_chrom_strand"": 1}"	KYAT1	KYAT1	ENSG00000171097;ENSG00000286112
+ENSG00000286112	chr9	128830006	128835322	-	reference_identity_unresolved	candidate_id_locus_confirmed	0	0	0	1	"{""multiple_ids_at_chrom_strand"": 1}"	KYAT1	KYAT1	ENSG00000171097;ENSG00000286112
+ENSG00000286112	chr9	128845412	128881896	-	reference_identity_unresolved	candidate_id_locus_confirmed	0	0	0	1	"{""multiple_ids_at_chrom_strand"": 1}"	KYAT1	KYAT1	ENSG00000171097;ENSG00000286112
+ENSG00000290554	chr6	41119108	41120522	+	reference_identity_unresolved	candidate_id_locus_confirmed	0	0	0	3	"{""multiple_ids_at_chrom_strand"": 3}"	ADCY10P1	ADCY10P1	ENSG00000161912;ENSG00000290554
+ENSG00000290554	chr6	41121475	41122976	+	reference_identity_unresolved	candidate_id_locus_confirmed	0	0	0	4	"{""multiple_ids_at_chrom_strand"": 4}"	ADCY10P1	ADCY10P1	ENSG00000161912;ENSG00000290554
+ENSG00000290691	chr15	43718292	43744394	-	reference_identity_unresolved	candidate_id_locus_confirmed	0	0	0	0	{}	STRCP1	STRCP1	ENSG00000166763;ENSG00000290691
+ENSG00000290691	chr15	43718539	43736835	-	reference_identity_unresolved	candidate_id_locus_confirmed	0	0	0	0	{}	STRCP1	STRCP1	ENSG00000166763;ENSG00000290691
+ENSG00000290691	chr15	43737009	43744394	-	reference_identity_unresolved	candidate_id_locus_confirmed	0	0	0	0	{}	STRCP1	STRCP1	ENSG00000166763;ENSG00000290691
+ENSG00000290691	chr15	43744569	43745021	-	reference_identity_unresolved	candidate_id_locus_confirmed	0	0	0	0	{}	STRCP1	STRCP1	ENSG00000166763;ENSG00000290691
+ENSG00000290691	chr15	43745168	43746213	-	reference_identity_unresolved	candidate_id_locus_confirmed	0	0	0	0	{}	STRCP1	STRCP1	ENSG00000166763;ENSG00000290691
+ENSG00000290865	chr16	22421902	22422160	-	reference_identity_unresolved	candidate_id_locus_confirmed	0	0	0	0	{}	RRN3P3	RRN3P3	ENSG00000257122;ENSG00000290865
+ENSG00000290865	chr16	22422215	22429795	-	reference_identity_unresolved	candidate_id_locus_confirmed	0	0	0	1	"{""multiple_ids_at_chrom_strand"": 1}"	RRN3P3	RRN3P3	ENSG00000257122;ENSG00000290865
+ENSG00000292348	chrY	2609482	2610995	+	reference_identity_unresolved	candidate_id_locus_confirmed	0	0	0	0	{}	CD99	CD99	ENSG00000002586;ENSG00000292348
+ENSG00000292348	chrY	2611039	2612149	+	reference_identity_unresolved	candidate_id_locus_confirmed	0	0	0	0	{}	CD99	CD99	ENSG00000002586;ENSG00000292348
+ENSG00000292348	chrY	2612219	2615815	+	reference_identity_unresolved	candidate_id_locus_confirmed	0	0	0	0	{}	CD99	CD99	ENSG00000002586;ENSG00000292348
+ENSG00000292348	chrY	2618785	2619428	+	reference_identity_unresolved	candidate_id_locus_confirmed	0	0	0	0	{}	CD99	CD99	ENSG00000002586;ENSG00000292348
+ENSG00000292348	chrY	2623454	2626596	+	reference_identity_unresolved	candidate_id_locus_confirmed	0	0	0	0	{}	CD99	CD99	ENSG00000002586;ENSG00000292348
+ENSG00000292348	chrY	2626643	2714421	+	reference_identity_unresolved	candidate_id_locus_confirmed	0	0	0	0	{}	CD99	CD99	ENSG00000002586;ENSG00000292348
+ENSG00000292358	chrY	317052	317278	-	reference_identity_unresolved	candidate_id_locus_confirmed	3	3	0	3	"{""conditional_same_gene"": 3}"	GTPBP6	GTPBP6	ENSG00000178605;ENSG00000292358
+ENSG00000293194	chr17	39073334	39086458	+	reference_identity_unresolved	candidate_id_locus_confirmed	0	0	0	0	{}	RDM1P5	RDM1P5	ENSG00000263818;ENSG00000293194
+ENSG00000293296	chr1	120434212	120436716	-	reference_identity_unresolved	candidate_id_locus_confirmed	0	0	0	3	"{""multiple_ids_at_chrom_strand"": 3}"	PFN1P2	PFN1P2	ENSG00000270392;ENSG00000293296
+ENSG00000293296	chr1	120436806	120489810	-	reference_identity_unresolved	candidate_id_locus_confirmed	0	0	0	3	"{""multiple_ids_at_chrom_strand"": 3}"	PFN1P2	PFN1P2	ENSG00000270392;ENSG00000293296
+ENSG00000293309	chr12	97733401	97845214	-	reference_identity_unresolved	candidate_id_locus_confirmed	0	0	0	0	{}	PAFAH1B2P2	PAFAH1B2P2	ENSG00000257501;ENSG00000293309
+ENSG00000293311	chr2	131508609	131511714	+	reference_identity_unresolved	candidate_id_locus_confirmed	0	0	0	124	"{""multiple_ids_at_chrom_strand"": 124}"	SMPD4BP	SMPD4BP	ENSG00000152117;ENSG00000293311
+ENSG00000293360	chr4	426974	435769	-	reference_identity_unresolved	candidate_id_locus_confirmed	0	0	0	2	"{""multiple_ids_at_chrom_strand"": 2}"	ABCA11P	ABCA11P	ENSG00000251595;ENSG00000293360
+ENSG00000293360	chr4	435880	437445	-	reference_identity_unresolved	candidate_id_locus_confirmed	0	0	0	1	"{""multiple_ids_at_chrom_strand"": 1}"	ABCA11P	ABCA11P	ENSG00000251595;ENSG00000293360

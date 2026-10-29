@@ -4,7 +4,7 @@ Consultar STATE.md, MASTER_EVIDENCE.md y reports/repository-integration. Las iss
 
 | Prioridad | Tarea | Estado y siguiente avance |
 |---|---|---|
-| P0 | Originalidad — solicitud Luis | Auditoría dirigida entregada en reports/originality-audit; reclamos amplios descartados. Cierre documental acotado en FOLLOWUP.md; CTR2026 calendario indexado verificado, Guo final y solapamiento siguen limitados. Protocolo v0.4 incremental. Inventario funcional completado: seis fichas sin contraste posdéficit reconstruible; cierre acotado y sin certificación de novedad. Próximo QC de cobertura crypTE |
+| P0 | Originalidad — solicitud Luis | Auditoría dirigida entregada en reports/originality-audit; reclamos amplios descartados. Cierre documental acotado en FOLLOWUP.md; CTR2026 calendario indexado verificado, Guo final y solapamiento siguen limitados. Protocolo v0.4 incremental. Inventario funcional completado: seis fichas sin contraste posdéficit reconstruible; cierre acotado y sin certificación de novedad. QC de identidades completado en author-gene-ambiguity; próximo74conflictos de gen/cobertura |
 | P0 | Consolidación | Completada mediante PR #26: main verificado, 15 cabezas incluidas, 105 tests en Python 3.11/3.12 y dos auditorías GEO exitosas; PR dependientes cerrados por incorporación |
 | P0 | #1 GEO | Inventario y enlace técnico ejecutados; integración no valida calidad biológica completa |
 | P0 | #2/#17/#19 mapeo | Ejecutado por ENSG; controles positivos; incidente cero objetivos resuelto técnicamente |
@@ -30,3 +30,7 @@ Ciclo29/10/2026: reports/originality-audit/FOLLOWUP.md. CTR2026: métodos primar
 ## Inventario funcional completado — 29/10/2026
 
 reports/functional-data-inventory: seis fichas de ensayo/versión de cuatro familias; ninguna permite reconstruir nuestro contraste posdéficit con los materiales inspeccionados. Suplemento Keuss2024recuperado y texto revisado, sin manifiesto MEA de unidades; aceptado sigue403y calendario ASOpreKD. Chan/Beccari datos fuente existentes sin enlace biológico/longitudinal suficiente; Baughn anexo devuelveHTML. No ausencia universal ni resultado experimental negativo; no efectos calculados.140tests técnicos locales. Cierre de esta vía con bloqueos explícitos: no repetir sin nueva fuente primaria. Siguiente tarea segura seleccionada: QC de cobertura crypTE,36identidades de referencia no resueltas y278coincidencias autoras de gen ambiguo; sin reparar por proximidad ni priorizar novedad. Protocolo funcional v0.4 sigue conceptual.
+
+## QC de identidad de genes — 29/10/2026
+
+reports/author-gene-ambiguity:33de36claves tienen ENSG/locus confirmado;3deENSG00000276256ausente en v47con procedencia GTF GEO recuperada. Las278claves autoras ambiguas permanecen sin resolución única; no forzar por proximidad. Una clave GTPBP6chrYcondicional adicional, comprobada en3filasS8, dependiente de locus declarado y sin auditoría de lecturasX/Y.354estrictas originales intactas; sensibilidad355no las reemplaza.149tests técnicos locales, cuatroTSVidénticos en dos pasadas. Siguiente tarea segura: auditar74claves con coordenadas atribuidas a otro gen, conservar conflictos no resolubles; después cobertura/#14. No significado funcional, novedad, replicación nueva o autorización de laboratorio/merge.
