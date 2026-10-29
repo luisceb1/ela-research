@@ -1,0 +1,27 @@
+{
+  "source": "https://pmc-oa-opendata.s3.amazonaws.com/PMC7153761.1/NIHMS1512656-supplement-1.docx",
+  "member": "word/media/image3.jpg",
+  "member_sha256": "f1deda16b548a73e7928c0b4ee1228d7d0df8eec4d31c1653d8c070a37b9b864",
+  "locator": "Supplementary Figure 3a: all 18 row labels, manually visually transcribed 2026-10-29",
+  "derivation": "Published batch labels only; not inferred from date, replicate suffix or heatmap clustering. Main Fig1b legend reports 2 independent MN differentiation and siRNA transfection experiments; batch is the published grouping, not independently reconstructed well or reagent identity.",
+  "alias_to_published_batch": {
+    "siScr_1": "Batch 1",
+    "siRED_1": "Batch 1",
+    "siTDP43_2": "Batch 1",
+    "NoTx_1": "Batch 1",
+    "siScr_2": "Batch 1",
+    "siTDP43_1": "Batch 1",
+    "siTDP43_3": "Batch 2",
+    "siTDP43_5": "Batch 2",
+    "siScr_3": "Batch 2",
+    "siScr_5": "Batch 2",
+    "NoTx_2": "Batch 2",
+    "NoTx_3": "Batch 2",
+    "siTDP43_4": "Batch 2",
+    "siTDP43_6": "Batch 2",
+    "siRED_2": "Batch 2",
+    "siRED_3": "Batch 2",
+    "siScr_4": "Batch 2",
+    "siScr_6": "Batch 2"
+  }
+}

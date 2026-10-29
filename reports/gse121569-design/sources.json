@@ -1,0 +1,42 @@
+[
+  {
+    "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE121nnn/GSE121569/soft/GSE121569_family.soft.gz",
+    "bytes": 6191,
+    "sha256": "2aab8d12df64472d161c87b9f5b7cda9c120bbd41a8cf47f9b9155050690289a",
+    "accessed": "2026-10-29",
+    "attribution": "GEO GSE121569 / Klim et al. 2019",
+    "license": "No separate license independently verified; raw files not redistributed"
+  },
+  {
+    "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE121nnn/GSE121569/suppl/GSE121569_dexseq-all.csv.gz",
+    "bytes": 56262538,
+    "sha256": "daaf355a7cbd48b617d30201ba289d8f0c4efc9fbc2a23ca2f991c84e1d814f4",
+    "accessed": "2026-10-29",
+    "attribution": "GEO GSE121569 / Klim et al. 2019",
+    "license": "No separate license independently verified; raw files not redistributed"
+  },
+  {
+    "url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC7153761.1/PMC7153761.1.xml",
+    "bytes": 141031,
+    "sha256": "a9ddfbf89710ea6a287771c92774522e26c5e46e34dd98aff91a5c5e819f2dfd",
+    "accessed": "2026-10-29",
+    "attribution": "Klim et al. Nat Neurosci 2019;22:167\u2013179; PMC7153761 author manuscript",
+    "license": "Full source not redistributed; rights remain with original source"
+  },
+  {
+    "url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC7153761.1/NIHMS1512656-supplement-1.docx",
+    "bytes": 6329115,
+    "sha256": "1e7c3b4a180088a07847b9bc7dc95be4be8beda0bd9e7f269cb02c38a26fc1ce",
+    "accessed": "2026-10-29",
+    "attribution": "Klim et al. Nat Neurosci 2019;22:167\u2013179; PMC7153761 author manuscript",
+    "license": "Full source not redistributed; rights remain with original source"
+  },
+  {
+    "url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC7153761.1/nihms-1512656-f0001.jpg",
+    "bytes": 390651,
+    "sha256": "c88c012cc85f6bb9495e044514578048ea352111541f07ba4283ba1daa924943",
+    "accessed": "2026-10-29",
+    "attribution": "Klim et al. Nat Neurosci 2019;22:167\u2013179; PMC7153761 author manuscript",
+    "license": "Full source not redistributed; rights remain with original source"
+  }
+]

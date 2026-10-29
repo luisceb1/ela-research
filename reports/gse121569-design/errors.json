@@ -1,0 +1,17 @@
+[
+  {
+    "action": "Nature article access",
+    "error": "Web tool redirected to inaccessible identity-provider (500)",
+    "resolution": "Primary author manuscript PMC7153761 XML and figures from public PMC S3"
+  },
+  {
+    "action": "Direct PMC HTML/supplement",
+    "error": "Challenge HTML/reCAPTCHA, not article/docx; excluded from scientific source hashes",
+    "resolution": "Public PMC S3 object listing and exact objects; no browser challenge bypass"
+  },
+  {
+    "action": "Initial HTML parser",
+    "error": "ModuleNotFoundError bs4 before network read",
+    "resolution": "stdlib XML/ZIP; no installation required"
+  }
+]
