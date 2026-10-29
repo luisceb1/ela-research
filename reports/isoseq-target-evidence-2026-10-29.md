@@ -35,3 +35,14 @@
 2. Verificar lecturas que atraviesan las uniones, calidad, cobertura, longitud del transcrito y orientación en BAM.
 3. Validar contra muestras independientes, controles adecuados y profundidad; sin esto no inferir efecto biomédico.
 4. Priorizar `UNC13A` como pregunta funcional externa posdéficit confirmado, sin concluir eficacia terapéutica del simulador.
+
+## Contraste directo con literatura primaria — corrección de originalidad
+El artículo Melamed et al. 2019 identifica **exón críptico STMN2 2a** en GRCh38 en `chr8:79616822-79617048`, dentro del segundo exón del modelo BambuTx9249 (`79616822-79619794`). Más importante aún, un estudio independiente de análisis cerebral (Molecular Neurodegeneration, 2025, DOI 10.1186/s13024-025-00820-5) señala expresamente la unión críptica `chr8:79611214:79616822`. **La frontera exónica exacta coincide con nuestro modelo BambuTx9249: exón 1 termina en 79611214 y exón 2 inicia en 79616822.**
+
+Por ello este evento es **compatible con la unión críptica conocida de STMN2**, no con una unión nueva. El modelo BambuTx9249 termina más lejos que el exón 2a de 227 nucleótidos publicado; las diferencias de final 3' pueden reflejar anotación de extremos, lecturas incompletas o procesamiento alternativo. No afirmar que se ha demostrado una poliadenilación idéntica sin inspección de lecturas y extremo 3'.
+
+Fuentes primarias:
+- Melamed et al., 2019, *Nature Neuroscience*: https://pmc.ncbi.nlm.nih.gov/articles/PMC6348009/
+- Estudio multirregional 2025, *Molecular Neurodegeneration*: https://doi.org/10.1186/s13024-025-00820-5
+
+**Decisión:** BambuTx9249 es control positivo de detección del mecanismo STMN2 previamente publicado, **no candidato novedoso**. El valor operativo es validar el pipeline; priorizar hallazgos que superen comparación con referencias externas y cohortes independientes.
