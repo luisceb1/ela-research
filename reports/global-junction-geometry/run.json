@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-29",
+  "python": "3.12.14",
+  "tests": 166,
+  "new_tests": 10,
+  "commands": [
+    "python scripts/audit_global_geometry.py --reference ../ela-research/data/cache/gencode.v47.annotation.gtf.gz",
+    "python -m unittest discover -s tests -v"
+  ],
+  "same_gene_controls_verified": 17,
+  "alternative_gene_controls_verified": 73,
+  "reference_hash_verified": true,
+  "sha256": {
+    "scripts/audit_global_geometry.py": "7c8c8d4630e53d4349fe6eb16b23aecafc953f816ac9db340e4b4b8149a65a13",
+    "tests/test_global_geometry.py": "14dc195ca58b94f438d2339f46408166bfee938948964ae2791d8897e23191f9",
+    "research/plans/2026-10-29-global-junction-geometry.md": "6e62239df91bcf467a9d171fcd7db4752f70527356860f1f2142ed98ec54e033",
+    "reports/global-junction-geometry/DATA_DICTIONARY.md": "a9ba57747626304cc47eb95a51ce36074b21a0e94ea6d939fc172a82d3539708",
+    "reports/global-junction-geometry/REPORT.md": "60d8ba42495e06df1041057af571c2a725f8d5d67833e229f874917bb1c99d3d",
+    "reports/global-junction-geometry/annotation.tsv": "94b259c23cd916fdfe97a2513e8ce8ad4ec5f3815ed65486f5960a54d7e1de81",
+    "reports/global-junction-geometry/errors.json": "9217d2ca0c36efaa25c774b814e2240c0bcd674eb6cb37095d5920c734706168",
+    "reports/global-junction-geometry/reference_witnesses.tsv": "a821507c0dde4be421ea7bfe75c0ab6ea82b5c654b6e971921089f06717f2def",
+    "reports/global-junction-geometry/sources.json": "283bc1c0fbb5644de4fcb5e5e943424dcc933e50965544081d6b4740e361f334",
+    "reports/global-junction-geometry/summary.json": "78f108b6f694af5f559b3f573652736495339e15dd28dc7b4c89070166fefcfb",
+    "reports/global-junction-geometry/tests.txt": "bd89a59c63359f6499eb1e62fbe2c4dc88ea75474f6a41199c439d923dcf58c9",
+    "research/STATE.md": "e4bbcd7a953becc95f8d68c1480846874657b1fd3995f56a6f2e5a4383aa70d3",
+    "research/BACKLOG.md": "c86d4b9dca57dbf7737935429d68f72a77e8a170c56e1d992fa25bf2fe5b63c2",
+    "research/MASTER_EVIDENCE.md": "ca1bd106b98e29f431ad9a7f6b989d5bc554e68776fc68220e515ca1cd935b6a"
+  }
+}

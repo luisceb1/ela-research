@@ -1,0 +1,16 @@
+{
+  "reference": {
+    "url": "https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_47/gencode.v47.annotation.gtf.gz",
+    "sha256": "df11938c66d2b39f8ebbdb5f1720919321f9cf9d58f02b019753f6a24ca3db24"
+  },
+  "parent_matches": {
+    "path": "reports/author-junction-match/matches.tsv",
+    "sha256": "d6a5730a03cf0241147d3bc6c4456cb1691443d0f5a62c436f103fe97c4c46f6"
+  },
+  "alternative_gene_control": {
+    "path": "reports/author-gene-conflicts/conflicts.tsv",
+    "sha256": "655e6727f8531d73279b0e7e222dc299928899738ac0ca2815ace6e5252bcf82"
+  },
+  "scope": "All genes in one fixed reference snapshot; exact chrom/strand/intron endpoints; no read or individual data analysis",
+  "original_data_not_republished": true
+}
