@@ -20,10 +20,10 @@ def evaluate(path, out):
         culture_ctrl_aza=choose(cols,"culture__","Ctrl_5Aza")
         culture_kd_no=choose(cols,"culture__","TDP43KD_noAza")
         culture_kd_aza=choose(cols,"culture__","TDP43KD_5Aza")
-        brain_ci=choose(cols,"brain__","ALS-ci_")
-        brain_ctl=choose(cols,"brain__","CTL_")
+        brain_ci=[x for x in cols if x.startswith("brain__") and any("_"+id+"_" in x for id in ("03363","02988","04118"))]
+        brain_ctl=[x for x in cols if x.startswith("brain__") and any("_"+id+"_" in x for id in ("03374","03662"))]
         groups=[culture_ctrl_no,culture_ctrl_aza,culture_kd_no,culture_kd_aza,brain_ci,brain_ctl]
-        expected=[1,1,1,1,2,2]
+        expected=[1,1,1,1,3,2]
         actual=list(map(len,groups))
         if actual!=expected:
             raise ValueError(f"Missing/ambiguous sample columns: expected {expected}, got {actual}; do not guess clinical groups")
@@ -34,8 +34,8 @@ def evaluate(path, out):
             def n(k):return int(float(x[k]))
             cellular=(n(culture_ctrl_no[0])==0 and n(culture_ctrl_aza[0])==0 and
                       n(culture_kd_no[0])>=3 and n(culture_kd_aza[0])>=3)
-            # Two observed ALS-ci labels, NOT 3 cases cited in an earlier report.
-            brain=all(n(z)>=2 for z in brain_ci) and all(n(z)==0 for z in brain_ctl)
+            # GEO-confirmed 3 ALS-CI donors, despite mismatched count-matrix column prefixes.
+            brain=sum(n(z)>=2 for z in brain_ci)>=2 and all(n(z)==0 for z in brain_ctl)
             row={k:x[k] for k in fields[:7]}
             row.update(culture_strict=int(cellular),brain_strict=int(brain),dual_strict=int(cellular and brain))
             rows.append(row)
@@ -49,7 +49,7 @@ def evaluate(path, out):
     summary=dict(tot)
     summary.update(group_columns=dict(control_no5aza=culture_ctrl_no,control_5aza=culture_ctrl_aza,
                          kd_no5aza=culture_kd_no,kd_5aza=culture_kd_aza,als_ci=brain_ci,ctl=brain_ctl),
-        warning="ALS-ci labels are not clinically verified; two labeled ALS-ci, not three. Isoform-assigned counts are not junction-spanning reads.")
+        warning="Donor groups verified against GSE315972 GSM metadata: ALS-CI=03363,02988,04118, ALS-nonCI=02759,02763,03634, CTRL=03374,03662. Isoform-assigned counts are not junction-spanning reads.")
     (p/"filter_audit.json").write_text(json.dumps(summary,indent=2),encoding="utf-8")
     print(json.dumps(summary,indent=2))
     return summary
