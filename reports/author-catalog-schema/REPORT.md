@@ -1,5 +1,7 @@
 # Catálogo crypTE: fuentes recuperadas y comparación estructural todavía pendiente
 
+> Actualización posterior: el cruce elegible ya está ejecutado en ../author-junction-match/REPORT.md. Este informe y audit.json conservan el estado de la auditoría de esquema; sus referencias a cruce pendiente son históricas. El catálogo completo y las tablas de tejido siguen sin comparación exhaustiva.
+
 29/10/2026. Auditoría de fuentes, esquema y reconstrucción; no nuevos hallazgos biológicos. Bolger et al., bioRxiv v1 DOI10.64898/2026.01.09.698641, PMC12803201. Preprint y licencia CC BY-NC; investigación no comercial. NCBI PMC Article Datasets on AWS, consultado el29/10/2026.
 
 ## Evidencia

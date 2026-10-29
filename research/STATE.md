@@ -27,7 +27,7 @@ Tenemos auditorías técnicas, observaciones descriptivas y propuestas. No una n
 ## Próximas tareas
 
 1. Base operativa consolidada: partir de main y comprobar su cabeza actual. Las ramas originales son referencias históricas incorporadas, no tareas activas; no reabrir sus PR para repetir trabajo.
-2. Suplementos Bolger/crypTE: fuentes recuperadas por PMC AWS, índice y cuatro XLSX verificados; auditoría en reports/author-catalog-schema.42subtablas mapeadas mediante leyendas/xrefs; S12 clínica excluida. S7/S8 auditadas completamente:26815/14525filas no reconstruibles bajo contrato estricto.103592/103599etiquetas S8 reconstruibles son límites exónicos,7excepciones. El cruce de1901claves aún NO está ejecutado. Próximo: subconjunto reconstruible, conversión explícita a intrones y resolución símbolo/ENSG, con cobertura/no evaluables separados; no reparar filas por suposición.
+2. Suplementos Bolger/crypTE: fuentes recuperadas por PMC AWS, índice y cuatro XLSX verificados; auditoría en reports/author-catalog-schema.42subtablas mapeadas mediante leyendas/xrefs; S12 clínica excluida. S7/S8 auditadas completamente:26815/14525filas no reconstruibles bajo contrato estricto.103592/103599etiquetas S8 reconstruibles son límites exónicos,7excepciones. Cruce del subconjunto reconstruible ejecutado en reports/author-junction-match:284coincidencias S8y70solo contextoS7(354uniones estrictas);278coordenadas con gen ambiguo,74con otro gen,36identidad de referencia no resuelta y1159no encontradas en el subconjunto. No ausencia/novelty ni comparación exhaustiva. Próximo: cobertura excluida y conflictos con fuentes trazables, sin reparar filas por suposición.
 3. Revaluar filtros y prioridades sobre catálogo corregido. El cero histórico de intersección estricta no valida el parser defectuoso ni descarta un mecanismo.
 4. Reproducir GSE126542/GSE121569 (#14), diferenciando cohortes reutilizadas, diferenciaciones y lecturas de unión. Solo fuentes/proyecciones permitidas, sin filas clínicas personales.
 5. Evaluar AGRN (#21) y elegir propuesta funcional (#18) tras contraste estructural y de antecedentes. UNC13A_POST_DEFICIT_PROTOCOL_v0.3.md es propuesta; actualizar su brecha histórica con auditorías Keuss/Chan.
@@ -41,7 +41,7 @@ Tenemos auditorías técnicas, observaciones descriptivas y propuestas. No una n
 
 ## Operación
 
-Base consolidada:105tests técnicos (85+24menos cuatro compartidos). La auditoría de suplementos añade10tests y esta rama supera115; consultar CI del PR para estado remoto. CI unificada Python3.11/3.12. Los 11 tests originales MEA son una ejecución histórica separada; no experimentos.
+Base consolidada:105tests técnicos (85+24menos cuatro compartidos). Las auditorías de suplementos y cruce añaden20tests y esta rama supera125; consultar CI del PR para estado remoto. CI unificada Python3.11/3.12. Los 11 tests originales MEA son una ejecución histórica separada; no experimentos.
 
 Main es el punto de partida. Usar ramas breves, revisión y pruebas antes de merge. Esta consolidación está autorizada por Luis; no concede autorización general para merges futuros. Las issues no se cierran automáticamente.
 
@@ -49,4 +49,8 @@ Work diario a las 08:00 Europe/Madrid y resumen los viernes. Releer fuentes remo
 
 ## Auditoría de suplementos — entrega para revisión
 
-Acceso resuelto por objetos públicos PMC AWS con MD5/SHA256; no repetir recaptcha como bloqueo universal. Informe y manifiesto en reports/author-catalog-schema y research/references/bolger_author_catalog_v1.json. El método compartido de autores es gen+misma copiaTE, con colapso por categoría; S15 contiene extremos de transcritos, no uniones. S8B/C tiene cabeceras incorrectas y S7D título discordante. No dar por comparadas nuestras1901claves ni inventar cero coincidencias. Ramas nuevas breves desde main; PR de esta auditoría pendiente, sin merge automático.
+Acceso resuelto por objetos públicos PMC AWS con MD5/SHA256; no repetir recaptcha como bloqueo universal. Informe y manifiesto en reports/author-catalog-schema y research/references/bolger_author_catalog_v1.json. El método compartido de autores es gen+misma copiaTE, con colapso por categoría; S15 contiene extremos de transcritos, no uniones. S8B/C tiene cabeceras incorrectas y S7D título discordante. El cruce elegible de1901ya se ejecutó; el catálogo completo/tejido no. No inventar cero coincidencias ni interpretar no evaluables como negativos. Ramas nuevas breves desde main; PR de esta auditoría pendiente, sin merge automático.
+
+## Cruce elegible de autores — ampliación del mismo PR28
+
+354claves estrictas:284etiquetas noTE S8y70solo contexto de transcritoTE S7; S7total145incluye75también enS8.353de354no estaban en GENCODEpara mismo gen, pero sí representadas en estas tablas: no son descubrimientos por faltar en referencia. Gen resuelto por símbolo único globalGCv47, sin alias/proximidad. STMN2críptico no evaluable por diez filas S7con bloques inválidos; unión canónica de control recuperada en dos filas S8D. No reparar la lista de longitudes ni llamar ausencia al fallo.125tests locales; tablas idénticas en tres pasadas completas, hashes en reports/author-junction-match/run.json. Misma rama/PR28desde main, sin merge automático. Próximo revisar conflictos y cobertura con GTF/identificadores primarios; si bloqueado pasar a #14.
