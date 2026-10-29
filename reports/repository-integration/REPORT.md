@@ -27,3 +27,9 @@ No se cierran issues científicas automáticamente. Las ramas originales solo se
 inputs.json: fuentes y procedencia de cada blob; validation.json: resoluciones y preservación; tests.txt: suite conjunta; errors.json: incidencias operativas. Reproducción del chequeo técnico: `python -m unittest discover -s tests -v` y `python -m compileall -q scripts tests`. Las fuentes/versiones científicas siguen en los manifiestos de cada análisis.
 
 Antes de merge: comprobar checks sobre el SHA exacto del PR y revisar que main no cambió. Después: verificar blobs, ancestry de las 15 cabezas y estado de PR; registrar resultado y actualizar Work. Mantener nuevas ramas breves desde main. Próxima tarea científica: descripción/esquema de los 17 suplementos Bolger/crypTE y convenciones antes de cruzar el catálogo de autores.
+
+## Comprobación posterior al merge
+
+PR #26 integrado como 2c0ef89207e81194f6d167f4ef3b01929a672f82, con el árbol 709936bcd7b83598db9ae9cd899f8f52fa2c100b idéntico al validado. Se verificaron los 236 archivos remotos y ancestry de las 15 cabezas. Los cuatro checks del SHA exacto fueron exitosos: 105 tests en cada versión Python 3.11/3.12, auditoría de uniones (1910, filtros 9/100/0) y mapeo GEO (11/10 modelos diana). No son nuevas réplicas ni descubrimientos.
+
+GitHub marcó #3/#23 como merged por ancestry. Los otros 13 PR dependientes se cerraron con nota de incorporación mediante #26, sin afirmar merge individual. Ninguna issue científica se cerró. Las 15 ramas originales permanecen como referencias históricas por limitación del conector; no constituyen tareas pendientes. Este checkpoint documental actualiza el estado posterior sin cambiar scripts o resultados.

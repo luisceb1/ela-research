@@ -4,7 +4,7 @@ Consultar STATE.md, MASTER_EVIDENCE.md y reports/repository-integration. Las iss
 
 | Prioridad | Tarea | Estado y siguiente avance |
 |---|---|---|
-| P0 | Consolidación | Autorizada por Luis. Verificar conservación, suite y CI; integrar preservando historia y comprobar estado remoto |
+| P0 | Consolidación | Completada mediante PR #26: main verificado, 15 cabezas incluidas, 105 tests en Python 3.11/3.12 y dos auditorías GEO exitosas; PR dependientes cerrados por incorporación |
 | P0 | #1 GEO | Inventario y enlace técnico ejecutados; integración no valida calidad biológica completa |
 | P0 | #2/#17/#19 mapeo | Ejecutado por ENSG; controles positivos; incidente cero objetivos resuelto técnicamente |
 | P0 | #20 catálogo | 21/1910 explicado y GENCODE ejecutada; pendiente catálogo de autores y filtros sobre universo corregido |
