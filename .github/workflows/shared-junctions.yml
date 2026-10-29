@@ -5,6 +5,7 @@ on:
     paths:
       - '.github/workflows/shared-junctions.yml'
       - 'scripts/audit_shared_junctions.py'
+      - 'scripts/filter_shared_junctions.py'
 jobs:
   audit:
     runs-on: ubuntu-latest
@@ -45,6 +46,8 @@ jobs:
             --brain-counts inputs/GSE315972_NYGC_isoseq_uniqueCounts_transcript.txt.gz \
             --brain-gtf inputs/GSE315972_NYGC_isoseq_extended_annotations.gtf.gz \
             --out outputs/
+      - name: Explicitly audit sample groups and filter intersections
+        run: python scripts/filter_shared_junctions.py --junctions outputs/junctions_shared.tsv --out outputs
       - uses: actions/upload-artifact@v4
         if: always()
         with:
