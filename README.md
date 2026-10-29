@@ -39,3 +39,5 @@ Originales fuera de git en data/, URL/SHA256 en manifiestos. Informes histórico
 ## Límites
 
 No datos clínicos personales, contactos externos, publicación de hallazgos, costes o laboratorio sin autorización. No inferencia con n=1, cuentas asignadas como lecturas de unión o equivalencia entre ARN, proteína, recuperación neuronal y beneficio clínico.
+
+Auditoría de originalidad solicitada29/10/2026: [informe](reports/originality-audit/REPORT.md), registros de evidencia/versiones y búsquedas en research/references/originality_*. No se acredita nueva diana, terapia ni mecanismo;133tests técnicos. Prioridad: cerrar límites documentales antes de otra línea.

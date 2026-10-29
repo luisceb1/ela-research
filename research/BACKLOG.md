@@ -4,6 +4,7 @@ Consultar STATE.md, MASTER_EVIDENCE.md y reports/repository-integration. Las iss
 
 | Prioridad | Tarea | Estado y siguiente avance |
 |---|---|---|
+| P0 | Originalidad — solicitud Luis | Auditoría dirigida entregada en reports/originality-audit; reclamos amplios descartados. Cerrar métodos/versiones faltantes de C3 y reformular extensión antes de otra línea; no certificación de novedad |
 | P0 | Consolidación | Completada mediante PR #26: main verificado, 15 cabezas incluidas, 105 tests en Python 3.11/3.12 y dos auditorías GEO exitosas; PR dependientes cerrados por incorporación |
 | P0 | #1 GEO | Inventario y enlace técnico ejecutados; integración no valida calidad biológica completa |
 | P0 | #2/#17/#19 mapeo | Ejecutado por ENSG; controles positivos; incidente cero objetivos resuelto técnicamente |

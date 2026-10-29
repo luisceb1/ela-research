@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-29",
+  "python": "3.12.14",
+  "commands": [
+    "python scripts/audit_originality.py",
+    "python -m unittest discover -s tests -v"
+  ],
+  "tests": 133,
+  "classification": "exploratory directed literature audit",
+  "sha256": {
+    "scripts/audit_originality.py": "18e7e4b2ede97b02df4a8c63c89370dbd9b5f18f23c3bdea2103367cd686df50",
+    "tests/test_originality_audit.py": "3dc1ea45699de048baf2c59f80e0a90e1c6311ca09f9ff6bfd2bbb3a1d53cae7",
+    "research/plans/2026-10-29-originality-audit.md": "74d61b46c57bfda6c5e13cd3c6947d12e2b1f65a561c33c31de26bfca0561c52",
+    "research/references/originality_search_20261029.json": "39703aa80ffddbcf54add291f7b6364a1a7cfd1ff419b3490d4ae5e07a2558bb",
+    "research/references/originality_evidence_20261029.json": "1fbdae2caf38085e36a1547db4726f33054af58b2a5b44f7363baec72fbfc373",
+    "research/references/originality_20261029.bib": "836baf697b0b506b8c78f908c44deb45b867ef668495634a8315031dd592fda8",
+    "reports/originality-audit/REPORT.md": "d6b24f9fc91b13de9a7ff8e9ef28e4b559fc920e2869492010300b3f42d851b8",
+    "reports/originality-audit/qc.json": "27f1817d30059010c1f81b810af910873d6c129a120385bf6b529e38edbf80b0",
+    "reports/originality-audit/errors.json": "1dc85f224da966aa620d4e20b8d45c2bca33a43e0b64231c543d506d40065f90",
+    "reports/originality-audit/tests.txt": "797cd09980c570588a74baa92bd5c8e02794bbb311198f507310a2c367986b05"
+  }
+}

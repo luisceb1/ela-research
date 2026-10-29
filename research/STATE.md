@@ -24,6 +24,10 @@ Tenemos auditorías técnicas, observaciones descriptivas y propuestas. No una n
 | Imágenes | reports/image-metadata-qc: 27 cabeceras, 4 con escala física; falta mapa de unidades | Sin inferencia grupal o transferencia de calibración por tamaño |
 | Otros chats | reports/prior-work-reconciliation: 8 ZIP y 3 PDF inventariados; reproducciones posteriores arriba | GSE126542/GSE121569 y péptidos pendientes de reproducción completa; no sumar cohortes reutilizadas |
 
+## Prioridad expresa: originalidad antes de otras líneas
+
+Auditoría dirigida completada en reports/originality-audit:12familias,8reivindicaciones y133tests técnicos. No tenemos una nueva diana/terapia/mecanismo demostrado. Baughn2023, combinaciónSTMN2/UNC13A2025, Chan2026y CTRsintomático2025limitan reclamos amplios. AGRNsecreción/función ya planteada por revisión2026. La comparación estrecha tras déficit funcional medido sigue no certificada; faltan métodos finales Guo y preprintmotor2026/solapamiento con2025. Próximo cerrar esos límites y reformular propuesta como extensión; antes de otra línea, no reclamar originalidad por búsqueda negativa. MismoPR28abierto, sin merge automático.
+
 ## Próximas tareas
 
 1. Base operativa consolidada: partir de main y comprobar su cabeza actual. Las ramas originales son referencias históricas incorporadas, no tareas activas; no reabrir sus PR para repetir trabajo.
@@ -54,3 +58,5 @@ Acceso resuelto por objetos públicos PMC AWS con MD5/SHA256; no repetir recaptc
 ## Cruce elegible de autores — ampliación del mismo PR28
 
 354claves estrictas:284etiquetas noTE S8y70solo contexto de transcritoTE S7; S7total145incluye75también enS8.353de354no estaban en GENCODEpara mismo gen, pero sí representadas en estas tablas: no son descubrimientos por faltar en referencia. Gen resuelto por símbolo único globalGCv47, sin alias/proximidad. STMN2críptico no evaluable por diez filas S7con bloques inválidos; unión canónica de control recuperada en dos filas S8D. No reparar la lista de longitudes ni llamar ausencia al fallo.125tests locales; tablas idénticas en tres pasadas completas, hashes en reports/author-junction-match/run.json. Misma rama/PR28desde main, sin merge automático. Próximo revisar conflictos y cobertura con GTF/identificadores primarios; si bloqueado pasar a #14.
+
+Actualización de prioridad: los siguientes pasos históricos de cobertura/#14 quedan después del cierre documental de originalidad solicitado por Luis. Informe, registro versionado y límites explícitos en reports/originality-audit;133tests locales.

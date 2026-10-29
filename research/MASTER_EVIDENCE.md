@@ -28,3 +28,7 @@ Este registro sustituye los estados históricos. Reproducción técnica no equiv
 - Para promover evidencia: fuente verificable, hash, código ejecutado, controles, tablas, sensibilidad y revisión con el alcance explícito. Una integración no aporta revisión científica externa.
 
 Cruce de autores: representación en subconjunto reconstruible del mismo estudio, no replicación independiente.1159no encontradas,278coordenadas con gen no resuelto,74otro gen y36identidad de referencia no resuelta; no promover estos grupos a nuevas dianas. Control críptico STMN2no evaluable por longitudes malformadas; control canónico de geometría recuperado. Datos y fuentes completos en reports/author-junction-match.
+
+## Originalidad — prioridad29/10/2026
+
+Auditoría dirigida en reports/originality-audit/REPORT.md y registro originality_evidence_20261029.json.12familias focales,8reivindicaciones,133tests técnicos; ninguna certificada original. STMN2/UNC13A, combinación, rescate postKD/poslesión/sintomático tienen antecedentes. AGRNfunción/secreción ya pregunta publicada. Próximo cerrar acceso/calendario/solapamiento de fuentes faltantes y reformular extensión antes de nueva línea. Revisión exploratoria, no sistemática exhaustiva ni dictamen legal.

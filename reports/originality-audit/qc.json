@@ -1,0 +1,15 @@
+{
+  "cutoff": "2026-10-29",
+  "register_sha256": "1fbdae2caf38085e36a1547db4726f33054af58b2a5b44f7363baec72fbfc373",
+  "studies": 12,
+  "claims": 8,
+  "classification_counts": {
+    "prior_art": 3,
+    "unresolved": 1,
+    "open_not_original": 1,
+    "extension": 1,
+    "technical": 2
+  },
+  "errors": [],
+  "scope": "Register consistency only; no automatic scientific validation"
+}

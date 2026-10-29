@@ -1,0 +1,1633 @@
+{
+  "cutoff": "2026-10-29",
+  "method": "Directed non-exhaustive audit; no originality or patentability certification",
+  "queries": [
+    {
+      "key": "target_metadata",
+      "query": "",
+      "total": 12,
+      "returned": 12,
+      "dois": [
+        "10.1038/s41593-018-0293-z",
+        "10.1038/s41593-018-0300-4",
+        "10.1073/pnas.2502294122",
+        "10.1101/2024.06.20.599684",
+        "10.1101/2025.11.26.690143",
+        "10.1126/science.abq5622",
+        "10.1126/scitranslmed.adg7162",
+        "10.1126/scitranslmed.aeb8517",
+        "10.64898/2025.12.01.691001",
+        "10.64898/2026.01.09.698641",
+        "10.64898/2026.09.11.751031",
+        "10.1038/s42003-026-10832-6"
+      ],
+      "scope": "targeted_non_exhaustive"
+    },
+    {
+      "key": "crypTE",
+      "query": "(\"crypTE\" OR \"cryptic transposable\") AND (\"TDP-43\" OR \"TDP43\")",
+      "total": 195,
+      "returned": 10,
+      "dois": [
+        "10.64898/2026.01.09.698641",
+        "10.1073/pnas.2307395120",
+        "10.1096/fj.202402392r",
+        "10.1186/s13024-023-00619-2",
+        "10.1002/bies.200900086",
+        "10.4103/1673-5374.390983",
+        "10.3389/fmolb.2023.1326148",
+        "10.1016/j.cell.2020.12.025",
+        "10.1002/bies.202000245",
+        "10.1111/bpa.12183_2"
+      ],
+      "scope": "targeted_non_exhaustive"
+    },
+    {
+      "key": "stmn2_rescue",
+      "query": "\"STMN2\" AND (rescue OR regeneration OR antisense OR axotomy)",
+      "total": 981,
+      "returned": 10,
+      "dois": [
+        "10.64898/2025.12.01.691001",
+        "10.1126/science.abq5622",
+        "10.1186/s40478-025-01977-2",
+        "10.1073/pnas.2502294122",
+        "10.1186/s40035-024-00413-0",
+        "10.1101/2022.12.23.521801",
+        "10.1002/advs.202412054",
+        "10.1038/s41593-018-0300-4",
+        "10.1186/s13024-023-00608-5",
+        "10.1002/jnr.25382"
+      ],
+      "scope": "targeted_non_exhaustive"
+    },
+    {
+      "key": "unc13a_rescue",
+      "query": "\"UNC13A\" AND (rescue OR antisense OR synaptic OR synchronization)",
+      "total": 881,
+      "returned": 10,
+      "dois": [
+        "10.1101/2024.06.20.599684",
+        "10.1126/scitranslmed.aeb8517",
+        "10.1101/2025.06.26.661764",
+        "10.1038/s41588-025-02361-5",
+        "10.64898/2025.12.01.691001",
+        "10.1101/2025.11.26.690143",
+        "10.1002/acn3.52234",
+        "10.1016/j.neuron.2017.08.016",
+        "10.64898/2026.09.11.751031",
+        "10.1038/s44318-025-00506-0"
+      ],
+      "scope": "targeted_non_exhaustive"
+    },
+    {
+      "key": "agrn_camk2b",
+      "query": "(\"AGRN\" OR \"CAMK2B\") AND (\"cryptic\" OR \"TDP-43\")",
+      "total": 193,
+      "returned": 10,
+      "dois": [
+        "10.1002/mds.30104",
+        "10.1101/2024.03.27.587011",
+        "10.1126/scitranslmed.adg7162",
+        "10.1186/s13024-023-00646-z",
+        "10.1038/s41467-025-62004-5",
+        "10.1101/2025.06.28.661837",
+        "10.1016/j.tins.2021.02.008",
+        "10.1101/076117",
+        "10.1186/s12920-017-0274-1",
+        "10.1101/2025.07.09.664014"
+      ],
+      "scope": "targeted_non_exhaustive"
+    },
+    {
+      "key": "delayed",
+      "query": "(STMN2 OR UNC13A) AND (\"delayed\" OR \"after established\" OR \"post-onset\" OR \"reversal\" OR \"after deficit\")",
+      "total": 1968,
+      "returned": 15,
+      "dois": [
+        "10.20463/pan.2026.0045",
+        "10.1101/2025.11.26.690143",
+        "10.64898/2025.12.01.691001",
+        "10.1101/2025.08.28.672801",
+        "10.3389/fnmol.2026.1864964",
+        "10.1038/s44318-025-00506-0",
+        "10.1111/bpa.13104",
+        "10.3390/cells13110888",
+        "10.1101/2021.04.02.438170",
+        "10.1101/2024.06.04.595773",
+        "10.1007/s00401-023-02655-0",
+        "10.1038/s41467-025-62482-7",
+        "10.1186/s40478-025-01977-2",
+        "10.7554/elife.95062",
+        "10.1101/2023.10.24.563760"
+      ],
+      "scope": "targeted_non_exhaustive"
+    },
+    {
+      "key": "agrn_function",
+      "query": "(AGRN OR agrin) AND (cryptic OR \"TDP-43\") AND (secretion OR clustering OR neuromuscular)",
+      "total": 1173,
+      "returned": 10,
+      "dois": [
+        "10.1186/s40035-022-00331-z",
+        "10.1016/j.tins.2021.02.008",
+        "10.1101/076117",
+        "10.1101/2024.03.27.587011",
+        "10.1186/s12920-017-0274-1",
+        "10.1002/bies.202400257",
+        "10.1038/s41591-023-02788-5",
+        "10.1101/2023.01.23.525202",
+        "10.1126/scitranslmed.adg7162",
+        "10.1038/s41540-025-00501-5"
+      ],
+      "scope": "targeted_non_exhaustive"
+    },
+    {
+      "key": "agrn_exact",
+      "query": "(title:agrin OR abstract:agrin OR title:AGRN OR abstract:AGRN) AND (title:cryptic OR abstract:cryptic)",
+      "total": 0,
+      "returned": 0,
+      "dois": [],
+      "scope": "targeted_non_exhaustive"
+    },
+    {
+      "key": "keuss_accepted",
+      "query": "",
+      "total": 0,
+      "returned": 0,
+      "dois": [],
+      "scope": "targeted_non_exhaustive"
+    },
+    {
+      "key": "temporal_baughn",
+      "query": "regeneration OR treatment OR days OR trafficking",
+      "total": 1,
+      "returned": 1,
+      "dois": [
+        "10.1126/science.abq5622"
+      ],
+      "scope": "targeted_non_exhaustive"
+    },
+    {
+      "key": "temporal_chan",
+      "query": "axotomy OR immediately OR days OR pre-treatment",
+      "total": 1,
+      "returned": 1,
+      "dois": [
+        "10.1038/s42003-026-10832-6"
+      ],
+      "scope": "targeted_non_exhaustive"
+    },
+    {
+      "key": "agrn_primary",
+      "query": "AGRN OR CAMK2B OR agrin OR kinase",
+      "total": 1,
+      "returned": 1,
+      "dois": [
+        "10.1126/scitranslmed.adg7162"
+      ],
+      "scope": "targeted_non_exhaustive"
+    },
+    {
+      "key": "dual_8000",
+      "query": null,
+      "total": null,
+      "returned": null,
+      "dois": [],
+      "scope": "targeted_non_exhaustive"
+    },
+    {
+      "key": "u7_8000",
+      "query": null,
+      "total": null,
+      "returned": null,
+      "dois": [],
+      "scope": "targeted_non_exhaustive"
+    },
+    {
+      "key": "review",
+      "query": "AGRN",
+      "total": 1,
+      "returned": 1,
+      "dois": [
+        "10.1146/annurev-genom-022024-011307"
+      ],
+      "scope": "targeted_non_exhaustive"
+    },
+    {
+      "key": "review_target",
+      "query": "\"Agrin\" OR \"AGRN\"",
+      "total": 1,
+      "returned": 1,
+      "dois": [
+        "10.1146/annurev-genom-022024-011307"
+      ],
+      "scope": "targeted_non_exhaustive"
+    },
+    {
+      "key": "post_onset",
+      "query": "\"TDP-43\" AND (\"post-symptomatic\" OR \"after onset\") AND rescue",
+      "total": 215,
+      "returned": 10,
+      "dois": [
+        "10.1126/sciadv.adf6895",
+        "10.1016/j.pneurobio.2016.09.004",
+        "10.1212/nxi.0000000000000937",
+        "10.64898/2026.09.11.751082",
+        "10.1038/s44400-025-00011-5",
+        "10.1101/2023.10.24.563563",
+        "10.1007/s00401-017-1698-6",
+        "10.21236/ada617390",
+        "10.1093/hmg/ddz190",
+        "10.1101/2025.08.14.670400"
+      ],
+      "scope": "targeted_non_exhaustive"
+    },
+    {
+      "key": "ctr2025_meta",
+      "query": "",
+      "total": 1,
+      "returned": 1,
+      "dois": [
+        "10.1101/2025.08.14.670400"
+      ],
+      "scope": "targeted_non_exhaustive"
+    },
+    {
+      "key": "unc_temporal",
+      "query": "\"UNC13A\" AND \"delayed\" AND \"antisense\"",
+      "total": 133,
+      "returned": 10,
+      "dois": [
+        "10.1002/acn3.52234",
+        "10.1038/s41588-025-02361-5",
+        "10.3390/cells13110888",
+        "10.1101/2024.06.20.599684",
+        "10.1111/ene.70653",
+        "10.20463/pan.2026.0045",
+        "10.64898/2026.09.11.751031",
+        "10.1002/cind.70161",
+        "10.1177/10430342251372898",
+        "10.1186/s40035-025-00477-6"
+      ],
+      "scope": "targeted_non_exhaustive"
+    }
+  ],
+  "records": [
+    {
+      "doi": "10.1038/s41593-018-0293-z",
+      "title": "Premature polyadenylation-mediated loss of stathmin-2 is a hallmark of TDP-43-dependent neurodegeneration",
+      "authors": [
+        {
+          "authorName": "Ze’ev Melamed"
+        },
+        {
+          "authorName": "Jone López‐Erauskin"
+        },
+        {
+          "authorName": "Michael W. Baughn"
+        }
+      ],
+      "year": 2019,
+      "date": "2019-01-14",
+      "journal": "nature neuroscience",
+      "editorialNotices": null
+    },
+    {
+      "doi": "10.1038/s41593-018-0300-4",
+      "title": "ALS-implicated protein TDP-43 sustains levels of STMN2, a mediator of motor neuron growth and repair",
+      "authors": [
+        {
+          "authorName": "Joseph R. Klim"
+        },
+        {
+          "authorName": "Luis A. Williams"
+        },
+        {
+          "authorName": "Francesco Limone"
+        }
+      ],
+      "year": 2019,
+      "date": "2019-01-14",
+      "journal": "nature neuroscience",
+      "editorialNotices": null
+    },
+    {
+      "doi": "10.1073/pnas.2502294122",
+      "title": "Stathmin-2 enhances motor axon regeneration after injury independent of its binding to tubulin",
+      "authors": [
+        {
+          "authorName": "Melinda S. Beccari"
+        },
+        {
+          "authorName": "Olatz Arnold-García"
+        },
+        {
+          "authorName": "Michael W. Baughn"
+        }
+      ],
+      "year": 2025,
+      "date": "2025-05-20",
+      "journal": "proceedings of the national academy of sciences",
+      "editorialNotices": null
+    },
+    {
+      "doi": "10.1101/2024.06.20.599684",
+      "title": "Loss of TDP-43 induces synaptic dysfunction that is rescued by UNC13A splice-switching ASOs",
+      "authors": [
+        {
+          "authorName": "Matthew J. Keuss"
+        },
+        {
+          "authorName": "Peter Harly"
+        },
+        {
+          "authorName": "Eugeni M. Ryadnov"
+        }
+      ],
+      "year": 2024,
+      "date": "2024-06-24",
+      "editorialNotices": null
+    },
+    {
+      "doi": "10.1101/2025.11.26.690143",
+      "title": "U7 small nuclear RNA splice-switching therapeutics for STMN2 and UNC13A in Amyotrophic Lateral Sclerosis",
+      "authors": [
+        {
+          "authorName": "Puja R. Mehta"
+        },
+        {
+          "authorName": "Sarah R. Pickles"
+        },
+        {
+          "authorName": "Peter Harley"
+        }
+      ],
+      "year": 2025,
+      "date": "2025-11-30",
+      "editorialNotices": null
+    },
+    {
+      "doi": "10.1126/science.abq5622",
+      "title": "Mechanism of\n                    STMN2\n                    cryptic splice-polyadenylation and its correction for TDP-43 proteinopathies",
+      "authors": [
+        {
+          "authorName": "Michael W. Baughn"
+        },
+        {
+          "authorName": "Ze’ev Melamed"
+        },
+        {
+          "authorName": "Jone López‐Erauskin"
+        }
+      ],
+      "year": 2023,
+      "date": "2023-03-17",
+      "journal": "science",
+      "editorialNotices": null
+    },
+    {
+      "doi": "10.1126/scitranslmed.adg7162",
+      "title": "Mis-spliced transcripts generate de novo proteins in TDP-43–related ALS/FTD",
+      "authors": [
+        {
+          "authorName": "Sahba Seddighi"
+        },
+        {
+          "authorName": "Yue Andy Qi"
+        },
+        {
+          "authorName": "Anna‐Leigh Brown"
+        }
+      ],
+      "year": 2024,
+      "date": "2024-02-14",
+      "journal": "science translational medicine",
+      "editorialNotices": null
+    },
+    {
+      "doi": "10.1126/scitranslmed.aeb8517",
+      "title": "Cryptic splicing in synaptic and membrane excitability genes links TDP-43 loss to neuronal dysfunction",
+      "authors": [
+        {
+          "authorName": "Caiwei Guo"
+        },
+        {
+          "authorName": "Kuchuan Chen"
+        },
+        {
+          "authorName": "Sarat C. Vatsavayai"
+        }
+      ],
+      "year": 2026,
+      "date": "2026-06-03",
+      "journal": "science translational medicine",
+      "editorialNotices": null
+    },
+    {
+      "doi": "10.64898/2025.12.01.691001",
+      "title": "Dual-targeting snRNA gene therapy rescues STMN2 and UNC13A splicing in TDP-43 proteinopathies",
+      "authors": [
+        {
+          "authorName": "Trent A. Gomberg"
+        },
+        {
+          "authorName": "Sara Elmsaouri"
+        },
+        {
+          "authorName": "Hema Kopalle"
+        }
+      ],
+      "year": 2025,
+      "date": "2025-12-03",
+      "editorialNotices": null
+    },
+    {
+      "doi": "10.64898/2026.01.09.698641",
+      "title": "TDP-43 dysfunction leads to the accumulation of cryptic transposable element-derived exons, crypTEs, in iPSC derived neurons and ALS/FTD patient tissues",
+      "authors": [
+        {
+          "authorName": "Isobel Bolger"
+        },
+        {
+          "authorName": "Regina Shaw"
+        },
+        {
+          "authorName": "Oliver H. Tam"
+        }
+      ],
+      "year": 2026,
+      "date": "2026-01-09",
+      "editorialNotices": null
+    },
+    {
+      "doi": "10.64898/2026.09.11.751031",
+      "title": "Prevention of\n                  Unc13a\n                  cryptic splicing is sufficient to preserve memory",
+      "authors": [
+        {
+          "authorName": "Tianyu Cao"
+        },
+        {
+          "authorName": "Meghraj Singh Baghel"
+        },
+        {
+          "authorName": "Rashmi Thapa"
+        }
+      ],
+      "year": 2026,
+      "date": "2026-09-15",
+      "editorialNotices": null
+    },
+    {
+      "doi": "10.1038/s42003-026-10832-6",
+      "title": "Human iPSC-derived motor neurons with TDP-43 nuclear loss present early ALS pathological phenotypes",
+      "authors": [
+        {
+          "authorName": "Tze Khee Chan"
+        },
+        {
+          "authorName": "Shahriar Niroomand"
+        },
+        {
+          "authorName": "U-Ming Lim"
+        }
+      ],
+      "year": 2026,
+      "date": "2026-10-10",
+      "journal": "communications biology",
+      "editorialNotices": null
+    },
+    {
+      "doi": "10.1073/pnas.2307395120",
+      "title": "Excessive nucleic acid R-loops induce mitochondria-dependent epithelial cell necroptosis and drive spontaneous intestinal inflammation",
+      "authors": [
+        {
+          "authorName": "Xu Yang"
+        },
+        {
+          "authorName": "Guilin Li"
+        },
+        {
+          "authorName": "Pengbo Lou"
+        }
+      ],
+      "year": 2023,
+      "date": "2023-12-29",
+      "journal": "proceedings of the national academy of sciences",
+      "editorialNotices": null
+    },
+    {
+      "doi": "10.1096/fj.202402392r",
+      "title": "Outstretched wing is controlled by intestinal enteroblasts‐derived unpaired 2 cytokine signaling in\n                    Drosophila",
+      "authors": [
+        {
+          "authorName": "Li Yu"
+        },
+        {
+          "authorName": "Dongyue Liu"
+        },
+        {
+          "authorName": "Shengliang Zhang"
+        }
+      ],
+      "year": 2024,
+      "date": "2024-12-05",
+      "journal": "the faseb journal",
+      "editorialNotices": null
+    },
+    {
+      "doi": "10.1186/s13024-023-00619-2",
+      "title": "Opinion: more mouse models and more translation needed for ALS",
+      "authors": [
+        {
+          "authorName": "Elizabeth Fisher"
+        },
+        {
+          "authorName": "Linda Greensmith"
+        },
+        {
+          "authorName": "Andrea Malaspina"
+        }
+      ],
+      "year": 2023,
+      "date": "2023-05-04",
+      "journal": "molecular neurodegeneration",
+      "editorialNotices": null
+    },
+    {
+      "doi": "10.1002/bies.200900086",
+      "title": "The granulin gene family: from cancer to dementia",
+      "authors": [
+        {
+          "authorName": "Andrew Bateman"
+        },
+        {
+          "authorName": "H.P.J. Bennett"
+        }
+      ],
+      "year": 2009,
+      "date": "2009-10-21",
+      "journal": "bioessays",
+      "editorialNotices": null
+    },
+    {
+      "doi": "10.4103/1673-5374.390983",
+      "title": "Highly toxic Aβ begets more Aβ",
+      "authors": [
+        {
+          "authorName": "Merc M. Kemeh"
+        },
+        {
+          "authorName": "Noel D. Lazo"
+        }
+      ],
+      "year": 2023,
+      "date": "2023-12-15",
+      "journal": "neural regeneration research",
+      "editorialNotices": null
+    },
+    {
+      "doi": "10.3389/fmolb.2023.1326148",
+      "title": "RNA-binding proteins regulating the CD44 alternative splicing",
+      "authors": [
+        {
+          "authorName": "Diana V. Maltseva"
+        },
+        {
+          "authorName": "Alexander Tonevitsky"
+        }
+      ],
+      "year": 2023,
+      "date": "2023-12-01",
+      "journal": "frontiers in molecular biosciences",
+      "editorialNotices": null
+    },
+    {
+      "doi": "10.1016/j.cell.2020.12.025",
+      "title": "p53 is a central regulator driving neurodegeneration caused by C9orf72 poly(PR)",
+      "authors": [
+        {
+          "authorName": "Maya Maor-Nof"
+        },
+        {
+          "authorName": "Zohar Shipony"
+        },
+        {
+          "authorName": "Lisa Nakayama"
+        }
+      ],
+      "year": 2021,
+      "date": "2021-02-01",
+      "journal": "cell",
+      "editorialNotices": null
+    },
+    {
+      "doi": "10.1002/bies.202000245",
+      "title": "Paraspeckle nuclear condensates: Global sensors of cell stress?",
+      "authors": [
+        {
+          "authorName": "Finn McCluggage"
+        },
+        {
+          "authorName": "Archa H. Fox"
+        }
+      ],
+      "year": 2021,
+      "date": "2021-03-22",
+      "journal": "bioessays",
+      "editorialNotices": null
+    },
+    {
+      "doi": "10.1111/bpa.12183_2",
+      "title": "XVIII International Congress of Neuropathology September 15, 2014",
+      "year": 2014,
+      "date": "2014-09-01",
+      "journal": "brain pathology",
+      "editorialNotices": null
+    },
+    {
+      "doi": "10.1186/s40478-025-01977-2",
+      "title": "C9ORF72 poly-PR disrupts expression of ALS/FTD-implicated STMN2 through SRSF7",
+      "authors": [
+        {
+          "authorName": "Karen S. Wang"
+        },
+        {
+          "authorName": "Julie Smeyers"
+        },
+        {
+          "authorName": "Kevin C. Eggan"
+        }
+      ],
+      "year": 2025,
+      "date": "2025-03-26",
+      "journal": "acta neuropathologica communications",
+      "editorialNotices": null
+    },
+    {
+      "doi": "10.1186/s40035-024-00413-0",
+      "title": "Stathmin 2 is a potential treatment target for TDP-43 proteinopathy in amyotrophic lateral sclerosis",
+      "authors": [
+        {
+          "authorName": "Yunqing Liu"
+        },
+        {
+          "authorName": "Dejun Yan"
+        },
+        {
+          "authorName": "Xian Chen"
+        }
+      ],
+      "year": 2024,
+      "date": "2024-04-11",
+      "journal": "translational neurodegeneration",
+      "editorialNotices": null
+    },
+    {
+      "doi": "10.1101/2022.12.23.521801",
+      "title": "Membrane association is required for Stmn2-mediated axon protection",
+      "authors": [
+        {
+          "authorName": "Emma J. C. Thornburg‐Suresh"
+        },
+        {
+          "authorName": "Jerianne E. Richardson"
+        },
+        {
+          "authorName": "Daniel W. Summers"
+        }
+      ],
+      "year": 2022,
+      "date": "2022-12-23",
+      "editorialNotices": null
+    },
+    {
+      "doi": "10.1002/advs.202412054",
+      "title": "Cryptic Splicing of\n                    GAP43\n                    mRNA is a Novel Hallmark of TDP‐43‐Associated ALS and AD",
+      "authors": [
+        {
+          "authorName": "Mingming Yang"
+        },
+        {
+          "authorName": "Dongkun Kang"
+        },
+        {
+          "authorName": "Yanli Jiang"
+        }
+      ],
+      "year": 2025,
+      "date": "2025-06-29",
+      "journal": "advanced science",
+      "editorialNotices": null
+    },
+    {
+      "doi": "10.1186/s13024-023-00608-5",
+      "title": "The era of cryptic exons: implications for ALS-FTD",
+      "authors": [
+        {
+          "authorName": "Puja R. Mehta"
+        },
+        {
+          "authorName": "Anna‐Leigh Brown"
+        },
+        {
+          "authorName": "Michael Emmerson Ward"
+        }
+      ],
+      "year": 2023,
+      "date": "2023-03-15",
+      "journal": "molecular neurodegeneration",
+      "editorialNotices": null
+    },
+    {
+      "doi": "10.1002/jnr.25382",
+      "title": "Microtubules, Membranes, and Movement: New Roles for Stathmin‐2 in Axon Integrity",
+      "authors": [
+        {
+          "authorName": "Emma J. C. Thornburg‐Suresh"
+        },
+        {
+          "authorName": "Daniel W. Summers"
+        }
+      ],
+      "year": 2024,
+      "date": "2024-09-01",
+      "journal": "journal of neuroscience research",
+      "editorialNotices": null
+    },
+    {
+      "doi": "10.1101/2025.06.26.661764",
+      "title": "An active Unc13A is Reboundless in sleep homeostasis",
+      "authors": [
+        {
+          "authorName": "Sheng Huang"
+        },
+        {
+          "authorName": "Marc Escher"
+        },
+        {
+          "authorName": "Niraja Ramesh"
+        }
+      ],
+      "year": 2025,
+      "date": "2025-06-29",
+      "editorialNotices": null
+    },
+    {
+      "doi": "10.1038/s41588-025-02361-5",
+      "title": "Pathogenic UNC13A variants cause a neurodevelopmental syndrome by impairing synaptic function",
+      "authors": [
+        {
+          "authorName": "Reza Asadollahi"
+        },
+        {
+          "authorName": "Paranchai; https://orcid.org/0000-0003-3059-1916 Boonsawat"
+        },
+        {
+          "authorName": "Jasmine Shahanoor Hinzen"
+        }
+      ],
+      "year": 2025,
+      "date": "2025-10-22",
+      "journal": "nature genetics",
+      "editorialNotices": null
+    },
+    {
+      "doi": "10.1002/acn3.52234",
+      "title": "Rethinking antisense oligonucleotide therapeutics for amyotrophic lateral sclerosis",
+      "authors": [
+        {
+          "authorName": "Daisuke Ito"
+        },
+        {
+          "authorName": "Kensuke Okada"
+        }
+      ],
+      "year": 2024,
+      "date": "2024-10-29",
+      "journal": "annals of clinical and translational neurology",
+      "editorialNotices": null
+    },
+    {
+      "doi": "10.1016/j.neuron.2017.08.016",
+      "title": "Stable Positioning of Unc13 Restricts Synaptic Vesicle Fusion to Defined Release Sites to Promote Synchronous Neurotransmission",
+      "authors": [
+        {
+          "authorName": "Suneel Reddy‐Alla"
+        },
+        {
+          "authorName": "Mathias A. Böhme"
+        },
+        {
+          "authorName": "Eric Reynolds"
+        }
+      ],
+      "year": 2017,
+      "date": "2017-09-01",
+      "journal": "neuron",
+      "editorialNotices": null
+    },
+    {
+      "doi": "10.1038/s44318-025-00506-0",
+      "title": "ALS-associated RNA-binding proteins promote UNC13A transcription through REST downregulation",
+      "authors": [
+        {
+          "authorName": "Yasuaki Watanabe"
+        },
+        {
+          "authorName": "Naoki Suzuki"
+        },
+        {
+          "authorName": "Masaki Hosogane"
+        }
+      ],
+      "year": 2025,
+      "date": "2025-07-24",
+      "journal": "the embo journal",
+      "editorialNotices": null
+    },
+    {
+      "doi": "10.1002/mds.30104",
+      "title": "TDP‐43\n                    Cryptic\n                    RNAs\n                    in Perry Syndrome: Differences across Brain Regions and\n                    TDP‐43\n                    Proteinopathies",
+      "authors": [
+        {
+          "authorName": "Sarah Pickles"
+        },
+        {
+          "authorName": "Jesús González Bejarano"
+        },
+        {
+          "authorName": "Lillian M. Daughrity"
+        }
+      ],
+      "year": 2025,
+      "date": "2025-01-09",
+      "journal": "movement disorders",
+      "editorialNotices": null
+    },
+    {
+      "doi": "10.1101/2024.03.27.587011",
+      "title": "Large-scale RNA-seq mining reveals ciclopirox triggers TDP-43 cryptic exons",
+      "authors": [
+        {
+          "authorName": "Irika R. Sinha"
+        },
+        {
+          "authorName": "Parker S. Sandal"
+        },
+        {
+          "authorName": "G Burns"
+        }
+      ],
+      "year": 2024,
+      "date": "2024-03-30",
+      "editorialNotices": null
+    },
+    {
+      "doi": "10.1186/s13024-023-00646-z",
+      "title": "TDP-43-regulated cryptic RNAs accumulate in Alzheimer’s disease brains",
+      "authors": [
+        {
+          "authorName": "Virginia Estades Ayuso"
+        },
+        {
+          "authorName": "Sarah R. Pickles"
+        },
+        {
+          "authorName": "Tiffany W. Todd"
+        }
+      ],
+      "year": 2023,
+      "date": "2023-08-21",
+      "journal": "molecular neurodegeneration",
+      "editorialNotices": null
+    },
+    {
+      "doi": "10.1038/s41467-025-62004-5",
+      "title": "Large-scale RNA-Seq mining reveals ciclopirox olamine induces TDP-43 cryptic exons",
+      "authors": [
+        {
+          "authorName": "Irika R. Sinha"
+        },
+        {
+          "authorName": "Parker S. Sandal"
+        },
+        {
+          "authorName": "Holly Spence"
+        }
+      ],
+      "year": 2025,
+      "date": "2025-07-25",
+      "journal": "nature communications",
+      "editorialNotices": null
+    },
+    {
+      "doi": "10.1101/2025.06.28.661837",
+      "title": "Inhibition of nonsense-mediated decay in TDP-43 deficient neurons reveals novel cryptic exons",
+      "authors": [
+        {
+          "authorName": "Irika R. Sinha"
+        },
+        {
+          "authorName": "Yingzhi Ye"
+        },
+        {
+          "authorName": "Yini Li"
+        }
+      ],
+      "year": 2025,
+      "date": "2025-06-29",
+      "editorialNotices": null
+    },
+    {
+      "doi": "10.1016/j.tins.2021.02.008",
+      "title": "Connecting TDP-43 Pathology with Neuropathy",
+      "authors": [
+        {
+          "authorName": "Joseph R. Klim"
+        },
+        {
+          "authorName": "Greta Pintacuda"
+        },
+        {
+          "authorName": "Leslie A. Nash"
+        }
+      ],
+      "year": 2021,
+      "date": "2021-06-01",
+      "journal": "trends in neurosciences",
+      "editorialNotices": null
+    },
+    {
+      "doi": "10.1101/076117",
+      "title": "Quantitative analysis of cryptic splicing associated with TDP-43 depletion",
+      "authors": [
+        {
+          "authorName": "Jack Humphrey"
+        },
+        {
+          "authorName": "Warren Emmett"
+        },
+        {
+          "authorName": "Pietro Fratta"
+        }
+      ],
+      "year": 2016,
+      "date": "2016-09-19",
+      "editorialNotices": null
+    },
+    {
+      "doi": "10.1186/s12920-017-0274-1",
+      "title": "Quantitative analysis of cryptic splicing associated with TDP-43 depletion",
+      "authors": [
+        {
+          "authorName": "Jack Humphrey"
+        },
+        {
+          "authorName": "Warren Emmett"
+        },
+        {
+          "authorName": "Pietro Fratta"
+        }
+      ],
+      "year": 2017,
+      "date": "2017-05-26",
+      "journal": "bmc medical genomics",
+      "editorialNotices": null
+    },
+    {
+      "doi": "10.1101/2025.07.09.664014",
+      "title": "Nonsense-mediated decay masks cryptic splicing events caused by TDP-43 loss",
+      "authors": [
+        {
+          "authorName": "Yi Zeng"
+        },
+        {
+          "authorName": "Odilia Sianto"
+        },
+        {
+          "authorName": "Anastasiia Lovchykova"
+        }
+      ],
+      "year": 2025,
+      "date": "2025-07-09",
+      "editorialNotices": null
+    },
+    {
+      "doi": "10.20463/pan.2026.0045",
+      "title": "Integrative ALS therapy: gene targeted therapy by base editing and potential exercise rehabilitation as synergistic strategies for functional recovery",
+      "authors": [
+        {
+          "authorName": "Kwangjun Lee"
+        },
+        {
+          "authorName": "Taejin Kwak"
+        },
+        {
+          "authorName": "Wonil Park"
+        }
+      ],
+      "year": 2026,
+      "date": "2026-09-30",
+      "journal": "physical activity and nutrition",
+      "editorialNotices": null
+    },
+    {
+      "doi": "10.1101/2025.08.28.672801",
+      "title": "Cryptic splicing in synaptic and membrane excitability genes links TDP-43 loss to neuronal dysfunction",
+      "authors": [
+        {
+          "authorName": "Caiwei Guo"
+        },
+        {
+          "authorName": "Kuchuan Chen"
+        },
+        {
+          "authorName": "Sarat C. Vatsavayai"
+        }
+      ],
+      "year": 2025,
+      "date": "2025-09-02",
+      "editorialNotices": null
+    },
+    {
+      "doi": "10.3389/fnmol.2026.1864964",
+      "title": "Human iPSC-derived motor neurons as a platform for elucidating TDP-43-related amyotrophic lateral sclerosis pathogenesis: a mini review",
+      "authors": [
+        {
+          "authorName": "Satoshi Yokoi"
+        },
+        {
+          "authorName": "Yohei Iguchi"
+        },
+        {
+          "authorName": "Masahisa Katsuno"
+        }
+      ],
+      "year": 2026,
+      "date": "2026-05-22",
+      "journal": "frontiers in molecular neuroscience",
+      "editorialNotices": null
+    },
+    {
+      "doi": "10.1111/bpa.13104",
+      "title": "AtypicalTDP‐43 protein expression in anALSpedigree carrying a p.Y374Xtruncation mutation inTARDBP",
+      "authors": [
+        {
+          "authorName": "Johnathan Cooper‐Knock"
+        },
+        {
+          "authorName": "Thomas Julian"
+        },
+        {
+          "authorName": "Emily Feneberg"
+        }
+      ],
+      "year": 2022,
+      "date": "2022-07-24",
+      "journal": "brain pathology",
+      "editorialNotices": null
+    },
+    {
+      "doi": "10.3390/cells13110888",
+      "title": "Updates on Disease Mechanisms and Therapeutics for Amyotrophic Lateral Sclerosis",
+      "authors": [
+        {
+          "authorName": "Lien Nguyen"
+        }
+      ],
+      "year": 2024,
+      "date": "2024-05-21",
+      "journal": "cells",
+      "editorialNotices": null
+    },
+    {
+      "doi": "10.1101/2021.04.02.438170",
+      "title": "Common ALS/FTD risk variants in\n                  UNC13A\n                  exacerbate its cryptic splicing and loss upon TDP-43 mislocalization",
+      "authors": [
+        {
+          "authorName": "Anna‐Leigh Brown"
+        },
+        {
+          "authorName": "Oscar G. Wilkins"
+        },
+        {
+          "authorName": "Matthew J. Keuss"
+        }
+      ],
+      "year": 2021,
+      "date": "2021-04-04",
+      "editorialNotices": null
+    },
+    {
+      "doi": "10.1101/2024.06.04.595773",
+      "title": "TYK2 as a novel therapeutic target in Alzheimer’s Disease with TDP-43 inclusions",
+      "authors": [
+        {
+          "authorName": "Laura E. König"
+        },
+        {
+          "authorName": "Steve Rodriguez"
+        },
+        {
+          "authorName": "Clemens B. Hug"
+        }
+      ],
+      "year": 2024,
+      "date": "2024-06-06",
+      "editorialNotices": null
+    },
+    {
+      "doi": "10.1007/s00401-023-02655-0",
+      "title": "Cryptic splicing of stathmin-2 and UNC13A mRNAs is a pathological hallmark of TDP-43-associated Alzheimer’s disease",
+      "authors": [
+        {
+          "authorName": "Ana Rita Agra de Almeida Quadros"
+        },
+        {
+          "authorName": "Zhaozhi Li"
+        },
+        {
+          "authorName": "Xue Wang"
+        }
+      ],
+      "year": 2024,
+      "date": "2024-01-04",
+      "journal": "acta neuropathologica",
+      "editorialNotices": null
+    },
+    {
+      "doi": "10.1038/s41467-025-62482-7",
+      "title": "Sporadic ALS induced pluripotent stem cell derived neurons reveal hallmarks of TDP-43 loss of function",
+      "authors": [
+        {
+          "authorName": "Jeffrey D. Rothstein"
+        },
+        {
+          "authorName": "Olivia Keeley"
+        },
+        {
+          "authorName": "Caroline Warlick"
+        }
+      ],
+      "year": 2025,
+      "date": "2025-08-02",
+      "journal": "nature communications",
+      "editorialNotices": null
+    },
+    {
+      "doi": "10.7554/elife.95062",
+      "title": "Rapid and inducible mislocalization of endogenous TDP43 in a novel human model of amyotrophic lateral sclerosis",
+      "authors": [
+        {
+          "authorName": "Johanna Ganssauge"
+        },
+        {
+          "authorName": "Sophie Hawkins"
+        },
+        {
+          "authorName": "Seema Chandramohan Namboori"
+        }
+      ],
+      "year": 2025,
+      "date": "2025-07-24",
+      "journal": "elife",
+      "editorialNotices": null
+    },
+    {
+      "doi": "10.1101/2023.10.24.563760",
+      "title": "Rapid and Inducible Mislocalization of Endogenous TDP43 in a Novel Human Model of Amyotrophic Lateral Sclerosis",
+      "authors": [
+        {
+          "authorName": "Sophie Hawkins"
+        },
+        {
+          "authorName": "Seema C. Namboori"
+        },
+        {
+          "authorName": "Szi Kay Leung"
+        }
+      ],
+      "year": 2023,
+      "date": "2023-10-27",
+      "editorialNotices": null
+    },
+    {
+      "doi": "10.1186/s40035-022-00331-z",
+      "title": "TDP-43 dysregulation and neuromuscular junction disruption in amyotrophic lateral sclerosis",
+      "authors": [
+        {
+          "authorName": "Sarah Lépine"
+        },
+        {
+          "authorName": "María José Castellanos‐Montiel"
+        },
+        {
+          "authorName": "Thomas M. Durcan"
+        }
+      ],
+      "year": 2022,
+      "date": "2022-12-27",
+      "journal": "translational neurodegeneration",
+      "editorialNotices": null
+    },
+    {
+      "doi": "10.1002/bies.202400257",
+      "title": "Unlocking Disease‐Modifying Treatments for TDP‐43‐Mediated Neurodegeneration",
+      "authors": [
+        {
+          "authorName": "Rebecca San Gil"
+        },
+        {
+          "authorName": "Adam K. Walker"
+        }
+      ],
+      "year": 2025,
+      "date": "2025-02-03",
+      "journal": "bioessays",
+      "editorialNotices": null
+    },
+    {
+      "doi": "10.1038/s41591-023-02788-5",
+      "title": "A fluid biomarker reveals loss of TDP-43 splicing repression in presymptomatic ALS–FTD",
+      "authors": [
+        {
+          "authorName": "Katherine E. Irwin"
+        },
+        {
+          "authorName": "Pei Jasin"
+        },
+        {
+          "authorName": "Kerstin E. Braunstein"
+        }
+      ],
+      "year": 2024,
+      "date": "2024-01-26",
+      "journal": "news nature",
+      "editorialNotices": [
+        {
+          "status": "has correction",
+          "noticeDoi": "10.1038/s41591-024-02966-z",
+          "date": "2024-4-5"
+        }
+      ]
+    },
+    {
+      "doi": "10.1101/2023.01.23.525202",
+      "title": "A fluid biomarker reveals loss of TDP-43 splicing repression in pre-symptomatic ALS",
+      "authors": [
+        {
+          "authorName": "Katherine E. Irwin"
+        },
+        {
+          "authorName": "Pei Jasin"
+        },
+        {
+          "authorName": "Kerstin E. Braunstein"
+        }
+      ],
+      "year": 2023,
+      "date": "2023-01-24",
+      "editorialNotices": null
+    },
+    {
+      "doi": "10.1038/s41540-025-00501-5",
+      "title": "A molecular systems architecture of neuromuscular junction in amyotrophic lateral sclerosis",
+      "authors": [
+        {
+          "authorName": "V. A. Shiva Ayyadurai"
+        },
+        {
+          "authorName": "Prabhakar Deonikar"
+        },
+        {
+          "authorName": "Roger Dale Kamm"
+        }
+      ],
+      "year": 2025,
+      "date": "2025-03-17",
+      "journal": "npj systems biology and applications",
+      "editorialNotices": null
+    },
+    {
+      "doi": "10.1146/annurev-genom-022024-011307",
+      "title": "Cryptic Splicing in ALS: From Driving Disease Progression to Unlocking Novel Therapeutics",
+      "authors": [
+        {
+          "authorName": "Sara Emad El-Agamy"
+        },
+        {
+          "authorName": "Francesca Mattedi"
+        },
+        {
+          "authorName": "Pietro Fratta"
+        }
+      ],
+      "year": 2026,
+      "date": "2026-08-25",
+      "journal": "annual review of genomics and human genetics",
+      "editorialNotices": null
+    },
+    {
+      "doi": "10.1126/sciadv.adf6895",
+      "title": "Monomerization of TDP-43 is a key determinant for inducing TDP-43 pathology in amyotrophic lateral sclerosis",
+      "authors": [
+        {
+          "authorName": "Kotaro Oiwa"
+        },
+        {
+          "authorName": "Seiji Watanabe"
+        },
+        {
+          "authorName": "Kazunari Onodera"
+        }
+      ],
+      "year": 2023,
+      "date": "2023-08-04",
+      "journal": "science advances",
+      "editorialNotices": null
+    },
+    {
+      "doi": "10.1016/j.pneurobio.2016.09.004",
+      "title": "TDP-43/FUS in motor neuron disease: Complexity and challenges",
+      "authors": [
+        {
+          "authorName": "Erika N. Guerrero"
+        },
+        {
+          "authorName": "Haibo Wang"
+        },
+        {
+          "authorName": "Joy Mitra"
+        }
+      ],
+      "year": 2016,
+      "date": "2016-10-01",
+      "journal": "progress in neurobiology",
+      "editorialNotices": null
+    },
+    {
+      "doi": "10.1212/nxi.0000000000000937",
+      "title": "TDP-43–specific Autoantibody Decline in Patients With Amyotrophic Lateral Sclerosis",
+      "authors": [
+        {
+          "authorName": "Anne Kallehauge Nielsen"
+        },
+        {
+          "authorName": "Jonas Folke"
+        },
+        {
+          "authorName": "Sylwia Owczarek"
+        }
+      ],
+      "year": 2021,
+      "date": "2021-03-04",
+      "journal": "neurology neuroimmunology &amp; neuroinflammation",
+      "editorialNotices": null
+    },
+    {
+      "doi": "10.64898/2026.09.11.751082",
+      "title": "Restoring multiple TDP-43 cryptic targets, but not solely\n                  Unc13a\n                  , rescues motor neuron disease",
+      "authors": [
+        {
+          "authorName": "Aswathy Peethambaran Mallika"
+        },
+        {
+          "authorName": "Meghraj Singh Baghel"
+        },
+        {
+          "authorName": "Opal Sitzman"
+        }
+      ],
+      "year": 2026,
+      "date": "2026-09-18",
+      "editorialNotices": null
+    },
+    {
+      "doi": "10.1038/s44400-025-00011-5",
+      "title": "Post-symptomatic NLRP3 inhibition rescues cognitive impairment and mitigates amyloid and tau driven neurodegeneration",
+      "authors": [
+        {
+          "authorName": "Anick Auger"
+        },
+        {
+          "authorName": "Rania Faidi"
+        },
+        {
+          "authorName": "Alexis D. Rickman"
+        }
+      ],
+      "year": 2025,
+      "date": "2025-05-06",
+      "journal": "npj dementia",
+      "editorialNotices": null
+    },
+    {
+      "doi": "10.1101/2023.10.24.563563",
+      "title": "Rebalancing the motor circuit restores movement in a\n                  Caenorhabditis elegans\n                  model for TDP-43-toxicity",
+      "authors": [
+        {
+          "authorName": "Mandy Koopman"
+        },
+        {
+          "authorName": "Lale Güngördü"
+        },
+        {
+          "authorName": "Leen Janssen"
+        }
+      ],
+      "year": 2023,
+      "date": "2023-10-25",
+      "editorialNotices": null
+    },
+    {
+      "doi": "10.1007/s00401-017-1698-6",
+      "title": "Mutant TDP-43 within motor neurons drives disease onset but not progression in amyotrophic lateral sclerosis",
+      "authors": [
+        {
+          "authorName": "Dara Ditsworth"
+        },
+        {
+          "authorName": "Marcus Maldonado"
+        },
+        {
+          "authorName": "Melissa McAlonis‐Downes"
+        }
+      ],
+      "year": 2017,
+      "date": "2017-03-29",
+      "journal": "acta neuropathologica",
+      "editorialNotices": null
+    },
+    {
+      "doi": "10.21236/ada617390",
+      "title": "Chemical Genetic Screens for TDP-43 Modifiers and ALS Drug Discovery",
+      "authors": [
+        {
+          "authorName": "Pierre Drapeau"
+        },
+        {
+          "authorName": "J. Alex Parker"
+        },
+        {
+          "authorName": "Edor Kabashi"
+        }
+      ],
+      "year": 2015,
+      "date": "2015-03-01",
+      "editorialNotices": null
+    },
+    {
+      "doi": "10.1093/hmg/ddz190",
+      "title": "Neuronal over-expression of Oxr1 is protective against ALS-associated mutant TDP-43 mislocalisation in motor neurons and neuromuscular defects in vivo",
+      "authors": [
+        {
+          "authorName": "Matthew G Williamson"
+        },
+        {
+          "authorName": "Mattéa J. Finelli"
+        },
+        {
+          "authorName": "James N. Sleigh"
+        }
+      ],
+      "year": 2019,
+      "date": "2019-09-06",
+      "journal": "human molecular genetics",
+      "editorialNotices": null
+    },
+    {
+      "doi": "10.1101/2025.08.14.670400",
+      "title": "Symptomatic treatment by a BBB-permeable AAV engineered to restore TDP-43 function slows motor neuron disease and prevents paralysis",
+      "authors": [
+        {
+          "authorName": "Aswathy Peethambaran Mallika"
+        },
+        {
+          "authorName": "Jessica Yu"
+        },
+        {
+          "authorName": "Opal Sitzman"
+        }
+      ],
+      "year": 2025,
+      "date": "2025-08-20",
+      "editorialNotices": null
+    },
+    {
+      "doi": "10.1111/ene.70653",
+      "title": "Distinct\n                    UNC13A\n                    Haplotype Blocks Define Disease Severity and Survival in Chinese Amyotrophic Lateral Sclerosis",
+      "authors": [
+        {
+          "authorName": "Cailin He"
+        },
+        {
+          "authorName": "Yanchun Yuan"
+        },
+        {
+          "authorName": "Linxin Tang"
+        }
+      ],
+      "year": 2026,
+      "date": "2026-06-01",
+      "journal": "european journal of neurology",
+      "editorialNotices": null
+    },
+    {
+      "doi": "10.1002/cind.70161",
+      "title": "News",
+      "year": 2026,
+      "date": "2026-10-01",
+      "journal": "chemistry &amp; industry",
+      "editorialNotices": null
+    },
+    {
+      "doi": "10.1177/10430342251372898",
+      "title": "Targeting Amyotrophic Lateral Sclerosis with Gene Therapy: From Silencing Genes to Enhancing Neuroprotection",
+      "authors": [
+        {
+          "authorName": "Sergi Verdés"
+        },
+        {
+          "authorName": "Xavier Navarro"
+        },
+        {
+          "authorName": "Assumpció Bosch"
+        }
+      ],
+      "year": 2025,
+      "date": "2025-09-01",
+      "journal": "human gene therapy",
+      "editorialNotices": null
+    },
+    {
+      "doi": "10.1186/s40035-025-00477-6",
+      "title": "Gene therapy breakthroughs in ALS: a beacon of hope for 20% of ALS patients",
+      "authors": [
+        {
+          "authorName": "Kezheng Li"
+        },
+        {
+          "authorName": "Yinuo Chen"
+        },
+        {
+          "authorName": "Yaojia Li"
+        }
+      ],
+      "year": 2025,
+      "date": "2025-04-16",
+      "journal": "translational neurodegeneration",
+      "editorialNotices": null
+    }
+  ],
+  "editorial_checks": [
+    {
+      "batch": "orig_data_editorial_",
+      "filter": "has_retraction",
+      "total": 0,
+      "returned_dois": []
+    },
+    {
+      "batch": "orig_data_editorial_",
+      "filter": "has_concern",
+      "total": 0,
+      "returned_dois": []
+    },
+    {
+      "batch": "orig_data_editorial_",
+      "filter": "has_correction",
+      "total": 0,
+      "returned_dois": []
+    },
+    {
+      "batch": "orig_data_editorial_",
+      "filter": "has_erratum",
+      "total": 0,
+      "returned_dois": []
+    },
+    {
+      "batch": "orig_editorial_final_",
+      "filter": "has_retraction",
+      "total": 0,
+      "returned_dois": []
+    },
+    {
+      "batch": "orig_editorial_final_",
+      "filter": "has_concern",
+      "total": 0,
+      "returned_dois": []
+    },
+    {
+      "batch": "orig_editorial_final_",
+      "filter": "has_correction",
+      "total": 0,
+      "returned_dois": []
+    },
+    {
+      "batch": "orig_editorial_final_",
+      "filter": "has_erratum",
+      "total": 0,
+      "returned_dois": []
+    }
+  ]
+}
