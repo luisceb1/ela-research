@@ -35,3 +35,6 @@ Seguir las mismas unidades es ventajoso para MEA, pero no requisito universal de
 | Retirar perturbación funciona, corregir diana no | Quitar causa y reparar una diana no son equivalentes |
 
 Revisar hipótesis ante fallo funcional persistente pese a corrección molecular/proteica y ensayo sensible. Si no se corrige diana o falla control concurrente, no se refuta reversibilidad. No concluir equivalencia desde no significación sin potencia/margen adecuados. No contactar ni experimentar sin autorización.
+
+## Antecedente Chan2026 verificado después de reconciliar otros chats
+Ver reports/chan-timing: Fig7 registra crecimiento de neuritas antes/después de ASO desdeDIV4; Fig8 administra ASO inmediatamente después de axotomíaDIV14. Ambas características ya están publicadas. No usarlas como reclamo suficiente de originalidad ni describir todo rescate previo como preventivo. El contraste pendiente del proyecto se limita a déficit funcional operacional, comparación de demoras, recuperación desde basal y mantenimiento con viabilidad; su novedad tampoco está certificada. El modelo Chan basal no presenta el evento UNC13A: confirmar el mecanismo pertinente antes de trasladarlo a un piloto MEA. Es una precisión conceptual, sin iniciar laboratorio.

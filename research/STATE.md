@@ -101,3 +101,10 @@ Inventario estructural GEO completado por primera ejecución de GitHub Actions. 
 - GSE126542 expresión/splicing/genética reutilizan cohorte; DEXSeq GSE121569 no es lectura directa de CE. CAMK2B negativo en catálogo cerebral según informe, todavía sin reproducción aquí. MEA y Monte Carlo son simulaciones, jamás replicación experimental.
 - No copiar datos individuales ni genotipos. El reanálisis04 se menciona en el contexto previo pero no tiene paquete autónomo entre estos11; no declarar importación completa.
 - Las propuestas de rescate tardío ya existían: conservar esa procedencia. Siguiente prioridad antes de imágenes: fuente primaria Chan2026 DOI10.1038/s42003-026-10832-6 y cronología figuras7/8; alternativa segura cotejo estructural CAMK2B agregado con GTF públicos. Rama research/prior-chat-reconciliation-20261029, dependiente de PR10.
+
+## Chan2026: antecedente temporal confirmado
+- reports/chan-timing: PDF editorial inpress recuperado por enlace_reference; Fig7f–i iniciaASO DIV4 (segunda dosis7), curvas antes/después; Fig8 axotomía14, ASO inmediatamente después y lectura3d después. No son tres días de demora terapéutica. No reivindicar poslesión o longitudinalidad como novedad suficiente.
+- N=3 experimentos/n3–5pozos en7f–i; N=2/n3–5chips en8. No se verificó equivalencia con diferenciaciones independientes. Reporting Summary: aleatorización declarada, sin cegamiento ni cálculo formal de muestra.
+- SupplementaryData1(83hojas) recuperada; metadatos de6hojas auditados. EtiquetasDIV dispersas y sin mapa experimento/diferenciación/pozo en las etiquetas seleccionadas; no interpolar tiempos ni asumir réplicas. Sin nuevos efectos/pvalores.
+- Modelo basal no presenta CE UNC13A según discusión/SuppFig6; KD adicional cambia condición. No transferir idoneidad de STMN2 a UNC13A por suposición.
+- Parser corregido por guion de fin de línea y prueba de regresión;72pruebas técnicas pasan. Próximo: reproducir CAMK2B estructural agregado con GTF públicos, sin tablas individuales. Curvas Chan condicionadas a resolver unidades/tiempos. Rama research/chan-rescue-timing-20261029, dependientePR11.
