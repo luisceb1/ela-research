@@ -1,0 +1,687 @@
+{
+  "schema_version": 1,
+  "scope": "identity/integrity only; no scientific reproduction",
+  "packages": [
+    {
+      "name": "ELA_06_CAMK2B_validacion_independiente_2026-10-29(1).zip",
+      "bytes": 9596,
+      "sha256": "c0aa6007bd26cfebfe6dbbcd411e4ad209c4b3895da84ad0079af1a785044801",
+      "format": "zip",
+      "members": [
+        {
+          "name": "INFORME_CIENTIFICO.md",
+          "bytes": 6946,
+          "sha256": "3aaa447f40ff376176cd524c7605675ed86aca8a716ffe4cf0a6e094b0c48aca"
+        },
+        {
+          "name": "LEEME.md",
+          "bytes": 1192,
+          "sha256": "4c16397b9228d8f9e9812f812fe4a3627d8a52bd8c777a370cba40a5b7164271"
+        },
+        {
+          "name": "reanalisis_validacion.py",
+          "bytes": 8461,
+          "sha256": "2242d24912db60152a98dee6006a8a77c0757d803724b875eab4e36d3dd305a5"
+        },
+        {
+          "name": "resultados/comparacion_de_uniones.csv",
+          "bytes": 2761,
+          "sha256": "33ad3204ed70e1ec36324dfe586a5eb19c2eaad90559d4c6b0d8e8d27f78bb43"
+        },
+        {
+          "name": "resultados/resultados_por_muestra.csv",
+          "bytes": 3190,
+          "sha256": "d88fc77e59312cb01feae53d42668c242a458175ef70d345f3b275788e21bd57"
+        },
+        {
+          "name": "resultados/resumen_modelos.csv",
+          "bytes": 251,
+          "sha256": "2b40b6d752c3e07a734679c37a31942d2bb8cd1c36d84b235fbb1a92c84f855d"
+        },
+        {
+          "name": "resultados/verificacion.txt",
+          "bytes": 767,
+          "sha256": "e66703cfc7dd1af6e074c26a4fade16f22a1bd30639773efaed7648ce898f95b"
+        }
+      ]
+    },
+    {
+      "name": "ELA_06_cribado_peptidos_cripticos_2026-10-29(1).zip",
+      "bytes": 10212,
+      "sha256": "dcdbe0b27a1ab9637c27de585e844da14c9150f2f69371a6c7845a8611d6811f",
+      "format": "zip",
+      "members": [
+        {
+          "name": "INFORME_CIENTIFICO_06.md",
+          "bytes": 8848,
+          "sha256": "54945efa374889defa6957e283a24f4d3b984953e401efb0f741c8803b3c0376"
+        },
+        {
+          "name": "LEEME.md",
+          "bytes": 784,
+          "sha256": "937a232ea4ecc441b3d1a3e403c9d2fa7bde2d58132f9a9dc9609d41f28c0936"
+        },
+        {
+          "name": "analisis_expresion_exploratorio.py",
+          "bytes": 5396,
+          "sha256": "2a97f991a6535858c74b32f969c5bfb8f90fcf9f7a2a6ab963f4d770857d6416"
+        },
+        {
+          "name": "auditoria_datos.txt",
+          "bytes": 924,
+          "sha256": "8841479015d134c4b9901433f4383cf46406a6c819be6a819166b5c668ee3080"
+        },
+        {
+          "name": "matriz_de_evidencia.csv",
+          "bytes": 3003,
+          "sha256": "1bbfcdc33707434b8ca024f9fb4441662524c462fcc2d00934ab35a4c82fdb74"
+        },
+        {
+          "name": "resultados_ARN_total.csv",
+          "bytes": 2628,
+          "sha256": "3c4e9fa02a1a1cd3ccac577a4af9383144246d91e6518e093e8ee530ad89769e"
+        }
+      ]
+    },
+    {
+      "name": "ELA_GSE126542_reanalisis_02_splicing_2026-10-28(1).zip",
+      "bytes": 397170,
+      "sha256": "9d2121d2b2a0872a04e8e6f7f9e6a944e64d27e9ee4c3eabfe9c44e06fb91fbc",
+      "format": "zip",
+      "members": [
+        {
+          "name": "INFORME_REANALISIS_02.md",
+          "bytes": 8449,
+          "sha256": "4530f905557112485f009588b544e10114047cc8b306ad0d3efc34380dd3d12e"
+        },
+        {
+          "name": "LEEME.md",
+          "bytes": 1197,
+          "sha256": "66ff3d2b57196c7a5f1b1b84c16982c49ef2e09ebca3bc5037949c26251aa743"
+        },
+        {
+          "name": "analizar_splicing_y_expresion.py",
+          "bytes": 6841,
+          "sha256": "9c9dae6f4377b93c24cce5555bd0a7c8709c1be9c2c3a61a40360a036a5f3d0c"
+        },
+        {
+          "name": "requirements.txt",
+          "bytes": 52,
+          "sha256": "d3c40a5ea6959f5a0ba843f0892e15aa68d144bbc3dd92c50719e9af3a56c857"
+        },
+        {
+          "name": "resultados/STMN2_indices_pareados.png",
+          "bytes": 144132,
+          "sha256": "887149275ab17fd1b36e8291bbf215d025067c003896369c4e66d792f5a96c0f"
+        },
+        {
+          "name": "resultados/UNC13A_indices_pareados.png",
+          "bytes": 145614,
+          "sha256": "5f523c7163c294f85c2fe62c2ffc3d182e7a9abf8cfd2a09c36cd7f50c25cfd6"
+        },
+        {
+          "name": "resultados/correlaciones_exploratorias.csv",
+          "bytes": 299,
+          "sha256": "090aa63c826b4791a68993dce6cbefd6d096fc0f466fcbee382abbf16949f2b1"
+        },
+        {
+          "name": "resultados/cruce_por_caso.csv",
+          "bytes": 1304,
+          "sha256": "7ba525b5760e3af3755384ae286fc05f3fb79c5e5135f5833f7d1b39a322dbba"
+        },
+        {
+          "name": "resultados/heterogeneidad_entre_casos.png",
+          "bytes": 128422,
+          "sha256": "75b00b672089c48b7539b9f4603c33af5f73fcdacf485ce2c3bc4af363f97745"
+        },
+        {
+          "name": "resultados/muestras_con_indices.csv",
+          "bytes": 1479,
+          "sha256": "adb70f1bcfa0941894e894fae90ffe2a1b40dacbf278b7995feecc5bd8944236"
+        },
+        {
+          "name": "resultados/resumen_splicing.csv",
+          "bytes": 508,
+          "sha256": "ff7d0fbcb4c3dfc8fde3c2e386af7fdf71778c06609dab6e8069829aae8942ec"
+        },
+        {
+          "name": "resultados_por_caso_v1.csv",
+          "bytes": 1992,
+          "sha256": "d069da7c892fe127a0baae28d9fa6eaf433502ec0a3b1f4c382c2bab0451fdb1"
+        },
+        {
+          "name": "union_counts_autores_deduplicados.csv",
+          "bytes": 731,
+          "sha256": "b149f323efa70d31b01b591e1c66d4ab20ca6f6f89a7332b0a69b793574ad446"
+        }
+      ]
+    },
+    {
+      "name": "ELA_GSE126542_reanalisis_03_genetica_2026-10-28(1).zip",
+      "bytes": 69011,
+      "sha256": "9bd101b2386ead2efd260e01b5ce9ab5d7e0d909b0a9e9a4807c533b5faca5d9",
+      "format": "zip",
+      "members": [
+        {
+          "name": "ELA_GSE126542_reanalisis_03_genetica_2026-10-28/INFORME_REANALISIS_03.md",
+          "bytes": 5982,
+          "sha256": "be0312368d9e2c9aead0c6edf032df5a3582e4400e7737744f95276ae86b772e"
+        },
+        {
+          "name": "ELA_GSE126542_reanalisis_03_genetica_2026-10-28/LEEME.md",
+          "bytes": 944,
+          "sha256": "75bd364e0392089dc01bf0a8970208f71fefc1ff3cc0f1f424e8bfa0ddd395c7"
+        },
+        {
+          "name": "ELA_GSE126542_reanalisis_03_genetica_2026-10-28/PLAN_VALIDACION_INDEPENDIENTE.md",
+          "bytes": 3970,
+          "sha256": "055dca10eaadd141c9905edc0ac5b574a0874c51548f9b20485991d255ab0b5b"
+        },
+        {
+          "name": "ELA_GSE126542_reanalisis_03_genetica_2026-10-28/analizar_riesgo_unc13a.py",
+          "bytes": 4042,
+          "sha256": "dc20f68c2da619b7286858ee62a20cc9873ad52d5719cb26c7431b63c5003cb2"
+        },
+        {
+          "name": "ELA_GSE126542_reanalisis_03_genetica_2026-10-28/cruce_por_caso_reanalisis_02.csv",
+          "bytes": 1304,
+          "sha256": "7ba525b5760e3af3755384ae286fc05f3fb79c5e5135f5833f7d1b39a322dbba"
+        },
+        {
+          "name": "ELA_GSE126542_reanalisis_03_genetica_2026-10-28/liu_facs_neurons_unc13_snp_out.tsv",
+          "bytes": 546,
+          "sha256": "c1fd6bcff2b72ac949546ce7f91e0db14bc30f17d77eb20d0238fa2a9cf7f2b4"
+        },
+        {
+          "name": "ELA_GSE126542_reanalisis_03_genetica_2026-10-28/resultados/UNC13A_por_grupo_alelico.png",
+          "bytes": 69284,
+          "sha256": "a5955023dc98aa8d931a1710df4fee6b4abd584b2a47e6a37c496fd3e29b4d9e"
+        },
+        {
+          "name": "ELA_GSE126542_reanalisis_03_genetica_2026-10-28/resultados/casos_cruce_genetica_splicing.csv",
+          "bytes": 1554,
+          "sha256": "43d03dbd043f8009189c830226f53a8ba53136f285e72ad19a78c58c4565c2fb"
+        },
+        {
+          "name": "ELA_GSE126542_reanalisis_03_genetica_2026-10-28/resultados/estadisticas_exploratorias.csv",
+          "bytes": 319,
+          "sha256": "158a66177ecb2767217137fd8b6248490ea470f170df781f0ced73b70ac1e0b5"
+        },
+        {
+          "name": "ELA_GSE126542_reanalisis_03_genetica_2026-10-28/resultados/resumen_por_grupo.csv",
+          "bytes": 96,
+          "sha256": "2523224cb21b295d268f770f0452a8261d52a40cca210ce026d7b6e0695d38df"
+        }
+      ]
+    },
+    {
+      "name": "ELA_GSE126542_reanalisis_real_2026-10-28(1).zip",
+      "bytes": 1322300,
+      "sha256": "30ee60058e656429d78aed88e7ed866b308a5108e59c062fa39b4e677d0f03e1",
+      "format": "zip",
+      "members": [
+        {
+          "name": "ELA_GSE126542_resultados_2026-10-28/ELA_analisis_v1.py",
+          "bytes": 15666,
+          "sha256": "96db8dfd3a70b4bc7ef2db71908c293338add282eb9fb5e5eb5ba617b46adfa6"
+        },
+        {
+          "name": "ELA_GSE126542_resultados_2026-10-28/GSE126542_NeuronalNuclei_RNAseq_counts.txt.gz",
+          "bytes": 943613,
+          "sha256": "c7a9ddae801f160e5ee6f02d4a6f127bde351a1ca85adaaba07228d4c24da0f8"
+        },
+        {
+          "name": "ELA_GSE126542_resultados_2026-10-28/LEEME.md",
+          "bytes": 2100,
+          "sha256": "88f966c2b183a5c1f638cf67e727045e021239d0ad31c0fc728e2ffe3ac08cc1"
+        },
+        {
+          "name": "ELA_GSE126542_resultados_2026-10-28/ejecucion_validacion.txt",
+          "bytes": 2657,
+          "sha256": "945fa5eb0e610ae403dba7372def76da0742fd3b1a42ff11535df37090005545"
+        },
+        {
+          "name": "ELA_GSE126542_resultados_2026-10-28/registro_horas_estimado_previo.csv",
+          "bytes": 318,
+          "sha256": "1d7b37215655479eb618a6626dcd948a7c973b1850ac1b80c7c38ec4db1e3023"
+        },
+        {
+          "name": "ELA_GSE126542_resultados_2026-10-28/requirements.txt",
+          "bytes": 30,
+          "sha256": "941217ccb40972066013e2a8f7fbb6696074b0f0db2368e491adcee3e040214d"
+        },
+        {
+          "name": "ELA_GSE126542_resultados_2026-10-28/resultados/INFORME_REANALISIS.md",
+          "bytes": 6080,
+          "sha256": "dd3b57c2e8c0e3da611c0c69b3e4de66187db0df3fb1012d1a318a9c35548b0b"
+        },
+        {
+          "name": "ELA_GSE126542_resultados_2026-10-28/resultados/STMN2_expresion_pareada.png",
+          "bytes": 126526,
+          "sha256": "9830825763bb729cfd193985f9a035d307eaab3e01fc12551fa15cb444dfe476"
+        },
+        {
+          "name": "ELA_GSE126542_resultados_2026-10-28/resultados/TARDBP_expresion_pareada.png",
+          "bytes": 79536,
+          "sha256": "56c363bdc0c9df44b1b4f4893d29c34f6d70c92eab3de10828d574cf8041a0fd"
+        },
+        {
+          "name": "ELA_GSE126542_resultados_2026-10-28/resultados/UNC13A_expresion_pareada.png",
+          "bytes": 100789,
+          "sha256": "c2f9096e9ca7833fc780a66d6151a303371772a38d40b6630afcfe5a812ed803"
+        },
+        {
+          "name": "ELA_GSE126542_resultados_2026-10-28/resultados/auditoria.json",
+          "bytes": 768,
+          "sha256": "e359cfb090b817032fd943d45bb028458e79ed661caf9c8df43548c7b76b0150"
+        },
+        {
+          "name": "ELA_GSE126542_resultados_2026-10-28/resultados/comparacion_tres_genes.png",
+          "bytes": 87148,
+          "sha256": "43454280c10708e03cbf4d7a3d35dde2aeaf89550d3165bb1c0d813f352e57b4"
+        },
+        {
+          "name": "ELA_GSE126542_resultados_2026-10-28/resultados/muestras_y_bibliotecas.csv",
+          "bytes": 921,
+          "sha256": "90f019e0b2b67e76c2f0e4080dcc15d57929b70c768cb3573c7b80790b12801d"
+        },
+        {
+          "name": "ELA_GSE126542_resultados_2026-10-28/resultados/resultados_por_caso.csv",
+          "bytes": 1992,
+          "sha256": "d069da7c892fe127a0baae28d9fa6eaf433502ec0a3b1f4c382c2bab0451fdb1"
+        },
+        {
+          "name": "ELA_GSE126542_resultados_2026-10-28/resultados/resultados_resumen.csv",
+          "bytes": 833,
+          "sha256": "8049793d2d013e1d918528d1efc0d371d71d94645074661420a4f14a1fd26eca"
+        }
+      ]
+    },
+    {
+      "name": "ELA_MEA_simulador_UNC13A_2026-10-29(1).zip",
+      "bytes": 580072,
+      "sha256": "34665193fd4ccb450e5c95c9e1832346c25ef5dbafdcc9dd1cd121c62c9ee36a",
+      "format": "zip",
+      "members": [
+        {
+          "name": "ELA_MEA_simulador_UNC13A_2026-10-29/README.md",
+          "bytes": 5812,
+          "sha256": "5d5ebe5af95e7e56665ba0712a29c71fa5cf45f82542e49e68b23093e5a0382f"
+        },
+        {
+          "name": "ELA_MEA_simulador_UNC13A_2026-10-29/docs/PROTOCOLO_ESTADISTICO_BORRADOR.md",
+          "bytes": 5507,
+          "sha256": "798866d2ad52509cdcefa6fd7b9abffb65c6cca52a92f97ba5b454fc8e23fd2c"
+        },
+        {
+          "name": "ELA_MEA_simulador_UNC13A_2026-10-29/output/INFORME_SINTETICO.md",
+          "bytes": 5142,
+          "sha256": "ab921be1e8fdf71748bd1adedfdaf6a85b9bcdf515db38df6a96acf812697229"
+        },
+        {
+          "name": "ELA_MEA_simulador_UNC13A_2026-10-29/output/comparacion_escenarios.png",
+          "bytes": 54673,
+          "sha256": "b39bf1a4e17dcd24cbab4ede56d31bb50411d2d826cc8b3c46e68970354eddd4"
+        },
+        {
+          "name": "ELA_MEA_simulador_UNC13A_2026-10-29/output/configuracion_simulacion.json",
+          "bytes": 368,
+          "sha256": "ed9a9d2364fec70cc875f43dc8cdbd2fd71c917ee76ac5aa41dd59f641a1b5ad"
+        },
+        {
+          "name": "ELA_MEA_simulador_UNC13A_2026-10-29/output/datos_mea_sinteticos.csv",
+          "bytes": 907725,
+          "sha256": "c8f03ad8e29645c5f0cf5991bcb12d899e6d18d7d1b5ef4ffc84bfec9eab961f"
+        },
+        {
+          "name": "ELA_MEA_simulador_UNC13A_2026-10-29/output/desenlaces_por_pozo.csv",
+          "bytes": 41708,
+          "sha256": "64ab1970055c5dff2c2c5d26c74f0fd07dcb7f00e21ed08f602d00044a1ee9fa"
+        },
+        {
+          "name": "ELA_MEA_simulador_UNC13A_2026-10-29/output/ejecucion_log.txt",
+          "bytes": 895,
+          "sha256": "1d893562c7334c2cd31e630853ecd5e6714d61db5dfd5892a975d633697229e0"
+        },
+        {
+          "name": "ELA_MEA_simulador_UNC13A_2026-10-29/output/elegibilidad_aleatorizacion.csv",
+          "bytes": 26156,
+          "sha256": "2db2fa8a182a71fcca76f74275d29ad3af2d76aba097d182f2ec33434bc6043d"
+        },
+        {
+          "name": "ELA_MEA_simulador_UNC13A_2026-10-29/output/resumen_simulaciones.csv",
+          "bytes": 1140,
+          "sha256": "9632658f98aecbc778fae95d2892b950b20da403a0b668b9ba68a230f7d8ae89"
+        },
+        {
+          "name": "ELA_MEA_simulador_UNC13A_2026-10-29/output/trayectoria_null_effect.png",
+          "bytes": 96231,
+          "sha256": "d6839b4e138d7357cc5caa7a44d26e88966e5eb5a7ae39631b14a787018b823e"
+        },
+        {
+          "name": "ELA_MEA_simulador_UNC13A_2026-10-29/output/trayectoria_protection_only.png",
+          "bytes": 93924,
+          "sha256": "dd3bb13c2c2dbd91d23215640806f69e6a6799031a9efe5dec4443a892c0dff1"
+        },
+        {
+          "name": "ELA_MEA_simulador_UNC13A_2026-10-29/output/trayectoria_recovery.png",
+          "bytes": 95796,
+          "sha256": "c50e01977f56014f85e652164a82e4e9a9377b047e51bac896eb761187da55b4"
+        },
+        {
+          "name": "ELA_MEA_simulador_UNC13A_2026-10-29/output/validacion_importacion/control_calidad.json",
+          "bytes": 330,
+          "sha256": "6e7422927dd2783feda9eae788294728c5a975d89af445359028b0080d0faa02"
+        },
+        {
+          "name": "ELA_MEA_simulador_UNC13A_2026-10-29/output/validacion_importacion/desenlaces_por_pozo.csv",
+          "bytes": 41709,
+          "sha256": "0e3c604b12c362e0d4ae01409bdf9cfcf1ac3ca6d5da61026a193b2898fdf895"
+        },
+        {
+          "name": "ELA_MEA_simulador_UNC13A_2026-10-29/output/validacion_importacion/resumen_descriptivo.csv",
+          "bytes": 1139,
+          "sha256": "799d97e9b6e80d0b06a27ea8d29387f4cf4972e7df99ccfbd497db26d809d71e"
+        },
+        {
+          "name": "ELA_MEA_simulador_UNC13A_2026-10-29/output/validacion_importacion_log.txt",
+          "bytes": 1553,
+          "sha256": "fc48ef41d2588d17f38ea9fff7c3d5bfc2695acbb8205822155381ffd697f9fe"
+        },
+        {
+          "name": "ELA_MEA_simulador_UNC13A_2026-10-29/requirements.txt",
+          "bytes": 54,
+          "sha256": "cefda1ef0def05aa94f8f29d61b5e5c8dcf94ad57883e074ffb40ee71a28be1f"
+        },
+        {
+          "name": "ELA_MEA_simulador_UNC13A_2026-10-29/src/analizar_csv_estandarizado.py",
+          "bytes": 4842,
+          "sha256": "bf52c897c95c4384981ef633d9ed50c38cf91ec3acef7291c94bed6c8334315d"
+        },
+        {
+          "name": "ELA_MEA_simulador_UNC13A_2026-10-29/src/mea_pipeline.py",
+          "bytes": 21202,
+          "sha256": "fefa4709093aaae4cdd4e5d9a58b557f8f92ae25b09cd32c656cb5d902de74e7"
+        },
+        {
+          "name": "ELA_MEA_simulador_UNC13A_2026-10-29/tests/test_design.py",
+          "bytes": 3087,
+          "sha256": "24fb322bce79ed8be5723c70aaa3bb0d58b5d787bc33b48f8c841d889ae73a32"
+        }
+      ]
+    },
+    {
+      "name": "ELA_REANALISIS_05_CIERRE_SPLICING_2026-10-28(1).zip",
+      "bytes": 168064,
+      "sha256": "c9b44386ca8dd2528b4ba1f931027397df762d852a1104384006cd2773045165",
+      "format": "zip",
+      "members": [
+        {
+          "name": "ELA_REANALISIS_05_CIERRE_SPLICING_2026-10-28/INFORME_CIENTIFICO.md",
+          "bytes": 10608,
+          "sha256": "e53ad76be856176ec188aab13e8c025385d1cbecbf30235b4970c46f81c54ad7"
+        },
+        {
+          "name": "ELA_REANALISIS_05_CIERRE_SPLICING_2026-10-28/LEEME.md",
+          "bytes": 999,
+          "sha256": "83342b5a975edb65753c6bc44d2f7c9d4e84ba03d4ef7b77a2870574e792c5dc"
+        },
+        {
+          "name": "ELA_REANALISIS_05_CIERRE_SPLICING_2026-10-28/analizar_dexseq_ela.py",
+          "bytes": 5024,
+          "sha256": "f9ca689414022b9d7fd79c4db0f601269e6bf019be3f9a89e726fa30b733561d"
+        },
+        {
+          "name": "ELA_REANALISIS_05_CIERRE_SPLICING_2026-10-28/resultados/STMN2_fragmentos_ubicacion.png",
+          "bytes": 78644,
+          "sha256": "b0e7eddc7cce7c409dab5f429053272a6d804d42e1b28d9424033cfb43c893be"
+        },
+        {
+          "name": "ELA_REANALISIS_05_CIERRE_SPLICING_2026-10-28/resultados/UNC13A_fragmentos_ubicacion.png",
+          "bytes": 93583,
+          "sha256": "8b5007667f453c25775655207b7977109e2d1496c9f063d83487d07f71e66a5b"
+        },
+        {
+          "name": "ELA_REANALISIS_05_CIERRE_SPLICING_2026-10-28/resultados/auditoria.json",
+          "bytes": 2036,
+          "sha256": "3a01b99992188f6765b7008a328bb69650413d93f5e3d5e03681ada9eaead71e"
+        },
+        {
+          "name": "ELA_REANALISIS_05_CIERRE_SPLICING_2026-10-28/resultados/cobertura_exones_cripticos.csv",
+          "bytes": 557,
+          "sha256": "216951684760c5372132c82ce0c02a4994ec18641bc148d2d29ed7b470f0ac7b"
+        },
+        {
+          "name": "ELA_REANALISIS_05_CIERRE_SPLICING_2026-10-28/resultados/fragmentos_diana_detalle.csv",
+          "bytes": 22715,
+          "sha256": "2171cde569ba55b3e794e357f9dfbaa96aa5b7cb83b3c41bc3d099ee804ab3fb"
+        },
+        {
+          "name": "ELA_REANALISIS_05_CIERRE_SPLICING_2026-10-28/resultados/fragmentos_significativos.csv",
+          "bytes": 1383,
+          "sha256": "14e372b917a3b5f261c68021353c2f3751fc050073894d082eddb261fe06f16f"
+        },
+        {
+          "name": "ELA_REANALISIS_05_CIERRE_SPLICING_2026-10-28/resultados/resumen_genes.csv",
+          "bytes": 184,
+          "sha256": "9b6448eda7d22fec18d1ba00c3568ab3b074def18282dcc0a2da6cfcac03269d"
+        }
+      ]
+    },
+    {
+      "name": "ELA_UNC13A_MEA_simulacion_sensibilidad_2026-10-29(1).zip",
+      "bytes": 1483276,
+      "sha256": "1b9454282a8fec62f171ba3232b9e4516d758a6f599767852a32730515aef04a",
+      "format": "zip",
+      "members": [
+        {
+          "name": "ELA_UNC13A_MEA_sensibilidad_2026-10-29/INFORME_SENSIBILIDAD.md",
+          "bytes": 9166,
+          "sha256": "3c19483b17a9d7bd51d225c0b61c42bfd3fdf82b3b821f44c2736212aad0f9c3"
+        },
+        {
+          "name": "ELA_UNC13A_MEA_sensibilidad_2026-10-29/LEEME.md",
+          "bytes": 1540,
+          "sha256": "dafcf416533dfaf5a6a99eee317d3d6da55a547ffedb9ad75c2a5367db5971b4"
+        },
+        {
+          "name": "ELA_UNC13A_MEA_sensibilidad_2026-10-29/analisis_sensibilidad.py",
+          "bytes": 13575,
+          "sha256": "2b8c1a871ebdd5e733a5d055dfcc5a262fe06f36975f4d54d42bd6a16362b9e9"
+        },
+        {
+          "name": "ELA_UNC13A_MEA_sensibilidad_2026-10-29/consolidar_lotes.py",
+          "bytes": 1894,
+          "sha256": "ab4b57a9cf7eda7c34ef02046322d41c805f140f604b1542c61dac640d0f3fab"
+        },
+        {
+          "name": "ELA_UNC13A_MEA_sensibilidad_2026-10-29/generar_informe.py",
+          "bytes": 12797,
+          "sha256": "ecedff7958bef6398212719ce8703c01923274b016cbca56a35ca0d11c68f276"
+        },
+        {
+          "name": "ELA_UNC13A_MEA_sensibilidad_2026-10-29/lotes/lote1/clasificacion.png",
+          "bytes": 69961,
+          "sha256": "b48793279a04dba18105f44f1266216f801262e798498be5af04fc5557219d2a"
+        },
+        {
+          "name": "ELA_UNC13A_MEA_sensibilidad_2026-10-29/lotes/lote1/comparacion_reglas.png",
+          "bytes": 66960,
+          "sha256": "97beb3824b91315a12cc028c6d32a7a1b77fd10ca0b6d9a2d9de078121863c42"
+        },
+        {
+          "name": "ELA_UNC13A_MEA_sensibilidad_2026-10-29/lotes/lote1/ejecuciones_montecarlo.csv.gz",
+          "bytes": 115841,
+          "sha256": "537bbac00ca58f5c4a749b3b5c67d3ddc53f69337ac4e34a9122132052810738"
+        },
+        {
+          "name": "ELA_UNC13A_MEA_sensibilidad_2026-10-29/lotes/lote1/evidencia.png",
+          "bytes": 71056,
+          "sha256": "b69afe66b6f5bd69b7443b47c4d64ea08bb10392d8bbd51b77ccda303c630702"
+        },
+        {
+          "name": "ELA_UNC13A_MEA_sensibilidad_2026-10-29/lotes/lote1/parametros.json",
+          "bytes": 3181,
+          "sha256": "a7470bdc613344fb474901ae7f847ec322aa4253451f9356d3d9b52b1866d065"
+        },
+        {
+          "name": "ELA_UNC13A_MEA_sensibilidad_2026-10-29/lotes/lote1/resumen_sensibilidad.csv",
+          "bytes": 6974,
+          "sha256": "4ca2455c8929447ecca4c4d0b0b26746a312c1c08f4ca2b0ae33adea04d42e99"
+        },
+        {
+          "name": "ELA_UNC13A_MEA_sensibilidad_2026-10-29/lotes/lote2/clasificacion.png",
+          "bytes": 69986,
+          "sha256": "fa9b97f9d86d94171e882de951a68666e9402dafdce2777e143b8747e17e7af9"
+        },
+        {
+          "name": "ELA_UNC13A_MEA_sensibilidad_2026-10-29/lotes/lote2/comparacion_reglas.png",
+          "bytes": 66956,
+          "sha256": "fe0114af511c7e300eae41c072a28ad336be0a608d5d96cfff4eec8112a4b7da"
+        },
+        {
+          "name": "ELA_UNC13A_MEA_sensibilidad_2026-10-29/lotes/lote2/ejecuciones_montecarlo.csv.gz",
+          "bytes": 116176,
+          "sha256": "60d1ebedc76096ea4606acec0470a7be40bd65e63dfec31cb2867fb2db096f7b"
+        },
+        {
+          "name": "ELA_UNC13A_MEA_sensibilidad_2026-10-29/lotes/lote2/evidencia.png",
+          "bytes": 71063,
+          "sha256": "1fcec818c49d22a6381d5bf3b73ae5e8c533fb98bf639098c0c173d0e6c766c1"
+        },
+        {
+          "name": "ELA_UNC13A_MEA_sensibilidad_2026-10-29/lotes/lote2/parametros.json",
+          "bytes": 3181,
+          "sha256": "c2bfa090f0cc827f2b562300e71ee7071e98879fb8711f29c5fadadd299d0310"
+        },
+        {
+          "name": "ELA_UNC13A_MEA_sensibilidad_2026-10-29/lotes/lote2/resumen_sensibilidad.csv",
+          "bytes": 7102,
+          "sha256": "fc269c0b79faa4a4238f6c77839d9158b97bb520128a1fbdcb7171f9744f2b12"
+        },
+        {
+          "name": "ELA_UNC13A_MEA_sensibilidad_2026-10-29/lotes/lote3/clasificacion.png",
+          "bytes": 70003,
+          "sha256": "cc28f5e43753f3658c2bf71b2d57d1a901a52b36b9457806aa40e59c2c2b2448"
+        },
+        {
+          "name": "ELA_UNC13A_MEA_sensibilidad_2026-10-29/lotes/lote3/comparacion_reglas.png",
+          "bytes": 66954,
+          "sha256": "57b1b70eda982cd038d99aa940822471b9b0773366500f8226a8f24d57f72908"
+        },
+        {
+          "name": "ELA_UNC13A_MEA_sensibilidad_2026-10-29/lotes/lote3/ejecuciones_montecarlo.csv.gz",
+          "bytes": 115997,
+          "sha256": "780732e33f6e0409274df44c2fd2e93affe2f9b67f14eaba731b38a93676043e"
+        },
+        {
+          "name": "ELA_UNC13A_MEA_sensibilidad_2026-10-29/lotes/lote3/evidencia.png",
+          "bytes": 71075,
+          "sha256": "ca37d1dca8882b01e0de9d951f58f178b22fe1a4defcd4d5fc6b268070e71d11"
+        },
+        {
+          "name": "ELA_UNC13A_MEA_sensibilidad_2026-10-29/lotes/lote3/parametros.json",
+          "bytes": 3181,
+          "sha256": "42a25987e669c50d88482a92e0eda8dfa1f7ae9ede945b69815bcfcab26f37d1"
+        },
+        {
+          "name": "ELA_UNC13A_MEA_sensibilidad_2026-10-29/lotes/lote3/resumen_sensibilidad.csv",
+          "bytes": 6949,
+          "sha256": "28b77232565c4df94e51a9b8a0a76510752566d1bf244f73e7f952f5dbbce0e6"
+        },
+        {
+          "name": "ELA_UNC13A_MEA_sensibilidad_2026-10-29/requirements.txt",
+          "bytes": 52,
+          "sha256": "2bb0bf356036acc8420eb84c77a633318a99a6e6aadfda981931220246e49a63"
+        },
+        {
+          "name": "ELA_UNC13A_MEA_sensibilidad_2026-10-29/resultados/clasificacion.png",
+          "bytes": 104869,
+          "sha256": "18b62b449e62f9e4d2626a04582202ee6cc5ec7d48f45f34fc6ec9fbdafa112b"
+        },
+        {
+          "name": "ELA_UNC13A_MEA_sensibilidad_2026-10-29/resultados/comparacion_reglas.png",
+          "bytes": 103344,
+          "sha256": "2465c1a7bf67a3673aa7aae9b9babf349fe2e748c93fc2faaa7cb168df91e49a"
+        },
+        {
+          "name": "ELA_UNC13A_MEA_sensibilidad_2026-10-29/resultados/ejecuciones_montecarlo.csv.gz",
+          "bytes": 331086,
+          "sha256": "fdff6f2f5c29de34e99b2d9977fcc610e04412eef4d14be86431375751e9969f"
+        },
+        {
+          "name": "ELA_UNC13A_MEA_sensibilidad_2026-10-29/resultados/evidencia.png",
+          "bytes": 105781,
+          "sha256": "e5b974871e0f3c488d0cc6088c3bfa471d9f3d2a189ea9b18121f32e0f9c26c6"
+        },
+        {
+          "name": "ELA_UNC13A_MEA_sensibilidad_2026-10-29/resultados/parametros.json",
+          "bytes": 3250,
+          "sha256": "a4235dd2f990aa29a06af5d77fd5a5f2ee1d3009468c0cff5e934134bf0fe784"
+        },
+        {
+          "name": "ELA_UNC13A_MEA_sensibilidad_2026-10-29/resultados/registro_consolidado.json",
+          "bytes": 275,
+          "sha256": "182effda49511790515a80d5e157dae959e2820d019ddda534d260661ddcd80e"
+        },
+        {
+          "name": "ELA_UNC13A_MEA_sensibilidad_2026-10-29/resultados/resumen_sensibilidad.csv",
+          "bytes": 7593,
+          "sha256": "fd44d257e47868d87a7007daa72cb248cd2228de008dc858c595f0b32ca2d090"
+        },
+        {
+          "name": "ELA_UNC13A_MEA_sensibilidad_2026-10-29/test_sensibilidad.py",
+          "bytes": 1618,
+          "sha256": "9a44930b9a9006c5110e4a601039323df49236bd14635dd88f8c78fa0b1699ab"
+        }
+      ]
+    },
+    {
+      "name": "STMN2_propuesta_y_revision(2).pdf",
+      "bytes": 78515,
+      "sha256": "7675b9ddcc49b1e7f34c7cf29c7a80101650dbed70492bc997562cbb8b1615df",
+      "format": "pdf"
+    },
+    {
+      "name": "UNC13A_concept_note_for_Prof_Fratta_2026-10-28(1).pdf",
+      "bytes": 91530,
+      "sha256": "5f6b0ed8bd24b2b41f31a9b8bbbdf8e6ba206a89753807e985cae748414a39dc",
+      "format": "pdf"
+    },
+    {
+      "name": "UNC13A_propuesta_y_antecedentes(2).pdf",
+      "bytes": 75010,
+      "sha256": "5aef9705aca277a999cbe123bb5a20cfd19c9b22b6f5fb71ae33c92c952be27b",
+      "format": "pdf"
+    }
+  ],
+  "cross_package_identical_members": [
+    {
+      "sha256": "7ba525b5760e3af3755384ae286fc05f3fb79c5e5135f5833f7d1b39a322dbba",
+      "locations": [
+        {
+          "package": "ELA_GSE126542_reanalisis_02_splicing_2026-10-28(1).zip",
+          "member": "resultados/cruce_por_caso.csv"
+        },
+        {
+          "package": "ELA_GSE126542_reanalisis_03_genetica_2026-10-28(1).zip",
+          "member": "ELA_GSE126542_reanalisis_03_genetica_2026-10-28/cruce_por_caso_reanalisis_02.csv"
+        }
+      ]
+    },
+    {
+      "sha256": "d069da7c892fe127a0baae28d9fa6eaf433502ec0a3b1f4c382c2bab0451fdb1",
+      "locations": [
+        {
+          "package": "ELA_GSE126542_reanalisis_02_splicing_2026-10-28(1).zip",
+          "member": "resultados_por_caso_v1.csv"
+        },
+        {
+          "package": "ELA_GSE126542_reanalisis_real_2026-10-28(1).zip",
+          "member": "ELA_GSE126542_resultados_2026-10-28/resultados/resultados_por_caso.csv"
+        }
+      ]
+    }
+  ],
+  "errors": []
+}

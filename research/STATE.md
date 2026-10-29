@@ -94,3 +94,10 @@ Inventario estructural GEO completado por primera ejecución de GitHub Actions. 
 - RawData.xlsx verificado por MD5; Figure7 tiene conteos distintos de longitudes24/48 y carece de IDs para enlazar axón/imagen/diferenciación. Dos diferenciaciones según artículo; no transformar nueve etiquetas ni cientos de longitudes en réplicas.
 - Calibración no transferida por igualdad de tamaño; sin efectos biológicos ni p-valores.59pruebas locales pasan. Originales fuera de git.
 - Próximo: suplemento por otra fuente pública e inspección visual de par calibrado, verificar registro/orientación antes de segmentar. Inferencia grupal sigue bloqueada por correspondencia experimental. Rama research/image-metadata-qc-20261029.
+
+## Reconciliación de otros chats antes de continuar
+- Aclaración al usuario: contexto visible y fuentes expresamente consultadas sí; incorporación sistemática de todos los paquetes anteriores, no. No afirmar continuidad completa retrospectiva.
+- reports/prior-work-reconciliation: 8 ZIP + 3 PDF, 114 miembros ZIP, hashes/CRC sin errores; 2 grupos de tablas idénticas entre paquetes confirman reutilización. Informes revisados por secciones y primeras páginas de propuestas; cálculos/scripts recibidos aún no reproducidos.
+- GSE126542 expresión/splicing/genética reutilizan cohorte; DEXSeq GSE121569 no es lectura directa de CE. CAMK2B negativo en catálogo cerebral según informe, todavía sin reproducción aquí. MEA y Monte Carlo son simulaciones, jamás replicación experimental.
+- No copiar datos individuales ni genotipos. El reanálisis04 se menciona en el contexto previo pero no tiene paquete autónomo entre estos11; no declarar importación completa.
+- Las propuestas de rescate tardío ya existían: conservar esa procedencia. Siguiente prioridad antes de imágenes: fuente primaria Chan2026 DOI10.1038/s42003-026-10832-6 y cronología figuras7/8; alternativa segura cotejo estructural CAMK2B agregado con GTF públicos. Rama research/prior-chat-reconciliation-20261029, dependiente de PR10.

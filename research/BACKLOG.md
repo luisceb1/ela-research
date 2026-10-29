@@ -43,3 +43,8 @@ Aceptado Keuss: lectura resuelta con copia aportada; MEA con KD tardío no es AS
 P1 reversibilidad: cronología PNAS2025 y ficha conceptual completadas; reports/reversal-design. Próximo inventario Zenodo15346391/unidad experimental y modelo humano2026. Búsqueda dirigida no demuestra ausencia universal de rescate diferido. Sin ejecución de laboratorio ni contacto.
 
 P1 imagen: auditoría TIFF/hoja realizada, reports/image-metadata-qc. Solo4/27calibrados; independencia y enlace longitudinal no resueltos. Próximo suplemento alternativo e inspección visual de par calibrado; no inferencia grupal ni valores físicos imputados a23archivos.
+
+## Ajuste por trabajo de otros chats (29/10/2026)
+Prioridad de continuidad: consultar reports/prior-work-reconciliation antes de abrir otra línea. Once paquetes inventariados; revisión documental inicial, no reproducción de sus cálculos. No repetir GSE126542/DEXSeq como descubrimiento ni usar MEA artificial como evidencia biológica. No importar tablas individuales/genotipos.
+
+Próximo: auditar Chan2026 DOI10.1038/s42003-026-10832-6, figuras7/8 y tratamiento respecto a déficit/lesión, ya citado en las propuestas antiguas. Si falla acceso, contraste estructural agregado CAMK2B con GTF públicos cacheados. Imagen Zenodo permanece pendiente después de resolver esta continuidad; no descartada. Paquete04 autónomo no disponible entre estos archivos: localizar solo si hace falta reproducir ese análisis. Los scripts recibidos requieren lectura y reproducción antes de atribuirles controles locales.
