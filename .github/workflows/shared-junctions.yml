@@ -1,0 +1,53 @@
+name: Cross-dataset junction audit
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/shared-junctions.yml'
+      - 'scripts/audit_shared_junctions.py'
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Download four public GEO inputs
+        run: |
+          mkdir -p inputs outputs
+          python - <<'PY'
+          from pathlib import Path
+          import urllib.request,time
+          files=[
+          ('GSE310nnn/GSE310723/suppl/','GSE310723_i3N_isoseq_uniqueCounts_transcript.txt.gz'),
+          ('GSE310nnn/GSE310723/suppl/','GSE310723_i3N_isoseq_extended_annotations.gtf.gz'),
+          ('GSE315nnn/GSE315972/suppl/','GSE315972_NYGC_isoseq_uniqueCounts_transcript.txt.gz'),
+          ('GSE315nnn/GSE315972/suppl/','GSE315972_NYGC_isoseq_extended_annotations.gtf.gz')]
+          for prefix,name in files:
+            for i in range(3):
+              try:
+                urllib.request.urlretrieve('https://ftp.ncbi.nlm.nih.gov/geo/series/'+prefix+name,Path('inputs')/name)
+                break
+              except Exception:
+                if i==2:raise
+                time.sleep(3*(i+1))
+          PY
+          sha256sum inputs/* > outputs/sha256.txt
+      - name: Independently reconstruct junctions
+        run: |
+          python scripts/audit_shared_junctions.py \
+            --culture-counts inputs/GSE310723_i3N_isoseq_uniqueCounts_transcript.txt.gz \
+            --culture-gtf inputs/GSE310723_i3N_isoseq_extended_annotations.gtf.gz \
+            --brain-counts inputs/GSE315972_NYGC_isoseq_uniqueCounts_transcript.txt.gz \
+            --brain-gtf inputs/GSE315972_NYGC_isoseq_extended_annotations.gtf.gz \
+            --out outputs/
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: cross-dataset-junction-audit
+          path: outputs/
+          retention-days: 30
