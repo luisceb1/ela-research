@@ -1,5 +1,7 @@
 # Auditoría independiente de uniones compartidas — 2026-10-29
 
+**Actualización posterior:** reports/junction-filter-reconciliation recupera el ZIP y explica21/1910por pérdida de exones en el parser consecutivo antiguo; no solo por filtros. Reproduce1910de catálogo y1901con soporte positivo. Mantener el texto siguiente como registro histórico; agrupación clínica corregida en reports/ALS_CI_metadata_correction_2026-10-29.md.
+
 **Fuente:** GitHub Actions [run 40870655234](https://github.com/luisceb1/ela-research/actions/runs/40870655234), artifact id `12895277869`, ejecución completa con código `scripts/audit_shared_junctions.py` sobre 4 ficheros GEO.
 
 ## Resultados reproducidos en esta ejecución

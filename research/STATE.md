@@ -33,7 +33,7 @@ Inventario estructural y mapeo por IDs de genes ejecutados en GitHub Actions. El
 - MAP6D1 y ZNF317 no son candidatos de alta prioridad con la evidencia actual. El primer conjunto presenta un problema de ausencia de cobertura en controles; el segundo no reproduce inducción en i3N tras reducción de TDP-43.
 - Informes previos sobre péptidos crípticos, CAMK2B, MEA y auditoría Keuss/Chan están sintetizados en `research/AUDIT_2026-10-29.md`.
 - El primer run de mapeo40868865843 produjo0objetivos por dependencia de gene_name; el posterior40870066862 ya recuperó11/10por ENSG con GTF reales. Este estado sustituye la nota histórica de que el mapeo real no se había ejecutado; issue19 documenta el incidente original.
-- Bloqueo histórico de aquel entorno: no se pudieron materializar archivos antiguos ni resolver el FTP GEO. La reproducción actual dispone de los cuatro archivos GEO y GENCODEv47 verificados por hash en caché; eso no resuelve todavía el acceso al ZIP original del cribado de21uniones.
+- Bloqueo histórico de aquel entorno: no se pudieron materializar archivos antiguos ni resolver el FTP GEO. Ahora están verificados los cuatro GEO y GENCODEv47; también se recuperó el ZIP original de21uniones, identificado en reports/junction-filter-reconciliation/source_inventory.json.
 - Prioridad de investigación: verificar y reproducir el cribado negativo existente, en lugar de repetirlo como investigación nueva. Se mantiene propuesta condicional de estudio UNC13A posterior a déficit funcional documentado, pendiente de laboratorio.
 
 ## Actualización científica: 29-10-2026 — AGRN/CAMK2B y control de calidad
@@ -41,10 +41,17 @@ Inventario estructural y mapeo por IDs de genes ejecutados en GitHub Actions. El
 - Nuevo informe: `reports/ALS_CI_metadata_correction_2026-10-29.md`; clasificación ALS-CI n=3, ALS-nonCI n=3 y controles n=2 por GSM/donante.
 - Revisión de literatura dirigida: `research/AGRN_CAMK2B_EVIDENCE_2026-10-29.md`. AGRN y CAMK2B tienen antecedentes de eventos crípticos y péptidos; no candidatos nuevos descubiertos aquí.
 - AGRN priorizada solo como **pregunta funcional de la unión neuromuscular** por testar; CAMK2B requiere auditoría isoforma-específica. UNC13A conserva la propuesta funcional posdéficit.
-- Bloqueo pendiente: acceso al ZIP original del cribado de 21 uniones y reproducción exacta de filtros; no fusionar 21 y 1910 como si provinieran del mismo algoritmo.
+- Discrepancia21/1910resuelta en reports/junction-filter-reconciliation: parser consecutivo original pierde exones y referenciasENST. Su lista21no es cribado exhaustivo válido. El catálogo agrupado reproduce1910, con1901de soporte positivo; no equivale a novedad o validación biológica.
 
 ## Reconciliación técnica con ramas de investigación — issue19
 - Corrección ENSG ya existente confirmada en logs y reproducción local:392871/401720TXNAME enlazados,11/10objetivos; STMN2=4/3yUNC13A=7/7. gene_name ausente en todos los TXNAME de ambas matrices; no ausencia biológica.
 - Panel GENCODEv47 fijado por hash y recontrastado. Nuevos controles de selección positiva/identidad/valores; test sin gene_name ahora se descubre; fallo explícito y escritura atómica ante salida inválida.16tests de este main pasan; no son la suite85de la ramaMEA.
 - TSV iguales a la selección de main anterior y concordantes con IDs/exones/sumas de PR4. No fusionar estados ni omitir informes de PR3–13/#22, que continúan pendientes.
 - Siguiente: issue20, ZIP original y filtros21vs1910, con metadatos publicados ya corregidos en main. Sin nueva inferencia biológica, cierre automático de issues o merge.
+
+## Issue20: fuente recuperada y causa estructural reproducida
+- ZIP15185bytes/SHA25673edc0006287f355001f968ce12f54d38a148535c05f7195f2db83e636215393; siete miembros verificados. Se reproducen21claves exactas con funciones originales, sin exportar cuentas por persona.
+-9403/16321modelos Bambu ENSG presentan varios bloques de exones; el parser original sobrescribe bloques y solo conserva278/682modelos con unión, frente a9527/16633agrupando todos sus exones. No es principalmente un filtro de expresión.
+- Catálogo noENST compartido1910(1255genes); soporte positivo en ambas series1901(1250genes). De21antiguas,18permanecen y3sí están en referenciasENSTinternas. Excluir cuentas0solo elimina9del catálogo, no explica21.
+- Proyección segura21claves y cuatro funciones por hash permiten repetir desde GitHub+GEO sin ZIPprivado; el JSON distingue verificación opcional del original.20tests en esta rama. No pvalores, traducción, novedad ni evidencia terapéutica.
+- Siguiente: GENCODEv47completa/catálogo publicado de origen para1901claves, antes de priorizarAGRN(#21)u otras dianas. #19/#20pendientes de revisión, sin cierre/merge automático.

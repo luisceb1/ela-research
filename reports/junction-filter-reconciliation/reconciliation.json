@@ -1,0 +1,65 @@
+{
+  "comparison": {
+    "catalog_only_count": 1892,
+    "legacy_keys_equal_packaged_keys": true,
+    "packaged_in_grouped_catalog_after_ENST": 18,
+    "packaged_in_grouped_positive_after_ENST": 18,
+    "packaged_in_grouped_reference": 3,
+    "packaged_in_legacy_reference": 0,
+    "packaged_not_a_grouped_Bambu_intersection": 0,
+    "positive_filter_removed_from_1910_catalog": 9
+  },
+  "datasets": {
+    "GSE310723": {
+      "Bambu_count_rows": 10347,
+      "Bambu_models_with_multiple_exon_runs": 9403,
+      "Bambu_positive_sum_rows": 10258,
+      "grouped_catalog_junctions": 53964,
+      "grouped_models_with_junctions": 9527,
+      "grouped_positive_junctions": 53929,
+      "legacy_models_with_junctions": 278,
+      "legacy_parser_counters_per_run_not_unique_transcript": {
+        "bambu_annotated": 9527,
+        "bambu_without_ensg": 1222,
+        "lines": 2625448
+      },
+      "legacy_positive_junctions": 298
+    },
+    "GSE315972": {
+      "Bambu_count_rows": 19196,
+      "Bambu_models_with_multiple_exon_runs": 16321,
+      "Bambu_positive_sum_rows": 18912,
+      "grouped_catalog_junctions": 66653,
+      "grouped_models_with_junctions": 16633,
+      "grouped_positive_junctions": 66538,
+      "legacy_models_with_junctions": 682,
+      "legacy_parser_counters_per_run_not_unique_transcript": {
+        "bambu_annotated": 16633,
+        "bambu_without_ensg": 3940,
+        "lines": 2668646
+      },
+      "legacy_positive_junctions": 771
+    }
+  },
+  "gene_counts": {
+    "grouped_catalog_after_ENST": 1255,
+    "grouped_positive_after_ENST": 1250,
+    "packaged": 20
+  },
+  "individual_counts_exported": false,
+  "legacy_source_excerpts_verified": 4,
+  "original_zip_verified_this_run": false,
+  "pvalues_computed": false,
+  "safe_projection_verified": true,
+  "scope": "structural/QC reconciliation, not clinical or biological inference",
+  "source_zip_sha256": "73edc0006287f355001f968ce12f54d38a148535c05f7195f2db83e636215393",
+  "stages": {
+    "grouped_shared_after_ENST": 1910,
+    "grouped_shared_before_ENST": 21715,
+    "legacy_positive_shared_after_ENST": 21,
+    "legacy_positive_shared_before_ENST": 21,
+    "packaged_shared": 21,
+    "positive_shared_after_ENST": 1901,
+    "positive_shared_before_ENST": 21673
+  }
+}
