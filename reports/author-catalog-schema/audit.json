@@ -1,0 +1,980 @@
+{
+  "supplements": [
+    {
+      "file": "media-1.docx",
+      "ids": [
+        "SD1",
+        "db_ds_supplementary-material1_reqid_"
+      ],
+      "callouts": [],
+      "table": "index",
+      "purpose": "Índice de tablas; sin valores por persona",
+      "scope": "legend_index_only",
+      "mapping_evidence": "DOCX table legends and XML xref/rid; S9 range S8–9 in P21; not media-number inference"
+    },
+    {
+      "file": "media-2.xlsx",
+      "ids": [
+        "SD2",
+        "db_ds_supplementary-material2_reqid_"
+      ],
+      "callouts": [
+        {
+          "paragraph": "P10",
+          "rid": "SD2",
+          "label": "supplemental tables S1A"
+        },
+        {
+          "paragraph": "P10",
+          "rid": "SD2",
+          "label": "C"
+        }
+      ],
+      "table": "S1",
+      "purpose": "Expresión diferencial corta en cultivos",
+      "scope": "not_downloaded",
+      "mapping_evidence": "DOCX table legends and XML xref/rid; S9 range S8–9 in P21; not media-number inference"
+    },
+    {
+      "file": "media-3.xlsx",
+      "ids": [
+        "SD3",
+        "db_ds_supplementary-material3_reqid_"
+      ],
+      "callouts": [
+        {
+          "paragraph": "P11",
+          "rid": "SD3",
+          "label": "supplemental table S2A"
+        }
+      ],
+      "table": "S2",
+      "purpose": "Splicing corto LeafCutter en cultivos",
+      "scope": "not_downloaded",
+      "mapping_evidence": "DOCX table legends and XML xref/rid; S9 range S8–9 in P21; not media-number inference"
+    },
+    {
+      "file": "media-4.xlsx",
+      "ids": [
+        "SD4",
+        "db_ds_supplementary-material4_reqid_"
+      ],
+      "callouts": [
+        {
+          "paragraph": "P11",
+          "rid": "SD4",
+          "label": "Supplemental Table S3"
+        }
+      ],
+      "table": "S3",
+      "purpose": "Comparación de uniones con estudio previo",
+      "scope": "not_downloaded",
+      "mapping_evidence": "DOCX table legends and XML xref/rid; S9 range S8–9 in P21; not media-number inference"
+    },
+    {
+      "file": "media-5.xlsx",
+      "ids": [
+        "SD5",
+        "db_ds_supplementary-material5_reqid_"
+      ],
+      "callouts": [
+        {
+          "paragraph": "P14",
+          "rid": "SD5",
+          "label": "supplemental tables S4A"
+        },
+        {
+          "paragraph": "P14",
+          "rid": "SD5",
+          "label": "B"
+        },
+        {
+          "paragraph": "P15",
+          "rid": "SD5",
+          "label": "supplemental table S4B"
+        },
+        {
+          "paragraph": "P26",
+          "rid": "SD5",
+          "label": "supplemental tables S4A"
+        },
+        {
+          "paragraph": "P26",
+          "rid": "SD5",
+          "label": "supplemental tables S4B"
+        }
+      ],
+      "table": "S4",
+      "purpose": "Resumen y anotación Bambu de cultivo",
+      "scope": "not_downloaded",
+      "mapping_evidence": "DOCX table legends and XML xref/rid; S9 range S8–9 in P21; not media-number inference"
+    },
+    {
+      "file": "media-6.xlsx",
+      "ids": [
+        "SD6",
+        "db_ds_supplementary-material6_reqid_"
+      ],
+      "callouts": [
+        {
+          "paragraph": "P16",
+          "rid": "SD6",
+          "label": "Supplemental Table S5"
+        }
+      ],
+      "table": "S5",
+      "purpose": "Uniones publicadas y presencia en cultivos",
+      "scope": "header_only",
+      "mapping_evidence": "DOCX table legends and XML xref/rid; S9 range S8–9 in P21; not media-number inference"
+    },
+    {
+      "file": "media-7.xlsx",
+      "ids": [
+        "SD7",
+        "db_ds_supplementary-material7_reqid_"
+      ],
+      "callouts": [
+        {
+          "paragraph": "P18",
+          "rid": "SD7",
+          "label": "supplemental table S6A"
+        },
+        {
+          "paragraph": "P18",
+          "rid": "SD7",
+          "label": "D"
+        }
+      ],
+      "table": "S6",
+      "purpose": "Transcritos TE independientes en cultivo",
+      "scope": "not_downloaded",
+      "mapping_evidence": "DOCX table legends and XML xref/rid; S9 range S8–9 in P21; not media-number inference"
+    },
+    {
+      "file": "media-8.xlsx",
+      "ids": [
+        "SD8",
+        "db_ds_supplementary-material8_reqid_"
+      ],
+      "callouts": [
+        {
+          "paragraph": "P21",
+          "rid": "SD8",
+          "label": "supplemental table S7"
+        },
+        {
+          "paragraph": "P21",
+          "rid": "SD8",
+          "label": "supplemental table S7"
+        }
+      ],
+      "table": "S7",
+      "purpose": "Catálogo TE de cultivo con bloques de exones",
+      "scope": "culture_structural_qc",
+      "mapping_evidence": "DOCX table legends and XML xref/rid; S9 range S8–9 in P21; not media-number inference"
+    },
+    {
+      "file": "media-9.xlsx",
+      "ids": [
+        "SD9",
+        "db_ds_supplementary-material9_reqid_"
+      ],
+      "callouts": [
+        {
+          "paragraph": "P21",
+          "rid": "SD9",
+          "label": "supplemental tables S8"
+        }
+      ],
+      "table": "S8",
+      "purpose": "Catálogo noTE de cultivo con uniones etiquetadas",
+      "scope": "culture_structural_qc",
+      "mapping_evidence": "DOCX table legends and XML xref/rid; S9 range S8–9 in P21; not media-number inference"
+    },
+    {
+      "file": "media-10.xlsx",
+      "ids": [
+        "SD10",
+        "db_ds_supplementary-material10_reqid_"
+      ],
+      "callouts": [
+        {
+          "paragraph": "P21",
+          "rid": "SD10",
+          "label": "9"
+        }
+      ],
+      "table": "S9",
+      "purpose": "Fusiones entre genes sin TE",
+      "scope": "not_downloaded",
+      "mapping_evidence": "DOCX table legends and XML xref/rid; S9 range S8–9 in P21; not media-number inference"
+    },
+    {
+      "file": "media-11.xlsx",
+      "ids": [
+        "SD11",
+        "db_ds_supplementary-material11_reqid_"
+      ],
+      "callouts": [
+        {
+          "paragraph": "P22",
+          "rid": "SD11",
+          "label": "supplemental table S10"
+        }
+      ],
+      "table": "S10",
+      "purpose": "Predicción NMD, no medición de proteína",
+      "scope": "not_downloaded",
+      "mapping_evidence": "DOCX table legends and XML xref/rid; S9 range S8–9 in P21; not media-number inference"
+    },
+    {
+      "file": "media-12.xlsx",
+      "ids": [
+        "SD12",
+        "db_ds_supplementary-material12_reqid_"
+      ],
+      "callouts": [
+        {
+          "paragraph": "P23",
+          "rid": "SD12",
+          "label": "Supplemental table S11"
+        }
+      ],
+      "table": "S11",
+      "purpose": "Proteínas predichas, no validación proteómica",
+      "scope": "not_downloaded",
+      "mapping_evidence": "DOCX table legends and XML xref/rid; S9 range S8–9 in P21; not media-number inference"
+    },
+    {
+      "file": "media-13.xlsx",
+      "ids": [
+        "SD13",
+        "db_ds_supplementary-material13_reqid_"
+      ],
+      "callouts": [
+        {
+          "paragraph": "P26",
+          "rid": "SD13",
+          "label": "supplemental table S12"
+        }
+      ],
+      "table": "S12",
+      "purpose": "Metadatos clínicos individuales: excluido",
+      "scope": "excluded_clinical_individual_metadata",
+      "mapping_evidence": "DOCX table legends and XML xref/rid; S9 range S8–9 in P21; not media-number inference"
+    },
+    {
+      "file": "media-14.xlsx",
+      "ids": [
+        "SD14",
+        "db_ds_supplementary-material14_reqid_"
+      ],
+      "callouts": [
+        {
+          "paragraph": "P26",
+          "rid": "SD14",
+          "label": "S13A"
+        },
+        {
+          "paragraph": "P26",
+          "rid": "SD14",
+          "label": "S13B"
+        },
+        {
+          "paragraph": "P26",
+          "rid": "SD14",
+          "label": "supplemental table S13C"
+        }
+      ],
+      "table": "S13",
+      "purpose": "Resumen, anotación y contraste de tejido",
+      "scope": "not_downloaded",
+      "mapping_evidence": "DOCX table legends and XML xref/rid; S9 range S8–9 in P21; not media-number inference"
+    },
+    {
+      "file": "media-15.xlsx",
+      "ids": [
+        "SD15",
+        "db_ds_supplementary-material15_reqid_"
+      ],
+      "callouts": [
+        {
+          "paragraph": "P27",
+          "rid": "SD15",
+          "label": "supplemental table S14"
+        }
+      ],
+      "table": "S14",
+      "purpose": "Catálogos TE por muestra de tejido; no descargado",
+      "scope": "not_downloaded",
+      "mapping_evidence": "DOCX table legends and XML xref/rid; S9 range S8–9 in P21; not media-number inference"
+    },
+    {
+      "file": "media-16.xlsx",
+      "ids": [
+        "SD16",
+        "db_ds_supplementary-material16_reqid_"
+      ],
+      "callouts": [
+        {
+          "paragraph": "P28",
+          "rid": "SD16",
+          "label": "supplemental table S15"
+        }
+      ],
+      "table": "S15",
+      "purpose": "Eventos compartidos con IDs y extremos de transcritos",
+      "scope": "header_only",
+      "mapping_evidence": "DOCX table legends and XML xref/rid; S9 range S8–9 in P21; not media-number inference"
+    },
+    {
+      "file": "media-17.xlsx",
+      "ids": [
+        "SD17",
+        "db_ds_supplementary-material17_reqid_"
+      ],
+      "callouts": [
+        {
+          "paragraph": "P34",
+          "rid": "SD17",
+          "label": "supplemental table S16"
+        }
+      ],
+      "table": "S16",
+      "purpose": "Enriquecimiento de conjuntos de genes",
+      "scope": "not_downloaded",
+      "mapping_evidence": "DOCX table legends and XML xref/rid; S9 range S8–9 in P21; not media-number inference"
+    }
+  ],
+  "legend_table_ids": [
+    "S1A",
+    "S1B",
+    "S1C",
+    "S2A",
+    "S2B",
+    "S2C",
+    "S3",
+    "S4A",
+    "S4B",
+    "S5",
+    "S6A",
+    "S6B",
+    "S6C",
+    "S6D",
+    "S7A",
+    "S7B",
+    "S7C",
+    "S7D",
+    "S8A",
+    "S8B",
+    "S8C",
+    "S8D",
+    "S9A",
+    "S9B",
+    "S9C",
+    "S9D",
+    "S10",
+    "S11",
+    "S12",
+    "S13A",
+    "S13B",
+    "S13C",
+    "S14A",
+    "S14B",
+    "S14C",
+    "S14D",
+    "S14E",
+    "S14F",
+    "S14G",
+    "S14H",
+    "S15",
+    "S16"
+  ],
+  "schemas": {
+    "media-6.xlsx": [
+      {
+        "sheet": "S5",
+        "title_table_id": "S5",
+        "title_disagrees_with_sheet": false,
+        "headers_by_column": {
+          "A": "Intron",
+          "B": "Publication",
+          "C": "5-Aza treated & TDP-43 KD",
+          "D": "TDP-43 KD",
+          "E": "5-Aza treated",
+          "F": "Control",
+          "G": "Absent",
+          "I": "Ma et al 2022",
+          "J": "[formula not evaluated]",
+          "K": "[formula not evaluated]",
+          "L": "[formula not evaluated]",
+          "M": "[formula not evaluated]",
+          "N": "[formula not evaluated]",
+          "O": "[formula not evaluated]"
+        },
+        "duplicate_headers": [],
+        "formula_header_cells_not_evaluated": [
+          "J2",
+          "K2",
+          "L2",
+          "M2",
+          "N2",
+          "O2"
+        ]
+      }
+    ],
+    "media-8.xlsx": [
+      {
+        "sheet": "S7A",
+        "title_table_id": "S7A",
+        "title_disagrees_with_sheet": false,
+        "headers_by_column": {
+          "A": "Chromosome",
+          "B": "Start",
+          "C": "End",
+          "D": "Name",
+          "E": "Score",
+          "F": "Strand",
+          "G": "ThickStart",
+          "H": "ThickEnd",
+          "I": "RGB",
+          "J": "ExonNum",
+          "K": "ExonLengths",
+          "L": "ExonStarts",
+          "M": "Gene",
+          "N": "TE",
+          "O": "CryptTE type"
+        },
+        "duplicate_headers": [],
+        "formula_header_cells_not_evaluated": []
+      },
+      {
+        "sheet": "S7B",
+        "title_table_id": "S7B",
+        "title_disagrees_with_sheet": false,
+        "headers_by_column": {
+          "A": "Chromosome",
+          "B": "Start",
+          "C": "End",
+          "D": "Name",
+          "E": "Score",
+          "F": "Strand",
+          "G": "ThickStart",
+          "H": "ThickEnd",
+          "I": "RGB",
+          "J": "ExonNum",
+          "K": "ExonLengths",
+          "L": "ExonStarts",
+          "M": "Gene",
+          "N": "TE",
+          "O": "CryptTE type"
+        },
+        "duplicate_headers": [],
+        "formula_header_cells_not_evaluated": []
+      },
+      {
+        "sheet": "S7C",
+        "title_table_id": "S7C",
+        "title_disagrees_with_sheet": false,
+        "headers_by_column": {
+          "A": "Chromosome",
+          "B": "Start",
+          "C": "End",
+          "D": "Name",
+          "E": "Score",
+          "F": "Strand",
+          "G": "ThickStart",
+          "H": "ThickEnd",
+          "I": "RGB",
+          "J": "ExonNum",
+          "K": "ExonLengths",
+          "L": "ExonStarts",
+          "M": "Gene",
+          "N": "TE",
+          "O": "CryptTE type"
+        },
+        "duplicate_headers": [],
+        "formula_header_cells_not_evaluated": []
+      },
+      {
+        "sheet": "S7D",
+        "title_table_id": "S7C",
+        "title_disagrees_with_sheet": true,
+        "headers_by_column": {
+          "A": "Chromosome",
+          "B": "Start",
+          "C": "End",
+          "D": "Name",
+          "E": "Score",
+          "F": "Strand",
+          "G": "ThickStart",
+          "H": "ThickEnd",
+          "I": "RGB",
+          "J": "ExonNum",
+          "K": "ExonLengths",
+          "L": "ExonStarts",
+          "M": "Gene",
+          "N": "TE",
+          "O": "CryptTE type"
+        },
+        "duplicate_headers": [],
+        "formula_header_cells_not_evaluated": []
+      }
+    ],
+    "media-9.xlsx": [
+      {
+        "sheet": "S8A",
+        "title_table_id": "S8A",
+        "title_disagrees_with_sheet": false,
+        "headers_by_column": {
+          "A": "Chromosome",
+          "B": "Start",
+          "C": "End",
+          "D": "Name",
+          "E": "Score",
+          "F": "Strand",
+          "G": "ThickStart",
+          "H": "ThickEnd",
+          "I": "RGB",
+          "J": "ExonNum",
+          "K": "ExonLengths",
+          "L": "ExonStarts",
+          "M": "Gene",
+          "N": "Cryptic intron(s)",
+          "O": "Type"
+        },
+        "duplicate_headers": [],
+        "formula_header_cells_not_evaluated": []
+      },
+      {
+        "sheet": "S8B",
+        "title_table_id": "S8B",
+        "title_disagrees_with_sheet": false,
+        "headers_by_column": {
+          "A": "Chromosome",
+          "B": "Start",
+          "C": "End",
+          "D": "Name",
+          "E": "Score",
+          "F": "Strand",
+          "G": "ThickStart",
+          "H": "ThickEnd",
+          "I": "RGB",
+          "J": "ExonNum",
+          "K": "ExonLengths",
+          "L": "ExonStarts",
+          "M": "Gene",
+          "N": "TE",
+          "O": "CryptTE type"
+        },
+        "duplicate_headers": [],
+        "formula_header_cells_not_evaluated": []
+      },
+      {
+        "sheet": "S8C",
+        "title_table_id": "S8C",
+        "title_disagrees_with_sheet": false,
+        "headers_by_column": {
+          "A": "Chromosome",
+          "B": "Start",
+          "C": "End",
+          "D": "Name",
+          "E": "Score",
+          "F": "Strand",
+          "G": "ThickStart",
+          "H": "ThickEnd",
+          "I": "RGB",
+          "J": "ExonNum",
+          "K": "ExonLengths",
+          "L": "ExonStarts",
+          "M": "Gene",
+          "N": "TE",
+          "O": "CryptTE type"
+        },
+        "duplicate_headers": [],
+        "formula_header_cells_not_evaluated": []
+      },
+      {
+        "sheet": "S8D",
+        "title_table_id": "S8D",
+        "title_disagrees_with_sheet": false,
+        "headers_by_column": {
+          "A": "Chromosome",
+          "B": "Start",
+          "C": "End",
+          "D": "Name",
+          "E": "Score",
+          "F": "Strand",
+          "G": "ThickStart",
+          "H": "ThickEnd",
+          "I": "RGB",
+          "J": "ExonNum",
+          "K": "ExonLengths",
+          "L": "ExonStarts",
+          "M": "Gene",
+          "N": "Cryptic intron(s)",
+          "O": "Type"
+        },
+        "duplicate_headers": [],
+        "formula_header_cells_not_evaluated": []
+      }
+    ],
+    "media-16.xlsx": [
+      {
+        "sheet": "S15",
+        "title_table_id": "S15",
+        "title_disagrees_with_sheet": false,
+        "headers_by_column": {
+          "A": "CrypTE Event",
+          "B": "Patient",
+          "C": "Gene",
+          "D": "TE",
+          "E": "Strand",
+          "F": "Chromosome",
+          "G": "Transcript 1 ID",
+          "H": "Transcript 1 Start",
+          "I": "Transcript 1 End",
+          "J": "Transcript 2 ID",
+          "K": "Transcript 1 Start",
+          "L": "Transcript 2 End",
+          "M": "Transcript 3 ID",
+          "N": "Transcript 3 Start",
+          "O": "Transcript 3 End",
+          "P": "Transcript 4 ID",
+          "Q": "Transcript 4 Start",
+          "R": "Transcript 4 End"
+        },
+        "duplicate_headers": [
+          "Transcript 1 Start"
+        ],
+        "formula_header_cells_not_evaluated": []
+      }
+    ]
+  },
+  "culture_structure_qc": {
+    "media-8.xlsx": [
+      {
+        "sheet": "S7A",
+        "counts": {
+          "rows": 73819,
+          "valid_block_rows": 67930,
+          "valid_without_intron_rows": 62464,
+          "valid_spliced_rows": 5466,
+          "invalid_block_rows": 5889
+        },
+        "invalid_reasons": {
+          "block_count_mismatch": 5558,
+          "noninteger": 326,
+          "nonpositive_block": 5
+        },
+        "invalid_row_examples": [
+          {
+            "sheet_row": 17,
+            "reason": "block_count_mismatch"
+          },
+          {
+            "sheet_row": 42,
+            "reason": "noninteger"
+          },
+          {
+            "sheet_row": 44,
+            "reason": "block_count_mismatch"
+          },
+          {
+            "sheet_row": 63,
+            "reason": "block_count_mismatch"
+          },
+          {
+            "sheet_row": 76,
+            "reason": "block_count_mismatch"
+          }
+        ],
+        "invalid_rows_repaired": false
+      },
+      {
+        "sheet": "S7B",
+        "counts": {
+          "rows": 184918,
+          "valid_block_rows": 174326,
+          "valid_without_intron_rows": 167700,
+          "valid_spliced_rows": 6626,
+          "invalid_block_rows": 10592
+        },
+        "invalid_reasons": {
+          "block_count_mismatch": 10142,
+          "noninteger": 435,
+          "nonpositive_block": 15
+        },
+        "invalid_row_examples": [
+          {
+            "sheet_row": 25,
+            "reason": "block_count_mismatch"
+          },
+          {
+            "sheet_row": 30,
+            "reason": "block_count_mismatch"
+          },
+          {
+            "sheet_row": 71,
+            "reason": "block_count_mismatch"
+          },
+          {
+            "sheet_row": 72,
+            "reason": "block_count_mismatch"
+          },
+          {
+            "sheet_row": 81,
+            "reason": "block_count_mismatch"
+          }
+        ],
+        "invalid_rows_repaired": false
+      },
+      {
+        "sheet": "S7C",
+        "counts": {
+          "rows": 59051,
+          "valid_block_rows": 54862,
+          "valid_without_intron_rows": 50588,
+          "valid_spliced_rows": 4274,
+          "invalid_block_rows": 4189
+        },
+        "invalid_reasons": {
+          "block_count_mismatch": 3931,
+          "noninteger": 255,
+          "nonpositive_block": 3
+        },
+        "invalid_row_examples": [
+          {
+            "sheet_row": 22,
+            "reason": "block_count_mismatch"
+          },
+          {
+            "sheet_row": 30,
+            "reason": "block_count_mismatch"
+          },
+          {
+            "sheet_row": 35,
+            "reason": "noninteger"
+          },
+          {
+            "sheet_row": 44,
+            "reason": "block_count_mismatch"
+          },
+          {
+            "sheet_row": 87,
+            "reason": "block_count_mismatch"
+          }
+        ],
+        "invalid_rows_repaired": false
+      },
+      {
+        "sheet": "S7D",
+        "counts": {
+          "rows": 131030,
+          "valid_block_rows": 124885,
+          "valid_without_intron_rows": 120229,
+          "valid_spliced_rows": 4656,
+          "invalid_block_rows": 6145
+        },
+        "invalid_reasons": {
+          "block_count_mismatch": 5864,
+          "noninteger": 271,
+          "nonpositive_block": 10
+        },
+        "invalid_row_examples": [
+          {
+            "sheet_row": 75,
+            "reason": "block_count_mismatch"
+          },
+          {
+            "sheet_row": 81,
+            "reason": "block_count_mismatch"
+          },
+          {
+            "sheet_row": 82,
+            "reason": "block_count_mismatch"
+          },
+          {
+            "sheet_row": 142,
+            "reason": "block_count_mismatch"
+          },
+          {
+            "sheet_row": 215,
+            "reason": "block_count_mismatch"
+          }
+        ],
+        "invalid_rows_repaired": false
+      }
+    ],
+    "media-9.xlsx": [
+      {
+        "sheet": "S8A",
+        "counts": {
+          "rows": 16319,
+          "valid_block_rows": 12843,
+          "valid_spliced_rows": 12843,
+          "listed_intron_labels": 29692,
+          "labels_match_exon_boundaries": 29692,
+          "invalid_block_rows": 3476
+        },
+        "invalid_reasons": {
+          "noninteger": 724,
+          "block_count_mismatch": 2748,
+          "nonpositive_block": 4
+        },
+        "invalid_row_examples": [
+          {
+            "sheet_row": 11,
+            "reason": "noninteger"
+          },
+          {
+            "sheet_row": 12,
+            "reason": "block_count_mismatch"
+          },
+          {
+            "sheet_row": 13,
+            "reason": "block_count_mismatch"
+          },
+          {
+            "sheet_row": 15,
+            "reason": "block_count_mismatch"
+          },
+          {
+            "sheet_row": 26,
+            "reason": "block_count_mismatch"
+          }
+        ],
+        "invalid_rows_repaired": false
+      },
+      {
+        "sheet": "S8B",
+        "counts": {
+          "rows": 16950,
+          "valid_block_rows": 12621,
+          "valid_spliced_rows": 12621,
+          "listed_intron_labels": 28864,
+          "labels_match_exon_boundaries": 28860,
+          "invalid_block_rows": 4329,
+          "labels_unexplained_by_blocks": 4
+        },
+        "invalid_reasons": {
+          "block_count_mismatch": 3540,
+          "noninteger": 784,
+          "nonpositive_block": 5
+        },
+        "invalid_row_examples": [
+          {
+            "sheet_row": 4,
+            "reason": "block_count_mismatch"
+          },
+          {
+            "sheet_row": 5,
+            "reason": "noninteger"
+          },
+          {
+            "sheet_row": 6,
+            "reason": "noninteger"
+          },
+          {
+            "sheet_row": 8,
+            "reason": "noninteger"
+          },
+          {
+            "sheet_row": 10,
+            "reason": "noninteger"
+          }
+        ],
+        "invalid_rows_repaired": false
+      },
+      {
+        "sheet": "S8C",
+        "counts": {
+          "rows": 13394,
+          "valid_block_rows": 9940,
+          "valid_spliced_rows": 9940,
+          "listed_intron_labels": 21463,
+          "labels_match_exon_boundaries": 21460,
+          "invalid_block_rows": 3454,
+          "labels_unexplained_by_blocks": 3
+        },
+        "invalid_reasons": {
+          "block_count_mismatch": 2888,
+          "noninteger": 566
+        },
+        "invalid_row_examples": [
+          {
+            "sheet_row": 6,
+            "reason": "block_count_mismatch"
+          },
+          {
+            "sheet_row": 7,
+            "reason": "block_count_mismatch"
+          },
+          {
+            "sheet_row": 8,
+            "reason": "block_count_mismatch"
+          },
+          {
+            "sheet_row": 9,
+            "reason": "block_count_mismatch"
+          },
+          {
+            "sheet_row": 10,
+            "reason": "block_count_mismatch"
+          }
+        ],
+        "invalid_rows_repaired": false
+      },
+      {
+        "sheet": "S8D",
+        "counts": {
+          "rows": 13808,
+          "invalid_block_rows": 3266,
+          "valid_block_rows": 10542,
+          "valid_spliced_rows": 10542,
+          "listed_intron_labels": 23580,
+          "labels_match_exon_boundaries": 23580
+        },
+        "invalid_reasons": {
+          "block_count_mismatch": 2664,
+          "noninteger": 602
+        },
+        "invalid_row_examples": [
+          {
+            "sheet_row": 3,
+            "reason": "block_count_mismatch"
+          },
+          {
+            "sheet_row": 4,
+            "reason": "block_count_mismatch"
+          },
+          {
+            "sheet_row": 6,
+            "reason": "block_count_mismatch"
+          },
+          {
+            "sheet_row": 7,
+            "reason": "block_count_mismatch"
+          },
+          {
+            "sheet_row": 9,
+            "reason": "block_count_mismatch"
+          }
+        ],
+        "invalid_rows_repaired": false
+      }
+    ]
+  },
+  "author_catalog_matched": false,
+  "clinical_table_S12_downloaded": false,
+  "patient_rows_exported": false,
+  "assembly_reported": "hg38",
+  "assembly_source_paragraphs": [
+    "P51",
+    "P52"
+  ],
+  "comparison_unit_source": "P54",
+  "comparison_unit": "gene plus identical TE copy; category-specific gene collapsing",
+  "not_an_exact_junction_intersection": true,
+  "scope": "source/schema/structural QC; no novelty or biological inference"
+}

@@ -15,7 +15,7 @@ Este registro sustituye los estados históricos. Reproducción técnica no equiv
 | ELA-09 | GSE315972 | Estructura/mapeo ejecutados; corrección agregada 3 CI / 3 no CI / 2 CTL en informe de metadatos | Tejido heterogéneo, covariables/QC biológico incompletos; etiquetas históricas no son grupos cognitivos |
 | ELA-10 | Rescate STMN2/UNC13A | Auditorías Keuss/Chan y propuestas en reports/accepted-keuss, chan-timing y reversal-design | Propuesta funcional, no ensayo; originalidad no certificada |
 | ELA-11 | Uniones compartidas | reports/junction-filter-reconciliation: 21 antiguas reproducidas; pérdida de exones explica discrepancia. 1910 agrupadas, 1901 con soporte asignado positivo | Antiguas 21 no son cribado exhaustivo; modelos/soporte asignado no son lecturas directas |
-| ELA-12 | GENCODE externa | reports/gencode-junction-annotation: 17 exactas / 1881 no encontradas para mismo gen / 3 de gen ausente | Catálogo de autores pendiente. Ausencia en v47 no prueba novedad |
+| ELA-12 | GENCODE externa | reports/gencode-junction-annotation: 17 exactas / 1881 no encontradas para mismo gen / 3 de gen ausente | Fuentes/esquema de autores auditados en reports/author-catalog-schema; intersección de1901todavía pendiente. Ausencia en v47 no prueba novedad |
 | ELA-13 | AGRN | Antecedentes publicados y pregunta funcional en research/AGRN_CAMK2B_EVIDENCE_2026-10-29.md | Verificar isoforma/soporte y ensayos previos antes de proponer experimento |
 
 ## Reglas de interpretación

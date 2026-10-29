@@ -1,0 +1,37 @@
+{
+  "python": "3.12.14",
+  "tests_passed": 115,
+  "new_tests": 10,
+  "source_manifest": "research/references/bolger_author_catalog_v1.json",
+  "audit_sha256": "26c56ebe3c6f6796e1aaf147088833f5d53dd55fc257e1a59094aa6a7c36b87c",
+  "repeat_audit_identical_bytes": true,
+  "culture_qc_unchanged_after_streaming_memory_patch": true,
+  "summary": {
+    "media-8.xlsx": {
+      "invalid_block_rows": 26815,
+      "rows": 448818,
+      "valid_block_rows": 422003,
+      "valid_spliced_rows": 21022,
+      "valid_without_intron_rows": 400981
+    },
+    "media-9.xlsx": {
+      "invalid_block_rows": 14525,
+      "labels_match_exon_boundaries": 103592,
+      "labels_unexplained_by_blocks": 7,
+      "listed_intron_labels": 103599,
+      "rows": 60471,
+      "valid_block_rows": 45946,
+      "valid_spliced_rows": 45946
+    }
+  },
+  "author_junction_catalog_matched": false,
+  "clinical_metadata_downloaded": false,
+  "patient_rows_exported": false,
+  "formulas_evaluated": false,
+  "source_files_modified": false,
+  "invalid_rows_repaired": false,
+  "scope": "source schema and strict structural QC; not biological validation",
+  "recorded_utc": "2026-10-29T15:40:51.540186+00:00",
+  "script_sha256": "6415b21a1c91f3f96ee950de206801215aaad03adb7e30d583377d2f2d78a401",
+  "manifest_sha256": "75e1a9ec1243b1306e74e3d8d64d5ef51f7f1ec984c4c25602ded55ac4c6b2db"
+}

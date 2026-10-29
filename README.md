@@ -30,7 +30,7 @@ Originales fuera de git en data/, URL/SHA256 en manifiestos. Informes histórico
 
 ## GitHub y Work
 
-- CI offline unificada: 105 tests existentes, Python 3.11/3.12, PR y pushes a main.
+- CI offline unificada:115tests en esta entrega (base consolidada105más diez de auditoría crypTE), Python3.11/3.12; comprobar el SHA/PR antes de asumir integración en main.
 - GEO Iso-Seq real-data audit: cuatro entradas públicas y artefactos temporales; éxito técnico no valida biología.
 - ELA source watch: vigilancia diaria 07:17 UTC/manual, registro de fallos y salidas; no decide experimentos por sí sola.
 - Work: 08:00 Europe/Madrid, resumen viernes; comprobar acceso/herramientas cada vez, sin cómputo continuo garantizado.

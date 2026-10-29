@@ -27,7 +27,7 @@ Tenemos auditorías técnicas, observaciones descriptivas y propuestas. No una n
 ## Próximas tareas
 
 1. Base operativa consolidada: partir de main y comprobar su cabeza actual. Las ramas originales son referencias históricas incorporadas, no tareas activas; no reabrir sus PR para repetir trabajo.
-2. Suplementos Bolger/crypTE: XML primario y 17 medios inventariados; tablas aún no descargadas/cotejadas. Verificar esquema, ensamblaje, coordenadas, gen/transcrito y evento antes del cruce; un intervalo TE no equivale a un intrón.
+2. Suplementos Bolger/crypTE: fuentes recuperadas por PMC AWS, índice y cuatro XLSX verificados; auditoría en reports/author-catalog-schema.42subtablas mapeadas mediante leyendas/xrefs; S12 clínica excluida. S7/S8 auditadas completamente:26815/14525filas no reconstruibles bajo contrato estricto.103592/103599etiquetas S8 reconstruibles son límites exónicos,7excepciones. El cruce de1901claves aún NO está ejecutado. Próximo: subconjunto reconstruible, conversión explícita a intrones y resolución símbolo/ENSG, con cobertura/no evaluables separados; no reparar filas por suposición.
 3. Revaluar filtros y prioridades sobre catálogo corregido. El cero histórico de intersección estricta no valida el parser defectuoso ni descarta un mecanismo.
 4. Reproducir GSE126542/GSE121569 (#14), diferenciando cohortes reutilizadas, diferenciaciones y lecturas de unión. Solo fuentes/proyecciones permitidas, sin filas clínicas personales.
 5. Evaluar AGRN (#21) y elegir propuesta funcional (#18) tras contraste estructural y de antecedentes. UNC13A_POST_DEFICIT_PROTOCOL_v0.3.md es propuesta; actualizar su brecha histórica con auditorías Keuss/Chan.
@@ -41,8 +41,12 @@ Tenemos auditorías técnicas, observaciones descriptivas y propuestas. No una n
 
 ## Operación
 
-Suite conjunta: 105 tests técnicos existentes (85 + 24 menos cuatro compartidos). CI unificada Python 3.11/3.12. Los 11 tests originales MEA son una ejecución histórica separada; no experimentos.
+Base consolidada:105tests técnicos (85+24menos cuatro compartidos). La auditoría de suplementos añade10tests y esta rama supera115; consultar CI del PR para estado remoto. CI unificada Python3.11/3.12. Los 11 tests originales MEA son una ejecución histórica separada; no experimentos.
 
 Main es el punto de partida. Usar ramas breves, revisión y pruebas antes de merge. Esta consolidación está autorizada por Luis; no concede autorización general para merges futuros. Las issues no se cierran automáticamente.
 
 Work diario a las 08:00 Europe/Madrid y resumen los viernes. Releer fuentes remotas y comprobar acceso/herramientas en cada ejecución; no hay cómputo continuo garantizado. Informes antiguos conservan contexto/hashes; este estado y MASTER_EVIDENCE.md indican pendientes actuales.
+
+## Auditoría de suplementos — entrega para revisión
+
+Acceso resuelto por objetos públicos PMC AWS con MD5/SHA256; no repetir recaptcha como bloqueo universal. Informe y manifiesto en reports/author-catalog-schema y research/references/bolger_author_catalog_v1.json. El método compartido de autores es gen+misma copiaTE, con colapso por categoría; S15 contiene extremos de transcritos, no uniones. S8B/C tiene cabeceras incorrectas y S7D título discordante. No dar por comparadas nuestras1901claves ni inventar cero coincidencias. Ramas nuevas breves desde main; PR de esta auditoría pendiente, sin merge automático.
