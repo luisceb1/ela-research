@@ -28,3 +28,10 @@ Regla antiestancamiento: si una tarea falla por falta de datos o acceso, dejar c
 3. Si estas comprobaciones están bloqueadas, avanzar a evidencia funcional independiente.
 
 Los PR #3 y #4 están abiertos, con CI offline exitosa; los nuevos análisis descriptivos dependen de ambos. No duplicar trabajo leyendo solo main, ni cerrar #1/#2 antes de revisión.
+
+## Ciclo siguiente — evento/escala (29/10/2026, pendiente revisión)
+- Unión STMN2 de BambuTx9249 coincide exactamente con Figura 5 de Grima 2025 (GRCh38). Identidad de unión contrastada; extremos/transcrito completo/poliA pendientes.
+- FullLengthCounts del candidato: 0/0 en controles y 8/12 en KD; medidas depositadas, sin réplica nueva ni independencia de moléculas verificada.
+- CPM original auditado: denominador documentado incluye incompatibles; contraste STMN2 conserva dirección.
+- Semántica bambu 3.2.6 revisada por commit; causa de uniqueCounts par **bloqueada** sin trazabilidad de entradas/objetos intermedios. No corregir cuentas por suposición.
+- **Próxima tarea segura: evidencia funcional independiente publicada**, separar rescate de ARN/proteína/función y auditar temporalidad/controles. No esperar a resolver la escala para revisar literatura funcional.

@@ -1,0 +1,11 @@
+{
+  "argv": [
+    "scripts/check_event_reference.py"
+  ],
+  "original_bambu_runtime_executed": false,
+  "python": "3.12.14",
+  "randomness": "none",
+  "status": "generated",
+  "tolerance": 0.0001,
+  "utc": "2026-10-29T10:23:34.860376+00:00"
+}

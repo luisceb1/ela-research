@@ -60,3 +60,12 @@ Inventario estructural GEO completado por primera ejecución de GitHub Actions. 
 - PR abiertos y encadenados: #3 → #4 → #5. CI `unit-tests` completada con éxito en los tres. Revisar en ese orden; sin fusión ni publicación pública de hallazgos.
 - Los 49 archivos nuevos/modificados de la entrega se verificaron contra los blobs almacenados en GitHub. Tres documentos iniciales de la instantánea local diferían solo por salto de línea final respecto a sus originales remotos; AGENTS.md y PROTOCOL.md se conservaron intactos en GitHub.
 - Para reanudar sin perder estado, usar la rama `research/descriptive-sensitivity-20261029` hasta que sus PR se integren; main todavía no incluye estos análisis.
+
+## Ciclo Work — unión conocida y soporte full-length
+
+- `reports/event-reference/` y `scripts/check_event_reference.py`: una coincidencia exacta de unión STMN2 con Figura 5 de Grima et al. 2025, DOI 10.1186/s13024-025-00820-5, GRCh38. Hebra + tomada por separado de GENCODE v47; el pie no especifica hebra.
+- BambuTx9249 contiene una unión críptica **ya conocida**; no se presenta como descubrimiento de nueva unión. Extremo 3′/transcrito completo/poliadenilación sin validar.
+- FullLengthCounts del candidato 0/0 en controles y 8/12 en KD, frente a uniqueCounts 4/0 y 10/24. Son estimaciones del mismo experimento, no lecturas independientes verificadas.
+- Cuatro matrices por serie: IDs/columnas coinciden; cero violaciones unique<=counts o fullLength<=counts (tolerancia 1e-4). CPM real usa otro denominador; no revierte dirección STMN2 en cultivo.
+- Código exacto bambu 3.2.6 fijado a commit 2fb886442096896807f44191ad2d1e00b43ceadd. Exportación sin factor2 explícito; paridad sigue sin causa establecida. R no ejecutado. Bloqueo e incidencias documentados, sin modificar escala original.
+- 37 pruebas offline pasan. Siguiente tarea segura seleccionada: evidencia funcional publicada, con separación ARN/proteína/función, temporalidad y controles.
