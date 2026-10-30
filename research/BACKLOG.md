@@ -36,3 +36,7 @@ Identidad de pozo/reactivo y fórmula original de ajuste pendientes: no refit in
 ## Cuentas DEXSeq verificadas — 30/10/2026, PR29
 
 reports/dexseq-qc: 585869 fragmentos únicos, 18 bibliotecas originales/12 columnas de contraste. 7030428 cuentas comparadas exactamente, cero discrepancias y cero claves sin enlazar. Las 589903 filas DEXSeq incluyen4034 repeticiones con diferencias exclusivamente de anotación, sin conflictos de cuentas/campos no anotativos; no sumar como fragmentos nuevos. Cinco filas de resumen técnico separadas. Ocho tests nuevos:143 en rama. Sin refit ni nueva replicación; pozo/reactivo/fórmula pendientes. Próximo: unicidad de102fragmentos objetivo y sensibilidad descriptiva por lote. PR28independiente; sin merge o cierre automático.
+
+## Sensibilidad por lote — 30/10/2026, PR29
+
+reports/dexseq-batch-sensitivity:102fragmentos objetivo únicos. Fracción de cuentas dentro de grupo por biblioteca, medias KD-control por lote: mismo signo8/10STMN2,36/62UNC13A,20/30TARDBP; resto signo opuesto. NoPSI ni isoformas/proteína, sin nuevos p-valores. Cambios pequeños y dependencia composicional limitan signos.147tests en rama. Próximo magnitud/cobertura y sensibilidad de denominador de fragmentos discordantes antes de priorizar; refit pendiente de diseño. Sin merge/cierre automático.
