@@ -1,0 +1,89 @@
+{
+  "STMN2": {
+    "fragments": 10,
+    "thresholds_pp": {
+      "0": {
+        "same_direction": 8,
+        "opposite_direction": 2,
+        "below_threshold_or_zero": 0
+      },
+      "0.01": {
+        "same_direction": 7,
+        "opposite_direction": 1,
+        "below_threshold_or_zero": 2
+      },
+      "0.1": {
+        "same_direction": 7,
+        "opposite_direction": 1,
+        "below_threshold_or_zero": 2
+      },
+      "0.5": {
+        "same_direction": 3,
+        "opposite_direction": 0,
+        "below_threshold_or_zero": 7
+      }
+    },
+    "total_variation_pp": {
+      "Batch 1": 5.5205938878220415,
+      "Batch 2": 2.707267729016142
+    }
+  },
+  "UNC13A": {
+    "fragments": 62,
+    "thresholds_pp": {
+      "0": {
+        "same_direction": 36,
+        "opposite_direction": 26,
+        "below_threshold_or_zero": 0
+      },
+      "0.01": {
+        "same_direction": 34,
+        "opposite_direction": 23,
+        "below_threshold_or_zero": 5
+      },
+      "0.1": {
+        "same_direction": 8,
+        "opposite_direction": 3,
+        "below_threshold_or_zero": 51
+      },
+      "0.5": {
+        "same_direction": 0,
+        "opposite_direction": 0,
+        "below_threshold_or_zero": 62
+      }
+    },
+    "total_variation_pp": {
+      "Batch 1": 2.588070299890498,
+      "Batch 2": 2.9522942877622653
+    }
+  },
+  "TARDBP": {
+    "fragments": 30,
+    "thresholds_pp": {
+      "0": {
+        "same_direction": 20,
+        "opposite_direction": 10,
+        "below_threshold_or_zero": 0
+      },
+      "0.01": {
+        "same_direction": 17,
+        "opposite_direction": 10,
+        "below_threshold_or_zero": 3
+      },
+      "0.1": {
+        "same_direction": 6,
+        "opposite_direction": 0,
+        "below_threshold_or_zero": 24
+      },
+      "0.5": {
+        "same_direction": 1,
+        "opposite_direction": 0,
+        "below_threshold_or_zero": 29
+      }
+    },
+    "total_variation_pp": {
+      "Batch 1": 2.134331785244759,
+      "Batch 2": 2.5736511831696216
+    }
+  }
+}

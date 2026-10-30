@@ -1,5 +1,13 @@
 # Backlog vigente — 29/10/2026
 
+## Checkpoint vigente — 30/10/2026 (esta rama PR29, pendiente de revisión)
+
+Main sigue en8dfa7ce7. PR28 sigue independiente en27f34d1b, no incorporado: catálogo/originalidad/QCglobal completados allí (545/353/182/821, sin novedad inferida; protocoloUNC13Av0.4conceptual). Leer sus informes antes de retomar; no repetir ni tratar los pendientes históricos de esta página como actuales. No se han reconciliado mediante merge las dos ramas.
+
+PR29: magnitud descriptiva ejecutada en reports/dexseq-magnitude sobre tabla agregada del commit18abfa54. De38inversiones de signo,4persisten con>=0.1pp en ambos lotes:STMN2E009yUNC13AE026/E030/E054;0con>=0.5pp. Umbrales arbitrarios, no significación/ruido/función demostrados.153tests locales (147+6), compileallOK. Fallos iniciales por checkout incompleto resueltos; errores/hashes/logs conservados. GEOdirecto timeout28: no nueva descarga original, cuentas/profundidad/ceros ni sensibilidad de denominador ejecutados en este ciclo. Sin refit por diseño pozo/reactivo/fórmula pendiente.
+
+Resumen24–30/10 en reports/weekly/2026-10-30.md, sin informe previo localizado. Siguiente prueba: recuperar matriz con hash conocido y auditar agregados de cobertura/ceros y denominadores en todos los objetivos, destacando los cuatro discordantes. Si bloqueada, verificar coordenadasCE/ensamblaje con primaria independiente. #1/#2técnicamente ejecutadas, sin repetir; lecturas crudas y cobertura siguen pendientes. Issue14parcial. Sin merge/cierre/contactos/gastos/publicación externa. Secciones siguientes conservan historial: sus cifras de tests y tareas antiguas no reemplazan este checkpoint.
+
 Consultar STATE.md, MASTER_EVIDENCE.md y reports/repository-integration. Las issues históricas describen incidentes iniciales; no repetir correcciones ya ejecutadas.
 
 | Prioridad | Tarea | Estado y siguiente avance |

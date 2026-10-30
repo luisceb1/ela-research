@@ -1,0 +1,9 @@
+# Plan previo: magnitud de discordancias DEXSeq
+
+Pregunta: ¿las inversiones de signo descriptivas persisten cuando se exige una magnitud mínima en ambos lotes?
+Predicción refutable: al exigir >=0.1 puntos porcentuales en ambos lotes quedará al menos un fragmento discordante; si no queda ninguno, se refuta para este catálogo y umbral, sin inferir ausencia biológica.
+Datos: tabla agregada de 204 filas del commit 18abfa5477ec78e937590fcc929bd44157a22a39 de PR29, procedente de GSE121569. No nuevos datos individuales. Umbrales fijados antes de ejecutar: 0, 0.01, 0.1 y 0.5 puntos porcentuales, inclusivos, usando min(abs(delta1),abs(delta2)). No umbrales de significación o relevancia biológica.
+Controles: 102 fragmentos únicos, dos lotes por fragmento, dimensiones 10/62/30, prefijos ENSG, tamaños técnicos 2/2 y 4/4, fracciones finitas [0,1], diferencia recomputada, cierre a 1 de fracciones por gen/lote/condición. Orden y permutación de lotes no alteran clases. Entradas incompletas/duplicadas/no finitas fallan.
+Fracaso técnico: cualquier control incumplido detiene cálculo. Resultado negativo se conserva. Se exportarán todos los fragmentos y todos los umbrales sin selección por p. No PSI, proteína, rescate, réplica externa o refit. Total variation = mitad de suma de cambios absolutos en pp, solo distancia composicional.
+Bloqueo: curl HEAD GEO falló con código28 (Proxy CONNECT timeout, 10s); no afirmar cobertura de lecturas, ceros por biblioteca, intervalos CE ni sensibilidad a denominadores alternativos a partir de medias de fracciones. Esas preguntas requieren matriz original y diseño reactivo/pozo. Git directo no autenticado; acceso conector GitHub confirmado. Python3.12.14 real.
+Resumen viernes: buscar duplicados en árboles main/PR28/PR29 y PR abiertos; periodo 24–30/10/2026, usando evidencia realmente disponible, sin inventar avances en días sin registro.
