@@ -1,0 +1,26 @@
+{
+  "culture_rows": 42,
+  "source_groups": 5,
+  "conditions": [
+    "control",
+    "TDP-43 KD"
+  ],
+  "junction_count_fields": [
+    "UNC13A_annotated",
+    "UNC13A_3prime",
+    "UNC13A_5prime",
+    "UNC13A_5prime_2",
+    "UNC13A_5prime_3",
+    "STMN2_annotated",
+    "STMN2_cryptic"
+  ],
+  "integer_count_cells_checked": 294,
+  "ready_external_groups": 0,
+  "source_groups_pending": 4,
+  "reused_group_count": 1,
+  "biological_replicates_inferred": false,
+  "effects_calculated": false,
+  "genotype_suffixes_or_individual_aliases_exported": false,
+  "prediction_status": "Not met: direct count file accessible, but coordinate/unit/source independence unresolved",
+  "coordinate_note": "The separate two-line BED encodes exon intervals, not junction endpoints; formal convention unresolved"
+}

@@ -1,0 +1,17 @@
+{
+  "date": "2026-10-30",
+  "python": "3.12.14",
+  "dependencies": "stdlib",
+  "random_seed": null,
+  "parent_commit": "91737fa1b92bf3abd87aae120ef49f042bf36c78",
+  "repository_commit": "e05e8723e3d18e64c6c559db18de423282511c91",
+  "source_git_blob": "c8715e2b6452f0e32bf56bd315171213950d0dff",
+  "hashes": {
+    "data/cache/junction-source-inventory/kd_experiments_relative_rna_and_unc13a_cryptic_junction_counts.csv": "77ab875a1dbc2663179e38132dd1512043aff6da1eddb05bc5060d6796319766",
+    "research/references/junction_source_inventory_20261030.json": "b5b5032336c5ca919d9bfbc20d06a945030a576b62ca3a582102722bc89fe8ac",
+    "/workspace/scratch/1c0aac61c246/ela-issue14/scripts/inventory_junction_sources.py": "205ee67b7ae2e244ad39df2d7db830e13902393a9ab0a2cabdec280a9a864ca2"
+  },
+  "input_columns": 26,
+  "projected_count_columns": 7,
+  "rows_exported": "five culture-group aggregates only"
+}

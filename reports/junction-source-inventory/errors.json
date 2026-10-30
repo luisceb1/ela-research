@@ -1,0 +1,8 @@
+{
+ "analysis_errors":[],
+ "access_errors":["Nature original/correction direct: identity redirect inaccessible", "PMC correction and GEO GSE97262 pages: recaptcha"],
+ "scope_exclusion":"Broad kds BED was initially retrieved; mixed source scope detected, local copy removed, not used for computation or exported",
+ "retrieval_limitation":"Scite targeted accession query returned highlighted/inconsistent authors; clean unfiltered bibliographic record used",
+ "negative_prediction":"No new source group has complete event/coordinate/unit/independence map; 4 candidates, 1 reused group",
+ "unresolved":["Klim 17-row selection vs DEXSeq12 and published expression15", "Legacy SK-N-DZ labels and 2024 corrected cell-line identity", "Per-junction coordinate convention and Supplementary Table6", "Row-to-run and differentiation map", "No proof of independent units or new biological replication"]
+}

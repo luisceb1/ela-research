@@ -1,0 +1,94 @@
+{
+  "date": "2026-10-30",
+  "paper_doi": "10.1038/s41586-022-04436-3",
+  "repository": "https://github.com/frattalab/unc13a_cryptic_splicing",
+  "commit": "e05e8723e3d18e64c6c559db18de423282511c91",
+  "culture_csv": {
+    "path": "data/kd_experiments_relative_rna_and_unc13a_cryptic_junction_counts.csv",
+    "git_blob_sha": "c8715e2b6452f0e32bf56bd315171213950d0dff",
+    "expected_rows": 42,
+    "expected_columns": 26
+  },
+  "coordinate_bed": {
+    "path": "unc13a_cryptic_exons.bed",
+    "git_blob_sha": "da9b1de024f7bb045417d1ffcc20fa634a3eb7b6",
+    "scope": "Exon interval labels only; not a table of splice junction endpoints; BED convention not verified"
+  },
+  "pipeline": {
+    "repository": "https://github.com/frattalab/bedops_parse_star_junctions",
+    "commit": "987893efd84a5c5c20ddac9bf33e137c1c6b33ae",
+    "readme_blob": "5f0d1eab6092c04f2213dabfeba958d4410d3d07",
+    "converter_blob": "d3571c6b278c6d69a7a7eb1f4320ecf928692dc0",
+    "scope": "Source inspected, never executed; seven-column junction count output documented; this does not prove per-row provenance of culture CSV"
+  },
+  "primary_availability": {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8891020/",
+    "localizer": "Data and Data availability sections",
+    "culture_study": "PRJEB42763",
+    "reused_culture_accession": "GSE121569",
+    "other_public_culture_accession": "GSE97262",
+    "short_excerpt": "Counts for specific junctions were tallied",
+    "claim": "Paper lists public deposited RNAseq sources and GitHub minimal dataset; library-to-run links not verified here"
+  },
+  "editorial_notice": {
+    "doi": "10.1038/s41586-024-07577-9",
+    "date": "2024-06-18",
+    "verified_via": "scite primary full-text excerpt; updated PMC original available; direct Nature blocked by identity redirect; correction PMC recaptcha",
+    "scope": "A cell line initially called SK-N-DZ was conclusively identified as SK-N-BE(2); current article uses corrected labels",
+    "short_excerpt": "This line has since been conclusively identified as SK-N-BE(2).",
+    "row_level_remapping_completed": false
+  },
+  "excluded": {
+    "mixed_bed_path": "data/kds_stmn2_and_unc13aaggregated.clean.annotated.bed",
+    "git_blob_sha": "a717f890f36384041368a5274a2d2f00daef2a07",
+    "decision": "Broader source mixture detected at initial schema inspection; removed from local cache and not used for computation/export. No raw rows persisted to project."
+  },
+  "groups": [
+    {
+      "source_label": "Appocher",
+      "control": 3,
+      "KD": 3,
+      "published_accession": "GSE97262",
+      "accession_status": "Paper attributes a reused cell-line source to GSE97262; row-to-run map and corrected identity pending",
+      "reused_units": "not_verified",
+      "identity_status": "legacy_cell_line_label_requires_correction_mapping"
+    },
+    {
+      "source_label": "Klim iPSC MN",
+      "control": 11,
+      "KD": 6,
+      "published_accession": "GSE121569",
+      "accession_status": "Paper explicitly attributes Klim motor-neuron data to GSE121569; 17-row selection still to reconcile",
+      "reused_units": "same_study_as_issue14",
+      "identity_status": "culture_group_published"
+    },
+    {
+      "source_label": "SH-SY5Y",
+      "control": 3,
+      "KD": 3,
+      "published_accession": "PRJEB42763",
+      "accession_status": "Study-level availability, no row-to-run map",
+      "reused_units": "not_verified",
+      "identity_status": "culture_group_published"
+    },
+    {
+      "source_label": "SK-N-DZ",
+      "control": 3,
+      "KD": 3,
+      "published_accession": "PRJEB42763",
+      "accession_status": "Study-level attribution; old CSV label, corrected identity needs library-level map",
+      "reused_units": "not_verified",
+      "identity_status": "legacy_cell_line_label_requires_correction_mapping"
+    },
+    {
+      "source_label": "iPSC Neurons",
+      "control": 4,
+      "KD": 3,
+      "published_accession": "PRJEB42763",
+      "accession_status": "Study-level availability, no row-to-run/differentiation map",
+      "reused_units": "not_verified",
+      "identity_status": "culture_group_published"
+    }
+  ],
+  "scope": "Accessions, published culture groups, technical schema and source provenance only; genotype suffixes, sample aliases and expression values not exported; no effect/PSI calculations, no external biological replication"
+}

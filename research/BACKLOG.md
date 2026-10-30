@@ -1,5 +1,11 @@
 # Backlog vigente — 29/10/2026
 
+## Fuentes de uniones — checkpoint posterior del 30/10/2026
+
+Inventario reproducible en reports/junction-source-inventory: CSV público de Brown2022, commit e05e8723 y blob c8715e2b; 42 filas de cultivo, 5 grupos, 7 campos de cuentas de unión, 294 celdas enteras. Sin efectos o PSI calculados; solo cinco agregados exportados. Klim17filas (11control/6KD) reutiliza GSE121569, no réplica nueva ni equivalente a12DEXSeq/15expresión; selección pendiente. Cuatro grupos candidatos de otras fuentes, ninguna unidad independiente certificada. PRJEB42763 es disponibilidad de estudio, no mapa de filas. Corrección Brown2024 cambia una línea SK-N-DZ a SK-N-BE(2): CSV antiguo conserva nombres, no reasignar sin mapa. BED amplio excluido por mezcla de fuentes; no computado/exportado.175tests locales(167+8),compileallOK.
+
+Predicción de nueva fuente lista no cumplida aún. Próxima prueba única: tabla molecular Supplementary6 de Brown (extremos hg38 de uniones), convenciones del pipeline y mapa fila→run/unidad de un solo grupo de cultivo PRJEB42763. Sin ese enlace no analizar efectos ni declarar replicación. No repetir Fratta ni binsDEXSeqya cerradoscomoindirectos. PR29abierto,PR28separado,sin merge/cierre/contactos/gastos/laboratorio. Este checkpoint prevalece sobre las acciones antiguas inferiores.
+
 ## Intervalos CE y bins — checkpoint posterior del 30/10/2026
 
 reports/ce-bin-coordinate-audit: fuentes primarias independientes del código recibido verifican las regiones de recuento hg19 STMN2chr8:80529057–80529284 yUNC13A128bpchr19:17753223–17753350. SOFT/XML de Klimconfirmanhg19paraDEXSeq. Ninguno de72bins(10/62)solapa las regiones,tampoco con9combinaciones±1deextremos. Mínimas diferenciasentreextremos5031/304bp(5030/303bases interpuestas). Los4discordantes quedan fuera; no son mediciónCE,no ausencia biológica. Convención formal del artículo limitada; no liftover de varianteshg38ni validación de extremos completos. CorrecciónKoike2023leída:conceptual,no coordenadas.167tests locales(160+7),compileallOK.
