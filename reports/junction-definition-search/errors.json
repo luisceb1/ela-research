@@ -1,0 +1,8 @@
+{
+ "execution_errors":[],
+ "negative_result":"No explicit seven-label junction definition recovered in bounded search",
+ "missing_input":"Original stmn2_and_unc13a.bed referenced by historical author pipeline, not present in eight sampled public trees",
+ "not_resolved":["Four UNC13A label-to-coordinate aliases", "Two STMN2 strand conflicts", "Independent biological units"],
+ "scope_limit":"264 commit metadata records, eight historical snapshots and five script versions, not all trees/branches/forks",
+ "decision":"No repeat of identical search without new source; keep seven-junction external reanalysis blocked"
+}

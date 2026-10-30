@@ -1,0 +1,44 @@
+{
+  "combined_fragment_rows": 585869,
+  "combined_libraries": 18,
+  "combined_cells_including_summary": 10545732,
+  "combined_zero_cells_including_summary": 3846807,
+  "summary_rows": {
+    "_ambiguous": {
+      "cells": 18,
+      "total": 16227065
+    },
+    "_ambiguous_readpair_position": {
+      "cells": 18,
+      "total": 0
+    },
+    "_empty": {
+      "cells": 18,
+      "total": 62150338
+    },
+    "_lowaqual": {
+      "cells": 18,
+      "total": 0
+    },
+    "_notaligned": {
+      "cells": 18,
+      "total": 0
+    }
+  },
+  "dexseq_result_rows": 589903,
+  "dexseq_unique_fragments": 585869,
+  "duplicate_result_rows": 4034,
+  "duplicate_count_conflicts": 0,
+  "duplicate_nonannotation_conflicts": 0,
+  "duplicate_annotation_variant_rows": 4034,
+  "contrast_columns": 12,
+  "compared_cells": 7030428,
+  "discordant_cells": 0,
+  "combined_fragments_without_dexseq": 0,
+  "fragment_group_feature_discordances": 0,
+  "contrast_zero_cells_over_result_rows": 2577055,
+  "contrast_all_zero_result_rows": 113300,
+  "counts_are_nonnegative_integer_literals": true,
+  "statistical_refit": false,
+  "interpretation": "Technical concordance of two projections of the same study, not independent biological replication"
+}

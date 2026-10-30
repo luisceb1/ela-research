@@ -1,43 +1,30 @@
 # ELA — investigación computacional reproducible
 
-Proyecto sobre pérdida nuclear de TDP-43, splicing STMN2/UNC13A y recuperación funcional neuronal. Hay auditorías técnicas, análisis exploratorios y propuestas; no una nueva diana validada ni resultados clínicos propios.
+Estudio de las consecuencias transcriptómicas de la pérdida nuclear de TDP-43, con foco en STMN2 y UNC13A. El proyecto reúne reproducciones técnicas, descriptivos y propuestas experimentales. No acredita una nueva diana, un tratamiento propio o beneficio clínico.
 
-## Continuidad
+## Estado y próxima tarea
 
-Leer [AGENTS.md](AGENTS.md), [estado](research/STATE.md), [backlog](research/BACKLOG.md), [protocolo](research/PROTOCOL.md), [evidencia](research/MASTER_EVIDENCE.md) e issues/PR remotos. Main contiene ambas cadenas mediante el PR #26; es la base común. Los PR originales están cerrados y las ramas conservadas son referencias históricas. Comprobar siempre su cabeza actual antes de trabajar.
+Leer [AGENTS](AGENTS.md), [estado vigente](research/STATE.md), [evidencia](research/MASTER_EVIDENCE.md), [backlog](research/BACKLOG.md) y [protocolo](research/PROTOCOL.md), y comprobar las cabezas remotas antes de actuar.
 
-Cruce elegible crypTE ejecutado:284etiquetas S8y70solo contextoS7con gen/unión exactos. [Informe](reports/author-junction-match/REPORT.md). Próximo: conflictos de identidad y cobertura excluida con fuentes trazables. Las ausentes de GENCODEo del subconjunto no son automáticamente nuevas.
+Esta versión reúne los contenidos de los PR #28 y #29, conservando la procedencia y los bloqueos. La próxima tarea es **seleccionar una sola fuente independiente con entradas públicas completas para un contraste directo de uniones**, siguiendo [el criterio de entrada](research/NEXT_STUDY_GATE.md). No repetir auditorías cerradas o búsquedas bloqueadas sin fuente nueva.
 
-## Verificación y reproducción
+## Resultados y límites
 
-Python 3.11/3.12; biblioteca estándar para la suite:
+- GEO/mapeo y corrección del parser: ejecutados. Las 21 uniones históricas no constituían un cribado exhaustivo válido.
+- Catálogo: 1901 claves; partición conjunta de referencia/autores 545 anotadas, 353 solo autores, 182 de identidad pendiente y 821 sin coincidencia en recursos limitados. No son 821 descubrimientos.
+- GSE126542/GSE121569: reproducción agregada e integridad técnica ejecutadas. DEXSeq no mide directamente las regiones CE contrastadas; no se ha reajustado el modelo inferencial.
+- SH-SY5Y: seis bibliotecas enlazadas a ENA; reanálisis conjunto de siete uniones bloqueado por cuatro alias y dos conflictos de hebra sin resolver.
+- Originalidad: revisión dirigida y propuesta UNC13A v0.4 como extensión conceptual. No validación funcional propia ni originalidad certificada.
+
+## Verificación
 
 ```bash
 python -m unittest discover -s tests -v
-python scripts/geo_audit.py
-python scripts/map_isoforms.py
-python scripts/describe_targets.py
+python -m compileall -q scripts tests
 ```
 
-Los últimos tres comandos verifican/recuperan fuentes públicas y generan informes. Leer manifiestos y límites: los descriptivos cerebrales históricos usan etiquetas depositadas, no estratos cognitivos corregidos.
+La combinación de ambas ramas supera 244 tests offline en Python 3.12.14. La CI ejecuta Python 3.11/3.12 por commit; consultar el SHA correspondiente. Las pruebas de software no sustituyen replicación biológica. Los análisis reales requieren sus fuentes y dependencias fijadas en cada informe; una CI offline correcta no significa que se hayan redescargado y reejecutado todos los análisis.
 
-```bash
-python scripts/reconcile_shared_junctions.py --cache RUTA_CACHE_PUBLICA
-python scripts/annotate_gencode_junctions.py --reference RUTA/gencode.v47.annotation.gtf.gz
-```
+Originales fuera de git, en cachés reproducibles con URL/hash. Código e informes conservan comandos y límites. [Acta de integración](reports/integration-20261030/REPORT.md) e historial documental están separados del estado vigente.
 
-Originales fuera de git en data/, URL/SHA256 en manifiestos. Informes históricos conservan entorno y número de tests de su ejecución, no estado actual. [Consolidación](reports/repository-integration/REPORT.md) registra procedencia/resoluciones. Prototipos MEA archivados para auditoría sintética; no análisis experimental.
-
-## GitHub y Work
-
-- CI offline unificada:125tests en esta entrega (base consolidada105más veinte de auditoría/cruce crypTE), Python3.11/3.12; comprobar el SHA/PR antes de asumir integración en main.
-- GEO Iso-Seq real-data audit: cuatro entradas públicas y artefactos temporales; éxito técnico no valida biología.
-- ELA source watch: vigilancia diaria 07:17 UTC/manual, registro de fallos y salidas; no decide experimentos por sí sola.
-- Work: 08:00 Europe/Madrid, resumen viernes; comprobar acceso/herramientas cada vez, sin cómputo continuo garantizado.
-- Ramas breves desde main, revisión y pruebas antes de integrar. Esta consolidación no concede autorización general para futuros merges.
-
-## Límites
-
-No datos clínicos personales, contactos externos, publicación de hallazgos, costes o laboratorio sin autorización. No inferencia con n=1, cuentas asignadas como lecturas de unión o equivalencia entre ARN, proteína, recuperación neuronal y beneficio clínico.
-
-Auditoría de originalidad solicitada29/10/2026: [informe](reports/originality-audit/REPORT.md), registros de evidencia/versiones y búsquedas en research/references/originality_*. No se acredita nueva diana, terapia ni mecanismo;133tests técnicos. Prioridad: cerrar límites documentales antes de otra línea.
+Sin datos clínicos personales, contactos, publicación externa, costes o laboratorio sin autorización. No inferencia con replicación inadecuada ni equivalencia entre cuentas, ARN funcional, proteína y recuperación neuronal. Esta integración concreta está autorizada; futuros merges o cierres de issues requieren la autorización aplicable.

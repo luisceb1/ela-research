@@ -1,0 +1,6 @@
+[
+  {"stage":"direct_git_access","result":"fatal: could not read Username for https://github.com: No such device or address","fallback":"GitHub connector successfully read fixed commit and files"},
+  {"stage":"GEO_HEAD","exit_code":28,"result":"Proxy CONNECT aborted due to timeout","connect_timeout_seconds":10,"impact":"No original matrix or read coverage newly verified; aggregate-only analysis continued"},
+  {"stage":"initial_test_checkout","tests_discovered":136,"errors":3,"cause":"Two existing dependency files absent from local connector checkout","resolution":"Recovered target_gene_ids_gencode_v47.json and junction_streaming_legacy.py at same fixed commit; 153 tests passed"},
+  {"stage":"editorial_notice_check","result":"Four filters returned zero with misleading generic not-indexed message despite successful unfiltered retrieval","impact":"Editorial status unresolved; do not claim no notices"}
+]

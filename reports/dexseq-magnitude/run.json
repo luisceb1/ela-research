@@ -1,0 +1,18 @@
+{
+  "python": "3.12.14",
+  "date": "2026-10-30",
+  "parent_commit": "18abfa5477ec78e937590fcc929bd44157a22a39",
+  "thresholds_pp": [
+    0,
+    0.01,
+    0.1,
+    0.5
+  ],
+  "rows": 204,
+  "fragments": 102,
+  "hashes": {
+    "reports/dexseq-batch-sensitivity/fragment_batch_aggregates.tsv": "8ca6647ca3f16cdb7f62596f50370bf3ee2c8ad6e21df520da0e87d81da882af",
+    "/workspace/scratch/f80ec038ffd0/scripts/audit_dexseq_magnitudes.py": "570b72292c7c8d4c8463d38e286b396b61635c67f9ae243d5b482ec4905137f5"
+  },
+  "method": "Threshold min(abs(delta1),abs(delta2)); inclusive boundaries; no inference; aggregate input only"
+}

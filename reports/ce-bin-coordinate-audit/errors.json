@@ -1,0 +1,7 @@
+{
+ "analysis_errors":[],
+ "negative_result":"Zero overlaps for 72 target bins under nominal coordinates and nine endpoint-shift combinations",
+ "editorial_notice":"Koike correction 10.1371/journal.pbio.3002228 read on publisher site; definitional correction, no coordinate amendment in notice",
+ "limitations":["Formal coordinate-base/BED conversion not specified in new interval paper","Source interval strand unspecified","No universal editorial clearance from connector zero-result filters","No transfer of hg38 178bp UNC13A event to hg19","No molecular absence inferred from lack of annotated bins"],
+ "retrieval_diagnostic":"Broad scite literal numeric query returned unrelated records; only targeted verified DOI passages retained as evidence"
+}

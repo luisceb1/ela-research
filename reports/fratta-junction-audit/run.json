@@ -1,0 +1,37 @@
+{
+  "date": "2026-10-29",
+  "python": "3.12.14",
+  "scipy": "1.17.0",
+  "branch_tests": 124,
+  "base_main_tests": 105,
+  "tests_added_by_this_audit": 10,
+  "total_issue14_tests_added": 19,
+  "commands": [
+    "python scripts/audit_fratta_junctions.py --cache data/cache/fratta --upload ../upload",
+    "python -m unittest discover -s tests -v"
+  ],
+  "aggregate_numeric_fields_compared": 24,
+  "aggregate_mismatches": 0,
+  "sources_sha256_and_git_blob_verified": true,
+  "Rmd_executed": false,
+  "allelic_or_clinical_files_read": false,
+  "individual_rows_exported": false,
+  "sha256": {
+    "scripts/audit_fratta_junctions.py": "b61024ec1a5ac666359674541321ddd59b9df1bd47d025fd5b85a98151f8440b",
+    "tests/test_fratta_junctions.py": "20ca0412f821c5a36fe9e7173935763aac512fd2b87500ce2d8808036719c651",
+    "research/plans/2026-10-29-fratta-junction-audit.md": "ed12bd76e7ecc0a2909d49854c458510314480d1acbddfb5cee468c1522d1a79",
+    "reports/fratta-junction-audit/DATA_DICTIONARY.md": "f43bc7ea70f782308450dd357ff9bf758ede523546d97675734267818631abd5",
+    "reports/fratta-junction-audit/REPORT.md": "5cd768673cb6f451efe5c62de52fd27fabd3cf5be55bdb2202060d50915fe5b7",
+    "reports/fratta-junction-audit/aggregate_indices.tsv": "7b35e9ddf1fe955351ab33ca2762daf50c35d025f05787c4a6268b40e80e007d",
+    "reports/fratta-junction-audit/comparison.tsv": "8113ee2de06ffb37f11209706dbb9b628bb9ac49a83d447b4f3810330985233b",
+    "reports/fratta-junction-audit/errors.json": "ab4e69cb1c3260749296ba30aa1d2e5a87bffa595dcc859a457513d20a350265",
+    "reports/fratta-junction-audit/sensitivity.tsv": "9fad7848b25324234751b86ef06abcd01d56aa4a29921eb19ddecbebe640e2ab",
+    "reports/fratta-junction-audit/sources.json": "8037bf5b6d466e4cf80bf1a2087ab0785bb6e09ec5e40bd92c72c1f6aadacd6d",
+    "reports/fratta-junction-audit/summary.json": "0568ce76140bce2745c08f4f0afdb494b4d2525b489902b1fdfa407d998ab13e",
+    "reports/fratta-junction-audit/tests.txt": "bc4cfaa2b2540ffd12b1492ff96786180c85b163e85d208b308769c4e1fa86fb",
+    "README.md": "f2a27ce9662688e150ec2313524568da78d543231fc3f6b744ed0ea4d55b5b6e",
+    "research/STATE.md": "51bd4f76cd5a0eaa563abd2bc143473ec532570553a82cfc83a50bb9ea4e3462",
+    "research/BACKLOG.md": "09296063bf99c07e3acb19fcbae90f893aeaf7cc72005c4dc1a0f519c24e7ebb",
+    "research/MASTER_EVIDENCE.md": "0dd4ac0dc88a24454f631382b1fff4e0ff31563fa92fe78a411ef05bab949a0c"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "date": "2026-10-29",
+  "python": "3.12.14",
+  "dependencies": "Python standard library only",
+  "tests": 135,
+  "command": "python scripts/audit_gse121569_design.py --soft data/cache/gse121569/family.soft.gz --dexseq ../ela-consolidation/data/cache/issue14/GSE121569_dexseq-all.csv.gz --published-batches research/references/gse121569_published_batches.json --primary-cache data/cache/gse121569 --out reports/gse121569-design",
+  "primary_figure_review": "Supp Fig3a image3.jpg visually inspected in full, Fig1 original JPG inspected; batch labels manually transcribed; no numeric pixel digitization",
+  "no_new_statistical_tests": true
+}

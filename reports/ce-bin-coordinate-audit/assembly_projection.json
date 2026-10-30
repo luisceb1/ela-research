@@ -1,0 +1,9 @@
+{
+  "GEO_builds": [
+    "hg19"
+  ],
+  "article_doi": "10.1038/s41593-018-0300-4",
+  "assembly": "GRCh37/hg19",
+  "short_excerpt": "aligned to the GRCh37/hg19 reference genome",
+  "scope": "Technical methods only; no individual observations exported"
+}

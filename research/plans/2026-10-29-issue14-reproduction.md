@@ -1,0 +1,11 @@
+# Reproducción acotada de issue14
+
+Pregunta: ¿se reproducen los resúmenes agregados recibidos de expresión GSE126542 y extracción de tabla DEXSeq GSE121569? Son cohortes/experimentos distintos; expresión, uniones y genética del paquete126542 reutilizan la misma cohorte, no replicación adicional.
+
+Fuentes: ZIP previos ya inventariados, matriz pública de recuentos génicos126542 y tabla procesada dexseq-all121569 recuperadas de GEO con hash. Auditar scripts antes de ejecutar métodos. No ejecutar salidas originales por caso ni leer tablas clínicas/genéticas individuales. Usar solo etiquetas técnicas TP/TN y claves de emparejamiento publicadas, sin variables clínicas; cálculos en memoria y exportación exclusivamente agregada. No descargar metadatos clínicos.
+
+Expresión: validar14 columnas/7 pares, enteros no negativos, literalNAy unicidad de símbolos identificables. Reproducir CPM(+0.5en log) y median-of-ratios positivo; contrastar resumen original con tolerancia de redondeo. Sensibilidad adicional del denominador CPMexcluyendoNA. Las pexactas del paquete, si se cotejan, son exploratorias y condicionadas a simetría de diferencias, no causalidad o eficacia. No trasladar expresión nuclear total a ARN canónico/proteína/función.
+
+DEXSeq: recuperar tabla pública, contrastar hash original esperado, extraer3 genes y cotejar conteos/FDRpublicados/fragmentos. No refitDEXSeqni recalcularFDRa partir de tresgenes seleccionados. Verificar ensamblaje y declaración de dosdiferenciaciones por fuente primaria;18 bibliotecas no son18diferenciaciones. Las coordenadasCEdel script recibido se tratarán como intervalos declarados, sin certificación independiente; ausencia de cobertura no es ausencia molecular y DEXSeqno esPSIdeuniones.
+
+Controles/falsación: hash diferente, emparejamiento incompleto, duplicados identificables, no enteros, símbolos discordantes, resumen numérico fuera de tolerancia o falta de mapa de diferenciación impiden promover reproducción a validación. Registrar éxitos y bloqueos por separado. Entrega: manifiesto de paquetes/código/entradas, resúmenes agregados comparados, pruebas adversariales, límites y siguiente tarea. PR28se revisa sin merge automático; no afirmar cierre total deissue14 hasta uniones/repetición y diseño también auditados.

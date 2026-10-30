@@ -1,82 +1,41 @@
-# Estado actual del proyecto ELA
+# Estado vigente — 30/10/2026
 
-Actualizado: 29/10/2026. Sustituye los puntos de continuación históricos de las ramas. Consolidación integrada mediante PR #26, merge 2c0ef89207e81194f6d167f4ef3b01929a672f82. Ambas cadenas están incorporadas a main y sus 15 PR originales están cerrados; los dependientes documentan su incorporación mediante #26.
+## Alcance
 
-## Pregunta y nivel de evidencia
+Esta entrega reconcilia los contenidos de PR #28 y #29. El PR #28 fue incorporado a main mediante fc9aa3835373146988fee5e2274160596457a92f; la reconciliación de #29 se registra en el acta de integración y su estado final se verifica en GitHub por SHA y CI. La versión conjunta contiene ambas líneas de trabajo, sin añadir por ello evidencia científica independiente.
 
-¿Qué alteraciones de splicing asociadas a pérdida nuclear de TDP-43 resisten controles técnicos y contraste publicado, y qué experimento distinguiría restauración de ARN de recuperación funcional neuronal?
+Hay auditorías técnicas, reproducción numérica, descriptivos y propuestas. No hay una nueva diana validada, experimento propio o beneficio clínico demostrado. Las series o tablas reutilizadas no se cuentan como cohortes nuevas.
 
-Tenemos auditorías técnicas, observaciones descriptivas y propuestas. No una nueva diana validada, intervención experimental propia o evidencia clínica. Repetir cálculos o cruzar dos series del mismo estudio no crea replicación independiente.
+## Completado
 
-## Resultados ejecutados
-
-| Línea | Evidencia y localización | Límite vigente |
+| Línea | Resultado | Informe |
 |---|---|---|
-| GEO, #1 | reports/geo-audit: 12 bibliotecas, 392871/401720 TXNAME enlazados, cero discordancias de gen | QC técnico; RIN, composición y lecturas crudas no auditados completamente |
-| STMN2/UNC13A, #2/#17/#19 | reports/isoforms y reports/mapping-positive-controls: STMN2 4/3 modelos y UNC13A 7/7 cultivo/cerebro; selector ENSG con controles positivos | Modelos asignados, no validación del transcrito completo ni lecturas de cada unión |
-| Descriptivos | reports/descriptive y reports/event-reference: sensibilidad a medidas/denominadores y unión conocida STMN2 contrastada | Una biblioteca por condición en cultivo. Etiquetas cerebrales ALS/ALS-ci/ALS-C9 no son estratos cognitivos |
-| Metadatos cerebrales | reports/ALS_CI_metadata_correction_2026-10-29.md: corrección agregada 3 CI / 3 no CI / 2 controles | No ampliar datos clínicos personales |
-| 21 frente a 1910, #20 | reports/junction-filter-reconciliation: ZIP recuperado; parser consecutivo perdía exones y referencias. 1910 uniones agrupadas; 1901 con soporte asignado positivo en ambas series | Las 21 no forman cribado exhaustivo válido; 3 eran referencia ENST interna |
-| GENCODE | reports/gencode-junction-annotation: 17 coincidencias exactas, 1881 no encontradas para el mismo gen y 3 de un gen ausente de v47 | Ausencia no prueba novedad, crypticidad, traducción o función |
-| CAMK2B, #15 parcial | reports/camk2b-reproduction: resultado estructural previo reproducido | Ausencia de modelo cerebral no prueba ausencia biológica o de lecturas |
-| MEA, #16 parcial | reports/mea-software-audit: 11 tests recibidos y seis contraejemplos; control separado solo sintético | Simulación; validadores/denominadores históricos no habilitados para datos reales |
-| Función | reports/functional-evidence, accepted-keuss, chan-timing y reversal-design | Keuss: ASO anterior al KD tardío; Chan incluye ASO inmediatamente poslesión. No certificar originalidad del rescate diferido |
-| Imágenes | reports/image-metadata-qc: 27 cabeceras, 4 con escala física; falta mapa de unidades | Sin inferencia grupal o transferencia de calibración por tamaño |
-| Otros chats | reports/prior-work-reconciliation: 8 ZIP y 3 PDF inventariados; reproducciones posteriores arriba | GSE126542/GSE121569 y péptidos pendientes de reproducción completa; no sumar cohortes reutilizadas |
+| #1/#2/#17/#19 | Inventario técnico y mapeo por ENSG; fallo de cero objetivos corregido | reports/geo-audit, isoforms, mapping-positive-controls |
+| #20 | Parser histórico corregido; 1910 uniones agrupadas y 1901 con soporte asignado positivo | reports/junction-filter-reconciliation |
+| Catálogos y geometría | 545 anotadas v47, 353 solo autores, 182 pendientes, 821 sin coincidencia en recursos limitados; no novedad inferida | reports/global-junction-geometry y auditorías de autores |
+| Originalidad | Auditoría dirigida, límites documentales e inventario funcional; propuesta v0.4 conceptual | reports/originality-audit, functional-data-inventory |
+| #14: expresión/uniones | 45 campos de expresión, 18 de extracción DEXSeq y 24 de índices concordantes; duplicados/fórmulas auditados | reports/issue14-reproduction, fratta-junction-audit |
+| #14: DEXSeq | Diseño por dos lotes, 7030428 cuentas concordantes; sensibilidad de magnitud/denominadores y regiones CE comprobadas | reports/gse121569-design, dexseq-qc, dexseq-magnitude, dexseq-coverage, ce-bin-coordinate-audit |
+| SH-SY5Y | Seis enlaces exactos a ENA; S6 y convenciones inspeccionadas; búsqueda histórica acotada concluida | reports/shsy5y-junction-map, junction-definition-search |
 
-## Prioridad expresa: originalidad antes de otras líneas
+Los informes preservan los hashes, parámetros, errores y resultados negativos de cada ejecución. Sus antiguos apartados «siguiente tarea» son históricos; no reemplazan este estado.
 
-Auditoría dirigida completada en reports/originality-audit:12familias,8reivindicaciones y133tests técnicos. No tenemos una nueva diana/terapia/mecanismo demostrado. Baughn2023, combinaciónSTMN2/UNC13A2025, Chan2026y CTRsintomático2025limitan reclamos amplios. AGRNsecreción/función ya planteada por revisión2026. La comparación estrecha tras déficit funcional medido sigue no certificada; faltan métodos finales Guo y preprintmotor2026/solapamiento con2025. Actualización FOLLOWUP.md: cierre acotado con métodos CTR2026 indexados; Guo final/solapamiento siguen limitados. Protocolo v0.4 reformulado como extensión; siguiente inventario funcional, sin reclamar originalidad por búsqueda negativa. MismoPR28abierto, sin merge automático.
+## Bloqueos científicos, no tareas activas
 
-## Próximas tareas
+- Refit GSE121569: pozo/reactivo/fórmula y estructura de dependencia incompletos. No promover bibliotecas a diferenciaciones.
+- Siete uniones SH-SY5Y: cuatro alias UNC13A y dos conflictos de hebra STMN2 pendientes. El fichero de definición referenciado por el pipeline no se recuperó en la revisión acotada. No reabrir sin fuente nueva.
+- Contraste funcional posdéficit: seis fichas no permiten reconstruirlo con los materiales inspeccionados. No ausencia universal, ni ensayo ejecutado.
+- 821 claves sin coincidencia: referencia/cobertura/asignación/soporte de lecturas incompletos. No priorizar como descubrimientos.
+- Paridad de uniqueCounts y soporte por lecturas crudas siguen sin explicación completa. No dividir cuentas por dos ni llamarlas moléculas.
 
-1. Base operativa consolidada: partir de main y comprobar su cabeza actual. Las ramas originales son referencias históricas incorporadas, no tareas activas; no reabrir sus PR para repetir trabajo.
-2. Suplementos Bolger/crypTE: fuentes recuperadas por PMC AWS, índice y cuatro XLSX verificados; auditoría en reports/author-catalog-schema.42subtablas mapeadas mediante leyendas/xrefs; S12 clínica excluida. S7/S8 auditadas completamente:26815/14525filas no reconstruibles bajo contrato estricto.103592/103599etiquetas S8 reconstruibles son límites exónicos,7excepciones. Cruce del subconjunto reconstruible ejecutado en reports/author-junction-match:284coincidencias S8y70solo contextoS7(354uniones estrictas);278coordenadas con gen ambiguo,74con otro gen,36identidad de referencia no resuelta y1159no encontradas en el subconjunto. No ausencia/novelty ni comparación exhaustiva. Próximo: cobertura excluida y conflictos con fuentes trazables, sin reparar filas por suposición.
-3. Revaluar filtros y prioridades sobre catálogo corregido. El cero histórico de intersección estricta no valida el parser defectuoso ni descarta un mecanismo.
-4. Reproducir GSE126542/GSE121569 (#14), diferenciando cohortes reutilizadas, diferenciaciones y lecturas de unión. Solo fuentes/proyecciones permitidas, sin filas clínicas personales.
-5. Evaluar AGRN (#21) y elegir propuesta funcional (#18) tras contraste estructural y de antecedentes. UNC13A_POST_DEFICIT_PROTOCOL_v0.3.md es propuesta; actualizar su brecha histórica con auditorías Keuss/Chan.
+## Única próxima tarea
 
-## Bloqueos y restricciones
+Aplicar [NEXT_STUDY_GATE.md](NEXT_STUDY_GATE.md): seleccionar o rechazar una fuente independiente con coordenadas de unión, cuentas, controles y unidades biológicas documentadas. Revisar como máximo tres candidatos nuevos en un ciclo. Si ninguno cumple, registrar el resultado y detener esa selección, sin otra cadena de búsquedas equivalentes.
 
-- Escala par de uniqueCounts sin causa establecida. No dividir por dos ni llamar moléculas a cuentas asignadas. counts, uniqueCounts, fullLengthCounts y CPM no son intercambiables.
-- BAM/FASTQ y extremos completos no auditados; un cero o modelo ausente no demuestra ausencia molecular.
-- Cultivo y cerebro se analizan por separado, sin p-valores artificiales o función inferida de ARN.
-- Sin autorización aplicable: no contactos, publicaciones de resultados, gastos, laboratorio ni datos clínicos personales.
+## Verificación y operación
 
-## Operación
+Suite conjunta: 244 tests locales correctos en Python 3.12.14 (166 + 183 − 105 compartidos), compileall correcto. CI por SHA en Python 3.11/3.12. No se reejecutaron todos los pipelines de datos reales durante la integración. No se añaden experimentos por combinar tests.
 
-Base consolidada:105tests técnicos (85+24menos cuatro compartidos). Las auditorías de suplementos y cruce añaden20tests y esta rama supera125; consultar CI del PR para estado remoto. CI unificada Python3.11/3.12. Los 11 tests originales MEA son una ejecución histórica separada; no experimentos.
+Las diez issues históricas no se cierran automáticamente. Las ya ejecutadas se actualizan con evidencia y pendientes precisos. No contactos, publicación externa, clínica personal, gastos o laboratorio sin autorización. La integración autorizada en este turno no concede autorización general de merges futuros.
 
-Main es el punto de partida. Usar ramas breves, revisión y pruebas antes de merge. Esta consolidación está autorizada por Luis; no concede autorización general para merges futuros. Las issues no se cierran automáticamente.
-
-Work diario a las 08:00 Europe/Madrid y resumen los viernes. Releer fuentes remotas y comprobar acceso/herramientas en cada ejecución; no hay cómputo continuo garantizado. Informes antiguos conservan contexto/hashes; este estado y MASTER_EVIDENCE.md indican pendientes actuales.
-
-## Auditoría de suplementos — entrega para revisión
-
-Acceso resuelto por objetos públicos PMC AWS con MD5/SHA256; no repetir recaptcha como bloqueo universal. Informe y manifiesto en reports/author-catalog-schema y research/references/bolger_author_catalog_v1.json. El método compartido de autores es gen+misma copiaTE, con colapso por categoría; S15 contiene extremos de transcritos, no uniones. S8B/C tiene cabeceras incorrectas y S7D título discordante. El cruce elegible de1901ya se ejecutó; el catálogo completo/tejido no. No inventar cero coincidencias ni interpretar no evaluables como negativos. Ramas nuevas breves desde main; PR de esta auditoría pendiente, sin merge automático.
-
-## Cruce elegible de autores — ampliación del mismo PR28
-
-354claves estrictas:284etiquetas noTE S8y70solo contexto de transcritoTE S7; S7total145incluye75también enS8.353de354no estaban en GENCODEpara mismo gen, pero sí representadas en estas tablas: no son descubrimientos por faltar en referencia. Gen resuelto por símbolo único globalGCv47, sin alias/proximidad. STMN2críptico no evaluable por diez filas S7con bloques inválidos; unión canónica de control recuperada en dos filas S8D. No reparar la lista de longitudes ni llamar ausencia al fallo.125tests locales; tablas idénticas en tres pasadas completas, hashes en reports/author-junction-match/run.json. Misma rama/PR28desde main, sin merge automático. Próximo revisar conflictos y cobertura con GTF/identificadores primarios; si bloqueado pasar a #14.
-
-Actualización de prioridad: los siguientes pasos históricos de cobertura/#14 quedan después del cierre documental de originalidad solicitado por Luis. Informe, registro versionado y límites explícitos en reports/originality-audit;133tests locales.
-
-## Cierre documental de originalidad y propuesta vigente
-
-Ciclo29/10/2026: reports/originality-audit/FOLLOWUP.md. CTR2026: métodos primarios indexados verifican administración a seis semanas con temblor; solapamiento de datos con CTR2025no resuelto, sin sumar replicaciones. Guo final sigue sin métodos accesibles; no trasladar preprint. Autoría bibliográfica corregida con PubMed/Stanford y original conservado en closure.json. Protocolo vigente v0.4 como extensión, originalidad no certificada; registros del mismo pozo son medidas repetidas. El cierre documental es acotado con bloqueos explícitos, no declaración de novedad. Siguiente tarea segura: inventario de disponibilidad de datos funcionales para unidad/basal/primera dosis; sin efectos hasta enlace de unidades. Si no hay brazo posdéficit reconstruible, documentarlo y volver al QC del backlog. Sin autorización de laboratorio/contactos/merge.
-
-## Inventario funcional completado — 29/10/2026
-
-reports/functional-data-inventory: seis fichas de ensayo/versión de cuatro familias; ninguna permite reconstruir nuestro contraste posdéficit con los materiales inspeccionados. Suplemento Keuss2024recuperado y texto revisado, sin manifiesto MEA de unidades; aceptado sigue403y calendario ASOpreKD. Chan/Beccari datos fuente existentes sin enlace biológico/longitudinal suficiente; Baughn anexo devuelveHTML. No ausencia universal ni resultado experimental negativo; no efectos calculados.140tests técnicos locales. Cierre de esta vía con bloqueos explícitos: no repetir sin nueva fuente primaria. Siguiente tarea segura seleccionada: QC de cobertura crypTE,36identidades de referencia no resueltas y278coincidencias autoras de gen ambiguo; sin reparar por proximidad ni priorizar novedad. Protocolo funcional v0.4 sigue conceptual.
-
-## QC de identidad de genes — 29/10/2026
-
-reports/author-gene-ambiguity:33de36claves tienen ENSG/locus confirmado;3deENSG00000276256ausente en v47con procedencia GTF GEO recuperada. Las278claves autoras ambiguas permanecen sin resolución única; no forzar por proximidad. Una clave GTPBP6chrYcondicional adicional, comprobada en3filasS8, dependiente de locus declarado y sin auditoría de lecturasX/Y.354estrictas originales intactas; sensibilidad355no las reemplaza.149tests técnicos locales, cuatroTSVidénticos en dos pasadas. Siguiente tarea segura: auditar74claves con coordenadas atribuidas a otro gen, conservar conflictos no resolubles; después cobertura/#14. No significado funcional, novedad, replicación nueva o autorización de laboratorio/merge.
-
-## Conflictos de gen auditados — 29/10/2026
-
-reports/author-gene-conflicts:74claves/23genes,298referencias a56filas autoras originales comprobadas.73uniones ya anotadas exactamente en v47bajo gen autor; en ambosGTFtambién existen modelos de los dos genes. Una unión deENSG00000278915frenteaENSG00000278946no encontrada bajo ninguno en v47, persiste conflicto. No reasignar ni inferir origen molecular;354estrictas intactas.156tests técnicos locales. Resultado limita reclamo de novedad basado en no encontrado para mismo gen. Siguiente tarea segura: geometría exacta contra todos los genes de v47para1901claves, sin restricción de gen candidato/autor; después cobertura/#14. No clínica, contactos, laboratorio, gasto o merge.
-
-## Geometría global completada — 29/10/2026
-
-reports/global-junction-geometry: 1901 claves / 1882 geometrías únicas. Coincidencias v47: 17 bajo mismo gen + 528 solo otros genes; 1356 claves no encontradas. Partición conjunta: 545 anotadas, 353 solo representadas con mismo gen en autores (incluye contexto S7), 182 de identidad/conflicto pendiente y 821 sin coincidencia en ambos recursos limitados. No 821 descubrimientos. Los 17 controles y todos los testigos de los 73 conflictos se reproducen; 166 tests técnicos locales. No reasignación molecular, función o novedad inferidas.354estrictas/355condicionales históricas intactas. QCglobal cerrado; siguiente tarea segura seleccionada: reproducción acotada #14 GSE126542/GSE121569, primero procedencia/paquetes/scripts/unidad de replicación, sin clínica personal ni resultados simulados. Cobertura excluida de821sigue pendiente; no priorizarlas como dianas. Sin contactos, gastos, laboratorio o merge automático.
+Historial anterior de ambos estados: reports/integration-20261030/history. El resumen semanal de 30/10 se conserva sin duplicarlo.

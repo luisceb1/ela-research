@@ -1,0 +1,8 @@
+count_field	S6_name	chrom	left_boundary	right_boundary	S6_strand	reference_strand	status
+UNC13A_annotated	UNC13A_annotated	chr19	17641556	17642845	-	-	exact_label_strand_concordant
+UNC13A_3prime							unresolved_alias_no_automatic_mapping
+UNC13A_5prime							unresolved_alias_no_automatic_mapping
+UNC13A_5prime_2							unresolved_alias_no_automatic_mapping
+UNC13A_5prime_3							unresolved_alias_no_automatic_mapping
+STMN2_annotated	STMN2_annotated	chr8	79611214	79636802	-	+	exact_label_strand_conflict
+STMN2_cryptic	STMN2_cryptic	chr8	79611214	79616822	-	+	exact_label_strand_conflict

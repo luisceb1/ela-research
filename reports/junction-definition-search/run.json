@@ -1,0 +1,11 @@
+{
+  "date": "2026-10-30",
+  "python": "3.12.14",
+  "dependencies": "stdlib",
+  "parent_commit": "2965c6f20e2f7b6e22fb26dedced4b2658e505f9",
+  "method": "Metadata and source-path evidence only; no genotype/clinical data or external code executed",
+  "hashes": {
+    "research/references/junction_definition_search_20261030.json": "5bb265f3b8e26254e116a2e5d02c9297782d8e91a33deebd62399f02c03e1ea9",
+    "/workspace/scratch/1c0aac61c246/ela-issue14/scripts/audit_junction_definition_search.py": "1fd2f7e094c67da37d021fcc55b862804e2c9891f40ec9ddb30d27c6a3df9182"
+  }
+}

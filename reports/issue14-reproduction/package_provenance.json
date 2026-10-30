@@ -1,0 +1,31 @@
+[
+  {
+    "package": "ELA_GSE126542_reanalisis_real_2026-10-28(1).zip",
+    "package_sha256": "30ee60058e656429d78aed88e7ed866b308a5108e59c062fa39b4e677d0f03e1",
+    "code_member": "ELA_GSE126542_resultados_2026-10-28/ELA_analisis_v1.py",
+    "code_sha256": "96db8dfd3a70b4bc7ef2db71908c293338add282eb9fb5e5eb5ba617b46adfa6",
+    "code_executed": false,
+    "attribution": "User-provided prior project analysis; no separate license inferred",
+    "packed_counts_sha256": "c7a9ddae801f160e5ee6f02d4a6f127bde351a1ca85adaaba07228d4c24da0f8",
+    "aggregate_member": "ELA_GSE126542_resultados_2026-10-28/resultados/resultados_resumen.csv",
+    "aggregate_sha256": "8049793d2d013e1d918528d1efc0d371d71d94645074661420a4f14a1fd26eca"
+  },
+  {
+    "package": "ELA_GSE126542_reanalisis_02_splicing_2026-10-28(1).zip",
+    "package_sha256": "9d2121d2b2a0872a04e8e6f7f9e6a944e64d27e9ee4c3eabfe9c44e06fb91fbc",
+    "code_member": "analizar_splicing_y_expresion.py",
+    "code_sha256": "9c9dae6f4377b93c24cce5555bd0a7c8709c1be9c2c3a61a40360a036a5f3d0c",
+    "code_executed": false,
+    "attribution": "User-provided prior project analysis; no separate license inferred"
+  },
+  {
+    "package": "ELA_REANALISIS_05_CIERRE_SPLICING_2026-10-28(1).zip",
+    "package_sha256": "c9b44386ca8dd2528b4ba1f931027397df762d852a1104384006cd2773045165",
+    "code_member": "ELA_REANALISIS_05_CIERRE_SPLICING_2026-10-28/analizar_dexseq_ela.py",
+    "code_sha256": "f9ca689414022b9d7fd79c4db0f601269e6bf019be3f9a89e726fa30b733561d",
+    "code_executed": false,
+    "attribution": "User-provided prior project analysis; no separate license inferred",
+    "aggregate_member": "ELA_REANALISIS_05_CIERRE_SPLICING_2026-10-28/resultados/auditoria.json",
+    "aggregate_sha256": "3a01b99992188f6765b7008a328bb69650413d93f5e3d5e03681ada9eaead71e"
+  }
+]

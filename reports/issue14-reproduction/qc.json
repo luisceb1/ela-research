@@ -1,0 +1,62 @@
+{
+  "expression": {
+    "rows": 58567,
+    "literal_NA_rows": 702,
+    "named_unique_genes": 57865,
+    "libraries": 14,
+    "pairs": 7,
+    "positive_genes_for_size_factors": 20437
+  },
+  "dexseq": {
+    "rows": 589903,
+    "columns": 37,
+    "missing_symbols": 98236,
+    "target_fragments": 102,
+    "count_column_names_technical_only": [
+      "countData.siScr_1",
+      "countData.siScr_2",
+      "countData.siTDP43_1",
+      "countData.siTDP43_2",
+      "countData.siScr_3",
+      "countData.siScr_4",
+      "countData.siTDP43_3",
+      "countData.siTDP43_4",
+      "countData.siScr_5",
+      "countData.siScr_6",
+      "countData.siTDP43_5",
+      "countData.siTDP43_6"
+    ],
+    "declared_CE_coverage": [
+      {
+        "gene": "STMN2",
+        "declared_interval": [
+          "chr8",
+          80529057,
+          80529284
+        ],
+        "assembly": "GRCh37/hg19",
+        "interval_independently_validated": false,
+        "overlapping_fragments": 0,
+        "nearest_fragment": "ENSG00000104435:E003",
+        "nearest_distance_bp": 5031
+      },
+      {
+        "gene": "UNC13A",
+        "declared_interval": [
+          "chr19",
+          17753223,
+          17753350
+        ],
+        "assembly": "GRCh37/hg19",
+        "interval_independently_validated": false,
+        "overlapping_fragments": 0,
+        "nearest_fragment": "ENSG00000130477:E037",
+        "nearest_distance_bp": 304
+      }
+    ],
+    "DEXSeq_model_refitted": false
+  },
+  "per_case_or_sample_rows_exported": false,
+  "clinical_variables_used": false,
+  "interpretation": "Numerical aggregate reproduction, not independent replication or therapeutic inference"
+}

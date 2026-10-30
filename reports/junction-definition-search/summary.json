@@ -1,0 +1,41 @@
+{
+  "commits_with_metadata": 264,
+  "historical_trees_inspected": 8,
+  "script_versions_inspected": 5,
+  "definition_basename": "stmn2_and_unc13a.bed",
+  "definition_file_found_in_sampled_trees": false,
+  "definition_references": [
+    {
+      "commit": "825d75e45c34cecd5e2d7378c48d2642a359825e",
+      "blob": "d6b5188b3cd5398bca71414ab9e5022a9d74f89a",
+      "path": "parse_star_junctions.smk",
+      "line": 8,
+      "text": "bed_file = \"/SAN/vyplab/alb_projects/data/sinai_splice_junctions/beds/stmn2_and_unc13a.bed\""
+    },
+    {
+      "commit": "4c2fbc27d9f90639a9bd356d0aabf065cfcc0cb1",
+      "blob": "a0712aec0d93d4c68de2cf23ef3a5e6be1e6c207",
+      "path": "parse_star_junctions.smk",
+      "line": 8,
+      "text": "bed_file = \"/SAN/vyplab/alb_projects/data/sinai_splice_junctions/beds/stmn2_and_unc13a.bed\""
+    }
+  ],
+  "target_fields": [
+    "STMN2_annotated",
+    "STMN2_cryptic",
+    "UNC13A_annotated",
+    "UNC13A_3prime",
+    "UNC13A_5prime",
+    "UNC13A_5prime_2",
+    "UNC13A_5prime_3"
+  ],
+  "fully_linked_coordinate_fields": 1,
+  "exact_labels_with_strand_conflict": 2,
+  "aliases_unresolved": 4,
+  "library_run_links_previously_verified": 6,
+  "new_biological_data_analyzed": false,
+  "biological_absence_inferred": false,
+  "source_linkage_status": "blocked_pending_new_explicit_definition",
+  "all_history_or_worldwide_absence_claim": false,
+  "next_step": "Do not repeat this search without a new source; keep SH-SY5Y seven-event reanalysis blocked and preserve completed run map"
+}

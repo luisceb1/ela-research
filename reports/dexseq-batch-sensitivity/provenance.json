@@ -1,0 +1,11 @@
+{
+  "source_sha256": "daaf355a7cbd48b617d30201ba289d8f0c4efc9fbc2a23ca2f991c84e1d814f4",
+  "design_sha256": "239323f99360018259f165583fef66d2c1043ed6b8efe8c021a3c2e0abe5e2e2",
+  "date": "2026-10-30",
+  "method": "library-level within-group count fraction, then unweighted condition mean within each published batch; no inferential tests",
+  "targets": {
+    "ENSG00000104435": "STMN2",
+    "ENSG00000130477": "UNC13A",
+    "ENSG00000120948": "TARDBP"
+  }
+}

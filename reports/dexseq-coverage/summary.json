@@ -1,0 +1,119 @@
+{
+  "focal": [
+    {
+      "fragment": "ENSG00000104435:E009",
+      "min_count_all_libraries": 908,
+      "zero_libraries": 0,
+      "H1_all_counts_ge10": true,
+      "H2_discordant_all_denominators": false,
+      "direction_by_method": {
+        "within_gene_pp": "opposite_direction",
+        "other_bins_ratio": "opposite_direction",
+        "assigned_bin_CPM": "same_direction"
+      }
+    },
+    {
+      "fragment": "ENSG00000130477:E026",
+      "min_count_all_libraries": 38,
+      "zero_libraries": 0,
+      "H1_all_counts_ge10": true,
+      "H2_discordant_all_denominators": true,
+      "direction_by_method": {
+        "within_gene_pp": "opposite_direction",
+        "other_bins_ratio": "opposite_direction",
+        "assigned_bin_CPM": "opposite_direction"
+      }
+    },
+    {
+      "fragment": "ENSG00000130477:E030",
+      "min_count_all_libraries": 40,
+      "zero_libraries": 0,
+      "H1_all_counts_ge10": true,
+      "H2_discordant_all_denominators": true,
+      "direction_by_method": {
+        "within_gene_pp": "opposite_direction",
+        "other_bins_ratio": "opposite_direction",
+        "assigned_bin_CPM": "opposite_direction"
+      }
+    },
+    {
+      "fragment": "ENSG00000130477:E054",
+      "min_count_all_libraries": 29,
+      "zero_libraries": 0,
+      "H1_all_counts_ge10": true,
+      "H2_discordant_all_denominators": false,
+      "direction_by_method": {
+        "within_gene_pp": "opposite_direction",
+        "other_bins_ratio": "opposite_direction",
+        "assigned_bin_CPM": "same_direction"
+      }
+    }
+  ],
+  "prior_rows_reproduced": 204,
+  "coverage_rows": 408,
+  "effect_rows": 612,
+  "direction_counts": {
+    "STMN2": {
+      "within_gene_pp": {
+        "same_direction": 8,
+        "opposite_direction": 2,
+        "zero_in_at_least_one_batch": 0,
+        "not_evaluable": 0
+      },
+      "other_bins_ratio": {
+        "same_direction": 8,
+        "opposite_direction": 2,
+        "zero_in_at_least_one_batch": 0,
+        "not_evaluable": 0
+      },
+      "assigned_bin_CPM": {
+        "same_direction": 10,
+        "opposite_direction": 0,
+        "zero_in_at_least_one_batch": 0,
+        "not_evaluable": 0
+      }
+    },
+    "UNC13A": {
+      "within_gene_pp": {
+        "same_direction": 36,
+        "opposite_direction": 26,
+        "zero_in_at_least_one_batch": 0,
+        "not_evaluable": 0
+      },
+      "other_bins_ratio": {
+        "same_direction": 35,
+        "opposite_direction": 27,
+        "zero_in_at_least_one_batch": 0,
+        "not_evaluable": 0
+      },
+      "assigned_bin_CPM": {
+        "same_direction": 50,
+        "opposite_direction": 12,
+        "zero_in_at_least_one_batch": 0,
+        "not_evaluable": 0
+      }
+    },
+    "TARDBP": {
+      "within_gene_pp": {
+        "same_direction": 20,
+        "opposite_direction": 10,
+        "zero_in_at_least_one_batch": 0,
+        "not_evaluable": 0
+      },
+      "other_bins_ratio": {
+        "same_direction": 20,
+        "opposite_direction": 10,
+        "zero_in_at_least_one_batch": 0,
+        "not_evaluable": 0
+      },
+      "assigned_bin_CPM": {
+        "same_direction": 29,
+        "opposite_direction": 1,
+        "zero_in_at_least_one_batch": 0,
+        "not_evaluable": 0
+      }
+    }
+  },
+  "no_inferential_tests": true,
+  "coverage_definition": "Assigned counts per bin, not base or junction coverage"
+}

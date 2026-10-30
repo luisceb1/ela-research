@@ -1,0 +1,13 @@
+column	gsm	alias	condition	cell_model	deposited_date	experiment_id	differentiation_id	well_id	sirna_reagent_id	published_batch
+countData.siScr_1	GSM3439290	siScr_1	scramble	differentiated HUES3 into hMNs	2013-01-10	published grouping: Batch 1	published grouping: Batch 1	unknown	unknown	Batch 1
+countData.siScr_2	GSM3439291	siScr_2	scramble	differentiated HUES3 into hMNs	2013-01-10	published grouping: Batch 1	published grouping: Batch 1	unknown	unknown	Batch 1
+countData.siTDP43_1	GSM3439292	siTDP43_1	TDP43	differentiated HUES3 into hMNs	2013-01-10	published grouping: Batch 1	published grouping: Batch 1	unknown	unknown	Batch 1
+countData.siTDP43_2	GSM3439293	siTDP43_2	TDP43	differentiated HUES3 into hMNs	2013-01-10	published grouping: Batch 1	published grouping: Batch 1	unknown	unknown	Batch 1
+countData.siScr_3	GSM3439297	siScr_3	scramble	differentiated HUES3 into hMNs	2013-06-10	published grouping: Batch 2	published grouping: Batch 2	unknown	unknown	Batch 2
+countData.siScr_4	GSM3439298	siScr_4	scramble	differentiated HUES3 into hMNs	2013-06-10	published grouping: Batch 2	published grouping: Batch 2	unknown	unknown	Batch 2
+countData.siTDP43_3	GSM3439299	siTDP43_3	TDP43	differentiated HUES3 into hMNs	2013-06-10	published grouping: Batch 2	published grouping: Batch 2	unknown	unknown	Batch 2
+countData.siTDP43_4	GSM3439300	siTDP43_4	TDP43	differentiated HUES3 into hMNs	2013-06-10	published grouping: Batch 2	published grouping: Batch 2	unknown	unknown	Batch 2
+countData.siScr_5	GSM3439303	siScr_5	scramble	differentiated HUES3 into hMNs	2013-06-10	published grouping: Batch 2	published grouping: Batch 2	unknown	unknown	Batch 2
+countData.siScr_6	GSM3439304	siScr_6	scramble	differentiated HUES3 into hMNs	2013-06-10	published grouping: Batch 2	published grouping: Batch 2	unknown	unknown	Batch 2
+countData.siTDP43_5	GSM3439305	siTDP43_5	TDP43	differentiated HUES3 into hMNs	2013-06-10	published grouping: Batch 2	published grouping: Batch 2	unknown	unknown	Batch 2
+countData.siTDP43_6	GSM3439306	siTDP43_6	TDP43	differentiated HUES3 into hMNs	2013-06-10	published grouping: Batch 2	published grouping: Batch 2	unknown	unknown	Batch 2

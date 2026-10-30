@@ -1,0 +1,29 @@
+{
+  "supplement_rows": 16,
+  "assembly": "hg38 as described by article Supplementary Table6 legend",
+  "culture": "SH-SY5Y",
+  "culture_count_rows": 6,
+  "exact_run_links": 6,
+  "condition_counts": {
+    "control": 3,
+    "TDP-43 KD": 3
+  },
+  "exact_coordinate_labels": 3,
+  "fully_strand_concordant_labels": 1,
+  "strand_conflict_labels": [
+    "STMN2_annotated",
+    "STMN2_cryptic"
+  ],
+  "unresolved_aliases": [
+    "UNC13A_3prime",
+    "UNC13A_5prime",
+    "UNC13A_5prime_2",
+    "UNC13A_5prime_3"
+  ],
+  "library_mapping_prediction_met": true,
+  "seven_coordinate_links_prediction_met": false,
+  "ready_for_inference": false,
+  "effects_calculated": false,
+  "BAM_or_FASTQ_downloaded": false,
+  "source_comment_vs_code": "Executable uses STAR first-1,last+1, unlike stale commented end example; outputs are flanking boundaries, not assumed standard BED intron intervals"
+}

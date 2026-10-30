@@ -1,0 +1,2 @@
+# Required only for full aggregate reproduction (t critical values), not offline unit tests.
+scipy==1.17.0

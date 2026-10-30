@@ -1,0 +1,43 @@
+{
+  "series_libraries": 18,
+  "contrast_columns": 12,
+  "all_condition_counts": {
+    "fluorescent": 3,
+    "scramble": 6,
+    "TDP43": 6,
+    "none": 3
+  },
+  "contrast_date_condition": [
+    {
+      "deposited_date": "2013-01-10",
+      "condition": "scramble",
+      "libraries": 2
+    },
+    {
+      "deposited_date": "2013-01-10",
+      "condition": "TDP43",
+      "libraries": 2
+    },
+    {
+      "deposited_date": "2013-06-10",
+      "condition": "scramble",
+      "libraries": 4
+    },
+    {
+      "deposited_date": "2013-06-10",
+      "condition": "TDP43",
+      "libraries": 4
+    }
+  ],
+  "condition_crossed_with_deposited_date": true,
+  "date_is_verified_experiment_id": false,
+  "published_batch_links": 12,
+  "independent_MN_differentiation_experiments_reported": 2,
+  "experiment_count_source": "Klim2019 Fig1b legend; manual source audit, not computed from library count",
+  "published_batch_counts": {
+    "Batch 1": 4,
+    "Batch 2": 8
+  },
+  "inferential_refit_allowed": false,
+  "reason": "Published batch grouping recovered when manifest supplied, but well/reagent identity and original model formula unresolved. No automatic inferential refit; 12 libraries do not imply 12 independent differentiations."
+}

@@ -1,0 +1,25 @@
+{
+  "date": "2026-10-30",
+  "python": "3.12.14",
+  "dependencies": {
+    "xlrd": "2.0.1"
+  },
+  "parent_commit": "04668868e1840b3f6600b9f2eb245339c656fe66",
+  "random_seed": null,
+  "hashes": {
+    "data/cache/shsy5y-map/Supplementary6.xls": "54d91b96f58b0cb85234f10c11451ca86211e183e1d2d6076dab3fcd87b83a41",
+    "data/cache/junction-source-inventory/kd_experiments_relative_rna_and_unc13a_cryptic_junction_counts.csv": "77ab875a1dbc2663179e38132dd1512043aff6da1eddb05bc5060d6796319766",
+    "research/references/target_gene_geometry_v47.json": "b6bd2c490f5aef5c8b7c26af174eebbe92b5e292ce394113fcf78fbac9fdfe07",
+    "data/cache/shsy5y-map/ENA_runs.tsv": "94e7c731a0d5e360382dfe1bb8758ea853492fab6e3906ddf0077ede8311a6bb",
+    "/workspace/scratch/1c0aac61c246/ela-issue14/scripts/audit_shsy5y_junction_map.py": "d594eaefa6f4c2f3ef1d0d7819548dd0540802f647e20629b12fea5d0fe4532e",
+    "data/cache/shsy5y-map/ERR5296827.xml": "8d0129aad93a02b12fb8ae5bde511ecc4bf57d905aa4c6cc7442132d56412109",
+    "data/cache/shsy5y-map/ERR5301820.xml": "b0e028dfa9a421f03ff61e2b78a8a08a0cf5572766fed31e222e93b661ad6095",
+    "data/cache/shsy5y-map/ERR5300363.xml": "8b02e20b9957ac2c50145c1c937fefd2535e7992656ec69b9c6c1244a8d2f478",
+    "data/cache/shsy5y-map/ERR5296849.xml": "7efb72f909f8c90c060fb39ce0303effbb205f598e2947b766e538c23c78a184",
+    "data/cache/shsy5y-map/ERR5296853.xml": "34caca9bd3015b44d47d18b4b06aa8f72384d9c89f6f1c1f00595d5b245cae85",
+    "data/cache/shsy5y-map/ERR5296899.xml": "03261c387445beaae585f61dc710239e3e84cc595c0db58a27fd63374f8c9b69",
+    "data/cache/shsy5y-map/pipeline_converter.txt": "0f69fa027d92e2dd9e6a4dbcb7dcd5a17131ed48530e27003584672072cd7d5a",
+    "data/cache/shsy5y-map/pipeline_rules.txt": "ce6a729848147ef9bb41c90d42d7d08876ed8e0afba677f9a09ae58134437921"
+  },
+  "reference_scope": "Reused GENCODE v47 gene index from previous audited reference, not new whole-GTF revalidation"
+}

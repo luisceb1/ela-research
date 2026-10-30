@@ -1,0 +1,5 @@
+[
+ {"attempt":"Initial identifier validator","error":"Rejected published compound group ENSG00000001084+ENSG00000231683:001","resolution":"Explicit support for compound ENSG groups, preserved order; regression test"},
+ {"attempt":"Initial uniqueness assumption","error":"Repeated DEXSeq fragment; first observed repetition differed in Entrez annotation","resolution":"Audit repeated counts, nonannotation fields and annotation variants separately; no summation or silent repair"},
+ {"attempt":"Process diagnostic during full scan","error":"ps returned fatal library error, lookup self","resolution":"No diagnostic result used; awaited successful completion of full scan"}
+]

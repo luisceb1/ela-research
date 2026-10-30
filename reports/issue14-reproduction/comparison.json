@@ -1,0 +1,7 @@
+{
+  "numeric_fields_compared": 63,
+  "mismatches": 0,
+  "received_code_executed": false,
+  "individual_output_members_read": false,
+  "scope": "Only received code, packaged count-file digest and aggregate expected results read; no case/clinical/genetic tables"
+}

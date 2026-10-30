@@ -1,0 +1,6 @@
+source_group	control_rows	KD_rows	accession	file_inspected	junction_fields_verified	coordinate_link_verified	unit_map_verified	independent_units_verified	editorial_identity_verified	reused	clinical_data_used	ready_for_external_reanalysis	decision
+Appocher	3	3	GSE97262	True	True	False	False	False	False	False	False	False	candidate_pending_provenance_and_units
+Klim iPSC MN	11	6	GSE121569	True	True	False	False	False	True	True	False	False	reused_same_study_not_external
+SH-SY5Y	3	3	PRJEB42763	True	True	False	False	False	True	False	False	False	candidate_pending_provenance_and_units
+SK-N-DZ	3	3	PRJEB42763	True	True	False	False	False	False	False	False	False	candidate_pending_provenance_and_units
+iPSC Neurons	4	3	PRJEB42763	True	True	False	False	False	True	False	False	False	candidate_pending_provenance_and_units

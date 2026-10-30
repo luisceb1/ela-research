@@ -1,0 +1,50 @@
+{
+  "STMN2": {
+    "fragments": 10,
+    "same_direction": 8,
+    "opposite_direction": 2,
+    "zero_in_at_least_one_batch": 0,
+    "library_counts": {
+      "Batch 1": {
+        "scramble": 2,
+        "KD": 2
+      },
+      "Batch 2": {
+        "scramble": 4,
+        "KD": 4
+      }
+    }
+  },
+  "UNC13A": {
+    "fragments": 62,
+    "same_direction": 36,
+    "opposite_direction": 26,
+    "zero_in_at_least_one_batch": 0,
+    "library_counts": {
+      "Batch 1": {
+        "scramble": 2,
+        "KD": 2
+      },
+      "Batch 2": {
+        "scramble": 4,
+        "KD": 4
+      }
+    }
+  },
+  "TARDBP": {
+    "fragments": 30,
+    "same_direction": 20,
+    "opposite_direction": 10,
+    "zero_in_at_least_one_batch": 0,
+    "library_counts": {
+      "Batch 1": {
+        "scramble": 2,
+        "KD": 2
+      },
+      "Batch 2": {
+        "scramble": 4,
+        "KD": 4
+      }
+    }
+  }
+}

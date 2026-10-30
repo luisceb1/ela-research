@@ -1,0 +1,37 @@
+{
+  "date": "2026-10-29",
+  "sources": [
+    {
+      "dataset": "GSE126542",
+      "file": "GSE126542_NeuronalNuclei_RNAseq_counts.txt.gz",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE126nnn/GSE126542/suppl/GSE126542_NeuronalNuclei_RNAseq_counts.txt.gz",
+      "bytes": 943613,
+      "sha256": "c7a9ddae801f160e5ee6f02d4a6f127bde351a1ca85adaaba07228d4c24da0f8",
+      "public_status_verified": true,
+      "specific_dataset_license": "not independently verified; attribution retained",
+      "raw_matrix_republished": false
+    },
+    {
+      "dataset": "GSE121569",
+      "file": "GSE121569_dexseq-all.csv.gz",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE121nnn/GSE121569/suppl/GSE121569_dexseq-all.csv.gz",
+      "bytes": 56262538,
+      "sha256": "daaf355a7cbd48b617d30201ba289d8f0c4efc9fbc2a23ca2f991c84e1d814f4",
+      "public_status_verified": true,
+      "specific_dataset_license": "not independently verified; attribution retained",
+      "raw_matrix_republished": false
+    }
+  ],
+  "primary_design_checks": [
+    {
+      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6508629/",
+      "locator": "Results: RNA Dysregulation Associated with the Loss of TDP-43",
+      "scope": "Seven paired experimental units; no demographic tables read"
+    },
+    {
+      "source": "https://www.nature.com/articles/s41593-018-0300-4",
+      "locator": "Supplementary Figure3 primary indexed text",
+      "scope": "Two independent experiments; library-to-differentiation map not reconstructed"
+    }
+  ]
+}
