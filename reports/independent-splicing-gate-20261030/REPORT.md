@@ -114,3 +114,18 @@ User-reported run of `scripts/rimod_unc13a_depth_qc.py`: 47/47 joined samples, 4
 Cluster depth median: comparators 129 (range 4–288), FTLD-TDP genotype proxy 148 (range 67–366). RIN median: comparators 7.1, FTLD-TDP proxy 6.4; all 47 RIN values reported as available. Per-junction ratio medians in FTLD-TDP: canonical 0.97, cryptic_1 0.019, cryptic_2 0.0119, cryptic_long 0; in comparators 1, 0, 0, 0. These are unadjusted descriptive summaries, and QC filters are exploratory.
 
 **Open limitations:** nonrandom RIN differences require a stratified/confounding sensitivity analysis; confirm genomic reference and event transcript annotation; genotype is not per-sample direct pathology assessment; no independent validation; 47 donors/47 libraries assumed one each only pending provenance. Do not claim diagnostic accuracy or causal TDP-43 effect.
+
+
+## Addendum: RiMOD RIN-stratified UNC13A sensitivity (user-reported local run, 2026-10-30)
+
+`scripts/rimod_unc13a_rin_strata.py` completed with n=47. Outcome: candidate `cryptic_1`, minimum 1 count, grouped by RIN:
+
+| RIN stratum | FTLD-TDP genotype proxy | Control/MAPT comparator |
+|---|---|---|
+| <6.5 | 8/11 | 0/5 |
+| 6.5–<7.5 | 7/7 | 0/9 |
+| >=7.5 | 1/2 | 0/13 |
+
+At local cluster depth >=100 in the intermediate RIN stratum: FTLD-TDP proxy 6/6 vs comparators 0/6, minimum 1 count; >=3 counts 5/6 vs 0/6; >=5 counts 3/6 vs 0/6. Source: user-provided stdout; not independently reproduced in this assistant environment. The high-RIN FTLD-TDP stratum has n=2 and is underpowered. Bands and read thresholds exploratory; they do not establish RIN adjustment or eliminate library/tissue/cell composition confounders. No claim of biomarker specificity, causal molecular rescue, ALS cohort replication or original discovery.
+
+Immediate scientific gate: confirm exact donor-level identity/region of each UNC13A splice junction in author event table and the genomic assembly/conventions; then consider a pre-specified matched/adjusted sensitivity, and external ALS data.
