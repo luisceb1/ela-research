@@ -1,0 +1,17 @@
+[
+  {
+    "control": "truncated_tree",
+    "result": "rejected_as_expected",
+    "reason": "Truncated historical tree cannot support bounded search"
+  },
+  {
+    "control": "new_definition",
+    "result": "rejected_as_expected",
+    "reason": "New definition requires coordinate audit"
+  },
+  {
+    "control": "file_present_in_snapshot",
+    "result": "rejected_as_expected",
+    "reason": "Definition found: inspect new candidate before declaring block"
+  }
+]

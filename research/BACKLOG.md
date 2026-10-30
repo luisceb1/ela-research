@@ -1,5 +1,11 @@
 # Backlog vigente — 29/10/2026
 
+## Definición de uniones: cierre acotado con bloqueo — 30/10/2026
+
+La búsqueda histórica dirigida identifica stmn2_and_unc13a.bed como entrada local del pipeline (dos versiones con blobs fijados), sin recuperar su contenido en los ocho árboles inspeccionados. Alcance: 264 metadatos de commits, ocho árboles históricos, cinco scripts y cuatro búsquedas dirigidas; no revisión integral de todos los commits/ramas/forks. El Rmd histórico lee el CSV ya calculado. No se resolvieron cuatro alias UNC13A ni dos conflictos de hebra STMN2. Se conservan los seis enlaces técnicos a ENA, sin independencia biológica inferida. Informe en reports/junction-definition-search.
+
+Esta vía de reanálisis conjunto de siete uniones queda BLOQUEADA por definición molecular incompleta. No repetir búsquedas idénticas ni auditorías de los mismos bins sin una fuente nueva. Condición para reabrir: definición original o paso generador explícito que resuelva etiquetas/extremos/hebra. La próxima decisión científica debe seleccionar una pregunta con insumos públicos completos, sin sumar esta fuente como replicación ni promover candidatos por este bloqueo. Issue14 permanece parcial; no se cierra ni fusiona nada. 183 tests existentes correctos, compileall correcto y tres controles negativos de estado ejecutados; no son nuevos experimentos.
+
 ## SH-SY5Y: mapa técnico completado y geometría parcial — 30/10/2026
 
 reports/shsy5y-junction-map enlaza exactamente CTR07/08/09 y TDP10/11/12 con seis runs de PRJEB42763 por nombres de BAM en XML ENA (3control/3KD), sin descargaBAM/FASTQni independencia biológica inferida. Supplementary6recuperada como XLS válido desdePMCS3:16uniones;de7camposdecuentas,3nombresidénticos,soloUNC13A_annotatedconhebraconcordante. STMN2_annotated/cryptic tienen conflicto S6−frenteaGCv47+;4aliasUNC13ACEpendientes,sinreasignación. PipelineSTARinicio−1/final+1sonlímitesflanqueantes,noBEDintrónicoestándar;comentario difiere del código,noejecutadocódigoexterno.183tests locales(175+8),compileallOK.
