@@ -63,3 +63,21 @@ User's local ZIP integrity CRC passed; an exploratory extraction at **candidate*
 New script `scripts/rimod_unc13a_group_summary.py` locally fetches the version-pinned author metadata to ignored `data/external`, validates exact sample-ID match and 4 events per sample, and **prints only aggregate group summaries**. Require running and reviewing stdout before claiming a group association. No normalization, PSI, p value, model, biological validation or newly discovered UNC13A event claimed. The author repository already interrogated cryptic burden; this is a reproducible technical extension/comparison of published data.
 
 Next safeguards: verify precise LeafCutter coordinate convention and exact UNC13A CE identity in author event reference, check whether same splicing branch is assigned distinct clusters, and validate sample-level sequencing depth / RIN, tissue region, genotype/pathology grouping before drawing associations. Any downstream inferred statistic needs preregistered numerator, denominator and independent units; avoid publishing row-level donor data.
+
+
+## Addendum: local group summary reported by user (2026-10-30)
+
+Execution: `py scripts/rimod_unc13a_group_summary.py` against locally downloaded RiMOD ZIP; author metadata SHA256 `40b246f817835b0db6453c5ce348d7590df185692a4998bdc1dd3c86c060c4b5`; 4127 real chr19 Parquets, 47 joined sample IDs (16 control, 11 MAPT, 13 C9orf72, 7 GRN). **Reported stdout, not independently re-executed here.**
+
+| Event | Control n=16 positive; counts | MAPT n=11 positive; counts | C9orf72 n=13 positive; counts | GRN n=7 positive; counts |
+|---|---|---|---|---|
+| canonical | 16; 2771 | 11; 1247 | 13; 2268 | 7; 788 |
+| cryptic_1 | 0; 0 | 0; 0 | 9; 42 | 7; 38 |
+| cryptic_2 | 0; 0 | 0; 0 | 8; 33 | 5; 20 |
+| cryptic_long | 0; 0 | 0; 0 | 4; 18 | 4; 5 |
+
+Total per event: canonical 7074, cryptic_1 80, cryptic_2 53, cryptic_long 23. No metadata IDs or patient-level counts exported in this report. Positive means `junction_count > 0`, not proven CE expression, severity, nor per-transcript abundance.
+
+**Observation:** these candidate junctions have positive counts in C9orf72/GRN and no positives among 27 control/MAPT samples; this is a selected, previously published cohort comparison, **not** external independent replication or newly validated diagnostic specificity. Do not equate genotype grouping with independently measured TDP43 pathology or infer ALS-specific clinical implications.
+
+**Next gates, before tests, PSI or claims:** verify strand/reference/coordinate offset and assignment to exact UNC13A canonical/CE events; establish whether cryptic_1 and cryptic_2 represent two junctions of the same transcript (avoid counting molecules twice); document sample-level total junction depth, QC, coverages, tissue source and cluster definition; create threshold sensitivity summaries (e.g. count >=1/3/5) and controls. Keep group statistics descriptive until analysis plan and biological units are properly established.
