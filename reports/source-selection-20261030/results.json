@@ -1,0 +1,695 @@
+{
+  "decisions": [
+    {
+      "accession": "GSE182976",
+      "decision": "not_ready_this_cycle",
+      "unmet_or_unknown": [
+        "direct_junction_counts",
+        "event_identity_linked",
+        "independent_units_documented",
+        "minimum_independent_units_per_condition"
+      ]
+    },
+    {
+      "accession": "GSE122069",
+      "decision": "not_ready_this_cycle",
+      "unmet_or_unknown": [
+        "direct_junction_counts",
+        "event_identity_linked"
+      ]
+    },
+    {
+      "accession": "E-MTAB-15653",
+      "decision": "not_ready_this_cycle",
+      "unmet_or_unknown": [
+        "event_identity_linked",
+        "independent_units_documented",
+        "new_experimental_source",
+        "minimum_independent_units_per_condition"
+      ]
+    }
+  ],
+  "fractionation": {
+    "compartment_conflicts": [
+      {
+        "derived_file": "NT_NMD_nucleus_1.quant.sf",
+        "file_compartment": "nucleus",
+        "run": "ERR15663627",
+        "source_compartment": "cytosol"
+      }
+    ],
+    "derived_file_collisions": {
+      "NT_NMD_nucleus_1.quant.sf": [
+        "ERR15663627",
+        "ERR15663630"
+      ]
+    },
+    "explicit_unit_or_batch_headers": [],
+    "filename_links": [
+      {
+        "processed_key": "dox_ctrl_cytosol_1",
+        "runs": [
+          "ERR15663611"
+        ],
+        "status": "unique"
+      },
+      {
+        "processed_key": "dox_ctrl_cytosol_2",
+        "runs": [
+          "ERR15663612"
+        ],
+        "status": "unique"
+      },
+      {
+        "processed_key": "dox_ctrl_cytosol_3",
+        "runs": [
+          "ERR15663613"
+        ],
+        "status": "unique"
+      },
+      {
+        "processed_key": "dox_ctrl_nucleus_1",
+        "runs": [
+          "ERR15663614"
+        ],
+        "status": "unique"
+      },
+      {
+        "processed_key": "dox_ctrl_nucleus_2",
+        "runs": [
+          "ERR15663615"
+        ],
+        "status": "unique"
+      },
+      {
+        "processed_key": "dox_nmd_cytosol_1",
+        "runs": [
+          "ERR15663616"
+        ],
+        "status": "unique"
+      },
+      {
+        "processed_key": "dox_nmd_cytosol_2",
+        "runs": [
+          "ERR15663617"
+        ],
+        "status": "unique"
+      },
+      {
+        "processed_key": "dox_nmd_cytosol_3",
+        "runs": [
+          "ERR15663618"
+        ],
+        "status": "unique"
+      },
+      {
+        "processed_key": "dox_nmd_nucleus_1",
+        "runs": [
+          "ERR15663619"
+        ],
+        "status": "unique"
+      },
+      {
+        "processed_key": "dox_nmd_nucleus_2",
+        "runs": [
+          "ERR15663620"
+        ],
+        "status": "unique"
+      },
+      {
+        "processed_key": "nt_ctrl_cytosol_1",
+        "runs": [
+          "ERR15663621"
+        ],
+        "status": "unique"
+      },
+      {
+        "processed_key": "nt_ctrl_cytosol_2",
+        "runs": [
+          "ERR15663622"
+        ],
+        "status": "unique"
+      },
+      {
+        "processed_key": "nt_ctrl_cytosol_3",
+        "runs": [
+          "ERR15663623"
+        ],
+        "status": "unique"
+      },
+      {
+        "processed_key": "nt_ctrl_nucleus_1",
+        "runs": [
+          "ERR15663624"
+        ],
+        "status": "unique"
+      },
+      {
+        "processed_key": "nt_ctrl_nucleus_2",
+        "runs": [
+          "ERR15663625"
+        ],
+        "status": "unique"
+      },
+      {
+        "processed_key": "nt_ctrl_nucleus_3",
+        "runs": [
+          "ERR15663626"
+        ],
+        "status": "unique"
+      },
+      {
+        "processed_key": "nt_nmd_cytosol_1",
+        "runs": [],
+        "status": "unmatched"
+      },
+      {
+        "processed_key": "nt_nmd_cytosol_2",
+        "runs": [
+          "ERR15663628"
+        ],
+        "status": "unique"
+      },
+      {
+        "processed_key": "nt_nmd_cytosol_3",
+        "runs": [
+          "ERR15663629"
+        ],
+        "status": "unique"
+      },
+      {
+        "processed_key": "nt_nmd_nucleus_1",
+        "runs": [
+          "ERR15663627",
+          "ERR15663630"
+        ],
+        "status": "ambiguous"
+      },
+      {
+        "processed_key": "nt_nmd_nucleus_2",
+        "runs": [
+          "ERR15663631"
+        ],
+        "status": "unique"
+      },
+      {
+        "processed_key": "nt_nmd_nucleus_3",
+        "runs": [
+          "ERR15663632"
+        ],
+        "status": "unique"
+      }
+    ],
+    "independent_culture_units_certified": false,
+    "lfs_payload_sha256_verified": "35dd2cf8ed18439733d756fe2ca3cc2c518ea533c91ef31dbbe143ba7756ff60",
+    "libraries": 22,
+    "metadata": [
+      {
+        "assay": "DOX_ctrl_cytosol_1_S23",
+        "cell_line": "SH-SY5Y",
+        "compartment": "cytosol",
+        "derived_file": "DOX_ctrl_cytosol_1.quant.sf",
+        "experiment": "ERX15068077",
+        "run": "ERR15663611",
+        "sample_accession": "ERS26958222",
+        "stimulus": "TDP-43 knockdown baseline"
+      },
+      {
+        "assay": "DOX_ctrl_cytosol_2_S31",
+        "cell_line": "SH-SY5Y",
+        "compartment": "cytosol",
+        "derived_file": "DOX_ctrl_cytosol_2.quant.sf",
+        "experiment": "ERX15068078",
+        "run": "ERR15663612",
+        "sample_accession": "ERS26958223",
+        "stimulus": "TDP-43 knockdown baseline"
+      },
+      {
+        "assay": "DOX_ctrl_cytosol_3_S39",
+        "cell_line": "SH-SY5Y",
+        "compartment": "cytosol",
+        "derived_file": "DOX_ctrl_cytosol_3.quant.sf",
+        "experiment": "ERX15068079",
+        "run": "ERR15663613",
+        "sample_accession": "ERS26958224",
+        "stimulus": "TDP-43 knockdown baseline"
+      },
+      {
+        "assay": "DOX_ctrl_nucleus_1_S27",
+        "cell_line": "SH-SY5Y",
+        "compartment": "nucleus",
+        "derived_file": "DOX_ctrl_nucleus_1.quant.sf",
+        "experiment": "ERX15068080",
+        "run": "ERR15663614",
+        "sample_accession": "ERS26958225",
+        "stimulus": "TDP-43 knockdown baseline"
+      },
+      {
+        "assay": "DOX_ctrl_nucleus_2_S35",
+        "cell_line": "SH-SY5Y",
+        "compartment": "nucleus",
+        "derived_file": "DOX_ctrl_nucleus_2.quant.sf",
+        "experiment": "ERX15068081",
+        "run": "ERR15663615",
+        "sample_accession": "ERS26958226",
+        "stimulus": "TDP-43 knockdown baseline"
+      },
+      {
+        "assay": "DOX_inhibitor_cytosol_1_S24",
+        "cell_line": "SH-SY5Y",
+        "compartment": "cytosol",
+        "derived_file": "DOX_NMD_cytosol_1.quant.sf",
+        "experiment": "ERX15068082",
+        "run": "ERR15663616",
+        "sample_accession": "ERS26958227",
+        "stimulus": "TDP-43 knockdown NMDi SMG1i inhibition"
+      },
+      {
+        "assay": "DOX_inhibitor_cytosol_2_S32",
+        "cell_line": "SH-SY5Y",
+        "compartment": "cytosol",
+        "derived_file": "DOX_NMD_cytosol_2.quant.sf",
+        "experiment": "ERX15068083",
+        "run": "ERR15663617",
+        "sample_accession": "ERS26958228",
+        "stimulus": "TDP-43 knockdown NMDi SMG1i inhibition"
+      },
+      {
+        "assay": "DOX_inhibitor_cytosol_3_S40",
+        "cell_line": "SH-SY5Y",
+        "compartment": "cytosol",
+        "derived_file": "DOX_NMD_cytosol_3.quant.sf",
+        "experiment": "ERX15068084",
+        "run": "ERR15663618",
+        "sample_accession": "ERS26958229",
+        "stimulus": "TDP-43 knockdown NMDi SMG1i inhibition"
+      },
+      {
+        "assay": "DOX_inhibitor_nucleus_1_S28",
+        "cell_line": "SH-SY5Y",
+        "compartment": "nucleus",
+        "derived_file": "DOX_NMD_nucleus_1.quant.sf",
+        "experiment": "ERX15068085",
+        "run": "ERR15663619",
+        "sample_accession": "ERS26958230",
+        "stimulus": "TDP-43 knockdown NMDi SMG1i inhibition"
+      },
+      {
+        "assay": "DOX_inhibitor_nucleus_2_S36",
+        "cell_line": "SH-SY5Y",
+        "compartment": "nucleus",
+        "derived_file": "DOX_NMD_nucleus_2.quant.sf",
+        "experiment": "ERX15068086",
+        "run": "ERR15663620",
+        "sample_accession": "ERS26958231",
+        "stimulus": "TDP-43 knockdown NMDi SMG1i inhibition"
+      },
+      {
+        "assay": "NT_ctrl_cytosol_1_S21",
+        "cell_line": "SH-SY5Y",
+        "compartment": "cytosol",
+        "derived_file": "NT_ctrl_cytosol_1.quant.sf",
+        "experiment": "ERX15068087",
+        "run": "ERR15663621",
+        "sample_accession": "ERS26958232",
+        "stimulus": "control cells baseline"
+      },
+      {
+        "assay": "NT_ctrl_cytosol_2_S29",
+        "cell_line": "SH-SY5Y",
+        "compartment": "cytosol",
+        "derived_file": "NT_ctrl_cytosol_2.quant.sf",
+        "experiment": "ERX15068088",
+        "run": "ERR15663622",
+        "sample_accession": "ERS26958233",
+        "stimulus": "control cells baseline"
+      },
+      {
+        "assay": "NT_ctrl_cytosol_3_S37",
+        "cell_line": "SH-SY5Y",
+        "compartment": "cytosol",
+        "derived_file": "NT_ctrl_cytosol_3.quant.sf",
+        "experiment": "ERX15068089",
+        "run": "ERR15663623",
+        "sample_accession": "ERS26958234",
+        "stimulus": "control cells baseline"
+      },
+      {
+        "assay": "NT_ctrl_nucleus_1_S25",
+        "cell_line": "SH-SY5Y",
+        "compartment": "nucleus",
+        "derived_file": "NT_ctrl_nucleus_1.quant.sf",
+        "experiment": "ERX15068090",
+        "run": "ERR15663624",
+        "sample_accession": "ERS26958235",
+        "stimulus": "control cells baseline"
+      },
+      {
+        "assay": "NT_ctrl_nucleus_2_S33",
+        "cell_line": "SH-SY5Y",
+        "compartment": "nucleus",
+        "derived_file": "NT_ctrl_nucleus_2.quant.sf",
+        "experiment": "ERX15068091",
+        "run": "ERR15663625",
+        "sample_accession": "ERS26958236",
+        "stimulus": "control cells baseline"
+      },
+      {
+        "assay": "NT_ctrl_nucleus_3_S41",
+        "cell_line": "SH-SY5Y",
+        "compartment": "nucleus",
+        "derived_file": "NT_ctrl_nucleus_3.quant.sf",
+        "experiment": "ERX15068092",
+        "run": "ERR15663626",
+        "sample_accession": "ERS26958237",
+        "stimulus": "control cells baseline"
+      },
+      {
+        "assay": "NT_inhibitor_cytosol_1_S22",
+        "cell_line": "SH-SY5Y",
+        "compartment": "cytosol",
+        "derived_file": "NT_NMD_nucleus_1.quant.sf",
+        "experiment": "ERX15068093",
+        "run": "ERR15663627",
+        "sample_accession": "ERS26958238",
+        "stimulus": "control cells NMDi SMG1i inhibition"
+      },
+      {
+        "assay": "NT_inhibitor_cytosol_2_S30",
+        "cell_line": "SH-SY5Y",
+        "compartment": "cytosol",
+        "derived_file": "NT_NMD_cytosol_2.quant.sf",
+        "experiment": "ERX15068094",
+        "run": "ERR15663628",
+        "sample_accession": "ERS26958239",
+        "stimulus": "control cells NMDi SMG1i inhibition"
+      },
+      {
+        "assay": "NT_inhibitor_cytosol_3_S38",
+        "cell_line": "SH-SY5Y",
+        "compartment": "cytosol",
+        "derived_file": "NT_NMD_cytosol_3.quant.sf",
+        "experiment": "ERX15068095",
+        "run": "ERR15663629",
+        "sample_accession": "ERS26958240",
+        "stimulus": "control cells NMDi SMG1i inhibition"
+      },
+      {
+        "assay": "NT_inhibitor_nucleus_1_S26",
+        "cell_line": "SH-SY5Y",
+        "compartment": "nucleus",
+        "derived_file": "NT_NMD_nucleus_1.quant.sf",
+        "experiment": "ERX15068096",
+        "run": "ERR15663630",
+        "sample_accession": "ERS26958241",
+        "stimulus": "control cells NMDi SMG1i inhibition"
+      },
+      {
+        "assay": "NT_inhibitor_nucleus_2_S34",
+        "cell_line": "SH-SY5Y",
+        "compartment": "nucleus",
+        "derived_file": "NT_NMD_nucleus_2.quant.sf",
+        "experiment": "ERX15068097",
+        "run": "ERR15663631",
+        "sample_accession": "ERS26958242",
+        "stimulus": "control cells NMDi SMG1i inhibition"
+      },
+      {
+        "assay": "NT_inhibitor_nucleus_3_S42",
+        "cell_line": "SH-SY5Y",
+        "compartment": "nucleus",
+        "derived_file": "NT_NMD_nucleus_3.quant.sf",
+        "experiment": "ERX15068098",
+        "run": "ERR15663632",
+        "sample_accession": "ERS26958243",
+        "stimulus": "control cells NMDi SMG1i inhibition"
+      }
+    ],
+    "parquet_qc": {
+      "columns": [
+        "junction",
+        "uniquely_mapping",
+        "tdp_kd",
+        "nmdi",
+        "compartment",
+        "sample",
+        "start",
+        "end",
+        "paste_into_igv_junction",
+        "sample_2",
+        "exonic_reads",
+        "uniquely_mapped",
+        "mapped_to_multiple_loci",
+        "mapped_to_too_many_loci",
+        "unmapped_too_short",
+        "unmapped_other"
+      ],
+      "duplicate_sample_junction_keys": 0,
+      "explicit_zero_rows": 71524,
+      "groups": [
+        {
+          "compartment": "cytosol",
+          "nmdi": "ctrl",
+          "sample": "1",
+          "sample_2": "dox_ctrl_cytosol_1",
+          "tdp_kd": "dox"
+        },
+        {
+          "compartment": "cytosol",
+          "nmdi": "ctrl",
+          "sample": "2",
+          "sample_2": "dox_ctrl_cytosol_2",
+          "tdp_kd": "dox"
+        },
+        {
+          "compartment": "cytosol",
+          "nmdi": "ctrl",
+          "sample": "3",
+          "sample_2": "dox_ctrl_cytosol_3",
+          "tdp_kd": "dox"
+        },
+        {
+          "compartment": "nucleus",
+          "nmdi": "ctrl",
+          "sample": "1",
+          "sample_2": "dox_ctrl_nucleus_1",
+          "tdp_kd": "dox"
+        },
+        {
+          "compartment": "nucleus",
+          "nmdi": "ctrl",
+          "sample": "2",
+          "sample_2": "dox_ctrl_nucleus_2",
+          "tdp_kd": "dox"
+        },
+        {
+          "compartment": "cytosol",
+          "nmdi": "nmd",
+          "sample": "1",
+          "sample_2": "dox_nmd_cytosol_1",
+          "tdp_kd": "dox"
+        },
+        {
+          "compartment": "cytosol",
+          "nmdi": "nmd",
+          "sample": "2",
+          "sample_2": "dox_nmd_cytosol_2",
+          "tdp_kd": "dox"
+        },
+        {
+          "compartment": "cytosol",
+          "nmdi": "nmd",
+          "sample": "3",
+          "sample_2": "dox_nmd_cytosol_3",
+          "tdp_kd": "dox"
+        },
+        {
+          "compartment": "nucleus",
+          "nmdi": "nmd",
+          "sample": "1",
+          "sample_2": "dox_nmd_nucleus_1",
+          "tdp_kd": "dox"
+        },
+        {
+          "compartment": "nucleus",
+          "nmdi": "nmd",
+          "sample": "2",
+          "sample_2": "dox_nmd_nucleus_2",
+          "tdp_kd": "dox"
+        },
+        {
+          "compartment": "cytosol",
+          "nmdi": "ctrl",
+          "sample": "1",
+          "sample_2": "nt_ctrl_cytosol_1",
+          "tdp_kd": "nt"
+        },
+        {
+          "compartment": "cytosol",
+          "nmdi": "ctrl",
+          "sample": "2",
+          "sample_2": "nt_ctrl_cytosol_2",
+          "tdp_kd": "nt"
+        },
+        {
+          "compartment": "cytosol",
+          "nmdi": "ctrl",
+          "sample": "3",
+          "sample_2": "nt_ctrl_cytosol_3",
+          "tdp_kd": "nt"
+        },
+        {
+          "compartment": "nucleus",
+          "nmdi": "ctrl",
+          "sample": "1",
+          "sample_2": "nt_ctrl_nucleus_1",
+          "tdp_kd": "nt"
+        },
+        {
+          "compartment": "nucleus",
+          "nmdi": "ctrl",
+          "sample": "2",
+          "sample_2": "nt_ctrl_nucleus_2",
+          "tdp_kd": "nt"
+        },
+        {
+          "compartment": "nucleus",
+          "nmdi": "ctrl",
+          "sample": "3",
+          "sample_2": "nt_ctrl_nucleus_3",
+          "tdp_kd": "nt"
+        },
+        {
+          "compartment": "cytosol",
+          "nmdi": "nmd",
+          "sample": "1",
+          "sample_2": "nt_nmd_cytosol_1",
+          "tdp_kd": "nt"
+        },
+        {
+          "compartment": "cytosol",
+          "nmdi": "nmd",
+          "sample": "2",
+          "sample_2": "nt_nmd_cytosol_2",
+          "tdp_kd": "nt"
+        },
+        {
+          "compartment": "cytosol",
+          "nmdi": "nmd",
+          "sample": "3",
+          "sample_2": "nt_nmd_cytosol_3",
+          "tdp_kd": "nt"
+        },
+        {
+          "compartment": "nucleus",
+          "nmdi": "nmd",
+          "sample": "1",
+          "sample_2": "nt_nmd_nucleus_1",
+          "tdp_kd": "nt"
+        },
+        {
+          "compartment": "nucleus",
+          "nmdi": "nmd",
+          "sample": "2",
+          "sample_2": "nt_nmd_nucleus_2",
+          "tdp_kd": "nt"
+        },
+        {
+          "compartment": "nucleus",
+          "nmdi": "nmd",
+          "sample": "3",
+          "sample_2": "nt_nmd_nucleus_3",
+          "tdp_kd": "nt"
+        }
+      ],
+      "libraries": 22,
+      "missing_combinations_filled": false,
+      "negative_counts": 0,
+      "null_counts": 0,
+      "pyarrow_version": "21.0.0",
+      "rows": 2598287,
+      "scope": "Integrity only; no target effects, PSI or inferential statistics",
+      "strand_column_present": false
+    },
+    "sdrf_rows": 44,
+    "unique_derived_filenames": 21
+  },
+  "ma": {
+    "format": "BigWig coverage; not direct junction counts",
+    "gsm": [
+      "GSM5548014",
+      "GSM5548015",
+      "GSM5548016",
+      "GSM5548017",
+      "GSM5548018",
+      "GSM5548019",
+      "GSM5548020",
+      "GSM5548021",
+      "GSM5548022",
+      "GSM5548023",
+      "GSM5548024",
+      "GSM5548025"
+    ],
+    "independence": "iMN1/2/3 and rep1/2 are labels; unit hierarchy not certified",
+    "libraries": 12,
+    "processed_files": 12
+  },
+  "melamed_fastq_bytes_total": 9474892575,
+  "melamed_processed_format": "RSEM gene TPM, per GEO deposit; not junction counts",
+  "melamed_selected_runs": [
+    {
+      "base_count": 1896541486,
+      "experiment": "SRX4965534",
+      "fastq_bytes": 1391030664,
+      "gsm": "GSM3454242",
+      "published_group": "siControl 1",
+      "read_count": 37518164,
+      "run": "SRR8144907"
+    },
+    {
+      "base_count": 2742080165,
+      "experiment": "SRX4965535",
+      "fastq_bytes": 1640602052,
+      "gsm": "GSM3454243",
+      "published_group": "siControl 2",
+      "read_count": 54292655,
+      "run": "SRR8144908"
+    },
+    {
+      "base_count": 2065748983,
+      "experiment": "SRX4965536",
+      "fastq_bytes": 1238090993,
+      "gsm": "GSM3454244",
+      "published_group": "siControl 3",
+      "read_count": 40925555,
+      "run": "SRR8144909"
+    },
+    {
+      "base_count": 2743073476,
+      "experiment": "SRX4965537",
+      "fastq_bytes": 2015424180,
+      "gsm": "GSM3454245",
+      "published_group": "siTDP-43 1",
+      "read_count": 54264948,
+      "run": "SRR8144910"
+    },
+    {
+      "base_count": 1944559431,
+      "experiment": "SRX4965538",
+      "fastq_bytes": 1168518842,
+      "gsm": "GSM3454246",
+      "published_group": "siTDP-43 2",
+      "read_count": 38499682,
+      "run": "SRR8144911"
+    },
+    {
+      "base_count": 3381030375,
+      "experiment": "SRX4965539",
+      "fastq_bytes": 2021225844,
+      "gsm": "GSM3454247",
+      "published_group": "siTDP-43 3",
+      "read_count": 66940547,
+      "run": "SRR8144912"
+    }
+  ]
+}

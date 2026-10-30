@@ -1,0 +1,66 @@
+{
+  "python": "3.12.14",
+  "source_sha256": {
+    "fractionation_sdrf_resolved.source": "ff0772b7e85e51681edd2a3e85da248101160b09fd0001e63b9446e6c5a03449",
+    "unit_xml.source": "780feceea2f80509ef85062c01671b8f04657de466776913ad7f33ed5f9bb8ed",
+    "units_supplement.pdf": "55c515cd210590e02f7507e0adfe82ad6a059737f8313db877975888c5a48dfa"
+  },
+  "libraries": [
+    {
+      "run": "ERR15663611",
+      "sample_accession": "ERS26958222",
+      "assay": "DOX_ctrl_cytosol_1_S23",
+      "derived_file": "DOX_ctrl_cytosol_1.quant.sf",
+      "condition": "TDP-43 knockdown baseline",
+      "independent_culture_unit": null
+    },
+    {
+      "run": "ERR15663612",
+      "sample_accession": "ERS26958223",
+      "assay": "DOX_ctrl_cytosol_2_S31",
+      "derived_file": "DOX_ctrl_cytosol_2.quant.sf",
+      "condition": "TDP-43 knockdown baseline",
+      "independent_culture_unit": null
+    },
+    {
+      "run": "ERR15663613",
+      "sample_accession": "ERS26958224",
+      "assay": "DOX_ctrl_cytosol_3_S39",
+      "derived_file": "DOX_ctrl_cytosol_3.quant.sf",
+      "condition": "TDP-43 knockdown baseline",
+      "independent_culture_unit": null
+    },
+    {
+      "run": "ERR15663621",
+      "sample_accession": "ERS26958232",
+      "assay": "NT_ctrl_cytosol_1_S21",
+      "derived_file": "NT_ctrl_cytosol_1.quant.sf",
+      "condition": "control cells baseline",
+      "independent_culture_unit": null
+    },
+    {
+      "run": "ERR15663622",
+      "sample_accession": "ERS26958233",
+      "assay": "NT_ctrl_cytosol_2_S29",
+      "derived_file": "NT_ctrl_cytosol_2.quant.sf",
+      "condition": "control cells baseline",
+      "independent_culture_unit": null
+    },
+    {
+      "run": "ERR15663623",
+      "sample_accession": "ERS26958234",
+      "assay": "NT_ctrl_cytosol_3_S37",
+      "derived_file": "NT_ctrl_cytosol_3.quant.sf",
+      "condition": "control cells baseline",
+      "independent_culture_unit": null
+    }
+  ],
+  "supplement_inventory": [
+    "NIHPP2025.11.23.689722V1-supplement-1.pdf",
+    "media-1.xlsx",
+    "media-2.csv"
+  ],
+  "independent_units_certified": false,
+  "effect_analysis_executed": false,
+  "scope": "Six technical links, not six certified biological cultures. PDF reviewed separately."
+}

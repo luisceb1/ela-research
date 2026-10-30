@@ -1,0 +1,8 @@
+{
+  "python": "3.12.14",
+  "tests_log_sha256": "0df33e7bda1cae9fabdf1adb7f4bc6ce06314d840c38d9f021f2269466fd9310",
+  "script_sha256": "137215da29ffde93f22143c82363cb971b623099a2a050e163a774a56280b6e5",
+  "compileall": "pass",
+  "raw_alignment": false,
+  "randomness": "none"
+}

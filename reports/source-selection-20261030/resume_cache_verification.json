@@ -1,0 +1,46 @@
+[
+  {
+    "id": "ma_family",
+    "status": "verified_cache"
+  },
+  {
+    "id": "melamed_family",
+    "status": "verified_cache"
+  },
+  {
+    "id": "ma_tar",
+    "status": "verified_cache"
+  },
+  {
+    "id": "ma_filelist",
+    "status": "verified_cache"
+  },
+  {
+    "id": "fractionation_api",
+    "status": "verified_cache"
+  },
+  {
+    "id": "fractionation_info",
+    "status": "verified_cache"
+  },
+  {
+    "id": "fractionation_sdrf_resolved",
+    "status": "verified_cache"
+  },
+  {
+    "id": "fractionation_idf_resolved",
+    "status": "verified_cache"
+  },
+  {
+    "id": "fractionation_parquet",
+    "status": "verified_cache"
+  },
+  {
+    "id": "melamed_ena",
+    "status": "verified_cache"
+  },
+  {
+    "id": "fractionation_lfs_pointer",
+    "status": "verified_cache"
+  }
+]

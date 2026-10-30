@@ -1,0 +1,81 @@
+# Error sections from full local log; original hash in log_hashes.json
+
+======================================================================
+ERROR: test_duplicate_or_incomplete_design (test_dexseq_coverage.CoverageTests.test_duplicate_or_incomplete_design)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/1c0aac61c246/ela-source-gate/tests/test_dexseq_coverage.py", line 23, in test_duplicate_or_incomplete_design
+    src=Path('reports/gse121569-design/dexseq_column_map.tsv').read_text().splitlines()
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py", line 1027, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'reports/gse121569-design/dexseq_column_map.tsv'
+
+======================================================================
+ERROR: test_corrupt_fraction_delta_and_closure_fail (test_dexseq_magnitudes.MagnitudeTests.test_corrupt_fraction_delta_and_closure_fail)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/1c0aac61c246/ela-source-gate/tests/test_dexseq_magnitudes.py", line 33, in test_corrupt_fraction_delta_and_closure_fail
+    rs=self.rows(); rs[0][field]=val
+       ^^^^^^^^^^^
+  File "/workspace/scratch/1c0aac61c246/ela-source-gate/tests/test_dexseq_magnitudes.py", line 9, in rows
+    with Path('reports/dexseq-batch-sensitivity/fragment_batch_aggregates.tsv').open() as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'reports/dexseq-batch-sensitivity/fragment_batch_aggregates.tsv'
+
+======================================================================
+ERROR: test_duplicate_and_incomplete_fail (test_dexseq_magnitudes.MagnitudeTests.test_duplicate_and_incomplete_fail)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/1c0aac61c246/ela-source-gate/tests/test_dexseq_magnitudes.py", line 28, in test_duplicate_and_incomplete_fail
+    rs = self.rows()
+         ^^^^^^^^^^^
+  File "/workspace/scratch/1c0aac61c246/ela-source-gate/tests/test_dexseq_magnitudes.py", line 9, in rows
+    with Path('reports/dexseq-batch-sensitivity/fragment_batch_aggregates.tsv').open() as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'reports/dexseq-batch-sensitivity/fragment_batch_aggregates.tsv'
+
+======================================================================
+ERROR: test_permutation_and_batch_swap (test_dexseq_magnitudes.MagnitudeTests.test_permutation_and_batch_swap)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/1c0aac61c246/ela-source-gate/tests/test_dexseq_magnitudes.py", line 19, in test_permutation_and_batch_swap
+    rs = self.rows(); expected = audit(rs)
+         ^^^^^^^^^^^
+  File "/workspace/scratch/1c0aac61c246/ela-source-gate/tests/test_dexseq_magnitudes.py", line 9, in rows
+    with Path('reports/dexseq-batch-sensitivity/fragment_batch_aggregates.tsv').open() as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'reports/dexseq-batch-sensitivity/fragment_batch_aggregates.tsv'
+
+======================================================================
+ERROR: test_wrong_library_count_and_gene_fail (test_dexseq_magnitudes.MagnitudeTests.test_wrong_library_count_and_gene_fail)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/1c0aac61c246/ela-source-gate/tests/test_dexseq_magnitudes.py", line 40, in test_wrong_library_count_and_gene_fail
+    rs=self.rows(); rs[0][field]=val
+       ^^^^^^^^^^^
+  File "/workspace/scratch/1c0aac61c246/ela-source-gate/tests/test_dexseq_magnitudes.py", line 9, in rows
+    with Path('reports/dexseq-batch-sensitivity/fragment_batch_aggregates.tsv').open() as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'reports/dexseq-batch-sensitivity/fragment_batch_aggregates.tsv'
+
+----------------------------------------------------------------------
+Ran 253 tests in 0.108s
+
+FAILED (errors=5)

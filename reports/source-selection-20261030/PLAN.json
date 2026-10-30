@@ -1,0 +1,24 @@
+{
+  "created_utc": "2026-10-30T09:07:39.383529+00:00",
+  "base_commit": "f028b88879abed0b92d157e1236dc68ccfd6e60e",
+  "question": "Does at least one of at most three new published culture sources meet every gate for an independent direct STMN2 or UNC13A junction contrast?",
+  "prediction": "At least one candidate exposes attributable event coordinates and cryptic/canonical junction counts with >=3 documented independent biological units per condition and TDP43 perturbation controls.",
+  "failure": "No candidate satisfies all criteria, or event/count/unit linkage remains unverifiable. Stop the selection cycle; no effect/PSI/inference.",
+  "controls": [
+    "exclude already analysed studies/cohorts and Brown sources",
+    "separate paper independence from experimental unit independence",
+    "unknown is not false absence and not acceptance",
+    "gene expression/exon bins/qPCR are not direct splice junction counts",
+    "zero not substituted for missing",
+    "public culture technical metadata only; no clinical or genotype fields"
+  ],
+  "parameters": {
+    "max_candidates": 3,
+    "minimum_units_per_condition": 3,
+    "effect_analysis_authorized_only_after_specific_plan": true,
+    "raw_alignment_authorized": false
+  },
+  "python": "3.12.14",
+  "randomness": "none",
+  "evidence_level": "source feasibility audit; no external replication yet"
+}

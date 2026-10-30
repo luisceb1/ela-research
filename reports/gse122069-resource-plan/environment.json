@@ -1,0 +1,13 @@
+{
+  "python": "3.12.14",
+  "memory_limit_bytes": 8589934592,
+  "cpu_quota": "800000 100000",
+  "disk_free_bytes": 30834245632,
+  "tools": {
+    "STAR": null,
+    "hisat2": null,
+    "samtools": null,
+    "fastp": null
+  },
+  "raw_download_or_alignment": false
+}

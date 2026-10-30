@@ -1,0 +1,4 @@
+accession	decision	reason
+GSE182976	not_ready_this_cycle	Twelve valid coverage BigWigs; no direct junction counts in processed deposit. iMN1/2/3 with rep1/2 does not certify the hierarchy.
+GSE122069	not_ready_this_cycle	Selected six SH-SY5Y KD/control runs; publication states three independent biological experiments per condition. Processed deposit is gene TPM. Raw reanalysis estimated, not executed.
+E-MTAB-15653	not_ready_this_cycle	Actual junction counts and 22 technical libraries. Independent culture units not certified. One SDRF compartment contradiction outside proposed baseline subset. Event/strand/denominator linkage still requires a specific plan.

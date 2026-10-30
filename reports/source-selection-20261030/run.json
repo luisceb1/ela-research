@@ -1,0 +1,15 @@
+{
+  "python": "3.12.14",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.39",
+  "manifest_sha256": "5b035f8ff9fc0f82cf83d15d24b59142c1dfb74fd6b89eb7a1fbc314ab10497a",
+  "script_sha256": "dfde213969d18401efbcff1688ac49134d2b80b81b9a88bc00db3ded84b2c15e",
+  "parameters": {
+    "cache": "data/cache",
+    "manifest": "research/references/independent_source_gate_20261030.json",
+    "out": "reports/source-selection-20261030",
+    "parquet": true
+  },
+  "randomness": "none",
+  "raw_alignment_executed": false,
+  "effect_analysis_executed": false
+}
