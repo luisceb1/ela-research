@@ -1,0 +1,5 @@
+{
+  "python": "3.12.14",
+  "dependencies": "stdlib",
+  "command": "python scripts/audit_dexseq_counts.py --combined <combined.gz> --dexseq <dexseq-all.gz> --out reports/dexseq-qc"
+}

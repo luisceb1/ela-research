@@ -46,3 +46,5 @@ Fase #14: [reproducción agregada](reports/issue14-reproduction/REPORT.md),63cam
 Ampliación PR29: [auditoría de uniones Fratta](reports/fratta-junction-audit/REPORT.md),24campos agregados concordantes y sensibilidad a fórmula/deduplicación;124tests de rama. Misma cohorte GSE126542, sin nueva replicación.
 
 [Diseño GSE121569](reports/gse121569-design/REPORT.md): 12 columnas enlazadas a GSM y dos lotes publicados; mapa de Fig.S3a verificado, 135 tests. Pozo/reactivo y modelo original pendientes antes de refit inferencial.
+
+[QC de cuentas DEXSeq](reports/dexseq-qc/REPORT.md): 7030428 cuentas concordantes;4034 filas de anotación repetida,143 tests.

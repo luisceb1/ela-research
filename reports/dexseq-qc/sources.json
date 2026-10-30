@@ -1,0 +1,18 @@
+[
+  {
+    "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE121nnn/GSE121569/suppl/GSE121569_combined.dexseq.txt.gz",
+    "bytes": 10141943,
+    "sha256": "ded981755f00d546bac0fdf5d68bd3530891afffb3d335d3e78f2b4a708fea6e",
+    "accessed": "2026-10-30",
+    "attribution": "GEO GSE121569, Klim et al. 2019",
+    "license": "Separate license not independently verified; raw matrices not redistributed"
+  },
+  {
+    "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE121nnn/GSE121569/suppl/GSE121569_dexseq-all.csv.gz",
+    "bytes": 56262538,
+    "sha256": "daaf355a7cbd48b617d30201ba289d8f0c4efc9fbc2a23ca2f991c84e1d814f4",
+    "accessed": "2026-10-30",
+    "attribution": "GEO GSE121569, Klim et al. 2019",
+    "license": "Separate license not independently verified; raw matrices not redistributed"
+  }
+]
