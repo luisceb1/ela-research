@@ -98,3 +98,19 @@ Positives among combined C9orf72+GRN (n=20); all three queried cryptic candidate
 In C9orf72+GRN, 17/20 have at least one of three positive at >=1; 12/20 have cryptic_1 and cryptic_2 simultaneously; 6/20 have all three. In control+MAPT all these co-occurrence summaries are zero. These thresholds were chosen for exploratory robustness, not prevalidated clinical classification. Coverage attenuation is strong: only 7/20 have cryptic_1 >=5, for example. Reported counts are the user's local output, **not independently run or audited against raw reads in this session**.
 
 Next mandatory scientific QC before interpretation: confirm assembly and LeafCutter end-point convention; determine whether canonical and CE junctions share a mathematically suitable denominator (cluster_count is not automatically PSI); sensitivity of the result to sequencing depth, RIN, tissue composition and batch; assess individual-metadata restrictions and avoid publishing row-level donor output. No p values, causal inference, ALS extrapolation, independent replication or biomarker performance claim.
+
+
+## Addendum: local UNC13A denominator/depth audit — 2026-10-30
+
+User-reported run of `scripts/rimod_unc13a_depth_qc.py`: 47/47 joined samples, 4,127 chr19 Parquets; all four target junctions share cluster `clu_46643_-` and the same `cluster_count` for each sample (0 inconsistent, 0 zero-denominator). This supports consistent computation of per-junction `junction_count/cluster_count` as in the authors' workflow; it does not validate exact transcript identities or absolute PSI.
+
+| Minimum cluster_count | Comparison N / cryptic_1 >=1 | C9orf72+GRN N / cryptic_1 >=1 |
+|---|---|---|
+| 0 | 27 / 0 | 20 / 16 |
+| 20 | 26 / 0 | 20 / 16 |
+| 50 | 25 / 0 | 20 / 16 |
+| 100 | 23 / 0 | 15 / 12 |
+
+Cluster depth median: comparators 129 (range 4–288), FTLD-TDP genotype proxy 148 (range 67–366). RIN median: comparators 7.1, FTLD-TDP proxy 6.4; all 47 RIN values reported as available. Per-junction ratio medians in FTLD-TDP: canonical 0.97, cryptic_1 0.019, cryptic_2 0.0119, cryptic_long 0; in comparators 1, 0, 0, 0. These are unadjusted descriptive summaries, and QC filters are exploratory.
+
+**Open limitations:** nonrandom RIN differences require a stratified/confounding sensitivity analysis; confirm genomic reference and event transcript annotation; genotype is not per-sample direct pathology assessment; no independent validation; 47 donors/47 libraries assumed one each only pending provenance. Do not claim diagnostic accuracy or causal TDP-43 effect.
