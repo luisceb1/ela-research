@@ -1,0 +1,103 @@
+{
+  "events": [
+    {
+      "gene": "STMN2",
+      "bins": 10,
+      "overlapping_bins": 0,
+      "endpoint_sensitivity_overlapping_bins": 0,
+      "nearest_bin": "ENSG00000104435:E003",
+      "boundary_distance_bp": 5031,
+      "intervening_bases": 5030
+    },
+    {
+      "gene": "UNC13A",
+      "bins": 62,
+      "overlapping_bins": 0,
+      "endpoint_sensitivity_overlapping_bins": 0,
+      "nearest_bin": "ENSG00000130477:E037",
+      "boundary_distance_bp": 304,
+      "intervening_bases": 303
+    }
+  ],
+  "focal": [
+    {
+      "gene": "STMN2",
+      "fragment": "ENSG00000104435:E009",
+      "focal_previous_discordance": true,
+      "assembly": "GRCh37/hg19",
+      "chrom": "chr8",
+      "bin_start": 80577117,
+      "bin_end": 80577242,
+      "bin_width": 126,
+      "bin_strand": "+",
+      "published_CE_start": 80529057,
+      "published_CE_end": 80529284,
+      "source_strand": "unspecified",
+      "overlap_bp": 0,
+      "boundary_distance_bp": 47833,
+      "intervening_bases": 47832,
+      "maximum_overlap_under_endpoint_shifts": 0,
+      "source_doi": "10.1007/s00401-023-02655-0"
+    },
+    {
+      "gene": "UNC13A",
+      "fragment": "ENSG00000130477:E026",
+      "focal_previous_discordance": true,
+      "assembly": "GRCh37/hg19",
+      "chrom": "chr19",
+      "bin_start": 17740049,
+      "bin_end": 17740132,
+      "bin_width": 84,
+      "bin_strand": "-",
+      "published_CE_start": 17753223,
+      "published_CE_end": 17753350,
+      "source_strand": "unspecified",
+      "overlap_bp": 0,
+      "boundary_distance_bp": 13091,
+      "intervening_bases": 13090,
+      "maximum_overlap_under_endpoint_shifts": 0,
+      "source_doi": "10.1007/s00401-023-02655-0"
+    },
+    {
+      "gene": "UNC13A",
+      "fragment": "ENSG00000130477:E030",
+      "focal_previous_discordance": true,
+      "assembly": "GRCh37/hg19",
+      "chrom": "chr19",
+      "bin_start": 17743917,
+      "bin_end": 17744002,
+      "bin_width": 86,
+      "bin_strand": "-",
+      "published_CE_start": 17753223,
+      "published_CE_end": 17753350,
+      "source_strand": "unspecified",
+      "overlap_bp": 0,
+      "boundary_distance_bp": 9221,
+      "intervening_bases": 9220,
+      "maximum_overlap_under_endpoint_shifts": 0,
+      "source_doi": "10.1007/s00401-023-02655-0"
+    },
+    {
+      "gene": "UNC13A",
+      "fragment": "ENSG00000130477:E054",
+      "focal_previous_discordance": true,
+      "assembly": "GRCh37/hg19",
+      "chrom": "chr19",
+      "bin_start": 17785466,
+      "bin_end": 17785565,
+      "bin_width": 100,
+      "bin_strand": "-",
+      "published_CE_start": 17753223,
+      "published_CE_end": 17753350,
+      "source_strand": "unspecified",
+      "overlap_bp": 0,
+      "boundary_distance_bp": 32116,
+      "intervening_bases": 32115,
+      "maximum_overlap_under_endpoint_shifts": 0,
+      "source_doi": "10.1007/s00401-023-02655-0"
+    }
+  ],
+  "prediction": "No overlapping target bins for these two published hg19 counting regions",
+  "inference": "Catalogue does not measure these CE intervals directly; no biological absence inferred",
+  "source_interval_formal_coordinate_base": "Not expressly specified; inclusive interpretation and endpoint sensitivity reported"
+}

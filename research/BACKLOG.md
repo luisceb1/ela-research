@@ -1,5 +1,11 @@
 # Backlog vigente — 29/10/2026
 
+## Intervalos CE y bins — checkpoint posterior del 30/10/2026
+
+reports/ce-bin-coordinate-audit: fuentes primarias independientes del código recibido verifican las regiones de recuento hg19 STMN2chr8:80529057–80529284 yUNC13A128bpchr19:17753223–17753350. SOFT/XML de Klimconfirmanhg19paraDEXSeq. Ninguno de72bins(10/62)solapa las regiones,tampoco con9combinaciones±1deextremos. Mínimas diferenciasentreextremos5031/304bp(5030/303bases interpuestas). Los4discordantes quedan fuera; no son mediciónCE,no ausencia biológica. Convención formal del artículo limitada; no liftover de varianteshg38ni validación de extremos completos. CorrecciónKoike2023leída:conceptual,no coordenadas.167tests locales(160+7),compileallOK.
+
+Pendiente de coordenadas cerrado acotadamente. Siguiente:disponibilidad de lecturas/cuentas de uniones que realmente midan eventosCE,fuente pública independiente de las mismas cohortes;Fratta ya auditado,no repetirlo ni sumarreplicaciones. Si no hay fuente nueva,documentar bloqueo y cerrarDEXSeqcomo evidencia indirecta. Refit sigue bloqueadopozo/reactivo/fórmula. PR29abierto,PR28independiente,sin merge/cierreautomático,contactos,gastos o clínica nueva. Este checkpoint prevalece sobre las acciones antiguas siguientes.
+
 ## Cuentas y denominadores — checkpoint posterior del 30/10/2026
 
 Originales recuperados de caché con SHA256verificados; bloqueo anterior de acceso a matriz resuelto aquí, sin nueva descarga. reports/dexseq-coverage:408agregados de cuentas,612efectos y204medias previas concordantes. Los cuatro destacados tienen mínimos908/38/40/29cuentas,sin ceros. UNC13AE026/E030conservan inversión con3denominadores;STMN2E009yUNC13AE054son discordantes dentro del gen pero descienden en ambos lotes por biblioteca. H1>=10no refutada;H2todosdiscordantesen3métodosrefutadaen2casos. No inferir ruido,CE,proteína o función.160tests locales(153+7),compileallOK.

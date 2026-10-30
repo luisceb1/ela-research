@@ -1,0 +1,16 @@
+{
+  "date": "2026-10-30",
+  "assembly": "GRCh37/hg19",
+  "coordinate_interpretation": "Published numerical counting intervals evaluated as one-based inclusive; formal BED conversion not specified in article; sensitivity independently shifts either endpoint by -1/0/+1",
+  "events": [
+    {"gene":"STMN2","groupID":"ENSG00000104435","chrom":"chr8","start":80529057,"end":80529284,"strand":null,"expected_inclusive_width":228,"source_doi":"10.1007/s00401-023-02655-0","localizer":"Methods: Bioinformatics analysis of RNA-seq data, counting regions","scope":"Published CE counting region, not independent proof of all transcript/polyA endpoints"},
+    {"gene":"UNC13A","groupID":"ENSG00000130477","chrom":"chr19","start":17753223,"end":17753350,"strand":null,"expected_inclusive_width":128,"source_doi":"10.1007/s00401-023-02655-0","corroborating_doi":"10.1371/journal.pbio.3002028","localizer":"Methods: Bioinformatics analysis of RNA-seq data; Koike: hnRNP motif analyses","scope":"128bp counting region only; longer 178bp variant not transferred from hg38 without audited conversion"}
+  ],
+  "sources": [
+    {"doi":"10.1007/s00401-023-02655-0","authors":"Almeida Quadros, A. R. A., Li, Z., Wang, X., et al.","year":2024,"url":"https://link.springer.com/article/10.1007/s00401-023-02655-0","retrieval":"scite primary-methods excerpts and publisher HTML inspected 30/10/2026","short_excerpt":"the cryptic exon of STMN2","projection":"STMN2 chr8:80529057–80529284; UNC13A chr19:17753223–17753350; hg19 explicitly specified","editorial_status":"No notice returned for this DOI in targeted four-filter checks; generic zero-result message inconsistent with unfiltered retrieval; no universal clearance"},
+    {"doi":"10.1371/journal.pbio.3002028","authors":"Koike, Y., Pickles, S., Estades Ayuso, V., et al.","year":2023,"url":"https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3002028","retrieval":"scite primary-methods passage and publisher page available","short_excerpt":"UNC13A cryptic exon","projection":"chr19:17753223–17753350 hg19","editorial_notices":[{"status":"new version","date":"2023-03-29"},{"status":"has correction","date":"2023-07-14","doi":"10.1371/journal.pbio.3002228"}]},
+    {"doi":"10.1371/journal.pbio.3002228","authors":"Koike, Y., Pickles, S., Estades Ayuso, V., et al.","year":2023,"url":"https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3002228","retrieval":"Publisher correction full text inspected, paragraph at line107 on30/10/2026","scope":"Correction changes the definition of cryptic exons in the Introduction; inspected correction contains no coordinate amendment"},
+    {"doi":"10.1038/s41586-022-04424-7","year":2022,"retrieval":"scite primary passage","projection":"128/178bp UNC13A events reported in hg38, not hg19","scope":"Assembly warning and variant scope only; no liftover, no substitution into hg19 analysis"}
+  ],
+  "limitations": ["Molecular coordinate projection only; no source clinical tables read or exported", "Source passages do not specify event strand; target bin strand retained without claiming independent strand validation", "Same-assembly coordinates, not independent biological replication", "No nucleotide sequence or alignment/polya validation"]
+}

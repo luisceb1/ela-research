@@ -1,0 +1,22 @@
+{
+  "python": "3.12.14",
+  "dependencies": "stdlib",
+  "date": "2026-10-30",
+  "deterministic": true,
+  "parent_commit": "c47afbe03818152f846cf8a4e9a6efdbcb80e319",
+  "endpoint_shifts": [
+    -1,
+    0,
+    1
+  ],
+  "hashes": {
+    "../ela-consolidation/data/cache/issue14/GSE121569_dexseq-all.csv.gz": "daaf355a7cbd48b617d30201ba289d8f0c4efc9fbc2a23ca2f991c84e1d814f4",
+    "research/references/ce_intervals_hg19_20261030.json": "ba47d9fe5ea31c45a02eeb76bd6257bf21450173315888f19e373a7e663daafc",
+    "data/cache/gse121569/family.soft.gz": "2aab8d12df64472d161c87b9f5b7cda9c120bbd41a8cf47f9b9155050690289a",
+    "data/cache/gse121569/PMC7153761.1.xml": "a9ddfbf89710ea6a287771c92774522e26c5e46e34dd98aff91a5c5e819f2dfd",
+    "/workspace/scratch/1c0aac61c246/ela-issue14/scripts/audit_ce_bin_coordinates.py": "6e5d115a4652c10db4edfb3371cc135650afaec7d5c80232c05ebda28475424c"
+  },
+  "new_download": false,
+  "biological_replication": false,
+  "full_article_bytes_for_new_interval_sources_saved": false
+}
