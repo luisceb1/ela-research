@@ -1,0 +1,56 @@
+[
+  {
+    "name": "ENA_runs.tsv",
+    "url": "https://www.ebi.ac.uk/ena/portal/api/filereport?accession=PRJEB42763&result=read_run&fields=study_accession,sample_accession,experiment_accession,run_accession,sample_alias,experiment_alias,library_name,library_strategy&format=tsv&download=false",
+    "bytes": 2015,
+    "prefix_hex": "72756e5f61636365"
+  },
+  {
+    "name": "Supplementary6.xls",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/8891020/bin/41586_2022_4436_MOESM9_ESM.xls",
+    "bytes": 21552,
+    "prefix_hex": "3c21646f63747970"
+  },
+  {
+    "name": "PMC8891020_listing.xml",
+    "url": "https://pmc-oa-opendata.s3.amazonaws.com/?list-type=2&prefix=PMC8891020.",
+    "bytes": 11897,
+    "prefix_hex": "3c3f786d6c207665"
+  },
+  {
+    "url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC8891020.1/41586_2022_4436_MOESM9_ESM.xls",
+    "bytes": 29184,
+    "sha256": "54d91b96f58b0cb85234f10c11451ca86211e183e1d2d6076dab3fcd87b83a41",
+    "date": "2026-10-30"
+  },
+  {
+    "url": "https://www.ebi.ac.uk/ena/browser/api/xml/ERR5296827",
+    "sha256": "8d0129aad93a02b12fb8ae5bde511ecc4bf57d905aa4c6cc7442132d56412109",
+    "scope": "Technical run XML only"
+  },
+  {
+    "url": "https://www.ebi.ac.uk/ena/browser/api/xml/ERR5296849",
+    "sha256": "7efb72f909f8c90c060fb39ce0303effbb205f598e2947b766e538c23c78a184",
+    "scope": "Technical run XML only"
+  },
+  {
+    "url": "https://www.ebi.ac.uk/ena/browser/api/xml/ERR5296853",
+    "sha256": "34caca9bd3015b44d47d18b4b06aa8f72384d9c89f6f1c1f00595d5b245cae85",
+    "scope": "Technical run XML only"
+  },
+  {
+    "url": "https://www.ebi.ac.uk/ena/browser/api/xml/ERR5296899",
+    "sha256": "03261c387445beaae585f61dc710239e3e84cc595c0db58a27fd63374f8c9b69",
+    "scope": "Technical run XML only"
+  },
+  {
+    "url": "https://www.ebi.ac.uk/ena/browser/api/xml/ERR5300363",
+    "sha256": "8b02e20b9957ac2c50145c1c937fefd2535e7992656ec69b9c6c1244a8d2f478",
+    "scope": "Technical run XML only"
+  },
+  {
+    "url": "https://www.ebi.ac.uk/ena/browser/api/xml/ERR5301820",
+    "sha256": "b0e028dfa9a421f03ff61e2b78a8a08a0cf5572766fed31e222e93b661ad6095",
+    "scope": "Technical run XML only"
+  }
+]

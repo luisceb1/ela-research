@@ -1,5 +1,11 @@
 # Backlog vigente — 29/10/2026
 
+## SH-SY5Y: mapa técnico completado y geometría parcial — 30/10/2026
+
+reports/shsy5y-junction-map enlaza exactamente CTR07/08/09 y TDP10/11/12 con seis runs de PRJEB42763 por nombres de BAM en XML ENA (3control/3KD), sin descargaBAM/FASTQni independencia biológica inferida. Supplementary6recuperada como XLS válido desdePMCS3:16uniones;de7camposdecuentas,3nombresidénticos,soloUNC13A_annotatedconhebraconcordante. STMN2_annotated/cryptic tienen conflicto S6−frenteaGCv47+;4aliasUNC13ACEpendientes,sinreasignación. PipelineSTARinicio−1/final+1sonlímitesflanqueantes,noBEDintrónicoestándar;comentario difiere del código,noejecutadocódigoexterno.183tests locales(175+8),compileallOK.
+
+Predicción de6bibliotecas cumplida;7enlacesmolecularesno. Siguienteúnicaprueba:definición original deuniones/paso generadorque documentelos4aliasUNC13AyhebraSTMN2;sinella,nocalcularefectosCEconidentidadnoresuelta. Unidadesbiológicassiguenpendientes. PR29abierto,PR28separado,sinmerge/cierre/contactos/gastos/laboratorio. Estecheckpointprevalecesobretareasprevias.
+
 ## Fuentes de uniones — checkpoint posterior del 30/10/2026
 
 Inventario reproducible en reports/junction-source-inventory: CSV público de Brown2022, commit e05e8723 y blob c8715e2b; 42 filas de cultivo, 5 grupos, 7 campos de cuentas de unión, 294 celdas enteras. Sin efectos o PSI calculados; solo cinco agregados exportados. Klim17filas (11control/6KD) reutiliza GSE121569, no réplica nueva ni equivalente a12DEXSeq/15expresión; selección pendiente. Cuatro grupos candidatos de otras fuentes, ninguna unidad independiente certificada. PRJEB42763 es disponibilidad de estudio, no mapa de filas. Corrección Brown2024 cambia una línea SK-N-DZ a SK-N-BE(2): CSV antiguo conserva nombres, no reasignar sin mapa. BED amplio excluido por mezcla de fuentes; no computado/exportado.175tests locales(167+8),compileallOK.

@@ -1,0 +1,8 @@
+{
+ "analysis_errors":[],
+ "recovered_access_failure":"Initial Supplementary6 URL returned HTML recaptcha despite .xls suffix; rejected. Correct OLE XLS recovered from exact PMC public S3 listing key.",
+ "browser_failures":["ENA API not readable through browser lookup; direct technical API succeeded", "Springer attachment browser lookup inaccessible"],
+ "negative_prediction":"Seven complete molecular links not established: 4 aliases unresolved and 2 STMN2 strand conflicts",
+ "positive_prediction":"All 6 SH-SY5Y rows map exactly to public ENA runs via submitted BAM basename; 3 control,3KD",
+ "not_inferred":["Biological unit independence", "Exact pipeline run that generated CSV", "Automatic renaming of UNC13A aliases", "STMN2 strand repair", "New functional or clinical validation"]
+}

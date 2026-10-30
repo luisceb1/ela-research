@@ -1,0 +1,17 @@
+sheet_row	chrom	left_boundary	right_boundary	name	strand
+2	chr9	35313989	35366947	UNC13B_annotated	+
+3	chr9	35313989	35364545	UNC13B_nmd_junction_5prime	+
+4	chr9	35364567	35366947	UNC13B_nmd_junction_3prime	+
+5	chr8	79611214	79636802	STMN2_annotated	-
+6	chr8	79611214	79616822	STMN2_cryptic	-
+7	chr19	17641556	17642414	UNC13A_NovelDonor	-
+9	chr19	17641556	17642845	UNC13A_annotated	-
+10	chr19	17642541	17642845	UNC13A_ShortNovelAcceptor	-
+11	chr19	17642591	17642845	UNC13A_LongNovelAcceptor	-
+12	chr19	17641556	17642557	UNC13A_cerebellum_donor	-
+13	chr10	3099352	3099557	PFKP_NovelAcceptor	+
+14	chr10	3099352	3101365	PFKP_annotated	+
+15	chr10	3099819	3101365	PFKP_NovelDonor	+
+16	chr1	21598502	21598723	RAP1GAP_NovelDonor	-
+17	chr1	21598820	21599494	RAP1GAP_NovelAcceptor	-
+18	chr1	21598502	21599494	RAP1GAP_annotated	-

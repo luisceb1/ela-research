@@ -1,0 +1,7 @@
+count_alias	condition	run_accession	sample_accession	experiment_accession	ENA_alias	link_rule	biological_unit_independence
+CTR07	control	ERR5300363	SAMEA7892015	ERX5089729	SHSY5YControl1	Exact basename after removal of fixed submitted BAM suffix	not established by accession map
+CTR08	control	ERR5296849	SAMEA7892016	ERX5086172	SHSY5YControl2	Exact basename after removal of fixed submitted BAM suffix	not established by accession map
+CTR09	control	ERR5296899	SAMEA7892017	ERX5086226	SHSY5YControl3	Exact basename after removal of fixed submitted BAM suffix	not established by accession map
+TDP10	TDP-43 KD	ERR5296853	SAMEA7892018	ERX5086179	SHSY5YTDP43KD1	Exact basename after removal of fixed submitted BAM suffix	not established by accession map
+TDP12	TDP-43 KD	ERR5296827	SAMEA7892020	ERX5086150	SHSY5YTDP43KD3	Exact basename after removal of fixed submitted BAM suffix	not established by accession map
+TDP11	TDP-43 KD	ERR5301820	SAMEA7892019	ERX5091230	SHSY5YTDP43KD2	Exact basename after removal of fixed submitted BAM suffix	not established by accession map

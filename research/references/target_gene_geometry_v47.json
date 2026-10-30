@@ -1,0 +1,25 @@
+{
+  "by_id": {
+    "ENSG00000104435": {
+      "symbol": "STMN2",
+      "chrom": "chr8",
+      "strand": "+",
+      "start": 79611117,
+      "end": 79666158
+    },
+    "ENSG00000130477": {
+      "symbol": "UNC13A",
+      "chrom": "chr19",
+      "strand": "-",
+      "start": 17601336,
+      "end": 17688365
+    }
+  },
+  "source": {
+    "reference": "GENCODE v47 GRCh38",
+    "original_GTF_sha256": "df11938c66d2b39f8ebbdb5f1720919321f9cf9d58f02b019753f6a24ca3db24",
+    "original_GTF_url": "https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_47/gencode.v47.annotation.gtf.gz",
+    "previous_gene_index_sha256": "691cfd50195b75da72ec6e33d1e837e236787ef762bec3413abaa80f17021982",
+    "scope": "Two-gene molecular projection reused from earlier audited reference; original whole GTF not newly revalidated"
+  }
+}

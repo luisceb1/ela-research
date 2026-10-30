@@ -1,0 +1,2 @@
+# Read-only legacy XLS extraction; offline unit tests use stdlib fixtures.
+xlrd==2.0.1
