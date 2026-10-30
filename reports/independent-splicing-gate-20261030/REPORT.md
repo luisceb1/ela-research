@@ -129,3 +129,15 @@ Cluster depth median: comparators 129 (range 4–288), FTLD-TDP genotype proxy 1
 At local cluster depth >=100 in the intermediate RIN stratum: FTLD-TDP proxy 6/6 vs comparators 0/6, minimum 1 count; >=3 counts 5/6 vs 0/6; >=5 counts 3/6 vs 0/6. Source: user-provided stdout; not independently reproduced in this assistant environment. The high-RIN FTLD-TDP stratum has n=2 and is underpowered. Bands and read thresholds exploratory; they do not establish RIN adjustment or eliminate library/tissue/cell composition confounders. No claim of biomarker specificity, causal molecular rescue, ALS cohort replication or original discovery.
 
 Immediate scientific gate: confirm exact donor-level identity/region of each UNC13A splice junction in author event table and the genomic assembly/conventions; then consider a pre-specified matched/adjusted sensitivity, and external ALS data.
+
+
+## Addendum — direct original-author UNC13A event annotation checked (2026-10-30)
+
+At Fratta Lab `cryptic_biology` pinned commit `80fa3d70418a4665a85d414e33c7c470a9312086`:
+- `data/compendium_cryptics.csv` explicitly labels `UNC13A,chr19:17641556-17642414` **novel_donor**, strand minus; and `UNC13A,chr19:17642541-17642845` **novel_acceptor**, strand minus, across multiple experimental entries.
+- `data/noDox-dox0075.cryptic_exons.bed` has `chr19 17642413 17642541 UNC13A|chr19:17641556-17642414 0 -`, corroborating an author-annotated putative cryptic exon interval.
+- `data/all_events.closest_tdp_bind.bed` independently lists `chr19 17641556 17642414` donor and `chr19 17642541 17642845` acceptor, both `Early` and `-` strand.
+- The long variant `chr19:17642591-17642845` **does not exactly match** the `chr19:17642592-17642844` candidate in `compendium_cryptics.csv`; do not assert verified identity for this alternate junction pending coordinate convention assessment. The canonical junction is a local cluster comparator, not a cryptic event from these author tables.
+- This is **source-to-source annotation corroboration**, not independent biological validation or a new molecular finding. Human assembly and 0/1-based endpoint conventions still require complete verification.
+
+Next: inventory NYGC public ZIP using `scripts/nygc_zip_inventory.py` without decompressing. Examine chr19 partition, Parquet schema and sample-to-tissue/pathology metadata before computing any NYGC junction comparison. NYGC is separately labelled as cohort but sample provenance, overlapping donors, brain region and ALS/non-ALS strata must be audited.
