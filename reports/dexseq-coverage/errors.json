@@ -1,0 +1,6 @@
+{
+  "analysis_errors": [],
+  "access_resolution": "Original public culture matrices found in existing cache and both SHA256 verified; no download performed",
+  "negative_prediction": "H2 fails for STMN2 E009 and UNC13A E054: library-scaled direction concordant despite opposite within-gene direction",
+  "unresolved": ["Well/reagent map and original model formula", "Base/junction coverage and alignment", "Independent CE coordinate/assembly audit", "Effects of individual library influence"]
+}

@@ -1,0 +1,18 @@
+{
+  "python": "3.12.14",
+  "date": "2026-10-30",
+  "dependencies": "stdlib",
+  "random_seed": null,
+  "parent_commit": "0e8543c29e0945c4c03b5e2ae5516769438c6d9f",
+  "hashes": {
+    "../ela-consolidation/data/cache/issue14/GSE121569_dexseq-all.csv.gz": "daaf355a7cbd48b617d30201ba289d8f0c4efc9fbc2a23ca2f991c84e1d814f4",
+    "data/cache/dexseq-qc/combined.txt.gz": "ded981755f00d546bac0fdf5d68bd3530891afffb3d335d3e78f2b4a708fea6e",
+    "reports/gse121569-design/dexseq_column_map.tsv": "239323f99360018259f165583fef66d2c1043ed6b8efe8c021a3c2e0abe5e2e2",
+    "reports/dexseq-batch-sensitivity/fragment_batch_aggregates.tsv": "8ca6647ca3f16cdb7f62596f50370bf3ee2c8ad6e21df520da0e87d81da882af",
+    "/workspace/scratch/1c0aac61c246/ela-issue14/scripts/audit_dexseq_coverage.py": "97661ef870eb9270fe27edec025dbb3f299306176c76c6b92621e07e59f3cf71"
+  },
+  "cache_reused": true,
+  "new_download": false,
+  "technical_count_threshold": 10,
+  "no_pseudocount": true
+}

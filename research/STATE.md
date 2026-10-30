@@ -1,5 +1,11 @@
 # Estado actual del proyecto ELA
 
+## Cuentas y denominadores — checkpoint posterior del 30/10/2026
+
+Originales recuperados de caché con SHA256verificados; bloqueo anterior de acceso a matriz resuelto aquí, sin nueva descarga. reports/dexseq-coverage:408agregados de cuentas,612efectos y204medias previas concordantes. Los cuatro destacados tienen mínimos908/38/40/29cuentas,sin ceros. UNC13AE026/E030conservan inversión con3denominadores;STMN2E009yUNC13AE054son discordantes dentro del gen pero descienden en ambos lotes por biblioteca. H1>=10no refutada;H2todosdiscordantesen3métodosrefutadaen2casos. No inferir ruido,CE,proteína o función.160tests locales(153+7),compileallOK.
+
+Siguiente tarea seleccionada:coordenadas/ensamblajeCEdeSTMN2/UNC13Acon primaria independiente antes de interpretar bins como evento. Cobertura aquí es cuentas de bin,no lecturas de unión o profundidad por base. Refit pendientepozo/reactivo/fórmula. PR28sigue separado,no incorporado;PR29abierto,sin merge/cierreautomático. Resumen semanal existente sin duplicar. Este checkpoint sustituye el pendiente de acceso/cobertura por cuentas que figura en las secciones históricas inferiores.
+
 ## Checkpoint vigente — 30/10/2026 (esta rama PR29, pendiente de revisión)
 
 Main sigue en8dfa7ce7. PR28 sigue independiente en27f34d1b, no incorporado: catálogo/originalidad/QCglobal completados allí (545/353/182/821, sin novedad inferida; protocoloUNC13Av0.4conceptual). Leer sus informes antes de retomar; no repetir ni tratar los pendientes históricos de esta página como actuales. No se han reconciliado mediante merge las dos ramas.
