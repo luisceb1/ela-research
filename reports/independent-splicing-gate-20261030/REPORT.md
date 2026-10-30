@@ -39,3 +39,14 @@ La inspección de GEO GSE304550, BioProject PRJNA1301730 y del texto completo de
 - GSE304550 es apropiado como **reproducción técnica/control positivo**, pero bajo la regla vigente de >=3 unidades independientes por condición **no se acepta aún como fuente inferencial**. El objetivo de replicación externa debe buscar otra unidad biológica o precisar y revisar prospectivamente el umbral; nunca relajar el umbral tras ver un efecto favorable.
 
 Referencias verificadas: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE304550 ; https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1301730 ; https://pmc.ncbi.nlm.nih.gov/articles/PMC12704819/ (Fig. 5 y leyenda). Esto es auditoría documental, no reanálisis cuantitativo.
+
+
+## Addendum: comprobación de los seis suplementos del artículo — 30/10/2026
+
+Fuente primaria revisada: https://pmc.ncbi.nlm.nih.gov/articles/PMC12704819/ (sección **Supplementary Material**, **Splicing analysis** y **Data and Code Availability**).
+
+Se enumeran seis anexos tabulares/PDF científicos y una tabla adicional de tejido post mortem: suplemento 1 PDF figuras S1–S9; Table S1 UPF1 targets; Table S2 GO UPF1; Table S3 **APA** TDP43 KD; Table S4 **APA** UPF1 KD/pacientes; Table S5 primers qPCR/ASO; Table S6 información de tejido de pacientes. **Ninguno está identificado por los autores como exportación MAJIQ/VOILA con cuentas por biblioteca, coordenadas y uniones críptica/canónica.** Esto se basa en índice y descripciones publicados; los XLSX no pudieron leerse íntegramente en esta revisión debido al acceso intermitente de PMC (redirección/recaptcha). No afirmar inspección exhaustiva del contenido interno.
+
+El manuscrito especifica MAJIQ `v2.4.dev102+g2cae150`, `majiq build --min-intronic-cov 1 --simplify`, `majiq deltapsi`; VOILA view `--threshold 0.1 --probability-threshold 0.95`. Los resultados MAJIQ en figura 5A/F y RT-qPCR figura 5H **no constituyen cuentas de unión descargables**. Data and Code Availability enumera GEO GSE304547, GSE304548, GSE304550, pero no archivo de salidas MAJIQ ni repositorio de código de splicing verificable en ese apartado.
+
+**Decisión tras esta comprobación:** No hay archivo MAJIQ de cuentas/eventos verificado entre los suplementos descritos y GEO disponible. Persisten la falta de mapa biblioteca→diferenciación y la imposibilidad de convertir cuatro bibliotecas/condición en cuatro unidades independientes. **No ejecutar inferencia de splicing sobre estas tablas de genes**. Próxima verificación acotada: comprobar un manifiesto de SRA y disponibilidad de BAM/junction outputs sin descarga masiva, o buscar una fuente alternativa precomputada. No contactar autores ni inferir un resultado nuevo.
