@@ -1,0 +1,13 @@
+{
+  "utc": "2026-10-30T13:11:59.022060+00:00",
+  "question": "Can a new primary supplement certify culture-unit hierarchy for the six baseline cytosol libraries?",
+  "prediction": "Supplement identifies independent culture preparations and links them to deposited libraries.",
+  "failure": "Only numbered labels or library counts without explicit culture linkage; keep inference blocked.",
+  "controls": [
+    "paired FASTQ rows are one library",
+    "nuclear and cytosolic fractions are not independent cultures",
+    "do not transfer independence from other assays",
+    "no effects or patient metadata"
+  ],
+  "scope": "One primary supplement audit; no fourth candidate, no contacts or alignment"
+}

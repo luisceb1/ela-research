@@ -1,0 +1,24 @@
+[
+  {
+    "id": "unit_xml",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12667841/fullTextXML",
+    "bytes": 169166,
+    "sha256": "780feceea2f80509ef85062c01671b8f04657de466776913ad7f33ed5f9bb8ed",
+    "status": "ok",
+    "prefix": "<?xml versio"
+  },
+  {
+    "id": "unit_supp_pdf",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12667841/bin/NIHPP2025.11.23.689722V1-supplement-1.pdf",
+    "bytes": 21569,
+    "sha256": "1dd8d508f9bfcea514492ddf8d0272aade87c116fa0b178fd4eb959cfa22249b",
+    "status": "unexpected_html_not_pdf",
+    "prefix": "<!doctype ht"
+  },
+  {
+    "url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC12667841.1/NIHPP2025.11.23.689722V1-supplement-1.pdf",
+    "bytes": 85626,
+    "sha256": "55c515cd210590e02f7507e0adfe82ad6a059737f8313db877975888c5a48dfa",
+    "status": "pdf_verified"
+  }
+]
