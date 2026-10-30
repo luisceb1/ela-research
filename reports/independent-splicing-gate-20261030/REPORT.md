@@ -25,3 +25,17 @@ GSE290436 https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE290436 ; GSE2904
 
 ## Resultado utilizable
 Este ciclo aporta **inventario y rechazo de aceptación prematura**, no replicación biológica. GSE304550 queda como primer candidato para aclarar el mapa de diferenciaciones; si no cumple, evaluar GSE290436 sin contar GSE290441 como cohorte adicional. Si ninguno cumple, detener el ciclo y replantear vía de acceso a cuentas de uniones/lecturas. No se han hecho descargas de gran volumen, cambios de `main`, comunicaciones ni gastos.
+
+
+## Addendum: verificación directa de publicación primaria y tamaño — 30/10/2026
+
+La inspección de GEO GSE304550, BioProject PRJNA1301730 y del texto completo de Alessandrini et al. (*Neuron* 2026, doi:10.1016/j.neuron.2025.11.001; PMC12704819) matiza el inventario inicial:
+
+- GEO enumera exactamente GSM9152768–GSM9152783; por cada uno de los 2 lotes hay 2 bibliotecas etiquetadas como réplicas para scramble, TDP43 KD, UPF1 KD y doble KD. Las etiquetas **no** demuestran cuatro diferenciaciones independientes por brazo.
+- La publicación describe el análisis de uniones diferenciales con **MAJIQ**, presenta Sashimi de **UNC13A críptico** en Fig. 5F y medidas **RT-qPCR de UNC13A-CE y STMN2-CE** en Fig. 5H. Esas alteraciones ya fueron examinadas por los autores: una reproducción propia no constituye novedad biológica.
+- Fig. 5 declara para varios paneles **4 réplicas biológicas de 2 diferenciaciones independientes**. La leyenda no permite trasladar automáticamente esta unidad a cada archivo GSM, pero impide tratar provisionalmente las 4 bibliotecas/condición como >=3 diferenciaciones independientes. El gate de independencia **continúa sin superar**.
+- BioProject refiere **16 experimentos SRA, 355 Gbases y 0,11 TB** totales. No descargar el proyecto completo ni procesar lecturas crudas sin plan de almacenamiento y necesidad concreta de cuantificar las uniones.
+- El archivo suplementario de GEO es de **cuentas a nivel gen**, no una matriz verificable de uniones. Identificar primero si los suplementarios de la publicación contienen salidas MAJIQ, definiciones de eventos y cuentas por biblioteca; una figura de Sashimi no sustituye una matriz.
+- GSE304550 es apropiado como **reproducción técnica/control positivo**, pero bajo la regla vigente de >=3 unidades independientes por condición **no se acepta aún como fuente inferencial**. El objetivo de replicación externa debe buscar otra unidad biológica o precisar y revisar prospectivamente el umbral; nunca relajar el umbral tras ver un efecto favorable.
+
+Referencias verificadas: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE304550 ; https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1301730 ; https://pmc.ncbi.nlm.nih.gov/articles/PMC12704819/ (Fig. 5 y leyenda). Esto es auditoría documental, no reanálisis cuantitativo.
