@@ -81,3 +81,20 @@ Total per event: canonical 7074, cryptic_1 80, cryptic_2 53, cryptic_long 23. No
 **Observation:** these candidate junctions have positive counts in C9orf72/GRN and no positives among 27 control/MAPT samples; this is a selected, previously published cohort comparison, **not** external independent replication or newly validated diagnostic specificity. Do not equate genotype grouping with independently measured TDP43 pathology or infer ALS-specific clinical implications.
 
 **Next gates, before tests, PSI or claims:** verify strand/reference/coordinate offset and assignment to exact UNC13A canonical/CE events; establish whether cryptic_1 and cryptic_2 represent two junctions of the same transcript (avoid counting molecules twice); document sample-level total junction depth, QC, coverages, tissue source and cluster definition; create threshold sensitivity summaries (e.g. count >=1/3/5) and controls. Keep group statistics descriptive until analysis plan and biological units are properly established.
+
+
+## Addendum: local threshold QC results — 2026-10-30
+
+User-reported execution of `scripts/rimod_unc13a_threshold_qc.py`: 47 samples, 4,127 chr19 Parquets. All four queried junctions have the same LeafCutter cluster identifier `clu_46643_-`. This does **not** by itself certify precise event annotations or independent transcript molecules.
+
+Positives among combined C9orf72+GRN (n=20); all three queried cryptic candidates remain 0/27 in combined control+MAPT at thresholds >=1, >=3 and >=5:
+
+| Candidate | >=1 | >=3 | >=5 |
+|---|---:|---:|---:|
+| cryptic_1 | 16 | 11 | 7 |
+| cryptic_2 | 13 | 8 | 3 |
+| cryptic_long | 8 | 2 | 2 |
+
+In C9orf72+GRN, 17/20 have at least one of three positive at >=1; 12/20 have cryptic_1 and cryptic_2 simultaneously; 6/20 have all three. In control+MAPT all these co-occurrence summaries are zero. These thresholds were chosen for exploratory robustness, not prevalidated clinical classification. Coverage attenuation is strong: only 7/20 have cryptic_1 >=5, for example. Reported counts are the user's local output, **not independently run or audited against raw reads in this session**.
+
+Next mandatory scientific QC before interpretation: confirm assembly and LeafCutter end-point convention; determine whether canonical and CE junctions share a mathematically suitable denominator (cluster_count is not automatically PSI); sensitivity of the result to sequencing depth, RIN, tissue composition and batch; assess individual-metadata restrictions and avoid publishing row-level donor output. No p values, causal inference, ALS extrapolation, independent replication or biomarker performance claim.
