@@ -1,0 +1,41 @@
+{
+  "candidates": 1901,
+  "evidence_rows_not_replicates": 4008,
+  "reference_36_states": {
+    "candidate_id_locus_confirmed": 33,
+    "reference_gene_missing": 3
+  },
+  "author_278_conditional_same": 0,
+  "author_278_evidence_states": {
+    "multiple_ids_at_chrom_strand": 1144,
+    "conditional_other_gene": 54,
+    "unresolved_token": 4
+  },
+  "baseline_strict_unchanged": 354,
+  "additional_conditional_candidates": [
+    {
+      "gene_id": "ENSG00000292358",
+      "chrom": "chrY",
+      "intron_start": "317052",
+      "intron_end": "317278",
+      "strand": "-",
+      "previous_status": "reference_identity_unresolved",
+      "candidate_id_state": "candidate_id_locus_confirmed",
+      "conditional_same_rows": 3,
+      "conditional_s8_rows": 3,
+      "conditional_s7_rows": 0,
+      "evidence_rows": 3,
+      "row_states_json": "{\"conditional_same_gene\": 3}"
+    }
+  ],
+  "all_evidence_states": {
+    "conditional_same_gene": 2160,
+    "multiple_ids_at_chrom_strand": 1487,
+    "conditional_other_gene": 352,
+    "unresolved_token": 9
+  },
+  "conditional_total_not_new_strict_matches": 355,
+  "gene_spans_or_nearest_neighbor_used": false,
+  "clinical_data_used": false,
+  "interpretation": "Annotation-dependent sensitivity; no new transcript, function, replication or novelty claim"
+}

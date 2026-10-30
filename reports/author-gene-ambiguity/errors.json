@@ -1,0 +1,19 @@
+{
+  "execution_errors": [],
+  "unresolved_reference_gene": "ENSG00000276256",
+  "unresolved_reference_keys": 3,
+  "author_ambiguous_candidates_still_unresolved": 278,
+  "conditional_chrY_origin_not_validated": true,
+  "unknown_tokens_in_target_rows": [
+    "None"
+  ],
+  "repair_or_alias_inference": false,
+  "publication_transport_errors": [
+    {
+      "error": "code-mode host closed its stdout",
+      "phase": "Read local publication payload with204parallel commands",
+      "resolution": "Retried payload reads in batches of12; inputs/results unchanged",
+      "scientific_analysis_affected": false
+    }
+  ]
+}

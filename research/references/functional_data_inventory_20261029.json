@@ -1,0 +1,115 @@
+{
+  "date": "2026-10-29",
+  "scope": "Six assay/version projections from four publication families, not six independent studies; bounded public-data readiness for proposed post-deficit contrast",
+  "evidence_is": "Manual source curation; software validates reconstruction contract, not biological claims",
+  "records": [
+    {
+      "id": "keuss2024_neuronal_ASO",
+      "version": "10.1101/2024.06.20.599684",
+      "data_access": "not_retrieved",
+      "timing": "concurrent",
+      "locator": "PMC11230273 Data availability; Methods ASO; media-1.pdf11pages, Extended Data Fig1–7 and Tables1–4",
+      "verified": {
+        "unit_key": null,
+        "biological_batch_key": null,
+        "observation_time": null,
+        "first_dose_link": null,
+        "paired_baseline": null,
+        "post_deficit_start": false,
+        "aligned_control": null,
+        "functional_outcome": true
+      },
+      "note": "Only supplement PDF in public S3 asset snapshot; figures/reagents/software, no row-level MEA well→batch→time→dose mapping recovered. Source-data declaration is not an accessible raw recording table."
+    },
+    {
+      "id": "keuss2026_lateKD_MEA",
+      "version": "KCL accepted 2026-10-06",
+      "data_access": "not_retrieved",
+      "timing": "pretreated_before_KD",
+      "locator": "reports/accepted-keuss/REPORT.md p25,p62Table6; KCL link391373721403",
+      "verified": {
+        "unit_key": null,
+        "biological_batch_key": null,
+        "observation_time": null,
+        "first_dose_link": null,
+        "paired_baseline": null,
+        "post_deficit_start": false,
+        "aligned_control": null,
+        "functional_outcome": true
+      },
+      "note": "Existing manuscript curation gives ASO DIV14 versus late KD DIV33. Accepted source data/MEA recording manifest not retrieved. Preprint PDF is not accepted-version source data."
+    },
+    {
+      "id": "chan2026_fig7_f_i",
+      "version": "10.1038/s42003-026-10832-6 accepted publisher PDF",
+      "data_access": "retrieved",
+      "timing": "first_dose_DIV4_predose_growth",
+      "locator": "reports/chan-timing/audit.json selected sheets Figure7f–i; Fig7 p12; Data availability",
+      "verified": {
+        "unit_key": false,
+        "biological_batch_key": false,
+        "observation_time": null,
+        "first_dose_link": null,
+        "paired_baseline": null,
+        "post_deficit_start": null,
+        "aligned_control": null,
+        "functional_outcome": true
+      },
+      "note": "Workbook has DIV labels and group values, but no verified stable well/batch crosswalk for rows and repeated times. Earlier growth trajectory is known; do not recast as no predose information. Delay selected after persistent loss of acquired function not established."
+    },
+    {
+      "id": "chan2026_fig8_b_c",
+      "version": "10.1038/s42003-026-10832-6 accepted publisher PDF",
+      "data_access": "retrieved",
+      "timing": "immediate_postinjury",
+      "locator": "reports/chan-timing/audit.json Figure8b/c; Fig8 p13",
+      "verified": {
+        "unit_key": false,
+        "biological_batch_key": false,
+        "observation_time": null,
+        "first_dose_link": null,
+        "paired_baseline": false,
+        "post_deficit_start": false,
+        "aligned_control": null,
+        "functional_outcome": true
+      },
+      "note": "Five numeric entries per group are not five differentiations. Source figure gives axotomy DIV14 and immediate ASO, endpoint3days; source rows not linked to individual chips/batches."
+    },
+    {
+      "id": "beccari2025_fig7",
+      "version": "10.1073/pnas.2502294122",
+      "data_access": "retrieved",
+      "timing": "preinjury",
+      "locator": "reports/image-metadata-qc/REPORT.md and summary.json; Zenodo15346391 workbook Figure7 and27TIFFheaders",
+      "verified": {
+        "unit_key": false,
+        "biological_batch_key": false,
+        "observation_time": null,
+        "first_dose_link": null,
+        "paired_baseline": false,
+        "post_deficit_start": false,
+        "aligned_control": null,
+        "functional_outcome": true
+      },
+      "note": "Raw-data workbook and image filenames do not supply axon/image/chamber/differentiation correspondence. Unequal24/48h counts cannot be paired by row; expression precedes axotomy."
+    },
+    {
+      "id": "baughn2023_functional",
+      "version": "10.1126/science.abq5622 PMC author manuscript",
+      "data_access": "not_retrieved",
+      "timing": "post_KD_pre_axotomy",
+      "locator": "PMC10148063 Methods/availability, S3 version1 three objects; reports/originality-audit/REPORT.md",
+      "verified": {
+        "unit_key": null,
+        "biological_batch_key": null,
+        "observation_time": null,
+        "first_dose_link": null,
+        "paired_baseline": null,
+        "post_deficit_start": null,
+        "aligned_control": null,
+        "functional_outcome": true
+      },
+      "note": "Corrector eight days after KD start and twelve days before axotomy. Does not establish measured deficit before corrector. No raw traffic/well/batch mapping retrieved; supplementary DOCX link exists but access is separate."
+    }
+  ]
+}

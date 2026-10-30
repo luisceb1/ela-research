@@ -1,0 +1,13 @@
+{
+  "date": "2026-10-29",
+  "parent_matches_sha256": "d6a5730a03cf0241147d3bc6c4456cb1691443d0f5a62c436f103fe97c4c46f6",
+  "parent_evidence_sha256": "b04796b59aa7c039cd0ab8c5380484e2f0e3416d43e26100d8dfca37a54b3e65",
+  "gencode": {
+    "url": "https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_47/gencode.v47.annotation.gtf.gz",
+    "sha256": "df11938c66d2b39f8ebbdb5f1720919321f9cf9d58f02b019753f6a24ca3db24"
+  },
+  "author_manifest": "research/references/bolger_author_catalog_v1.json",
+  "geo_manifest": "research/references/geo_isoseq_sources_20261029.json",
+  "raw_sources_not_republished": true,
+  "scope": "Reuses pinned geometry projection, with direct three-row source and missing-gene GTF checks; not independent biological replication"
+}

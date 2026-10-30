@@ -1,0 +1,24 @@
+[
+  {
+    "file": "GSE310723_i3N_isoseq_extended_annotations.gtf.gz",
+    "sha256": "4a72d89df3f76c55694a53cca4462b53e5b1fc6cb4c3d931b26dd8402ac6e288",
+    "matching_lines_not_replicates": 16,
+    "examples": [
+      "chrUn_GL000195v1\tBambu\ttranscript\t42535\t86689\t.\t-\t.\tgene_id \"ENSG00000276256.1\"; transcript_id \"BambuTx5704\";",
+      "chrUn_GL000195v1\tBambu\texon\t42535\t44923\t.\t-\t.\tgene_id \"ENSG00000276256.1\"; transcript_id \"BambuTx5704\"; exon_number \"3\";",
+      "chrUn_GL000195v1\tBambu\ttranscript\t42939\t86693\t.\t-\t.\tgene_id \"ENSG00000276256.1\"; transcript_id \"BambuTx5705\";"
+    ],
+    "meaning": "Published source annotation, not inferred replacement ID"
+  },
+  {
+    "file": "GSE315972_NYGC_isoseq_extended_annotations.gtf.gz",
+    "sha256": "53bbd59fd8e3bbf558a9c5a60e6af0e3c658455d6b7db8e2b86c2420051e0976",
+    "matching_lines_not_replicates": 21,
+    "examples": [
+      "chrUn_GL000195v1\tBambu\ttranscript\t42939\t86690\t.\t-\t.\tgene_id \"ENSG00000276256.1\"; transcript_id \"BambuTx5614\";",
+      "chrUn_GL000195v1\tBambu\ttranscript\t42939\t86683\t.\t-\t.\tgene_id \"ENSG00000276256.1\"; transcript_id \"BambuTx17736\";",
+      "chrUn_GL000195v1\tBambu\ttranscript\t42939\t49164\t.\t-\t.\tgene_id \"ENSG00000276256.1\"; transcript_id \"ENST00000612465.1\";"
+    ],
+    "meaning": "Published source annotation, not inferred replacement ID"
+  }
+]

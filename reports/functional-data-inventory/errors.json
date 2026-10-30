@@ -1,0 +1,16 @@
+{
+  "baughn_supplement_attempt": {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/10148063/bin/NIHMS1890463-supplement-Supplementary_material.docx",
+    "bytes": 1817,
+    "sha256": "10702aaae08f99a7a9969c22947beecabda0d7271556bcd8e897c99f8a4515d5",
+    "zip_valid": false,
+    "status": "HTML/download preparation, not DOCX"
+  },
+  "kcl_accepted_pdf": {
+    "url": "https://kclpure.kcl.ac.uk/portal/files/391373721/LossOfTDP_Keuss_GreenAAM.pdf",
+    "status": 403,
+    "scope": "Data-source access not resolved by prior manuscript curation"
+  },
+  "search_scope": "Directed primary queries; no global absence claim; no contact requests or costs",
+  "next_task": "Resolve36reference identities and278author ambiguous coordinate hits from existing crypTE outputs"
+}
