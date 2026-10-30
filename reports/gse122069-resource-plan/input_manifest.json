@@ -1,0 +1,67 @@
+{
+  "source_sha256": "a94f63a20f59cb3575a4345278657765c8c0caed31dd85d2f3e0c50d7fdde021",
+  "rows": [
+    {
+      "gsm": "GSM3454242",
+      "published_group": "siControl 1",
+      "experiment": "SRX4965534",
+      "run": "SRR8144907",
+      "fastq_bytes": 1391030664,
+      "md5": "90ad6a34a34e8262bf300d7bb35406e1",
+      "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR814/007/SRR8144907/SRR8144907.fastq.gz",
+      "reads": 37518164
+    },
+    {
+      "gsm": "GSM3454243",
+      "published_group": "siControl 2",
+      "experiment": "SRX4965535",
+      "run": "SRR8144908",
+      "fastq_bytes": 1640602052,
+      "md5": "0cd29fe9f8bdf1a6f3596891b783990d",
+      "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR814/008/SRR8144908/SRR8144908.fastq.gz",
+      "reads": 54292655
+    },
+    {
+      "gsm": "GSM3454244",
+      "published_group": "siControl 3",
+      "experiment": "SRX4965536",
+      "run": "SRR8144909",
+      "fastq_bytes": 1238090993,
+      "md5": "daae7e401c5d21a41ff96afc33cd94ae",
+      "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR814/009/SRR8144909/SRR8144909.fastq.gz",
+      "reads": 40925555
+    },
+    {
+      "gsm": "GSM3454245",
+      "published_group": "siTDP-43 1",
+      "experiment": "SRX4965537",
+      "run": "SRR8144910",
+      "fastq_bytes": 2015424180,
+      "md5": "421792d49ab674cf91a2e5ebc2ab003a",
+      "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR814/000/SRR8144910/SRR8144910.fastq.gz",
+      "reads": 54264948
+    },
+    {
+      "gsm": "GSM3454246",
+      "published_group": "siTDP-43 2",
+      "experiment": "SRX4965538",
+      "run": "SRR8144911",
+      "fastq_bytes": 1168518842,
+      "md5": "0fde992455beec1b0eafd1f92bf95fa4",
+      "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR814/001/SRR8144911/SRR8144911.fastq.gz",
+      "reads": 38499682
+    },
+    {
+      "gsm": "GSM3454247",
+      "published_group": "siTDP-43 3",
+      "experiment": "SRX4965539",
+      "run": "SRR8144912",
+      "fastq_bytes": 2021225844,
+      "md5": "4c05c6e976689447f70b9a073428da24",
+      "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR814/002/SRR8144912/SRR8144912.fastq.gz",
+      "reads": 66940547
+    }
+  ],
+  "fastq_downloaded": false,
+  "total_bytes": 9474892575
+}

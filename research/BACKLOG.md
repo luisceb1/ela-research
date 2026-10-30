@@ -4,10 +4,11 @@ Solo la primera fila es la próxima tarea científica. Los bloqueos requieren ev
 
 | Prioridad | Trabajo | Estado / criterio de cierre |
 |---|---|---|
-| P0 propuesto | Resolver factibilidad de E-MTAB-15653 | Exigir nueva fuente primaria concreta sobre unidades de las seis bibliotecas citosólicas basales y fijar evento/hebra/denominador. Si no se documenta, bloquear; sin efectos ni cuarto candidato |
+| P0 | Revisar/completar plan GSE122069 | Plan documental y manifest preparados. Fijar evento canónico/críptico, referencia/índice/versiones y confirmar presupuesto antes del piloto. Sin crudos descargados |
+| Bloqueado | E-MTAB-15653 | Auditoría documental terminada; independencia no certificada. No repetir búsqueda ni calcular efectos sin nueva fuente concreta |
 | Completado en este PR | Ciclo de selección de tres fuentes | GSE182976: cobertura BW; GSE122069: TPM; E-MTAB-15653: cuentas de unión recuperadas, independencia no certificada. Ninguna lista para el contraste completo. No repetir |
 | Revisión | PR #30 separado | Otros candidatos y trabajo posterior; no integrado ni reejecutado aquí. Reconciliar su planning al integrar, sin sumar resultados o ampliar a datos clínicos personales |
-| Alternativa por revisar | Crudos GSE122069 | Seis runs y 9,47 GB comprimidos publicados; sin descarga/alineamiento. Necesita plan de recursos, referencias y controles antes de ejecutar |
+| Preparado | Plan de recursos GSE122069 | reports/gse122069-resource-plan: seis runs, 9,47 GB; entorno 8 GiB RAM. Presupuestos propuestos y puertas de parada, no benchmark o ejecución |
 | Operación | Integración #28/#29 | Ambos fusionados; main f028b888 con CI correcta. Esta nueva auditoría tiene 253 tests locales y queda en PR revisable, sin merge automático |
 | Mantenimiento | #1/#2/#17/#19 | Entregables técnicos ejecutados; actualizar issues sin presentarlos como fallos activos ni cerrar automáticamente. Límites de QC/estructura completa permanecen |
 | Mantenimiento | #20 | Parser y geometría global ejecutados. Separar esa resolución de cobertura/asignación y lecturas aún pendientes |
