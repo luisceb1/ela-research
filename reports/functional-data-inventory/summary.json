@@ -1,0 +1,103 @@
+{
+  "date": "2026-10-29",
+  "scope": "Six assay/version projections from four publication families, not six independent studies; bounded public-data readiness for proposed post-deficit contrast",
+  "records": 6,
+  "reconstructible": 0,
+  "results": [
+    {
+      "id": "keuss2024_neuronal_ASO",
+      "reconstructible_from_inspected_materials": false,
+      "blockers": [
+        "unit_key:not_verified",
+        "biological_batch_key:not_verified",
+        "observation_time:not_verified",
+        "first_dose_link:not_verified",
+        "paired_baseline:not_verified",
+        "post_deficit_start:missing_in_inspected_projection",
+        "aligned_control:not_verified",
+        "timing:not_target_post_deficit_contrast",
+        "data_access:not_retrieved"
+      ],
+      "reported_numeric_entries_are_biological_n": false
+    },
+    {
+      "id": "keuss2026_lateKD_MEA",
+      "reconstructible_from_inspected_materials": false,
+      "blockers": [
+        "unit_key:not_verified",
+        "biological_batch_key:not_verified",
+        "observation_time:not_verified",
+        "first_dose_link:not_verified",
+        "paired_baseline:not_verified",
+        "post_deficit_start:missing_in_inspected_projection",
+        "aligned_control:not_verified",
+        "timing:not_target_post_deficit_contrast",
+        "data_access:not_retrieved"
+      ],
+      "reported_numeric_entries_are_biological_n": false
+    },
+    {
+      "id": "chan2026_fig7_f_i",
+      "reconstructible_from_inspected_materials": false,
+      "blockers": [
+        "unit_key:missing_in_inspected_projection",
+        "biological_batch_key:missing_in_inspected_projection",
+        "observation_time:not_verified",
+        "first_dose_link:not_verified",
+        "paired_baseline:not_verified",
+        "post_deficit_start:not_verified",
+        "aligned_control:not_verified"
+      ],
+      "reported_numeric_entries_are_biological_n": false
+    },
+    {
+      "id": "chan2026_fig8_b_c",
+      "reconstructible_from_inspected_materials": false,
+      "blockers": [
+        "unit_key:missing_in_inspected_projection",
+        "biological_batch_key:missing_in_inspected_projection",
+        "observation_time:not_verified",
+        "first_dose_link:not_verified",
+        "paired_baseline:missing_in_inspected_projection",
+        "post_deficit_start:missing_in_inspected_projection",
+        "aligned_control:not_verified",
+        "timing:not_target_post_deficit_contrast"
+      ],
+      "reported_numeric_entries_are_biological_n": false
+    },
+    {
+      "id": "beccari2025_fig7",
+      "reconstructible_from_inspected_materials": false,
+      "blockers": [
+        "unit_key:missing_in_inspected_projection",
+        "biological_batch_key:missing_in_inspected_projection",
+        "observation_time:not_verified",
+        "first_dose_link:not_verified",
+        "paired_baseline:missing_in_inspected_projection",
+        "post_deficit_start:missing_in_inspected_projection",
+        "aligned_control:not_verified",
+        "timing:not_target_post_deficit_contrast"
+      ],
+      "reported_numeric_entries_are_biological_n": false
+    },
+    {
+      "id": "baughn2023_functional",
+      "reconstructible_from_inspected_materials": false,
+      "blockers": [
+        "unit_key:not_verified",
+        "biological_batch_key:not_verified",
+        "observation_time:not_verified",
+        "first_dose_link:not_verified",
+        "paired_baseline:not_verified",
+        "post_deficit_start:not_verified",
+        "aligned_control:not_verified",
+        "data_access:not_retrieved"
+      ],
+      "reported_numeric_entries_are_biological_n": false
+    }
+  ],
+  "effects_estimated": false,
+  "novelty_certified": false,
+  "interpretation": "Inspected projections only; not proof no other data exist",
+  "register_sha256": "6786a9ddf86f2469b478a425c897414192adca5570056e95dee6f1c43906919a"
+}

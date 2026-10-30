@@ -1,0 +1,17 @@
+{
+  "date": "2026-10-29",
+  "errors": [
+    {"component":"scite_patents_and_trials","status":"INVALID_ARGUMENT","interpretation":"Unavailable, not zero hits; valid full and minimal arguments attempted"},
+    {"component":"citation_graph","status":"truncated","interpretation":"No coverage-based absence inference"},
+    {"component":"final_methods","sources":["Guo2026","motor2026"],"status":"not_read","interpretation":"Abstract or indexed fragments do not establish detailed methods"},
+    {"component":"ctr2025_motor2026","status":"possible_overlap","interpretation":"Do not count independent cohorts without verification"},
+    {"component":"scite_queries","status":"broad_query_noise","interpretation":"Counts not used as negative evidence"}
+  ],
+  "primary_checks": [
+    "https://pubchem.ncbi.nlm.nih.gov/patent/US-12104155-B2",
+    "https://patents.google.com/patent/EP4599062A1/en",
+    "https://www.hra.nhs.uk/planning-and-improving-research/application-summaries/research-summaries/a-study-evaluating-the-safety-and-tolerability-of-qrl-201-in-als/",
+    "https://euclinicaltrials.eu/search-for-clinical-trials/?lang=en&EUCT=2022-500758-41-00"
+  ],
+  "new_source": {"url":"https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12478394/fullTextXML","bytes":140876,"sha256":"0e4839737cd665141a5f4244d7b0d463640490d3018fd77a0d6d3c8ebfe1bc51","usage":"Targeted complete XML read; raw text not republished"}
+}

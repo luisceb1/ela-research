@@ -1,0 +1,251 @@
+{
+  "cutoff": "2026-10-29",
+  "scope": "Directed originality audit; no human-level efficacy, patentability or systematic-review certification",
+  "studies": [
+    {
+      "id": "baughn2023",
+      "date": "2023-03-16",
+      "versions": [
+        "10.1126/science.abq5622"
+      ],
+      "access": "fulltext",
+      "methods_verified": true,
+      "after_measured_deficit": "not_established",
+      "locator": "Methods: iPSC neurons / axon regeneration; Results Fig.4; scite full text and PMC10148063",
+      "quote": "8 days after initiation; despite sustained TDP-43 suppression",
+      "evidence": "Corrector starts eight days after TDP43 ASO; treatment continues twelve days before axotomy. Axon regeneration and lysosomal trafficking rescue reported. No verified pre-dose functional-deficit selection."
+    },
+    {
+      "id": "keuss",
+      "date": "2024-06-20",
+      "versions": [
+        "10.1101/2024.06.20.599684",
+        "KCL-accepted-2026-10-06"
+      ],
+      "access": "prior_curated_manuscript",
+      "methods_verified": true,
+      "after_measured_deficit": "not_established",
+      "locator": "Accepted user-supplied manuscript p25 lines720–740 and p62 Table6; reports/accepted-keuss/REPORT.md; KCL institutional record",
+      "evidence": "ASO DIV14; early KD DIV14 or late KD DIV33. Late-KD arm is pretreated. Accepted title UNC13A splice correction rescues synaptic dysfunction induced by TDP-43 loss. No final Nature DOI verified. Accepted PDF not re-downloaded in this audit."
+    },
+    {
+      "id": "chan2026",
+      "date": "2026-10-10",
+      "versions": [
+        "10.1038/s42003-026-10832-6"
+      ],
+      "access": "cached_publisher_pdf",
+      "methods_verified": true,
+      "after_measured_deficit": "morphological_predose_trajectory",
+      "locator": "Fig7f–i p12, Fig8 and legend; reports/chan-timing/sources.json and REPORT.md",
+      "quote": "straight after injury",
+      "evidence": "First ASO DIV4 in longitudinal neurite assay; lower mutant growth visible before dose. Axotomy DIV14 and ASO immediately afterward. Not proof of a delayed dose selected after repeated loss of acquired network function."
+    },
+    {
+      "id": "gomberg2025",
+      "date": "2025-12-01",
+      "versions": [
+        "10.64898/2025.12.01.691001"
+      ],
+      "access": "fulltext",
+      "methods_verified": true,
+      "after_measured_deficit": "not_established",
+      "locator": "Results axon regeneration and treatment schematic; scite fulltext second page",
+      "evidence": "Dual STMN2/UNC13A snRNA therapy. TDP43 ASO D30–42, SURF lentivirus D32, axotomy D42, follow-up D56. Two days after KD initiation is ten days before injury."
+    },
+    {
+      "id": "mehta2025",
+      "date": "2025-11-26",
+      "versions": [
+        "10.1101/2025.11.26.690143"
+      ],
+      "access": "fulltext",
+      "methods_verified": true,
+      "after_measured_deficit": "not_established",
+      "locator": "Methods generation of tU7 iPSC lines, i3Neuron differentiation, mouse injections; Results electrophysiology",
+      "evidence": "Stable U7-transduced iPSC lines generated before differentiation; HaloPROTAC starts day0 for growth or day4 for RNA/protein. U7 STMN2/UNC13A correction and functional outcomes already described. Mouse P0 vectors co-delivered; no verified post-deficit start."
+    },
+    {
+      "id": "ctr2025",
+      "date": "2025-08-20",
+      "versions": [
+        "10.1101/2025.08.14.670400"
+      ],
+      "access": "fulltext",
+      "methods_verified": true,
+      "after_measured_deficit": "symptomatic_animals",
+      "baseline_locator": "Results: six-week-old mice already have fine tremor; Fig2A grip strength; not a two-deficit-trigger design",
+      "locator": "PMC12478394 XML, Results systemic delivery and Methods intravenous injection; Fig1–2",
+      "quote": "when fine tremors are already apparent",
+      "evidence": "Intravenous AAV-PHP.eB-CTR at six weeks in conditional motor-neuron Tardbp knockout mice; functional and survival outcomes. Direct prior art for broad symptomatic treatment; does not establish efficacy in humans."
+    },
+    {
+      "id": "motor2026",
+      "date": "2026-09-18",
+      "versions": [
+        "10.64898/2026.09.11.751082"
+      ],
+      "access": "abstract_and_indexed_primary_methods",
+      "methods_verified": false,
+      "after_measured_deficit": "symptomatic_animals",
+      "locator": "Primary indexed bioRxiv v1: Results systemic delivery; Methods Viral Vector Packaging and Delivery; Fig2; direct page403; reports/originality-audit/FOLLOWUP.md",
+      "evidence": "Targeted indexed primary methods verify IV AAV-PHP.eB-CTR at six weeks, when tremor is already present. Full article not read. Conditional mouse model and symptomatic treatment precede project. Animal/data overlap with ctr2025 remains unresolved; not independent replication.",
+      "targeted_methods_verified": true
+    },
+    {
+      "id": "seddighi2024",
+      "date": "2024-01-24",
+      "versions": [
+        "10.1126/scitranslmed.adg7162",
+        "10.1101/2023.01.23.525149"
+      ],
+      "access": "abstract_and_primary_figure_caption",
+      "methods_verified": false,
+      "after_measured_deficit": "not_applicable",
+      "locator": "Final PubMed38277467 Fig2 caption; PMC11325748; scite abstract",
+      "evidence": "Cryptic protein generation and AGRN/CAMK2B transcript/peptide observations precede project. Preprint access link is not final full text. Does not by itself establish AGRN secretion/AChR functional effect."
+    },
+    {
+      "id": "review2026",
+      "date": "2026-04-21",
+      "versions": [
+        "10.1146/annurev-genom-022024-011307"
+      ],
+      "access": "targeted_fulltext_excerpts",
+      "methods_verified": false,
+      "after_measured_deficit": "not_applicable",
+      "locator": "Section AGRN in El-Agamy, Mattedi and Fratta review; PMC7619245; scite targeted excerpts",
+      "evidence": "Explicitly raises effect of cryptic AGRN peptide on function/secretion and neuromuscular junction. Primary evidence that question was already formulated; review is not primary functional experiment."
+    },
+    {
+      "id": "guo2026",
+      "date": "2026-06-03",
+      "versions": [
+        "10.1126/scitranslmed.aeb8517",
+        "10.1101/2025.08.28.672801"
+      ],
+      "access": "abstract",
+      "methods_verified": false,
+      "after_measured_deficit": "unresolved_final_methods",
+      "locator": "Final PubMed42234776; scite final abstract; older preprint PMC12424808 kept distinct",
+      "evidence": "Published final article links cryptic splicing in synaptic/excitability targets to dysfunction and correction. Do not transfer ASO/KD schedule from 2025 preprint to final without final methods."
+    },
+    {
+      "id": "bolger2026",
+      "date": "2026-01-09",
+      "versions": [
+        "10.64898/2026.01.09.698641"
+      ],
+      "access": "fulltext_and_supplements",
+      "methods_verified": true,
+      "after_measured_deficit": "not_applicable",
+      "locator": "PMC12803201 fullTextXML P54; media6/8/9/16; reports/author-catalog-schema and author-junction-match",
+      "evidence": "crypTE discovery and author catalogs precede project. Our 354 exact same-gene junction matches concern an eligible culture subset:284 S8 labels plus70 S7-only TE transcript context. A context match is not cryptic-junction functional evidence."
+    },
+    {
+      "id": "beccari2025",
+      "date": "2025-01-01",
+      "date_precision": "year_only_lower_bound",
+      "versions": [
+        "10.1073/pnas.2502294122"
+      ],
+      "access": "prior_cached_fulltext",
+      "methods_verified": true,
+      "after_measured_deficit": "not_established",
+      "locator": "PMC12130871; project functional-evidence audit",
+      "evidence": "Stathmin2 regeneration role previously studied; expression three days before axotomy. Protein deficiency is not itself proof that intervention followed a measured functional deficit."
+    }
+  ],
+  "claims": [
+    {
+      "id": "C1",
+      "claim": "STMN2 cryptic correction and axon/traffic rescue",
+      "classification": "prior_art",
+      "studies": [
+        "baughn2023",
+        "chan2026",
+        "beccari2025"
+      ],
+      "novelty_proven": false
+    },
+    {
+      "id": "C2",
+      "claim": "UNC13A splice correction and synaptic rescue",
+      "classification": "prior_art",
+      "studies": [
+        "keuss",
+        "mehta2025"
+      ],
+      "novelty_proven": false
+    },
+    {
+      "id": "C3",
+      "claim": "Delayed rescue after predefined functional deficit with maintained perturbation",
+      "classification": "unresolved",
+      "studies": [
+        "baughn2023",
+        "keuss",
+        "chan2026",
+        "ctr2025",
+        "motor2026"
+      ],
+      "novelty_proven": false
+    },
+    {
+      "id": "C4",
+      "claim": "Cryptic AGRN secretion and AChR function",
+      "classification": "open_not_original",
+      "studies": [
+        "seddighi2024",
+        "review2026"
+      ],
+      "novelty_proven": false
+    },
+    {
+      "id": "C5",
+      "claim": "Cryptic CAMK2B protein/function",
+      "classification": "extension",
+      "studies": [
+        "seddighi2024"
+      ],
+      "novelty_proven": false
+    },
+    {
+      "id": "C6",
+      "claim": "crypTE/shared catalog junctions",
+      "classification": "technical",
+      "studies": [
+        "bolger2026"
+      ],
+      "novelty_proven": false
+    },
+    {
+      "id": "C7",
+      "claim": "Combined STMN2 and UNC13A correction",
+      "classification": "prior_art",
+      "studies": [
+        "gomberg2025",
+        "mehta2025",
+        "guo2026"
+      ],
+      "novelty_proven": false
+    },
+    {
+      "id": "C8",
+      "claim": "Parser/QC repair, MEA software and experimental-design controls",
+      "classification": "technical",
+      "studies": [],
+      "novelty_proven": false
+    }
+  ],
+  "overlap_groups": [
+    {
+      "ids": [
+        "ctr2025",
+        "motor2026"
+      ],
+      "status": "possible_overlap_not_independent_until_resolved"
+    }
+  ],
+  "followup": "reports/originality-audit/FOLLOWUP.md"
+}

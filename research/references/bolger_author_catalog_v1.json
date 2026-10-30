@@ -1,0 +1,165 @@
+{
+  "doi": "10.64898/2026.01.09.698641",
+  "pmcid": "PMC12803201",
+  "version": 1,
+  "license": "CC BY-NC",
+  "attribution": "Bolger et al., bioRxiv v1, 9 January 2026; NCBI PMC Article Datasets on AWS, accessed 2026-10-29; noncommercial project research",
+  "xml": {
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12803201/fullTextXML",
+    "bytes": 219983,
+    "sha256": "02b9ce8a1667ca63c150fcdec69883d3b5abc7142ec3820861743f8cd267016b"
+  },
+  "files": {
+    "media-1.docx": {
+      "url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC12803201.1/media-1.docx",
+      "bytes": 16402,
+      "md5": "9dd07b38e4485610af4f52b638534bd9",
+      "sha256": "1c6cd0f29450138b562a64f84638f9f7b5b664723c8bd9f1095a566e445a7708"
+    },
+    "media-6.xlsx": {
+      "url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC12803201.1/media-6.xlsx",
+      "bytes": 34813,
+      "md5": "6119bd449cf2f096468f5438b5649944",
+      "sha256": "0dd008469e0d0b03ddb5fc622a8551816b1b10fc074447bb940c5db387baebfd"
+    },
+    "media-8.xlsx": {
+      "url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC12803201.1/media-8.xlsx",
+      "bytes": 39995314,
+      "md5": "ce6ac9347ab475e205f77b67cd798bcc",
+      "sha256": "060448b8d31983d3f708132b36b41a75c2f0c3b076fdaeb54bfeccdb8a8c92d9"
+    },
+    "media-9.xlsx": {
+      "url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC12803201.1/media-9.xlsx",
+      "bytes": 8813252,
+      "md5": "9294bc22e9b3ae7fc09ff237236545a7",
+      "sha256": "19a3e1edc7b857fec3fb96649344a02ef5e80e3899d5c8f0b28415675fb2d411"
+    },
+    "media-16.xlsx": {
+      "url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC12803201.1/media-16.xlsx",
+      "bytes": 54407,
+      "md5": "7453593b60a841358ee36d889e83ee70",
+      "sha256": "94e7a81a575b41d5911678988382d3996e527d7c1ef6ad6e8839eb96d2c4ebcd"
+    }
+  },
+  "policy": {
+    "media-1.docx": {
+      "table": "index",
+      "purpose": "Índice de tablas; sin valores por persona",
+      "scope": "legend_index_only",
+      "mapping_evidence": "DOCX table legends and XML xref/rid; S9 range S8–9 in P21; not media-number inference"
+    },
+    "media-2.xlsx": {
+      "table": "S1",
+      "purpose": "Expresión diferencial corta en cultivos",
+      "scope": "not_downloaded",
+      "mapping_evidence": "DOCX table legends and XML xref/rid; S9 range S8–9 in P21; not media-number inference"
+    },
+    "media-3.xlsx": {
+      "table": "S2",
+      "purpose": "Splicing corto LeafCutter en cultivos",
+      "scope": "not_downloaded",
+      "mapping_evidence": "DOCX table legends and XML xref/rid; S9 range S8–9 in P21; not media-number inference"
+    },
+    "media-4.xlsx": {
+      "table": "S3",
+      "purpose": "Comparación de uniones con estudio previo",
+      "scope": "not_downloaded",
+      "mapping_evidence": "DOCX table legends and XML xref/rid; S9 range S8–9 in P21; not media-number inference"
+    },
+    "media-5.xlsx": {
+      "table": "S4",
+      "purpose": "Resumen y anotación Bambu de cultivo",
+      "scope": "not_downloaded",
+      "mapping_evidence": "DOCX table legends and XML xref/rid; S9 range S8–9 in P21; not media-number inference"
+    },
+    "media-6.xlsx": {
+      "table": "S5",
+      "purpose": "Uniones publicadas y presencia en cultivos",
+      "scope": "header_only",
+      "mapping_evidence": "DOCX table legends and XML xref/rid; S9 range S8–9 in P21; not media-number inference"
+    },
+    "media-7.xlsx": {
+      "table": "S6",
+      "purpose": "Transcritos TE independientes en cultivo",
+      "scope": "not_downloaded",
+      "mapping_evidence": "DOCX table legends and XML xref/rid; S9 range S8–9 in P21; not media-number inference"
+    },
+    "media-8.xlsx": {
+      "table": "S7",
+      "purpose": "Catálogo TE de cultivo con bloques de exones",
+      "scope": "culture_structural_qc",
+      "mapping_evidence": "DOCX table legends and XML xref/rid; S9 range S8–9 in P21; not media-number inference"
+    },
+    "media-9.xlsx": {
+      "table": "S8",
+      "purpose": "Catálogo noTE de cultivo con uniones etiquetadas",
+      "scope": "culture_structural_qc",
+      "mapping_evidence": "DOCX table legends and XML xref/rid; S9 range S8–9 in P21; not media-number inference"
+    },
+    "media-10.xlsx": {
+      "table": "S9",
+      "purpose": "Fusiones entre genes sin TE",
+      "scope": "not_downloaded",
+      "mapping_evidence": "DOCX table legends and XML xref/rid; S9 range S8–9 in P21; not media-number inference"
+    },
+    "media-11.xlsx": {
+      "table": "S10",
+      "purpose": "Predicción NMD, no medición de proteína",
+      "scope": "not_downloaded",
+      "mapping_evidence": "DOCX table legends and XML xref/rid; S9 range S8–9 in P21; not media-number inference"
+    },
+    "media-12.xlsx": {
+      "table": "S11",
+      "purpose": "Proteínas predichas, no validación proteómica",
+      "scope": "not_downloaded",
+      "mapping_evidence": "DOCX table legends and XML xref/rid; S9 range S8–9 in P21; not media-number inference"
+    },
+    "media-13.xlsx": {
+      "table": "S12",
+      "purpose": "Metadatos clínicos individuales: excluido",
+      "scope": "excluded_clinical_individual_metadata",
+      "mapping_evidence": "DOCX table legends and XML xref/rid; S9 range S8–9 in P21; not media-number inference"
+    },
+    "media-14.xlsx": {
+      "table": "S13",
+      "purpose": "Resumen, anotación y contraste de tejido",
+      "scope": "not_downloaded",
+      "mapping_evidence": "DOCX table legends and XML xref/rid; S9 range S8–9 in P21; not media-number inference"
+    },
+    "media-15.xlsx": {
+      "table": "S14",
+      "purpose": "Catálogos TE por muestra de tejido; no descargado",
+      "scope": "not_downloaded",
+      "mapping_evidence": "DOCX table legends and XML xref/rid; S9 range S8–9 in P21; not media-number inference"
+    },
+    "media-16.xlsx": {
+      "table": "S15",
+      "purpose": "Eventos compartidos con IDs y extremos de transcritos",
+      "scope": "header_only",
+      "mapping_evidence": "DOCX table legends and XML xref/rid; S9 range S8–9 in P21; not media-number inference"
+    },
+    "media-17.xlsx": {
+      "table": "S16",
+      "purpose": "Enriquecimiento de conjuntos de genes",
+      "scope": "not_downloaded",
+      "mapping_evidence": "DOCX table legends and XML xref/rid; S9 range S8–9 in P21; not media-number inference"
+    }
+  },
+  "discovery_sources": {
+    "PMC12803201.1.json": {
+      "url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC12803201.1/PMC12803201.1.json",
+      "bytes": 3008,
+      "sha256": "f66917676df0ee10ae17d0bf548329d5f4525ccd55ea9f98742e25896ccd3743"
+    },
+    "PMC12803201_s3_listing.xml": {
+      "url": "https://pmc-oa-opendata.s3.amazonaws.com/?list-type=2&prefix=PMC12803201.&max-keys=100",
+      "bytes": 8741,
+      "sha256": "e190184ad378b60a71bb67568c62afd1a1093a86c88f1e4865f6b2156274a095"
+    },
+    "PMC_AWS_README.txt": {
+      "url": "https://pmc-oa-opendata.s3.amazonaws.com/README.txt",
+      "bytes": 14524,
+      "sha256": "257a001b400485176702ed49ca7607d73cd83c581bffb6dd3c9be127a2e42634"
+    }
+  }
+}

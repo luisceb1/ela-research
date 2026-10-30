@@ -1,0 +1,26 @@
+{
+  "date": "2026-10-29",
+  "python": "3.12.14",
+  "commands": [
+    "python scripts/audit_originality.py",
+    "python -m unittest discover -s tests -v"
+  ],
+  "tests": 133,
+  "result": "OK",
+  "sha256": {
+    "research/plans/2026-10-29-originality-closure.md": "7b760d51f512b818d4ba57ae91d3b3466a9210e943d474a448de06643b2e9840",
+    "research/UNC13A_POST_DEFICIT_PROTOCOL_v0.4.md": "993daaaca504df1625f2987617ce090741e82c65e406fdff700bd74d631a4e14",
+    "research/UNC13A_POST_DEFICIT_PROTOCOL_v0.3.md": "b55fa4d1990cd1bbd8767992a7154b15356152dc42689c7e1262f2326263587e",
+    "research/references/originality_evidence_20261029.json": "8474b65fc7b171c01c1e24406273181e0ab3d1d3fcf8ea28413d963610756c10",
+    "research/references/originality_20261029.bib": "0de945c01e74293b4e7187822615a6ae7441fd98d44c5fbe0cd4439092d39944",
+    "reports/originality-audit/FOLLOWUP.md": "e5fd1638c23925cd7114c19bd69ee1098919f1903ec64ff76aa7c85dedf270d5",
+    "reports/originality-audit/closure.json": "d2bbae46b25f6d5a552ccd36d14c50a8b620f696a6a1d57afd00b79b34eb04e8",
+    "reports/originality-audit/REPORT.md": "469c03b22f38f6ff4296f97b2bd20decfb3962abadd8a9aa15af121bb5f3903e",
+    "reports/originality-audit/qc.json": "d1e670c2030ed15307100e5fc2cc267d6de74407e00a446c1e1b4ce1a0ae4424",
+    "reports/originality-audit/closure_tests.txt": "027e0bcca77738f20f135ea1696c7733fed7d90585297398e65ea72481c98430",
+    "research/STATE.md": "23c9fb750fb154d119aa32d2a7c6668ac3fec44b6c03bbce68426b81100bfc37",
+    "research/BACKLOG.md": "f5ff29b59a43e8ce37d73ebe2b0da0f33b61e3e115166e78d536d5a37c43ad54",
+    "research/MASTER_EVIDENCE.md": "2e2e3ae2220ec1d26508bb2c5dc17ba392ac535d03b8175f39ad135b77d6a811"
+  },
+  "interpretation": "Consistency tests only, no biological experiment or originality certification"
+}

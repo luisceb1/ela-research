@@ -1,0 +1,39 @@
+{
+  "date": "2026-10-29",
+  "python": "3.12.14",
+  "tests": 149,
+  "new_tests": 9,
+  "commands": [
+    "python scripts/audit_gene_ambiguity.py --reference ../ela-research/data/cache/gencode.v47.annotation.gtf.gz --author-cache data/cache/author-supplements --geo-cache ../ela-research/data/cache",
+    "python -m unittest discover -s tests -v"
+  ],
+  "table_hashes_identical_across_two_passes": {
+    "evidence_diagnostics.tsv": true,
+    "candidate_identity.tsv": true,
+    "all_candidates.tsv": true,
+    "author_ambiguous_candidates.tsv": true
+  },
+  "candidate_symbols_agree_with_reference_for_resolved33": true,
+  "baseline_strict": 354,
+  "conditional_total_not_new_strict": 355,
+  "sha256": {
+    "scripts/audit_gene_ambiguity.py": "492722dd506c4b4b7eba312f6ebbf6fa858c0fdd82747bbdb5965e4f7700748d",
+    "tests/test_gene_ambiguity.py": "9ab045dec4c71715f98674020299ea6361e7a7edaeee4967d578262d20aa0d0b",
+    "research/plans/2026-10-29-author-gene-ambiguity.md": "850a16ab2cee7cfd2619c70113ac04b6c493f9a8ed0409aa3226dbaa485d5266",
+    "reports/author-gene-ambiguity/DATA_DICTIONARY.md": "35572c64de94b7bf5b158f1e9ab224d7a933423e44ad9b7fcd5d8900c5909b92",
+    "reports/author-gene-ambiguity/REPORT.md": "5ac325d215fc0f35d1f227e82f61ea8b8233f8a45546153b5bb3e92985cd3d5f",
+    "reports/author-gene-ambiguity/all_candidates.tsv": "aba5de5afe85e5e051bb8f11d97e7e5a78b9637e6dc9ffcce95adcf0bd8f4d23",
+    "reports/author-gene-ambiguity/author_ambiguous_candidates.tsv": "32981a46fbd19235aae09484e1ba05a10342f8f3f04b262cffb339d6518755be",
+    "reports/author-gene-ambiguity/candidate_identity.tsv": "4bd2492612a228446532bc8d0b146c27e3c565bd1a312453e2756a28db77b883",
+    "reports/author-gene-ambiguity/conditional_primary_rows.json": "af92ceba68e3f0d0fe55cfdea6d29f707bacd8e597b6508542409eb2e58c2aec",
+    "reports/author-gene-ambiguity/errors.json": "83611f22415416feb8792a6e0abf72781080a8364771bc9fd2cc5f33c31ffb8b",
+    "reports/author-gene-ambiguity/evidence_diagnostics.tsv": "96b6a51185ec1432ec9131fbe62d10018ef45c9ca1ab9d126ee57b78c55b8498",
+    "reports/author-gene-ambiguity/missing_gene_provenance.json": "5f68272ce35719494312eebc46b179b17af43ec1bb0784f06579dea7ced7ef4d",
+    "reports/author-gene-ambiguity/sources.json": "f449c85a0393cc16b2e924b0910ca55d0db7accd777a0f2135ca7ec51640a9e0",
+    "reports/author-gene-ambiguity/summary.json": "b882eb985a5984e3dfc09bc6c4563e417aff3dbaab6ae67bd434b85b572006a7",
+    "reports/author-gene-ambiguity/tests.txt": "82bc182decb6ba885f2e95251ed98762cbd69688592fe18d7edf7573b23403fb",
+    "research/STATE.md": "f321b5fcfff8d0ead473518b61bf9e50802e6413b39008a5246a4df6f1f655dc",
+    "research/BACKLOG.md": "81a702b1fe2c9cd95bc11609024b2b017bae6fbff50f3273a42de649c0607b40",
+    "research/MASTER_EVIDENCE.md": "632d09a5aa2d1d478497a94cf28f05c55eb00965587132181753f0c59a74979a"
+  }
+}

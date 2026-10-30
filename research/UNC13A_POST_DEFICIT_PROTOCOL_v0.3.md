@@ -31,3 +31,5 @@ Métodos de Keuss 2024 indican ASO simultáneo a PROTAC (DIV14); Guo 2025 da pri
 
 ## Hito de colaboración
 Solicitar revisión técnica, no tratar protocolo como invento ni oferta de terapia. Envío/contratación requieren autorización expresa.
+
+Actualización29/10/2026: véase reports/originality-audit/FOLLOWUP.md para calendario CTR2026verificado por métodos primarios indexados, límites de acceso/solapamiento y corrección de metadatos Guo. Propuesta vigente: research/UNC13A_POST_DEFICIT_PROTOCOL_v0.4.md. Dos registros del mismo pozo son medidas repetidas, no réplicas independientes. La revisión inicial y run.json se conservan como historial.

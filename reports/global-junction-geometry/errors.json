@@ -1,0 +1,8 @@
+{
+  "execution_errors": [],
+  "same_gene_control_mismatches": 0,
+  "alternative_gene_witness_mismatches": 0,
+  "unresolved_coverage_and_read_origin": true,
+  "no_match_not_novelty": true,
+  "known_geometries_not_reassigned_to_genes": 545
+}

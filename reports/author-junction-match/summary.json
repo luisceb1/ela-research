@@ -1,0 +1,607 @@
+{
+  "input_junctions": 1901,
+  "input_genes": 1250,
+  "reference_genes": 78724,
+  "ambiguous_reference_symbols": 480,
+  "candidate_identity_statuses": {
+    "reference_identity_resolved": 1865,
+    "reference_symbol_not_unique_for_id": 33,
+    "reference_gene_missing": 3
+  },
+  "statuses": {
+    "not_found_in_eligible_culture_subset": 1159,
+    "exact_nonTE_label_match": 284,
+    "coordinate_match_gene_unresolved": 278,
+    "TE_transcript_context_only": 70,
+    "reference_identity_unresolved": 36,
+    "coordinate_match_different_gene": 74
+  },
+  "s8_exact_unique_junctions": 284,
+  "s7_context_unique_junctions": 145,
+  "both_s7_and_s8": 75,
+  "control_STMN2": {
+    "key": [
+      "ENSG00000104435",
+      "chr8",
+      79611215,
+      79616821,
+      "+"
+    ],
+    "status": "not_found_in_eligible_culture_subset",
+    "evidence": [],
+    "included_in_1901": false,
+    "diagnostic_rows": [
+      {
+        "sheet": "S7A",
+        "sheet_row": 66983,
+        "fields_by_column": {
+          "A": "chr8",
+          "B": "79610991",
+          "C": "79619354",
+          "D": "transcript/236913",
+          "F": "+",
+          "J": "2",
+          "K": "2232533",
+          "L": "0,5830",
+          "M": "STMN2",
+          "N": "MamRep4096:hAT-Tip100:DNA",
+          "O": "TE-exon"
+        },
+        "block_valid": false,
+        "block_error": "block_count_mismatch"
+      },
+      {
+        "sheet": "S7A",
+        "sheet_row": 66984,
+        "fields_by_column": {
+          "A": "chr8",
+          "B": "79611096",
+          "C": "79618669",
+          "D": "transcript/347612",
+          "F": "+",
+          "J": "2",
+          "K": "1181848",
+          "L": "0,5725",
+          "M": "STMN2",
+          "N": "MamRep4096:hAT-Tip100:DNA",
+          "O": "TE-exon"
+        },
+        "block_valid": false,
+        "block_error": "block_count_mismatch"
+      },
+      {
+        "sheet": "S7A",
+        "sheet_row": 66985,
+        "fields_by_column": {
+          "A": "chr8",
+          "B": "79611096",
+          "C": "79618736",
+          "D": "transcript/337064",
+          "F": "+",
+          "J": "2",
+          "K": "1181915",
+          "L": "0,5725",
+          "M": "STMN2",
+          "N": "MamRep4096:hAT-Tip100:DNA",
+          "O": "TE-exon"
+        },
+        "block_valid": false,
+        "block_error": "block_count_mismatch"
+      },
+      {
+        "sheet": "S7A",
+        "sheet_row": 66986,
+        "fields_by_column": {
+          "A": "chr8",
+          "B": "79611096",
+          "C": "79619354",
+          "D": "transcript/260324",
+          "F": "+",
+          "J": "2",
+          "K": "1182533",
+          "L": "0,5725",
+          "M": "STMN2",
+          "N": "MamRep4096:hAT-Tip100:DNA",
+          "O": "TE-exon"
+        },
+        "block_valid": false,
+        "block_error": "block_count_mismatch"
+      },
+      {
+        "sheet": "S7B",
+        "sheet_row": 166857,
+        "fields_by_column": {
+          "A": "chr8",
+          "B": "79610989",
+          "C": "79619355",
+          "D": "transcript/415140",
+          "F": "+",
+          "J": "2",
+          "K": "2252534",
+          "L": "0,5832",
+          "M": "STMN2",
+          "N": "MamRep4096:hAT-Tip100:DNA",
+          "O": "TE-exon"
+        },
+        "block_valid": false,
+        "block_error": "block_count_mismatch"
+      },
+      {
+        "sheet": "S7B",
+        "sheet_row": 166858,
+        "fields_by_column": {
+          "A": "chr8",
+          "B": "79611091",
+          "C": "79619704",
+          "D": "transcript/342015",
+          "F": "+",
+          "J": "2",
+          "K": "1232883",
+          "L": "0,5730",
+          "M": "STMN2",
+          "N": "MamRep4096:hAT-Tip100:DNA",
+          "O": "TE-exon"
+        },
+        "block_valid": false,
+        "block_error": "block_count_mismatch"
+      },
+      {
+        "sheet": "S7B",
+        "sheet_row": 166859,
+        "fields_by_column": {
+          "A": "chr8",
+          "B": "79611096",
+          "C": "79618884",
+          "D": "transcript/565809",
+          "F": "+",
+          "J": "2",
+          "K": "1182063",
+          "L": "0,5725",
+          "M": "STMN2",
+          "N": "MamRep4096:hAT-Tip100:DNA",
+          "O": "TE-exon"
+        },
+        "block_valid": false,
+        "block_error": "block_count_mismatch"
+      },
+      {
+        "sheet": "S7B",
+        "sheet_row": 166860,
+        "fields_by_column": {
+          "A": "chr8",
+          "B": "79611096",
+          "C": "79619794",
+          "D": "transcript/321570",
+          "F": "+",
+          "J": "2",
+          "K": "1182973",
+          "L": "0,5725",
+          "M": "STMN2",
+          "N": "MamRep4096:hAT-Tip100:DNA",
+          "O": "TE-exon"
+        },
+        "block_valid": false,
+        "block_error": "block_count_mismatch"
+      },
+      {
+        "sheet": "S7B",
+        "sheet_row": 166861,
+        "fields_by_column": {
+          "A": "chr8",
+          "B": "79611098",
+          "C": "79619355",
+          "D": "transcript/468215",
+          "F": "+",
+          "J": "2",
+          "K": "1162534",
+          "L": "0,5723",
+          "M": "STMN2",
+          "N": "MamRep4096:hAT-Tip100:DNA",
+          "O": "TE-exon"
+        },
+        "block_valid": false,
+        "block_error": "block_count_mismatch"
+      },
+      {
+        "sheet": "S7B",
+        "sheet_row": 166862,
+        "fields_by_column": {
+          "A": "chr8",
+          "B": "79611116",
+          "C": "79619940",
+          "D": "transcript/293104",
+          "F": "+",
+          "J": "2",
+          "K": "983119",
+          "L": "0,5705",
+          "M": "STMN2",
+          "N": "MamRep4096:hAT-Tip100:DNA",
+          "O": "TE-exon"
+        },
+        "block_valid": false,
+        "block_error": "block_count_mismatch"
+      },
+      {
+        "sheet": "S8D",
+        "sheet_row": 12237,
+        "fields_by_column": {
+          "A": "chr8",
+          "B": "79554756",
+          "C": "79666155",
+          "D": "transcript/321226",
+          "F": "+",
+          "J": "5",
+          "K": "32,96,173,192,1341",
+          "L": "0,82045,86621,100114,110058",
+          "M": "STMN2",
+          "N": "chr8:79554788-79636802(+)",
+          "O": "NovelExon"
+        },
+        "block_valid": true,
+        "intronic_keys": [
+          [
+            "chr8",
+            79554789,
+            79636801,
+            "+"
+          ],
+          [
+            "chr8",
+            79636898,
+            79641377,
+            "+"
+          ],
+          [
+            "chr8",
+            79641551,
+            79654870,
+            "+"
+          ],
+          [
+            "chr8",
+            79655063,
+            79664814,
+            "+"
+          ]
+        ],
+        "exonic_boundary_keys": [
+          [
+            "chr8",
+            79554788,
+            79636802,
+            "+"
+          ],
+          [
+            "chr8",
+            79636897,
+            79641378,
+            "+"
+          ],
+          [
+            "chr8",
+            79641550,
+            79654871,
+            "+"
+          ],
+          [
+            "chr8",
+            79655062,
+            79664815,
+            "+"
+          ]
+        ]
+      },
+      {
+        "sheet": "S8D",
+        "sheet_row": 12238,
+        "fields_by_column": {
+          "A": "chr8",
+          "B": "79611116",
+          "C": "79666175",
+          "D": "transcript/300963",
+          "F": "+",
+          "J": "6",
+          "K": "98,111,96,173,192,1361",
+          "L": "0,19900,25685,30261,43754,53698",
+          "M": "STMN2",
+          "N": "chr8:79611214-79631017(+);chr8:79631127-79636802(+)",
+          "O": "NovelExon"
+        },
+        "block_valid": true,
+        "intronic_keys": [
+          [
+            "chr8",
+            79611215,
+            79631016,
+            "+"
+          ],
+          [
+            "chr8",
+            79631128,
+            79636801,
+            "+"
+          ],
+          [
+            "chr8",
+            79636898,
+            79641377,
+            "+"
+          ],
+          [
+            "chr8",
+            79641551,
+            79654870,
+            "+"
+          ],
+          [
+            "chr8",
+            79655063,
+            79664814,
+            "+"
+          ]
+        ],
+        "exonic_boundary_keys": [
+          [
+            "chr8",
+            79611214,
+            79631017,
+            "+"
+          ],
+          [
+            "chr8",
+            79631127,
+            79636802,
+            "+"
+          ],
+          [
+            "chr8",
+            79636897,
+            79641378,
+            "+"
+          ],
+          [
+            "chr8",
+            79641550,
+            79654871,
+            "+"
+          ],
+          [
+            "chr8",
+            79655062,
+            79664815,
+            "+"
+          ]
+        ]
+      }
+    ],
+    "canonical_geometry_control": {
+      "intronic_key": [
+        "chr8",
+        79636898,
+        79641377,
+        "+"
+      ],
+      "evidence": [
+        {
+          "sheet": "S8D",
+          "sheet_row": 12237
+        },
+        {
+          "sheet": "S8D",
+          "sheet_row": 12238
+        }
+      ],
+      "recovered": true,
+      "not_a_cryptic_event": true
+    },
+    "cryptic_control_source_eligibility": "not_evaluable_due_to_invalid_blocks",
+    "invalid_block_partial_anchor_rows": [
+      {
+        "sheet": "S7A",
+        "sheet_row": 66983,
+        "partial_right_exonic_anchor": 79616822,
+        "not_a_full_junction_match": true
+      },
+      {
+        "sheet": "S7A",
+        "sheet_row": 66984,
+        "partial_right_exonic_anchor": 79616822,
+        "not_a_full_junction_match": true
+      },
+      {
+        "sheet": "S7A",
+        "sheet_row": 66985,
+        "partial_right_exonic_anchor": 79616822,
+        "not_a_full_junction_match": true
+      },
+      {
+        "sheet": "S7A",
+        "sheet_row": 66986,
+        "partial_right_exonic_anchor": 79616822,
+        "not_a_full_junction_match": true
+      },
+      {
+        "sheet": "S7B",
+        "sheet_row": 166857,
+        "partial_right_exonic_anchor": 79616822,
+        "not_a_full_junction_match": true
+      },
+      {
+        "sheet": "S7B",
+        "sheet_row": 166858,
+        "partial_right_exonic_anchor": 79616822,
+        "not_a_full_junction_match": true
+      },
+      {
+        "sheet": "S7B",
+        "sheet_row": 166859,
+        "partial_right_exonic_anchor": 79616822,
+        "not_a_full_junction_match": true
+      },
+      {
+        "sheet": "S7B",
+        "sheet_row": 166860,
+        "partial_right_exonic_anchor": 79616822,
+        "not_a_full_junction_match": true
+      },
+      {
+        "sheet": "S7B",
+        "sheet_row": 166861,
+        "partial_right_exonic_anchor": 79616822,
+        "not_a_full_junction_match": true
+      },
+      {
+        "sheet": "S7B",
+        "sheet_row": 166862,
+        "partial_right_exonic_anchor": 79616822,
+        "not_a_full_junction_match": true
+      }
+    ]
+  },
+  "source_qc": [
+    {
+      "file": "media-8.xlsx",
+      "sheet": "S7A",
+      "counts": {
+        "rows": 73819,
+        "valid_block_rows": 67930,
+        "unexplained_labels_excluded": 0,
+        "eligible_rows_with_junction": 5466,
+        "rows_with_candidate_or_control_geometry": 283,
+        "invalid_block_rows": 5889
+      },
+      "excluded_reasons": {
+        "block_count_mismatch": 5558,
+        "noninteger": 326,
+        "nonpositive_block": 5
+      }
+    },
+    {
+      "file": "media-8.xlsx",
+      "sheet": "S7B",
+      "counts": {
+        "rows": 184918,
+        "valid_block_rows": 174326,
+        "unexplained_labels_excluded": 0,
+        "eligible_rows_with_junction": 6626,
+        "rows_with_candidate_or_control_geometry": 245,
+        "invalid_block_rows": 10592
+      },
+      "excluded_reasons": {
+        "block_count_mismatch": 10142,
+        "noninteger": 435,
+        "nonpositive_block": 15
+      }
+    },
+    {
+      "file": "media-8.xlsx",
+      "sheet": "S7C",
+      "counts": {
+        "rows": 59051,
+        "valid_block_rows": 54862,
+        "unexplained_labels_excluded": 0,
+        "eligible_rows_with_junction": 4274,
+        "rows_with_candidate_or_control_geometry": 248,
+        "invalid_block_rows": 4189
+      },
+      "excluded_reasons": {
+        "block_count_mismatch": 3931,
+        "noninteger": 255,
+        "nonpositive_block": 3
+      }
+    },
+    {
+      "file": "media-8.xlsx",
+      "sheet": "S7D",
+      "counts": {
+        "rows": 131030,
+        "valid_block_rows": 124885,
+        "unexplained_labels_excluded": 0,
+        "eligible_rows_with_junction": 4656,
+        "rows_with_candidate_or_control_geometry": 177,
+        "invalid_block_rows": 6145
+      },
+      "excluded_reasons": {
+        "block_count_mismatch": 5864,
+        "noninteger": 271,
+        "nonpositive_block": 10
+      }
+    },
+    {
+      "file": "media-9.xlsx",
+      "sheet": "S8A",
+      "counts": {
+        "rows": 16319,
+        "valid_block_rows": 12843,
+        "unexplained_labels_excluded": 0,
+        "eligible_rows_with_junction": 12843,
+        "rows_with_candidate_or_control_geometry": 504,
+        "invalid_block_rows": 3476
+      },
+      "excluded_reasons": {
+        "noninteger": 724,
+        "block_count_mismatch": 2748,
+        "nonpositive_block": 4
+      }
+    },
+    {
+      "file": "media-9.xlsx",
+      "sheet": "S8B",
+      "counts": {
+        "rows": 16950,
+        "valid_block_rows": 12621,
+        "unexplained_labels_excluded": 4,
+        "eligible_rows_with_junction": 12621,
+        "rows_with_candidate_or_control_geometry": 358,
+        "invalid_block_rows": 4329
+      },
+      "excluded_reasons": {
+        "block_count_mismatch": 3540,
+        "noninteger": 784,
+        "nonpositive_block": 5
+      }
+    },
+    {
+      "file": "media-9.xlsx",
+      "sheet": "S8C",
+      "counts": {
+        "rows": 13394,
+        "valid_block_rows": 9940,
+        "unexplained_labels_excluded": 3,
+        "eligible_rows_with_junction": 9940,
+        "rows_with_candidate_or_control_geometry": 302,
+        "invalid_block_rows": 3454
+      },
+      "excluded_reasons": {
+        "block_count_mismatch": 2888,
+        "noninteger": 566
+      }
+    },
+    {
+      "file": "media-9.xlsx",
+      "sheet": "S8D",
+      "counts": {
+        "rows": 13808,
+        "invalid_block_rows": 3266,
+        "valid_block_rows": 10542,
+        "unexplained_labels_excluded": 0,
+        "eligible_rows_with_junction": 10542,
+        "rows_with_candidate_or_control_geometry": 472
+      },
+      "excluded_reasons": {
+        "block_count_mismatch": 2664,
+        "noninteger": 602
+      }
+    }
+  ],
+  "author_full_catalog_compared": false,
+  "culture_eligible_structural_subset_compared": true,
+  "brain_author_tables_compared": false,
+  "independent_biological_validation": false,
+  "absence_or_novelty_inferred": false,
+  "candidate_sha256": "d8e28f96f5a3257766d79321a554f54b87233d3095962a33871bcbea357fad23",
+  "reference_sha256": "df11938c66d2b39f8ebbdb5f1720919321f9cf9d58f02b019753f6a24ca3db24",
+  "control_source_sha256": "e26d9d9d172d233151be7455f303e4a7977cd6a6a36d6182ed95925e495fff58",
+  "identity_method": "exact unique GENCODEv47 symbol-to-ENSG plus chromosome/strand; no aliases or proximity",
+  "comparison_scope": "S8 declared cryptic labels versus S7 TE-transcript context; valid blocks only; no expression inference"
+}

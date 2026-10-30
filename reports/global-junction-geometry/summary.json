@@ -1,0 +1,99 @@
+{
+  "candidate_keys": 1901,
+  "candidate_genes": 1250,
+  "unique_geometries_without_candidate_gene": 1882,
+  "candidate_statuses": {
+    "not_found_in_v47_any_gene": 1356,
+    "other_gene_only_exact": 528,
+    "same_gene_exact": 17
+  },
+  "joint_coverage_groups_not_novelty_classes": {
+    "not_found_in_two_inspected_resources": 821,
+    "author_catalog_representation_only": 353,
+    "author_or_reference_identity_unresolved": 182,
+    "reference_geometry_annotated": 545
+  },
+  "unique_geometries_annotated_any_gene": 535,
+  "unique_geometries_not_found_any_gene": 1347,
+  "candidate_keys_with_both_same_and_other_gene_witnesses": 0,
+  "author_cross_tab": [
+    {
+      "author_status": "TE_transcript_context_only",
+      "global_status": "not_found_in_v47_any_gene",
+      "candidate_keys": 70
+    },
+    {
+      "author_status": "coordinate_match_different_gene",
+      "global_status": "not_found_in_v47_any_gene",
+      "candidate_keys": 1
+    },
+    {
+      "author_status": "coordinate_match_different_gene",
+      "global_status": "other_gene_only_exact",
+      "candidate_keys": 73
+    },
+    {
+      "author_status": "coordinate_match_gene_unresolved",
+      "global_status": "not_found_in_v47_any_gene",
+      "candidate_keys": 158
+    },
+    {
+      "author_status": "coordinate_match_gene_unresolved",
+      "global_status": "other_gene_only_exact",
+      "candidate_keys": 119
+    },
+    {
+      "author_status": "coordinate_match_gene_unresolved",
+      "global_status": "same_gene_exact",
+      "candidate_keys": 1
+    },
+    {
+      "author_status": "exact_nonTE_label_match",
+      "global_status": "not_found_in_v47_any_gene",
+      "candidate_keys": 283
+    },
+    {
+      "author_status": "exact_nonTE_label_match",
+      "global_status": "same_gene_exact",
+      "candidate_keys": 1
+    },
+    {
+      "author_status": "not_found_in_eligible_culture_subset",
+      "global_status": "not_found_in_v47_any_gene",
+      "candidate_keys": 821
+    },
+    {
+      "author_status": "not_found_in_eligible_culture_subset",
+      "global_status": "other_gene_only_exact",
+      "candidate_keys": 323
+    },
+    {
+      "author_status": "not_found_in_eligible_culture_subset",
+      "global_status": "same_gene_exact",
+      "candidate_keys": 15
+    },
+    {
+      "author_status": "reference_identity_unresolved",
+      "global_status": "not_found_in_v47_any_gene",
+      "candidate_keys": 23
+    },
+    {
+      "author_status": "reference_identity_unresolved",
+      "global_status": "other_gene_only_exact",
+      "candidate_keys": 13
+    }
+  ],
+  "same_gene_controls_verified": 17,
+  "alternative_gene_controls_verified": 73,
+  "reference_qc": {
+    "reference_gene_records": 78724,
+    "reference_exon_records": 2155005,
+    "anchor_selected_transcript_groups": 7023,
+    "all_exons_in_selected_groups": 46232
+  },
+  "strict_author_matches_unchanged": 354,
+  "conditional_author_sensitivity_unchanged": 355,
+  "novelty_assessed": false,
+  "clinical_data_used": false,
+  "interpretation": "Exact annotation geometry only; unknown origin/function/crypticity; not found is not novel"
+}

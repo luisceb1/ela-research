@@ -1,0 +1,50 @@
+{
+  "access_failures": [
+    {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12803201/supplementaryFiles",
+      "result": "read timeout; bulk archive not retained"
+    },
+    {
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/utils/oa/oa.fcgi?id=PMC12803201",
+      "result": "HTTP404 on legacy endpoint"
+    },
+    {
+      "url": "https://europepmc.org/articles/PMC12803201",
+      "result": "HTTP403"
+    },
+    {
+      "url": "https://europepmc.org/articles/PMC12803201/bin/media-1.docx",
+      "result": "HTTP403"
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/12803201/bin/media-1.docx",
+      "result": "HTML instead of Office ZIP; rejected"
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12803201/bin/media-1.docx",
+      "result": "HTML instead of Office ZIP; rejected"
+    },
+    {
+      "url": "https://www.biorxiv.org/content/10.64898/2026.01.09.698641v1.supplementary-material",
+      "result": "HTTP429; not repeatedly retried"
+    }
+  ],
+  "resolved_via": "NCBI PMC public AWS listing, JSON metadata and checksum-pinned individual objects",
+  "parser_incidents": [
+    {
+      "incident": "S5 summary formulas coexist with headers in row2",
+      "resolution": "Record placeholder/positions without executing formulas or using cached formula results; regression test added"
+    },
+    {
+      "incident": "Large worksheet parsing retained row nodes",
+      "resolution": "Clear consumed rows; unchanged QC counts verified across executions"
+    },
+    {
+      "incident": "Initial exploratory S15 schema probe decoded one structural data row",
+      "resolution": "No clinical variables extracted or row retained/exported. Final reusable parser processes title/header rows only; tests exclude data rows."
+    }
+  ],
+  "source_qc_failures_recorded_not_repaired": true,
+  "clinical_table_S12_downloaded": false,
+  "author_junction_intersection_performed": false
+}

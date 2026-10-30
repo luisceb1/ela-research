@@ -1,51 +1,36 @@
-# Registro maestro de evidencia — 29/10/2026
+# Registro maestro de evidencia — 30/10/2026
 
-Este registro sustituye los estados históricos. Reproducción técnica no equivale a replicación independiente, descubrimiento o eficacia. Ninguna línea acredita beneficio clínico propio.
+Registro vigente de ambas líneas consolidadas. Una integración, una reproducción técnica y una validación funcional son cosas distintas. No hay nueva terapia, diana acreditada o beneficio clínico propio.
 
-| ID | Línea | Estado verificable | Pendiente o limitación |
+| ID | Línea | Evidencia ejecutada | Límite vigente |
 |---|---|---|---|
-| ELA-01 | GSE126542 expresión | Reproducción agregada de 45 campos numéricos, sin discrepancias, en reports/issue14-reproduction | Misma cohorte publicada; no ARN canónico/proteína/función; sensibilidad de TARDBP a normalización |
-| ELA-02 | GSE126542 uniones | reports/fratta-junction-audit: 241→69 filas, pivot auditado y 24 campos agregados concordantes | Dos fórmulas UNC13A según bloque; 27 ausencias rellenadas con0; índice no molecular, misma cohorte |
-| ELA-03 | GSE121569 | Extracción DEXSeq reproducida: 102 fragmentos y 18 campos agregados; no refit | Dos experimentos declarados; mapa biblioteca/diferenciación pendiente. No PSI de CE |
-| ELA-04 | Genética | Existencia de material previo registrada | Sin hallazgo validado; revisión permitida de fuentes y proyecciones no personales |
-| ELA-05 | CAMK2B | reports/camk2b-reproduction: resultado estructural agregado reproducido | Evento no reconstruido en catálogo cerebral; no ausencia molecular ni validación independiente |
-| ELA-06 | Péptidos crípticos | Material inventariado | Sin espectrometría independiente ni validación proteómica propia |
-| ELA-07 | UNC13A MEA | reports/mea-software-audit: pruebas y contraejemplos del software sintético | Corregir denominadores/completitud antes de reutilizar; no potencia o eficacia experimental |
-| ELA-08 | GSE310723 | reports/geo-audit, isoforms y mapping-positive-controls: estructura y mapeo ejecutados | Una biblioteca por condición; sin inferencia diferencial |
-| ELA-09 | GSE315972 | Estructura/mapeo ejecutados; corrección agregada 3 CI / 3 no CI / 2 CTL en informe de metadatos | Tejido heterogéneo, covariables/QC biológico incompletos; etiquetas históricas no son grupos cognitivos |
-| ELA-10 | Rescate STMN2/UNC13A | Auditorías Keuss/Chan y propuestas en reports/accepted-keuss, chan-timing y reversal-design | Propuesta funcional, no ensayo; originalidad no certificada |
-| ELA-11 | Uniones compartidas | reports/junction-filter-reconciliation: 21 antiguas reproducidas; pérdida de exones explica discrepancia. 1910 agrupadas, 1901 con soporte asignado positivo | Antiguas 21 no son cribado exhaustivo; modelos/soporte asignado no son lecturas directas |
-| ELA-12 | GENCODE externa | reports/gencode-junction-annotation: 17 exactas / 1881 no encontradas para mismo gen / 3 de gen ausente | Catálogo de autores pendiente. Ausencia en v47 no prueba novedad |
-| ELA-13 | AGRN | Antecedentes publicados y pregunta funcional en research/AGRN_CAMK2B_EVIDENCE_2026-10-29.md | Verificar isoforma/soporte y ensayos previos antes de proponer experimento |
+| ELA-01 | GSE126542 expresión | 45 campos agregados reproducidos; STMN2 baja en 7/7 pares, UNC13A sube ARN nuclear total; TARDBP cambia de signo entre normalizaciones | No proteína funcional, tratamiento o nueva cohorte |
+| ELA-02 | GSE126542 uniones | BED/Rmd auditados: 241→69 filas; 24 campos concordantes; 27 ausencias rellenadas con 0 por autor; fórmulas/deduplicación alteran índices | Índices de cuentas, no porcentaje molecular ni cohorte adicional |
+| ELA-03 | GSE121569 | 102 bins/18 campos extraídos; 12 columnas en dos lotes; 7.030.428 cuentas concordantes; 4.034 duplicados solo anotativos | No refit inferencial; pozos/reactivos/modelo pendientes |
+| ELA-04 | Genética | Material previo inventariado | Sin hallazgo validado; no clínica o genotipos personales nuevos |
+| ELA-05 | CAMK2B | Resultado estructural agregado reproducido | Ausencia de modelo cerebral no prueba ausencia molecular |
+| ELA-06 | Péptidos crípticos | Material inventariado | Sin proteómica independiente propia |
+| ELA-07 | MEA | Auditoría del software sintético y contraejemplos | No ensayo funcional, potencia o eficacia medida |
+| ELA-08 | GSE310723 | Inventario técnico y mapeo ENSG ejecutados | Una biblioteca por condición; sin inferencia diferencial |
+| ELA-09 | GSE315972 | Estructura/mapeo y corrección agregada de grupos publicados | Tejido heterogéneo; QC/lecturas incompletos, sin análisis clínico nuevo |
+| ELA-10 | Función/originalidad | Keuss/Chan y revisión dirigida; seis fichas funcionales no reconstruyen posdéficit; protocolo UNC13A v0.4 | Propuesta incremental; originalidad no certificada; sin experimento |
+| ELA-11 | Catálogo compartido | Parser corregido; 1.910 uniones/1.901 con soporte asignado; 21 históricas no exhaustivas | Modelos/asignaciones no equivalen a lecturas directas o réplica externa |
+| ELA-12 | GENCODE/autores | 354 coincidencias estrictas/355 solo sensibilidad; partición 1.901: 545 anotadas, 353 solo autores, 182 pendientes, 821 sin coincidencia limitada | No 821 descubrimientos ni origen molecular reasignado |
+| ELA-13 | AGRN | Antecedentes y pregunta publicados | No nueva diana/propuesta original certificada |
+| ELA-14 | DEXSeq y CE | Sensibilidad descriptiva, cuentas y denominadores; 72 bins STMN2/UNC13A sin solapar regiones CE publicadas bajo el mismo ensamblaje | No cuantificación directa de CE ni ausencia biológica; no PSI |
+| ELA-15 | SH-SY5Y | Seis bibliotecas exactas a ENA; 16 uniones en S6; una etiqueta concordante, dos conflictos de hebra, cuatro alias sin resolver | Reanálisis conjunto bloqueado; unidades independientes no establecidas |
 
-## Reglas de interpretación
+## Localizadores
 
-- ARN total, isoforma funcional, proteína, recuperación neuronal y beneficio clínico son niveles distintos.
-- Las dos series Iso-Seq del mismo estudio no constituyen validación independiente por su intersección.
-- Datos repetidos en varios paquetes/ejecuciones no son nuevas muestras.
-- Los números de tests documentan controles de software, no cantidad de evidencia experimental.
-- Informes antiguos conservan resultados/versiones y pendientes de entonces. STATE.md y este registro contienen los pendientes actuales.
-- Para promover evidencia: fuente verificable, hash, código ejecutado, controles, tablas, sensibilidad y revisión con el alcance explícito. Una integración no aporta revisión científica externa.
+- ELA01–03: reports/issue14-reproduction, fratta-junction-audit, gse121569-design y dexseq-qc.
+- ELA08–09/11: reports/geo-audit, isoforms, mapping-positive-controls y junction-filter-reconciliation.
+- ELA12: reports/author-catalog-schema, author-junction-match, author-gene-ambiguity, author-gene-conflicts y global-junction-geometry.
+- ELA10: reports/originality-audit, functional-data-inventory y research/UNC13A_POST_DEFICIT_PROTOCOL_v0.4.md.
+- ELA14: reports/dexseq-batch-sensitivity, dexseq-magnitude, dexseq-coverage y ce-bin-coordinate-audit.
+- ELA15: reports/junction-source-inventory, shsy5y-junction-map y junction-definition-search.
 
+## Reglas
 
-## Fase #14 — reproducción agregada, rama independiente desde main
+ARN total, procesamiento de una unión, isoforma funcional, proteína, recuperación neuronal y beneficio clínico son niveles diferentes. Compartir cohortes entre series/tablas/paquetes no añade replicación. Las no coincidencias y búsquedas negativas no prueban novedad o ausencia. Tests, commits y fuentes bibliográficas no son experimentos.
 
-29/10/2026: reports/issue14-reproduction reproduce63campos agregados (45expresión/18extracciónDEXSeq) sin discrepancias. Fuentes GEO descargadas y fijadas; código recibido conservado sin ejecutar, sin tablas por caso/clínicas/genéticas importadas. STMN2/UNC13A mantienen dirección entre CPM/MR; TARDBP cambia de signo. DEXSeq102fragmentos, no refit niPSI; doce columnas de contraste no son doce diferenciaciones. Nueve tests nuevos sobre105de main:114OK. PR28con166tests sigue separado y no fusionado: contiene originalidad/crypTE/QCglobal posteriores al estado base de main. Leer ambos PR y reconciliar estados al integrar; no declarar esos informes ya incorporados. Issue14no se cierra: próximos BED/RdeFratta, deduplicación/denominadores y mapa de diferenciación121569. Sin nuevas cohortes, hallazgos clínicos, contactos, gasto, laboratorio o merge automático.
-
-## Uniones Fratta auditadas — 29/10/2026, ampliación PR29
-
-reports/fratta-junction-audit: BED/Rmd públicos fijados por SHA256 y Gitblob.241filas→69únicas/172repetidas,16muestras/7pares+2unsorted;27combinaciones ausentes rellenadas con0por método autor, no ceros observados.24campos agregados del paquete concordantes. Rmd2694incluye3clasesUNC13A;2766usa2clases. Cambio medio principal72.67puntos, dosclases72.00, sumar duplicados63.81; no porcentaje molecular, sensibilidad biológica ni nueva cohorte. No se leyeron archivos alélicos/clinica ni exportaron filas por muestra.124tests de esta rama (105base+19nuevos), PR28con166sigue separado. Próximo: mapa técnico biblioteca/experimento-diferenciación deGSE121569 antes de cualquier refit; issue14sigue abierta, sin contactos/laboratorio/gasto/merge.
-
-## Diseño GSE121569 contrastado — 29/10/2026, PR29
-
-`reports/gse121569-design` enlaza las 12 columnas DEXSeq con GSM y lote publicado. El SOFT contiene 18 bibliotecas HUES3; Fig.S3a etiqueta explícitamente Batch 1/2 y Fig.1b confirma dos experimentos independientes de diferenciación y transfección. Transcripción visual con hash del miembro DOCX: las fechas solo sirven de cotejo. Contraste 2 scramble/2 KD en Batch 1 y 4/4 en Batch 2; 6 siRED/NoTx fuera de countData. No confundir las 15 bibliotecas del contraste de expresión publicado con las 12 columnas DEXSeq.
-
-Identidad de pozo/reactivo y fórmula original de ajuste pendientes: no refit inferencial, doce bibliotecas no son doce diferenciaciones. Mapa técnico completo, no nueva replicación. Once tests nuevos: 135 en esta rama (105 main +30 issue14); PR28 sigue independiente con166. Siguiente tarea segura: integridad y concordancia countData/combined.dexseq y diseño público reactivo/pozo antes de sensibilidad por lote. Issue14 abierta; sin contactos, gastos, laboratorio o merge automático. Reconciliar STATE/BACKLOG con PR28 al integrar.
-
-## Cuentas DEXSeq verificadas — 30/10/2026, PR29
-
-reports/dexseq-qc: 585869 fragmentos únicos, 18 bibliotecas originales/12 columnas de contraste. 7030428 cuentas comparadas exactamente, cero discrepancias y cero claves sin enlazar. Las 589903 filas DEXSeq incluyen4034 repeticiones con diferencias exclusivamente de anotación, sin conflictos de cuentas/campos no anotativos; no sumar como fragmentos nuevos. Cinco filas de resumen técnico separadas. Ocho tests nuevos:143 en rama. Sin refit ni nueva replicación; pozo/reactivo/fórmula pendientes. Próximo: unicidad de102fragmentos objetivo y sensibilidad descriptiva por lote. PR28independiente; sin merge o cierre automático.
-
-## Sensibilidad por lote — 30/10/2026, PR29
-
-reports/dexseq-batch-sensitivity:102fragmentos objetivo únicos. Fracción de cuentas dentro de grupo por biblioteca, medias KD-control por lote: mismo signo8/10STMN2,36/62UNC13A,20/30TARDBP; resto signo opuesto. NoPSI ni isoformas/proteína, sin nuevos p-valores. Cambios pequeños y dependencia composicional limitan signos.147tests en rama. Próximo magnitud/cobertura y sensibilidad de denominador de fragmentos discordantes antes de priorizar; refit pendiente de diseño. Sin merge/cierre automático.
+Se conservan los informes históricos con sus hashes/entornos/resultados, pero sus próximos pasos antiguos no son el planning vigente. El criterio de entrada para nueva evidencia está en NEXT_STUDY_GATE. Los registros maestros anteriores se archivan en reports/integration-20261030/history.

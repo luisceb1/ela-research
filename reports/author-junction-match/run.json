@@ -1,0 +1,37 @@
+{
+  "recorded_utc": "2026-10-29T16:06:20.328482+00:00",
+  "python": "3.12.14",
+  "tests_passed": 125,
+  "new_matching_tests": 10,
+  "new_schema_and_matching_tests_since_main": 20,
+  "compileall_exit_code": 0,
+  "repeated_tables_identical_across_three_completed_passes": {
+    "matches.tsv": true,
+    "evidence.tsv": true
+  },
+  "summary_changed_only_for_added_control_diagnostics": true,
+  "candidate_partition_verified": true,
+  "strict_union": 354,
+  "s8_and_gencode_not_found_same_gene": 283,
+  "strict_union_and_gencode_not_found_same_gene": 353,
+  "source_rows_and_block_exclusions_match_independent_QC": true,
+  "labels_excluded": 7,
+  "canonical_control_recovered": true,
+  "cryptic_control_no_evaluable_source_blocks": true,
+  "input_sources": {
+    "candidate_sha256": "d8e28f96f5a3257766d79321a554f54b87233d3095962a33871bcbea357fad23",
+    "gencode_sha256": "df11938c66d2b39f8ebbdb5f1720919321f9cf9d58f02b019753f6a24ca3db24",
+    "control_GTF_projection_sha256": "e26d9d9d172d233151be7455f303e4a7977cd6a6a36d6182ed95925e495fff58",
+    "author_manifest_sha256": "75e1a9ec1243b1306e74e3d8d64d5ef51f7f1ec984c4c25602ded55ac4c6b2db"
+  },
+  "outputs": {
+    "matches.tsv": "d6a5730a03cf0241147d3bc6c4456cb1691443d0f5a62c436f103fe97c4c46f6",
+    "evidence.tsv": "b04796b59aa7c039cd0ab8c5380484e2f0e3416d43e26100d8dfca37a54b3e65",
+    "summary.json": "2e82c8817fcb515e3389f35eaa7dcf41526269cebabdac4c168ffdd3e2668d97"
+  },
+  "script_sha256": "d3f323bfeb90ef05917b3860c7ba45e85f32a12c2f1a61885b172b223b7b92e2",
+  "clinical_data_used": false,
+  "clinical_rows_exported": false,
+  "formula_evaluation": false,
+  "independent_validation": false
+}

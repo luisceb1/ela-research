@@ -1,0 +1,24 @@
+{
+  "initial_control_result": "Known cryptic STMN2 not found in eligible rows; interpreted provisionally until original structures inspected",
+  "source_eligibility_resolution": "Ten S7A/B rows have invalid lengths and partial right anchor; not repaired or accepted as full matches. Canonical STMN2 geometry recovered in two S8D rows.",
+  "code_incidents": [
+    {
+      "error": "Initial canonical-control check compared list with tuple from live parser and falsely failed",
+      "resolution": "Normalize geometry to tuple; regression test covers in-memory tuples and JSON lists; final full run succeeded and candidate/evidence tables unchanged"
+    },
+    {
+      "error": "S5 exploratory presence probe encountered formulas",
+      "resolution": "Only A-column molecular coordinate labels inspected; no formula or cached presence value used"
+    }
+  ],
+  "unresolved": {
+    "source_block_rows": 41340,
+    "unexplained_S8_labels": 7,
+    "reference_identity_candidates": 36,
+    "coordinate_genetic_ambiguity_candidates": 278,
+    "different_gene_candidates": 74,
+    "full_author_catalog_not_evaluated": true
+  },
+  "biological_absence_inferred": false,
+  "errors_silently_repaired": false
+}
