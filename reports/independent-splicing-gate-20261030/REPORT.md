@@ -141,3 +141,12 @@ At Fratta Lab `cryptic_biology` pinned commit `80fa3d70418a4665a85d414e33c7c470a
 - This is **source-to-source annotation corroboration**, not independent biological validation or a new molecular finding. Human assembly and 0/1-based endpoint conventions still require complete verification.
 
 Next: inventory NYGC public ZIP using `scripts/nygc_zip_inventory.py` without decompressing. Examine chr19 partition, Parquet schema and sample-to-tissue/pathology metadata before computing any NYGC junction comparison. NYGC is separately labelled as cohort but sample provenance, overlapping donors, brain region and ALS/non-ALS strata must be audited.
+
+
+## Addendum — NYGC local UNC13A molecular scan (user-reported, 2026-10-30)
+
+User ran `scripts/nygc_unc13a_scan.py` against `nygc_parquets.zip`: 3548 Parquets scanned; 1 file contained queried chr19 interval; 12,380 region records (5 distinct candidate junctions x 2,476 sample IDs). Four preselected junctions: canonical candidate 2,476 records / 2,476 positive / total 250,272 reads; `17641556-17642414` 2,476 records / 153 positive / total 254; `17642541-17642845` 2,476 records / 129 positive / total 202; `17642591-17642845` 2,476 records / 114 positive / total 144. All belong to local NYGC cluster `clu_179275` (-). Additional `17641556-17642557`: 2,476 records; not yet interpreted. Here a positive means nonzero counts, NOT a demonstrated event in 2,476 donors.
+
+This reproduces **coordinates with read support in a distinct public dataset**, not yet a group association or external **biological** replication: absence of matched clinical pathology/tissue/sample independence prevents that claim. RiMOD group data and NYGC data must not be treated as comparable cohorts before technical, donor and tissue metadata checks.
+
+Pinned Fratta Lab author file `data/metadta_nygc.csv` contains `sample`, `tdp_proteinopathy`, `rna_tissue_source_simplified`, `external_subject_id`, `rin` and other metadata. New `scripts/nygc_unc13a_metadata_audit.py` joins exact sample IDs, groups by region and TDP-43 pathology, reports unique donor-ID counts and aggregate nonzero junctions; suppresses event counts for N<5 groups. Still needs local execution. Pay attention to multiple tissues from a single donor and provenance/overlap. The original source itself groups observations by tissue and pathology; do not call data independent biological confirmation until cohort identity is verified.
