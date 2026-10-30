@@ -20,6 +20,8 @@ Registro vigente de ambas líneas consolidadas. Una integración, una reproducci
 | ELA-14 | DEXSeq y CE | Sensibilidad descriptiva, cuentas y denominadores; 72 bins STMN2/UNC13A sin solapar regiones CE publicadas bajo el mismo ensamblaje | No cuantificación directa de CE ni ausencia biológica; no PSI |
 | ELA-15 | SH-SY5Y | Seis bibliotecas exactas a ENA; 16 uniones en S6; una etiqueta concordante, dos conflictos de hebra, cuatro alias sin resolver | Reanálisis conjunto bloqueado; unidades independientes no establecidas |
 
+| ELA-16 | Selección local de fuentes | Tres candidatas; BW y TPM no aportan cuentas directas; Parquet E-MTAB-15653 real, 2.598.287 filas/22 bibliotecas, hashes y QC verificados | Ninguna aceptada para el contraste completo; unidad independiente y evento pendientes. No replicación externa conseguida |
+
 ## Localizadores
 
 - ELA01–03: reports/issue14-reproduction, fratta-junction-audit, gse121569-design y dexseq-qc.
@@ -34,3 +36,5 @@ Registro vigente de ambas líneas consolidadas. Una integración, una reproducci
 ARN total, procesamiento de una unión, isoforma funcional, proteína, recuperación neuronal y beneficio clínico son niveles diferentes. Compartir cohortes entre series/tablas/paquetes no añade replicación. Las no coincidencias y búsquedas negativas no prueban novedad o ausencia. Tests, commits y fuentes bibliográficas no son experimentos.
 
 Se conservan los informes históricos con sus hashes/entornos/resultados, pero sus próximos pasos antiguos no son el planning vigente. El criterio de entrada para nueva evidencia está en NEXT_STUDY_GATE. Los registros maestros anteriores se archivan en reports/integration-20261030/history.
+
+ELA16: reports/source-selection-20261030/REPORT.md, results.json y manifest research/references/independent_source_gate_20261030.json. Propuesta en PR separado de #30; sus resultados no se suman ni se presentan como incorporados a main antes de merge.

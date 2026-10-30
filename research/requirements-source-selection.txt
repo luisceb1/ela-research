@@ -1,0 +1,2 @@
+# Only needed for --parquet integrity QC, not the offline test suite.
+pyarrow==21.0.0

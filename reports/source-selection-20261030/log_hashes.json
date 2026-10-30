@@ -1,0 +1,17 @@
+[
+  {
+    "path": "tests.txt",
+    "full_log_sha256": "608dbc4b001a0f0d190fd036da71af6568476e7fff406725cf833b5d7371ff74",
+    "full_log_bytes": 32711
+  },
+  {
+    "path": "tests-initial-incomplete-snapshot.txt",
+    "full_log_sha256": "0bb8a2fa83a6dd1ea1ffd1f7e960245e2da00f3dfbbe7302fd66a13060659d17",
+    "full_log_bytes": 45087
+  },
+  {
+    "path": "tests-intermediate-missing-fixtures.txt",
+    "full_log_sha256": "ee4148eb6a0f816c9fd7f37cca667004baa176bec47dea9f1f3132594ef7ceef",
+    "full_log_bytes": 38575
+  }
+]

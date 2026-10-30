@@ -1,0 +1,102 @@
+[
+  {
+    "id": "ma_family",
+    "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE182nnn/GSE182976/soft/GSE182976_family.soft.gz",
+    "bytes": 4517,
+    "sha256": "cf97c36be73eb130421784e5eada61d3b930e5c2be70e2f9cbc7108319cf4d21",
+    "status": "ok"
+  },
+  {
+    "id": "melamed_family",
+    "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE122nnn/GSE122069/soft/GSE122069_family.soft.gz",
+    "bytes": 2927,
+    "sha256": "9d0cccf895cf2ea8be46eb0b32a7c51cc2d63e7213bfadf28902a13eb517db77",
+    "status": "ok"
+  },
+  {
+    "id": "ma_filelist",
+    "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE182nnn/GSE182976/suppl/filelist.txt",
+    "bytes": 1075,
+    "sha256": "17d1d55914d2e7b263aee06ddc75599644c5a2585bf6e7b77d4bd7f25c1ac3a2",
+    "status": "ok"
+  },
+  {
+    "id": "fractionation_idf",
+    "url": "https://www.ebi.ac.uk/biostudies/files/E-MTAB-15653/E-MTAB-15653.idf.txt",
+    "status": "error",
+    "error": "HTTPError: HTTP Error 503: Service Unavailable"
+  },
+  {
+    "id": "fractionation_sdrf",
+    "url": "https://www.ebi.ac.uk/biostudies/files/E-MTAB-15653/E-MTAB-15653.sdrf.txt",
+    "status": "error",
+    "error": "HTTPError: HTTP Error 503: Service Unavailable"
+  },
+  {
+    "id": "fractionation_api",
+    "url": "https://www.ebi.ac.uk/biostudies/api/v1/studies/E-MTAB-15653",
+    "status": "ok",
+    "bytes": 30956,
+    "sha256": "0bdfcde5a18000aef08b7fe2a782a66812fbb0abea398b5da74495612247820e"
+  },
+  {
+    "id": "fractionation_sdrf_ftp",
+    "url": "https://ftp.ebi.ac.uk/biostudies/fire/E-MTAB/653/E-MTAB-15653/Files/E-MTAB-15653.sdrf.txt",
+    "status": "error",
+    "error": "HTTPError: HTTP Error 503: Service Unavailable"
+  },
+  {
+    "id": "ma_tar",
+    "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE182nnn/GSE182976/suppl/GSE182976_RAW.tar",
+    "status": "ok",
+    "bytes": 112640,
+    "sha256": "1e7f9b6ee8a9a4f092d6988f205dc3059958111dcc00f18000ff50a6d5166fe9"
+  },
+  {
+    "id": "fractionation_info",
+    "url": "https://www.ebi.ac.uk/biostudies/api/v1/studies/E-MTAB-15653/info",
+    "status": "ok",
+    "bytes": 1197,
+    "sha256": "ad5637fcaeb039304d997c0a43759f5830c0022204d2944e27e4c44fd0c61c08",
+    "seconds": 3.755,
+    "byte_cap": 2000000
+  },
+  {
+    "id": "fractionation_sdrf_retry",
+    "url": "https://www.ebi.ac.uk/biostudies/files/E-MTAB-15653/E-MTAB-15653.sdrf.txt?download=1",
+    "status": "error",
+    "error": "HTTPError: HTTP Error 503: Service Unavailable",
+    "seconds": 11.606,
+    "byte_cap": 2000000
+  },
+  {
+    "id": "fractionation_parquet",
+    "url": "https://media.githubusercontent.com/media/frattalab/cryptic_biology/80fa3d70418a4665a85d414e33c7c470a9312086/data/nuc_cyto/star_splice_junctioncounts.parquet",
+    "status": "ok",
+    "bytes": 81873975,
+    "sha256": "35dd2cf8ed18439733d756fe2ca3cc2c518ea533c91ef31dbbe143ba7756ff60",
+    "seconds": 6.348,
+    "byte_cap": 100000000
+  },
+  {
+    "id": "melamed_ena",
+    "url": "https://www.ebi.ac.uk/ena/portal/api/filereport?accession=PRJNA503396&result=read_run&fields=run_accession,experiment_accession,secondary_sample_accession,read_count,base_count,fastq_bytes,fastq_md5,fastq_ftp&format=tsv&download=false",
+    "status": "ok",
+    "bytes": 1795,
+    "sha256": "a94f63a20f59cb3575a4345278657765c8c0caed31dd85d2f3e0c50d7fdde021"
+  },
+  {
+    "id": "fractionation_sdrf_resolved",
+    "url": "https://ftp.ebi.ac.uk/biostudies/fire/E-MTAB-/653/E-MTAB-15653/Files/E-MTAB-15653.sdrf.txt",
+    "status": "ok",
+    "bytes": 38100,
+    "sha256": "ff0772b7e85e51681edd2a3e85da248101160b09fd0001e63b9446e6c5a03449"
+  },
+  {
+    "id": "fractionation_idf_resolved",
+    "url": "https://ftp.ebi.ac.uk/biostudies/fire/E-MTAB-/653/E-MTAB-15653/Files/E-MTAB-15653.idf.txt",
+    "status": "ok",
+    "bytes": 7395,
+    "sha256": "152e6668842f615f0d61f35a04c22e3d76a02aa8affdc0c1850aa67401ffeff5"
+  }
+]

@@ -1,0 +1,140 @@
+{
+  "date": "2026-10-30",
+  "base_commit": "f028b88879abed0b92d157e1236dc68ccfd6e60e",
+  "sources": [
+    {
+      "id": "ma_family",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE182nnn/GSE182976/soft/GSE182976_family.soft.gz",
+      "cache_file": "ma_family.source",
+      "bytes": 4517,
+      "sha256": "cf97c36be73eb130421784e5eada61d3b930e5c2be70e2f9cbc7108319cf4d21"
+    },
+    {
+      "id": "melamed_family",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE122nnn/GSE122069/soft/GSE122069_family.soft.gz",
+      "cache_file": "melamed_family.source",
+      "bytes": 2927,
+      "sha256": "9d0cccf895cf2ea8be46eb0b32a7c51cc2d63e7213bfadf28902a13eb517db77"
+    },
+    {
+      "id": "ma_tar",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE182nnn/GSE182976/suppl/GSE182976_RAW.tar",
+      "cache_file": "ma_tar.source",
+      "bytes": 112640,
+      "sha256": "1e7f9b6ee8a9a4f092d6988f205dc3059958111dcc00f18000ff50a6d5166fe9"
+    },
+    {
+      "id": "ma_filelist",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE182nnn/GSE182976/suppl/filelist.txt",
+      "cache_file": "ma_filelist.source",
+      "bytes": 1075,
+      "sha256": "17d1d55914d2e7b263aee06ddc75599644c5a2585bf6e7b77d4bd7f25c1ac3a2"
+    },
+    {
+      "id": "fractionation_api",
+      "url": "https://www.ebi.ac.uk/biostudies/api/v1/studies/E-MTAB-15653",
+      "cache_file": "fractionation_api.source",
+      "bytes": 30956,
+      "sha256": "0bdfcde5a18000aef08b7fe2a782a66812fbb0abea398b5da74495612247820e"
+    },
+    {
+      "id": "fractionation_info",
+      "url": "https://www.ebi.ac.uk/biostudies/api/v1/studies/E-MTAB-15653/info",
+      "cache_file": "fractionation_info.source",
+      "bytes": 1197,
+      "sha256": "ad5637fcaeb039304d997c0a43759f5830c0022204d2944e27e4c44fd0c61c08"
+    },
+    {
+      "id": "fractionation_sdrf_resolved",
+      "url": "https://ftp.ebi.ac.uk/biostudies/fire/E-MTAB-/653/E-MTAB-15653/Files/E-MTAB-15653.sdrf.txt",
+      "cache_file": "fractionation_sdrf_resolved.source",
+      "bytes": 38100,
+      "sha256": "ff0772b7e85e51681edd2a3e85da248101160b09fd0001e63b9446e6c5a03449"
+    },
+    {
+      "id": "fractionation_idf_resolved",
+      "url": "https://ftp.ebi.ac.uk/biostudies/fire/E-MTAB-/653/E-MTAB-15653/Files/E-MTAB-15653.idf.txt",
+      "cache_file": "fractionation_idf_resolved.source",
+      "bytes": 7395,
+      "sha256": "152e6668842f615f0d61f35a04c22e3d76a02aa8affdc0c1850aa67401ffeff5"
+    },
+    {
+      "id": "fractionation_parquet",
+      "url": "https://media.githubusercontent.com/media/frattalab/cryptic_biology/80fa3d70418a4665a85d414e33c7c470a9312086/data/nuc_cyto/star_splice_junctioncounts.parquet",
+      "cache_file": "fractionation_parquet.source",
+      "bytes": 81873975,
+      "sha256": "35dd2cf8ed18439733d756fe2ca3cc2c518ea533c91ef31dbbe143ba7756ff60"
+    },
+    {
+      "id": "melamed_ena",
+      "url": "https://www.ebi.ac.uk/ena/portal/api/filereport?accession=PRJNA503396&result=read_run&fields=run_accession,experiment_accession,secondary_sample_accession,read_count,base_count,fastq_bytes,fastq_md5,fastq_ftp&format=tsv&download=false",
+      "cache_file": "melamed_ena.source",
+      "bytes": 1795,
+      "sha256": "a94f63a20f59cb3575a4345278657765c8c0caed31dd85d2f3e0c50d7fdde021"
+    },
+    {
+      "id": "fractionation_lfs_pointer",
+      "url": "https://raw.githubusercontent.com/frattalab/cryptic_biology/80fa3d70418a4665a85d414e33c7c470a9312086/data/nuc_cyto/star_splice_junctioncounts.parquet",
+      "cache_file": "cryptic_biology_star_pointer.txt",
+      "bytes": 133,
+      "sha256": "08760deb4ae424fde8baa22b63780a9763eafe8b4c310434f3cf11c724dc2069",
+      "git_blob_sha1": "d785694f5c5445187461c41ade4508e9909ceccc"
+    }
+  ],
+  "candidates": [
+    {
+      "accession": "GSE182976",
+      "doi": "10.1038/s41586-022-04424-7",
+      "criteria": {
+        "public_attributable": true,
+        "direct_junction_counts": false,
+        "event_identity_linked": null,
+        "independent_units_documented": null,
+        "perturbation_control_documented": true,
+        "new_experimental_source": true
+      },
+      "minimum_independent_units_per_condition": 0,
+      "reason": "Twelve valid coverage BigWigs; no direct junction counts in processed deposit. iMN1/2/3 with rep1/2 does not certify the hierarchy."
+    },
+    {
+      "accession": "GSE122069",
+      "doi": "10.1038/s41593-018-0293-z",
+      "criteria": {
+        "public_attributable": true,
+        "direct_junction_counts": false,
+        "event_identity_linked": null,
+        "independent_units_documented": true,
+        "perturbation_control_documented": true,
+        "new_experimental_source": true
+      },
+      "minimum_independent_units_per_condition": 3,
+      "reason": "Selected six SH-SY5Y KD/control runs; publication states three independent biological experiments per condition. Processed deposit is gene TPM. Raw reanalysis estimated, not executed."
+    },
+    {
+      "accession": "E-MTAB-15653",
+      "doi": "10.1101/2025.11.23.689722",
+      "criteria": {
+        "public_attributable": true,
+        "direct_junction_counts": true,
+        "event_identity_linked": null,
+        "independent_units_documented": null,
+        "perturbation_control_documented": true,
+        "new_experimental_source": null
+      },
+      "minimum_independent_units_per_condition": 0,
+      "reason": "Actual junction counts and 22 technical libraries. Independent culture units not certified. One SDRF compartment contradiction outside proposed baseline subset. Event/strand/denominator linkage still requires a specific plan."
+    }
+  ],
+  "privacy": "Only culture accession/group/technical projections exported; no contacts, clinical records, genotypes or individual clinical output. Source originals outside Git.",
+  "attribution": "Data-source attribution to GEO/ENA/BioStudies and Ma et al. 2022, Melamed et al. 2019, Brown et al. 2025 preprint. Code inspected but not executed or redistributed. Dataset accession is not certified experimental independence.",
+  "excluded_reuse": [
+    "GSE121569",
+    "GSE126542",
+    "GSE126543",
+    "GSE310723",
+    "GSE315972",
+    "PRJEB42763",
+    "GSE97262"
+  ],
+  "editorial_check": "Scite metadata did not expose editorialNotices; has_correction filter returned a misleading no-index message despite successful DOI metadata. Editorial status not certified from that response; no claim that notices are absent."
+}

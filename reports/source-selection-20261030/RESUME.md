@@ -1,0 +1,7 @@
+# Continuidad y desviaciones documentadas
+
+La selección local comenzó a las 09:07 UTC del 30/10/2026 (PLAN.json). Al retomarla ya existía el PR #30, creado a las 11:23 UTC, con otros tres registros y trabajo posterior separado. Se leyó su informe/cabeza 0e032667 sin ejecutar sus scripts ni descargar sus datos de tejido. Se entrega esta auditoría de cultivos en un PR breve directo a main, sin cadena ni sobrescritura del #30. Los resultados de ambos ciclos no se suman como replicación.
+
+El plan original usa la expresión demasiado amplia «Brown sources». El criterio vigente excluía los materiales Brown/SH-SY5Y ya auditados, de PRJEB42763. E-MTAB-15653 corresponde a otro depósito/experimento de fraccionamiento del mismo grupo; se inspeccionó su factibilidad, sin certificar independencia por ser otro accession ni aceptarlo para inferencia. Se conserva el plan original sin corregirlo retrospectivamente y se registra esta aclaración/desviación de redacción.
+
+Al retomar seguían disponibles código, caché, hashes y resultados; faltaba la instalación temporal de PyArrow. No se afirmó una nueva ejecución del Parquet. Se verificaron los once hashes de entradas mediante el fetcher sobre caché, el hash del código de la ejecución previa y el resultado idéntico registrado; se ejecutaron 253 tests y compileall. Los resultados previos y sus versiones se conservan como tales. No se reanudó búsqueda de nuevas fuentes, alineamiento o análisis biológico.

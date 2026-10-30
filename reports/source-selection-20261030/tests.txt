@@ -1,0 +1,15 @@
+# New tests and aggregate suite result; original hash in log_hashes.json
+test_absent_and_ambiguous_filename_link_not_filled_or_repaired (test_independent_source_gate.IndependentSourceGateTests.test_absent_and_ambiguous_filename_link_not_filled_or_repaired) ... ok
+test_conflicting_technical_rows_not_silently_collapsed (test_independent_source_gate.IndependentSourceGateTests.test_conflicting_technical_rows_not_silently_collapsed) ... ok
+test_corrupted_source_is_rejected_before_projection (test_independent_source_gate.IndependentSourceGateTests.test_corrupted_source_is_rejected_before_projection) ... ok
+test_coverage_or_tpm_is_not_direct_counts (test_independent_source_gate.IndependentSourceGateTests.test_coverage_or_tpm_is_not_direct_counts) ... ok
+test_library_count_does_not_certify_independence (test_independent_source_gate.IndependentSourceGateTests.test_library_count_does_not_certify_independence) ... ok
+test_one_run_cannot_be_counted_as_two_assays (test_independent_source_gate.IndependentSourceGateTests.test_one_run_cannot_be_counted_as_two_assays) ... ok
+test_paired_fastq_rows_do_not_double_replication (test_independent_source_gate.IndependentSourceGateTests.test_paired_fastq_rows_do_not_double_replication) ... ok
+test_public_gsm_projection_excludes_other_metadata_and_duplicate_ids_fail (test_independent_source_gate.IndependentSourceGateTests.test_public_gsm_projection_excludes_other_metadata_and_duplicate_ids_fail) ... ok
+test_real_compartment_conflict_preserved_and_collision_reported (test_independent_source_gate.IndependentSourceGateTests.test_real_compartment_conflict_preserved_and_collision_reported) ... ok
+
+----------------------------------------------------------------------
+Ran 253 tests in 0.162s
+
+OK

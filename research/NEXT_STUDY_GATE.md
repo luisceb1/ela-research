@@ -31,3 +31,7 @@ Antes de calcular: fijar evento, comparador, variables técnicas, QC, umbrales d
 Entregar una tabla de máximo tres candidatos con aceptado/rechazado y motivo verificable. Si ninguno cumple, cerrar ese ciclo sin buscar variantes de la misma consulta; no interpretar falta de datos como resultado biológico. Replantear la pregunta o valorar una propuesta incremental para revisión, manteniendo contactos y laboratorio sujetos a autorización.
 
 Solo tras aceptar una fuente se redacta el plan de análisis específico y se ejecuta una prueba discriminante. No iniciar AGRN, péptidos, otro simulador o priorización de 821 claves a la vez.
+
+## Resultado del ciclo local y continuidad
+
+Ciclo iniciado en PLAN.json el 30/10 a las 09:07 UTC, cerrado con tres candidatos: GSE182976, GSE122069 y E-MTAB-15653. Ninguno cumple todos los requisitos; ver reports/source-selection-20261030/REPORT.md. No repetir esta selección ni añadir un cuarto candidato. Se propone auditar una nueva fuente primaria concreta sobre las unidades de E-MTAB-15653 y predefinir la identidad de un solo evento antes de cualquier efecto. No rebajar el criterio de independencia tras inspeccionar cuentas. El PR #30, creado después, corresponde a otro ciclo con otros registros; no se incorpora ni reejecuta aquí. Revisar ambos al integrar, evitando dos próximos trabajos simultáneos.

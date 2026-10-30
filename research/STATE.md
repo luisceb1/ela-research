@@ -30,12 +30,18 @@ Los informes preservan los hashes, parámetros, errores y resultados negativos d
 
 ## Única próxima tarea
 
-Aplicar [NEXT_STUDY_GATE.md](NEXT_STUDY_GATE.md): seleccionar o rechazar una fuente independiente con coordenadas de unión, cuentas, controles y unidades biológicas documentadas. Revisar como máximo tres candidatos nuevos en un ciclo. Si ninguno cumple, registrar el resultado y detener esa selección, sin otra cadena de búsquedas equivalentes.
+El ciclo local de tres candidatos está cerrado: GSE182976, GSE122069 y E-MTAB-15653 no pasan todavía todos los requisitos. Informe: [source-selection-20261030](../reports/source-selection-20261030/REPORT.md). No abrir un cuarto candidato ni calcular efectos. La siguiente prueba propuesta es conseguir una fuente primaria adicional concreta que documente las unidades de cultivo de las seis bibliotecas citosólicas basales de E-MTAB-15653 y fijar un único evento con hebra y denominador; si no se obtiene, mantener el bloqueo. La alternativa GSE122069 requiere reconstrucción desde crudos: 9.474.892.575 bytes FASTQ según ENA, sin descarga o alineamiento ejecutados.
+
+Al retomar se encontró el PR #30 abierto (cabeza inspeccionada 0e032667), que audita otros tres registros y documenta trabajo posterior separado. No se fusiona ni se reejecuta aquí. Este informe local empezó con PLAN.json a las 09:07 UTC, antes de crearse #30 a las 11:23 UTC. Son dos ciclos de trabajo distintos, no una sola selección de tres registros ni replicaciones científicas. Reconciliar ambos PR al integrar y mantener una única próxima tarea; no tratar sus salidas locales reportadas por el usuario como ejecuciones realizadas aquí.
 
 ## Verificación y operación
 
-Suite conjunta: 244 tests locales correctos en Python 3.12.14 (166 + 183 − 105 compartidos), compileall correcto. CI por SHA en Python 3.11/3.12. No se reejecutaron todos los pipelines de datos reales durante la integración. No se añaden experimentos por combinar tests.
+Base main: 244 tests locales correctos en Python 3.12.14 (166 + 183 − 105 compartidos), compileall correcto. CI por SHA en Python 3.11/3.12. No se reejecutaron todos los pipelines de datos reales durante la integración. No se añaden experimentos por combinar tests.
 
 Las diez issues históricas no se cierran automáticamente. Las ya ejecutadas se actualizan con evidencia y pendientes precisos. No contactos, publicación externa, clínica personal, gastos o laboratorio sin autorización. La integración autorizada en este turno no concede autorización general de merges futuros.
 
 Historial anterior de ambos estados: reports/integration-20261030/history. El resumen semanal de 30/10 se conserva sin duplicarlo.
+
+## Auditoría de fuentes en esta propuesta de PR
+
+253 tests locales correctos (244 base + 9 nuevos), compileall correcto. Python 3.12.14; QC real del Parquet con PyArrow 21.0.0 en la ejecución previa de este ciclo, repetición idéntica por bytes y hashes comprobados al retomar. E-MTAB-15653: 2.598.287 registros, 22 bibliotecas; SDRF 44 filas FASTQ, 21 nombres de archivo derivados distintos. Hay un conflicto citosol/núcleo en NMD, sin reparación automática; no afecta el enlace único de las seis bibliotecas citosólicas basales. La independencia biológica sigue sin certificar. No se calcula PSI, inferencia ni función. Resultados de este PR pendientes de revisión/incorporación; no atribuirlos aún a main.
