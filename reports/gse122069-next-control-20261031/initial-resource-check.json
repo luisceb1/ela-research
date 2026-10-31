@@ -1,0 +1,15 @@
+{
+  "date_utc": "2026-10-31T19:41:04.809185+00:00",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "free_disk_bytes": 63174275072,
+  "historical_baseline_bytes": 63427059712,
+  "binary_exists": true,
+  "index_member_exists": false,
+  "index_root_symlink": true,
+  "index_root_target": "/tmp/ela-full-control-index-a30d50c208ec-20261031",
+  "control2_fastq_exists": false,
+  "pysam_python_exists": true,
+  "initial_preparation_error": "AssertionError: required cache availability or absent new FASTQ precondition failed; no analysis started",
+  "memory.max": "8589934592",
+  "cpu.max": "800000 100000"
+}
