@@ -1,0 +1,8 @@
+{
+  "head_sha": "c3bf1f757f0fe08f415a98a4d5a95923f439cf42",
+  "run_id": 41225001595,
+  "url": "https://github.com/luisceb1/ela-research/actions/runs/41225001595",
+  "python311": "success",
+  "python312": "success",
+  "local_tests": 329
+}
