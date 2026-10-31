@@ -7,5 +7,6 @@
     "No accepted unique exon1 overlap; downstream locus support exists, not molecular absence",
     "3prime-only library hypothesis not established; declaredTruSeq kit"
   ],
-  "successful_retry_watchdog_errors": []
+  "successful_retry_watchdog_errors": [],
+  "artifact_serialization": "Integrity check detected CRLF-to-LF conversion in two TSV exports. Canonical LF exporter added and output hashes regenerated; no alignment/count change."
 }
