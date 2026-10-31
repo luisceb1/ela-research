@@ -1,19 +1,19 @@
 {
   "run": "SRR8144908",
   "complete_library": false,
-  "scope": "first10M concordant completed prefix of same ongoing fixed full-control pass; not another experiment",
+  "scope": "first30M concordant completed prefix of same ongoing fixed full-control pass; supersedes10M snapshot, not another experiment",
   "source_sha256": "ed2f2f4a30b7f448c246029b0407e20e142493b2d74345e674c4e7b3c3e5527f",
-  "concordant_completed_reads": 10000000,
+  "concordant_completed_reads": 30000000,
   "counts": {
     "8": {
-      "eligible_intron_observations": 923969,
-      "canonical": 33,
-      "cryptic": 0
+      "eligible_intron_observations": 2761223,
+      "canonical": 86,
+      "cryptic": 1
     },
     "15": {
-      "eligible_intron_observations": 568362,
-      "canonical": 22,
-      "cryptic": 0
+      "eligible_intron_observations": 1698579,
+      "canonical": 63,
+      "cryptic": 1
     }
   },
   "completed_bins": [
@@ -206,6 +206,386 @@
           "cryptic": 0
         }
       }
+    },
+    {
+      "first_read": 10000001,
+      "last_read": 11000000,
+      "reads": 1000000,
+      "sam_records": 1249967,
+      "primary_records": 1000000,
+      "counts": {
+        "8": {
+          "eligible_intron_observations": 91949,
+          "canonical": 4,
+          "cryptic": 0
+        },
+        "15": {
+          "eligible_intron_observations": 56892,
+          "canonical": 4,
+          "cryptic": 0
+        }
+      }
+    },
+    {
+      "first_read": 11000001,
+      "last_read": 12000000,
+      "reads": 1000000,
+      "sam_records": 1249230,
+      "primary_records": 1000000,
+      "counts": {
+        "8": {
+          "eligible_intron_observations": 92702,
+          "canonical": 3,
+          "cryptic": 0
+        },
+        "15": {
+          "eligible_intron_observations": 56843,
+          "canonical": 2,
+          "cryptic": 0
+        }
+      }
+    },
+    {
+      "first_read": 12000001,
+      "last_read": 13000000,
+      "reads": 1000000,
+      "sam_records": 1250835,
+      "primary_records": 1000000,
+      "counts": {
+        "8": {
+          "eligible_intron_observations": 92428,
+          "canonical": 2,
+          "cryptic": 0
+        },
+        "15": {
+          "eligible_intron_observations": 56685,
+          "canonical": 2,
+          "cryptic": 0
+        }
+      }
+    },
+    {
+      "first_read": 13000001,
+      "last_read": 14000000,
+      "reads": 1000000,
+      "sam_records": 1250134,
+      "primary_records": 1000000,
+      "counts": {
+        "8": {
+          "eligible_intron_observations": 92392,
+          "canonical": 3,
+          "cryptic": 0
+        },
+        "15": {
+          "eligible_intron_observations": 56877,
+          "canonical": 2,
+          "cryptic": 0
+        }
+      }
+    },
+    {
+      "first_read": 14000001,
+      "last_read": 15000000,
+      "reads": 1000000,
+      "sam_records": 1249438,
+      "primary_records": 1000000,
+      "counts": {
+        "8": {
+          "eligible_intron_observations": 91762,
+          "canonical": 3,
+          "cryptic": 0
+        },
+        "15": {
+          "eligible_intron_observations": 56494,
+          "canonical": 2,
+          "cryptic": 0
+        }
+      }
+    },
+    {
+      "first_read": 15000001,
+      "last_read": 16000000,
+      "reads": 1000000,
+      "sam_records": 1250768,
+      "primary_records": 1000000,
+      "counts": {
+        "8": {
+          "eligible_intron_observations": 92022,
+          "canonical": 2,
+          "cryptic": 0
+        },
+        "15": {
+          "eligible_intron_observations": 56593,
+          "canonical": 2,
+          "cryptic": 0
+        }
+      }
+    },
+    {
+      "first_read": 16000001,
+      "last_read": 17000000,
+      "reads": 1000000,
+      "sam_records": 1249080,
+      "primary_records": 1000000,
+      "counts": {
+        "8": {
+          "eligible_intron_observations": 92809,
+          "canonical": 3,
+          "cryptic": 0
+        },
+        "15": {
+          "eligible_intron_observations": 57072,
+          "canonical": 3,
+          "cryptic": 0
+        }
+      }
+    },
+    {
+      "first_read": 17000001,
+      "last_read": 18000000,
+      "reads": 1000000,
+      "sam_records": 1248827,
+      "primary_records": 1000000,
+      "counts": {
+        "8": {
+          "eligible_intron_observations": 92380,
+          "canonical": 3,
+          "cryptic": 1
+        },
+        "15": {
+          "eligible_intron_observations": 57066,
+          "canonical": 3,
+          "cryptic": 1
+        }
+      }
+    },
+    {
+      "first_read": 18000001,
+      "last_read": 19000000,
+      "reads": 1000000,
+      "sam_records": 1249740,
+      "primary_records": 1000000,
+      "counts": {
+        "8": {
+          "eligible_intron_observations": 92181,
+          "canonical": 2,
+          "cryptic": 0
+        },
+        "15": {
+          "eligible_intron_observations": 56767,
+          "canonical": 1,
+          "cryptic": 0
+        }
+      }
+    },
+    {
+      "first_read": 19000001,
+      "last_read": 20000000,
+      "reads": 1000000,
+      "sam_records": 1251167,
+      "primary_records": 1000000,
+      "counts": {
+        "8": {
+          "eligible_intron_observations": 92240,
+          "canonical": 2,
+          "cryptic": 0
+        },
+        "15": {
+          "eligible_intron_observations": 56807,
+          "canonical": 2,
+          "cryptic": 0
+        }
+      }
+    },
+    {
+      "first_read": 20000001,
+      "last_read": 21000000,
+      "reads": 1000000,
+      "sam_records": 1250456,
+      "primary_records": 1000000,
+      "counts": {
+        "8": {
+          "eligible_intron_observations": 92342,
+          "canonical": 3,
+          "cryptic": 0
+        },
+        "15": {
+          "eligible_intron_observations": 56649,
+          "canonical": 2,
+          "cryptic": 0
+        }
+      }
+    },
+    {
+      "first_read": 21000001,
+      "last_read": 22000000,
+      "reads": 1000000,
+      "sam_records": 1249994,
+      "primary_records": 1000000,
+      "counts": {
+        "8": {
+          "eligible_intron_observations": 92106,
+          "canonical": 2,
+          "cryptic": 0
+        },
+        "15": {
+          "eligible_intron_observations": 56663,
+          "canonical": 1,
+          "cryptic": 0
+        }
+      }
+    },
+    {
+      "first_read": 22000001,
+      "last_read": 23000000,
+      "reads": 1000000,
+      "sam_records": 1250168,
+      "primary_records": 1000000,
+      "counts": {
+        "8": {
+          "eligible_intron_observations": 92551,
+          "canonical": 2,
+          "cryptic": 0
+        },
+        "15": {
+          "eligible_intron_observations": 56874,
+          "canonical": 2,
+          "cryptic": 0
+        }
+      }
+    },
+    {
+      "first_read": 23000001,
+      "last_read": 24000000,
+      "reads": 1000000,
+      "sam_records": 1249903,
+      "primary_records": 1000000,
+      "counts": {
+        "8": {
+          "eligible_intron_observations": 92221,
+          "canonical": 3,
+          "cryptic": 0
+        },
+        "15": {
+          "eligible_intron_observations": 56778,
+          "canonical": 2,
+          "cryptic": 0
+        }
+      }
+    },
+    {
+      "first_read": 24000001,
+      "last_read": 25000000,
+      "reads": 1000000,
+      "sam_records": 1251723,
+      "primary_records": 1000000,
+      "counts": {
+        "8": {
+          "eligible_intron_observations": 92576,
+          "canonical": 1,
+          "cryptic": 0
+        },
+        "15": {
+          "eligible_intron_observations": 57006,
+          "canonical": 1,
+          "cryptic": 0
+        }
+      }
+    },
+    {
+      "first_read": 25000001,
+      "last_read": 26000000,
+      "reads": 1000000,
+      "sam_records": 1250631,
+      "primary_records": 1000000,
+      "counts": {
+        "8": {
+          "eligible_intron_observations": 91831,
+          "canonical": 3,
+          "cryptic": 0
+        },
+        "15": {
+          "eligible_intron_observations": 56658,
+          "canonical": 3,
+          "cryptic": 0
+        }
+      }
+    },
+    {
+      "first_read": 26000001,
+      "last_read": 27000000,
+      "reads": 1000000,
+      "sam_records": 1250270,
+      "primary_records": 1000000,
+      "counts": {
+        "8": {
+          "eligible_intron_observations": 90974,
+          "canonical": 4,
+          "cryptic": 0
+        },
+        "15": {
+          "eligible_intron_observations": 55842,
+          "canonical": 2,
+          "cryptic": 0
+        }
+      }
+    },
+    {
+      "first_read": 27000001,
+      "last_read": 28000000,
+      "reads": 1000000,
+      "sam_records": 1243868,
+      "primary_records": 1000000,
+      "counts": {
+        "8": {
+          "eligible_intron_observations": 86119,
+          "canonical": 3,
+          "cryptic": 0
+        },
+        "15": {
+          "eligible_intron_observations": 52695,
+          "canonical": 2,
+          "cryptic": 0
+        }
+      }
+    },
+    {
+      "first_read": 28000001,
+      "last_read": 29000000,
+      "reads": 1000000,
+      "sam_records": 1248206,
+      "primary_records": 1000000,
+      "counts": {
+        "8": {
+          "eligible_intron_observations": 90456,
+          "canonical": 1,
+          "cryptic": 0
+        },
+        "15": {
+          "eligible_intron_observations": 55720,
+          "canonical": 0,
+          "cryptic": 0
+        }
+      }
+    },
+    {
+      "first_read": 29000001,
+      "last_read": 30000000,
+      "reads": 1000000,
+      "sam_records": 1250894,
+      "primary_records": 1000000,
+      "counts": {
+        "8": {
+          "eligible_intron_observations": 93213,
+          "canonical": 4,
+          "cryptic": 0
+        },
+        "15": {
+          "eligible_intron_observations": 57236,
+          "canonical": 3,
+          "cryptic": 0
+        }
+      }
     }
   ],
   "locus_bins": [
@@ -277,6 +657,146 @@
       "unique_spliced_reads": 38,
       "exon2_unique_overlap": 20,
       "exon1_unique_overlap": 1
+    },
+    {
+      "primary_block_overlap": 655,
+      "unique_mapq_block_overlap": 655,
+      "exon1_unique_overlap": 6,
+      "exon2_unique_overlap": 44,
+      "unique_spliced_reads": 59
+    },
+    {
+      "primary_block_overlap": 622,
+      "unique_mapq_block_overlap": 622,
+      "exon2_unique_overlap": 42,
+      "unique_spliced_reads": 64,
+      "exon1_unique_overlap": 5
+    },
+    {
+      "primary_block_overlap": 677,
+      "unique_mapq_block_overlap": 677,
+      "exon2_unique_overlap": 29,
+      "unique_spliced_reads": 44,
+      "exon1_unique_overlap": 3
+    },
+    {
+      "primary_block_overlap": 718,
+      "unique_mapq_block_overlap": 718,
+      "exon2_unique_overlap": 37,
+      "unique_spliced_reads": 54,
+      "exon1_unique_overlap": 5
+    },
+    {
+      "primary_block_overlap": 614,
+      "unique_mapq_block_overlap": 614,
+      "exon1_unique_overlap": 3,
+      "exon2_unique_overlap": 38,
+      "unique_spliced_reads": 57
+    },
+    {
+      "primary_block_overlap": 636,
+      "unique_mapq_block_overlap": 636,
+      "unique_spliced_reads": 52,
+      "exon2_unique_overlap": 31,
+      "exon1_unique_overlap": 2
+    },
+    {
+      "primary_block_overlap": 650,
+      "unique_mapq_block_overlap": 649,
+      "unique_spliced_reads": 54,
+      "exon2_unique_overlap": 41,
+      "exon1_unique_overlap": 5
+    },
+    {
+      "primary_block_overlap": 615,
+      "unique_mapq_block_overlap": 614,
+      "unique_spliced_reads": 52,
+      "exon2_unique_overlap": 30,
+      "exon1_unique_overlap": 5
+    },
+    {
+      "primary_block_overlap": 640,
+      "unique_mapq_block_overlap": 640,
+      "exon2_unique_overlap": 35,
+      "unique_spliced_reads": 51,
+      "exon1_unique_overlap": 3
+    },
+    {
+      "primary_block_overlap": 602,
+      "unique_mapq_block_overlap": 602,
+      "exon2_unique_overlap": 24,
+      "unique_spliced_reads": 41,
+      "exon1_unique_overlap": 2
+    },
+    {
+      "primary_block_overlap": 634,
+      "unique_mapq_block_overlap": 634,
+      "exon2_unique_overlap": 35,
+      "unique_spliced_reads": 50,
+      "exon1_unique_overlap": 4
+    },
+    {
+      "primary_block_overlap": 613,
+      "unique_mapq_block_overlap": 613,
+      "exon2_unique_overlap": 29,
+      "unique_spliced_reads": 39,
+      "exon1_unique_overlap": 3
+    },
+    {
+      "primary_block_overlap": 677,
+      "unique_mapq_block_overlap": 676,
+      "exon2_unique_overlap": 35,
+      "unique_spliced_reads": 50,
+      "exon1_unique_overlap": 2
+    },
+    {
+      "primary_block_overlap": 643,
+      "unique_mapq_block_overlap": 643,
+      "exon2_unique_overlap": 33,
+      "unique_spliced_reads": 46,
+      "exon1_unique_overlap": 4
+    },
+    {
+      "primary_block_overlap": 654,
+      "unique_mapq_block_overlap": 654,
+      "unique_spliced_reads": 57,
+      "exon2_unique_overlap": 31,
+      "exon1_unique_overlap": 1
+    },
+    {
+      "primary_block_overlap": 671,
+      "unique_mapq_block_overlap": 671,
+      "unique_spliced_reads": 59,
+      "exon2_unique_overlap": 40,
+      "exon1_unique_overlap": 4
+    },
+    {
+      "primary_block_overlap": 634,
+      "unique_mapq_block_overlap": 634,
+      "exon2_unique_overlap": 36,
+      "unique_spliced_reads": 66,
+      "exon1_unique_overlap": 5
+    },
+    {
+      "primary_block_overlap": 665,
+      "unique_mapq_block_overlap": 665,
+      "exon2_unique_overlap": 33,
+      "unique_spliced_reads": 61,
+      "exon1_unique_overlap": 3
+    },
+    {
+      "primary_block_overlap": 647,
+      "unique_mapq_block_overlap": 647,
+      "unique_spliced_reads": 40,
+      "exon2_unique_overlap": 37,
+      "exon1_unique_overlap": 2
+    },
+    {
+      "primary_block_overlap": 614,
+      "unique_mapq_block_overlap": 614,
+      "unique_spliced_reads": 49,
+      "exon2_unique_overlap": 36,
+      "exon1_unique_overlap": 5
     }
   ],
   "no_inference": true
