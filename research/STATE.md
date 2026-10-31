@@ -30,13 +30,13 @@ Los informes preservan los hashes, parámetros, errores y resultados negativos d
 
 ## Única próxima tarea
 
-Compilar/ejecutar el alineador HISAT2v2.2.3 fijado y validar con controles sintéticos NH/XS/MAPQ, multimapeo y anclas; comparar extracción de uniones con una implementación independiente antes del piloto GSE122069. No-k1 ni strandness asumida. El inspector ya está compilado/ejecutado; no confundirlo con ejecución del alineador.
+Preparar/ejecutar el piloto técnico de GSE122069 conforme a reports/hisat2-synthetic-gate-20261031/pilot_contract.json y al presupuesto previo. Antes de leer cuentas reales, implementar en ambos extractores la política primaria≥15bases de anclaje y sensibilidad≥8, con el resto de filtros/versión/índice fijados; no elegir política según cuentas. Descargar únicamente SRR8144907 completo, comprobar MD5publicado y SHA256propio; procesar como máximo el primer millón en flujo y registrar QC/recursos/errores, sin SAM/BAM completo o contraste biológico. Revalidar espacio y límites actuales antes de iniciar.
 
-La descarga/inspección real del índice queda completada en reports/hisat2-index-inspection-20261031: archivo4.355.786.349bytes fijado porversionId, SHA256 propio1848784403a0fb3ee7735b2f891d8be96fd2782e08aed3d8212d922666f077a5, gzipCRC verificado, ocho ficherosht2 y receta no ejecutada. Archivo+extraído9.019.829.587bytes; el inspector2.2.3 reconstruyó455secuencias/3.209.286.105bases en flujo, sin FASTA completo en disco. chr8 longitud145138636 y las tres ventanas STMN2 coinciden con lo ya verificado. Comparación externa acotada a longitud/ventanas, no identidad completa de todo el genoma.
+Gate sintético ejecutado: HISAT2alineador/constructor2.2.3 compilados delcommit0d244324;26lecturas sintéticas frente al índice humano y2frente a mini-referencia artificial. Ocho positivos50/100nt y sus orientaciones correctos, negativos excluidos, multicopiaNH2/MAPQ1 excluida; soporte aceptado idéntico entre parser propio yHTSlib/pysam0.23.3. Dos ejecuciones con SAM/resultados idénticos por bytes.301tests locales (295+6);CI de nueva cabeza por verificar. Ningún FASTQ real procesado.
 
-Memoria máxima del hijo inspector4.758.644KiB (~4,54GiB) y44,83s observados; no benchmark de alineamiento. Se respeta presupuesto6GiB RAM,2hilos,15GiB disco adicionales/reserva8GiB en esta ejecución. Índice aceptado solo para siguientes controles técnicos, no fuente biológica o piloto listo. No FASTQ ni alineamiento de bibliotecas.
+Límite importante: a anclaje8 se recupera2/2críptica y0/2canónica; a15,20,25y50 ambas2/2 en estos controles perfectos. No se cambia el análisis original≥8 ni se oculta el negativo; la política≥15 es prospectiva para fase aún no ejecutada. No acredita ausencia de sesgo universal ni igualdad con errores/calidades reales. Mantener bloqueados efectos/PSI/replicación funcional; el piloto será solo técnico.
 
-Se amplía el mismo PR33 desde da189cf79e4d2b4e3bcb8aa83c39f162b8848543, sin otra cadena ni merge automático. Main9c82795d contiene #32; #30 mantiene cabeza053ef70ce437cc637ec18278a2c07e3abd6bf58b. Los apartados anteriores que dicen índice no descargado son históricos y quedan sustituidos por esta ejecución.
+Se continúa el mismo PR33 desdef0b8fbc59063e8fb96050519fc88854c29157c6d, sin merge automático. Main9c82795d yPR30 cabeza053ef70ce437cc637ec18278a2c07e3abd6bf58b intactos. No repetir la descarga/inspección de índice ya ejecutada. Versiones/hashes/comandos/semillas/recursos en reports/hisat2-synthetic-gate-20261031.
 
 
 ## Verificación y operación
@@ -77,3 +77,7 @@ Solo48bases de referencia en tres ventanas, cotejadas entre dos proveedores del 
 ## Inspección real de índice — actualización posterior en PR33
 
 Plan previo research/plans/2026-10-31-hisat2-index-inspection.md; fuente de HISAT2 fijada acommit0d244324, SHA256 del paquete y del binarioInspector, g++13.3.0, comandos/recursos/hashes por fichero registrados. Python3.12.14;295pruebas locales correctas (284+11) ycompileall; no tests como experimentos. No inferencia, efectos, validación funcional ni clínicos personales. Un intento de medir compilación con/usr/bin/time falló antes de compilar porque no está disponible; reintento Pythonresource/monotonic compiló correctamente. Sin coste/contactos/laboratorio. CI de nueva cabeza por comprobar.
+
+## Gate sintético del alineador — actualización en PR33
+
+Plan previo research/plans/2026-10-31-hisat2-synthetic-gate.md. Solo referencia pública y lecturas artificiales explícitas; no datos clínicos, gastos/contactos/laboratorio. Alineamiento humano sintético~11,49s, máximo hijo observado4.633.708KiB (~4,42GiB); no extrapolar a un millón de lecturas. PySAMvenv de tarea, wheel0.23.3 SHA cotejado contraPyPI; APIHTSlib independiente de parsing, filtros conceptuales iguales. Los resultados descriptivos son de software, no prevalencia/eficacia. Asimetría a8bases queda como resultado negativo explícito, no solucionada por declarar8en el extractor. La nueva política15/8 solo se aplicará prospectivamente al piloto técnico, sin razones biológicas en esta fase.

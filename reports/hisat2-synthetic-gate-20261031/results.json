@@ -1,0 +1,989 @@
+{
+  "synthetic": true,
+  "real_reads_processed": 0,
+  "pysam_version": "0.23.3",
+  "htslib_samtools_version": "1.21",
+  "gate_pass": true,
+  "comparisons": {
+    "genome": {
+      "own_events": [
+        [
+          "cryptic_50_25_forward",
+          "chr8",
+          79611214,
+          79616822,
+          "+"
+        ],
+        [
+          "cryptic_50_25_reverse",
+          "chr8",
+          79611214,
+          79616822,
+          "+"
+        ],
+        [
+          "cryptic_100_50_forward",
+          "chr8",
+          79611214,
+          79616822,
+          "+"
+        ],
+        [
+          "cryptic_100_50_reverse",
+          "chr8",
+          79611214,
+          79616822,
+          "+"
+        ],
+        [
+          "cryptic_50_8_forward",
+          "chr8",
+          79611214,
+          79616822,
+          "+"
+        ],
+        [
+          "cryptic_50_8_reverse",
+          "chr8",
+          79611214,
+          79616822,
+          "+"
+        ],
+        [
+          "cryptic_50_15_forward",
+          "chr8",
+          79611214,
+          79616822,
+          "+"
+        ],
+        [
+          "cryptic_50_15_reverse",
+          "chr8",
+          79611214,
+          79616822,
+          "+"
+        ],
+        [
+          "cryptic_50_20_forward",
+          "chr8",
+          79611214,
+          79616822,
+          "+"
+        ],
+        [
+          "cryptic_50_20_reverse",
+          "chr8",
+          79611214,
+          79616822,
+          "+"
+        ],
+        [
+          "canonical_50_25_forward",
+          "chr8",
+          79611214,
+          79636802,
+          "+"
+        ],
+        [
+          "canonical_50_25_reverse",
+          "chr8",
+          79611214,
+          79636802,
+          "+"
+        ],
+        [
+          "canonical_100_50_forward",
+          "chr8",
+          79611214,
+          79636802,
+          "+"
+        ],
+        [
+          "canonical_100_50_reverse",
+          "chr8",
+          79611214,
+          79636802,
+          "+"
+        ],
+        [
+          "canonical_50_15_forward",
+          "chr8",
+          79611214,
+          79636802,
+          "+"
+        ],
+        [
+          "canonical_50_15_reverse",
+          "chr8",
+          79611214,
+          79636802,
+          "+"
+        ],
+        [
+          "canonical_50_20_forward",
+          "chr8",
+          79611214,
+          79636802,
+          "+"
+        ],
+        [
+          "canonical_50_20_reverse",
+          "chr8",
+          79611214,
+          79636802,
+          "+"
+        ]
+      ],
+      "htslib_events": [
+        [
+          "cryptic_50_25_forward",
+          "chr8",
+          79611214,
+          79616822,
+          "+"
+        ],
+        [
+          "cryptic_50_25_reverse",
+          "chr8",
+          79611214,
+          79616822,
+          "+"
+        ],
+        [
+          "cryptic_100_50_forward",
+          "chr8",
+          79611214,
+          79616822,
+          "+"
+        ],
+        [
+          "cryptic_100_50_reverse",
+          "chr8",
+          79611214,
+          79616822,
+          "+"
+        ],
+        [
+          "cryptic_50_8_forward",
+          "chr8",
+          79611214,
+          79616822,
+          "+"
+        ],
+        [
+          "cryptic_50_8_reverse",
+          "chr8",
+          79611214,
+          79616822,
+          "+"
+        ],
+        [
+          "cryptic_50_15_forward",
+          "chr8",
+          79611214,
+          79616822,
+          "+"
+        ],
+        [
+          "cryptic_50_15_reverse",
+          "chr8",
+          79611214,
+          79616822,
+          "+"
+        ],
+        [
+          "cryptic_50_20_forward",
+          "chr8",
+          79611214,
+          79616822,
+          "+"
+        ],
+        [
+          "cryptic_50_20_reverse",
+          "chr8",
+          79611214,
+          79616822,
+          "+"
+        ],
+        [
+          "canonical_50_25_forward",
+          "chr8",
+          79611214,
+          79636802,
+          "+"
+        ],
+        [
+          "canonical_50_25_reverse",
+          "chr8",
+          79611214,
+          79636802,
+          "+"
+        ],
+        [
+          "canonical_100_50_forward",
+          "chr8",
+          79611214,
+          79636802,
+          "+"
+        ],
+        [
+          "canonical_100_50_reverse",
+          "chr8",
+          79611214,
+          79636802,
+          "+"
+        ],
+        [
+          "canonical_50_15_forward",
+          "chr8",
+          79611214,
+          79636802,
+          "+"
+        ],
+        [
+          "canonical_50_15_reverse",
+          "chr8",
+          79611214,
+          79636802,
+          "+"
+        ],
+        [
+          "canonical_50_20_forward",
+          "chr8",
+          79611214,
+          79636802,
+          "+"
+        ],
+        [
+          "canonical_50_20_reverse",
+          "chr8",
+          79611214,
+          79636802,
+          "+"
+        ]
+      ],
+      "concordant": true
+    },
+    "mini": {
+      "own_events": [
+        [
+          "mini_unique_splice",
+          "unique",
+          200,
+          301,
+          "+"
+        ]
+      ],
+      "htslib_events": [
+        [
+          "mini_unique_splice",
+          "unique",
+          200,
+          301,
+          "+"
+        ]
+      ],
+      "concordant": true
+    }
+  },
+  "outcomes": [
+    {
+      "name": "cryptic_50_25_forward",
+      "category": "required",
+      "expected": [
+        "chr8",
+        79611214,
+        79616822,
+        "+"
+      ],
+      "observed": [
+        [
+          "chr8",
+          79611214,
+          79616822,
+          "+"
+        ]
+      ],
+      "required_pass": true
+    },
+    {
+      "name": "cryptic_50_25_reverse",
+      "category": "required",
+      "expected": [
+        "chr8",
+        79611214,
+        79616822,
+        "+"
+      ],
+      "observed": [
+        [
+          "chr8",
+          79611214,
+          79616822,
+          "+"
+        ]
+      ],
+      "required_pass": true
+    },
+    {
+      "name": "cryptic_100_50_forward",
+      "category": "required",
+      "expected": [
+        "chr8",
+        79611214,
+        79616822,
+        "+"
+      ],
+      "observed": [
+        [
+          "chr8",
+          79611214,
+          79616822,
+          "+"
+        ]
+      ],
+      "required_pass": true
+    },
+    {
+      "name": "cryptic_100_50_reverse",
+      "category": "required",
+      "expected": [
+        "chr8",
+        79611214,
+        79616822,
+        "+"
+      ],
+      "observed": [
+        [
+          "chr8",
+          79611214,
+          79616822,
+          "+"
+        ]
+      ],
+      "required_pass": true
+    },
+    {
+      "name": "cryptic_50_7_forward",
+      "category": "sensitivity",
+      "expected": [
+        "chr8",
+        79611214,
+        79616822,
+        "+"
+      ],
+      "observed": [],
+      "required_pass": null
+    },
+    {
+      "name": "cryptic_50_7_reverse",
+      "category": "sensitivity",
+      "expected": [
+        "chr8",
+        79611214,
+        79616822,
+        "+"
+      ],
+      "observed": [],
+      "required_pass": null
+    },
+    {
+      "name": "cryptic_50_8_forward",
+      "category": "sensitivity",
+      "expected": [
+        "chr8",
+        79611214,
+        79616822,
+        "+"
+      ],
+      "observed": [
+        [
+          "chr8",
+          79611214,
+          79616822,
+          "+"
+        ]
+      ],
+      "required_pass": null
+    },
+    {
+      "name": "cryptic_50_8_reverse",
+      "category": "sensitivity",
+      "expected": [
+        "chr8",
+        79611214,
+        79616822,
+        "+"
+      ],
+      "observed": [
+        [
+          "chr8",
+          79611214,
+          79616822,
+          "+"
+        ]
+      ],
+      "required_pass": null
+    },
+    {
+      "name": "cryptic_50_15_forward",
+      "category": "sensitivity",
+      "expected": [
+        "chr8",
+        79611214,
+        79616822,
+        "+"
+      ],
+      "observed": [
+        [
+          "chr8",
+          79611214,
+          79616822,
+          "+"
+        ]
+      ],
+      "required_pass": null
+    },
+    {
+      "name": "cryptic_50_15_reverse",
+      "category": "sensitivity",
+      "expected": [
+        "chr8",
+        79611214,
+        79616822,
+        "+"
+      ],
+      "observed": [
+        [
+          "chr8",
+          79611214,
+          79616822,
+          "+"
+        ]
+      ],
+      "required_pass": null
+    },
+    {
+      "name": "cryptic_50_20_forward",
+      "category": "sensitivity",
+      "expected": [
+        "chr8",
+        79611214,
+        79616822,
+        "+"
+      ],
+      "observed": [
+        [
+          "chr8",
+          79611214,
+          79616822,
+          "+"
+        ]
+      ],
+      "required_pass": null
+    },
+    {
+      "name": "cryptic_50_20_reverse",
+      "category": "sensitivity",
+      "expected": [
+        "chr8",
+        79611214,
+        79616822,
+        "+"
+      ],
+      "observed": [
+        [
+          "chr8",
+          79611214,
+          79616822,
+          "+"
+        ]
+      ],
+      "required_pass": null
+    },
+    {
+      "name": "canonical_50_25_forward",
+      "category": "required",
+      "expected": [
+        "chr8",
+        79611214,
+        79636802,
+        "+"
+      ],
+      "observed": [
+        [
+          "chr8",
+          79611214,
+          79636802,
+          "+"
+        ]
+      ],
+      "required_pass": true
+    },
+    {
+      "name": "canonical_50_25_reverse",
+      "category": "required",
+      "expected": [
+        "chr8",
+        79611214,
+        79636802,
+        "+"
+      ],
+      "observed": [
+        [
+          "chr8",
+          79611214,
+          79636802,
+          "+"
+        ]
+      ],
+      "required_pass": true
+    },
+    {
+      "name": "canonical_100_50_forward",
+      "category": "required",
+      "expected": [
+        "chr8",
+        79611214,
+        79636802,
+        "+"
+      ],
+      "observed": [
+        [
+          "chr8",
+          79611214,
+          79636802,
+          "+"
+        ]
+      ],
+      "required_pass": true
+    },
+    {
+      "name": "canonical_100_50_reverse",
+      "category": "required",
+      "expected": [
+        "chr8",
+        79611214,
+        79636802,
+        "+"
+      ],
+      "observed": [
+        [
+          "chr8",
+          79611214,
+          79636802,
+          "+"
+        ]
+      ],
+      "required_pass": true
+    },
+    {
+      "name": "canonical_50_7_forward",
+      "category": "sensitivity",
+      "expected": [
+        "chr8",
+        79611214,
+        79636802,
+        "+"
+      ],
+      "observed": [],
+      "required_pass": null
+    },
+    {
+      "name": "canonical_50_7_reverse",
+      "category": "sensitivity",
+      "expected": [
+        "chr8",
+        79611214,
+        79636802,
+        "+"
+      ],
+      "observed": [],
+      "required_pass": null
+    },
+    {
+      "name": "canonical_50_8_forward",
+      "category": "sensitivity",
+      "expected": [
+        "chr8",
+        79611214,
+        79636802,
+        "+"
+      ],
+      "observed": [],
+      "required_pass": null
+    },
+    {
+      "name": "canonical_50_8_reverse",
+      "category": "sensitivity",
+      "expected": [
+        "chr8",
+        79611214,
+        79636802,
+        "+"
+      ],
+      "observed": [],
+      "required_pass": null
+    },
+    {
+      "name": "canonical_50_15_forward",
+      "category": "sensitivity",
+      "expected": [
+        "chr8",
+        79611214,
+        79636802,
+        "+"
+      ],
+      "observed": [
+        [
+          "chr8",
+          79611214,
+          79636802,
+          "+"
+        ]
+      ],
+      "required_pass": null
+    },
+    {
+      "name": "canonical_50_15_reverse",
+      "category": "sensitivity",
+      "expected": [
+        "chr8",
+        79611214,
+        79636802,
+        "+"
+      ],
+      "observed": [
+        [
+          "chr8",
+          79611214,
+          79636802,
+          "+"
+        ]
+      ],
+      "required_pass": null
+    },
+    {
+      "name": "canonical_50_20_forward",
+      "category": "sensitivity",
+      "expected": [
+        "chr8",
+        79611214,
+        79636802,
+        "+"
+      ],
+      "observed": [
+        [
+          "chr8",
+          79611214,
+          79636802,
+          "+"
+        ]
+      ],
+      "required_pass": null
+    },
+    {
+      "name": "canonical_50_20_reverse",
+      "category": "sensitivity",
+      "expected": [
+        "chr8",
+        79611214,
+        79636802,
+        "+"
+      ],
+      "observed": [
+        [
+          "chr8",
+          79611214,
+          79636802,
+          "+"
+        ]
+      ],
+      "required_pass": null
+    },
+    {
+      "name": "continuous_exon_50",
+      "category": "negative",
+      "expected": null,
+      "observed": [],
+      "required_pass": true
+    },
+    {
+      "name": "ambiguous_N50",
+      "category": "negative",
+      "expected": null,
+      "observed": [],
+      "required_pass": true
+    }
+  ],
+  "mini_records": [
+    {
+      "name": "mini_multisplice",
+      "reference": "copy1",
+      "cigar": "25M100N25M",
+      "flag": 0,
+      "mapq": 1,
+      "NH": 2,
+      "XS": "+"
+    },
+    {
+      "name": "mini_multisplice",
+      "reference": "copy2",
+      "cigar": "25M100N25M",
+      "flag": 256,
+      "mapq": 1,
+      "NH": 2,
+      "XS": "+"
+    },
+    {
+      "name": "mini_unique_splice",
+      "reference": "unique",
+      "cigar": "25M100N25M",
+      "flag": 0,
+      "mapq": 60,
+      "NH": 1,
+      "XS": "+"
+    }
+  ],
+  "genome_records": [
+    {
+      "name": "cryptic_50_25_forward",
+      "reference": "chr8",
+      "cigar": "25M5607N25M",
+      "flag": 0,
+      "mapq": 60,
+      "NH": 1,
+      "XS": "+"
+    },
+    {
+      "name": "cryptic_50_25_reverse",
+      "reference": "chr8",
+      "cigar": "25M5607N25M",
+      "flag": 16,
+      "mapq": 60,
+      "NH": 1,
+      "XS": "+"
+    },
+    {
+      "name": "cryptic_100_50_forward",
+      "reference": "chr8",
+      "cigar": "50M5607N50M",
+      "flag": 0,
+      "mapq": 60,
+      "NH": 1,
+      "XS": "+"
+    },
+    {
+      "name": "cryptic_100_50_reverse",
+      "reference": "chr8",
+      "cigar": "50M5607N50M",
+      "flag": 16,
+      "mapq": 60,
+      "NH": 1,
+      "XS": "+"
+    },
+    {
+      "name": "cryptic_50_7_forward",
+      "reference": "chr8",
+      "cigar": "7M2884N43M",
+      "flag": 0,
+      "mapq": 60,
+      "NH": 1,
+      "XS": "+"
+    },
+    {
+      "name": "cryptic_50_7_reverse",
+      "reference": "chr8",
+      "cigar": "7M2884N43M",
+      "flag": 16,
+      "mapq": 60,
+      "NH": 1,
+      "XS": "+"
+    },
+    {
+      "name": "cryptic_50_8_forward",
+      "reference": "chr8",
+      "cigar": "8M5607N42M",
+      "flag": 0,
+      "mapq": 60,
+      "NH": 1,
+      "XS": "+"
+    },
+    {
+      "name": "cryptic_50_8_reverse",
+      "reference": "chr8",
+      "cigar": "8M5607N42M",
+      "flag": 16,
+      "mapq": 60,
+      "NH": 1,
+      "XS": "+"
+    },
+    {
+      "name": "cryptic_50_15_forward",
+      "reference": "chr8",
+      "cigar": "15M5607N35M",
+      "flag": 0,
+      "mapq": 60,
+      "NH": 1,
+      "XS": "+"
+    },
+    {
+      "name": "cryptic_50_15_reverse",
+      "reference": "chr8",
+      "cigar": "15M5607N35M",
+      "flag": 16,
+      "mapq": 60,
+      "NH": 1,
+      "XS": "+"
+    },
+    {
+      "name": "cryptic_50_20_forward",
+      "reference": "chr8",
+      "cigar": "20M5607N30M",
+      "flag": 0,
+      "mapq": 60,
+      "NH": 1,
+      "XS": "+"
+    },
+    {
+      "name": "cryptic_50_20_reverse",
+      "reference": "chr8",
+      "cigar": "20M5607N30M",
+      "flag": 16,
+      "mapq": 60,
+      "NH": 1,
+      "XS": "+"
+    },
+    {
+      "name": "canonical_50_25_forward",
+      "reference": "chr8",
+      "cigar": "25M25587N25M",
+      "flag": 0,
+      "mapq": 60,
+      "NH": 1,
+      "XS": "+"
+    },
+    {
+      "name": "canonical_50_25_reverse",
+      "reference": "chr8",
+      "cigar": "25M25587N25M",
+      "flag": 16,
+      "mapq": 60,
+      "NH": 1,
+      "XS": "+"
+    },
+    {
+      "name": "canonical_100_50_forward",
+      "reference": "chr8",
+      "cigar": "50M25587N50M",
+      "flag": 0,
+      "mapq": 60,
+      "NH": 1,
+      "XS": "+"
+    },
+    {
+      "name": "canonical_100_50_reverse",
+      "reference": "chr8",
+      "cigar": "50M25587N50M",
+      "flag": 16,
+      "mapq": 60,
+      "NH": 1,
+      "XS": "+"
+    },
+    {
+      "name": "canonical_50_7_forward",
+      "reference": null,
+      "cigar": null,
+      "flag": 4,
+      "mapq": 0,
+      "NH": null,
+      "XS": null
+    },
+    {
+      "name": "canonical_50_7_reverse",
+      "reference": null,
+      "cigar": null,
+      "flag": 4,
+      "mapq": 0,
+      "NH": null,
+      "XS": null
+    },
+    {
+      "name": "canonical_50_8_forward",
+      "reference": null,
+      "cigar": null,
+      "flag": 4,
+      "mapq": 0,
+      "NH": null,
+      "XS": null
+    },
+    {
+      "name": "canonical_50_8_reverse",
+      "reference": null,
+      "cigar": null,
+      "flag": 4,
+      "mapq": 0,
+      "NH": null,
+      "XS": null
+    },
+    {
+      "name": "canonical_50_15_forward",
+      "reference": "chr8",
+      "cigar": "15M25587N35M",
+      "flag": 0,
+      "mapq": 60,
+      "NH": 1,
+      "XS": "+"
+    },
+    {
+      "name": "canonical_50_15_reverse",
+      "reference": "chr8",
+      "cigar": "15M25587N35M",
+      "flag": 16,
+      "mapq": 60,
+      "NH": 1,
+      "XS": "+"
+    },
+    {
+      "name": "canonical_50_20_forward",
+      "reference": "chr8",
+      "cigar": "20M25587N30M",
+      "flag": 0,
+      "mapq": 60,
+      "NH": 1,
+      "XS": "+"
+    },
+    {
+      "name": "canonical_50_20_reverse",
+      "reference": "chr8",
+      "cigar": "20M25587N30M",
+      "flag": 16,
+      "mapq": 60,
+      "NH": 1,
+      "XS": "+"
+    },
+    {
+      "name": "continuous_exon_50",
+      "reference": "chr8",
+      "cigar": "50M",
+      "flag": 0,
+      "mapq": 60,
+      "NH": 1,
+      "XS": null
+    },
+    {
+      "name": "ambiguous_N50",
+      "reference": null,
+      "cigar": null,
+      "flag": 4,
+      "mapq": 0,
+      "NH": null,
+      "XS": null
+    }
+  ],
+  "multimapping_control_pass": true,
+  "mini_unique_control_pass": true,
+  "unbiased_ratio_validated": false,
+  "pilot_requires_anchor_policy": true,
+  "scope": "Technical synthetic controls only; short-anchor recovery must be reviewed separately; no biological efficacy or empirical read-quality sensitivity"
+}

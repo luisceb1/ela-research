@@ -1,0 +1,15 @@
+{
+  "filename": "pysam-0.23.3-cp312-cp312-manylinux_2_28_x86_64.whl",
+  "sha256": "4099393fc5097b5081c7efaf46b0109e4f0a8ed18f86d497219a8bf739c73992",
+  "matched_pypi": true,
+  "version": "0.23.3",
+  "command": [
+    "data/tools/synthetic-gate-venv/bin/python",
+    "-m",
+    "pip",
+    "install",
+    "--no-index",
+    "--no-deps",
+    "data/cache/pysam-20261031/pysam-0.23.3-cp312-cp312-manylinux_2_28_x86_64.whl"
+  ]
+}

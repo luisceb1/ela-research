@@ -1,0 +1,78 @@
+{
+  "records": [
+    {
+      "name": "mini_build",
+      "command": [
+        "prlimit",
+        "--as=6442450944",
+        "--",
+        "timeout",
+        "600",
+        "data/cache/hisat2-source-20261031/hisat2-0d244324f98de541bce04d45c75e83bc3522f7f4/hisat2-build",
+        "reports/hisat2-synthetic-gate-20261031/mini_reference.fa",
+        "reports/hisat2-synthetic-gate-20261031/mini_index"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.09959959000025265,
+      "maxrss_children_so_far_kib": 96820
+    },
+    {
+      "name": "genome",
+      "command": [
+        "prlimit",
+        "--as=6442450944",
+        "--",
+        "timeout",
+        "600",
+        "data/cache/hisat2-source-20261031/hisat2-0d244324f98de541bce04d45c75e83bc3522f7f4/hisat2",
+        "-x",
+        "data/cache/hisat2-index-20261031/extracted/hg38/genome",
+        "-U",
+        "reports/hisat2-synthetic-gate-20261031/synthetic_reads.fastq",
+        "-S",
+        "reports/hisat2-synthetic-gate-20261031/genome.sam",
+        "-p",
+        "2",
+        "-k",
+        "5",
+        "--seed",
+        "0",
+        "--no-temp-splicesite",
+        "--reorder"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 11.491468931999862,
+      "maxrss_children_so_far_kib": 4633708
+    },
+    {
+      "name": "mini",
+      "command": [
+        "prlimit",
+        "--as=6442450944",
+        "--",
+        "timeout",
+        "600",
+        "data/cache/hisat2-source-20261031/hisat2-0d244324f98de541bce04d45c75e83bc3522f7f4/hisat2",
+        "-x",
+        "reports/hisat2-synthetic-gate-20261031/mini_index",
+        "-U",
+        "reports/hisat2-synthetic-gate-20261031/mini_reads.fastq",
+        "-S",
+        "reports/hisat2-synthetic-gate-20261031/mini.sam",
+        "-p",
+        "2",
+        "-k",
+        "5",
+        "--seed",
+        "0",
+        "--no-temp-splicesite",
+        "--reorder"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.07403779500009477,
+      "maxrss_children_so_far_kib": 4633708
+    }
+  ],
+  "real_fastq_reads": 0,
+  "memory_scope": "maximum child RSS observed across all commands so far, not separate per-command measurement"
+}

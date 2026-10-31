@@ -1,0 +1,373 @@
+{
+  "synthetic": true,
+  "flank_source": "indexed reference, not biological reads",
+  "intervals_0based": {
+    "donor": [
+      79611154,
+      79611214
+    ],
+    "cryptic": [
+      79616821,
+      79616881
+    ],
+    "canonical": [
+      79636801,
+      79636861
+    ]
+  },
+  "flanks": {
+    "donor": "CCTTTGCCTTCGCCACTGCTCAGCGTCTGCACATCCCTACAATGGCTAAAACAGCAATGG",
+    "cryptic": "GACTCGGCAGAAGACCTTCGAGAGAAAGGTAGAAAATAAGAATTTGGCTCTCTGTGTGAG",
+    "canonical": "CCTACAAGGAAAAAATGAAGGAGCTGTCCATGCTGTCACTGATCTGCTCTTGCTTTTACC"
+  },
+  "reads": [
+    {
+      "name": "cryptic_50_25_forward",
+      "category": "required",
+      "event": "cryptic",
+      "left_anchor": 25,
+      "right_anchor": 25,
+      "sequence": "CCTACAATGGCTAAAACAGCAATGGGACTCGGCAGAAGACCTTCGAGAGA",
+      "expected_junction": [
+        "chr8",
+        79611214,
+        79616822,
+        "+"
+      ]
+    },
+    {
+      "name": "cryptic_50_25_reverse",
+      "category": "required",
+      "event": "cryptic",
+      "left_anchor": 25,
+      "right_anchor": 25,
+      "sequence": "TCTCTCGAAGGTCTTCTGCCGAGTCCCATTGCTGTTTTAGCCATTGTAGG",
+      "expected_junction": [
+        "chr8",
+        79611214,
+        79616822,
+        "+"
+      ]
+    },
+    {
+      "name": "cryptic_100_50_forward",
+      "category": "required",
+      "event": "cryptic",
+      "left_anchor": 50,
+      "right_anchor": 50,
+      "sequence": "CGCCACTGCTCAGCGTCTGCACATCCCTACAATGGCTAAAACAGCAATGGGACTCGGCAGAAGACCTTCGAGAGAAAGGTAGAAAATAAGAATTTGGCTC",
+      "expected_junction": [
+        "chr8",
+        79611214,
+        79616822,
+        "+"
+      ]
+    },
+    {
+      "name": "cryptic_100_50_reverse",
+      "category": "required",
+      "event": "cryptic",
+      "left_anchor": 50,
+      "right_anchor": 50,
+      "sequence": "GAGCCAAATTCTTATTTTCTACCTTTCTCTCGAAGGTCTTCTGCCGAGTCCCATTGCTGTTTTAGCCATTGTAGGGATGTGCAGACGCTGAGCAGTGGCG",
+      "expected_junction": [
+        "chr8",
+        79611214,
+        79616822,
+        "+"
+      ]
+    },
+    {
+      "name": "cryptic_50_7_forward",
+      "category": "sensitivity",
+      "event": "cryptic",
+      "left_anchor": 7,
+      "right_anchor": 43,
+      "sequence": "GCAATGGGACTCGGCAGAAGACCTTCGAGAGAAAGGTAGAAAATAAGAAT",
+      "expected_junction": [
+        "chr8",
+        79611214,
+        79616822,
+        "+"
+      ]
+    },
+    {
+      "name": "cryptic_50_7_reverse",
+      "category": "sensitivity",
+      "event": "cryptic",
+      "left_anchor": 7,
+      "right_anchor": 43,
+      "sequence": "ATTCTTATTTTCTACCTTTCTCTCGAAGGTCTTCTGCCGAGTCCCATTGC",
+      "expected_junction": [
+        "chr8",
+        79611214,
+        79616822,
+        "+"
+      ]
+    },
+    {
+      "name": "cryptic_50_8_forward",
+      "category": "sensitivity",
+      "event": "cryptic",
+      "left_anchor": 8,
+      "right_anchor": 42,
+      "sequence": "AGCAATGGGACTCGGCAGAAGACCTTCGAGAGAAAGGTAGAAAATAAGAA",
+      "expected_junction": [
+        "chr8",
+        79611214,
+        79616822,
+        "+"
+      ]
+    },
+    {
+      "name": "cryptic_50_8_reverse",
+      "category": "sensitivity",
+      "event": "cryptic",
+      "left_anchor": 8,
+      "right_anchor": 42,
+      "sequence": "TTCTTATTTTCTACCTTTCTCTCGAAGGTCTTCTGCCGAGTCCCATTGCT",
+      "expected_junction": [
+        "chr8",
+        79611214,
+        79616822,
+        "+"
+      ]
+    },
+    {
+      "name": "cryptic_50_15_forward",
+      "category": "sensitivity",
+      "event": "cryptic",
+      "left_anchor": 15,
+      "right_anchor": 35,
+      "sequence": "CTAAAACAGCAATGGGACTCGGCAGAAGACCTTCGAGAGAAAGGTAGAAA",
+      "expected_junction": [
+        "chr8",
+        79611214,
+        79616822,
+        "+"
+      ]
+    },
+    {
+      "name": "cryptic_50_15_reverse",
+      "category": "sensitivity",
+      "event": "cryptic",
+      "left_anchor": 15,
+      "right_anchor": 35,
+      "sequence": "TTTCTACCTTTCTCTCGAAGGTCTTCTGCCGAGTCCCATTGCTGTTTTAG",
+      "expected_junction": [
+        "chr8",
+        79611214,
+        79616822,
+        "+"
+      ]
+    },
+    {
+      "name": "cryptic_50_20_forward",
+      "category": "sensitivity",
+      "event": "cryptic",
+      "left_anchor": 20,
+      "right_anchor": 30,
+      "sequence": "AATGGCTAAAACAGCAATGGGACTCGGCAGAAGACCTTCGAGAGAAAGGT",
+      "expected_junction": [
+        "chr8",
+        79611214,
+        79616822,
+        "+"
+      ]
+    },
+    {
+      "name": "cryptic_50_20_reverse",
+      "category": "sensitivity",
+      "event": "cryptic",
+      "left_anchor": 20,
+      "right_anchor": 30,
+      "sequence": "ACCTTTCTCTCGAAGGTCTTCTGCCGAGTCCCATTGCTGTTTTAGCCATT",
+      "expected_junction": [
+        "chr8",
+        79611214,
+        79616822,
+        "+"
+      ]
+    },
+    {
+      "name": "canonical_50_25_forward",
+      "category": "required",
+      "event": "canonical",
+      "left_anchor": 25,
+      "right_anchor": 25,
+      "sequence": "CCTACAATGGCTAAAACAGCAATGGCCTACAAGGAAAAAATGAAGGAGCT",
+      "expected_junction": [
+        "chr8",
+        79611214,
+        79636802,
+        "+"
+      ]
+    },
+    {
+      "name": "canonical_50_25_reverse",
+      "category": "required",
+      "event": "canonical",
+      "left_anchor": 25,
+      "right_anchor": 25,
+      "sequence": "AGCTCCTTCATTTTTTCCTTGTAGGCCATTGCTGTTTTAGCCATTGTAGG",
+      "expected_junction": [
+        "chr8",
+        79611214,
+        79636802,
+        "+"
+      ]
+    },
+    {
+      "name": "canonical_100_50_forward",
+      "category": "required",
+      "event": "canonical",
+      "left_anchor": 50,
+      "right_anchor": 50,
+      "sequence": "CGCCACTGCTCAGCGTCTGCACATCCCTACAATGGCTAAAACAGCAATGGCCTACAAGGAAAAAATGAAGGAGCTGTCCATGCTGTCACTGATCTGCTCT",
+      "expected_junction": [
+        "chr8",
+        79611214,
+        79636802,
+        "+"
+      ]
+    },
+    {
+      "name": "canonical_100_50_reverse",
+      "category": "required",
+      "event": "canonical",
+      "left_anchor": 50,
+      "right_anchor": 50,
+      "sequence": "AGAGCAGATCAGTGACAGCATGGACAGCTCCTTCATTTTTTCCTTGTAGGCCATTGCTGTTTTAGCCATTGTAGGGATGTGCAGACGCTGAGCAGTGGCG",
+      "expected_junction": [
+        "chr8",
+        79611214,
+        79636802,
+        "+"
+      ]
+    },
+    {
+      "name": "canonical_50_7_forward",
+      "category": "sensitivity",
+      "event": "canonical",
+      "left_anchor": 7,
+      "right_anchor": 43,
+      "sequence": "GCAATGGCCTACAAGGAAAAAATGAAGGAGCTGTCCATGCTGTCACTGAT",
+      "expected_junction": [
+        "chr8",
+        79611214,
+        79636802,
+        "+"
+      ]
+    },
+    {
+      "name": "canonical_50_7_reverse",
+      "category": "sensitivity",
+      "event": "canonical",
+      "left_anchor": 7,
+      "right_anchor": 43,
+      "sequence": "ATCAGTGACAGCATGGACAGCTCCTTCATTTTTTCCTTGTAGGCCATTGC",
+      "expected_junction": [
+        "chr8",
+        79611214,
+        79636802,
+        "+"
+      ]
+    },
+    {
+      "name": "canonical_50_8_forward",
+      "category": "sensitivity",
+      "event": "canonical",
+      "left_anchor": 8,
+      "right_anchor": 42,
+      "sequence": "AGCAATGGCCTACAAGGAAAAAATGAAGGAGCTGTCCATGCTGTCACTGA",
+      "expected_junction": [
+        "chr8",
+        79611214,
+        79636802,
+        "+"
+      ]
+    },
+    {
+      "name": "canonical_50_8_reverse",
+      "category": "sensitivity",
+      "event": "canonical",
+      "left_anchor": 8,
+      "right_anchor": 42,
+      "sequence": "TCAGTGACAGCATGGACAGCTCCTTCATTTTTTCCTTGTAGGCCATTGCT",
+      "expected_junction": [
+        "chr8",
+        79611214,
+        79636802,
+        "+"
+      ]
+    },
+    {
+      "name": "canonical_50_15_forward",
+      "category": "sensitivity",
+      "event": "canonical",
+      "left_anchor": 15,
+      "right_anchor": 35,
+      "sequence": "CTAAAACAGCAATGGCCTACAAGGAAAAAATGAAGGAGCTGTCCATGCTG",
+      "expected_junction": [
+        "chr8",
+        79611214,
+        79636802,
+        "+"
+      ]
+    },
+    {
+      "name": "canonical_50_15_reverse",
+      "category": "sensitivity",
+      "event": "canonical",
+      "left_anchor": 15,
+      "right_anchor": 35,
+      "sequence": "CAGCATGGACAGCTCCTTCATTTTTTCCTTGTAGGCCATTGCTGTTTTAG",
+      "expected_junction": [
+        "chr8",
+        79611214,
+        79636802,
+        "+"
+      ]
+    },
+    {
+      "name": "canonical_50_20_forward",
+      "category": "sensitivity",
+      "event": "canonical",
+      "left_anchor": 20,
+      "right_anchor": 30,
+      "sequence": "AATGGCTAAAACAGCAATGGCCTACAAGGAAAAAATGAAGGAGCTGTCCA",
+      "expected_junction": [
+        "chr8",
+        79611214,
+        79636802,
+        "+"
+      ]
+    },
+    {
+      "name": "canonical_50_20_reverse",
+      "category": "sensitivity",
+      "event": "canonical",
+      "left_anchor": 20,
+      "right_anchor": 30,
+      "sequence": "TGGACAGCTCCTTCATTTTTTCCTTGTAGGCCATTGCTGTTTTAGCCATT",
+      "expected_junction": [
+        "chr8",
+        79611214,
+        79636802,
+        "+"
+      ]
+    },
+    {
+      "name": "continuous_exon_50",
+      "category": "negative",
+      "sequence": "CGCCACTGCTCAGCGTCTGCACATCCCTACAATGGCTAAAACAGCAATGG",
+      "expected_junction": null
+    },
+    {
+      "name": "ambiguous_N50",
+      "category": "negative",
+      "sequence": "NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN",
+      "expected_junction": null
+    }
+  ]
+}

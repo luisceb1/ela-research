@@ -1,0 +1,40 @@
+{
+  "status": "prospective next-phase contract, not executed",
+  "current_controls_filter_unchanged": {
+    "min_anchor": 8,
+    "min_mapq": 20,
+    "NH": 1,
+    "exclude_mapq255": true
+  },
+  "next_pilot": {
+    "run": "SRR8144907",
+    "max_reads": 1000000,
+    "primary_min_anchor": 15,
+    "sensitivity_min_anchor": 8,
+    "min_mapq": 20,
+    "NH": 1,
+    "required_XS": "+",
+    "threads": 2,
+    "seed": 0,
+    "k": 5,
+    "no_temp_splicesite": true,
+    "reorder": true,
+    "rna_strandness": "not imposed",
+    "known_splicesites": "none",
+    "dta": false,
+    "counts_scope": "technical QC only; no effect/PSI or between-condition contrast"
+  },
+  "reason_for_prospective_primary_anchor15": "Predefined synthetic challenges recovered both events at15/20/25/50 but asymmetric at8; current control outcomes remain reported under8, no retrospective relabelling",
+  "limits": [
+    "Does not establish equal sensitivity with sequencing errors, quality variation or all anchor distributions",
+    "Do not infer biology from first control subset",
+    "Review insufficient coverage as non-evaluable, not biological absence"
+  ],
+  "before_run": [
+    "Full archive first control MD5 must match published ENA manifest; add own SHA256",
+    "Check current disk/RAM, enforce previous resource budget and30min limit",
+    "Use verified index and fixed binary hashes; freeze command",
+    "Process first1M reads in stream without complete SAM/BAM on disk",
+    "Report both anchor policies without choosing according to counts"
+  ]
+}

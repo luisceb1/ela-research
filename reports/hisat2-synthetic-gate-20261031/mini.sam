@@ -1,0 +1,8 @@
+@HD	VN:1.0	SO:unsorted
+@SQ	SN:copy1	LN:500
+@SQ	SN:copy2	LN:500
+@SQ	SN:unique	LN:500
+@PG	ID:hisat2	PN:hisat2	VN:2.2.3	CL:"/workspace/scratch/a30d50c208ec/ela-research/data/cache/hisat2-source-20261031/hisat2-0d244324f98de541bce04d45c75e83bc3522f7f4/hisat2-align-s --wrapper basic-0 -x reports/hisat2-synthetic-gate-20261031/mini_index -S reports/hisat2-synthetic-gate-20261031/mini.sam -p 2 -k 5 --seed 0 --no-temp-splicesite --reorder --read-lengths 50 -U reports/hisat2-synthetic-gate-20261031/mini_reads.fastq"
+mini_multisplice	0	copy1	176	1	25M100N25M	*	0	0	TAACCGCACTTGGGGGGGAGCTAGTTTAACCCGTCTAAGCATGGACCAGC	IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII	AS:i:0	ZS:i:0	XN:i:0	XM:i:0	XO:i:0	XG:i:0	NM:i:0	MD:Z:50	YT:Z:UU	XS:A:+	NH:i:2
+mini_multisplice	256	copy2	176	1	25M100N25M	*	0	0	TAACCGCACTTGGGGGGGAGCTAGTTTAACCCGTCTAAGCATGGACCAGC	IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII	AS:i:0	ZS:i:0	XN:i:0	XM:i:0	XO:i:0	XG:i:0	NM:i:0	MD:Z:50	YT:Z:UU	XS:A:+	NH:i:2
+mini_unique_splice	0	unique	176	60	25M100N25M	*	0	0	CTATCAACTTTGAAAGGTCATACTCATGCTCAACTGTTTAGTAATAACCG	IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII	AS:i:0	XN:i:0	XM:i:0	XO:i:0	XG:i:0	NM:i:0	MD:Z:50	YT:Z:UU	XS:A:+	NH:i:1

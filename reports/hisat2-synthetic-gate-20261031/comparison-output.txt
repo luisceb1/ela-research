@@ -1,0 +1,436 @@
+{
+  "gate_pass": true,
+  "outcomes": [
+    {
+      "name": "cryptic_50_25_forward",
+      "category": "required",
+      "expected": [
+        "chr8",
+        79611214,
+        79616822,
+        "+"
+      ],
+      "observed": [
+        [
+          "chr8",
+          79611214,
+          79616822,
+          "+"
+        ]
+      ],
+      "required_pass": true
+    },
+    {
+      "name": "cryptic_50_25_reverse",
+      "category": "required",
+      "expected": [
+        "chr8",
+        79611214,
+        79616822,
+        "+"
+      ],
+      "observed": [
+        [
+          "chr8",
+          79611214,
+          79616822,
+          "+"
+        ]
+      ],
+      "required_pass": true
+    },
+    {
+      "name": "cryptic_100_50_forward",
+      "category": "required",
+      "expected": [
+        "chr8",
+        79611214,
+        79616822,
+        "+"
+      ],
+      "observed": [
+        [
+          "chr8",
+          79611214,
+          79616822,
+          "+"
+        ]
+      ],
+      "required_pass": true
+    },
+    {
+      "name": "cryptic_100_50_reverse",
+      "category": "required",
+      "expected": [
+        "chr8",
+        79611214,
+        79616822,
+        "+"
+      ],
+      "observed": [
+        [
+          "chr8",
+          79611214,
+          79616822,
+          "+"
+        ]
+      ],
+      "required_pass": true
+    },
+    {
+      "name": "cryptic_50_7_forward",
+      "category": "sensitivity",
+      "expected": [
+        "chr8",
+        79611214,
+        79616822,
+        "+"
+      ],
+      "observed": [],
+      "required_pass": null
+    },
+    {
+      "name": "cryptic_50_7_reverse",
+      "category": "sensitivity",
+      "expected": [
+        "chr8",
+        79611214,
+        79616822,
+        "+"
+      ],
+      "observed": [],
+      "required_pass": null
+    },
+    {
+      "name": "cryptic_50_8_forward",
+      "category": "sensitivity",
+      "expected": [
+        "chr8",
+        79611214,
+        79616822,
+        "+"
+      ],
+      "observed": [
+        [
+          "chr8",
+          79611214,
+          79616822,
+          "+"
+        ]
+      ],
+      "required_pass": null
+    },
+    {
+      "name": "cryptic_50_8_reverse",
+      "category": "sensitivity",
+      "expected": [
+        "chr8",
+        79611214,
+        79616822,
+        "+"
+      ],
+      "observed": [
+        [
+          "chr8",
+          79611214,
+          79616822,
+          "+"
+        ]
+      ],
+      "required_pass": null
+    },
+    {
+      "name": "cryptic_50_15_forward",
+      "category": "sensitivity",
+      "expected": [
+        "chr8",
+        79611214,
+        79616822,
+        "+"
+      ],
+      "observed": [
+        [
+          "chr8",
+          79611214,
+          79616822,
+          "+"
+        ]
+      ],
+      "required_pass": null
+    },
+    {
+      "name": "cryptic_50_15_reverse",
+      "category": "sensitivity",
+      "expected": [
+        "chr8",
+        79611214,
+        79616822,
+        "+"
+      ],
+      "observed": [
+        [
+          "chr8",
+          79611214,
+          79616822,
+          "+"
+        ]
+      ],
+      "required_pass": null
+    },
+    {
+      "name": "cryptic_50_20_forward",
+      "category": "sensitivity",
+      "expected": [
+        "chr8",
+        79611214,
+        79616822,
+        "+"
+      ],
+      "observed": [
+        [
+          "chr8",
+          79611214,
+          79616822,
+          "+"
+        ]
+      ],
+      "required_pass": null
+    },
+    {
+      "name": "cryptic_50_20_reverse",
+      "category": "sensitivity",
+      "expected": [
+        "chr8",
+        79611214,
+        79616822,
+        "+"
+      ],
+      "observed": [
+        [
+          "chr8",
+          79611214,
+          79616822,
+          "+"
+        ]
+      ],
+      "required_pass": null
+    },
+    {
+      "name": "canonical_50_25_forward",
+      "category": "required",
+      "expected": [
+        "chr8",
+        79611214,
+        79636802,
+        "+"
+      ],
+      "observed": [
+        [
+          "chr8",
+          79611214,
+          79636802,
+          "+"
+        ]
+      ],
+      "required_pass": true
+    },
+    {
+      "name": "canonical_50_25_reverse",
+      "category": "required",
+      "expected": [
+        "chr8",
+        79611214,
+        79636802,
+        "+"
+      ],
+      "observed": [
+        [
+          "chr8",
+          79611214,
+          79636802,
+          "+"
+        ]
+      ],
+      "required_pass": true
+    },
+    {
+      "name": "canonical_100_50_forward",
+      "category": "required",
+      "expected": [
+        "chr8",
+        79611214,
+        79636802,
+        "+"
+      ],
+      "observed": [
+        [
+          "chr8",
+          79611214,
+          79636802,
+          "+"
+        ]
+      ],
+      "required_pass": true
+    },
+    {
+      "name": "canonical_100_50_reverse",
+      "category": "required",
+      "expected": [
+        "chr8",
+        79611214,
+        79636802,
+        "+"
+      ],
+      "observed": [
+        [
+          "chr8",
+          79611214,
+          79636802,
+          "+"
+        ]
+      ],
+      "required_pass": true
+    },
+    {
+      "name": "canonical_50_7_forward",
+      "category": "sensitivity",
+      "expected": [
+        "chr8",
+        79611214,
+        79636802,
+        "+"
+      ],
+      "observed": [],
+      "required_pass": null
+    },
+    {
+      "name": "canonical_50_7_reverse",
+      "category": "sensitivity",
+      "expected": [
+        "chr8",
+        79611214,
+        79636802,
+        "+"
+      ],
+      "observed": [],
+      "required_pass": null
+    },
+    {
+      "name": "canonical_50_8_forward",
+      "category": "sensitivity",
+      "expected": [
+        "chr8",
+        79611214,
+        79636802,
+        "+"
+      ],
+      "observed": [],
+      "required_pass": null
+    },
+    {
+      "name": "canonical_50_8_reverse",
+      "category": "sensitivity",
+      "expected": [
+        "chr8",
+        79611214,
+        79636802,
+        "+"
+      ],
+      "observed": [],
+      "required_pass": null
+    },
+    {
+      "name": "canonical_50_15_forward",
+      "category": "sensitivity",
+      "expected": [
+        "chr8",
+        79611214,
+        79636802,
+        "+"
+      ],
+      "observed": [
+        [
+          "chr8",
+          79611214,
+          79636802,
+          "+"
+        ]
+      ],
+      "required_pass": null
+    },
+    {
+      "name": "canonical_50_15_reverse",
+      "category": "sensitivity",
+      "expected": [
+        "chr8",
+        79611214,
+        79636802,
+        "+"
+      ],
+      "observed": [
+        [
+          "chr8",
+          79611214,
+          79636802,
+          "+"
+        ]
+      ],
+      "required_pass": null
+    },
+    {
+      "name": "canonical_50_20_forward",
+      "category": "sensitivity",
+      "expected": [
+        "chr8",
+        79611214,
+        79636802,
+        "+"
+      ],
+      "observed": [
+        [
+          "chr8",
+          79611214,
+          79636802,
+          "+"
+        ]
+      ],
+      "required_pass": null
+    },
+    {
+      "name": "canonical_50_20_reverse",
+      "category": "sensitivity",
+      "expected": [
+        "chr8",
+        79611214,
+        79636802,
+        "+"
+      ],
+      "observed": [
+        [
+          "chr8",
+          79611214,
+          79636802,
+          "+"
+        ]
+      ],
+      "required_pass": null
+    },
+    {
+      "name": "continuous_exon_50",
+      "category": "negative",
+      "expected": null,
+      "observed": [],
+      "required_pass": true
+    },
+    {
+      "name": "ambiguous_N50",
+      "category": "negative",
+      "expected": null,
+      "observed": [],
+      "required_pass": true
+    }
+  ],
+  "multi_pass": true,
+  "unique_pass": true,
+  "parser_concordance": true
+}

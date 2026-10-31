@@ -1,0 +1,13 @@
+{
+  "first": {
+    "genome.sam": "0c1d4cf53d5ced6628a48646fed4dcd23f793a6838742a5b85906cdfee10d9b2",
+    "mini.sam": "6516f47445b93c81edd21958d78b1db5dec4cf7abc55bb06e1c8de18b688cdbb",
+    "results.json": "c253b7c2167127cc1c1823f7454e38d95d93eca04cfed6633f2b013ad550ad82"
+  },
+  "second": {
+    "genome.sam": "0c1d4cf53d5ced6628a48646fed4dcd23f793a6838742a5b85906cdfee10d9b2",
+    "mini.sam": "6516f47445b93c81edd21958d78b1db5dec4cf7abc55bb06e1c8de18b688cdbb",
+    "results.json": "c253b7c2167127cc1c1823f7454e38d95d93eca04cfed6633f2b013ad550ad82"
+  },
+  "sam_and_results_byte_identical": true
+}

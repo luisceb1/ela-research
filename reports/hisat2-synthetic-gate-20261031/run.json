@@ -1,0 +1,19 @@
+{
+  "python": "3.12.14",
+  "base_pr33": "f0b8fbc59063e8fb96050519fc88854c29157c6d",
+  "real_fastq_reads_processed": 0,
+  "synthetic_genome_reads": 26,
+  "synthetic_mini_reads": 2,
+  "pysam": "0.23.3",
+  "htslib_samtools": "1.21",
+  "primary_controls_pass": true,
+  "unbiased_ratio_validated": false,
+  "disk_free_bytes": 50957385728,
+  "seed_mini_reference": 20261031,
+  "seed_hisat2": 0,
+  "software_code_sha256": {
+    "scripts/hisat2_synthetic_gate.py": "637a608d9e001922547127a1dd667cab30ac8b1a44056e7c3a0d338fe2f49fbe",
+    "scripts/run_hisat2_synthetic_controls.py": "b530f486c6e969d9fe5dcebb3f193f8c03c3f45a66a4cdf78fe94f08872aed35",
+    "tests/test_hisat2_synthetic_gate.py": "40e8af91486066729db54f453da2c463c54f2940081b3278505f76a7ebd0024a"
+  }
+}
