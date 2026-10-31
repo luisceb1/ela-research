@@ -1,0 +1,14 @@
+[
+  "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+  "scripts/fetch_gse122069_ranges.py",
+  "--manifest",
+  "reports/gse122069-resource-plan/input_manifest.json",
+  "--destination",
+  "/tmp/ela-gse122069-control2-20261101/SRR8144908.fastq.gz",
+  "--report",
+  "reports/stmn2-control2-target-qc-20261101/restore-fastq-download.json",
+  "--run-accession",
+  "SRR8144908",
+  "--etag",
+  "\"61c999c4-57e8d19ddad40\""
+]

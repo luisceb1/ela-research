@@ -1,5 +1,9 @@
 # Estado vigente — 01/11/2026
 
+## Fase actual: QC técnico seleccionado — 01/11/2026
+
+PR33 sigue abierto. Plan previo `research/plans/2026-11-01-stmn2-selected-replay.md`: cinco bloques de SRR8144908, 4.292.655 lecturas ya incluidas en el control completo, expectativa 13/3 a15 y15/4 a8. Código preparado, 392 tests locales y preflight real PySAM0.23.3/HTSlib1.21 concordantes. Restauración del mismo índice verificada; FASTQ todavía en descarga. No replay real iniciado en este checkpoint. No nueva biblioteca, inferencia o función. Resultados históricos completos intactos.
+
 ## Alcance
 
 Esta entrega reconcilia los contenidos de PR #28 y #29. El PR #28 fue incorporado a main mediante fc9aa3835373146988fee5e2274160596457a92f; la reconciliación de #29 se registra en el acta de integración y su estado final se verifica en GitHub por SHA y CI. La versión conjunta contiene ambas líneas de trabajo, sin añadir por ello evidencia científica independiente.

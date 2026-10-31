@@ -1,0 +1,20 @@
+{
+  "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR814/008/SRR8144908/SRR8144908.fastq.gz",
+  "headers": {
+    "date": "Sat, 31 Oct 2026 23:41:40 GMT",
+    "server": "envoy",
+    "last-modified": "Thu, 03 Jan 2019 12:42:53 GMT",
+    "etag": "\"61c999c4-57e8d19ddad40\"",
+    "accept-ranges": "bytes",
+    "content-length": "1640602052",
+    "access-control-allow-origin": "*",
+    "access-control-allow-methods": "GET,OPTIONS",
+    "access-control-allow-headers": "Authorization,Origin,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Accept",
+    "content-type": "application/x-gzip",
+    "x-envoy-upstream-service-time": "500",
+    "connection": "close"
+  },
+  "method": "HEAD, no body read",
+  "expected_bytes": 1640602052,
+  "etag_not_md5": true
+}

@@ -4,7 +4,7 @@ Solo la primera fila es la próxima tarea científica. Los bloqueos requieren ev
 
 | Prioridad | Trabajo | Estado / criterio de cierre |
 |---|---|---|
-| P0 siguiente, no iniciada | QC específico del soporte críptico bajo en el control | Cierre operativo terminado01/11: originales completos recuperados,55bins/TSV/logs verificados ySHAcb266041... idéntico;378tests locales. Propuesta post hoc deQC de losmismosdatos en research/plans/2026-10-31-stmn2-low-count-control-qc.md; todavía sin ejecución, nuevas bibliotecas o inferencia |
+| P0 en preparación | QC específico del soporte críptico bajo en el control | Plan seleccionado01/11 fijado: cinco bloques,4292655lecturas,cuentas esperadas13/3a15 y15/4a8.392tests locales y preflightPySAMreal correctos; índice idéntico restaurado,FASTQen descarga. Replay no iniciado todavía; sin tercera biblioteca o inferencia |
 | Completado | Recuperación de artefactos delsegundo control | Resultado54.292.655lecturas,111/3a15,154/4a8 intacto. Paquete completo de resultados pequeños recuperado, verificado ypersistido porPR33. Historia parcial preservada; no reejecución delalineamiento |
 | Bloqueado, búsqueda cerrada | Mapa biológico GSE122069 | reports/gse122069-design-20261031:12registros técnicos válidos yReportingSummary nuevo noaportan asignación explícita. Independencia3/3declarada, no refutada; no inferencia ni pares por sufijos. Reabrir solo con fuente concreta nueva; medio discrepante sin resolver |
 | Bloqueado | E-MTAB-15653 | Auditoría documental terminada; independencia no certificada. No repetir búsqueda ni calcular efectos sin nueva fuente concreta |

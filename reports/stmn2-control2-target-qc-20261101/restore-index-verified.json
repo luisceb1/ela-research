@@ -1,0 +1,7 @@
+{
+  "all9_members_identical": true,
+  "archive_sha256_matches_prior": true,
+  "gzip_crc_validated": true,
+  "archive_duplicate_removed": true,
+  "scope": "operational restoration of same frozen index, no new reference certification"
+}

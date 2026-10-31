@@ -142,7 +142,7 @@ def feed_fastq(path, target, expected, complete_library, checkpoint=None):
             'selection': 'entire fixed library' if complete_library else 'first fixed records, not random'}
 
 
-def count_text(lines, bins, forward=None):
+def count_text(lines, bins, forward=None, on_accepted_junction=None):
     qc = Counter()
     for line in lines:
         if forward:
@@ -158,10 +158,12 @@ def count_text(lines, bins, forward=None):
         for anchor in (8, 15):
             for key in sam_junctions(line, min_anchor=anchor):
                 bins.add(anchor, key)
+                if on_accepted_junction is not None:
+                    on_accepted_junction(line, anchor, key)
     return qc
 
 
-def count_htslib(out, expected, bin_size):
+def count_htslib(out, expected, bin_size, on_accepted_read=None):
     import pysam
     bins = Bins(bin_size, expected, lambda obj: save(out, obj))
     locus = Counter()
@@ -189,6 +191,8 @@ def count_htslib(out, expected, bin_size):
                             locus['unique_spliced_reads'] += 1
             if not accepted_pysam(read):
                 continue
+            if on_accepted_read is not None:
+                on_accepted_read(read)
             cigar = read.cigartuples or []
             cursor = read.reference_start
             introns = file.find_introns([read]) if any(op == 3 for op, n in cigar) else {}
@@ -222,7 +226,7 @@ def concordance(own, other):
             raise ValueError('Independent parser mismatch: ' + k)
 
 
-def run(a):
+def run(a, fastq_feeder=feed_fastq, text_counter=count_text, worker_script=None):
     start = time.monotonic()
     out = Path(a.out)
     if out.exists() and any(out.iterdir()):
@@ -262,6 +266,8 @@ def run(a):
         expected = json.loads(Path(a.index_record).read_text())
         for entry in expected['verified_files']:
             verify_file(Path(a.index_directory).parent/entry['name'], entry['bytes'], None, entry['sha256'])
+        if time.monotonic()-start > config['phase_deadline_seconds']:
+            raise TimeoutError('Identity prechecks exceeded fixed phase deadline')
         binary = Path(a.source)/'hisat2-align-s'
         info = json.loads(Path(a.binary_record).read_text())
         digest = hashlib.sha256(binary.read_bytes()).hexdigest()
@@ -274,7 +280,7 @@ def run(a):
         _, hard = resource.getrlimit(resource.RLIMIT_AS)
         resource.setrlimit(resource.RLIMIT_AS, (512*1024**2, hard))
         cmd = aligner_command(binary, a.prefix, a.max_reads)
-        worker = ['prlimit', '--as=268435456', '--', a.pysam_python, str(Path(__file__)), 'htslib',
+        worker = ['prlimit', '--as=268435456', '--', a.pysam_python, str(worker_script or Path(__file__)), 'htslib',
                   '--out', str(out/'htslib-checkpoint.json'), '--max-reads', str(a.max_reads), '--bin-size', str(a.bin_size)]
         result.update(command=cmd, worker_command=worker, cpu_affinity=affinity,
                       prealignment_seconds=time.monotonic()-start,
@@ -288,7 +294,7 @@ def run(a):
             procs.append(hts)
             def feed():
                 try:
-                    qc = feed_fastq(Path(a.fastq), align.stdin, a.max_reads, a.complete_library,
+                    qc = fastq_feeder(Path(a.fastq), align.stdin, a.max_reads, a.complete_library,
                                    lambda obj: save(out/'fastq-input-checkpoint.json', obj))
                     save(out/'fastq_qc.json', qc)
                     align.stdin.close()
@@ -299,7 +305,7 @@ def run(a):
             watcher = threading.Thread(target=monitor, daemon=True)
             producer.start()
             watcher.start()
-            result['sam_qc'] = dict(count_text(align.stdout, bins, hts.stdin))
+            result['sam_qc'] = dict(text_counter(align.stdout, bins, hts.stdin))
             hts.stdin.close()
             codes = [align.wait(), hts.wait()]
             producer.join()
