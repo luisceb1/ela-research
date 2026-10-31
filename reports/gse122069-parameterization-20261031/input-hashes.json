@@ -1,0 +1,56 @@
+{
+  "source_commit": "fecaeb5d3b66e2766afefaca13e25fab90a326b3",
+  "scope": "frozen metadata and historical synthetic SAM only; no real FASTQ input",
+  "files": [
+    {
+      "path": "reports/gse122069-resource-plan/input_manifest.json",
+      "sha256": "b5ed1bcfaa32132ae3e05af183dcf16d9b1dc60639db1d4827934c944c40ccbd",
+      "git_blob_sha1": "107b25d5f6b8d9a5bbc8bd580af9d9dd7f22dc71"
+    },
+    {
+      "path": "reports/hisat2-synthetic-gate-20261031/genome.sam",
+      "sha256": "0c1d4cf53d5ced6628a48646fed4dcd23f793a6838742a5b85906cdfee10d9b2",
+      "git_blob_sha1": "abc54e25b5d44070b683329d566d473f07579d10"
+    },
+    {
+      "path": "reports/hisat2-synthetic-gate-20261031/mini.sam",
+      "sha256": "6516f47445b93c81edd21958d78b1db5dec4cf7abc55bb06e1c8de18b688cdbb",
+      "git_blob_sha1": "e75d0fa331bd4bc5e50109ff7fe444ef65b96485"
+    },
+    {
+      "path": "reports/gse122069-full-control-20261031/execution/full-control-results.json",
+      "sha256": "a9b50d89e2176d44b7fa0176e0eaf7cdee9df2b9f174bd5511534adad7a2438a",
+      "git_blob_sha1": "275c9d92d5b5fb9498b109e40e1c809ecb4ad984"
+    },
+    {
+      "path": "reports/gse122069-full-control-20261031/execution/text-checkpoint.json",
+      "sha256": "1ca44723481406ab66c261e83a78085772979d80c5d7183cc6a366f6f662adc6",
+      "git_blob_sha1": "54399ee01e335ff12ca067251c2a2434e0115beb"
+    },
+    {
+      "path": "reports/gse122069-full-control-20261031/execution/htslib-checkpoint.json",
+      "sha256": "ccafe2121cc5d75c5f2b6a6a0341d0dc78b2a62c87ff120fbdb7920c60c4d1cb",
+      "git_blob_sha1": "693b561614d8cd8e85846a0108ffd4817d502ea8"
+    },
+    {
+      "path": "reports/gse122069-full-control-20261031/summary.json",
+      "sha256": "ae3c0235caea3f59b62b35e5d9537ace9622f3137615509d9cdc8e01ea2cce09",
+      "git_blob_sha1": "e45d4d7c1a85b3e3fddc3038fb5f68f2ec777ce0"
+    },
+    {
+      "path": "reports/gse122069-full-control-20261031/fastq-download.json",
+      "sha256": "e1af54874f550c0560305bf3c0d02482cd6952ef423674e5587981e2cce2bbb2",
+      "git_blob_sha1": "77d0259ab02044befe66549d9b880c700cab8def"
+    },
+    {
+      "path": "reports/gse122069-pilot-20261031/pilot_results.json",
+      "sha256": "feeaca0b5b1cf1c2543615125114ce03bec594be27b00454445373ee60b4646b",
+      "git_blob_sha1": "880ab0353321db87b275f88883797fbd2929b954"
+    },
+    {
+      "path": "reports/gse122069-pilot-20261031/pilot_command.json",
+      "sha256": "90b79376622f5300d1840d07a81de9d544f2455a30496449404316ea0fb4fafb",
+      "git_blob_sha1": "d994fc3ac9677fe0b82cc385246cf18c1bfefa9d"
+    }
+  ]
+}

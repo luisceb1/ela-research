@@ -1,0 +1,44 @@
+{
+  "complete_library": true,
+  "completed_bins": [
+    {
+      "first_read": 1,
+      "last_read": 2,
+      "reads": 2,
+      "sam_records": 3,
+      "primary_records": 2,
+      "counts": {
+        "8": {
+          "eligible_intron_observations": 1,
+          "canonical": 0,
+          "cryptic": 0
+        },
+        "15": {
+          "eligible_intron_observations": 1,
+          "canonical": 0,
+          "cryptic": 0
+        }
+      }
+    }
+  ],
+  "reads": 2,
+  "sam_records": 3,
+  "counts": {
+    "8": {
+      "eligible_intron_observations": 1,
+      "canonical": 0,
+      "cryptic": 0
+    },
+    "15": {
+      "eligible_intron_observations": 1,
+      "canonical": 0,
+      "cryptic": 0
+    }
+  },
+  "locus_bins": [
+    {}
+  ],
+  "pysam": "0.23.3",
+  "htslib": "1.21",
+  "self_maxrss_kib": 26944
+}

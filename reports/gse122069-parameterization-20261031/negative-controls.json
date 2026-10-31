@@ -1,0 +1,27 @@
+[
+  {
+    "control": "crossed_download_receipt",
+    "rejected": true,
+    "error": "ValueError: Verified download receipt does not bind selected culture identity/bytes/MD5"
+  },
+  {
+    "control": "wrong_complete_count",
+    "rejected": true,
+    "error": "ValueError: Complete-library count must equal frozen manifest"
+  },
+  {
+    "control": "unknown_accession",
+    "rejected": true,
+    "error": "ValueError: Run must select exactly one fixed manifest row"
+  },
+  {
+    "control": "deadline_over_cap",
+    "rejected": true,
+    "error": "ValueError: Explicit phase deadline must be positive and at most2700 seconds"
+  },
+  {
+    "control": "crossed_summary",
+    "rejected": true,
+    "error": "ValueError: Summary run does not match selected culture"
+  }
+]

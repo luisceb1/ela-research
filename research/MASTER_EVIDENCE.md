@@ -52,3 +52,10 @@ No contrasteTDP-43, PSI, efecto, ausencia molecular, nueva replicación externa 
 reports/gse122069-design-20261031:12registros técnicos recuperados yReportingSummary del editor nuevo(SHA256ea09e2569478fecd927fb1340424e1fbbbe32e46d3815beb7c1b433296b7b772), inspección visual/textual yproyección mínima. Seis enlaces técnicos válidos no completan asignación a culturas/lotes/pares. Mantener declaración previa de3réplicas biológicas por condición; no demostrar dependencia por falta demapa. Lote de suero no es lote experimental; diferencia F12+MEM/DMEM-F12 entre fuentes sin resolver. Error inicial SRS/SAMN reparado y6SHAidénticos;349tests yreplayJSON/TSVidéntico, no349experimentos.
 
 SinFASTQ/alineamiento adicional ni inferencia/función. Estimaciones de recursos de losotros5son proyecciones delúnico control observado, no benchmarks. Búsqueda de diseño cerrada sinfuente nueva; siguiente tarea es parametrización sintética, no repetición de control/auditoría. Manifiestos históricos se verifican por commit, incluido167d370para el controlcompleto. PR33revisable, PR30intacto.
+
+
+## GSE122069: preparación de pipeline por accession, 31/10/2026
+
+reports/gse122069-parameterization-20261031:374tests locales,25nuevos deidentidad/conteo/resumen/transporte;argv históricos1M/completo yresumen delprimercontrol preservados. Doscontextos/dosSAMs fijados,28consultas sintéticas únicas, parsersconcordantes yproyecciones repetidas idénticas. Nada deello añade replicación biológica o lecturas reales. Transporte30min con supervisor global; fallo sintético de20ms deja recibo noverificado. Manifiesto fijo, recibos ligados yplanes sinlecturas/red dedescarga.
+
+Siguiente propuesta: SRR8144908completo,54.292.655lecturas, antesverificar cabeceras/ETag/tamaño yrecursos. Aún no descargado, sinSHA propio o resultados. Límite45min de fase nueva propuesto explícitamente, sinampliación automática oejecución deotros4. Diseño biológico siguependiente; noefecto inferencial/PSI/función. PR33revisable sinmerge yPR30intacto. Manifiestos previos vinculados a167d370/fecaeb5.

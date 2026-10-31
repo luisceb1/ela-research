@@ -5,12 +5,15 @@ from concurrent.futures import ThreadPoolExecutor,as_completed
 import hashlib
 import json
 import os
+import signal
+import subprocess
 from pathlib import Path
 import sys
 import time
 import urllib.request
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
 from scripts.fetch_gse122069_pilot import disk_guard
+from scripts.gse122069_run_config import DEFAULT_RUN, load_rows, configure, validate_receipt
 
 
 def validate_range(status,headers,start,end,total,etag):
@@ -20,8 +23,66 @@ def validate_range(status,headers,start,end,total,etag):
         raise ValueError('Range object identity/size mismatch')
 
 
-def fetch(manifest,destination,report,etag):
-    row=next(r for r in manifest['rows'] if r['run']=='SRR8144907');total=row['fastq_bytes']
+def download_plan(manifest,run_accession=DEFAULT_RUN):
+    config=configure(manifest['rows'],run_accession)
+    row=next(r for r in manifest['rows'] if r['run']==config['run'])
+    return {'run':row['run'],'gsm':row['gsm'],'url':row['url'],'expected_bytes':row['fastq_bytes'],
+            'expected_md5':row['md5'],'expected_reads':row['reads'],'verified':False,
+            'mode':'plan_only_no_network_or_fastq_opened','etag_verification_pending':True,
+            'own_sha256_pending_download':True,'download_deadline_seconds':1800,'connections':2}
+
+
+def bounded_download(command,report,plan,deadline=1800):
+    """Bound the whole transport process, including worker threads/network IO.
+
+    A timeout never yields a verified receipt. Unverified partial bytes remain
+    for a separately reviewed recovery; no automatic restart or budget growth.
+    """
+    report=Path(report)
+    if report.exists():raise ValueError('Refuse to overwrite an existing download receipt')
+    report.parent.mkdir(parents=True,exist_ok=True)
+    start=time.monotonic();proc=subprocess.Popen(command,start_new_session=True)
+    error=None
+    try:
+        try:
+            code=proc.wait(timeout=max(0,deadline-(time.monotonic()-start)))
+        except subprocess.TimeoutExpired:
+            try:os.killpg(proc.pid,signal.SIGKILL)
+            except ProcessLookupError:pass
+            proc.wait()
+            error='TimeoutError: bounded download exceeded explicit deadline'
+            code=proc.returncode
+        result=dict(plan,verified=False,mode='bounded_download_failed')
+        if report.exists():
+            try:
+                child=json.loads(report.read_text())
+                if not isinstance(child,dict):raise ValueError('Child receipt is not an object')
+                result=child
+            except (ValueError,OSError) as exc:
+                result['error']='ValueError: invalid child download receipt: '+str(exc)
+                if report.exists():result['invalid_child_receipt_sha256']=hashlib.sha256(report.read_bytes()).hexdigest()
+        if code or error or result.get('verified') is not True:
+            result['verified']=False
+            result['error']=error or result.get('error') or 'RuntimeError: download child did not produce a verified receipt'
+        else:
+            try:validate_receipt({'run':plan['run'],'gsm':plan['gsm'],'expected_fastq_bytes':plan['expected_bytes'],'expected_md5':plan['expected_md5']},result)
+            except ValueError as exc:result.update(verified=False,error='ValueError: '+str(exc))
+        result.update(transport_process_exit_code=code,transport_wall_deadline_seconds=deadline,
+                      transport_parent_elapsed_seconds=time.monotonic()-start)
+        tmp=report.with_suffix(report.suffix+'.tmp');tmp.write_text(json.dumps(result,indent=2)+'\n');os.replace(tmp,report)
+        if not result['verified']:raise RuntimeError(result['error'])
+        return result
+    finally:
+        if proc.poll() is None:
+            try:os.killpg(proc.pid,signal.SIGKILL)
+            except ProcessLookupError:pass
+            proc.wait()
+
+
+def fetch(manifest,destination,report,etag,run_accession=DEFAULT_RUN):
+    config=configure(manifest['rows'],run_accession)
+    if not etag or etag.startswith('W/'):raise ValueError('Observed strong ETag required before download')
+    row=next(r for r in manifest['rows'] if r['run']==config['run']);total=row['fastq_bytes']
     destination.parent.mkdir(parents=True,exist_ok=True);report.parent.mkdir(parents=True,exist_ok=True)
     part=destination.with_suffix(destination.suffix+'.range.part')
     if part.exists() or destination.exists():raise ValueError('Explicit verified reuse required; no overwrite')
@@ -65,5 +126,15 @@ def fetch(manifest,destination,report,etag):
 
 
 if __name__=='__main__':
-    p=argparse.ArgumentParser(__doc__);p.add_argument('--manifest',required=True);p.add_argument('--destination',required=True);p.add_argument('--report',required=True);p.add_argument('--etag',required=True);a=p.parse_args()
-    fetch(json.loads(Path(a.manifest).read_text()),Path(a.destination),Path(a.report),a.etag)
+    p=argparse.ArgumentParser(__doc__);p.add_argument('--manifest',required=True);p.add_argument('--destination',required=True);p.add_argument('--report',required=True);p.add_argument('--etag');p.add_argument('--run-accession',default=DEFAULT_RUN);p.add_argument('--plan-only',action='store_true');p.add_argument('--transport-child',action='store_true',help=argparse.SUPPRESS);a=p.parse_args()
+    manifest={'rows':load_rows(a.manifest)}
+    if a.plan_only:
+        report=Path(a.report);report.parent.mkdir(parents=True,exist_ok=True)
+        report.write_text(json.dumps(download_plan(manifest,a.run_accession),indent=2)+'\n')
+    else:
+        if not a.etag:p.error('download requires a newly verified object ETag')
+        if a.transport_child:
+            fetch(manifest,Path(a.destination),Path(a.report),a.etag,a.run_accession)
+        else:
+            command=[sys.executable,str(Path(__file__).resolve()),'--manifest',a.manifest,'--destination',a.destination,'--report',a.report,'--etag',a.etag,'--run-accession',a.run_accession,'--transport-child']
+            bounded_download(command,Path(a.report),download_plan(manifest,a.run_accession))

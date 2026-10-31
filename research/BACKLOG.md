@@ -4,7 +4,7 @@ Solo la primera fila es la próxima tarea científica. Los bloqueos requieren ev
 
 | Prioridad | Trabajo | Estado / criterio de cierre |
 |---|---|---|
-| P0 | Parametrizar runner por accession y validar controles sintéticos, sin FASTQ nuevo | Control completo previo superó20; auditoría de diseño cerrada con mapa de unidades/lotes/pares pendiente. Preparación en research/plans/2026-10-31-gse122069-next-control-preparation.md. Propuesta futuraSRR8144908/54.292.655lecturas,45min para revisión, sin ejecución o ampliación automática |
+| P0 | Revisar recursos/cabeceras y preparar ejecución técnica del segundo control fijo SRR8144908 | Parametrización completada con374tests, preflight sintético ycontratos históricos preservados. Plan research/plans/2026-10-31-gse122069-control2-execution.md: antes descarga comprobarETag fuerte/tamaño/recursos; archivo no descargado niSHApropio conocido. Nueva fase45min explícita,54.292.655lecturas/55bins, transporte30min global. Sin otros4runs o inferencia, sin lanzamiento automático |
 | Bloqueado, búsqueda cerrada | Mapa biológico GSE122069 | reports/gse122069-design-20261031:12registros técnicos válidos yReportingSummary nuevo noaportan asignación explícita. Independencia3/3declarada, no refutada; no inferencia ni pares por sufijos. Reabrir solo con fuente concreta nueva; medio discrepante sin resolver |
 | Bloqueado | E-MTAB-15653 | Auditoría documental terminada; independencia no certificada. No repetir búsqueda ni calcular efectos sin nueva fuente concreta |
 | Completado en este PR | Ciclo de selección de tres fuentes | GSE182976: cobertura BW; GSE122069: TPM; E-MTAB-15653: cuentas de unión recuperadas, independencia no certificada. Ninguna lista para el contraste completo. No repetir |
@@ -62,3 +62,8 @@ reports/gse122069-full-control-20261031 reemplaza la instrucción anterior de pr
 ## Diseño GSE122069 auditado — continuación vigente
 
 349tests locales/compileallOK yreplay idéntico. Se conservan6errores iniciales de parser deaccesiones, reparación SRS/SAMN cotejada porhash,12proyecciones técnicas yReportingSummary porSHA coninspección visual. No nuevoFASTQ, alineamiento o réplica. La búsqueda del mapa queda cerrada conbloqueo concreto; no repetir comoP0. Siguiente únicaP0: código/configuración ycontroles sintéticos para accession, sin datos nuevos. Las estimaciones de recursos de5runs son proyecciones, no ejecuciones, yel límite futuro45min no es ampliación automática. PR30sin modificar, PR33revisable sinmerge/cierre.
+
+
+## Parametrización completada — continuación vigente
+
+reports/gse122069-parameterization-20261031: configuración/recibo/runner/resumen ligados aaccession; transporte con límite global supervisado.374tests locales, preflight concordante yrepetible; mismosargv yresumen delcontrolhistórico. CeroFASTQreales/alineamientosHISAT2nuevos;28consultas sintéticas únicas reusadas no sonreplicación externa. Propuesta concreta paraSRR8144908 en elnuevo plan, todavía pendiente decabeceras yrecursos antes deejecutar. No repetir elmapabiológico sinfuente nueva, ni reejecutar elprimercontrol. PR33sinmerge yPR30intacto.

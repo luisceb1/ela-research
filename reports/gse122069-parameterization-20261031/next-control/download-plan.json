@@ -1,0 +1,14 @@
+{
+  "run": "SRR8144908",
+  "gsm": "GSM3454243",
+  "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR814/008/SRR8144908/SRR8144908.fastq.gz",
+  "expected_bytes": 1640602052,
+  "expected_md5": "0cd29fe9f8bdf1a6f3596891b783990d",
+  "expected_reads": 54292655,
+  "verified": false,
+  "mode": "plan_only_no_network_or_fastq_opened",
+  "etag_verification_pending": true,
+  "own_sha256_pending_download": true,
+  "download_deadline_seconds": 1800,
+  "connections": 2
+}

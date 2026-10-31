@@ -1,0 +1,176 @@
+[
+  {
+    "input_kind": "historical synthetic SAM, not public SRR reads",
+    "configuration_run_not_observed_sample": "SRR8144907",
+    "fixture": "reports/hisat2-synthetic-gate-20261031/genome.sam",
+    "fixture_sha256": "0c1d4cf53d5ced6628a48646fed4dcd23f793a6838742a5b85906cdfee10d9b2",
+    "queries": 26,
+    "sam_records": 26,
+    "bin_reads": [
+      7,
+      7,
+      7,
+      5
+    ],
+    "counts": {
+      "8": {
+        "eligible_intron_observations": 18,
+        "canonical": 8,
+        "cryptic": 10
+      },
+      "15": {
+        "eligible_intron_observations": 16,
+        "canonical": 8,
+        "cryptic": 8
+      }
+    },
+    "locus_bins": [
+      {
+        "primary_block_overlap": 7,
+        "unique_mapq_block_overlap": 7,
+        "exon1_unique_overlap": 5,
+        "unique_spliced_reads": 7
+      },
+      {
+        "primary_block_overlap": 7,
+        "unique_mapq_block_overlap": 7,
+        "exon1_unique_overlap": 7,
+        "unique_spliced_reads": 7,
+        "exon2_unique_overlap": 2
+      },
+      {
+        "primary_block_overlap": 3,
+        "unique_mapq_block_overlap": 3,
+        "exon1_unique_overlap": 3,
+        "exon2_unique_overlap": 3,
+        "unique_spliced_reads": 3
+      },
+      {
+        "primary_block_overlap": 4,
+        "unique_mapq_block_overlap": 4,
+        "exon1_unique_overlap": 4,
+        "exon2_unique_overlap": 3,
+        "unique_spliced_reads": 3
+      }
+    ],
+    "parsers_concordant": true,
+    "pysam": "0.23.3",
+    "htslib": "1.21"
+  },
+  {
+    "input_kind": "historical synthetic SAM, not public SRR reads",
+    "configuration_run_not_observed_sample": "SRR8144907",
+    "fixture": "reports/hisat2-synthetic-gate-20261031/mini.sam",
+    "fixture_sha256": "6516f47445b93c81edd21958d78b1db5dec4cf7abc55bb06e1c8de18b688cdbb",
+    "queries": 2,
+    "sam_records": 3,
+    "bin_reads": [
+      2
+    ],
+    "counts": {
+      "8": {
+        "eligible_intron_observations": 1,
+        "canonical": 0,
+        "cryptic": 0
+      },
+      "15": {
+        "eligible_intron_observations": 1,
+        "canonical": 0,
+        "cryptic": 0
+      }
+    },
+    "locus_bins": [
+      {}
+    ],
+    "parsers_concordant": true,
+    "pysam": "0.23.3",
+    "htslib": "1.21"
+  },
+  {
+    "input_kind": "historical synthetic SAM, not public SRR reads",
+    "configuration_run_not_observed_sample": "SRR8144908",
+    "fixture": "reports/hisat2-synthetic-gate-20261031/genome.sam",
+    "fixture_sha256": "0c1d4cf53d5ced6628a48646fed4dcd23f793a6838742a5b85906cdfee10d9b2",
+    "queries": 26,
+    "sam_records": 26,
+    "bin_reads": [
+      7,
+      7,
+      7,
+      5
+    ],
+    "counts": {
+      "8": {
+        "eligible_intron_observations": 18,
+        "canonical": 8,
+        "cryptic": 10
+      },
+      "15": {
+        "eligible_intron_observations": 16,
+        "canonical": 8,
+        "cryptic": 8
+      }
+    },
+    "locus_bins": [
+      {
+        "primary_block_overlap": 7,
+        "unique_mapq_block_overlap": 7,
+        "exon1_unique_overlap": 5,
+        "unique_spliced_reads": 7
+      },
+      {
+        "primary_block_overlap": 7,
+        "unique_mapq_block_overlap": 7,
+        "exon1_unique_overlap": 7,
+        "unique_spliced_reads": 7,
+        "exon2_unique_overlap": 2
+      },
+      {
+        "primary_block_overlap": 3,
+        "unique_mapq_block_overlap": 3,
+        "exon1_unique_overlap": 3,
+        "exon2_unique_overlap": 3,
+        "unique_spliced_reads": 3
+      },
+      {
+        "primary_block_overlap": 4,
+        "unique_mapq_block_overlap": 4,
+        "exon1_unique_overlap": 4,
+        "exon2_unique_overlap": 3,
+        "unique_spliced_reads": 3
+      }
+    ],
+    "parsers_concordant": true,
+    "pysam": "0.23.3",
+    "htslib": "1.21"
+  },
+  {
+    "input_kind": "historical synthetic SAM, not public SRR reads",
+    "configuration_run_not_observed_sample": "SRR8144908",
+    "fixture": "reports/hisat2-synthetic-gate-20261031/mini.sam",
+    "fixture_sha256": "6516f47445b93c81edd21958d78b1db5dec4cf7abc55bb06e1c8de18b688cdbb",
+    "queries": 2,
+    "sam_records": 3,
+    "bin_reads": [
+      2
+    ],
+    "counts": {
+      "8": {
+        "eligible_intron_observations": 1,
+        "canonical": 0,
+        "cryptic": 0
+      },
+      "15": {
+        "eligible_intron_observations": 1,
+        "canonical": 0,
+        "cryptic": 0
+      }
+    },
+    "locus_bins": [
+      {}
+    ],
+    "parsers_concordant": true,
+    "pysam": "0.23.3",
+    "htslib": "1.21"
+  }
+]

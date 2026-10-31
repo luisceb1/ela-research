@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Fixed SRR8144907 stream: ordered technical bins, bounded resources, two parsers.
+"""Frozen GSE122069 culture stream: ordered technical bins, bounded resources, two parsers.
 
 No identifiers, sequences or sample-level clinical variables are exported.
 The historical first1M runner remains unchanged.
@@ -24,6 +24,7 @@ from scripts.gse122069_pilot import TARGETS, empty_counts, verify_file
 from scripts.audit_stmn2_junction_contract import sam_junctions
 from scripts.hisat2_synthetic_gate import accepted_pysam
 from scripts.fetch_gse122069_pilot import disk_guard
+from scripts.gse122069_run_config import load_rows, configure, validate_receipt, aligner_command, DEFAULT_RUN
 
 
 def save(path, obj):
@@ -224,8 +225,10 @@ def concordance(own, other):
 def run(a):
     start = time.monotonic()
     out = Path(a.out)
+    if out.exists() and any(out.iterdir()):
+        raise ValueError('Refuse non-empty execution directory')
     out.mkdir(parents=True, exist_ok=True)
-    result = {'complete_library': False, 'run': 'SRR8144907', 'sam_disk_written': False,
+    result = {'complete_library': False, 'run': getattr(a, 'run_accession', DEFAULT_RUN), 'sam_disk_written': False,
               'expected_reads': a.max_reads, 'bin_size': a.bin_size, 'combined_rss_available': False}
     bins = Bins(a.bin_size, a.max_reads, lambda obj: (save(out/'text-checkpoint.json', obj),
                 print('completed reads', obj['reads'], 'elapsed seconds', round(time.monotonic()-start), flush=True)))
@@ -241,21 +244,21 @@ def run(a):
     def monitor():
         while not stop.wait(0.5):
             try:
-                if time.monotonic()-start > 1800:
-                    raise TimeoutError('Fixed full-control phase exceeds30min')
+                if time.monotonic()-start > config['phase_deadline_seconds']:
+                    raise TimeoutError('Fixed library phase exceeds explicit deadline')
                 disk_guard(out)
             except Exception as exc:
                 failures.append(type(exc).__name__ + ': ' + str(exc))
                 terminate()
                 return
     try:
-        row = next(r for r in json.loads(Path(a.manifest).read_text())['rows'] if r['run'] == 'SRR8144907')
-        if a.complete_library and a.max_reads != row['reads']:
-            raise ValueError('Complete-library count must equal frozen manifest')
+        config = configure(load_rows(a.manifest), result['run'], a.max_reads, a.complete_library,
+                           a.bin_size, getattr(a, 'phase_deadline_seconds', 1800))
+        result.update(gsm=config['gsm'], experiment=config['experiment'], published_group=config['published_group'],
+                      phase_deadline_seconds=config['phase_deadline_seconds'], configuration=config)
         download = json.loads(Path(a.download_record).read_text())
-        if not download['verified'] or download['run'] != row['run']:
-            raise ValueError('No verified fixed control input')
-        result['fastq_sha256'] = verify_file(Path(a.fastq), row['fastq_bytes'], row['md5'], download['sha256'])
+        digest = validate_receipt(config, download)
+        result['fastq_sha256'] = verify_file(Path(a.fastq), config['expected_fastq_bytes'], config['expected_md5'], digest)
         expected = json.loads(Path(a.index_record).read_text())
         for entry in expected['verified_files']:
             verify_file(Path(a.index_directory).parent/entry['name'], entry['bytes'], None, entry['sha256'])
@@ -270,8 +273,7 @@ def run(a):
         disk_guard(out)
         _, hard = resource.getrlimit(resource.RLIMIT_AS)
         resource.setrlimit(resource.RLIMIT_AS, (512*1024**2, hard))
-        cmd = ['prlimit', '--as=5368709120', '--', str(binary), '--wrapper', 'basic-0', '-x', a.prefix,
-               '-U', '-', '-u', str(a.max_reads), '-p', '2', '-k', '5', '--seed', '0', '--no-temp-splicesite', '--reorder']
+        cmd = aligner_command(binary, a.prefix, a.max_reads)
         worker = ['prlimit', '--as=268435456', '--', a.pysam_python, str(Path(__file__)), 'htslib',
                   '--out', str(out/'htslib-checkpoint.json'), '--max-reads', str(a.max_reads), '--bin-size', str(a.bin_size)]
         result.update(command=cmd, worker_command=worker, cpu_affinity=affinity,
@@ -312,7 +314,7 @@ def run(a):
         denominator = own['counts']['15']['canonical'] + own['counts']['15']['cryptic']
         result.update(own, complete_library=a.complete_library, independent_parser_concordant=True,
                       coverage_rule={'minimum_denominator': 20, 'achieved': denominator >= 20,
-                                     'scope': 'technical control only; no PSI, effect or biological absence'})
+                                     'scope': 'technical library only; no PSI, effect or biological absence'})
     except Exception as exc:
         result['error'] = type(exc).__name__ + ': ' + str(exc)
         # Preserve validated completed bins, including timeout prefix; never call full.
@@ -337,15 +339,24 @@ def run(a):
 
 if __name__ == '__main__':
     p = argparse.ArgumentParser(__doc__)
-    p.add_argument('mode', choices=['run', 'htslib'])
+    p.add_argument('mode', choices=['run', 'htslib', 'plan'])
     p.add_argument('--out', required=True)
     p.add_argument('--max-reads', type=int, default=1000000)
     p.add_argument('--bin-size', type=int, default=1000000)
     p.add_argument('--complete-library', action='store_true')
+    p.add_argument('--run-accession', default=DEFAULT_RUN)
+    p.add_argument('--phase-deadline-seconds', type=int, default=1800)
     for name in ['manifest', 'download-record', 'fastq', 'index-record', 'index-directory', 'binary-record', 'source', 'prefix', 'pysam-python']:
         p.add_argument('--'+name)
     a = p.parse_args()
     if a.mode == 'htslib':
         count_htslib(Path(a.out), a.max_reads, a.bin_size)
+    elif a.mode == 'plan':
+        config = configure(load_rows(a.manifest), a.run_accession, a.max_reads, a.complete_library, a.bin_size, a.phase_deadline_seconds)
+        destination = Path(a.out)
+        destination.mkdir(parents=True, exist_ok=True)
+        config['mode'] = 'plan_only_no_fastq_or_alignment_opened'
+        save(destination/'execution-config.json', config)
+        print(json.dumps(config, indent=2))
     else:
         run(a)
