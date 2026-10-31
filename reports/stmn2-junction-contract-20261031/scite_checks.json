@@ -1,0 +1,22 @@
+{
+  "scite": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\n  \"total\": 1,\n  \"count\": 1,\n  \"query\": \"\\\"junction\\\"\",\n  \"limit\": 1,\n  \"offset\": 0,\n  \"hits\": [\n    {\n      \"doi\": \"10.1186/s13024-025-00820-5\",\n      \"title\": \"Multi-region brain transcriptomic analysis of amyotrophic lateral sclerosis reveals widespread RNA alterations and substantial cerebellum involvement\",\n      \"authors\": [\n        {\n          \"authorName\": \"Andrew Smith\"\n        },\n        {\n          \"authorName\": \"Claire E. Shepherd\"\n        },\n        {\n          \"authorName\": \"Lyndal Henden\"\n        }\n      ],\n      \"journal\": \"molecular neurodegeneration\",\n      \"publisher\": \"Springer Science and Business Media LLC\",\n      \"abstract\": \"Abstract\\n          \\n            Background\\n            Amyotrophic lateral sclerosis (ALS) is a neurodegenerative disease that primarily affects the motor neurons, causing progressive muscle weakness and paralysis. While research has focused on understanding pathological mechanisms in the motor cort...\",\n      \"year\": 2025,\n      \"date\": \"2025-04-25\",\n      \"volume\": \"20\",\n      \"issue\": \"1\",\n      \"tally\": {\n        \"total\": 14,\n        \"supporting\": 1,\n        \"contrasting\": 0,\n        \"mentioning\": 13,\n        \"citingPublications\": 17\n      },\n      \"isOa\": true,\n      \"contentDenied\": false,\n      \"access\": {\n        \"url\": \"https://ct.prod.getft.io/c2NpdGUsc3ByaW5nZXIsTVRBdU1URTROaTl6TVRNd01qUXRNREkxTFRBd09ESXdMVFUsTnpSaE5qSXhOREl0TVdaa01DMDBPV05tTFRnd05tSXRORE0wTmpZMVlXWTVaamt4LGh0dHA6Ly9saW5rLnNwcmluZ2VyLmNvbS8xMC4xMTg2L3MxMzAyNC0wMjUtMDA4MjAtNT91dG1fc291cmNlPWdldGZ0ciZ1dG1fbWVkaXVtPWdldGZ0ciZ1dG1fY2FtcGFpZ249Z2V0ZnRyX3BpbG90.L9BRpGmLxmU7UoQEAEDGp9RcJe03BTnzEAFYzjNCfa4\",\n        \"source\": \"get_ftr\",\n        \"accessType\": \"publisher\",\n        \"contentType\": \"pdf\",\n        \"description\": \"View PDF\"\n      },\n      \"url\": \"https://ct.prod.getft.io/c2NpdGUsc3ByaW5nZXIsTVRBdU1URTROaTl6TVRNd01qUXRNREkxTFRBd09ESXdMVFUsTnpSaE5qSXhOREl0TVdaa01DMDBPV05tTFRnd05tSXRORE0wTmpZMVlXWTVaamt4LGh0dHA6Ly9saW5rLnNwcmluZ2VyLmNvbS8xMC4xMTg2L3MxMzAyNC0wMjUtMDA4MjAtNT91dG1fc291cmNlPWdldGZ0ciZ1dG1fbWVkaXVtPWdldGZ0ciZ1dG1fY2FtcGFpZ249Z2V0ZnRyX3BpbG90.L9BRpGmLxmU7UoQEAEDGp9RcJe03BTnzEAFYzjNCfa4\"\n    }\n  ],\n  \"hint\": \"To get full details for a paper, call this tool again with its DOI in the `dois` parameter. Use `term` to search within the paper.\"\n}"
+      }
+    ],
+    "structuredContent": null,
+    "isError": false
+  },
+  "scite_editorial": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\n  \"total\": 0,\n  \"count\": 0,\n  \"query\": \"\",\n  \"limit\": 1,\n  \"offset\": 0,\n  \"message\": \"No indexed papers matched the provided DOI(s): ['10.1186/s13024-025-00820-5']. The DOI format is valid but these DOIs are not present in Scite's index.\",\n  \"hint\": \"To get full details for a paper, call this tool again with its DOI in the `dois` parameter. Use `term` to search within the paper.\"\n}"
+      }
+    ],
+    "structuredContent": null,
+    "isError": false
+  }
+}

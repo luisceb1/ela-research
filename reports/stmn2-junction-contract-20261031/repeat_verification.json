@@ -1,0 +1,14 @@
+{
+  "identical_contract_bytes": true,
+  "contract_sha256": "4778971a7764cb92cec06e5788ccc8ddc15b5e4c0dfad9998f4cc310d1a8b8c8",
+  "python": "3.12.14",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.39",
+  "disk_free_bytes": 62793551872,
+  "aligner_paths": {
+    "hisat2": null,
+    "samtools": null,
+    "STAR": null
+  },
+  "raw_reads_processed": 0,
+  "cgroup_memory_max": "8589934592"
+}

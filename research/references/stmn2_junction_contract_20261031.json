@@ -1,0 +1,9 @@
+{
+  "base_commit": "f898b2967aae8909db1796753f9d2cae2bf966ef",
+  "inputs": {
+    "reports/event-reference/paper_evidence.json": "b3a69dbc6f8054642958c853f50292c4c5f726c32383b8217a5f0925ca7b5438",
+    "reports/isoforms/junctions.tsv": "e26d9d9d172d233151be7455f303e4a7977cd6a6a36d6182ed95925e495fff58",
+    "reports/isoforms/exons.tsv": "d1e26e96aed380b92658e673da4ed59bdbdc9fe5f1fd1b1196ac554fe3b5ff44",
+    "reports/isoforms/reference_source.json": "7548554a055ab4a61d168938a4249de371181418fab974eee09a1faf92e6e0e7"
+  }
+}
