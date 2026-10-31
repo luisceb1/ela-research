@@ -4,7 +4,7 @@ Solo la primera fila es la próxima tarea científica. Los bloqueos requieren ev
 
 | Prioridad | Trabajo | Estado / criterio de cierre |
 |---|---|---|
-| P0 | Validar FASTA/índice/alineador para piloto GSE122069 | Contrato de uniones STMN2 y controles sintéticos completados en reports/stmn2-junction-contract-20261031. Falta secuencia/motivos, índice/versiones trazables y compatibilidad de NH/XS. Sin FASTQ ni alineamiento; piloto bloqueado |
+| P0 | Inspeccionar índice HISAT2 fijado antes del piloto GSE122069 | Ventanas STMN2 UCSC/Ensembl y motivos comprobados; candidato hg38 de4.355.786.349bytes/versionId fijado. Pendiente descarga controlada, SHA256, integridad, secuencia/nombres/longitudes, tamaño extraído y ejecución NH/XS/MAPQ. Sin índice/FASTQ descargado; piloto bloqueado |
 | Bloqueado | E-MTAB-15653 | Auditoría documental terminada; independencia no certificada. No repetir búsqueda ni calcular efectos sin nueva fuente concreta |
 | Completado en este PR | Ciclo de selección de tres fuentes | GSE182976: cobertura BW; GSE122069: TPM; E-MTAB-15653: cuentas de unión recuperadas, independencia no certificada. Ninguna lista para el contraste completo. No repetir |
 | Revisión | PR #30 separado | Otros candidatos y trabajo posterior; no integrado ni reejecutado aquí. Reconciliar su planning al integrar, sin sumar resultados o ampliar a datos clínicos personales |
@@ -31,3 +31,7 @@ Auditoría acotada completada en reports/fractionation-units-20261030: XML prima
 ## Continuidad 31/10/2026
 
 La fila P0 sustituye los siguientes pasos históricos de abajo/anteriores informes. No repetir #1/#2, Fratta, DEXSeq ni búsquedas cerradas. Contrato positivo de software, sin resultado biológico. Un intento Ensembl falló por timeout; mantener referencia/índice como bloqueo de piloto y continuar con su verificación, sin instalar/alinear automáticamente. PR30 inspeccionado a 053ef70ce437cc637ec18278a2c07e3abd6bf58b, rama intacta. 22 pruebas nuevas no representan experimentos. Próxima prueba discriminante: FASTA e índice verificables con motivos/ensamblaje concordantes, después comparación del extractor con herramienta independiente en piloto condicionado al plan de recursos. El resumen semanal del viernes ya existe y no se duplica el sábado.
+
+## Referencia completada, continuación posterior a #32
+
+MotivosGT/AG/AG y tres ventanas16bp idénticas UCSC/Ensembl en reports/stmn2-reference-gate-20261031. No FASTA completo ni índice validados. #32 integrado en9c82795d con autorización específica; esta nueva entrega es PR revisable, sin fusión automática.284tests locales, no284experimentos. La única tarea siguiente es la filaP0; comprobar índice bajo presupuesto y semántica runtime del software antes del piloto. Evitar repetición de las verificaciones de motivos completadas y conservar rama30 intacta.

@@ -30,9 +30,11 @@ Los informes preservan los hashes, parámetros, errores y resultados negativos d
 
 ## Única próxima tarea
 
-Validar FASTA/índice/versiones del alineador y motivos de las dos uniones STMN2 antes del piloto GSE122069. El contrato de coordenadas ya se fijó en reports/stmn2-junction-contract-20261031, reutilizando proyecciones auditadas y con controles sintéticos: críptica chr8:+ 79611214→79616822, canónica 79611214→79636802 (límites exónicos 1-based, GRCh38). No se ha revalidado GTF completo ni FASTA, ni creado índice o procesado FASTQ. El piloto continúa bloqueado, no se acepta todavía replicación externa.
+Descargar de forma controlada e inspeccionar el índice HISAT2 UCSC hg38 fijado por S3 versionId en reports/stmn2-reference-gate-20261031/index_candidate.json. Comprobar SHA256 propio, integridad, nombres/longitudes y secuencia reconstruida contra las ventanas verificadas antes de aceptarlo; medir tamaño extraído y recursos dentro del presupuesto. El HEAD acredita4.355.786.349bytes comprimidos, no tamaño extraído/RAM ni integridad. No usar ETag multipart como MD5.
 
-Base observada en esta ejecución: main f898b2967aae8909db1796753f9d2cae2bf966ef; #28/#29/#31 integrados. Único PR previo abierto: #30, cabeza 053ef70ce437cc637ec18278a2c07e3abd6bf58b, draft y activo con otro chat. Informe y diferencias leídos; no se modifica ni reproduce RiMOD/NYGC. Las ramas históricas permanecen como historial, no trabajo pendiente adicional.
+Puerta de secuencia completada: tres ventanas16bp STMN2 son idénticas UCSC/Ensembl, motivosGT/AG/AG y controles±1 registrados. Ensembl informaGRCh38.p14, chr8 longitud145138636. No FASTA completo ni índice verificados; piloto todavía bloqueado. No son nuevas unidades/replicación biológica.
+
+#32 fusionado con autorización expresa en9c82795df2dfdb1be142169ee8733db70dbde92f, cabeza57771806 probada por CI275tests enPython3.11/3.12. Nueva preparación de referencia en PR separado, sin merge automático. #30 mantiene cabeza053ef70ce437cc637ec18278a2c07e3abd6bf58b y sigue reservado para otro chat. No repetir #1/#2 o búsquedas cerradas.
 
 
 ## Verificación y operación
@@ -63,3 +65,9 @@ Pregunta/falsador fijados antes de ejecutar: research/plans/2026-10-31-stmn2-jun
 No efectos, PSI, significación ni función. Razón propuesta críptica/(críptica+canónica) sería condicional a esas dos ramas; otras ramas del donante no medidas. Prototipo requiere XS y NH=1, MAPQ>=20 (excluye255), anclas contiguas>=8; retiene flags de duplicación y rechaza PE. Pendiente comparar con herramienta independiente y semántica del alineador. No producción/crudos desde esta entrega.
 
 Ensembl agotó timeout y no aportó referencia. 8 GiB RAM, ~62,79 GB libres observados, sin HISAT2/STAR/samtools. Esto no es benchmark ni autoriza más recursos que el plan previo. Git clone sin credenciales; acceso al código por conector comprobado. Se registran fallos de materialización local, corregidos por blobs exactos antes de la suite final. Ningún cambio en main o rama30, merge/cierre, gastos, contactos o publicación externa. Las menciones históricas a PR31 abierto y 253 pruebas corresponden al ciclo anterior; este apartado y Única próxima tarea son los vigentes.
+
+## Puerta de referencia — 31/10/2026, posterior a #32
+
+reports/stmn2-reference-gate-20261031 conserva seis respuestas mínimas públicas de secuencia con URL/hashes, metadatos de ensamblaje, candidato de índice fijado y revisión de manual HISAT2v2.2.3, commit0d244324. Código ejecutado conPython3.12.14, dos replays idénticos por bytes,284pruebas locales (275+9) y compileall correctos; CI de nueva cabeza por verificar. Un primer timeout de Ensembl críptico se resolvió con un reintento; el error se conserva. La herramienta web falló con los parámetros UCSC; las recuperaciones reales fueron solicitudes Python satisfactorias.
+
+Solo48bases de referencia en tres ventanas, cotejadas entre dos proveedores del mismo ensamblaje; no réplica externa biológica ni soporte de lectura. Sin descarga de índice/FASTQ, instalación de alineador, alineamientos o efectos. Próximo gate de software: ejecutar versión fijada y comprobar NH/XS/MAPQ contra controles; NH informa alineamientos reportados, no unicidad exhaustiva. No -k1 ni strandness asumida. Los ejemplos del manual incluyenMAPQ255; el prototipo actual los rechaza: comprobar comportamiento de versión real sin cambiar filtros tras ver efectos. Los apartados previos de secuencia/motivos pendientes son históricos y quedan sustituidos por este resultado acotado.

@@ -1,0 +1,15 @@
+{
+  "reports/stmn2-reference-gate-20261031/REPORT.md": "5c88ac85b5569d1707dd3b6f1e9860c655ed5a81db4c530d8b5890249f3f6890",
+  "reports/stmn2-reference-gate-20261031/errors.json": "f4634efabff1d0cb121fd030f3dcc8945084da347d9a20b430c77210e71434d3",
+  "reports/stmn2-reference-gate-20261031/index_candidate.json": "3d2a22d31161d0edce543b1549ceb5b297d3a9deba5cf93d1ce4462a2555f6ec",
+  "reports/stmn2-reference-gate-20261031/reference_inputs.json": "d14c7fc589c9ef7bae9595b1157cd602bd82c024dfec4ae6951df7e87a0cf785",
+  "reports/stmn2-reference-gate-20261031/results.json": "90425c36039228ca79971f4f9dac2cd0c99c8c169d8237566eedad83ab2fa68b",
+  "reports/stmn2-reference-gate-20261031/run.json": "8b6bb6c09d7f7568350bd16ccd0cbf9b37b230958b16a96d2cb163e61a86a280",
+  "reports/stmn2-reference-gate-20261031/software_sources.json": "a61ee1f2c6978f91bec9f0522703970f7812d43921845c1d2173b9421980d334",
+  "reports/stmn2-reference-gate-20261031/tests.txt": "27111e831bdb4a9424cc1bfd106843df88c5322f0f335867b9f892fb644bb0ae",
+  "research/BACKLOG.md": "68b9f1a0c3a9f2401646dfabc5e0dc9d36fd6fa79855abeb6254438547048f91",
+  "research/STATE.md": "0ac2b9940bcf7fea7dc188d4107976490c21ea79a344244359da2cbdf731cdbb",
+  "research/plans/2026-10-31-stmn2-reference-gate.md": "8050e69daa3d3822e7d3731d7c91ede5259da0df25b5898ca4b4f41d0d186910",
+  "scripts/audit_stmn2_reference_gate.py": "e2cad5f4cd1a7efb3923aa459c43b4a604611c62d77043f30a554ae51a7bc60c",
+  "tests/test_stmn2_reference_gate.py": "fe894923af204485d1d8b5e7a9e62ddf51a728da93b22575acb317d01f1ca540"
+}

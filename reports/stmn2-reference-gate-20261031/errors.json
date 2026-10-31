@@ -1,0 +1,15 @@
+[
+  {
+    "name": "ensembl_cryptic",
+    "url": "https://rest.ensembl.org/sequence/region/human/8:79616814..79616829:1?content-type=text/plain",
+    "error": "The read operation timed out"
+  },
+  {
+    "stage": "web API fallback",
+    "error": "Search open encodes semicolon parameters and fails UCSC retrieval; direct Python requests succeeded"
+  },
+  {
+    "stage": "editorial scope",
+    "note": "No biological literature claims added; primary sequence/provider and software documentation only"
+  }
+]

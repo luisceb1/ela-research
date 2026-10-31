@@ -1,0 +1,18 @@
+{
+  "manual_url": "https://github.com/DaehwanKimLab/hisat2/blob/0d244324f98de541bce04d45c75e83bc3522f7f4/MANUAL.markdown",
+  "blob_sha": "a88b0f6a62626b7c3ea4ef72266bf0a84287ae21",
+  "software_tag": "v2.2.3",
+  "commit": "0d244324f98de541bce04d45c75e83bc3522f7f4",
+  "download_page": "https://daehwankimlab.github.io/hisat2/download/",
+  "index_zone": "https://benlangmead.github.io/aws-indexes/hisat",
+  "review_date": "2026-10-31",
+  "notes": [
+    "Manual describes NH as number of reported alignments; this is not exhaustive uniqueness",
+    "Do not use -k1 to create NH1; freeze search settings and test against multimapping control",
+    "XS indicates transcript strand, flag16 does not; do not force F/R without library provenance",
+    "dta options change discovery anchors; do not assume extractor anchor8 guarantees alignment sensitivity",
+    "Manual example includes MAPQ255; current extractor excludes255. Empirical version-specific control required, without automatically weakening filter",
+    "hisat2-inspect can export indexed reference; only comparison after actual download can validate index",
+    "No binary installed/executed; index HEAD metadata only"
+  ]
+}

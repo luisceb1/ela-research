@@ -1,0 +1,9 @@
+# Puerta de referencia STMN2 — plan previo 31/10/2026
+
+Pregunta: ¿los límites de las dos uniones de #32 coinciden con motivos de splicing y referencia GRCh38 trazables, y existe un índice de splicing compatible dentro de los recursos?
+Predicción refutable: donante común GT y aceptores AG en la hebra+ para las coordenadas fijadas; ninguna discrepancia entre proveedores oficiales de referencia si ambos son accesibles. Esto es QC molecular, no hipótesis biológica nueva.
+Método: recuperar ventanas mínimas de referencia pública alrededor de los tres extremos, registrar URL exacta, fecha, bytes, SHA256, coordenadas0/1-based y comparar motivos y controles desplazados±1. Sin consultar datos de pacientes o efectos. Contrastar cromosoma/ensamblaje/longitud de ventanas. Si un proveedor no responde, conservar error y no fingir doble verificación.
+Índice: consultar documentación primaria HISAT2 y metadatos de índice/FASTA. Exigir enlace entre build, secuencias, nombres cromosómicos, versión de herramientas, hashes y presupuesto antes de instalar/descargar índice o FASTQ. No afirmar compatibilidad por llamarse hg38; alternativa construcción propia solo si cumple recursos medidos/justificados. No ejecutar código de autores.
+Fracaso: motivo incompatible o discrepancia de referencia, error de coordenadas/longitud, ausencia de hashes/procedencia compatible para índice, recursos excedidos. Bloqueo documentado sin cambiar evento. Motivos canónicos no prueban uso real, identidad completa ni función.
+Control negativo: extremos desplazados±1 calculados con mismas ventanas y reportados sin reoptimizar coordenadas. Comparación de ventanas: secuencia mayúscula, sin ocultar máscaras o N. No inferir que cualquier desplazamiento con AG/GT es imposible biológicamente.
+Alcance: ventanas pequeñas y auditoría de documentación/índice, sin FASTQ o alineamiento, coste cero. Mantener PR30 intacto. Base tras merge32: 9c82795df2dfdb1be142169ee8733db70dbde92f.

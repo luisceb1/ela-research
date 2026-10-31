@@ -1,0 +1,33 @@
+{
+  "official_download_page": "https://daehwankimlab.github.io/hisat2/download/",
+  "url": "https://genome-idx.s3.amazonaws.com/hisat/hg38_genome.tar.gz",
+  "pinned_url": "https://genome-idx.s3.amazonaws.com/hisat/hg38_genome.tar.gz?versionId=8z.MUbL_W4wij.Nmcia5c4mT7tlz0cU.",
+  "size_bytes": 4355786349,
+  "etag": "\"2b99c030ca493d30bd4b12bf8e42327b-520\"",
+  "etag_is_md5": false,
+  "s3_version_id": "8z.MUbL_W4wij.Nmcia5c4mT7tlz0cU.",
+  "last_modified": "Thu, 25 Jun 2020 20:47:53 GMT",
+  "http_status": 200,
+  "downloaded": false,
+  "archive_sha256": null,
+  "index_accepted": false,
+  "candidate_software": {
+    "tag": "v2.2.3",
+    "commit": "0d244324f98de541bce04d45c75e83bc3522f7f4",
+    "executed": false
+  },
+  "remaining": [
+    "Download pinned index with budget guard; record full SHA256 and gzip/tar integrity",
+    "Inspect indexed names/lengths/reference and compare sequence windows before accepting index",
+    "Version and runtime-test actual HISAT2 NH/XS/MAPQ; manual examples include MAPQ255, rejected by current contract",
+    "Compare extraction to independent implementation; no switch to -k1 to manufacture uniqueness",
+    "No crop-only genome alignment: uniqueness needs genome-wide competitors"
+  ],
+  "resource_limits": {
+    "ram_bytes": 6442450944,
+    "additional_disk_bytes": 16106127360,
+    "threads": 2,
+    "reserve_disk_bytes": 8589934592
+  },
+  "source_scope": "HEAD metadata only, not archive integrity or compatibility verification"
+}
