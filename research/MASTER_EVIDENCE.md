@@ -59,3 +59,10 @@ SinFASTQ/alineamiento adicional ni inferencia/función. Estimaciones de recursos
 reports/gse122069-parameterization-20261031:374tests locales,25nuevos deidentidad/conteo/resumen/transporte;argv históricos1M/completo yresumen delprimercontrol preservados. Doscontextos/dosSAMs fijados,28consultas sintéticas únicas, parsersconcordantes yproyecciones repetidas idénticas. Nada deello añade replicación biológica o lecturas reales. Transporte30min con supervisor global; fallo sintético de20ms deja recibo noverificado. Manifiesto fijo, recibos ligados yplanes sinlecturas/red dedescarga.
 
 Siguiente propuesta: SRR8144908completo,54.292.655lecturas, antesverificar cabeceras/ETag/tamaño yrecursos. Aún no descargado, sinSHA propio o resultados. Límite45min de fase nueva propuesto explícitamente, sinampliación automática oejecución deotros4. Diseño biológico siguependiente; noefecto inferencial/PSI/función. PR33revisable sinmerge yPR30intacto. Manifiestos previos vinculados a167d370/fecaeb5.
+
+
+## Segundo control completo y límite de persistencia — 31/10/2026
+
+SRR8144908/GSM3454243:54.292.655lecturas exactas,55bins/dosparsers concordantes,EOF/CRC,salida0,1919,35s. STMN2canónica111/críptica3 a15;154/4 a8;211exon1;denominador114≥20. Tresobservaciones no son moléculas independientes ni efecto TDP-43. Mismafuente queprimercontrol, no cohorte nueva; sinKD/inferencia/función.
+
+Entorno unavailable después deverificar análisis. Resumen/FASTQQC recuperados exactamente porSHA original enCI3.11/3.12(376tests,2nuevos deintegridad). Paquete completo no recuperado:JSONcompleto,arrays/TSV55bins ylogs faltan;checkpoint30Mpreservado. No se ha ejecutado denuevo para aparentar persistencia completa. Verreports/gse122069-next-control-20261031/REPORT.md. Prioridad recuperar originales alvolverentorno, luegoQC de soporte bajo propuesto, sin otros4ni cierre/merge.

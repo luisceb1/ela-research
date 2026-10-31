@@ -10,16 +10,6 @@
   "published_group": "siControl 2",
   "raw_fastq_md5": "0cd29fe9f8bdf1a6f3596891b783990d",
   "raw_fastq_sha256": "ed2f2f4a30b7f448c246029b0407e20e142493b2d74345e674c4e7b3c3e5527f",
-  "recovery_checks_pending_CI": [
-    {
-      "path": "reports/gse122069-next-control-20261031/summary.json",
-      "original_sha256_recorded_before_loss": "71eeabbc01277786fd7a849958c4fdc2eadb127ed6e7bba7d984b7c46052cf87"
-    },
-    {
-      "path": "reports/gse122069-next-control-20261031/execution/fastq_qc.json",
-      "original_sha256_recorded_before_loss": "8b4c0704ab24ac103b7abea19cd79b761c49ef9931b042bf963af0504e6a7641"
-    }
-  ],
   "original_full_result_unavailable": {
     "path": "reports/gse122069-next-control-20261031/execution/full-control-results.json",
     "sha256_recorded_before_loss": "cb26604160e43cdc04d2eab0a2525fc02f296059d70f5e0d9d731a32d9f6b4a7",
@@ -61,5 +51,23 @@
     "local_tests_passed": 374
   },
   "no_new_execution_or_inference_in_recovery": true,
-  "biological_interpretation": "three accepted cryptic-junction alignment observations in a control; not three independent molecules, TDP43 effect or functional validation"
+  "biological_interpretation": "three accepted cryptic-junction alignment observations in a control; not three independent molecules, TDP43 effect or functional validation",
+  "recovery_checks_verified_CI": [
+    {
+      "path": "reports/gse122069-next-control-20261031/summary.json",
+      "original_sha256_recorded_before_loss": "71eeabbc01277786fd7a849958c4fdc2eadb127ed6e7bba7d984b7c46052cf87"
+    },
+    {
+      "path": "reports/gse122069-next-control-20261031/execution/fastq_qc.json",
+      "original_sha256_recorded_before_loss": "8b4c0704ab24ac103b7abea19cd79b761c49ef9931b042bf963af0504e6a7641"
+    }
+  ],
+  "recovery_hash_check_workflow": {
+    "url": "https://github.com/luisceb1/ela-research/actions/runs/41240518570",
+    "head_sha": "e94eca226ef526455ea88a401f68fbba8c5177bc",
+    "python311": "success",
+    "python312": "success",
+    "tests_in_each_job": 376,
+    "summary_and_fastq_original_sha256_tests_verified_in_both_logs": true
+  }
 }

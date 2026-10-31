@@ -4,7 +4,7 @@ Solo la primera fila es la próxima tarea científica. Los bloqueos requieren ev
 
 | Prioridad | Trabajo | Estado / criterio de cierre |
 |---|---|---|
-| P0 | QC completo fijo SRR8144908 EN EJECUCIÓN | Descarga1069,92s,98rangos,MD5/SHA verificados; índice restaurado porhash/CRC. Fase2700s/54.292.655lecturas/55bins iniciada. AúnNOresultado completo. Preservar checkpoints/errores; sin otros4runs, reintento/ampliación automática o inferencia |
+| P0 bloqueada por entorno | Recuperar artefactos originales pendientes del segundo control | Análisis54.292.655lecturas/55bins completo antes de pérdida:111/3 a15,154/4 a8. DosJSON recuperados conSHA originales verificados porCI376tests. Faltanarrays/TSVcompleto/logs; no inventar ni realinear automáticamente. Al recuperar acceso, buscar originales; despuésQC de señal baja, sin otros4runs |
 | Bloqueado, búsqueda cerrada | Mapa biológico GSE122069 | reports/gse122069-design-20261031:12registros técnicos válidos yReportingSummary nuevo noaportan asignación explícita. Independencia3/3declarada, no refutada; no inferencia ni pares por sufijos. Reabrir solo con fuente concreta nueva; medio discrepante sin resolver |
 | Bloqueado | E-MTAB-15653 | Auditoría documental terminada; independencia no certificada. No repetir búsqueda ni calcular efectos sin nueva fuente concreta |
 | Completado en este PR | Ciclo de selección de tres fuentes | GSE182976: cobertura BW; GSE122069: TPM; E-MTAB-15653: cuentas de unión recuperadas, independencia no certificada. Ninguna lista para el contraste completo. No repetir |
