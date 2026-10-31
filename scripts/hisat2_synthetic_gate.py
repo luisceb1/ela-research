@@ -70,7 +70,7 @@ def accepted_pysam(read):
             and read.has_tag('XS') and read.get_tag('XS') in ('+','-'))
 
 
-def htslib_events(sam):
+def htslib_events(sam, min_anchor=8):
     import pysam
     events=[]
     with pysam.AlignmentFile(str(sam),'r') as file:
@@ -89,7 +89,7 @@ def htslib_events(sam):
                     for op2,n2 in cigar[i+1:]:
                         if op2 not in (0,7,8):break
                         right+=n2
-                    if left>=8 and right>=8 and introns[(cursor,cursor+n)]>0:
+                    if left>=min_anchor and right>=min_anchor and introns[(cursor,cursor+n)]>0:
                         events.append((r.query_name,r.reference_name,cursor,cursor+n+1,r.get_tag('XS')))
                 if op in (0,2,3,7,8):cursor+=n
     return events

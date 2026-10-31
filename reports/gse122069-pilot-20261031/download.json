@@ -1,0 +1,27 @@
+{
+  "run": "SRR8144907",
+  "gsm": "GSM3454242",
+  "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR814/007/SRR8144907/SRR8144907.fastq.gz",
+  "expected_md5": "90ad6a34a34e8262bf300d7bb35406e1",
+  "expected_bytes": 1391030664,
+  "verified": false,
+  "headers": {
+    "date": "Sat, 31 Oct 2026 10:21:03 GMT",
+    "server": "envoy",
+    "last-modified": "Thu, 03 Jan 2019 12:29:28 GMT",
+    "etag": "\"52e97188-57e8ce9e25a00\"",
+    "accept-ranges": "bytes",
+    "content-length": "1391030664",
+    "access-control-allow-origin": "*",
+    "access-control-allow-methods": "GET,OPTIONS",
+    "access-control-allow-headers": "Authorization,Origin,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Accept",
+    "content-type": "application/x-gzip",
+    "x-envoy-upstream-service-time": "3859",
+    "connection": "close"
+  },
+  "error": "TimeoutError: The read operation timed out",
+  "bytes": 0,
+  "md5": "d41d8cd98f00b204e9800998ecf8427e",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "elapsed_seconds": 42.55110754999987
+}

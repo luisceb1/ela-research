@@ -1,0 +1,17 @@
+{
+  "counts": {
+    "8": {
+      "eligible_intron_observations": 1,
+      "canonical": 0,
+      "cryptic": 0
+    },
+    "15": {
+      "eligible_intron_observations": 1,
+      "canonical": 0,
+      "cryptic": 0
+    }
+  },
+  "sam_records": 3,
+  "pysam": "0.23.3",
+  "htslib": "1.21"
+}
