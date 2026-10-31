@@ -1,0 +1,51 @@
+{
+  "source_commit": "ff69669fd2e5786d36a2b7126467347e6d752eaa",
+  "verified_against_remote_tree": true,
+  "files": [
+    {
+      "path": "scripts/gse122069_run_config.py",
+      "sha256": "d895c1e5271d4ae88c88038d9d32c3cd0fcc936b47a37e17d9ef6766123213d0",
+      "git_blob_sha1": "520e09ff21c2dcce752bade6c22f8fb4187da0c6"
+    },
+    {
+      "path": "scripts/gse122069_full_control.py",
+      "sha256": "59d2b7ebc8085c675ca3036c8f18965e937818e1043918a0ff5203ba036763fa",
+      "git_blob_sha1": "18c18c569f4108470f135082b84150c8e484d74f"
+    },
+    {
+      "path": "scripts/fetch_gse122069_ranges.py",
+      "sha256": "5f7fd6a1f27d5281d815ada8a24bea19a47e7d11d37cc41216c6f7c1ddecae41",
+      "git_blob_sha1": "47eaec87d0920fce88f8cf2c18f89f3144a6dcb5"
+    },
+    {
+      "path": "scripts/summarize_gse122069_full_control.py",
+      "sha256": "a6dcb50a0618503ed23500434dbd753dce07730d39b3d6ae3f6ec7e62d51d5bc",
+      "git_blob_sha1": "cd45747b39616133491a7d76474581a16c8c8493"
+    },
+    {
+      "path": "scripts/gse122069_pilot.py",
+      "sha256": "7600eb28b5251300853ae50464d3022128e3e1c0fe86c93c352ec28cf3d9bece",
+      "git_blob_sha1": "00a5fafbea41602379ad311965aacc40c7884a83"
+    },
+    {
+      "path": "scripts/fetch_gse122069_pilot.py",
+      "sha256": "68b906cd31dd760bf08f17e566b2685cccbd75d305fd566b60f76e811b95a336",
+      "git_blob_sha1": "51e1eab5aefd4b32b039c0caeadf02ad9110cd49"
+    },
+    {
+      "path": "scripts/audit_stmn2_junction_contract.py",
+      "sha256": "41d72fadcaabe1b8eea24424bd852fa736ab7ddb164d80af668a43a4e1336299",
+      "git_blob_sha1": "f460cbb844d4e927b88d5f34a73871e2d396ee47"
+    },
+    {
+      "path": "scripts/hisat2_synthetic_gate.py",
+      "sha256": "84d18d33c3648ab5b8921cc2ebef2819a9a890f120cc2ed0e8854527b771b7e3",
+      "git_blob_sha1": "fef8ab13e765d985cefc77b55a519d7f222ef67c"
+    },
+    {
+      "path": "reports/gse122069-resource-plan/input_manifest.json",
+      "sha256": "b5ed1bcfaa32132ae3e05af183dcf16d9b1dc60639db1d4827934c944c40ccbd",
+      "git_blob_sha1": "107b25d5f6b8d9a5bbc8bd580af9d9dd7f22dc71"
+    }
+  ]
+}
