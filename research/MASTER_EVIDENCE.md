@@ -45,3 +45,10 @@ ELA16: reports/source-selection-20261030/REPORT.md, results.json y manifest rese
 Evidencia técnica exploratoria en reports/gse122069-full-control-20261031:37.518.164lecturas exactas,38bins concordantes texto/CIGAR yPySAM/HTSlib,EOF/CRC válido. Canónica STMN2: 72; críptica: 0 con anclaje≥15. A anclaje≥8: 110/0; 169 solapamientos únicos del exon1. El criterio técnico20se supera paraestecontrol. El mismo primer1M coincide con el piloto anterior; no sumarlecturas/muestras delpiloto o bins.335tests locales no son experimentos. Error de restauración por disco conservado; hashes yreanudación verificados;1373,82s de fase.
 
 No contrasteTDP-43, PSI, efecto, ausencia molecular, nueva replicación externa o validación funcional. No otros5runs procesados. Próxima dependencia: mapa público de6bibliotecas a unidades/lotes antes de nuevo plan de recursos. PR30separado yPR33revisable sinmerge.
+
+
+## GSE122069: gate documental de diseño, 31/10/2026
+
+reports/gse122069-design-20261031:12registros técnicos recuperados yReportingSummary del editor nuevo(SHA256ea09e2569478fecd927fb1340424e1fbbbe32e46d3815beb7c1b433296b7b772), inspección visual/textual yproyección mínima. Seis enlaces técnicos válidos no completan asignación a culturas/lotes/pares. Mantener declaración previa de3réplicas biológicas por condición; no demostrar dependencia por falta demapa. Lote de suero no es lote experimental; diferencia F12+MEM/DMEM-F12 entre fuentes sin resolver. Error inicial SRS/SAMN reparado y6SHAidénticos;349tests yreplayJSON/TSVidéntico, no349experimentos.
+
+SinFASTQ/alineamiento adicional ni inferencia/función. Estimaciones de recursos de losotros5son proyecciones delúnico control observado, no benchmarks. Búsqueda de diseño cerrada sinfuente nueva; siguiente tarea es parametrización sintética, no repetición de control/auditoría. Manifiestos históricos se verifican por commit, incluido167d370para el controlcompleto. PR33revisable, PR30intacto.

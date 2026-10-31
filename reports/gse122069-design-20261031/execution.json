@@ -1,0 +1,16 @@
+{
+  "date_utc": "2026-10-31T18:33:32.569881+00:00",
+  "python": "3.12.14",
+  "research_base_head": "167d370ed8b8ffd7feeb24b81208f15ed4492d35",
+  "observed_main": "96975b1c4bea6cf9267d03c15bdd4373dad3966e",
+  "pr30_head_unchanged": "053ef70ce437cc637ec18278a2c07e3abd6bf58b",
+  "tests_local": 349,
+  "compileall_pass": true,
+  "new_fastq_processed": 0,
+  "new_alignments_executed": 0,
+  "metadata_records_final": 12,
+  "metadata_errors_final": 0,
+  "random_seed": null,
+  "deterministic_audit": true,
+  "privacy_scope": "public culture accessions, published culture groups and technical fields only; no clinical personal data or contact fields retained"
+}

@@ -4,7 +4,8 @@ Solo la primera fila es la próxima tarea científica. Los bloqueos requieren ev
 
 | Prioridad | Trabajo | Estado / criterio de cierre |
 |---|---|---|
-| P0 | Gate de diseño técnico GSE122069 antes de otros cinco runs | Control completo terminado:37.518.164lecturas,38bins concordantes,72canónica/0críptica a15,169exon1; regla20superada. Buscar fuente técnica nueva para mapa6bibliotecas→experimento/lote/pareamiento; si falta, bloqueo sin inferencia. Plan research/plans/2026-10-31-gse122069-design-gate.md. Después revisar recursos porrun38,50–66,94M, sin descargar/alinear automáticamente |
+| P0 | Parametrizar runner por accession y validar controles sintéticos, sin FASTQ nuevo | Control completo previo superó20; auditoría de diseño cerrada con mapa de unidades/lotes/pares pendiente. Preparación en research/plans/2026-10-31-gse122069-next-control-preparation.md. Propuesta futuraSRR8144908/54.292.655lecturas,45min para revisión, sin ejecución o ampliación automática |
+| Bloqueado, búsqueda cerrada | Mapa biológico GSE122069 | reports/gse122069-design-20261031:12registros técnicos válidos yReportingSummary nuevo noaportan asignación explícita. Independencia3/3declarada, no refutada; no inferencia ni pares por sufijos. Reabrir solo con fuente concreta nueva; medio discrepante sin resolver |
 | Bloqueado | E-MTAB-15653 | Auditoría documental terminada; independencia no certificada. No repetir búsqueda ni calcular efectos sin nueva fuente concreta |
 | Completado en este PR | Ciclo de selección de tres fuentes | GSE182976: cobertura BW; GSE122069: TPM; E-MTAB-15653: cuentas de unión recuperadas, independencia no certificada. Ninguna lista para el contraste completo. No repetir |
 | Revisión | PR #30 separado | Otros candidatos y trabajo posterior; no integrado ni reejecutado aquí. Reconciliar su planning al integrar, sin sumar resultados o ampliar a datos clínicos personales |
@@ -56,3 +57,8 @@ reports/stmn2-exon1-mappability-20261031:194/194 del exon1 (54en tramo común63n
 ## Control completo completado — estado vigente
 
 reports/gse122069-full-control-20261031 reemplaza la instrucción anterior de preparar/ejecutar este mismo control.1373,82s,335tests locales/compileallOK,FASTQMD5/SHA yEOF/CRC válidos. El negativo del primer1M sigue intacto; la cobertura total recuperada no certifica ausencia críptica, efecto ni función. Checkpoints parciales y expresión/splicing de la misma fuente no son replicación externa. Error de restauración por disco yreanudación acotada documentados. No repetir el control como nueva fase. La únicaP0es el gate de diseño, sin iniciar otros5ni cambiar presupuestos automáticamente. PR30intacto; PR33abierto sinmerge/cierre.
+
+
+## Diseño GSE122069 auditado — continuación vigente
+
+349tests locales/compileallOK yreplay idéntico. Se conservan6errores iniciales de parser deaccesiones, reparación SRS/SAMN cotejada porhash,12proyecciones técnicas yReportingSummary porSHA coninspección visual. No nuevoFASTQ, alineamiento o réplica. La búsqueda del mapa queda cerrada conbloqueo concreto; no repetir comoP0. Siguiente únicaP0: código/configuración ycontroles sintéticos para accession, sin datos nuevos. Las estimaciones de recursos de5runs son proyecciones, no ejecuciones, yel límite futuro45min no es ampliación automática. PR30sin modificar, PR33revisable sinmerge/cierre.

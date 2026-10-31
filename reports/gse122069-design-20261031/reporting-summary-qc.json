@@ -1,0 +1,16 @@
+{
+  "source_sha256": "ea09e2569478fecd927fb1340424e1fbbbe32e46d3815beb7c1b433296b7b772",
+  "pages": 3,
+  "accession_tokens_found": [],
+  "author_software_versions_present": {
+    "STAR": "2.5.3a",
+    "RSEM": "1.3.0",
+    "DESeq2": "1.14.1"
+  },
+  "FBS_lot531342_present": true,
+  "token_absence_alone_is_not_a_semantic_proof_of_missing_map": true,
+  "visual_review_required_for_checkboxes_and_semantics": true,
+  "no_full_text_clinical_or_contact_sections_retained": true,
+  "python": "3.12.14",
+  "pdftotext_version": "pdftotext version 24.02.0\nCopyright 2005-2024 The Poppler Developers - http://poppler.freedesktop.org\nCopyright 1996-2011, 2022 Glyph & Cog, LLC"
+}

@@ -1,0 +1,8 @@
+{
+  "failed_sample_records": 6,
+  "same_original_bytes_by_sha256_after_repair": true,
+  "cause": "SRS accession is explicit SECONDARY_ID; ENA primary is SAMN",
+  "fix": "accept only primary or explicitly listed PRIMARY_ID/SECONDARY_ID, reject unrelated IDs",
+  "experiments_not_refetched": true,
+  "no_relaxation_of_group_or_culture_checks": true
+}

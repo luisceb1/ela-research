@@ -1,0 +1,63 @@
+{
+  "input_sha256": {
+    "reports/gse122069-resource-plan/input_manifest.json": "b5ed1bcfaa32132ae3e05af183dcf16d9b1dc60639db1d4827934c944c40ccbd",
+    "reports/gse122069-full-control-20261031/execution/full-control-results.json": "a9b50d89e2176d44b7fa0176e0eaf7cdee9df2b9f174bd5511534adad7a2438a"
+  },
+  "benchmark_run": "SRR8144907",
+  "observed_seconds": 1373.8185071530002,
+  "linear_scaling_is_unvalidated_not_a_guarantee": true,
+  "other_runs": [
+    {
+      "run": "SRR8144908",
+      "gsm": "GSM3454243",
+      "published_group": "siControl 2",
+      "expected_reads": 54292655,
+      "compressed_bytes": 1640602052,
+      "linear_point_estimate_seconds_not_measured": 1988.06,
+      "new_run_executed": false
+    },
+    {
+      "run": "SRR8144909",
+      "gsm": "GSM3454244",
+      "published_group": "siControl 3",
+      "expected_reads": 40925555,
+      "compressed_bytes": 1238090993,
+      "linear_point_estimate_seconds_not_measured": 1498.59,
+      "new_run_executed": false
+    },
+    {
+      "run": "SRR8144910",
+      "gsm": "GSM3454245",
+      "published_group": "siTDP-43 1",
+      "expected_reads": 54264948,
+      "compressed_bytes": 2015424180,
+      "linear_point_estimate_seconds_not_measured": 1987.04,
+      "new_run_executed": false
+    },
+    {
+      "run": "SRR8144911",
+      "gsm": "GSM3454246",
+      "published_group": "siTDP-43 2",
+      "expected_reads": 38499682,
+      "compressed_bytes": 1168518842,
+      "linear_point_estimate_seconds_not_measured": 1409.76,
+      "new_run_executed": false
+    },
+    {
+      "run": "SRR8144912",
+      "gsm": "GSM3454247",
+      "published_group": "siTDP-43 3",
+      "expected_reads": 66940547,
+      "compressed_bytes": 2021225844,
+      "linear_point_estimate_seconds_not_measured": 2451.19,
+      "new_run_executed": false
+    }
+  ],
+  "remaining_reads": 254923387,
+  "remaining_compressed_bytes": 8083861911,
+  "proposed_next_fixed_run": "SRR8144908",
+  "proposed_future_phase_deadline_seconds": 2700,
+  "future_phase_not_started": true,
+  "no_automatic_budget_extension": true,
+  "next_authorized_preparation": "parameterize runner and validate synthetic boundary/control tests only; no new FASTQ"
+}

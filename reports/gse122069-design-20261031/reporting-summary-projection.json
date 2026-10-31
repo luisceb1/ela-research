@@ -1,0 +1,41 @@
+{
+  "source_url": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41593-018-0293-z/MediaObjects/41593_2018_293_MOESM2_ESM.pdf",
+  "source_sha256": "ea09e2569478fecd927fb1340424e1fbbbe32e46d3815beb7c1b433296b7b772",
+  "pages": 3,
+  "visual_review_pages": [
+    1,
+    2,
+    3
+  ],
+  "projection_only_not_full_pdf_or_clinical_tables": true,
+  "page1": {
+    "author_alignment_software": {
+      "STAR": "2.5.3a",
+      "RSEM": "1.3.0",
+      "DESeq2": "1.14.1"
+    },
+    "checkboxes_are_general_reporting_not_library_map": true
+  },
+  "page2": {
+    "independent_repetition_declared_generally": true,
+    "exact_n_deferred_to_figures_and_text": true,
+    "randomization_declared": false,
+    "blinding_declared": false,
+    "data_exclusions_declared": false,
+    "library_to_culture_or_batch_map_present": false
+  },
+  "page3_cell_culture_text_projection": {
+    "medium": "1:1 F12 and Minimum Essential Medium",
+    "FBS_percent": 10,
+    "FBS_lot": "531342",
+    "FBS_lot_is_reagent_not_culture_or_sequencing_batch": true,
+    "does_not_assign_any_GSM_to_experiment_or_batch": true
+  },
+  "accession_or_group_token_search": {
+    "GSM3454242": false,
+    "SRX4965534": false,
+    "siControl": false,
+    "siTDP-43": false
+  },
+  "page3_review_scope": "cell-culture paragraph only; unrelated sections excluded"
+}

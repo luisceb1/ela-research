@@ -1,0 +1,8 @@
+{
+  "byte_identical_audit_replay": true,
+  "sha256": {
+    "reports/gse122069-design-20261031/results.json": "ccf1964853d61ccf175fde4f3ad5bd2c596b5c8e37319b2289262a1518c4b0e0",
+    "reports/gse122069-design-20261031/library-design.tsv": "3e06f2bc006fd8e9876c8a50b11b1ac88647477664a906a37e962383ad1d3aad"
+  },
+  "scope": "replay of same metadata projections, not independent replication"
+}
