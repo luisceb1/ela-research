@@ -1,0 +1,153 @@
+{
+  "complete_library": false,
+  "status": "execution ongoing; not final result",
+  "common_completed_bins": 5,
+  "common_completed_reads": 5000000,
+  "common_bins_concordant": true,
+  "counts": {
+    "8": {
+      "eligible_intron_observations": 441112,
+      "canonical": 16,
+      "cryptic": 0
+    },
+    "15": {
+      "eligible_intron_observations": 273745,
+      "canonical": 10,
+      "cryptic": 0
+    }
+  },
+  "completed_bins": [
+    {
+      "first_read": 1,
+      "last_read": 1000000,
+      "reads": 1000000,
+      "sam_records": 1256935,
+      "primary_records": 1000000,
+      "counts": {
+        "8": {
+          "eligible_intron_observations": 87261,
+          "canonical": 0,
+          "cryptic": 0
+        },
+        "15": {
+          "eligible_intron_observations": 54054,
+          "canonical": 0,
+          "cryptic": 0
+        }
+      }
+    },
+    {
+      "first_read": 1000001,
+      "last_read": 2000000,
+      "reads": 1000000,
+      "sam_records": 1258614,
+      "primary_records": 1000000,
+      "counts": {
+        "8": {
+          "eligible_intron_observations": 88049,
+          "canonical": 5,
+          "cryptic": 0
+        },
+        "15": {
+          "eligible_intron_observations": 54579,
+          "canonical": 2,
+          "cryptic": 0
+        }
+      }
+    },
+    {
+      "first_read": 2000001,
+      "last_read": 3000000,
+      "reads": 1000000,
+      "sam_records": 1257167,
+      "primary_records": 1000000,
+      "counts": {
+        "8": {
+          "eligible_intron_observations": 87803,
+          "canonical": 2,
+          "cryptic": 0
+        },
+        "15": {
+          "eligible_intron_observations": 54644,
+          "canonical": 1,
+          "cryptic": 0
+        }
+      }
+    },
+    {
+      "first_read": 3000001,
+      "last_read": 4000000,
+      "reads": 1000000,
+      "sam_records": 1258936,
+      "primary_records": 1000000,
+      "counts": {
+        "8": {
+          "eligible_intron_observations": 88718,
+          "canonical": 7,
+          "cryptic": 0
+        },
+        "15": {
+          "eligible_intron_observations": 55180,
+          "canonical": 7,
+          "cryptic": 0
+        }
+      }
+    },
+    {
+      "first_read": 4000001,
+      "last_read": 5000000,
+      "reads": 1000000,
+      "sam_records": 1258673,
+      "primary_records": 1000000,
+      "counts": {
+        "8": {
+          "eligible_intron_observations": 89281,
+          "canonical": 2,
+          "cryptic": 0
+        },
+        "15": {
+          "eligible_intron_observations": 55288,
+          "canonical": 0,
+          "cryptic": 0
+        }
+      }
+    }
+  ],
+  "locus_bins": [
+    {
+      "primary_block_overlap": 628,
+      "unique_mapq_block_overlap": 628,
+      "exon2_unique_overlap": 31,
+      "unique_spliced_reads": 48
+    },
+    {
+      "primary_block_overlap": 743,
+      "unique_mapq_block_overlap": 743,
+      "exon2_unique_overlap": 32,
+      "unique_spliced_reads": 47,
+      "exon1_unique_overlap": 6
+    },
+    {
+      "primary_block_overlap": 685,
+      "unique_mapq_block_overlap": 685,
+      "unique_spliced_reads": 48,
+      "exon2_unique_overlap": 45,
+      "exon1_unique_overlap": 3
+    },
+    {
+      "primary_block_overlap": 613,
+      "unique_mapq_block_overlap": 613,
+      "exon1_unique_overlap": 10,
+      "exon2_unique_overlap": 40,
+      "unique_spliced_reads": 58
+    },
+    {
+      "primary_block_overlap": 660,
+      "unique_mapq_block_overlap": 660,
+      "exon2_unique_overlap": 41,
+      "unique_spliced_reads": 50,
+      "exon1_unique_overlap": 2
+    }
+  ],
+  "scope": "same fixed control; technical partitions, not new replicates; full FASTQ CRC pending"
+}
