@@ -1,0 +1,14 @@
+{
+  "run_start_git_commit": "23426ef338ee509db8c802480d99ce6b3c0572b5",
+  "runner_and_helpers_unchanged_during_execution": true,
+  "code_sha256": {
+    "scripts/gse122069_full_control.py": "51e28e4296a185c97ba31bdd3c10ff4e7c8db2d72cd244b786de6c3f17edfe9a",
+    "scripts/gse122069_pilot.py": "7600eb28b5251300853ae50464d3022128e3e1c0fe86c93c352ec28cf3d9bece",
+    "scripts/fetch_gse122069_pilot.py": "68b906cd31dd760bf08f17e566b2685cccbd75d305fd566b60f76e811b95a336",
+    "scripts/fetch_gse122069_ranges.py": "11a9440d292590886b75bf3617b30fddf64ce7dcbc76df09854ada9dbfc5348b",
+    "scripts/resume_gse122069_ranges.py": "2221c8dcb20c294705a7b2e19b3a6fceb186cc5c8c0a2845f90a99b7e09e1b23",
+    "scripts/summarize_gse122069_full_control.py": "434bcf7d0a6245dfa4130cf3ccedcf0371f272f0543270430452e09c784cf95e",
+    "scripts/audit_stmn2_junction_contract.py": "41d72fadcaabe1b8eea24424bd852fa736ab7ddb164d80af668a43a4e1336299",
+    "scripts/hisat2_synthetic_gate.py": "84d18d33c3648ab5b8921cc2ebef2819a9a890f120cc2ed0e8854527b771b7e3"
+  }
+}

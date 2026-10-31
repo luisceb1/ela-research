@@ -4,7 +4,7 @@ Solo la primera fila es la próxima tarea científica. Los bloqueos requieren ev
 
 | Prioridad | Trabajo | Estado / criterio de cierre |
 |---|---|---|
-| P0 | QC prospectivo del control completo SRR8144907, antes de los otros cinco runs | Mapeabilidad de exon1 completada:194/194 perfectas en origen. Entrada restaurada MD5/SHA verificados; fase completa37.518.164lecturas EN EJECUCIÓN bajo30min.335tests locales, preflight concordante y bins prefijados. No afirmar biblioteca completa hastaEOF/CRC y parsers iguales. No ampliar/detener según señal ni inferencia biológica |
+| P0 | Gate de diseño técnico GSE122069 antes de otros cinco runs | Control completo terminado:37.518.164lecturas,38bins concordantes,72canónica/0críptica a15,169exon1; regla20superada. Buscar fuente técnica nueva para mapa6bibliotecas→experimento/lote/pareamiento; si falta, bloqueo sin inferencia. Plan research/plans/2026-10-31-gse122069-design-gate.md. Después revisar recursos porrun38,50–66,94M, sin descargar/alinear automáticamente |
 | Bloqueado | E-MTAB-15653 | Auditoría documental terminada; independencia no certificada. No repetir búsqueda ni calcular efectos sin nueva fuente concreta |
 | Completado en este PR | Ciclo de selección de tres fuentes | GSE182976: cobertura BW; GSE122069: TPM; E-MTAB-15653: cuentas de unión recuperadas, independencia no certificada. Ninguna lista para el contraste completo. No repetir |
 | Revisión | PR #30 separado | Otros candidatos y trabajo posterior; no integrado ni reejecutado aquí. Reconciliar su planning al integrar, sin sumar resultados o ampliar a datos clínicos personales |
@@ -51,3 +51,8 @@ reports/gse122069-pilot-20261031:1Mreal,96,58%alineamiento,conteospropio/HTSlib 
 ## Mapeabilidad completada — continuación vigente
 
 reports/stmn2-exon1-mappability-20261031:194/194 del exon1 (54en tramo común63nt),680 controles posteriores y8positivos correctos; negativo excluido. SinFASTQreales nuevos ni cambio del piloto. No imposibilidad general de mapeo perfecto bajo esta configuración; causa de cobertura5prime sigue abierta. Única próxima tarea: propuesta de controlcompleto fijado, no otros cinco ni nueva fase adaptativa.317tests locales,CI de cabeza nueva por verificar; mismoPR33 abierto yPR30 intacto.
+
+
+## Control completo completado — estado vigente
+
+reports/gse122069-full-control-20261031 reemplaza la instrucción anterior de preparar/ejecutar este mismo control.1373,82s,335tests locales/compileallOK,FASTQMD5/SHA yEOF/CRC válidos. El negativo del primer1M sigue intacto; la cobertura total recuperada no certifica ausencia críptica, efecto ni función. Checkpoints parciales y expresión/splicing de la misma fuente no son replicación externa. Error de restauración por disco yreanudación acotada documentados. No repetir el control como nueva fase. La únicaP0es el gate de diseño, sin iniciar otros5ni cambiar presupuestos automáticamente. PR30intacto; PR33abierto sinmerge/cierre.

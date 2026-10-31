@@ -1,0 +1,32 @@
+{
+  "run": "SRR8144907",
+  "complete_library": true,
+  "concordant_completed_bins": 38,
+  "concordant_completed_reads": 37518164,
+  "sam_records": 47124040,
+  "counts": {
+    "8": {
+      "eligible_intron_observations": 3286603,
+      "canonical": 110,
+      "cryptic": 0
+    },
+    "15": {
+      "eligible_intron_observations": 2039339,
+      "canonical": 72,
+      "cryptic": 0
+    }
+  },
+  "locus_qc": {
+    "primary_block_overlap": 24701,
+    "unique_mapq_block_overlap": 24691,
+    "exon2_unique_overlap": 1308,
+    "unique_spliced_reads": 1901,
+    "exon1_unique_overlap": 169
+  },
+  "first1M_matches_historical_pilot": true,
+  "minimum_denominator": 20,
+  "denominator": 72,
+  "complete_control_coverage_criterion_met": true,
+  "scope": "one public control; bins are technical partitions, not independent replicates; no PSI/effect/biological absence",
+  "input_qc_may_include_streamed_reads_ahead_of_validated_alignment_prefix": true
+}

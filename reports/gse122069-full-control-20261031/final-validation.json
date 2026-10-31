@@ -1,0 +1,11 @@
+{
+  "fastq_histogram_reads_and_bases_concordant": true,
+  "exact_37518164_primaries": true,
+  "complete_gzip_crc_eof": true,
+  "all_38_bins_parser_concordant": true,
+  "first1M_matches_prior": true,
+  "python": "3.12.14",
+  "free_disk_bytes_final": 56076038144,
+  "disk_baseline_bytes": 63427059712,
+  "no_additional_runs_processed": true
+}

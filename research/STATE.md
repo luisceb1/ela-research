@@ -17,6 +17,7 @@ Hay auditorías técnicas, reproducción numérica, descriptivos y propuestas. N
 | #14: expresión/uniones | 45 campos de expresión, 18 de extracción DEXSeq y 24 de índices concordantes; duplicados/fórmulas auditados | reports/issue14-reproduction, fratta-junction-audit |
 | #14: DEXSeq | Diseño por dos lotes, 7030428 cuentas concordantes; sensibilidad de magnitud/denominadores y regiones CE comprobadas | reports/gse121569-design, dexseq-qc, dexseq-magnitude, dexseq-coverage, ce-bin-coordinate-audit |
 | SH-SY5Y | Seis enlaces exactos a ENA; S6 y convenciones inspeccionadas; búsqueda histórica acotada concluida | reports/shsy5y-junction-map, junction-definition-search |
+| GSE122069 control completo | 37.518.164lecturas,38bins/dosparsers; STMN2canónica72/críptica0 a15; criterio técnico20superado, no contraste biológico | reports/gse122069-full-control-20261031 |
 
 Los informes preservan los hashes, parámetros, errores y resultados negativos de cada ejecución. Sus antiguos apartados «siguiente tarea» son históricos; no reemplazan este estado.
 
@@ -30,7 +31,11 @@ Los informes preservan los hashes, parámetros, errores y resultados negativos d
 
 ## Única próxima tarea
 
-En ejecución: QC prospectivo del único control completo SRR8144907 (37.518.164 lecturas). Restauración final verificada por MD5 público90ad6a34a34e8262bf300d7bb35406e1 ySHA256d3f57e023735d35261f9b0c2acb4d8034a859295ab12178375be352c7b7d6593. Error previo de disco guardado,48rangos cotejados antes de reusar,35restantes descargados;17,6min acumulados dentro del presupuesto30min de restauración. Cachés aisladas, copias redundantes retiradas. Runner y preflight prospectivos persistidos en c3bf1f757f0fe08f415a98a4d5a95923f439cf42; reanudación en dc30c0bc3deb05ccfa5878b6e8ac910d321b7122 (CI3.11/3.12OK).335tests locales incluyendo validación de resumen. La pasada larga ha comenzado, pero aún NO hay resultado de biblioteca completa en este checkpoint. No iniciar otros cinco runs;2CPU,caps5,75GiB,30min de fase. Preservar prefijo concordante ante timeout; no aumentar presupuesto automáticamente.
+QC del control completo SRR8144907 TERMINADO en reports/gse122069-full-control-20261031:37.518.164lecturas exactas,EOF/CRC válido,38bins concordantes en dosparsers,47.124.040registrosSAM,96,21%alineamiento. STMN2canónica72/críptica0 a15;110/0 a8. Exon1:169solapamientos únicos; exon2:1308. Regla técnica canónica+críptica≥20 superada paraestecontrol. El primer1M conserva exactamente sus cuentas previas, pero su0no calificaba toda la biblioteca. No sumar piloto/bins como réplicas ni inferir ausencia deCE, efecto,PSI o función.
+
+Ejecución1373,82s<30min,2CPU,caps virtuales5,75GiB,sinSAM/BAMcompleto.335tests locales/compileallOK. Fuente/binario recompilado/índice yFASTQ verificados porhash; fallo previo de restauración por disco guardado,48rangos reusados trasSHA y35faltantes recuperados. Descargar/restaurar no crea nuevasmuestras. Checkpoints parciales en historia dePR33 quedan superados por resultado completo; no declararlos pasadas adicionales. Ninguno de los otros cinco runs procesado.
+
+Única próxima tarea: gate de diseño técnico GSE122069 en research/plans/2026-10-31-gse122069-design-gate.md: mapa público biblioteca→experimento/lote/pareamiento, usando una fuente concreta que aporte el enlace aún no acreditado. No repetir las declaraciones o enlacesENA ya auditados como nuevos. Después, plan prospectivo de recursos de los otros5, sin descarga automática:38,50–66,94Mporrun y30min no garantizados. No inferencia sin unidades suficientes, no ampliar límites por inercia. MismoPR33 abierto/revisable, PR30 separado/intacto; no merge/cierre automático.
 
 Mapeabilidad del primer exón completada en reports/stmn2-exon1-mappability-20261031: las 194 lecturas perfectas de 50/51 nt del exón1 se recuperan íntegras en su origen con NH1/MAPQ>=20. Incluye las 54 contenidas en el tramo compartido de63 nt de dos transcritos anotados. También pasan680 controles exónicos posteriores,8 positivos de unión y1 negativo. 883 consultas sintéticas, no réplicas biológicas. Dos ejecuciones producenSAM/resultados/tabla idénticos por bytes. No nuevosFASTQreales.
 

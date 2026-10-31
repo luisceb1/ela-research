@@ -38,3 +38,10 @@ ARN total, procesamiento de una unión, isoforma funcional, proteína, recuperac
 Se conservan los informes históricos con sus hashes/entornos/resultados, pero sus próximos pasos antiguos no son el planning vigente. El criterio de entrada para nueva evidencia está en NEXT_STUDY_GATE. Los registros maestros anteriores se archivan en reports/integration-20261030/history.
 
 ELA16: reports/source-selection-20261030/REPORT.md, results.json y manifest research/references/independent_source_gate_20261030.json. Propuesta en PR separado de #30; sus resultados no se suman ni se presentan como incorporados a main antes de merge.
+
+
+## GSE122069: QC del control completo, 31/10/2026
+
+Evidencia técnica exploratoria en reports/gse122069-full-control-20261031:37.518.164lecturas exactas,38bins concordantes texto/CIGAR yPySAM/HTSlib,EOF/CRC válido. Canónica STMN2: 72; críptica: 0 con anclaje≥15. A anclaje≥8: 110/0; 169 solapamientos únicos del exon1. El criterio técnico20se supera paraestecontrol. El mismo primer1M coincide con el piloto anterior; no sumarlecturas/muestras delpiloto o bins.335tests locales no son experimentos. Error de restauración por disco conservado; hashes yreanudación verificados;1373,82s de fase.
+
+No contrasteTDP-43, PSI, efecto, ausencia molecular, nueva replicación externa o validación funcional. No otros5runs procesados. Próxima dependencia: mapa público de6bibliotecas a unidades/lotes antes de nuevo plan de recursos. PR30separado yPR33revisable sinmerge.
