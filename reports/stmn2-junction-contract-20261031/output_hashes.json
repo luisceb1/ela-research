@@ -1,0 +1,16 @@
+{
+  "reports/stmn2-junction-contract-20261031/REPORT.md": "f8486a64e985370e023d7e3663288f7b67310b7533770d345f5428eef6f752cd",
+  "reports/stmn2-junction-contract-20261031/contract.json": "4778971a7764cb92cec06e5788ccc8ddc15b5e4c0dfad9998f4cc310d1a8b8c8",
+  "reports/stmn2-junction-contract-20261031/errors.json": "2fae15fb8c9db113ba9242a5db90726bcd29b4e12fe6c9ab4babb5dcf06af75d",
+  "reports/stmn2-junction-contract-20261031/repeat_verification.json": "0f7b310a79d3b2d8bfc67cd0acc431760c88ce2b6be830f17a55e43808b16696",
+  "reports/stmn2-junction-contract-20261031/run.json": "6c16086bd47f9886868f45ac1d270aa61126bf7e4a2fd46800b82d7dabafb8ee",
+  "reports/stmn2-junction-contract-20261031/scite_checks.json": "cd114b346b57ae44db6355f1f41e18d06642d700f73a24a0d195f23139c7efcc",
+  "reports/stmn2-junction-contract-20261031/tests-incomplete-materialization.txt": "e787f6e2de958ed966f92ce2b7ad99a3c896645c7d9eb5bc92f72249a5879346",
+  "reports/stmn2-junction-contract-20261031/tests.txt": "6246d13bc92685020d6d9529cb36343239df1a6171af875fed45cf80d8ba8620",
+  "research/BACKLOG.md": "1a3a04583b559eab8622c596acdef1dd60a81540977ced02557b6d927266918c",
+  "research/STATE.md": "2aea99c6a41600316394b28c815f3b969acd79b6b876977deb1097d1fcfbdb45",
+  "research/plans/2026-10-31-stmn2-junction-contract.md": "cea498836a86e6d4fd634c73880563a6eb322b62195ca1375d2c599ff12e570a",
+  "research/references/stmn2_junction_contract_20261031.json": "7bfbaf06f8dee124dc4fad116c9964113ce8487215523f2f0b213029b7a21fbd",
+  "scripts/audit_stmn2_junction_contract.py": "41d72fadcaabe1b8eea24424bd852fa736ab7ddb164d80af668a43a4e1336299",
+  "tests/test_stmn2_junction_contract.py": "3ce6d8d10cc3618347a8439acab223a0018d5adb80a5a08d38994bf8e0cf232d"
+}

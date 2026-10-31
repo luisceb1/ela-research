@@ -1,0 +1,23 @@
+[
+  {
+    "stage": "git clone",
+    "result": "fatal: could not read Username for https://github.com; recovered via GitHub connector"
+  },
+  {
+    "stage": "Ensembl REST exon request",
+    "url": "https://rest.ensembl.org/overlap/region/human/8:79610000-79620000?feature=exon;content-type=application/json",
+    "result": "TimeoutError after 20s; no reference retrieved"
+  },
+  {
+    "stage": "local reconstruction",
+    "result": "258 tests, 1 failure and 3 errors: incomplete fixtures/modules; then 275 tests, 1 failure caused by an extra newline in a fixture; restored exact Git blobs, no source change, final 275 pass"
+  },
+  {
+    "stage": "local file transfer",
+    "result": "argument list too long; retried in smaller batches"
+  },
+  {
+    "stage": "scite editorial filter",
+    "result": "Correction filter returns no indexed DOI despite metadata retrieval; cannot certify editorial clearance or retrieve new fulltext coordinates"
+  }
+]

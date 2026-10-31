@@ -1,4 +1,4 @@
-# Estado vigente — 30/10/2026
+# Estado vigente — 31/10/2026
 
 ## Alcance
 
@@ -30,9 +30,10 @@ Los informes preservan los hashes, parámetros, errores y resultados negativos d
 
 ## Única próxima tarea
 
-El ciclo de selección y la revisión adicional de E-MTAB-15653 están cerrados. Esa vía inferencial queda bloqueada por independencia no certificada; no repetir la búsqueda sin fuente nueva concreta. La única próxima tarea de esta línea es revisar/completar [el plan de recursos GSE122069](../reports/gse122069-resource-plan/PLAN.md), referencias y controles antes de decidir un piloto. Seis runs, 9,47 GB comprimidos publicados; no FASTQ descargado ni alineamiento. PR30 sigue activo con otro chat y no se modifica aquí.
+Validar FASTA/índice/versiones del alineador y motivos de las dos uniones STMN2 antes del piloto GSE122069. El contrato de coordenadas ya se fijó en reports/stmn2-junction-contract-20261031, reutilizando proyecciones auditadas y con controles sintéticos: críptica chr8:+ 79611214→79616822, canónica 79611214→79636802 (límites exónicos 1-based, GRCh38). No se ha revalidado GTF completo ni FASTA, ni creado índice o procesado FASTQ. El piloto continúa bloqueado, no se acepta todavía replicación externa.
 
-Al retomar se encontró el PR #30 abierto (cabeza inspeccionada 0e032667), que audita otros tres registros y documenta trabajo posterior separado. No se fusiona ni se reejecuta aquí. Este informe local empezó con PLAN.json a las 09:07 UTC, antes de crearse #30 a las 11:23 UTC. Son dos ciclos de trabajo distintos, no una sola selección de tres registros ni replicaciones científicas. Reconciliar ambos PR al integrar y mantener una única próxima tarea; no tratar sus salidas locales reportadas por el usuario como ejecuciones realizadas aquí.
+Base observada en esta ejecución: main f898b2967aae8909db1796753f9d2cae2bf966ef; #28/#29/#31 integrados. Único PR previo abierto: #30, cabeza 053ef70ce437cc637ec18278a2c07e3abd6bf58b, draft y activo con otro chat. Informe y diferencias leídos; no se modifica ni reproduce RiMOD/NYGC. Las ramas históricas permanecen como historial, no trabajo pendiente adicional.
+
 
 ## Verificación y operación
 
@@ -54,3 +55,11 @@ Auditoría acotada completada en reports/fractionation-units-20261030: XML prima
 ## Cierre de revisión y plan operativo
 
 Descripción y punto de continuación reconciliados. La integración concreta de #31 está autorizada por Luis; #30 se mantiene abierto y su rama intacta. Plan GSE122069 en reports/gse122069-resource-plan: RAM disponible 8 GiB, piloto condicionado a índice compatible y medición de recursos; ninguna descarga/alineamiento iniciada. La CI offline no reproduce FASTQ ni certifica viabilidad del piloto.
+
+## Contrato STMN2 — 31/10/2026
+
+Pregunta/falsador fijados antes de ejecutar: research/plans/2026-10-31-stmn2-junction-contract.md. Candidato canónico único en la proyección y coherente con exones de ENST00000220876.12/ENST00000518111.5; no son réplicas biológicas. Conversiones intrónicas/BED y extracción SAM SE sintética comprobadas. 275 tests locales correctos (253 previos +22 nuevos), compileall correcto; Python 3.12.14. Contrato idéntico por bytes en dos ejecuciones, entradas por SHA256 y ficheros heredados cotejados con Git blobs. La CI de este PR se verifica por su nueva cabeza; no se presupone correcta ni reproduce FASTQ.
+
+No efectos, PSI, significación ni función. Razón propuesta críptica/(críptica+canónica) sería condicional a esas dos ramas; otras ramas del donante no medidas. Prototipo requiere XS y NH=1, MAPQ>=20 (excluye255), anclas contiguas>=8; retiene flags de duplicación y rechaza PE. Pendiente comparar con herramienta independiente y semántica del alineador. No producción/crudos desde esta entrega.
+
+Ensembl agotó timeout y no aportó referencia. 8 GiB RAM, ~62,79 GB libres observados, sin HISAT2/STAR/samtools. Esto no es benchmark ni autoriza más recursos que el plan previo. Git clone sin credenciales; acceso al código por conector comprobado. Se registran fallos de materialización local, corregidos por blobs exactos antes de la suite final. Ningún cambio en main o rama30, merge/cierre, gastos, contactos o publicación externa. Las menciones históricas a PR31 abierto y 253 pruebas corresponden al ciclo anterior; este apartado y Única próxima tarea son los vigentes.

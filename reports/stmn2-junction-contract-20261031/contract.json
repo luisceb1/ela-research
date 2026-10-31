@@ -1,0 +1,43 @@
+{
+  "alignment_tool_comparison_done": false,
+  "assembly": "GRCh38",
+  "canonical_transcript_witnesses": [
+    "ENST00000220876.12",
+    "ENST00000518111.5"
+  ],
+  "chrom": "chr8",
+  "denominator_proposed": "canonical + cryptic counts sharing donor; conditional read ratio, not molecular PSI",
+  "events": {
+    "canonical": {
+      "intron_bed_end_exclusive": 79636801,
+      "intron_bed_start_0based": 79611214,
+      "intron_end_1based": 79636801,
+      "intron_start_1based": 79611215,
+      "left_exon_end_1based": 79611214,
+      "right_exon_start_1based": 79636802,
+      "skipped_reference_bases": 25587
+    },
+    "cryptic": {
+      "intron_bed_end_exclusive": 79616821,
+      "intron_bed_start_0based": 79611214,
+      "intron_end_1based": 79616821,
+      "intron_start_1based": 79611215,
+      "left_exon_end_1based": 79611214,
+      "right_exon_start_1based": 79616822,
+      "skipped_reference_bases": 5607
+    }
+  },
+  "evidence_level": "reused molecular projection plus synthetic software QC",
+  "fasta_verified": false,
+  "index_verified": false,
+  "limits": [
+    "Not independent GTF reconstruction",
+    "No full transcript/polyA inference",
+    "Paper caption strand not explicit; strand inherited from audited projection",
+    "No biological effect, replication or functional validation"
+  ],
+  "pilot_ready": false,
+  "raw_reads_processed": 0,
+  "strand": "+",
+  "unmeasured_other_donor_branches": true
+}
