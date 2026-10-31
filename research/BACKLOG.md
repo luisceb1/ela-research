@@ -4,7 +4,7 @@ Solo la primera fila es la próxima tarea científica. Los bloqueos requieren ev
 
 | Prioridad | Trabajo | Estado / criterio de cierre |
 |---|---|---|
-| P0 | QC prospectivo del control completo SRR8144907, antes de los otros cinco runs | Mapeabilidad de exon1 completada:194/194 perfectas en origen. Runner completo37.518.164lecturas preparado;329tests y preflight sintético concordantes, bins prefijados y límites. Restauración de cachés verificadas en curso; fase real aún no ejecutada en checkpoint. No ampliar/detener según señal ni inferencia biológica |
+| P0 | QC prospectivo del control completo SRR8144907, antes de los otros cinco runs | Mapeabilidad de exon1 completada:194/194 perfectas en origen. Entrada restaurada MD5/SHA verificados; fase completa37.518.164lecturas EN EJECUCIÓN bajo30min.335tests locales, preflight concordante y bins prefijados. No afirmar biblioteca completa hastaEOF/CRC y parsers iguales. No ampliar/detener según señal ni inferencia biológica |
 | Bloqueado | E-MTAB-15653 | Auditoría documental terminada; independencia no certificada. No repetir búsqueda ni calcular efectos sin nueva fuente concreta |
 | Completado en este PR | Ciclo de selección de tres fuentes | GSE182976: cobertura BW; GSE122069: TPM; E-MTAB-15653: cuentas de unión recuperadas, independencia no certificada. Ninguna lista para el contraste completo. No repetir |
 | Revisión | PR #30 separado | Otros candidatos y trabajo posterior; no integrado ni reejecutado aquí. Reconciliar su planning al integrar, sin sumar resultados o ampliar a datos clínicos personales |
