@@ -4,7 +4,7 @@ Solo la primera fila es la próxima tarea científica. Los bloqueos requieren ev
 
 | Prioridad | Trabajo | Estado / criterio de cierre |
 |---|---|---|
-| P0 | Inspeccionar índice HISAT2 fijado antes del piloto GSE122069 | Ventanas STMN2 UCSC/Ensembl y motivos comprobados; candidato hg38 de4.355.786.349bytes/versionId fijado. Pendiente descarga controlada, SHA256, integridad, secuencia/nombres/longitudes, tamaño extraído y ejecución NH/XS/MAPQ. Sin índice/FASTQ descargado; piloto bloqueado |
+| P0 | Validar alineador y extractor con datos sintéticos antes del piloto GSE122069 | Descarga/CRC/SHA256/inspección del índice completadas en reports/hisat2-index-inspection-20261031; ventanas STMN2 y chr8 concordantes. Pendiente runtimeNH/XS/MAPQ, multimapeo/anclas e implementación independiente. No FASTQ o alineamientos de bibliotecas |
 | Bloqueado | E-MTAB-15653 | Auditoría documental terminada; independencia no certificada. No repetir búsqueda ni calcular efectos sin nueva fuente concreta |
 | Completado en este PR | Ciclo de selección de tres fuentes | GSE182976: cobertura BW; GSE122069: TPM; E-MTAB-15653: cuentas de unión recuperadas, independencia no certificada. Ninguna lista para el contraste completo. No repetir |
 | Revisión | PR #30 separado | Otros candidatos y trabajo posterior; no integrado ni reejecutado aquí. Reconciliar su planning al integrar, sin sumar resultados o ampliar a datos clínicos personales |
@@ -35,3 +35,7 @@ La fila P0 sustituye los siguientes pasos históricos de abajo/anteriores inform
 ## Referencia completada, continuación posterior a #32
 
 MotivosGT/AG/AG y tres ventanas16bp idénticas UCSC/Ensembl en reports/stmn2-reference-gate-20261031. No FASTA completo ni índice validados. #32 integrado en9c82795d con autorización específica; esta nueva entrega es PR revisable, sin fusión automática.284tests locales, no284experimentos. La única tarea siguiente es la filaP0; comprobar índice bajo presupuesto y semántica runtime del software antes del piloto. Evitar repetición de las verificaciones de motivos completadas y conservar rama30 intacta.
+
+## Índice inspeccionado — continuación vigente en PR33
+
+No volver a descargar/reinspeccionar como si faltara. Manifest real reports/hisat2-index-inspection-20261031/verified_index.json, hashes y comandos completos. Índice+archivo9,02GB; inspector~4,54GiB RAM, no coste de alineamiento medido.295tests locales,CI de cabeza nueva pendiente. Se continúa el mismoPR33 sin merge; PR30 intacto. La filaP0 sustituye pendientes históricos de descarga de índice/ventanas; piloto sigue condicionado a controles runtime/extracción antes de un primer millón de lecturas del control prefijado.

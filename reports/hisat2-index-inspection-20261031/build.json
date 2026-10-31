@@ -1,0 +1,16 @@
+{
+  "command": [
+    "prlimit",
+    "--as=6442450944",
+    "--",
+    "timeout",
+    "600",
+    "make",
+    "-j2",
+    "hisat2-inspect-s"
+  ],
+  "exit_code": 0,
+  "elapsed_seconds": 24.829673649999677,
+  "maxrss_child_kib": 382160,
+  "gxx_version": "g++ (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0"
+}

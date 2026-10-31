@@ -1,0 +1,10 @@
+[
+  {
+    "stage": "local instructions read",
+    "error": "research/PROTOCOL.md absent from sparse local materialization; read exact remote PR33 protocol via GitHub connector before analysis"
+  },
+  {
+    "stage": "build measurement first attempt",
+    "error": "/usr/bin/time missing, exit127; no build ran. Replaced with Python monotonic/resource wrapper; actual retry exit0"
+  }
+]

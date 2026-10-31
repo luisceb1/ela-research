@@ -30,11 +30,13 @@ Los informes preservan los hashes, parámetros, errores y resultados negativos d
 
 ## Única próxima tarea
 
-Descargar de forma controlada e inspeccionar el índice HISAT2 UCSC hg38 fijado por S3 versionId en reports/stmn2-reference-gate-20261031/index_candidate.json. Comprobar SHA256 propio, integridad, nombres/longitudes y secuencia reconstruida contra las ventanas verificadas antes de aceptarlo; medir tamaño extraído y recursos dentro del presupuesto. El HEAD acredita4.355.786.349bytes comprimidos, no tamaño extraído/RAM ni integridad. No usar ETag multipart como MD5.
+Compilar/ejecutar el alineador HISAT2v2.2.3 fijado y validar con controles sintéticos NH/XS/MAPQ, multimapeo y anclas; comparar extracción de uniones con una implementación independiente antes del piloto GSE122069. No-k1 ni strandness asumida. El inspector ya está compilado/ejecutado; no confundirlo con ejecución del alineador.
 
-Puerta de secuencia completada: tres ventanas16bp STMN2 son idénticas UCSC/Ensembl, motivosGT/AG/AG y controles±1 registrados. Ensembl informaGRCh38.p14, chr8 longitud145138636. No FASTA completo ni índice verificados; piloto todavía bloqueado. No son nuevas unidades/replicación biológica.
+La descarga/inspección real del índice queda completada en reports/hisat2-index-inspection-20261031: archivo4.355.786.349bytes fijado porversionId, SHA256 propio1848784403a0fb3ee7735b2f891d8be96fd2782e08aed3d8212d922666f077a5, gzipCRC verificado, ocho ficherosht2 y receta no ejecutada. Archivo+extraído9.019.829.587bytes; el inspector2.2.3 reconstruyó455secuencias/3.209.286.105bases en flujo, sin FASTA completo en disco. chr8 longitud145138636 y las tres ventanas STMN2 coinciden con lo ya verificado. Comparación externa acotada a longitud/ventanas, no identidad completa de todo el genoma.
 
-#32 fusionado con autorización expresa en9c82795df2dfdb1be142169ee8733db70dbde92f, cabeza57771806 probada por CI275tests enPython3.11/3.12. Nueva preparación de referencia en PR separado, sin merge automático. #30 mantiene cabeza053ef70ce437cc637ec18278a2c07e3abd6bf58b y sigue reservado para otro chat. No repetir #1/#2 o búsquedas cerradas.
+Memoria máxima del hijo inspector4.758.644KiB (~4,54GiB) y44,83s observados; no benchmark de alineamiento. Se respeta presupuesto6GiB RAM,2hilos,15GiB disco adicionales/reserva8GiB en esta ejecución. Índice aceptado solo para siguientes controles técnicos, no fuente biológica o piloto listo. No FASTQ ni alineamiento de bibliotecas.
+
+Se amplía el mismo PR33 desde da189cf79e4d2b4e3bcb8aa83c39f162b8848543, sin otra cadena ni merge automático. Main9c82795d contiene #32; #30 mantiene cabeza053ef70ce437cc637ec18278a2c07e3abd6bf58b. Los apartados anteriores que dicen índice no descargado son históricos y quedan sustituidos por esta ejecución.
 
 
 ## Verificación y operación
@@ -71,3 +73,7 @@ Ensembl agotó timeout y no aportó referencia. 8 GiB RAM, ~62,79 GB libres obse
 reports/stmn2-reference-gate-20261031 conserva seis respuestas mínimas públicas de secuencia con URL/hashes, metadatos de ensamblaje, candidato de índice fijado y revisión de manual HISAT2v2.2.3, commit0d244324. Código ejecutado conPython3.12.14, dos replays idénticos por bytes,284pruebas locales (275+9) y compileall correctos; CI de nueva cabeza por verificar. Un primer timeout de Ensembl críptico se resolvió con un reintento; el error se conserva. La herramienta web falló con los parámetros UCSC; las recuperaciones reales fueron solicitudes Python satisfactorias.
 
 Solo48bases de referencia en tres ventanas, cotejadas entre dos proveedores del mismo ensamblaje; no réplica externa biológica ni soporte de lectura. Sin descarga de índice/FASTQ, instalación de alineador, alineamientos o efectos. Próximo gate de software: ejecutar versión fijada y comprobar NH/XS/MAPQ contra controles; NH informa alineamientos reportados, no unicidad exhaustiva. No -k1 ni strandness asumida. Los ejemplos del manual incluyenMAPQ255; el prototipo actual los rechaza: comprobar comportamiento de versión real sin cambiar filtros tras ver efectos. Los apartados previos de secuencia/motivos pendientes son históricos y quedan sustituidos por este resultado acotado.
+
+## Inspección real de índice — actualización posterior en PR33
+
+Plan previo research/plans/2026-10-31-hisat2-index-inspection.md; fuente de HISAT2 fijada acommit0d244324, SHA256 del paquete y del binarioInspector, g++13.3.0, comandos/recursos/hashes por fichero registrados. Python3.12.14;295pruebas locales correctas (284+11) ycompileall; no tests como experimentos. No inferencia, efectos, validación funcional ni clínicos personales. Un intento de medir compilación con/usr/bin/time falló antes de compilar porque no está disponible; reintento Pythonresource/monotonic compiló correctamente. Sin coste/contactos/laboratorio. CI de nueva cabeza por comprobar.

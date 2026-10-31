@@ -1,0 +1,91 @@
+/usr/bin/g++ -O3 -m64 -msse2 -funroll-loops -g3 \
+-DCOMPILER_OPTIONS="\"-O3 -m64 -msse2 -funroll-loops -g3 -std=c++11 -DPOPCNT_CAPABILITY\"" -std=c++11 -DPOPCNT_CAPABILITY \
+-fno-strict-aliasing -DHISAT2_VERSION="\"`cat VERSION`\"" -DBUILD_HOST="\"`hostname`\"" -DBUILD_TIME="\"`date`\"" -DCOMPILER_VERSION="\"`/usr/bin/g++ -v 2>&1 | tail -1`\"" -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE  -DBOWTIE_MM  -DBOWTIE2 -DHISAT2_INSPECT_MAIN -Wall \
+-iquote . -I third_party \
+-o hisat2-inspect-s hisat2_inspect.cpp \
+ccnt_lut.cpp ref_read.cpp alphabet.cpp shmem.cpp edit.cpp gfm.cpp reference.cpp ds.cpp multikey_qsort.cpp limit.cpp random_source.cpp tinythread.cpp \
+-lpthread 
+In file included from hisat2_inspect.cpp:25:
+alt.h: In member function ‘bool ALT<index_t>::repOk() const’:
+assert_helpers.h:227:18: warning: comparison of constant ‘1’ with boolean expression is always true [-Wbool-compare]
+  227 |         if(!((a) <= (b))) { \
+      |              ~~~~^~~~~~
+alt.h:180:13: note: in expansion of macro ‘assert_leq’
+  180 |             assert_leq(fw, 1);
+      |             ^~~~~~~~~~
+In file included from hgfm.h:24,
+                 from hisat2_inspect.cpp:27:
+gfm.h: In static member function ‘static std::pair<GFM<index_t>*, GFM<index_t>*> GFM<index_t>::fromStrings(const EList<std::__cxx11::basic_string<char> >&, bool, int, bool, int32_t, int32_t, int32_t, const std::string&, bool, index_t, index_t, index_t, int, uint32_t, bool, bool, bool)’:
+gfm.h:1185:17: warning: ‘template<class> class std::auto_ptr’ is deprecated: use 'std::unique_ptr' instead [-Wdeprecated-declarations]
+ 1185 |                 auto_ptr<stringstream> ss(new stringstream());
+      |                 ^~~~~~~~
+In file included from /usr/include/c++/13/memory:78,
+                 from gfm.h:28:
+/usr/include/c++/13/bits/unique_ptr.h:65:28: note: declared here
+   65 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+gfm.h:1189:17: warning: ‘template<class> class std::auto_ptr’ is deprecated: use 'std::unique_ptr' instead [-Wdeprecated-declarations]
+ 1189 |                 auto_ptr<FileBuf> fb(new FileBuf(ss.get()));
+      |                 ^~~~~~~~
+/usr/include/c++/13/bits/unique_ptr.h:65:28: note: declared here
+   65 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+ref_read.cpp: In function ‘std::pair<long unsigned int, long unsigned int> fastaRefReadSizes(EList<FileBuf*>&, EList<RefRecord>&, const RefReadInParams&, BitpairOutFileBuf*, TIndexOff&)’:
+ref_read.cpp:367:22: warning: comparison of integer expressions of different signedness: ‘int64_t’ {aka ‘long int’} and ‘size_t’ {aka ‘long unsigned int’} [-Wsign-compare]
+  367 |             if(i + 1 >= recs.size() || recs[i+1].first) {
+      |                ~~~~~~^~~~~~~~~~~~~~
+ref_read.cpp: In function ‘std::pair<long unsigned int, long unsigned int> fastaRefReadFragsNames(EList<FileBuf*>&, EList<RefRecord>&, const RefReadInParams&, BitpairOutFileBuf*, TIndexOff&, EList<std::__cxx11::basic_string<char> >&)’:
+ref_read.cpp:440:22: warning: comparison of integer expressions of different signedness: ‘int64_t’ {aka ‘long int’} and ‘size_t’ {aka ‘long unsigned int’} [-Wsign-compare]
+  440 |             if(i + 1 >= recs.size() || recs[i+1].first) {
+      |                ~~~~~~^~~~~~~~~~~~~~
+In file included from edit.h:26,
+                 from edit.cpp:21:
+alt.h: In member function ‘bool ALT<index_t>::repOk() const’:
+assert_helpers.h:227:18: warning: comparison of constant ‘1’ with boolean expression is always true [-Wbool-compare]
+  227 |         if(!((a) <= (b))) { \
+      |              ~~~~^~~~~~
+alt.h:180:13: note: in expansion of macro ‘assert_leq’
+  180 |             assert_leq(fw, 1);
+      |             ^~~~~~~~~~
+In file included from splice_site.h:34,
+                 from edit.h:30:
+gfm.h: In static member function ‘static std::pair<GFM<index_t>*, GFM<index_t>*> GFM<index_t>::fromStrings(const EList<std::__cxx11::basic_string<char> >&, bool, int, bool, int32_t, int32_t, int32_t, const std::string&, bool, index_t, index_t, index_t, int, uint32_t, bool, bool, bool)’:
+gfm.h:1185:17: warning: ‘template<class> class std::auto_ptr’ is deprecated: use 'std::unique_ptr' instead [-Wdeprecated-declarations]
+ 1185 |                 auto_ptr<stringstream> ss(new stringstream());
+      |                 ^~~~~~~~
+In file included from /usr/include/c++/13/memory:78,
+                 from gfm.h:28:
+/usr/include/c++/13/bits/unique_ptr.h:65:28: note: declared here
+   65 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+gfm.h:1189:17: warning: ‘template<class> class std::auto_ptr’ is deprecated: use 'std::unique_ptr' instead [-Wdeprecated-declarations]
+ 1189 |                 auto_ptr<FileBuf> fb(new FileBuf(ss.get()));
+      |                 ^~~~~~~~
+/usr/include/c++/13/bits/unique_ptr.h:65:28: note: declared here
+   65 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from alphabet.h:27,
+                 from gfm.h:40,
+                 from gfm.cpp:21:
+alt.h: In member function ‘bool ALT<index_t>::repOk() const’:
+assert_helpers.h:227:18: warning: comparison of constant ‘1’ with boolean expression is always true [-Wbool-compare]
+  227 |         if(!((a) <= (b))) { \
+      |              ~~~~^~~~~~
+alt.h:180:13: note: in expansion of macro ‘assert_leq’
+  180 |             assert_leq(fw, 1);
+      |             ^~~~~~~~~~
+gfm.h: In static member function ‘static std::pair<GFM<index_t>*, GFM<index_t>*> GFM<index_t>::fromStrings(const EList<std::__cxx11::basic_string<char> >&, bool, int, bool, int32_t, int32_t, int32_t, const std::string&, bool, index_t, index_t, index_t, int, uint32_t, bool, bool, bool)’:
+gfm.h:1185:17: warning: ‘template<class> class std::auto_ptr’ is deprecated: use 'std::unique_ptr' instead [-Wdeprecated-declarations]
+ 1185 |                 auto_ptr<stringstream> ss(new stringstream());
+      |                 ^~~~~~~~
+In file included from /usr/include/c++/13/memory:78,
+                 from gfm.h:28:
+/usr/include/c++/13/bits/unique_ptr.h:65:28: note: declared here
+   65 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+gfm.h:1189:17: warning: ‘template<class> class std::auto_ptr’ is deprecated: use 'std::unique_ptr' instead [-Wdeprecated-declarations]
+ 1189 |                 auto_ptr<FileBuf> fb(new FileBuf(ss.get()));
+      |                 ^~~~~~~~
+/usr/include/c++/13/bits/unique_ptr.h:65:28: note: declared here
+   65 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~

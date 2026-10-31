@@ -1,0 +1,24 @@
+{
+  "url": "https://genome-idx.s3.amazonaws.com/hisat/hg38_genome.tar.gz?versionId=8z.MUbL_W4wij.Nmcia5c4mT7tlz0cU.",
+  "expected_bytes": 4355786349,
+  "complete": true,
+  "headers": {
+    "x-amz-id-2": "Dffe3K+srpcCSaJcbfkYhm68bj0PhbCNFJySBkR9rVPSgppLKKUDzMffiIKeObV/Ji6AYPVEp30O0E94anrE3V3ESpq/nxJf",
+    "x-amz-request-id": "7CQ74AKGB1BPHRJK",
+    "server": "envoy",
+    "date": "Sat, 31 Oct 2026 09:38:39 GMT",
+    "last-modified": "Thu, 25 Jun 2020 20:47:53 GMT",
+    "etag": "\"2b99c030ca493d30bd4b12bf8e42327b-520\"",
+    "x-amz-storage-class": "INTELLIGENT_TIERING",
+    "x-amz-version-id": "8z.MUbL_W4wij.Nmcia5c4mT7tlz0cU.",
+    "accept-ranges": "bytes",
+    "content-type": "binary/octet-stream",
+    "content-length": "4355786349",
+    "x-envoy-upstream-service-time": "278",
+    "connection": "close"
+  },
+  "bytes": 4355786349,
+  "elapsed_seconds": 111.69012436399998,
+  "sha256": "1848784403a0fb3ee7735b2f891d8be96fd2782e08aed3d8212d922666f077a5",
+  "hash_is_independent_expected_checksum": false
+}

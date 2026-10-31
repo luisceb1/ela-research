@@ -1,0 +1,9 @@
+# Inspección de índice HISAT2 — plan previo 31/10/2026
+
+Base de trabajo PR33 da189cf79e4d2b4e3bcb8aa83c39f162b8848543; no merge automático y no tocar PR30. Se continúa el mismo PR para no crear cadena de ramas.
+Pregunta técnica: ¿el índice público hg38 fijado por versionId se descarga e inspecciona bajo presupuesto y contiene chr8 con longitud y ventanas STMN2 concordantes con las fuentes verificadas?
+Predicción refutable: tamaño comprimido4355786349bytes, versión/ETag fijados, gzip/tar íntegros, chr8 longitud145138636 y las tres ventanas16bp exactas. HashSHA256 propio después de descargar, no checksum esperado independiente; ETag multipart noMD5.
+Método: descarga HTTPS en flujo, máximo30min, guardar errores/tiempo/bytes y SHA256; validar versión/ETag/tamaño. Extraer solo archivos regulares y directorios sin rutas absolutas/.., enlaces o dispositivos, con límite total15GiB adicionales y reserva8GiB. Compilar HISAT2v2.2.3 desde commit0d244324f98de541bce04d45c75e83bc3522f7f4 con2hilos como máximo; fijar SHA del paquete/ficheros y versiones reales. No usar binario obtenido de fuente desconocida.
+Inspección: medir memoria/tiempo de inspect, máximo6GiB RAM y2hilos; reconstruir secuencia en flujo sin FASTA completo en disco; validar nombres/longitudes y tres ventanas, SHA256 de secuencias normalizadas. No convertir nombres hg38 en prueba de todas las secuencias; otras regiones siguen no contrastadas externamente.
+Controles: rechazo de tamaño/versionId incorrectos, tar inseguro, límite de recursos, discrepancia de referencia. Si no se completa, dejar bloqueo con archivos parciales ignorados, sin fingir aceptación. Ningún FASTQ o alineamiento de bibliotecas, inferencia o función en esta fase.
+Tras inspección correcta: siguiente gate es prueba runtime NH/XS/MAPQ y extracción comparada con implementación independiente, con datos sintéticos antes del piloto real. Coste cero, sin contactos o datos clínicos personales.
