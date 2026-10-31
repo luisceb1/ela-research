@@ -1,0 +1,15 @@
+{
+  "command": [
+    "prlimit",
+    "--as=6442450944",
+    "--",
+    "timeout",
+    "600",
+    "make",
+    "-j2",
+    "hisat2-align-s"
+  ],
+  "exit_code": 0,
+  "elapsed_seconds": 78.26102155600006,
+  "maxrss_child_kib": 504184
+}

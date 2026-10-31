@@ -1,0 +1,15 @@
+# Ejecución de QC del control completo — plan previo 31/10/2026
+
+Se aplica la propuesta fijada en6e922195, con autorización posterior de Luis para continuar. Entrada única SRR8144907/GSM3454242:37.518.164lecturas publicadas. Mismos filtros15/8, coordenadas, versión/índice, seed0,k5, no-temp-splicesite,reorder; sinsitios inyectados,dta o strandness impuesta. Ninguna otra biblioteca o condición.
+
+Preparación necesaria: mantenimiento del entorno retiró cachés grandes. Restaurar exactamente el mismo índice/versionId yFASTQ/MD5/SHA previamente fijados, fuenteHISAT2commit0d244324 yPySAM0.23.3. No afirmar preservación binaria del ejecutable recompilado: registrar fuente/versiones/hash nuevo. No genera datos o muestras nuevos; no gastos/contactos. Recursos de restauración medidos por separado de la fase30min.
+
+Generalizar max_reads sin alterar modo1M. Esta ejecución es biblioteca completa fijada, no ampliación adaptativa del piloto. ExigirEOF/gzipCRC después de exactamente37.518.164registrosFASTQ ylo mismo enSAMprimario. Rechazar archivo truncado, registros extra, hash/código erróneos o desacuerdo de parsers. No parar al obtener cobertura ni aumentar muestra si falta.
+
+Bins predefinidos de1Mlecturas enordenSAMreorder, último parcial518164. Particiones técnicas, no réplicas. Detectar grupos dequery con exactamente unprimario; identificadores solo enmemoria transitoria, no exportarlos. Contar uniones yQC a15/8 ysolapamientos deexon1/2 porbin yglobal. Guardar checkpoints porbin para que límite/errores no se presenten como biblioteca completa. SinSAM/BAMcompleto en disco niFASTQdescomprimido.
+
+Pregunta: ¿persisten ausencia de cobertura aceptada delprimerexón y0unionesprefijadas al procesar todoelcontrol, o dependían delsubconjunto/orden? Cualquier resultado es técnico sobreuncontrol, noefecto,pvalor,PSI,confirmación funcional o ausencia molecular. Predicción refutable ycriterio deaptitud: al final, informar soporte ysi canónica+críptica alcanza20; si no cubre el sitio, noaceptar esta biblioteca para contrasteprevisto yno iniciar otros5runs. No sustituir objetivos poruniones posteriores.
+
+Límites de ejecución:2CPUs afines; caps deespacio virtual5GiB alineador+512MiB padre+256MiBHTSlib, total5,75GiB;30min de fase; disco adicional15GiB,reserva8GiB. Definir baseline defree delentorno actual antes de restaurar, porque cwd/cachés anteriores fueron retirados; registrar ambos y noatribuir cambios compartidos aarchivos propios. No fingirRSScombinado. En timeout/fracaso, exportar solo parcial ycheckpoint concordante, no inferir sobrebiblioteca completa. Una revisión de presupuesto requerirá plan separado antes de reintentar.
+
+Antes dedatos reales: testsde fronteras/tamaños, comparación sobreSAMsintético15/8 con ambosparsers ymodo1M preservado. Persistir código/preflight mediantePR33antesde la fase larga. Al finalizar:QCagregado,cuentas/bins,histogramas,hashes,errores/negativos,estado/backlog yCI de cabeza exacta. PR30intacto; no merge/cierre automático.

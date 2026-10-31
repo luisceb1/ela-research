@@ -9,7 +9,7 @@ import shutil
 import time
 import urllib.request
 
-BASELINE_FREE = 63485673472
+BASELINE_FREE = 63427059712
 DISK_LIMIT = 15*1024**3
 RESERVE = 8*1024**3
 
