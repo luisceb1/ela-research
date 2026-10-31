@@ -1,0 +1,6 @@
+metric	count	scope
+primary_block_overlap	628	same first1M, no read IDs
+unique_mapq_block_overlap	628	same first1M, no read IDs
+exon1_unique_overlap	0	same first1M, no read IDs
+exon2_unique_overlap	31	same first1M, no read IDs
+unique_spliced_reads	48	same first1M, no read IDs

@@ -1,0 +1,28 @@
+{
+  "command": [
+    "python",
+    "scripts/gse122069_pilot.py",
+    "run",
+    "--out",
+    "reports/gse122069-pilot-20261031",
+    "--manifest",
+    "reports/gse122069-resource-plan/input_manifest.json",
+    "--download-record",
+    "reports/gse122069-pilot-20261031/download-ranges.json",
+    "--fastq",
+    "data/cache/gse122069-pilot/SRR8144907.fastq.gz",
+    "--index-record",
+    "reports/hisat2-index-inspection-20261031/verified_index.json",
+    "--index-directory",
+    "data/cache/hisat2-index-20261031/extracted/hg38",
+    "--binary-record",
+    "reports/hisat2-synthetic-gate-20261031/binaries.json",
+    "--source",
+    "data/cache/hisat2-source-20261031/hisat2-0d244324f98de541bce04d45c75e83bc3522f7f4",
+    "--prefix",
+    "data/cache/hisat2-index-20261031/extracted/hg38/genome",
+    "--pysam-python",
+    "data/tools/synthetic-gate-venv/bin/python"
+  ],
+  "wait_seconds_before_verified_download": 635.1437405879997
+}

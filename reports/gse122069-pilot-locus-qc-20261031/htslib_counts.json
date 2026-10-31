@@ -1,0 +1,47 @@
+{
+  "counts": {
+    "8": {
+      "eligible_intron_observations": 87261,
+      "canonical": 0,
+      "cryptic": 0
+    },
+    "15": {
+      "eligible_intron_observations": 54054,
+      "canonical": 0,
+      "cryptic": 0
+    }
+  },
+  "sam_records": 1256935,
+  "pysam": "0.23.3",
+  "htslib": "1.21",
+  "self_maxrss_kib": 31448,
+  "locus_qc": {
+    "block_overlap_counts": {
+      "primary_block_overlap": 628,
+      "unique_mapq_block_overlap": 628,
+      "exon2_unique_overlap": 31,
+      "unique_spliced_reads": 48
+    },
+    "junctions": [
+      {
+        "left_exon_end_1based": 79636897,
+        "right_exon_start_1based": 79641378,
+        "XS": "+",
+        "count": 18
+      },
+      {
+        "left_exon_end_1based": 79641550,
+        "right_exon_start_1based": 79654871,
+        "XS": "+",
+        "count": 18
+      },
+      {
+        "left_exon_end_1based": 79655062,
+        "right_exon_start_1based": 79664815,
+        "XS": "+",
+        "count": 12
+      }
+    ],
+    "scope": "same first1M; overlap is not proven gene assignment; no retargeting"
+  }
+}

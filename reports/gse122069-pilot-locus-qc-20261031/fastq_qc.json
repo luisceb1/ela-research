@@ -1,0 +1,30 @@
+{
+  "reads": 1000000,
+  "length_histogram": {
+    "51": 679464,
+    "50": 234053,
+    "49": 63845,
+    "48": 18144,
+    "37": 25,
+    "47": 2799,
+    "35": 408,
+    "46": 844,
+    "42": 50,
+    "45": 99,
+    "38": 15,
+    "41": 48,
+    "44": 58,
+    "40": 46,
+    "43": 46,
+    "39": 37,
+    "36": 19
+  },
+  "bases": 50557803,
+  "N_bases": 15930,
+  "quality_ascii_min": 35,
+  "quality_ascii_max": 74,
+  "mean_quality_if_phred33": 35.708173988493925,
+  "uncompressed_bytes_scanned": 132893398,
+  "selection": "first records in deposited order, not random",
+  "scope": "first1M FASTQ QC only, not complete library or full gzip CRC"
+}

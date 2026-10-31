@@ -1,0 +1,12 @@
+{
+  "initial_attempt": "aborted before usable SAM results; combined monitor inaccessible and disk guard triggered",
+  "procfs_children_unavailable": true,
+  "original_error_surface": "BrokenPipeError while pipe closed after watchdog stop; no counts accepted",
+  "archive_removed": "data/cache/hisat2-index-20261031/hg38_genome.tar.gz",
+  "archive_bytes": 4355786349,
+  "archive_sha256": "1848784403a0fb3ee7735b2f891d8be96fd2782e08aed3d8212d922666f077a5",
+  "why_safe": "task-created cache only; extracted per-file hashes and immutable public source preserved",
+  "free_before": 46202568704,
+  "free_after": 50558361600,
+  "pipeline_adjustment": "direct same HISAT2 binary and same parameters, Python gzip feed; address-space caps5GiB aligner +512MiB parent +256MiB HTSlib =5.75GiB; deadline/disk guards retained; no aggregate RSS claim"
+}

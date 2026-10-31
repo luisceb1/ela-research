@@ -1,0 +1,24 @@
+{
+  "python": "3.12.14",
+  "base_pr33": "3cb4f2675499b3956329097f1fcf9be28b76c6b0",
+  "first1M_unique_reads": 1000000,
+  "successful_technical_passes": 2,
+  "pass_scope": "primary plus locus diagnosis, same reads; not biological replicates",
+  "download_md5": "90ad6a34a34e8262bf300d7bb35406e1",
+  "download_sha256": "d3f57e023735d35261f9b0c2acb4d8034a859295ab12178375be352c7b7d6593",
+  "download_verified": true,
+  "download_elapsed_seconds": 824.6664864590002,
+  "range_retries": 0,
+  "pipeline_complete": true,
+  "independent_counts_concordant": true,
+  "source_code_scope": "Final code reproduces primary mode and adds optional diagnostic instrumentation; initial failed source checkpoint retained in Git history",
+  "source_code_sha256": {
+    "scripts/gse122069_pilot.py": "7600eb28b5251300853ae50464d3022128e3e1c0fe86c93c352ec28cf3d9bece",
+    "scripts/fetch_gse122069_pilot.py": "853dab4172a5209f4329bc5fc15c8a7188b3d48683164ae114467127b3f5bc50",
+    "scripts/fetch_gse122069_ranges.py": "11a9440d292590886b75bf3617b30fddf64ce7dcbc76df09854ada9dbfc5348b",
+    "scripts/hisat2_synthetic_gate.py": "84d18d33c3648ab5b8921cc2ebef2819a9a890f120cc2ed0e8854527b771b7e3"
+  },
+  "disk_free_bytes": 50558242816,
+  "real_SAM_BAM_written": false,
+  "effects_PSI_inference": false
+}

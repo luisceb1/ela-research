@@ -1,0 +1,11 @@
+{
+  "transport_failure": "Initial whole-file HTTP request timed out with0bytes; download.json retained. Exact ranges+full MD5 then succeeded.",
+  "first_pipeline_failure": "BrokenPipe before usableSAM results; disk guard failed at diagnosis and /proc task children unavailable. Root watchdog reason was not preserved in first attempt, so precise internal cause is not claimed. All files in attempt1.",
+  "resource_adjustment": "Deleted only task-created compressed index cache; extracted index hashes still verified. Direct executable and Python gzip feed, same scientific parameters; caps5GiB+512MiB+256MiB; no aggregateRSS claim. Synthetic parity checked before retry.",
+  "negative_findings": [
+    "Both predeclared STMN2 junctions have0support at15/8 in fixed1M; threshold20not met",
+    "No accepted unique exon1 overlap; downstream locus support exists, not molecular absence",
+    "3prime-only library hypothesis not established; declaredTruSeq kit"
+  ],
+  "successful_retry_watchdog_errors": []
+}

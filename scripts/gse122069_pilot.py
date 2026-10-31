@@ -57,12 +57,27 @@ def fastq_qc(path,limit=1000000):
             'scope':'first1M FASTQ QC only, not complete library or full gzip CRC'}
 
 
-def count_htslib(out):
+def count_htslib(out,locus_qc=False):
     import pysam
-    counts=empty_counts();records=0
+    counts=empty_counts();records=0;locus=Counter();locus_junctions=Counter()
     with pysam.AlignmentFile('-','r') as file:
         for read in file:
             records+=1
+            if locus_qc and not(read.is_unmapped or read.is_secondary or read.is_supplementary or read.is_qcfail) and read.reference_name=='chr8' and read.reference_start<79666158 and read.reference_end>79611116:
+                blocks=read.get_blocks()
+                if any(a<79666158 and b>79611116 for a,b in blocks):
+                    locus['primary_block_overlap']+=1
+                    unique=(20<=read.mapping_quality<255 and read.has_tag('NH') and read.get_tag('NH')==1)
+                    if unique:
+                        locus['unique_mapq_block_overlap']+=1
+                        for label,left,right in [('exon1',79611116,79611214),('exon2',79636801,79636897)]:
+                            if any(a<right and b>left for a,b in blocks):locus[label+'_unique_overlap']+=1
+                        if any(op==3 for op,n in (read.cigartuples or [])):
+                            locus['unique_spliced_reads']+=1
+                            for (left,right),n in file.find_introns([read]).items():
+                                if left<79666158 and right>79611116:
+                                    xs=read.get_tag('XS') if read.has_tag('XS') else 'missing'
+                                    locus_junctions[(left,right+1,xs)]+=n
             if not accepted_pysam(read):continue
             cigar=read.cigartuples or [];cursor=read.reference_start
             introns=file.find_introns([read]) if any(op==3 for op,n in cigar) else {}
@@ -82,19 +97,11 @@ def count_htslib(out):
                                 counts[str(a)]['eligible_intron_observations']+=1
                                 if key in TARGETS:counts[str(a)][TARGETS[key]]+=1
                 if op in (0,2,3,7,8):cursor+=n
-    out.write_text(json.dumps({'counts':counts,'sam_records':records,'pysam':pysam.__version__,
-                               'htslib':pysam.version.__htslib_version__},indent=2)+'\n')
-
-
-def process_rss_tree(pid,seen):
-    if pid in seen:return 0
-    seen.add(pid)
-    try:
-        status=Path(f'/proc/{pid}/status').read_text()
-        rss=next(int(s.split()[1])*1024 for s in status.splitlines() if s.startswith('VmRSS:'))
-        children=Path(f'/proc/{pid}/task/{pid}/children').read_text().split()
-        return rss+sum(process_rss_tree(int(child),seen) for child in children)
-    except (OSError,StopIteration):return 0
+    result={'counts':counts,'sam_records':records,'pysam':pysam.__version__,
+            'htslib':pysam.version.__htslib_version__,'self_maxrss_kib':resource.getrusage(resource.RUSAGE_SELF).ru_maxrss}
+    if locus_qc:result['locus_qc']={'block_overlap_counts':dict(locus),'junctions':[{'left_exon_end_1based':left,'right_exon_start_1based':right,'XS':xs,'count':n} for (left,right,xs),n in sorted(locus_junctions.items())],
+                                  'scope':'same first1M; overlap is not proven gene assignment; no retargeting'}
+    out.write_text(json.dumps(result,indent=2)+'\n')
 
 
 def run(a):
@@ -115,11 +122,18 @@ def run(a):
         raise ValueError('Aligner binary hash mismatch')
     affinity=sorted(os.sched_getaffinity(0))[:2];os.sched_setaffinity(0,affinity)
     qc=fastq_qc(fq);(out/'fastq_qc.json').write_text(json.dumps(qc,indent=2)+'\n')
-    cmd=['prlimit','--as=6442450944','--','timeout','1800',str(Path(a.source)/'hisat2'),'-x',a.prefix,'-U',str(fq),'-u','1000000','-p','2','-k','5','--seed','0','--no-temp-splicesite','--reorder']
-    worker=[a.pysam_python,str(Path(__file__)), 'htslib','--out',str(out/'htslib_counts.json')]
+    # /proc task children is unavailable here: bound each process address space
+    # instead of claiming an aggregate RSS measurement. Caps sum to5.75GiB.
+    old_soft,old_hard=resource.getrlimit(resource.RLIMIT_AS)
+    resource.setrlimit(resource.RLIMIT_AS,(512*1024**2,old_hard))
+    cmd=['prlimit','--as=5368709120','--',str(binary),'--wrapper','basic-0','-x',a.prefix,'-U','-','-u','1000000','-p','2','-k','5','--seed','0','--no-temp-splicesite','--reorder']
+    worker=['prlimit','--as=268435456','--',a.pysam_python,str(Path(__file__)), 'htslib','--out',str(out/'htslib_counts.json')]
+    if a.locus_qc:worker.append('--locus-qc')
     start=phase_start;counts=empty_counts();qc_sam=Counter();mapq=Counter();nh=Counter()
     result={'run':row['run'],'gsm':row['gsm'],'command':cmd,'worker_command':worker,'cpu_affinity':affinity,
-            'fastq_sha256':digest,'complete':False,'max_combined_rss_bytes':0,'sam_disk_written':False,
+            'fastq_sha256':digest,'complete':False,'sam_disk_written':False,
+            'combined_rss_available':False,'virtual_address_caps_total_bytes':5.75*1024**3,
+            'virtual_address_caps':{'aligner':5*1024**3,'parent':512*1024**2,'htslib':256*1024**2},
             'prealignment_seconds':time.monotonic()-phase_start}
     procs=[];stop=threading.Event();fail=[]
     def terminate():
@@ -129,16 +143,26 @@ def run(a):
                 except ProcessLookupError:pass
     def monitor():
         while not stop.wait(0.5):
-            rss=process_rss_tree(os.getpid(),set());result['max_combined_rss_bytes']=max(result['max_combined_rss_bytes'],rss)
             try:
-                if rss>6*1024**3:raise MemoryError('Combined RSS above6GiB')
                 if time.monotonic()-start>1800:raise TimeoutError('Pilot exceeds30min')
                 disk_guard(out)
             except Exception as exc:fail.append(type(exc).__name__+': '+str(exc));terminate();return
     try:
         with (out/'hisat2.log').open('w') as log,(out/'htslib.stderr.txt').open('w') as err:
-            align=subprocess.Popen(cmd,stdout=subprocess.PIPE,stderr=log,text=True,bufsize=65536,start_new_session=True);procs.append(align)
+            align=subprocess.Popen(cmd,stdin=subprocess.PIPE,stdout=subprocess.PIPE,stderr=log,text=True,bufsize=65536,start_new_session=True);procs.append(align)
             hts=subprocess.Popen(worker,stdin=subprocess.PIPE,stdout=subprocess.DEVNULL,stderr=err,text=True,bufsize=65536,start_new_session=True);procs.append(hts)
+            def feed():
+                try:
+                    with gzip.open(fq,'rt',encoding='ascii') as inp:
+                        for _ in range(1000000):
+                            for __ in range(4):
+                                line=inp.readline()
+                                if not line:raise ValueError('FASTQ truncated while streaming')
+                                align.stdin.write(line)
+                    align.stdin.close()
+                except Exception as exc:
+                    fail.append('FASTQ producer: '+type(exc).__name__+': '+str(exc));terminate()
+            producer=threading.Thread(target=feed,daemon=True);producer.start()
             thread=threading.Thread(target=monitor,daemon=True);thread.start()
             for line in align.stdout:
                 hts.stdin.write(line)
@@ -154,7 +178,11 @@ def run(a):
                     for key in sam_junctions(line,min_anchor=anchor):
                         counts[str(anchor)]['eligible_intron_observations']+=1
                         if key in TARGETS:counts[str(anchor)][TARGETS[key]]+=1
-            hts.stdin.close();align_code=align.wait();hts_code=hts.wait();stop.set();thread.join()
+            try:hts.stdin.close()
+            except BrokenPipeError:
+                if fail:raise RuntimeError('; '.join(fail))
+                raise
+            align_code=align.wait();hts_code=hts.wait();producer.join();stop.set();thread.join()
         if fail:raise RuntimeError('; '.join(fail))
         if align_code or hts_code:raise RuntimeError(f'Pipeline exits: aligner={align_code},htslib={hts_code}')
         other=json.loads((out/'htslib_counts.json').read_text())
@@ -164,18 +192,22 @@ def run(a):
                       independent_parser_concordant=True,coverage_rule={'min_denominator':20,
                       'pilot_denominator_reaches20':counts['15']['canonical']+counts['15']['cryptic']>=20,
                       'scope':'technical subset only; no ratio/effect/PSI or biological absence'})
+        if a.locus_qc:result['locus_qc']=other['locus_qc']
     except Exception as exc:result['error']=type(exc).__name__+': '+str(exc);terminate();raise
     finally:
         stop.set();terminate()
         for proc in procs:proc.wait()
-        result.update(elapsed_seconds=time.monotonic()-start,maxrss_child_kib=resource.getrusage(resource.RUSAGE_CHILDREN).ru_maxrss)
+        result.update(elapsed_seconds=time.monotonic()-start,maxrss_child_kib=resource.getrusage(resource.RUSAGE_CHILDREN).ru_maxrss,
+                      self_maxrss_kib=resource.getrusage(resource.RUSAGE_SELF).ru_maxrss,
+                      watchdog_errors=fail)
         (out/'pilot_results.json').write_text(json.dumps(result,indent=2)+'\n')
     print(json.dumps(result,indent=2))
 
 
 if __name__=='__main__':
     p=argparse.ArgumentParser(__doc__);p.add_argument('mode',choices=['htslib','run']);p.add_argument('--out',required=True)
+    p.add_argument('--locus-qc',action='store_true')
     for name in ['manifest','download-record','fastq','index-record','index-directory','binary-record','source','prefix','pysam-python']:p.add_argument('--'+name)
     a=p.parse_args()
-    if a.mode=='htslib':count_htslib(Path(a.out))
+    if a.mode=='htslib':count_htslib(Path(a.out),a.locus_qc)
     else:run(a)

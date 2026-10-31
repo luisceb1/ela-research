@@ -311,6 +311,6 @@ test_filters_non_pubmed_records (test_watchers.TestPubmed.test_filters_non_pubme
 test_untrusted_title_sanitized (test_watchers.TestPubmed.test_untrusted_title_sanitized) ... ok
 
 ----------------------------------------------------------------------
-Ran 309 tests in 0.123s
+Ran 309 tests in 0.143s
 
 OK

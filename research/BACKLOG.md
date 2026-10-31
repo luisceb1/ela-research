@@ -4,7 +4,7 @@ Solo la primera fila es la próxima tarea científica. Los bloqueos requieren ev
 
 | Prioridad | Trabajo | Estado / criterio de cierre |
 |---|---|---|
-| P0 | Piloto técnico controlado GSE122069, sin contraste biológico | Gate sintético básico y comparación HTSlib pasados; asimetría anclas8 documentada. Aplicar política prospectiva primaria≥15/sensibilidad≥8 en ambos extractores antes de datos reales. Primer controlSRR8144907, MD5+SHA, máx1Mlecturas y presupuestos previos. Sin efectos/PSI |
+| P0 | Auditar mapeabilidad/definición del primer exón STMN2 con referencia y controles50/51nt | Piloto1M completado, parsers concordantes,0ambas uniones15/8 y0exon1 pese a628solapamientos locus/48unionesposteriores. Sin ampliar datos ni retargeting; discriminar limitación5prime antes de bibliotecas completas |
 | Bloqueado | E-MTAB-15653 | Auditoría documental terminada; independencia no certificada. No repetir búsqueda ni calcular efectos sin nueva fuente concreta |
 | Completado en este PR | Ciclo de selección de tres fuentes | GSE182976: cobertura BW; GSE122069: TPM; E-MTAB-15653: cuentas de unión recuperadas, independencia no certificada. Ninguna lista para el contraste completo. No repetir |
 | Revisión | PR #30 separado | Otros candidatos y trabajo posterior; no integrado ni reejecutado aquí. Reconciliar su planning al integrar, sin sumar resultados o ampliar a datos clínicos personales |
@@ -43,3 +43,7 @@ No volver a descargar/reinspeccionar como si faltara. Manifest real reports/hisa
 ## Gate sintético completado — continuación vigente
 
 Informe reports/hisat2-synthetic-gate-20261031. Positivos equilibrados/negativos/multicopia y dos parsers concordantes; no repetir como pendiente. Asimetría a8bases no eliminada retrospectivamente: futura primaria15y sensibilidad8, ambas fijadas antes de leer resultados reales. Requiere implementar política en ambos extractores para el piloto y mantener análisis solo técnico.301tests locales,CI de cabeza nueva por verificar. MismoPR33 abierto, sin merge/cierre automático; PR30 intacto.
+
+## Piloto completado, contraste bloqueado por cobertura
+
+reports/gse122069-pilot-20261031:1Mreal,96,58%alineamiento,conteospropio/HTSlib iguales. Umbral de cobertura noalcanzado, no ausencia biológica. Diagnóstico del mismo millón:0exon1,31exon2,48unionesposteriores; no nueva réplica. MetadataTruSeqRNAkit noacredita3prime-only. Siguiente filaP0 sustituye instrucciones históricas de ejecutar piloto.309tests locales;CI de nueva cabeza por verificar. Primer fallo de supervisión guardado y corregido conservadoramente; cachecomprimida del índice retirada para presupuesto,extraído verificado conservado. MismoPR33abierto sinmerge yPR30intacto.

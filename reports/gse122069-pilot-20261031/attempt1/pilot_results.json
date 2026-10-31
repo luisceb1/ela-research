@@ -1,0 +1,45 @@
+{
+  "run": "SRR8144907",
+  "gsm": "GSM3454242",
+  "command": [
+    "prlimit",
+    "--as=6442450944",
+    "--",
+    "timeout",
+    "1800",
+    "data/cache/hisat2-source-20261031/hisat2-0d244324f98de541bce04d45c75e83bc3522f7f4/hisat2",
+    "-x",
+    "data/cache/hisat2-index-20261031/extracted/hg38/genome",
+    "-U",
+    "data/cache/gse122069-pilot/SRR8144907.fastq.gz",
+    "-u",
+    "1000000",
+    "-p",
+    "2",
+    "-k",
+    "5",
+    "--seed",
+    "0",
+    "--no-temp-splicesite",
+    "--reorder"
+  ],
+  "worker_command": [
+    "data/tools/synthetic-gate-venv/bin/python",
+    "/workspace/scratch/a30d50c208ec/ela-research/scripts/gse122069_pilot.py",
+    "htslib",
+    "--out",
+    "reports/gse122069-pilot-20261031/htslib_counts.json"
+  ],
+  "cpu_affinity": [
+    0,
+    1
+  ],
+  "fastq_sha256": "d3f57e023735d35261f9b0c2acb4d8034a859295ab12178375be352c7b7d6593",
+  "complete": false,
+  "max_combined_rss_bytes": 0,
+  "sam_disk_written": false,
+  "prealignment_seconds": 23.430225961999895,
+  "error": "BrokenPipeError: [Errno 32] Broken pipe",
+  "elapsed_seconds": 40.62041626700011,
+  "maxrss_child_kib": 31288
+}
