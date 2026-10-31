@@ -66,3 +66,10 @@ Siguiente propuesta: SRR8144908completo,54.292.655lecturas, antesverificar cabec
 SRR8144908/GSM3454243:54.292.655lecturas exactas,55bins/dosparsers concordantes,EOF/CRC,salida0,1919,35s. STMN2canónica111/críptica3 a15;154/4 a8;211exon1;denominador114≥20. Tresobservaciones no son moléculas independientes ni efecto TDP-43. Mismafuente queprimercontrol, no cohorte nueva; sinKD/inferencia/función.
 
 Entorno unavailable después deverificar análisis. Resumen/FASTQQC recuperados exactamente porSHA original enCI3.11/3.12(376tests,2nuevos deintegridad). Paquete completo no recuperado:JSONcompleto,arrays/TSV55bins ylogs faltan;checkpoint30Mpreservado. No se ha ejecutado denuevo para aparentar persistencia completa. Verreports/gse122069-next-control-20261031/REPORT.md. Prioridad recuperar originales alvolverentorno, luegoQC de soporte bajo propuesto, sin otros4ni cierre/merge.
+
+
+## Cierre de recuperación delsegundo control —01/11/2026
+
+Se resuelve la carencia operativa histórica del31/10. JSONcompleto original SHA256cb26604160e43cdc04d2eab0a2525fc02f296059d70f5e0d9d731a32d9f6b4a7 recuperado, arrays de ambosparsers/55bins/TSV/logs completos yconcordantes; resumen/FASTQQC mantienen hashes originales.378tests locales/compileallOK, reexportación solo deJSON idéntica. No rerun, muestras oexperimentación nuevos. Informe/acta/manifiesto en reports/gse122069-next-control-20261031.
+
+Resultado científico sin cambios:111canónicas/3crípticas a15,154/4a8,54.292.655lecturas. Soporte bajo no demuestra moléculas/efecto/función; diseño siguependiente. Encargo de recuperación terminado; QC específico solo propuesta posterior. PR33revisable yPR30intacto, sinmerge/cierre.

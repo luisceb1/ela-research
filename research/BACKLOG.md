@@ -1,10 +1,11 @@
-# Backlog vigente — 31/10/2026
+# Backlog vigente — 01/11/2026
 
 Solo la primera fila es la próxima tarea científica. Los bloqueos requieren evidencia nueva, no más ejecuciones de los mismos insumos. Consultar STATE y MASTER_EVIDENCE.
 
 | Prioridad | Trabajo | Estado / criterio de cierre |
 |---|---|---|
-| P0 bloqueada por entorno | Recuperar artefactos originales pendientes del segundo control | Análisis54.292.655lecturas/55bins completo antes de pérdida:111/3 a15,154/4 a8. DosJSON recuperados conSHA originales verificados porCI376tests. Faltanarrays/TSVcompleto/logs; no inventar ni realinear automáticamente. Al recuperar acceso, buscar originales; despuésQC de señal baja, sin otros4runs |
+| P0 siguiente, no iniciada | QC específico del soporte críptico bajo en el control | Cierre operativo terminado01/11: originales completos recuperados,55bins/TSV/logs verificados ySHAcb266041... idéntico;378tests locales. Propuesta post hoc deQC de losmismosdatos en research/plans/2026-10-31-stmn2-low-count-control-qc.md; todavía sin ejecución, nuevas bibliotecas o inferencia |
+| Completado | Recuperación de artefactos delsegundo control | Resultado54.292.655lecturas,111/3a15,154/4a8 intacto. Paquete completo de resultados pequeños recuperado, verificado ypersistido porPR33. Historia parcial preservada; no reejecución delalineamiento |
 | Bloqueado, búsqueda cerrada | Mapa biológico GSE122069 | reports/gse122069-design-20261031:12registros técnicos válidos yReportingSummary nuevo noaportan asignación explícita. Independencia3/3declarada, no refutada; no inferencia ni pares por sufijos. Reabrir solo con fuente concreta nueva; medio discrepante sin resolver |
 | Bloqueado | E-MTAB-15653 | Auditoría documental terminada; independencia no certificada. No repetir búsqueda ni calcular efectos sin nueva fuente concreta |
 | Completado en este PR | Ciclo de selección de tres fuentes | GSE182976: cobertura BW; GSE122069: TPM; E-MTAB-15653: cuentas de unión recuperadas, independencia no certificada. Ninguna lista para el contraste completo. No repetir |
@@ -67,3 +68,8 @@ reports/gse122069-full-control-20261031 reemplaza la instrucción anterior de pr
 ## Parametrización completada — continuación vigente
 
 reports/gse122069-parameterization-20261031: configuración/recibo/runner/resumen ligados aaccession; transporte con límite global supervisado.374tests locales, preflight concordante yrepetible; mismosargv yresumen delcontrolhistórico. CeroFASTQreales/alineamientosHISAT2nuevos;28consultas sintéticas únicas reusadas no sonreplicación externa. Propuesta concreta paraSRR8144908 en elnuevo plan, todavía pendiente decabeceras yrecursos antes deejecutar. No repetir elmapabiológico sinfuente nueva, ni reejecutar elprimercontrol. PR33sinmerge yPR30intacto.
+
+
+## Cierre delsegundo control —01/11/2026
+
+Queda sustituido elbloqueo de recuperación previo: JSONcompleto original coincide conSHA previo,55bins yambos extractores/TSV/logs disponibles yconsistentes.378tests locales/compileallOK; solo reexportación deJSON, sinFASTQ/HISAT2nuevos. El presente encargo termina en recuperación/persistencia completa de artefactos pequeños. La siguienteP0científica se conserva como propuesta noejecutada, sin otros4runs. PR33abierto para revisión, PR30intacto; sinmerge/cierre.

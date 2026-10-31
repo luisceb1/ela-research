@@ -1,4 +1,4 @@
-# Estado vigente — 31/10/2026
+# Estado vigente — 01/11/2026
 
 ## Alcance
 
@@ -45,9 +45,11 @@ Parametrización por accession TERMINADA en reports/gse122069-parameterization-2
 
 Segundo control SRR8144908 COMPLETADO Y VERIFICADO antes de perderse el entorno:54.292.655lecturas,55bins concordantes,EOF/CRC válido,salida0,1919,35s<2700s. Canónica111/críptica3 a15;154/4 a8;211solapamientos únicos exon1. Denominador114≥20. Sin otros4runs o repetición delprimercontrol. No efecto,PSI,moléculas independientes o función; soporte críptico bajo encontrol necesitaQC específico.
 
-BLOQUEO OPERATIVO: el entorno quedó unavailable después delanálisis, antes de persistir todos losartefactos. Resumen yQCFASTQ recuperados desde salida capturada yverificados exactamente con susSHA originales enCI3.11/3.12(376tests:374previos+2integridad). Paquete deartefactos INCOMPLETO: faltanJSONcompleto,arrays/TSV55bins ylogs originales de disco; no se fabrican. Checkpoint30M ya enGitHub. Fuentes/recibos/código ySHA delresultado perdido preservados. Informe reports/gse122069-next-control-20261031/REPORT.md yartifact-recovery-provenance.json distinguen resultado completo de recuperación parcial.
+CIERRE DE RECUPERACIÓN —01/11/2026: el entorno volvió a responder; se encontraron los artefactos originales completos. JSONcompleto SHA256cb26604160e43cdc04d2eab0a2525fc02f296059d70f5e0d9d731a32d9f6b4a7 idéntico al registrado antes de caída. Arrays de ambos extractores,55filasTSV,QC,logs,comandos ylauncher recuperados. Conteos porbin/global/primarios/exones concordantes, prefijo30M remoto idéntico. Resumen yFASTQQC conservan susSHA originales. No quedan artefactos finales pequeños pendientes; elSAM/BAMcompleto no se retuvo por diseño. Historia de pérdida/recuperación parcial preservada, sin fabricar filas.
 
-Única próxima tarea: cuando vuelva un entorno utilizable, intentar recuperar archivos originales pendientes; no realinear54Mni ocultar la pérdida como reintento automático. DespuésQC delsoporte bajo según research/plans/2026-10-31-stmn2-low-count-control-qc.md, todavía no ejecutado. No iniciar otros4. Mapa biológico siguependiente, sin inferencia. PR33abierto yPR30intacto, sinmerge/cierre/contactos/gastos/laboratorio/publicación externa. Manifiestos históricos porcommit; recuperación no es nuevo experimento.
+378tests locales/compileallOK; dos pruebas nuevas compruebanSHA completo yconsistencia de los55bins. Reexportación sobreJSON idéntica porbytes; ceroFASTQ/alineamientos/replay seleccionados nuevos. Informe yacta en reports/gse122069-next-control-20261031; manifiestos históricos porcommit. Bloqueo operativo cerrado; entrega delsegundo control terminada ypersistida mediantePR33revisable.
+
+Próxima tarea científica propuesta, NOiniciada en este cierre: QC delsoporte críptico bajo según research/plans/2026-10-31-stmn2-low-count-control-qc.md. Tresobservaciones primarias no son moléculas independientes/efecto/función; mapa biológico/lotes/pares siguependiente, sin inferencia. Sinotros4runs, merge/cierre automático, contactos/gastos/laboratorio/publicación externa. PR30intacto053ef70c.
 
 Mapeabilidad del primer exón completada en reports/stmn2-exon1-mappability-20261031: las 194 lecturas perfectas de 50/51 nt del exón1 se recuperan íntegras en su origen con NH1/MAPQ>=20. Incluye las 54 contenidas en el tramo compartido de63 nt de dos transcritos anotados. También pasan680 controles exónicos posteriores,8 positivos de unión y1 negativo. 883 consultas sintéticas, no réplicas biológicas. Dos ejecuciones producenSAM/resultados/tabla idénticos por bytes. No nuevosFASTQreales.
 

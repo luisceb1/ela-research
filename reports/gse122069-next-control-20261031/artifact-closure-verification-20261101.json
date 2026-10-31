@@ -1,0 +1,22 @@
+{
+  "client_date": "2026-11-01",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "original_full_result_sha256": "cb26604160e43cdc04d2eab0a2525fc02f296059d70f5e0d9d731a32d9f6b4a7",
+  "original_summary_sha256": "71eeabbc01277786fd7a849958c4fdc2eadb127ed6e7bba7d984b7c46052cf87",
+  "original_fastq_qc_sha256": "8b4c0704ab24ac103b7abea19cd79b761c49ef9931b042bf963af0504e6a7641",
+  "all55_original_bins_match_text_htslib_fullresult_and_tsv": true,
+  "all_original_small_artifacts_locally_recovered": true,
+  "metadata_only_reexports_byte_identical": true,
+  "export_sha256": {
+    "reports/gse122069-next-control-20261031/summary.json": "71eeabbc01277786fd7a849958c4fdc2eadb127ed6e7bba7d984b7c46052cf87",
+    "reports/gse122069-next-control-20261031/bin-qc.tsv": "468bed1d3e008f6ff300eef4961df74bcc05cc6d3388f7db21adddf6b8809a65",
+    "reports/gse122069-next-control-20261031/two-control-technical-qc.json": "005d6072d2cbc813dac17132135d23a500f1bb4161a55b62464cc3ba356488f3",
+    "reports/gse122069-next-control-20261031/two-control-technical-qc.tsv": "0c6c6f32708572d681455eebac778281fd4646ec194fad88f3e2bc6ea70d4977"
+  },
+  "local_tests_passed": 378,
+  "compileall_pass": true,
+  "new_fastq_reads_processed": 0,
+  "new_alignments_executed": 0,
+  "low_count_replay_executed": false,
+  "scope": "artifact closure only; original 2026-10-31 execution preserved"
+}

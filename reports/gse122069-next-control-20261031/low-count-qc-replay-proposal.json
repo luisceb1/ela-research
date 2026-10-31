@@ -1,0 +1,62 @@
+{
+  "status": "proposal_only_not_executed",
+  "selection_reason": "post hoc technical QC of new low-count accepted cryptic support in public control; not effect estimation or independent replication",
+  "run": "SRR8144908",
+  "input_sha256": "ed2f2f4a30b7f448c246029b0407e20e142493b2d74345e674c4e7b3c3e5527f",
+  "fixed_selected_bins": [
+    1,
+    18,
+    38,
+    43,
+    55
+  ],
+  "selection_rule": "all bins with accepted cryptic anchor8 support plus fixed first full bin as negative context; frozen before read-quality audit",
+  "intervals_read_ordinals_1based_inclusive": [
+    [
+      1,
+      1000000
+    ],
+    [
+      17000001,
+      18000000
+    ],
+    [
+      37000001,
+      38000000
+    ],
+    [
+      42000001,
+      43000000
+    ],
+    [
+      54000001,
+      54292655
+    ]
+  ],
+  "selected_reads": 4292655,
+  "expected_replay_target_counts": {
+    "canonical_anchor15": 13,
+    "cryptic_anchor15": 3,
+    "canonical_anchor8": 15,
+    "cryptic_anchor8": 4
+  },
+  "fixed_alignment_and_filter_contract_unchanged": true,
+  "aggregate_only": [
+    "anchor_lengths",
+    "MAPQ",
+    "NM_or_missing",
+    "softclip_lengths",
+    "duplicate_flag",
+    "AS_or_missing"
+  ],
+  "no_export": [
+    "read_identifiers",
+    "read_sequences",
+    "full_SAM_or_BAM"
+  ],
+  "new_qc_phase_deadline_seconds": 600,
+  "no_automatic_retry_or_budget_increase": true,
+  "no_new_real_data_or_replay_performed_for_this_proposal": true,
+  "other_four_runs_excluded": true,
+  "historical_counts_retained_even_if_replay_differs": true
+}
