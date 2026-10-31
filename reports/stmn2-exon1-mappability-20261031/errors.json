@@ -1,0 +1,15 @@
+{
+  "recovery": [
+    "Original cwd contains older research branch and was left untouched",
+    "Scoped Library filename search returned no index/tool copy; prior task cache was found and hashes matched",
+    "First local copy command exceeded argument size; retried using compact tree entries",
+    "Initial unit run warned about an unclosed projection file; context-manager fix applied; final suite passed"
+  ],
+  "analysis_errors": [],
+  "limits": [
+    "Perfect reference reads only",
+    "Reported NH uniqueness is not exhaustive genome uniqueness",
+    "Two annotated TSS are not biological replicates or evidence of their expression",
+    "No explanation of real5prime coverage established"
+  ]
+}

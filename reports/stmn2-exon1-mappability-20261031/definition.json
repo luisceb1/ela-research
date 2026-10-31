@@ -1,0 +1,43 @@
+{
+  "reused_projection": "reports/isoforms/exons.tsv",
+  "sha256": "d1e26e96aed380b92658e673da4ed59bdbdc9fe5f1fd1b1196ac554fe3b5ff44",
+  "selected_exons": [
+    {
+      "transcript": "ENST00000220876.12",
+      "exon_order": 1,
+      "start_0based": 79611116,
+      "end_exclusive": 79611214
+    },
+    {
+      "transcript": "ENST00000220876.12",
+      "exon_order": 2,
+      "start_0based": 79636801,
+      "end_exclusive": 79636897
+    },
+    {
+      "transcript": "ENST00000220876.12",
+      "exon_order": 3,
+      "start_0based": 79641377,
+      "end_exclusive": 79641550
+    },
+    {
+      "transcript": "ENST00000518111.5",
+      "exon_order": 1,
+      "start_0based": 79611151,
+      "end_exclusive": 79611214
+    },
+    {
+      "transcript": "ENST00000518111.5",
+      "exon_order": 2,
+      "start_0based": 79636801,
+      "end_exclusive": 79636897
+    },
+    {
+      "transcript": "ENST00000518111.5",
+      "exon_order": 3,
+      "start_0based": 79641377,
+      "end_exclusive": 79641550
+    }
+  ],
+  "not_independent_GTF_reconstruction": true
+}

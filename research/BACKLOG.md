@@ -4,7 +4,7 @@ Solo la primera fila es la próxima tarea científica. Los bloqueos requieren ev
 
 | Prioridad | Trabajo | Estado / criterio de cierre |
 |---|---|---|
-| P0 | Auditar mapeabilidad/definición del primer exón STMN2 con referencia y controles50/51nt | Piloto1M completado, parsers concordantes,0ambas uniones15/8 y0exon1 pese a628solapamientos locus/48unionesposteriores. Sin ampliar datos ni retargeting; discriminar limitación5prime antes de bibliotecas completas |
+| P0 | QC prospectivo del control completo SRR8144907, antes de los otros cinco runs | Mapeabilidad de exon1 completada:194/194 perfectas en origen. Preparar modo completo37.518.164lecturas con controles, bins de orden prefijados y límites; propuesta escrita, fase aún no ejecutada. No ampliar/detener según señal ni inferencia biológica |
 | Bloqueado | E-MTAB-15653 | Auditoría documental terminada; independencia no certificada. No repetir búsqueda ni calcular efectos sin nueva fuente concreta |
 | Completado en este PR | Ciclo de selección de tres fuentes | GSE182976: cobertura BW; GSE122069: TPM; E-MTAB-15653: cuentas de unión recuperadas, independencia no certificada. Ninguna lista para el contraste completo. No repetir |
 | Revisión | PR #30 separado | Otros candidatos y trabajo posterior; no integrado ni reejecutado aquí. Reconciliar su planning al integrar, sin sumar resultados o ampliar a datos clínicos personales |
@@ -47,3 +47,7 @@ Informe reports/hisat2-synthetic-gate-20261031. Positivos equilibrados/negativos
 ## Piloto completado, contraste bloqueado por cobertura
 
 reports/gse122069-pilot-20261031:1Mreal,96,58%alineamiento,conteospropio/HTSlib iguales. Umbral de cobertura noalcanzado, no ausencia biológica. Diagnóstico del mismo millón:0exon1,31exon2,48unionesposteriores; no nueva réplica. MetadataTruSeqRNAkit noacredita3prime-only. Siguiente filaP0 sustituye instrucciones históricas de ejecutar piloto.309tests locales;CI de nueva cabeza por verificar. Primer fallo de supervisión guardado y corregido conservadoramente; cachecomprimida del índice retirada para presupuesto,extraído verificado conservado. MismoPR33abierto sinmerge yPR30intacto.
+
+## Mapeabilidad completada — continuación vigente
+
+reports/stmn2-exon1-mappability-20261031:194/194 del exon1 (54en tramo común63nt),680 controles posteriores y8positivos correctos; negativo excluido. SinFASTQreales nuevos ni cambio del piloto. No imposibilidad general de mapeo perfecto bajo esta configuración; causa de cobertura5prime sigue abierta. Única próxima tarea: propuesta de controlcompleto fijado, no otros cinco ni nueva fase adaptativa.317tests locales,CI de cabeza nueva por verificar; mismoPR33 abierto yPR30 intacto.
