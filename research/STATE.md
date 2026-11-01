@@ -1,5 +1,12 @@
 # Estado vigente — 02/11/2026
 
+## Decisión vigente: referencia UNC13A y ruta unstranded fijadas — 02/11/2026
+
+Contrato en reports/unc13a-reference-strand-20261102. UCSC/hg38/GENCODEv47: canónica intrónica0-based[17641556,17642844),CEizquierda[17641556,17642413),CEderecha[17642541,17642844),hebra−,motivosCT/AC. Canónica apoyada por4transcritos;128bpentre brazos crípticos. Mismo proveedor para secuencia/anotación, no validación biológica. Pares históricos de límites exónicos1-based se convierten[a,b-1); no se modifican conteos o esquemas previos automáticamente.
+
+La química del kit hace plausible RF, pero no acredita layout real. Ruta primaria prospectiva: omitir --rna-strandness, orientación físicaFR, exigir XS-por motivos y referencia. Aún sin prueba de alineador. **Única siguiente tarea:** research/plans/2026-11-02-unc13a-unstranded-minigenome.md, HISAT2y colación en minigenoma pequeño dentro de límites prefijados; sin índice humano o FASTQbiológicos. Si no recupera positivos/XScorrecto, detener sin elegir orientación por efecto. raw_execution_ready=false. PR36sin merge automático. Las cabeceras inferiores son historia.
+
+
 ## Decisión vigente: contrato PE sintético ejecutado — 02/11/2026
 
 Implementado en scripts/pe_fragment_contract.py; informe reports/pe-synthetic-contract-20261102.17tests locales con PySAM0.23.3/HTSlib1.21 pasan;22comparaciones texto/HTSlib concordantes. Una unidad por fragmento/unión/biblioteca, pares recíprocos, exclusiones y anclas explícitas. Política de pares/reducción compartida: independencia solo en decodificación. Entrada lexicográficamente agrupada(RG,QNAME), límite16registros; colación externa aún pendiente. Legacy SE intacto, sin piloto real o alineador ejecutado.

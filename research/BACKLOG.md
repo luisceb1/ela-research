@@ -1,5 +1,14 @@
 # Backlog vigente — 02/11/2026
 
+## P0 vigente: minigenoma unstranded y colación — 02/11/2026
+
+- Completado: referencia UNC13A/convenciones y modo unstranded prospectivo, reports/unc13a-reference-strand-20261102.4tests y replay idéntico; no repetir como tarea pendiente.
+- P0 única: research/plans/2026-11-02-unc13a-unstranded-minigenome.md; alineador/XS/proyección/colación con sintéticos y referencia pequeña. Presupuesto propio, sin índice humano o crudos.
+- RFesperado por química, no verificado en bibliotecas; no elegir por cuentas. Piloto6,35GBsigue no listo. Mantener resultados previos y bloqueos; sin merge automático.
+
+Las prioridades inferiores son históricas.
+
+
 ## P0 vigente: referencia y orientación UNC13A — 02/11/2026
 
 - Completado: contrato PE sintético,17tests y22comparaciones de parsers; ver reports/pe-synthetic-contract-20261102. No repetir como tarea nueva.

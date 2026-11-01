@@ -1,0 +1,11 @@
+{
+  "tests": 4,
+  "repeat_byte_identical": true,
+  "sha256": {
+    "contract.json": "a20ea058d038142b9a774bbd8a8c63656202ab914624cee642321408e303f7fe",
+    "models.json": "e2d31d46257240ad999f39f492f77a90a185ea77ee442e0cccd45489e30d6a25"
+  },
+  "raw_downloaded": false,
+  "alignment_executed": false,
+  "independent_sequence_provider_check": false
+}
