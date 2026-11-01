@@ -1,0 +1,9 @@
+{
+  "missing_execution_receipts": ["align_wrongmotif", "collate_wrongmotif"],
+  "observed_evidence": "logs, ordered synthetic SAM and result.json exist; commands.json contains only 11 records",
+  "receipts_reconstructed": false,
+  "memory_measurement_certified": false,
+  "alignment_gate_passed": true,
+  "resource_gate_certified": false,
+  "raw_pilot_ready": false
+}

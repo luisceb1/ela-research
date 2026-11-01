@@ -1,5 +1,14 @@
 # Backlog vigente — 02/11/2026
 
+## P0 vigente: supervisor y recibos — 02/11/2026
+
+- Minigenoma funcional completado:12expectativas coinciden en cuatro referencias; colación y dos parsers concordantes, sin strandnessforzado. Informe reports/unc13a-minigenome-20261102.
+- Gate de recursos NOacreditado: RSSnulo/implausible y dos recibos finales ausentes; conservar evidencia, no reconstruir recibos ni repetir para ocultarlo.
+- P0 única: plan nuevo y controles de supervisor/persistencia atómica con procesos sintéticos. No índice humano, nuevos alineamientos o crudos. raw_pilot_ready=false; no merge automático.
+
+Las prioridades inferiores conservan historia.
+
+
 ## P0 vigente: minigenoma unstranded y colación — 02/11/2026
 
 - Completado: referencia UNC13A/convenciones y modo unstranded prospectivo, reports/unc13a-reference-strand-20261102.4tests y replay idéntico; no repetir como tarea pendiente.

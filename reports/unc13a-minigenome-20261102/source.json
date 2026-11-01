@@ -1,0 +1,16 @@
+{
+  "url": "https://codeload.github.com/DaehwanKimLab/hisat2/tar.gz/0d244324f98de541bce04d45c75e83bc3522f7f4",
+  "source_commit": "0d244324f98de541bce04d45c75e83bc3522f7f4",
+  "wall_start_epoch": 1793576975.8735137,
+  "global_deadline_epoch": 1793577875.8735137,
+  "caps": {
+    "cpu": 2,
+    "memory_bytes": 2147483648,
+    "disk_bytes": 1073741824,
+    "transfer_bytes": 300000000
+  },
+  "status": 200,
+  "bytes": 7061238,
+  "sha256": "6945738e803a0fd742718b3b46cadc207c6eda61762e7248e05af4afa96b8fdc",
+  "saved": true
+}

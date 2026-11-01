@@ -1,5 +1,14 @@
 # Estado vigente — 02/11/2026
 
+## Decisión vigente: minigenoma funcional pasa, supervisor pendiente — 02/11/2026
+
+HISAT2v2.2.3compilado y ejecutado sobre referencia mínima, no índice humano. reports/unc13a-minigenome-20261102:12expectativas por fragmento concordantes, cuatro referencias, XS-para positivos sin --rna-strandness, multimapeo/hebra/motivo y anclas comprobados; colación externa lexicográfica funciona, dos tests añadidos. Decodificadores coinciden, política de pares compartida.
+
+El supervisor NOqueda acreditado: RSSnulo/implausible en varias tareas y dos recibos ausentes al final de commands.jsonpese a logs/SAM/resultados presentes. Datos preservados sin reconstruir recibos ni reintentar. No certificar límite2GiBo integridad de todos los registros. Tiempo/disco/transporte observados dentro de límites pequeños; no extrapolar a humano. raw_pilot_ready=false.
+
+**Única siguiente tarea:** reparar y comprobar monitoreo de árbol de procesos y persistencia atómica de recibos mediante procesos sintéticos conocidos y plan nuevo. Sin repetir alineaciones, índice humano o FASTQbiológico. No reutilizar el deadline/carpeta original como una ejecución nueva. PR36sin merge automático; sin clínica/contactos/costes. Las prioridades inferiores son historia.
+
+
 ## Decisión vigente: referencia UNC13A y ruta unstranded fijadas — 02/11/2026
 
 Contrato en reports/unc13a-reference-strand-20261102. UCSC/hg38/GENCODEv47: canónica intrónica0-based[17641556,17642844),CEizquierda[17641556,17642413),CEderecha[17642541,17642844),hebra−,motivosCT/AC. Canónica apoyada por4transcritos;128bpentre brazos crípticos. Mismo proveedor para secuencia/anotación, no validación biológica. Pares históricos de límites exónicos1-based se convierten[a,b-1); no se modifican conteos o esquemas previos automáticamente.

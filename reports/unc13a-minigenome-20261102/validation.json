@@ -1,0 +1,14 @@
+{
+  "functional_gate_passed": true,
+  "references_checked": 4,
+  "fragment_expectations_checked": 12,
+  "all_decoder_comparisons_passed": true,
+  "elapsed_seconds_since_download_start": 252.21676182746887,
+  "experiment_disk_bytes": 62670813,
+  "transfer_bytes": 7061238,
+  "memory_limit_certified": false,
+  "memory_issue": "RSS sampling reports zero or implausibly low values for several subprocesses; cannot certify compiler/descendant peak",
+  "raw_pilot_ready": false,
+  "raw_reads_used": false,
+  "genome_wide_mappability_validated": false
+}
