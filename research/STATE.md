@@ -16,7 +16,7 @@ Las cuatro observaciones crípticas a8 tienen MAPQ60, NM0, AS0 y softclip0; las 
 
 392 tests locales (378 previos+14 nuevos), compileall correcto y preflight real PySAM0.23.3/HTSlib1.21 concordante. Exportadores repetidos idénticos por bytes y seis controles de artefactos alterados rechazados. Nueve módulos de ejecución cotejados con Git blobs remotos antes del replay. FASTQ/índice restaurados por hashes idénticos; una descarga de rango truncada se recuperó por el reintento de transporte preexistente, recibo completo98rangos yMD5/SHA verificados. Cero reintentos de replay, errores de watchdog o ampliaciones de recursos. CI final se verifica por cabeza del PR; la CI previa920414d pasó392tests en3.11/3.12.
 
-Fase técnica cerrada e integrada; la coordinación con la PR #30 es la siguiente puerta. No ampliar bibliotecas ni repetir controles sin un plan nuevo. No repetir estos bloques ni ampliar bibliotecas para resolver soporte bajo sin nuevo plan. La inferencia permanece bloqueada por el mapa de unidades/lotes/pareamiento; conservar la declaración publicada3/3, sin negarla por falta de mapa. No merge/cierre automático, clínica personal, gastos, contactos, publicación externa o laboratorio. PR #30 separado e intacto053ef70c.
+Fase técnica cerrada e integrada; la coordinación con la PR #30 es la siguiente puerta. No repetir estos bloques ni ampliar bibliotecas para resolver soporte bajo sin un plan nuevo. La inferencia permanece bloqueada por el mapa de unidades/lotes/pareamiento; conservar la declaración publicada3/3, sin negarla por falta de mapa. No merge/cierre automático, clínica personal, gastos, contactos, publicación externa o laboratorio. PR #30 separado e intacto053ef70c.
 
 ## Alcance
 
