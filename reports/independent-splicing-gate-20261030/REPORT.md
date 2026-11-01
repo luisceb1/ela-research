@@ -150,3 +150,18 @@ User ran `scripts/nygc_unc13a_scan.py` against `nygc_parquets.zip`: 3548 Parquet
 This reproduces **coordinates with read support in a distinct public dataset**, not yet a group association or external **biological** replication: absence of matched clinical pathology/tissue/sample independence prevents that claim. RiMOD group data and NYGC data must not be treated as comparable cohorts before technical, donor and tissue metadata checks.
 
 Pinned Fratta Lab author file `data/metadta_nygc.csv` contains `sample`, `tdp_proteinopathy`, `rna_tissue_source_simplified`, `external_subject_id`, `rin` and other metadata. New `scripts/nygc_unc13a_metadata_audit.py` joins exact sample IDs, groups by region and TDP-43 pathology, reports unique donor-ID counts and aggregate nonzero junctions; suppresses event counts for N<5 groups. Still needs local execution. Pay attention to multiple tissues from a single donor and provenance/overlap. The original source itself groups observations by tissue and pathology; do not call data independent biological confirmation until cohort identity is verified.
+
+
+## NYGC donor-deduplicated motor cortex QC (user-provided local stdout, 2026-11-01)
+
+Ran `scripts/nygc_unc13a_donor_qc.py`: 515 cortex-motor sample records selected by pathology and joined metadata; 361 donor IDs (313 ALS-TDP, 48 control); 154 additional library records removed by selecting the maximum local cluster depth per donor without using the cryptic outcome; zero missing donor IDs in this subset. **Source: user-reported stdout, not an independent execution in this environment.** Donor IDs are proxies from the author metadata and require independent provenance review.
+
+| Cluster depth minimum | ALS-TDP donors: donor-junction positive / N | Control donors: positive / N | ALS-TDP acceptor-junction positive / N |
+|---|---|---|---|
+| 0 | 33/313 | 0/48 | 27/313 |
+| 50 | 33/301 | 0/45 | 25/301 |
+| 100 | 26/244 | 0/38 | 22/244 |
+
+RIN sensitivity for donor junction at depth >=100: RIN<6.5: ALS-TDP 14/93 vs Control 0/21; RIN 6.5–<7.5: ALS-TDP 7/77 vs Control 0/7; RIN>=7.5: ALS-TDP 4/55 vs Control 0/3. Groups are imbalanced; a higher RIN is associated with sparse control samples. Donor-level RIN missing at all-depth: ALS-TDP 31/313, Control 9/48. Median cluster depths at all-depth ALS-TDP 130 and Control 143.5. **This is not a fully adjusted association or estimated biomarker accuracy.**
+
+Next decision: stop running unplanned repeated sensitivity filters on the same cohort; verify source pipeline/genome build, the 313 unmatched metadata IDs from broader NYGC scan, donor overlap and anatomical classifications; compare directly with original author analysis and choose a preregistered independent validation question. Risk: multiple tissues per donor, source-specific batch/RIN/cell composition and biological non-independence of reanalysed author data.
