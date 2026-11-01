@@ -1,0 +1,40 @@
++{
+  "repository": "frattalab/cryptic_biology",
+  "commit": "80fa3d70418a4665a85d414e33c7c470a9312086",
+  "tree_truncated": false,
+  "code": [
+    {
+      "path": "main_fig.Rmd",
+      "blob": "44b1bfa42673ecd36f26340f962aa862daec03f4",
+      "bytes": 120843,
+      "access": "GitHub connector, code only; not executed"
+    },
+    {
+      "path": "supplementary.Rmd",
+      "blob": "2ae8e63c6cc17af49e19fba4d80770506d822144",
+      "bytes": 84144,
+      "access": "GitHub connector, code only; not executed"
+    },
+    {
+      "path": "gene_expression_and_number_of_cryptics.R",
+      "blob": "6ef5b7a55bc6d53facdd828d7f4287177f9a88c4",
+      "bytes": 7342,
+      "access": "GitHub connector, code only; not executed"
+    },
+    {
+      "path": "getting_curve_junction_counts.R",
+      "blob": "5e5052f020bfddf0c2865a9c8f3250525c5a2de3",
+      "bytes": 3747,
+      "access": "GitHub connector, code only; not executed"
+    }
+  ],
+  "table": {
+    "path": "data/compendium_cryptics.csv",
+    "blob": "fa4bb9dfa5d9c6132524c7750c0304184a70552b",
+    "bytes": 475610,
+    "access": "GitHub connector",
+    "cache_normalization": "UTF-8 text with LF newlines, projected cache SHA recorded separately"
+  },
+  "originals_committed": false,
+  "no_postmortem_tables_read": true
+}

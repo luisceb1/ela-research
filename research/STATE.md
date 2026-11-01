@@ -1,5 +1,14 @@
 # Estado vigente — 01/11/2026
 
+## Decisión vigente: procesados UNC13A bloqueados — 01/11/2026
+
+Puerta ejecutada y cerrada en reports/unc13a-humphrey-processed-gate-20261101. En cryptic_biology80fa3d7 se encontró la familia Humphrey en el compendio agregado (861filas,6UNC13A), pero no soporte ni identidad de las doce bibliotecas. Cero enlaces por muestra aceptados; no PSI, efecto o ausencia biológica inferidos. No repetir esta fuente o las auditorías cerradas SH-SY5Y/fraccionación/RiMOD.
+
+**Única siguiente tarea propuesta:** preparar un plan de recursos y valor informativo para un piloto de crudos Humphrey limitado, sin descargar/alinear: selección técnica explícita, diseño paired-end, referencias, RAM/disco/tiempo y criterio de decisión. No asumir runtime de GSE122069, no ejecutar79GBni ampliar presupuesto automáticamente. Si no es viable, detener con bloqueo. STMN2TPM/PPAU permanece reproducida; mapa biológico de unidades pendiente. PR36sin merge automático; sin contactos/costes/clínica/laboratorio.
+
+Las cabeceras inferiores conservan historia y sus tareas ya cerradas quedan sustituidas por esta decisión.
+
+
 ## Decisión vigente: PPAU STMN2 desde TPM reproducida — 01/11/2026
 
 Fase ejecutada y cerrada en reports/stmn2-papa-tpm-reproduction-20261101. Concordancia en las 12 bibliotecas, diferencia absoluta máxima 4,440892098500626e-16 frente a tolerancia prospectiva 1e-6. Numerador TPM del grupo STMN2_1; denominador todos los grupos del mismo gene_id exacto en la matriz completa. Se recuperó solo el miembro TPM por Range/CRC/SHA; sin FASTQ o ZIP completo. El contraste con cuentas permanece fallido y sus artefactos conservan los hashes originales.

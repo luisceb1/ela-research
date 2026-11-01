@@ -1,5 +1,14 @@
 # Backlog vigente — 01/11/2026
 
+## P0 vigente: plan de recursos, sin crudos — 01/11/2026
+
+- Cerrado: puerta UNC13A Humphrey, compendio agregado sin soporte por biblioteca; informe reports/unc13a-humphrey-processed-gate-20261101. No repetir ni abrir otra fuente en este ciclo.
+- P0 única propuesta: plan de recursos/valor informativo para piloto de crudos limitado, paired-end y referencias/tiempo/disco/RAM explícitos. Sin descarga o alineamiento hasta demostrar viabilidad. No79GBautomáticos.
+- STMN2reproducida; contraste con cuentas fallido intacto. Datos funcionales y mapa de unidades siguen pendientes. PR36sin merge automático.
+
+Las P0 inferiores son históricas.
+
+
 ## P0 vigente: procesados UNC13A de GSE296714 — 01/11/2026
 
 - **Completado:** reproducción TPM/PPAU de STMN2, 12/12 concordantes a tolerancia 1e-6; informe reports/stmn2-papa-tpm-reproduction-20261101. No repetir.

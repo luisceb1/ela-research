@@ -1,0 +1,995 @@
++{
+  "commit": "80fa3d70418a4665a85d414e33c7c470a9312086",
+  "truncated": false,
+  "entries": [
+    {
+      "path": ".DS_Store",
+      "size": 10244,
+      "sha": "cc811f8d48df5c466dac9f6c0875bab4af009f70",
+      "type": "blob"
+    },
+    {
+      "path": ".gitattributes",
+      "size": 45,
+      "sha": "eeac252c38a62ca47ef66db04dad3e044c009e68",
+      "type": "blob"
+    },
+    {
+      "path": ".gitignore",
+      "size": 189,
+      "sha": "aa8eb6c63c94b600853a7210ce9246448fcbd5ce",
+      "type": "blob"
+    },
+    {
+      "path": "NYGC_all_RNA_samples_support.tsv",
+      "size": 433215,
+      "sha": "bfe6a6ce767293877b887f1fb2047ac9f1a769e1",
+      "type": "blob"
+    },
+    {
+      "path": "burden_analyses.R",
+      "size": 27195,
+      "sha": "875714ee9a904647f3b8ee95fb8143b406e4fbf6",
+      "type": "blob"
+    },
+    {
+      "path": "create_exon_table.R",
+      "size": 7822,
+      "sha": "23654551fd365782a6ceec6cce660dac40351f5a",
+      "type": "blob"
+    },
+    {
+      "path": "cryptic_biology.Rproj",
+      "size": 205,
+      "sha": "066341ea1449b1da681a83d36b1ffda2f9cc045d",
+      "type": "blob"
+    },
+    {
+      "path": "data",
+      "sha": "09be5585a7f14afc8f0c923a8b0c0d2499abf7d4",
+      "type": "tree"
+    },
+    {
+      "path": "data/.DS_Store",
+      "size": 12292,
+      "sha": "5bd5dafad2e2477a80ecb98473eaffe91f36bcc6",
+      "type": "blob"
+    },
+    {
+      "path": "data/.gitattributes",
+      "size": 203,
+      "sha": "280057266bddb38a3de789c0fac828c077a3abc7",
+      "type": "blob"
+    },
+    {
+      "path": "data/ALSOD genes - Sheet1.csv",
+      "size": 7247,
+      "sha": "808a33ccac7ef0eb85e2fb953fa085ad3d595663",
+      "type": "blob"
+    },
+    {
+      "path": "data/NMD_deseq_chx_upf1.xlsx",
+      "size": 22045735,
+      "sha": "9bea1d86e8b773bc8087e3a1920a66e94188da29",
+      "type": "blob"
+    },
+    {
+      "path": "data/all_events.closest_tdp_bind.bed",
+      "size": 66417,
+      "sha": "a6170afa2db849aefdf9eec1748891a69b992663",
+      "type": "blob"
+    },
+    {
+      "path": "data/all_the_ce_length_manual_filtered.bed",
+      "size": 16413,
+      "sha": "c7c578852952146940da21555a173101b60d01a3",
+      "type": "blob"
+    },
+    {
+      "path": "data/all_the_ce_length_manual_filtered.bed.txt",
+      "size": 17164,
+      "sha": "9e22db6e5971bef010c4b096b98966fd0a4f4f2b",
+      "type": "blob"
+    },
+    {
+      "path": "data/anno_df_parse.csv",
+      "size": 1579966,
+      "sha": "716824747d51d18c6bc3e3e892360b43f073d0c1",
+      "type": "blob"
+    },
+    {
+      "path": "data/big_delta_de.csv",
+      "size": 10400754,
+      "sha": "8db287ade08b43c65385a354ed5d42287df7ed8a",
+      "type": "blob"
+    },
+    {
+      "path": "data/big_delta_de_dz.csv",
+      "size": 13692653,
+      "sha": "2d70008fa10b5c0f3543840bf1acc22856fb20b0",
+      "type": "blob"
+    },
+    {
+      "path": "data/check.csv",
+      "size": 13518,
+      "sha": "2774cea2e5708141306cf94183ca062201ad5cae",
+      "type": "blob"
+    },
+    {
+      "path": "data/chx_all_experiments_deseq2.csv",
+      "size": 36370940,
+      "sha": "3779321e29849f7a419b7e547041d79b3f1e0efd",
+      "type": "blob"
+    },
+    {
+      "path": "data/chx_control.csv",
+      "size": 22357394,
+      "sha": "7ce058baa51d851f3752282d5505d81df30480b2",
+      "type": "blob"
+    },
+    {
+      "path": "data/chx_filtere_table.csv",
+      "size": 932860,
+      "sha": "f5f9fe5078e52c7ce6ded8141668f592e3435714",
+      "type": "blob"
+    },
+    {
+      "path": "data/compendium_cryptics.csv",
+      "size": 475610,
+      "sha": "fa4bb9dfa5d9c6132524c7750c0304184a70552b",
+      "type": "blob"
+    },
+    {
+      "path": "data/compendium_library_depth.xlsx",
+      "size": 15630,
+      "sha": "fd69db85ceb9218ad6774058aa0b512206e8456b",
+      "type": "blob"
+    },
+    {
+      "path": "data/count_table_of_aligned_remove_200bp_plus_product_reads.csv",
+      "size": 40348,
+      "sha": "4cd1345228734deeddd45cc8dea4f3295e0811e6",
+      "type": "blob"
+    },
+    {
+      "path": "data/cryptic_detection_summary_long_version.csv",
+      "size": 3329703,
+      "sha": "0c6b5dc4f34b9e5a50b7595323ee61885b4a6946",
+      "type": "blob"
+    },
+    {
+      "path": "data/cryptic_genes_nygc_tpm.csv.gz",
+      "size": 134,
+      "sha": "a3a8d91bd0068919efb135f1cc92e8feb1d67b3b",
+      "type": "blob"
+    },
+    {
+      "path": "data/deseq2_full_chx.csv",
+      "size": 36370940,
+      "sha": "3779321e29849f7a419b7e547041d79b3f1e0efd",
+      "type": "blob"
+    },
+    {
+      "path": "data/deseq2_outputs_compendium.xlsx",
+      "size": 40433199,
+      "sha": "cbffcda1a33a007a0a54da03238d494905b5e26a",
+      "type": "blob"
+    },
+    {
+      "path": "data/diff_expr_sh.csv",
+      "size": 9930625,
+      "sha": "d8b96fcdbf22b663f0e5b03023cc646d497e8b7e",
+      "type": "blob"
+    },
+    {
+      "path": "data/diff_expr_sk.csv",
+      "size": 13062708,
+      "sha": "b22a4b1a907eaef7fb61667106637623e9d3d666",
+      "type": "blob"
+    },
+    {
+      "path": "data/expression_by_pathology_updated.csv",
+      "size": 908003,
+      "sha": "28ab4a08e532e4012ed9b55ef5ba52e05dbd0121",
+      "type": "blob"
+    },
+    {
+      "path": "data/gencode.v42_geneid_genename.tsv",
+      "size": 2803997,
+      "sha": "c811b0383a84b40bbc91bc7f244e8a2c65e9a13b",
+      "type": "blob"
+    },
+    {
+      "path": "data/inclusion_rates.csv",
+      "size": 9966078,
+      "sha": "60bb63bc8cb387d1a28f8e115752a15429903af2",
+      "type": "blob"
+    },
+    {
+      "path": "data/junc_cryptic_master_csv",
+      "size": 106039,
+      "sha": "960949ab1c0098eeaf7cb19769d0ae2108ae89f3",
+      "type": "blob"
+    },
+    {
+      "path": "data/kmeans_clustered.csv",
+      "size": 11158,
+      "sha": "738c07e422e27659d926e90597ff09f833526392",
+      "type": "blob"
+    },
+    {
+      "path": "data/library_stats_rimod.csv",
+      "size": 6059,
+      "sha": "2accf4d9e363dcfb20ab08c9db069aa4233024a0",
+      "type": "blob"
+    },
+    {
+      "path": "data/liu_overlap.csv",
+      "size": 674,
+      "sha": "a884c320f09af0423d51c26f664e9540c949b416",
+      "type": "blob"
+    },
+    {
+      "path": "data/logodds_against_different_exon_types.csv",
+      "size": 3287716,
+      "sha": "36b88bffce5ed548abcc1ee47d1edfd8329e210f",
+      "type": "blob"
+    },
+    {
+      "path": "data/manual_validation_dz_distinct.csv",
+      "size": 27468,
+      "sha": "844423569fcdd91feb6925bdd28d1e4c88ee0e28",
+      "type": "blob"
+    },
+    {
+      "path": "data/manual_validation_sy5y_distinct.csv",
+      "size": 43699,
+      "sha": "7c86c34ef58d5251aadeae02de1069aabaa906df",
+      "type": "blob"
+    },
+    {
+      "path": "data/master_table.csv",
+      "size": 153113,
+      "sha": "db2ebff9435b9e84173809cf15d8800d5719c288",
+      "type": "blob"
+    },
+    {
+      "path": "data/maxent",
+      "sha": "6b81185699012260de80fc58358b438d015395c1",
+      "type": "tree"
+    },
+    {
+      "path": "data/maxent/3ss_strength_be2.csv",
+      "size": 4812,
+      "sha": "be7f93471214cf88f33015d39ba3604474e3fc32",
+      "type": "blob"
+    },
+    {
+      "path": "data/maxent/3ss_strength_combined.csv",
+      "size": 4821,
+      "sha": "db0d7bb687165d50d52f9837182a8478c680d965",
+      "type": "blob"
+    },
+    {
+      "path": "data/maxent/3ss_strength_sh.csv",
+      "size": 4942,
+      "sha": "df86725007d312422df40a7b87bb8fbfdd9afab6",
+      "type": "blob"
+    },
+    {
+      "path": "data/maxent/5ss_strength_be2.csv",
+      "size": 4780,
+      "sha": "0b756697a1b460112a01cb2bc3e4cb25a7c996a5",
+      "type": "blob"
+    },
+    {
+      "path": "data/maxent/5ss_strength_combined.csv",
+      "size": 4801,
+      "sha": "0c6373ff5ec04e1375db0b292554d536ef018d47",
+      "type": "blob"
+    },
+    {
+      "path": "data/maxent/5ss_strength_sh.csv",
+      "size": 4917,
+      "sha": "45176bdbd038a3e101b998b343daba2197f51a2f",
+      "type": "blob"
+    },
+    {
+      "path": "data/maxent/donors_early_be2.fa",
+      "size": 7566,
+      "sha": "9927cb4b16506abb62b06fb844a51cb1f45c42ff",
+      "type": "blob"
+    },
+    {
+      "path": "data/maxent/donors_early_combined.fa",
+      "size": 11972,
+      "sha": "50c173161d4f201c0988d883d1830b900beeadd1",
+      "type": "blob"
+    },
+    {
+      "path": "data/maxent/donors_early_sh.fa",
+      "size": 8468,
+      "sha": "732f2becd3a486dc8ce3c3c1e6de0a2fa4a86454",
+      "type": "blob"
+    },
+    {
+      "path": "data/maxent/donors_late_be2.fa",
+      "size": 2588,
+      "sha": "b389437dd85eecca68e4b320f6f0ecd6a872b766",
+      "type": "blob"
+    },
+    {
+      "path": "data/maxent/donors_late_combined.fa",
+      "size": 7462,
+      "sha": "841b9a9f3eff5eac594af3284dea8b336fa359c3",
+      "type": "blob"
+    },
+    {
+      "path": "data/maxent/donors_late_sh.fa",
+      "size": 6252,
+      "sha": "673bfde4668fa5dd085680bc007c2ddbd3752899",
+      "type": "blob"
+    },
+    {
+      "path": "data/merged_nmd_CE.csv",
+      "size": 501618,
+      "sha": "370707593a6e71c4d373a5ee4035335bdb9bd97d",
+      "type": "blob"
+    },
+    {
+      "path": "data/metadata_rimod.csv",
+      "size": 6266,
+      "sha": "5440e115925a551750e7e6365e35b3a67f5eb264",
+      "type": "blob"
+    },
+    {
+      "path": "data/metadta_nygc.csv",
+      "size": 933959,
+      "sha": "6d9b550088c4077abe4ae19883a64124e2ad14c8",
+      "type": "blob"
+    },
+    {
+      "path": "data/nmd_expression_effect.csv",
+      "size": 77665,
+      "sha": "8c10497186da4b9ee1f7139d3c07452e1fc82eef",
+      "type": "blob"
+    },
+    {
+      "path": "data/nmd_or_not.csv",
+      "size": 936368,
+      "sha": "fdbe19b8422e5b5c34788d145f2898e5cff5ec8c",
+      "type": "blob"
+    },
+    {
+      "path": "data/nmd_or_not_upf1.csv",
+      "size": 458868,
+      "sha": "6aa605bf1b6749ffc7fcede4b710fe3743ad561a",
+      "type": "blob"
+    },
+    {
+      "path": "data/nmd_ppau.csv",
+      "size": 12510,
+      "sha": "a590082bd1945c7d3e77f9117da1ff402edfe71f",
+      "type": "blob"
+    },
+    {
+      "path": "data/noDox-dox0075.cryptic_exons.bed",
+      "size": 9948,
+      "sha": "0d223f642f5308bc38f31033306e9e2e3aa1c048",
+      "type": "blob"
+    },
+    {
+      "path": "data/normed_counts_sh.csv",
+      "size": 4342337,
+      "sha": "855b9e95a07fadbd150513c2df58349514a9dccb",
+      "type": "blob"
+    },
+    {
+      "path": "data/normed_counts_sk.csv",
+      "size": 5273712,
+      "sha": "716537632a0ec5f7e08d081c9afb2f166df68146",
+      "type": "blob"
+    },
+    {
+      "path": "data/nuc_cyto",
+      "sha": "7c1820e9e023e1b3e593e6413994df159f1b09eb",
+      "type": "tree"
+    },
+    {
+      "path": "data/nuc_cyto/.gitattributes",
+      "size": 194,
+      "sha": "3a3e1eb89f9d209a8c2342bc63faa155f7b48695",
+      "type": "blob"
+    },
+    {
+      "path": "data/nuc_cyto/deseq2_results_ctyo_nmdi_v_baseline_in_KD.csv",
+      "size": 4376361,
+      "sha": "75bf4a8d42558697338baf3000280f20cd911732",
+      "type": "blob"
+    },
+    {
+      "path": "data/nuc_cyto/deseq2_results_cyto_kd.csv",
+      "size": 132,
+      "sha": "f416f392a89540b8ddde902d3b59f0f56c0332e1",
+      "type": "blob"
+    },
+    {
+      "path": "data/nuc_cyto/deseq2_results_localization_baseline.csv",
+      "size": 4617949,
+      "sha": "b917aefcfcc9b8aa60eda0c71b999d8f64385145",
+      "type": "blob"
+    },
+    {
+      "path": "data/nuc_cyto/deseq2_results_localization_kd.csv",
+      "size": 4572153,
+      "sha": "cc438ab8df04d9f956273bececdcf32b7f80e7ce",
+      "type": "blob"
+    },
+    {
+      "path": "data/nuc_cyto/deseq2_results_nuc_kd.csv",
+      "size": 132,
+      "sha": "3d326971c7c1fa939a4fc0ca6d7ef1e50f191501",
+      "type": "blob"
+    },
+    {
+      "path": "data/nuc_cyto/deseq2_results_nuc_nmdi_v_baseline_in_KD.csv",
+      "size": 4271369,
+      "sha": "fa386080875d3fc3cb4320df79178738e8952c0f",
+      "type": "blob"
+    },
+    {
+      "path": "data/nuc_cyto/deseq2_results_pseudobulk_kd.csv",
+      "size": 132,
+      "sha": "93a7c47c21181a36c52b9a143303a98369ba478a",
+      "type": "blob"
+    },
+    {
+      "path": "data/nuc_cyto/fractionation_psi_all_groups.parquet",
+      "size": 134,
+      "sha": "5c86920e7e0eafeb2220b368c6d206d8935319c1",
+      "type": "blob"
+    },
+    {
+      "path": "data/nuc_cyto/star_splice_junctioncounts.parquet",
+      "size": 133,
+      "sha": "d785694f5c5445187461c41ade4508e9909ceccc",
+      "type": "blob"
+    },
+    {
+      "path": "data/nygc_library_depth.csv",
+      "size": 74981,
+      "sha": "cf1a839c20990cd41bb0b9badb3cf2a3a4c257d6",
+      "type": "blob"
+    },
+    {
+      "path": "data/nygc_queried.rds",
+      "size": 2748337,
+      "sha": "d68a92ffdfb0a054f4c21e188e32960698e34af6",
+      "type": "blob"
+    },
+    {
+      "path": "data/output_rm_different_exons",
+      "sha": "80bfa2123642ae226c163bd454e14cf4c9d9e344",
+      "type": "tree"
+    },
+    {
+      "path": "data/output_rm_different_exons/acceptor1_25___In_frame.fa_rm.bed",
+      "size": 117871,
+      "sha": "6d716375fba6ee414a99affdb29b068eda06c866",
+      "type": "blob"
+    },
+    {
+      "path": "data/output_rm_different_exons/acceptor1_25___Out_frame.fa_rm.bed",
+      "size": 170164,
+      "sha": "a27e1078f219fb4f1355a144cc7f7a4969b845eb",
+      "type": "blob"
+    },
+    {
+      "path": "data/output_rm_different_exons/acceptor25_85___In_frame.fa_rm.bed",
+      "size": 90400,
+      "sha": "b1980689a8ef0494e698d13cfd39dd13e63c2390",
+      "type": "blob"
+    },
+    {
+      "path": "data/output_rm_different_exons/acceptor25_85___Out_frame.fa_rm.bed",
+      "size": 123913,
+      "sha": "0a6394c5c8e67e89a9f9517dbfefd2f39156bd3d",
+      "type": "blob"
+    },
+    {
+      "path": "data/output_rm_different_exons/acceptor85_99___In_frame.fa_rm.bed",
+      "size": 226119,
+      "sha": "cc9c0bac90790b5b2c0b72905096213d8317fa9f",
+      "type": "blob"
+    },
+    {
+      "path": "data/output_rm_different_exons/acceptor85_99___Out_frame.fa_rm.bed",
+      "size": 379397,
+      "sha": "01b7eec8bd936894b12726ba2dc0fd1532e288e0",
+      "type": "blob"
+    },
+    {
+      "path": "data/output_rm_different_exons/acceptor_99___In_frame.fa_rm.bed",
+      "size": 1236517,
+      "sha": "10c1611c4107d3e6140d643d5c6c87adc61026d7",
+      "type": "blob"
+    },
+    {
+      "path": "data/output_rm_different_exons/acceptor_99___Out_frame.fa_rm.bed",
+      "size": 1959921,
+      "sha": "5f963cbd6bdada94b3a8f7acba4e9c0fb1a15201",
+      "type": "blob"
+    },
+    {
+      "path": "data/output_rm_different_exons/donor1_25___In_frame.fa_rm.bed",
+      "size": 116858,
+      "sha": "904e1e802eb60301d6661a34718cc0c7d57f4bfa",
+      "type": "blob"
+    },
+    {
+      "path": "data/output_rm_different_exons/donor1_25___Out_frame.fa_rm.bed",
+      "size": 164863,
+      "sha": "44aecca62bfc2fd4f5be61bc3669829d789a2f15",
+      "type": "blob"
+    },
+    {
+      "path": "data/output_rm_different_exons/donor25_85___In_frame.fa_rm.bed",
+      "size": 87236,
+      "sha": "f4692fd19a5caf1c96097b8a2e3bfc6df3da0fa4",
+      "type": "blob"
+    },
+    {
+      "path": "data/output_rm_different_exons/donor25_85___Out_frame.fa_rm.bed",
+      "size": 121484,
+      "sha": "8f1b3ecef9152b80210f21d7b709dad1a911d70b",
+      "type": "blob"
+    },
+    {
+      "path": "data/output_rm_different_exons/donor85_99___In_frame.fa_rm.bed",
+      "size": 227602,
+      "sha": "4da99ee73072020871f62f82d3130a1122fee1e4",
+      "type": "blob"
+    },
+    {
+      "path": "data/output_rm_different_exons/donor85_99___Out_frame.fa_rm.bed",
+      "size": 380855,
+      "sha": "88ae9920063330356860e1a74208d0d11ca27b65",
+      "type": "blob"
+    },
+    {
+      "path": "data/output_rm_different_exons/donor_99___In_frame.fa_rm.bed",
+      "size": 1251660,
+      "sha": "0e1f645676ba8b7ce03108932e66f59989f3cf43",
+      "type": "blob"
+    },
+    {
+      "path": "data/output_rm_different_exons/donor_99___Out_frame.fa_rm.bed",
+      "size": 2002908,
+      "sha": "b141d418a774dde9af025c737367091d6c4086c9",
+      "type": "blob"
+    },
+    {
+      "path": "data/pangolin_predictions.csv",
+      "size": 12281,
+      "sha": "517ae24af6e754bf078cd23e3a026c7e9e1bdc4e",
+      "type": "blob"
+    },
+    {
+      "path": "data/poison_exon_cassettes.bed",
+      "size": 150425,
+      "sha": "6aacd9ca83bae5d0f17b4578422dd46292a0bd92",
+      "type": "blob"
+    },
+    {
+      "path": "data/poison_exon_containing_introns.bed",
+      "size": 125244,
+      "sha": "49bc0f470e2df24d6e1fbbd5b8c8963092fd8c24",
+      "type": "blob"
+    },
+    {
+      "path": "data/postar3_tardbp_reduced.bed",
+      "size": 23087748,
+      "sha": "599f576305938d69be4d7df763c38e0b56fe5608",
+      "type": "blob"
+    },
+    {
+      "path": "data/pseudo_bulk_smg1_filtered_table.csv",
+      "size": 510021,
+      "sha": "e965de6c15dd11fac2ef40145dac52fe0ab895f8",
+      "type": "blob"
+    },
+    {
+      "path": "data/qPCR_RNA.csv",
+      "size": 679,
+      "sha": "5d364c929944ac8ef6ee57acf1873fa35b7b5555",
+      "type": "blob"
+    },
+    {
+      "path": "data/qpcr_dz.csv",
+      "size": 1484,
+      "sha": "abfc56b0a9e2ecb6bb6cbbc5837aaaeb2a9b490f",
+      "type": "blob"
+    },
+    {
+      "path": "data/repeatmasker",
+      "sha": "9b90709ec4a9f5295b2d2a864e2e2d2b79ce2f59",
+      "type": "tree"
+    },
+    {
+      "path": "data/repeatmasker/cryp_set1.txt",
+      "size": 64345,
+      "sha": "d5b2a4ac2a82e9ef940682274a69b7aebc2e8527",
+      "type": "blob"
+    },
+    {
+      "path": "data/repeatmasker/junction_windows.fa_rm.bed",
+      "size": 32650,
+      "sha": "73187e9507537ba8d35646f1ab020c2d67e95854",
+      "type": "blob"
+    },
+    {
+      "path": "data/repeatmasker/metadata.txt",
+      "size": 7152,
+      "sha": "f32446a247409a2df06c1ac1404e2bb4c7323b41",
+      "type": "blob"
+    },
+    {
+      "path": "data/repeatmasker/metadata_mapping_exon_controls.txt",
+      "size": 84159,
+      "sha": "130f5ecc34172195d63a70db7cf442fe52a8a1ba",
+      "type": "blob"
+    },
+    {
+      "path": "data/repeatmasker/set1.fa_rm.bed",
+      "size": 210522,
+      "sha": "0bc463bda24b8b5035d0b3fb6c3ab0e89c4c0a49",
+      "type": "blob"
+    },
+    {
+      "path": "data/repeatmasker/set2.fa_rm.bed",
+      "size": 211252,
+      "sha": "35510329c607487cda61bebc6f28e5dc78ee7931",
+      "type": "blob"
+    },
+    {
+      "path": "data/repeatmasker/set3.fa_rm.bed",
+      "size": 213782,
+      "sha": "ca6dcf972b09e99ce376d955b9541c819534826b",
+      "type": "blob"
+    },
+    {
+      "path": "data/repeatmasker/set4.fa_rm.bed",
+      "size": 212915,
+      "sha": "79d67b3412d3fe6660d4189444c542b302e40e42",
+      "type": "blob"
+    },
+    {
+      "path": "data/repeatmasker/set5.fa_rm.bed",
+      "size": 210759,
+      "sha": "2ed0ddc4a555380b81237ee99fee6f0bebca810f",
+      "type": "blob"
+    },
+    {
+      "path": "data/repeatmasker/simplerepeats_table.txt",
+      "size": 4160,
+      "sha": "21c961827ee29334b37a0375a61ab1fcf2ec094e",
+      "type": "blob"
+    },
+    {
+      "path": "data/result_exon_table_merged.csv",
+      "size": 25153,
+      "sha": "2c2e3f983efeb6afe53c4a0211ada44c585772fd",
+      "type": "blob"
+    },
+    {
+      "path": "data/results_table_UPF1_ctrl.csv",
+      "size": 1922253,
+      "sha": "c81954214846e676b03d1a4418be46653a46af6a",
+      "type": "blob"
+    },
+    {
+      "path": "data/results_table_upf1_vs_ctrl.csv",
+      "size": 1933298,
+      "sha": "36bcd63e8a9a1157f054e22965107b691aedcf0d",
+      "type": "blob"
+    },
+    {
+      "path": "data/rimod_clustered_psi_master_compendium.parquet",
+      "size": 133,
+      "sha": "86ffac8ec90ec5411b2764f3d1e98c99ea047a0c",
+      "type": "blob"
+    },
+    {
+      "path": "data/rimod_ftd_tpm.csv",
+      "size": 30508020,
+      "sha": "275ba638a59e1d1e7a5d2ce13b8077339874da11",
+      "type": "blob"
+    },
+    {
+      "path": "data/rimod_junctions_predictive.csv",
+      "size": 234119,
+      "sha": "a68e4e2db8760a2d08e9a06c61b9c653a10a7e12",
+      "type": "blob"
+    },
+    {
+      "path": "data/rimod_queried.rds",
+      "size": 29803,
+      "sha": "1e4a6ef078de48b8f644ead09c3261de1f9376d6",
+      "type": "blob"
+    },
+    {
+      "path": "data/shsy5y_papa_curve.csv",
+      "size": 24005,
+      "sha": "84e772de09d8dca2a1d1ed50a921b1cbecd38ac7",
+      "type": "blob"
+    },
+    {
+      "path": "data/sknbe2_papa_curve.csv",
+      "size": 2872,
+      "sha": "4e3ce00eac7c02a20e72f6f1e12d712b865eeacd",
+      "type": "blob"
+    },
+    {
+      "path": "data/smg1_control_bulk.csv",
+      "size": 26637416,
+      "sha": "04221e98ae99b7a4c1ee614cde88c37263692c6e",
+      "type": "blob"
+    },
+    {
+      "path": "data/smg1_control_cyto.csv",
+      "size": 22286002,
+      "sha": "7bb11d72ae22cb383152a7a18dff252c0fa869d3",
+      "type": "blob"
+    },
+    {
+      "path": "data/smg1_control_nuc.csv",
+      "size": 18707184,
+      "sha": "8a547aef8e70be8c285f26c46a0ea04a5fd59065",
+      "type": "blob"
+    },
+    {
+      "path": "data/spliceai_scores.csv",
+      "size": 74599,
+      "sha": "2a198a50fa21a15254765f96ecad21db99c398dd",
+      "type": "blob"
+    },
+    {
+      "path": "data/summary_metrics_post_mortem.csv",
+      "size": 2220337,
+      "sha": "2a02cd5a5442ada48bf2f7e00cce4caa9ac4036f",
+      "type": "blob"
+    },
+    {
+      "path": "data/tardbp_kd_level_compendium.csv",
+      "size": 526,
+      "sha": "e2d85d1756b93e540bf9778193bc65087fbfb811",
+      "type": "blob"
+    },
+    {
+      "path": "data/tpm_calculator_nygc_cryptic_genes.csv",
+      "size": 134,
+      "sha": "1a2ede14ee69228b1cffe87cf398974e4ca911bb",
+      "type": "blob"
+    },
+    {
+      "path": "data/unc13a_b_tdp43_curves_nature_paper.csv",
+      "size": 561,
+      "sha": "2c3f5d5ed4a125496f38653ba9be9b3afad61e4b",
+      "type": "blob"
+    },
+    {
+      "path": "data/upf1_all_gene_expression.csv",
+      "size": 8530687,
+      "sha": "73b836701ad349d6ef32be5d95a1f48b4b79df47",
+      "type": "blob"
+    },
+    {
+      "path": "data/upf1_control.csv",
+      "size": 8116479,
+      "sha": "7c7f17cec31a100700f3c16ddf1796d5b6153332",
+      "type": "blob"
+    },
+    {
+      "path": "data/upf1_filtered_table.csv",
+      "size": 458308,
+      "sha": "8fd18395b63ff1ef8aff0eef2642a7c24d303490",
+      "type": "blob"
+    },
+    {
+      "path": "data/wide_chx.csv",
+      "size": 115794,
+      "sha": "5a63fd47c0bc8254fcd93489908fa86b278cf7dd",
+      "type": "blob"
+    },
+    {
+      "path": "gene_expression_and_number_of_cryptics.R",
+      "size": 7342,
+      "sha": "6ef5b7a55bc6d53facdd828d7f4287177f9a88c4",
+      "type": "blob"
+    },
+    {
+      "path": "getting_curve_junction_counts.R",
+      "size": 3747,
+      "sha": "5e5052f020bfddf0c2865a9c8f3250525c5a2de3",
+      "type": "blob"
+    },
+    {
+      "path": "getting_dark_cryptics.R",
+      "size": 7132,
+      "sha": "34959c01958caa2a14a865c65e13586e7f004bf4",
+      "type": "blob"
+    },
+    {
+      "path": "heatmap_kmeans.R",
+      "size": 6205,
+      "sha": "352d19e39fc0e16c0f2be2e36aba97d7842ab38b",
+      "type": "blob"
+    },
+    {
+      "path": "late_early_detection_nygc.R",
+      "size": 6702,
+      "sha": "8f1dfa5dba5a0dc41a1d3ddfbfdddae78e419c88",
+      "type": "blob"
+    },
+    {
+      "path": "late_last_exon_papa.R",
+      "size": 3248,
+      "sha": "9585bd0ee188be8c9306ff5949c1fbfdaf0959e1",
+      "type": "blob"
+    },
+    {
+      "path": "liu_preprocessing.Rmd",
+      "size": 20531,
+      "sha": "8367efec90deaf5f0a9ce074ece1aedd989b23fc",
+      "type": "blob"
+    },
+    {
+      "path": "main_fig.Rmd",
+      "size": 120845,
+      "sha": "44b1bfa42673ecd36f26340f962aa862daec03f4",
+      "type": "blob"
+    },
+    {
+      "path": "main_fig.html",
+      "size": 7913951,
+      "sha": "f0e184a60d497fcca6ac2a241ade845377720024",
+      "type": "blob"
+    },
+    {
+      "path": "per_ce_burden_analysis.Rmd",
+      "size": 35035,
+      "sha": "95cfc9b03eb3a93a61ac71d7133763b7d9d1f3b5",
+      "type": "blob"
+    },
+    {
+      "path": "preprocessing_rimod.Rmd",
+      "size": 24478,
+      "sha": "1f502b9c364b029c0355ab41235f22376e21e9c2",
+      "type": "blob"
+    },
+    {
+      "path": "removed from suppl.R",
+      "size": 16834,
+      "sha": "56da00fbeec52ab5ec9862952cbac65b6ac6c4bd",
+      "type": "blob"
+    },
+    {
+      "path": "scripts",
+      "sha": "37e9b57b5c9e5575187cebf4dfee98b346600070",
+      "type": "tree"
+    },
+    {
+      "path": "scripts/box_plot_helper.R",
+      "size": 4715,
+      "sha": "a11f0152be5249ac8b15855016f17a48241d039f",
+      "type": "blob"
+    },
+    {
+      "path": "scripts/controls",
+      "sha": "17d7e975a7ed108f30edd000b9e21f3b56067a9f",
+      "type": "tree"
+    },
+    {
+      "path": "scripts/controls/1_get_introns_bed.R",
+      "size": 5404,
+      "sha": "4ab984b6efd9128e1c3a140849c6e094fe82ef12",
+      "type": "blob"
+    },
+    {
+      "path": "scripts/controls/2_a_get_controls_exons copy.R",
+      "size": 7088,
+      "sha": "ba4f94748380ac83f19a789eebfc4e8825726024",
+      "type": "blob"
+    },
+    {
+      "path": "scripts/controls/2_get_controls.R",
+      "size": 6938,
+      "sha": "f90c32676a4d7bd4003ccfbb9d2a39eea21432f5",
+      "type": "blob"
+    },
+    {
+      "path": "scripts/controls/3_bedtools_getfasta.R",
+      "size": 853,
+      "sha": "20115506b1f3a0ae6c4b8e44235fa2caad612949",
+      "type": "blob"
+    },
+    {
+      "path": "scripts/controls/4_repeatmasker.R",
+      "size": 1346,
+      "sha": "5ab4bb70b3545852dc24b5fd3553ac444acf9db8",
+      "type": "blob"
+    },
+    {
+      "path": "scripts/create_coverage_vectors.R",
+      "size": 4062,
+      "sha": "66dd5daf1b6a923f26d284b2509ce1772e272c5c",
+      "type": "blob"
+    },
+    {
+      "path": "scripts/nygc_preprocessing_psi.R",
+      "size": 41409,
+      "sha": "f0582847a6a3cf45c513727eaed05753a8506e56",
+      "type": "blob"
+    },
+    {
+      "path": "scripts/odds_ratio_plots.R",
+      "size": 8245,
+      "sha": "75061933506259c908ae667d6f8ef92562df0580",
+      "type": "blob"
+    },
+    {
+      "path": "scripts/plot_exon_control_OR.R",
+      "size": 7341,
+      "sha": "c3b87858a15f1109470c6dfb3b158c586f71816b",
+      "type": "blob"
+    },
+    {
+      "path": "scripts/plot_exon_different_inclusion_OR.R",
+      "size": 14625,
+      "sha": "9374cad8f97e57b3b23ab50a6d8c41c254eb7e55",
+      "type": "blob"
+    },
+    {
+      "path": "scripts/rank_plot.R",
+      "size": 1653,
+      "sha": "c9585e58a31ce85c665961880f18a4d975d259a9",
+      "type": "blob"
+    },
+    {
+      "path": "scripts/repeatmasker_analyses.R",
+      "size": 3170,
+      "sha": "1c5e3cea07afe65e0ba8c4b2c06136a8405152ed",
+      "type": "blob"
+    },
+    {
+      "path": "scripts/splicejame_closestExonToJunctions.R",
+      "size": 11221,
+      "sha": "7ad4b098406da211c8c18b42e570c3a7e6ff8117",
+      "type": "blob"
+    },
+    {
+      "path": "scripts/trial_nmd_plots.R",
+      "size": 10456,
+      "sha": "b0985a84b9392a363b92e49876dc42729f831238",
+      "type": "blob"
+    },
+    {
+      "path": "supplementary.Rmd",
+      "size": 84144,
+      "sha": "2ae8e63c6cc17af49e19fba4d80770506d822144",
+      "type": "blob"
+    },
+    {
+      "path": "supplementary.html",
+      "size": 7444923,
+      "sha": "3809dc795f0e1ab2c533c3acd19984493943ee30",
+      "type": "blob"
+    },
+    {
+      "path": "tdp_events_in_nygc_table_setup.R",
+      "size": 16729,
+      "sha": "bf792f679ea7cfbabbba04c2c109b5601f4a42ff",
+      "type": "blob"
+    }
+  ]
+}

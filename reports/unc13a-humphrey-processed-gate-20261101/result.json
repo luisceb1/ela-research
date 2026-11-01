@@ -1,0 +1,25 @@
+{
+  "source_commit": "80fa3d70418a4665a85d414e33c7c470a9312086",
+  "source_blob": "fa4bb9dfa5d9c6132524c7750c0304184a70552b",
+  "cached_projection_sha256": "e30eba0eaa47131f9974582202f0356b4c923b6a11216736f5ba53cb42734341",
+  "columns": [
+    "gene_name",
+    "paste_into_igv_junction",
+    "junc_cat",
+    "baseline_PSI",
+    "contrast_PSI",
+    "comparison",
+    "strand",
+    "is_cryptic",
+    "n_significant_data"
+  ],
+  "humphrey_rows": 861,
+  "unc13a_humphrey_rows": 6,
+  "per_library_identifiers_present": false,
+  "read_support_counts_present": false,
+  "matched_libraries": 0,
+  "accepted": false,
+  "gate": "blocked: aggregate comparison table lacks per-library identity and junction support",
+  "psi_or_effects_computed": false,
+  "coordinate_convention_validated": false
+}
