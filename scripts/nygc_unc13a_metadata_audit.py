@@ -13,8 +13,6 @@ import urllib.request
 import zipfile
 from collections import Counter, defaultdict
 from pathlib import Path
-import pyarrow.parquet as pq
-import pyarrow.compute as pc
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data/external/zenodo_15977268"
@@ -70,6 +68,8 @@ def metadata():
     return lookup
 
 def main():
+    import pyarrow.parquet as pq
+    import pyarrow.compute as pc
     lookup=metadata()
     counts=defaultdict(dict)
     records=0
