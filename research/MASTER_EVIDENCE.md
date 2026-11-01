@@ -1,4 +1,9 @@
-# Registro maestro de evidencia — 30/10/2026
+# Registro maestro de evidencia — actualizado 01/11/2026
+
+
+## Última incorporación documental
+
+#30/#33/#34 integrados; base verificada 39e0479. Auditoría reports/functional-source-access-20261101: inventario de dos familias Keuss/Guo, mapa de ensayos y límites de acceso; ninguna tabla funcional numérica enlazada verificada. XML preprint Guo validado, editorial final parcialmente inaccesible, supuesto PDF es HTML. No nuevo efecto o rescate propio. DATA_REQUEST_SPEC.md preparada sin enviar. Las notas operativas inferiores son históricas; STATE/BACKLOG fijan continuación.
 
 Registro vigente de ambas líneas consolidadas. Una integración, una reproducción técnica y una validación funcional son cosas distintas. No hay nueva terapia, diana acreditada o beneficio clínico propio.
 
@@ -80,3 +85,4 @@ Resultado científico sin cambios:111canónicas/3crípticas a15,154/4a8,54.292.6
 Plan previo fijado en920414d y ejecución única de cinco bloques:4.292.655lecturas realineadas,371,380s≤600; fuente54.292.655 escaneada para ordinales yEOF/CRC. Cuentas esperadas13/3a15 y15/4a8 reproducidas; histogramas texto/CIGAR frentePySAM/HTSlib concordantes. Cuatro observaciones crípticas a8 conMAPQ60,NM0,AS0,softclip0; tres incluidas a15. La adicional tiene ancla derecha13. Anclas e histogramas marginales completos en reports/stmn2-control2-target-qc-20261101; no reconstrucción por lectura.
 
 Reproducibilidad técnica, no replicación externa ni validación funcional. Selección post hoc enriquecida, sin tasas/PSI/efecto. Flagduplicado0 no acredita moléculas; sinUMI. Control completo sigue111/3 y154/4,JSON SHA256cb266041… intacto.392tests locales,14nuevos de software, preflightreal y6rechazos sobre copias alteradas; exportadores idénticos. Un rangoHTTP truncado recuperado por transporte, sin reintento de replay o aumento de presupuesto. Mapa biológico siguependiente, declaración3/3conservada, sin inferencia o nuevas bibliotecas. Siguiente puerta: revisión delPR33; PR30 separado.
+

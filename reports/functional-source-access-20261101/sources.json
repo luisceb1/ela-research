@@ -1,0 +1,70 @@
+{
+  "date": "2026-11-01",
+  "base_sha": "39e0479306c9e810f8bd3846bba7b79d7b49fba7",
+  "sources": [
+    {
+      "id": "K26-AAM",
+      "url": "https://kclpure.kcl.ac.uk/portal/en/publications/unc13a-splice-correction-rescues-synaptic-dysfunction-induced-by-/",
+      "access": "institutional-index-current; PDF-content-from-existing-audit",
+      "prior_audit": "research/KEUSS_UPLOADED_PDFS_DIRECT_AUDIT_2026-11-01.md",
+      "prior_pdf_sha256": "4c0c9e6c0a532dbf62f9630a47f7fb4730c069d7990ccb81a9fd9d1dfa562ef8",
+      "hash_status": "inherited-not-recomputed"
+    },
+    {
+      "id": "K24-PMC",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11230273/",
+      "access": "web-fulltext-availability-section",
+      "doi": "10.1101/2024.06.20.599684"
+    },
+    {
+      "id": "K24-SUPP",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11230273/",
+      "access": "current-attachment-index; content-from-existing-audit",
+      "filename": "media-1.pdf",
+      "prior_pdf_sha256": "b5319cef383db704843c17fc4f62c6c95557d663eed08a7b512fdc21a14ae283",
+      "hash_status": "inherited-not-recomputed"
+    },
+    {
+      "id": "K-CODE",
+      "url": "https://github.com/f-hamidlab/iGluSNFR3/tree/0155d8dbe116a09e5e67cae4749675965515a508",
+      "commit": "0155d8dbe116a09e5e67cae4749675965515a508",
+      "access": "readme-and-complete-tree",
+      "file_count": 107,
+      "tree_truncated": false
+    },
+    {
+      "id": "G26-FINAL",
+      "url": "https://doi.org/10.1126/scitranslmed.aeb8517",
+      "doi": "10.1126/scitranslmed.aeb8517",
+      "access": "publisher-403;scite-initial-excerpts;linear-reader-abstract-only",
+      "fulltext_read": false,
+      "editorial_notices": "not-returned",
+      "notice_queries": "zero-results-with-inconsistent-generic-index-message;inconclusive"
+    },
+    {
+      "id": "G26-SUPP",
+      "url": "https://doi.org/10.1126/scitranslmed.aeb8517",
+      "access": "not-resolved",
+      "filename": null,
+      "absence_claim": false
+    },
+    {
+      "id": "G25-XML",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12424808/fullTextXML",
+      "doi": "10.1101/2025.08.28.672801",
+      "pmcid": "PMC12424808",
+      "access": "valid-XML-downloaded",
+      "sha256": "2288f098489ec18f0b4461ed42299f70159fdca4c25a9a1e08a84b6cc1469249",
+      "bytes": 136829,
+      "projection_only_committed": true
+    },
+    {
+      "id": "G25-SUPP",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/12424808/bin/NIHPP2025.08.28.672801v1-supplement-1.pdf",
+      "access": "HTTP-200-HTML-not-PDF",
+      "content_read": false,
+      "attachment_index_entries": 2,
+      "distinct_declared_filenames": 1
+    }
+  ]
+}

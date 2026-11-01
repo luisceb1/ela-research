@@ -1,6 +1,6 @@
 # Functional rescue data gate — UNC13A versus STMN2
 Date: 2026-11-01
-Status: SOURCE AUDIT; no new dataset downloaded, no raw numerical functional analysis.
+Status: SOURCE AUDIT; public preprint XML retrieved, no numerical functional dataset or effect analysis. See reports/functional-source-access-20261101.
 
 ## Central falsifiable question
 In human TDP-43-deficient neurons, to what extent does molecular rescue of UNC13A or STMN2 precede and predict functional recovery, after controlling for intervention timing and independent biological replicate?
@@ -16,7 +16,7 @@ In human TDP-43-deficient neurons, to what extent does molecular rescue of UNC13
 | Mehta et al., bioRxiv 2025, doi:10.1101/2025.11.26.690143, https://pmc.ncbi.nlm.nih.gov/articles/PMC12697360/ | tU7 splice-switching UNC13A/STMN2 in neurons | mEPSC and protein/synaptic localization rescue; RNA correction | Supplemental PDF available; paper gives biological n=3 for RNA/protein and cell-level electrophysiology counts but paired per-differentiation raw data not verified | Secondary candidate; avoid cell-level pseudoreplication |
 
 ## Go / no-go criteria for quantitative functional reanalysis
-1. Available source data must include intervention group, TDP-43 status, distinct biological replicate/differentiation/batch, dosing/timing, RNA correction measurement, functional phenotype measurement, and units.
+1. For separate functional-outcome reproduction: source data must include intervention group, TDP-43 status, experimental unit/batch, dosing/timing, functional value and units. Molecular measurements and an explicit cross-assay link are additionally required only for molecular–functional coupling; sister cultures may be eligible if the design documents the relationship.
 2. **Linkage**: RNA and function must be paired at appropriate biological replicate level to infer cross-readout coupling. If only aggregate graphs are published, can reproduce descriptive plotted effects but must NOT claim molecular-to-functional correlation or time ordering.
 3. Controls must include no TDP-43 depletion, TDP-43 depletion plus non-targeting treatment, and TDP-43 depletion plus active correction, or state explicitly which is missing.
 4. Source data must enable proper design-aware uncertainty intervals; cells/synapses nested within differentiations are not independent n.
@@ -30,5 +30,9 @@ In human TDP-43-deficient neurons, to what extent does molecular rescue of UNC13
 - Only then choose ONE public dataset, build data dictionary, frozen protocol, and replication scripts/tests.
 - If no open paired material exists, next approved deliverable is a transparent missing-data access matrix, not invented effect estimates.
 
-## Relationship to PR #30
+## Relationship to merged PR #30
 This research question is a **new independent intervention-analysis workstream**. Keep PR #30 (RiMOD+NYGC targeted observational splicing) scoped to original claims, provenance and QC. Avoid reusing observational bulk-tissue effects as intervention outcomes.
+
+
+## Current access decision — 01/11/2026
+PR #30 merged in 39e0479. The bounded two-family access audit is closed: reports/functional-source-access-20261101. No numeric source accepted; no molecular/function correlation or post-deficit treatment effect estimated. Review the existing unsent request specification; do not repeat completed index/PDF searches without a concrete new source. This is an access limitation, not evidence that biological replicates are dependent or source files do not exist.

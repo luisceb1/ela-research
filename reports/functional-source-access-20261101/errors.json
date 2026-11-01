@@ -1,0 +1,32 @@
+[
+  {
+    "id": "local_requests_missing",
+    "stage": "initial-public-access-probe",
+    "error": "ModuleNotFoundError: No module named requests",
+    "resolution": "used standard-library urllib; no environment installation"
+  },
+  {
+    "id": "guo_publisher_forbidden",
+    "stage": "final-article-access",
+    "error": "HTTP 403",
+    "resolution": "retained abstract and explicitly partial indexed excerpts; no fulltext claim"
+  },
+  {
+    "id": "guo_supplement_html",
+    "stage": "supplement-download",
+    "error": "HTTP 200 returned text/html instead of PDF",
+    "resolution": "not parsed as PDF; no source-table claim"
+  },
+  {
+    "id": "scite_access_inconsistency",
+    "stage": "indexed-excerpts-and-notices",
+    "error": "initial final-article excerpts served; linear reader abstract only; subsequent queries denied and notice filters returned generic non-index message",
+    "resolution": "partial-access and notice status inconclusive"
+  },
+  {
+    "id": "scite_editorial_notices_missing",
+    "stage": "source-status",
+    "error": "editorialNotices absent",
+    "resolution": "not interpreted as no retractions/corrections"
+  }
+]

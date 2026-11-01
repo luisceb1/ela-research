@@ -1,19 +1,20 @@
 # Backlog vigente — 01/11/2026
 
-La primera fila marca la siguiente puerta de revisión. Los bloqueos requieren evidencia nueva, no más ejecuciones de los mismos insumos. Consultar STATE y MASTER_EVIDENCE.
+La fila P0 marca la siguiente puerta de revisión; el resto de filas completadas conserva trazabilidad. Los bloqueos requieren evidencia nueva, no más ejecuciones de los mismos insumos. Consultar STATE y MASTER_EVIDENCE.
 
 | Prioridad | Trabajo | Estado / criterio de cierre |
 |---|---|---|
 | Completado | Integración PR #33 | Fusionada en main: commit 95fea38d. 399 tests locales y CI Python 3.11/3.12, compileall; artefactos originales válidos y TSV idéntico. Sin datos/alineamientos nuevos ni cambio de interpretación científica. Informe reports/pr33-review-20261101 |
-| Siguiente planificación | Revisar PR #30 con el trabajo local coordinado | Mantener intacta la rama 053ef70ce437cc637ec18278a2c07e3abd6bf58b mientras sigue en uso en el otro chat. Coordinar su revisión antes de seleccionar una única fuente; no repetir búsquedas ni descargar/alinear en paralelo. Exigir evento, cuentas críptica/canónica y unidades biológicas independientes verificables según NEXT_STUDY_GATE |
+| P0 decisión | Revisar especificación de solicitud funcional ya preparada | DATA_REQUEST_SPEC.md está escrita; envío requiere autorización expresa. Sin datos numéricos nuevos, no repetir búsqueda Keuss/Guo. Elegir una alternativa prospectiva solo si se cambia pregunta |
+| Completado en esta entrega | Auditoría funcional de dos familias | reports/functional-source-access-20261101: inventario, ensayos, recibos y fuentes. Ninguna fuente numérica aceptada; acceso parcial no prueba inexistencia. Sin efectos ni FASTQ |
 | Completado e integrado en PR #33 | QC del soporte críptico bajo SRR8144908 | reports/stmn2-control2-target-qc-20261101. MAPQ60/NM0/AS0/softclip0 en4observaciones a8 (incluyen3a15); no independencia molecular o efecto. Resultado original completo yhash intactos. No repetir ni usar selección para tasas; no otros4runs |
 | Completado | Recuperación de artefactos delsegundo control | Resultado54.292.655lecturas,111/3a15,154/4a8 intacto. Paquete completo de resultados pequeños recuperado, verificado ypersistido porPR33. Historia parcial preservada; no reejecución delalineamiento |
 | Bloqueado, búsqueda cerrada | Mapa biológico GSE122069 | reports/gse122069-design-20261031:12registros técnicos válidos yReportingSummary nuevo noaportan asignación explícita. Independencia3/3declarada, no refutada; no inferencia ni pares por sufijos. Reabrir solo con fuente concreta nueva; medio discrepante sin resolver |
 | Bloqueado | E-MTAB-15653 | Auditoría documental terminada; independencia no certificada. No repetir búsqueda ni calcular efectos sin nueva fuente concreta |
 | Completado en este PR | Ciclo de selección de tres fuentes | GSE182976: cobertura BW; GSE122069: TPM; E-MTAB-15653: cuentas de unión recuperadas, independencia no certificada. Ninguna lista para el contraste completo. No repetir |
-| Revisión | PR #30 separado | Otros candidatos y trabajo posterior; no integrado ni reejecutado aquí. Reconciliar su planning al integrar, sin sumar resultados o ampliar a datos clínicos personales |
-| Preparado | Plan de recursos GSE122069 | reports/gse122069-resource-plan: seis runs, 9,47 GB; entorno 8 GiB RAM. Presupuestos propuestos y puertas de parada, no benchmark o ejecución |
-| Operación | Integración #28/#29/#31 | Incorporados en main f898b296. Este nuevo contrato queda en PR separado, sin merge/cierre automático. 275 pruebas locales; CI de nueva cabeza por verificar |
+| Completado | Integración PR #30 | Fusionada en 39e0479, reproducción exploratoria RiMOD/NYGC y auditoría funcional. Rama histórica intacta; no nueva validación biológica |
+| Histórico, no ejecutar | Plan inicial de recursos GSE122069 | Dos controles completos y QC integrados en #33; no seis runs ejecutados. No repetir controles ni iniciar los cuatro restantes sin pregunta y plan nuevos |
+| Completado | Integración #28/#29/#31/#32/#33/#34/#30 | Main al corte 39e0479; CI existente 404 tests observados. Conteos anteriores son historia técnica, no experimentos |
 | Mantenimiento | #1/#2/#17/#19 | Entregables técnicos ejecutados; actualizar issues sin presentarlos como fallos activos ni cerrar automáticamente. Límites de QC/estructura completa permanecen |
 | Mantenimiento | #20 | Parser y geometría global ejecutados. Separar esa resolución de cobertura/asignación y lecturas aún pendientes |
 | Bloqueado | #14 refit | Pozo/reactivo/modelo original pendientes; reproducción agregada, deduplicación y QC completados. No repetir |
@@ -26,7 +27,7 @@ La primera fila marca la siguiente puerta de revisión. Los bloqueos requieren e
 
 Reglas de cierre: cada tarea termina en resultado reproducido, corregido o bloqueo documentado. Un bloqueo no se resuelve acumulando pruebas de software. Nuevas fuentes, costes, personas o cambios de alcance se evalúan antes de actuar.
 
-No considerar como próximas tareas los párrafos históricos de los informes. Historial anterior del backlog de cada rama: reports/integration-20261030/history. Las issues abiertas se conservan hasta una decisión explícita sobre su cierre.
+Cabecera vigente: #30 ya está fusionada. No considerar como próximas tareas los párrafos históricos de abajo o de los informes. Historial anterior del backlog de cada rama: reports/integration-20261030/history. Las issues abiertas se conservan hasta una decisión explícita sobre su cierre.
 
 ## Actualización: unidades de E-MTAB-15653
 
@@ -75,3 +76,4 @@ reports/gse122069-parameterization-20261031: configuración/recibo/runner/resume
 ## Cierre delsegundo control —01/11/2026
 
 Queda sustituido elbloqueo de recuperación previo: JSONcompleto original coincide conSHA previo,55bins yambos extractores/TSV/logs disponibles yconsistentes.378tests locales/compileallOK; solo reexportación deJSON, sinFASTQ/HISAT2nuevos. El presente encargo termina en recuperación/persistencia completa de artefactos pequeños. La siguienteP0científica se conserva como propuesta noejecutada, sin otros4runs. PR33abierto para revisión, PR30intacto; sinmerge/cierre.
+

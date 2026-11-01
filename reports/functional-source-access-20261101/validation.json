@@ -1,0 +1,32 @@
+{
+  "status": "passed",
+  "scope": "artifact-consistency-not-biological-validation",
+  "source_rows": 8,
+  "assay_rows": 7,
+  "families": 2,
+  "accepted_numeric_sources": 0,
+  "new_effect_estimates": 0,
+  "checks": [
+    "unique-source-ids",
+    "tsv-shape-and-cross-references",
+    "temporal-order-preserved",
+    "xml-identity-and-sha256",
+    "html-not-mislabeled-pdf",
+    "continuity-current",
+    "no-third-party-fulltext-or-individual-tables-in-deliverable"
+  ],
+  "files_sha256": {
+    "reports/functional-source-access-20261101/DATA_REQUEST_SPEC.md": "11efd66e701d8844909e3714c1bfcaeec5ecd535be03dbb1d325c973e880df41",
+    "reports/functional-source-access-20261101/REPORT.md": "d31233139aaaf97b75e01a049063f3c5dd85f354a637390a71f0d0207b66084b",
+    "reports/functional-source-access-20261101/assay_matrix.tsv": "896d863dd18c920a5796580be38ff2adb6ee00803cc5799993fe7df79c269d79",
+    "reports/functional-source-access-20261101/errors.json": "117a5cb487045fbb88b3e67289e49930140c0cc2ebd5053e4994c2b22f765cb1",
+    "reports/functional-source-access-20261101/inventory.tsv": "c756a0f803359511742b034d2d5ed21951889598d0ef79c28a41e3d54c4f0d5a",
+    "reports/functional-source-access-20261101/retrievals.json": "03b746b378b06f0fd7dcf986caf4b1153e250356b4f793e87b6c69cc75c2230c",
+    "reports/functional-source-access-20261101/sources.json": "f40df4a991cb4d6491b878b47afe71242ec4f149aa42ddf0a095cdad8543642d",
+    "research/BACKLOG.md": "dc19038f844283384c6206e528a1a34abfc8ab73e495efa98bf038736d3e719a",
+    "research/FUNCTIONAL_RESCUE_DATA_GATE.md": "addf9cf922f7a0b127b67b79e6f89103e76a4d966a8bc0d9c321ec75ed8a0774",
+    "research/MASTER_EVIDENCE.md": "992ab7f8ad59ae6eb7ea1186f82ce64017a27f1a0373836df74c7eac6fb0927e",
+    "research/STATE.md": "614c5c88741bd86caafcf787c7e33f39a87d0a877ab90df7aa594e58162e87b4",
+    "research/plans/2026-11-01-functional-source-access.md": "f53cfb0d89acb93073ae4c16b1c5c7658725f043db70d8f05e46b59c06af82dd"
+  }
+}

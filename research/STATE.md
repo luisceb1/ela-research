@@ -1,12 +1,18 @@
 # Estado vigente — 01/11/2026
 
-## Estado de integración — 01/11/2026
+## Estado de integración y decisión vigente
 
-PR #33 quedó fusionada en `main` mediante el commit `95fea38d16359056eb86ef3397795e7af9f39049`. La revisión técnica y el QC del soporte críptico bajo están documentados en `reports/pr33-review-20261101/REPORT.md` y `reports/stmn2-control2-target-qc-20261101/REPORT.md`. La cabeza revisada pasó 399 tests locales y CI en Python 3.11/3.12, además de compileall. La fusión no añadió datos ni alineamientos nuevos y no cambia la interpretación científica: son controles técnicos, no evidencia de efecto de TDP-43 ni validación funcional.
+PR #30 fusionada en main mediante 39e0479306c9e810f8bd3846bba7b79d7b49fba7; #33 mediante 95fea38d y #34 mediante 85135ba. La CI de main en 39e0479 pasó en Python 3.11/3.12 (404 tests observados en log 3.12). Esta entrega documental no presume CI nueva ni añade validación biológica. La rama histórica de #30 no se modifica.
 
-La PR #30 sigue abierta en `research/2026-10-30-independent-splicing-gate`, cabeza `053ef70ce437cc637ec18278a2c07e3abd6bf58b`. Se mantiene separada e intacta mientras continúa el trabajo local en curso. La siguiente decisión es coordinar la revisión de esa rama y, solo después, valorar una fuente independiente que cumpla el criterio de entrada. No repetir el QC ya cerrado ni iniciar otra búsqueda o descarga en paralelo.
+Luis autorizó continuar el inventario funcional Keuss/Guo y reconciliar el planning. Auditoría terminada en reports/functional-source-access-20261101: dos familias, ninguna tabla numérica enlazada verificada. XML primario del preprint Guo recuperado y comprobado; PDF solicitado devolvió HTML; editorial final 403 y Scite solo acceso parcial. iGluSNFR3 fijado por commit: código, sin datos experimentales enlazados verificados. No estimación funcional, nueva replicación ni descarga masiva.
 
-El resto de este archivo conserva notas detalladas de fases anteriores. Las referencias posteriores a PR #33 abierta, a una fusión pendiente o a CI por verificar describen el estado de esas fases y quedan superadas por esta cabecera y por el merge commit indicado arriba.
+El calendario del preprint Guo comienza ASO antes de KD; no acredita inicio tras déficit medido. Las versiones se separan. Falta de acceso no demuestra inexistencia de datos ni dependencia de réplicas declaradas.
+
+Único siguiente paso: revisar DATA_REQUEST_SPEC.md y preparar, si procede, una comunicación concreta solo con autorización expresa de envío. La especificación ya está escrita, no hay que repetirla. La búsqueda de estas dos familias se cierra; reabrir solo con enlace numérico concreto, nueva versión o respuesta autorizada. Sin nueva evidencia no repetir índices/PDF/Scite, QC STMN2 ni sensibilidades RiMOD/NYGC. Si se opta por otra pregunta, fijar prospectivamente una única alternativa antes de ejecutarla.
+
+El gate distingue reproducir un desenlace funcional (requiere tabla con unidad/grupo/tiempo) de relacionarlo con RNA/proteína (exige además enlace entre ensayos). El archivo FUNCTIONAL_RESCUE_DATA_GATE.md contiene esta aclaración; no exige misma célula.
+
+Los apartados inferiores conservan historia. Cualquier mención a #30/#33 abiertos, merge pendiente, próxima descarga o CI pendiente de fases anteriores queda superada por esta cabecera. Este PR es revisable; no se fusiona automáticamente. Sin contactos, costes, datos personales, clínica o laboratorio.
 
 ## Fase actual cerrada: QC técnico seleccionado — 01/11/2026
 
@@ -128,3 +134,4 @@ Los apartados anteriores que dicen ningúnFASTQreal procesado o piloto pendiente
 ## Mapeabilidad exon1 — actualización31/10/2026
 
 Plan previo research/plans/2026-10-31-stmn2-exon1-mappability.md; solo referencia/lecturas sintéticas. 98/98 consultas de50nt y96/96de51nt del primerexón pasan criterio de origen completo. No se trataron solapamientos de ventanas, orientaciones o transcritos como unidades biológicas. El siguiente paso fijado es QC del control completo, no nuevos controles sintéticos equivalentes ni procesamiento de seisbibliotecas. No gastos, contactos, publicación externa, clínica personal, laboratorio o indicaciones terapéuticas.
+

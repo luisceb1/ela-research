@@ -1,0 +1,30 @@
+[
+  {
+    "id": "guo_preprint_supplement",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/12424808/bin/NIHPP2025.08.28.672801v1-supplement-1.pdf",
+    "date_utc": "2026-11-01T20:02:04.395863+00:00",
+    "status": 200,
+    "bytes": 21584,
+    "content_type": "text/html; charset=utf-8",
+    "resolved_url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/12424808/bin/NIHPP2025.08.28.672801v1-supplement-1.pdf",
+    "sha256": "8dd6621420afd2d536d87dbf5708b11a21c88d1847c44339ad4b6f94ca1d23ad",
+    "is_pdf": false
+  },
+  {
+    "id": "guo_europepmc_xml",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12424808/fullTextXML",
+    "date_utc": "2026-11-01T20:02:11.239837+00:00",
+    "status": 200,
+    "bytes": 136829,
+    "content_type": "application/xml",
+    "resolved_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12424808/fullTextXML",
+    "sha256": "2288f098489ec18f0b4461ed42299f70159fdca4c25a9a1e08a84b6cc1469249",
+    "is_pdf": false
+  },
+  {
+    "id": "guo_publisher",
+    "url": "https://www.science.org/doi/10.1126/scitranslmed.aeb8517",
+    "date_utc": "2026-11-01T20:02:15.964600+00:00",
+    "error": "HTTP Error 403: Forbidden"
+  }
+]

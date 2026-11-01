@@ -1,0 +1,9 @@
+assay_id	resource_id	readout	model	biological_unit	technical_unit	first_ASO_day	TDP43_perturbation_day	outcome_day	numeric_table_verified	cross_assay_link_verified	post_deficit_start_supported	provenance
+K26-RNA	K26-AAM	UNC13A-splicing	human-neurons	measurements-nested-in-experiments	assay	NA	NA	NA	no	no	not-established	prior-direct-audit-pp43-45
+K26-PROT	K26-AAM	UNC13A-protein	human-neurons	measurements-nested-in-experiments	assay	NA	NA	NA	no	no	not-established	prior-direct-audit-pp43-45
+K26-EPSC	K26-AAM	synaptic-release	cortical-and-spinal-neurons	experiment	cell-or-synapse	NA	NA	NA	no	no	not-established	prior-direct-audit-pp43-45
+K26-MEA	K26-AAM	network-synchrony	human-neurons	experiment	well	NA	NA	NA	no	no	not-established	prior-direct-audit-pp43-45
+G25-RNA	G25-XML	RT-qPCR	iNeurons	independence-declared-map-not-verified	measurement	3	5	12	no	no	no	Results-Fig4B-C
+G25-PROT	G25-XML	immunoblot	iNeurons	independence-declared-map-not-verified	measurement	3	5	15	no	no	no	Results-Fig4D
+G25-MEA	G25-XML	burst-number	iNeurons-astrocyte-coculture	independence-declared-map-not-verified	well	20	21	28	no	no	no	Results-Fig4E-F;second-ASO-day27
+
