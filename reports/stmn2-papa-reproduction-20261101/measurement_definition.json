@@ -1,0 +1,11 @@
+{
+  "repository": "frattalab/PAPA",
+  "ref": "d2ed20d217d9e3e397fa92dbcf9dc72a000f37b8",
+  "path": "scripts/tx_to_polya_quant.R",
+  "blob_sha": "8e0319b6a18ab6fdeb6fe91a1314cb02dd480b36",
+  "unit": "proportion",
+  "formula": "PPAU = TPM of last-exon group / sum TPM of all groups assigned to the gene",
+  "counts_preprocessing": "tximport countsFromAbundance=lengthScaledTPM",
+  "source_url": "https://github.com/frattalab/PAPA/blob/d2ed20d217d9e3e397fa92dbcf9dc72a000f37b8/scripts/tx_to_polya_quant.R",
+  "caveat": "Code inspected at pinned repository revision; exact historical execution environment not rerun"
+}

@@ -1,5 +1,15 @@
 # Estado vigente — 01/11/2026
 
+## Decisión vigente: contraste con cuentas cerrado — 01/11/2026
+
+Reproducción STMN2 ejecutada en reports/stmn2-papa-reproduction-20261101 sobre la misma PR #36, sin merge. La predicción preregistrada counts/suma(counts) = PPAU falla en las 12 bibliotecas (0 aceptadas, 12 rechazadas), diferencia absoluta máxima 0,17013297835212804; tolerancia 1e-6 intacta. Se preservan el denominador de todos los grupos STMN2, las doce bibliotecas y los resultados negativos. La salida correcta del programa y sus tests no acreditan concordancia de la hipótesis.
+
+Código primario PAPA: la PPAU usa TPM/suma(TPM), mientras la exportación de cuentas usa lengthScaledTPM. La fórmula que propusimos anteriormente no era equivalente a la definición de autores. No se ha ejecutado una sustitución por TPM ni se ha corregido retrospectivamente el resultado. Tabla PPAU recuperada por Range/CRC/SHA sin ZIP completo o crudos. Mapa de diferenciaciones/lotes aún no reconstruido; sin promedios de grupos, p-valores, función o validación clínica.
+
+**Única siguiente tarea:** ejecutar el nuevo plan prospectivo research/plans/2026-11-01-stmn2-papa-tpm-reproduction.md: recuperar solo TPM del mismo directorio; calcular grupo _1/suma de todos los grupos STMN2 y cotejar PPAU por biblioteca, misma tolerancia 1e-6 y sin inferencia. Esa fase aún no se ha ejecutado. Si falla, detener sin adaptar. No repetir el contraste cerrado con las mismas cuentas ni descargar FASTQ para resolverlo.
+
+Las secciones siguientes conservan historia. La PR #36 anterior a esta ampliación pasó CI (415 tests observados en Python 3.12 y éxito también en 3.11); verificar nueva cabeza por SHA. No se autoriza merge automático, envío de correos, costes, clínica o laboratorio.
+
 ## Decisión vigente tras auditoría GSE296714 — 01/11/2026
 
 Luis autorizó explícitamente la alternativa GSE296714 para avanzar al margen de los correos. Auditoría prospectiva ejecutada sobre main 6b0d420 (#35 ya fusionada); informe reports/gse296714-design-20261101. Doce bibliotecas (6 CTRL/6 KD) enlazadas GEO→SRX/SAMN→ENA y a tabla de autores. Matriz génica válida de 61.126 filas; tabla PAPA válida de 43.630 grupos, 12 columnas. STMN2: grupo críptico ENSG00000104435.14_1 enlazado a anotación curada y grupo de referencia _2; siete registros GTF, no siete réplicas. UNC13A: cuentas génicas y de grupos de exones finales disponibles, pero no sus uniones crípticas medidas.

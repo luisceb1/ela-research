@@ -1,5 +1,13 @@
 # Backlog vigente — 01/11/2026
 
+## P0 vigente: PPAU desde TPM — 01/11/2026
+
+- **Cerrado, hipótesis no concordante:** proporción STMN2 desde cuentas frente a PPAU; 12/12 bibliotecas fuera de tolerancia 1e-6, sin cambiar denominador o umbral. Informe reports/stmn2-papa-reproduction-20261101. No repetir para buscar aceptación con esos mismos insumos.
+- **P0 única, todavía no ejecutada:** nuevo plan research/plans/2026-11-01-stmn2-papa-tpm-reproduction.md; utilizar TPM y definición de PPAU de autores, por biblioteca, sin medias de grupo ni inferencia. Fracaso de identidad/denominador/tolerancia implica detener.
+- **En paralelo:** correos Keuss/Guo preparados; ningún envío autorizado en esta ejecución. Búsquedas cerradas no se repiten.
+
+La reproducción con cuentas que figura como próxima tarea más abajo es histórica y queda sustituida por esta decisión. Se amplía la misma PR #36, sin merge automático.
+
 ## Prioridad vigente: GSE296714 — 01/11/2026
 
 - **Completado:** auditoría única autorizada GSE296714, reports/gse296714-design-20261101; 12 bibliotecas, 61.126 genes y 43.630 grupos PAPA. Fuente numérica aceptada para descripción molecular por biblioteca; no uniones UNC13A ni independencia experimental reconstruida. No repetir esta auditoría.
