@@ -1,5 +1,11 @@
 # Estado vigente — 01/11/2026
 
+## Revisión de integración terminada — 01/11/2026
+
+PR #33: revisión técnica documentada en `reports/pr33-review-20261101/REPORT.md`. Se corrigió un validador que podía aceptar histogramas sin métricas si ambos archivos estaban incompletos de igual forma. Los artefactos guardados sí estaban completos; siguen válidos y el TSV es idéntico por bytes. 399 tests locales (392+7 regresiones) y compileall correctos. No datos o alineamientos nuevos; los manifiestos científicos históricos siguen vinculados a sus commits, no al validador corregido después.
+
+Recomendación: integrar la entrega técnica tras comprobar CI de la nueva cabeza; fusión pendiente de decisión explícita. Main d1bbf0e1 solo añade tres rutas de auditoría PubMed sin solapamiento con este PR. PR #30 abierto e intacto053ef70c. Después, coordinar con esa rama la selección de un contraste independiente antes de más datos; no repetir este QC ni reabrir búsquedas cerradas sin fuente nueva.
+
 ## Fase actual cerrada: QC técnico seleccionado — 01/11/2026
 
 PR #33 abierto. Replay seleccionado de SRR8144908 terminado en 371,380 s≤600 s: 4.292.655 lecturas realineadas de los cinco bloques fijados; fuente completa de 54.292.655 escaneada para ordinales y EOF/CRC. Predicción 13 canónicas/3 crípticas a15 y15/4 a8 reproducida exactamente, cuentas e histogramas concordantes entre texto/CIGAR y PySAM/HTSlib. Informe: `reports/stmn2-control2-target-qc-20261101/REPORT.md`.

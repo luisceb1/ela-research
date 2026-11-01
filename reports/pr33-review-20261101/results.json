@@ -1,0 +1,20 @@
+{
+  "python": "3.12.14",
+  "reviewed_head": "cd0fe69541cb252c356dce33308dc09851d3b43a",
+  "main": "d1bbf0e1df64c68e28597da339f23029c83df2cd",
+  "unit_tests_passed": 399,
+  "new_regression_tests": 7,
+  "prior_failure": "Both parsers could agree on an empty metric schema and validate accepted it",
+  "now_rejected": "Incomplete or unexpected target QC metrics",
+  "stored_positive_artifacts_valid_under_fixed_validator": true,
+  "histogram_tsv_byte_identical": true,
+  "original_full_library_sha256_unchanged": "cb26604160e43cdc04d2eab0a2525fc02f296059d70f5e0d9d731a32d9f6b4a7",
+  "new_fastq_download_or_alignment": false,
+  "biological_replicates_added": 0,
+  "main_only_files": [
+    "reports/2026-10-31-pubmed.md",
+    "reports/2026-11-01-pubmed.md",
+    "state/seen_pubmed_ids.json"
+  ],
+  "pr30_head_unchanged": "053ef70ce437cc637ec18278a2c07e3abd6bf58b"
+}

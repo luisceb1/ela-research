@@ -83,9 +83,23 @@ def pysam_observer(qc):
 
 
 def validate_histograms(qc,counts):
+    if not isinstance(qc,dict) or set(qc)!={'8','15'}:
+        raise ValueError('Invalid anchor QC schema')
     for anchor in ('8','15'):
+        if not isinstance(qc[anchor],dict) or set(qc[anchor])!={'canonical','cryptic'}:
+            raise ValueError('Invalid target QC schema')
         for name in ('canonical','cryptic'):
             row=qc[anchor][name]
-            if row['observations']!=counts[anchor][name]:raise ValueError('Target QC/count discrepancy')
-            if any(sum(hist.values())!=row['observations'] for hist in row['histograms'].values()):
-                raise ValueError('Target histogram does not account for every observation')
+            if not isinstance(row,dict) or set(row)!={'observations','histograms'}:
+                raise ValueError('Invalid observation QC schema')
+            n=row['observations']
+            if type(n) is not int or n<0 or type(counts[anchor][name]) is not int or n!=counts[anchor][name]:
+                raise ValueError('Target QC/count discrepancy')
+            histograms=row['histograms']
+            if not isinstance(histograms,dict) or set(histograms)!=set(METRICS):
+                raise ValueError('Incomplete or unexpected target QC metrics')
+            for hist in histograms.values():
+                if not isinstance(hist,dict) or any(not isinstance(k,str) or type(v) is not int or v<=0 for k,v in hist.items()):
+                    raise ValueError('Histogram requires string labels and positive integer weights')
+                if sum(hist.values())!=n:
+                    raise ValueError('Target histogram does not account for every observation')

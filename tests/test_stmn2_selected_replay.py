@@ -80,3 +80,28 @@ class SelectedReplayTests(unittest.TestCase):
         line='x\t0\tchr8\t79611175\t60\t5M10N5M1I5=5X10M5607N15M2S\t*\t0\t0\t*\t*\tNH:i:1\tXS:A:+\n'
         stats=text_stats(line,key);self.assertEqual(stats['left_anchor'],20);self.assertEqual(stats['right_anchor'],15)
         self.assertEqual(stats['softclip_bases'],2)
+
+
+class HistogramSchemaReviewTests(unittest.TestCase):
+    def test_empty_metrics_rejected_even_if_both_parsers_agree(self):
+        result,qc=projection(synthetic_sam());qc['15']['cryptic']['histograms']={}
+        with self.assertRaises(ValueError):validate_histograms(qc,result['counts'])
+    def test_missing_single_metric_rejected(self):
+        result,qc=projection(synthetic_sam());del qc['15']['cryptic']['histograms']['AS']
+        with self.assertRaises(ValueError):validate_histograms(qc,result['counts'])
+    def test_extra_metric_rejected(self):
+        result,qc=projection(synthetic_sam());qc['15']['cryptic']['histograms']['unknown']={'0':1}
+        with self.assertRaises(ValueError):validate_histograms(qc,result['counts'])
+    def test_negative_weights_cannot_cancel(self):
+        result,qc=projection(synthetic_sam());qc['15']['cryptic']['histograms']['NM']={'0':2,'missing':-1}
+        with self.assertRaises(ValueError):validate_histograms(qc,result['counts'])
+    def test_boolean_weight_is_not_integer_count(self):
+        result,qc=projection(synthetic_sam());qc['15']['cryptic']['histograms']['NM']={'0':True}
+        with self.assertRaises(ValueError):validate_histograms(qc,result['counts'])
+    def test_anchor_and_target_schema_rejected(self):
+        result,qc=projection(synthetic_sam())
+        for altered in (dict(qc,extra={}),dict(qc,**{'15':{'canonical':qc['15']['canonical']}})):
+            with self.subTest(altered=tuple(altered)),self.assertRaises(ValueError):validate_histograms(altered,result['counts'])
+    def test_empty_histograms_valid_only_for_zero_observations(self):
+        from scripts.gse122069_pilot import empty_counts
+        validate_histograms(empty_qc(),empty_counts())

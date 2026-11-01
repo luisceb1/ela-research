@@ -4,7 +4,8 @@ La primera fila marca la siguiente puerta de revisión. Los bloqueos requieren e
 
 | Prioridad | Trabajo | Estado / criterio de cierre |
 |---|---|---|
-| P0 revisión | Cierre del QC técnico y PR #33 | Replay completado:4292655lecturas,371,380s≤600,13/3a15 y15/4a8 exactos, cuentas/histogramas concordantes.392tests/compileall, exportadores idénticos y6rechazos negativos. Revisar informe nuevo antes de decidir integración o nuevo contraste; sin merge/cierre automático |
+| P0 decisión de integración | PR #33 revisado, corrección de validador incluida | 399 tests locales y compileall; artefactos originales válidos y TSV idéntico. Recomendada integración técnica tras CI de nueva cabeza. Fusión pendiente de decisión explícita; PR30 separado. Informe reports/pr33-review-20261101 |
+| Siguiente planificación | Coordinar contraste independiente con rama30 | Revisar sus pruebas ya existentes antes de escoger fuente con cuentas de uniones, evento definido y unidades independientes. Sin nueva descarga o repetición de controles desde esta revisión |
 | Completado | QC del soporte críptico bajo SRR8144908 | reports/stmn2-control2-target-qc-20261101. MAPQ60/NM0/AS0/softclip0 en4observaciones a8 (incluyen3a15); no independencia molecular o efecto. Resultado original completo yhash intactos. No repetir ni usar selección para tasas; no otros4runs |
 | Completado | Recuperación de artefactos delsegundo control | Resultado54.292.655lecturas,111/3a15,154/4a8 intacto. Paquete completo de resultados pequeños recuperado, verificado ypersistido porPR33. Historia parcial preservada; no reejecución delalineamiento |
 | Bloqueado, búsqueda cerrada | Mapa biológico GSE122069 | reports/gse122069-design-20261031:12registros técnicos válidos yReportingSummary nuevo noaportan asignación explícita. Independencia3/3declarada, no refutada; no inferencia ni pares por sufijos. Reabrir solo con fuente concreta nueva; medio discrepante sin resolver |
