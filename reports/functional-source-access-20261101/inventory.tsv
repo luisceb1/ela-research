@@ -1,0 +1,10 @@
+resource_id	family	version	resource_type	url	access_level	content_read	replicate_keys_verified	timing_verified	decision	limitation
+K26-AAM	Keuss	accepted-2026	manuscript	https://kclpure.kcl.ac.uk/portal/en/publications/unc13a-splice-correction-rescues-synaptic-dysfunction-induced-by-/	institutional-index	prior-direct-pdf-audit	no	prior-audit	methods-only	Accepted manuscript; no verified electronic source table
+K24-PMC	Keuss	preprint-2024-v1	article	https://pmc.ncbi.nlm.nih.gov/articles/PMC11230273/	web-fulltext	availability-section	no	not-reassessed	methods-only	Source-data declaration is not a resolved measurement file
+K24-SUPP	Keuss	preprint-2024-v1	supplement-pdf	https://pmc.ncbi.nlm.nih.gov/articles/PMC11230273/	indexed-supplement	prior-direct-pdf-audit	no	not-reassessed	methods-only	media-1.pdf previously audited; do not repeat
+K-CODE	Keuss	0155d8dbe116a09e5e67cae4749675965515a508	code	https://github.com/f-hamidlab/iGluSNFR3/tree/0155d8dbe116a09e5e67cae4749675965515a508	public-github	readme-and-full-tree	no	no	code-only	107 files; no study images or joined experimental table verified
+G26-FINAL	Guo	final-2026	article	https://doi.org/10.1126/scitranslmed.aeb8517	publisher-403	abstract-and-initial-indexed-excerpts	no	partial-indexed-excerpt	access-blocked	Scite linear fulltext returned abstract; later excerpts denied
+G26-SUPP	Guo	final-2026	electronic-source-data	https://doi.org/10.1126/scitranslmed.aeb8517	not-resolved	no	no	no	unverified	No filename or attachment contents verified; not absence
+G25-XML	Guo	preprint-2025-v1	article-xml	https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12424808/fullTextXML	downloaded-valid-xml	culture-methods-figure4-and-attachment-index	no	yes	methods-only	Not final version; no numerical replicate arrays inspected
+G25-SUPP	Guo	preprint-2025-v1	supplement-pdf	https://pmc.ncbi.nlm.nih.gov/articles/instance/12424808/bin/NIHPP2025.08.28.672801v1-supplement-1.pdf	html-instead-of-pdf	no	no	no	access-blocked	HTTP 200 text/html is not a PDF; attachment contains mixed subject matter per article
+
