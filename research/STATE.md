@@ -1,8 +1,14 @@
 # Estado vigente — 01/11/2026
 
-## Fase actual: QC técnico seleccionado — 01/11/2026
+## Fase actual cerrada: QC técnico seleccionado — 01/11/2026
 
-PR33 sigue abierto. Plan previo `research/plans/2026-11-01-stmn2-selected-replay.md`: cinco bloques de SRR8144908, 4.292.655 lecturas ya incluidas en el control completo, expectativa 13/3 a15 y15/4 a8. Código preparado, 392 tests locales y preflight real PySAM0.23.3/HTSlib1.21 concordantes. Restauración del mismo índice verificada; FASTQ todavía en descarga. No replay real iniciado en este checkpoint. No nueva biblioteca, inferencia o función. Resultados históricos completos intactos.
+PR #33 abierto. Replay seleccionado de SRR8144908 terminado en 371,380 s≤600 s: 4.292.655 lecturas realineadas de los cinco bloques fijados; fuente completa de 54.292.655 escaneada para ordinales y EOF/CRC. Predicción 13 canónicas/3 crípticas a15 y15/4 a8 reproducida exactamente, cuentas e histogramas concordantes entre texto/CIGAR y PySAM/HTSlib. Informe: `reports/stmn2-control2-target-qc-20261101/REPORT.md`.
+
+Las cuatro observaciones crípticas a8 tienen MAPQ60, NM0, AS0 y softclip0; las tres a15 están contenidas en ellas. La adicional tiene ancla derecha13. Atributos técnicos, no moléculas independientes, efecto de TDP-43 o validación funcional. No se estiman tasas sobre la selección post hoc. El resultado del control completo sigue111/3 y154/4, SHA original cb266041… intacto; denominador114≥20 no se reevalúa sobre la selección enriquecida. No nueva biblioteca ni cohorte.
+
+392 tests locales (378 previos+14 nuevos), compileall correcto y preflight real PySAM0.23.3/HTSlib1.21 concordante. Exportadores repetidos idénticos por bytes y seis controles de artefactos alterados rechazados. Nueve módulos de ejecución cotejados con Git blobs remotos antes del replay. FASTQ/índice restaurados por hashes idénticos; una descarga de rango truncada se recuperó por el reintento de transporte preexistente, recibo completo98rangos yMD5/SHA verificados. Cero reintentos de replay, errores de watchdog o ampliaciones de recursos. CI final se verifica por cabeza del PR; la CI previa920414d pasó392tests en3.11/3.12.
+
+Siguiente puerta: revisar el cierre del QC y el PR #33. No repetir estos bloques ni ampliar bibliotecas para resolver soporte bajo sin nuevo plan. La inferencia permanece bloqueada por el mapa de unidades/lotes/pareamiento; conservar la declaración publicada3/3, sin negarla por falta de mapa. No merge/cierre automático, clínica personal, gastos, contactos, publicación externa o laboratorio. PR #30 separado e intacto053ef70c.
 
 ## Alcance
 

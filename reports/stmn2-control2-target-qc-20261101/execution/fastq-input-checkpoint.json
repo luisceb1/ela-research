@@ -1,0 +1,5 @@
+{
+  "reads_streamed": 4000000,
+  "source_ordinal_scanned": 43000000,
+  "gzip_eof_crc_validated": false
+}

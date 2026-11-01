@@ -1,0 +1,19 @@
+{
+  "status": "passed",
+  "aggregate_export_repeated_byte_identical": true,
+  "exports_sha256": {
+    "summary.json": "ff8e02a058b2f5c978d88fab0950828e062d288ceb05a5850787e7c09360f5e7",
+    "target-qc-histograms.tsv": "349d6a62d93cfc3f4769f614e25ddaf5bcecf68e1445c3701e1138e859061b7f",
+    "REPORT.md": "e03c6af1914aa55a403858c866ee6d79ade641e0c7b2cdd3d8afd1fa59bdceff"
+  },
+  "controlled_corrupted_copies_rejected": {
+    "false_source_completion": "Selected stream mislabelled as source library",
+    "source_hash_changed": "Source hash changed",
+    "source_crc_missing": "Source/selected stream incomplete",
+    "expected_counts_changed": "Expected counts not reproduced",
+    "histogram_incomplete": "Target histogram does not account for every observation",
+    "independent_histograms_disagree": "Independent QC mismatch"
+  },
+  "original_execution_artifacts_not_mutated": true,
+  "additional_fastq_alignment_or_biological_replicates": 0
+}

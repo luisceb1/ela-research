@@ -73,3 +73,10 @@ Entorno unavailable después deverificar análisis. Resumen/FASTQQC recuperados 
 Se resuelve la carencia operativa histórica del31/10. JSONcompleto original SHA256cb26604160e43cdc04d2eab0a2525fc02f296059d70f5e0d9d731a32d9f6b4a7 recuperado, arrays de ambosparsers/55bins/TSV/logs completos yconcordantes; resumen/FASTQQC mantienen hashes originales.378tests locales/compileallOK, reexportación solo deJSON idéntica. No rerun, muestras oexperimentación nuevos. Informe/acta/manifiesto en reports/gse122069-next-control-20261031.
 
 Resultado científico sin cambios:111canónicas/3crípticas a15,154/4a8,54.292.655lecturas. Soporte bajo no demuestra moléculas/efecto/función; diseño siguependiente. Encargo de recuperación terminado; QC específico solo propuesta posterior. PR33revisable yPR30intacto, sinmerge/cierre.
+
+
+## QC seleccionado del mismo segundo control — 01/11/2026
+
+Plan previo fijado en920414d y ejecución única de cinco bloques:4.292.655lecturas realineadas,371,380s≤600; fuente54.292.655 escaneada para ordinales yEOF/CRC. Cuentas esperadas13/3a15 y15/4a8 reproducidas; histogramas texto/CIGAR frentePySAM/HTSlib concordantes. Cuatro observaciones crípticas a8 conMAPQ60,NM0,AS0,softclip0; tres incluidas a15. La adicional tiene ancla derecha13. Anclas e histogramas marginales completos en reports/stmn2-control2-target-qc-20261101; no reconstrucción por lectura.
+
+Reproducibilidad técnica, no replicación externa ni validación funcional. Selección post hoc enriquecida, sin tasas/PSI/efecto. Flagduplicado0 no acredita moléculas; sinUMI. Control completo sigue111/3 y154/4,JSON SHA256cb266041… intacto.392tests locales,14nuevos de software, preflightreal y6rechazos sobre copias alteradas; exportadores idénticos. Un rangoHTTP truncado recuperado por transporte, sin reintento de replay o aumento de presupuesto. Mapa biológico siguependiente, declaración3/3conservada, sin inferencia o nuevas bibliotecas. Siguiente puerta: revisión delPR33; PR30 separado.

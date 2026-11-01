@@ -1,0 +1,114 @@
+{
+  "complete_library": false,
+  "completed_bins": [
+    {
+      "first_read": 1,
+      "last_read": 1000000,
+      "reads": 1000000,
+      "sam_records": 1250927,
+      "primary_records": 1000000,
+      "counts": {
+        "8": {
+          "eligible_intron_observations": 92932,
+          "canonical": 5,
+          "cryptic": 0
+        },
+        "15": {
+          "eligible_intron_observations": 57100,
+          "canonical": 3,
+          "cryptic": 0
+        }
+      }
+    },
+    {
+      "first_read": 1000001,
+      "last_read": 2000000,
+      "reads": 1000000,
+      "sam_records": 1248827,
+      "primary_records": 1000000,
+      "counts": {
+        "8": {
+          "eligible_intron_observations": 92380,
+          "canonical": 3,
+          "cryptic": 1
+        },
+        "15": {
+          "eligible_intron_observations": 57066,
+          "canonical": 3,
+          "cryptic": 1
+        }
+      }
+    },
+    {
+      "first_read": 2000001,
+      "last_read": 3000000,
+      "reads": 1000000,
+      "sam_records": 1250869,
+      "primary_records": 1000000,
+      "counts": {
+        "8": {
+          "eligible_intron_observations": 93057,
+          "canonical": 4,
+          "cryptic": 1
+        },
+        "15": {
+          "eligible_intron_observations": 57186,
+          "canonical": 4,
+          "cryptic": 0
+        }
+      }
+    },
+    {
+      "first_read": 3000001,
+      "last_read": 4000000,
+      "reads": 1000000,
+      "sam_records": 1251365,
+      "primary_records": 1000000,
+      "counts": {
+        "8": {
+          "eligible_intron_observations": 92898,
+          "canonical": 3,
+          "cryptic": 1
+        },
+        "15": {
+          "eligible_intron_observations": 57124,
+          "canonical": 3,
+          "cryptic": 1
+        }
+      }
+    },
+    {
+      "first_read": 4000001,
+      "last_read": 4292655,
+      "reads": 292655,
+      "sam_records": 365080,
+      "primary_records": 292655,
+      "counts": {
+        "8": {
+          "eligible_intron_observations": 27104,
+          "canonical": 0,
+          "cryptic": 1
+        },
+        "15": {
+          "eligible_intron_observations": 16704,
+          "canonical": 0,
+          "cryptic": 1
+        }
+      }
+    }
+  ],
+  "reads": 4292655,
+  "sam_records": 5367068,
+  "counts": {
+    "8": {
+      "eligible_intron_observations": 398371,
+      "canonical": 15,
+      "cryptic": 4
+    },
+    "15": {
+      "eligible_intron_observations": 245180,
+      "canonical": 13,
+      "cryptic": 3
+    }
+  }
+}

@@ -1,10 +1,11 @@
 # Backlog vigente — 01/11/2026
 
-Solo la primera fila es la próxima tarea científica. Los bloqueos requieren evidencia nueva, no más ejecuciones de los mismos insumos. Consultar STATE y MASTER_EVIDENCE.
+La primera fila marca la siguiente puerta de revisión. Los bloqueos requieren evidencia nueva, no más ejecuciones de los mismos insumos. Consultar STATE y MASTER_EVIDENCE.
 
 | Prioridad | Trabajo | Estado / criterio de cierre |
 |---|---|---|
-| P0 en preparación | QC específico del soporte críptico bajo en el control | Plan seleccionado01/11 fijado: cinco bloques,4292655lecturas,cuentas esperadas13/3a15 y15/4a8.392tests locales y preflightPySAMreal correctos; índice idéntico restaurado,FASTQen descarga. Replay no iniciado todavía; sin tercera biblioteca o inferencia |
+| P0 revisión | Cierre del QC técnico y PR #33 | Replay completado:4292655lecturas,371,380s≤600,13/3a15 y15/4a8 exactos, cuentas/histogramas concordantes.392tests/compileall, exportadores idénticos y6rechazos negativos. Revisar informe nuevo antes de decidir integración o nuevo contraste; sin merge/cierre automático |
+| Completado | QC del soporte críptico bajo SRR8144908 | reports/stmn2-control2-target-qc-20261101. MAPQ60/NM0/AS0/softclip0 en4observaciones a8 (incluyen3a15); no independencia molecular o efecto. Resultado original completo yhash intactos. No repetir ni usar selección para tasas; no otros4runs |
 | Completado | Recuperación de artefactos delsegundo control | Resultado54.292.655lecturas,111/3a15,154/4a8 intacto. Paquete completo de resultados pequeños recuperado, verificado ypersistido porPR33. Historia parcial preservada; no reejecución delalineamiento |
 | Bloqueado, búsqueda cerrada | Mapa biológico GSE122069 | reports/gse122069-design-20261031:12registros técnicos válidos yReportingSummary nuevo noaportan asignación explícita. Independencia3/3declarada, no refutada; no inferencia ni pares por sufijos. Reabrir solo con fuente concreta nueva; medio discrepante sin resolver |
 | Bloqueado | E-MTAB-15653 | Auditoría documental terminada; independencia no certificada. No repetir búsqueda ni calcular efectos sin nueva fuente concreta |

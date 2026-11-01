@@ -1,0 +1,9 @@
+{
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "free_disk_bytes": 56794107904,
+  "historical_disk_baseline_bytes": 63427059712,
+  "disk_allowance_bytes": 16106127360,
+  "reserve_bytes": 8589934592,
+  "source_fastq_retained_in_temporary_cache_only": true,
+  "complete_sam_or_bam_retained": false
+}
