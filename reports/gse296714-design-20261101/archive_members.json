@@ -1,0 +1,34 @@
+[
+  {
+    "name": "tdp43-apa/misc/processed/cleaned.cryptics.all.novel_ref_combined.quant.gtf",
+    "compressed": 40105,
+    "uncompressed": 408294,
+    "crc": 3072160479,
+    "offset": 344318139,
+    "method": 8
+  },
+  {
+    "name": "tdp43-apa/preprocessing/data/PAPA/i3_cortical_upf1_zanovello_novel/humphrey_i3_cortical/differential_apa/summarised_pas_quantification.ppau.tsv",
+    "compressed": 2704088,
+    "uncompressed": 7607537,
+    "crc": 1205009902,
+    "offset": 706217170,
+    "method": 8
+  },
+  {
+    "name": "tdp43-apa/preprocessing/data/PAPA/i3_cortical_upf1_zanovello_novel/humphrey_i3_cortical/differential_apa/summarised_pas_quantification.counts.tsv",
+    "compressed": 2878163,
+    "uncompressed": 7148108,
+    "crc": 4088763686,
+    "offset": 710399233,
+    "method": 8
+  },
+  {
+    "name": "tdp43-apa/preprocessing/data/PAPA/sample_tables/humphrey_i3_cortical/humphrey_i3_cortical_underscore_sample_tbl.csv",
+    "compressed": 304,
+    "uncompressed": 3863,
+    "crc": 404201006,
+    "offset": 808633616,
+    "method": 8
+  }
+]

@@ -1,5 +1,14 @@
 # Backlog vigente — 01/11/2026
 
+## Prioridad vigente: GSE296714 — 01/11/2026
+
+- **Completado:** auditoría única autorizada GSE296714, reports/gse296714-design-20261101; 12 bibliotecas, 61.126 genes y 43.630 grupos PAPA. Fuente numérica aceptada para descripción molecular por biblioteca; no uniones UNC13A ni independencia experimental reconstruida. No repetir esta auditoría.
+- **P0 única:** reproducción descriptiva STMN2 por biblioteca desde PAPA y cotejo con PPAU original; fijar previamente denominador de todos los grupos del gen. No PSI, p-valores, supuestos de pareamiento o crudos. Referencia de continuación: research/plans/2026-11-01-stmn2-papa-description.md.
+- **En paralelo/bloqueado:** respuesta o enlace numérico concreto Keuss/Guo; solicitudes preparadas, sin autorización de envío en este turno. No repetir las búsquedas cerradas.
+
+La tabla y las notas que siguen son trazabilidad histórica; la antigua P0 de revisar correos ya no sustituye la tarea molecular anterior. #35 fusionada en6b0d420; esta auditoría va a PR sin merge automático.
+
+
 La fila P0 marca la siguiente puerta de revisión; el resto de filas completadas conserva trazabilidad. Los bloqueos requieren evidencia nueva, no más ejecuciones de los mismos insumos. Consultar STATE y MASTER_EVIDENCE.
 
 | Prioridad | Trabajo | Estado / criterio de cierre |
@@ -76,4 +85,3 @@ reports/gse122069-parameterization-20261031: configuración/recibo/runner/resume
 ## Cierre delsegundo control —01/11/2026
 
 Queda sustituido elbloqueo de recuperación previo: JSONcompleto original coincide conSHA previo,55bins yambos extractores/TSV/logs disponibles yconsistentes.378tests locales/compileallOK; solo reexportación deJSON, sinFASTQ/HISAT2nuevos. El presente encargo termina en recuperación/persistencia completa de artefactos pequeños. La siguienteP0científica se conserva como propuesta noejecutada, sin otros4runs. PR33abierto para revisión, PR30intacto; sinmerge/cierre.
-

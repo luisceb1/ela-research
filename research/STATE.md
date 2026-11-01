@@ -1,5 +1,16 @@
 # Estado vigente — 01/11/2026
 
+## Decisión vigente tras auditoría GSE296714 — 01/11/2026
+
+Luis autorizó explícitamente la alternativa GSE296714 para avanzar al margen de los correos. Auditoría prospectiva ejecutada sobre main 6b0d420 (#35 ya fusionada); informe reports/gse296714-design-20261101. Doce bibliotecas (6 CTRL/6 KD) enlazadas GEO→SRX/SAMN→ENA y a tabla de autores. Matriz génica válida de 61.126 filas; tabla PAPA válida de 43.630 grupos, 12 columnas. STMN2: grupo críptico ENSG00000104435.14_1 enlazado a anotación curada y grupo de referencia _2; siete registros GTF, no siete réplicas. UNC13A: cuentas génicas y de grupos de exones finales disponibles, pero no sus uniones crípticas medidas.
+
+Aptitud aceptada para descripción de abundancia génica y de grupos PAPA por biblioteca; no aceptada todavía para inferencia de unidades biológicas, nueva replicación independiente, rescate o función. La tabla de autores solo contiene muestra/condición/rutas, no diferenciación/lote/pares; no inferirlos de sufijos ni negar réplicas declaradas. La pérdida de TDP-43 precede a diferenciación, recogida día30. Proyecto ENA mezcla109runs; solo12 seleccionados. Crudos seleccionados79.276.637.720bytes según ENA: no descargados. ZIP Zenodo831.190.727bytes: solo índices y tres miembros por Range206/CRC; no ZIP entero ni MD5 global verificado.
+
+**Única siguiente tarea:** fijar y ejecutar una reproducción descriptiva STMN2 por biblioteca de la proporción de abundancia estimada del grupo _1 respecto de todos los grupos de ese gen en PAPA, cotejándola con la tabla PPAU original del mismo miembro/familia. Prefijar denominador y comprobar enlace/identidad antes de leer PPAU. No PSI de unión, p-valores, promedios con independencia presupuesta, comparación clínica ni FASTQ. Si el cotejo falla, detener y documentar. No repetir auditoría/descargas ya cerradas. Los correos Keuss/Guo quedan en paralelo, sin envío autorizado ni dependencia para esta tarea.
+
+La cabecera histórica siguiente sobre una única tarea de solicitud queda sustituida por esta decisión; sus límites científicos y las búsquedas cerradas se conservan. Esta entrega se propone en PR revisable, sin merge automático.
+
+
 ## Estado de integración y decisión vigente
 
 PR #30 fusionada en main mediante 39e0479306c9e810f8bd3846bba7b79d7b49fba7; #33 mediante 95fea38d y #34 mediante 85135ba. La CI de main en 39e0479 pasó en Python 3.11/3.12 (404 tests observados en log 3.12). Esta entrega documental no presume CI nueva ni añade validación biológica. La rama histórica de #30 no se modifica.
@@ -134,4 +145,3 @@ Los apartados anteriores que dicen ningúnFASTQreal procesado o piloto pendiente
 ## Mapeabilidad exon1 — actualización31/10/2026
 
 Plan previo research/plans/2026-10-31-stmn2-exon1-mappability.md; solo referencia/lecturas sintéticas. 98/98 consultas de50nt y96/96de51nt del primerexón pasan criterio de origen completo. No se trataron solapamientos de ventanas, orientaciones o transcritos como unidades biológicas. El siguiente paso fijado es QC del control completo, no nuevos controles sintéticos equivalentes ni procesamiento de seisbibliotecas. No gastos, contactos, publicación externa, clínica personal, laboratorio o indicaciones terapéuticas.
-

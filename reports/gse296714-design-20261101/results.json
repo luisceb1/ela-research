@@ -1,0 +1,68 @@
+{
+  "author_metadata_linked": 12,
+  "ena_fastq_bytes_selected": 79276637720,
+  "ena_project_rows": 109,
+  "ena_read_count_selected": 520986256,
+  "ena_selected_runs": 12,
+  "gate": "descriptive_gene_and_PAS_group_counts; reconstruct biological units before inference; no direct junction measurement",
+  "groups": {
+    "TDP43_KD": 6,
+    "control": 6
+  },
+  "independence_certified": false,
+  "inference": "not_executed",
+  "junction_coverage": "not_measured",
+  "matrix": {
+    "fractional_values": 162743,
+    "measurement": "Salmon/tximport estimated gene counts; not junctions or molecule counts",
+    "rows": 61126,
+    "sample_columns": 12,
+    "totals": {
+      "CTRL-1": 42552116.10699937,
+      "CTRL-2": 42764541.07799996,
+      "CTRL-3": 40304872.07000003,
+      "CTRL-4": 11022686.086000068,
+      "CTRL-5": 41997482.98100007,
+      "CTRL-6": 46289128.15700012,
+      "TDP-1": 38156953.96199995,
+      "TDP-2": 39776143.88800001,
+      "TDP-3": 39572826.04699996,
+      "TDP-4": 41279250.829999834,
+      "TDP-5": 11039752.037000047,
+      "TDP-6": 33773728.02299969
+    }
+  },
+  "overlap_check": [
+    {
+      "baseline": "reports__geo-audit__samples.tsv",
+      "explicit_ids": 12,
+      "sha256": "0ae1add43f34099ddbc14d8fc678313a1a2bf48fd962e2a392702726ea09e5d7",
+      "shared_ids": []
+    },
+    {
+      "baseline": "reports__gse121569-design__culture_libraries.tsv",
+      "explicit_ids": 18,
+      "sha256": "33a056840e626cf64ff7d4cd4720721d92819ed6a256e217ff90e3ddab455687",
+      "shared_ids": []
+    },
+    {
+      "baseline": "reports__source-selection-20261030__results.json",
+      "explicit_ids": 52,
+      "sha256": "d2ad78fbbe26f6434d79be8bebc97491a3d51a0f8b88bbeb0cbbea08d961a62e",
+      "shared_ids": []
+    }
+  ],
+  "papa": {
+    "columns": 12,
+    "measurement": "PAPA/Salmon estimated last-exon-group abundance; not direct junction support",
+    "rows": 43630,
+    "target_groups": [
+      "ENSG00000104435.14_1",
+      "ENSG00000104435.14_2",
+      "ENSG00000130477.16_1",
+      "ENSG00000130477.16_2"
+    ]
+  },
+  "samples": 12,
+  "target_annotation_rows": 7
+}

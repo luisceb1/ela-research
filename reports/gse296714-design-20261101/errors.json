@@ -1,0 +1,27 @@
+[
+  {
+    "stage": "repository_transport",
+    "error": "git ls-remote: could not read Username",
+    "resolution": "Used GitHub connector pinned to main6b0d420; no credential probing"
+  },
+  {
+    "stage": "gene_counts_download",
+    "error": "HTTP403 direct ftp.ncbi.nlm.nih.gov HTTPS URL",
+    "resolution": "GEO download endpoint successfully redirected to the same file; gzip parsed and SHA recorded"
+  },
+  {
+    "stage": "zip_index_initial",
+    "error": "BadZipFile: Bad offset for central directory",
+    "resolution": "262144-byte tail was smaller than445005-byte central directory; EOCD provided exact range830745700-831190726; full central index parsed"
+  },
+  {
+    "stage": "new_tests_initial",
+    "error": "TypeError: IdentityControls.run() takes1 positional argument but2were given",
+    "resolution": "Fixture helper renamed run_row;11finaltests pass"
+  },
+  {
+    "stage": "optional_ensembl_label_crosscheck",
+    "error": "Three Ensembl lookup requests timed out after25s",
+    "resolution": "No retry; prior project target IDs retained, STMN2 annotation verified in author GTF. No claim of fresh Ensembl reference validation."
+  }
+]

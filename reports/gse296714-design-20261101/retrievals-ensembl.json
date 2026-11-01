@@ -1,0 +1,23 @@
+[
+  {
+    "name": "ensembl_ENSG00000104435.json",
+    "url": "https://rest.ensembl.org/lookup/id/ENSG00000104435?content-type=application/json",
+    "retrieved_at_utc": "2026-11-01T20:30:10.434843+00:00",
+    "saved": false,
+    "error": "TimeoutError: The read operation timed out"
+  },
+  {
+    "name": "ensembl_ENSG00000130477.json",
+    "url": "https://rest.ensembl.org/lookup/id/ENSG00000130477?content-type=application/json",
+    "retrieved_at_utc": "2026-11-01T20:30:10.435747+00:00",
+    "saved": false,
+    "error": "TimeoutError: The read operation timed out"
+  },
+  {
+    "name": "ensembl_ENSG00000120948.json",
+    "url": "https://rest.ensembl.org/lookup/id/ENSG00000120948?content-type=application/json",
+    "retrieved_at_utc": "2026-11-01T20:30:10.436433+00:00",
+    "saved": false,
+    "error": "TimeoutError: The read operation timed out"
+  }
+]
