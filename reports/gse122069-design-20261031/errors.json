@@ -1,0 +1,71 @@
+{
+  "first_metadata_attempt": [
+    {
+      "url": "https://www.ebi.ac.uk/ena/browser/api/xml/SRS4005024",
+      "accession": "SRS4005024",
+      "kind": "SAMPLE",
+      "date_utc": "2026-10-31T18:23:15.469010+00:00",
+      "http_status": 200,
+      "bytes": 2581,
+      "sha256_original": "0e5f191763a7605d88ccda202b7d46f9b79a89640105fa829d9e239ec7bad3c9",
+      "error": "ValueError: Unexpected public accession"
+    },
+    {
+      "url": "https://www.ebi.ac.uk/ena/browser/api/xml/SRS4005023",
+      "accession": "SRS4005023",
+      "kind": "SAMPLE",
+      "date_utc": "2026-10-31T18:23:15.469427+00:00",
+      "http_status": 200,
+      "bytes": 2581,
+      "sha256_original": "6f810b98c11867fa3b271e27a20d54d6e8780ecbf2b1e317487465e66513b4c9",
+      "error": "ValueError: Unexpected public accession"
+    },
+    {
+      "url": "https://www.ebi.ac.uk/ena/browser/api/xml/SRS4005026",
+      "accession": "SRS4005026",
+      "kind": "SAMPLE",
+      "date_utc": "2026-10-31T18:23:15.469849+00:00",
+      "http_status": 200,
+      "bytes": 2581,
+      "sha256_original": "2870239e8b540746dc3a1b6c2a14c576ad8b23608186ce4122425970fb59d218",
+      "error": "ValueError: Unexpected public accession"
+    },
+    {
+      "url": "https://www.ebi.ac.uk/ena/browser/api/xml/SRS4005030",
+      "accession": "SRS4005030",
+      "kind": "SAMPLE",
+      "date_utc": "2026-10-31T18:23:21.430208+00:00",
+      "http_status": 200,
+      "bytes": 2579,
+      "sha256_original": "2b126fc752d38616fdb73fe988df622a7edd3ad2366a7a888c34d37074456eb6",
+      "error": "ValueError: Unexpected public accession"
+    },
+    {
+      "url": "https://www.ebi.ac.uk/ena/browser/api/xml/SRS4005025",
+      "accession": "SRS4005025",
+      "kind": "SAMPLE",
+      "date_utc": "2026-10-31T18:23:21.439947+00:00",
+      "http_status": 200,
+      "bytes": 2579,
+      "sha256_original": "b8ab80b084adaee9535de54049b47265e8b100d72befe7f32d77f35b06792231",
+      "error": "ValueError: Unexpected public accession"
+    },
+    {
+      "url": "https://www.ebi.ac.uk/ena/browser/api/xml/SRS4005027",
+      "accession": "SRS4005027",
+      "kind": "SAMPLE",
+      "date_utc": "2026-10-31T18:23:21.468247+00:00",
+      "http_status": 200,
+      "bytes": 2579,
+      "sha256_original": "c0da169e5a65f4cf284b611d4f79a2567b14dcac7bbdc1063c4f8efbda0cb6ab",
+      "error": "ValueError: Unexpected public accession"
+    }
+  ],
+  "metadata_errors_final": [],
+  "web_discovery_error": {
+    "url": "https://www.nature.com/articles/s41593-018-0293-z",
+    "error": "web open/find could not follow idp.nature.com authorization redirect",
+    "fallback": "Python HTTP200, publisher links and Reporting Summary recovered"
+  },
+  "no_dataset_error_or_independence_inferred_from_parser_failure": true
+}

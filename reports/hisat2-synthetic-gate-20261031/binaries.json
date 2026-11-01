@@ -1,0 +1,11 @@
+{
+  "hisat2-align-s": {
+    "sha256": "1cce31ebea008a859da0ce0404c305a6a3959115eb0b68a28d6130c9ae2008ea",
+    "version": "data/cache/hisat2-source-20261031/hisat2-0d244324f98de541bce04d45c75e83bc3522f7f4/hisat2-align-s version 2.2.3"
+  },
+  "hisat2-build-s": {
+    "sha256": "391f80c3bdd1ec596373903e9ee3e20933307f2a33f3fab62c4e17c9dee5bf40",
+    "version": "data/cache/hisat2-source-20261031/hisat2-0d244324f98de541bce04d45c75e83bc3522f7f4/hisat2-build-s version 2.2.3"
+  },
+  "disk_free_bytes": 50961788928
+}

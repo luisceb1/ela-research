@@ -1,0 +1,17 @@
+{
+  "binary_sha256": "736b75476c6b0b041d7520821e16435c7e9afcdde5fe7863d20992e3fb044ee2",
+  "hisat2_version_stdout": "data/cache/hisat2-source/hisat2-0d244324f98de541bce04d45c75e83bc3522f7f4/hisat2-align-s version 2.2.3\n64-bit\nBuilt on 3074c63a05ff\nSat Oct 31 18:27:07 CET 2026\nCompiler: gcc version 13.3.0 (Ubuntu 13.3.0-6ubuntu2~24.04) \nOptions: -O3 -m64 -msse2 -funroll-loops -g3 -std=c++11 -DPOPCNT_CAPABILITY\nSizeof {int, long, long long, void*, size_t, off_t}: {4, 8, 8, 8, 8, 8}\n",
+  "pysam_stdout": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]\n0.23.3 1.21\n",
+  "cpu_affinity_available": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "free_disk_bytes_before_restore": 63173988352
+}

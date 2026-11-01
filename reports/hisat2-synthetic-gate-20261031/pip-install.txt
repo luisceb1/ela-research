@@ -1,0 +1,3 @@
+Processing ./data/cache/pysam-20261031/pysam-0.23.3-cp312-cp312-manylinux_2_28_x86_64.whl
+Installing collected packages: pysam
+Successfully installed pysam-0.23.3

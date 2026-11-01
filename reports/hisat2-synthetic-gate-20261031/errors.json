@@ -1,0 +1,15 @@
+{
+  "runtime_errors": [],
+  "negative_results": [
+    {
+      "scope": "predeclared sensitivity test, not primary-control failure",
+      "result": "At anchor8, cryptic2/2 accepted and canonical0/2; canonical reads unmapped. At anchor7 both0/2 accepted."
+    }
+  ],
+  "limitations": [
+    "Perfect reads only; not empirical sensitivity with sequencing errors",
+    "NH reported mapping count does not prove exhaustive uniqueness",
+    "No real FASTQ, PSI, effects or biological replication",
+    "Pysam/HTSlib comparison checks parsing/extraction, not independent aligner correctness"
+  ]
+}

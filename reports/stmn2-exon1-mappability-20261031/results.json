@@ -1,0 +1,44 @@
+{
+  "synthetic_queries": 883,
+  "tile_summary": {
+    "exon1_50": {
+      "total": 98,
+      "exact_unique_source": 98
+    },
+    "shared63_50": {
+      "total": 28,
+      "exact_unique_source": 28
+    },
+    "exon1_51": {
+      "total": 96,
+      "exact_unique_source": 96
+    },
+    "shared63_51": {
+      "total": 26,
+      "exact_unique_source": 26
+    },
+    "exon2_50": {
+      "total": 94,
+      "exact_unique_source": 94
+    },
+    "exon2_51": {
+      "total": 92,
+      "exact_unique_source": 92
+    },
+    "exon3_50": {
+      "total": 248,
+      "exact_unique_source": 248
+    },
+    "exon3_51": {
+      "total": 246,
+      "exact_unique_source": 246
+    }
+  },
+  "positive_controls_pass": true,
+  "negative_control_pass": true,
+  "first_exon_some_exact_for_each_length": true,
+  "perfect_reference_only": true,
+  "real_FASTQ_reads_processed": 0,
+  "biological_replication": false,
+  "not_exhaustive_uniqueness": true
+}

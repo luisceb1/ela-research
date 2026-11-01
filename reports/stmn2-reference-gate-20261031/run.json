@@ -1,0 +1,21 @@
+{
+  "python": "3.12.14",
+  "parameters": [
+    "scripts/audit_stmn2_reference_gate.py",
+    "--input",
+    "reports/stmn2-reference-gate-20261031/reference_inputs.json",
+    "--expected-sha256",
+    "d14c7fc589c9ef7bae9595b1157cd602bd82c024dfec4ae6951df7e87a0cf785",
+    "--out",
+    "reports/stmn2-reference-gate-20261031/results.json"
+  ],
+  "input_sha256": "d14c7fc589c9ef7bae9595b1157cd602bd82c024dfec4ae6951df7e87a0cf785",
+  "result_sha256": "90425c36039228ca79971f4f9dac2cd0c99c8c169d8237566eedad83ab2fa68b",
+  "two_replays_byte_identical": true,
+  "seed": "not applicable",
+  "randomness": "none",
+  "base_commit": "9c82795df2dfdb1be142169ee8733db70dbde92f",
+  "script_sha256": "e2cad5f4cd1a7efb3923aa459c43b4a604611c62d77043f30a554ae51a7bc60c",
+  "raw_reads_processed": 0,
+  "index_downloaded": false
+}

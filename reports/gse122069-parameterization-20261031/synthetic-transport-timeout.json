@@ -1,0 +1,13 @@
+{
+  "run": "SYNTHETIC_PROCESS_ONLY",
+  "gsm": "SYNTHETIC_PROCESS_ONLY",
+  "expected_bytes": 0,
+  "expected_md5": "not_a_library",
+  "verified": false,
+  "scope": "synthetic process deadline control, no network and no sample reads",
+  "mode": "bounded_download_failed",
+  "error": "TimeoutError: bounded download exceeded explicit deadline",
+  "transport_process_exit_code": -9,
+  "transport_wall_deadline_seconds": 0.02,
+  "transport_parent_elapsed_seconds": 0.020515651000096113
+}

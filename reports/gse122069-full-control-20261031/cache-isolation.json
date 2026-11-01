@@ -1,0 +1,8 @@
+{
+  "isolated_index_cache": "/tmp/ela-full-control-index-a30d50c208ec-20261031",
+  "unchanged_extracted_index": true,
+  "removed_file_count": 23,
+  "removed_bytes": 8467514989,
+  "free_disk_bytes_after": 54937223168,
+  "reason": "avoid redundant restoration temporary copies within workspace; no resource budget increase"
+}

@@ -1,0 +1,53 @@
+{
+  "reads": 4292655,
+  "source_reads_scanned": 54292655,
+  "bases": 216803360,
+  "N_bases": 19345,
+  "length_histogram": {
+    "50": 1042955,
+    "48": 104358,
+    "49": 313685,
+    "51": 2800739,
+    "47": 22560,
+    "45": 1704,
+    "46": 5328,
+    "41": 321,
+    "44": 484,
+    "43": 136,
+    "42": 209,
+    "40": 147,
+    "39": 23,
+    "36": 1,
+    "38": 3,
+    "37": 2
+  },
+  "quality_ascii_min": 35,
+  "quality_ascii_max": 74,
+  "mean_quality_if_phred33": 39.45522353989348,
+  "uncompressed_bytes_scanned": 7416473704,
+  "gzip_eof_crc_validated": true,
+  "intervals_1based_inclusive": [
+    [
+      1,
+      1000000
+    ],
+    [
+      17000001,
+      18000000
+    ],
+    [
+      37000001,
+      38000000
+    ],
+    [
+      42000001,
+      43000000
+    ],
+    [
+      54000001,
+      54292655
+    ]
+  ],
+  "selection": "fixed post hoc ordinal intervals; not random; only selected records aligned",
+  "sequence_quality_schema_scope": "selected records; source framing and CRC checked throughout; whole source identity pinned by hash"
+}

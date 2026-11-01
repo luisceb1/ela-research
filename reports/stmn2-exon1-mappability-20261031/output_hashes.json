@@ -1,0 +1,22 @@
+{
+  "reports/stmn2-exon1-mappability-20261031/REPORT.md": "02a579b124b2201d5e7f6dcf371d62f326b21b45b440857a64566b0dea486ed3",
+  "reports/stmn2-exon1-mappability-20261031/alignment-repeat.log": "38f27c60c70de7b0290ed84706ea83f3f85fb39efc70a450a5ba6e0865e96881",
+  "reports/stmn2-exon1-mappability-20261031/alignment.log": "38f27c60c70de7b0290ed84706ea83f3f85fb39efc70a450a5ba6e0865e96881",
+  "reports/stmn2-exon1-mappability-20261031/controls.json": "b87805a3ef8b080ac50eac3c209d17607d50557ac00eb961af470ac2bf140c5a",
+  "reports/stmn2-exon1-mappability-20261031/definition.json": "6f45052fa9d029ab6eb456ed575047f8f7b0a81cc8ef9c16f4e28ddfc2fa02b3",
+  "reports/stmn2-exon1-mappability-20261031/errors.json": "d468116001bc9200dea2f4443e980812aa3fdbb6485dc2805e1605c0d8694d00",
+  "reports/stmn2-exon1-mappability-20261031/inspect.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "reports/stmn2-exon1-mappability-20261031/observations.tsv": "924434b022219d5f97d495b7e06ec2bcc910583842699f126cdac4963669f981",
+  "reports/stmn2-exon1-mappability-20261031/output_checks.json": "9b604e9ad574836be5827fc45d5aba9d88ccc6cb483faf31958521d435fe8c6f",
+  "reports/stmn2-exon1-mappability-20261031/recovered_inputs.json": "c03e7af5278653f2c780a83199b5299f613a50a8f7e736c005225fde6d1744fb",
+  "reports/stmn2-exon1-mappability-20261031/repeat_verification.json": "2d1f186b01d750971993022853658c9d03e004ce2aa14524aa890be469ff3691",
+  "reports/stmn2-exon1-mappability-20261031/results.json": "e0459ff736ab6d39f455a13ce57f5b9cfc0e09ef08009463ed7c5acb91613f67",
+  "reports/stmn2-exon1-mappability-20261031/run.json": "2f05b07b0a81d811817ed48018ead38356ad7132307c3cd5ac99bf9105743822",
+  "reports/stmn2-exon1-mappability-20261031/tests.txt": "402618cdf844aa550904bfa6247847962789ed2c76e3ba4d417e16062bf1481b",
+  "research/BACKLOG.md": "d203ade8dfbe5a6929fb451adc97d4256add59bc9c5b53c2d4ba2596f9540d48",
+  "research/STATE.md": "0bc38ce429b804b9e6a80b56380a81ca1909a88f18fd58264cc0c1dad84d668e",
+  "research/plans/2026-10-31-full-control-coverage-proposal.md": "9540bfedc9e6ddf91e9b489c5a358e5bee2ae9e0900e419c3cde87e97b837f94",
+  "research/plans/2026-10-31-stmn2-exon1-mappability.md": "188bb93f8772d82a2af5fa05570825a84e53541c8e3396e17f3935d4325e76c8",
+  "scripts/audit_stmn2_exon1_mappability.py": "e903c64ef224c1fb0bb94f21ec44d06fa82f04dbcf00f611dcabe675b4ab723f",
+  "tests/test_stmn2_exon1_mappability.py": "623e9104d5a579c905ddc14fea125a8896e9589fc918c5ab795979603cff1582"
+}

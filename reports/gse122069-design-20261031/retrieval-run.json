@@ -1,0 +1,10 @@
+{
+  "python": "3.12.14",
+  "timestamp_utc": "2026-10-31T18:24:43.204805+00:00",
+  "manifest_sha256": "b5ed1bcfaa32132ae3e05af183dcf16d9b1dc60639db1d4827934c944c40ccbd",
+  "max_workers": 3,
+  "timeout_seconds": 30,
+  "byte_cap": 2000000,
+  "errors": [],
+  "scope": "technical allowlist, six public culture libraries only; original bodies not retained"
+}

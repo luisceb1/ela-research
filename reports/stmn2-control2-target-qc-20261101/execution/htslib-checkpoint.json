@@ -1,0 +1,310 @@
+{
+  "complete_library": false,
+  "completed_bins": [
+    {
+      "first_read": 1,
+      "last_read": 1000000,
+      "reads": 1000000,
+      "sam_records": 1250927,
+      "primary_records": 1000000,
+      "counts": {
+        "8": {
+          "eligible_intron_observations": 92932,
+          "canonical": 5,
+          "cryptic": 0
+        },
+        "15": {
+          "eligible_intron_observations": 57100,
+          "canonical": 3,
+          "cryptic": 0
+        }
+      }
+    },
+    {
+      "first_read": 1000001,
+      "last_read": 2000000,
+      "reads": 1000000,
+      "sam_records": 1248827,
+      "primary_records": 1000000,
+      "counts": {
+        "8": {
+          "eligible_intron_observations": 92380,
+          "canonical": 3,
+          "cryptic": 1
+        },
+        "15": {
+          "eligible_intron_observations": 57066,
+          "canonical": 3,
+          "cryptic": 1
+        }
+      }
+    },
+    {
+      "first_read": 2000001,
+      "last_read": 3000000,
+      "reads": 1000000,
+      "sam_records": 1250869,
+      "primary_records": 1000000,
+      "counts": {
+        "8": {
+          "eligible_intron_observations": 93057,
+          "canonical": 4,
+          "cryptic": 1
+        },
+        "15": {
+          "eligible_intron_observations": 57186,
+          "canonical": 4,
+          "cryptic": 0
+        }
+      }
+    },
+    {
+      "first_read": 3000001,
+      "last_read": 4000000,
+      "reads": 1000000,
+      "sam_records": 1251365,
+      "primary_records": 1000000,
+      "counts": {
+        "8": {
+          "eligible_intron_observations": 92898,
+          "canonical": 3,
+          "cryptic": 1
+        },
+        "15": {
+          "eligible_intron_observations": 57124,
+          "canonical": 3,
+          "cryptic": 1
+        }
+      }
+    },
+    {
+      "first_read": 4000001,
+      "last_read": 4292655,
+      "reads": 292655,
+      "sam_records": 365080,
+      "primary_records": 292655,
+      "counts": {
+        "8": {
+          "eligible_intron_observations": 27104,
+          "canonical": 0,
+          "cryptic": 1
+        },
+        "15": {
+          "eligible_intron_observations": 16704,
+          "canonical": 0,
+          "cryptic": 1
+        }
+      }
+    }
+  ],
+  "reads": 4292655,
+  "sam_records": 5367068,
+  "counts": {
+    "8": {
+      "eligible_intron_observations": 398371,
+      "canonical": 15,
+      "cryptic": 4
+    },
+    "15": {
+      "eligible_intron_observations": 245180,
+      "canonical": 13,
+      "cryptic": 3
+    }
+  },
+  "locus_bins": [
+    {
+      "primary_block_overlap": 640,
+      "unique_mapq_block_overlap": 640,
+      "exon2_unique_overlap": 38,
+      "unique_spliced_reads": 48,
+      "exon1_unique_overlap": 5
+    },
+    {
+      "primary_block_overlap": 615,
+      "unique_mapq_block_overlap": 614,
+      "unique_spliced_reads": 52,
+      "exon2_unique_overlap": 30,
+      "exon1_unique_overlap": 5
+    },
+    {
+      "primary_block_overlap": 664,
+      "unique_mapq_block_overlap": 664,
+      "exon1_unique_overlap": 7,
+      "exon2_unique_overlap": 36,
+      "unique_spliced_reads": 47
+    },
+    {
+      "primary_block_overlap": 673,
+      "unique_mapq_block_overlap": 673,
+      "exon2_unique_overlap": 32,
+      "unique_spliced_reads": 48,
+      "exon1_unique_overlap": 5
+    },
+    {
+      "primary_block_overlap": 181,
+      "unique_mapq_block_overlap": 181,
+      "unique_spliced_reads": 23,
+      "exon2_unique_overlap": 12,
+      "exon1_unique_overlap": 3
+    }
+  ],
+  "pysam": "0.23.3",
+  "htslib": "1.21",
+  "self_maxrss_kib": 31148,
+  "target_qc_histograms": {
+    "8": {
+      "canonical": {
+        "observations": 15,
+        "histograms": {
+          "left_anchor": {
+            "28": 2,
+            "16": 2,
+            "12": 1,
+            "37": 1,
+            "27": 2,
+            "15": 3,
+            "31": 2,
+            "35": 1,
+            "30": 1
+          },
+          "right_anchor": {
+            "23": 2,
+            "34": 1,
+            "39": 1,
+            "11": 1,
+            "33": 1,
+            "24": 2,
+            "36": 2,
+            "20": 1,
+            "16": 1,
+            "19": 1,
+            "21": 1,
+            "35": 1
+          },
+          "MAPQ": {
+            "60": 15
+          },
+          "NM": {
+            "0": 15
+          },
+          "AS": {
+            "-2": 13,
+            "-4": 2
+          },
+          "softclip_bases": {
+            "0": 13,
+            "1": 2
+          },
+          "duplicate_flag": {
+            "0": 15
+          }
+        }
+      },
+      "cryptic": {
+        "observations": 4,
+        "histograms": {
+          "left_anchor": {
+            "21": 2,
+            "37": 1,
+            "22": 1
+          },
+          "right_anchor": {
+            "30": 2,
+            "13": 1,
+            "29": 1
+          },
+          "MAPQ": {
+            "60": 4
+          },
+          "NM": {
+            "0": 4
+          },
+          "AS": {
+            "0": 4
+          },
+          "softclip_bases": {
+            "0": 4
+          },
+          "duplicate_flag": {
+            "0": 4
+          }
+        }
+      }
+    },
+    "15": {
+      "canonical": {
+        "observations": 13,
+        "histograms": {
+          "left_anchor": {
+            "28": 2,
+            "16": 2,
+            "27": 2,
+            "15": 3,
+            "31": 2,
+            "35": 1,
+            "30": 1
+          },
+          "right_anchor": {
+            "23": 2,
+            "34": 1,
+            "33": 1,
+            "24": 2,
+            "36": 2,
+            "20": 1,
+            "16": 1,
+            "19": 1,
+            "21": 1,
+            "35": 1
+          },
+          "MAPQ": {
+            "60": 13
+          },
+          "NM": {
+            "0": 13
+          },
+          "AS": {
+            "-2": 12,
+            "-4": 1
+          },
+          "softclip_bases": {
+            "0": 12,
+            "1": 1
+          },
+          "duplicate_flag": {
+            "0": 13
+          }
+        }
+      },
+      "cryptic": {
+        "observations": 3,
+        "histograms": {
+          "left_anchor": {
+            "21": 2,
+            "22": 1
+          },
+          "right_anchor": {
+            "30": 2,
+            "29": 1
+          },
+          "MAPQ": {
+            "60": 3
+          },
+          "NM": {
+            "0": 3
+          },
+          "AS": {
+            "0": 3
+          },
+          "softclip_bases": {
+            "0": 3
+          },
+          "duplicate_flag": {
+            "0": 3
+          }
+        }
+      }
+    }
+  },
+  "complete_query_stream": true,
+  "input_scope": "received selected stream only; parent verifies real source identity separately"
+}

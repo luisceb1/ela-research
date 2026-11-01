@@ -1,0 +1,88 @@
+{
+  "status": "original_small_execution_artifacts_recovered_and_locally_verified",
+  "analysis_complete_verified_before_loss": true,
+  "artifact_package_complete": true,
+  "source_of_recovery": "captured stdout from successful summary/export and validation commands before environment unavailability; no raw-data rerun",
+  "source_code_commit": "ff69669fd2e5786d36a2b7126467347e6d752eaa",
+  "last_durable_prefix_commit": "b50a761c26dca89fb829dd31c4c9d1070b6aecf4",
+  "run": "SRR8144908",
+  "gsm": "GSM3454243",
+  "published_group": "siControl 2",
+  "raw_fastq_md5": "0cd29fe9f8bdf1a6f3596891b783990d",
+  "raw_fastq_sha256": "ed2f2f4a30b7f448c246029b0407e20e142493b2d74345e674c4e7b3c3e5527f",
+  "unrecovered_original_artifacts": [],
+  "recorded_before_loss": {
+    "engine_exit_code": 0,
+    "launcher_exit_code": 0,
+    "reads": 54292655,
+    "concordant_bins": 55,
+    "elapsed_seconds": 1919.352563403,
+    "prealignment_seconds": 15.705255727000122,
+    "phase_deadline_seconds": 2700,
+    "sam_records": 67839111,
+    "unmapped_records": 1446456,
+    "secondary_records": 13546456,
+    "supplementary_records": 0,
+    "qcfail_records": 0,
+    "alignment_rate_percent_reported": 97.34,
+    "aligned_exactly_once_reads": 46250576,
+    "aligned_multiple_reads": 6595623,
+    "watchdog_errors": [],
+    "self_maxrss_kib": 31668,
+    "maxrss_child_kib": 4647336,
+    "htslib_worker_maxrss_kib": 31668,
+    "combined_rss_available": false,
+    "cpu_affinity": [
+      0,
+      1
+    ],
+    "download_parent_elapsed_seconds": 1069.916107122,
+    "download_range_errors": 0,
+    "local_tests_passed": 374
+  },
+  "biological_interpretation": "three accepted cryptic-junction alignment observations in a control; not three independent molecules, TDP43 effect or functional validation",
+  "recovery_checks_verified_CI": [
+    {
+      "path": "reports/gse122069-next-control-20261031/summary.json",
+      "original_sha256_recorded_before_loss": "71eeabbc01277786fd7a849958c4fdc2eadb127ed6e7bba7d984b7c46052cf87"
+    },
+    {
+      "path": "reports/gse122069-next-control-20261031/execution/fastq_qc.json",
+      "original_sha256_recorded_before_loss": "8b4c0704ab24ac103b7abea19cd79b761c49ef9931b042bf963af0504e6a7641"
+    }
+  ],
+  "recovery_hash_check_workflow": {
+    "url": "https://github.com/luisceb1/ela-research/actions/runs/41240518570",
+    "head_sha": "e94eca226ef526455ea88a401f68fbba8c5177bc",
+    "python311": "success",
+    "python312": "success",
+    "tests_in_each_job": 376,
+    "summary_and_fastq_original_sha256_tests_verified_in_both_logs": true
+  },
+  "artifact_package_scope": "original small results, complete55bin arrays/TSV, QC, logs, commands and provenance; raw FASTQ/index excluded, fullSAM/BAM never retained by design",
+  "recovery_completion_client_date": "2026-11-01",
+  "source_of_completion": "original local files available again after runtime restoration; full result bytes match pre-loss SHA256",
+  "original_full_result_recovered": {
+    "path": "reports/gse122069-next-control-20261031/execution/full-control-results.json",
+    "sha256": "cb26604160e43cdc04d2eab0a2525fc02f296059d70f5e0d9d731a32d9f6b4a7",
+    "matches_pre_loss_sha256": true
+  },
+  "completion_verification": "artifact-closure-verification-20261101.json",
+  "recovery_history": {
+    "status_before_closure": "local_execution_environment_unavailable_after_verified_completion",
+    "package_complete_before_closure": false,
+    "previously_unrecovered": [
+      "full 55-bin TSV and full text/HTSlib checkpoint arrays",
+      "original full-control-results.json including all bins/configuration",
+      "original on-disk HISAT2/stderr/progress logs; their inspected summaries are recorded",
+      "post-outage report/replay verification command completion is unknown; no byte-identical replay claim"
+    ],
+    "original_full_result_previously_unavailable": {
+      "path": "reports/gse122069-next-control-20261031/execution/full-control-results.json",
+      "sha256_recorded_before_loss": "cb26604160e43cdc04d2eab0a2525fc02f296059d70f5e0d9d731a32d9f6b4a7",
+      "not_recreated_from_incomplete_information": true
+    }
+  },
+  "local_tests_after_closure": 378,
+  "no_new_real_data_analysis_or_inference_in_recovery": true
+}

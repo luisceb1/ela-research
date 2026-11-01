@@ -1,0 +1,16 @@
+{
+  "exact_fastq_and_primary_read_count": 54292655,
+  "bin_count": 55,
+  "last_bin_reads": 292655,
+  "histogram_reads_and_bases_concordant": true,
+  "gzip_eof_crc_validated": true,
+  "sam_primary_plus_secondary_totals_concordant": true,
+  "parsers_all_bins_and_targets_concordant": true,
+  "no_comparison_to_other_control_pilot": true,
+  "transport_range_errors": 0,
+  "engine_watchdog_errors": [],
+  "free_disk_bytes_final": 56868220928,
+  "python": "3.12.14",
+  "low_count_signal_is_alignment_observations_not_independent_molecules": true,
+  "MAPQ_NM_distributions_of_target_alignments_not_retained_in_original_stream": true
+}

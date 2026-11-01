@@ -1,0 +1,16 @@
+{
+  "binary_sha256": "77828165beac1086689b47bbc8413a9d66c1eb46e5d9fb85b5d1333295a3368b",
+  "source_commit": "0d244324f98de541bce04d45c75e83bc3522f7f4",
+  "binary_version_executed": "2.2.3",
+  "compiler": "g++13.3.0",
+  "archive_plus_extracted_bytes": 9019829587,
+  "disk_free_before_bytes": 63485673472,
+  "disk_free_after_bytes": 52105953280,
+  "observed_disk_usage_increase_bytes": 11379720192,
+  "additional_disk_limit_bytes": 16106127360,
+  "reserve_bytes": 8589934592,
+  "author_recipe_executed": false,
+  "author_recipe_sha256": "9e29e570495a5b237fce579bd5b2059f600ff061cdbc12c2438623e9ffad27d2",
+  "source_recipe_url": "http://hgdownload.cse.ucsc.edu/goldenPath/hg38/bigZips/hg38.chromFa.tar.gz",
+  "source_recipe_claim": "genome-only index; no GTF passed in recipe; not proof of exact original build command/software version"
+}

@@ -1,0 +1,30 @@
+{
+  "reads": 37518164,
+  "bases": 1896541486,
+  "N_bases": 547114,
+  "length_histogram": {
+    "51": 25414303,
+    "50": 8660934,
+    "49": 2578032,
+    "48": 675407,
+    "37": 723,
+    "47": 127686,
+    "35": 14200,
+    "46": 31831,
+    "42": 1838,
+    "45": 3587,
+    "38": 728,
+    "41": 2065,
+    "44": 2049,
+    "40": 1744,
+    "43": 1401,
+    "39": 1005,
+    "36": 631
+  },
+  "quality_ascii_min": 35,
+  "quality_ascii_max": 74,
+  "mean_quality_if_phred33": 37.13991459188149,
+  "uncompressed_bytes_scanned": 5121514670,
+  "gzip_eof_crc_validated": true,
+  "selection": "entire fixed library"
+}

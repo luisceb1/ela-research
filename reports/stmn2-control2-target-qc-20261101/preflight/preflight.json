@@ -1,0 +1,126 @@
+{
+  "status": "passed",
+  "synthetic_queries": 10,
+  "biological_replicates_added": 0,
+  "python": "3.12.14",
+  "sam_sha256": "577f00a7221a29717dd372733c1308a9f22ddbb261c6b8023eaab76a0919d129",
+  "two_independent_parsers_concordant": true,
+  "repeat_projection_identical": true,
+  "expected_known_qc": {
+    "8": {
+      "canonical": {
+        "observations": 1,
+        "histograms": {
+          "left_anchor": {
+            "15": 1
+          },
+          "right_anchor": {
+            "20": 1
+          },
+          "MAPQ": {
+            "60": 1
+          },
+          "NM": {
+            "2": 1
+          },
+          "AS": {
+            "-4": 1
+          },
+          "softclip_bases": {
+            "3": 1
+          },
+          "duplicate_flag": {
+            "1": 1
+          }
+        }
+      },
+      "cryptic": {
+        "observations": 2,
+        "histograms": {
+          "left_anchor": {
+            "15": 1,
+            "8": 1
+          },
+          "right_anchor": {
+            "20": 1,
+            "9": 1
+          },
+          "MAPQ": {
+            "60": 2
+          },
+          "NM": {
+            "missing": 1,
+            "0": 1
+          },
+          "AS": {
+            "missing": 1,
+            "0": 1
+          },
+          "softclip_bases": {
+            "0": 2
+          },
+          "duplicate_flag": {
+            "0": 2
+          }
+        }
+      }
+    },
+    "15": {
+      "canonical": {
+        "observations": 1,
+        "histograms": {
+          "left_anchor": {
+            "15": 1
+          },
+          "right_anchor": {
+            "20": 1
+          },
+          "MAPQ": {
+            "60": 1
+          },
+          "NM": {
+            "2": 1
+          },
+          "AS": {
+            "-4": 1
+          },
+          "softclip_bases": {
+            "3": 1
+          },
+          "duplicate_flag": {
+            "1": 1
+          }
+        }
+      },
+      "cryptic": {
+        "observations": 1,
+        "histograms": {
+          "left_anchor": {
+            "15": 1
+          },
+          "right_anchor": {
+            "20": 1
+          },
+          "MAPQ": {
+            "60": 1
+          },
+          "NM": {
+            "missing": 1
+          },
+          "AS": {
+            "missing": 1
+          },
+          "softclip_bases": {
+            "0": 1
+          },
+          "duplicate_flag": {
+            "0": 1
+          }
+        }
+      }
+    }
+  },
+  "pysam": "0.23.3",
+  "htslib": "1.21",
+  "development_error": "Initial multi-intron test fixture start was 5 bases too high; corrected synthetic position before real data. No real replay attempted on failing preflight."
+}

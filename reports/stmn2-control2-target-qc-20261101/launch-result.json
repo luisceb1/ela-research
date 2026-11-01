@@ -1,0 +1,8 @@
+{
+  "returncode": 0,
+  "automatic_retries": 0,
+  "command_record": "replay-command.json",
+  "execution_code_commit": "920414df9a8ea96ab580447f31502b1557575282",
+  "restoration_wait_included_in_replay_clock": false,
+  "phase_limit_seconds": 600
+}

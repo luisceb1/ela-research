@@ -1,0 +1,5 @@
+# Comprobación dirigida de protocolo — plan previo31/10/2026
+
+Nuevo dato del piloto:628bloques/lecturasprimariasúnicas solapanlocus STMN2,31solapanexon2,0exon1 y48lecturas con tres uniones posteriores. Pregunta: ¿el protocolo público de bibliotecas seleccionadas está orientado a un extremo3prime o esRNAseqde cobertura transcripcional general, y qué implica para intentar medir la primeraunión?
+Método: solo campo extract/library construction deGSM3454242 yregistroGSE122069 (y métodos deMelamed2019 si accesible), recuperar URL/fecha/hash/pasaje; sin otrasmuestras/datosclínicos. Revisar qué se había inspeccionado antes para no presentar el inventario ya hecho como nuevo. Esta consulta se limita a una dependencia nueva evidenciada por cobertura del piloto.
+Predicciónfalsable: fuente declara protocolo3prime, o no; no inferirlo solo de los recuentos. Si no puedeacreditarse, dejar hipótesis técnica abierta. Si se declara3prime, no asumir aptitud para primeraunión por disponibilidad deFASTQ: bloquear contrastey evitar descargar/alinear seisbibliotecas. No sustituir numerador/denominador, ni ampliar el millón para buscar señal. No inferencia o conclusión biológica.

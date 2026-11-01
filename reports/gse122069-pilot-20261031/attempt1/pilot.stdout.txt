@@ -1,0 +1,12 @@
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/workspace/scratch/a30d50c208ec/ela-research/scripts/gse122069_pilot.py", line 181, in <module>
+    else:run(a)
+         ^^^^^^
+  File "/workspace/scratch/a30d50c208ec/ela-research/scripts/gse122069_pilot.py", line 157, in run
+    hts.stdin.close();align_code=align.wait();hts_code=hts.wait();stop.set();thread.join()
+    ^^^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe

@@ -1,0 +1,16 @@
+{
+  "timestamp_utc": "2026-10-31T19:09:29.367849+00:00",
+  "python": "3.12.14",
+  "base_head": "fecaeb5d3b66e2766afefaca13e25fab90a326b3",
+  "observed_main": "96975b1c4bea6cf9267d03c15bdd4373dad3966e",
+  "pr30_expected_unchanged": "053ef70ce437cc637ec18278a2c07e3abd6bf58b",
+  "tests": 374,
+  "new_tests": 25,
+  "compileall_pass": true,
+  "new_real_fastq_reads_processed": 0,
+  "new_hisat2_alignments_executed": 0,
+  "reused_unique_synthetic_queries": 28,
+  "random_seed_alignment_contract": 0,
+  "deterministic_metadata_and_parser_projection": true,
+  "next_control_proposal_not_launched": true
+}

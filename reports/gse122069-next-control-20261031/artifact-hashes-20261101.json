@@ -1,0 +1,266 @@
+{
+  "client_date": "2026-11-01",
+  "scope": "recovered original small execution artifacts and closure documents; excludes self, ephemeralPID record, rawFASTQ/index and never-retained fullSAM/BAM; prior cloud-only recovery projections remain historical",
+  "original_full_result_matches_pre_loss_sha256": true,
+  "all55bins_consistency_verified": true,
+  "files": [
+    {
+      "path": "reports/gse122069-next-control-20261031/REPORT.md",
+      "bytes": 8382,
+      "sha256": "5f2426869b5fe573fd3f8c8257985d55107559d1a87ca44d11ab479c87d44bd3",
+      "git_blob_sha1": "d98c3526fc2cede81b97c44c720c29ddbc8a7c2e"
+    },
+    {
+      "path": "reports/gse122069-next-control-20261031/alignment-command.json",
+      "bytes": 1328,
+      "sha256": "5d83bad33a634d835be33c2f5dae45cf3e27ceed56ddcb51a41382a0af3ac71e",
+      "git_blob_sha1": "21540941eeac88e8c4016b24ba69c96d22e26816"
+    },
+    {
+      "path": "reports/gse122069-next-control-20261031/artifact-closure-verification-20261101.json",
+      "bytes": 1380,
+      "sha256": "0a5aea94b7a9bf2a360b5f0be05b6f17614906d6d3845b339b77085b037905fe",
+      "git_blob_sha1": "36ecdaed45225ef6d9e4b2b0253f5bd03ccc6d26"
+    },
+    {
+      "path": "reports/gse122069-next-control-20261031/artifact-recovery-provenance.json",
+      "bytes": 4222,
+      "sha256": "9ad644baa44b21266cf1d9b82a6dd67b7bdcd75baedb5a81542e750849d01122",
+      "git_blob_sha1": "702fa3fa20e34944f500f7ba3d4ac5f32c134c2c"
+    },
+    {
+      "path": "reports/gse122069-next-control-20261031/available-tools.json",
+      "bytes": 732,
+      "sha256": "a0361d497f4a4a7026d9af77d373f3f0bd35bf201fa68cfb02b878f48d15a625",
+      "git_blob_sha1": "6d3f858127cb7e77f1a85eedffd5de5a29b699be"
+    },
+    {
+      "path": "reports/gse122069-next-control-20261031/bin-qc.tsv",
+      "bytes": 4721,
+      "sha256": "468bed1d3e008f6ff300eef4961df74bcc05cc6d3388f7db21adddf6b8809a65",
+      "git_blob_sha1": "7f5a573df104de88269fa9fca478d4b8cbafc35e"
+    },
+    {
+      "path": "reports/gse122069-next-control-20261031/download-command.json",
+      "bytes": 639,
+      "sha256": "0ce43a9d8c273df99074d16ab06a5d8f03862bcbf717bc246782bd179f44873d",
+      "git_blob_sha1": "9c8a270d5f367c88b72e2d4af59ade175a45df27"
+    },
+    {
+      "path": "reports/gse122069-next-control-20261031/download-launcher.json",
+      "bytes": 57,
+      "sha256": "962a54d1991055a10164b6c2c3920f44acf85cfcb8eb8e83deeb01b1c639279c",
+      "git_blob_sha1": "0e01db8f438385101fec972f8d12f264b5c7b39f"
+    },
+    {
+      "path": "reports/gse122069-next-control-20261031/download-progress.txt",
+      "bytes": 526,
+      "sha256": "68a07708d05c5f7805b9a76e82449b59bcf425495eace88005c1b7ab008bffcc",
+      "git_blob_sha1": "e2414c9184896f4869409b6df8c90e35d56c3021"
+    },
+    {
+      "path": "reports/gse122069-next-control-20261031/download-stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob_sha1": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "reports/gse122069-next-control-20261031/download.json",
+      "bytes": 15049,
+      "sha256": "e8b415ef51c49503c77980e361e6430486cbc9005cf4a95e7c45b1271ce4581b",
+      "git_blob_sha1": "5285eb647faf09f41fc8051d2903d8b3f67cd42f"
+    },
+    {
+      "path": "reports/gse122069-next-control-20261031/executed-code-provenance.json",
+      "bytes": 2073,
+      "sha256": "31c042666952232f67f32249696a6f36f7086c85f5474e679a3701b829f5ebc2",
+      "git_blob_sha1": "57b38bd8ddaf0bc69f976f93c97f5fb93b6bec7f"
+    },
+    {
+      "path": "reports/gse122069-next-control-20261031/execution-progress.txt",
+      "bytes": 2492,
+      "sha256": "95cd9f2e4e53b821d59897d791a0fdefa58a197015a74217041f166f45d77dd6",
+      "git_blob_sha1": "c8ac9bbcfc8a979700f7a00913bfcf8100d60760"
+    },
+    {
+      "path": "reports/gse122069-next-control-20261031/execution-stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob_sha1": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "reports/gse122069-next-control-20261031/execution/fastq-input-checkpoint.json",
+      "bytes": 406,
+      "sha256": "47d72ae55b6374c91197c32f451c7bbe9234c777edbcb4c90f64bf81e6718982",
+      "git_blob_sha1": "7dbcfe1b911f3bb959edbebef8b271d56a9a9040"
+    },
+    {
+      "path": "reports/gse122069-next-control-20261031/execution/fastq_qc.json",
+      "bytes": 581,
+      "sha256": "8b4c0704ab24ac103b7abea19cd79b761c49ef9931b042bf963af0504e6a7641",
+      "git_blob_sha1": "82611d6386ed7418d1938698a970949f62a9b43c"
+    },
+    {
+      "path": "reports/gse122069-next-control-20261031/execution/full-control-results.json",
+      "bytes": 27695,
+      "sha256": "cb26604160e43cdc04d2eab0a2525fc02f296059d70f5e0d9d731a32d9f6b4a7",
+      "git_blob_sha1": "10ac63e83b64ac1e33c1b9834e5affac0ea8f595"
+    },
+    {
+      "path": "reports/gse122069-next-control-20261031/execution/hisat2.log",
+      "bytes": 221,
+      "sha256": "07dc62869d1f7bdf3223a1dcd61201fcade89a0a0d12434ae6e5dc2eae7b9584",
+      "git_blob_sha1": "7d513c2f4639d451a171e0ae3aae12922ba96a5c"
+    },
+    {
+      "path": "reports/gse122069-next-control-20261031/execution/htslib-checkpoint.json",
+      "bytes": 34635,
+      "sha256": "abbaa3f8837091d9e53512c1c7dbfeba04eeedd14742f11195bfed6e3681cc4f",
+      "git_blob_sha1": "d50f7be9361c3440ff571a2e48d4e9f3172c86e7"
+    },
+    {
+      "path": "reports/gse122069-next-control-20261031/execution/htslib.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob_sha1": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "reports/gse122069-next-control-20261031/execution/text-checkpoint.json",
+      "bytes": 24183,
+      "sha256": "e58a841889f20981ab710ccf554c0f7dfcc24de68e4d751b105ae121ba6c479c",
+      "git_blob_sha1": "f19d0c484c57672302750f23205371cb4ea6579a"
+    },
+    {
+      "path": "reports/gse122069-next-control-20261031/final-validation.json",
+      "bytes": 629,
+      "sha256": "67b367c3b3169e7bf4247e972340b3821fd862fc70faaf84d1a1726c72ecc4fd",
+      "git_blob_sha1": "60247eb6f0f4cb33131d2c8961dbdb93a66e0e6d"
+    },
+    {
+      "path": "reports/gse122069-next-control-20261031/headers.json",
+      "bytes": 968,
+      "sha256": "e324c16a8d86274fc5949769224439849deadd9e8819327f7cc1cf44897c68a6",
+      "git_blob_sha1": "51971f708ea1ee921df70188727dcbb3c14ffb5d"
+    },
+    {
+      "path": "reports/gse122069-next-control-20261031/in-progress-checkpoint.json",
+      "bytes": 19260,
+      "sha256": "ec8e3982598191284055b92a608ad19518d1605c08a16cf67b1f6f9985745abb",
+      "git_blob_sha1": "e5895ae53b3de9213029307e417ee2642509167b"
+    },
+    {
+      "path": "reports/gse122069-next-control-20261031/index-restore-download.json",
+      "bytes": 1009,
+      "sha256": "d39f07d90e09e4c9bb1355e18a3c7721693963978fbb1adcead5e3b3cec3f027",
+      "git_blob_sha1": "87d87731c0b0d78d1720bea441785b524181f7c9"
+    },
+    {
+      "path": "reports/gse122069-next-control-20261031/index-restore-extraction.json",
+      "bytes": 1675,
+      "sha256": "c0fcb5f38a9729cca6918207ccfb040ef5bd0610559f1b019b3f54411e11cddc",
+      "git_blob_sha1": "0c03abfd8496cfa8d6b38f8b00725e89f2443023"
+    },
+    {
+      "path": "reports/gse122069-next-control-20261031/index-restore-verification.json",
+      "bytes": 332,
+      "sha256": "a9b59568551ea2c5ef6150c4c0d998781a932bbfd9879899b7a2c13301a58fae",
+      "git_blob_sha1": "7530df61b84338794cdfa9c2636853054c17c4e0"
+    },
+    {
+      "path": "reports/gse122069-next-control-20261031/initial-resource-check.json",
+      "bytes": 627,
+      "sha256": "afa24f5cdeabb89128c4ad8c77378d3edd267032c4bc2ac7929748da23dd6a78",
+      "git_blob_sha1": "a276231995c71b75c9f72540a41b32fbb3fe958f"
+    },
+    {
+      "path": "reports/gse122069-next-control-20261031/launch_after_verification.py",
+      "bytes": 3106,
+      "sha256": "0df36fe9979e61b7f9604af436ae8ea5d8faed3a9ecc1618990b92db29b48622",
+      "git_blob_sha1": "d1ff0171e7c23294ee1e46ca8186dc1a71698d78"
+    },
+    {
+      "path": "reports/gse122069-next-control-20261031/launcher.json",
+      "bytes": 101,
+      "sha256": "c67eff2b32b19b8e523576427738a38bd2087adf2b80f88bc80c6de03943e558",
+      "git_blob_sha1": "ea71a174406f521146d9baf34e9933918af4d722"
+    },
+    {
+      "path": "reports/gse122069-next-control-20261031/low-count-qc-replay-proposal.json",
+      "bytes": 1524,
+      "sha256": "8ad53231c967a415ef1bec88d099abb3c7d775b5dbb6c8d35bb6f7c33236cdc2",
+      "git_blob_sha1": "755b95c8975183a3babe824de99c4463bce7e9a8"
+    },
+    {
+      "path": "reports/gse122069-next-control-20261031/protocol.json",
+      "bytes": 2757,
+      "sha256": "bb08fce264469429058d25f02767177e59f15e20f715e74ced6bc3b481151966",
+      "git_blob_sha1": "2d120356c9994f58fb113ed3bd7cd6019a72b662"
+    },
+    {
+      "path": "reports/gse122069-next-control-20261031/summary.json",
+      "bytes": 945,
+      "sha256": "71eeabbc01277786fd7a849958c4fdc2eadb127ed6e7bba7d984b7c46052cf87",
+      "git_blob_sha1": "e6426d1f51045d07d2435dd4dfb9f8ec7a33890f"
+    },
+    {
+      "path": "reports/gse122069-next-control-20261031/tests-artifact-closure-20261101.txt",
+      "bytes": 49012,
+      "sha256": "4c83869f5761f19683eca403d6946eda5bd31d8e735214ac59e2ed382202b18d",
+      "git_blob_sha1": "97dc56a907dfff130e854db36f881969c50c91cd"
+    },
+    {
+      "path": "reports/gse122069-next-control-20261031/tests.txt",
+      "bytes": 48320,
+      "sha256": "b67c4f9578bc6d5605346b6c07a93bbd67bd982b5b66aaa9dece039fa3460292",
+      "git_blob_sha1": "5154e059286bf348187308081704e43721f2eb0a"
+    },
+    {
+      "path": "reports/gse122069-next-control-20261031/two-control-technical-qc.json",
+      "bytes": 2923,
+      "sha256": "005d6072d2cbc813dac17132135d23a500f1bb4161a55b62464cc3ba356488f3",
+      "git_blob_sha1": "717da92b1815d30c7bd6de1a171c004f7c40cb02"
+    },
+    {
+      "path": "reports/gse122069-next-control-20261031/two-control-technical-qc.tsv",
+      "bytes": 592,
+      "sha256": "0c6c6f32708572d681455eebac778281fd4646ec194fad88f3e2bc6ea70d4977",
+      "git_blob_sha1": "8dfc746284fe85edab0cabca94ea968fc4e69f65"
+    },
+    {
+      "path": "research/BACKLOG.md",
+      "bytes": 11014,
+      "sha256": "2d7f1af2702bfbc34ee25b455a2cc330feb5a34e656ee611c8507821d0bed066",
+      "git_blob_sha1": "a7fafa7be3f3d93977b2ff9aacbd28a484d05fc5"
+    },
+    {
+      "path": "research/MASTER_EVIDENCE.md",
+      "bytes": 9477,
+      "sha256": "9d2c46508c9ab60c7e1ca4b48c0470af63ac592518541a6a1be39c4691b8283c",
+      "git_blob_sha1": "b9516443603502ad2396bac479e6de1d90582236"
+    },
+    {
+      "path": "research/STATE.md",
+      "bytes": 18495,
+      "sha256": "d119cb4cd5dba24ea8712fe4523c39c53276fbff2ec6551b1c52d09e1eee31a2",
+      "git_blob_sha1": "3036d9ed08645228ae1f1c52d458ad5d6601ac2d"
+    },
+    {
+      "path": "research/plans/2026-11-01-control2-artifact-closure.md",
+      "bytes": 1326,
+      "sha256": "e04afa605ebaf01ca7f1cd1123980288a0e41cf424b478cc1b0f4ae5c0a156b1",
+      "git_blob_sha1": "b518a00c9db951120565e33042c402bb96e69551"
+    },
+    {
+      "path": "scripts/gse122069_control_qc_inventory.py",
+      "bytes": 3512,
+      "sha256": "f50cde5f8d3d2a20e419a4d4f32af42d8b39a50d2f23ffb2ffd2843f6fead25f",
+      "git_blob_sha1": "2815aacd3005660818427ba86f038676f5f43666"
+    },
+    {
+      "path": "tests/test_control2_artifact_recovery.py",
+      "bytes": 4492,
+      "sha256": "412ff8a5691fff25fecc88cbd32bb92997e6f2be2111667153ec3c0cf3d2850a",
+      "git_blob_sha1": "a2d9f527350cc3d3504c8466363f8ff4ba6b666b"
+    }
+  ]
+}

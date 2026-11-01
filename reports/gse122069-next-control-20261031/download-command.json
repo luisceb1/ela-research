@@ -1,0 +1,20 @@
+{
+  "argv": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "scripts/fetch_gse122069_ranges.py",
+    "--manifest",
+    "reports/gse122069-resource-plan/input_manifest.json",
+    "--destination",
+    "/tmp/ela-gse122069-control2-20261031/SRR8144908.fastq.gz",
+    "--report",
+    "reports/gse122069-next-control-20261031/download.json",
+    "--run-accession",
+    "SRR8144908",
+    "--etag",
+    "\"61c999c4-57e8d19ddad40\""
+  ],
+  "run": "SRR8144908",
+  "global_deadline_seconds": 1800,
+  "other_runs_excluded": true,
+  "scope": "actual selected public culture FASTQ download; no alignment started"
+}

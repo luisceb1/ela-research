@@ -1,0 +1,38 @@
+[
+  {
+    "source": "ena",
+    "url": "https://www.ebi.ac.uk/ena/browser/api/xml/SRX4965534",
+    "date": "2026-10-31T10:49:01.925082+00:00",
+    "bytes": 2586,
+    "sha256_original": "02259d848455d41a84aa85bc5a49e6634ade9ca8a789af7d05e8d3ea07b2b1c2",
+    "projection": {
+      "kit": "Illumina TruSeq RNA kit",
+      "published_layout": "50bp single-end",
+      "instrument": "Illumina HiSeq 4000",
+      "author_alignment_software": [
+        "STAR",
+        "RSEM"
+      ],
+      "author_build": "HG38",
+      "scope": "technical facts only; raw contact fields not retained; no declared3prime-only assay found in inspected fields"
+    }
+  },
+  {
+    "source": "geo",
+    "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM3454242&targ=self&form=text&view=quick",
+    "date": "2026-10-31T10:48:59.978539+00:00",
+    "bytes": 2528,
+    "sha256_original": "05c506968dddc7fb1b3efd602e2d9f6463f53523d9562cc6ad75a744b32ee14e",
+    "projection": {
+      "kit": "Illumina TruSeq RNA kit",
+      "published_layout": "50bp single-end",
+      "instrument": "Illumina HiSeq 4000",
+      "author_alignment_software": [
+        "STAR",
+        "RSEM"
+      ],
+      "author_build": "HG38",
+      "scope": "technical facts only; raw contact fields not retained; no declared3prime-only assay found in inspected fields"
+    }
+  }
+]

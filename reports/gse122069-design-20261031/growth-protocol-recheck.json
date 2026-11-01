@@ -1,0 +1,20 @@
+{
+  "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM3454242&targ=self&form=text&view=quick",
+  "date_utc": "2026-10-31T18:27:19.111910+00:00",
+  "reason": "new Reporting Summary medium formulation differs; focused reconciliation, not repeated discovery of protocol",
+  "http_status": 200,
+  "bytes": 2528,
+  "sha256_original": "05c506968dddc7fb1b3efd602e2d9f6463f53523d9562cc6ad75a744b32ee14e",
+  "projection": {
+    "!Sample_geo_accession": "GSM3454242",
+    "!Sample_source_name_ch1": "SH-SY5Y cell line",
+    "growth_protocol_projection": {
+      "medium": "DMEM/F12",
+      "fetal_bovine_serum_percent": 10.0,
+      "penicillin_streptomycin_percent": 1.0,
+      "temperature_C": 37.0,
+      "CO2_percent": 5.0
+    }
+  },
+  "projection_refined_from_previously_fetched_fields_not_new_request": true
+}

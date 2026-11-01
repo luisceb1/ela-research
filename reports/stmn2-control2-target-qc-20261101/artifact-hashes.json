@@ -1,0 +1,255 @@
+{
+  "scope": "Final selected replay artifacts and code; historical manifests remain tied to their original commits. Self excluded. CI exact final head is recorded in GitHub workflow/PR after commit.",
+  "files": {
+    "scripts/gse122069_full_control.py": {
+      "sha256": "0f955e7749e9537dd093d9d41ad7eafaa409a767425742a9542676749145c94e",
+      "bytes": 17919,
+      "git_blob": "7ea0b8cd0f99c45714712ee54372f4718b2b8207"
+    },
+    "scripts/stmn2_target_alignment_qc.py": {
+      "sha256": "6dbeeb76dbd5cb4231b39283ce4851ce8864d825407c35a1f82764236a44c13f",
+      "bytes": 4126,
+      "git_blob": "46afebf6bc8785d5cfa4fc5677267b7ed433d304"
+    },
+    "scripts/replay_stmn2_control2_qc.py": {
+      "sha256": "3cdde91353537751fc11c73ffe77897661362ee57a75a0a51980b602f2d5e7bb",
+      "bytes": 7383,
+      "git_blob": "ed12d610aa0159b0f711b3bce03e6bf8c076dbb5"
+    },
+    "scripts/preflight_stmn2_selected_replay.py": {
+      "sha256": "4f65a28f80f13d7c49cefb3b3ef21a65378af835de3c64193e3bddfcbd49959b",
+      "bytes": 2313,
+      "git_blob": "4e292c2ff7ecdcf18297dfceabb7c1e014269be0"
+    },
+    "scripts/launch_stmn2_selected_replay.py": {
+      "sha256": "9255ae5e05b17401fe759823fc0718bfe14c34e1dfb93e3ce852d3a3e9df8132",
+      "bytes": 2189,
+      "git_blob": "20ef3f443d3832e529bd3e4e9d1a5dab52ab3c42"
+    },
+    "scripts/summarize_stmn2_selected_replay.py": {
+      "sha256": "ca2cb6bb831910fc5017b41e6b74e4cea71305097076681e74af2100ea3b99de",
+      "bytes": 4041,
+      "git_blob": "bbc8a0db9c1acceb551cc2c03a849390d5cd5f4a"
+    },
+    "scripts/write_stmn2_selected_qc_report.py": {
+      "sha256": "3d3cbed3448520a82514c35c69e29ae933d7764234c7238b66a2b31087db4d77",
+      "bytes": 8297,
+      "git_blob": "2100a91863bff8fe5b538e2d9f2a03e063036aa9"
+    },
+    "scripts/verify_stmn2_selected_qc_artifacts.py": {
+      "sha256": "f365dd846f71f3e862864f55e04debe5be0cf23765e9d021c5524b415fc34a0a",
+      "bytes": 2312,
+      "git_blob": "fdd4bf9dfafc75990749988320e7f56dabe8a656"
+    },
+    "tests/test_stmn2_selected_replay.py": {
+      "sha256": "3f0f194cd4150e724d2005e49b2072a3ba9d15073e97c760a1a86ec0d1d5a43c",
+      "bytes": 5616,
+      "git_blob": "3cf83acd356d3183198df1f2db25c9d2dbbfd466"
+    },
+    "research/plans/2026-11-01-stmn2-selected-replay.md": {
+      "sha256": "72d04c09c40d03be09ca0907fb6c488468f775f1910a29731c2aea39a29df9b2",
+      "bytes": 2818,
+      "git_blob": "77f6efe83505e5bf7e30bf32a5ecd2139c049811"
+    },
+    "research/STATE.md": {
+      "sha256": "9413e4288cba9a467f4686870ff78e773c919a8a8a52acf377fa33bbdf7eaf5c",
+      "bytes": 20538,
+      "git_blob": "323e451e44e0c1c526484b18be980b23cd73f19b"
+    },
+    "research/BACKLOG.md": {
+      "sha256": "6f0ed6dc5d494ee34c1950600bf945f65d64db20ace4dbeb53d7e2ece2749ff4",
+      "bytes": 11256,
+      "git_blob": "110d0921725b98d2f740d08e5a08890f642a329c"
+    },
+    "research/MASTER_EVIDENCE.md": {
+      "sha256": "6ab8d8c148005c2ba78125084b77d6b10a5e8973952a3270063bb8bc1027dcae",
+      "bytes": 10654,
+      "git_blob": "8c63b0d8839cff2827e2b097df5d0f208f75f6e9"
+    },
+    "reports/stmn2-control2-target-qc-20261101/CHECKPOINT.md": {
+      "sha256": "cb50d9889b1832faa18c3970283c97ecf6bff553a61335a6550aefeda3173ecb",
+      "bytes": 408,
+      "git_blob": "e0a6d8c5147480311bb9f91391f61a5d9f0de045"
+    },
+    "reports/stmn2-control2-target-qc-20261101/REPORT.md": {
+      "sha256": "e03c6af1914aa55a403858c866ee6d79ade641e0c7b2cdd3d8afd1fa59bdceff",
+      "bytes": 7244,
+      "git_blob": "fa308b9a3b6703e8d2ced24671f054ff8d375ec9"
+    },
+    "reports/stmn2-control2-target-qc-20261101/artifact-verification.json": {
+      "sha256": "a90226759f61b7eea328a381cf985fcb9d522cd4216692c0e91926017c15c588",
+      "bytes": 947,
+      "git_blob": "7a9f50abad18d389c5e9313ddcec786640f3bb3f"
+    },
+    "reports/stmn2-control2-target-qc-20261101/execution/fastq-input-checkpoint.json": {
+      "sha256": "f0c172001c8c8c9e00ae48d7b331706bdae3727927bad99293d633e42a054778",
+      "bytes": 105,
+      "git_blob": "beb64147a74a877e63a62233fce70c8cee6d2133"
+    },
+    "reports/stmn2-control2-target-qc-20261101/execution/fastq_qc.json": {
+      "sha256": "8606e9eaac20129ea413eaf4712445c0a32d9b1126ac033d8066576943ee59cb",
+      "bytes": 1040,
+      "git_blob": "ba4ae830d4a34555860a24b285ca448722f33221"
+    },
+    "reports/stmn2-control2-target-qc-20261101/execution/full-control-results.json": {
+      "sha256": "de49a4579729f97252c8be89a82ea6c77beb38a1f390304ec9361bfc386aa5db",
+      "bytes": 5248,
+      "git_blob": "8b6280525953f352c8e6022d4805a317be9c70cb"
+    },
+    "reports/stmn2-control2-target-qc-20261101/execution/hisat2.log": {
+      "sha256": "b3ce60c626ce8de4a031ed9000c984944874972e033aea4b58ef369d8ec7bdae",
+      "bytes": 215,
+      "git_blob": "59111bf55dc2114917b9ec18379ff086442872fc"
+    },
+    "reports/stmn2-control2-target-qc-20261101/execution/htslib-checkpoint.json": {
+      "sha256": "2abf3e7c1dea1fde08a8757b02b1d4de7c92e9879c25cc12935799fdd3a573b1",
+      "bytes": 6605,
+      "git_blob": "285b8be6486ce04d9da3eb314440119f1313ddc6"
+    },
+    "reports/stmn2-control2-target-qc-20261101/execution/htslib.stderr.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    "reports/stmn2-control2-target-qc-20261101/execution/replay-results.json": {
+      "sha256": "4d582f57aaf3a9e0ea4ee15dd85a59be75e4e678095403549c774ad88efff091",
+      "bytes": 4048,
+      "git_blob": "313983382fc52425dffb0749816c95d26e0c6d79"
+    },
+    "reports/stmn2-control2-target-qc-20261101/execution/text-checkpoint.json": {
+      "sha256": "21431ee5c38cd7fd68c5695602a83c74e329065586f349dcad947df5b029b841",
+      "bytes": 2486,
+      "git_blob": "12ec3ae8a9a7e43fa904f16b99a1cc2ef274793d"
+    },
+    "reports/stmn2-control2-target-qc-20261101/execution-code-manifest.json": {
+      "sha256": "e8faaf5973f49ee08e7c40b9a9b10915233cc36f57b21b2a13cb063f6e64c845",
+      "bytes": 2093,
+      "git_blob": "edc890a8fa6ac4f6b63120b3965e9480a00ea136"
+    },
+    "reports/stmn2-control2-target-qc-20261101/final-resources.json": {
+      "sha256": "77647abb1cf89e50acad6a140590dfa77f87b98fb6e85b9746e91006ade98e98",
+      "bytes": 323,
+      "git_blob": "c6a7d9dd1505f0ed0c1b298bc668a9fefdda5178"
+    },
+    "reports/stmn2-control2-target-qc-20261101/initial-resources.json": {
+      "sha256": "54103ea2d8a1d8403b247c601f173fa7228c4ec932bfc8ce3f6262e0c5c4ae95",
+      "bytes": 212,
+      "git_blob": "4e6ae763c9f336890cc29794266af05916385bdf"
+    },
+    "reports/stmn2-control2-target-qc-20261101/launch-result.json": {
+      "sha256": "9bbc9b7dab51be8f6c37aae5e042d2502b4a8d5eb7ce5ff6f16cd63817921c7e",
+      "bytes": 246,
+      "git_blob": "567c666832006bf0fd9715078c7f753deab40716"
+    },
+    "reports/stmn2-control2-target-qc-20261101/preflight/preflight.json": {
+      "sha256": "644e5e1eb7e2f2f011a24feb83a3afb0a45ec63be20486ae1d6e2ce6fbea07cb",
+      "bytes": 2621,
+      "git_blob": "690a4cbf183c9ee592490cca9c9fdb0533b0a2a3"
+    },
+    "reports/stmn2-control2-target-qc-20261101/preflight/synthetic-htslib-1.json": {
+      "sha256": "453ec5c1378b79ebb1477a03938c077989e1f6de1e21d72228ac3d571de803a5",
+      "bytes": 4693,
+      "git_blob": "b4c6a4f12ab35e94d6106e5b392087e1cdb42f05"
+    },
+    "reports/stmn2-control2-target-qc-20261101/preflight/synthetic-htslib-2.json": {
+      "sha256": "453ec5c1378b79ebb1477a03938c077989e1f6de1e21d72228ac3d571de803a5",
+      "bytes": 4693,
+      "git_blob": "b4c6a4f12ab35e94d6106e5b392087e1cdb42f05"
+    },
+    "reports/stmn2-control2-target-qc-20261101/preflight/synthetic-worker-1.stderr.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    "reports/stmn2-control2-target-qc-20261101/preflight/synthetic-worker-2.stderr.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    "reports/stmn2-control2-target-qc-20261101/replay-command.json": {
+      "sha256": "378ed34519e834a53401feedb3e5268a8ebbd8e67c8f50e9087e0bd0580e9a92",
+      "bytes": 1022,
+      "git_blob": "1c9c4795e978066ecd22e25ddd7360e0886a6591"
+    },
+    "reports/stmn2-control2-target-qc-20261101/replay-progress.txt": {
+      "sha256": "182528a7598ad235f434c1198dc804c4c6580f04a704fa9d5bc5d45cec995176",
+      "bytes": 220,
+      "git_blob": "c1a9954d39492deca5f1f311e1eba9ab0e3bc363"
+    },
+    "reports/stmn2-control2-target-qc-20261101/replay-stderr.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    "reports/stmn2-control2-target-qc-20261101/restore-fastq-command.json": {
+      "sha256": "0a3f26ddf14fe151e6eac292fe37b8b285792b99126d3fe11ea7627f8f693ffd",
+      "bytes": 444,
+      "git_blob": "31305857b08b7fa3d1ccf371c83c3c9da34ee567"
+    },
+    "reports/stmn2-control2-target-qc-20261101/restore-fastq-download.json": {
+      "sha256": "48c7e95f1d99d2b97620cb2a82f8dae76c503ab6fbc9e29a2e924e284e52e501",
+      "bytes": 15205,
+      "git_blob": "84475f4e6cc71a6f3f3584659fdad47901eec7b0"
+    },
+    "reports/stmn2-control2-target-qc-20261101/restore-fastq-headers.json": {
+      "sha256": "4cd4e8f246cc78c7f76e0a39f0bb1c7124c34996cbf0cedb019734b2433e9b75",
+      "bytes": 783,
+      "git_blob": "9ad17c240abebfc63c2fb4caec650dc697b23bf3"
+    },
+    "reports/stmn2-control2-target-qc-20261101/restore-fastq-progress.txt": {
+      "sha256": "68a07708d05c5f7805b9a76e82449b59bcf425495eace88005c1b7ab008bffcc",
+      "bytes": 526,
+      "git_blob": "e2414c9184896f4869409b6df8c90e35d56c3021"
+    },
+    "reports/stmn2-control2-target-qc-20261101/restore-fastq-stderr.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    "reports/stmn2-control2-target-qc-20261101/restore-fastq-verified.json": {
+      "sha256": "2edf8dd3315a15bdb65fb35d6e3fc530acbb8642deec42cba28a5594955804c0",
+      "bytes": 156,
+      "git_blob": "7063431991c5f3896783c4fd70375ee21f7788d2"
+    },
+    "reports/stmn2-control2-target-qc-20261101/restore-index-download.json": {
+      "sha256": "edda91bf7e992bf5ddbeca112da09a642f8aa2ee7e7e2ae58a6406aa2e1bebf1",
+      "bytes": 994,
+      "git_blob": "7151a4d7563826cef8a8f18c2070700a5d71c481"
+    },
+    "reports/stmn2-control2-target-qc-20261101/restore-index-extraction.json": {
+      "sha256": "ae74f76a7f634f024ecd9320a023ce969271e087c490671c0a810969e7e67a6b",
+      "bytes": 1673,
+      "git_blob": "b306ab9f041c329d604237128a2e69c091758feb"
+    },
+    "reports/stmn2-control2-target-qc-20261101/restore-index-verified.json": {
+      "sha256": "480f0aaef6c115f7bb9e5d282f1d0350a026ff803e59170f2dea4734c33a29a0",
+      "bytes": 235,
+      "git_blob": "ae387df624e34f39e1cbf1b179a8450be2a73ad7"
+    },
+    "reports/stmn2-control2-target-qc-20261101/summary.json": {
+      "sha256": "ff8e02a058b2f5c978d88fab0950828e062d288ceb05a5850787e7c09360f5e7",
+      "bytes": 1260,
+      "git_blob": "f3a0b1696c1291133978909dc7dd90d51a6413ce"
+    },
+    "reports/stmn2-control2-target-qc-20261101/target-qc-histograms.tsv": {
+      "sha256": "349d6a62d93cfc3f4769f614e25ddaf5bcecf68e1445c3701e1138e859061b7f",
+      "bytes": 2075,
+      "git_blob": "ab48e890d9483b98ee54191ee7a78b24e1005d77"
+    },
+    "reports/stmn2-control2-target-qc-20261101/tests-final.txt": {
+      "sha256": "b56370ec585b2fb443909d4831a29b0979dded6fee37e3cd388dca2fc034e24e",
+      "bytes": 566,
+      "git_blob": "d5f5bba619604663a9b6c0b40ae748442da426b4"
+    },
+    "reports/stmn2-control2-target-qc-20261101/tests-pre-replay.txt": {
+      "sha256": "4c22da4ff898e0d934218fd214cbd3d5704246501565231c23630f91f08ca78c",
+      "bytes": 566,
+      "git_blob": "ae0578bccff5152a56d312db16b3a2f0c0c8bcb3"
+    },
+    "reports/stmn2-control2-target-qc-20261101/verification-stdout.json": {
+      "sha256": "a90226759f61b7eea328a381cf985fcb9d522cd4216692c0e91926017c15c588",
+      "bytes": 947,
+      "git_blob": "7a9f50abad18d389c5e9313ddcec786640f3bb3f"
+    }
+  }
+}

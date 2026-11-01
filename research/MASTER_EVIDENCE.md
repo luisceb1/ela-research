@@ -38,3 +38,45 @@ ARN total, procesamiento de una unión, isoforma funcional, proteína, recuperac
 Se conservan los informes históricos con sus hashes/entornos/resultados, pero sus próximos pasos antiguos no son el planning vigente. El criterio de entrada para nueva evidencia está en NEXT_STUDY_GATE. Los registros maestros anteriores se archivan en reports/integration-20261030/history.
 
 ELA16: reports/source-selection-20261030/REPORT.md, results.json y manifest research/references/independent_source_gate_20261030.json. Propuesta en PR separado de #30; sus resultados no se suman ni se presentan como incorporados a main antes de merge.
+
+
+## GSE122069: QC del control completo, 31/10/2026
+
+Evidencia técnica exploratoria en reports/gse122069-full-control-20261031:37.518.164lecturas exactas,38bins concordantes texto/CIGAR yPySAM/HTSlib,EOF/CRC válido. Canónica STMN2: 72; críptica: 0 con anclaje≥15. A anclaje≥8: 110/0; 169 solapamientos únicos del exon1. El criterio técnico20se supera paraestecontrol. El mismo primer1M coincide con el piloto anterior; no sumarlecturas/muestras delpiloto o bins.335tests locales no son experimentos. Error de restauración por disco conservado; hashes yreanudación verificados;1373,82s de fase.
+
+No contrasteTDP-43, PSI, efecto, ausencia molecular, nueva replicación externa o validación funcional. No otros5runs procesados. Próxima dependencia: mapa público de6bibliotecas a unidades/lotes antes de nuevo plan de recursos. PR30separado yPR33revisable sinmerge.
+
+
+## GSE122069: gate documental de diseño, 31/10/2026
+
+reports/gse122069-design-20261031:12registros técnicos recuperados yReportingSummary del editor nuevo(SHA256ea09e2569478fecd927fb1340424e1fbbbe32e46d3815beb7c1b433296b7b772), inspección visual/textual yproyección mínima. Seis enlaces técnicos válidos no completan asignación a culturas/lotes/pares. Mantener declaración previa de3réplicas biológicas por condición; no demostrar dependencia por falta demapa. Lote de suero no es lote experimental; diferencia F12+MEM/DMEM-F12 entre fuentes sin resolver. Error inicial SRS/SAMN reparado y6SHAidénticos;349tests yreplayJSON/TSVidéntico, no349experimentos.
+
+SinFASTQ/alineamiento adicional ni inferencia/función. Estimaciones de recursos de losotros5son proyecciones delúnico control observado, no benchmarks. Búsqueda de diseño cerrada sinfuente nueva; siguiente tarea es parametrización sintética, no repetición de control/auditoría. Manifiestos históricos se verifican por commit, incluido167d370para el controlcompleto. PR33revisable, PR30intacto.
+
+
+## GSE122069: preparación de pipeline por accession, 31/10/2026
+
+reports/gse122069-parameterization-20261031:374tests locales,25nuevos deidentidad/conteo/resumen/transporte;argv históricos1M/completo yresumen delprimercontrol preservados. Doscontextos/dosSAMs fijados,28consultas sintéticas únicas, parsersconcordantes yproyecciones repetidas idénticas. Nada deello añade replicación biológica o lecturas reales. Transporte30min con supervisor global; fallo sintético de20ms deja recibo noverificado. Manifiesto fijo, recibos ligados yplanes sinlecturas/red dedescarga.
+
+Siguiente propuesta: SRR8144908completo,54.292.655lecturas, antesverificar cabeceras/ETag/tamaño yrecursos. Aún no descargado, sinSHA propio o resultados. Límite45min de fase nueva propuesto explícitamente, sinampliación automática oejecución deotros4. Diseño biológico siguependiente; noefecto inferencial/PSI/función. PR33revisable sinmerge yPR30intacto. Manifiestos previos vinculados a167d370/fecaeb5.
+
+
+## Segundo control completo y límite de persistencia — 31/10/2026
+
+SRR8144908/GSM3454243:54.292.655lecturas exactas,55bins/dosparsers concordantes,EOF/CRC,salida0,1919,35s. STMN2canónica111/críptica3 a15;154/4 a8;211exon1;denominador114≥20. Tresobservaciones no son moléculas independientes ni efecto TDP-43. Mismafuente queprimercontrol, no cohorte nueva; sinKD/inferencia/función.
+
+Entorno unavailable después deverificar análisis. Resumen/FASTQQC recuperados exactamente porSHA original enCI3.11/3.12(376tests,2nuevos deintegridad). Paquete completo no recuperado:JSONcompleto,arrays/TSV55bins ylogs faltan;checkpoint30Mpreservado. No se ha ejecutado denuevo para aparentar persistencia completa. Verreports/gse122069-next-control-20261031/REPORT.md. Prioridad recuperar originales alvolverentorno, luegoQC de soporte bajo propuesto, sin otros4ni cierre/merge.
+
+
+## Cierre de recuperación delsegundo control —01/11/2026
+
+Se resuelve la carencia operativa histórica del31/10. JSONcompleto original SHA256cb26604160e43cdc04d2eab0a2525fc02f296059d70f5e0d9d731a32d9f6b4a7 recuperado, arrays de ambosparsers/55bins/TSV/logs completos yconcordantes; resumen/FASTQQC mantienen hashes originales.378tests locales/compileallOK, reexportación solo deJSON idéntica. No rerun, muestras oexperimentación nuevos. Informe/acta/manifiesto en reports/gse122069-next-control-20261031.
+
+Resultado científico sin cambios:111canónicas/3crípticas a15,154/4a8,54.292.655lecturas. Soporte bajo no demuestra moléculas/efecto/función; diseño siguependiente. Encargo de recuperación terminado; QC específico solo propuesta posterior. PR33revisable yPR30intacto, sinmerge/cierre.
+
+
+## QC seleccionado del mismo segundo control — 01/11/2026
+
+Plan previo fijado en920414d y ejecución única de cinco bloques:4.292.655lecturas realineadas,371,380s≤600; fuente54.292.655 escaneada para ordinales yEOF/CRC. Cuentas esperadas13/3a15 y15/4a8 reproducidas; histogramas texto/CIGAR frentePySAM/HTSlib concordantes. Cuatro observaciones crípticas a8 conMAPQ60,NM0,AS0,softclip0; tres incluidas a15. La adicional tiene ancla derecha13. Anclas e histogramas marginales completos en reports/stmn2-control2-target-qc-20261101; no reconstrucción por lectura.
+
+Reproducibilidad técnica, no replicación externa ni validación funcional. Selección post hoc enriquecida, sin tasas/PSI/efecto. Flagduplicado0 no acredita moléculas; sinUMI. Control completo sigue111/3 y154/4,JSON SHA256cb266041… intacto.392tests locales,14nuevos de software, preflightreal y6rechazos sobre copias alteradas; exportadores idénticos. Un rangoHTTP truncado recuperado por transporte, sin reintento de replay o aumento de presupuesto. Mapa biológico siguependiente, declaración3/3conservada, sin inferencia o nuevas bibliotecas. Siguiente puerta: revisión delPR33; PR30 separado.

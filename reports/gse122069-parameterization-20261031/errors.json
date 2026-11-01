@@ -1,0 +1,7 @@
+{
+  "unexpected_errors": [],
+  "expected_configuration_rejections": "negative-controls.json",
+  "synthetic_global_timeout": "synthetic-transport-timeout.json",
+  "timeout_is_software_control_not_failed_real_download": true,
+  "all_final_tests_pass": true
+}

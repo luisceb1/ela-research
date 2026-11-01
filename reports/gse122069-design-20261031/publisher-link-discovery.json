@@ -1,0 +1,16 @@
+{
+  "url": "https://www.nature.com/articles/s41593-018-0293-z",
+  "date_utc": "2026-10-31T18:21:27.937310+00:00",
+  "status": 200,
+  "bytes": 433520,
+  "sha256_original": "aeb1e5d839ee0725c5b974ace36bfa5d7897d7e4e0e394d8478e7925987719f4",
+  "technical_supplement_links": [
+    "https://static-content.springer.com/esm/art%3A10.1038%2Fs41593-018-0293-z/MediaObjects/41593_2018_293_MOESM1_ESM.pdf",
+    "https://static-content.springer.com/esm/art%3A10.1038%2Fs41593-018-0293-z/MediaObjects/41593_2018_293_MOESM2_ESM.pdf",
+    "https://static-content.springer.com/esm/art%3A10.1038%2Fs41593-018-0293-z/MediaObjects/41593_2018_293_MOESM3_ESM.xlsx",
+    "https://static-content.springer.com/esm/art%3A10.1038%2Fs41593-018-0293-z/MediaObjects/41593_2018_293_MOESM4_ESM.xlsx",
+    "https://static-content.springer.com/esm/art%3A10.1038%2Fs41593-018-0293-z/MediaObjects/41593_2018_293_MOESM5_ESM.xlsx",
+    "https://static-content.springer.com/esm/art%3A10.1038%2Fs41593-018-0293-z/MediaObjects/41593_2018_293_MOESM6_ESM.xlsx",
+    "https://static-content.springer.com/esm/art%3A10.1038%2Fs41593-018-0293-z/MediaObjects/41593_2018_293_MOESM7_ESM.xlsx"
+  ]
+}

@@ -1,0 +1,2 @@
+# Only required for real independent HTSlib comparison; offline tests use no pysam.
+pysam==0.23.3

@@ -1,0 +1,20 @@
+{
+  "genome_8": {
+    "concordant": true,
+    "events": 18
+  },
+  "genome_15": {
+    "concordant": true,
+    "events": 16
+  },
+  "mini_8": {
+    "concordant": true,
+    "events": 1
+  },
+  "mini_15": {
+    "concordant": true,
+    "events": 1
+  },
+  "current_synthetic_contract_unchanged": true,
+  "policies_fixed_before_real_fastq": true
+}

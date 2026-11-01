@@ -1,0 +1,54 @@
+{
+  "cases": [
+    {
+      "input": "reports/hisat2-synthetic-gate-20261031/genome.sam",
+      "sha256": "0c1d4cf53d5ced6628a48646fed4dcd23f793a6838742a5b85906cdfee10d9b2",
+      "queries": 26,
+      "sam_records": 26,
+      "counts": {
+        "8": {
+          "eligible_intron_observations": 18,
+          "canonical": 8,
+          "cryptic": 10
+        },
+        "15": {
+          "eligible_intron_observations": 16,
+          "canonical": 8,
+          "cryptic": 8
+        }
+      },
+      "bin_reads": [
+        7,
+        7,
+        7,
+        5
+      ],
+      "concordant": true
+    },
+    {
+      "input": "reports/hisat2-synthetic-gate-20261031/mini.sam",
+      "sha256": "6516f47445b93c81edd21958d78b1db5dec4cf7abc55bb06e1c8de18b688cdbb",
+      "queries": 2,
+      "sam_records": 3,
+      "counts": {
+        "8": {
+          "eligible_intron_observations": 1,
+          "canonical": 0,
+          "cryptic": 0
+        },
+        "15": {
+          "eligible_intron_observations": 1,
+          "canonical": 0,
+          "cryptic": 0
+        }
+      },
+      "bin_reads": [
+        2
+      ],
+      "concordant": true
+    }
+  ],
+  "restored_index_files_match_previous": true,
+  "gzip_crc_validated": true,
+  "scope": "synthetic parser preflight, no real reads processed by this step"
+}

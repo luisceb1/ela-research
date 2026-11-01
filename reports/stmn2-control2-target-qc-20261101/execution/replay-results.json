@@ -1,0 +1,207 @@
+{
+  "replay_complete": true,
+  "complete_source_library_realigned": false,
+  "scope": "post hoc technical QC, same SRR8144908; no rates, effect, PSI or new replication",
+  "source_reads": 54292655,
+  "selected_reads": 4292655,
+  "intervals_1based_inclusive": [
+    [
+      1,
+      1000000
+    ],
+    [
+      17000001,
+      18000000
+    ],
+    [
+      37000001,
+      38000000
+    ],
+    [
+      42000001,
+      43000000
+    ],
+    [
+      54000001,
+      54292655
+    ]
+  ],
+  "expected_target_counts": {
+    "15": {
+      "canonical": 13,
+      "cryptic": 3
+    },
+    "8": {
+      "canonical": 15,
+      "cryptic": 4
+    }
+  },
+  "coverage_policy": "whole source library already passed >=20; selection-enriched subset is not assessed for coverage",
+  "missing_tag_policy": "missing distinct from zero; duplicate flag is not molecular deduplication",
+  "independent_counts_and_histograms_concordant": true,
+  "target_counts": {
+    "15": {
+      "canonical": 13,
+      "cryptic": 3
+    },
+    "8": {
+      "canonical": 15,
+      "cryptic": 4
+    }
+  },
+  "elapsed_seconds": 371.3803088290001,
+  "target_qc_histograms": {
+    "8": {
+      "canonical": {
+        "observations": 15,
+        "histograms": {
+          "left_anchor": {
+            "28": 2,
+            "16": 2,
+            "12": 1,
+            "37": 1,
+            "27": 2,
+            "15": 3,
+            "31": 2,
+            "35": 1,
+            "30": 1
+          },
+          "right_anchor": {
+            "23": 2,
+            "34": 1,
+            "39": 1,
+            "11": 1,
+            "33": 1,
+            "24": 2,
+            "36": 2,
+            "20": 1,
+            "16": 1,
+            "19": 1,
+            "21": 1,
+            "35": 1
+          },
+          "MAPQ": {
+            "60": 15
+          },
+          "NM": {
+            "0": 15
+          },
+          "AS": {
+            "-2": 13,
+            "-4": 2
+          },
+          "softclip_bases": {
+            "0": 13,
+            "1": 2
+          },
+          "duplicate_flag": {
+            "0": 15
+          }
+        }
+      },
+      "cryptic": {
+        "observations": 4,
+        "histograms": {
+          "left_anchor": {
+            "21": 2,
+            "37": 1,
+            "22": 1
+          },
+          "right_anchor": {
+            "30": 2,
+            "13": 1,
+            "29": 1
+          },
+          "MAPQ": {
+            "60": 4
+          },
+          "NM": {
+            "0": 4
+          },
+          "AS": {
+            "0": 4
+          },
+          "softclip_bases": {
+            "0": 4
+          },
+          "duplicate_flag": {
+            "0": 4
+          }
+        }
+      }
+    },
+    "15": {
+      "canonical": {
+        "observations": 13,
+        "histograms": {
+          "left_anchor": {
+            "28": 2,
+            "16": 2,
+            "27": 2,
+            "15": 3,
+            "31": 2,
+            "35": 1,
+            "30": 1
+          },
+          "right_anchor": {
+            "23": 2,
+            "34": 1,
+            "33": 1,
+            "24": 2,
+            "36": 2,
+            "20": 1,
+            "16": 1,
+            "19": 1,
+            "21": 1,
+            "35": 1
+          },
+          "MAPQ": {
+            "60": 13
+          },
+          "NM": {
+            "0": 13
+          },
+          "AS": {
+            "-2": 12,
+            "-4": 1
+          },
+          "softclip_bases": {
+            "0": 12,
+            "1": 1
+          },
+          "duplicate_flag": {
+            "0": 13
+          }
+        }
+      },
+      "cryptic": {
+        "observations": 3,
+        "histograms": {
+          "left_anchor": {
+            "21": 2,
+            "22": 1
+          },
+          "right_anchor": {
+            "30": 2,
+            "29": 1
+          },
+          "MAPQ": {
+            "60": 3
+          },
+          "NM": {
+            "0": 3
+          },
+          "AS": {
+            "0": 3
+          },
+          "softclip_bases": {
+            "0": 3
+          },
+          "duplicate_flag": {
+            "0": 3
+          }
+        }
+      }
+    }
+  }
+}

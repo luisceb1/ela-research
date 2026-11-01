@@ -1,0 +1,42 @@
+{
+  "status": "selected_technical_replay_complete",
+  "source_run": "SRR8144908",
+  "source_library_reads": 54292655,
+  "selected_reads_realigned": 4292655,
+  "target_counts": {
+    "15": {
+      "canonical": 13,
+      "cryptic": 3
+    },
+    "8": {
+      "canonical": 15,
+      "cryptic": 4
+    }
+  },
+  "histogram_parsers_concordant": true,
+  "original_full_library_result_unchanged": true,
+  "original_full_library_result_sha256": "cb26604160e43cdc04d2eab0a2525fc02f296059d70f5e0d9d731a32d9f6b4a7",
+  "full_library_counts_not_replaced": {
+    "15": {
+      "canonical": 111,
+      "cryptic": 3
+    },
+    "8": {
+      "canonical": 154,
+      "cryptic": 4
+    }
+  },
+  "gzip_eof_crc_validated": true,
+  "elapsed_seconds_including_identity_checks": 371.3803088290001,
+  "biological_replicates_added": 0,
+  "not_assessed": [
+    "rates",
+    "effect",
+    "molecular fraction",
+    "clinical implication",
+    "functional validation"
+  ],
+  "selected_subset_minimum_denominator_not_applied": true,
+  "generic_engine_coverage_boolean_scope": "Selected stream only; denominator16<20 does not reverse whole-source denominator114>=20. No subset coverage criterion used.",
+  "histograms_sha256": "349d6a62d93cfc3f4769f614e25ddaf5bcecf68e1445c3701e1138e859061b7f"
+}

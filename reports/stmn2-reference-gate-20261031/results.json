@@ -1,0 +1,64 @@
+{
+  "evidence": "technical reference QC; providers share assembly, not independent biological replication",
+  "full_fasta_verified": false,
+  "indexed_reference_verified": false,
+  "pilot_ready": false,
+  "raw_reads_processed": 0,
+  "sequence_windows_pass": true,
+  "sites": [
+    {
+      "assembly": "GRCh38/hg38",
+      "chrom": "chr8",
+      "dna": "AGCAATGGGTAAGGCA",
+      "motif": "GT",
+      "motif_start_0based": 79611214,
+      "normalized_sha256": "6781cd945e218e25b2a3689cbd8be84bd9e0dd79cf56a9ec6b220b1be00c7d58",
+      "offset_controls": {
+        "-1": "GG",
+        "0": "GT",
+        "1": "TA"
+      },
+      "same_sequence_two_providers": true,
+      "site": "donor",
+      "strand": "+",
+      "window_end_exclusive": 79611222,
+      "window_start_0based": 79611206
+    },
+    {
+      "assembly": "GRCh38/hg38",
+      "chrom": "chr8",
+      "dna": "TATTGCAGGACTCGGC",
+      "motif": "AG",
+      "motif_start_0based": 79616819,
+      "normalized_sha256": "7b8a1a75958acea8e1b2936ed774b63701e559362f2cbd0061f72c57a83a343c",
+      "offset_controls": {
+        "-1": "CA",
+        "0": "AG",
+        "1": "GG"
+      },
+      "same_sequence_two_providers": true,
+      "site": "cryptic",
+      "strand": "+",
+      "window_end_exclusive": 79616829,
+      "window_start_0based": 79616813
+    },
+    {
+      "assembly": "GRCh38/hg38",
+      "chrom": "chr8",
+      "dna": "CATTTCAGCCTACAAG",
+      "motif": "AG",
+      "motif_start_0based": 79636799,
+      "normalized_sha256": "6fcb4c95ec9df3067f18a069253d5a54e03c2db90d94705a1a852db25842fcb4",
+      "offset_controls": {
+        "-1": "CA",
+        "0": "AG",
+        "1": "GC"
+      },
+      "same_sequence_two_providers": true,
+      "site": "canonical",
+      "strand": "+",
+      "window_end_exclusive": 79636809,
+      "window_start_0based": 79636793
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "before": {
+    "data/cache/stmn2-exon1-mappability-20261031/tiles.sam": "d08e1928d96d6907c8823dd10af88a6a38486a7db786df4644c1e4c68107db55",
+    "reports/stmn2-exon1-mappability-20261031/results.json": "e0459ff736ab6d39f455a13ce57f5b9cfc0e09ef08009463ed7c5acb91613f67",
+    "reports/stmn2-exon1-mappability-20261031/observations.tsv": "924434b022219d5f97d495b7e06ec2bcc910583842699f126cdac4963669f981"
+  },
+  "after": {
+    "data/cache/stmn2-exon1-mappability-20261031/tiles.sam": "d08e1928d96d6907c8823dd10af88a6a38486a7db786df4644c1e4c68107db55",
+    "reports/stmn2-exon1-mappability-20261031/results.json": "e0459ff736ab6d39f455a13ce57f5b9cfc0e09ef08009463ed7c5acb91613f67",
+    "reports/stmn2-exon1-mappability-20261031/observations.tsv": "924434b022219d5f97d495b7e06ec2bcc910583842699f126cdac4963669f981"
+  },
+  "identical_SAM_results_tables": true,
+  "elapsed_seconds": 11.248065774001589,
+  "maxrss_child_kib": 4633912,
+  "same_synthetic_queries_not_new_experiments": true
+}

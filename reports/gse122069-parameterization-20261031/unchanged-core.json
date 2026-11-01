@@ -1,0 +1,35 @@
+{
+  "base_commit": "fecaeb5d3b66e2766afefaca13e25fab90a326b3",
+  "verified_blob_pairs": [
+    [
+      "scripts/audit_stmn2_junction_contract.py",
+      "f460cbb844d4e927b88d5f34a73871e2d396ee47"
+    ],
+    [
+      "scripts/hisat2_synthetic_gate.py",
+      "fef8ab13e765d985cefc77b55a519d7f222ef67c"
+    ],
+    [
+      "scripts/gse122069_pilot.py",
+      "00a5fafbea41602379ad311965aacc40c7884a83"
+    ],
+    [
+      "scripts/fetch_gse122069_pilot.py",
+      "51e1eab5aefd4b32b039c0caeadf02ad9110cd49"
+    ],
+    [
+      "reports/hisat2-synthetic-gate-20261031/genome.sam",
+      "abc54e25b5d44070b683329d566d473f07579d10"
+    ],
+    [
+      "reports/hisat2-synthetic-gate-20261031/mini.sam",
+      "e75d0fa331bd4bc5e50109ff7fe444ef65b96485"
+    ],
+    [
+      "reports/gse122069-resource-plan/input_manifest.json",
+      "107b25d5f6b8d9a5bbc8bd580af9d9dd7f22dc71"
+    ]
+  ],
+  "historical_metadata_inputs_verified": 10,
+  "no_real_fastq_or_index_bytes_read": true
+}

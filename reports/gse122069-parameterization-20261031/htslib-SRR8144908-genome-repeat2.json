@@ -1,0 +1,127 @@
+{
+  "complete_library": true,
+  "completed_bins": [
+    {
+      "first_read": 1,
+      "last_read": 7,
+      "reads": 7,
+      "sam_records": 7,
+      "primary_records": 7,
+      "counts": {
+        "8": {
+          "eligible_intron_observations": 5,
+          "canonical": 0,
+          "cryptic": 5
+        },
+        "15": {
+          "eligible_intron_observations": 4,
+          "canonical": 0,
+          "cryptic": 4
+        }
+      }
+    },
+    {
+      "first_read": 8,
+      "last_read": 14,
+      "reads": 7,
+      "sam_records": 7,
+      "primary_records": 7,
+      "counts": {
+        "8": {
+          "eligible_intron_observations": 7,
+          "canonical": 2,
+          "cryptic": 5
+        },
+        "15": {
+          "eligible_intron_observations": 6,
+          "canonical": 2,
+          "cryptic": 4
+        }
+      }
+    },
+    {
+      "first_read": 15,
+      "last_read": 21,
+      "reads": 7,
+      "sam_records": 7,
+      "primary_records": 7,
+      "counts": {
+        "8": {
+          "eligible_intron_observations": 3,
+          "canonical": 3,
+          "cryptic": 0
+        },
+        "15": {
+          "eligible_intron_observations": 3,
+          "canonical": 3,
+          "cryptic": 0
+        }
+      }
+    },
+    {
+      "first_read": 22,
+      "last_read": 26,
+      "reads": 5,
+      "sam_records": 5,
+      "primary_records": 5,
+      "counts": {
+        "8": {
+          "eligible_intron_observations": 3,
+          "canonical": 3,
+          "cryptic": 0
+        },
+        "15": {
+          "eligible_intron_observations": 3,
+          "canonical": 3,
+          "cryptic": 0
+        }
+      }
+    }
+  ],
+  "reads": 26,
+  "sam_records": 26,
+  "counts": {
+    "8": {
+      "eligible_intron_observations": 18,
+      "canonical": 8,
+      "cryptic": 10
+    },
+    "15": {
+      "eligible_intron_observations": 16,
+      "canonical": 8,
+      "cryptic": 8
+    }
+  },
+  "locus_bins": [
+    {
+      "primary_block_overlap": 7,
+      "unique_mapq_block_overlap": 7,
+      "exon1_unique_overlap": 5,
+      "unique_spliced_reads": 7
+    },
+    {
+      "primary_block_overlap": 7,
+      "unique_mapq_block_overlap": 7,
+      "exon1_unique_overlap": 7,
+      "unique_spliced_reads": 7,
+      "exon2_unique_overlap": 2
+    },
+    {
+      "primary_block_overlap": 3,
+      "unique_mapq_block_overlap": 3,
+      "exon1_unique_overlap": 3,
+      "exon2_unique_overlap": 3,
+      "unique_spliced_reads": 3
+    },
+    {
+      "primary_block_overlap": 4,
+      "unique_mapq_block_overlap": 4,
+      "exon1_unique_overlap": 4,
+      "exon2_unique_overlap": 3,
+      "unique_spliced_reads": 3
+    }
+  ],
+  "pysam": "0.23.3",
+  "htslib": "1.21",
+  "self_maxrss_kib": 27136
+}

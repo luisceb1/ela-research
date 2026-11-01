@@ -1,0 +1,31 @@
+{
+  "author_declared_n_per_condition": 3,
+  "author_declaration_is_known_prior_not_a_new_sample_map": true,
+  "evidence_sources": {
+    "reporting_summary": {
+      "url": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41593-018-0293-z/MediaObjects/41593_2018_293_MOESM2_ESM.pdf",
+      "sha256": "ea09e2569478fecd927fb1340424e1fbbbe32e46d3815beb7c1b433296b7b772",
+      "pages": [
+        1,
+        2,
+        3
+      ]
+    },
+    "prior_author_n3": {
+      "repo_path": "reports/gse122069-resource-plan/PLAN.md",
+      "sha256": "0348e3f97590450b04c7e5adee48566d0e8d904a0404f19efa590ead560692ec",
+      "primary_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6348009/",
+      "locator": "RNA sequencing; Figure1b; prior evidence, not newly discovered"
+    }
+  },
+  "library_map": {},
+  "batch_structure_documented": false,
+  "pairing_structure_documented": false,
+  "reason": "Neither the bounded technical accession records nor Reporting Summary supplies explicit culture/experimental-batch/pair assignments for each GSM. Absence of this map does not refute the authors independence declaration.",
+  "new_source_facts": {
+    "general_independent_repetition_statement_is_not_a_six_library_map": true,
+    "serum_lot_is_not_experiment_or_sequencing_batch": true,
+    "protocol_medium_discrepancy_unresolved": true
+  },
+  "review_method": "technical XML allowlist; PDF visual review p1,p2 and cell-culture section p3 plus text token checks; no clinical tables read"
+}

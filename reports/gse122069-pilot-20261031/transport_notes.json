@@ -1,0 +1,8 @@
+{
+  "initial_request_report": "download.json",
+  "initial_result": "HTTP200 expected size but0bytes received before read timeout",
+  "fallback": "Same ENA object using exact HTTP206 ranges of16MiB,2connections,If-Range same ETag and distinct query key; final MD5 of assembled complete file required",
+  "not_accepted_as_complete": "partial file size or range progress never authorizes FASTQ processing",
+  "hypothesis_and_sample_selection_unchanged": true,
+  "privacy": "No read identifiers or sequences exported from real FASTQ; only public accession/group and aggregate technical metrics"
+}

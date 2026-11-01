@@ -1,0 +1,86 @@
+{
+  "official_download_page": "https://daehwankimlab.github.io/hisat2/download/",
+  "url": "https://genome-idx.s3.amazonaws.com/hisat/hg38_genome.tar.gz",
+  "pinned_url": "https://genome-idx.s3.amazonaws.com/hisat/hg38_genome.tar.gz?versionId=8z.MUbL_W4wij.Nmcia5c4mT7tlz0cU.",
+  "size_bytes": 4355786349,
+  "etag": "\"2b99c030ca493d30bd4b12bf8e42327b-520\"",
+  "etag_is_md5": false,
+  "s3_version_id": "8z.MUbL_W4wij.Nmcia5c4mT7tlz0cU.",
+  "last_modified": "Thu, 25 Jun 2020 20:47:53 GMT",
+  "http_status": 200,
+  "downloaded": true,
+  "archive_sha256": "1848784403a0fb3ee7735b2f891d8be96fd2782e08aed3d8212d922666f077a5",
+  "index_accepted": false,
+  "candidate_software": {
+    "tag": "v2.2.3",
+    "commit": "0d244324f98de541bce04d45c75e83bc3522f7f4",
+    "executed": true
+  },
+  "remaining": [
+    "Compile/version-test aligner2.2.3; synthetic controls for unique/multi mappings, XS/NH/MAPQ and anchors",
+    "Compare junction extraction with independently implemented tool",
+    "Only then decide pilot predeclared in GSE122069 resource plan; no biological contrast from pilot"
+  ],
+  "resource_limits": {
+    "ram_bytes": 6442450944,
+    "additional_disk_bytes": 16106127360,
+    "threads": 2,
+    "reserve_disk_bytes": 8589934592
+  },
+  "source_scope": "HEAD metadata only, not archive integrity or compatibility verification",
+  "reference_gate_pass": true,
+  "index_accepted_for_synthetic_controls_only": true,
+  "pilot_ready": false,
+  "full_external_sequence_equality_verified": false,
+  "verified_files": [
+    {
+      "name": "hg38/make_hg38.sh",
+      "bytes": 1292,
+      "sha256": "9e29e570495a5b237fce579bd5b2059f600ff061cdbc12c2438623e9ffad27d2"
+    },
+    {
+      "name": "hg38/genome.8.ht2",
+      "bytes": 8,
+      "sha256": "7c9fa136d4413fa6173637e883b6998d32e1d675f88cddff9dcbcf331820f4b8"
+    },
+    {
+      "name": "hg38/genome.5.ht2",
+      "bytes": 1342456349,
+      "sha256": "07400123a5033f85fd0152aae0a513771b5f5ba1afe878839bd9624b483fa503"
+    },
+    {
+      "name": "hg38/genome.7.ht2",
+      "bytes": 8,
+      "sha256": "7c9fa136d4413fa6173637e883b6998d32e1d675f88cddff9dcbcf331820f4b8"
+    },
+    {
+      "name": "hg38/genome.6.ht2",
+      "bytes": 776249234,
+      "sha256": "4a8f0d36ac6e459bbf682a5979de5e5d4883cd42a22866093d730797c87e35ae"
+    },
+    {
+      "name": "hg38/genome.4.ht2",
+      "bytes": 762328946,
+      "sha256": "2f5112d9a0c0855eea028ea4181e2af9dd261cdadac3eff541415dd5eb4ea413"
+    },
+    {
+      "name": "hg38/genome.3.ht2",
+      "bytes": 15065,
+      "sha256": "d7ecd66f14894242cb5153471028bb4f94bebd920c2c025c08ec24bcb13e6df5"
+    },
+    {
+      "name": "hg38/genome.1.ht2",
+      "bytes": 1020663384,
+      "sha256": "75c666c1bdcc6bd346a751e7277d26ce518c1e9a2612c301317248e3a4ee6014"
+    },
+    {
+      "name": "hg38/genome.2.ht2",
+      "bytes": 762328952,
+      "sha256": "ee1502737c1fe27706a91179584f99146102da7eac08ff5f76e9657476af619d"
+    }
+  ],
+  "original_candidate": "reports/stmn2-reference-gate-20261031/index_candidate.json",
+  "observed_maxrss_child_kib": 4758644,
+  "archive_plus_extracted_bytes": 9019829587,
+  "software_execution_scope": "hisat2-inspect-s only, not aligner"
+}

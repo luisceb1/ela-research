@@ -1,0 +1,13 @@
+{
+  "python": "3.12.14",
+  "timestamp_utc": "2026-10-31T18:59:57.661947+00:00",
+  "free_disk_bytes_observed": 56074534912,
+  "historical_disk_baseline_bytes_preserved": 63427059712,
+  "disk_limit_bytes": 16106127360,
+  "disk_reserve_bytes": 8589934592,
+  "binary_path_exists": true,
+  "index_member_paths_exist": true,
+  "next_control_fastq_path_exists": false,
+  "full_index_and_fastq_not_rehashed_or_aligned_in_this_phase": true,
+  "new_real_fastq_reads_processed": 0
+}

@@ -1,0 +1,33 @@
+{
+  "scope": "Post-analysis software review; original scientific manifests remain commit-bound and unchanged",
+  "files": {
+    "scripts/stmn2_target_alignment_qc.py": {
+      "sha256": "f79d846d82e06ab7afe07bfde74d27be2b67dc8afc773d99fc76ec9d0ba5179f",
+      "git_blob": "9e0bc37c06cda7f2da418bd8e1a0b8c87e969606"
+    },
+    "tests/test_stmn2_selected_replay.py": {
+      "sha256": "20128def2305ef993fe93a7a534842d80e0963e62da21f7b4069b9a36590019f",
+      "git_blob": "595a0a179728bb3335f80f4f5b79521f1923ec4b"
+    },
+    "research/STATE.md": {
+      "sha256": "95d21b88e1c3a3fe04f0796be7796dcf9421697a9df7da6c1e840b2c0e056581",
+      "git_blob": "2ba93b8edc8b4d366dc15a7c19e64d94ad2e1061"
+    },
+    "research/BACKLOG.md": {
+      "sha256": "1259af8c1e6df0a1b9f1f7ddeb728d72b9b3f8748f1e5299a6fc76e88a83defc",
+      "git_blob": "cef580dfb459def3487c40ec6a713a49fb1491ec"
+    },
+    "reports/pr33-review-20261101/REPORT.md": {
+      "sha256": "b1963b3d5c1ea24f7605ccce456cdac0eac87a1131e3d62c6cd02661fd4fee80",
+      "git_blob": "a381fde1a36fe4f14d30b0ac6d29d6384b80a401"
+    },
+    "reports/pr33-review-20261101/results.json": {
+      "sha256": "e5d07baa5586958cd7c272b6beeda42829e614f1889257395563846a7ee187dc",
+      "git_blob": "1707bf049be450f746863d016f91d8b5b2995e55"
+    },
+    "reports/pr33-review-20261101/tests.txt": {
+      "sha256": "8f01d5cd4abb387a367a304a78ef472bb8d3a1c50664d905c7fccb014261c339",
+      "git_blob": "10069398f7cc3fd5259b56d1c113ddec5c43787c"
+    }
+  }
+}

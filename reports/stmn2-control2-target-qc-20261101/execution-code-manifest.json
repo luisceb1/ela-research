@@ -1,0 +1,51 @@
+{
+  "code_commit": "920414df9a8ea96ab580447f31502b1557575282",
+  "remote_git_blobs_verified_before_real_replay": true,
+  "files": {
+    "scripts/audit_stmn2_junction_contract.py": {
+      "sha256": "41d72fadcaabe1b8eea24424bd852fa736ab7ddb164d80af668a43a4e1336299",
+      "git_blob": "f460cbb844d4e927b88d5f34a73871e2d396ee47",
+      "bytes": 8225
+    },
+    "scripts/fetch_gse122069_pilot.py": {
+      "sha256": "68b906cd31dd760bf08f17e566b2685cccbd75d305fd566b60f76e811b95a336",
+      "git_blob": "51e1eab5aefd4b32b039c0caeadf02ad9110cd49",
+      "bytes": 2934
+    },
+    "scripts/gse122069_full_control.py": {
+      "sha256": "0f955e7749e9537dd093d9d41ad7eafaa409a767425742a9542676749145c94e",
+      "git_blob": "7ea0b8cd0f99c45714712ee54372f4718b2b8207",
+      "bytes": 17919
+    },
+    "scripts/gse122069_pilot.py": {
+      "sha256": "7600eb28b5251300853ae50464d3022128e3e1c0fe86c93c352ec28cf3d9bece",
+      "git_blob": "00a5fafbea41602379ad311965aacc40c7884a83",
+      "bytes": 12923
+    },
+    "scripts/gse122069_run_config.py": {
+      "sha256": "d895c1e5271d4ae88c88038d9d32c3cd0fcc936b47a37e17d9ef6766123213d0",
+      "git_blob": "520e09ff21c2dcce752bade6c22f8fb4187da0c6",
+      "bytes": 3512
+    },
+    "scripts/hisat2_synthetic_gate.py": {
+      "sha256": "84d18d33c3648ab5b8921cc2ebef2819a9a890f120cc2ed0e8854527b771b7e3",
+      "git_blob": "fef8ab13e765d985cefc77b55a519d7f222ef67c",
+      "bytes": 8639
+    },
+    "scripts/preflight_stmn2_selected_replay.py": {
+      "sha256": "4f65a28f80f13d7c49cefb3b3ef21a65378af835de3c64193e3bddfcbd49959b",
+      "git_blob": "4e292c2ff7ecdcf18297dfceabb7c1e014269be0",
+      "bytes": 2313
+    },
+    "scripts/replay_stmn2_control2_qc.py": {
+      "sha256": "3cdde91353537751fc11c73ffe77897661362ee57a75a0a51980b602f2d5e7bb",
+      "git_blob": "ed12d610aa0159b0f711b3bce03e6bf8c076dbb5",
+      "bytes": 7383
+    },
+    "scripts/stmn2_target_alignment_qc.py": {
+      "sha256": "6dbeeb76dbd5cb4231b39283ce4851ce8864d825407c35a1f82764236a44c13f",
+      "git_blob": "46afebf6bc8785d5cfa4fc5677267b7ed433d304",
+      "bytes": 4126
+    }
+  }
+}

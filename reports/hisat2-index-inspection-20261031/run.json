@@ -1,0 +1,21 @@
+{
+  "python": "3.12.14",
+  "base_pr33": "da189cf79e4d2b4e3bcb8aa83c39f162b8848543",
+  "main": "9c82795df2dfdb1be142169ee8733db70dbde92f",
+  "randomness": "none",
+  "raw_reads_processed": 0,
+  "reference_gate_pass": true,
+  "download_seconds": 111.69012436399998,
+  "extract_seconds": 31.27330121399973,
+  "inspect_seconds": 44.83300198000006,
+  "inspect_maxrss_child_kib": 4758644,
+  "contigs": 455,
+  "archive_sha256": "1848784403a0fb3ee7735b2f891d8be96fd2782e08aed3d8212d922666f077a5",
+  "disk_free_bytes": 51695079424,
+  "reported_hash_scope": "Self-computed archive and per-file hashes; no independently published archive SHA supplied",
+  "code_sha256": {
+    "scripts/inspect_hisat2_index.py": "c43b5c160f1d1effbc276c31154f7aa07bc03fd4b656600e6849544e28525bdf",
+    "scripts/compare_hisat2_reference.py": "122f9ecddb42bd55fa57676dc6783a6f27d858166acd22430f081cc4419526cc",
+    "tests/test_hisat2_index_inspection.py": "b50b66571b6b2f0f485a96185814024ffc12adde39c7f78ea21eb1ac6298ed7e"
+  }
+}

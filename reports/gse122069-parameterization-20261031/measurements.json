@@ -1,0 +1,170 @@
+[
+  {
+    "repeat": 1,
+    "configuration_run": "SRR8144907",
+    "fixture": "genome",
+    "worker_maxrss_kib": 27092,
+    "stderr": "",
+    "worker_command": [
+      "prlimit",
+      "--as=268435456",
+      "--",
+      "/workspace/scratch/a30d50c208ec/ela-full-control-20261031/data/tools/venv/bin/python",
+      "/workspace/scratch/a30d50c208ec/ela-full-control-20261031/scripts/gse122069_full_control.py",
+      "htslib",
+      "--out",
+      "reports/gse122069-parameterization-20261031/htslib-SRR8144907-genome-repeat1.json",
+      "--max-reads",
+      "26",
+      "--bin-size",
+      "7"
+    ]
+  },
+  {
+    "repeat": 1,
+    "configuration_run": "SRR8144907",
+    "fixture": "mini",
+    "worker_maxrss_kib": 27048,
+    "stderr": "",
+    "worker_command": [
+      "prlimit",
+      "--as=268435456",
+      "--",
+      "/workspace/scratch/a30d50c208ec/ela-full-control-20261031/data/tools/venv/bin/python",
+      "/workspace/scratch/a30d50c208ec/ela-full-control-20261031/scripts/gse122069_full_control.py",
+      "htslib",
+      "--out",
+      "reports/gse122069-parameterization-20261031/htslib-SRR8144907-mini-repeat1.json",
+      "--max-reads",
+      "2",
+      "--bin-size",
+      "7"
+    ]
+  },
+  {
+    "repeat": 1,
+    "configuration_run": "SRR8144908",
+    "fixture": "genome",
+    "worker_maxrss_kib": 27212,
+    "stderr": "",
+    "worker_command": [
+      "prlimit",
+      "--as=268435456",
+      "--",
+      "/workspace/scratch/a30d50c208ec/ela-full-control-20261031/data/tools/venv/bin/python",
+      "/workspace/scratch/a30d50c208ec/ela-full-control-20261031/scripts/gse122069_full_control.py",
+      "htslib",
+      "--out",
+      "reports/gse122069-parameterization-20261031/htslib-SRR8144908-genome-repeat1.json",
+      "--max-reads",
+      "26",
+      "--bin-size",
+      "7"
+    ]
+  },
+  {
+    "repeat": 1,
+    "configuration_run": "SRR8144908",
+    "fixture": "mini",
+    "worker_maxrss_kib": 26944,
+    "stderr": "",
+    "worker_command": [
+      "prlimit",
+      "--as=268435456",
+      "--",
+      "/workspace/scratch/a30d50c208ec/ela-full-control-20261031/data/tools/venv/bin/python",
+      "/workspace/scratch/a30d50c208ec/ela-full-control-20261031/scripts/gse122069_full_control.py",
+      "htslib",
+      "--out",
+      "reports/gse122069-parameterization-20261031/htslib-SRR8144908-mini-repeat1.json",
+      "--max-reads",
+      "2",
+      "--bin-size",
+      "7"
+    ]
+  },
+  {
+    "repeat": 2,
+    "configuration_run": "SRR8144907",
+    "fixture": "genome",
+    "worker_maxrss_kib": 27112,
+    "stderr": "",
+    "worker_command": [
+      "prlimit",
+      "--as=268435456",
+      "--",
+      "/workspace/scratch/a30d50c208ec/ela-full-control-20261031/data/tools/venv/bin/python",
+      "/workspace/scratch/a30d50c208ec/ela-full-control-20261031/scripts/gse122069_full_control.py",
+      "htslib",
+      "--out",
+      "reports/gse122069-parameterization-20261031/htslib-SRR8144907-genome-repeat2.json",
+      "--max-reads",
+      "26",
+      "--bin-size",
+      "7"
+    ]
+  },
+  {
+    "repeat": 2,
+    "configuration_run": "SRR8144907",
+    "fixture": "mini",
+    "worker_maxrss_kib": 26932,
+    "stderr": "",
+    "worker_command": [
+      "prlimit",
+      "--as=268435456",
+      "--",
+      "/workspace/scratch/a30d50c208ec/ela-full-control-20261031/data/tools/venv/bin/python",
+      "/workspace/scratch/a30d50c208ec/ela-full-control-20261031/scripts/gse122069_full_control.py",
+      "htslib",
+      "--out",
+      "reports/gse122069-parameterization-20261031/htslib-SRR8144907-mini-repeat2.json",
+      "--max-reads",
+      "2",
+      "--bin-size",
+      "7"
+    ]
+  },
+  {
+    "repeat": 2,
+    "configuration_run": "SRR8144908",
+    "fixture": "genome",
+    "worker_maxrss_kib": 27136,
+    "stderr": "",
+    "worker_command": [
+      "prlimit",
+      "--as=268435456",
+      "--",
+      "/workspace/scratch/a30d50c208ec/ela-full-control-20261031/data/tools/venv/bin/python",
+      "/workspace/scratch/a30d50c208ec/ela-full-control-20261031/scripts/gse122069_full_control.py",
+      "htslib",
+      "--out",
+      "reports/gse122069-parameterization-20261031/htslib-SRR8144908-genome-repeat2.json",
+      "--max-reads",
+      "26",
+      "--bin-size",
+      "7"
+    ]
+  },
+  {
+    "repeat": 2,
+    "configuration_run": "SRR8144908",
+    "fixture": "mini",
+    "worker_maxrss_kib": 27016,
+    "stderr": "",
+    "worker_command": [
+      "prlimit",
+      "--as=268435456",
+      "--",
+      "/workspace/scratch/a30d50c208ec/ela-full-control-20261031/data/tools/venv/bin/python",
+      "/workspace/scratch/a30d50c208ec/ela-full-control-20261031/scripts/gse122069_full_control.py",
+      "htslib",
+      "--out",
+      "reports/gse122069-parameterization-20261031/htslib-SRR8144908-mini-repeat2.json",
+      "--max-reads",
+      "2",
+      "--bin-size",
+      "7"
+    ]
+  }
+]

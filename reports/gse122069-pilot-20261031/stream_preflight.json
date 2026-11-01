@@ -1,0 +1,32 @@
+{
+  "genome": {
+    "counts": {
+      "8": {
+        "eligible_intron_observations": 18,
+        "canonical": 8,
+        "cryptic": 10
+      },
+      "15": {
+        "eligible_intron_observations": 16,
+        "canonical": 8,
+        "cryptic": 8
+      }
+    },
+    "stream_parser_concordant": true
+  },
+  "mini": {
+    "counts": {
+      "8": {
+        "eligible_intron_observations": 1,
+        "canonical": 0,
+        "cryptic": 0
+      },
+      "15": {
+        "eligible_intron_observations": 1,
+        "canonical": 0,
+        "cryptic": 0
+      }
+    },
+    "stream_parser_concordant": true
+  }
+}

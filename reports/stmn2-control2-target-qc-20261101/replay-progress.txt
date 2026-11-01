@@ -1,0 +1,5 @@
+completed reads 1000000 elapsed seconds 113
+completed reads 2000000 elapsed seconds 204
+completed reads 3000000 elapsed seconds 254
+completed reads 4000000 elapsed seconds 360
+completed reads 4292655 elapsed seconds 371

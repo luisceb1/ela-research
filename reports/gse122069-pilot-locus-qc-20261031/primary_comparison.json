@@ -1,0 +1,5 @@
+{
+  "counts_and_sam_qc_identical_to_primary_pilot": true,
+  "same_unique_reads": 1000000,
+  "not_two_million_or_biological_replicates": true
+}

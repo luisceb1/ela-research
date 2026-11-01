@@ -1,0 +1,38 @@
+{
+  "mode": "successful retry direct same binary; initial command preserved in attempt1",
+  "command": [
+    "prlimit",
+    "--as=5368709120",
+    "--",
+    "data/cache/hisat2-source-20261031/hisat2-0d244324f98de541bce04d45c75e83bc3522f7f4/hisat2-align-s",
+    "--wrapper",
+    "basic-0",
+    "-x",
+    "data/cache/hisat2-index-20261031/extracted/hg38/genome",
+    "-U",
+    "-",
+    "-u",
+    "1000000",
+    "-p",
+    "2",
+    "-k",
+    "5",
+    "--seed",
+    "0",
+    "--no-temp-splicesite",
+    "--reorder"
+  ],
+  "worker_command": [
+    "prlimit",
+    "--as=268435456",
+    "--",
+    "data/tools/synthetic-gate-venv/bin/python",
+    "/workspace/scratch/a30d50c208ec/ela-research/scripts/gse122069_pilot.py",
+    "htslib",
+    "--out",
+    "reports/gse122069-pilot-20261031/htslib_counts.json"
+  ],
+  "stdin_source": "Python gzip thread, fixed first1M only",
+  "primary_min_anchor": 15,
+  "sensitivity_min_anchor": 8
+}

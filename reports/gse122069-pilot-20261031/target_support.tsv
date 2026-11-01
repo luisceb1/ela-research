@@ -1,0 +1,5 @@
+run	GSM	subset_reads	min_anchor	event	support_count	denominator_ge20	interpretation
+SRR8144907	GSM3454242	1000000	15	canonical	0	False	fixed technical subset; not molecular absence or biological inference
+SRR8144907	GSM3454242	1000000	15	cryptic	0	False	fixed technical subset; not molecular absence or biological inference
+SRR8144907	GSM3454242	1000000	8	canonical	0	False	fixed technical subset; not molecular absence or biological inference
+SRR8144907	GSM3454242	1000000	8	cryptic	0	False	fixed technical subset; not molecular absence or biological inference
