@@ -1,5 +1,12 @@
 # Estado vigente — 01/11/2026
 
+## Decisión vigente: plan de piloto Humphrey preparado — 01/11/2026
+
+Plan reproducible en research/plans/2026-11-01-humphrey-raw-pilot.md y reports/gse296714-raw-pilot-plan-20261101. Selección técnica de menor FASTQpor condición: CTRL-4/SRR33425816 y TDP-5/SRR33425819; cuatro mates6.349.703.881bytes, enlaces/MD5actuales ENA concordantes. No pareja biológica, no selección por efecto. Entorno cgroup8GiB,2CPUpropuestas,disco≈62,7GBlibres; alineadores no instalados. Límites y criterios de parada fijados; ninguna descarga de crudos, instalación o alineamiento.
+
+**Única siguiente tarea:** contrato PE con controles sintéticos y dos extractores, según el plan. El extractor anterior rechaza read.is_paired. Deben resolverse doble apoyo de mates por fragmento, exclusiones/orientación, referencias y geometría UNC13A antes de restaurar índice o descargar datos. No tratar la disponibilidad de disco o la CI como piloto real viable. raw_execution_ready=false. No ampliar79GBni costes, no merge automático o clínica. Las cabeceras inferiores son historia.
+
+
 ## Decisión vigente: procesados UNC13A bloqueados — 01/11/2026
 
 Puerta ejecutada y cerrada en reports/unc13a-humphrey-processed-gate-20261101. En cryptic_biology80fa3d7 se encontró la familia Humphrey en el compendio agregado (861filas,6UNC13A), pero no soporte ni identidad de las doce bibliotecas. Cero enlaces por muestra aceptados; no PSI, efecto o ausencia biológica inferidos. No repetir esta fuente o las auditorías cerradas SH-SY5Y/fraccionación/RiMOD.

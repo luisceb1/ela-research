@@ -1,5 +1,14 @@
 # Backlog vigente — 01/11/2026
 
+## P0 vigente: contrato paired-end sintético — 01/11/2026
+
+- Completado: plan de piloto técnico CTRL-4/TDP-5,6,35GBFASTQfrente79,28GBtotales; enlaces y recursos documentados en research/plans/2026-11-01-humphrey-raw-pilot.md.
+- P0 única: contrato PE y validación sintética exacta con dos extractores. Sin crudos, índice humano o alineamientos reales. Extractor SE anterior incompatible.
+- Piloto real no listo: orientación de biblioteca, geometría/referencia y compatibilidad PE pendientes; presupuesto es límite, no benchmark. Resultados STMN2y bloqueos de procesados UNC13A intactos. PR36sin merge automático.
+
+Las prioridades inferiores quedan como historia.
+
+
 ## P0 vigente: plan de recursos, sin crudos — 01/11/2026
 
 - Cerrado: puerta UNC13A Humphrey, compendio agregado sin soporte por biblioteca; informe reports/unc13a-humphrey-processed-gate-20261101. No repetir ni abrir otra fuente en este ciclo.
