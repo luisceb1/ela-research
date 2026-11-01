@@ -1,0 +1,11 @@
+{
+  "two_offline_runs_byte_identical": true,
+  "sha256": {
+    "per_library_comparison.tsv": "993860512f48ba1934644095127330fec75a5708860a526d774d295ee7a29fdb",
+    "result.json": "00fffbf11c536909d85672e24fe0a97ed7373302b0bf2aa9304c2c27eb26189d"
+  },
+  "prior_failed_result_hashes_unchanged": {
+    "per_library_comparison.tsv": "e2fe3bd02db45aa8584e1627369739531aafdbd23daee11b9dfe788ff53c2568",
+    "result.json": "8e4aff0a9ef417df22a09a3882f60824fcb03f5513d0e1f10e6b176c6ba3f5be"
+  }
+}

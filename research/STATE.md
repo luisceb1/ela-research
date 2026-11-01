@@ -1,5 +1,15 @@
 # Estado vigente — 01/11/2026
 
+## Decisión vigente: PPAU STMN2 desde TPM reproducida — 01/11/2026
+
+Fase ejecutada y cerrada en reports/stmn2-papa-tpm-reproduction-20261101. Concordancia en las 12 bibliotecas, diferencia absoluta máxima 4,440892098500626e-16 frente a tolerancia prospectiva 1e-6. Numerador TPM del grupo STMN2_1; denominador todos los grupos del mismo gene_id exacto en la matriz completa. Se recuperó solo el miembro TPM por Range/CRC/SHA; sin FASTQ o ZIP completo. El contraste con cuentas permanece fallido y sus artefactos conservan los hashes originales.
+
+Etiqueta: reproducción aritmética de datos publicados por biblioteca, no nueva validación biológica, independencia de diferenciaciones, PSI de unión o función. Sin medias de grupos, p-valores o inferencia clínica. No repetir esta reproducción ni el contraste con cuentas como tareas pendientes.
+
+**Única siguiente tarea:** puerta acotada de procesados UNC13A en las mismas doce bibliotecas, según research/plans/2026-11-01-gse296714-unc13a-processed-gate.md. Solo código/índices/cultivos, con límites de tamaño y sin datos post mortem; exigir enlaces y definición de evento antes de aceptar valores. No ejecutada en esta fase. Si no hay fuente apta, cerrar con bloqueo y no ampliar fuentes automáticamente. El mapa biológico/lotes sigue pendiente antes de inferencia.
+
+Esta ampliación continúa la PR #36, sin fusión automática. Los encabezados inferiores son historia, incluida la tarea TPM que ahora queda completada. Ningún envío de correos, costes, laboratorio o indicación clínica.
+
 ## Decisión vigente: contraste con cuentas cerrado — 01/11/2026
 
 Reproducción STMN2 ejecutada en reports/stmn2-papa-reproduction-20261101 sobre la misma PR #36, sin merge. La predicción preregistrada counts/suma(counts) = PPAU falla en las 12 bibliotecas (0 aceptadas, 12 rechazadas), diferencia absoluta máxima 0,17013297835212804; tolerancia 1e-6 intacta. Se preservan el denominador de todos los grupos STMN2, las doce bibliotecas y los resultados negativos. La salida correcta del programa y sus tests no acreditan concordancia de la hipótesis.

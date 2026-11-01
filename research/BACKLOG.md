@@ -1,5 +1,14 @@
 # Backlog vigente — 01/11/2026
 
+## P0 vigente: procesados UNC13A de GSE296714 — 01/11/2026
+
+- **Completado:** reproducción TPM/PPAU de STMN2, 12/12 concordantes a tolerancia 1e-6; informe reports/stmn2-papa-tpm-reproduction-20261101. No repetir.
+- **Cerrado como no concordante:** contraste previo desde cuentas, 12/12 fuera de tolerancia. Artefactos intactos; no reinterpretarlo como exitoso.
+- **P0 única, no ejecutada:** research/plans/2026-11-01-gse296714-unc13a-processed-gate.md; comprobar una fuente concreta de procesados de uniones de las mismas doce bibliotecas, con identidad y definición molecular. Solo puerta técnica, sin PSI o inferencia.
+- **En paralelo/bloqueado:** mapa de diferenciaciones/lotes y datos funcionales Keuss/Guo; búsquedas cerradas no se repiten sin evidencia nueva.
+
+Se continúa la misma PR #36 sin merge automático. Las P0 de los apartados inferiores conservan historia y quedan sustituidas por esta cabecera.
+
 ## P0 vigente: PPAU desde TPM — 01/11/2026
 
 - **Cerrado, hipótesis no concordante:** proporción STMN2 desde cuentas frente a PPAU; 12/12 bibliotecas fuera de tolerancia 1e-6, sin cambiar denominador o umbral. Informe reports/stmn2-papa-reproduction-20261101. No repetir para buscar aceptación con esos mismos insumos.

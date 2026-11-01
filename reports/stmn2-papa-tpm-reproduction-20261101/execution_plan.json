@@ -1,0 +1,25 @@
+{
+  "base_commit": "fd74d931dbf58673983366c19678bbc213dce45c",
+  "date_europe_madrid": "2026-11-01",
+  "gene_id": "ENSG00000104435.14",
+  "numerator_group": "ENSG00000104435.14_1",
+  "denominator": "all last-exon groups assigned to the exact gene_id in the complete TPM table",
+  "absolute_tolerance": 1e-06,
+  "author_units": "proportion",
+  "sample_count": 12,
+  "ppau_sha256": "c4828ee5edd25a8c6c29719366735df268a669d8d5ba8d075dd015bdccd5ac42",
+  "samples_sha256": "818b8f6553a3ea1b44e0c1cf511c5dec1fcc35f7ccd68e2d8b45af6c46087573",
+  "tpm_member": {
+    "name": "tdp43-apa/preprocessing/data/PAPA/i3_cortical_upf1_zanovello_novel/humphrey_i3_cortical/differential_apa/summarised_pas_quantification.tpm.tsv",
+    "compressed": 1694976,
+    "uncompressed": 4937870,
+    "crc": 1139842397,
+    "offset": 704521994,
+    "method": 8
+  },
+  "index_sha256": "2c68e7b90f9ae750855cc036f57c2fdfbafe00a7eea2f71db69be97ee9923e15",
+  "stop_rule": "Any identity, denominator or tolerance failure stops acceptance; no retrospective adjustment",
+  "zero_denominator": "indeterminate",
+  "group_means_or_p_values": false,
+  "prior_failed_count_comparison_preserved": true
+}

@@ -1,0 +1,28 @@
+test_member_name_and_crc_checked (test_gse296714_design.ArchiveControls.test_member_name_and_crc_checked) ... ok
+test_truncation_and_output_limit_rejected (test_gse296714_design.ArchiveControls.test_truncation_and_output_limit_rejected) ... ok
+test_conflicting_biosample_or_duplicate_run_mapping_rejected (test_gse296714_design.IdentityControls.test_conflicting_biosample_or_duplicate_run_mapping_rejected) ... ok
+test_papa_uses_explicit_author_mapping_and_rejects_collapsed_units (test_gse296714_design.IdentityControls.test_papa_uses_explicit_author_mapping_and_rejects_collapsed_units) ... ok
+test_unrelated_project_samples_are_not_selected (test_gse296714_design.IdentityControls.test_unrelated_project_samples_are_not_selected) ... ok
+test_duplicate_columns_rejected (test_gse296714_design.MatrixControls.test_duplicate_columns_rejected) ... ok
+test_duplicate_gene_version_rejected (test_gse296714_design.MatrixControls.test_duplicate_gene_version_rejected) ... ok
+test_fractional_estimates_are_not_rejected_as_corrupt (test_gse296714_design.MatrixControls.test_fractional_estimates_are_not_rejected_as_corrupt) ... ok
+test_invalid_values_rejected (test_gse296714_design.MatrixControls.test_invalid_values_rejected) ... ok
+test_missing_target_rejected (test_gse296714_design.MatrixControls.test_missing_target_rejected) ... ok
+test_unlinked_column_rejected (test_gse296714_design.MatrixControls.test_unlinked_column_rejected) ... ok
+test_all_target_groups_in_full_table_included (test_stmn2_papa_reproduction.ReproductionControls.test_all_target_groups_in_full_table_included) ... ok
+test_count_and_tpm_estimands_not_forced_to_agree (test_stmn2_papa_reproduction.ReproductionControls.test_count_and_tpm_estimands_not_forced_to_agree) ... ok
+test_documented_percent_units_converted_without_search (test_stmn2_papa_reproduction.ReproductionControls.test_documented_percent_units_converted_without_search) ... ok
+test_duplicate_column_or_group_rejected (test_stmn2_papa_reproduction.ReproductionControls.test_duplicate_column_or_group_rejected) ... ok
+test_invalid_target_abundances_rejected (test_stmn2_papa_reproduction.ReproductionControls.test_invalid_target_abundances_rejected) ... ok
+test_known_equal_proportion_passes (test_stmn2_papa_reproduction.ReproductionControls.test_known_equal_proportion_passes) ... ok
+test_missing_denominator_group_rejected (test_stmn2_papa_reproduction.ReproductionControls.test_missing_denominator_group_rejected) ... ok
+test_tolerance_failure_retained (test_stmn2_papa_reproduction.ReproductionControls.test_tolerance_failure_retained) ... ok
+test_zero_denominator_is_indeterminate_not_zero (test_stmn2_papa_reproduction.ReproductionControls.test_zero_denominator_is_indeterminate_not_zero) ... ok
+test_changed_input_rejected_by_pinned_hash (test_stmn2_papa_tpm.TPMMeasurementControls.test_changed_input_rejected_by_pinned_hash) ... ok
+test_correct_tpm_formula_passes_while_different_count_estimand_fails (test_stmn2_papa_tpm.TPMMeasurementControls.test_correct_tpm_formula_passes_while_different_count_estimand_fails) ... ok
+test_tpm_measurement_preserves_value_and_removes_count_labels (test_stmn2_papa_tpm.TPMMeasurementControls.test_tpm_measurement_preserves_value_and_removes_count_labels) ... ok
+
+----------------------------------------------------------------------
+Ran 23 tests in 0.003s
+
+OK

@@ -1,0 +1,12 @@
+{
+  "python": "3.12.14",
+  "local_tests_passed": 23,
+  "new_tests_this_phase": 3,
+  "compileall_passed": true,
+  "offline_replay_byte_identical": true,
+  "arithmetic_comparison_accepted": true,
+  "prior_count_comparison_still_rejected": true,
+  "prior_count_result_files_unchanged": true,
+  "p_values_or_group_means_computed": false,
+  "biological_replication_validated": false
+}
