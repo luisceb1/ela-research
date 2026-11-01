@@ -1,20 +1,22 @@
 # Estado vigente — 01/11/2026
 
-## Revisión de integración terminada — 01/11/2026
+## Estado de integración — 01/11/2026
 
-PR #33: revisión técnica documentada en `reports/pr33-review-20261101/REPORT.md`. Se corrigió un validador que podía aceptar histogramas sin métricas si ambos archivos estaban incompletos de igual forma. Los artefactos guardados sí estaban completos; siguen válidos y el TSV es idéntico por bytes. 399 tests locales (392+7 regresiones) y compileall correctos. No datos o alineamientos nuevos; los manifiestos científicos históricos siguen vinculados a sus commits, no al validador corregido después.
+PR #33 quedó fusionada en `main` mediante el commit `95fea38d16359056eb86ef3397795e7af9f39049`. La revisión técnica y el QC del soporte críptico bajo están documentados en `reports/pr33-review-20261101/REPORT.md` y `reports/stmn2-control2-target-qc-20261101/REPORT.md`. La cabeza revisada pasó 399 tests locales y CI en Python 3.11/3.12, además de compileall. La fusión no añadió datos ni alineamientos nuevos y no cambia la interpretación científica: son controles técnicos, no evidencia de efecto de TDP-43 ni validación funcional.
 
-Recomendación: integrar la entrega técnica tras comprobar CI de la nueva cabeza; fusión pendiente de decisión explícita. Main d1bbf0e1 solo añade tres rutas de auditoría PubMed sin solapamiento con este PR. PR #30 abierto e intacto053ef70c. Después, coordinar con esa rama la selección de un contraste independiente antes de más datos; no repetir este QC ni reabrir búsquedas cerradas sin fuente nueva.
+La PR #30 sigue abierta en `research/2026-10-30-independent-splicing-gate`, cabeza `053ef70ce437cc637ec18278a2c07e3abd6bf58b`. Se mantiene separada e intacta mientras continúa el trabajo local en curso. La siguiente decisión es coordinar la revisión de esa rama y, solo después, valorar una fuente independiente que cumpla el criterio de entrada. No repetir el QC ya cerrado ni iniciar otra búsqueda o descarga en paralelo.
+
+El resto de este archivo conserva notas detalladas de fases anteriores. Las referencias posteriores a PR #33 abierta, a una fusión pendiente o a CI por verificar describen el estado de esas fases y quedan superadas por esta cabecera y por el merge commit indicado arriba.
 
 ## Fase actual cerrada: QC técnico seleccionado — 01/11/2026
 
-PR #33 abierto. Replay seleccionado de SRR8144908 terminado en 371,380 s≤600 s: 4.292.655 lecturas realineadas de los cinco bloques fijados; fuente completa de 54.292.655 escaneada para ordinales y EOF/CRC. Predicción 13 canónicas/3 crípticas a15 y15/4 a8 reproducida exactamente, cuentas e histogramas concordantes entre texto/CIGAR y PySAM/HTSlib. Informe: `reports/stmn2-control2-target-qc-20261101/REPORT.md`.
+QC integrado mediante PR #33. Replay seleccionado de SRR8144908 terminado en 371,380 s≤600 s: 4.292.655 lecturas realineadas de los cinco bloques fijados; fuente completa de 54.292.655 escaneada para ordinales y EOF/CRC. Predicción 13 canónicas/3 crípticas a15 y15/4 a8 reproducida exactamente, cuentas e histogramas concordantes entre texto/CIGAR y PySAM/HTSlib. Informe: `reports/stmn2-control2-target-qc-20261101/REPORT.md`.
 
 Las cuatro observaciones crípticas a8 tienen MAPQ60, NM0, AS0 y softclip0; las tres a15 están contenidas en ellas. La adicional tiene ancla derecha13. Atributos técnicos, no moléculas independientes, efecto de TDP-43 o validación funcional. No se estiman tasas sobre la selección post hoc. El resultado del control completo sigue111/3 y154/4, SHA original cb266041… intacto; denominador114≥20 no se reevalúa sobre la selección enriquecida. No nueva biblioteca ni cohorte.
 
 392 tests locales (378 previos+14 nuevos), compileall correcto y preflight real PySAM0.23.3/HTSlib1.21 concordante. Exportadores repetidos idénticos por bytes y seis controles de artefactos alterados rechazados. Nueve módulos de ejecución cotejados con Git blobs remotos antes del replay. FASTQ/índice restaurados por hashes idénticos; una descarga de rango truncada se recuperó por el reintento de transporte preexistente, recibo completo98rangos yMD5/SHA verificados. Cero reintentos de replay, errores de watchdog o ampliaciones de recursos. CI final se verifica por cabeza del PR; la CI previa920414d pasó392tests en3.11/3.12.
 
-Siguiente puerta: revisar el cierre del QC y el PR #33. No repetir estos bloques ni ampliar bibliotecas para resolver soporte bajo sin nuevo plan. La inferencia permanece bloqueada por el mapa de unidades/lotes/pareamiento; conservar la declaración publicada3/3, sin negarla por falta de mapa. No merge/cierre automático, clínica personal, gastos, contactos, publicación externa o laboratorio. PR #30 separado e intacto053ef70c.
+Fase técnica cerrada e integrada; la coordinación con la PR #30 es la siguiente puerta. No repetir estos bloques ni ampliar bibliotecas para resolver soporte bajo sin un plan nuevo. La inferencia permanece bloqueada por el mapa de unidades/lotes/pareamiento; conservar la declaración publicada3/3, sin negarla por falta de mapa. No merge/cierre automático, clínica personal, gastos, contactos, publicación externa o laboratorio. PR #30 separado e intacto053ef70c.
 
 ## Alcance
 
@@ -45,7 +47,7 @@ Los informes preservan los hashes, parámetros, errores y resultados negativos d
 - 821 claves sin coincidencia: referencia/cobertura/asignación/soporte de lecturas incompletos. No priorizar como descubrimientos.
 - Paridad de uniqueCounts y soporte por lecturas crudas siguen sin explicación completa. No dividir cuentas por dos ni llamarlas moléculas.
 
-## Única próxima tarea
+## Fases y resultados anteriores (no sustituyen la próxima decisión vigente)
 
 QC del control completo SRR8144907 TERMINADO en reports/gse122069-full-control-20261031:37.518.164lecturas exactas,EOF/CRC válido,38bins concordantes en dosparsers,47.124.040registrosSAM,96,21%alineamiento. STMN2canónica72/críptica0 a15;110/0 a8. Exon1:169solapamientos únicos; exon2:1308. Regla técnica canónica+críptica≥20 superada paraestecontrol. El primer1M conserva exactamente sus cuentas previas, pero su0no calificaba toda la biblioteca. No sumar piloto/bins como réplicas ni inferir ausencia deCE, efecto,PSI o función.
 
@@ -73,12 +75,12 @@ La proyección GENCODEv47 es coherente con exon1 de98nt (ENST00000220876.12) y63
 
 El piloto previo de1M continúa sin soporte de ambas uniones15/8, pese a628solapamientos del locus,31exon2 y48uniones posteriores. Sus cuentas no se recalcularon ni se modificaron aquí. No descartar/aceptar la biblioteca completa según el subconjunto: la propuesta completa es una sola fase prefijada que podrá confirmar cobertura o rechazar aptitud para este contraste, sin inferencia biológica.
 
-Mismo PR33 desde76ddc67f236e2f60f099897a116a229c76f25d7a; sin merge/cierre. Main9c82795d yPR30 cabeza053ef70ce437cc637ec18278a2c07e3abd6bf58b intactos. Trabajo en directorio aislado;226 archivos recuperados coinciden con blobsGit, baseline309tests y suite final317tests locales. Índice/binario previos recuperados y cotejados, sin nuevas descargas. CI de nueva cabeza por verificar. Código, hashes, negativos y límites en informe.
+Registro histórico anterior al merge: en la cabeza 76ddc67f236e2f60f099897a116a229c76f25d7a, la rama estaba sin fusionar y la CI de la nueva cabeza pendiente. Después, la PR #33 se revisó y fusionó según el encabezado vigente. Los 226 archivos cotejados, los hashes y los resultados de esa fase permanecen en el informe correspondiente; no se reejecutaron los alineamientos.
 
 
 ## Verificación y operación
 
-Base main: 244 tests locales correctos en Python 3.12.14 (166 + 183 − 105 compartidos), compileall correcto. CI por SHA en Python 3.11/3.12. No se reejecutaron todos los pipelines de datos reales durante la integración. No se añaden experimentos por combinar tests.
+Base de la integración de PR #28/#29: 244 tests locales correctos en Python 3.12.14 (166 + 183 − 105 compartidos), compileall correcto. La posterior PR #33 se integró con 399 tests locales y CI Python 3.11/3.12. No se reejecutaron todos los pipelines de datos reales durante la integración; los tests no son experimentos.
 
 Las diez issues históricas no se cierran automáticamente. Las ya ejecutadas se actualizan con evidencia y pendientes precisos. No contactos, publicación externa, clínica personal, gastos o laboratorio sin autorización. La integración autorizada en este turno no concede autorización general de merges futuros.
 
@@ -103,7 +105,7 @@ Pregunta/falsador fijados antes de ejecutar: research/plans/2026-10-31-stmn2-jun
 
 No efectos, PSI, significación ni función. Razón propuesta críptica/(críptica+canónica) sería condicional a esas dos ramas; otras ramas del donante no medidas. Prototipo requiere XS y NH=1, MAPQ>=20 (excluye255), anclas contiguas>=8; retiene flags de duplicación y rechaza PE. Pendiente comparar con herramienta independiente y semántica del alineador. No producción/crudos desde esta entrega.
 
-Ensembl agotó timeout y no aportó referencia. 8 GiB RAM, ~62,79 GB libres observados, sin HISAT2/STAR/samtools. Esto no es benchmark ni autoriza más recursos que el plan previo. Git clone sin credenciales; acceso al código por conector comprobado. Se registran fallos de materialización local, corregidos por blobs exactos antes de la suite final. Ningún cambio en main o rama30, merge/cierre, gastos, contactos o publicación externa. Las menciones históricas a PR31 abierto y 253 pruebas corresponden al ciclo anterior; este apartado y Única próxima tarea son los vigentes.
+Ensembl agotó timeout y no aportó referencia. 8 GiB RAM, ~62,79 GB libres observados, sin HISAT2/STAR/samtools. Esto no es benchmark ni autoriza más recursos que el plan previo. Git clone sin credenciales; acceso al código por conector comprobado. Se registran fallos de materialización local, corregidos por blobs exactos antes de la suite final. Ningún cambio en main o rama30, merge/cierre, gastos, contactos o publicación externa. Las menciones a PR31 abierto y 253 pruebas corresponden a ciclos anteriores. Esta nota también es histórica; la próxima decisión vigente figura en la cabecera de estado.
 
 ## Puerta de referencia — 31/10/2026, posterior a #32
 
