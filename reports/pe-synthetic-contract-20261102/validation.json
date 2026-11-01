@@ -1,0 +1,14 @@
+{
+  "python": "3.12.14",
+  "pysam": "0.23.3",
+  "htslib": "1.21",
+  "tests_passed": 17,
+  "parser_comparisons": 22,
+  "shared_pair_policy": true,
+  "raw_reads_downloaded": false,
+  "alignments_executed": false,
+  "production_ready": false,
+  "code_sha256": "e06addaaea827cc9914f974ac59cc426962b5d735d25be05483fd4b8f2a9abf4",
+  "repeat_results_identical": true,
+  "results_sha256": "11dc5ea78add08ea85cb03231a00ded47ff75a657779456ae232b972c7a14100"
+}

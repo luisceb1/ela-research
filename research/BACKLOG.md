@@ -1,4 +1,14 @@
-# Backlog vigente — 01/11/2026
+# Backlog vigente — 02/11/2026
+
+## P0 vigente: referencia y orientación UNC13A — 02/11/2026
+
+- Completado: contrato PE sintético,17tests y22comparaciones de parsers; ver reports/pe-synthetic-contract-20261102. No repetir como tarea nueva.
+- P0 única: fijar geometría/coordenadas/ensamblaje/hebra UNC13Ay orientación transcriptómica real mediante fuentes primarias pequeñas; alternativa unstranded prospectiva si FR/RFno acreditable. Sin crudos/índice humano.
+- Piloto aún no listo: colación externa y prueba end-to-end del alineador pendientes. Política compartida entre parsers explicitada; no validación biológica. PR36sin merge automático.
+
+Las cabeceras inferiores conservan historia.
+
+
 
 ## P0 vigente: contrato paired-end sintético — 01/11/2026
 

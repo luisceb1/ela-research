@@ -1,4 +1,12 @@
-# Estado vigente — 01/11/2026
+# Estado vigente — 02/11/2026
+
+## Decisión vigente: contrato PE sintético ejecutado — 02/11/2026
+
+Implementado en scripts/pe_fragment_contract.py; informe reports/pe-synthetic-contract-20261102.17tests locales con PySAM0.23.3/HTSlib1.21 pasan;22comparaciones texto/HTSlib concordantes. Una unidad por fragmento/unión/biblioteca, pares recíprocos, exclusiones y anclas explícitas. Política de pares/reducción compartida: independencia solo en decodificación. Entrada lexicográficamente agrupada(RG,QNAME), límite16registros; colación externa aún pendiente. Legacy SE intacto, sin piloto real o alineador ejecutado.
+
+**Única siguiente tarea:** puerta de referencia/orientación UNC13A mediante fuentes primarias pequeñas y controles sintéticos. Ensamblaje, hebra, geometría y FR/RF no están acreditados para las bibliotecas reales; si orientación irresoluble, fijar alternativa unstranded explícita antes de datos. No escoger por efecto. Después seguirá pendiente end-to-end/colación con supervisión. raw_execution_ready=false; no FASTQ, índice humano, merge automático, contactos, clínica o laboratorio. Las tareas inferiores son historia y el contrato PE ya no es pendiente.
+
+
 
 ## Decisión vigente: plan de piloto Humphrey preparado — 01/11/2026
 
