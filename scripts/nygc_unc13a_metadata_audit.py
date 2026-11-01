@@ -31,6 +31,28 @@ TARGETS = {
 FIELDS = ["chrom","sample","start","end","strand","junction_count","cluster_count"]
 MIN_GROUP_N = 5
 
+def build_metadata_lookup(entries):
+    """Collapse identical critical metadata, fail closed on conflicting duplicates."""
+    required = ("sample", "external_subject_id", "tdp_proteinopathy",
+                "rna_tissue_source_simplified", "rin", "disease_primary")
+    lookup = {}
+    redundant = 0
+    for row in entries:
+        sid = (row.get("sample") or "").strip()
+        if not sid:
+            raise ValueError("Missing metadata sample ID")
+        if any(k not in row for k in required):
+            raise ValueError("Missing required metadata field")
+        if sid in lookup:
+            if any((lookup[sid].get(k) or "").strip() !=
+                   (row.get(k) or "").strip() for k in required):
+                raise ValueError("Conflicting metadata sample ID")
+            redundant += 1
+        else:
+            lookup[sid] = row
+    return lookup, redundant
+
+
 def metadata():
     DATA.mkdir(parents=True,exist_ok=True)
     if not META.exists():
@@ -42,18 +64,16 @@ def metadata():
     required={"sample","tdp_proteinopathy","rna_tissue_source_simplified","external_subject_id"}
     if not entries or not required.issubset(entries[0]):
         raise ValueError("Unexpected metadata schema")
-    lookup={}
-    for r in entries:
-        sid=r["sample"].strip()
-        if not sid or sid in lookup:
-            raise ValueError("Missing or duplicate metadata sample ID")
-        lookup[sid]=r
+    lookup, redundant = build_metadata_lookup(entries)
+    print("METADATA ROWS:",len(entries),"UNIQUE SAMPLE IDS:",len(lookup),
+          "CONSISTENT REDUNDANT ROWS:",redundant)
     return lookup
 
 def main():
     lookup=metadata()
     counts=defaultdict(dict)
     records=0
+    unmatched_samples=set()
     with zipfile.ZipFile(DATA/"nygc_parquets.zip") as z:
         filenames=[n for n in z.namelist() if n.startswith("parquets/")
                    and n.endswith(".parquet") and "/._" not in n]
@@ -74,8 +94,11 @@ def main():
                     if event is None:
                         continue
                     sid=r["sample"]
-                    if sid not in lookup or event in counts[sid]:
-                        raise ValueError("Unmatched or duplicate NYGC record")
+                    if sid not in lookup:
+                        unmatched_samples.add(sid)
+                        continue
+                    if event in counts[sid]:
+                        raise ValueError("Duplicate NYGC sample-event record")
                     j,d=r["junction_count"],r["cluster_count"]
                     if j is None or d is None or j<0 or d<0 or j>d:
                         raise ValueError("Bad counts")
@@ -86,6 +109,8 @@ def main():
     if not counts or any(set(x)!=set(TARGETS.values()) for x in counts.values()):
         raise ValueError("Incomplete target events per sample")
     print("MATCHED SAMPLES",len(counts),"RECORDS",records)
+    print("UNMATCHED PARQUET SAMPLE IDS:",len(unmatched_samples))
+    print("METADATA IDS WITHOUT PARQUET TARGETS:",len(set(lookup)-set(counts)))
     unique_donors={r["external_subject_id"] for s,r in lookup.items()
                    if s in counts and r["external_subject_id"].strip()}
     print("NONEMPTY UNIQUE EXTERNAL SUBJECT IDS",len(unique_donors))
