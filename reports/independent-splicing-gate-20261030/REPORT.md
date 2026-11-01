@@ -165,3 +165,20 @@ Ran `scripts/nygc_unc13a_donor_qc.py`: 515 cortex-motor sample records selected 
 RIN sensitivity for donor junction at depth >=100: RIN<6.5: ALS-TDP 14/93 vs Control 0/21; RIN 6.5–<7.5: ALS-TDP 7/77 vs Control 0/7; RIN>=7.5: ALS-TDP 4/55 vs Control 0/3. Groups are imbalanced; a higher RIN is associated with sparse control samples. Donor-level RIN missing at all-depth: ALS-TDP 31/313, Control 9/48. Median cluster depths at all-depth ALS-TDP 130 and Control 143.5. **This is not a fully adjusted association or estimated biomarker accuracy.**
 
 Next decision: stop running unplanned repeated sensitivity filters on the same cohort; verify source pipeline/genome build, the 313 unmatched metadata IDs from broader NYGC scan, donor overlap and anatomical classifications; compare directly with original author analysis and choose a preregistered independent validation question. Risk: multiple tissues per donor, source-specific batch/RIN/cell composition and biological non-independence of reanalysed author data.
+
+
+## Originality audit and prespecified next gate — 2026-11-01
+
+**Not an original discovery:** Ma et al., Nature 2022 (DOI 10.1038/s41586-022-04424-7) explicitly analyzed UNC13A cryptic splicing in NYGC human ALS/FTD samples; Brown et al., bioRxiv 2025 (DOI 10.1101/2025.11.23.689722) studied postmortem cryptic event sensitivity and burden, including NYGC and RiMOD. A 2026 NYGC Consortium resource preprint (DOI 10.64898/2026.04.29.26350889) reports insufficient UNC13A splice reads for its cross-tissue detection threshold. Thus our local counts must be framed as targeted technical reproduction, not discovery or independent biological confirmation. Sources: https://pmc.ncbi.nlm.nih.gov/articles/PMC8891019/ ; https://pubmed.ncbi.nlm.nih.gov/41332610/ ; https://www.medrxiv.org/content/10.64898/2026.04.29.26350889v1 .
+
+**Concrete methodological hypothesis:** An explicit donor-level, region-specific, junction-specific sensitivity analysis can explain why UNC13A is detected by targeted low-count search yet misses cross-tissue filtering criteria. This is *a proposed methodological investigation, not yet proven original*.
+
+**Freeze/pre-specify BEFORE running next experiments:**
+1. Define eligible ALS-TDP vs control motor-cortex donors, donor ID strategy, missingness, RIN, and one library per donor (maximum local junction cluster depth, chosen without inspecting CE status). Verify same-donor tissue duplicates and metadata conflict cases.
+2. Primary descriptive endpoint: proportion of donors with >=1 read spanning author-verified UNC13A novel donor junction 19:17641556–17642414 (GRCh38 convention pending complete check), depth>=100, motor cortex. Report numerator/denominator and Wilson 95% intervals as **descriptive uncertainty only**, not clinical specificity. Report alternatives >=3 and >=5 as sensitivity, donor and acceptor separately; no multiple exploratory p-value claims.
+3. Stratify RIN with explicit missing category and audit batch, region, sequencing library size, and missing metadata; compare positive donors across lower/upper RIN bands, not samples.
+4. Document comparator detection rules and read-count thresholds from Ma 2022, Brown 2025 and NYGC 2026 in a reproducible table; do not assert conflicting scientific results until their methodological differences are proven.
+5. Independence gate: find independent data source with verifiable donor/pipeline overlap assessment; if unavailable, designate this as reanalysis only. Next biological validation requires new donor cohort or orthogonal assay.
+6. Prioritize failure modes: discovery set preselection, donor attrition, annotation offsets, depth confounding, library size, cell-type composition, published prior findings, comparison denominators.
+
+Decision for PR #30: remain open until documentation, source provenance and tests are reviewed. Do not merge into main as a newly validated ALS biomarker.
