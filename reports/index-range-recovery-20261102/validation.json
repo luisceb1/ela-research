@@ -22,7 +22,7 @@
     "test_inspect_interrupted_pilot.py",
     "test_recover_index_range.py"
   ],
-  "tests": 258,
+  "tests": 259,
   "failures": 0,
   "errors": 0,
   "skipped": 0,

@@ -47,14 +47,16 @@ no se puede relanzar eljobviejo o presentar elrestablecimiento comoanálisis.
 
 ## Validación
 
-22tests nuevos: HTTPloopbackreal coníndice/prefixsintéticos pequeños. Recuperación
+23tests nuevos: HTTPloopbackreal coníndice/prefixsintéticos pequeños. Recuperación
 positiva conservaoriginal, rangoúnico, SHAcompleto/cargocon16KiBextra; rechaza
 200/rango/tamañoduplicado/versión/encoding/chunked/redirect,truncado,SHAincorrecto,
 prefixalterado,cambiooriginaltrasHTTP, reutilizaciónroot,caps/aceptaciónincorrecta.
 Resultadointernocorrectoconrechazoexterno no se sella; externolimpio yrecibos
 coherentes sí. CLI/worker real supervisadoconprefixsintéticocambiado se corta
 antes deHTTP:exit1/grupovacío/soloCopyfailed/sincargosnuevos/sinsello. NoHISAT2.
-Batería integrada258tests correctos sin fallos/errores/omisiones(236anteriores+22nuevos); compileallcorrecto. validation.json/tests.txt.
+Batería integrada259tests correctos sin fallos/errores/omisiones(236anteriores+23nuevos); compileallcorrecto. validation.json/tests.txt.
+
+La primeraCIen78a53a7falló en2testsdepropuesta porque exigían33GiBfísicos alhostdeCI. Se corrigenfixtures para simular recursos yse añade uncontrol negativo explícito de disco32GiB. No se relaja elguardreal de33GiB. ci-initial-failure.txt conserva trazabilidad.
 
 ## Límites y siguiente paso
 

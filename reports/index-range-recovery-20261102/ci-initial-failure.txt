@@ -1,0 +1,17 @@
+Commit: 78a53a7919bc2fa4ecb4a07da1e916b77e5d5aeb
+Run: 41528426274; job: 125562056094; Python3.11
+General runs also failed in3.11/3.12 for these same2 proposal cases.
+Synthetic fixtures incorrectly required33GiB actual CI free space.
+Fix: explicitly simulate sufficient free space for proposal component tests,
+and add a low-space rejection test. Production33GiB guard is unchanged.
+2026-11-02T21:27:24.3241629Z test_actual_supervised_worker_refuses_changed_prefix_before_http (test_recover_index_range.ProposalTests.test_actual_supervised_worker_refuses_changed_prefix_before_http) ... ERROR
+2026-11-02T21:27:24.3304615Z test_prepare_disabled_and_strict_mutations_and_no_original_writes (test_recover_index_range.ProposalTests.test_prepare_disabled_and_strict_mutations_and_no_original_writes) ... ERROR
+2026-11-02T21:27:33.9796764Z ERROR: test_actual_supervised_worker_refuses_changed_prefix_before_http (test_recover_index_range.ProposalTests.test_actual_supervised_worker_refuses_changed_prefix_before_http)
+2026-11-02T21:27:33.9850151Z   File "/home/runner/work/ela-research/ela-research/tests/test_recover_index_range.py", line 134, in test_actual_supervised_worker_refuses_changed_prefix_before_http
+2026-11-02T21:27:33.9879813Z     if shutil.disk_usage(original).free<LIMITS['disk_bytes']+LIMITS['reserve_bytes']:raise ValueError('33 GiB free required before recovery')
+2026-11-02T21:27:33.9881892Z ValueError: 33 GiB free required before recovery
+2026-11-02T21:27:33.9884318Z ERROR: test_prepare_disabled_and_strict_mutations_and_no_original_writes (test_recover_index_range.ProposalTests.test_prepare_disabled_and_strict_mutations_and_no_original_writes)
+2026-11-02T21:27:33.9887967Z   File "/home/runner/work/ela-research/ela-research/tests/test_recover_index_range.py", line 120, in test_prepare_disabled_and_strict_mutations_and_no_original_writes
+2026-11-02T21:27:33.9892842Z     if shutil.disk_usage(original).free<LIMITS['disk_bytes']+LIMITS['reserve_bytes']:raise ValueError('33 GiB free required before recovery')
+2026-11-02T21:27:33.9895110Z ValueError: 33 GiB free required before recovery
+2026-11-02T21:27:33.9897320Z FAILED (errors=2)

@@ -236,6 +236,7 @@ test_nonempty_group_or_successful_or_sealed_run_rejected (test_inspect_interrupt
 test_partial_symlink_or_full_size_refused (test_inspect_interrupted_pilot.InterruptedAuditTests.test_partial_symlink_or_full_size_refused) ... ok
 test_actual_supervised_worker_refuses_changed_prefix_before_http (test_recover_index_range.ProposalTests.test_actual_supervised_worker_refuses_changed_prefix_before_http) ... ok
 test_existing_lineage_root_refuses_new_plan (test_recover_index_range.ProposalTests.test_existing_lineage_root_refuses_new_plan) ... ok
+test_low_disk_proposal_still_rejected_without_mutating_original (test_recover_index_range.ProposalTests.test_low_disk_proposal_still_rejected_without_mutating_original) ... ok
 test_prepare_disabled_and_strict_mutations_and_no_original_writes (test_recover_index_range.ProposalTests.test_prepare_disabled_and_strict_mutations_and_no_original_writes) ... ok
 test_changed_prefix_refused_before_http (test_recover_index_range.RangeTests.test_changed_prefix_refused_before_http) ... ok
 test_chunked_response_rejected (test_recover_index_range.RangeTests.test_chunked_response_rejected) ... ok
@@ -258,6 +259,6 @@ test_wrong_content_range_rejected (test_recover_index_range.RangeTests.test_wron
 test_wrong_length_rejected (test_recover_index_range.RangeTests.test_wrong_length_rejected) ... ok
 
 ----------------------------------------------------------------------
-Ran 258 tests in 49.840s
+Ran 259 tests in 49.387s
 
 OK

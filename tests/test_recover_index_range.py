@@ -116,6 +116,12 @@ class ProposalTests(unittest.TestCase):
     def setUp(self):
         from test_inspect_interrupted_pilot import InterruptedAuditTests
         self.fixture=InterruptedAuditTests();self.fixture.setUp();self.addCleanup(self.fixture.doCleanups)
+        # Synthetic proposal tests must not require 33GiB on the CI host.
+        # The runtime guard is separately tested with an explicit low-space case.
+        observed=recovery.shutil.disk_usage(self.fixture.root)
+        enough=type(observed)(observed.total,observed.used,40*recovery.GiB)
+        disk_patch=patch.object(recovery.shutil,'disk_usage',return_value=enough)
+        disk_patch.start();self.addCleanup(disk_patch.stop)
     def test_prepare_disabled_and_strict_mutations_and_no_original_writes(self):
         fixture=self.fixture;before=fixture.snapshot();plan=recovery.prepare(fixture.root)
         self.assertEqual(before,fixture.snapshot());self.assertFalse(plan['execution_enabled'])
@@ -143,6 +149,13 @@ class ProposalTests(unittest.TestCase):
         self.assertEqual(state['transfer_bytes_consumed'],256);self.assertFalse((root/'range-attempt.json').exists())
         self.assertEqual(outer['exit_code'],1);self.assertEqual(outer['live_group_members_after_cleanup'],[])
         self.assertFalse((root/'recovery-seal.json').exists())
+    def test_low_disk_proposal_still_rejected_without_mutating_original(self):
+        observed=recovery.shutil.disk_usage(self.fixture.root)
+        low=type(observed)(observed.total,observed.used,32*recovery.GiB)
+        before=self.fixture.snapshot()
+        with patch.object(recovery.shutil,'disk_usage',return_value=low):
+            self.assertRaises(ValueError,recovery.prepare,self.fixture.root)
+        self.assertEqual(before,self.fixture.snapshot())
     def test_existing_lineage_root_refuses_new_plan(self):
         recovery.recovery_root(self.fixture.root).mkdir()
         self.addCleanup(recovery.recovery_root(self.fixture.root).rmdir)
