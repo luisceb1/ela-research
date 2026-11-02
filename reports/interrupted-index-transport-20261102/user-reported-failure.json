@@ -1,0 +1,23 @@
+{
+  "provenance": "terminal output supplied by Luis, not direct filesystem access",
+  "run_root": "/home/luisceb/ela-piloto-real-01",
+  "accepted_prepared_sha256": "d813b5d5c738f8391583446df54b744c7987516309aadb5c64eec7ff912bf878",
+  "software_commit": "a3f76b4a97061b81c1b4ca68cef838eaeb8e1ca4",
+  "ledger_fingerprint": "ae271461542641ce7f8fd686ef63e349d040c3ec9f2e780b9f079552b9ddc927",
+  "charged_body_bytes": 1632463668,
+  "transfer_elapsed_seconds": 3600.0012652873993,
+  "unsettled_body_reservation_bytes": 0,
+  "preflight_status": "verified",
+  "index_archive_status": "started",
+  "remaining_phases_started": false,
+  "global_deadline_epoch": 1793658000.877632,
+  "last_epoch": 1793652600.996773,
+  "partial_size_display": "1.6G",
+  "partial_exact_size_and_sha256": "not supplied; pending read-only audit",
+  "worker_log_tail": "",
+  "parent_error": "RuntimeError: Cumulative transfer time cap",
+  "network_cause": "not established",
+  "human_fastq_transfers_observed": 0,
+  "human_alignments_observed": 0,
+  "no_automatic_resume": true
+}

@@ -1,5 +1,16 @@
 # Backlog vigente — 02/11/2026
 
+## Prioridad vigente: primer intento real detenido durante índice; auditoría del parcial — 02/11/2026
+
+Luis ejecutó a3f76b4 con planSHA d813b5d5c738f8391583446df54b744c7987516309aadb5c64eec7ff912bf878. Preflightverified; solo index_archivestarted;1.632.463.668bytes cargados y3600,001265sde transporte agotados. Parcial≈1,6GsinSHA/tamañoexacto aún; logdelworker vacío, padre informa límite acumulado. No índice completo, FASTQoalineamiento. No interpretar como falloHISAT2. Evidencia aportada porusuario enreports/interrupted-index-transport-20261102/user-reported-failure.json.
+
+Descargadorlegacyguardaba3metadatosduraderosporlectura; optimización opt-in reserva bloques4MiBantesdelecturas≤64KiB, conserva guardas y cargo conservador trasSIGKILL/excepción. Microbenchmark8MiBconread1de16KiB:3082→22fsync, mismoSHAybytes;2,54→0,14sen nuestrofilesystem, no medidaWSL/red delusuario. Causa develocidadoriginalno establecida. Entrada sintética antigua conserva comportamiento; nuevo modo cambia identidad/manifesty no admite el plananterior.
+
+236tests seleccionados pasan sin omisiones(222anteriores+8bloques+6inspector), compileallcorrecto. Nuevo inspect_interrupted_pilot.py solo lee: verifica aceptación/fingerprint/recibos, SHA/tamaño delparcialy presupuestocargado. No promociona, reanuda, haceRange/HTTP, borra o renueva límites.
+
+**Siguiente tarea única:** Luis ejecuta auditoríaread-onlyy devuelveJSON. Después preparar recuperación explícita y revisión de tiempos: el3600stransporte está agotado y no se restaura alactualizarsoftware. Reutilizar parcial requeriría diseñoRange/206ySHAcompleto, aún no implementado. No recrear directorio/planpara eludircap o descargar de cero; conservar ejecución01intacta. PR36abierta,sinmerge/contactos/costes/nuevasdescargas/alineamientos. raw_execution_ready=false. Cabecerasinferioreshistóricas.
+
+
 ## Prioridad vigente: candidato real preparado para WSL; validación humana pendiente — 02/11/2026
 
 Usuario confirmó201tests correctos en su WSL, Python3.12.3/PySAM0.23.3, RAMWindows15,8GiB, WSL7,6GiBtotal/7,1disponible y C:613,2GiBlibres. Evidencia aportada por él, no inspección remota. Nuevo CLI separado real_pilot_workflow: --host/--prepare no descargan ni alinean; --execute exige aceptación SHA256exacta del archivo preparado y rootnuevo. Política real solo con opt-in explícito; entradas sintéticas mantienen sus guardas. Se fijan orígenes,5transferencias,2bibliotecas,1Mpares y umbral20; no argvlibre o override de presupuesto.

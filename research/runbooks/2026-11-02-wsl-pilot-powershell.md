@@ -1,5 +1,12 @@
 # Piloto UNC13A en Windows desde PowerShell
 
+> Actualización: la ejecución `ela-piloto-real-01` alcanzó el límite de transporte
+> durante el índice. No repetir pasos4–5para esa ejecución ni emitir otro plan
+> para reiniciar presupuestos. Conservarla intacta y usar primero
+> `scripts/inspect_interrupted_pilot.py --root /home/luisceb/ela-piloto-real-01`.
+> La versión nueva optimiza sincronizaciones, pero NOreanuda trabajos antiguos.
+
+
 02/11/2026. Preparación revisable; no ejecución biológica realizada por esta entrega.
 No requiere Cursor, GPU, dominio, puertos abiertos o servicio web.
 
@@ -47,7 +54,7 @@ wsl -d Ubuntu-24.04 -- bash -lc 'cd ~/ela-tools/hisat2-2.2.3 && git rev-parse HE
 Compilar ambos binarios con2trabajos. Puede tardar varios minutos:
 
 ```powershell
-wsl -d Ubuntu-24.04 -- bash -lc 'cd ~/ela-tools/hisat2-2.2.3 && test $(git rev-parse HEAD) = 0d244324f98de541bce04d45c75e83bc3522f7f4 && make -j2 hisat2-align-s hisat2-inspect-s'
+wsl -d Ubuntu-24.04 -- make -C /home/luisceb/ela-tools/hisat2-2.2.3 -j2 hisat2-align-s hisat2-inspect-s
 ```
 
 ```powershell

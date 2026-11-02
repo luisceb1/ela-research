@@ -16,13 +16,53 @@ from artifact_checksums import validate_expected,check
 class NoRedirect(urllib.request.HTTPRedirectHandler):
     def redirect_request(self,*args,**kwargs):raise ValueError('Redirect refused')
 
-def transfer_http(runner,name,url,expected,allowed_origins,attempts=1,chunk_size=65536,*,reserve_reads=False):
+def read_reserved_blocks(runner,phase,response,out,receipt,rec,expected,chunk_size,block_size):
+    """Persist credit for a bounded block before *any* of its reads.
+
+    Between commits, the ledger charges the entire block, including unread
+    credit. Death/read exceptions leave that conservative charge intact. Only
+    a read returning EOF proves the remaining credit unused. No phase resume.
+    Per-read time/disk guards and 64KiB maximum read remain unchanged.
+    """
+    md5=hashlib.md5();sha=hashlib.sha256()
+    rec['accounting']='durable-block-reservation-v1';rec['reservation_block_bytes']=block_size
+    while rec['body_bytes']<expected['bytes']:
+        runner.guard()
+        balance=runner.state['limits']['transfer_bytes']-runner.state['transfer_bytes_consumed']
+        reserved=min(block_size,expected['bytes']-rec['body_bytes'],balance)
+        if reserved<=0:raise RuntimeError('Body budget exhausted')
+        phase['unsettled_body_reservation_bytes']=reserved
+        phase['reservation_start_body_bytes']=rec['body_bytes']
+        runner.state['transfer_bytes_consumed']+=reserved;runner.save()
+        credit=reserved
+        while credit:
+            runner.guard();amount=min(chunk_size,credit)
+            data=response.read1(amount)
+            if len(data)>amount:raise ValueError('Reader exceeded reserved amount')
+            if not data:
+                # The empty return proves no additional bytes were delivered;
+                # uncertain exceptions deliberately do not take this path.
+                runner.state['transfer_bytes_consumed']-=credit
+                phase['unsettled_body_reservation_bytes']=0;runner.save()
+                raise ValueError('Truncated HTTP body')
+            credit-=len(data);out.write(data);md5.update(data);sha.update(data)
+            rec['body_bytes']+=len(data);runner.guard()
+        out.flush()
+        # The whole reserved block has now been delivered. No refund needed.
+        phase['unsettled_body_reservation_bytes']=0;runner.save()
+        atomic_json(receipt,rec)
+    return md5,sha
+
+
+def transfer_http(runner,name,url,expected,allowed_origins,attempts=1,chunk_size=65536,*,reserve_reads=False,reservation_block_bytes=None):
     parsed=urllib.parse.urlsplit(url);origin=f'{parsed.scheme}://{parsed.netloc}'
     if origin not in allowed_origins or parsed.username or parsed.password or parsed.fragment or parsed.scheme not in ('http','https'):raise ValueError('Origin or URL rejected')
     if attempts not in (1,2) or not 1<=chunk_size<=65536:raise ValueError('Unbounded retry/chunk policy')
+    if reservation_block_bytes is not None and (not reserve_reads or type(reservation_block_bytes) is not int or not chunk_size<=reservation_block_bytes<=8*1024**2):raise ValueError('Explicit durable reservation block required within chunk..8MiB')
     validate_expected(expected)
     policy={'url':url,'expected':expected,'attempts':attempts,'chunk_size':chunk_size}
     if reserve_reads:policy['accounting']='durable-read-reservation-v1'
+    if reservation_block_bytes is not None:policy.update(accounting='durable-block-reservation-v1',reservation_block_bytes=reservation_block_bytes)
     signature=digest(policy)
     if not runner.begin(name,'transfer',signature):return runner.state['phases'][name]
     phase=runner.state['phases'][name]
@@ -49,7 +89,9 @@ def transfer_http(runner,name,url,expected,allowed_origins,attempts=1,chunk_size
                     if len(lengths or [])!=1:raise ValueError('Ambiguous Content-Length')
                     if response.headers.get('Content-Length')!=str(expected['bytes']):raise ValueError('Content-Length mismatch')
                     md5=hashlib.md5();sha=hashlib.sha256()
-                    while rec['body_bytes']<expected['bytes']:
+                    if reservation_block_bytes is not None:
+                        md5,sha=read_reserved_blocks(runner,phase,response,out,receipt,rec,expected,chunk_size,reservation_block_bytes)
+                    while reservation_block_bytes is None and rec['body_bytes']<expected['bytes']:
                         runner.guard()
                         balance=runner.state['limits']['transfer_bytes']-runner.state['transfer_bytes_consumed']
                         amount=min(chunk_size,balance,expected['bytes']-rec['body_bytes'])

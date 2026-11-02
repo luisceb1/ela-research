@@ -81,7 +81,7 @@ def make_manifest(aligner):
     policy['phases']['index_probe']={'kind':'process','wall_seconds':120,'rss_bytes':6*GiB,'address_space_bytes':8*GiB}
     ref=old['reference'];expected={'bytes':ref['expected_bytes'],'sha256':ref['sha256']}
     steps=[{'name':'preflight','kind':'process'}, {'name':'index_archive','kind':'http','url':ref['url'],'expected':expected}, {'name':'index_extract','kind':'archive'}, {'name':'index_probe','kind':'process'}]
-    manifest={'execution_policy':policy,'aligner':aligner,'archives':{'index_extract':{
+    manifest={'transport':{'read_chunk_bytes':65536,'reservation_block_bytes':4*1024**2,'attempts':1},'execution_policy':policy,'aligner':aligner,'archives':{'index_extract':{
         'transfer':'index_archive','identity':'pinned-hg38-hisat2-index','expected':expected,
         'members':ref['members'],'max_members':16,'max_expanded_bytes':sum(m['bytes'] for m in ref['members']),
         'max_tar_bytes':sum(m['bytes']+((-m['bytes'])%512)+512 for m in ref['members'])+1024*1024}},
@@ -339,7 +339,8 @@ def worker(job,verify=False):
             if kind=='process':run_preflight(runner,name)
             elif kind=='http':
                 from bounded_http_transport import transfer_http
-                transfer_http(runner,name,step['url'],step['expected'],job['manifest']['sealed_workflow']['origins'],reserve_reads=True)
+                transport=job['manifest']['transport']
+                transfer_http(runner,name,step['url'],step['expected'],job['manifest']['sealed_workflow']['origins'],attempts=transport['attempts'],chunk_size=transport['read_chunk_bytes'],reserve_reads=True,reservation_block_bytes=transport['reservation_block_bytes'])
             elif kind=='archive':runner.archive(name)
             elif kind=='paired_fastq':runner.paired_fastq(name)
             else:run_stream(runner,name)

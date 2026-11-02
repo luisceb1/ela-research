@@ -8,6 +8,10 @@ on:
       - 'scripts/compact_ledger_phase.py'
       - 'scripts/pilot_execution_policy.py'
       - 'scripts/pilot_dry_runner.py'
+      - 'scripts/inspect_interrupted_pilot.py'
+      - 'scripts/bounded_http_transport.py'
+      - 'tests/test_block_http_reservation.py'
+      - 'tests/test_inspect_interrupted_pilot.py'
       - 'scripts/real_pilot_workflow.py'
       - 'scripts/plan_b4_execution_policy.py'
       - 'tests/test_real_pilot_workflow.py'
@@ -45,3 +49,5 @@ jobs:
       - run: python -m unittest discover -s tests -p test_sealed_local_workflow.py -v
       - run: python -m unittest discover -s tests -p test_real_pilot_workflow.py -v
       - run: python -m unittest discover -s tests -p test_process_supervisor_v2.py -v
+      - run: python -m unittest discover -s tests -p test_block_http_reservation.py -v
+      - run: python -m unittest discover -s tests -p test_inspect_interrupted_pilot.py -v
