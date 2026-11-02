@@ -1,0 +1,44 @@
+{
+  "status": "verified",
+  "binding": {
+    "policy": "paired-fastq-ledger-v1",
+    "spec": {
+      "mates": [
+        {
+          "identity": "fixture/R1",
+          "transfer": "mate1",
+          "expected": {
+            "bytes": 51,
+            "md5": "be5efeeb8463a7168e7e2b69747df8e3",
+            "sha256": "1fef2563a815b523ac4fa87ba9cbac45657246daa1af5b9811c4d7f4c9608baa"
+          }
+        },
+        {
+          "identity": "fixture/R2",
+          "transfer": "mate2",
+          "expected": {
+            "bytes": 51,
+            "md5": "a21ce8b9f6d0b06575c3dcb476bcef99",
+            "sha256": "c4eabd204604ff85ee833749cdf664756f097110bc1ed2a2b065e9f691a51787"
+          }
+        }
+      ],
+      "prefix_pairs": 2
+    },
+    "transfers": [
+      {
+        "identity": "fixture/R1",
+        "transfer": "mate1",
+        "ledger_receipt_sha256": "9f01c75fd620a9651a4501f5301d101ff6bbdc3c35651618dbc77f939087c1e0"
+      },
+      {
+        "identity": "fixture/R2",
+        "transfer": "mate2",
+        "ledger_receipt_sha256": "2aec58f92ef75de1fcf9e20f0369e27b2035798041a91fa83367293ef7a5d84d"
+      }
+    ],
+    "fingerprint": "279c43d7f96ec53adb3f16caafc60ecc2fb8c62a1654b9ae250e00e2e181b916"
+  },
+  "result_sha256": "0d76237508416f8d7ab22388a448f12ec142fea027f04fef0511743d02b2956f",
+  "raw_execution_ready": false
+}

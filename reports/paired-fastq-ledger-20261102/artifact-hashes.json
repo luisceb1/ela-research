@@ -1,0 +1,17 @@
+{
+  "reports/paired-fastq-ledger-20261102/REPORT.md": "ffaa3e466c543013ee30f794df9af1b1f2059b59cd4b350b38fcfa1ac18dcf3a",
+  "reports/paired-fastq-ledger-20261102/executed/ledger.json": "cc86018a1b78f6119eaa4d4014c3c22474c336e9d332d40b85afd82dbbd8f30c",
+  "reports/paired-fastq-ledger-20261102/executed/manifest.json": "cd760bd101f6c54d24450c99e6bef3d41d638d44537e036ad371e5f5c8b97f24",
+  "reports/paired-fastq-ledger-20261102/executed/paired-fastq/pair/receipt.json": "046ad8255f3bf4f2b78ae77dbb11719846b6c8e7c87c996f22f46f23a97b83d9",
+  "reports/paired-fastq-ledger-20261102/executed/paired-fastq/pair/result.json": "0d76237508416f8d7ab22388a448f12ec142fea027f04fef0511743d02b2956f",
+  "reports/paired-fastq-ledger-20261102/executed/summary.json": "b198246892df5dff41f54cda410c3261f6807e16924bc7dff7ebb18c9dffc710",
+  "reports/paired-fastq-ledger-20261102/tests.txt": "b91b5c50edced4b6f9b70d95988a9086b8b359349811194c7a2e312ffa72f6fc",
+  "reports/paired-fastq-ledger-20261102/validation.json": "3ce1fe9b83ed16ed790b0fc3188ed171b2dfc995d59f433d16e5eb91e77bc876",
+  "research/BACKLOG.md": "39d33bbc4ba5abf05dfbf166f25d3fe3a064a94686c5cd8152f9ba424fbc8c51",
+  "research/STATE.md": "cb4d3975e95f6c0aed79172a9d5ffeb76d646493eef11429fd2e447f2fd55d4e",
+  "research/plans/2026-11-02-paired-fastq-ledger.md": "e912609deec40c428b227733f953c064c3c9b4c8a181a5643332d9f560f9714d",
+  "scripts/paired_fastq_phase.py": "d6966112b7fbec98a05e6cf28040ca5df7da68e592f71cac8b12bcb635473ac2",
+  "scripts/pilot_dry_runner.py": "3c912a931377df63c208080ee23e3bdc736e4ddc72d56d688ad43c49d8eab960",
+  "scripts/run_paired_fastq_ledger_fixture.py": "95e187135ae53f6326aeb82d979c4c821c7756f62808e60bfe35473393b76499",
+  "tests/test_paired_fastq_phase.py": "431d2721dc064d33c89bc0224c902df181f8779203a5e8069c61375be27d0f81"
+}

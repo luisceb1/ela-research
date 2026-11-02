@@ -14,12 +14,15 @@ import shutil
 import sys
 import time
 from process_supervisor_v2 import atomic_json,supervise
+from paired_fastq_integrity import file_digest
+from paired_fastq_phase import run_phase,verify_phase
 
 def digest(obj):return hashlib.sha256(json.dumps(obj,sort_keys=True,separators=(',',':')).encode()).hexdigest()
 
 class DryRunner:
     def __init__(self,root,manifest,limits,clock=time.time):
         self.root=Path(root);self.root.mkdir(parents=True,exist_ok=True);self.clock=clock
+        self.manifest=json.loads(json.dumps(manifest))
         self.lock=(self.root/'runner.lock').open('a')
         try:
             fcntl.flock(self.lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
@@ -27,14 +30,17 @@ class DryRunner:
             if self.path.exists():
                 self.state=json.loads(self.path.read_text())
                 if self.state['fingerprint']!=fingerprint:raise ValueError('Manifest or limits changed')
+                if any(p.get('status')!='verified' for p in self.state['phases'].values()):raise ValueError('Incomplete/failed phase requires explicit reconciliation')
                 for name,phase in self.state['phases'].items():
                     if phase['status']!='verified':raise ValueError('Incomplete/failed phase requires explicit reconciliation: '+name)
                     if phase['kind']=='transfer':
-                        data=(self.root/name).read_bytes()
-                        if len(data)!=phase['bytes'] or hashlib.sha256(data).hexdigest()!=phase['sha256']:raise ValueError('Verified artifact changed')
-                    else:
+                        if file_digest(self.root/name,self.guard)!={'bytes':phase['bytes'],'sha256':phase['sha256']}:raise ValueError('Verified artifact changed')
+                    elif phase['kind']=='paired_fastq':
+                        verify_phase(self,name,phase)
+                    elif phase['kind']=='process':
                         receipt=self.root/'process-receipts'/phase['receipt']
                         if hashlib.sha256(receipt.read_bytes()).hexdigest()!=phase['receipt_sha256']:raise ValueError('Process receipt changed')
+                    else:raise ValueError('Unknown phase kind')
             else:
                 self.state={'fingerprint':fingerprint,'limits':limits,'deadline_epoch':clock()+limits['wall_seconds'],'transfer_bytes_consumed':0,'phases':{},'mode':'synthetic-only','raw_pilot_ready':False}
                 self.save()
@@ -90,6 +96,8 @@ class DryRunner:
             raise ValueError('Manifest-bound process caps required')
         if any(requested[k]>caps[k] for k in keys):raise ValueError('Process limits exceed pinned caps')
         return dict(requested)
+    def paired_fastq(self,name):
+        return run_phase(self,name)
     def plan_process(self,argv,process_limits=None,*,production=True):
         self.guard()
         if production and process_limits is None:raise ValueError('Production requires explicit process limits')

@@ -1,5 +1,11 @@
 # Estado vigente — 02/11/2026
 
+## Decisión vigente: integridad ligada al ledger — 02/11/2026
+
+Fase paired_fastq integrada al manifiesto y recibos de transferencia/HTTP. Rehash completo streaming, recibos finales y prefijos cotejados al reabrir. 67 tests locales pasan (19 nuevos +48 existentes); salida dura deja started/partial y bloquea reanudación. Fixture ejecutado conserva 102bytes y deadline original; reloj inyectado, no benchmark. Informe reports/paired-fastq-ledger-20261102. Sin crudos biológicos, índice o alineamientos; producción deshabilitada.
+
+**Única siguiente tarea:** supervisión externa del transporte HTTP y validador con servidor local lento/bloqueado y sintéticos; cortes, limpieza y recibos/consumo persistentes tras interrupción. Sin descargas reales o restaurar índice. raw_execution_ready=false; PR36 sin merge automático. Cabeceras inferiores son historia.
+
 ## Decisión vigente: integridad paired local y límites explícitos — 02/11/2026
 
 Ejecutado el siguiente gate de PR36 con fixtures locales: tres pares escaneados hasta EOF/CRC y prefijo determinista de dos; corrupción posterior al prefijo rechazada. Validador de cuatro líneas, mates/nombres/etiquetas y hashes; recibo final atómico y prefijos con fsync. 48 tests locales seleccionados (29 nuevos+19 existentes), compileall; no equivalen a suite completa o experimentos. Informe reports/paired-fastq-local-20261102.

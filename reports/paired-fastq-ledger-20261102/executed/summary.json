@@ -1,0 +1,9 @@
+{
+  "same_ledger_on_resume": true,
+  "transfer_bytes_consumed": 102,
+  "deadline_epoch": 200,
+  "pairs_scanned": 3,
+  "prefix_pairs": 2,
+  "clock": "injected synthetic epoch 100 -> 101; not a timing benchmark",
+  "raw_execution_ready": false
+}

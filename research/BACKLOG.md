@@ -1,5 +1,13 @@
 # Backlog vigente — 02/11/2026
 
+## P0 vigente: supervisión externa local de transporte/validación — 02/11/2026
+
+- Completado: integridad paired ligada al ledger/manifiesto/recibos; 67 tests locales,19 nuevos. Reanudación sin nueva transferencia/plazo; interrupción dura/partials y modificaciones rechazadas. reports/paired-fastq-ledger-20261102.
+- P0 única: ejecutar transporte y validador bajo supervisor externo con sintéticos/servidor local lento y bloqueado. Verificar corte duro, limpieza de procesos y recibos/budget persistentes tras terminación.
+- Producción deshabilitada, raw_execution_ready=false. Sin FASTQ biológico, índice, alineamientos, contactos, costes o merge automático.
+
+Las cabeceras inferiores son historia.
+
 ## P0 vigente: fase de integridad ligada al ledger — 02/11/2026
 
 - Completado: integridad paired/gzip/prefijo y límites explícitos con fixtures;48tests locales,29nuevos. reports/paired-fastq-local-20261102; sin datos biológicos o alineaciones.
