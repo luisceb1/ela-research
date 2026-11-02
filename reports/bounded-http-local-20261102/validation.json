@@ -1,0 +1,9 @@
+{
+  "tests_passed": 9,
+  "server": "127.0.0.1 loopback only",
+  "external_urls_used": false,
+  "body_budget_read_sizes_checked": true,
+  "failed_attempts_charged": true,
+  "wire_budget_certified": false,
+  "raw_pilot_ready": false
+}

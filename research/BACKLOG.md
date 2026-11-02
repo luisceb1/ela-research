@@ -1,5 +1,14 @@
 # Backlog vigente — 02/11/2026
 
+## P0 vigente: FASTQpaired local y límites de producción — 02/11/2026
+
+- Completado: adaptador HTTPcon9tests locales y preflight metadatos; reports/bounded-http-local-20261102. Sin conexiones externas de datos.
+- P0 única: integridadgzip/mates/prefijo con fixtureslocales y límites de proceso explícitos del plan en dry-run. Rechazar límite sintético5s/128MiBpara ejecución humana.
+- Presupuesto cubre cuerpo HTTPleído, no wirebytes; control externo transporte pendiente. Sin crudos/índice/alineaciones; raw_execution_ready=false. PR36sin merge automático.
+
+Las cabeceras inferiores son historia.
+
+
 ## P0 vigente: transporte acotado y preflight — 02/11/2026
 
 - Completado: runner/supervisor en simulación,10tests; informe reports/pilot-runner-dry-20261102. Reanudación verificada no reinicia deadline/consumos; fallos/incompletos se bloquean.

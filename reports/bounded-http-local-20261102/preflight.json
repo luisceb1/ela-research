@@ -1,0 +1,216 @@
+{
+  "source_commit": "da1cb91842d33212a4dad47bfd24ee099949838b",
+  "mode": "metadata_only_no_url_execution",
+  "limits": {
+    "threads": 2,
+    "memory_bytes": 6442450944,
+    "additional_disk_bytes": 26843545600,
+    "reserve_free_disk_bytes": 8589934592,
+    "raw_plus_reference_transfer_bytes": 12000000000,
+    "all_transfer_elapsed_seconds": 3600,
+    "prefix_pairs_per_library": 1000000,
+    "alignment_seconds_per_library": 900
+  },
+  "reference": {
+    "archive_url": "https://genome-idx.s3.amazonaws.com/hisat/hg38_genome.tar.gz?versionId=8z.MUbL_W4wij.Nmcia5c4mT7tlz0cU.",
+    "bytes": 4355786349,
+    "sha256": "1848784403a0fb3ee7735b2f891d8be96fd2782e08aed3d8212d922666f077a5",
+    "index_files": [
+      {
+        "name": "hg38/make_hg38.sh",
+        "bytes": 1292,
+        "sha256": "9e29e570495a5b237fce579bd5b2059f600ff061cdbc12c2438623e9ffad27d2"
+      },
+      {
+        "name": "hg38/genome.8.ht2",
+        "bytes": 8,
+        "sha256": "7c9fa136d4413fa6173637e883b6998d32e1d675f88cddff9dcbcf331820f4b8"
+      },
+      {
+        "name": "hg38/genome.5.ht2",
+        "bytes": 1342456349,
+        "sha256": "07400123a5033f85fd0152aae0a513771b5f5ba1afe878839bd9624b483fa503"
+      },
+      {
+        "name": "hg38/genome.7.ht2",
+        "bytes": 8,
+        "sha256": "7c9fa136d4413fa6173637e883b6998d32e1d675f88cddff9dcbcf331820f4b8"
+      },
+      {
+        "name": "hg38/genome.6.ht2",
+        "bytes": 776249234,
+        "sha256": "4a8f0d36ac6e459bbf682a5979de5e5d4883cd42a22866093d730797c87e35ae"
+      },
+      {
+        "name": "hg38/genome.4.ht2",
+        "bytes": 762328946,
+        "sha256": "2f5112d9a0c0855eea028ea4181e2af9dd261cdadac3eff541415dd5eb4ea413"
+      },
+      {
+        "name": "hg38/genome.3.ht2",
+        "bytes": 15065,
+        "sha256": "d7ecd66f14894242cb5153471028bb4f94bebd920c2c025c08ec24bcb13e6df5"
+      },
+      {
+        "name": "hg38/genome.1.ht2",
+        "bytes": 1020663384,
+        "sha256": "75c666c1bdcc6bd346a751e7277d26ce518c1e9a2612c301317248e3a4ee6014"
+      },
+      {
+        "name": "hg38/genome.2.ht2",
+        "bytes": 762328952,
+        "sha256": "ee1502737c1fe27706a91179584f99146102da7eac08ff5f76e9657476af619d"
+      }
+    ],
+    "local_restore_checked": false
+  },
+  "fastq": [
+    {
+      "library": "CTRL-4",
+      "gsm": "GSM8975203",
+      "srx": "SRX28666759",
+      "biosample": "SAMN48333874",
+      "run": "SRR33425816",
+      "group": "control",
+      "read_count_ena": 12709444,
+      "fastq_bytes": 1958406420,
+      "mates": [
+        {
+          "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR334/016/SRR33425816/SRR33425816_1.fastq.gz",
+          "bytes": 960856963,
+          "md5": "ed58daa011d6508a3e8d1f05bc39fc29"
+        },
+        {
+          "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR334/016/SRR33425816/SRR33425816_2.fastq.gz",
+          "bytes": 997549457,
+          "md5": "007d66223fe35f394284e4ebd631eaef"
+        }
+      ]
+    },
+    {
+      "library": "TDP-5",
+      "gsm": "GSM8975210",
+      "srx": "SRX28666756",
+      "biosample": "SAMN48333881",
+      "run": "SRR33425819",
+      "group": "TDP43_KD",
+      "read_count_ena": 36803627,
+      "fastq_bytes": 4391297461,
+      "mates": [
+        {
+          "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR334/019/SRR33425819/SRR33425819_1.fastq.gz",
+          "bytes": 2143112809,
+          "md5": "474e4af4ea1dcf57b008a58e0c824671"
+        },
+        {
+          "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR334/019/SRR33425819/SRR33425819_2.fastq.gz",
+          "bytes": 2248184652,
+          "md5": "eeb19a696f12a4f6950426f3f79ddf25"
+        }
+      ]
+    }
+  ],
+  "bin_hashes_from_miniature": {
+    "hisat2-align-s": {
+      "sha256": "ef3d9d2d1134ea74415968b9e06a74c30a0d7688604895c9bfb889d65adc96cd",
+      "version": "/workspace/scratch/dd06b558bed7/ela-audit/reports/unc13a-minigenome-20261102/scratch/hisat2-0d244324f98de541bce04d45c75e83bc3522f7f4/hisat2-align-s version 2.2.3\n64-bit\nBuilt on dc45c1f47bb8\nMon Nov  2 00:50:29 CET 2026\nCompiler: gcc version 13.3.0 (Ubuntu 13.3.0-6ubuntu2~24.04) \nOptions: -O3 -m64 -msse2 -funroll-loops -g3 -std=c++11 -DPOPCNT_CAPABILITY\nSizeof {int, long, long long, void*, size_t, off_t}: {4, 8, 8, 8, 8, 8}\n",
+      "exit": 0
+    },
+    "hisat2-build-s": {
+      "sha256": "aba530dab9930cae29b2baf87337bef325c650d1f478ec6853f093a7fce4f269",
+      "version": "/workspace/scratch/dd06b558bed7/ela-audit/reports/unc13a-minigenome-20261102/scratch/hisat2-0d244324f98de541bce04d45c75e83bc3522f7f4/hisat2-build-s version 2.2.3\n64-bit\nBuilt on dc45c1f47bb8\nMon Nov  2 00:51:45 CET 2026\nCompiler: gcc version 13.3.0 (Ubuntu 13.3.0-6ubuntu2~24.04) \nOptions: -O3 -m64 -msse2 -funroll-loops -g3 -std=c++11 -DPOPCNT_CAPABILITY\nSizeof {int, long, long long, void*, size_t, off_t}: {4, 8, 8, 8, 8, 8}\n",
+      "exit": 0
+    }
+  },
+  "contract": {
+    "assembly": "hg38",
+    "chromosome": "chr19",
+    "transcript_strand": "-",
+    "interval_convention": "intronic 0-based half-open, same as PE parser N span",
+    "events": [
+      {
+        "event": "canonical",
+        "model": "exonic1",
+        "start0": 17641556,
+        "end0": 17642844,
+        "left_plus": "CT",
+        "right_plus": "AC",
+        "minus_gt_ag": true,
+        "canonical_transcripts": [
+          "ENST00000519716.7",
+          "ENST00000551649.5",
+          "ENST00000552293.5",
+          "ENST00000550896.1"
+        ]
+      },
+      {
+        "event": "cryptic_genomic_left",
+        "model": "exonic1",
+        "start0": 17641556,
+        "end0": 17642413,
+        "left_plus": "CT",
+        "right_plus": "AC",
+        "minus_gt_ag": true,
+        "canonical_transcripts": []
+      },
+      {
+        "event": "cryptic_genomic_right",
+        "model": "exonic1",
+        "start0": 17642541,
+        "end0": 17642844,
+        "left_plus": "CT",
+        "right_plus": "AC",
+        "minus_gt_ag": true,
+        "canonical_transcripts": []
+      }
+    ],
+    "cryptic_exon_interval0": [
+      17642413,
+      17642541
+    ],
+    "cryptic_exon_length": 128,
+    "primary_library_strandness": "unstranded: omit --rna-strandness",
+    "RF_expected_from_kit_but_not_certified_for_actual_libraries": true,
+    "require_XS_reference_motif_concordance": true,
+    "aligner_end_to_end_verified": false,
+    "raw_execution_ready": false,
+    "two_independent_sequence_providers": false
+  },
+  "minimum_entity_body_bytes": 10705490230,
+  "transfer_plan_fits": true,
+  "phases": [
+    {
+      "name": "reference_restore",
+      "implemented": false
+    },
+    {
+      "name": "four_mate_downloads",
+      "adapter_locally_tested": true,
+      "executed": false
+    },
+    {
+      "name": "gzip_eof_and_mate_synchronization",
+      "implemented": false
+    },
+    {
+      "name": "one_million_pair_prefix",
+      "implemented": false
+    },
+    {
+      "name": "human_alignment_and_collation",
+      "implemented": false
+    },
+    {
+      "name": "target_fragment_counts",
+      "synthetic_contract_verified": true,
+      "human_execution_verified": false
+    }
+  ],
+  "raw_execution_ready": false,
+  "blockers": [
+    "DryRunner.process still hardcodes 5 seconds / 128 MiB synthetic limits; cannot run hg38",
+    "Human index and executable hashes must be verified in actual environment",
+    "Paired FASTQ integrity/prefix stages not implemented",
+    "Body budget excludes TCP/TLS/header buffering; no strict wire-byte claim"
+  ]
+}

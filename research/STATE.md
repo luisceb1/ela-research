@@ -1,5 +1,12 @@
 # Estado vigente — 02/11/2026
 
+## Decisión vigente: transporte HTTPlocal validado — 02/11/2026
+
+Adaptador HTTPacotado con servidor127.0.0.1y lector instrumentado:9tests pasan. Lecturas limitadas al saldo/restante/chunk, retriesexplícitos cobrados, truncamiento/hash/redirectrechazados y recibos por intento. Informe reports/bounded-http-local-20261102. Presupuesto de cuerpo leído, NOtráfico TCP/TLS/cabeceras o buffering; no se acredita red externa/deadlineestricto de socket.
+
+Preflight metadatos fija4mates+índiceversionado/hashes,10.705.490.230bytes mínimos de cuerpo; no descargas. DryRunner.processsiguelimitado a5s/128MiBsintéticos, no puede ejecutar índice humano. Integridad gzip/mates/prefijo/fases humanas pendientes. **Única siguiente tarea:** fixturesgziplocales paraEOF/CRC/sincronización/prefijo y parametrización explícita de límites de proceso del plan en dry-run. Sin FASTQbiológico/índice/alineación. raw_execution_ready=false; PR36sin merge automático. Las prioridades inferiores son historia.
+
+
 ## Decisión vigente: runner simulado integrado — 02/11/2026
 
 pilot_dry_runner.py integra supervisorv2, hash de manifiesto/límites, deadline persistente, ledger de bytes acumulados, guardas de disco/reserva y fases atómicas. Diez tests pasan; simulación y reanudación idénticas, sin nueva transferencia. Fases.failed/startedbloquean continuación; solo archivos/recibos revalidados se reutilizan. Informe reports/pilot-runner-dry-20261102. No HTTPni comandos humanos expuestos enCLI; no crudos/alineamientos.

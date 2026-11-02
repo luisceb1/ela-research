@@ -1,0 +1,14 @@
+test_budget_rejected_before_connection (test_bounded_http_transport.HTTPTests.test_budget_rejected_before_connection) ... ok
+test_hash_failure_still_charged (test_bounded_http_transport.HTTPTests.test_hash_failure_still_charged) ... ok
+test_length_rejected_before_body_read (test_bounded_http_transport.HTTPTests.test_length_rejected_before_body_read) ... ok
+test_read_sizes_never_exceed_balance_or_expected_remainder (test_bounded_http_transport.HTTPTests.test_read_sizes_never_exceed_balance_or_expected_remainder) ... ok
+test_redirect_and_origin_refused (test_bounded_http_transport.HTTPTests.test_redirect_and_origin_refused) ... ok
+test_retry_keeps_failed_bytes_and_both_receipts (test_bounded_http_transport.HTTPTests.test_retry_keeps_failed_bytes_and_both_receipts) ... ok
+test_retry_refused_if_budget_insufficient (test_bounded_http_transport.HTTPTests.test_retry_refused_if_budget_insufficient) ... ok
+test_success_and_cached_reuse (test_bounded_http_transport.HTTPTests.test_success_and_cached_reuse) ... ok
+test_truncated_bytes_charged (test_bounded_http_transport.HTTPTests.test_truncated_bytes_charged) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.655s
+
+OK
