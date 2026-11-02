@@ -1,0 +1,113 @@
+{
+  "manifest": {
+    "execution_policy": {
+      "schema": "pilot-b4-local-v1",
+      "production_enabled": false,
+      "total_seconds": 60,
+      "transfer_seconds": 10,
+      "allocations": {
+        "artifacts": 2097152,
+        "prefixes": 524288,
+        "temporaries": 2097152,
+        "dependencies": 524288,
+        "receipts": 2097152
+      },
+      "phases": {
+        "source": {
+          "kind": "transfer",
+          "wall_seconds": 10,
+          "rss_bytes": 268435456,
+          "address_space_bytes": 402653184
+        },
+        "second": {
+          "kind": "transfer",
+          "wall_seconds": 10,
+          "rss_bytes": 268435456,
+          "address_space_bytes": 402653184
+        },
+        "calc": {
+          "kind": "compact",
+          "wall_seconds": 30,
+          "rss_bytes": 268435456,
+          "address_space_bytes": 402653184,
+          "producer_seconds": 20,
+          "reduce_seconds": 10
+        },
+        "exec": {
+          "kind": "process",
+          "wall_seconds": 5,
+          "rss_bytes": 268435456,
+          "address_space_bytes": 402653184
+        }
+      }
+    },
+    "compact": {
+      "calc": {
+        "source_scope": "existing-synthetic-sam-only",
+        "transfer": "source",
+        "library": "fixture",
+        "targets": [
+          [
+            "mini",
+            556,
+            1844,
+            "-"
+          ],
+          [
+            "mini",
+            556,
+            1413,
+            "-"
+          ],
+          [
+            "mini",
+            1541,
+            1844,
+            "-"
+          ]
+        ],
+        "limits": {
+          "max_input_bytes": 8388608,
+          "max_line_bytes": 65536,
+          "max_header_bytes": 1048576,
+          "max_records": 100000,
+          "max_row_bytes": 4096,
+          "chunk_bytes": 4096,
+          "merge_fan_in": 8,
+          "max_runs": 1024,
+          "max_temp_bytes": 1048576,
+          "max_result_bytes": 65536,
+          "max_targets": 1000
+        },
+        "decoder": {
+          "pysam_version": "0.23.3",
+          "samtools_version": "1.21",
+          "sha256": {
+            "pysam": "47c1a657938298a9fcffbf01c41081d2a4eb91a9d3f48ea2e7573927c5870543",
+            "pysam.libcalignedsegment": "3e1b320aeb77f81fc5fe0bd92539fe8ee76d1ae062f4fe0b8dd13be46e6b11ee",
+            "pysam.libchtslib": "027a9864a563f8f3c2f2b5f16319325a90a6b184d6a0bf6f67a4274fad4ebcbb",
+            "compact_pe_pipeline.py": "cb33f8b7c4f6edeaf726bce8f7c200081f2742f7ffc203926f9ca53644ec4455",
+            "pe_fragment_contract.py": "695ac69cb2658c937cc9bd67030386375838b3108316f233c8206a19e9974dd4",
+            "compact_ledger_phase.py": "ac0a6175ac4c0715248721160421f0bbed82aff99294d1253281a3417f5a9869",
+            "pilot_execution_policy.py": "b2535bd32692bb425d1ea3ecac23d65808628b957a8a0a8cf616155e9344f9a3",
+            "pilot_dry_runner.py": "f83830b92c420ea9b86c4fd035be00e34e7c2ff910000f16d54dff2a6c2c66a0",
+            "external_local_stage.py": "c44213ea21ba086a314ae84384a5ae259b6f3425e5e52998b552926c2162c8e7",
+            "process_supervisor_v2.py": "71f0eecd43f9ef0bdae949be72d45ad99d23ae5b1366ed25a1b65d1c52e91389"
+          }
+        },
+        "minimum_fragment_union": 20
+      }
+    }
+  },
+  "limits": {
+    "wall_seconds": 60,
+    "transfer_bytes": 1048576,
+    "disk_bytes": 8388608,
+    "reserve_bytes": 0,
+    "process_caps": {
+      "wall_seconds": 60,
+      "rss_bytes": 268435456,
+      "address_space_bytes": 402653184
+    }
+  }
+}

@@ -1,5 +1,13 @@
 # Estado vigente — 02/11/2026
 
+## Decisión vigente: B4 cerrado localmente, B1/B5 pendientes — 02/11/2026
+
+Política opt-in ligada a fingerprint: total/transporte acumulado/fase/subfase, RSS/AS explícitos y particiones de disco; cómputo ligado a fuente/objetivos/decoder+scripts/recibos y rehash. 183tests locales pasan (20nuevos+163existentes), compileall; reports/b4-ledger-policy-20261102. Worker bloqueado se corta por guarda padre≈1,097s para productor1s; exit−9, sin vivos, ledger.started conservado. Cache mantiene plazos/consumo; cambios y commits expirados fallan.
+
+Cobertura prospectiva: mínimo20grupos aceptados(RG,QNAME) con≥1objetivo a15; suma por evento separada, no moléculas únicas. Fixturedoble apoyo=unión1/suma2; wildunión6 insuficiente bloquea iniciar fase nueva sin ampliar. Borrador anterior queda histórico. Política humana9000s/3600stransporte,envolvente8520s;25GiB particionados24,75yreserva8;2CPU;6GiBRSSgrupo/8GiBASproceso en cómputo, solo planificación sin benchmark.
+
+**Única siguiente tarea B1:** worker fijo de procedencia prefijos/índice/alineador/stream/conteo y orígenes exactos, probado solo con productores/servidores sintéticos locales y producción deshabilitada. B5entorno/índice y decisión de ejecución pendientes. raw_execution_ready=false; sin URLsreales, FASTQbiológico, índice humano, nuevo alineamiento/contactos/costes/merge. Cabeceras inferiores son historia.
+
 ## Decisión vigente: B3 cerrado localmente, tres puertas pendientes — 02/11/2026
 
 Flujo SAM→metadatos/eventos JSONderivados→merge acotado→conteo objetivo/QC, sin guardar SAM/SEQ/QUAL/CIGARoriginal. Texto/HTSlib decodifican por separado a15/8; metadatos concordantes y reducción compartidos. 156tests locales pasan (19nuevos+137existentes);4SAMsintéticos existentes comparados con baselines, resultados repetidos idénticos. Fuente8SAMcotejada por blobs y SHA. Productor no-cero rechaza EOF; pipebloqueada se corta≈1,010s y termina2procesos sin vivos, recibo.started no se adopta. Informe reports/compact-pe-stream-20261102. Sin nueva alineación, índice humano o FASTQreal.

@@ -1,0 +1,69 @@
+[
+  {
+    "case": "test_coverage_union_counts_group_once_for_two_targets",
+    "phase_status": "verified",
+    "coverage": {
+      "definition": "accepted RG/QNAME groups with at least one target; marked duplicates retained, not unique molecules",
+      "anchor": 15,
+      "fragment_union": 1,
+      "event_support_sum": 2,
+      "minimum": 20,
+      "adequate": false
+    },
+    "global_deadline_epoch": 1793620179.0229304,
+    "transfer_elapsed_seconds": 0.00408625602722168,
+    "transfer_bytes_consumed": 304,
+    "phase_substage": "reduce"
+  },
+  {
+    "case": "test_parent_enforces_subphase_when_child_is_blocked",
+    "phase_status": "started",
+    "coverage": null,
+    "global_deadline_epoch": 1793620179.217978,
+    "transfer_elapsed_seconds": 0.003764629364013672,
+    "transfer_bytes_consumed": 7151,
+    "phase_substage": "producer",
+    "exit_code": -9,
+    "violation": null,
+    "supervisor_error": "RuntimeError: Phase/subphase deadline",
+    "elapsed_seconds": 1.0965901340000528,
+    "live_group_members_after_cleanup": []
+  },
+  {
+    "case": "test_success_reuse_preserves_state_and_insufficient_coverage_stops_next_phase",
+    "phase_status": "verified",
+    "coverage": {
+      "definition": "accepted RG/QNAME groups with at least one target; marked duplicates retained, not unique molecules",
+      "anchor": 15,
+      "fragment_union": 6,
+      "event_support_sum": 6,
+      "minimum": 20,
+      "adequate": false
+    },
+    "global_deadline_epoch": 1793620180.7002816,
+    "transfer_elapsed_seconds": 0.003745555877685547,
+    "transfer_bytes_consumed": 7151,
+    "phase_substage": "reduce"
+  },
+  {
+    "case": "test_supervised_local_worker_records_policy_resources",
+    "phase_status": "verified",
+    "coverage": {
+      "definition": "accepted RG/QNAME groups with at least one target; marked duplicates retained, not unique molecules",
+      "anchor": 15,
+      "fragment_union": 6,
+      "event_support_sum": 6,
+      "minimum": 20,
+      "adequate": false
+    },
+    "global_deadline_epoch": 1793620180.8233435,
+    "transfer_elapsed_seconds": 0.0037398338317871094,
+    "transfer_bytes_consumed": 7151,
+    "phase_substage": "reduce",
+    "exit_code": 0,
+    "violation": null,
+    "supervisor_error": null,
+    "elapsed_seconds": 0.17652850500007844,
+    "live_group_members_after_cleanup": []
+  }
+]

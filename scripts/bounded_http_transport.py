@@ -39,7 +39,7 @@ def transfer_http(runner,name,url,expected,allowed_origins,attempts=1,chunk_size
                  'expected_checksums':{k:expected[k] for k in ('md5','sha256') if expected.get(k) is not None}}
             atomic_json(receipt,rec)
             try:
-                timeout=min(5,runner.state['deadline_epoch']-runner.clock())
+                timeout=min(5,runner.remaining(name,'transfer'))
                 req=urllib.request.Request(url,headers={'Accept-Encoding':'identity'})
                 with opener.open(req,timeout=timeout) as response,path.open('xb') as out:
                     if response.status!=200:raise ValueError('Expected full HTTP200 response')

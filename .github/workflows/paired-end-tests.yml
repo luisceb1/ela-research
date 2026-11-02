@@ -5,6 +5,12 @@ on:
       - 'scripts/pe_fragment_contract.py'
       - 'tests/test_pe_fragment_contract.py'
       - 'scripts/compact_pe_pipeline.py'
+      - 'scripts/compact_ledger_phase.py'
+      - 'scripts/pilot_execution_policy.py'
+      - 'scripts/pilot_dry_runner.py'
+      - 'scripts/external_local_stage.py'
+      - 'scripts/process_supervisor_v2.py'
+      - 'tests/test_b4_ledger_policy.py'
       - 'tests/test_compact_pe_pipeline.py'
       - 'reports/unc13a-minigenome-20261102/fixtures/*.sam'
       - 'research/requirements-pe-contract.txt'
@@ -27,3 +33,4 @@ jobs:
       - run: python -m pip install -r research/requirements-pe-contract.txt
       - run: python -m unittest discover -s tests -p test_pe_fragment_contract.py -v
       - run: python -m unittest discover -s tests -p test_compact_pe_pipeline.py -v
+      - run: python -m unittest discover -s tests -p test_b4_ledger_policy.py -v

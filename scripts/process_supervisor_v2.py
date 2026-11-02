@@ -84,7 +84,13 @@ def supervise(name,argv,folder,timeout=5,rss_limit=128*1024**2,address_space=128
         if proc is not None:
             try:os.killpg(proc.pid,signal.SIGKILL)
             except ProcessLookupError:pass
-            proc.wait()
+            record['exit_code']=proc.wait()
+            if 'procfs_group' in record:
+                for _ in range(100):
+                    _,remaining=group_rss(record['procfs_group'])
+                    if not remaining:break
+                    time.sleep(.01)
+                record['live_group_members_after_cleanup']=remaining
         record['supervisor_error']=f'{type(exc).__name__}: {exc}'
         raise
     finally:

@@ -148,7 +148,7 @@ def run(stream,out,library,targets,limits,finish_source,checkpoint=None):
                 for p in group:disk.remove(p)
                 merged.append(dest)
             paths=merged
-        counters={route:Counter() for route in ROUTES};qcs={route:Counter() for route in ROUTES};last=None
+        counters={route:Counter() for route in ROUTES};qcs={route:Counter() for route in ROUTES};unions=Counter();last=None
         with paths[0].open('rb') as handle:
             for group_key,rows in itertools.groupby(bounded_rows(handle,limits['max_row_bytes'],guard),key=key):
                 if last is not None and group_key<=last:raise ValueError('Compact merge order')
@@ -159,9 +159,11 @@ def run(stream,out,library,targets,limits,finish_source,checkpoint=None):
                     records=[{**r['meta'],'events':[tuple(e) for e in r['events'][i]]} for r in decoded]
                     counts,qc=pe.count_fragments(iter(records),library);qcs[route].update(qc)
                     for t in targets:counters[route][t]+=counts.get((library,)+t,0)
+                    if any(counts.get((library,)+t,0)>0 for t in targets):unions[route]+=1
         if counters['text15']!=counters['hts15'] or qcs['text15']!=qcs['hts15'] or counters['text8']!=counters['hts8'] or qcs['text8']!=qcs['hts8']:raise ValueError('Reduced decoder disagreement')
         result.update(status='verified',input_eof=True,pysam_version=pysam.__version__,htslib_samtools_version=pysam.__samtools_version__,
-                      routes={r:{'counts':[{'event':list(t),'fragments':counters[r][t]} for t in targets],'qc':dict(sorted(qcs[r].items()))} for r in ROUTES})
+                      routes={r:{'counts':[{'event':list(t),'fragments':counters[r][t]} for t in targets],'qc':dict(sorted(qcs[r].items())),
+                                 'target_fragment_union':unions[r],'target_event_support_sum':sum(counters[r].values())} for r in ROUTES})
         # Prepare and validate bounded result before removing temporary evidence.
         result.update(stats,peak_temp_bytes=disk.peak)
         if len((json.dumps(result,indent=2)+'\n').encode())>limits['max_result_bytes']:raise ValueError('Result byte cap')

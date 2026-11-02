@@ -1,0 +1,27 @@
+{
+  "python": "3.12.14",
+  "pysam": "0.23.3",
+  "samtools_version": "1.21",
+  "patterns": [
+    "test_b4_ledger_policy.py",
+    "test_compact_pe_pipeline.py",
+    "test_pe_fragment_contract.py",
+    "test_pe_external_collation.py",
+    "test_process_supervisor_v2.py",
+    "test_archive_ledger_phase.py",
+    "test_artifact_checksum_transport.py",
+    "test_external_local_stage.py",
+    "test_http_read_reservation.py",
+    "test_paired_fastq_phase.py",
+    "test_paired_fastq_integrity.py",
+    "test_pilot_dry_runner.py",
+    "test_pilot_process_limits.py",
+    "test_bounded_http_transport.py"
+  ],
+  "tests": 183,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "success": true,
+  "raw_execution_ready": false
+}

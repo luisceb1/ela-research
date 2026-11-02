@@ -1,5 +1,13 @@
 # Backlog vigente — 02/11/2026
 
+## P0 vigente: B1, integración fija con procedencia bajo política — 02/11/2026
+
+- B4cerrado localmente: manifiesto/ledger/decoderhashes,clocks total/transporte/fase/subfase,particiones/RSS-AS/cobertura por unión de grupos;183tests (20nuevos). reports/b4-ledger-policy-20261102.
+- P0 única B1: unir prefijos/índice/alineador/stream/conteo con worker fijo, procedencia y orígenes exactos bajo política. Probar únicamente con productores y servidores locales sintéticos; no habilitar producción.
+- B5entorno/índice/dependencias reales y decisión expresa de ejecución pendientes. Propuesta9000s no activada; cobertura20grupos no moléculas, insuficiente impide fase nueva sin ampliar. raw_execution_ready=false. Sin descargas/alineaciones reales, contactos/costes/merge automático.
+
+Las cabeceras inferiores son historia.
+
 ## P0 vigente: B4, política completa y cómputo ligado al ledger — 02/11/2026
 
 - B3cerrado como componente local: flujo/merge/conteo derivado acotado, sin SAMcompleto,156tests con PySAM (19nuevos). Cuentas/QCcoinciden en4SAMexistentes; productor/consumidor y cortes probados. reports/compact-pe-stream-20261102.

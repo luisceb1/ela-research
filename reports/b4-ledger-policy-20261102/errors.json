@@ -1,0 +1,13 @@
+{
+  "unexpected_test_failures":0,
+  "unexpected_test_errors":0,
+  "documentation_edit_incident":"Empty patch rejected before mutation; reapplied as valid documentation-only hunk",
+  "final_local_tests":183,
+  "new_policy_tests":20,
+  "expected_failures":"Cumulative time, phase/subphase expiry, retrograde clock, invalid caps, disk fill, metadata/source/dependency/receipt tamper and blocked worker",
+  "manual_review":"After first183pass, enforce backwards-clock detection against observations within runner as well as persisted highwater; rerun183pass with final code and fresh retained receipts",
+  "no_reconstructed_missing_metrics":true,
+  "new_alignments":false,
+  "biological_data":false,
+  "external_data_requests":false
+}

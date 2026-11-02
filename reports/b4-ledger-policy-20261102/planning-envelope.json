@@ -1,0 +1,134 @@
+{
+  "status": "PLAN_ONLY_NOT_LAUNCHABLE",
+  "execution_enabled": false,
+  "raw_execution_ready": false,
+  "limits": {
+    "wall_seconds": 9000,
+    "transfer_bytes": 12000000000,
+    "disk_bytes": 26843545600,
+    "reserve_bytes": 8589934592,
+    "threads": 2,
+    "process_caps": {
+      "wall_seconds": 3600,
+      "rss_bytes": 6442450944,
+      "address_space_bytes": 8589934592
+    }
+  },
+  "execution_policy": {
+    "schema": "pilot-b4-local-v1",
+    "production_enabled": false,
+    "total_seconds": 9000,
+    "transfer_seconds": 3600,
+    "allocations": {
+      "artifacts": 17179869184,
+      "prefixes": 2147483648,
+      "temporaries": 6442450944,
+      "dependencies": 536870912,
+      "receipts": 268435456
+    },
+    "phases": {
+      "preflight": {
+        "kind": "process",
+        "wall_seconds": 120,
+        "rss_bytes": 536870912,
+        "address_space_bytes": 1073741824
+      },
+      "index_archive": {
+        "kind": "transfer",
+        "wall_seconds": 3600,
+        "rss_bytes": 536870912,
+        "address_space_bytes": 1073741824
+      },
+      "CTRL_R1": {
+        "kind": "transfer",
+        "wall_seconds": 3600,
+        "rss_bytes": 536870912,
+        "address_space_bytes": 1073741824
+      },
+      "CTRL_R2": {
+        "kind": "transfer",
+        "wall_seconds": 3600,
+        "rss_bytes": 536870912,
+        "address_space_bytes": 1073741824
+      },
+      "TDP_R1": {
+        "kind": "transfer",
+        "wall_seconds": 3600,
+        "rss_bytes": 536870912,
+        "address_space_bytes": 1073741824
+      },
+      "TDP_R2": {
+        "kind": "transfer",
+        "wall_seconds": 3600,
+        "rss_bytes": 536870912,
+        "address_space_bytes": 1073741824
+      },
+      "index_extract": {
+        "kind": "archive",
+        "wall_seconds": 600,
+        "rss_bytes": 1073741824,
+        "address_space_bytes": 2147483648
+      },
+      "CTRL_prefix": {
+        "kind": "paired_fastq",
+        "wall_seconds": 900,
+        "rss_bytes": 1073741824,
+        "address_space_bytes": 2147483648
+      },
+      "TDP_prefix": {
+        "kind": "paired_fastq",
+        "wall_seconds": 900,
+        "rss_bytes": 1073741824,
+        "address_space_bytes": 2147483648
+      },
+      "CTRL_compute": {
+        "kind": "compact",
+        "wall_seconds": 1200,
+        "rss_bytes": 6442450944,
+        "address_space_bytes": 8589934592,
+        "producer_seconds": 900,
+        "reduce_seconds": 300
+      },
+      "TDP_compute": {
+        "kind": "compact",
+        "wall_seconds": 1200,
+        "rss_bytes": 6442450944,
+        "address_space_bytes": 8589934592,
+        "producer_seconds": 900,
+        "reduce_seconds": 300
+      }
+    }
+  },
+  "compact_limits": {
+    "max_input_bytes": 17179869184,
+    "max_line_bytes": 65536,
+    "max_header_bytes": 1048576,
+    "max_records": 16000000,
+    "max_row_bytes": 65536,
+    "chunk_bytes": 16777216,
+    "merge_fan_in": 16,
+    "max_runs": 16384,
+    "max_temp_bytes": 6442450944,
+    "max_result_bytes": 1048576,
+    "max_targets": 3
+  },
+  "clock_envelope_seconds": 8520,
+  "disk_allocated_bytes": 26575110144,
+  "disk_unallocated_bytes": 268435456,
+  "artifacts_worst_body_cap_plus_index_extracted": 16664043238,
+  "minimum_body_plus_full_dependency_allocation": 11242361142,
+  "coverage": {
+    "minimum_fragment_union": 20,
+    "anchor": 15,
+    "unit": "accepted RG/QNAME group with at least one target, not unique molecule",
+    "event_support_sum_reported_separately": true,
+    "on_insufficient": "stop before any new phase; no automatic expansion"
+  },
+  "remaining_before_real_execution": [
+    "B1 fixed external producer/consumer worker and origins",
+    "B5 actual index/dialect/dependencies/host verification",
+    "explicit execution decision; this plan does not enable production"
+  ],
+  "limits_are_stop_caps_not_benchmarks": true,
+  "RSS_is_sampled_group_AS_is_per_process": true
+}
