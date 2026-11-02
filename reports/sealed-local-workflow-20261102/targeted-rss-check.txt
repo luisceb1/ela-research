@@ -1,0 +1,6 @@
+test_phase_rss_is_enforced_below_global_rss_cap (test_sealed_local_workflow.WorkflowTests.test_phase_rss_is_enforced_below_global_rss_cap) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.719s
+
+OK

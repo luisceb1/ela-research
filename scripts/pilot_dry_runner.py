@@ -34,6 +34,9 @@ class DryRunner:
             if self.path.exists():
                 self.state=json.loads(self.path.read_text())
                 if self.state['fingerprint']!=fingerprint:raise ValueError('Manifest or limits changed')
+                if self.manifest.get('sealed_workflow'):
+                    from workflow_seal import assert_seal
+                    assert_seal(self.root,self.manifest,limits)
                 if any(p.get('status')!='verified' for p in self.state['phases'].values()):raise ValueError('Incomplete/failed phase requires explicit reconciliation')
                 for name,phase in self.state['phases'].items():
                     if phase['status']!='verified':raise ValueError('Incomplete/failed phase requires explicit reconciliation: '+name)
@@ -44,8 +47,12 @@ class DryRunner:
                     elif phase['kind']=='archive':
                         verify_archive(self,name,phase)
                     elif phase['kind']=='compact':
-                        from compact_ledger_phase import verify_compact
-                        verify_compact(self,name,phase)
+                        if phase.get('binding',{}).get('policy')=='sealed-stream-v1':
+                            from sealed_local_workflow import verify_stream
+                            verify_stream(self,name,phase)
+                        else:
+                            from compact_ledger_phase import verify_compact
+                            verify_compact(self,name,phase)
                     elif phase['kind']=='process':
                         receipt=self.root/'process-receipts'/phase['receipt']
                         if hashlib.sha256(receipt.read_bytes()).hexdigest()!=phase['receipt_sha256']:raise ValueError('Process receipt changed')

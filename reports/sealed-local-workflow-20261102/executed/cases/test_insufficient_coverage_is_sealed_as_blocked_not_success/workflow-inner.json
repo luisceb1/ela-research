@@ -1,0 +1,14 @@
+{
+  "status": "coverage_insufficient",
+  "completed_steps": [
+    "index",
+    "r1",
+    "r2",
+    "sam",
+    "index_extract",
+    "prefix",
+    "calc"
+  ],
+  "ledger_sha256": "207d65a4b17b4e10f8bc923ec89301215710b192552ac0470d58de62204ecc70",
+  "raw_execution_ready": false
+}

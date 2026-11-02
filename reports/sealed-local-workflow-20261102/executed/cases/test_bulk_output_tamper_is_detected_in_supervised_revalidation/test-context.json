@@ -1,0 +1,9 @@
+{
+  "requests": [
+    "/index",
+    "/r1",
+    "/r2",
+    "/sam"
+  ],
+  "scope": "synthetic index placeholders, existing synthetic FASTQ and replay SAM only"
+}

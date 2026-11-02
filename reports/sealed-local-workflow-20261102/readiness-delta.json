@@ -1,0 +1,9 @@
+{
+  "baseline_commit":"eab691f3c7e0bbf308d3c67c16390bad07d715da",
+  "changed_gate":{"id":"B1","status":"local_integration_verified","scope":"Exact loopback origins, seven-stage synthetic workflow, fixed replay producer, provenance and parent external seal","real_HISAT2_execution_verified":false,"real_index_compatibility_verified":false},
+  "remaining_technical_gate":"B5 actual host/index/dialect/binary/dependency verification",
+  "activation_gate":{"status":"closed","requires":"Reviewed real descriptor/origin/policy switches and explicit execution decision; current code rejects real execution"},
+  "execution_enabled":false,
+  "raw_execution_ready":false,
+  "next_task":"Read-only B5 preflight and concrete activation review package, no real download or alignment"
+}

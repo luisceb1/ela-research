@@ -1,5 +1,13 @@
 # Estado vigente — 02/11/2026
 
+## Decisión vigente: B1 integrado y sellado localmente; B5/activación pendientes — 02/11/2026
+
+Worker fijo encadena4HTTPloopback,archivo,prefijos y productor/consumidor; solo se acepta tras sello padre de descriptor/ledger/resultado/recibo externo. 200tests locales pasan (17nuevos+183existentes), compileall; reports/sealed-local-workflow-20261102. Revalidación supervisada conserva ledger y no descarga. Productor no-cero/bloqueado, capRSSde fase y fallo externo trasresultado interno impiden sello. Siete fases,7.890bytes,9pares y6grupos objetivo en replay; no alineación nueva.
+
+B1integración sintética verificada: índice de ocho miembros es placeholder, productor compara nombres/reproduce SAMexistente; no prueba uso de índice/FASTQpara alinear. ArgvHISAT2fijo preparado/pinado pero ejecución realrechazada antes de acceder a entradas. B5host/índice/dialecto/dependencias y puerta de activación revisada/decisión expresa pendientes. Producción=false,raw_execution_ready=false.
+
+**Única siguiente tarea:** preflightB5de solo lectura del entorno disponible y paquete concreto de activación (rutas/hashes/orígenes/argv/caps/bloqueos). Sin descargar índice/FASTQreal, nueva alineación o activar producción. PR36abierta, sin merge/contactos/costes. Cabeceras inferiores son historia.
+
 ## Decisión vigente: B4 cerrado localmente, B1/B5 pendientes — 02/11/2026
 
 Política opt-in ligada a fingerprint: total/transporte acumulado/fase/subfase, RSS/AS explícitos y particiones de disco; cómputo ligado a fuente/objetivos/decoder+scripts/recibos y rehash. 183tests locales pasan (20nuevos+163existentes), compileall; reports/b4-ledger-policy-20261102. Worker bloqueado se corta por guarda padre≈1,097s para productor1s; exit−9, sin vivos, ledger.started conservado. Cache mantiene plazos/consumo; cambios y commits expirados fallan.

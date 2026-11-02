@@ -1,0 +1,11 @@
+{
+  "status": "sealed",
+  "technical_status": "complete",
+  "sha256": {
+    "workflow-job.json": "5a302ecb74224596b13171397421c6bf4b1d8943067ccb9adfc7dcd00587de35",
+    "ledger.json": "9cfc0dbed3e864e3429c0793ec781a00267714595158c4bac1543fa8e74f989b",
+    "workflow-inner.json": "3c9b050e4923a4a96793b2ec954087447b74e0bdbc1fe5b77c815c5c45eadda3",
+    "workflow-receipts/run.json": "87261f5fee225fb0775e0d9dc46d824845cad9fae555b1e9dd253eefb520f237"
+  },
+  "raw_execution_ready": false
+}

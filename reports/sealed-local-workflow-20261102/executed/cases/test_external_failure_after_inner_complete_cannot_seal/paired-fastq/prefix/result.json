@@ -1,0 +1,34 @@
+{
+  "status": "verified",
+  "prefix_pairs_requested": 9,
+  "pairs_scanned": 9,
+  "prefix_pairs_written": 9,
+  "source_gzip_eof_crc_validated": true,
+  "global_identity_uniqueness_certified": false,
+  "format_policy": "four-line ACGTN DNA; ASCII33-126 syntax only; Phred encoding not inferred",
+  "raw_execution_ready": false,
+  "source_compressed": [
+    {
+      "bytes": 257,
+      "sha256": "75651f780d558728f963d541e4901bd3cc65bffbbc63f6f394a97021a672e18e"
+    },
+    {
+      "bytes": 262,
+      "sha256": "b370afa1dd9496f3533082c9b1a3b28b1f4db09a8620036c97a12f7579a82967"
+    }
+  ],
+  "prefixes": [
+    {
+      "bytes": 257,
+      "sha256": "160b11817e5d2905adfabc326cf00d4b489e4d13d02dbd6a1b78cf6443bd4bea"
+    },
+    {
+      "bytes": 262,
+      "sha256": "38c9a29d7acd5118d06361bd9e6350087e6abcfa8769c3596f91812e545f098b"
+    }
+  ],
+  "prefix_ordinal_range_1based": [
+    1,
+    9
+  ]
+}

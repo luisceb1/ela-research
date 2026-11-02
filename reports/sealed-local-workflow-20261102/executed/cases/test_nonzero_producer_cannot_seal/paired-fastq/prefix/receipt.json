@@ -1,0 +1,46 @@
+{
+  "status": "verified",
+  "binding": {
+    "policy": "paired-fastq-ledger-v1",
+    "spec": {
+      "mates": [
+        {
+          "expected": {
+            "bytes": 257,
+            "md5": "3901df1d973486dd9f43c1707be185db",
+            "sha256": "75651f780d558728f963d541e4901bd3cc65bffbbc63f6f394a97021a672e18e"
+          },
+          "identity": "synthetic/r1",
+          "transfer": "r1"
+        },
+        {
+          "expected": {
+            "bytes": 262,
+            "md5": "e17c828ad9199a43f5f5a289f92de3ad",
+            "sha256": "b370afa1dd9496f3533082c9b1a3b28b1f4db09a8620036c97a12f7579a82967"
+          },
+          "identity": "synthetic/r2",
+          "transfer": "r2"
+        }
+      ],
+      "prefix_pairs": 9
+    },
+    "transfers": [
+      {
+        "identity": "synthetic/r1",
+        "transfer": "r1",
+        "ledger_receipt_sha256": "3ddb1f116ce8a8a5f81b6392a0d859bcc2d1267fca3285f182dfce7e7963f250",
+        "http_receipt_sha256": "15b10fef525e08819bf4ff988611eb99baabe5dd94123132ab646952c177e4c8"
+      },
+      {
+        "identity": "synthetic/r2",
+        "transfer": "r2",
+        "ledger_receipt_sha256": "3766cd0791e52e5ef757b8cd19bae4b4069356ddad83846ce29fcb01dc805c21",
+        "http_receipt_sha256": "6624e549c45add8176cecb92b9485a5ff4a5da30da446411867dc819de1d82b4"
+      }
+    ],
+    "fingerprint": "9d07a4a490de2a10f7264a505fc0f5bb786ce539c3bcae9be8a2222d885e0d4f"
+  },
+  "result_sha256": "a3754ce2801c5e5101753f203e5ea9b0a532b0e6cdf04ac67e60782670a92b6f",
+  "raw_execution_ready": false
+}

@@ -1,0 +1,19 @@
+{
+  "name": "run",
+  "argv": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "/workspace/scratch/dd06b558bed7/ela-audit/scripts/sealed_local_workflow.py",
+    "--job",
+    "/tmp/tmpsyr61aw8/run/workflow-job.json"
+  ],
+  "status": "finished",
+  "memory_mode": "sampled group RSS; per-process RLIMIT_AS",
+  "detaching_supported": false,
+  "namespace_pid": 6,
+  "procfs_pid": 2454,
+  "procfs_group": 2454,
+  "exit_code": -9,
+  "live_group_members_after_cleanup": [],
+  "supervisor_error": "RuntimeError: Phase/subphase deadline",
+  "elapsed_seconds": 1.408569546000308
+}

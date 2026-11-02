@@ -1,5 +1,13 @@
 # Backlog vigente — 02/11/2026
 
+## P0 vigente: B5 preflight y paquete de activación — 02/11/2026
+
+- B1integración local verificada: worker fijo/orígenesloopback/procedencia/productor-pipe-conteo/sello externo;200tests (17nuevos), sin nueva alineación. reports/sealed-local-workflow-20261102.
+- P0 única: inventario de solo lectura del host disponible, binarios/hash/índice/dialecto/dependencias y paquete revisable con orígenes/argv/caps/activación. No descargar/restaurar crudos o índice.
+- Reales siguen rechazados: PRODUCTION_ENABLED=False,descriptor sintético y política apagada. La habilitación requiere cambio revisado y decisión expresa; B5no cerrado por un replay. raw_execution_ready=false. Sin nuevos alineamientos/contactos/costes/merge automático.
+
+Las cabeceras inferiores son historia.
+
 ## P0 vigente: B1, integración fija con procedencia bajo política — 02/11/2026
 
 - B4cerrado localmente: manifiesto/ledger/decoderhashes,clocks total/transporte/fase/subfase,particiones/RSS-AS/cobertura por unión de grupos;183tests (20nuevos). reports/b4-ledger-policy-20261102.

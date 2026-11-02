@@ -1,0 +1,277 @@
+{
+  "fingerprint": "9d07a4a490de2a10f7264a505fc0f5bb786ce539c3bcae9be8a2222d885e0d4f",
+  "limits": {
+    "disk_bytes": 8388608,
+    "process_caps": {
+      "address_space_bytes": 536870912,
+      "rss_bytes": 402653184,
+      "wall_seconds": 90
+    },
+    "reserve_bytes": 0,
+    "threads": 2,
+    "transfer_bytes": 1048576,
+    "wall_seconds": 90
+  },
+  "deadline_epoch": 1793622065.0152204,
+  "transfer_bytes_consumed": 7890,
+  "phases": {
+    "index": {
+      "kind": "transfer",
+      "status": "verified",
+      "signature": "8aad6c37e295f8b1703988b1894dce1bff9826580da0642e00d65e73aeb49cf9",
+      "started_epoch": 1793621975.0768273,
+      "deadline_epoch": 1793621995.0768273,
+      "unsettled_body_reservation_bytes": 0,
+      "bytes": 220,
+      "md5": "fa5bdd6a823ea3edaa5f528f427fd97f",
+      "sha256": "85c5ed52f7c1263ea5a8ee67377ec90fd8d6c68f42ddb9d0727b19866f1f55a9",
+      "attempts_used": 1,
+      "finished_epoch": 1793621975.1048486
+    },
+    "r1": {
+      "kind": "transfer",
+      "status": "verified",
+      "signature": "e4485fd4f1a5f4100be3d8370486844d01d57590d5adf4d47fe4d01599fef804",
+      "started_epoch": 1793621975.1065068,
+      "deadline_epoch": 1793621995.0784855,
+      "unsettled_body_reservation_bytes": 0,
+      "bytes": 257,
+      "md5": "3901df1d973486dd9f43c1707be185db",
+      "sha256": "75651f780d558728f963d541e4901bd3cc65bffbbc63f6f394a97021a672e18e",
+      "attempts_used": 1,
+      "finished_epoch": 1793621975.123483
+    },
+    "r2": {
+      "kind": "transfer",
+      "status": "verified",
+      "signature": "fc50a5dc00d6b958b076d41250f73e6d98cf410c898d1c934cb165d86ec7cce7",
+      "started_epoch": 1793621975.1249497,
+      "deadline_epoch": 1793621995.0799522,
+      "unsettled_body_reservation_bytes": 0,
+      "bytes": 262,
+      "md5": "e17c828ad9199a43f5f5a289f92de3ad",
+      "sha256": "b370afa1dd9496f3533082c9b1a3b28b1f4db09a8620036c97a12f7579a82967",
+      "attempts_used": 1,
+      "finished_epoch": 1793621975.1428587
+    },
+    "sam": {
+      "kind": "transfer",
+      "status": "verified",
+      "signature": "eece7e9af4f08938fdbb58c27909c32dc9c829af4b37c71bc055dd7a5bb7a727",
+      "started_epoch": 1793621975.1450894,
+      "deadline_epoch": 1793621995.082183,
+      "unsettled_body_reservation_bytes": 0,
+      "bytes": 7151,
+      "md5": "d1c6ec1fae2ec9715c3ecc7e1e5da08b",
+      "sha256": "b81c96bd204b38f7fad38ab7a39f177e89a2e23692f3a28c0fa1e80179724221",
+      "attempts_used": 1,
+      "finished_epoch": 1793621975.159984
+    },
+    "index_extract": {
+      "kind": "archive",
+      "status": "verified",
+      "signature": "7fb0e38251d4f5a1804fc3e22b1448771262e7a3ec847ef4c5218c9c4e6e52c7",
+      "started_epoch": 1793621975.1654758,
+      "deadline_epoch": 1793621985.1654758,
+      "binding": {
+        "policy": "bounded-tar-gzip-ledger-v1",
+        "spec": {
+          "expected": {
+            "bytes": 220,
+            "sha256": "85c5ed52f7c1263ea5a8ee67377ec90fd8d6c68f42ddb9d0727b19866f1f55a9"
+          },
+          "identity": "synthetic-index-placeholder",
+          "max_expanded_bytes": 4096,
+          "max_members": 16,
+          "max_tar_bytes": 32768,
+          "members": [
+            {
+              "bytes": 24,
+              "name": "toy/genome.1.ht2",
+              "sha256": "123b5afbc2fc5eca1fb88d4894e5817ba4932de73a88580879deebf82354e09d"
+            },
+            {
+              "bytes": 24,
+              "name": "toy/genome.2.ht2",
+              "sha256": "747842e0552998311843bb8c3669a8e1cdd8667dd18e9ff355ac3e7a2e1282f2"
+            },
+            {
+              "bytes": 24,
+              "name": "toy/genome.3.ht2",
+              "sha256": "f82a969233c0907587fc29dea70b2afe1cfaa534c8219d09ff1b03885677f911"
+            },
+            {
+              "bytes": 24,
+              "name": "toy/genome.4.ht2",
+              "sha256": "b6f24bb472eb4974e5d91dec36b29d770b9de09e6ede9cac47a9c9445bacb52d"
+            },
+            {
+              "bytes": 24,
+              "name": "toy/genome.5.ht2",
+              "sha256": "b04128d12712d276b3b5f4e0c00c2b524c8c53e9e377546796b9d5849e36bbcd"
+            },
+            {
+              "bytes": 24,
+              "name": "toy/genome.6.ht2",
+              "sha256": "a2dc08426c42a1c7474d0259e5be8044ca7867f0d1f500fd360abee7d1db0b76"
+            },
+            {
+              "bytes": 24,
+              "name": "toy/genome.7.ht2",
+              "sha256": "a72ee8aa6584f5090dfe2049e05179ed3aaa2849a644722b27e5d26fd7069d66"
+            },
+            {
+              "bytes": 24,
+              "name": "toy/genome.8.ht2",
+              "sha256": "4538820090dd3118ae1109db72b636af81a752b44c3644c85ca7e8ea8143a850"
+            }
+          ],
+          "transfer": "index"
+        },
+        "fingerprint": "9d07a4a490de2a10f7264a505fc0f5bb786ce539c3bcae9be8a2222d885e0d4f",
+        "transfer_receipt_sha256": "83c3f503f76d65213db95f5bdf8b878e6e577996a8307fed750212a2e4397b73",
+        "http_receipt_sha256": "ca1e447013637a99694b56f731a97128f9ffbe96dc4742dcd3877751379cf383"
+      },
+      "receipt_sha256": "374714873fe71758037f6654dd0a927e29d6a3da9053bb0742d16a34ca649e0b",
+      "finished_epoch": 1793621975.2128942
+    },
+    "prefix": {
+      "kind": "paired_fastq",
+      "status": "verified",
+      "signature": "0e1dbebf9d2210ec8d2209b83c58354a07e13325a4541020965f3d47eb246c10",
+      "started_epoch": 1793621975.2175813,
+      "deadline_epoch": 1793621985.2175813,
+      "binding": {
+        "policy": "paired-fastq-ledger-v1",
+        "spec": {
+          "mates": [
+            {
+              "expected": {
+                "bytes": 257,
+                "md5": "3901df1d973486dd9f43c1707be185db",
+                "sha256": "75651f780d558728f963d541e4901bd3cc65bffbbc63f6f394a97021a672e18e"
+              },
+              "identity": "synthetic/r1",
+              "transfer": "r1"
+            },
+            {
+              "expected": {
+                "bytes": 262,
+                "md5": "e17c828ad9199a43f5f5a289f92de3ad",
+                "sha256": "b370afa1dd9496f3533082c9b1a3b28b1f4db09a8620036c97a12f7579a82967"
+              },
+              "identity": "synthetic/r2",
+              "transfer": "r2"
+            }
+          ],
+          "prefix_pairs": 9
+        },
+        "transfers": [
+          {
+            "identity": "synthetic/r1",
+            "transfer": "r1",
+            "ledger_receipt_sha256": "3ddb1f116ce8a8a5f81b6392a0d859bcc2d1267fca3285f182dfce7e7963f250",
+            "http_receipt_sha256": "15b10fef525e08819bf4ff988611eb99baabe5dd94123132ab646952c177e4c8"
+          },
+          {
+            "identity": "synthetic/r2",
+            "transfer": "r2",
+            "ledger_receipt_sha256": "3766cd0791e52e5ef757b8cd19bae4b4069356ddad83846ce29fcb01dc805c21",
+            "http_receipt_sha256": "6624e549c45add8176cecb92b9485a5ff4a5da30da446411867dc819de1d82b4"
+          }
+        ],
+        "fingerprint": "9d07a4a490de2a10f7264a505fc0f5bb786ce539c3bcae9be8a2222d885e0d4f"
+      },
+      "receipt_sha256": "821e53842bc7de69bd01f841161f09e3502fd68a79e3a34883510560c28a44ab",
+      "finished_epoch": 1793621975.2508273
+    },
+    "calc": {
+      "kind": "compact",
+      "status": "failed",
+      "signature": "c8279099e5497b612f814c5c1ed504937f1b866a850d6a3b1ef4518d77341c3b",
+      "started_epoch": 1793621975.354609,
+      "deadline_epoch": 1793622005.354609,
+      "substage": "producer",
+      "subdeadline_epoch": 1793621995.354609,
+      "binding": {
+        "policy": "sealed-stream-v1",
+        "spec": {
+          "archive_phase": "index_extract",
+          "behavior": "exit7",
+          "decoder": {
+            "pysam_version": "0.23.3",
+            "samtools_version": "1.21",
+            "sha256": {
+              "compact_ledger_phase.py": "ac0a6175ac4c0715248721160421f0bbed82aff99294d1253281a3417f5a9869",
+              "compact_pe_pipeline.py": "cb33f8b7c4f6edeaf726bce8f7c200081f2742f7ffc203926f9ca53644ec4455",
+              "external_local_stage.py": "c44213ea21ba086a314ae84384a5ae259b6f3425e5e52998b552926c2162c8e7",
+              "pe_fragment_contract.py": "695ac69cb2658c937cc9bd67030386375838b3108316f233c8206a19e9974dd4",
+              "pilot_dry_runner.py": "3f4eb2be94bf4e6614148625ec369930a42b1a2a562415147714ff3651634f95",
+              "pilot_execution_policy.py": "b2535bd32692bb425d1ea3ecac23d65808628b957a8a0a8cf616155e9344f9a3",
+              "process_supervisor_v2.py": "4817846ca72ce8907d4977da97643a9a7fb088582ebbcbaa65d1229eece59b8b",
+              "pysam": "47c1a657938298a9fcffbf01c41081d2a4eb91a9d3f48ea2e7573927c5870543",
+              "pysam.libcalignedsegment": "3e1b320aeb77f81fc5fe0bd92539fe8ee76d1ae062f4fe0b8dd13be46e6b11ee",
+              "pysam.libchtslib": "027a9864a563f8f3c2f2b5f16319325a90a6b184d6a0bf6f67a4274fad4ebcbb"
+            }
+          },
+          "fixture_transfer": "sam",
+          "index_prefix": "toy/genome",
+          "library": "fixture",
+          "limits": {
+            "chunk_bytes": 4096,
+            "max_header_bytes": 1048576,
+            "max_input_bytes": 8388608,
+            "max_line_bytes": 65536,
+            "max_records": 100000,
+            "max_result_bytes": 65536,
+            "max_row_bytes": 4096,
+            "max_runs": 1024,
+            "max_targets": 1000,
+            "max_temp_bytes": 1048576,
+            "merge_fan_in": 8
+          },
+          "minimum_fragment_union": 1,
+          "paired_phase": "prefix",
+          "scope": "synthetic-replay-only",
+          "targets": [
+            [
+              "mini",
+              556,
+              1844,
+              "-"
+            ],
+            [
+              "mini",
+              556,
+              1413,
+              "-"
+            ],
+            [
+              "mini",
+              1541,
+              1844,
+              "-"
+            ]
+          ]
+        },
+        "fingerprint": "9d07a4a490de2a10f7264a505fc0f5bb786ce539c3bcae9be8a2222d885e0d4f",
+        "paired_phase_sha256": "7cd1d36f9ffdd644522ea8f17d5b2d0e525a5565411e0748cb5d6b6412939392",
+        "archive_phase_sha256": "7edf2a9d247ff67739191c196b84a5b3af1832c5c83cc54d0e2eabb48f585249",
+        "fixture_transfer_sha256": "97bdc3ab51d2b1fb2e63e58c6d3876dcb1c10059d54b64e1a5f45c763a709a3c",
+        "producer": {
+          "python_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+          "script_sha256": "126c6f009737f371b26bbff9c512ae47dd63f7d00fffc42f637997993320f1ac",
+          "worker_sha256": "c7a6c60bc6531cfebfce53332fcb7bff7b9e5d3335ddc36d01a126c727d7c274",
+          "seal_code_sha256": "40e83f273b74181063cd90c14f77d4a0d2c52453b9330f5b1355b4e4a891e84a"
+        },
+        "fixture_http_sha256": "1fa977170cf1df54a2a4dac34f31c1ad2d77f6014257220345b8f5c3db422fdf"
+      },
+      "error_type": "ValueError",
+      "finished_epoch": 1793621975.5726862
+    }
+  },
+  "mode": "synthetic-only",
+  "raw_pilot_ready": false,
+  "last_epoch": 1793621975.5726862,
+  "transfer_elapsed_seconds": 0.07780122756958008
+}
