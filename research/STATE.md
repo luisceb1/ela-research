@@ -1,5 +1,13 @@
 # Estado vigente — 02/11/2026
 
+## Decisión vigente: auditoría integrada completada, cinco puertas pendientes — 02/11/2026
+
+28fuentes cotejadas en01957248,19comprobaciones y3sondas offline; informe reports/pilot-readiness-audit-20261102. Contratos PE/referencia, minigenoma funcional, FASTQ/ledger y supervisión local ya acreditados en su ámbito; no repetirlos sin cambios. HISAT2 local conserva hashes y --version2.2.3, índice humano ausente, PySAM solo vía pe-deps explícito. Transferencia base10.705.490.230bytes; margen1.294.509.770 hasta12GB; disco base15.369.533.468bytes sin prefijos/temporales. No benchmark humano.
+
+Cinco puertas: B1ruta externa/producción deshabilitada; B2índiceSHA256solo incompatible con MD5 obligatorio y extracción sin ledger; B3pipeline sin SAM genómico completo pendiente; B4reloj global/caps de fase/temporales/RLIMIT_AS y cobertura por evento pendientes; B5entorno/índice/PySAM. execution-proposal.json es diseño no ejecutable y propone9000s totales para revisión, sin cambiar límites activos. raw_execution_ready=false.
+
+**Única siguiente tarea:** B2: admitir checksumSHA256solo y extracción de archivo sintético acotada por miembros/tamaños/hashes, ligada al ledger y con recibos/interrupción. Sin índice humano, FASTQreal, alineamiento, contactos, gastos o merge automático. Cabeceras inferiores son historia.
+
 ## Decisión vigente: supervisión externa local ejecutada — 02/11/2026
 
 Worker fijo HTTP loopback/paired bajo supervisor externo; cortes en cabeceras, cuerpo, goteo y validador detenido con descendiente dejan cero miembros vivos. 79tests locales pasan (12 nuevos+67 existentes), recibos y logs retenidos en reports/external-local-supervision-20261102. Reserva duradera previa a read evita subcontabilizar por SIGKILL; consumo puede ser conservador y recibos internos started bloquean reapertura. Timeout monotónico recortado al plazo persistente, con latencia observada de sondeo/limpieza; no garantía de tiempo real o spawn bloqueado. Producción deshabilitada; sin crudos, índice o alineamientos.

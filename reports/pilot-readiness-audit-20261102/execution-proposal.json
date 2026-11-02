@@ -1,0 +1,193 @@
+{
+  "status": "BLOCKED_NOT_EXECUTABLE",
+  "execution_enabled": false,
+  "raw_execution_ready": false,
+  "source_commit": "019572483bf6e88665f9c852c33741c21cede53d",
+  "scope": "two-library technical feasibility only; not biological comparison",
+  "selected": [
+    {
+      "library": "CTRL-4",
+      "gsm": "GSM8975203",
+      "srx": "SRX28666759",
+      "biosample": "SAMN48333874",
+      "run": "SRR33425816",
+      "group": "control",
+      "read_count_ena": 12709444,
+      "fastq_bytes": 1958406420,
+      "mates": [
+        {
+          "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR334/016/SRR33425816/SRR33425816_1.fastq.gz",
+          "bytes": 960856963,
+          "md5": "ed58daa011d6508a3e8d1f05bc39fc29"
+        },
+        {
+          "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR334/016/SRR33425816/SRR33425816_2.fastq.gz",
+          "bytes": 997549457,
+          "md5": "007d66223fe35f394284e4ebd631eaef"
+        }
+      ]
+    },
+    {
+      "library": "TDP-5",
+      "gsm": "GSM8975210",
+      "srx": "SRX28666756",
+      "biosample": "SAMN48333881",
+      "run": "SRR33425819",
+      "group": "TDP43_KD",
+      "read_count_ena": 36803627,
+      "fastq_bytes": 4391297461,
+      "mates": [
+        {
+          "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR334/019/SRR33425819/SRR33425819_1.fastq.gz",
+          "bytes": 2143112809,
+          "md5": "474e4af4ea1dcf57b008a58e0c824671"
+        },
+        {
+          "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR334/019/SRR33425819/SRR33425819_2.fastq.gz",
+          "bytes": 2248184652,
+          "md5": "eeb19a696f12a4f6950426f3f79ddf25"
+        }
+      ]
+    }
+  ],
+  "prefix_pairs_per_library": 1000000,
+  "target_contract": "reports/unc13a-reference-strand-20261102/contract.json",
+  "reference": {
+    "url": "https://genome-idx.s3.amazonaws.com/hisat/hg38_genome.tar.gz?versionId=8z.MUbL_W4wij.Nmcia5c4mT7tlz0cU.",
+    "expected_bytes": 4355786349,
+    "sha256": "1848784403a0fb3ee7735b2f891d8be96fd2782e08aed3d8212d922666f077a5",
+    "md5_expected": null,
+    "members": [
+      {
+        "name": "hg38/make_hg38.sh",
+        "bytes": 1292,
+        "sha256": "9e29e570495a5b237fce579bd5b2059f600ff061cdbc12c2438623e9ffad27d2"
+      },
+      {
+        "name": "hg38/genome.8.ht2",
+        "bytes": 8,
+        "sha256": "7c9fa136d4413fa6173637e883b6998d32e1d675f88cddff9dcbcf331820f4b8"
+      },
+      {
+        "name": "hg38/genome.5.ht2",
+        "bytes": 1342456349,
+        "sha256": "07400123a5033f85fd0152aae0a513771b5f5ba1afe878839bd9624b483fa503"
+      },
+      {
+        "name": "hg38/genome.7.ht2",
+        "bytes": 8,
+        "sha256": "7c9fa136d4413fa6173637e883b6998d32e1d675f88cddff9dcbcf331820f4b8"
+      },
+      {
+        "name": "hg38/genome.6.ht2",
+        "bytes": 776249234,
+        "sha256": "4a8f0d36ac6e459bbf682a5979de5e5d4883cd42a22866093d730797c87e35ae"
+      },
+      {
+        "name": "hg38/genome.4.ht2",
+        "bytes": 762328946,
+        "sha256": "2f5112d9a0c0855eea028ea4181e2af9dd261cdadac3eff541415dd5eb4ea413"
+      },
+      {
+        "name": "hg38/genome.3.ht2",
+        "bytes": 15065,
+        "sha256": "d7ecd66f14894242cb5153471028bb4f94bebd920c2c025c08ec24bcb13e6df5"
+      },
+      {
+        "name": "hg38/genome.1.ht2",
+        "bytes": 1020663384,
+        "sha256": "75c666c1bdcc6bd346a751e7277d26ce518c1e9a2612c301317248e3a4ee6014"
+      },
+      {
+        "name": "hg38/genome.2.ht2",
+        "bytes": 762328952,
+        "sha256": "ee1502737c1fe27706a91179584f99146102da7eac08ff5f76e9657476af619d"
+      }
+    ]
+  },
+  "resource_limits_from_original_plan": {
+    "threads": 2,
+    "memory_bytes": 6442450944,
+    "additional_disk_bytes": 26843545600,
+    "reserve_free_disk_bytes": 8589934592,
+    "raw_plus_reference_transfer_bytes": 12000000000,
+    "all_transfer_elapsed_seconds": 3600,
+    "prefix_pairs_per_library": 1000000,
+    "alignment_seconds_per_library": 900
+  },
+  "proposed_new_total_wall_seconds": 9000,
+  "new_total_wall_requires_review": true,
+  "proposed_phase_caps_seconds": {
+    "preflight": 120,
+    "all_transfers_cumulative": 3600,
+    "index_extract_verify": 600,
+    "paired_integrity_prefix_per_library": 900,
+    "align_per_library": 900,
+    "collate_count_per_library": 300
+  },
+  "phase_cap_sum_two_libraries": 8520,
+  "all_phase_caps_are_stop_limits_not_runtime_estimates": true,
+  "prospective_alignment_argv_template": [
+    "<verified_hisat2-align-s>",
+    "-x",
+    "<verified_hg38_prefix>",
+    "-1",
+    "<verified_prefix_R1>",
+    "-2",
+    "<verified_prefix_R2>",
+    "-S",
+    "<supervised_stream_not_full_SAM_file>",
+    "--no-mixed",
+    "--no-discordant",
+    "--fr",
+    "-p",
+    "2",
+    "--seed",
+    "0"
+  ],
+  "omit_options": [
+    "--rna-strandness",
+    "--tmo"
+  ],
+  "argv_is_design_only_not_launchable": true,
+  "parser_policy": {
+    "unit": "fragment/event/library",
+    "primary_anchor": 15,
+    "sensitivity_anchor": 8,
+    "mapq": "20 <= MAPQ < 255",
+    "NH": 1,
+    "required_XS": "-",
+    "marked_duplicates": "count and label, no molecular deduplication",
+    "independence": "CIGAR decoding only; shared pair selection/reduction"
+  },
+  "coverage_threshold_per_library": 20,
+  "coverage_threshold_definition": "valid canonical + either cryptic-junction fragment support; event supports may overlap within a fragment; report separately and do not label this sum unique molecules",
+  "stop_on": [
+    "any blocking gate",
+    "hash/identity/schema mismatch",
+    "resource/deadline violation",
+    "incomplete receipt",
+    "decoder disagreement",
+    "coverage below threshold: insufficient, do not expand automatically"
+  ],
+  "receipt_requirements": [
+    "transfer ledger with durable pending-read reservation",
+    "per-attempt HTTP receipt",
+    "archive and all eight index members verified",
+    "full EOF/CRC paired result and prefix hashes",
+    "argv/version/hash and supervisor receipt per stage",
+    "decoder QC/count agreement and final artifact manifest"
+  ],
+  "prohibited_interpretations": [
+    "PSI or biological group effect",
+    "p-values or biological pairing",
+    "functional rescue or clinical benefit"
+  ],
+  "blocking_gate_ids": [
+    "B1",
+    "B2",
+    "B3",
+    "B4",
+    "B5"
+  ]
+}

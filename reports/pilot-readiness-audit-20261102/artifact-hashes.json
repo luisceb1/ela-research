@@ -1,0 +1,16 @@
+{
+  "reports/pilot-readiness-audit-20261102/REPORT.md": "dd200fc77d434aab985de50ca1e92f59c67e8dbe1bf596bb6350976f3d6cac23",
+  "reports/pilot-readiness-audit-20261102/audit-execution.txt": "f1e4a1a7668c760b970bbc26b5c308c0c62f9e5b3a624afc25ec168cc8377354",
+  "reports/pilot-readiness-audit-20261102/audit-log.json": "bf6fe11d96d342352bd83b005bd02a730105102dadb81a59e9e761d5d1e1e8fd",
+  "reports/pilot-readiness-audit-20261102/audit.json": "b041c8122fac16189a03b9b4904e9b72bfedf550beaaeeda98f9bba8c5392224",
+  "reports/pilot-readiness-audit-20261102/environment.json": "e8c19e767d8accb1ec26af07c023f1697b380321a0db203638af19828a118bfb",
+  "reports/pilot-readiness-audit-20261102/execution-proposal.json": "26e37170d60aa5ac63cd611dcc1c97f8e33c1daf3cf7f14d24e90b010473421f",
+  "reports/pilot-readiness-audit-20261102/gate-review.json": "19b94742252b8c4acc45744971cba6927a6f150b051d0801e99ae49975a199bb",
+  "reports/pilot-readiness-audit-20261102/gates.tsv": "005c06a7b9fb78f6bf136dd0f160aeacba210f9b6cd7e01338d74221cd05ec91",
+  "reports/pilot-readiness-audit-20261102/repeat-verification.json": "f015d86946736cf4daba3e05631a9182536bbbe32bde8c78a8d39a1db7069e12",
+  "reports/pilot-readiness-audit-20261102/source-manifest.json": "e60fae8d7b33f17b81f6e268534f5fcbf7d3d1f404290edbe48fda33c91381f9",
+  "research/BACKLOG.md": "560e7704b467c4148e11f637331b9779ed84c8c9c46bdc4fd48bd48b592ddf1e",
+  "research/STATE.md": "13d3b7aa466be43e54e7a5b8f66e54f5b9dac796f386a6803ec10ab625af1ce1",
+  "research/plans/2026-11-02-pilot-readiness-audit.md": "4f6575e34a3662e86355ae15f8396e1eb9be5ffddb079568b678da874aab902d",
+  "scripts/audit_humphrey_pilot_readiness.py": "ad3be69ea0375f30840989e08390e551a02a9ef20b4cbf9b3f98bc4176c4a1fa"
+}

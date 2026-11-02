@@ -1,0 +1,72 @@
+{
+  "status": "BLOCKED",
+  "blocking_gate_count": 5,
+  "checks_passed": 19,
+  "budget": {
+    "units": "bytes unless stated; GB=10^9, GiB=2^30",
+    "raw_four_mates": 6349703881,
+    "reference_archive": 4355786349,
+    "reference_extracted_including_recipe": 4664043238,
+    "minimum_transfer": 10705490230,
+    "transfer_cap": 12000000000,
+    "transfer_margin_before_dependencies_retries": 1294509770,
+    "all_artifacts_coexisting_disk_baseline": 15369533468,
+    "additional_disk_cap": 26843545600,
+    "disk_margin_before_prefixes_temporaries_outputs": 11474012132,
+    "reserve_disk": 8589934592,
+    "free_disk_observed": 63677067264,
+    "nominal_additional_plus_reserve_fits": true,
+    "memory_limit_proposed": 6442450944,
+    "cgroup_memory_max_observed": 8589934592,
+    "nominal_memory_limit_below_cgroup": true,
+    "minimum_body_rate_for_3600s_bytes_per_second": 2973747.2861111113,
+    "rate_is_requirement_not_measurement": true,
+    "full_single_artifact_retry_fits_after_all_base_downloads": [
+      {
+        "artifact": "SRR33425816_R1",
+        "bytes": 960856963,
+        "fits": true
+      },
+      {
+        "artifact": "SRR33425816_R2",
+        "bytes": 997549457,
+        "fits": true
+      },
+      {
+        "artifact": "SRR33425819_R1",
+        "bytes": 2143112809,
+        "fits": false
+      },
+      {
+        "artifact": "SRR33425819_R2",
+        "bytes": 2248184652,
+        "fits": false
+      },
+      {
+        "artifact": "hg38_index_archive",
+        "bytes": 4355786349,
+        "fits": false
+      }
+    ]
+  },
+  "probes": {
+    "production_process": {
+      "rejected": true,
+      "reason": "Production execution disabled in DryRunner; plan only",
+      "phase_created": false
+    },
+    "external_http_worker": {
+      "rejected": true,
+      "reason": "Literal loopback HTTP only"
+    },
+    "sha_only_transfer": {
+      "rejected": true,
+      "exception": "KeyError",
+      "missing_key": "'md5'",
+      "synthetic_bytes_charged": 3,
+      "phase_status": "failed"
+    },
+    "network_used": false,
+    "alignments_executed": false
+  }
+}

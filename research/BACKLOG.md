@@ -1,5 +1,14 @@
 # Backlog vigente — 02/11/2026
 
+## P0 vigente: cerrar B2 de la auditoría integrada — 02/11/2026
+
+- Auditoría completada:28fuentes,19comprobaciones,3sondas offline; cinco puertas explícitas y propuesta de ejecución no habilitada. reports/pilot-readiness-audit-20261102.
+- P0 única: adaptar checksum para SHA256solo y añadir restauración de archivo sintético al ledger, con miembros/tamaño/hash y fallos/interrupción/reanudación bloqueada. Sin descargas remotas o índice humano.
+- Después: B3pipeline streaming/colación/conteo acotado; B4presupuesto completo/caps/semántica; B1worker externo fijo; B5entorno/índice/dependencias antes de alinear y tras decisión de ejecución. No repetir controles locales G1–G4 sin cambios.
+- Producción deshabilitada, raw_execution_ready=false. Propuesta9000s es diseño para revisión, no límite activado. Sin contactos/costes/merge automático o conclusiones biológicas.
+
+Las cabeceras inferiores son historia.
+
 ## P0 vigente: auditoría integrada de preparación del piloto — 02/11/2026
 
 - Completado: supervisión externa local HTTP/paired,79tests locales,12nuevos; cortes y limpieza de descendientes, reserva previa a lectura y recibos persistentes. reports/external-local-supervision-20261102.
