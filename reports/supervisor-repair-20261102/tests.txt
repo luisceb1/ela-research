@@ -1,0 +1,12 @@
+test_descendant_allocation_included (test_process_supervisor_v2.SupervisorTests.test_descendant_allocation_included) ... ok
+test_distinct_receipts_and_no_overwrite (test_process_supervisor_v2.SupervisorTests.test_distinct_receipts_and_no_overwrite) ... ok
+test_fast_failure_recorded (test_process_supervisor_v2.SupervisorTests.test_fast_failure_recorded) ... ok
+test_known_allocation_and_namespace_mapping (test_process_supervisor_v2.SupervisorTests.test_known_allocation_and_namespace_mapping) ... ok
+test_memory_kill_and_cleanup (test_process_supervisor_v2.SupervisorTests.test_memory_kill_and_cleanup) ... ok
+test_spawn_failure_has_terminal_receipt (test_process_supervisor_v2.SupervisorTests.test_spawn_failure_has_terminal_receipt) ... ok
+test_timeout_kills_descendant (test_process_supervisor_v2.SupervisorTests.test_timeout_kills_descendant) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 1.137s
+
+OK

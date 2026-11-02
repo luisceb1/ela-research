@@ -1,0 +1,22 @@
+{
+  "name": "descendants",
+  "argv": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "-c",
+    "import subprocess,sys;p=subprocess.Popen([sys.executable,\"-c\",\"import time;x=bytearray(24*1024**2);time.sleep(.3)\"]);x=bytearray(24*1024**2);p.wait()"
+  ],
+  "status": "finished",
+  "memory_mode": "sampled group RSS; per-process RLIMIT_AS",
+  "detaching_supported": false,
+  "namespace_pid": 8,
+  "procfs_pid": 673,
+  "procfs_group": 673,
+  "exit_code": 0,
+  "violation": null,
+  "peak_group_rss_bytes_sampled": 65404928,
+  "samples": 33,
+  "max_group_members": 2,
+  "rss_observed": true,
+  "live_group_members_after_cleanup": [],
+  "elapsed_seconds": 0.3626119230000313
+}

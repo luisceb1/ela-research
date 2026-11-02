@@ -1,0 +1,22 @@
+{
+  "name": "memory",
+  "argv": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "-c",
+    "import time;x=bytearray(32*1024**2);time.sleep(3)"
+  ],
+  "status": "finished",
+  "memory_mode": "sampled group RSS; per-process RLIMIT_AS",
+  "detaching_supported": false,
+  "namespace_pid": 12,
+  "procfs_pid": 677,
+  "procfs_group": 677,
+  "exit_code": -9,
+  "violation": "memory",
+  "peak_group_rss_bytes_sampled": 37617664,
+  "samples": 3,
+  "max_group_members": 1,
+  "rss_observed": true,
+  "live_group_members_after_cleanup": [],
+  "elapsed_seconds": 0.028181861000007302
+}

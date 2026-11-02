@@ -1,5 +1,12 @@
 # Estado vigente — 02/11/2026
 
+## Decisión vigente: supervisor v2 validado con procesos sintéticos — 02/11/2026
+
+Causa de RSSidentificada: PIDdePython y procfsen namespaces distintos. Nuevo scripts/process_supervisor_v2.py obtiene identidad procfsdelhijo; mide grupo y termina descendientes. Casos conocidos32MiBy2×24MiBdan≈40/65MBRSS; cortes memoria/timeouty limpieza pasan. Recibos individuales atómicos con reserva exclusiva, sin lista read-modify-write. Informe reports/supervisor-repair-20261102;7tests. No se reconstruyen recibos ni RAMdel minigenoma antiguo.
+
+Límite: vigilancia muestreada, no cgroupagregadoestricto; comandos no pueden detach/setsid; supervisorsecuencial. Procesos breves no medidos se marcan como tales. Pendientes disco/red/deadlineglobaly manejo de recibos.startedtras interrupción. **Única siguiente tarea:** runner del piloto con modo planificación/dry-run y controles simulados de presupuesto/hashes/reanudación. Sin índice humano, repetir alineaciones o descargar crudos. raw_pilot_ready=false; PR36sin merge automático. Las cabeceras inferiores son historia.
+
+
 ## Decisión vigente: minigenoma funcional pasa, supervisor pendiente — 02/11/2026
 
 HISAT2v2.2.3compilado y ejecutado sobre referencia mínima, no índice humano. reports/unc13a-minigenome-20261102:12expectativas por fragmento concordantes, cuatro referencias, XS-para positivos sin --rna-strandness, multimapeo/hebra/motivo y anclas comprobados; colación externa lexicográfica funciona, dos tests añadidos. Decodificadores coinciden, política de pares compartida.

@@ -1,0 +1,10 @@
+{
+  "tests_passed": 7,
+  "individual_receipts": 6,
+  "all_terminal": true,
+  "known_allocation_verified": true,
+  "descendant_cleanup_verified": true,
+  "raw_pilot_ready": false,
+  "strict_kernel_aggregate_limit": false,
+  "code_sha256": "32abc26e3addad13221c5be422451bcbb1b5060a1bfe85b3926ccc793ec94d77"
+}

@@ -1,5 +1,14 @@
 # Backlog vigente — 02/11/2026
 
+## P0 vigente: integrar runner en dry-run — 02/11/2026
+
+- Completado: supervisorv2,7tests de procesos y recibos atómicos; informe reports/supervisor-repair-20261102. Causa de RSS: namespaces; límites del muestreo explícitos.
+- P0 única: runner del piloto en planificación/dry-run, presupuestos globales de disco/red/tiempo, hashes y recuperación de recibos incompletos; solo procesos/transporte simulados.
+- Sin índices humanos, crudos o nuevos alineamientos. Gate del minigenoma anterior y sus huecos se preservan, no se certifican retrospectivamente. raw_pilot_ready=false; PR36sin merge automático.
+
+Las prioridades inferiores son históricas.
+
+
 ## P0 vigente: supervisor y recibos — 02/11/2026
 
 - Minigenoma funcional completado:12expectativas coinciden en cuatro referencias; colación y dos parsers concordantes, sin strandnessforzado. Informe reports/unc13a-minigenome-20261102.
