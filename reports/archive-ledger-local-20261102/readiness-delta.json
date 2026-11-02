@@ -1,0 +1,10 @@
+{
+  "baseline_audit_commit":"7126bc52aa25f70322dc840b380cfbe2d2354956",
+  "baseline_audit":"reports/pilot-readiness-audit-20261102/audit.json",
+  "changed_gate":{"id":"B2","status":"local_verified","scope":"SHA256-only transfer and bounded regular-header tar.gz extraction linked to ledger; synthetic and loopback only","human_index_dialect_compatibility_verified":false},
+  "remaining_blockers":["B1 supervised external production route","B3 streaming compact alignment/collation/counting","B4 complete phase clocks/resource caps/coverage semantics","B5 actual index and worker dependencies verified in runtime"],
+  "remaining_blocker_count":4,
+  "execution_enabled":false,
+  "raw_execution_ready":false,
+  "next_task":"B3 with existing synthetic SAM inputs only; no new alignment, biological FASTQ or human index"
+}

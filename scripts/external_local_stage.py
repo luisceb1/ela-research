@@ -33,7 +33,7 @@ def validate_stage(stage):
         except ValueError:loopback=False
         if not loopback:raise ValueError('Non-loopback URL refused')
         if type(stage['chunk_size']) is not int or not 1<=stage['chunk_size']<=65536:raise ValueError('Invalid chunk size')
-    elif stage.get('kind')=='paired_fastq':
+    elif stage.get('kind') in ('paired_fastq','archive'):
         if set(stage)!={'kind','name'}:raise ValueError('Fixed paired stage schema')
     else:raise ValueError('Unsupported local stage')
 
@@ -43,18 +43,21 @@ def worker(job):
     r=DryRunner(job['root'],job['manifest'],job['limits'])
     try:
         fault=job.get('synthetic_fault')
-        if fault=='stall_validator':
+        if fault in ('stall_validator','stall_archive'):
             subprocess.Popen([sys.executable,'-c','import time;time.sleep(30)'])
             guard=r.guard
             def blocked_guard():
                 guard()
-                if (r.root/'paired-fastq'/stage['name']/'prefix-R1.fastq.gz.partial').exists():time.sleep(30)
+                paired=(r.root/'paired-fastq'/stage['name']/'prefix-R1.fastq.gz.partial').exists()
+                archived=any(p.is_file() for p in (r.root/'archives'/stage['name']/'partial').rglob('*'))
+                if (fault=='stall_validator' and paired) or (fault=='stall_archive' and archived):time.sleep(30)
             r.guard=blocked_guard
         elif fault=='crash_worker':os._exit(74)
         elif fault is not None:raise ValueError('Unknown synthetic fault')
         if stage['kind']=='http':
             p=urlsplit(stage['url']);origin=f'{p.scheme}://{p.netloc}'
             transfer_http(r,stage['name'],stage['url'],stage['expected'],[origin],chunk_size=stage['chunk_size'],reserve_reads=True)
+        elif stage['kind']=='archive':r.archive(stage['name'])
         else:r.paired_fastq(stage['name'])
     finally:r.close()
 
@@ -63,8 +66,9 @@ def run_local_stage(root,manifest,limits,stage,*,timeout,rss_bytes=128*1024**2,a
     validate_stage(stage)
     if type(timeout) not in (int,float) or not math.isfinite(timeout) or timeout<=0:raise ValueError('Positive finite timeout required')
     if any(type(v) is not int or v<=0 for v in (rss_bytes,address_space_bytes)):raise ValueError('Explicit positive memory limits required')
-    if synthetic_fault not in (None,'stall_validator','crash_worker'):raise ValueError('Unknown synthetic fault')
+    if synthetic_fault not in (None,'stall_validator','stall_archive','crash_worker'):raise ValueError('Unknown synthetic fault')
     if synthetic_fault=='stall_validator' and stage['kind']!='paired_fastq':raise ValueError('Validator fault requires paired stage')
+    if synthetic_fault=='stall_archive' and stage['kind']!='archive':raise ValueError('Archive fault requires archive stage')
     root=Path(root).resolve()
     r=DryRunner(root,manifest,limits)
     try:deadline=r.state['deadline_epoch']

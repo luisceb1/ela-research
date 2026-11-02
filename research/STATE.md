@@ -1,5 +1,13 @@
 # Estado vigente — 02/11/2026
 
+## Decisión vigente: B2 cerrado localmente, cuatro puertas pendientes — 02/11/2026
+
+Checksum con tamaño y al menos MD5/SHA256 fijado; todos los aportados se verifican. DryRunner.archive liga inventario/caps/SHA256/recibos al ledger, valida cabeceras/tamaños/hash/EOF-CRC y rehashea al reutilizar. 118tests locales pasan (39nuevos+79existentes), compileall correcto; recibos HTTPlocal→archivo→reapertura y corte externo retenidos en reports/archive-ledger-local-20261102. Corte≈1,008s termina2procesos sin miembros vivos; started/partials conservan presupuesto/plazo y bloquean reapertura. Error inicial de generadorUSTAR documentado y corregido, no se relajó extractor.
+
+B2solo componente local: regular tar y padres esperados, PAX/GNUextensiones/enlaces rechazados. Índice humano real no restaurado ni dialecto verificado. B1/B3/B4/B5 siguen pendientes; readiness-delta.json conserva auditoría anterior como snapshot. Producción deshabilitada, raw_execution_ready=false.
+
+**Única siguiente tarea B3:** flujo/colación/conteo compacto y acotado sin SAMgenómico completo, preservando fragmentos/QC y doble decodificación. Usar SAMsintéticos existentes bajo supervisión, sin nueva alineación, índice humano o FASTQreal. Sin contactos/gastos/merge automático. Cabeceras inferiores son historia.
+
 ## Decisión vigente: auditoría integrada completada, cinco puertas pendientes — 02/11/2026
 
 28fuentes cotejadas en01957248,19comprobaciones y3sondas offline; informe reports/pilot-readiness-audit-20261102. Contratos PE/referencia, minigenoma funcional, FASTQ/ledger y supervisión local ya acreditados en su ámbito; no repetirlos sin cambios. HISAT2 local conserva hashes y --version2.2.3, índice humano ausente, PySAM solo vía pe-deps explícito. Transferencia base10.705.490.230bytes; margen1.294.509.770 hasta12GB; disco base15.369.533.468bytes sin prefijos/temporales. No benchmark humano.

@@ -16,6 +16,8 @@ import time
 from process_supervisor_v2 import atomic_json,supervise
 from paired_fastq_integrity import file_digest
 from paired_fastq_phase import run_phase,verify_phase
+from artifact_checksums import validate_expected,check
+from archive_ledger_phase import run_archive,verify_archive
 
 def digest(obj):return hashlib.sha256(json.dumps(obj,sort_keys=True,separators=(',',':')).encode()).hexdigest()
 
@@ -37,6 +39,8 @@ class DryRunner:
                         if file_digest(self.root/name,self.guard)!={'bytes':phase['bytes'],'sha256':phase['sha256']}:raise ValueError('Verified artifact changed')
                     elif phase['kind']=='paired_fastq':
                         verify_phase(self,name,phase)
+                    elif phase['kind']=='archive':
+                        verify_archive(self,name,phase)
                     elif phase['kind']=='process':
                         receipt=self.root/'process-receipts'/phase['receipt']
                         if hashlib.sha256(receipt.read_bytes()).hexdigest()!=phase['receipt_sha256']:raise ValueError('Process receipt changed')
@@ -64,6 +68,7 @@ class DryRunner:
             raise RuntimeError('Phase already attempted')
         self.state['phases'][name]={'kind':kind,'status':'started','signature':signature};self.save();return True
     def transfer(self,name,chunks,expected):
+        validate_expected(expected)
         if not self.begin(name,'transfer',digest(expected)):return self.state['phases'][name]
         phase=self.state['phases'][name];partial=self.root/(name+'.partial')
         try:
@@ -76,7 +81,7 @@ class DryRunner:
                     if size+len(chunk)>expected['bytes']:raise ValueError('Unexpected transfer size')
                     out.write(chunk);out.flush();size+=len(chunk);md5.update(chunk);sha.update(chunk);self.guard()
                 os.fsync(out.fileno())
-            if size!=expected['bytes'] or md5.hexdigest()!=expected['md5'] or sha.hexdigest()!=expected['sha256']:raise ValueError('Transfer integrity mismatch')
+            check(expected,size=size,md5=md5.hexdigest(),sha256=sha.hexdigest())
             os.replace(partial,self.root/name)
             fd=os.open(self.root,os.O_DIRECTORY)
             try:os.fsync(fd)
@@ -98,6 +103,8 @@ class DryRunner:
         return dict(requested)
     def paired_fastq(self,name):
         return run_phase(self,name)
+    def archive(self,name):
+        return run_archive(self,name)
     def plan_process(self,argv,process_limits=None,*,production=True):
         self.guard()
         if production and process_limits is None:raise ValueError('Production requires explicit process limits')

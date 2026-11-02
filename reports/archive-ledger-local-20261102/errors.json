@@ -1,0 +1,7 @@
+{
+  "initial_archive_test_run":{"tests":29,"errors":1,"failures":0,"cause":"Synthetic PAX fixture generator requested 1 TiB size in USTAR octal field; ValueError: overflow in number field before extractor ran"},
+  "correction":"Encode only that synthetic header with GNU numeric representation, retaining PAX type and rejection before payload",
+  "extractor_policy_relaxed":false,
+  "final_local_tests":{"tests":118,"errors":0,"failures":0,"skipped":0},
+  "negative_archive_controls_are_expected_rejections":true
+}

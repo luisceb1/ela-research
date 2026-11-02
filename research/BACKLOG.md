@@ -1,5 +1,13 @@
 # Backlog vigente — 02/11/2026
 
+## P0 vigente: B3, flujo compacto sin SAM genómico completo — 02/11/2026
+
+- B2cerrado localmente: checksumSHA256solo y extracción tar.gz acotada ligada al ledger,118tests (39nuevos), hashes/CRC/recibos/interrupción/reuso. reports/archive-ledger-local-20261102; índice real/dialecto no ensayado.
+- P0 única B3: streaming/colación/conteo compacto, cotas de registros/disco y2decodificadores con QC por fragmento, sobre SAMsintéticos existentes. Sin nuevos alineamientos, FASTQreal o índice humano.
+- Restantes B1ruta externa, B4límites/relojes/semántica y B5entorno efectivo. B2no habilita producción ni cambia presupuestos; raw_execution_ready=false. No repetir G1–G4 sin cambios, no contactos/costes/merge automático.
+
+Las cabeceras inferiores son historia.
+
 ## P0 vigente: cerrar B2 de la auditoría integrada — 02/11/2026
 
 - Auditoría completada:28fuentes,19comprobaciones,3sondas offline; cinco puertas explícitas y propuesta de ejecución no habilitada. reports/pilot-readiness-audit-20261102.

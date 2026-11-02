@@ -11,6 +11,7 @@ import urllib.parse
 import urllib.request
 from pilot_dry_runner import digest
 from process_supervisor_v2 import atomic_json
+from artifact_checksums import validate_expected,check
 
 class NoRedirect(urllib.request.HTTPRedirectHandler):
     def redirect_request(self,*args,**kwargs):raise ValueError('Redirect refused')
@@ -19,7 +20,7 @@ def transfer_http(runner,name,url,expected,allowed_origins,attempts=1,chunk_size
     parsed=urllib.parse.urlsplit(url);origin=f'{parsed.scheme}://{parsed.netloc}'
     if origin not in allowed_origins or parsed.username or parsed.password or parsed.fragment or parsed.scheme not in ('http','https'):raise ValueError('Origin or URL rejected')
     if attempts not in (1,2) or not 1<=chunk_size<=65536:raise ValueError('Unbounded retry/chunk policy')
-    if expected['bytes']<0:raise ValueError('Negative expected size')
+    validate_expected(expected)
     policy={'url':url,'expected':expected,'attempts':attempts,'chunk_size':chunk_size}
     if reserve_reads:policy['accounting']='durable-read-reservation-v1'
     signature=digest(policy)
@@ -34,7 +35,8 @@ def transfer_http(runner,name,url,expected,allowed_origins,attempts=1,chunk_size
             if expected['bytes']>runner.state['limits']['disk_bytes']:raise RuntimeError('Artifact exceeds disk cap')
             path=runner.root/f'{name}.attempt-{attempt}.partial'
             receipt=runner.root/f'{name}.attempt-{attempt}.json'
-            rec={'status':'started','attempt':attempt,'body_bytes':0,'budget_scope':'HTTP entity-body read, not wire bytes','reserve_reads':reserve_reads}
+            rec={'status':'started','attempt':attempt,'body_bytes':0,'budget_scope':'HTTP entity-body read, not wire bytes','reserve_reads':reserve_reads,
+                 'expected_checksums':{k:expected[k] for k in ('md5','sha256') if expected.get(k) is not None}}
             atomic_json(receipt,rec)
             try:
                 timeout=min(5,runner.state['deadline_epoch']-runner.clock())
@@ -71,7 +73,7 @@ def transfer_http(runner,name,url,expected,allowed_origins,attempts=1,chunk_size
                         out.write(data);out.flush();md5.update(data);sha.update(data);runner.guard()
                     os.fsync(out.fileno())
                 actual_sha=sha.hexdigest()
-                if md5.hexdigest()!=expected['md5'] or (expected.get('sha256') is not None and actual_sha!=expected['sha256']):raise ValueError('Hash mismatch')
+                check(expected,size=rec['body_bytes'],md5=md5.hexdigest(),sha256=actual_sha)
                 rec.update(status='verified',md5=md5.hexdigest(),sha256=actual_sha);atomic_json(receipt,rec)
                 os.replace(path,runner.root/name)
                 fd=os.open(runner.root,os.O_DIRECTORY)
