@@ -1,5 +1,5 @@
 {
-  "fingerprint": "96c015263ef07e5908c838d5ac4374d165269832ca766ffe73f6046bab7bf19b",
+  "fingerprint": "2f5fbc7043d8796300aa7d572872d7d57d97eb20afa43d1b3730ed641ae0abb1",
   "limits": {
     "disk_bytes": 8388608,
     "process_caps": {
@@ -12,67 +12,67 @@
     "transfer_bytes": 1048576,
     "wall_seconds": 90
   },
-  "deadline_epoch": 1793622063.2502005,
+  "deadline_epoch": 1793622460.0317276,
   "transfer_bytes_consumed": 7890,
   "phases": {
     "index": {
       "kind": "transfer",
       "status": "verified",
-      "signature": "ef40a6307ab6457a9c14cb7c3c02a7f2c32a370168b11d9b5f30d73116961774",
-      "started_epoch": 1793621973.3065844,
-      "deadline_epoch": 1793621993.3065844,
+      "signature": "931fd65e9d9a848d0f05361a419ec9957f0eac88938ce1676dfdb52ea85de5fa",
+      "started_epoch": 1793622370.079751,
+      "deadline_epoch": 1793622390.079751,
       "unsettled_body_reservation_bytes": 0,
       "bytes": 220,
       "md5": "fa5bdd6a823ea3edaa5f528f427fd97f",
       "sha256": "85c5ed52f7c1263ea5a8ee67377ec90fd8d6c68f42ddb9d0727b19866f1f55a9",
       "attempts_used": 1,
-      "finished_epoch": 1793621973.3347309
+      "finished_epoch": 1793622370.0934992
     },
     "r1": {
       "kind": "transfer",
       "status": "verified",
-      "signature": "08012f5b441512b118d70e3c19ae74824ef66e5149d892401de8d1b700b9daaa",
-      "started_epoch": 1793621973.3363397,
-      "deadline_epoch": 1793621993.3081932,
+      "signature": "10859380a90186813906c867a16f5bd58823f8ebdd7a5cd5428815b63f3ef9ab",
+      "started_epoch": 1793622370.0949948,
+      "deadline_epoch": 1793622390.0812466,
       "unsettled_body_reservation_bytes": 0,
       "bytes": 257,
       "md5": "3901df1d973486dd9f43c1707be185db",
       "sha256": "75651f780d558728f963d541e4901bd3cc65bffbbc63f6f394a97021a672e18e",
       "attempts_used": 1,
-      "finished_epoch": 1793621973.3550553
+      "finished_epoch": 1793622370.105249
     },
     "r2": {
       "kind": "transfer",
       "status": "verified",
-      "signature": "159c6935664996055d5dd07ed1ecbef304ac516c3c51273cb7b2e683a95fb2c3",
-      "started_epoch": 1793621973.3568773,
-      "deadline_epoch": 1793621993.3100152,
+      "signature": "3971fc77c3267fa9171e9946f6b76ce7e8d51c8962ea2042df127bc4ed24a507",
+      "started_epoch": 1793622370.106682,
+      "deadline_epoch": 1793622390.0826797,
       "unsettled_body_reservation_bytes": 0,
       "bytes": 262,
       "md5": "e17c828ad9199a43f5f5a289f92de3ad",
       "sha256": "b370afa1dd9496f3533082c9b1a3b28b1f4db09a8620036c97a12f7579a82967",
       "attempts_used": 1,
-      "finished_epoch": 1793621973.3743796
+      "finished_epoch": 1793622370.1173122
     },
     "sam": {
       "kind": "transfer",
       "status": "verified",
-      "signature": "6989458f5c84aa603a38d7dd156fd5eba318beb521f95c04d4971e3d5aec82c2",
-      "started_epoch": 1793621973.3759456,
-      "deadline_epoch": 1793621993.3115811,
+      "signature": "433ac535f58f43b47c5c0037c95340535fab3ac0e597ccc332e158253d5de313",
+      "started_epoch": 1793622370.1188757,
+      "deadline_epoch": 1793622390.0842433,
       "unsettled_body_reservation_bytes": 0,
       "bytes": 7151,
       "md5": "d1c6ec1fae2ec9715c3ecc7e1e5da08b",
       "sha256": "b81c96bd204b38f7fad38ab7a39f177e89a2e23692f3a28c0fa1e80179724221",
       "attempts_used": 1,
-      "finished_epoch": 1793621973.3893535
+      "finished_epoch": 1793622370.1290953
     },
     "index_extract": {
       "kind": "archive",
       "status": "verified",
-      "signature": "f893a9326d210882a02fcbc2cc0d1b116cb54745c0c688194c2c3d32726c5430",
-      "started_epoch": 1793621973.3918996,
-      "deadline_epoch": 1793621983.3918996,
+      "signature": "aede2bc8d63a08448ed2bdcf46325e4ab6556c0a281776d237fe603cd4c20032",
+      "started_epoch": 1793622370.131179,
+      "deadline_epoch": 1793622380.131179,
       "binding": {
         "policy": "bounded-tar-gzip-ledger-v1",
         "spec": {
@@ -128,19 +128,19 @@
           ],
           "transfer": "index"
         },
-        "fingerprint": "96c015263ef07e5908c838d5ac4374d165269832ca766ffe73f6046bab7bf19b",
-        "transfer_receipt_sha256": "f53a43e8d21a01421920da49b8d7b7e30dec2ae94213114da1f8489bd6ce249e",
+        "fingerprint": "2f5fbc7043d8796300aa7d572872d7d57d97eb20afa43d1b3730ed641ae0abb1",
+        "transfer_receipt_sha256": "517179708582a6651713319d826fdfdefc0b79912026dabb4e23e120cf4ce844",
         "http_receipt_sha256": "ca1e447013637a99694b56f731a97128f9ffbe96dc4742dcd3877751379cf383"
       },
-      "receipt_sha256": "bb302428f4f6fb2021423959a5b787b6a819b204d42ce4846ba2bda1bab91a06",
-      "finished_epoch": 1793621973.4466217
+      "receipt_sha256": "f1e8580b10c52a91bf57f54a0208007bae2bf1a6eb22623f7a4057a88b14d945",
+      "finished_epoch": 1793622370.173575
     },
     "prefix": {
       "kind": "paired_fastq",
       "status": "verified",
-      "signature": "8e8883388df283516103eb64efd7558d7f57fdd6fd77ba765c4023e06f4d2f65",
-      "started_epoch": 1793621973.452355,
-      "deadline_epoch": 1793621983.452355,
+      "signature": "93cfbea4e603945a2c59b1036dbb3a932885dd5469e972f1a3d0b3579eeaca66",
+      "started_epoch": 1793622370.177789,
+      "deadline_epoch": 1793622380.177789,
       "binding": {
         "policy": "paired-fastq-ledger-v1",
         "spec": {
@@ -170,29 +170,29 @@
           {
             "identity": "synthetic/r1",
             "transfer": "r1",
-            "ledger_receipt_sha256": "8f27375b82ead0cafd2799f35f06715c61075fcc15d8092c62d7c75843c820a4",
+            "ledger_receipt_sha256": "291f82340c9f79429b5215411c76b5bcf24681ad33e8f9bfc38985f887ebd6c9",
             "http_receipt_sha256": "15b10fef525e08819bf4ff988611eb99baabe5dd94123132ab646952c177e4c8"
           },
           {
             "identity": "synthetic/r2",
             "transfer": "r2",
-            "ledger_receipt_sha256": "4de50eec970846a4f9da10ddfb7abc0542a0042f3348544efbd639fe21360d1d",
+            "ledger_receipt_sha256": "cade988a2af958bcffd99a5da7143ad153caf879d38ae01592b221f517bd794e",
             "http_receipt_sha256": "6624e549c45add8176cecb92b9485a5ff4a5da30da446411867dc819de1d82b4"
           }
         ],
-        "fingerprint": "96c015263ef07e5908c838d5ac4374d165269832ca766ffe73f6046bab7bf19b"
+        "fingerprint": "2f5fbc7043d8796300aa7d572872d7d57d97eb20afa43d1b3730ed641ae0abb1"
       },
-      "receipt_sha256": "1c202e584da55d397ce22ddfd0c3fbbbcea0dcefceff0772fc6ed8eba5facb47",
-      "finished_epoch": 1793621973.48266
+      "receipt_sha256": "b8c1e51dcff8fe8b611c28eeda680a1cc05951e2461f976cc9ec8dda2d745f64",
+      "finished_epoch": 1793622370.2046392
     },
     "calc": {
       "kind": "compact",
       "status": "verified",
-      "signature": "8b98139e0993173ea730c65b26da32c196551ff62346490f147647020891d97d",
-      "started_epoch": 1793621973.5747936,
-      "deadline_epoch": 1793622003.5747936,
+      "signature": "c37ef555dffc1ae9a560fd6cd142c9ade12090894e172ce2a97a20d9bbaca36f",
+      "started_epoch": 1793622370.2864707,
+      "deadline_epoch": 1793622400.2864707,
       "substage": "reduce",
-      "subdeadline_epoch": 1793621983.754358,
+      "subdeadline_epoch": 1793622380.432646,
       "binding": {
         "policy": "sealed-stream-v1",
         "spec": {
@@ -204,10 +204,10 @@
             "sha256": {
               "compact_ledger_phase.py": "ac0a6175ac4c0715248721160421f0bbed82aff99294d1253281a3417f5a9869",
               "compact_pe_pipeline.py": "cb33f8b7c4f6edeaf726bce8f7c200081f2742f7ffc203926f9ca53644ec4455",
-              "external_local_stage.py": "c44213ea21ba086a314ae84384a5ae259b6f3425e5e52998b552926c2162c8e7",
+              "external_local_stage.py": "3978c326b4fefb78f418703e33fc1b483343bcae3ba5e6a6b8ca6ddbca85f518",
               "pe_fragment_contract.py": "695ac69cb2658c937cc9bd67030386375838b3108316f233c8206a19e9974dd4",
-              "pilot_dry_runner.py": "3f4eb2be94bf4e6614148625ec369930a42b1a2a562415147714ff3651634f95",
-              "pilot_execution_policy.py": "b2535bd32692bb425d1ea3ecac23d65808628b957a8a0a8cf616155e9344f9a3",
+              "pilot_dry_runner.py": "67b3455ce2dda8ee91be1daa961f5a35067d3ac05d02e0a3a53053228d02f36c",
+              "pilot_execution_policy.py": "27f3e03207f8ea5251cf58bbcff6c187355ddc3743eaf68ed87354d7a3c619bf",
               "process_supervisor_v2.py": "4817846ca72ce8907d4977da97643a9a7fb088582ebbcbaa65d1229eece59b8b",
               "pysam": "47c1a657938298a9fcffbf01c41081d2a4eb91a9d3f48ea2e7573927c5870543",
               "pysam.libcalignedsegment": "3e1b320aeb77f81fc5fe0bd92539fe8ee76d1ae062f4fe0b8dd13be46e6b11ee",
@@ -254,10 +254,10 @@
             ]
           ]
         },
-        "fingerprint": "96c015263ef07e5908c838d5ac4374d165269832ca766ffe73f6046bab7bf19b",
-        "paired_phase_sha256": "5bc92ac5220c8afef3cdf18c5968dfbbf6fcc5d06c7c5e5e2487ffcec5e655b4",
-        "archive_phase_sha256": "01aa90c8d8a7a47c8a332a8d0ef17834c02d748f40ee7597a8a69d64218c447d",
-        "fixture_transfer_sha256": "9ecd2385efb88dc55a7e04d14b4ddb9c2615a136346f9395b08cb16e54b64f3c",
+        "fingerprint": "2f5fbc7043d8796300aa7d572872d7d57d97eb20afa43d1b3730ed641ae0abb1",
+        "paired_phase_sha256": "4983954f43e02941d1b9a78bbb3e71230b760d5b78ddbe27471e2877ccf18719",
+        "archive_phase_sha256": "283af3888a0e4b3bbcc19192b24cdc77feb1f14fbe787c61be6ce6f7370fd756",
+        "fixture_transfer_sha256": "773f433d6b8cdf575302a5aae3d553ad809a744e3100343763c5da1e6b3c622d",
         "producer": {
           "python_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
           "script_sha256": "126c6f009737f371b26bbff9c512ae47dd63f7d00fffc42f637997993320f1ac",
@@ -266,7 +266,7 @@
         },
         "fixture_http_sha256": "1fa977170cf1df54a2a4dac34f31c1ad2d77f6014257220345b8f5c3db422fdf"
       },
-      "receipt_sha256": "578c93f8d25ef1c3649d857e1bdb60c65848482f23fe293f62bf2dab2460c409",
+      "receipt_sha256": "37e04e05e9246924aef04735b16bf1f6f3a059021abc57108f97dd6ef6858b09",
       "coverage": {
         "definition": "accepted RG/QNAME groups with at least one target; marked duplicates retained, not unique molecules",
         "anchor": 15,
@@ -275,11 +275,11 @@
         "minimum": 20,
         "adequate": false
       },
-      "finished_epoch": 1793621973.961838
+      "finished_epoch": 1793622370.577659
     }
   },
   "mode": "synthetic-only",
   "raw_pilot_ready": false,
-  "last_epoch": 1793621973.961838,
-  "transfer_elapsed_seconds": 0.07777237892150879
+  "last_epoch": 1793622370.577659,
+  "transfer_elapsed_seconds": 0.04485201835632324
 }

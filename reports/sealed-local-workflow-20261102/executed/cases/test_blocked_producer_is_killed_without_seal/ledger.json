@@ -1,5 +1,5 @@
 {
-  "fingerprint": "34db4de92a450bce9402cfcc0b2b3443a4abe95e668ef3b44cb8026e8401f0f5",
+  "fingerprint": "e7cff414eee356dc0e8cc6d01da6b7e57ecd5b17ac32133312a4aaaf3f873004",
   "limits": {
     "disk_bytes": 8388608,
     "process_caps": {
@@ -12,67 +12,67 @@
     "transfer_bytes": 1048576,
     "wall_seconds": 90
   },
-  "deadline_epoch": 1793622055.2834857,
+  "deadline_epoch": 1793622452.3976443,
   "transfer_bytes_consumed": 7890,
   "phases": {
     "index": {
       "kind": "transfer",
       "status": "verified",
-      "signature": "a4691945e2e4c91443b0109b94fdc2c2d40483eca980e4aa28b76e0f2000c66e",
-      "started_epoch": 1793621965.3498836,
-      "deadline_epoch": 1793621985.3498836,
+      "signature": "a525e956e1451583f50c06febccd3a8fb28a9bd5c5058796085ba571f8073a4a",
+      "started_epoch": 1793622362.4496713,
+      "deadline_epoch": 1793622382.4496713,
       "unsettled_body_reservation_bytes": 0,
       "bytes": 220,
       "md5": "fa5bdd6a823ea3edaa5f528f427fd97f",
       "sha256": "85c5ed52f7c1263ea5a8ee67377ec90fd8d6c68f42ddb9d0727b19866f1f55a9",
       "attempts_used": 1,
-      "finished_epoch": 1793621965.3702955
+      "finished_epoch": 1793622362.4659808
     },
     "r1": {
       "kind": "transfer",
       "status": "verified",
-      "signature": "b6cb461d1575b22a0178c1cc7439b493d443d3d0e53a62e1344de611894987d5",
-      "started_epoch": 1793621965.3717458,
-      "deadline_epoch": 1793621985.3513339,
+      "signature": "634d60e9262b130d8265ff938da21bc190f9cfcb7bcebf4b535fc860f47496df",
+      "started_epoch": 1793622362.4672172,
+      "deadline_epoch": 1793622382.4509077,
       "unsettled_body_reservation_bytes": 0,
       "bytes": 257,
       "md5": "3901df1d973486dd9f43c1707be185db",
       "sha256": "75651f780d558728f963d541e4901bd3cc65bffbbc63f6f394a97021a672e18e",
       "attempts_used": 1,
-      "finished_epoch": 1793621965.3903704
+      "finished_epoch": 1793622362.478272
     },
     "r2": {
       "kind": "transfer",
       "status": "verified",
-      "signature": "86485cd8e6c42a995ff98e926b50d34629fac7e9111635123d12d5942c4e8071",
-      "started_epoch": 1793621965.392349,
-      "deadline_epoch": 1793621985.3533125,
+      "signature": "6ee0c40f106413debdc19f1c46313918d9f73db02808693da0bf63837f2b2cb5",
+      "started_epoch": 1793622362.4798207,
+      "deadline_epoch": 1793622382.4524565,
       "unsettled_body_reservation_bytes": 0,
       "bytes": 262,
       "md5": "e17c828ad9199a43f5f5a289f92de3ad",
       "sha256": "b370afa1dd9496f3533082c9b1a3b28b1f4db09a8620036c97a12f7579a82967",
       "attempts_used": 1,
-      "finished_epoch": 1793621965.406328
+      "finished_epoch": 1793622362.49105
     },
     "sam": {
       "kind": "transfer",
       "status": "verified",
-      "signature": "eedafdc111f237fac446065ca3b2f3cad4172f7b3b4ee9ac6b2290dc5d2a3635",
-      "started_epoch": 1793621965.4082594,
-      "deadline_epoch": 1793621985.355244,
+      "signature": "2ab06f1ba53966d224d32d96131a182039c4a8456b99c5fca8d7279ad7b29196",
+      "started_epoch": 1793622362.4925754,
+      "deadline_epoch": 1793622382.4539819,
       "unsettled_body_reservation_bytes": 0,
       "bytes": 7151,
       "md5": "d1c6ec1fae2ec9715c3ecc7e1e5da08b",
       "sha256": "b81c96bd204b38f7fad38ab7a39f177e89a2e23692f3a28c0fa1e80179724221",
       "attempts_used": 1,
-      "finished_epoch": 1793621965.431003
+      "finished_epoch": 1793622362.50476
     },
     "index_extract": {
       "kind": "archive",
       "status": "verified",
-      "signature": "9165c636bd96f165659cc57e2198e5429dfa0205cff8be6268c93871cf8f96d0",
-      "started_epoch": 1793621965.434164,
-      "deadline_epoch": 1793621975.434164,
+      "signature": "85e543c7032177de1028d39312a64a1d8217d9c70ea2ce27b6c3d2003838735e",
+      "started_epoch": 1793622362.5074563,
+      "deadline_epoch": 1793622372.5074563,
       "binding": {
         "policy": "bounded-tar-gzip-ledger-v1",
         "spec": {
@@ -128,19 +128,19 @@
           ],
           "transfer": "index"
         },
-        "fingerprint": "34db4de92a450bce9402cfcc0b2b3443a4abe95e668ef3b44cb8026e8401f0f5",
-        "transfer_receipt_sha256": "eb8ef94549d47f95aa732ab7a337b22123aaabfaa895da76226b5e8ecdda95b7",
+        "fingerprint": "e7cff414eee356dc0e8cc6d01da6b7e57ecd5b17ac32133312a4aaaf3f873004",
+        "transfer_receipt_sha256": "fb5a61a184ccee7a9be889a8f39311629a2c1298c0a63f00dd2df9db4d30dd9d",
         "http_receipt_sha256": "ca1e447013637a99694b56f731a97128f9ffbe96dc4742dcd3877751379cf383"
       },
-      "receipt_sha256": "1ebddaa91c0227ab67d7e669f57e6e82c4e7d63774b188e9c2f32a7ab03289f4",
-      "finished_epoch": 1793621965.4914987
+      "receipt_sha256": "67d1d4d04f69e8edc93d091ffe4bd385f6926302d6e34e2fb82a18e84feb793e",
+      "finished_epoch": 1793622362.548665
     },
     "prefix": {
       "kind": "paired_fastq",
       "status": "verified",
-      "signature": "08f5ca042c6c14cda1fa9f71fbc0ff460d1d262624e0eeb14f3a764ae626aee0",
-      "started_epoch": 1793621965.4968765,
-      "deadline_epoch": 1793621975.4968765,
+      "signature": "f4b6d26cfc205fac2cba607122a7bf1c9bad54a5527115c5f5df2ba341261384",
+      "started_epoch": 1793622362.552403,
+      "deadline_epoch": 1793622372.552403,
       "binding": {
         "policy": "paired-fastq-ledger-v1",
         "spec": {
@@ -170,29 +170,29 @@
           {
             "identity": "synthetic/r1",
             "transfer": "r1",
-            "ledger_receipt_sha256": "dc175546373ae8ecea9fe6fd2feeeb31a9b1762aec19a950d0705b73a2ab6f1f",
+            "ledger_receipt_sha256": "77ea7bf45c66ca43a48ea6715644148d1bb3a19d3303a5f36803d98695969115",
             "http_receipt_sha256": "15b10fef525e08819bf4ff988611eb99baabe5dd94123132ab646952c177e4c8"
           },
           {
             "identity": "synthetic/r2",
             "transfer": "r2",
-            "ledger_receipt_sha256": "49d967dcbc75a04130037d9aeb90608025dd0c4ee0561bb7236b0a100c1e351d",
+            "ledger_receipt_sha256": "cde0a1e66acb5b82cc2743db6f994bca4572c8f189abd677570dd482f7903fce",
             "http_receipt_sha256": "6624e549c45add8176cecb92b9485a5ff4a5da30da446411867dc819de1d82b4"
           }
         ],
-        "fingerprint": "34db4de92a450bce9402cfcc0b2b3443a4abe95e668ef3b44cb8026e8401f0f5"
+        "fingerprint": "e7cff414eee356dc0e8cc6d01da6b7e57ecd5b17ac32133312a4aaaf3f873004"
       },
-      "receipt_sha256": "d9fef82352c8ac8deb1c62d2bc8034cd68b790453d41054a99d577ffa6d93fc6",
-      "finished_epoch": 1793621965.5297174
+      "receipt_sha256": "02c1b7aff3b4fdadab8ecddc41f54d10fa9402b743a725040674381c81586891",
+      "finished_epoch": 1793622362.5808272
     },
     "calc": {
       "kind": "compact",
       "status": "started",
-      "signature": "9c216a21f805051bfe7ba562e191d70681cd43c08e3b21a7eaf7a369ecf2b16f",
-      "started_epoch": 1793621965.6345224,
-      "deadline_epoch": 1793621969.6345224,
+      "signature": "7c6f2dd42f425ea70756b01607b7fb45f7b6946edc030c973287df9a74315cd5",
+      "started_epoch": 1793622362.6686265,
+      "deadline_epoch": 1793622366.6686265,
       "substage": "producer",
-      "subdeadline_epoch": 1793621966.6345224,
+      "subdeadline_epoch": 1793622363.6686265,
       "binding": {
         "policy": "sealed-stream-v1",
         "spec": {
@@ -204,10 +204,10 @@
             "sha256": {
               "compact_ledger_phase.py": "ac0a6175ac4c0715248721160421f0bbed82aff99294d1253281a3417f5a9869",
               "compact_pe_pipeline.py": "cb33f8b7c4f6edeaf726bce8f7c200081f2742f7ffc203926f9ca53644ec4455",
-              "external_local_stage.py": "c44213ea21ba086a314ae84384a5ae259b6f3425e5e52998b552926c2162c8e7",
+              "external_local_stage.py": "3978c326b4fefb78f418703e33fc1b483343bcae3ba5e6a6b8ca6ddbca85f518",
               "pe_fragment_contract.py": "695ac69cb2658c937cc9bd67030386375838b3108316f233c8206a19e9974dd4",
-              "pilot_dry_runner.py": "3f4eb2be94bf4e6614148625ec369930a42b1a2a562415147714ff3651634f95",
-              "pilot_execution_policy.py": "b2535bd32692bb425d1ea3ecac23d65808628b957a8a0a8cf616155e9344f9a3",
+              "pilot_dry_runner.py": "67b3455ce2dda8ee91be1daa961f5a35067d3ac05d02e0a3a53053228d02f36c",
+              "pilot_execution_policy.py": "27f3e03207f8ea5251cf58bbcff6c187355ddc3743eaf68ed87354d7a3c619bf",
               "process_supervisor_v2.py": "4817846ca72ce8907d4977da97643a9a7fb088582ebbcbaa65d1229eece59b8b",
               "pysam": "47c1a657938298a9fcffbf01c41081d2a4eb91a9d3f48ea2e7573927c5870543",
               "pysam.libcalignedsegment": "3e1b320aeb77f81fc5fe0bd92539fe8ee76d1ae062f4fe0b8dd13be46e6b11ee",
@@ -254,10 +254,10 @@
             ]
           ]
         },
-        "fingerprint": "34db4de92a450bce9402cfcc0b2b3443a4abe95e668ef3b44cb8026e8401f0f5",
-        "paired_phase_sha256": "e9695f31cee51c43b45d8b6881e2ed3b305296f8b2064a272074da89625eafda",
-        "archive_phase_sha256": "5e633db35f6db7c1571097a2a9f5a3b14904a1854239ac8400dcd9477fca801e",
-        "fixture_transfer_sha256": "14c19f4795079b25e0eb53652a5a01c2b822212e9ac03e490f54df150834bb5f",
+        "fingerprint": "e7cff414eee356dc0e8cc6d01da6b7e57ecd5b17ac32133312a4aaaf3f873004",
+        "paired_phase_sha256": "3962fcd21fcc6c5906b735870ab21a15c9bcba914889559c941fdad8ecc3c762",
+        "archive_phase_sha256": "a2db7d8a92eaa75f33c7b6629fb9006e7f306d107993ce9a27f4abb074f4a5d1",
+        "fixture_transfer_sha256": "f681b02f0dd88951a48702a07bfc914bc27f472f6da44699002685660e7b8121",
         "producer": {
           "python_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
           "script_sha256": "126c6f009737f371b26bbff9c512ae47dd63f7d00fffc42f637997993320f1ac",
@@ -270,6 +270,6 @@
   },
   "mode": "synthetic-only",
   "raw_pilot_ready": false,
-  "last_epoch": 1793621965.6386049,
-  "transfer_elapsed_seconds": 0.0757591724395752
+  "last_epoch": 1793622362.672124,
+  "transfer_elapsed_seconds": 0.05077815055847168
 }

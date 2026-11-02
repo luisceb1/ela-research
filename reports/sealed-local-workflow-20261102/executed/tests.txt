@@ -26,6 +26,7 @@ test_wrong_decoder_or_temp_caps_rejected_before_phase (test_b4_ledger_policy.Com
 test_backward_clock_rejected_on_reopen (test_b4_ledger_policy.PolicyTests.test_backward_clock_rejected_on_reopen) ... ok
 test_changed_policy_cannot_reopen (test_b4_ledger_policy.PolicyTests.test_changed_policy_cannot_reopen) ... ok
 test_cumulative_transfer_time_does_not_reset_per_phase (test_b4_ledger_policy.PolicyTests.test_cumulative_transfer_time_does_not_reset_per_phase) ... ok
+test_disk_scan_handles_removed_directory_but_not_access_error (test_b4_ledger_policy.PolicyTests.test_disk_scan_handles_removed_directory_but_not_access_error) ... ok
 test_exact_finished_transfer_budget_allows_nontransfer_inspection (test_b4_ledger_policy.PolicyTests.test_exact_finished_transfer_budget_allows_nontransfer_inspection) ... ok
 test_expired_pending_commit_cannot_be_verified (test_b4_ledger_policy.PolicyTests.test_expired_pending_commit_cannot_be_verified) ... ok
 test_invalid_clock_memory_and_disk_policies_rejected (test_b4_ledger_policy.PolicyTests.test_invalid_clock_memory_and_disk_policies_rejected) ... ok
@@ -200,6 +201,6 @@ test_success_and_cached_reuse (test_bounded_http_transport.HTTPTests.test_succes
 test_truncated_bytes_charged (test_bounded_http_transport.HTTPTests.test_truncated_bytes_charged) ... ok
 
 ----------------------------------------------------------------------
-Ran 200 tests in 34.229s
+Ran 201 tests in 31.412s
 
 OK

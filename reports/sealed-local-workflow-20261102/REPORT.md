@@ -6,12 +6,16 @@ Plan previo: research/plans/2026-11-02-sealed-local-worker.md.
 
 ## Evidencia ejecutada
 
-200tests locales pasan sin omisiones:17nuevos y183existentes. CPython3.12.14,
+201tests locales pasan sin omisiones:18nuevos y183existentes. CPython3.12.14,
 PySAM0.23.3, samtools_version1.21. Compileall correcto. executed/tests.txt y
 validation.json conservan la batería completa. targeted-rss-check.txt repite solo
 el negativoRSScon productor detenido para hacerlo independiente de lo rápido que
-termine; no cambia código del motor ni se cuenta como otro test único. No fallos
-inesperados. Primera batería de199también pasó antes de añadir el controlRSS.
+termine; no se cuenta como otro test único. Las baterías locales199/200pasaron.
+La primera CI con PySAMen3.11 detectó una carrera del monitor al eliminarse un
+directorio partial durante pathlib.rglob;3.12fue cancelada por fail-fast. Se cambia
+a os.walk con handler solo para FileNotFoundError, manteniendo errores de acceso
+fatales, y se añade un control determinista. ci-initial-failure.txt conserva el
+fallo; la batería final201/201pasa con recibos regenerados bajo el código corregido.
 
 Se verifica un recorrido de siete fases en el mismo worker: cuatro HTTPloopback
 (archivo de índice simulado,R1,R2,SAMfixture), extracción, prefijo y cómputo en
@@ -22,10 +26,10 @@ SYNTHETIC PLACEHOLDER, **no un índice HISAT2 válido**.
 
 | Caso retenido | Resultado |
 |---|---|
-| Recorrido correcto + revalidación | Sello,4peticiones,7fases verificadas, ledger idéntico tras revalidar;≈0,825s primer recorrido |
+| Recorrido correcto + revalidación | Sello,4peticiones,7fases verificadas, ledger idéntico tras revalidar |
 | Mínimo20con fixturede6grupos | Sello indica coverage_insufficient; no se transforma en cobertura adecuada |
 | Productor que emite datos válidos y sale7 | Consumidor/worker1, fasefailed, sin sello |
-| Productor bloqueado tras emitir | Corte por subfase productor1s,≈1,409s desde lanzar todo el recorrido;−9,sin vivos,sin sello |
+| Productor bloqueado tras emitir | Corte por subfase productor1s; tiempo del recibo incluye arranque/fases previas;−9,sin vivos,sin sello |
 | Rechazo externo inyectado después del resultado interno | Resultado interno complete, sin sello; reapertura denegada |
 | Prefijo alterado después de sellar | Revalidación supervisada rechazada, sin nueva peticiónHTTP |
 

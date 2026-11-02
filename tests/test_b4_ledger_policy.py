@@ -78,6 +78,15 @@ class PolicyTests(unittest.TestCase):
             with self.subTest(change=change):self.assertRaises(ValueError,self.open)
     def test_partition_fill_rejected(self):
         r=self.open();d=self.root/'dependencies';d.mkdir();(d/'oversized').write_bytes(b'x'*(self.manifest['execution_policy']['allocations']['dependencies']+1));self.assertRaises(RuntimeError,r.guard)
+    def test_disk_scan_handles_removed_directory_but_not_access_error(self):
+        r=self.open();gone=self.root/'transient';gone.mkdir();(self.root/'marker').write_bytes(b'marker')
+        original=policy_module.os.scandir
+        def scan(path):
+            if str(path)==str(gone):gone.rmdir();raise FileNotFoundError('concurrent directory removal')
+            return original(path)
+        with patch.object(policy_module.os,'scandir',side_effect=scan):
+            usage=policy_module.disk_usage(self.root,r.state);self.assertGreaterEqual(usage['receipts'],6)
+        with patch.object(policy_module.os,'scandir',side_effect=PermissionError('access denied')):self.assertRaises(PermissionError,policy_module.disk_usage,self.root,r.state)
     def test_producer_and_reduce_subclocks(self):
         r=self.open();r.begin('calc','compact','sig');self.clock.now+=4;r.compact_reduction('calc');p=r.state['phases']['calc'];self.assertEqual(p['substage'],'reduce');self.clock.now+=10;self.assertRaises(RuntimeError,r.guard)
     def test_expired_pending_commit_cannot_be_verified(self):

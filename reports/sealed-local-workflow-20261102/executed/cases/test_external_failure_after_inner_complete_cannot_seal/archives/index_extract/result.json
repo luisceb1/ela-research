@@ -55,8 +55,8 @@
       ],
       "transfer": "index"
     },
-    "fingerprint": "fbc3cb42e0e3f93931c462efb752f8af082de7bcabb4f17b20fa00d7d2fddc9f",
-    "transfer_receipt_sha256": "a975207363b3548b357312933dc6da6bac4b0dcdfbb81a22a06ceab87a28be85",
+    "fingerprint": "c1e9f4dc999ef590cd9ad78491703c8e38d36fa5f23fcce9dae649fc9ea83568",
+    "transfer_receipt_sha256": "fd3dd69ba29a3e33d36ff83f730ec265d330508ca16a25d99027febf459ec30c",
     "http_receipt_sha256": "ca1e447013637a99694b56f731a97128f9ffbe96dc4742dcd3877751379cf383"
   },
   "raw_execution_ready": false,

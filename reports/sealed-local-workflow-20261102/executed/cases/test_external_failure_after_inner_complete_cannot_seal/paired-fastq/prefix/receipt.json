@@ -29,17 +29,17 @@
       {
         "identity": "synthetic/r1",
         "transfer": "r1",
-        "ledger_receipt_sha256": "ed045244564bf133fcf3d81e0ff8d6e11ff3b2c017f1bfc0c45062469d9066d3",
+        "ledger_receipt_sha256": "66156887fc5e4a345d68bdac0baeb8eca8635017b309821fb06548b36321712f",
         "http_receipt_sha256": "15b10fef525e08819bf4ff988611eb99baabe5dd94123132ab646952c177e4c8"
       },
       {
         "identity": "synthetic/r2",
         "transfer": "r2",
-        "ledger_receipt_sha256": "2f2fd69b234990317a30c498206be66b2945996fdba87f8a3d4c18fd9ff7dd42",
+        "ledger_receipt_sha256": "64bb037a6dce65f6faab8933015eac571e18bcabc9fd9c0e9d17a719200974da",
         "http_receipt_sha256": "6624e549c45add8176cecb92b9485a5ff4a5da30da446411867dc819de1d82b4"
       }
     ],
-    "fingerprint": "fbc3cb42e0e3f93931c462efb752f8af082de7bcabb4f17b20fa00d7d2fddc9f"
+    "fingerprint": "c1e9f4dc999ef590cd9ad78491703c8e38d36fa5f23fcce9dae649fc9ea83568"
   },
   "result_sha256": "a3754ce2801c5e5101753f203e5ea9b0a532b0e6cdf04ac67e60782670a92b6f",
   "raw_execution_ready": false

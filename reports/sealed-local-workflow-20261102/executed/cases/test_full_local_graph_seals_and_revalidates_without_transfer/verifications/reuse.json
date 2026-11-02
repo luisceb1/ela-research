@@ -1,6 +1,6 @@
 {
   "status": "verified",
-  "seal_sha256": "aa30dd12ebde4df4a3ecbe04ce950ca746cffa8e0c5544bc5eb002108b938cde",
-  "ledger_sha256": "232ad9fcc1796b5a05c659fee561e5d3d3c7cc332de168f7b4ce4d1b6d3b6038",
+  "seal_sha256": "adc8ee4c1364f9545c5444eee177e03ca7a6a40c4be48a57e8442ba8e7e7e295",
+  "ledger_sha256": "3d6961f39f5e68873002bc14c21911467b385ddad99f14c48b8068bb7cd9b4b8",
   "no_new_transfer": true
 }

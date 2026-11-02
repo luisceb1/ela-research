@@ -1,7 +1,9 @@
 {
   "unexpected_test_failures":0,
   "unexpected_test_errors":0,
-  "final_local_tests":200,
+  "initial_CI_failure":"Python3.11 pathlib.rglob raced with archive partial directory deletion; Python3.12 cancelled by fail-fast",
+  "correction":"os.walk onerror ignores only FileNotFoundError; permission/access errors remain fatal; deterministic regression added",
+  "final_local_tests":201,
   "new_workflow_tests":17,
   "expected_rejections":["nonlocal/mode/free-command input","redirect","wrong checksum/code hash","prefix name mismatch","producer exit7","blocked producer","phase RSS below global cap","missing seal or changed metadata","bulk tamper on revalidation","post-run injected external rejection"],
   "fault_injection_note":"Post-run rejection modifies only returned decision object, preserves actual exit0 supervisor receipt and records injection separately",

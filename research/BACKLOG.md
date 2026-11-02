@@ -2,7 +2,7 @@
 
 ## P0 vigente: B5 preflight y paquete de activación — 02/11/2026
 
-- B1integración local verificada: worker fijo/orígenesloopback/procedencia/productor-pipe-conteo/sello externo;200tests (17nuevos), sin nueva alineación. reports/sealed-local-workflow-20261102.
+- B1integración local verificada: worker fijo/orígenesloopback/procedencia/productor-pipe-conteo/sello externo;201tests (18nuevos), sin nueva alineación. reports/sealed-local-workflow-20261102.
 - P0 única: inventario de solo lectura del host disponible, binarios/hash/índice/dialecto/dependencias y paquete revisable con orígenes/argv/caps/activación. No descargar/restaurar crudos o índice.
 - Reales siguen rechazados: PRODUCTION_ENABLED=False,descriptor sintético y política apagada. La habilitación requiere cambio revisado y decisión expresa; B5no cerrado por un replay. raw_execution_ready=false. Sin nuevos alineamientos/contactos/costes/merge automático.
 

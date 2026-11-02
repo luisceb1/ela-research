@@ -1,5 +1,5 @@
 {
-  "fingerprint": "fbc3cb42e0e3f93931c462efb752f8af082de7bcabb4f17b20fa00d7d2fddc9f",
+  "fingerprint": "c1e9f4dc999ef590cd9ad78491703c8e38d36fa5f23fcce9dae649fc9ea83568",
   "limits": {
     "disk_bytes": 8388608,
     "process_caps": {
@@ -12,67 +12,67 @@
     "transfer_bytes": 1048576,
     "wall_seconds": 90
   },
-  "deadline_epoch": 1793622059.558237,
+  "deadline_epoch": 1793622456.4768028,
   "transfer_bytes_consumed": 7890,
   "phases": {
     "index": {
       "kind": "transfer",
       "status": "verified",
-      "signature": "282a3a7a100e028ea810de5925a9bd17a6abf4d88b33aba0d93dd79b311c14ba",
-      "started_epoch": 1793621969.618333,
-      "deadline_epoch": 1793621989.618333,
+      "signature": "f6021a713ca6dd1eae46aeffdae6e16231290aee3fedd74d3709ae5f03a5ae97",
+      "started_epoch": 1793622366.552807,
+      "deadline_epoch": 1793622386.552807,
       "unsettled_body_reservation_bytes": 0,
       "bytes": 220,
       "md5": "fa5bdd6a823ea3edaa5f528f427fd97f",
       "sha256": "85c5ed52f7c1263ea5a8ee67377ec90fd8d6c68f42ddb9d0727b19866f1f55a9",
       "attempts_used": 1,
-      "finished_epoch": 1793621969.647785
+      "finished_epoch": 1793622366.5697985
     },
     "r1": {
       "kind": "transfer",
       "status": "verified",
-      "signature": "2dc61146fdfced483fdd3d028a0ae6cebf1faca4d167ce12cb78e6992d1e38c3",
-      "started_epoch": 1793621969.649684,
-      "deadline_epoch": 1793621989.620232,
+      "signature": "3ccaa384e3c27d7f1cc3d8c52fda64df2a37072c853ef4ef7b4a9239a24aa33b",
+      "started_epoch": 1793622366.5712326,
+      "deadline_epoch": 1793622386.5542412,
       "unsettled_body_reservation_bytes": 0,
       "bytes": 257,
       "md5": "3901df1d973486dd9f43c1707be185db",
       "sha256": "75651f780d558728f963d541e4901bd3cc65bffbbc63f6f394a97021a672e18e",
       "attempts_used": 1,
-      "finished_epoch": 1793621969.6752
+      "finished_epoch": 1793622366.5845273
     },
     "r2": {
       "kind": "transfer",
       "status": "verified",
-      "signature": "58ebc22772ab65542d1368256d5790b04eb9f46c187725293544308f94fbf130",
-      "started_epoch": 1793621969.6781998,
-      "deadline_epoch": 1793621989.623232,
+      "signature": "706ee0ec2acfb87d2fe3e02a049a8ced3d297226e719eb239f5acafb8bccb9fb",
+      "started_epoch": 1793622366.5882845,
+      "deadline_epoch": 1793622386.5579984,
       "unsettled_body_reservation_bytes": 0,
       "bytes": 262,
       "md5": "e17c828ad9199a43f5f5a289f92de3ad",
       "sha256": "b370afa1dd9496f3533082c9b1a3b28b1f4db09a8620036c97a12f7579a82967",
       "attempts_used": 1,
-      "finished_epoch": 1793621969.7088985
+      "finished_epoch": 1793622366.6099565
     },
     "sam": {
       "kind": "transfer",
       "status": "verified",
-      "signature": "27040b7728a327b8521a2f0eabca02aa5425803683e071c4541baf51c1741a49",
-      "started_epoch": 1793621969.7131073,
-      "deadline_epoch": 1793621989.6274407,
+      "signature": "2708f5a47ca9b8dc817d01da7e8812e23a2673e053999ec2ba389e9b36e7e433",
+      "started_epoch": 1793622366.6114607,
+      "deadline_epoch": 1793622386.5595026,
       "unsettled_body_reservation_bytes": 0,
       "bytes": 7151,
       "md5": "d1c6ec1fae2ec9715c3ecc7e1e5da08b",
       "sha256": "b81c96bd204b38f7fad38ab7a39f177e89a2e23692f3a28c0fa1e80179724221",
       "attempts_used": 1,
-      "finished_epoch": 1793621969.7369335
+      "finished_epoch": 1793622366.6226413
     },
     "index_extract": {
       "kind": "archive",
       "status": "verified",
-      "signature": "dcdf8ff99d3dc2d95a564a5f504c7f009582a88204036f9f9f47c601c57a2c81",
-      "started_epoch": 1793621969.7455764,
-      "deadline_epoch": 1793621979.7455764,
+      "signature": "66de6044ee91f49a15be9eded1e48694c13f5680369823103ab641783d6584dc",
+      "started_epoch": 1793622366.6251576,
+      "deadline_epoch": 1793622376.6251576,
       "binding": {
         "policy": "bounded-tar-gzip-ledger-v1",
         "spec": {
@@ -128,19 +128,19 @@
           ],
           "transfer": "index"
         },
-        "fingerprint": "fbc3cb42e0e3f93931c462efb752f8af082de7bcabb4f17b20fa00d7d2fddc9f",
-        "transfer_receipt_sha256": "a975207363b3548b357312933dc6da6bac4b0dcdfbb81a22a06ceab87a28be85",
+        "fingerprint": "c1e9f4dc999ef590cd9ad78491703c8e38d36fa5f23fcce9dae649fc9ea83568",
+        "transfer_receipt_sha256": "fd3dd69ba29a3e33d36ff83f730ec265d330508ca16a25d99027febf459ec30c",
         "http_receipt_sha256": "ca1e447013637a99694b56f731a97128f9ffbe96dc4742dcd3877751379cf383"
       },
-      "receipt_sha256": "74ce795f0edfffc37ef8c9ad15f85c511c55b6a4219a2d145ffe7437692816bd",
-      "finished_epoch": 1793621969.8280764
+      "receipt_sha256": "1cc646a0ec802e100e23f4424f0e0deaa5e79590296b248521ffafba4a6e76e0",
+      "finished_epoch": 1793622366.6821833
     },
     "prefix": {
       "kind": "paired_fastq",
       "status": "verified",
-      "signature": "af486d2ece6f24b62b21aae246e372d9c8df6e47f4970db70ed89dd9bbdbdda9",
-      "started_epoch": 1793621969.8341436,
-      "deadline_epoch": 1793621979.8341436,
+      "signature": "8ee3fc3ae81382003d6588b77ce718e2e532a72d133cc206f4eebce74326c6ff",
+      "started_epoch": 1793622366.6873796,
+      "deadline_epoch": 1793622376.6873796,
       "binding": {
         "policy": "paired-fastq-ledger-v1",
         "spec": {
@@ -170,29 +170,29 @@
           {
             "identity": "synthetic/r1",
             "transfer": "r1",
-            "ledger_receipt_sha256": "ed045244564bf133fcf3d81e0ff8d6e11ff3b2c017f1bfc0c45062469d9066d3",
+            "ledger_receipt_sha256": "66156887fc5e4a345d68bdac0baeb8eca8635017b309821fb06548b36321712f",
             "http_receipt_sha256": "15b10fef525e08819bf4ff988611eb99baabe5dd94123132ab646952c177e4c8"
           },
           {
             "identity": "synthetic/r2",
             "transfer": "r2",
-            "ledger_receipt_sha256": "2f2fd69b234990317a30c498206be66b2945996fdba87f8a3d4c18fd9ff7dd42",
+            "ledger_receipt_sha256": "64bb037a6dce65f6faab8933015eac571e18bcabc9fd9c0e9d17a719200974da",
             "http_receipt_sha256": "6624e549c45add8176cecb92b9485a5ff4a5da30da446411867dc819de1d82b4"
           }
         ],
-        "fingerprint": "fbc3cb42e0e3f93931c462efb752f8af082de7bcabb4f17b20fa00d7d2fddc9f"
+        "fingerprint": "c1e9f4dc999ef590cd9ad78491703c8e38d36fa5f23fcce9dae649fc9ea83568"
       },
-      "receipt_sha256": "965a6a4629fb0aea2127736c75b0d95b445e94c946759939c214437fd7e48aae",
-      "finished_epoch": 1793621969.8810565
+      "receipt_sha256": "d9fd92f8cb6c4e5a22f081f838e32e7d4009fa2689c79b82ea7e0bda9c26de73",
+      "finished_epoch": 1793622366.7171853
     },
     "calc": {
       "kind": "compact",
       "status": "verified",
-      "signature": "d31a6b9fc2125e26ebbdff83e851951d2095e6f6c7e1633748a4a3e99de3e7ba",
-      "started_epoch": 1793621969.980175,
-      "deadline_epoch": 1793621999.980175,
+      "signature": "b35c7dbdd12cf285db6976fe85df1e323cb3562e2612761f35d95ff2340cf0f0",
+      "started_epoch": 1793622366.8155391,
+      "deadline_epoch": 1793622396.8155391,
       "substage": "reduce",
-      "subdeadline_epoch": 1793621980.1964848,
+      "subdeadline_epoch": 1793622376.9718626,
       "binding": {
         "policy": "sealed-stream-v1",
         "spec": {
@@ -204,10 +204,10 @@
             "sha256": {
               "compact_ledger_phase.py": "ac0a6175ac4c0715248721160421f0bbed82aff99294d1253281a3417f5a9869",
               "compact_pe_pipeline.py": "cb33f8b7c4f6edeaf726bce8f7c200081f2742f7ffc203926f9ca53644ec4455",
-              "external_local_stage.py": "c44213ea21ba086a314ae84384a5ae259b6f3425e5e52998b552926c2162c8e7",
+              "external_local_stage.py": "3978c326b4fefb78f418703e33fc1b483343bcae3ba5e6a6b8ca6ddbca85f518",
               "pe_fragment_contract.py": "695ac69cb2658c937cc9bd67030386375838b3108316f233c8206a19e9974dd4",
-              "pilot_dry_runner.py": "3f4eb2be94bf4e6614148625ec369930a42b1a2a562415147714ff3651634f95",
-              "pilot_execution_policy.py": "b2535bd32692bb425d1ea3ecac23d65808628b957a8a0a8cf616155e9344f9a3",
+              "pilot_dry_runner.py": "67b3455ce2dda8ee91be1daa961f5a35067d3ac05d02e0a3a53053228d02f36c",
+              "pilot_execution_policy.py": "27f3e03207f8ea5251cf58bbcff6c187355ddc3743eaf68ed87354d7a3c619bf",
               "process_supervisor_v2.py": "4817846ca72ce8907d4977da97643a9a7fb088582ebbcbaa65d1229eece59b8b",
               "pysam": "47c1a657938298a9fcffbf01c41081d2a4eb91a9d3f48ea2e7573927c5870543",
               "pysam.libcalignedsegment": "3e1b320aeb77f81fc5fe0bd92539fe8ee76d1ae062f4fe0b8dd13be46e6b11ee",
@@ -254,10 +254,10 @@
             ]
           ]
         },
-        "fingerprint": "fbc3cb42e0e3f93931c462efb752f8af082de7bcabb4f17b20fa00d7d2fddc9f",
-        "paired_phase_sha256": "d084b4d5f22e75a7e48d6827705181b1348cb2ed801f60fe9e03e65ef192a49c",
-        "archive_phase_sha256": "dddd2a0edda58b4cb3d86ac5aff4880b644ff5cf30ac12d90f70ecbf90991325",
-        "fixture_transfer_sha256": "5206782a20235e802ffec43e4511eb74843467194566c89f6463880d3575154a",
+        "fingerprint": "c1e9f4dc999ef590cd9ad78491703c8e38d36fa5f23fcce9dae649fc9ea83568",
+        "paired_phase_sha256": "0895a438905b920291029bb492ef5b780f57fba7f88ac28a2ea74ab70111e4e4",
+        "archive_phase_sha256": "7b05291257450038813885c3893a6bea78abcf965c57b1bf7efce09c1c0e285c",
+        "fixture_transfer_sha256": "5a3db80c5024063ea9f5a82960a5a29a54569086f9e08cd5608648d378fc508e",
         "producer": {
           "python_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
           "script_sha256": "126c6f009737f371b26bbff9c512ae47dd63f7d00fffc42f637997993320f1ac",
@@ -266,7 +266,7 @@
         },
         "fixture_http_sha256": "1fa977170cf1df54a2a4dac34f31c1ad2d77f6014257220345b8f5c3db422fdf"
       },
-      "receipt_sha256": "9de37a6e9760c075f6db1220823edb97dbb3313cfb18b8494565d27ad7dde124",
+      "receipt_sha256": "e5a4592385495c72c2f3aaa49dfd20d3313c562255b85434f7ee4abd2cd77248",
       "coverage": {
         "definition": "accepted RG/QNAME groups with at least one target; marked duplicates retained, not unique molecules",
         "anchor": 15,
@@ -275,11 +275,11 @@
         "minimum": 1,
         "adequate": true
       },
-      "finished_epoch": 1793621970.3857381
+      "finished_epoch": 1793622367.1290638
     }
   },
   "mode": "synthetic-only",
   "raw_pilot_ready": false,
-  "last_epoch": 1793621970.3857381,
-  "transfer_elapsed_seconds": 0.10949277877807617
+  "last_epoch": 1793622367.1290638,
+  "transfer_elapsed_seconds": 0.06313872337341309
 }

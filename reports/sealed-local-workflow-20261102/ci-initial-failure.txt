@@ -1,0 +1,50 @@
+Source commit: cdd4b10cfec8e4ebdab452cfb6fa8a70722962ca
+Workflow: https://github.com/luisceb1/ela-research/actions/runs/41444318041
+Job125273536201 Python3.11;3.12cancelled by matrix fail-fast.
+Cause: pathlib.rglob traversal raced with archive partial directory removal,
+before the inner try/stat handling could catch it. Fix uses os.walk with explicit
+FileNotFound-only scan handler. Permission/access errors remain fatal.
+
+ERROR: test_prefix_identity_mismatch_cannot_seal (test_sealed_local_workflow.WorkflowTests.test_prefix_identity_mismatch_cannot_seal)
+2026-11-02T12:24:06.0189063Z ----------------------------------------------------------------------
+2026-11-02T12:24:06.0189624Z Traceback (most recent call last):
+2026-11-02T12:24:06.0197324Z   File "/home/runner/work/ela-research/ela-research/tests/test_sealed_local_workflow.py", line 91, in test_prefix_identity_mismatch_cannot_seal
+2026-11-02T12:24:06.0198914Z     self.manifest['paired_fastq']['prefix']['prefix_pairs']=8;self.assertRaises(ValueError,self.run_job);self.assert_unsealed()
+2026-11-02T12:24:06.0200097Z                                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-11-02T12:24:06.0201223Z   File "/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/unittest/case.py", line 766, in assertRaises
+2026-11-02T12:24:06.0202032Z     return context.handle('assertRaises', args, kwargs)
+2026-11-02T12:24:06.0202576Z            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-11-02T12:24:06.0203316Z   File "/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/unittest/case.py", line 237, in handle
+2026-11-02T12:24:06.0204032Z     callable_obj(*args, **kwargs)
+2026-11-02T12:24:06.0204786Z   File "/home/runner/work/ela-research/ela-research/tests/test_sealed_local_workflow.py", line 59, in run_job
+2026-11-02T12:24:06.0205716Z     def run_job(self):return workflow.run_workflow(self.root,self.manifest,self.limits)
+2026-11-02T12:24:06.0206402Z                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-11-02T12:24:06.0207311Z   File "/home/runner/work/ela-research/ela-research/scripts/sealed_local_workflow.py", line 211, in run_workflow
+2026-11-02T12:24:06.0209051Z     rec=supervise('run',[sys.executable,str(Path(__file__).resolve()),'--job',str(root/'workflow-job.json')],root/'workflow-receipts',timeout=limits['wall_seconds'],rss_limit=caps['rss_bytes'],address_space=caps['address_space_bytes'],checkpoint=checkpoint,group_checkpoint=memory)
+2026-11-02T12:24:06.0211008Z         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-11-02T12:24:06.0212101Z   File "/home/runner/work/ela-research/ela-research/scripts/process_supervisor_v2.py", line 64, in supervise
+2026-11-02T12:24:06.0212831Z     if checkpoint is not None:checkpoint()
+2026-11-02T12:24:06.0213286Z                               ^^^^^^^^^^^^
+2026-11-02T12:24:06.0214025Z   File "/home/runner/work/ela-research/ela-research/scripts/sealed_local_workflow.py", line 190, in clocks_disk
+2026-11-02T12:24:06.0214761Z     usage=execution.disk_usage(root,state)
+2026-11-02T12:24:06.0215203Z           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-11-02T12:24:06.0215910Z   File "/home/runner/work/ela-research/ela-research/scripts/pilot_execution_policy.py", line 48, in disk_usage
+2026-11-02T12:24:06.0216621Z     for path in Path(root).rglob('*'):
+2026-11-02T12:24:06.0217288Z   File "/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/pathlib.py", line 968, in rglob
+2026-11-02T12:24:06.0217937Z     for p in selector.select_from(self):
+2026-11-02T12:24:06.0218643Z   File "/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/pathlib.py", line 408, in _select_from
+2026-11-02T12:24:06.0219401Z     for p in successor_select(starting_point, is_dir, exists, scandir):
+2026-11-02T12:24:06.0220169Z   File "/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/pathlib.py", line 355, in _select_from
+2026-11-02T12:24:06.0221324Z     with scandir(parent_path) as scandir_it:
+2026-11-02T12:24:06.0221776Z          ^^^^^^^^^^^^^^^^^^^^
+2026-11-02T12:24:06.0222414Z   File "/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/pathlib.py", line 938, in _scandir
+2026-11-02T12:24:06.0223061Z     return os.scandir(self)
+2026-11-02T12:24:06.0223470Z            ^^^^^^^^^^^^^^^^
+2026-11-02T12:24:06.0224287Z FileNotFoundError: [Errno 2] No such file or directory: '/tmp/tmp3l10p3nw/run/archives/index_extract/partial'
+2026-11-02T12:24:06.0224897Z 
+2026-11-02T12:24:06.0225201Z ----------------------------------------------------------------------
+2026-11-02T12:24:06.0225726Z Ran 17 tests in 15.271s
+2026-11-02T12:24:06.0226027Z 
+2026-11-02T12:24:06.0226264Z FAILED (errors=1)
+2026-11-02T12:24:06.0427625Z ##[error]Process completed with exit code 1.
+2026-11-02T12:24:06.0551957Z 

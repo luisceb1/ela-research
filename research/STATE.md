@@ -2,7 +2,7 @@
 
 ## Decisión vigente: B1 integrado y sellado localmente; B5/activación pendientes — 02/11/2026
 
-Worker fijo encadena4HTTPloopback,archivo,prefijos y productor/consumidor; solo se acepta tras sello padre de descriptor/ledger/resultado/recibo externo. 200tests locales pasan (17nuevos+183existentes), compileall; reports/sealed-local-workflow-20261102. Revalidación supervisada conserva ledger y no descarga. Productor no-cero/bloqueado, capRSSde fase y fallo externo trasresultado interno impiden sello. Siete fases,7.890bytes,9pares y6grupos objetivo en replay; no alineación nueva.
+Worker fijo encadena4HTTPloopback,archivo,prefijos y productor/consumidor; solo se acepta tras sello padre de descriptor/ledger/resultado/recibo externo. 201tests locales pasan (18nuevos+183existentes), compileall; reports/sealed-local-workflow-20261102. Revalidación supervisada conserva ledger y no descarga. Productor no-cero/bloqueado, capRSSde fase y fallo externo trasresultado interno impiden sello. Siete fases,7.890bytes,9pares y6grupos objetivo en replay; no alineación nueva.
 
 B1integración sintética verificada: índice de ocho miembros es placeholder, productor compara nombres/reproduce SAMexistente; no prueba uso de índice/FASTQpara alinear. ArgvHISAT2fijo preparado/pinado pero ejecución realrechazada antes de acceder a entradas. B5host/índice/dialecto/dependencias y puerta de activación revisada/decisión expresa pendientes. Producción=false,raw_execution_ready=false.
 

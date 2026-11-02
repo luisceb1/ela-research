@@ -97,7 +97,7 @@ class DryRunner:
             usage=execution.disk_usage(self.root,self.state)
             if sum(usage.values())>l['disk_bytes']:raise RuntimeError('Global disk budget')
             if any(usage[k]>self.policy['allocations'][k] for k in usage):raise RuntimeError('Disk partition budget')
-        elif sum(p.stat().st_size for p in self.root.rglob('*') if p.is_file())>l['disk_bytes']:raise RuntimeError('Global disk budget')
+        elif sum(p.stat().st_size for p in execution.iter_files(self.root) if p.is_file())>l['disk_bytes']:raise RuntimeError('Global disk budget')
         if shutil.disk_usage(self.root).free<l['reserve_bytes']:raise RuntimeError('Free disk reserve')
     def begin(self,name,kind,signature):
         if not re.fullmatch('[A-Za-z0-9_-]+',name):raise ValueError('Invalid phase name')

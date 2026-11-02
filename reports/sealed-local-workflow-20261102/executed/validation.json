@@ -19,7 +19,7 @@
     "test_pilot_process_limits.py",
     "test_bounded_http_transport.py"
   ],
-  "tests": 200,
+  "tests": 201,
   "failures": 0,
   "errors": 0,
   "skipped": 0,

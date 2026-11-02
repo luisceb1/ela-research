@@ -1,5 +1,6 @@
 """Opt-in local policy: fixed clocks, disk partitions and phase resource caps."""
 import math
+import os
 from pathlib import Path
 
 KINDS={'transfer','archive','paired_fastq','compact','process'}
@@ -45,7 +46,7 @@ def guard_clocks(state,policy,now):
 
 def disk_usage(root,state):
     usage={k:0 for k in ALLOCATIONS};transfers=[n for n,p in state['phases'].items() if p['kind']=='transfer']
-    for path in Path(root).rglob('*'):
+    for path in iter_files(root):
         try:
             if not path.is_file():continue
             rel=path.relative_to(root);parts=rel.parts;name=path.name;kind='receipts'
@@ -57,3 +58,12 @@ def disk_usage(root,state):
             usage[kind]+=path.stat().st_size
         except FileNotFoundError:pass
     return usage
+
+
+def iter_files(root):
+    def scan_error(error):
+        if not isinstance(error,FileNotFoundError):raise error
+    # os.walk handles a directory disappearing between listing and descent.
+    # Access errors remain fatal; the next watchdog sample sees final paths.
+    for directory,_,files in os.walk(root,followlinks=False,onerror=scan_error):
+        for name in files:yield Path(directory)/name

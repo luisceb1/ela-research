@@ -99,7 +99,8 @@ def run_local_stage(root,manifest,limits,stage,*,timeout,rss_bytes=None,address_
     if effective<=0:raise RuntimeError('Global deadline before spawn')
     def disk_guard():
         used=0
-        for p in root.rglob('*'):
+        import pilot_execution_policy as execution
+        for p in execution.iter_files(root):
             try:
                 if p.is_file():used+=p.stat().st_size
             except FileNotFoundError:pass  # Atomic child renames; next sample observes final path.
