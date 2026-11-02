@@ -1,5 +1,11 @@
 # Estado vigente — 02/11/2026
 
+## Decisión vigente: supervisión externa local ejecutada — 02/11/2026
+
+Worker fijo HTTP loopback/paired bajo supervisor externo; cortes en cabeceras, cuerpo, goteo y validador detenido con descendiente dejan cero miembros vivos. 79tests locales pasan (12 nuevos+67 existentes), recibos y logs retenidos en reports/external-local-supervision-20261102. Reserva duradera previa a read evita subcontabilizar por SIGKILL; consumo puede ser conservador y recibos internos started bloquean reapertura. Timeout monotónico recortado al plazo persistente, con latencia observada de sondeo/limpieza; no garantía de tiempo real o spawn bloqueado. Producción deshabilitada; sin crudos, índice o alineamientos.
+
+**Única siguiente tarea:** auditoría integrada de preparación del piloto sin descargas: contratos, recursos, fases, binarios/referencias/recibos; lista cerrada de bloqueos y propuesta de ejecución revisable antes de habilitar producción. raw_execution_ready=false. PR36 abierta y sin merge automático. Cabeceras inferiores son historia.
+
 ## Decisión vigente: integridad ligada al ledger — 02/11/2026
 
 Fase paired_fastq integrada al manifiesto y recibos de transferencia/HTTP. Rehash completo streaming, recibos finales y prefijos cotejados al reabrir. 67 tests locales pasan (19 nuevos +48 existentes); salida dura deja started/partial y bloquea reanudación. Fixture ejecutado conserva 102bytes y deadline original; reloj inyectado, no benchmark. Informe reports/paired-fastq-ledger-20261102. Sin crudos biológicos, índice o alineamientos; producción deshabilitada.

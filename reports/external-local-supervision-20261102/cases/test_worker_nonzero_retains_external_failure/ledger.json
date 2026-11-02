@@ -1,0 +1,14 @@
+{
+  "fingerprint": "85b44ff015f2e28d7722fd709fd25d000e737358822cfcff0e610a7006ebbbb2",
+  "limits": {
+    "wall_seconds": 30,
+    "transfer_bytes": 1024,
+    "disk_bytes": 4194304,
+    "reserve_bytes": 0
+  },
+  "deadline_epoch": 1793611650.7537293,
+  "transfer_bytes_consumed": 0,
+  "phases": {},
+  "mode": "synthetic-only",
+  "raw_pilot_ready": false
+}

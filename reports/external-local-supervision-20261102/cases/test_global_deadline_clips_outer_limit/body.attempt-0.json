@@ -1,0 +1,7 @@
+{
+  "status": "started",
+  "attempt": 0,
+  "body_bytes": 0,
+  "budget_scope": "HTTP entity-body read, not wire bytes",
+  "reserve_reads": true
+}

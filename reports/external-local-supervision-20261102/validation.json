@@ -1,0 +1,18 @@
+{
+  "python": "3.12.14",
+  "patterns": [
+    "test_external_local_stage.py",
+    "test_http_read_reservation.py",
+    "test_paired_fastq_phase.py",
+    "test_paired_fastq_integrity.py",
+    "test_pilot_dry_runner.py",
+    "test_pilot_process_limits.py",
+    "test_bounded_http_transport.py"
+  ],
+  "tests": 79,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "success": true,
+  "raw_execution_ready": false
+}

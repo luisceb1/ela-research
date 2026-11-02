@@ -1,0 +1,7 @@
+{
+  "status": "verified",
+  "job_sha256": "9d9a300eeddb404ba8316fc3a65fb13aebb0ccf56a9b0182d84f77094e26d6ee",
+  "external_receipt": "pair.json",
+  "effective_timeout_seconds": 5,
+  "raw_execution_ready": false
+}

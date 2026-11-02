@@ -1,5 +1,13 @@
 # Backlog vigente — 02/11/2026
 
+## P0 vigente: auditoría integrada de preparación del piloto — 02/11/2026
+
+- Completado: supervisión externa local HTTP/paired,79tests locales,12nuevos; cortes y limpieza de descendientes, reserva previa a lectura y recibos persistentes. reports/external-local-supervision-20261102.
+- P0 única: cotejar contratos/planes/presupuestos/fases/binarios/referencias/recibos y entregar lista cerrada de bloqueos + propuesta concreta revisable de ejecución. Solo preflight, sin descargar o habilitar producción.
+- No certificar tiempo real, spawn bloqueado, muerte del supervisor o grupos desacoplados. raw_execution_ready=false. Sin índice humano, FASTQ biológico, alineamientos, contactos, gastos o merge automático.
+
+Las cabeceras inferiores son historia.
+
 ## P0 vigente: supervisión externa local de transporte/validación — 02/11/2026
 
 - Completado: integridad paired ligada al ledger/manifiesto/recibos; 67 tests locales,19 nuevos. Reanudación sin nueva transferencia/plazo; interrupción dura/partials y modificaciones rechazadas. reports/paired-fastq-ledger-20261102.

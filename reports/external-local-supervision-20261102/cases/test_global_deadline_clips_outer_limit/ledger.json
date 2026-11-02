@@ -1,0 +1,21 @@
+{
+  "fingerprint": "ee7607ab88cd1ebc1b6f4b8ca244ae7d6295b13e9d8793c7e63f93ba0830b48d",
+  "limits": {
+    "wall_seconds": 1.5,
+    "transfer_bytes": 1024,
+    "disk_bytes": 4194304,
+    "reserve_bytes": 0
+  },
+  "deadline_epoch": 1793611616.5461934,
+  "transfer_bytes_consumed": 1,
+  "phases": {
+    "body": {
+      "kind": "transfer",
+      "status": "started",
+      "signature": "bb6a33c511941367f3e3e0e2f195eab0c77828d31627fbc716eaf73fba86f567",
+      "unsettled_body_reservation_bytes": 1
+    }
+  },
+  "mode": "synthetic-only",
+  "raw_pilot_ready": false
+}

@@ -15,12 +15,14 @@ from process_supervisor_v2 import atomic_json
 class NoRedirect(urllib.request.HTTPRedirectHandler):
     def redirect_request(self,*args,**kwargs):raise ValueError('Redirect refused')
 
-def transfer_http(runner,name,url,expected,allowed_origins,attempts=1,chunk_size=65536):
+def transfer_http(runner,name,url,expected,allowed_origins,attempts=1,chunk_size=65536,*,reserve_reads=False):
     parsed=urllib.parse.urlsplit(url);origin=f'{parsed.scheme}://{parsed.netloc}'
     if origin not in allowed_origins or parsed.username or parsed.password or parsed.fragment or parsed.scheme not in ('http','https'):raise ValueError('Origin or URL rejected')
     if attempts not in (1,2) or not 1<=chunk_size<=65536:raise ValueError('Unbounded retry/chunk policy')
     if expected['bytes']<0:raise ValueError('Negative expected size')
-    signature=digest({'url':url,'expected':expected,'attempts':attempts,'chunk_size':chunk_size})
+    policy={'url':url,'expected':expected,'attempts':attempts,'chunk_size':chunk_size}
+    if reserve_reads:policy['accounting']='durable-read-reservation-v1'
+    signature=digest(policy)
     if not runner.begin(name,'transfer',signature):return runner.state['phases'][name]
     phase=runner.state['phases'][name]
     opener=urllib.request.build_opener(urllib.request.ProxyHandler({}),NoRedirect())
@@ -32,7 +34,7 @@ def transfer_http(runner,name,url,expected,allowed_origins,attempts=1,chunk_size
             if expected['bytes']>runner.state['limits']['disk_bytes']:raise RuntimeError('Artifact exceeds disk cap')
             path=runner.root/f'{name}.attempt-{attempt}.partial'
             receipt=runner.root/f'{name}.attempt-{attempt}.json'
-            rec={'status':'started','attempt':attempt,'body_bytes':0,'budget_scope':'HTTP entity-body read, not wire bytes'}
+            rec={'status':'started','attempt':attempt,'body_bytes':0,'budget_scope':'HTTP entity-body read, not wire bytes','reserve_reads':reserve_reads}
             atomic_json(receipt,rec)
             try:
                 timeout=min(5,runner.state['deadline_epoch']-runner.clock())
@@ -50,9 +52,21 @@ def transfer_http(runner,name,url,expected,allowed_origins,attempts=1,chunk_size
                         balance=runner.state['limits']['transfer_bytes']-runner.state['transfer_bytes_consumed']
                         amount=min(chunk_size,balance,expected['bytes']-rec['body_bytes'])
                         if amount<=0:raise RuntimeError('Body budget exhausted')
+                        if reserve_reads:
+                            # Commit the maximum possible delivered body before the
+                            # blocking read. SIGKILL can leave this conservatively
+                            # charged; never refund an interrupted read on reopen.
+                            runner.state['transfer_bytes_consumed']+=amount
+                            phase['unsettled_body_reservation_bytes']=phase.get('unsettled_body_reservation_bytes',0)+amount
+                            runner.save()
                         data=response.read1(amount)
+                        if reserve_reads:
+                            runner.state['transfer_bytes_consumed']-=amount-len(data)
+                            phase['unsettled_body_reservation_bytes']-=amount
+                            runner.save()
                         if not data:raise ValueError('Truncated HTTP body')
-                        runner.state['transfer_bytes_consumed']+=len(data);runner.save()
+                        if not reserve_reads:
+                            runner.state['transfer_bytes_consumed']+=len(data);runner.save()
                         rec['body_bytes']+=len(data);atomic_json(receipt,rec)
                         out.write(data);out.flush();md5.update(data);sha.update(data);runner.guard()
                     os.fsync(out.fileno())
