@@ -1,5 +1,12 @@
 # Estado vigente — 02/11/2026
 
+## Decisión vigente: runner simulado integrado — 02/11/2026
+
+pilot_dry_runner.py integra supervisorv2, hash de manifiesto/límites, deadline persistente, ledger de bytes acumulados, guardas de disco/reserva y fases atómicas. Diez tests pasan; simulación y reanudación idénticas, sin nueva transferencia. Fases.failed/startedbloquean continuación; solo archivos/recibos revalidados se reutilizan. Informe reports/pilot-runner-dry-20261102. No HTTPni comandos humanos expuestos enCLI; no crudos/alineamientos.
+
+**Única siguiente tarea:** adaptador HTTPacotado y preflight de manifiesto real mediante transporte simulado/local, sin usar URLsdeFASTQni índice humano. Acotar lecturas a saldo, contabilizar fallos/reintentos y fijar referencias/binarios/fases por hash antes de ejecución. El iterable simulado puede entregar un chunkmayor que saldo y solo permite detectarlo/contarlo: no se certifica límite de red estricto. RSS/disco son watchdogmuestreados. raw_execution_ready=false; PR36sin merge automático. Las prioridades inferiores son historia.
+
+
 ## Decisión vigente: supervisor v2 validado con procesos sintéticos — 02/11/2026
 
 Causa de RSSidentificada: PIDdePython y procfsen namespaces distintos. Nuevo scripts/process_supervisor_v2.py obtiene identidad procfsdelhijo; mide grupo y termina descendientes. Casos conocidos32MiBy2×24MiBdan≈40/65MBRSS; cortes memoria/timeouty limpieza pasan. Recibos individuales atómicos con reserva exclusiva, sin lista read-modify-write. Informe reports/supervisor-repair-20261102;7tests. No se reconstruyen recibos ni RAMdel minigenoma antiguo.

@@ -1,0 +1,22 @@
+{
+  "name": "synthetic_process",
+  "argv": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "-c",
+    "print(\"synthetic success\")"
+  ],
+  "status": "finished",
+  "memory_mode": "sampled group RSS; per-process RLIMIT_AS",
+  "detaching_supported": false,
+  "namespace_pid": 7,
+  "procfs_pid": 1266,
+  "procfs_group": 1266,
+  "exit_code": 0,
+  "violation": null,
+  "peak_group_rss_bytes_sampled": 786432,
+  "samples": 2,
+  "max_group_members": 1,
+  "rss_observed": true,
+  "live_group_members_after_cleanup": [],
+  "elapsed_seconds": 0.025492667999969854
+}

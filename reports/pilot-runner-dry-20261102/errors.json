@@ -1,0 +1,6 @@
+[
+  {
+    "error": "Local historical PLAN.json absent during initial preflight",
+    "resolution": "Materialized unchanged contents from pinned GitHub head, then ran metadata-only preflight; completed simulation artifacts reused without changing their deadline"
+  }
+]

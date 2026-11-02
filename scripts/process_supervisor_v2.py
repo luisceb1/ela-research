@@ -38,7 +38,7 @@ def group_rss(group):
         except (OSError,ValueError,IndexError):pass
     return sum(rss for _,rss in found),[pid for pid,_ in found]
 
-def supervise(name,argv,folder,timeout=5,rss_limit=128*1024**2,address_space=128*1024**2):
+def supervise(name,argv,folder,timeout=5,rss_limit=128*1024**2,address_space=128*1024**2,checkpoint=None):
     folder=Path(folder);folder.mkdir(parents=True,exist_ok=True)
     if not re.fullmatch('[A-Za-z0-9_-]+',name):raise ValueError('Invalid command name')
     receipt=folder/(name+'.json');lock=folder/(name+'.lock')
@@ -61,6 +61,7 @@ def supervise(name,argv,folder,timeout=5,rss_limit=128*1024**2,address_space=128
             identity=json.loads(os.read(read_fd,4096));record.update(identity)
             peak=0;samples=0;max_members=0;violation=None
             while True:
+                if checkpoint is not None:checkpoint()
                 code=proc.poll();rss,members=group_rss(identity['procfs_group'])
                 if members:samples+=1;peak=max(peak,rss);max_members=max(max_members,len(members))
                 if time.monotonic()-start>timeout:violation='timeout'

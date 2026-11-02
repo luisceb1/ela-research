@@ -1,0 +1,38 @@
+{
+  "fingerprint": "b5f1168bfd5ffc85076555de2614d4776ac1dfcbed11aff8d837c5d329eb939d",
+  "limits": {
+    "wall_seconds": 30,
+    "transfer_bytes": 1024,
+    "disk_bytes": 2097152,
+    "reserve_bytes": 0
+  },
+  "deadline_epoch": 1793580509.1358516,
+  "transfer_bytes_consumed": 50,
+  "phases": {
+    "mate1": {
+      "kind": "transfer",
+      "status": "verified",
+      "signature": "d409a0f2d562af5b80ecdfff5e1e63752059c4636f17989a71242672f97a20e7",
+      "bytes": 25,
+      "sha256": "ce140810af9348d26763ea9f879937ed387ff8f7d77855ff96c5d1e303a25095",
+      "md5": "433a3cdeeffce54f4af208d539c7b7c2"
+    },
+    "mate2": {
+      "kind": "transfer",
+      "status": "verified",
+      "signature": "d409a0f2d562af5b80ecdfff5e1e63752059c4636f17989a71242672f97a20e7",
+      "bytes": 25,
+      "sha256": "ce140810af9348d26763ea9f879937ed387ff8f7d77855ff96c5d1e303a25095",
+      "md5": "433a3cdeeffce54f4af208d539c7b7c2"
+    },
+    "synthetic_process": {
+      "kind": "process",
+      "status": "verified",
+      "signature": "1d190cdd7605ef7f672ce8de30d406950d733c12a8568dbee8acec738a2360f7",
+      "receipt": "synthetic_process.json",
+      "receipt_sha256": "09ed28e2e9424a9f923e34263a63349d71b687bba9463af5123fa7c7614b8b23"
+    }
+  },
+  "mode": "synthetic-only",
+  "raw_pilot_ready": false
+}

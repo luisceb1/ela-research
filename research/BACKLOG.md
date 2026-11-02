@@ -1,5 +1,14 @@
 # Backlog vigente — 02/11/2026
 
+## P0 vigente: transporte acotado y preflight — 02/11/2026
+
+- Completado: runner/supervisor en simulación,10tests; informe reports/pilot-runner-dry-20261102. Reanudación verificada no reinicia deadline/consumos; fallos/incompletos se bloquean.
+- P0 única: adaptador HTTPacotado y manifiesto/fases reales por hash, con transporte local/simulado y sin usarURLsdeFASTQni índice humano. Validar saldo por lectura, truncamiento y fallos contabilizados.
+- No hay transporte real, FASTQbiológico o alineación nueva. raw_execution_ready=false; estados científicos y huecos históricos intactos. Sin merge automático.
+
+Las cabeceras inferiores son historia.
+
+
 ## P0 vigente: integrar runner en dry-run — 02/11/2026
 
 - Completado: supervisorv2,7tests de procesos y recibos atómicos; informe reports/supervisor-repair-20261102. Causa de RSS: namespaces; límites del muestreo explícitos.
