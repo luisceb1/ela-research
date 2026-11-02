@@ -1,0 +1,17 @@
+{
+  "status": "sealed_verified_index_archive",
+  "sha256": {
+    "recovery-plan.json": "47f27d52cac93e3d368075a9fc93fa8cc5431e5b010fe0941a591162914d7a68",
+    "operator-acceptance.json": "c67194566e1bf83cad5bb109f3c54f6ee0d308c8f70eb10f5ccf93562153455d",
+    "recovery-state.json": "592f58f26597027fb0a115a6dbe0689d79b013c782ef19677788e0a756d79565",
+    "range-attempt.json": "80da8b0efeac6098d4986cc25faff085bc9ae5883d2c110b91b0543953d6c98b",
+    "recovery-result.json": "9bf192913753107acc2dda65e3652c066911acb4f11a3a5209d46f2e56a33b3f",
+    "supervision/run.json": "11d83f3bf2eb076a4b34e38b3e26cfb638d41f4ea47b1a5c5557edc44243d9aa"
+  },
+  "archive_sha256": "1848784403a0fb3ee7735b2f891d8be96fd2782e08aed3d8212d922666f077a5",
+  "archive_bytes": 4355786349,
+  "cumulative_body_bytes": 4355802733,
+  "remaining_body_budget_bytes": 7644197267,
+  "index_extracted": false,
+  "raw_execution_ready": false
+}

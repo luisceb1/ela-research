@@ -1,5 +1,16 @@
 # Backlog vigente — 02/11/2026
 
+## Prioridad vigente: archivo recuperado verificado; extracción local preparada — 02/11/2026
+
+Luis aporta sello real delarchivo4355786349B/SHA1848784403a0fb3ee7735b2f891d8be96fd2782e08aed3d8212d922666f077a5. Recibosnormalizados de recovery-resultyexternocoincidenconSHAenelsello. Tramo2723339065B/148,515s≈18,34MB/s;total167,457s,RSS26,81MiBsolo descargador,exit0/sinviolación/grupovacío. Cargo4355802733B/saldo7644197267B,conserva16KiBprevios. Evidencia deusuario,noaccesoremoto niíndiceennuestrohost; sinatribucióncausaldevelocidad. reports/local-index-extraction-20261102/recovery-review.json.
+
+Nuevo prepare_verified_index.py: paso solo local≤900s(120preflight+600extract+120inspect+60margen),0red,2CPU,6GiBRSSglobal/8GiBAS;fases512MiB/1GiB/6GiBRSS y1/2/8GiBAS. Hasharchivo/recuperaciónsellada,binarionativo2.2.3,extracciónacotadaexactadenuevearchivos/CRC,rehashfuente/salidas e inspectorchr19/58617616. Rootderivadoexclusivo,noadopta/reiniciafallos; padresolometadatos,aceptaciónexterna yseal final. Disco≤25GiBsumando3árboles,reserva8GiB. No cambia cargos/plazosviejos,ningúnFASTQ oalineamiento.
+
+273tests locales pasan sin omisiones(259anteriores+14nuevos),compileallcorrecto. Positivosconarchivosminiaturasfalsosyproductores/resúmenes sustitutos, noíndiceHISAT2real. CLIworkerconELFPythonfalla porversiónantesdeleerarchivoesparcido(sólosimula tamaño),preflightfailed/exit1/grupovacío/sinextracción/red. Metadatostamper,caps,fuente,inventario/CRC,externofallidoyrootreuse rechazados.
+
+**Siguiente tarea única:** Luis actualiza y ejecuta extracciónlocal desdearchivoya recuperado, devuelveJSONsello oerror. Runbook research/runbooks/2026-11-02-offline-index-powershell.md. Despuésadopción delíndice/recibos/cargos paraseguirpilotoconlecturassinredescargarS3. No relanzar jobviejo/noextracciónmanual. Sin nuevodescargaalineamiento ennuestrahost,contactos/costes/merge. raw_execution_ready=false. Cabecerasinferioreshistóricas.
+
+
 ## Prioridad vigente: candidato de recuperación del índice porRange preparado — 02/11/2026
 
 Luis devuelve auditoría consistente: parcial1632447284B/SHAaf7750fc6ef148017aab8c339de670faebff34be5de69bddc0275dbeed21216d; cargo1632463668B, diferencia16384Bsinreembolso; supervisor−9/grupovacío. Identidad deparcial, no verificación delorigen. Registro reports/index-range-recovery-20261102/user-reported-audit.json.
