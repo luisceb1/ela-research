@@ -79,6 +79,6 @@ test_success_and_cached_reuse (test_bounded_http_transport.HTTPTests.test_succes
 test_truncated_bytes_charged (test_bounded_http_transport.HTTPTests.test_truncated_bytes_charged) ... ok
 
 ----------------------------------------------------------------------
-Ran 79 tests in 10.673s
+Ran 79 tests in 10.788s
 
 OK

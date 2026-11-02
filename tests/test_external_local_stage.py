@@ -80,7 +80,9 @@ class ExternalTests(unittest.TestCase):
         rec=self.run_stage(self.stage('/slow'));self.assert_killed(rec);self.assertGreater(len(self.sent),2)
         ledger=self.ledger();receipt=json.loads((self.root/'body.attempt-0.json').read_text())
         self.assertGreater(receipt['body_bytes'],2);self.assertGreaterEqual(ledger['transfer_bytes_consumed'],receipt['body_bytes'])
-        self.assertEqual(ledger['phases']['body']['unsettled_body_reservation_bytes'],1);self.assert_blocked_reopen()
+        # SIGKILL may land during read1 (one reserved byte) or after durable
+        # settlement before the next read (zero). Both must cover receipt bytes.
+        self.assertIn(ledger['phases']['body']['unsettled_body_reservation_bytes'],(0,1));self.assert_blocked_reopen()
     def test_global_deadline_clips_outer_limit(self):
         self.limits['wall_seconds']=1.5;rec=self.run_stage(self.stage('/body'),timeout=10);self.assert_killed(rec)
         outcome=json.loads((self.root/'external-receipts/body.outcome.json').read_text())

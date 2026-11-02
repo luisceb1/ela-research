@@ -9,8 +9,12 @@ Linux/procfs. Solo servidor127.0.0.1 y lecturas artificiales. Sin datos biológi
 
 79 tests locales pasan, sin omisiones:12 nuevos y67 existentes. tests.txt y
 validation.json son la ejecución final retenida; los ensayos iniciales12/12 también
-pasaron. No sumar repeticiones como pruebas únicas. No hubo fallos de tests en esta
-fase. Revisión añadió tolerancia a renombres atómicos concurrentes en la guarda de
+pasaron. No sumar repeticiones como pruebas únicas. Primera CI de análisis falló
+en el test de goteo: suponía corte dentro de read1 y reserva exactamente1; puede
+ocurrir entre lecturas tras liquidar y ser0. Corregido a0/1, conservando consumo
+mayor/igual a body_bytes y bloqueo de reapertura. El caso de cuerpo bloqueado
+sigue exigiendo reserva1. Ver ci-initial-failure.txt; no fue pérdida de consumo.
+Revisión añadió tolerancia a renombres atómicos concurrentes en la guarda de
 disco y fijó límites de supervisión en el descriptor del job antes de ejecución final.
 
 external_local_stage.py lanza un worker fijo bajo el supervisor v2. Solo permite

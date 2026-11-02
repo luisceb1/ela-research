@@ -1,5 +1,5 @@
 {
-  "reports/external-local-supervision-20261102/REPORT.md": "886f84dc914451d6c0fae1a222a67e7fcbefb5cfca9fd2271621c4ec4a888962",
+  "reports/external-local-supervision-20261102/REPORT.md": "282df445cfe3c64f0b4b94323b25e1f4de4ebc89f7aac618c0ffba4d0ac200a3",
   "reports/external-local-supervision-20261102/case-summary.json": "94286e71f5b68c1d80c2704df2b2660be686b4eca55da3f5307780e625d66d15",
   "reports/external-local-supervision-20261102/cases/test_blocked_body_keeps_durable_reservation/body.attempt-0.json": "443772d85dc362f5ed3891b9e028b6600bac7b6f24014050574466d216fba16c",
   "reports/external-local-supervision-20261102/cases/test_blocked_body_keeps_durable_reservation/external-receipts/body.job.json": "e266bf3d1747a5e2a2863fa9ce75010d1dc45e32354e3863626e7e04591f584b",
@@ -55,14 +55,15 @@
   "reports/external-local-supervision-20261102/cases/test_worker_nonzero_retains_external_failure/external-receipts/body.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
   "reports/external-local-supervision-20261102/cases/test_worker_nonzero_retains_external_failure/external-receipts/body.outcome.json": "5f1557ba42e85a012b72e1b890fa2c165223249f6bf8db953f4f8d1ae1dec6de",
   "reports/external-local-supervision-20261102/cases/test_worker_nonzero_retains_external_failure/ledger.json": "407b4bf841399a06a7a8f32e116f987dfa69529b9b7fa2cf3cddb3fe9e639a70",
-  "reports/external-local-supervision-20261102/tests.txt": "f8ae93a94ebe41b6a66fbc4ef97c16a55d50aa51ae27d761cce6a3d29cea254f",
-  "reports/external-local-supervision-20261102/validation.json": "f19482f415a73c12ab10cf8007bf493efd92bdcc033ad5a9f1876ad132e2cb09",
+  "reports/external-local-supervision-20261102/tests.txt": "7ca0a8b9f8edf8ef86f74eb363b39a33072a0dc1e658ce8aede081fade7179c4",
+  "reports/external-local-supervision-20261102/validation.json": "d3e32d05f84b7df8e324d5eb7dc77401526984520c0dfc8a175385e08d9e901e",
   "research/BACKLOG.md": "8053e3aeec271e89e7ffa0cf3ed74cd6cf61ed330a7b77eb6dfe6c6ade6efe34",
   "research/STATE.md": "48f387077f907e6f8396f5210ffbd107ae52ba55ea5055866d705744a792fcbe",
   "research/plans/2026-11-02-external-local-supervision.md": "d4fa9be51b614328ed0f80135c954a80e7e282174736f1f0833ecb67ce4247e3",
   "scripts/bounded_http_transport.py": "0e2c6e820b67b3326e6200306378b19c1655553bf84875095633d1fae4cf890f",
   "scripts/external_local_stage.py": "b2c0f555b91443e786e5d71294fcfb405ee62cbc66ed685878774139e477e75b",
   "scripts/run_external_local_gate.py": "b92dc1f4ce43bc9713666912c078d9ce9777d1010c0f8a913e8b1874cbe0a653",
-  "tests/test_external_local_stage.py": "a0d6c5bf837d77c17c9c8f7c81755a1cbdf56a25334cbf99e01d1a146058b28c",
-  "tests/test_http_read_reservation.py": "bc15d4ba6f44413c49e77c06920c5d5a36e69a226407ac3d55d89d740882033f"
+  "tests/test_external_local_stage.py": "4d624f3005ef4b841160f5bcd2dccba8f1378754fd3fcfc7b4380afa60895b8e",
+  "tests/test_http_read_reservation.py": "bc15d4ba6f44413c49e77c06920c5d5a36e69a226407ac3d55d89d740882033f",
+  "reports/external-local-supervision-20261102/ci-initial-failure.txt": "3a57c87931ed2519ef407846b18cdecedcc1b05e1bfd7c2c7d78149033898fea"
 }

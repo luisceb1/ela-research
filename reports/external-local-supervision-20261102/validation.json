@@ -14,5 +14,6 @@
   "errors": 0,
   "skipped": 0,
   "success": true,
-  "raw_execution_ready": false
+  "raw_execution_ready": false,
+  "note": "Final local recheck after correcting timing assertion; cases retain original local receipts."
 }
