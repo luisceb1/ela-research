@@ -1,5 +1,15 @@
 # Estado vigente — 02/11/2026
 
+## Decisión vigente: índice extraído y sellado; preparar piloto desde caché — 02/11/2026
+
+Luis confirma `sealed_verified_extracted_index`, nueve miembros y cero bytes nuevos de descarga. Cargo acumulado 4.355.802.733 B; saldo 7.644.197.267 B. Evidencia de terminal aportada por Luis en reports/cached-index-pilot-20261102/index-seal.user-reported.json; sin acceso directo al host.
+
+Nuevo cached_index_pilot.py: prepara plan deshabilitado, enlaza y verifica sellos/miembros/binario/código; reutiliza fases pareadas y stream compacto. Cero descarga/copia/extracción del índice. CTRL primero y TDP sólo si supera cobertura fija. Nuevo plazo propuesto 7.200 s y HTTP adicional 1.800 s, requiere SHA y aceptación expresa de ventana. Conserva cargo previo, 3.748,515794 s históricos y plazo viejo sin modificar. Cuatro RAW suman 6.349.703.881 B, mínimo final 10.705.506.614 B bajo techo original de 12 GB. Disco suma todo el linaje; caps de RAM, CPU y temporales conservados.
+
+289 pruebas locales pasan sin omisiones, incluidas 16 nuevas y fallo real del trabajador sustituto antes de HTTP. Se conservan dos errores iniciales de fixture y su corrección. No FASTQ ni alineamiento humano en el host del agente; rendimiento y cobertura reales pendientes. Informe reports/cached-index-pilot-20261102/REPORT.md.
+
+**Siguiente tarea única:** emitir plan deshabilitado en WSL con research/runbooks/2026-11-02-cached-index-pilot-powershell.md y revisar JSON antes de ejecución explícita. No reiniciar job viejo ni presupuestos. PR36 abierto, sin merge. Sin conclusiones biológicas. Cabeceras inferiores históricas.
+
 ## Decisión vigente: archivo recuperado verificado; extracción local preparada — 02/11/2026
 
 Luis aporta sello real delarchivo4355786349B/SHA1848784403a0fb3ee7735b2f891d8be96fd2782e08aed3d8212d922666f077a5. Recibosnormalizados de recovery-resultyexternocoincidenconSHAenelsello. Tramo2723339065B/148,515s≈18,34MB/s;total167,457s,RSS26,81MiBsolo descargador,exit0/sinviolación/grupovacío. Cargo4355802733B/saldo7644197267B,conserva16KiBprevios. Evidencia deusuario,noaccesoremoto niíndiceennuestrohost; sinatribucióncausaldevelocidad. reports/local-index-extraction-20261102/recovery-review.json.

@@ -8,6 +8,8 @@ on:
       - 'scripts/compact_ledger_phase.py'
       - 'scripts/pilot_execution_policy.py'
       - 'scripts/pilot_dry_runner.py'
+      - 'scripts/cached_index_pilot.py'
+      - 'tests/test_cached_index_pilot.py'
       - 'scripts/prepare_verified_index.py'
       - 'tests/test_prepare_verified_index.py'
       - 'scripts/recover_index_range.py'
@@ -57,3 +59,4 @@ jobs:
       - run: python -m unittest discover -s tests -p test_inspect_interrupted_pilot.py -v
       - run: python -m unittest discover -s tests -p test_recover_index_range.py -v
       - run: python -m unittest discover -s tests -p test_prepare_verified_index.py -v
+      - run: python -m unittest discover -s tests -p test_cached_index_pilot.py -v

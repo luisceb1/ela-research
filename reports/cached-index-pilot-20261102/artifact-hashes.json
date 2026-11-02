@@ -1,0 +1,17 @@
+{
+  "scripts/cached_index_pilot.py": "7e4cf7880356d58a898e68ac7e56e972a5806b6b0743a907fd9e516b34e59868",
+  "scripts/real_pilot_workflow.py": "c8d37768dad7bedf8184ece2a447f93048a3d06f6a42e92a8c9346b17306f917",
+  "scripts/pilot_dry_runner.py": "f0100f97c560f70ae9a7222b8f431820d5d951b0a517c074c10a67221888ec07",
+  "tests/test_cached_index_pilot.py": "83232bb358c21a9fe0755e079333fcfeeedd9890751ad49f4ef66fcff85cc6ce",
+  ".github/workflows/paired-end-tests.yml": "19c4ebacfffda35427cc029c7a04fb3916e4ca861dcc41818ae37d5225de17c2",
+  "research/STATE.md": "108a910ab921cf02d189e439eb59d217b63d7b60c1ceca4a36a0fe8bca53bacd",
+  "research/BACKLOG.md": "fabd98d03a558c12fd6402e10d02753d017ed8ea68d6ba6510da039b4bbc5ac8",
+  "research/plans/2026-11-02-cached-index-pilot.md": "620023f0b467153d92e9bb11be7646990579b9659b6e70ffc881db85b0e36f3e",
+  "research/runbooks/2026-11-02-cached-index-pilot-powershell.md": "aa69e6d867ab0bfb8bf7b0ba61c154604a20d6d2e1a08c61542f541b9b49da23",
+  "reports/cached-index-pilot-20261102/REPORT.md": "564e04452e09297db484fbd1ad47c589d7094e6ff16bc067c0e6382aac635599",
+  "reports/cached-index-pilot-20261102/execution-proposal.json": "90952a2fc54ed635c9be41bbc105d48cf5af961e6f245980e03a578c23be8b8b",
+  "reports/cached-index-pilot-20261102/index-seal.user-reported.json": "e72a1c38014e2302fe0380bdf9e3e8442e6a05c74c1224b3eec4ce3746dab6e9",
+  "reports/cached-index-pilot-20261102/initial-unit-errors.txt": "b96da131836a87e4e1cf8ef894587cc50bb89c8d57e8d75e4895ada279f672a2",
+  "reports/cached-index-pilot-20261102/tests.txt": "163378eb316ba452316c440e6df40adbaa0787bc53de31ef950481db81cdf003",
+  "reports/cached-index-pilot-20261102/validation.json": "1bc55bec69602379efdf05f5aa61405cbfebe05afdbbe905c5de21715e000434"
+}

@@ -28,7 +28,7 @@ from paired_fastq_integrity import file_digest
 from paired_fastq_phase import verify_phase
 from archive_ledger_phase import verify_archive
 from compact_ledger_phase import decoder_identity, coverage
-from sealed_local_workflow import monitor
+from sealed_local_workflow import monitor as local_monitor
 from plan_b4_execution_policy import proposal
 
 REPO=Path(__file__).resolve().parents[1]
@@ -109,6 +109,9 @@ def make_manifest(aligner):
 
 
 def validate_manifest(manifest,limits):
+    if 'cached_index' in manifest:
+        from cached_index_pilot import validate_manifest as cached_validate
+        return cached_validate(manifest,limits)
     expected,expected_limits=make_manifest(manifest.get('aligner'))
     if manifest!=expected or limits!=expected_limits:raise ValueError('Fixed real manifest/limits changed; no sample, origin, command or cap overrides')
     execution.validate(manifest['execution_policy'],limits,allow_real=True)
@@ -208,6 +211,9 @@ def validate_job(job):
     root=Path(job['root'])
     if not root.is_absolute() or root!=root.resolve():raise ValueError('Canonical absolute output root required')
     validate_manifest(job['manifest'],job['limits'])
+    if 'cached_index' in job['manifest']:
+        from cached_index_pilot import output_root
+        if root!=output_root(job['manifest']['cached_index']):raise ValueError('Exclusive cached pilot root required')
     return root
 
 
@@ -237,6 +243,9 @@ def alignment_argv(root,spec,aligner):
 
 
 def stream_binding(runner,name):
+    if 'cached_index' in runner.manifest:
+        from cached_index_pilot import stream_binding as cached_binding
+        return cached_binding(runner,name)
     spec=runner.manifest['real_compute'][name]
     paired=runner.state['phases'].get(spec['paired_phase'],{});archive=runner.state['phases'].get(spec['archive_phase'],{})
     probe=runner.state['phases'].get('index_probe',{})
@@ -302,6 +311,9 @@ def verify_stream(runner,name,phase):
 
 
 def run_preflight(runner,name='preflight'):
+    if 'cached_index' in runner.manifest:
+        from cached_index_pilot import run_preflight as cached_preflight
+        return cached_preflight(runner,name)
     signature=digest({'aligner':runner.manifest['aligner'],'producer':runner.manifest['sealed_workflow']['producer'],'name':name})
     if not runner.begin(name,'process',signature):raise ValueError('No adopted preflight')
     p=runner.state['phases'][name]
@@ -315,6 +327,9 @@ def run_preflight(runner,name='preflight'):
 
 
 def verify_preflight(runner,phase):
+    if 'cached_index' in runner.manifest:
+        from cached_index_pilot import verify_preflight as cached_preflight
+        return cached_preflight(runner,phase)
     if phase.get('receipt') not in ('preflight-result.json','index_probe-result.json'):raise ValueError('Unknown preflight receipt')
     path=runner.root/phase['receipt']
     if metadata_sha(path)!=phase['receipt_sha256']:raise ValueError('Real preflight receipt changed')
@@ -351,14 +366,23 @@ def worker(job,verify=False):
     finally:runner.close()
 
 
-def execute(prepared_file,accepted_sha256):
+def monitor(root,manifest,limits,start):
+    if 'cached_index' in manifest:
+        from cached_index_pilot import monitor as cached_monitor
+        return cached_monitor(root,manifest,limits,start)
+    return local_monitor(root,manifest,limits,start)
+
+
+def execute(prepared_file,accepted_sha256,*,accept_cached_window=False):
     # Acceptance is an explicit operator action, not a security signature.
     if not re.fullmatch('[0-9a-f]{64}',accepted_sha256 or '') or metadata_sha(prepared_file)!=accepted_sha256:raise ValueError('Explicit acceptance of exact prepared file SHA256 required before execution')
-    job=read(prepared_file);root=validate_job(job);check_host(root,job['limits'])
+    job=read(prepared_file)
+    if job.get('manifest',{}).get('cached_index') and not accept_cached_window:raise ValueError('Explicit new cached-pilot time-window acceptance required')
+    root=validate_job(job);check_host(root,job['limits'])
     root.mkdir(parents=True,exist_ok=False)
     with (root/'workflow-job.json').open('xb') as f:
         f.write(Path(prepared_file).read_bytes());f.flush();os.fsync(f.fileno())
-    atomic_json(root/'operator-acceptance.json',{'prepared_file_sha256':accepted_sha256,'accepted_epoch':time.time(),'scope':job['scope']})
+    atomic_json(root/'operator-acceptance.json',{'prepared_file_sha256':accepted_sha256,'accepted_epoch':time.time(),'scope':job['scope'],'accepted_cached_run_window':bool(accept_cached_window)})
     start=time.monotonic();checkpoint,memory=monitor(root,job['manifest'],job['limits'],start);caps=job['limits']['process_caps']
     rec=supervise('run',[sys.executable,str(Path(__file__).resolve()),'--worker',str(root/'workflow-job.json')],root/'workflow-receipts',timeout=job['limits']['wall_seconds'],rss_limit=caps['rss_bytes'],address_space=caps['address_space_bytes'],checkpoint=checkpoint,group_checkpoint=memory)
     check_outer(rec);inner=read(root/'workflow-inner.json');ledger=read(root/'ledger.json')
@@ -408,6 +432,7 @@ def main():
         # is an accidental-misuse guard, not a sandbox against its owner.
         acceptance=read(root/'operator-acceptance.json')
         if acceptance.get('prepared_file_sha256')!=metadata_sha(a.worker):raise ValueError('Missing exact-plan operator acceptance')
+        if job['manifest'].get('cached_index') and acceptance.get('accepted_cached_run_window') is not True:raise ValueError('Missing new cached-pilot time acceptance')
         worker(job,a.verify_worker);return
     print(json.dumps(result,indent=2))
 

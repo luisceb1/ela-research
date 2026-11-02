@@ -26,6 +26,7 @@ class DryRunner:
     def __init__(self,root,manifest,limits,clock=time.time,*,real_pilot=False):
         self.root=Path(root);self.root.mkdir(parents=True,exist_ok=True);self.clock=clock
         self.manifest=json.loads(json.dumps(manifest))
+        if self.manifest.get('cached_index') and not real_pilot:raise ValueError('Cached index requires explicit real runner')
         if real_pilot:
             from real_pilot_workflow import validate_manifest
             validate_manifest(self.manifest,limits)
@@ -68,7 +69,9 @@ class DryRunner:
                         if hashlib.sha256(receipt.read_bytes()).hexdigest()!=phase['receipt_sha256']:raise ValueError('Process receipt changed')
                     else:raise ValueError('Unknown phase kind')
             else:
-                self.state={'fingerprint':fingerprint,'limits':limits,'deadline_epoch':clock()+limits['wall_seconds'],'transfer_bytes_consumed':0,'phases':{},'mode':'real-pilot' if real_pilot else 'synthetic-only','raw_pilot_ready':False}
+                self.state={'fingerprint':fingerprint,'limits':limits,'deadline_epoch':clock()+limits['wall_seconds'],'transfer_bytes_consumed':self.manifest.get('cached_index',{}).get('cumulative_body_bytes',0) if real_pilot else 0,'phases':{},'mode':'real-pilot' if real_pilot else 'synthetic-only','raw_pilot_ready':False}
+                if self.manifest.get('cached_index'):
+                    self.state['prior_transfer_elapsed_seconds']=self.manifest['cached_index']['prior_transfer_elapsed_seconds']
                 if self.policy:self.state.update(last_epoch=clock(),transfer_elapsed_seconds=0)
                 self.save()
             self.guard()
@@ -85,6 +88,7 @@ class DryRunner:
                     p['finished_epoch']=now
                     if p['status']=='verified':newly_verified.append(p)
             self.state['last_epoch']=now;self.state['transfer_elapsed_seconds']=execution.elapsed_transfers(self.state,now)
+            if 'prior_transfer_elapsed_seconds' in self.state:self.state['cumulative_transfer_elapsed_seconds']=self.state['prior_transfer_elapsed_seconds']+self.state['transfer_elapsed_seconds']
             if newly_verified:
                 try:
                     if now>=self.state['deadline_epoch']:raise RuntimeError('Global deadline before commit')
@@ -103,6 +107,10 @@ class DryRunner:
         if now>=self.state['deadline_epoch']:raise RuntimeError('Global deadline')
         if self.policy:execution.guard_clocks(self.state,self.policy,now)
         if self.state['transfer_bytes_consumed']>l['transfer_bytes']:raise RuntimeError('Global transfer budget')
+        if self.manifest.get('cached_index'):
+            from cached_index_pilot import guard_runner
+            guard_runner(self,now)
+            return
         if self.policy:
             usage=execution.disk_usage(self.root,self.state)
             if sum(usage.values())>l['disk_bytes']:raise RuntimeError('Global disk budget')

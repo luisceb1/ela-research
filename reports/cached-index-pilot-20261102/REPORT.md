@@ -1,0 +1,13 @@
+# Piloto desde índice verificado — 02/11/2026
+
+Luis aporta estado sealed_verified_extracted_index: nueve miembros y cero bytes nuevos de transferencia. Se conserva el cargo acumulado de 4.355.802.733 bytes, incluidos los 16 KiB anteriores sin archivo promovido. Evidencia: index-seal.user-reported.json; no acceso directo al equipo de Luis. No se han comunicado tiempos ni RSS de extracción.
+
+cached_index_pilot.py prepara un descriptor deshabilitado enlazado a los sellos de índice y recuperación, al binario nativo y al código. El trabajador vuelve a verificar los nueve archivos antes de cualquier HTTP de lecturas. Usa las fases existentes de FASTQ pareado, prefijos de un millón de pares, HISAT2 directo y reducción compacta; no descarga, copia ni extrae el índice. CTRL-4 debe superar el mínimo de cobertura fijado antes de descargar TDP-5. No genera inferencia biológica ni beneficio clínico.
+
+Propuesta explícita: ventana nueva de 7.200 s totales y 1.800 s acumulados de transferencia adicional, aceptable sólo mediante SHA exacto y --accept-new-run-window. No renueva la ejecución interrumpida ni modifica sus plazos. El ledger empieza con 4.355.802.733 bytes ya consumidos y conserva 3.748,515794 s previos como historia separada. Las cuatro lecturas suman 6.349.703.881 bytes; mínimo final 10.705.506.614 y margen 1.294.493.386 bajo el techo original de 12.000.000.000. Sin reintentos automáticos ni ampliación de muestras/cobertura.
+
+Se mantienen dos CPU, RSS muestreada de grupo ≤6 GiB, AS por proceso ≤8 GiB, disco acumulado de linaje y ejecución ≤25 GiB, reserva 8 GiB y particiones de artefactos/temporales. El muestreo de RSS y disco no equivale a un límite agregado del kernel; continúan las limitaciones documentadas del supervisor. El rendimiento real del alineamiento humano y la cobertura siguen sin validar.
+
+Validación local: 289 pruebas, cero errores/fallos/omisiones, PySAM 0.23.3; incluye 16 nuevas. Se rechazan cambios de sellos, datos, código, contador inicial, fuentes, caps, root y falta de aceptación. El trabajador real con ELF sustituto falla antes de HTTP y deja recibo externo limpio con cargo anterior conservado. Positivos usan fixtures sintéticas; no se han descargado FASTQ ni ejecutado alineamientos humanos en este host. Se conservan los dos errores iniciales de fixture y su corrección en initial-unit-errors.txt.
+
+Siguiente paso: preparar el plan en WSL siguiendo research/runbooks/2026-11-02-cached-index-pilot-powershell.md, revisar su JSON y aceptar después el descriptor concreto. Preparar no inicia descargas. PR36 permanece abierto, sin merge; los resultados científicos y sus límites previos no cambian.

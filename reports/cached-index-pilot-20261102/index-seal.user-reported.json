@@ -1,0 +1,19 @@
+{
+  "status": "sealed_verified_extracted_index",
+  "evidence": "user-provided terminal output; no direct access to user filesystem",
+  "sha256": {
+    "index-job.json": "44b6117ef1eaea2f9045a18d1aa9afa012329705a9cb4cffd1161314a4675a90",
+    "index-state.json": "816d13b1376e1b7abbe74a7bb20cfa142967c31fa04e69996e6e96d4e8e54c6d",
+    "preflight.json": "721f47f3d2ce23b1dede07183174951615cdc99967117fb5d7f9d4d863e1af3e",
+    "index/extraction.json": "7e3645fecc18d4ec80d18a80a7f10454ab8a21dfe83c893e6fa7efd858b417b5",
+    "index-summary.json": "d1b690fb10782fbd738507fdaa004ce30acfeeb87c1a3254d069fa357122d5c2",
+    "index-result.json": "78fca4acdda11eec3d7d90b69f0c1f57b85fe9393e8f671a8dcb1d8d32ef4ae4",
+    "supervision/run.json": "c90c4f05dadfaf2eea2da7db721d459450f719a071931ef5128e2d6043923dfa"
+  },
+  "index_prefix": "/home/luisceb/ela-piloto-real-01-index-recovery-01-extracted-01/index/files/hg38/genome",
+  "member_count": 9,
+  "new_transfer_bytes": 0,
+  "cumulative_body_bytes": 4355802733,
+  "remaining_body_budget_bytes": 7644197267,
+  "raw_execution_ready": false
+}
