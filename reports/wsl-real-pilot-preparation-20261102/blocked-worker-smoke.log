@@ -1,0 +1,17 @@
+Traceback (most recent call last):
+  File "/workspace/scratch/dd06b558bed7/ela-audit/scripts/real_pilot_workflow.py", line 414, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/workspace/scratch/dd06b558bed7/ela-audit/scripts/real_pilot_workflow.py", line 410, in main
+    worker(job,a.verify_worker);return
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/dd06b558bed7/ela-audit/scripts/real_pilot_workflow.py", line 339, in worker
+    if kind=='process':run_preflight(runner,name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/dd06b558bed7/ela-audit/scripts/real_pilot_workflow.py", line 310, in run_preflight
+    probe=version_probe(runner.manifest['aligner']) if name=='preflight' else index_probe(runner)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/dd06b558bed7/ela-audit/scripts/real_pilot_workflow.py", line 126, in version_probe
+    if re.search(r'\bhisat2-align-s version 2\.2\.3(?:\s|$)',text) is None:raise ValueError('HISAT2 runtime version mismatch')
+                                                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: HISAT2 runtime version mismatch

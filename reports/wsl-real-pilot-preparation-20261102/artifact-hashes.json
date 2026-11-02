@@ -1,0 +1,21 @@
+{
+  "scripts/pilot_execution_policy.py": "f0ead9975440a229fc21bb93957e076f2e2f0084380ff115bd6c273f1eabe93d",
+  "scripts/pilot_dry_runner.py": "5828284c415478ce04ae24221122dd60964fb88ad04ff68ae52a35f914471232",
+  "scripts/process_supervisor_v2.py": "a4f99d7b05e7a80fbaf556c380eb0df92b9803345221cc4071c83856b1c037bb",
+  "scripts/real_pilot_workflow.py": "92767898d160966b7b82ed973d52247e018a865ef796db8a771f4aa5101a1410",
+  "tests/test_process_supervisor_v2.py": "86073ac13fb77bd5bb0707cc98260cb371dfebd187de39e2c5ada25c0689ede9",
+  "tests/test_real_pilot_workflow.py": "3ff1353c03efe2e199189207d700b17e42c10a5e9639894388e7123c800df6e2",
+  ".github/workflows/paired-end-tests.yml": "847e1e85697242416e2c53f03553145773e23672005d21faeb9648de02c64cf3",
+  "research/STATE.md": "1bb8fa9b78d22b31c456881ccb7fda2bbbadf96248bb5938e3a2f4801ef8ebdd",
+  "research/BACKLOG.md": "4d3d2332399b472bdce436979def907a46fddafaf5a388d2e61d208623ecc756",
+  "research/plans/2026-11-02-wsl-real-pilot-preparation.md": "d9b8074c16de829c1a44a2a8fc55314adc9be8803a0d3e256e036d2b32f8a2e2",
+  "research/runbooks/2026-11-02-wsl-pilot-powershell.md": "996c1c5b01df5a0ff0bb74ac4018a87779d21a939fcb887f58fca2cbcfc1c07d",
+  "reports/wsl-real-pilot-preparation-20261102/REPORT.md": "110263bc47e47145d4c728575a6821e028ca1dd096ff651e7664b9679561d29d",
+  "reports/wsl-real-pilot-preparation-20261102/blocked-worker-smoke.json": "86309e91ca3b0c962f7c8175c52db8c373fac5939037bc0f9d96cff6fd7de781",
+  "reports/wsl-real-pilot-preparation-20261102/blocked-worker-smoke.log": "90a39a36081d5823b3da3026ecf5c344c68e793b3659b40fa3898b5c7b6e7715",
+  "reports/wsl-real-pilot-preparation-20261102/environment.json": "5ff1c288e243aa6644ba5d85930a60ceda0baabe2ea7192fcf0e3f114935e545",
+  "reports/wsl-real-pilot-preparation-20261102/readiness.json": "d302d83e4162b693a7567cd92303c49b07ae60d310aa0d615c4f643077ed186a",
+  "reports/wsl-real-pilot-preparation-20261102/tests.txt": "bf7ce2d0e47944090e9fed194c6add766a593152132d6eae1f639cf34ca9ca1e",
+  "reports/wsl-real-pilot-preparation-20261102/user-reported-environment.json": "66176f863a670bc53970c334872c536ff7d2500eba3eee0f228ef6a5e59700dc",
+  "reports/wsl-real-pilot-preparation-20261102/validation.json": "0a5bb61564e8ef1ece5075fc5e38e72b5bec0586a51f7ac06c822c8b7f295ec7"
+}

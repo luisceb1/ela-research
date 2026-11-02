@@ -1,5 +1,16 @@
 # Estado vigente — 02/11/2026
 
+## Decisión vigente: candidato real preparado para WSL; validación humana pendiente — 02/11/2026
+
+Usuario confirmó201tests correctos en su WSL, Python3.12.3/PySAM0.23.3, RAMWindows15,8GiB, WSL7,6GiBtotal/7,1disponible y C:613,2GiBlibres. Evidencia aportada por él, no inspección remota. Nuevo CLI separado real_pilot_workflow: --host/--prepare no descargan ni alinean; --execute exige aceptación SHA256exacta del archivo preparado y rootnuevo. Política real solo con opt-in explícito; entradas sintéticas mantienen sus guardas. Se fijan orígenes,5transferencias,2bibliotecas,1Mpares y umbral20; no argvlibre o override de presupuesto.
+
+Corregido supuesto anterior de pasar gzipdirecto a hisat2-align-s: stagingplano acotado2GiB, colación4GiB dentro de temporales6GiB; stdoutSAMsolo pipe. Índiceextraído/verificado y resumenchr19porinspector antes de cualquier FASTQ; probe120s ocupa margen previo, envolvente8640s, mismo9000global. Supervisor publica identidad de grupo en recibo.started. Sellado/revalidación conservan deadliney bloquean adopción de fallos.
+
+222tests seleccionados locales pasan sin omisiones (201anteriores+20ruta nueva+1supervisor); compileall. Control CLIreal con ejecutablePythonrenombrado falla por versión antes deHTTP:0bytes, solo preflightfailed, supervisor1/grupovacío, sinsello; no es alineamientoHISAT2. Controlespositivos del adaptador sustituyen productorconSAMsintético, no acreditan genoma humano. Informe reports/wsl-real-pilot-preparation-20261102 y runbook research/runbooks/2026-11-02-wsl-pilot-powershell.md.
+
+**Siguiente tarea única:** Luis instala fuenteHISAT2fijada (aligner+inspector), emite configuración deshabilitada ligada a su host y devuelve diagnóstico/SHApara revisión. Después decisión expresa sobre ejecución acotada. No nuevas simulaciones salvo fallos/cambios. Índice/dialecto/compatibilidad/recursos humanos siguen sin ejecutar en este host. Sin descargas biológicas/alineamientos/contactos/costes/merge en esta entrega; raw_execution_ready=false. Las cabeceras inferiores son historia.
+
+
 ## Decisión vigente: B1 integrado y sellado localmente; B5/activación pendientes — 02/11/2026
 
 Worker fijo encadena4HTTPloopback,archivo,prefijos y productor/consumidor; solo se acepta tras sello padre de descriptor/ledger/resultado/recibo externo. 201tests locales pasan (18nuevos+183existentes), compileall; reports/sealed-local-workflow-20261102. Revalidación supervisada conserva ledger y no descarga. Productor no-cero/bloqueado, capRSSde fase y fallo externo trasresultado interno impiden sello. Siete fases,7.890bytes,9pares y6grupos objetivo en replay; no alineación nueva.

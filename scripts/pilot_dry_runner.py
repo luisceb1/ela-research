@@ -23,10 +23,13 @@ import pilot_execution_policy as execution
 def digest(obj):return hashlib.sha256(json.dumps(obj,sort_keys=True,separators=(',',':')).encode()).hexdigest()
 
 class DryRunner:
-    def __init__(self,root,manifest,limits,clock=time.time):
+    def __init__(self,root,manifest,limits,clock=time.time,*,real_pilot=False):
         self.root=Path(root);self.root.mkdir(parents=True,exist_ok=True);self.clock=clock
         self.manifest=json.loads(json.dumps(manifest))
-        self.policy=execution.validate(self.manifest.get('execution_policy'),limits)
+        if real_pilot:
+            from real_pilot_workflow import validate_manifest
+            validate_manifest(self.manifest,limits)
+        self.policy=execution.validate(self.manifest.get('execution_policy'),limits,allow_real=real_pilot)
         self.lock=(self.root/'runner.lock').open('a')
         try:
             fcntl.flock(self.lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
@@ -47,18 +50,25 @@ class DryRunner:
                     elif phase['kind']=='archive':
                         verify_archive(self,name,phase)
                     elif phase['kind']=='compact':
-                        if phase.get('binding',{}).get('policy')=='sealed-stream-v1':
+                        if phase.get('binding',{}).get('policy')=='real-stream-v1':
+                            from real_pilot_workflow import verify_stream
+                            verify_stream(self,name,phase)
+                        elif phase.get('binding',{}).get('policy')=='sealed-stream-v1':
                             from sealed_local_workflow import verify_stream
                             verify_stream(self,name,phase)
                         else:
                             from compact_ledger_phase import verify_compact
                             verify_compact(self,name,phase)
                     elif phase['kind']=='process':
+                        if real_pilot:
+                            from real_pilot_workflow import verify_preflight
+                            verify_preflight(self,phase)
+                            continue
                         receipt=self.root/'process-receipts'/phase['receipt']
                         if hashlib.sha256(receipt.read_bytes()).hexdigest()!=phase['receipt_sha256']:raise ValueError('Process receipt changed')
                     else:raise ValueError('Unknown phase kind')
             else:
-                self.state={'fingerprint':fingerprint,'limits':limits,'deadline_epoch':clock()+limits['wall_seconds'],'transfer_bytes_consumed':0,'phases':{},'mode':'synthetic-only','raw_pilot_ready':False}
+                self.state={'fingerprint':fingerprint,'limits':limits,'deadline_epoch':clock()+limits['wall_seconds'],'transfer_bytes_consumed':0,'phases':{},'mode':'real-pilot' if real_pilot else 'synthetic-only','raw_pilot_ready':False}
                 if self.policy:self.state.update(last_epoch=clock(),transfer_elapsed_seconds=0)
                 self.save()
             self.guard()

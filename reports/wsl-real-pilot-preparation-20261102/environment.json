@@ -1,0 +1,11 @@
+{
+  "scope": "observed on the host executing this command, not another computer",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.39",
+  "architecture": "x86_64",
+  "python": "3.12.14",
+  "cpu_affinity_count": 9,
+  "memory_ceiling_bytes": 8589934592,
+  "memory_available_bytes": 7892463616,
+  "disk_free_bytes": 63665893376,
+  "pysam_version": "0.23.3"
+}

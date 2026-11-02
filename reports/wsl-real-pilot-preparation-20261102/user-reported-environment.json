@@ -1,0 +1,19 @@
+{
+  "source": "terminal outputs supplied by Luis in this conversation on 2026-11-02; not remotely inspected",
+  "windows_physical_ram_display_GB": 15.8,
+  "windows_C_free_display_GB": 613.2,
+  "display_divisor": "PowerShell 1GB = 2^30 bytes; displayed rounded",
+  "wsl_total_memory_display_GiB": 7.6,
+  "wsl_available_memory_display_GiB": 7.1,
+  "wsl_virtual_disk_free_display_G": 954,
+  "virtual_disk_is_not_physical_free_proof": true,
+  "architecture": "x86_64",
+  "python": "3.12.3",
+  "pysam": "0.23.3",
+  "prior_test_commit": "6a3ec780adcc6a55548bf8d1999a5718f10d7bfd",
+  "prior_tests": 201,
+  "prior_failures": 0,
+  "prior_errors": 0,
+  "prior_skipped": 0,
+  "raw_execution_ready": false
+}

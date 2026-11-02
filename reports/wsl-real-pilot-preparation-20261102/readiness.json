@@ -1,0 +1,27 @@
+{
+  "status": "PREPARED_CANDIDATE_NOT_HUMAN_RUNTIME_VALIDATED",
+  "default_execution_enabled": false,
+  "raw_execution_ready": false,
+  "real_route_requires": "explicit --execute and exact prepared file SHA256 acceptance after review",
+  "synthetic_route_remains_disabled_for_real_policy": true,
+  "human_downloads_in_this_task": 0,
+  "human_alignments_in_this_task": 0,
+  "local_scope": "20 new unit/component tests + 1 new supervisor regression + 201 prior selected tests; 222 pass",
+  "shared_policy_explicit_opt_in": true,
+  "remaining_on_Luis_host": [
+    "compile pinned HISAT2 aligner+inspector",
+    "run new tests and host diagnostic",
+    "emit and review disabled host-bound configuration",
+    "explicit operator decision for bounded real run",
+    "during run verify archive dialect and index summary before FASTQ transfers, then actual human runtime/resources"
+  ],
+  "clock_envelope_seconds": 8640,
+  "global_clock_seconds": 9000,
+  "unallocated_clock_seconds": 360,
+  "temporary_partition": {
+    "total_bytes": 6442450944,
+    "plain_prefix_bytes": 2147483648,
+    "compact_run_bytes": 4294967296
+  },
+  "no_automatic_expansion_or_resume": true
+}

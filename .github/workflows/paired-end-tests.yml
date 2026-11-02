@@ -8,6 +8,10 @@ on:
       - 'scripts/compact_ledger_phase.py'
       - 'scripts/pilot_execution_policy.py'
       - 'scripts/pilot_dry_runner.py'
+      - 'scripts/real_pilot_workflow.py'
+      - 'scripts/plan_b4_execution_policy.py'
+      - 'tests/test_real_pilot_workflow.py'
+      - 'tests/test_process_supervisor_v2.py'
       - 'scripts/sealed_local_workflow.py'
       - 'scripts/workflow_seal.py'
       - 'scripts/synthetic_sam_producer.py'
@@ -39,3 +43,5 @@ jobs:
       - run: python -m unittest discover -s tests -p test_compact_pe_pipeline.py -v
       - run: python -m unittest discover -s tests -p test_b4_ledger_policy.py -v
       - run: python -m unittest discover -s tests -p test_sealed_local_workflow.py -v
+      - run: python -m unittest discover -s tests -p test_real_pilot_workflow.py -v
+      - run: python -m unittest discover -s tests -p test_process_supervisor_v2.py -v

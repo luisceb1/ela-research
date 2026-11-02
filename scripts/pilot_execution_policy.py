@@ -7,10 +7,10 @@ KINDS={'transfer','archive','paired_fastq','compact','process'}
 ALLOCATIONS={'artifacts','prefixes','temporaries','dependencies','receipts'}
 
 
-def validate(policy,limits):
+def validate(policy,limits,*,allow_real=False):
     if policy is None:return None
     if not isinstance(policy,dict) or set(policy)!={'schema','production_enabled','total_seconds','transfer_seconds','allocations','phases'}:raise ValueError('Execution policy schema')
-    if policy['schema']!='pilot-b4-local-v1' or policy['production_enabled'] is not False:raise ValueError('Only local disabled-production policy accepted')
+    if not ((policy['schema']=='pilot-b4-local-v1' and policy['production_enabled'] is False and not allow_real) or (policy['schema']=='pilot-b4-real-v1' and policy['production_enabled'] is True and allow_real)):raise ValueError('Policy mode requires explicit matching runner opt-in')
     if any(type(policy[k]) is not int or policy[k]<=0 for k in ('total_seconds','transfer_seconds')):raise ValueError('Clock caps must be positive integers')
     if policy['total_seconds']!=limits['wall_seconds'] or policy['transfer_seconds']>policy['total_seconds']:raise ValueError('Total/transfer clocks inconsistent')
     allocations=policy['allocations']
@@ -51,6 +51,7 @@ def disk_usage(root,state):
             if not path.is_file():continue
             rel=path.relative_to(root);parts=rel.parts;name=path.name;kind='receipts'
             if parts[0]=='dependencies':kind='dependencies'
+            elif parts[0]=='alignment-inputs':kind='temporaries'
             elif len(parts)>3 and parts[0]=='compact' and parts[2]=='work':kind='temporaries'
             elif len(parts)>3 and parts[0]=='archives' and parts[2] in ('files','partial'):kind='artifacts'
             elif parts[0]=='paired-fastq' and name.startswith('prefix-R'):kind='prefixes'

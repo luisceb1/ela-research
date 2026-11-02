@@ -35,6 +35,12 @@ class SupervisorTests(unittest.TestCase):
             for i in range(4):sup.supervise('r'+str(i),[sys.executable,'-c','pass'],d)
             self.assertEqual(len(list(Path(d).glob('r*.json'))),4)
             with self.assertRaises((FileExistsError,ValueError)):sup.supervise('r0',[sys.executable,'-c','pass'],d)
+    def test_started_receipt_publishes_procfs_group_to_child(self):
+        with tempfile.TemporaryDirectory() as d:
+            path=Path(d)/'identity.json'
+            code="import json,time,os;from pathlib import Path;p=Path("+repr(str(path))+");until=time.monotonic()+2\nwhile time.monotonic()<until:\n r=json.loads(p.read_text())\n if 'procfs_group' in r:break\n time.sleep(.01)\nassert r['status']=='started'\nassert r['procfs_group']==int(Path('/proc/self/stat').read_text().rsplit(')',1)[1].split()[2])"
+            rec=sup.supervise('identity',[sys.executable,'-c',code],d)
+            self.assertEqual(rec['exit_code'],0)
     def test_spawn_failure_has_terminal_receipt(self):
         with tempfile.TemporaryDirectory() as d:
             with self.assertRaises(FileNotFoundError):sup.supervise('missing',['/definitely/not/a/program'],d)

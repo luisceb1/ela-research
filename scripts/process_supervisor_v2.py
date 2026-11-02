@@ -59,6 +59,7 @@ def supervise(name,argv,folder,timeout=5,rss_limit=128*1024**2,address_space=128
             proc=subprocess.Popen(argv,stdout=log,stderr=subprocess.STDOUT,start_new_session=True,preexec_fn=setup,pass_fds=(write_fd,))
             os.close(write_fd);write_fd=None
             identity=json.loads(os.read(read_fd,4096));record.update(identity)
+            atomic_json(receipt,record)
             peak=0;samples=0;max_members=0;violation=None
             while True:
                 if checkpoint is not None:checkpoint()
