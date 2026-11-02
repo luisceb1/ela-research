@@ -5,6 +5,8 @@
 > para reiniciar presupuestos. Conservarla intacta y usar primero
 > `scripts/inspect_interrupted_pilot.py --root /home/luisceb/ela-piloto-real-01`.
 > La versión nueva optimiza sincronizaciones, pero NOreanuda trabajos antiguos.
+> Tras auditoría, consultar `2026-11-02-index-recovery-powershell.md`: recuperación
+> separada solo delíndice y nueva ventana de tiempo pendiente de aceptación.
 
 
 02/11/2026. Preparación revisable; no ejecución biológica realizada por esta entrega.

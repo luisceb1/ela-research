@@ -1,5 +1,18 @@
 # Backlog vigente — 02/11/2026
 
+## Prioridad vigente: candidato de recuperación del índice porRange preparado — 02/11/2026
+
+Luis devuelve auditoría consistente: parcial1632447284B/SHAaf7750fc6ef148017aab8c339de670faebff34be5de69bddc0275dbeed21216d; cargo1632463668B, diferencia16384Bsinreembolso; supervisor−9/grupovacío. Identidad deparcial, no verificación delorigen. Registro reports/index-range-recovery-20261102/user-reported-audit.json.
+
+Nuevo recover_index_range.py prepara jobdeshabilitado ligado a auditoría/código/Python/origen/caps. Copia/hashdelprefijosin tocaroriginal; única peticiónRangebytes1632447284–4355786348 exige206/Content-Range/Length/versionexactos,sinredirect/retry; soloSHAentero correcto promueve y soloexternolimpio sella. Rootderivadoúnico no admiteotraejecución. Nofastq/extracción/alineamiento.
+
+Propuesta deNUEVAventana2400s(300copia/auditoría+1800transporte+300verificación), pendiente deaceptaciónexpresa por--accept-additional-time-windowySHAexacto. Originaldeadliney3600sgastados no se alteran. Cap12GBsin aumento y cargoprevioincluido; traséxito4355802733Bcargados/saldo7644197267B. Disco25GiBcuentaambosárboles+8reserva,2CPU,512MiBRSSmuestreado/1GiBAS. No ejecuciónS3real aquí.
+
+258tests seleccionados pasan sin omisiones(236anteriores+22nuevos), compileall. Rangospositivos usaníndices pequeñosHTTPloopback; contratos no acreditanS3/tiemporeal. Rechazo200/rango/versión/tamaño/SHA/redirect/truncado,cambiooriginal,exteriorfallido yexigenciaaceptación. WorkerCLIreal conprefixsintéticocambiado cortaantesHTTP:0cargonuevo,copyfailed,exit1/grupovacío/sinsello.
+
+**Siguiente tarea única:** Luisemite planrecuperación deshabilitado y devuelve resumenSHA. Revisar ydecidirexpresamente sobre esos40min adicionales yúnicapetición delíndice; aún no aceptados. Comandos en research/runbooks/2026-11-02-index-recovery-powershell.md. Despuésde restauraciónse necesitará adopción/extracción/pilotorevisados: no relanzar jobviejo. PR36sinmerge/contactos/costes, originalintacto, sinnuevosdatosreales/alineamientos. raw_execution_ready=false. Cabecerasinferioreshistóricas.
+
+
 ## Prioridad vigente: primer intento real detenido durante índice; auditoría del parcial — 02/11/2026
 
 Luis ejecutó a3f76b4 con planSHA d813b5d5c738f8391583446df54b744c7987516309aadb5c64eec7ff912bf878. Preflightverified; solo index_archivestarted;1.632.463.668bytes cargados y3600,001265sde transporte agotados. Parcial≈1,6GsinSHA/tamañoexacto aún; logdelworker vacío, padre informa límite acumulado. No índice completo, FASTQoalineamiento. No interpretar como falloHISAT2. Evidencia aportada porusuario enreports/interrupted-index-transport-20261102/user-reported-failure.json.
