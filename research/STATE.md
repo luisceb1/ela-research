@@ -1,5 +1,13 @@
 # Estado vigente — 02/11/2026
 
+## Decisión vigente: integridad paired local y límites explícitos — 02/11/2026
+
+Ejecutado el siguiente gate de PR36 con fixtures locales: tres pares escaneados hasta EOF/CRC y prefijo determinista de dos; corrupción posterior al prefijo rechazada. Validador de cuatro líneas, mates/nombres/etiquetas y hashes; recibo final atómico y prefijos con fsync. 48 tests locales seleccionados (29 nuevos+19 existentes), compileall; no equivalen a suite completa o experimentos. Informe reports/paired-fastq-local-20261102.
+
+El runner admite límites explícitos ligados a caps/firma de fase. Configuración900s/6GiB comprobada solo en plan; producción se rechaza y el fallback5s/128MiB queda sintético. No datos biológicos, índice humano, alineamientos, gastos o contactos. No se certifica unicidad global de nombres ni codificación Phred. raw_execution_ready=false.
+
+**Única siguiente tarea:** conectar el validador como fase del ledger/manifiesto con recibos de transferencia y pruebas locales de interrupción/reanudación/identidad; sin FASTQreal o restauración de índice. Debe rechazar prefijo parcial, hash cambiado y límites nuevos conservando deadline/consumo. PR36 sigue revisable y sin merge automático; las cabeceras inferiores son historia.
+
 ## Decisión vigente: transporte HTTPlocal validado — 02/11/2026
 
 Adaptador HTTPacotado con servidor127.0.0.1y lector instrumentado:9tests pasan. Lecturas limitadas al saldo/restante/chunk, retriesexplícitos cobrados, truncamiento/hash/redirectrechazados y recibos por intento. Informe reports/bounded-http-local-20261102. Presupuesto de cuerpo leído, NOtráfico TCP/TLS/cabeceras o buffering; no se acredita red externa/deadlineestricto de socket.

@@ -1,0 +1,14 @@
+{
+  "argv": [
+    "placeholder-no-execution"
+  ],
+  "process_limits": {
+    "wall_seconds": 900,
+    "rss_bytes": 6442450944,
+    "address_space_bytes": 6442450944
+  },
+  "production_configuration": true,
+  "effective_wall_seconds": 900,
+  "execution_enabled": false,
+  "raw_execution_ready": false
+}

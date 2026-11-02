@@ -79,12 +79,34 @@ class DryRunner:
         except BaseException as exc:
             phase.update(status='failed',error=f'{type(exc).__name__}: {exc}');self.save();raise
         return phase
-    def process(self,name,argv):
-        if not self.begin(name,'process',digest(argv)):return self.state['phases'][name]
+    def process_limits(self,requested=None):
+        if requested is None:
+            return {'wall_seconds':5,'rss_bytes':128*1024**2,'address_space_bytes':128*1024**2}
+        keys={'wall_seconds','rss_bytes','address_space_bytes'}
+        if not isinstance(requested,dict) or set(requested)!=keys or any(type(v) is not int or v<=0 for v in requested.values()):
+            raise ValueError('Explicit positive integer process limits required')
+        caps=self.state['limits'].get('process_caps')
+        if not isinstance(caps,dict) or set(caps)!=keys or any(type(v) is not int or v<=0 for v in caps.values()):
+            raise ValueError('Manifest-bound process caps required')
+        if any(requested[k]>caps[k] for k in keys):raise ValueError('Process limits exceed pinned caps')
+        return dict(requested)
+    def plan_process(self,argv,process_limits=None,*,production=True):
+        self.guard()
+        if production and process_limits is None:raise ValueError('Production requires explicit process limits')
+        policy=self.process_limits(process_limits)
+        return {'argv':argv,'process_limits':policy,'production_configuration':production,
+                'effective_wall_seconds':min(policy['wall_seconds'],self.state['deadline_epoch']-self.clock()),
+                'execution_enabled':False,'raw_execution_ready':False}
+    def process(self,name,argv,*,process_limits=None,production=False):
+        if production:raise ValueError('Production execution disabled in DryRunner; plan only')
+        policy=self.process_limits(process_limits)
+        signature=digest(argv) if process_limits is None and not production else digest({'argv':argv,'process_limits':policy,'production':production})
+        if not self.begin(name,'process',signature):return self.state['phases'][name]
         phase=self.state['phases'][name]
         try:
             remaining=self.state['deadline_epoch']-self.clock()
-            r=supervise(name,argv,self.root/'process-receipts',timeout=min(remaining,5),rss_limit=128*1024**2,address_space=128*1024**2,checkpoint=self.guard)
+            phase['process_limits']=policy;phase['production_configuration']=production;self.save()
+            r=supervise(name,argv,self.root/'process-receipts',timeout=min(remaining,policy['wall_seconds']),rss_limit=policy['rss_bytes'],address_space=policy['address_space_bytes'],checkpoint=self.guard)
             if r['exit_code'] or r['violation'] or r['live_group_members_after_cleanup']:raise RuntimeError('Supervised process failed')
             receipt=self.root/'process-receipts'/(name+'.json')
             self.guard();phase.update(status='verified',receipt=name+'.json',receipt_sha256=hashlib.sha256(receipt.read_bytes()).hexdigest());self.save()

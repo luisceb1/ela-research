@@ -1,5 +1,13 @@
 # Backlog vigente — 02/11/2026
 
+## P0 vigente: fase de integridad ligada al ledger — 02/11/2026
+
+- Completado: integridad paired/gzip/prefijo y límites explícitos con fixtures;48tests locales,29nuevos. reports/paired-fastq-local-20261102; sin datos biológicos o alineaciones.
+- P0 única: integrar la validación como fase ligada al manifiesto y al recibo de transferencia, con interrupción/reanudación simuladas. Rechazar hash/identidad cambiados, recibos incompletos, prefijos parciales y límites diferentes sin reiniciar presupuesto.
+- Producción bloqueada:900s/6GiB solo representados en plan, no benchmark; sin certificado de QNAME global o Phred. raw_execution_ready=false. Sin merge/cierre automático ni contactos/gastos.
+
+Las cabeceras inferiores son historia.
+
 ## P0 vigente: FASTQpaired local y límites de producción — 02/11/2026
 
 - Completado: adaptador HTTPcon9tests locales y preflight metadatos; reports/bounded-http-local-20261102. Sin conexiones externas de datos.
