@@ -1,0 +1,27 @@
+{
+  "name": "pipe",
+  "argv": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "-c",
+    "import json,sys,subprocess\nfrom pathlib import Path\nsys.path.insert(0,sys.argv[1])\nfrom compact_pe_pipeline import run\npolicy=json.loads(sys.argv[4])\nproducer=subprocess.Popen([sys.executable,'-c','from pathlib import Path;import sys;sys.stdout.buffer.write(Path(sys.argv[1]).read_bytes());sys.exit(int(sys.argv[2]))',sys.argv[2],sys.argv[3]],stdout=subprocess.PIPE)\nwith producer.stdout as stream:run(stream,Path(sys.argv[5]),'fixture',policy['targets'],policy['limits'],producer.wait)\n",
+    "/workspace/scratch/dd06b558bed7/ela-audit/scripts",
+    "/workspace/scratch/dd06b558bed7/ela-audit/reports/unc13a-minigenome-20261102/fixtures/wild.sam",
+    "7",
+    "{\"targets\": [[\"mini\", 556, 1844, \"-\"], [\"mini\", 556, 1413, \"-\"], [\"mini\", 1541, 1844, \"-\"]], \"limits\": {\"max_input_bytes\": 8388608, \"max_line_bytes\": 65536, \"max_header_bytes\": 1048576, \"max_records\": 100000, \"max_row_bytes\": 4096, \"chunk_bytes\": 4096, \"merge_fan_in\": 2, \"max_runs\": 1024, \"max_temp_bytes\": 33554432, \"max_result_bytes\": 1048576, \"max_targets\": 1000}}",
+    "/tmp/tmpnkahqyjw/pipe7/out"
+  ],
+  "status": "finished",
+  "memory_mode": "sampled group RSS; per-process RLIMIT_AS",
+  "detaching_supported": false,
+  "namespace_pid": 7,
+  "procfs_pid": 576,
+  "procfs_group": 576,
+  "exit_code": 1,
+  "violation": null,
+  "peak_group_rss_bytes_sampled": 29364224,
+  "samples": 8,
+  "max_group_members": 2,
+  "rss_observed": true,
+  "live_group_members_after_cleanup": [],
+  "elapsed_seconds": 0.09015198500003407
+}

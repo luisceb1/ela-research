@@ -1,0 +1,46 @@
+{
+  "source_commit": "76e1f9b9bd082adf8f7db728758eec548777f2c6",
+  "scope": "Existing synthetic SAM inputs only; no new alignment",
+  "files": [
+    {
+      "path": "reports/unc13a-minigenome-20261102/fixtures/multicopy.ordered.sam",
+      "git_blob_sha": "3b305abb63288e10c660fc3fc053f6a7529c3655",
+      "sha256": "5e8c615fdf700b1d9f00675cc444f8c31fdc1b5ed22f52a526c4382e5c1339c2"
+    },
+    {
+      "path": "reports/unc13a-minigenome-20261102/fixtures/multicopy.sam",
+      "git_blob_sha": "3b305abb63288e10c660fc3fc053f6a7529c3655",
+      "sha256": "5e8c615fdf700b1d9f00675cc444f8c31fdc1b5ed22f52a526c4382e5c1339c2"
+    },
+    {
+      "path": "reports/unc13a-minigenome-20261102/fixtures/wild.ordered.sam",
+      "git_blob_sha": "3b150227db8c2acc6ec57020e82e408b3707b9b1",
+      "sha256": "b8e4f64250f3d9ae48767d6cc1508f9848d9f7ab251546e2b5e37dfc27f23574"
+    },
+    {
+      "path": "reports/unc13a-minigenome-20261102/fixtures/wild.sam",
+      "git_blob_sha": "0621b6044ef3294dc638e9ede3707a36efb31f19",
+      "sha256": "b81c96bd204b38f7fad38ab7a39f177e89a2e23692f3a28c0fa1e80179724221"
+    },
+    {
+      "path": "reports/unc13a-minigenome-20261102/fixtures/wrongmotif.ordered.sam",
+      "git_blob_sha": "530741d8592dbe4e1025b07b8ce495c30dcf8e9d",
+      "sha256": "6ca25350a1c775473368e0a7d9cddc7f314542c5288b32a50111de81719ab382"
+    },
+    {
+      "path": "reports/unc13a-minigenome-20261102/fixtures/wrongmotif.sam",
+      "git_blob_sha": "530741d8592dbe4e1025b07b8ce495c30dcf8e9d",
+      "sha256": "6ca25350a1c775473368e0a7d9cddc7f314542c5288b32a50111de81719ab382"
+    },
+    {
+      "path": "reports/unc13a-minigenome-20261102/fixtures/wrongstrand.ordered.sam",
+      "git_blob_sha": "ab7025a16b13a255497f0f9224279a4a408fafcd",
+      "sha256": "c1aa932677c3c47703da3fce1c961c16cd2e0e80b4dc046808a6cbad67c4c676"
+    },
+    {
+      "path": "reports/unc13a-minigenome-20261102/fixtures/wrongstrand.sam",
+      "git_blob_sha": "ab7025a16b13a255497f0f9224279a4a408fafcd",
+      "sha256": "c1aa932677c3c47703da3fce1c961c16cd2e0e80b4dc046808a6cbad67c4c676"
+    }
+  ]
+}

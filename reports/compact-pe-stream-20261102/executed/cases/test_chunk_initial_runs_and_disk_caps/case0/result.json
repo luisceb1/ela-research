@@ -1,0 +1,14 @@
+{
+  "status": "failed",
+  "policy": "compact-pe-v1",
+  "raw_execution_ready": false,
+  "error_type": "ValueError",
+  "error": "Initial run cap",
+  "input_bytes": 3223,
+  "records": 7,
+  "header_bytes": 657,
+  "initial_runs": 1,
+  "merge_passes": 0,
+  "peak_temp_bytes": 826,
+  "producer_exit_code": null
+}

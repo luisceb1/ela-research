@@ -1,0 +1,10 @@
+{
+  "unexpected_test_failures":0,
+  "unexpected_test_errors":0,
+  "local_distinct_tests":156,
+  "new_component_tests":19,
+  "negative_controls":"Expected rejection for producer exit7, blocked pipe, decoder disagreement, corrupt/truncated SAM, duplicate tags, caps, group17 and wrong reference",
+  "manual_review_changes_before_final_validation":["Bound binary readline to remaining input budget plus one sentinel","Bound actual indented result receipt bytes and keep failed receipt minimal","Dedicated CI executes component with pinned PySAM"],
+  "new_alignments_executed":false,
+  "biological_data_used":false
+}

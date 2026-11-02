@@ -1,5 +1,13 @@
 # Estado vigente — 02/11/2026
 
+## Decisión vigente: B3 cerrado localmente, tres puertas pendientes — 02/11/2026
+
+Flujo SAM→metadatos/eventos JSONderivados→merge acotado→conteo objetivo/QC, sin guardar SAM/SEQ/QUAL/CIGARoriginal. Texto/HTSlib decodifican por separado a15/8; metadatos concordantes y reducción compartidos. 156tests locales pasan (19nuevos+137existentes);4SAMsintéticos existentes comparados con baselines, resultados repetidos idénticos. Fuente8SAMcotejada por blobs y SHA. Productor no-cero rechaza EOF; pipebloqueada se corta≈1,010s y termina2procesos sin vivos, recibo.started no se adopta. Informe reports/compact-pe-stream-20261102. Sin nueva alineación, índice humano o FASTQreal.
+
+B3componente local, no integración humana. QuedanB1worker externo,B4ledger/caps/relojes/temporales/RLIMIT_AS/cobertura yB5entorno real. DependenciaPySAMobligatoria, workflowPEejecuta19nuevos+17previos con pin. raw_execution_ready=false; producción deshabilitada.
+
+**Única siguiente tarea B4:** ligar cómputo a manifiesto/ledger, cerrar límites globales y de fase, disco temporal/dependencias, memoria RSS/AS, reloj de transporte y semántica de cobertura. Solo preflight/dry-run sintético, sin descarga, nuevo alineamiento, contacto/gasto o merge automático. Cabeceras inferiores son historia.
+
 ## Decisión vigente: B2 cerrado localmente, cuatro puertas pendientes — 02/11/2026
 
 Checksum con tamaño y al menos MD5/SHA256 fijado; todos los aportados se verifican. DryRunner.archive liga inventario/caps/SHA256/recibos al ledger, valida cabeceras/tamaños/hash/EOF-CRC y rehashea al reutilizar. 118tests locales pasan (39nuevos+79existentes), compileall correcto; recibos HTTPlocal→archivo→reapertura y corte externo retenidos en reports/archive-ledger-local-20261102. Corte≈1,008s termina2procesos sin miembros vivos; started/partials conservan presupuesto/plazo y bloquean reapertura. Error inicial de generadorUSTAR documentado y corregido, no se relajó extractor.

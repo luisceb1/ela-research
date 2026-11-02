@@ -1,0 +1,34 @@
+{
+  "events": [
+    [],
+    [],
+    [
+      [
+        "mini",
+        556,
+        1844,
+        "-"
+      ]
+    ],
+    [
+      [
+        "mini",
+        556,
+        1844,
+        "-"
+      ]
+    ]
+  ],
+  "meta": {
+    "flag": 99,
+    "mapq": 60,
+    "mate_pos": 542,
+    "mate_ref": "mini",
+    "nh": 1,
+    "pos": 542,
+    "qname": "canonical_a14",
+    "ref": "mini",
+    "rg": "<missing>",
+    "xs": "-"
+  }
+}

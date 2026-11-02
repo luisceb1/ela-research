@@ -1,0 +1,626 @@
+[
+  {
+    "fixture": "wild",
+    "source_sha256": "b81c96bd204b38f7fad38ab7a39f177e89a2e23692f3a28c0fa1e80179724221",
+    "input_bytes": 7151,
+    "records": 18,
+    "initial_runs": 2,
+    "merge_passes": 1,
+    "peak_temp_bytes": 10030,
+    "routes": {
+      "text15": {
+        "counts": [
+          {
+            "event": [
+              "mini",
+              556,
+              1844,
+              "-"
+            ],
+            "fragments": 2
+          },
+          {
+            "event": [
+              "mini",
+              556,
+              1413,
+              "-"
+            ],
+            "fragments": 2
+          },
+          {
+            "event": [
+              "mini",
+              1541,
+              1844,
+              "-"
+            ],
+            "fragments": 2
+          }
+        ],
+        "qc": {
+          "accepted_pairs": 9,
+          "groups": 9,
+          "nonprimary_excluded": 0
+        }
+      },
+      "hts15": {
+        "counts": [
+          {
+            "event": [
+              "mini",
+              556,
+              1844,
+              "-"
+            ],
+            "fragments": 2
+          },
+          {
+            "event": [
+              "mini",
+              556,
+              1413,
+              "-"
+            ],
+            "fragments": 2
+          },
+          {
+            "event": [
+              "mini",
+              1541,
+              1844,
+              "-"
+            ],
+            "fragments": 2
+          }
+        ],
+        "qc": {
+          "accepted_pairs": 9,
+          "groups": 9,
+          "nonprimary_excluded": 0
+        }
+      },
+      "text8": {
+        "counts": [
+          {
+            "event": [
+              "mini",
+              556,
+              1844,
+              "-"
+            ],
+            "fragments": 3
+          },
+          {
+            "event": [
+              "mini",
+              556,
+              1413,
+              "-"
+            ],
+            "fragments": 3
+          },
+          {
+            "event": [
+              "mini",
+              1541,
+              1844,
+              "-"
+            ],
+            "fragments": 3
+          }
+        ],
+        "qc": {
+          "accepted_pairs": 9,
+          "groups": 9,
+          "nonprimary_excluded": 0
+        }
+      },
+      "hts8": {
+        "counts": [
+          {
+            "event": [
+              "mini",
+              556,
+              1844,
+              "-"
+            ],
+            "fragments": 3
+          },
+          {
+            "event": [
+              "mini",
+              556,
+              1413,
+              "-"
+            ],
+            "fragments": 3
+          },
+          {
+            "event": [
+              "mini",
+              1541,
+              1844,
+              "-"
+            ],
+            "fragments": 3
+          }
+        ],
+        "qc": {
+          "accepted_pairs": 9,
+          "groups": 9,
+          "nonprimary_excluded": 0
+        }
+      }
+    },
+    "repeat_identical": true
+  },
+  {
+    "fixture": "multicopy",
+    "source_sha256": "5e8c615fdf700b1d9f00675cc444f8c31fdc1b5ed22f52a526c4382e5c1339c2",
+    "input_bytes": 2432,
+    "records": 4,
+    "initial_runs": 1,
+    "merge_passes": 0,
+    "peak_temp_bytes": 1059,
+    "routes": {
+      "text15": {
+        "counts": [
+          {
+            "event": [
+              "mini",
+              556,
+              1844,
+              "-"
+            ],
+            "fragments": 0
+          },
+          {
+            "event": [
+              "mini",
+              556,
+              1413,
+              "-"
+            ],
+            "fragments": 0
+          },
+          {
+            "event": [
+              "mini",
+              1541,
+              1844,
+              "-"
+            ],
+            "fragments": 0
+          }
+        ],
+        "qc": {
+          "excluded:mapping_quality": 1,
+          "groups": 1,
+          "nonprimary_excluded": 2
+        }
+      },
+      "hts15": {
+        "counts": [
+          {
+            "event": [
+              "mini",
+              556,
+              1844,
+              "-"
+            ],
+            "fragments": 0
+          },
+          {
+            "event": [
+              "mini",
+              556,
+              1413,
+              "-"
+            ],
+            "fragments": 0
+          },
+          {
+            "event": [
+              "mini",
+              1541,
+              1844,
+              "-"
+            ],
+            "fragments": 0
+          }
+        ],
+        "qc": {
+          "excluded:mapping_quality": 1,
+          "groups": 1,
+          "nonprimary_excluded": 2
+        }
+      },
+      "text8": {
+        "counts": [
+          {
+            "event": [
+              "mini",
+              556,
+              1844,
+              "-"
+            ],
+            "fragments": 0
+          },
+          {
+            "event": [
+              "mini",
+              556,
+              1413,
+              "-"
+            ],
+            "fragments": 0
+          },
+          {
+            "event": [
+              "mini",
+              1541,
+              1844,
+              "-"
+            ],
+            "fragments": 0
+          }
+        ],
+        "qc": {
+          "excluded:mapping_quality": 1,
+          "groups": 1,
+          "nonprimary_excluded": 2
+        }
+      },
+      "hts8": {
+        "counts": [
+          {
+            "event": [
+              "mini",
+              556,
+              1844,
+              "-"
+            ],
+            "fragments": 0
+          },
+          {
+            "event": [
+              "mini",
+              556,
+              1413,
+              "-"
+            ],
+            "fragments": 0
+          },
+          {
+            "event": [
+              "mini",
+              1541,
+              1844,
+              "-"
+            ],
+            "fragments": 0
+          }
+        ],
+        "qc": {
+          "excluded:mapping_quality": 1,
+          "groups": 1,
+          "nonprimary_excluded": 2
+        }
+      }
+    },
+    "repeat_identical": true
+  },
+  {
+    "fixture": "wrongstrand",
+    "source_sha256": "c1aa932677c3c47703da3fce1c961c16cd2e0e80b4dc046808a6cbad67c4c676",
+    "input_bytes": 1531,
+    "records": 2,
+    "initial_runs": 1,
+    "merge_passes": 0,
+    "peak_temp_bytes": 531,
+    "routes": {
+      "text15": {
+        "counts": [
+          {
+            "event": [
+              "mini",
+              556,
+              1844,
+              "-"
+            ],
+            "fragments": 0
+          },
+          {
+            "event": [
+              "mini",
+              556,
+              1413,
+              "-"
+            ],
+            "fragments": 0
+          },
+          {
+            "event": [
+              "mini",
+              1541,
+              1844,
+              "-"
+            ],
+            "fragments": 0
+          }
+        ],
+        "qc": {
+          "accepted_pairs": 1,
+          "groups": 1,
+          "nonprimary_excluded": 0
+        }
+      },
+      "hts15": {
+        "counts": [
+          {
+            "event": [
+              "mini",
+              556,
+              1844,
+              "-"
+            ],
+            "fragments": 0
+          },
+          {
+            "event": [
+              "mini",
+              556,
+              1413,
+              "-"
+            ],
+            "fragments": 0
+          },
+          {
+            "event": [
+              "mini",
+              1541,
+              1844,
+              "-"
+            ],
+            "fragments": 0
+          }
+        ],
+        "qc": {
+          "accepted_pairs": 1,
+          "groups": 1,
+          "nonprimary_excluded": 0
+        }
+      },
+      "text8": {
+        "counts": [
+          {
+            "event": [
+              "mini",
+              556,
+              1844,
+              "-"
+            ],
+            "fragments": 0
+          },
+          {
+            "event": [
+              "mini",
+              556,
+              1413,
+              "-"
+            ],
+            "fragments": 0
+          },
+          {
+            "event": [
+              "mini",
+              1541,
+              1844,
+              "-"
+            ],
+            "fragments": 0
+          }
+        ],
+        "qc": {
+          "accepted_pairs": 1,
+          "groups": 1,
+          "nonprimary_excluded": 0
+        }
+      },
+      "hts8": {
+        "counts": [
+          {
+            "event": [
+              "mini",
+              556,
+              1844,
+              "-"
+            ],
+            "fragments": 0
+          },
+          {
+            "event": [
+              "mini",
+              556,
+              1413,
+              "-"
+            ],
+            "fragments": 0
+          },
+          {
+            "event": [
+              "mini",
+              1541,
+              1844,
+              "-"
+            ],
+            "fragments": 0
+          }
+        ],
+        "qc": {
+          "accepted_pairs": 1,
+          "groups": 1,
+          "nonprimary_excluded": 0
+        }
+      }
+    },
+    "repeat_identical": true
+  },
+  {
+    "fixture": "wrongmotif",
+    "source_sha256": "6ca25350a1c775473368e0a7d9cddc7f314542c5288b32a50111de81719ab382",
+    "input_bytes": 1342,
+    "records": 2,
+    "initial_runs": 1,
+    "merge_passes": 0,
+    "peak_temp_bytes": 353,
+    "routes": {
+      "text15": {
+        "counts": [
+          {
+            "event": [
+              "mini",
+              556,
+              1844,
+              "-"
+            ],
+            "fragments": 0
+          },
+          {
+            "event": [
+              "mini",
+              556,
+              1413,
+              "-"
+            ],
+            "fragments": 0
+          },
+          {
+            "event": [
+              "mini",
+              1541,
+              1844,
+              "-"
+            ],
+            "fragments": 0
+          }
+        ],
+        "qc": {
+          "excluded:pair_flags": 1,
+          "groups": 1,
+          "nonprimary_excluded": 0
+        }
+      },
+      "hts15": {
+        "counts": [
+          {
+            "event": [
+              "mini",
+              556,
+              1844,
+              "-"
+            ],
+            "fragments": 0
+          },
+          {
+            "event": [
+              "mini",
+              556,
+              1413,
+              "-"
+            ],
+            "fragments": 0
+          },
+          {
+            "event": [
+              "mini",
+              1541,
+              1844,
+              "-"
+            ],
+            "fragments": 0
+          }
+        ],
+        "qc": {
+          "excluded:pair_flags": 1,
+          "groups": 1,
+          "nonprimary_excluded": 0
+        }
+      },
+      "text8": {
+        "counts": [
+          {
+            "event": [
+              "mini",
+              556,
+              1844,
+              "-"
+            ],
+            "fragments": 0
+          },
+          {
+            "event": [
+              "mini",
+              556,
+              1413,
+              "-"
+            ],
+            "fragments": 0
+          },
+          {
+            "event": [
+              "mini",
+              1541,
+              1844,
+              "-"
+            ],
+            "fragments": 0
+          }
+        ],
+        "qc": {
+          "excluded:pair_flags": 1,
+          "groups": 1,
+          "nonprimary_excluded": 0
+        }
+      },
+      "hts8": {
+        "counts": [
+          {
+            "event": [
+              "mini",
+              556,
+              1844,
+              "-"
+            ],
+            "fragments": 0
+          },
+          {
+            "event": [
+              "mini",
+              556,
+              1413,
+              "-"
+            ],
+            "fragments": 0
+          },
+          {
+            "event": [
+              "mini",
+              1541,
+              1844,
+              "-"
+            ],
+            "fragments": 0
+          }
+        ],
+        "qc": {
+          "excluded:pair_flags": 1,
+          "groups": 1,
+          "nonprimary_excluded": 0
+        }
+      }
+    },
+    "repeat_identical": true
+  }
+]

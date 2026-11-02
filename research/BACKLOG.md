@@ -1,5 +1,13 @@
 # Backlog vigente — 02/11/2026
 
+## P0 vigente: B4, política completa y cómputo ligado al ledger — 02/11/2026
+
+- B3cerrado como componente local: flujo/merge/conteo derivado acotado, sin SAMcompleto,156tests con PySAM (19nuevos). Cuentas/QCcoinciden en4SAMexistentes; productor/consumidor y cortes probados. reports/compact-pe-stream-20261102.
+- P0 única B4: manifiesto/ledger para cómputo y política de reloj total/transporte/fases, temporales/dependencias, RSS/AS y cobertura sin dobles conteos de moléculas. Ejecutar solo dry-run sintético.
+- QuedanB1ruta externa yB5entorno real. No actualizar snapshots previos como si fueran reejecuciones; no repetir G1–G4sin cambios. raw_execution_ready=false, sin producción, índice/FASTQreal, nuevas alineaciones, costes/contactos/merge automático.
+
+Las cabeceras inferiores son historia.
+
 ## P0 vigente: B3, flujo compacto sin SAM genómico completo — 02/11/2026
 
 - B2cerrado localmente: checksumSHA256solo y extracción tar.gz acotada ligada al ledger,118tests (39nuevos), hashes/CRC/recibos/interrupción/reuso. reports/archive-ledger-local-20261102; índice real/dialecto no ensayado.
