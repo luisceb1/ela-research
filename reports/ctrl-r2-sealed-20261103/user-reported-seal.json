@@ -1,0 +1,29 @@
+{
+  "evidence": "user terminal output; no remote host inspection",
+  "code_commit": "c23994f7f116a4abc0d39b26600156686cf8be4b",
+  "seal": {
+    "status": "sealed_verified_ctrl_r2_elapsed",
+    "sha256": {
+      "recovery-plan.json": "36c64ad45e944461a4817b05ea86abcbf83b4367b31fefad997f7d835a021855",
+      "operator-acceptance.json": "4ec5fa231a0bf123c4333624f0d038e084246bdbbaf3553f810ef79281c6ac11",
+      "recovery-state.json": "c4186899a59e808ea6ce2bef832bc998b144a51d6a31765bb6533c68f3fd168b",
+      "range-attempt.json": "386cebaf8e84642f2217183dd808da21c3f95eb76d56a7c15e300391731cda9f",
+      "recovery-result.json": "e07f65a5c2dfda112549fe84b5770201c0fbd392599f259e061a52c138bf8959",
+      "supervision/run.json": "3ea0c9693867d471d0b3b44afe4df7880e774751c571ec8338032805d7a5a796"
+    },
+    "file": "CTRL_R2.fastq.gz",
+    "file_sha256": "b034affa4479b28154fa9217a943128c4513590f6e622690a7af7afd272ca2f6",
+    "file_md5": "007d66223fe35f394284e4ebd631eaef",
+    "file_bytes": 997549457,
+    "clock_policy": {
+      "clock": "CLOCK_BOOTTIME",
+      "boot_id": "d048138e-311d-4061-b43a-4e0c0f1b53b1",
+      "wall_time": "diagnostic only"
+    },
+    "cumulative_body_bytes": 7322807977,
+    "manual_browser_reserved_body_bytes": 997549457,
+    "manual_browser_exact_body_known": false,
+    "remaining_body_budget_bytes": 4677192023,
+    "raw_execution_ready": false
+  }
+}
