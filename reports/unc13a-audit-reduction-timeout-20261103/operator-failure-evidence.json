@@ -1,0 +1,54 @@
+{
+  "source": "operator-pasted PowerShell state, supervision receipt, empty run log and full HISAT2 summary",
+  "date": "2026-11-03",
+  "commit": "8f94088166d22ff27d4318165d46f61106476b31",
+  "state": {
+    "completed_phases": [
+      {
+        "phase": "verify",
+        "started_tick": 7.016380122,
+        "finished_tick": 27.046212236,
+        "deadline_tick": 307.016380122
+      },
+      {
+        "phase": "stage",
+        "started_tick": 27.046212236,
+        "finished_tick": 33.104654447,
+        "deadline_tick": 327.046212236
+      },
+      {
+        "phase": "producer",
+        "started_tick": 33.104654447,
+        "finished_tick": 576.575804164,
+        "deadline_tick": 933.104654447
+      }
+    ],
+    "clock_policy": {
+      "clock": "CLOCK_BOOTTIME",
+      "boot_id": "17ded9c2-b4d0-4aca-8dab-4b251a4dfd0e",
+      "wall_time": "diagnostic only"
+    },
+    "started_tick": 7.014131946,
+    "phase": "reduce",
+    "phase_started_tick": 576.575804164,
+    "phase_deadline_tick": 876.575804164,
+    "new_transfer_bytes": 0,
+    "cumulative_body_bytes": 7322807977
+  },
+  "supervision": {
+    "status": "finished",
+    "exit_code": -9,
+    "live_group_members_after_cleanup": [],
+    "supervisor_error": "RuntimeError: Audit phase elapsed cap",
+    "elapsed_seconds": 869.8933005810001
+  },
+  "hisat2": {
+    "pairs": 1000000,
+    "concordant_zero": 78594,
+    "concordant_exactly_once": 851945,
+    "concordant_multiple": 69461,
+    "overall_alignment_percent": 92.14
+  },
+  "audit_outcome": "no verified regional inventory; prior sealed control remains coverage_insufficient",
+  "interpretation": "consistent with real 300-second reduction deadline, not a demonstrated civil-clock failure"
+}

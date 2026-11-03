@@ -1,5 +1,13 @@
 # Backlog vigente — 03/11/2026
 
+## Decisión vigente: corregir la reducción local, sin nuevas descargas — 03/11/2026
+
+El intento exploratorio terminó HISAT2 con los mismos números globales, pero agotó 300 s en reducción. Estado: verify 20,030 s, stage 6,058 s, producer 543,471 s; reduce pendiente. Supervisor -9, grupo limpio, 869,893 s. Evidencia en `reports/unc13a-audit-reduction-timeout-20261103/operator-failure-evidence.json`. No hay inventario verificado. El control previo conserva cobertura insuficiente.
+
+Preparado ejecutor aislado v2: guarda del trabajador en memoria, padre independiente, diagnóstico detallado; mismo total 2100 s y reducción 720 s, sin cambiar pipeline, objetivos, prefijo ni filtros. Conserva el fallido y cuenta catorce árboles dentro del mismo disco de 27 GiB/reserva 8 GiB, CPU 2/RSS 6 GiB muestreada/AS 8 GiB. Cargo 7.322.807.977 bytes constante, sin HTTP/TDP ni adopción de parciales.
+
+Siguiente tarea: descriptor nuevo y aceptación local con `research/plans/2026-11-03-unc13a-audit-guard-v2.md`. No ampliar profundidad, promover puerta, repetir roots o inferir biología. El siguiente inventario sigue siendo exploratorio y exige replay exacto del control. PR 36 abierta, sin fusionar. Cabeceras inferiores históricas.
+
 ## Decisión vigente: control completado; auditoría local exploratoria preparada — 03/11/2026
 
 Luis aporta sello técnico del control: 12.709.444 pares validados, prefijo de 1.000.000; soporte canónico 1/crípticos 0/0 frente a mínimo 20, igual a anclaje 8. HISAT2 92,14 % global, 85,19 % concordantes únicos. Supervisor limpio, 713,146 s, RSS pico muestreado 4.882.288.640 bytes. Cargo 7.322.807.977 bytes constante. Evidencia de usuario: `reports/ctrl-local-locus-audit-20261103/operator-control-evidence.json`.
