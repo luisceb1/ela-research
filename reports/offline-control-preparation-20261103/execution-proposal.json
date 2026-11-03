@@ -1,0 +1,40 @@
+{
+  "execution_enabled": false,
+  "scope": "CTRL-4/SRR33425816 only; local sealed files",
+  "new_transfer_bytes": 0,
+  "prior_charged_body_bytes": 7322807977,
+  "manual_browser_reserve_already_included": 997549457,
+  "manual_browser_exact_body_known": false,
+  "prefix_pairs": 1000000,
+  "minimum_fragment_union": 20,
+  "anchor": 15,
+  "steps": [
+    "preflight",
+    "CTRL_R1 local copy",
+    "CTRL_R2 local copy",
+    "CTRL_prefix",
+    "CTRL_compute"
+  ],
+  "total_seconds": 3000,
+  "phase_seconds": {
+    "preflight": 180,
+    "CTRL_R1": 300,
+    "CTRL_R2": 300,
+    "CTRL_prefix": 900,
+    "CTRL_compute": 1200
+  },
+  "producer_seconds": 900,
+  "reduce_seconds": 300,
+  "clock": "CLOCK_BOOTTIME",
+  "disk_gib": 27,
+  "artifact_partition_gib": 18,
+  "reserve_gib": 8,
+  "projected_new_local_read_bytes": 1958406420,
+  "history_trees": 11,
+  "total_trees_with_new_root": 12,
+  "threads": 2,
+  "rss_group_gib_sampled": 6,
+  "address_space_gib_per_process": 8,
+  "new_window_accepted": false,
+  "raw_execution_ready": false
+}

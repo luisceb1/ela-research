@@ -1,5 +1,15 @@
 # Backlog vigente — 03/11/2026
 
+## Decisión vigente: piloto del control local preparado — 03/11/2026
+
+Nuevo ejecutor aislado `offline_control_pilot.py`: reutiliza índice y R1/R2 sellados, verifica copias locales, valida todos los pares y procesa un prefijo fijo de un millón. Conserva HISAT2, el método pareado y el umbral de 20 grupos. Sin fases HTTP ni TDP; cargo constante de 7.322.807.977 bytes, incluida la reserva manual previa.
+
+Propuesta: 3000 segundos (50 minutos), CLOCK_BOOTTIME en padre, trabajador y subfases; 2 CPU, RSS de grupo de 6 GiB muestreada, espacio virtual por proceso de 8 GiB, disco de 27 GiB y reserva de 8 GiB. Cuenta doce árboles y proyecta las dos copias antes de iniciarlas. Descriptor deshabilitado, SHA exacto y aceptación explícita; sin reintento automático.
+
+485 pruebas locales correctas sin omisiones, incluidas 25 nuevas. Las integraciones usan miniaturas y SAM reproducido; no constituyen alineamiento humano ni benchmark. Informe: `reports/offline-control-preparation-20261103`.
+
+Siguiente tarea: preparación y ejecución en WSL según `research/runbooks/2026-11-03-offline-control-powershell.md`. El sello distingue cobertura suficiente o insuficiente; ninguna habilita otra biblioteca o inferencia biológica. PR 36 abierta sin fusionar. Las cabeceras inferiores son históricas.
+
 ## Decisión vigente: R2 completo y sellado; preparar sólo control local — 03/11/2026
 
 Luis aporta sealed_verified_ctrl_r2_elapsed:997549457B/MD5007d66223fe35f394284e4ebd631eaef/SHAb034affa4479b28154fa9217a943128c4513590f6e622690a7af7afd272ca2f6, plan36c64ad4… en código c23994f. Cargo7322807977B/saldo4677192023B incluye misma reserva manual997549457B no medida. Evidencia de usuario, sin acceso remoto ni duración/RSS aportados. Reporte y seis hashes en reports/ctrl-r2-sealed-20261103.
