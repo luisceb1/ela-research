@@ -1,5 +1,13 @@
 # Estado vigente — 03/11/2026
 
+## Decisión vigente: auditoría local sellada; 21 uniones contrastadas — 03/11/2026
+
+Luis aporta resumen `sealed_exploratory_locus_audit`, replay idéntico al control y cero descargas. Región: 116 grupos candidatos, 115 aceptados, un descarte; 31/33 uniones distintas a anclajes 15/8. Soporte canónico 1; sin otra vecina ±2 bases con hebra esperada. Puerta de cobertura insuficiente, sin promover. Evidencia y comparación: `reports/unc13a-control-annotation-20261103`.
+
+Se contrastaron las 21 uniones con coordenadas disponibles por ruta (top20 más canónica): todas coinciden exactamente con uniones UNC13A de cuatro transcritos cacheados GENCODE v47. No son 42 uniones distintas; son 21 repetidas en dos rutas. El adjunto sólo contiene resumen: faltan 10/12 filas respecto a 31/33. No se consideran ceros ni se afirma clasificación completa. Ocho pruebas locales correctas para el comparador de metadatos.
+
+Siguiente tarea: recibir `audit-seal.json` completo del usuario y clasificar las filas restantes sin repetir alineamiento. No ampliar a todo el control o iniciar TDP automáticamente: el soporte actual no garantiza alcanzar 20, y el prefijo ordinal no permite una extrapolación estable. Sin PSI, comparación biológica o conclusión clínica. PR 36 abierta, sin fusionar; cabeceras inferiores históricas.
+
 ## Decisión vigente: corregida la clasificación de disco al preparar v2 — 03/11/2026
 
 Luis seleccionó la versión correcta, pero preparar falló antes de escribir el plan o iniciar otra ejecución: `Historical artifact partition cap`. La guarda cargaba los temporales y texto plano del intento fallido a los 18 GiB de artefactos. Los errores posteriores de SHA se deben a comandos interactivos separados tras ese fallo. Evidencia: `reports/unc13a-audit-disk-accounting-20261103`.
