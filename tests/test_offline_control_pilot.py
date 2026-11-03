@@ -5,6 +5,7 @@ import copy
 import gzip
 import hashlib
 import io
+import importlib.util
 import json
 from pathlib import Path
 import subprocess
@@ -77,6 +78,7 @@ class BindingTests(unittest.TestCase):
         p=self.root/'CTRL_R2.fastq.gz';p.unlink();p.symlink_to(self.root/'missing');self.assertRaises(ValueError,self.binding)
 
 
+@unittest.skipUnless(importlib.util.find_spec('pysam'), 'Pinned PySAM required')
 class ControlTests(unittest.TestCase):
     def setUp(self):
         from test_cached_index_pilot import CachedPilotTests

@@ -16,6 +16,8 @@ Las integraciones pequeñas usan 9 y 36 pares de fixture con gzip y validación 
 
 Se prueban corrupción y alteraciones de metadatos, identidad, procedencia, contadores y recibos; enlaces simbólicos; orden, raíces y reuso; reloj civil y plazos de subfases; RSS, particiones y proyección de disco. Un subproceso real demuestra el bloqueo de red por audit hook; un trabajador CLI supervisado falla antes de cómputo ante una fuente ausente y deja el grupo vacío. Esto no garantiza rendimiento ni compatibilidad de HISAT2 en WSL.
 
+La CI general omite las 20 pruebas que requieren PySAM cuando no está instalado, conforme al resto del repositorio. La CI pareada instala la dependencia fijada y debe ejecutarlas todas en Python 3.11 y 3.12. El primer envío reveló esta condición ausente; se corrigió en los tests, sin cambiar el ejecutor.
+
 ## Siguiente paso
 
 Preparar el descriptor en WSL, comprobar los campos y aceptar la ventana local con el bloque PowerShell. Mantener los originales. Ante fallo, conservar los recibos y no repetir. Si la cobertura resulta insuficiente, registrar ese límite sin inferir ausencia biológica. No hay nuevos resultados biológicos, PSI, comparación entre condiciones, rescate ni beneficio clínico. La PR 36 sigue abierta, sin fusionar.
