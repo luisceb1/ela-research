@@ -16,124 +16,158 @@ FIELDS = {
 CONDITIONS = {"control", "KD", "KD_ASO"}
 
 
-def check_contract(contract, contract_dir):
-    """Validate an explicitly reviewed original table. No statistical analysis."""
-    def blocked(reason):
-        return {"status": "blocked", "reason": reason, "effect_estimated": False}
+class _InputRejected(Exception):
+    """Expected input rejection; args[0] retains the original JSON reason."""
 
+
+def _validate_contract(contract):
+    """Check provenance and the fixed study contract before opening a file."""
     if not isinstance(contract, dict):
-        return blocked("Contract must be a JSON object")
+        raise _InputRejected("Contract must be a JSON object")
     if contract.get("schema_version") != "FR-K26-4d-v1":
-        return blocked("Unrecognized contract version")
+        raise _InputRejected("Unrecognized contract version")
     if contract.get("enabled") is not True:
-        return blocked(contract.get("disabled_reason", "Contract disabled"))
+        raise _InputRejected(contract.get("disabled_reason", "Contract disabled"))
     review = contract.get("independence_review", {})
     if not isinstance(review, dict):
-        return blocked("Independence review must be a JSON object")
+        raise _InputRejected("Independence review must be a JSON object")
     if (review.get("approved") is not True or
             not str(review.get("reviewer") or "").strip() or
             not str(review.get("evidence") or "").strip()):
-        return blocked("Biological independence requires a documented human review")
+        raise _InputRejected("Biological independence requires a documented human review")
     for field in ("data_file", "data_sha256", "source_url", "source_version"):
         if not str(contract.get(field) or "").strip():
-            return blocked("Missing provenance: " + field)
+            raise _InputRejected("Missing provenance: " + field)
     if (contract.get("study_version") != "K26-accepted-2026-10-06" or
             contract.get("panel") != "Fig4d" or
             contract.get("unit") != "pA_magnitude" or
             contract.get("expected_included_cells") != {"control": 34, "KD": 30, "KD_ASO": 25} or
             contract.get("minimum_independent_differentiations") != 3):
-        return blocked("Design changed: amend plan and contract before analysis")
+        raise _InputRejected("Design changed: amend plan and contract before analysis")
+
+
+def _read_source(contract, contract_dir):
     path = Path(contract["data_file"])
     if not path.is_absolute():
         path = Path(contract_dir) / path
     if not path.is_file():
-        return blocked("Original data file not available")
+        raise _InputRejected("Original data file not available")
     data = path.read_bytes()
     digest = hashlib.sha256(data).hexdigest()
     if digest != contract["data_sha256"]:
-        return blocked("SHA256 mismatch")
+        raise _InputRejected("SHA256 mismatch")
     try:
         with path.open(newline="", encoding="utf-8-sig") as handle:
             reader = csv.DictReader(handle)
             if not FIELDS.issubset(set(reader.fieldnames or [])):
-                return blocked("Missing required columns")
+                raise _InputRejected("Missing required columns")
             rows = list(reader)
     except (OSError, UnicodeError, csv.Error) as error:
-        return blocked("Cannot parse original CSV: " + str(error))
+        raise _InputRejected("Cannot parse original CSV: " + str(error))
     if not rows:
-        return blocked("Empty table")
+        raise _InputRejected("Empty table")
+    return digest, rows
+
+
+def _validate_cell_metadata(row, index):
+    if None in row:
+        raise _InputRejected("CSV row has more fields than its header")
+    required = FIELDS - {"exclusion_reason", "first_ASO_day", "KD_start_day"}
+    if row.get("included") == "false":
+        required -= {"value", "record_day"}
+    if any(not str(row.get(key) or "").strip() for key in required):
+        raise _InputRejected("Missing cell metadata at CSV line " + str(index))
+    if row["condition"] not in CONDITIONS or row["included"] not in {"true", "false"}:
+        raise _InputRejected("Unknown condition/inclusion flag")
+    if row["unit"] != "pA_magnitude":
+        raise _InputRejected("Unit/polarity unresolved; do not silently take abs or rescale")
+
+
+def _validate_recording(row):
+    """Validate inclusion, amplitude and timing; return whether the cell is included."""
+    # Failed recordings can have no amplitude or recording day. Retain their
+    # identities/reasons, but never invent measurements to pass the gate.
+    if row["included"] == "false":
+        if not row["exclusion_reason"].strip():
+            raise _InputRejected("Excluded cell without reason")
+        return False
+    if row["exclusion_reason"].strip():
+        raise _InputRejected("Included cell has exclusion reason")
+    try:
+        value, record = float(row["value"]), float(row["record_day"])
+        if not math.isfinite(value) or value < 0 or not math.isfinite(record):
+            raise _InputRejected("Nonfinite or negative amplitude / nonfinite time")
+        if not 60 <= record <= 70:
+            raise _InputRejected("Recording day differs from published DIV60-70 window")
+        # Raw sign must already be resolved and documented in source_version/review.
+        if row["condition"] != "control":
+            kd = float(row["KD_start_day"])
+            if kd != 45 or record <= kd:
+                raise _InputRejected("KD timing differs from selected experiment")
+        if row["condition"] == "KD_ASO":
+            if float(row["first_ASO_day"]) != 45:
+                raise _InputRejected("ASO timing differs from concurrent Fig4d design")
+        elif row["first_ASO_day"].strip():
+            raise _InputRejected("Unexpected active ASO in reference arm")
+        if row["condition"] == "control" and row["KD_start_day"].strip():
+            raise _InputRejected("Unexpected KD in healthy control")
+    except (ValueError, TypeError):
+        raise _InputRejected("Unparseable amplitude or timing")
+    return True
+
+
+def _validate_cells(rows):
     counts = Counter()
     blocks = defaultdict(set)
     seen_cells, seen_source_rows = set(), set()
     culture_map, coverslip_map = {}, {}
     excluded = 0
     for index, row in enumerate(rows, 2):
-        if None in row:
-            return blocked("CSV row has more fields than its header")
-        required = FIELDS - {"exclusion_reason", "first_ASO_day", "KD_start_day"}
-        if row.get("included") == "false":
-            required -= {"value", "record_day"}
-        if any(not str(row.get(key) or "").strip() for key in required):
-            return blocked("Missing cell metadata at CSV line " + str(index))
-        if row["condition"] not in CONDITIONS or row["included"] not in {"true", "false"}:
-            return blocked("Unknown condition/inclusion flag")
-        if row["unit"] != "pA_magnitude":
-            return blocked("Unit/polarity unresolved; do not silently take abs or rescale")
+        _validate_cell_metadata(row, index)
         # IDs must be globally scoped by the reviewed source map, not guessed suffixes.
         cell_key = (row["differentiation_id"], row["culture_id"], row["coverslip_id"], row["cell_id"])
         if cell_key in seen_cells or row["source_row"] in seen_source_rows:
-            return blocked("Duplicate cell or source row; repeated measures are not independent cells")
+            raise _InputRejected("Duplicate cell or source row; repeated measures are not independent cells")
         seen_cells.add(cell_key)
         seen_source_rows.add(row["source_row"])
         parent = (row["line_id"], row["clone_id"], row["differentiation_id"])
         culture = row["culture_id"]
         coverslip = row["coverslip_id"]
         if culture in culture_map and culture_map[culture] != parent:
-            return blocked("Culture assigned to conflicting differentiation/line")
+            raise _InputRejected("Culture assigned to conflicting differentiation/line")
         culture_map[culture] = parent
         slip_parent = (parent, culture, row["condition"])
         if coverslip in coverslip_map and coverslip_map[coverslip] != slip_parent:
-            return blocked("Coverslip assigned to conflicting parent or treatment")
+            raise _InputRejected("Coverslip assigned to conflicting parent or treatment")
         coverslip_map[coverslip] = slip_parent
-        # Failed recordings can have no amplitude or recording day. Retain their
-        # identities/reasons, but never invent measurements to pass the gate.
-        if row["included"] == "false":
-            if not row["exclusion_reason"].strip():
-                return blocked("Excluded cell without reason")
+        if not _validate_recording(row):
             excluded += 1
             continue
-        if row["exclusion_reason"].strip():
-            return blocked("Included cell has exclusion reason")
-        try:
-            value, record = float(row["value"]), float(row["record_day"])
-            if not math.isfinite(value) or value < 0 or not math.isfinite(record):
-                return blocked("Nonfinite or negative amplitude / nonfinite time")
-            if not 60 <= record <= 70:
-                return blocked("Recording day differs from published DIV60-70 window")
-            # Raw sign must already be resolved and documented in source_version/review.
-            if row["condition"] != "control":
-                kd = float(row["KD_start_day"])
-                if kd != 45 or record <= kd:
-                    return blocked("KD timing differs from selected experiment")
-            if row["condition"] == "KD_ASO":
-                if float(row["first_ASO_day"]) != 45:
-                    return blocked("ASO timing differs from concurrent Fig4d design")
-            elif row["first_ASO_day"].strip():
-                return blocked("Unexpected active ASO in reference arm")
-            if row["condition"] == "control" and row["KD_start_day"].strip():
-                return blocked("Unexpected KD in healthy control")
-        except (ValueError, TypeError):
-            return blocked("Unparseable amplitude or timing")
         counts[row["condition"]] += 1
         blocks[parent].add(row["condition"])
+    return counts, blocks, excluded
+
+
+def _validate_design(contract, counts, blocks):
     if dict(counts) != contract["expected_included_cells"]:
-        return blocked("Cell counts differ from publication; reconcile before analysis")
+        raise _InputRejected("Cell counts differ from publication; reconcile before analysis")
     # A differentiation key cannot silently join different lines or clones.
     differentiation_ids = [key[2] for key in blocks]
     if len(differentiation_ids) != len(set(differentiation_ids)):
-        return blocked("Differentiation ID has conflicting line/clone")
+        raise _InputRejected("Differentiation ID has conflicting line/clone")
     if len(blocks) < 3 or any(groups != CONDITIONS for groups in blocks.values()):
-        return blocked("Incomplete biological blocks; revise design without imputation")
+        raise _InputRejected("Incomplete biological blocks; revise design without imputation")
+
+
+def check_contract(contract, contract_dir):
+    """Validate an explicitly reviewed original table. No statistical analysis."""
+    try:
+        _validate_contract(contract)
+        digest, rows = _read_source(contract, contract_dir)
+        counts, blocks, excluded = _validate_cells(rows)
+        _validate_design(contract, counts, blocks)
+    except _InputRejected as error:
+        return {"status": "blocked", "reason": error.args[0], "effect_estimated": False}
     return {
         "status": "input_ready_for_design_review", "effect_estimated": False,
         "sha256": digest, "included_cell_counts": dict(sorted(counts.items())),
@@ -160,3 +194,4 @@ def main():
 
 if __name__ == "__main__":
     raise SystemExit(main())
+
