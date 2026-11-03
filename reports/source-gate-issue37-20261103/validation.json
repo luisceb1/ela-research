@@ -1,0 +1,44 @@
+{
+  "status": "passed",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "base_commit": "9076802fa78bfd1e4cdc97a3b92dd24a06d054c4",
+  "plan_commit": "a62a0d78541b1226907314168d02bdc9ad5af931",
+  "candidate_families": 3,
+  "accepted_full_contrast_sources": 0,
+  "prior_source_registry_rows": 15,
+  "new_unit_tests_passed": 4,
+  "compileall_selected_files": "passed",
+  "full_historical_suite_locally": "not_materialized_or_run;check_PR_CI_exact_head",
+  "inventory_sha256": "a42c22813d033baff2f73de07a894eb62f11624659790d3e6c5e3ef0cb74d8c8",
+  "inventory_git_blob": "e59107a1fcd05ab8af6b4aeea94d80f3c6172b84",
+  "reference_sha256": "ec28d8d0bdf2fd6352ede23be272f05a2a1cc1c891a4873ae93f99573ccc9c1a",
+  "reference_transcripts": 7,
+  "reference_distinct_junctions": 49,
+  "routes": {
+    "text15": {
+      "observed": 31,
+      "exact_matches": 30,
+      "no_exact_match": 1
+    },
+    "text8": {
+      "observed": 33,
+      "exact_matches": 32,
+      "no_exact_match": 1
+    }
+  },
+  "repeat_outputs_identical": true,
+  "repeat_output_sha256": {
+    "comparison.json": "c947f79d4247ad15efc1bfa97e9c1352181ace037e0a11c3f20f23a14d1923d0",
+    "junctions.tsv": "5ca9d9b6f8011486c0751194ed1b91c3ecd75ae6da48fec97fb779e7625a2ee9"
+  },
+  "target_counts_unchanged": [
+    1,
+    0,
+    0
+  ],
+  "minimum_target_groups_unchanged": 20,
+  "pilot_closed": true,
+  "new_alignment_or_FASTQ_BAM_payloads": 0,
+  "WSL_files_independently_reverified": false,
+  "costs_contacts_or_merge": false
+}

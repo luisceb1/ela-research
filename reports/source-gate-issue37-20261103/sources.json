@@ -1,0 +1,439 @@
+{
+  "date": "2026-11-03",
+  "base_commit": "9076802fa78bfd1e4cdc97a3b92dd24a06d054c4",
+  "plan_commit": "a62a0d78541b1226907314168d02bdc9ad5af931",
+  "primary_sources": [
+    {
+      "id": "S1",
+      "family": "seddighi2024",
+      "doi": "10.1126/scitranslmed.adg7162",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11325748/",
+      "locator": "Data and materials availability; methods not fully retrieved",
+      "read_mode": "indexed_primary_text; live page recaptcha; EuropePMC XML500",
+      "facts": [
+        "Disponibilidad remite RNA-seq/Ribo-seq/proteómica a AD Workbench.",
+        "Zenodo 10479046 descrito como código; suplemento Data files S1-S5.xlsx de88.7KB en índice; no descargado."
+      ],
+      "tiny_quote": "All pipelines and codes used are deposited on Zenodo",
+      "editorial_notices": "field_not_returned_by_scite; absence_not_certified"
+    },
+    {
+      "id": "S2",
+      "family": "seddighi2024",
+      "url": "https://zenodo.org/api/records/10479046",
+      "locator": "metadata, files, related_identifiers",
+      "facts": [
+        "Software v1; licencia CC-BY-4.0; un ZIP de8083304bytes; no descargado.",
+        "Enlace de versión a NIH-CARD/proteogenomic-pipeline/tree/v1."
+      ],
+      "payload_sha256": "f560d219225de233ed050e289da15b53b3f389fc575b9960c2f1820b17a9b158"
+    },
+    {
+      "id": "S3",
+      "family": "seddighi2024",
+      "url": "https://github.com/NIH-CARD/proteogenomic-pipeline/tree/v1",
+      "tree_sha": "8a1606bef9e1637c745828e997f3f39e79342129",
+      "truncated": false,
+      "files": [
+        {
+          "path": "ACTL6B-chr7-100650643-100655019-1.png",
+          "sha": "4f718ef4817889635d87e8c4c70be09aaf880c71",
+          "size": 105866
+        },
+        {
+          "path": "ADCY8-chr8-130904042-130908924-1.png",
+          "sha": "df867d8e3e24e1177ce367f555266073a3544063",
+          "size": 103961
+        },
+        {
+          "path": "Automated_Proteogenomic_Pipeline-A.png",
+          "sha": "27f1c5c8a656c9835e6b728d67ad71907fc53585",
+          "size": 150186
+        },
+        {
+          "path": "Automated_Proteogenomic_Pipeline.png",
+          "sha": "b5faba9efd6904bbb1afbf5640f1598116acdfd6",
+          "size": 65954
+        },
+        {
+          "path": "CCDC57-chr17_82134194-82157747.pdf",
+          "sha": "6be9a472c906016d8b73ccc01f255f6385498c90",
+          "size": 1282031
+        },
+        {
+          "path": "CELSR3-chr3-48650289-48650480-1.png",
+          "sha": "840a1214ef5148112d739889f98c7de5732d5186",
+          "size": 138406
+        },
+        {
+          "path": "CENPBD1P1-chr19_58586356-58598966.pdf",
+          "sha": "289e568db8c05cf5b6f57bd2e79bb7250147a90b",
+          "size": 1220038
+        },
+        {
+          "path": "CEP131-chr17_81207239-81208144.png",
+          "sha": "375ec4935bdc2525b14c81444f833506442fbeb6",
+          "size": 97929
+        },
+        {
+          "path": "ELAPOR1-chr1_109197654-109198572.png",
+          "sha": "412ed7956bb37326a963f0c40bf2806cd481d91a",
+          "size": 108954
+        },
+        {
+          "path": "FBN3-chr19_8118452-8118897.png",
+          "sha": "dc37b2606448000713f2bb43745ea31aeb49daef",
+          "size": 129548
+        },
+        {
+          "path": "GTPBP6-chrX-315020-316913-1.png",
+          "sha": "f57e70211f50c59d877f936adcdf024d96546db6",
+          "size": 212549
+        },
+        {
+          "path": "HDGFL2-chr19-4491835-4492015-1.png",
+          "sha": "3fc39dc1603103fa21087f1195bc4c93b29adb0f",
+          "size": 125001
+        },
+        {
+          "path": "ISL2-chr15-76337967-76340275-1.png",
+          "sha": "0e0e40757f009aa2931932c37b3e1c7b8ce7aba2",
+          "size": 141440
+        },
+        {
+          "path": "KIF17-chr1-20686126-20690187-1.png",
+          "sha": "4da53a8ba14a1a647c9a8b5cc9c4aa9ad9ebf4eb",
+          "size": 146806
+        },
+        {
+          "path": "Part_A.jpg",
+          "sha": "88a30791327dfbd90dd1ee62e89602297870d021",
+          "size": 197522
+        },
+        {
+          "path": "Part_B.jpg",
+          "sha": "cf327aa2af3979961c4776cf2adb052d38dfb183",
+          "size": 133847
+        },
+        {
+          "path": "Part_C.jpg",
+          "sha": "9d604b88747fbfe97aac4254fdd6d3d7f3cc8804",
+          "size": 132184
+        },
+        {
+          "path": "README.md",
+          "sha": "fb06f63d1d410645ce12b043b694be0e07cb2ead",
+          "size": 25741
+        },
+        {
+          "path": "ce_HDGFL2-chr19-4491835-4492015-1.jpg",
+          "sha": "e4827d93cfec3a74fc79048c490c151dfa1b5590",
+          "size": 75533
+        },
+        {
+          "path": "ce_up_CELSR3-chr3-48650289-48650480-1.jpg",
+          "sha": "958dd730a63fdf79eed4a7ba35f8d4a5171cf7fe",
+          "size": 77379
+        },
+        {
+          "path": "ce_up_dn_ADCY8-chr8-130904042-130908924-1.jpg",
+          "sha": "a730c6056f138a15ad78baf51d43bc303fac76c8",
+          "size": 81834
+        },
+        {
+          "path": "deseq/gene_count_matrix.csv",
+          "sha": "0adf5f6f64991dc2e4fb5c0d79c99818ed0038c3",
+          "size": 7219943
+        },
+        {
+          "path": "deseq/new_samples.csv",
+          "sha": "f7e08f64119facf4ee1d725dd26bc632509a88ca",
+          "size": 780
+        },
+        {
+          "path": "deseq/run_deseq.R",
+          "sha": "a3200a83a12839a1d1d35b3e88c7b3c2cbf7ea35",
+          "size": 1496
+        },
+        {
+          "path": "deseq/run_stringtie_exc.sh",
+          "sha": "21380163d160c7fb3070f35895cf1835e3f262fb",
+          "size": 3784
+        },
+        {
+          "path": "es-ds-ISL2-chr15-76337967-76340275-1.jpg",
+          "sha": "fcd8c6d4fab9ff6eba9b9b2f55cda45ee80f7bc0",
+          "size": 84924
+        },
+        {
+          "path": "es_ue_GTPBP6-chrX-315020-316913-1.jpg",
+          "sha": "6aec730094b351c549641bf23565da10b5e29a24",
+          "size": 85299
+        },
+        {
+          "path": "full_pipeline.jpg",
+          "sha": "e76037bfce163c4fcee3d1a470c559a848a60505",
+          "size": 209748
+        },
+        {
+          "path": "pgp-a/Auto_CoverV4_layered_intronV3.R",
+          "sha": "d73654f336c900babe51893dde8d92cab1682b41",
+          "size": 23104
+        },
+        {
+          "path": "pgp-a/TxEnsDB103_layeredV6.R",
+          "sha": "4a999d963908ba236938a8cafb8c9e6fd2bf5a89",
+          "size": 23686
+        },
+        {
+          "path": "pgp-a/abundant_tx.R",
+          "sha": "51e2c511bcbafc9a04762952746a81dfacd37b29",
+          "size": 2172
+        },
+        {
+          "path": "pgp-a/ggsashimi_txV3.py",
+          "sha": "fd0f2c872d98771a62dbe8f7ab59aa881e496507",
+          "size": 70045
+        },
+        {
+          "path": "pgp-a/palette.txt",
+          "sha": "e7ba274c88fffcb58d9de384f3b78de8fb8aea53",
+          "size": 31
+        },
+        {
+          "path": "pgp-a/pgp-a.sh",
+          "sha": "eabdd8a689dfec5252c84ef7d0853c5f2e0808b1",
+          "size": 70141
+        },
+        {
+          "path": "pgp-a/run_sashimiV1.sh",
+          "sha": "015d232f7cf398d9ea93f9fc091e98d498022c8d",
+          "size": 62154
+        },
+        {
+          "path": "pgp-b.jpg",
+          "sha": "c850aa432e53aefdf5af1323da5d55c6a73a277b",
+          "size": 138055
+        },
+        {
+          "path": "pgp-b/Auto_CoverV4_layered_intronV3.R",
+          "sha": "d73654f336c900babe51893dde8d92cab1682b41",
+          "size": 23104
+        },
+        {
+          "path": "pgp-b/TxEnsDB103_layeredV6.R",
+          "sha": "1150430d35043cd0a4427e66636e6099c81d8591",
+          "size": 23691
+        },
+        {
+          "path": "pgp-b/check_aaV4_allFrames.R",
+          "sha": "3949b4611aa9b2abf12eadcc29ad003129b7474f",
+          "size": 27517
+        },
+        {
+          "path": "pgp-b/esV5_layered_CDSV3.sh",
+          "sha": "305f4b37a3f4be81baa768a9c2eb5b5a2afd72a6",
+          "size": 38492
+        },
+        {
+          "path": "pgp-b/get_orf_cds.R",
+          "sha": "6a0a67c3ff0a669c60d8a64ba814c571d561a3c3",
+          "size": 14607
+        },
+        {
+          "path": "pgp-b/ggsashimi_txV3.py",
+          "sha": "fd0f2c872d98771a62dbe8f7ab59aa881e496507",
+          "size": 70045
+        },
+        {
+          "path": "pgp-b/merge_sashimis.py",
+          "sha": "fe073f62df48f5bfd8604c247b0cba327b63cbf1",
+          "size": 533
+        },
+        {
+          "path": "pgp-b/palette.txt",
+          "sha": "e7ba274c88fffcb58d9de384f3b78de8fb8aea53",
+          "size": 31
+        },
+        {
+          "path": "pgp-b/pgp_b.sh",
+          "sha": "72058050075a078694bd2c3eeaf1a51281ce442b",
+          "size": 87572
+        },
+        {
+          "path": "pgp-b/pgp_b_ce_ir.sh",
+          "sha": "55f2518b0796c4d49c0ebd58dfa93aeee0116b44",
+          "size": 32958
+        },
+        {
+          "path": "pgp-b/run_sashimiV1.sh",
+          "sha": "015d232f7cf398d9ea93f9fc091e98d498022c8d",
+          "size": 62154
+        },
+        {
+          "path": "pgp-c.jpg",
+          "sha": "97083f9027ca07568fe406186e5b082576e8d399",
+          "size": 133770
+        },
+        {
+          "path": "pgp-c/TxEnsDB103_layeredV6.R",
+          "sha": "6ddf6ec4bf594d0b90c2ab5a0ebc9df2a85ed0db",
+          "size": 23329
+        },
+        {
+          "path": "pgp-c/ggsashimi_txV3.py",
+          "sha": "fd0f2c872d98771a62dbe8f7ab59aa881e496507",
+          "size": 70045
+        },
+        {
+          "path": "pgp-c/palette.txt",
+          "sha": "e7ba274c88fffcb58d9de384f3b78de8fb8aea53",
+          "size": 31
+        },
+        {
+          "path": "pgp-c/pgp-c_TxEnsDB103_layeredV4_PEAKS.R",
+          "sha": "6415093a78745cb7acd73b81a6ce9df61d991a3b",
+          "size": 19530
+        },
+        {
+          "path": "pgp-c/pgp-c_mappingV3.R",
+          "sha": "5770ce14aa85a575d5a71854971512c25c8a192a",
+          "size": 75641
+        },
+        {
+          "path": "pgp-c/pgp_c.sh",
+          "sha": "b6bb8f7077d0a15e3db2be73d73affe6fe56a4d3",
+          "size": 4890
+        },
+        {
+          "path": "pgp-c/run_sashimiV1.sh",
+          "sha": "a50e6558b4162cdbe043c5cc02fac1ea0cd738e0",
+          "size": 61289
+        },
+        {
+          "path": "pgpV_newdata.ipynb",
+          "sha": "83f488ac51a5c96f1aab8b85439d283fedb5105c",
+          "size": 33461
+        },
+        {
+          "path": "pgp_a_flowchart.jpg",
+          "sha": "66d01d5a29c3bdf09797fe61625bffe9cf33b31b",
+          "size": 310094
+        },
+        {
+          "path": "pgp_env.yml",
+          "sha": "8e00129b78d5d3cdfe70a49702c18dab77fbf9f6",
+          "size": 7573
+        },
+        {
+          "path": "rna_seq/README_ BulkRNASeq Analysis_Pipeline.pdf",
+          "sha": "1748d4465e701db3b3245687b9357aecda35f056",
+          "size": 109598
+        },
+        {
+          "path": "rna_seq/run_deseq2-2.R",
+          "sha": "926de634fa293a42b5aa189e6e3efbe3f5376b26",
+          "size": 1651
+        },
+        {
+          "path": "rna_seq/run_rna_seqV3.sh",
+          "sha": "d91bd518ea72a0a6e37ccbba1fed6071555b50d7",
+          "size": 4909
+        }
+      ],
+      "readme_blob": "fb06f63d1d410645ce12b043b694be0e07cb2ead",
+      "facts": [
+        "Árbol completo sin BAM/BAI ni archivos de cuentas de uniones identificables por nombre; no payload gen_count.",
+        "README requiere BAM/BAI y all_bams.tsv aportados por usuario; no proporciona un manifiesto de estas entradas.",
+        "README usa GRCh38.p13, GENCODE38 y Ensembl103; no prueba versión ejecutada de un archivo de cuentas.",
+        "18BAM/~180GB y120GBRAM/~2d son ejemplo/benchmark de autores para pipeline completo; no coste nuestro ni número de unidades independientes."
+      ]
+    },
+    {
+      "id": "S4",
+      "family": "seddighi2024",
+      "url": "https://fair.addi.ad-datainitiative.org/#/data/datasets/mis_spliced_transcripts_generate_de_novo_proteins_in_tdp_43_related_als_ftd_00005",
+      "read_mode": "web_shell_only",
+      "facts": [
+        "Página pública muestra requisito JavaScript; no manifiesto o archivo verificable recuperado.",
+        "No se certifica autenticación obligatoria, inexistencia de archivos, contenido BAM o tamaño del depósito."
+      ]
+    },
+    {
+      "id": "S5",
+      "family": "irwin2024",
+      "doi": "10.1038/s41591-023-02788-5",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10878965/fullTextXML",
+      "locator": "Data availability; references7,11; supplementary index",
+      "payload_sha256": "3c8fbb0ee4986422189f683e96749b3e74e0bd68fa1638c1a4de6953079c37d0",
+      "tiny_quote": "SRP166282; SRP057819",
+      "facts": [
+        "RNA-seq analizado remite a SRP166282(Klim2019) y SRP057819(Ling2015).",
+        "No descargar Supplementary Data1: índice lo identifica como datos de participantes; source data de Fig1 son inmunoblots/geles.",
+        "NAUC/ASCOT es expresión, no soporte de uniones objetivo.",
+        "Corrección explícita de primer HDG F en Methods RT-PCR, DOI10.1038/s41591-024-02966-z; no es retractación ni matriz UNC13A."
+      ]
+    },
+    {
+      "id": "S6",
+      "family": "irwin2024",
+      "url": "https://www.ncbi.nlm.nih.gov/sra?term=SRP166282",
+      "locator": "18public RNA paired Illumina records, GSM3439289–GSM3439306",
+      "facts": [
+        "Confirma accesiones del conjunto Klim ya auditado; no nouvelle cohorte ni nueva replicación.",
+        "Conteo de registros técnicos no acredita unidades independientes o lotes para nuestro contraste."
+      ]
+    },
+    {
+      "id": "S7",
+      "family": "baughn2023",
+      "doi": "10.1126/science.abq5622",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10148063/",
+      "locator": "Data and materials availability; Fig3; Methods statistics",
+      "read_mode": "indexed_primary_availability_and_scite_fulltext_segments",
+      "tiny_quote": "All other information is available in the manuscript or the supplementary material.",
+      "facts": [
+        "Disponibilidad remite al manuscrito/suplemento y MTAs, no enlaza aquí matriz de uniones/BAM o accessionRNAseq.",
+        "SuplementoDOCX7.5MB según índice, no descargado bajo este límite.",
+        "Fig3 describe cultivos diferenciados/tratados independientes; esas unidades de RT-qPCR/inmunoblot no certifican réplicas RNAseq UNC13A.",
+        "No se afirma ausencia universal de RNAseq o de otros archivos no inspeccionados."
+      ],
+      "editorial_notices": "field_not_returned_by_scite; absence_not_certified"
+    },
+    {
+      "id": "S8",
+      "family": "annotation",
+      "url": "https://api.genome.ucsc.edu/getData/track?genome=hg38;track=ncbiRefSeq;chrom=chr19;start=17600000;end=17690000",
+      "track": "ncbiRefSeq",
+      "assembly": "hg38",
+      "release": "GCF_000001405.40-RS_2025_08",
+      "data_time": "2025-08-13T08:30:38",
+      "payload_bytes": 8358,
+      "payload_sha256": "ec28d8d0bdf2fd6352ede23be272f05a2a1cc1c891a4873ae93f99573ccc9c1a",
+      "facts": [
+        "AnotaciónNCBI distinta deGENCODEv47; proveedorUCSC/assembly compartidos, no independencia biológica.",
+        "7transcritosUNC13A,49uniones distintas; genePred0basedhalfopen."
+      ]
+    },
+    {
+      "id": "S9",
+      "family": "annotation",
+      "url": "https://genome.ucsc.edu/cgi-bin/hgTrackUi?db=hg38&g=ncbiRefSeq",
+      "locator": "trackdescription/release/lastupdate"
+    },
+    {
+      "id": "S10",
+      "family": "annotation",
+      "url": "https://genome.ucsc.edu/FAQ/FAQformat.html#format9",
+      "locator": "genePred table format; genomic exon start/end"
+    }
+  ],
+  "decision": "0 accepted for the full UNC13A contrast; bounded cycle closed",
+  "next_only": "Obtener un manifiesto numérico/técnico concreto del depósito Seddighi/ADWB que enlace uniones o BAM/BAI con bibliotecas-condiciones-unidades-lotes; no otra búsqueda bibliográfica, contacto automático o descarga.",
+  "limits": [
+    "No recuento de lecturas nuevas o cambio de cobertura",
+    "Desconocido no equivale a cero o pseudorreplicación",
+    "Metadatos de artículo/código no son QC de bibliotecas",
+    "No tablas clínicas o genotipos individuales recuperados"
+  ]
+}

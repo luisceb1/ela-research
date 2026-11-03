@@ -1,5 +1,11 @@
 # Registro maestro de evidencia — actualizado 01/11/2026
 
+## Incorporación issue #37 — 03/11/2026
+
+PR #36 fusionada en 9076802. Selección posterior prefijada de tres familias (Seddighi/Irwin/Baughn): ninguna aceptada para el contraste directo UNC13A con unidades verificables. `reports/source-gate-issue37-20261103/REPORT.md`, tabla y fuentes; búsqueda cerrada. Puerta pendiente única: manifiesto concreto Seddighi/ADWB, sin contactos o descarga automática.
+
+RefSeq independiente de GENCODE como anotación: 7 transcritos/49 uniones; 30/31 y 32/33 coincidencias del inventario sellado. Una de las dos uniones unitarias antes no contenidas en caché coincide con NM_001387022.1 y XM_017026502.2. Sin observación biológica nueva, cobertura añadida o descubrimiento. Piloto cerrado [1,0,0]<20 y STMN2/PAPA12/12 previos sin cambios. Los registros inferiores son históricos; STATE/BACKLOG fijan el bloqueo de continuación.
+
 
 ## Última incorporación documental
 

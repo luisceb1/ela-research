@@ -1,0 +1,70 @@
+{
+  "python_receipts": [
+    {
+      "id": "baughn-html",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10148063/",
+      "started_utc": "2026-11-03T15:53:21Z",
+      "cap_bytes": 1000000,
+      "status": 203,
+      "final_url": "https://pmc.ncbi.nlm.nih.gov:443/articles/PMC10148063/",
+      "body_bytes": 5581,
+      "sha256": "d98fb86abfd850c4b6365b8ce597747802afaff63a9ae9a648d08031956546e3",
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "id": "baughn",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10148063/fullTextXML",
+      "started_utc": "2026-11-03T15:52:44Z",
+      "cap_bytes": 1500000,
+      "error": "HTTPError: HTTP Error 500: Internal Server Error"
+    },
+    {
+      "id": "irwin",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10878965/fullTextXML",
+      "started_utc": "2026-11-03T15:52:44Z",
+      "cap_bytes": 1500000,
+      "status": 200,
+      "content_type": "application/xml",
+      "body_bytes": 188383,
+      "sha256": "3c8fbb0ee4986422189f683e96749b3e74e0bd68fa1638c1a4de6953079c37d0"
+    },
+    {
+      "id": "seddighi-html",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11325748/",
+      "started_utc": "2026-11-03T15:53:21Z",
+      "cap_bytes": 1000000,
+      "status": 203,
+      "final_url": "https://pmc.ncbi.nlm.nih.gov:443/articles/PMC11325748/",
+      "body_bytes": 5581,
+      "sha256": "72cb9b351bfe372ddf4f1005e3e848374a0249f244c47c32b8b24890493e7ffe",
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "id": "seddighi",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11325748/fullTextXML",
+      "started_utc": "2026-11-03T15:52:44Z",
+      "cap_bytes": 1500000,
+      "error": "HTTPError: HTTP Error 500: Internal Server Error"
+    },
+    {
+      "id": "seddighi-zenodo",
+      "url": "https://zenodo.org/api/records/10479046",
+      "started_utc": "2026-11-03T15:54:02Z",
+      "cap_bytes": 250000,
+      "status": 200,
+      "body_bytes": 3684,
+      "sha256": "f560d219225de233ed050e289da15b53b3f389fc575b9960c2f1820b17a9b158",
+      "content_type": "application/json"
+    }
+  ],
+  "annotation": {
+    "url": "https://api.genome.ucsc.edu/getData/track?genome=hg38;track=ncbiRefSeq;chrom=chr19;start=17600000;end=17690000",
+    "status": 200,
+    "body_bytes": 8358,
+    "sha256": "ec28d8d0bdf2fd6352ede23be272f05a2a1cc1c891a4873ae93f99573ccc9c1a",
+    "server_download_time": "2026:11:03T15:52:13Z",
+    "response_is_annotation_not_read_support": true
+  },
+  "tool_requests_without_transport_byte_measurement": "See SEARCH_LOG.md; no fabricated status or byte count",
+  "bulk_payloads_downloaded": 0
+}
