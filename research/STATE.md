@@ -1,5 +1,13 @@
 # Estado vigente — 03/11/2026
 
+## Decisión vigente: control completado; auditoría local exploratoria preparada — 03/11/2026
+
+Luis aporta sello técnico del control: 12.709.444 pares validados, prefijo de 1.000.000; soporte canónico 1/crípticos 0/0 frente a mínimo 20, igual a anclaje 8. HISAT2 92,14 % global, 85,19 % concordantes únicos. Supervisor limpio, 713,146 s, RSS pico muestreado 4.882.288.640 bytes. Cargo 7.322.807.977 bytes constante. Evidencia de usuario: `reports/ctrl-local-locus-audit-20261103/operator-control-evidence.json`.
+
+Puerta de cobertura cerrada. Preparada auditoría del mismo prefijo certificado, sin descargar ni copiar otra vez los FASTQ completos: inventario de uniones en chr19:[17600000,17690000), ambos signos/anclajes y descartes regionales. Exige replay idéntico de conteos/QC originales; geometría cacheada comprobada. Es exploratoria, no cambia objetivos ni habilita TDP.
+
+Nueva ventana propuesta de 2100 s, CLOCK_BOOTTIME, 2 CPU/RSS 6 GiB muestreada/AS 8 GiB; 27 GiB acumulados en trece árboles y reserva de 8 GiB. Plan deshabilitado y SHA exacto con aceptación local. Fuentes históricas intactas. Siguiente tarea: ejecutar descriptor en WSL según `research/plans/2026-11-03-unc13a-local-locus-audit.md`, recibir inventario y revisar explicaciones. PR 36 abierta sin fusionar. Cabeceras inferiores históricas.
+
 ## Decisión vigente: piloto del control local preparado — 03/11/2026
 
 Nuevo ejecutor aislado `offline_control_pilot.py`: reutiliza índice y R1/R2 sellados, verifica copias locales, valida todos los pares y procesa un prefijo fijo de un millón. Conserva HISAT2, el método pareado y el umbral de 20 grupos. Sin fases HTTP ni TDP; cargo constante de 7.322.807.977 bytes, incluida la reserva manual previa.

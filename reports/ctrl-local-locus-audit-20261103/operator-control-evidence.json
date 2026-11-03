@@ -1,0 +1,79 @@
+{
+  "source": "operator-pasted PowerShell outputs; no remote filesystem access",
+  "date": "2026-11-03",
+  "commit": "830a35d66f4bc7f2f1d86bf3a0bb1427d24d2d1a",
+  "status": "sealed_offline_control_pilot",
+  "technical_status": "coverage_insufficient",
+  "pairs_scanned": 12709444,
+  "prefix_pairs": 1000000,
+  "coverage": {
+    "anchor": 15,
+    "fragment_union": 1,
+    "event_support_sum": 1,
+    "minimum": 20,
+    "adequate": false
+  },
+  "counts_primary": [
+    {
+      "event": [
+        "chr19",
+        17641556,
+        17642844,
+        "-"
+      ],
+      "fragments": 1
+    },
+    {
+      "event": [
+        "chr19",
+        17641556,
+        17642413,
+        "-"
+      ],
+      "fragments": 0
+    },
+    {
+      "event": [
+        "chr19",
+        17642541,
+        17642844,
+        "-"
+      ],
+      "fragments": 0
+    }
+  ],
+  "sensitivity_anchor8_counts": [
+    1,
+    0,
+    0
+  ],
+  "qc_anchor8": {
+    "accepted_pairs": 850834,
+    "excluded:event_strand": 1111,
+    "excluded:mapping_quality": 69461,
+    "excluded:pair_flags": 78594,
+    "groups": 1000000,
+    "nonprimary_excluded": 367058
+  },
+  "hisat2": {
+    "pairs": 1000000,
+    "concordant_zero": 78594,
+    "concordant_exactly_once": 851945,
+    "concordant_multiple": 69461,
+    "overall_alignment_percent": 92.14
+  },
+  "supervision": {
+    "exit_code": 0,
+    "violation": null,
+    "peak_group_rss_bytes_sampled": 4882288640,
+    "live_group_members_after_cleanup": [],
+    "elapsed_seconds": 713.146128068
+  },
+  "new_transfer_bytes": 0,
+  "cumulative_body_bytes": 7322807977,
+  "manual_browser_reserved_body_bytes": 997549457,
+  "manual_browser_exact_body_known": false,
+  "remaining_body_budget_bytes": 4677192023,
+  "raw_execution_ready": false,
+  "limits": "Full primary-QC routes were not pasted; original small local receipts will be checked by the audit."
+}
