@@ -1,5 +1,15 @@
 # Backlog vigente — 03/11/2026
 
+## Decisión vigente: CTRL_R1 sellado; piloto nuevo desde recuperación — 03/11/2026
+
+Luis aporta sealed_verified_ctrl_r1:960856963B/MD5ed58daa011d6508a3e8d1f05bc39fc29/SHA298a8b4769fcd5434f883706c873d56795c5a20d855917d80a391b2e5c38beff. Cargo5318543809B/saldo6681456191B. Evidencia de usuario, sin tiempos/RSS de recuperación aportados ni acceso remoto. reports/recovered-read-pilot-20261103/user-reported-recovery-seal.json.
+
+Nuevo recovered_read_pilot.py aislado conserva intactos trabajadores/identidades históricos. Valida cadena, copia/hashCTRL_R1 sinHTTP y reutiliza motor pareado/índice/argv/streamPE. Sólo3HTTPrestantes5388846918B, CTRL_R2 antes decomputeCTRL;TDP condicionado a cobertura20. Cargo final mínimo10707390727B bajo12GB. Contador y tiempos históricos se heredan, no se resetearán ni reabrirá root fallido.
+
+Nueva ventana propuesta7200s/1800s transferencias incluyendo copia local≤180s; sockets30s. Disco propuesto27GiB(antes25)/artefactos18GiB(antes16) para preservar parciales/copia960MB;reserva8GiB y demáscapsCPU/RAM/temporales conservados. RequiereSHA exacto y --accept-new-window-and-disk. Preparación no autoriza.
+
+Validación en reports/recovered-read-pilot-20261103; fixtures de copia/corrupción/cargos/orden/cobertura/sello/HTTPtimeout yCLInegativo antesdered. SinHTTP humano/alineamiento enhost delagente. Siguiente tarea única: emitir plan con research/runbooks/2026-11-03-recovered-read-pilot-powershell.md yrevisarJSON/recursos antes deaceptar. Sin conclusiones biológicas/merge; cabeceras inferiores históricas.
+
 ## Decisión vigente: timeout de CTRL_R1; recuperación del mate aislado — 03/11/2026
 
 Luis aceptó plan15f85f9d… en49f37a0. Índice preflight verificado; CTRL_R1 timeout, supervisor exit1/sinviolación/grupo vacío. Recibo354.631.727B, cargo nuevo356.515.840B, total4.712.318.573B. Diferencia1.884.113B sin reembolso;4.272,2037699222565s históricos. No otros mates/alineamientos. Evidencia en reports/ctrl-r1-recovery-20261103/user-reported-failure.json.

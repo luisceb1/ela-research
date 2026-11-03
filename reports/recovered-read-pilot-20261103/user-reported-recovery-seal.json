@@ -1,0 +1,21 @@
+{
+  "evidence": "user-provided terminal; no direct host access",
+  "seal": {
+    "status": "sealed_verified_ctrl_r1",
+    "sha256": {
+      "recovery-plan.json": "e462886c47e9e95a94b8e96b4e52813069ace57c7d5bbf7b72dde0d12c3d43fe",
+      "operator-acceptance.json": "2830128e9feaea5aee9d75105c63702d8609fb1203c2e253d6385d2d9d100fa0",
+      "recovery-state.json": "823bbe93a96f17dbede78b4347a2e3e35d4b025f729637209f5a6b22b2b065c2",
+      "range-attempt.json": "c9f97b7f5c1525ad34d35475544416d36b51ad48dc8171454b2a0d14e72bf60a",
+      "recovery-result.json": "2ca3dd25ae43ebf9a0a8a53499430f45c54fd00abaa1b7058598d2b84b06e432",
+      "supervision/run.json": "d47dd965d1cc568cdd5716c7150f8989e5e9bd38d83f28ea49a399c3982803ef"
+    },
+    "file": "CTRL_R1.fastq.gz",
+    "file_sha256": "298a8b4769fcd5434f883706c873d56795c5a20d855917d80a391b2e5c38beff",
+    "file_md5": "ed58daa011d6508a3e8d1f05bc39fc29",
+    "file_bytes": 960856963,
+    "cumulative_body_bytes": 5318543809,
+    "remaining_body_budget_bytes": 6681456191,
+    "raw_execution_ready": false
+  }
+}
