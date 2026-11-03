@@ -1,0 +1,53 @@
+{
+  "schema": "ela-source-gate-v1",
+  "date": "2026-11-03",
+  "base_commit": "9076802fa78bfd1e4cdc97a3b92dd24a06d054c4",
+  "issue": 37,
+  "question": "¿Alguna de estas tres familias aporta cuentas directas UNC13A por biblioteca o alineamientos procesados públicos, coordenadas verificables y >=3 unidades biológicas independientes por condición?",
+  "candidate_families": [
+    {
+      "id": "seddighi2024",
+      "doi": "10.1126/scitranslmed.adg7162",
+      "reason": "Perturbación TDP-43 y transcriptómica de cultivos; artículo ya conocido, auditoría de acceso a uniones no cerrada en los registros consultados."
+    },
+    {
+      "id": "irwin2024",
+      "doi": "10.1038/s41591-023-02788-5",
+      "reason": "Examinar únicamente brazo de cultivos y reutilización con Seddighi; no acceder a datos clínicos. La bibliografía previa no constituye auditoría de cuentas."
+    },
+    {
+      "id": "baughn2023",
+      "doi": "10.1126/science.abq5622",
+      "reason": "Cultivos neuronales y perturbación TDP-43; comprobar si hay transcriptómica de uniones reutilizable. No repetir lectura del rescate funcional."
+    }
+  ],
+  "prediction": "Al menos una familia supera todos los requisitos; si no, cerrar ciclo sin cuarto candidato.",
+  "acceptance": [
+    "Público, versionado y atribución; solo cultivos/metadatos técnicos",
+    "Uniones canónica y crípticas UNC13A por biblioteca o BAM/CRAM públicos, no TPM/BW/PAPA",
+    "GRCh38/hebra/convención verificables, no traslación de coordenadas por semejanza",
+    "Cobertura objetivo >=20 grupos bajo contrato compatible o explícitamente no certificada",
+    "Mapa biblioteca-condición-unidad-lote y >=3 unidades independientes por condición",
+    "Perturbación TDP-43 y dependencia con estudios previos verificables"
+  ],
+  "stops": [
+    "No cuarto candidato ni consultas generales para suplir un rechazo",
+    "No inferencia, PSI, descarga masiva, FASTQ/BAM payload, contactos o costes",
+    "Ausencia de archivo verificable no prueba inexistencia ni cero biológico",
+    "No retomar piloto/control completo/TDP ni cambiar umbral"
+  ],
+  "bounded_access": {
+    "scope": "Índices primarios, métodos de disponibilidad y metadatos técnicos; pequeños archivos procesados de cultivos solo si formato/tamaño acotados y sin información individual sensible",
+    "max_new_metadata_body_bytes": 5000000,
+    "max_requests_per_family": 8,
+    "full_reads_or_alignments": false
+  },
+  "annotation": {
+    "purpose": "Contrastar inventario ya cerrado con anotación pública independiente; no recontar lecturas ni promover dos uniones unitarias",
+    "candidate": "UCSC ncbiRefSeq hg38 del locus completo, separado de GENCODE v47; proveedor UCSC compartido, anotación NCBI distinta",
+    "assembly": "hg38",
+    "chrom": "chr19",
+    "start0": 17600000,
+    "end0": 17690000
+  }
+}

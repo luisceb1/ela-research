@@ -1,5 +1,9 @@
 # Próxima pregunta y criterio de entrada — 30/10/2026
 
+## Cierre del ciclo issue #37 — 03/11/2026
+
+Lista prefijada Seddighi2024 / Irwin2024 / Baughn2023, commit a62a0d7, posterior al cierre del piloto y merge #36. Tres familias auditadas; ninguna aceptada para el contraste completo. `reports/source-gate-issue37-20261103` conserva tabla, fuentes, búsquedas y anotación RefSeq. No añadir un cuarto candidato o repetir estas consultas. Única continuación bloqueada: manifiesto numérico/técnico concreto de Seddighi–AD Workbench, sin contactar o descargar automáticamente. Unidades desconocidas no son réplicas certificadas ni demuestran pseudorreplicación. Solo una fuente aceptada habilita redactar el plan prospectivo específico. Los criterios originales siguientes y los ciclos cerrados se conservan.
+
 ## Pregunta
 
 En un conjunto independiente de cultivos publicado, ¿la pérdida de TDP-43 aumenta el uso de una unión críptica definida de UNC13A o STMN2 frente a su unión canónica, y se mantiene la dirección entre unidades biológicas documentadas?

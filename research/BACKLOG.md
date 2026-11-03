@@ -1,5 +1,13 @@
 # Backlog vigente — 03/11/2026
 
+## Decisión vigente: issue #37, selección acotada cerrada sin fuente aceptada — 03/11/2026
+
+Main de partida confirmado: `9076802fa78bfd1e4cdc97a3b92dd24a06d054c4`, PR #36 fusionada. Auditoría fijada previamente en `a62a0d7`: Seddighi 2024, Irwin 2024 y Baughn 2023. Ninguna supera la puerta completa de cuentas directas UNC13A, cobertura verificable y ≥3 unidades independientes por condición. No abrir un cuarto candidato ni repetir estas consultas; tabla, fuentes y registro previo de 15 familias en `reports/source-gate-issue37-20261103/REPORT.md` y `prior_sources.tsv`. Los estados «ya auditado/no aceptado» se distinguen de búsquedas agotadas.
+
+Anotación NCBI RefSeq del locus completo: 7 transcritos/49 uniones; 30/31 y 32/33 coincidencias exactas. La unión unitaria 17627940–17629242 aparece en NM_001387022.1 y XM_017026502.2; la otra sigue sin coincidencia. Es aclaración de referencia, no nueva isoforma validada. Comparación ejecutada sobre el sello previo, sin lecturas nuevas; conteos objetivo [1,0,0], mínimo20 y cierre del piloto intactos. Cuatro pruebas locales correctas y repetición de salidas idéntica; CI de la PR se comprueba por cabeza exacta.
+
+**Única vía siguiente, bloqueada:** obtener un manifiesto/archivo concreto Seddighi–AD Workbench con cuentas por biblioteca o BAM/índices, condiciones, unidades independientes y lotes; requisitos en `reports/source-gate-issue37-20261103/ACCESS_REQUIREMENTS.md`. El código público no proporciona entradas BAM verificadas. Irwin reutiliza Klim ya auditado; Baughn no aporta en los materiales inspeccionados un archivo directo UNC13A. No fuente aceptada, plan de contraste, descarga masiva, contacto, gasto, PSI o inferencia autorizados por esta entrega. Issue #37 permanece abierta por ese acceso; el ciclo de selección está cerrado. No relanzar piloto/control completo/TDP, ni STMN2/PAPA o Humphrey como trabajo nuevo. Archivos, sellos y cargos previos preservados. Cabeceras inferiores históricas.
+
 ## Decisión vigente: piloto cerrado; siguiente tarea en issue #37 — 03/11/2026
 
 Cierre autorizado por Luis: piloto CTRL-4 técnicamente completado, cobertura objetivo insuficiente [1,0,0] frente a 20, igual a anclajes 15/8. Auditoría completa y anotación preservadas; dos uniones unitarias fuera de objetivos no son nuevos hallazgos. No relanzar el piloto, ampliar automáticamente al control completo ni iniciar TDP. Conservar todos los datos, sellos, intentos y cargos. Cierre: `reports/unc13a-control-annotation-20261103/CLOSURE.md`.
