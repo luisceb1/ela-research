@@ -1,5 +1,14 @@
 # Backlog vigente — 03/11/2026
 
+## Decisión vigente: CTRL_R2 interrumpido; recuperación aislada propuesta — 03/11/2026
+
+Luis aporta snapshot y stat: CTRL_R2 parcial284.799.727B, recibo281.018.368B, reserva4MiB. Cargo nuevo285.212.672B,total5.603.756.481B;412.945B conservadores sin reembolso. Preflight/R1 verificados; supervisor−9 por cap1800s/grupo vacío. Sin pares/alineamiento/TDP. Snapshot1773,5246675s no es cierre final; discrepancia con monotónico sin causa demostrada. Evidencia en reports/ctrl-r2-recovery-20261103.
+
+Nuevo recover_ctrl_r2.py separado conserva identidades anteriores. Copia/hash de prefijo y una peticiónRange712.749.730B, MD5/tamaño enteros antes de promoción y externo limpio antes del sello. Cargo final esperado6.316.506.211B bajo12GB. Arrastra conservadoramente1800s previos completos más5467,7210083s, manteniendo snapshot original; no inventa reloj final.
+
+Propuesta pendiente: NUEVAventana6000s/5400sHTTP (100/90min), socket30s, disco27GiB siete árboles/reserva8GiB,2CPU/RSS512MiBmuestreada/AS1GiB. ExigeSHAexacto yaceptación expresa; no activa/reinicia piloto ni procesa otros mates. Pruebas y controles en validation.json. Siguiente tarea única: emitir/revisar plan deshabilitado WSL mediante research/runbooks/2026-11-03-ctrl-r2-recovery-powershell.md. Sin merge ni conclusiones biológicas. Cabeceras inferiores históricas.
+
+
 ## Decisión vigente: CTRL_R1 sellado; piloto nuevo desde recuperación — 03/11/2026
 
 Luis aporta sealed_verified_ctrl_r1:960856963B/MD5ed58daa011d6508a3e8d1f05bc39fc29/SHA298a8b4769fcd5434f883706c873d56795c5a20d855917d80a391b2e5c38beff. Cargo5318543809B/saldo6681456191B. Evidencia de usuario, sin tiempos/RSS de recuperación aportados ni acceso remoto. reports/recovered-read-pilot-20261103/user-reported-recovery-seal.json.

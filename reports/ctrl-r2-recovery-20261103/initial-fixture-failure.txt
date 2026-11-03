@@ -1,0 +1,35 @@
+test_actual_supervised_worker_fails_before_http (test_recover_ctrl_r2.ProposalTests.test_actual_supervised_worker_fails_before_http) ... ok
+test_existing_root_refused (test_recover_ctrl_r2.ProposalTests.test_existing_root_refused) ... ok
+test_fixed_plan_mutations_rejected (test_recover_ctrl_r2.ProposalTests.test_fixed_plan_mutations_rejected) ... ok
+test_low_disk_refused (test_recover_ctrl_r2.ProposalTests.test_low_disk_refused) ... ok
+test_prepare_never_network_or_process (test_recover_ctrl_r2.ProposalTests.test_prepare_never_network_or_process) ... ok
+test_bad_headers_redirect_or_short_body_never_promoted (test_recover_ctrl_r2.RecoveryTests.test_bad_headers_redirect_or_short_body_never_promoted) ... ok
+test_changed_partial_rejected_before_http (test_recover_ctrl_r2.RecoveryTests.test_changed_partial_rejected_before_http) ... ok
+test_corrupt_whole_md5_rejected (test_recover_ctrl_r2.RecoveryTests.test_corrupt_whole_md5_rejected) ... ok
+test_external_guard_rejects_refunded_charge (test_recover_ctrl_r2.RecoveryTests.test_external_guard_rejects_refunded_charge) ... ok
+test_missing_time_or_sha_acceptance_before_filesystem (test_recover_ctrl_r2.RecoveryTests.test_missing_time_or_sha_acceptance_before_filesystem) ... ERROR
+test_no_automatic_budget_reopen (test_recover_ctrl_r2.RecoveryTests.test_no_automatic_budget_reopen) ... ok
+test_original_changed_during_recovery_no_promotion (test_recover_ctrl_r2.RecoveryTests.test_original_changed_during_recovery_no_promotion) ... ok
+test_partial_symlink_refused (test_recover_ctrl_r2.RecoveryTests.test_partial_symlink_refused) ... ok
+test_positive_actual_range_whole_hash_and_outer_seal (test_recover_ctrl_r2.RecoveryTests.test_positive_actual_range_whole_hash_and_outer_seal) ... ok
+test_prior_charge_floor_and_deadline (test_recover_ctrl_r2.RecoveryTests.test_prior_charge_floor_and_deadline) ... ok
+test_read_timeout_keeps_reserved_charge_and_failed_receipt (test_recover_ctrl_r2.RecoveryTests.test_read_timeout_keeps_reserved_charge_and_failed_receipt) ... ok
+
+======================================================================
+ERROR: test_missing_time_or_sha_acceptance_before_filesystem (test_recover_ctrl_r2.RecoveryTests.test_missing_time_or_sha_acceptance_before_filesystem)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/dd06b558bed7/ela-audit/tests/test_recover_ctrl_r2.py", line 87, in test_missing_time_or_sha_acceptance_before_filesystem
+    with patch.object(mod,'read',side_effect=AssertionError('No descriptor access')),patch.object(mod,'meta_sha',side_effect=AssertionError('No SHA access')):
+                                                                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/unittest/mock.py", line 1467, in __enter__
+    original, local = self.get_original()
+                      ^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/unittest/mock.py", line 1437, in get_original
+    raise AttributeError(
+AttributeError: <module 'recover_ctrl_r2' from '/workspace/scratch/dd06b558bed7/ela-audit/scripts/recover_ctrl_r2.py'> does not have the attribute 'meta_sha'
+
+----------------------------------------------------------------------
+Ran 16 tests in 6.324s
+
+FAILED (errors=1)
