@@ -1,0 +1,140 @@
+{
+  "scope": "Non-authorizing offline policy review; synthetic descriptors never substitute for real WSL input. Self excluded. Worker files and historical data artifacts unchanged.",
+  "files": {
+    "scripts/audit_cached_pilot_descriptor.py": {
+      "bytes": 7407,
+      "sha256": "29cc0ff3472adbfe1baf28cfed384b75d5f4f6e4ae3581b4eff939e92d287629",
+      "git_blob": "b49fb4aeed49c0c68d59aae692c25023ad536958"
+    },
+    "scripts/run_cached_plan_review_fixture.py": {
+      "bytes": 2327,
+      "sha256": "f7484ec76dd6e276614b69db28565c998b5fb2209f136c17cbfc15fb3a4cc35c",
+      "git_blob": "117d7a284c4a4caedb4e1127f4d73c0bd7dccec4"
+    },
+    "tests/test_cached_pilot_descriptor_review.py": {
+      "bytes": 8240,
+      "sha256": "5a7f29ed4c5f25675ba5e802de03df295d6d9ca8c88eca3e34247edbcf1a8990",
+      "git_blob": "e8a6c9b543ad76accbd78e66c162eda4f07bdc6d"
+    },
+    "research/references/cached_pilot_review_20261103.json": {
+      "bytes": 8273,
+      "sha256": "ac40773e9a8a63d55eee8dfad736364c192878d45c998e4c830e9a9fc3c7c1e3",
+      "git_blob": "8b7c2544da4676778594ff0baaa8a5196a802ad8"
+    },
+    "research/plans/2026-11-03-cached-plan-offline-review.md": {
+      "bytes": 1826,
+      "sha256": "a41e7a3f29e82be5e0a94d85b2cdc99ca0d8c9519c40c1d6164cc028214301a6",
+      "git_blob": "08e7de5acb13037d07b1de93d2fa1da46f9d639f"
+    },
+    "research/STATE.md": {
+      "bytes": 58207,
+      "sha256": "4a012a7de9282f4d89013e2d8c1589eece2236caa50b6497569b72fe2c86c8fe",
+      "git_blob": "351b85004a7f9c4bb03420b16cded087bd545fad"
+    },
+    "research/BACKLOG.md": {
+      "bytes": 36833,
+      "sha256": "78e0f40c7dcc09e2c592f66ab70fd89328307e3d13ccb02dd016207a4ca3fcd8",
+      "git_blob": "32fa2383c99b469be20becc4c0d0d49c845e2d9c"
+    },
+    "reports/cached-plan-review-20261103/REPORT.md": {
+      "bytes": 5931,
+      "sha256": "d8a79be36e3979089a611c5253fa21cdb9bd36991cb479b8087253dd6db64e0a",
+      "git_blob": "715e52774da160048671ebb30734b17aef171f7a"
+    },
+    "reports/cached-plan-review-20261103/environment.json": {
+      "bytes": 490,
+      "sha256": "a512723e9b4b30dab2f510b51c2f5022a10787eed623aa010b7eb89f7549ee41",
+      "git_blob": "4512305451184d94c62d2863f8f0a0fc795b17e7"
+    },
+    "reports/cached-plan-review-20261103/executed/archived-proposal-review.json": {
+      "bytes": 464,
+      "sha256": "c76613a7657c79f112a4965db11f727f9e08db0ce75c996c79e02d0b6b21d0f2",
+      "git_blob": "7b20f93f07dc27fae373edbc5d566b65b1063ab9"
+    },
+    "reports/cached-plan-review-20261103/executed/negative-cases.json": {
+      "bytes": 2295,
+      "sha256": "081a1a250d679fdf479a3268a110e0cd77540161324e84cfb927959cefce3f1f",
+      "git_blob": "5b092c6b96725ff8935a08d2fe53af362ea88f6c"
+    },
+    "reports/cached-plan-review-20261103/executed/summary.json": {
+      "bytes": 491,
+      "sha256": "cbe32345d1c255495c5999b82eca1836b5838f15976491f9a52532fdea2bc322",
+      "git_blob": "d0a8afc4c2f954048cb09b18c5e770edb0649c4c"
+    },
+    "reports/cached-plan-review-20261103/executed/synthetic-descriptor.json": {
+      "bytes": 9581,
+      "sha256": "99eb2fef012c949db16af698d9503f111891b807ff8745f7005d905feefbefbd",
+      "git_blob": "400204fa4d0905e1757907cbc5c8f19651b06b00"
+    },
+    "reports/cached-plan-review-20261103/executed/synthetic-review-1.json": {
+      "bytes": 731,
+      "sha256": "8d128378cf7cc32812489d63ba9b6a9c73ad2f71d7eb08f64e649edc4180a3f0",
+      "git_blob": "7f5209b1f2846b3d84b629b296266724e19127a4"
+    },
+    "reports/cached-plan-review-20261103/executed/synthetic-review-2.json": {
+      "bytes": 731,
+      "sha256": "8d128378cf7cc32812489d63ba9b6a9c73ad2f71d7eb08f64e649edc4180a3f0",
+      "git_blob": "7f5209b1f2846b3d84b629b296266724e19127a4"
+    },
+    "reports/cached-plan-review-20261103/executed-final/archived-proposal-review.json": {
+      "bytes": 464,
+      "sha256": "c76613a7657c79f112a4965db11f727f9e08db0ce75c996c79e02d0b6b21d0f2",
+      "git_blob": "7b20f93f07dc27fae373edbc5d566b65b1063ab9"
+    },
+    "reports/cached-plan-review-20261103/executed-final/negative-cases.json": {
+      "bytes": 2295,
+      "sha256": "081a1a250d679fdf479a3268a110e0cd77540161324e84cfb927959cefce3f1f",
+      "git_blob": "5b092c6b96725ff8935a08d2fe53af362ea88f6c"
+    },
+    "reports/cached-plan-review-20261103/executed-final/summary.json": {
+      "bytes": 491,
+      "sha256": "cbe32345d1c255495c5999b82eca1836b5838f15976491f9a52532fdea2bc322",
+      "git_blob": "d0a8afc4c2f954048cb09b18c5e770edb0649c4c"
+    },
+    "reports/cached-plan-review-20261103/executed-final/synthetic-descriptor.json": {
+      "bytes": 9581,
+      "sha256": "99eb2fef012c949db16af698d9503f111891b807ff8745f7005d905feefbefbd",
+      "git_blob": "400204fa4d0905e1757907cbc5c8f19651b06b00"
+    },
+    "reports/cached-plan-review-20261103/executed-final/synthetic-review-1.json": {
+      "bytes": 731,
+      "sha256": "8d128378cf7cc32812489d63ba9b6a9c73ad2f71d7eb08f64e649edc4180a3f0",
+      "git_blob": "7f5209b1f2846b3d84b629b296266724e19127a4"
+    },
+    "reports/cached-plan-review-20261103/executed-final/synthetic-review-2.json": {
+      "bytes": 731,
+      "sha256": "8d128378cf7cc32812489d63ba9b6a9c73ad2f71d7eb08f64e649edc4180a3f0",
+      "git_blob": "7f5209b1f2846b3d84b629b296266724e19127a4"
+    },
+    "reports/cached-plan-review-20261103/final-fixture-stdout.txt": {
+      "bytes": 96,
+      "sha256": "8126fc81691e68e50bc449ad6e85fcc75d5ec0e5f3d5f6316abd546b64a58411",
+      "git_blob": "9be1128fae8a3668926fa96682a186eb55fb3959"
+    },
+    "reports/cached-plan-review-20261103/fixture-stdout.txt": {
+      "bytes": 96,
+      "sha256": "8126fc81691e68e50bc449ad6e85fcc75d5ec0e5f3d5f6316abd546b64a58411",
+      "git_blob": "9be1128fae8a3668926fa96682a186eb55fb3959"
+    },
+    "reports/cached-plan-review-20261103/pinned-source-check.json": {
+      "bytes": 442,
+      "sha256": "3ac13e96da0634d7fe414cebeda6d96f81c57153b29afb8f4ac65842924ce63f",
+      "git_blob": "a7356d1d732705309354c247092d564494e8d10b"
+    },
+    "reports/cached-plan-review-20261103/proposal-cli.json": {
+      "bytes": 463,
+      "sha256": "85a9148918fe15164df7e9763ee6a344d31dc4de151925459e63b0b5275dd577",
+      "git_blob": "9a6cb054560439356a8daa2a00687042563f17a9"
+    },
+    "reports/cached-plan-review-20261103/synthetic-cli.json": {
+      "bytes": 822,
+      "sha256": "7011f859801701a5ff7e1fb973de61b64c7dc326c16fc94cd60d199f7cb1dc4b",
+      "git_blob": "58ed53e7c35ba3a2781cc04c5c344f1eb091c2e6"
+    },
+    "reports/cached-plan-review-20261103/tests.txt": {
+      "bytes": 2347,
+      "sha256": "bdb4bdcd16509f899b5507e15ff674fa5b48c824d0b7556e7fc95fb9e6e73d25",
+      "git_blob": "cf870198c779df6feebdacd2f8059747aa30b944"
+    }
+  }
+}

@@ -1,4 +1,12 @@
-# Estado vigente — 02/11/2026
+# Estado vigente — 03/11/2026
+
+## Continuidad comprobada y ayuda offline opcional — 03/11/2026
+
+El piloto desde caché sigue pendiente del descriptor deshabilitado y su revisión en WSL; no se ha recibido aquí ni se ha aceptado la nueva ventana. Se mantiene la tarea real definida abajo y el runbook existente, sin introducir un gate obligatorio adicional.
+
+Añadida ayuda opcional audit_cached_pilot_descriptor.py para revisar campos estáticos del descriptor sin seguir sus rutas/URLs ni ejecutar procesos. La propuesta archivada conserva cargo4355802733B y margen1294493386B; cuatro mates6349703881B cotejados.16tests locales/compileall y22mutaciones negativas rechazadas; resultados repetidos idénticos para un descriptor explícitamente artificial. Informe reports/cached-plan-review-20261103. No es validación del host, código/binario/sellos, manifiesto completo o autorización; todas las salidas mantienen ejecución/readiness/autorizaciónfalse. No datos, descargas o alineamientos nuevos; código del trabajador intacto.
+
+Próximo paso real sin cambios: descriptorJSON ySHA de WSL, revisión concreta y decisión expresa sobre la ventana nueva; no relanzar trabajo antiguo ni renovar cargos/plazos. PR36 abierta, sin merge. Cabeceras inferiores conservan historia y límites científicos.
 
 ## Decisión vigente: índice extraído y sellado; preparar piloto desde caché — 02/11/2026
 

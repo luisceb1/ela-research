@@ -1,0 +1,318 @@
+{
+  "schema": "offline-cached-review-profile-v1",
+  "worker_source_commit": "49f37a0cbda83b8046cf40492f566bc27906171f",
+  "limits": {
+    "wall_seconds": 7200,
+    "transfer_bytes": 12000000000,
+    "disk_bytes": 26843545600,
+    "reserve_bytes": 8589934592,
+    "threads": 2,
+    "process_caps": {
+      "wall_seconds": 3600,
+      "rss_bytes": 6442450944,
+      "address_space_bytes": 8589934592
+    }
+  },
+  "execution_policy": {
+    "schema": "pilot-b4-real-v1",
+    "production_enabled": true,
+    "total_seconds": 7200,
+    "transfer_seconds": 1800,
+    "allocations": {
+      "artifacts": 17179869184,
+      "prefixes": 2147483648,
+      "temporaries": 6442450944,
+      "dependencies": 536870912,
+      "receipts": 268435456
+    },
+    "phases": {
+      "preflight": {
+        "kind": "process",
+        "wall_seconds": 180,
+        "rss_bytes": 536870912,
+        "address_space_bytes": 1073741824
+      },
+      "CTRL_R1": {
+        "kind": "transfer",
+        "wall_seconds": 1800,
+        "rss_bytes": 536870912,
+        "address_space_bytes": 1073741824
+      },
+      "CTRL_R2": {
+        "kind": "transfer",
+        "wall_seconds": 1800,
+        "rss_bytes": 536870912,
+        "address_space_bytes": 1073741824
+      },
+      "CTRL_prefix": {
+        "kind": "paired_fastq",
+        "wall_seconds": 900,
+        "rss_bytes": 1073741824,
+        "address_space_bytes": 2147483648
+      },
+      "CTRL_compute": {
+        "kind": "compact",
+        "wall_seconds": 1200,
+        "rss_bytes": 6442450944,
+        "address_space_bytes": 8589934592,
+        "producer_seconds": 900,
+        "reduce_seconds": 300
+      },
+      "TDP_R1": {
+        "kind": "transfer",
+        "wall_seconds": 1800,
+        "rss_bytes": 536870912,
+        "address_space_bytes": 1073741824
+      },
+      "TDP_R2": {
+        "kind": "transfer",
+        "wall_seconds": 1800,
+        "rss_bytes": 536870912,
+        "address_space_bytes": 1073741824
+      },
+      "TDP_prefix": {
+        "kind": "paired_fastq",
+        "wall_seconds": 900,
+        "rss_bytes": 1073741824,
+        "address_space_bytes": 2147483648
+      },
+      "TDP_compute": {
+        "kind": "compact",
+        "wall_seconds": 1200,
+        "rss_bytes": 6442450944,
+        "address_space_bytes": 8589934592,
+        "producer_seconds": 900,
+        "reduce_seconds": 300
+      }
+    }
+  },
+  "steps": [
+    {
+      "name": "preflight",
+      "kind": "process"
+    },
+    {
+      "name": "CTRL_R1",
+      "kind": "http",
+      "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR334/016/SRR33425816/SRR33425816_1.fastq.gz",
+      "expected": {
+        "bytes": 960856963,
+        "md5": "ed58daa011d6508a3e8d1f05bc39fc29"
+      }
+    },
+    {
+      "name": "CTRL_R2",
+      "kind": "http",
+      "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR334/016/SRR33425816/SRR33425816_2.fastq.gz",
+      "expected": {
+        "bytes": 997549457,
+        "md5": "007d66223fe35f394284e4ebd631eaef"
+      }
+    },
+    {
+      "name": "CTRL_prefix",
+      "kind": "paired_fastq"
+    },
+    {
+      "name": "CTRL_compute",
+      "kind": "stream_compute"
+    },
+    {
+      "name": "TDP_R1",
+      "kind": "http",
+      "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR334/019/SRR33425819/SRR33425819_1.fastq.gz",
+      "expected": {
+        "bytes": 2143112809,
+        "md5": "474e4af4ea1dcf57b008a58e0c824671"
+      }
+    },
+    {
+      "name": "TDP_R2",
+      "kind": "http",
+      "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR334/019/SRR33425819/SRR33425819_2.fastq.gz",
+      "expected": {
+        "bytes": 2248184652,
+        "md5": "eeb19a696f12a4f6950426f3f79ddf25"
+      }
+    },
+    {
+      "name": "TDP_prefix",
+      "kind": "paired_fastq"
+    },
+    {
+      "name": "TDP_compute",
+      "kind": "stream_compute"
+    }
+  ],
+  "paired_fastq": {
+    "CTRL_prefix": {
+      "mates": [
+        {
+          "transfer": "CTRL_R1",
+          "identity": "SRR33425816/1",
+          "expected": {
+            "bytes": 960856963,
+            "md5": "ed58daa011d6508a3e8d1f05bc39fc29"
+          }
+        },
+        {
+          "transfer": "CTRL_R2",
+          "identity": "SRR33425816/2",
+          "expected": {
+            "bytes": 997549457,
+            "md5": "007d66223fe35f394284e4ebd631eaef"
+          }
+        }
+      ],
+      "prefix_pairs": 1000000
+    },
+    "TDP_prefix": {
+      "mates": [
+        {
+          "transfer": "TDP_R1",
+          "identity": "SRR33425819/1",
+          "expected": {
+            "bytes": 2143112809,
+            "md5": "474e4af4ea1dcf57b008a58e0c824671"
+          }
+        },
+        {
+          "transfer": "TDP_R2",
+          "identity": "SRR33425819/2",
+          "expected": {
+            "bytes": 2248184652,
+            "md5": "eeb19a696f12a4f6950426f3f79ddf25"
+          }
+        }
+      ],
+      "prefix_pairs": 1000000
+    }
+  },
+  "compute_fields": {
+    "CTRL_compute": {
+      "library": "CTRL-4",
+      "run": "SRR33425816",
+      "paired_phase": "CTRL_prefix",
+      "archive_phase": "cached_index",
+      "index_prefix": "hg38/genome",
+      "targets": [
+        [
+          "chr19",
+          17641556,
+          17642844,
+          "-"
+        ],
+        [
+          "chr19",
+          17641556,
+          17642413,
+          "-"
+        ],
+        [
+          "chr19",
+          17642541,
+          17642844,
+          "-"
+        ]
+      ],
+      "minimum_fragment_union": 20,
+      "max_plaintext_bytes": 2147483648
+    },
+    "TDP_compute": {
+      "library": "TDP-5",
+      "run": "SRR33425819",
+      "paired_phase": "TDP_prefix",
+      "archive_phase": "cached_index",
+      "index_prefix": "hg38/genome",
+      "targets": [
+        [
+          "chr19",
+          17641556,
+          17642844,
+          "-"
+        ],
+        [
+          "chr19",
+          17641556,
+          17642413,
+          "-"
+        ],
+        [
+          "chr19",
+          17642541,
+          17642844,
+          "-"
+        ]
+      ],
+      "minimum_fragment_union": 20,
+      "max_plaintext_bytes": 2147483648
+    }
+  },
+  "index_members": [
+    {
+      "name": "hg38/make_hg38.sh",
+      "bytes": 1292,
+      "sha256": "9e29e570495a5b237fce579bd5b2059f600ff061cdbc12c2438623e9ffad27d2"
+    },
+    {
+      "name": "hg38/genome.8.ht2",
+      "bytes": 8,
+      "sha256": "7c9fa136d4413fa6173637e883b6998d32e1d675f88cddff9dcbcf331820f4b8"
+    },
+    {
+      "name": "hg38/genome.5.ht2",
+      "bytes": 1342456349,
+      "sha256": "07400123a5033f85fd0152aae0a513771b5f5ba1afe878839bd9624b483fa503"
+    },
+    {
+      "name": "hg38/genome.7.ht2",
+      "bytes": 8,
+      "sha256": "7c9fa136d4413fa6173637e883b6998d32e1d675f88cddff9dcbcf331820f4b8"
+    },
+    {
+      "name": "hg38/genome.6.ht2",
+      "bytes": 776249234,
+      "sha256": "4a8f0d36ac6e459bbf682a5979de5e5d4883cd42a22866093d730797c87e35ae"
+    },
+    {
+      "name": "hg38/genome.4.ht2",
+      "bytes": 762328946,
+      "sha256": "2f5112d9a0c0855eea028ea4181e2af9dd261cdadac3eff541415dd5eb4ea413"
+    },
+    {
+      "name": "hg38/genome.3.ht2",
+      "bytes": 15065,
+      "sha256": "d7ecd66f14894242cb5153471028bb4f94bebd920c2c025c08ec24bcb13e6df5"
+    },
+    {
+      "name": "hg38/genome.1.ht2",
+      "bytes": 1020663384,
+      "sha256": "75c666c1bdcc6bd346a751e7277d26ce518c1e9a2612c301317248e3a4ee6014"
+    },
+    {
+      "name": "hg38/genome.2.ht2",
+      "bytes": 762328952,
+      "sha256": "ee1502737c1fe27706a91179584f99146102da7eac08ff5f76e9657476af619d"
+    }
+  ],
+  "proposal": {
+    "prior_charged_body_bytes": 4355802733,
+    "planned_read_body_bytes": 6349703881,
+    "minimum_final_body_bytes": 10705506614,
+    "remaining_margin_bytes": 1294493386,
+    "original_body_cap": 12000000000,
+    "new_total_wall_seconds": 7200,
+    "new_transfer_seconds": 1800,
+    "prior_transfer_elapsed_seconds": 3748.5157940387726,
+    "prior_global_deadline_epoch": 1793658000.877632,
+    "prior_deadline_changed": false,
+    "new_window_accepted": false,
+    "execution_enabled": false,
+    "index_download_copy_extraction": false,
+    "libraries": "CTRL-4 first; TDP-5 only if control meets fixed coverage",
+    "raw_execution_ready": false
+  },
+  "source_sha256": {
+    "reports/pilot-readiness-audit-20261102/execution-proposal.json": "26e37170d60aa5ac63cd611dcc1c97f8e33c1daf3cf7f14d24e90b010473421f"
+  }
+}

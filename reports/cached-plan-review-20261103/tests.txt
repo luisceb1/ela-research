@@ -1,0 +1,21 @@
+test_control_characters_in_paths_rejected (test_cached_pilot_descriptor_review.OfflineReviewTests.test_control_characters_in_paths_rejected) ... ok
+test_declared_negative_mutations_all_rejected (test_cached_pilot_descriptor_review.OfflineReviewTests.test_declared_negative_mutations_all_rejected) ... ok
+test_duplicate_keys_rejected (test_cached_pilot_descriptor_review.OfflineReviewTests.test_duplicate_keys_rejected) ... ok
+test_invalid_extra_schema_rejected (test_cached_pilot_descriptor_review.OfflineReviewTests.test_invalid_extra_schema_rejected) ... ok
+test_invalid_spent_clock_direct_call_rejected (test_cached_pilot_descriptor_review.OfflineReviewTests.test_invalid_spent_clock_direct_call_rejected) ... ok
+test_no_network_process_or_host_paths_followed (test_cached_pilot_descriptor_review.OfflineReviewTests.test_no_network_process_or_host_paths_followed) ... ok
+test_nonfinite_json_rejected (test_cached_pilot_descriptor_review.OfflineReviewTests.test_nonfinite_json_rejected) ... ok
+test_oversized_input_rejected (test_cached_pilot_descriptor_review.OfflineReviewTests.test_oversized_input_rejected) ... ok
+test_positive_is_explicitly_non_authorizing (test_cached_pilot_descriptor_review.OfflineReviewTests.test_positive_is_explicitly_non_authorizing) ... ok
+test_profile_hash_pinned (test_cached_pilot_descriptor_review.OfflineReviewTests.test_profile_hash_pinned) ... ok
+test_proposal_changes_rejected (test_cached_pilot_descriptor_review.OfflineReviewTests.test_proposal_changes_rejected) ... ok
+test_proposal_cross_checked_against_four_mates (test_cached_pilot_descriptor_review.OfflineReviewTests.test_proposal_cross_checked_against_four_mates) ... ok
+test_pure_review_does_not_mutate_input (test_cached_pilot_descriptor_review.OfflineReviewTests.test_pure_review_does_not_mutate_input) ... ok
+test_real_archived_proposal_arithmetic (test_cached_pilot_descriptor_review.OfflineReviewTests.test_real_archived_proposal_arithmetic) ... ok
+test_repeated_projection_identical (test_cached_pilot_descriptor_review.OfflineReviewTests.test_repeated_projection_identical) ... ok
+test_spent_clock_tolerance_does_not_allow_reset (test_cached_pilot_descriptor_review.OfflineReviewTests.test_spent_clock_tolerance_does_not_allow_reset) ... ok
+
+----------------------------------------------------------------------
+Ran 16 tests in 0.028s
+
+OK

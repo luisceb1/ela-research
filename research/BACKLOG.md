@@ -1,4 +1,10 @@
-# Backlog vigente — 02/11/2026
+# Backlog vigente — 03/11/2026
+
+## Continuidad — 03/11/2026
+
+- Siguiente paso real sin cambios: emitir/revisar descriptor deshabilitado de WSL y decidir expresamente sobre7200s/1800s nuevos. No hay descriptor real ni autorización en esta ejecución; no relanzar el job viejo.
+- Completado: ayuda opcional de revisión offline de campos estáticos;16tests locales,22mutaciones rechazadas y propuesta archivada aritméticamente coherente. reports/cached-plan-review-20261103. No otro gate obligatorio ni reemplazo del validador/trabajador.
+- Conservado: índice sellado comunicado por Luis, cargos previos y bloqueos científicos. Sin acceso a su host, datos/alineamientos nuevos o merge automático. Todas las salidas del revisor son no autorizantes.
 
 ## Decisión vigente: índice extraído y sellado; preparar piloto desde caché — 02/11/2026
 
