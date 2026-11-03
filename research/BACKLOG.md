@@ -1,5 +1,14 @@
 # Backlog vigente — 03/11/2026
 
+## Decisión vigente: Ctrl+C en R2; continuar desde 900 MB — 03/11/2026
+
+Luis aporta parcial900375051B, recibo20971520B, cargoWSL6224513473B; supervisor−9/KeyboardInterrupt/grupo vacío. Navegador sólo74MB aproximados: se eligeWSL y se indica cancelar navegador. No se ha confirmado parada ni tráfico exacto. Quedan97174406B; sinMD5entero/alineamiento.
+
+Nuevo recover_ctrl_r2_resume.py separado conserva históricos y reutiliza transporteIPv4/TLS y sellador. Propuesta: reserva de un archivo completo997549457B para navegador, separada deWSL; no es medición ni cota de retries externos. Cargo inicial propuesto7222062930B/final7319237336B bajo12GB. ExigeSHAexacto/ventana ybrowserdetenido/reserva aceptados. Reloj interrumpido reservado1800s completos, etiquetado conservador,no tiempo medido. Mismos2400s/1800sHTTP,27GiB diezárboles/reserva8GiB,2CPU/RSS512MiBmuestreada/AS1GiB/socket30s.
+
+Controles/informe en reports/ctrl-r2-interrupt-resume-20261103. Siguiente única tarea: plan deshabilitado WSL según research/runbooks/2026-11-03-ctrl-r2-interrupt-resume-powershell.md y revisión de condiciones. No reabrir intentos ni datosTDP; sinmerge/conclusionesbiológicas. Cabeceras inferiores históricas.
+
+
 ## Decisión vigente: CTRL_R2 IPv4 parcial de 876 MB; tramo restante propuesto — 03/11/2026
 
 Luis aporta parcial de 876.279.389 B y recibo de 591.396.864 B nuevos, bloque reservado de 4 MiB. Cargo acumulado 6.199.347.649 B; diferencia conservadora del último intento 4.111.506 B sin reembolso. Copia verificada, Range interrumpido al plazo de 5400 s; supervisor−9/grupo vacío. No MD5 entero, pares o alineamiento. Evidencia en reports/ctrl-r2-final-range-20261103.
