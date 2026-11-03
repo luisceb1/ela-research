@@ -1,0 +1,15 @@
+{
+  "schema_version": "FR-K26-4d-v1",
+  "enabled": false,
+  "disabled_reason": "No original numeric Fig4d file with differentiation keys verified",
+  "data_file": null,
+  "data_sha256": null,
+  "source_url": null,
+  "source_version": null,
+  "independence_review": {"approved": false, "reviewer": null, "evidence": null},
+  "study_version": "K26-accepted-2026-10-06",
+  "panel": "Fig4d",
+  "unit": "pA_magnitude",
+  "expected_included_cells": {"control": 34, "KD": 30, "KD_ASO": 25},
+  "minimum_independent_differentiations": 3
+}

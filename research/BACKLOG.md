@@ -1,5 +1,11 @@
 # Backlog vigente — 03/11/2026
 
+## Línea funcional paralela autorizada — 03/11/2026
+
+Encargo expreso de Luis: auditar rescate funcional UNC13A independientemente de #37/AD Workbench. Entrega en `reports/functional-rescue-20261103/REPORT.md`: matriz por ensayo, originalidad, acceso y plan prospectivo FR-K26-4d v1. Se reutilizan #7/#8/#18/#35; no se reivindica como nuevo el calendario preventivo ni el antecedente motor2026. Seleccionado solo K26 Fig.4d (eEPSC en motoneuronas, 34/30/25 células de tres diferenciaciones). Archivo numérico con claves biológicas no verificado: **reanálisis bloqueado**, sin efecto estimado. Validador de entrada deshabilitado y pruebas artificiales, sin laboratorio, contactos, gastos o fusión automática.
+
+Única continuación de esta línea: un archivo fuente nuevo concreto con valores y mapa célula/cultivo/diferenciación; no repetir búsquedas cerradas ni sustituir datos por simulación. El protocolo posdéficit v0.4 permanece conceptual. #37 y PR #38 conservan su seguimiento independiente; no se cambia su decisión de acceso ni el piloto cerrado. Las cabeceras anteriores/inferiores se leen por fecha y ámbito.
+
 ## Decisión vigente: piloto cerrado; siguiente tarea en issue #37 — 03/11/2026
 
 Cierre autorizado por Luis: piloto CTRL-4 técnicamente completado, cobertura objetivo insuficiente [1,0,0] frente a 20, igual a anclajes 15/8. Auditoría completa y anotación preservadas; dos uniones unitarias fuera de objetivos no son nuevos hallazgos. No relanzar el piloto, ampliar automáticamente al control completo ni iniciar TDP. Conservar todos los datos, sellos, intentos y cargos. Cierre: `reports/unc13a-control-annotation-20261103/CLOSURE.md`.

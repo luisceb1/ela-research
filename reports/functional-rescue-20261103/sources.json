@@ -1,0 +1,124 @@
+{
+  "cutoff": "2026-11-03",
+  "base_commit": "9076802fa78bfd1e4cdc97a3b92dd24a06d054c4",
+  "scope": "targeted update; not systematic review",
+  "sources": [
+    {
+      "id": "K26",
+      "url": "https://kclpure.kcl.ac.uk/portal/en/publications/unc13a-splice-correction-rescues-synaptic-dysfunction-induced-by-/",
+      "version": "accepted/in press 2026-10-06",
+      "doi": null,
+      "doi_status": "not_verified",
+      "file_name": "LossOfTDP_Keuss_GreenAAM(1).pdf",
+      "pages": 63,
+      "size_bytes": 6365279,
+      "sha256_prior_audit": "4c0c9e6c0a532dbf62f9630a47f7fb4730c069d7990ccb81a9fd9d1dfa562ef8",
+      "hash_recomputed_this_run": false,
+      "read": "user-supplied manuscript text specific pages; not redistributed",
+      "locators": [
+        "pp7-11",
+        "pp19-29",
+        "pp35-36",
+        "pp43-45",
+        "p62 Table6"
+      ],
+      "limits": "not byte-verified against public KCL download"
+    },
+    {
+      "id": "K24",
+      "doi": "10.1101/2024.06.20.599684",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11230273/",
+      "version": "preprint 2024-06-24",
+      "read": "prior project audit and current indexed passages",
+      "independent_of_K26": false
+    },
+    {
+      "id": "G25",
+      "doi": "10.1101/2025.08.28.672801",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12424808/",
+      "version": "v1 2025-09-02",
+      "read": "primary web fulltext Results Fig3/4 and Methods",
+      "supplement": "NIHPP2025.08.28.672801v1-supplement-1.pdf",
+      "supplement_access": "browser-check HTML; not read as PDF",
+      "locators": [
+        "Results Fig4E/F",
+        "Methods Multielectrode array",
+        "Methods ASO treatment",
+        "Statistical tests"
+      ],
+      "independent_of_G26": false
+    },
+    {
+      "id": "G26",
+      "doi": "10.1126/scitranslmed.aeb8517",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42234776/",
+      "version": "2026-06-03;18(852):eaeb8517",
+      "read": "verified metadata/abstract; full methods inaccessible",
+      "access_attempts": [
+        {
+          "url": "https://www.science.org/doi/10.1126/scitranslmed.aeb8517",
+          "outcome": "403"
+        },
+        {
+          "source": "author-lab publications eprint link",
+          "outcome": "403"
+        }
+      ]
+    },
+    {
+      "id": "M26",
+      "doi": "10.64898/2026.09.11.751082",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.09.11.751082v1.full",
+      "version": "preprint v1 2026-09-18",
+      "read": "PubMed abstract and primary indexed Results/Fig1/Fig2; direct 403",
+      "limits": "not full linear reading; possible overlap with CTR2025 already flagged"
+    },
+    {
+      "id": "J25",
+      "doi": "10.1038/s41593-025-02096-w",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41174170/",
+      "version": "online 2025-10-31; Nat Neurosci 28:2476-2492",
+      "read": "abstract and primary figure legends only"
+    },
+    {
+      "id": "W25",
+      "doi": "10.1038/s44318-025-00506-0",
+      "read": "scite targeted excerpt/citation context; not rescue replication"
+    }
+  ],
+  "searches": [
+    {
+      "engine": "web-system2",
+      "queries": [
+        "Keuss UNC13A synaptic function rescue Nature 2026",
+        "Guo TDP-43 UNC13A STMN2 rescue synaptic",
+        "Restoring multiple TDP-43 Unc13a Mallika",
+        "aeb8517 supplementary data"
+      ],
+      "result": "primary seeds and metadata; no numeric file verified"
+    },
+    {
+      "engine": "web-system1",
+      "queries": [
+        "UNC13A splice correction rescues Nature",
+        "10.1126/scitranslmed.aeb8517 data supplementary Guo",
+        "UNC13A rescue delayed treatment synaptic deficit Keuss Guo 2026",
+        "aeb8517 correction erratum retraction"
+      ],
+      "result": "KCL accepted record; G26 published metadata; no accessible source table or definitive notice result"
+    },
+    {
+      "engine": "scite",
+      "queries": [
+        "\"UNC13A\" AND (rescue OR recovery)",
+        "rescue restricted to K24/G26/M26 DOIs",
+        "G25 data supplementary replicates",
+        "has_correction restricted to K24/G26/M26"
+      ],
+      "result": "metadata and citation context; primary target fulltext often contentDenied; editorialNotices absent; filter returned contradictory no-index message",
+      "notice_status": "unresolved; not certified absence"
+    }
+  ],
+  "provenance_rule": "No hash invented for unmaterialized PDFs or unresolved numeric files. New authored files hashed by validation script.",
+  "stopping_rule": "reopen only with concrete new numeric artifact or changed primary version; no contacts or access requests"
+}
