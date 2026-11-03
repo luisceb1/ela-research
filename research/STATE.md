@@ -1,5 +1,14 @@
 # Estado vigente — 03/11/2026
 
+## Decisión vigente: CTRL_R2 IPv4 parcial de 876 MB; tramo restante propuesto — 03/11/2026
+
+Luis aporta parcial de 876.279.389 B y recibo de 591.396.864 B nuevos, bloque reservado de 4 MiB. Cargo acumulado 6.199.347.649 B; diferencia conservadora del último intento 4.111.506 B sin reembolso. Copia verificada, Range interrumpido al plazo de 5400 s; supervisor−9/grupo vacío. No MD5 entero, pares o alineamiento. Evidencia en reports/ctrl-r2-final-range-20261103.
+
+Nuevo recover_ctrl_r2_final.py aislado audita la cadena y reutiliza sin cambios el transporte IPv4/TLS y sellador previos. Sólo faltan 121.270.068 B. Cargo final esperado 6.320.617.717 B bajo12GB. Conserva reloj anterior y arrastra los5400s agotados completos:12700,072928190231s, sin reconstruir instante final. Históricos intactos.
+
+Propuesta pendiente2400s total/1800sHTTP, mismos27GiB nueveárboles/reserva8GiB,2CPU/RSS512MiBmuestreada/AS1GiB/socket30s. SHA exacto y aceptación explícita. Controles en validation.json, incluidos TLS previos. Siguiente tarea única: emitir/revisar plan deshabilitado con research/runbooks/2026-11-03-ctrl-r2-final-range-powershell.md. No relanzar intentos; sin merge o conclusiones biológicas. Cabeceras inferiores históricas.
+
+
 ## Decisión vigente: CTRL_R2 fallo TLS sin cuerpo; recuperación IPv4 propuesta — 03/11/2026
 
 Luis aporta fallo dehandshakeTLS de recuperación532778b6…: copia verificada,0B nuevos/cargo5603756481B,32,35191988945sderango,supervisorexit1/sinviolación/grupovacío. HEADWindows200/WSLdefaulttimeout/WSL-4HTTP200y tamaño997549457. Apoya probarIPv4, no demuestra causaIPv6 ni garantizaRange/rendimiento. Evidencia reports/ctrl-r2-ipv4-20261103.
