@@ -19,6 +19,11 @@ class CoverageResult(unittest.TextTestResult):
 
 
 def run(start_dir, patterns, report, summary=None, fail_on_skip=False):
+    # Direct script invocation otherwise exposes scripts/ but not its parent,
+    # unlike python -m unittest. Historical tests use both import styles.
+    root = str(Path(__file__).resolve().parents[1])
+    if root not in sys.path:
+        sys.path.insert(0, root)
     suite = unittest.TestSuite()
     counts = {}
     for pattern in patterns:

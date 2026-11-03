@@ -19,10 +19,11 @@ class OfflineRunnerTests(unittest.TestCase):
             report, summary = root / "results.json", root / "summary.md"
             env = dict(os.environ)
             env.pop("GITHUB_STEP_SUMMARY", None)
+            env.pop("PYTHONPATH", None)
             result = subprocess.run(
                 [sys.executable, str(SCRIPT), "--start-dir", str(root), "--report", str(report),
                  "--summary", str(summary), *extra],
-                text=True, capture_output=True, timeout=15, env=env,
+                text=True, capture_output=True, timeout=15, env=env, cwd=root,
             )
             self.assertTrue(report.is_file(), result.stderr)
             return result.returncode, json.loads(report.read_text(encoding="utf-8")), summary.read_text(encoding="utf-8")
@@ -49,6 +50,15 @@ class OfflineRunnerTests(unittest.TestCase):
         )
         self.assertNotEqual(code, 0)
         self.assertEqual(data["status"], "unexpected_skips")
+
+    def test_script_invocation_preserves_repository_package_imports(self):
+        code, data, _ = self.invoke(
+            "from scripts.run_offline_tests import CoverageResult\n"
+            "class Controls(unittest.TestCase):\n"
+            "    def test_import(self): self.assertTrue(issubclass(CoverageResult, unittest.TestResult))\n"
+        )
+        self.assertEqual(code, 0, data)
+        self.assertEqual(data["passed"], 1)
 
     def test_assertion_failure_is_not_masked_by_reporting(self):
         code, data, _ = self.invoke(
