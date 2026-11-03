@@ -1,0 +1,1592 @@
+{
+  "status": "sealed_exploratory_locus_audit",
+  "root": "/home/luisceb/ela-piloto-real-01-index-recovery-01-extracted-01-reads-01-CTRL_R1-recovery-01-pilot-01-CTRL_R2-recovery-01-ipv4-01-final-01-resume-01-clock-01-control-01-locus-audit-01-guard-02",
+  "original_control_gate": "coverage_insufficient",
+  "gate_promoted": false,
+  "prior_failed_attempt": {
+    "root": "/home/luisceb/ela-piloto-real-01-index-recovery-01-extracted-01-reads-01-CTRL_R1-recovery-01-pilot-01-CTRL_R2-recovery-01-ipv4-01-final-01-resume-01-clock-01-control-01-locus-audit-01",
+    "metadata_sha256": {
+      "audit-plan.json": "91dcee4b4833233fb6c3413841786387cb8d904fcdfee957a89124ef332b94ee",
+      "audit-state.json": "f20605fce03b1a4926799d34b97462cbf8b9e52505a76ee9a671e4c80ccbfe17",
+      "operator-acceptance.json": "a4acc6987f0f00dfee099f97ab036f765127159fc90b875932a3c7cf0de4053c",
+      "supervision/run.json": "b778ff8cc5cf08c3463b28c215a55bffb29c5be978c2bd1c50d884dd1f3b15c7",
+      "supervision/run.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "producer.log": "1001b1752b5c0c918e0c0df3b01d7be25a137c6bb8e568b9ac576d754a0f73f5"
+    },
+    "disposition": "preserved, no compact-run or plaintext adoption",
+    "prior_elapsed_seconds": 869.8933005810001,
+    "prior_phase_seconds": {
+      "verify": 300,
+      "stage": 300,
+      "producer": 900,
+      "reduce": 300,
+      "finalize": 180
+    },
+    "last_phase": "reduce"
+  },
+  "geometry": {
+    "models": [
+      {
+        "event": "canonical",
+        "model": "halfopen0",
+        "start0": 17641556,
+        "end0": 17642845,
+        "left_plus": "CT",
+        "right_plus": "CC",
+        "minus_gt_ag": false,
+        "canonical_transcripts": []
+      },
+      {
+        "event": "canonical",
+        "model": "inclusive1",
+        "start0": 17641555,
+        "end0": 17642845,
+        "left_plus": "TC",
+        "right_plus": "CC",
+        "minus_gt_ag": false,
+        "canonical_transcripts": []
+      },
+      {
+        "event": "canonical",
+        "model": "exonic1",
+        "start0": 17641556,
+        "end0": 17642844,
+        "left_plus": "CT",
+        "right_plus": "AC",
+        "minus_gt_ag": true,
+        "canonical_transcripts": [
+          "ENST00000519716.7",
+          "ENST00000551649.5",
+          "ENST00000552293.5",
+          "ENST00000550896.1"
+        ]
+      },
+      {
+        "event": "canonical",
+        "model": "closed0",
+        "start0": 17641556,
+        "end0": 17642846,
+        "left_plus": "CT",
+        "right_plus": "CT",
+        "minus_gt_ag": false,
+        "canonical_transcripts": []
+      },
+      {
+        "event": "cryptic_genomic_left",
+        "model": "halfopen0",
+        "start0": 17641556,
+        "end0": 17642414,
+        "left_plus": "CT",
+        "right_plus": "CC",
+        "minus_gt_ag": false,
+        "canonical_transcripts": []
+      },
+      {
+        "event": "cryptic_genomic_left",
+        "model": "inclusive1",
+        "start0": 17641555,
+        "end0": 17642414,
+        "left_plus": "TC",
+        "right_plus": "CC",
+        "minus_gt_ag": false,
+        "canonical_transcripts": []
+      },
+      {
+        "event": "cryptic_genomic_left",
+        "model": "exonic1",
+        "start0": 17641556,
+        "end0": 17642413,
+        "left_plus": "CT",
+        "right_plus": "AC",
+        "minus_gt_ag": true,
+        "canonical_transcripts": []
+      },
+      {
+        "event": "cryptic_genomic_left",
+        "model": "closed0",
+        "start0": 17641556,
+        "end0": 17642415,
+        "left_plus": "CT",
+        "right_plus": "CC",
+        "minus_gt_ag": false,
+        "canonical_transcripts": []
+      },
+      {
+        "event": "cryptic_genomic_right",
+        "model": "halfopen0",
+        "start0": 17642541,
+        "end0": 17642845,
+        "left_plus": "CT",
+        "right_plus": "CC",
+        "minus_gt_ag": false,
+        "canonical_transcripts": []
+      },
+      {
+        "event": "cryptic_genomic_right",
+        "model": "inclusive1",
+        "start0": 17642540,
+        "end0": 17642845,
+        "left_plus": "GC",
+        "right_plus": "CC",
+        "minus_gt_ag": false,
+        "canonical_transcripts": []
+      },
+      {
+        "event": "cryptic_genomic_right",
+        "model": "exonic1",
+        "start0": 17642541,
+        "end0": 17642844,
+        "left_plus": "CT",
+        "right_plus": "AC",
+        "minus_gt_ag": true,
+        "canonical_transcripts": []
+      },
+      {
+        "event": "cryptic_genomic_right",
+        "model": "closed0",
+        "start0": 17642541,
+        "end0": 17642846,
+        "left_plus": "CT",
+        "right_plus": "CT",
+        "minus_gt_ag": false,
+        "canonical_transcripts": []
+      }
+    ],
+    "accepted": [
+      {
+        "event": "canonical",
+        "model": "exonic1",
+        "start0": 17641556,
+        "end0": 17642844,
+        "left_plus": "CT",
+        "right_plus": "AC",
+        "minus_gt_ag": true,
+        "canonical_transcripts": [
+          "ENST00000519716.7",
+          "ENST00000551649.5",
+          "ENST00000552293.5",
+          "ENST00000550896.1"
+        ]
+      },
+      {
+        "event": "cryptic_genomic_left",
+        "model": "exonic1",
+        "start0": 17641556,
+        "end0": 17642413,
+        "left_plus": "CT",
+        "right_plus": "AC",
+        "minus_gt_ag": true,
+        "canonical_transcripts": []
+      },
+      {
+        "event": "cryptic_genomic_right",
+        "model": "exonic1",
+        "start0": 17642541,
+        "end0": 17642844,
+        "left_plus": "CT",
+        "right_plus": "AC",
+        "minus_gt_ag": true,
+        "canonical_transcripts": []
+      }
+    ],
+    "source_limit": "cached UCSC sequence/annotation; not an independent provider",
+    "region": [
+      "chr19",
+      17600000,
+      17690000
+    ]
+  },
+  "regional_audit": {
+    "window": [
+      "chr19",
+      17600000,
+      17690000
+    ],
+    "interval_convention": "intronic 0-based half-open",
+    "max_junctions": 4096,
+    "routes": {
+      "text15": {
+        "junctions": [
+          {
+            "event": [
+              "chr19",
+              17606354,
+              17609939,
+              "-"
+            ],
+            "fragments": 3,
+            "near_original_targets": []
+          },
+          {
+            "event": [
+              "chr19",
+              17610099,
+              17611762,
+              "-"
+            ],
+            "fragments": 1,
+            "near_original_targets": []
+          },
+          {
+            "event": [
+              "chr19",
+              17611855,
+              17617701,
+              "-"
+            ],
+            "fragments": 6,
+            "near_original_targets": []
+          },
+          {
+            "event": [
+              "chr19",
+              17617849,
+              17618420,
+              "-"
+            ],
+            "fragments": 3,
+            "near_original_targets": []
+          },
+          {
+            "event": [
+              "chr19",
+              17618501,
+              17618905,
+              "-"
+            ],
+            "fragments": 2,
+            "near_original_targets": []
+          },
+          {
+            "event": [
+              "chr19",
+              17624952,
+              17626632,
+              "-"
+            ],
+            "fragments": 1,
+            "near_original_targets": []
+          },
+          {
+            "event": [
+              "chr19",
+              17627940,
+              17629242,
+              "-"
+            ],
+            "fragments": 1,
+            "near_original_targets": []
+          },
+          {
+            "event": [
+              "chr19",
+              17629323,
+              17630144,
+              "-"
+            ],
+            "fragments": 1,
+            "near_original_targets": []
+          },
+          {
+            "event": [
+              "chr19",
+              17630288,
+              17630653,
+              "-"
+            ],
+            "fragments": 5,
+            "near_original_targets": []
+          },
+          {
+            "event": [
+              "chr19",
+              17630750,
+              17632781,
+              "-"
+            ],
+            "fragments": 5,
+            "near_original_targets": []
+          },
+          {
+            "event": [
+              "chr19",
+              17632908,
+              17633107,
+              "-"
+            ],
+            "fragments": 5,
+            "near_original_targets": []
+          },
+          {
+            "event": [
+              "chr19",
+              17633193,
+              17636023,
+              "-"
+            ],
+            "fragments": 2,
+            "near_original_targets": []
+          },
+          {
+            "event": [
+              "chr19",
+              17636157,
+              17639082,
+              "-"
+            ],
+            "fragments": 2,
+            "near_original_targets": []
+          },
+          {
+            "event": [
+              "chr19",
+              17639217,
+              17639435,
+              "-"
+            ],
+            "fragments": 3,
+            "near_original_targets": []
+          },
+          {
+            "event": [
+              "chr19",
+              17640661,
+              17641392,
+              "-"
+            ],
+            "fragments": 1,
+            "near_original_targets": []
+          },
+          {
+            "event": [
+              "chr19",
+              17641556,
+              17642844,
+              "-"
+            ],
+            "fragments": 1,
+            "near_original_targets": [
+              {
+                "target": [
+                  "chr19",
+                  17641556,
+                  17642844,
+                  "-"
+                ],
+                "start_delta": 0,
+                "end_delta": 0
+              }
+            ]
+          },
+          {
+            "event": [
+              "chr19",
+              17642960,
+              17645673,
+              "-"
+            ],
+            "fragments": 3,
+            "near_original_targets": []
+          },
+          {
+            "event": [
+              "chr19",
+              17645843,
+              17645969,
+              "-"
+            ],
+            "fragments": 4,
+            "near_original_targets": []
+          },
+          {
+            "event": [
+              "chr19",
+              17646111,
+              17647264,
+              "-"
+            ],
+            "fragments": 6,
+            "near_original_targets": []
+          },
+          {
+            "event": [
+              "chr19",
+              17647492,
+              17648430,
+              "-"
+            ],
+            "fragments": 1,
+            "near_original_targets": []
+          },
+          {
+            "event": [
+              "chr19",
+              17648650,
+              17648911,
+              "-"
+            ],
+            "fragments": 2,
+            "near_original_targets": []
+          },
+          {
+            "event": [
+              "chr19",
+              17648988,
+              17649507,
+              "-"
+            ],
+            "fragments": 1,
+            "near_original_targets": []
+          },
+          {
+            "event": [
+              "chr19",
+              17649587,
+              17652630,
+              "-"
+            ],
+            "fragments": 1,
+            "near_original_targets": []
+          },
+          {
+            "event": [
+              "chr19",
+              17652677,
+              17655273,
+              "-"
+            ],
+            "fragments": 1,
+            "near_original_targets": []
+          },
+          {
+            "event": [
+              "chr19",
+              17655382,
+              17655882,
+              "-"
+            ],
+            "fragments": 1,
+            "near_original_targets": []
+          },
+          {
+            "event": [
+              "chr19",
+              17656398,
+              17658061,
+              "-"
+            ],
+            "fragments": 3,
+            "near_original_targets": []
+          },
+          {
+            "event": [
+              "chr19",
+              17663567,
+              17666649,
+              "-"
+            ],
+            "fragments": 1,
+            "near_original_targets": []
+          },
+          {
+            "event": [
+              "chr19",
+              17666704,
+              17668116,
+              "-"
+            ],
+            "fragments": 3,
+            "near_original_targets": []
+          },
+          {
+            "event": [
+              "chr19",
+              17668190,
+              17669552,
+              "-"
+            ],
+            "fragments": 3,
+            "near_original_targets": []
+          },
+          {
+            "event": [
+              "chr19",
+              17669676,
+              17672377,
+              "-"
+            ],
+            "fragments": 1,
+            "near_original_targets": []
+          },
+          {
+            "event": [
+              "chr19",
+              17672495,
+              17674656,
+              "-"
+            ],
+            "fragments": 3,
+            "near_original_targets": []
+          }
+        ],
+        "qc": {
+          "accepted_regional_candidate_groups": 115,
+          "excluded:mapping_quality": 1,
+          "primary_start_in_window_groups": 116,
+          "regional_candidate_groups": 116,
+          "spliced_overlap_before_filters_groups": 46
+        }
+      },
+      "hts15": {
+        "junctions": [
+          {
+            "event": [
+              "chr19",
+              17606354,
+              17609939,
+              "-"
+            ],
+            "fragments": 3,
+            "near_original_targets": []
+          },
+          {
+            "event": [
+              "chr19",
+              17610099,
+              17611762,
+              "-"
+            ],
+            "fragments": 1,
+            "near_original_targets": []
+          },
+          {
+            "event": [
+              "chr19",
+              17611855,
+              17617701,
+              "-"
+            ],
+            "fragments": 6,
+            "near_original_targets": []
+          },
+          {
+            "event": [
+              "chr19",
+              17617849,
+              17618420,
+              "-"
+            ],
+            "fragments": 3,
+            "near_original_targets": []
+          },
+          {
+            "event": [
+              "chr19",
+              17618501,
+              17618905,
+              "-"
+            ],
+            "fragments": 2,
+            "near_original_targets": []
+          },
+          {
+            "event": [
+              "chr19",
+              17624952,
+              17626632,
+              "-"
+            ],
+            "fragments": 1,
+            "near_original_targets": []
+          },
+          {
+            "event": [
+              "chr19",
+              17627940,
+              17629242,
+              "-"
+            ],
+            "fragments": 1,
+            "near_original_targets": []
+          },
+          {
+            "event": [
+              "chr19",
+              17629323,
+              17630144,
+              "-"
+            ],
+            "fragments": 1,
+            "near_original_targets": []
+          },
+          {
+            "event": [
+              "chr19",
+              17630288,
+              17630653,
+              "-"
+            ],
+            "fragments": 5,
+            "near_original_targets": []
+          },
+          {
+            "event": [
+              "chr19",
+              17630750,
+              17632781,
+              "-"
+            ],
+            "fragments": 5,
+            "near_original_targets": []
+          },
+          {
+            "event": [
+              "chr19",
+              17632908,
+              17633107,
+              "-"
+            ],
+            "fragments": 5,
+            "near_original_targets": []
+          },
+          {
+            "event": [
+              "chr19",
+              17633193,
+              17636023,
+              "-"
+            ],
+            "fragments": 2,
+            "near_original_targets": []
+          },
+          {
+            "event": [
+              "chr19",
+              17636157,
+              17639082,
+              "-"
+            ],
+            "fragments": 2,
+            "near_original_targets": []
+          },
+          {
+            "event": [
+              "chr19",
+              17639217,
+              17639435,
+              "-"
+            ],
+            "fragments": 3,
+            "near_original_targets": []
+          },
+          {
+            "event": [
+              "chr19",
+              17640661,
+              17641392,
+              "-"
+            ],
+            "fragments": 1,
+            "near_original_targets": []
+          },
+          {
+            "event": [
+              "chr19",
+              17641556,
+              17642844,
+              "-"
+            ],
+            "fragments": 1,
+            "near_original_targets": [
+              {
+                "target": [
+                  "chr19",
+                  17641556,
+                  17642844,
+                  "-"
+                ],
+                "start_delta": 0,
+                "end_delta": 0
+              }
+            ]
+          },
+          {
+            "event": [
+              "chr19",
+              17642960,
+              17645673,
+              "-"
+            ],
+            "fragments": 3,
+            "near_original_targets": []
+          },
+          {
+            "event": [
+              "chr19",
+              17645843,
+              17645969,
+              "-"
+            ],
+            "fragments": 4,
+            "near_original_targets": []
+          },
+          {
+            "event": [
+              "chr19",
+              17646111,
+              17647264,
+              "-"
+            ],
+            "fragments": 6,
+            "near_original_targets": []
+          },
+          {
+            "event": [
+              "chr19",
+              17647492,
+              17648430,
+              "-"
+            ],
+            "fragments": 1,
+            "near_original_targets": []
+          },
+          {
+            "event": [
+              "chr19",
+              17648650,
+              17648911,
+              "-"
+            ],
+            "fragments": 2,
+            "near_original_targets": []
+          },
+          {
+            "event": [
+              "chr19",
+              17648988,
+              17649507,
+              "-"
+            ],
+            "fragments": 1,
+            "near_original_targets": []
+          },
+          {
+            "event": [
+              "chr19",
+              17649587,
+              17652630,
+              "-"
+            ],
+            "fragments": 1,
+            "near_original_targets": []
+          },
+          {
+            "event": [
+              "chr19",
+              17652677,
+              17655273,
+              "-"
+            ],
+            "fragments": 1,
+            "near_original_targets": []
+          },
+          {
+            "event": [
+              "chr19",
+              17655382,
+              17655882,
+              "-"
+            ],
+            "fragments": 1,
+            "near_original_targets": []
+          },
+          {
+            "event": [
+              "chr19",
+              17656398,
+              17658061,
+              "-"
+            ],
+            "fragments": 3,
+            "near_original_targets": []
+          },
+          {
+            "event": [
+              "chr19",
+              17663567,
+              17666649,
+              "-"
+            ],
+            "fragments": 1,
+            "near_original_targets": []
+          },
+          {
+            "event": [
+              "chr19",
+              17666704,
+              17668116,
+              "-"
+            ],
+            "fragments": 3,
+            "near_original_targets": []
+          },
+          {
+            "event": [
+              "chr19",
+              17668190,
+              17669552,
+              "-"
+            ],
+            "fragments": 3,
+            "near_original_targets": []
+          },
+          {
+            "event": [
+              "chr19",
+              17669676,
+              17672377,
+              "-"
+            ],
+            "fragments": 1,
+            "near_original_targets": []
+          },
+          {
+            "event": [
+              "chr19",
+              17672495,
+              17674656,
+              "-"
+            ],
+            "fragments": 3,
+            "near_original_targets": []
+          }
+        ],
+        "qc": {
+          "accepted_regional_candidate_groups": 115,
+          "excluded:mapping_quality": 1,
+          "primary_start_in_window_groups": 116,
+          "regional_candidate_groups": 116,
+          "spliced_overlap_before_filters_groups": 46
+        }
+      },
+      "text8": {
+        "junctions": [
+          {
+            "event": [
+              "chr19",
+              17606354,
+              17609939,
+              "-"
+            ],
+            "fragments": 3,
+            "near_original_targets": []
+          },
+          {
+            "event": [
+              "chr19",
+              17610099,
+              17611762,
+              "-"
+            ],
+            "fragments": 1,
+            "near_original_targets": []
+          },
+          {
+            "event": [
+              "chr19",
+              17611855,
+              17617701,
+              "-"
+            ],
+            "fragments": 6,
+            "near_original_targets": []
+          },
+          {
+            "event": [
+              "chr19",
+              17617849,
+              17618420,
+              "-"
+            ],
+            "fragments": 3,
+            "near_original_targets": []
+          },
+          {
+            "event": [
+              "chr19",
+              17618501,
+              17618905,
+              "-"
+            ],
+            "fragments": 2,
+            "near_original_targets": []
+          },
+          {
+            "event": [
+              "chr19",
+              17624952,
+              17626632,
+              "-"
+            ],
+            "fragments": 1,
+            "near_original_targets": []
+          },
+          {
+            "event": [
+              "chr19",
+              17627940,
+              17629242,
+              "-"
+            ],
+            "fragments": 1,
+            "near_original_targets": []
+          },
+          {
+            "event": [
+              "chr19",
+              17629323,
+              17630144,
+              "-"
+            ],
+            "fragments": 1,
+            "near_original_targets": []
+          },
+          {
+            "event": [
+              "chr19",
+              17630288,
+              17630653,
+              "-"
+            ],
+            "fragments": 5,
+            "near_original_targets": []
+          },
+          {
+            "event": [
+              "chr19",
+              17630750,
+              17632781,
+              "-"
+            ],
+            "fragments": 5,
+            "near_original_targets": []
+          },
+          {
+            "event": [
+              "chr19",
+              17632908,
+              17633107,
+              "-"
+            ],
+            "fragments": 5,
+            "near_original_targets": []
+          },
+          {
+            "event": [
+              "chr19",
+              17633193,
+              17636023,
+              "-"
+            ],
+            "fragments": 3,
+            "near_original_targets": []
+          },
+          {
+            "event": [
+              "chr19",
+              17636157,
+              17639082,
+              "-"
+            ],
+            "fragments": 2,
+            "near_original_targets": []
+          },
+          {
+            "event": [
+              "chr19",
+              17639217,
+              17639435,
+              "-"
+            ],
+            "fragments": 3,
+            "near_original_targets": []
+          },
+          {
+            "event": [
+              "chr19",
+              17639525,
+              17639839,
+              "-"
+            ],
+            "fragments": 1,
+            "near_original_targets": []
+          },
+          {
+            "event": [
+              "chr19",
+              17639908,
+              17640510,
+              "-"
+            ],
+            "fragments": 1,
+            "near_original_targets": []
+          },
+          {
+            "event": [
+              "chr19",
+              17640661,
+              17641392,
+              "-"
+            ],
+            "fragments": 1,
+            "near_original_targets": []
+          },
+          {
+            "event": [
+              "chr19",
+              17641556,
+              17642844,
+              "-"
+            ],
+            "fragments": 1,
+            "near_original_targets": [
+              {
+                "target": [
+                  "chr19",
+                  17641556,
+                  17642844,
+                  "-"
+                ],
+                "start_delta": 0,
+                "end_delta": 0
+              }
+            ]
+          },
+          {
+            "event": [
+              "chr19",
+              17642960,
+              17645673,
+              "-"
+            ],
+            "fragments": 3,
+            "near_original_targets": []
+          },
+          {
+            "event": [
+              "chr19",
+              17645843,
+              17645969,
+              "-"
+            ],
+            "fragments": 4,
+            "near_original_targets": []
+          },
+          {
+            "event": [
+              "chr19",
+              17646111,
+              17647264,
+              "-"
+            ],
+            "fragments": 6,
+            "near_original_targets": []
+          },
+          {
+            "event": [
+              "chr19",
+              17647492,
+              17648430,
+              "-"
+            ],
+            "fragments": 1,
+            "near_original_targets": []
+          },
+          {
+            "event": [
+              "chr19",
+              17648650,
+              17648911,
+              "-"
+            ],
+            "fragments": 2,
+            "near_original_targets": []
+          },
+          {
+            "event": [
+              "chr19",
+              17648988,
+              17649507,
+              "-"
+            ],
+            "fragments": 1,
+            "near_original_targets": []
+          },
+          {
+            "event": [
+              "chr19",
+              17649587,
+              17652630,
+              "-"
+            ],
+            "fragments": 1,
+            "near_original_targets": []
+          },
+          {
+            "event": [
+              "chr19",
+              17652677,
+              17655273,
+              "-"
+            ],
+            "fragments": 1,
+            "near_original_targets": []
+          },
+          {
+            "event": [
+              "chr19",
+              17655382,
+              17655882,
+              "-"
+            ],
+            "fragments": 1,
+            "near_original_targets": []
+          },
+          {
+            "event": [
+              "chr19",
+              17656398,
+              17658061,
+              "-"
+            ],
+            "fragments": 3,
+            "near_original_targets": []
+          },
+          {
+            "event": [
+              "chr19",
+              17663567,
+              17666649,
+              "-"
+            ],
+            "fragments": 1,
+            "near_original_targets": []
+          },
+          {
+            "event": [
+              "chr19",
+              17666704,
+              17668116,
+              "-"
+            ],
+            "fragments": 3,
+            "near_original_targets": []
+          },
+          {
+            "event": [
+              "chr19",
+              17668190,
+              17669552,
+              "-"
+            ],
+            "fragments": 3,
+            "near_original_targets": []
+          },
+          {
+            "event": [
+              "chr19",
+              17669676,
+              17672377,
+              "-"
+            ],
+            "fragments": 1,
+            "near_original_targets": []
+          },
+          {
+            "event": [
+              "chr19",
+              17672495,
+              17674656,
+              "-"
+            ],
+            "fragments": 3,
+            "near_original_targets": []
+          }
+        ],
+        "qc": {
+          "accepted_regional_candidate_groups": 115,
+          "excluded:mapping_quality": 1,
+          "primary_start_in_window_groups": 116,
+          "regional_candidate_groups": 116,
+          "spliced_overlap_before_filters_groups": 46
+        }
+      },
+      "hts8": {
+        "junctions": [
+          {
+            "event": [
+              "chr19",
+              17606354,
+              17609939,
+              "-"
+            ],
+            "fragments": 3,
+            "near_original_targets": []
+          },
+          {
+            "event": [
+              "chr19",
+              17610099,
+              17611762,
+              "-"
+            ],
+            "fragments": 1,
+            "near_original_targets": []
+          },
+          {
+            "event": [
+              "chr19",
+              17611855,
+              17617701,
+              "-"
+            ],
+            "fragments": 6,
+            "near_original_targets": []
+          },
+          {
+            "event": [
+              "chr19",
+              17617849,
+              17618420,
+              "-"
+            ],
+            "fragments": 3,
+            "near_original_targets": []
+          },
+          {
+            "event": [
+              "chr19",
+              17618501,
+              17618905,
+              "-"
+            ],
+            "fragments": 2,
+            "near_original_targets": []
+          },
+          {
+            "event": [
+              "chr19",
+              17624952,
+              17626632,
+              "-"
+            ],
+            "fragments": 1,
+            "near_original_targets": []
+          },
+          {
+            "event": [
+              "chr19",
+              17627940,
+              17629242,
+              "-"
+            ],
+            "fragments": 1,
+            "near_original_targets": []
+          },
+          {
+            "event": [
+              "chr19",
+              17629323,
+              17630144,
+              "-"
+            ],
+            "fragments": 1,
+            "near_original_targets": []
+          },
+          {
+            "event": [
+              "chr19",
+              17630288,
+              17630653,
+              "-"
+            ],
+            "fragments": 5,
+            "near_original_targets": []
+          },
+          {
+            "event": [
+              "chr19",
+              17630750,
+              17632781,
+              "-"
+            ],
+            "fragments": 5,
+            "near_original_targets": []
+          },
+          {
+            "event": [
+              "chr19",
+              17632908,
+              17633107,
+              "-"
+            ],
+            "fragments": 5,
+            "near_original_targets": []
+          },
+          {
+            "event": [
+              "chr19",
+              17633193,
+              17636023,
+              "-"
+            ],
+            "fragments": 3,
+            "near_original_targets": []
+          },
+          {
+            "event": [
+              "chr19",
+              17636157,
+              17639082,
+              "-"
+            ],
+            "fragments": 2,
+            "near_original_targets": []
+          },
+          {
+            "event": [
+              "chr19",
+              17639217,
+              17639435,
+              "-"
+            ],
+            "fragments": 3,
+            "near_original_targets": []
+          },
+          {
+            "event": [
+              "chr19",
+              17639525,
+              17639839,
+              "-"
+            ],
+            "fragments": 1,
+            "near_original_targets": []
+          },
+          {
+            "event": [
+              "chr19",
+              17639908,
+              17640510,
+              "-"
+            ],
+            "fragments": 1,
+            "near_original_targets": []
+          },
+          {
+            "event": [
+              "chr19",
+              17640661,
+              17641392,
+              "-"
+            ],
+            "fragments": 1,
+            "near_original_targets": []
+          },
+          {
+            "event": [
+              "chr19",
+              17641556,
+              17642844,
+              "-"
+            ],
+            "fragments": 1,
+            "near_original_targets": [
+              {
+                "target": [
+                  "chr19",
+                  17641556,
+                  17642844,
+                  "-"
+                ],
+                "start_delta": 0,
+                "end_delta": 0
+              }
+            ]
+          },
+          {
+            "event": [
+              "chr19",
+              17642960,
+              17645673,
+              "-"
+            ],
+            "fragments": 3,
+            "near_original_targets": []
+          },
+          {
+            "event": [
+              "chr19",
+              17645843,
+              17645969,
+              "-"
+            ],
+            "fragments": 4,
+            "near_original_targets": []
+          },
+          {
+            "event": [
+              "chr19",
+              17646111,
+              17647264,
+              "-"
+            ],
+            "fragments": 6,
+            "near_original_targets": []
+          },
+          {
+            "event": [
+              "chr19",
+              17647492,
+              17648430,
+              "-"
+            ],
+            "fragments": 1,
+            "near_original_targets": []
+          },
+          {
+            "event": [
+              "chr19",
+              17648650,
+              17648911,
+              "-"
+            ],
+            "fragments": 2,
+            "near_original_targets": []
+          },
+          {
+            "event": [
+              "chr19",
+              17648988,
+              17649507,
+              "-"
+            ],
+            "fragments": 1,
+            "near_original_targets": []
+          },
+          {
+            "event": [
+              "chr19",
+              17649587,
+              17652630,
+              "-"
+            ],
+            "fragments": 1,
+            "near_original_targets": []
+          },
+          {
+            "event": [
+              "chr19",
+              17652677,
+              17655273,
+              "-"
+            ],
+            "fragments": 1,
+            "near_original_targets": []
+          },
+          {
+            "event": [
+              "chr19",
+              17655382,
+              17655882,
+              "-"
+            ],
+            "fragments": 1,
+            "near_original_targets": []
+          },
+          {
+            "event": [
+              "chr19",
+              17656398,
+              17658061,
+              "-"
+            ],
+            "fragments": 3,
+            "near_original_targets": []
+          },
+          {
+            "event": [
+              "chr19",
+              17663567,
+              17666649,
+              "-"
+            ],
+            "fragments": 1,
+            "near_original_targets": []
+          },
+          {
+            "event": [
+              "chr19",
+              17666704,
+              17668116,
+              "-"
+            ],
+            "fragments": 3,
+            "near_original_targets": []
+          },
+          {
+            "event": [
+              "chr19",
+              17668190,
+              17669552,
+              "-"
+            ],
+            "fragments": 3,
+            "near_original_targets": []
+          },
+          {
+            "event": [
+              "chr19",
+              17669676,
+              17672377,
+              "-"
+            ],
+            "fragments": 1,
+            "near_original_targets": []
+          },
+          {
+            "event": [
+              "chr19",
+              17672495,
+              17674656,
+              "-"
+            ],
+            "fragments": 3,
+            "near_original_targets": []
+          }
+        ],
+        "qc": {
+          "accepted_regional_candidate_groups": 115,
+          "excluded:mapping_quality": 1,
+          "primary_start_in_window_groups": 116,
+          "regional_candidate_groups": 116,
+          "spliced_overlap_before_filters_groups": 46
+        }
+      }
+    },
+    "exploratory_only": true
+  },
+  "same_prefix_target_and_qc_replay_identical": true,
+  "new_transfer_bytes": 0,
+  "cumulative_body_bytes": 7322807977,
+  "raw_execution_ready": false,
+  "sha256": {
+    "audit-plan.json": "27c4a38229d621059da941b84fadc3053dac811bf5d5e4ff497c17d99146121b",
+    "operator-acceptance.json": "12c68e470c16b8b1facac449c64fe647dacba535b56c50f6f144b1a4ca218efd",
+    "audit-state.json": "3ec191be4b5554ec89db838e7838a3d1d5cfa2680bf06db199f55acfd71fb5b4",
+    "audit-inner.json": "bea389dc9d5b438ad2ff1994c645173b08576cc76954b4518b0b4a13b495c267",
+    "compact/result.json": "669bb9a0c4dcbc1739e50f56c9e6a856341077940bf44b6153e6f13d1c96daf5",
+    "producer.log": "1001b1752b5c0c918e0c0df3b01d7be25a137c6bb8e568b9ac576d754a0f73f5",
+    "supervision/run.json": "9fb3494f07e42b0578be351e3153edf585a5e802c6cab32e1e436048e96c1188"
+  }
+}

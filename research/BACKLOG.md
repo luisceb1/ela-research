@@ -1,5 +1,13 @@
 # Backlog vigente — 03/11/2026
 
+## Decisión vigente: inventario completo contrastado; cerrar piloto como insuficiente — 03/11/2026
+
+Luis aporta `audit-seal.json` completo. Coinciden el hash del plan aceptado, el resumen previo y las rutas texto/HTSlib. Referencia cacheada: 29/31 uniones exactas a 15 bases y 31/33 a 8. Las dos restantes son comunes a ambas rutas, una observación cada una y fuera de los eventos crípticos objetivo; no se consideran nuevos hallazgos. Conteos objetivos confirmados [1,0,0], puerta insuficiente sin promover. Sin nuevas lecturas o alineamiento.
+
+Informe vigente: `reports/unc13a-control-annotation-20261103/COMPLETE_REPORT.md`; tabla `complete-comparison/junctions.tsv`, sello aportado y comprobaciones conservados. No quedan filas pendientes de la comparación, aunque los hashes de otros archivos WSL y el recibo externo nuevo no se han comprobado independientemente.
+
+Decisión: no ampliar automáticamente al control completo ni iniciar TDP; no relajar el umbral ni sumar otras uniones del gen para superarlo. Próximo trabajo: auditar anotación más extensa/metadatos o datos procesados del estudio para elegir una biblioteca/diseño con cobertura y réplicas útiles antes de otro cómputo masivo. Sin PSI, comparación biológica o inferencia clínica. PR 36 abierta sin fusionar; las cabeceras inferiores son históricas.
+
 ## Decisión vigente: auditoría local sellada; 21 uniones contrastadas — 03/11/2026
 
 Luis aporta resumen `sealed_exploratory_locus_audit`, replay idéntico al control y cero descargas. Región: 116 grupos candidatos, 115 aceptados, un descarte; 31/33 uniones distintas a anclajes 15/8. Soporte canónico 1; sin otra vecina ±2 bases con hebra esperada. Puerta de cobertura insuficiente, sin promover. Evidencia y comparación: `reports/unc13a-control-annotation-20261103`.
