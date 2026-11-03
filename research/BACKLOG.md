@@ -1,5 +1,14 @@
 # Backlog vigente — 03/11/2026
 
+## Decisión vigente: corregir reloj antes de continuar R2 — 03/11/2026
+
+Luis aporta corte temprano15,5266s, Externalclock/bodycap, grupo vacío y bytes dentro de12GB. Parcial900998714B/cargo7226257234B; quedan96550743B. Recibos apuntan a controlcivil, pero no registran valor exacto disparador/causaWSL. La prueba reproduce falsa alarma del guard anterior con retroceso civil. Evidencia reports/ctrl-r2-elapsed-clock-20261103.
+
+Nuevo recover_ctrl_r2_clock.py conserva históricos y usa CLOCK_BOOTTIME/boot_id en padre/trabajador y sellador; fechas civiles sólo diagnóstico. Misma ventana2400s/copy300s/range1800s/verify300s y caps. Rechaza expiraciones reales/bootcambiado; padre muestrea tick tras leer estado concurrente. IPv4/TLS/Range/MD5 enteros conservados, raíz nueva ySHAexacto/aceptación delreloj. Cargo final esperado7322807977B, misma reserva de navegador ya incluida, sin duplicar. Disco27GiB onceárboles/reserva8GiB/2CPU/RSS512MiBmuestreada/AS1GiB.
+
+Controles envalidation.json; positivos de recuperación con saltos civiles y negativos de vencimiento real, sellado, concurrencia yboot. Siguienteúnica tarea: descriptorWSL comprobado y ejecución explícita con research/runbooks/2026-11-03-ctrl-r2-elapsed-clock-powershell.md. No relanzar intentos, nuevosmates o alineamiento;sinmerge/conclusiónbiológica. Cabeceras inferiores históricas.
+
+
 ## Decisión vigente: Ctrl+C en R2; continuar desde 900 MB — 03/11/2026
 
 Luis aporta parcial900375051B, recibo20971520B, cargoWSL6224513473B; supervisor−9/KeyboardInterrupt/grupo vacío. Navegador sólo74MB aproximados: se eligeWSL y se indica cancelar navegador. No se ha confirmado parada ni tráfico exacto. Quedan97174406B; sinMD5entero/alineamiento.

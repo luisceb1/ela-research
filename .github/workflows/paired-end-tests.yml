@@ -8,6 +8,8 @@ on:
       - 'scripts/compact_ledger_phase.py'
       - 'scripts/pilot_execution_policy.py'
       - 'scripts/pilot_dry_runner.py'
+      - 'scripts/recover_ctrl_r2_clock.py'
+      - 'tests/test_recover_ctrl_r2_clock.py'
       - 'scripts/recover_ctrl_r2_resume.py'
       - 'tests/test_recover_ctrl_r2_resume.py'
       - 'scripts/recover_ctrl_r2_final.py'
@@ -78,3 +80,4 @@ jobs:
       - run: python -m unittest discover -s tests -p test_recover_ctrl_r2_ipv4.py -v
       - run: python -m unittest discover -s tests -p test_recover_ctrl_r2_final.py -v
       - run: python -m unittest discover -s tests -p test_recover_ctrl_r2_resume.py -v
+      - run: python -m unittest discover -s tests -p test_recover_ctrl_r2_clock.py -v
