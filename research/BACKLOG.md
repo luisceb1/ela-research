@@ -1,5 +1,13 @@
 # Backlog vigente — 03/11/2026
 
+## Decisión vigente: piloto cerrado; siguiente tarea en issue #37 — 03/11/2026
+
+Cierre autorizado por Luis: piloto CTRL-4 técnicamente completado, cobertura objetivo insuficiente [1,0,0] frente a 20, igual a anclajes 15/8. Auditoría completa y anotación preservadas; dos uniones unitarias fuera de objetivos no son nuevos hallazgos. No relanzar el piloto, ampliar automáticamente al control completo ni iniciar TDP. Conservar todos los datos, sellos, intentos y cargos. Cierre: `reports/unc13a-control-annotation-20261103/CLOSURE.md`.
+
+La PR #36 integra resultados reproducibles de GSE296714/STMN2-PPAU y el piloto UNC13A con sus límites; la integración está autorizada tras revisión de CI/cabeza exacta. Consultar la PR para el estado efectivo del merge. No se modifican contratos ni se promueve la puerta de cobertura, y no se borran rama o archivos.
+
+Única continuación priorizada: https://github.com/luisceb1/ela-research/issues/37. Selección acotada de hasta tres fuentes no agotadas (o un enlace nuevo que resuelva un bloqueo), soporte directo de uniones y unidades biológicas verificables; anotación más amplia/independiente; tabla de decisión antes de más cómputo. No repetir Humphrey procesado, STMN2/PPAU o ciclos de búsqueda ya cerrados. Sin nueva descarga masiva o contraste inferencial por defecto. Cabeceras inferiores históricas.
+
 ## Decisión vigente: inventario completo contrastado; cerrar piloto como insuficiente — 03/11/2026
 
 Luis aporta `audit-seal.json` completo. Coinciden el hash del plan aceptado, el resumen previo y las rutas texto/HTSlib. Referencia cacheada: 29/31 uniones exactas a 15 bases y 31/33 a 8. Las dos restantes son comunes a ambas rutas, una observación cada una y fuera de los eventos crípticos objetivo; no se consideran nuevos hallazgos. Conteos objetivos confirmados [1,0,0], puerta insuficiente sin promover. Sin nuevas lecturas o alineamiento.
