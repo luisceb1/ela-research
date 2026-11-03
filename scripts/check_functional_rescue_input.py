@@ -2,6 +2,7 @@
 import argparse
 import csv
 import hashlib
+import io
 import json
 import math
 from collections import Counter, defaultdict
@@ -57,9 +58,13 @@ def _read_source(contract, contract_dir):
     if digest != contract["data_sha256"]:
         raise _InputRejected("SHA256 mismatch")
     try:
-        with path.open(newline="", encoding="utf-8-sig") as handle:
+        # Parse the exact immutable bytes verified above, even if the path changes.
+        with io.StringIO(data.decode("utf-8-sig"), newline="") as handle:
             reader = csv.DictReader(handle)
-            if not FIELDS.issubset(set(reader.fieldnames or [])):
+            headers = reader.fieldnames or []
+            if len(headers) != len(set(headers)):
+                raise _InputRejected("Duplicate CSV column names")
+            if not FIELDS.issubset(set(headers)):
                 raise _InputRejected("Missing required columns")
             rows = list(reader)
     except (OSError, UnicodeError, csv.Error) as error:
@@ -194,4 +199,5 @@ def main():
 
 if __name__ == "__main__":
     raise SystemExit(main())
+
 
