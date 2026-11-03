@@ -34,6 +34,6 @@ SH-SY5Y conserva cuatro alias UNC13A y dos conflictos de hebra STMN2 pendientes;
 
 Consultar [BACKLOG](BACKLOG.md), [protocolo](PROTOCOL.md) e [inventario de scripts](SCRIPT_LIFECYCLE.md). Conservar los ejecutores históricos: sus identidades y hashes forman parte de los sellos. No moverlos, reescribirlos o ejecutarlos como próximo piloto por defecto.
 
-La CI debe leerse por commit y dependencias. El trabajo general permite omisiones explícitas; el contrato paired-end instala PySAM fijado y exige cero omisiones. Una CI correcta no reproduce automáticamente todos los análisis de datos reales.
+La CI debe leerse por commit y dependencias. Una matriz completa Python 3.11/3.12 instala PySAM/PyArrow fijados, compila scripts/tests y exige cero omisiones. Los checks históricos dependen del resultado de esa matriz sin repetir pruebas. Una CI correcta no reproduce automáticamente todos los análisis de datos reales.
 
 Sin comunicaciones adicionales, costes, publicación externa, datos personales, laboratorio o indicaciones clínicas sin autorización expresa.
