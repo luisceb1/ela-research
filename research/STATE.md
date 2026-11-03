@@ -1,5 +1,11 @@
 # Estado vigente — 03/11/2026
 
+## Línea funcional paralela autorizada — 03/11/2026
+
+Encargo expreso de Luis: auditar rescate funcional UNC13A independientemente de #37/AD Workbench. Entrega en `reports/functional-rescue-20261103/REPORT.md`: matriz por ensayo, originalidad, acceso y plan prospectivo FR-K26-4d v1. Se reutilizan #7/#8/#18/#35; no se reivindica como nuevo el calendario preventivo ni el antecedente motor2026. Seleccionado solo K26 Fig.4d (eEPSC en motoneuronas, 34/30/25 células de tres diferenciaciones). Archivo numérico con claves biológicas no verificado: **reanálisis bloqueado**, sin efecto estimado. Validador de entrada deshabilitado y pruebas artificiales, sin laboratorio ni gastos. Petición Fig.4d enviada con autorización expresa de Luis el 03/11/2026; recibo y texto en `reports/functional-rescue-20261103/COMMUNICATION_LOG.md`. Envío confirmado, sin datos recibidos documentados.
+
+Única continuación de esta línea: un archivo fuente nuevo concreto con valores y mapa célula/cultivo/diferenciación; no repetir búsquedas cerradas ni sustituir datos por simulación. El protocolo posdéficit v0.4 permanece conceptual. #37 y PR #38 conservan su seguimiento independiente; no se cambia su decisión de acceso ni el piloto cerrado. Las cabeceras anteriores/inferiores se leen por fecha y ámbito.
+
 ## Decisión vigente: issue #37, selección acotada cerrada sin fuente aceptada — 03/11/2026
 
 Main de partida confirmado: `9076802fa78bfd1e4cdc97a3b92dd24a06d054c4`, PR #36 fusionada. Auditoría fijada previamente en `a62a0d7`: Seddighi 2024, Irwin 2024 y Baughn 2023. Ninguna supera la puerta completa de cuentas directas UNC13A, cobertura verificable y ≥3 unidades independientes por condición. No abrir un cuarto candidato ni repetir estas consultas; tabla, fuentes y registro previo de 15 familias en `reports/source-gate-issue37-20261103/REPORT.md` y `prior_sources.tsv`. Los estados «ya auditado/no aceptado» se distinguen de búsquedas agotadas.
