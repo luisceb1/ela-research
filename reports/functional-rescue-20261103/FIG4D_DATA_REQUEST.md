@@ -1,3 +1,11 @@
+# Fig.4d — solicitud enviada
+
+Estado actualizado 03/11/2026: Luis autorizó expresamente el envío. Enviado desde `luis.ceb.fr@gmail.com` a `p.fratta@ucl.ac.uk`, sin CC ni adjuntos; Gmail devolvió etiqueta SENT, mensaje/hilo `1a1a307be60459fe`. Esto confirma envío, no entrega, lectura o respuesta. Texto exacto en `COMMUNICATION_LOG.md`. Pendiente de datos; no se estima ningún efecto.
+
+La preparación anterior se conserva a continuación como historial; sus indicaciones «sin enviar» describen el estado previo, no el actual.
+
+---
+
 # Fig.4d — solicitud concreta preparada, sin enviar
 
 Estado 03/11/2026: **no enviada; requiere autorización expresa de Luis**. No se ha creado un borrador en el buzón ni solicitado acceso. No se adjunta el manuscrito ni se propone un experimento nuevo.
