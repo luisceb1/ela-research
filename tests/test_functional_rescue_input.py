@@ -1,5 +1,6 @@
 """Artificial input controls only. No fixture represents experimental evidence."""
 import csv
+import copy
 import hashlib
 import importlib.util
 import tempfile
@@ -98,6 +99,25 @@ class FunctionalInputGateTests(unittest.TestCase):
                 self.rows[0]["value"] = value
                 self.assertBlocked()
 
+    def test_recording_rejections_preserve_specific_public_reasons(self):
+        original = copy.deepcopy(self.rows)
+        cases = [
+            (0, "value", "NaN", "Nonfinite or negative amplitude / nonfinite time"),
+            (0, "record_day", "44", "Recording day differs from published DIV60-70 window"),
+            (-1, "KD_start_day", "44", "KD timing differs from selected experiment"),
+            (-1, "first_ASO_day", "44", "ASO timing differs from concurrent Fig4d design"),
+            (0, "first_ASO_day", "45", "Unexpected active ASO in reference arm"),
+            (0, "KD_start_day", "45", "Unexpected KD in healthy control"),
+            (-1, "first_ASO_day", "unknown", "Unparseable amplitude or timing"),
+        ]
+        for index, field, value, reason in cases:
+            with self.subTest(field=field, value=value):
+                self.rows = copy.deepcopy(original)
+                self.rows[index][field] = value
+                self.assertEqual(self.run_gate(), {
+                    "status": "blocked", "reason": reason, "effect_estimated": False,
+                })
+
     def test_wrong_units_block(self):
         self.rows[0]["unit"] = "nA"
         self.assertBlocked()
@@ -152,3 +172,4 @@ class FunctionalInputGateTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
