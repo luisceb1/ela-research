@@ -1,0 +1,6 @@
+{
+  "error": "AttributeError: 'IPv4HTTPSHandler' object has no attribute '_check_hostname'",
+  "where": "positive actual TLS local test on Python3.12.14",
+  "fix": "pass verified SSLContext directly through do_open; preserve CERT_REQUIRED and hostname checks; negative tests assert SSLCertVerificationError",
+  "historical_modules_changed": false
+}

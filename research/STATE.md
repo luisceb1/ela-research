@@ -1,5 +1,14 @@
 # Estado vigente — 03/11/2026
 
+## Decisión vigente: CTRL_R2 fallo TLS sin cuerpo; recuperación IPv4 propuesta — 03/11/2026
+
+Luis aporta fallo dehandshakeTLS de recuperación532778b6…: copia verificada,0B nuevos/cargo5603756481B,32,35191988945sderango,supervisorexit1/sinviolación/grupovacío. HEADWindows200/WSLdefaulttimeout/WSL-4HTTP200y tamaño997549457. Apoya probarIPv4, no demuestra causaIPv6 ni garantizaRange/rendimiento. Evidencia reports/ctrl-r2-ipv4-20261103.
+
+Nuevo recover_ctrl_r2_ipv4.py aislado audita cadena previa/copia/log/cargos y0cuerpo; HTTPSAF_INETconcertificado/hostnameTLSactivos yuna peticiónRange712749730B, MD5entero yexternolimpio antesdesello. Históricosintactos;ningúncambioDNSglobal/WSL. Conserva7267,7210083s+tiempoderangofallido;techo12GB/cargofinalesperado6316506211B. Propuesta pendiente6000s/5400sHTTP,mismos27GiB ochoárboles/reserva8GiB,2CPU/RSS512MiBmuestreada/AS1GiB/socket30s. ExigeSHAexacto yaceptaciónexplícita deventana.
+
+Pruebas ycontroles envalidation.json,incluidoTLSreal localIPv4,CA/hostnamerechazados yrecuperacióncompleta artificial. Primera incompatibilidadPython3.12 detectada/corregida/documentada, sin tocar históricos. SinHTTPENA/alineamientohumanoenhostdelagente. Siguientetareaúnica: emitir/revisarplandeshabilitado conresearch/runbooks/2026-11-03-ctrl-r2-ipv4-powershell.md. No relanzarjobviejo;sinmerge/conclusionesbiológicas. Cabecerasinferioreshistóricas.
+
+
 ## Decisión vigente: CTRL_R2 interrumpido; recuperación aislada propuesta — 03/11/2026
 
 Luis aporta snapshot y stat: CTRL_R2 parcial284.799.727B, recibo281.018.368B, reserva4MiB. Cargo nuevo285.212.672B,total5.603.756.481B;412.945B conservadores sin reembolso. Preflight/R1 verificados; supervisor−9 por cap1800s/grupo vacío. Sin pares/alineamiento/TDP. Snapshot1773,5246675s no es cierre final; discrepancia con monotónico sin causa demostrada. Evidencia en reports/ctrl-r2-recovery-20261103.
