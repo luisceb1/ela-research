@@ -1,0 +1,21 @@
+{
+  "python": "3.12.14",
+  "command": "PYTHONPATH=/workspace/scratch/dd06b558bed7/pe-deps python -m unittest discover -s tests -p test_unc13a_locus_audit_v2.py -v",
+  "tests": 27,
+  "new_disk_regression_tests": 8,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "elapsed_seconds": 4.888,
+  "success": true,
+  "without_optional_pysam": {
+    "tests": 27,
+    "skipped": 5,
+    "failures": 0,
+    "errors": 0
+  },
+  "py_compile": "passed",
+  "human_alignment_executed_here": false,
+  "new_downloads": 0,
+  "prior_full_regression": "reports/unc13a-audit-reduction-timeout-20261103/validation.json (525 tests before this disk-only correction)"
+}

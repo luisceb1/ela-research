@@ -26,6 +26,7 @@ from workflow_seal import read, sha, check_outer
 
 GiB=1024**3
 PREFIX_PAIRS=1_000_000
+DISK_POLICY="cumulative-audit-partitions-v1"
 SCOPE='exploratory local UNC13A inventory; same sealed 1M CTRL pairs; no HTTP, TDP or gate promotion'
 PHASES={'verify':180,'stage':120,'producer':900,'reduce':720,'finalize':60}
 PINNED={'workflow-job.json':'33caa216410ef61b199b68941d755ac6f85c4fb81ae19bd5550e650b5244d5ed',
@@ -96,7 +97,7 @@ def output_root(binding):return Path(binding['failed_audit']['root']+'-guard-02'
 def make_job(binding):
     _,limits=base.make_manifest(binding['read_binding']);limits=copy.deepcopy(limits);limits['wall_seconds']=2100
     return {'schema':'unc13a-local-locus-audit-guard-v2','execution_enabled':False,'root':str(output_root(binding)),
-            'source':binding,'limits':limits,'phase_seconds':PHASES,'clock_policy':base.clock.clock_policy(),
+            'source':binding,'limits':limits,'disk_policy':DISK_POLICY,'phase_seconds':PHASES,'clock_policy':base.clock.clock_policy(),
             'identity':identity(),'geometry':geometry(),'scope':SCOPE,'new_transfer_bytes':0,'cumulative_body_bytes':base.CHARGED}
 
 
@@ -105,21 +106,33 @@ def validate(job):
     return Path(job['root'])
 
 
+def disk_usage(job):
+    """Charge historical reads/index as artifacts; both audit trees by purpose."""
+    source=job['source'];history_roots=source['read_binding']['lineage_roots']+[source['root']]
+    audits=[Path(source['failed_audit']['root']),Path(job['root'])]
+    if len(set(history_roots+list(map(str,audits))))!=14:raise ValueError('Fourteen distinct trees required')
+    usage={'artifacts':base.history_bytes({'lineage_roots':history_roots}),'plain':0,'compact':0,'receipts':0}
+    for root in audits:
+        for p in base.execution.iter_files(root):
+            try:
+                if p.is_symlink():raise ValueError('Audit symlink')
+                if not p.is_file():continue
+                relative=p.relative_to(root)
+                bucket='plain' if relative.parts[0]=='alignment-inputs' else 'compact' if relative.parts[0]=='compact' else 'receipts'
+                usage[bucket]+=p.stat().st_size
+            except FileNotFoundError:pass  # compact runs are reclaimed while sampled
+    return usage
+
+
 def disk_guard(job):
-    roots=job['source']['read_binding']['lineage_roots']+[job['source']['root'],job['source']['failed_audit']['root']];root=Path(job['root'])
-    if len(set(roots+[str(root)]))!=14:raise ValueError('Fourteen distinct trees required')
-    history=base.history_bytes({'lineage_roots':roots})
-    if history>18*GiB:raise RuntimeError('Historical artifact partition cap')
-    usage={'plain':0,'compact':0,'receipts':0}
-    for p in base.execution.iter_files(root):
-        try:
-            if p.is_symlink():raise ValueError('Audit symlink')
-            if not p.is_file():continue
-            relative=p.relative_to(root);bucket='plain' if relative.parts[0]=='alignment-inputs' else 'compact' if relative.parts[0]=='compact' else 'receipts'
-            usage[bucket]+=p.stat().st_size
-        except FileNotFoundError:pass  # a compact run may be reclaimed between samples
-    if usage['plain']>2*GiB or usage['compact']>6*GiB or usage['receipts']>GiB//4 or history+sum(usage.values())>job['limits']['disk_bytes']:raise RuntimeError('Audit disk partition cap')
+    usage=disk_usage(job);caps={'artifacts':18*GiB,'plain':2*GiB,'compact':6*GiB,'receipts':GiB//4}
+    violations=[name for name in caps if usage[name]>caps[name]]
+    if sum(usage.values())>job['limits']['disk_bytes']:violations.append('total')
+    if violations:raise RuntimeError('Audit disk cap: '+json.dumps({'violations':violations,'used_bytes':usage,'caps_bytes':{**caps,'total':job['limits']['disk_bytes']}},sort_keys=True))
+    root=Path(job['root'])
     if base.real.shutil.disk_usage(root if root.exists() else root.parent).free<job['limits']['reserve_bytes']:raise RuntimeError('Audit disk reserve')
+    return usage
+
 
 
 def prepare(root):
@@ -276,7 +289,7 @@ def main():
         if not a.control:p.error('--control required')
         j=prepare(a.control)
         with a.prepare.open('x') as f:json.dump(j,f,indent=2);f.write('\n')
-        print(json.dumps({'prepared_file':str(a.prepare),'sha256':sha(a.prepare),'execution_enabled':False,'root':j['root'],'total_seconds':2100,'reduction_seconds':720,'guard_policy':'in-memory-worker-independent-parent-v2','prefix_pairs':PREFIX_PAIRS,'new_transfer_bytes':0,'cumulative_body_bytes':base.CHARGED,'clock':'CLOCK_BOOTTIME','gate_promoted':False,'scope':SCOPE},indent=2))
+        print(json.dumps({'prepared_file':str(a.prepare),'sha256':sha(a.prepare),'execution_enabled':False,'root':j['root'],'total_seconds':2100,'reduction_seconds':720,'guard_policy':'in-memory-worker-independent-parent-v2','disk_policy':DISK_POLICY,'disk_used_bytes':disk_usage(j),'prefix_pairs':PREFIX_PAIRS,'new_transfer_bytes':0,'cumulative_body_bytes':base.CHARGED,'clock':'CLOCK_BOOTTIME','gate_promoted':False,'scope':SCOPE},indent=2))
     elif a.execute:print(json.dumps(console_summary(execute(a.execute,a.accept_plan_sha256,a.accept_local_audit_window)),indent=2))
     else:
         job=small(a.worker);root=validate(job)

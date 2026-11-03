@@ -1,5 +1,13 @@
 # Estado vigente — 03/11/2026
 
+## Decisión vigente: corregida la clasificación de disco al preparar v2 — 03/11/2026
+
+Luis seleccionó la versión correcta, pero preparar falló antes de escribir el plan o iniciar otra ejecución: `Historical artifact partition cap`. La guarda cargaba los temporales y texto plano del intento fallido a los 18 GiB de artefactos. Los errores posteriores de SHA se deben a comandos interactivos separados tras ese fallo. Evidencia: `reports/unc13a-audit-disk-accounting-20261103`.
+
+Corrección `cumulative-audit-partitions-v1`: los once árboles históricos y el control consumen artefactos; ambas auditorías comparten texto plano 2 GiB, compactos 6 GiB y recibos 0,25 GiB. Catorce árboles, total 27 GiB y reserva libre 8 GiB; sin ampliaciones o borrado. Preparar informa del desglose. Guarda en memoria y reducción 720 s dentro de 2100 s se conservan. Sin HTTP/TDP, cargo constante 7.322.807.977 bytes y puerta insuficiente sin promover.
+
+27 pruebas específicas correctas, ocho nuevas de contabilidad; la matriz de CI vuelve a comprobarlo. Siguiente tarea: plan nuevo y bloque PowerShell único que se detiene ante error, según `research/plans/2026-11-03-unc13a-audit-disk-correction.md`. No repetir el plan anterior ni inferir inventario todavía inexistente. PR 36 abierta sin fusionar. Cabeceras inferiores históricas.
+
 ## Decisión vigente: corregir la reducción local, sin nuevas descargas — 03/11/2026
 
 El intento exploratorio terminó HISAT2 con los mismos números globales, pero agotó 300 s en reducción. Estado: verify 20,030 s, stage 6,058 s, producer 543,471 s; reduce pendiente. Supervisor -9, grupo limpio, 869,893 s. Evidencia en `reports/unc13a-audit-reduction-timeout-20261103/operator-failure-evidence.json`. No hay inventario verificado. El control previo conserva cobertura insuficiente.

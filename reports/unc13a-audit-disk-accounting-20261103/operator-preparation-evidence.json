@@ -1,0 +1,20 @@
+{
+  "source": "operator-pasted PowerShell output",
+  "date": "2026-11-03",
+  "commit": "0c486916795441b3085f750966b6dc2b0d8e6741",
+  "script": "unc13a_locus_audit_v2.py",
+  "operation": "prepare",
+  "error": "RuntimeError: Historical artifact partition cap",
+  "site": "disk_guard: history > 18*GiB",
+  "accepted_execution": false,
+  "plan_created_by_this_failed_prepare": false,
+  "subsequent_errors": [
+    "El plan no coincide con la correcci\u00f3n prevista.",
+    "--accept-plan-sha256: expected one argument"
+  ],
+  "secondary_errors_reason": "Interactive PowerShell continued with separately entered commands after the failed prepare; no usable SHA was returned.",
+  "new_alignment_started": false,
+  "precise_actual_disk_usage_not_provided": true,
+  "new_transfer_bytes": 0,
+  "cumulative_body_bytes": 7322807977
+}

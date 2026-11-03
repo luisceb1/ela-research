@@ -96,6 +96,53 @@ class FailureBindingTests(unittest.TestCase):
         p=self.root/'operator-acceptance.json';atomic_json(p,{'prepared_sha256':'0'*64,'accepted_local_audit_window':True})
         self.assertRaises(ValueError,audit.failed_binding,self.control)
 
+class DiskPartitionTests(unittest.TestCase):
+    def setUp(self):
+        self.tmp=tempfile.TemporaryDirectory();self.addCleanup(self.tmp.cleanup);self.base=Path(self.tmp.name)
+        roots=[self.base/f'history{i}' for i in range(11)]
+        for root in roots:root.mkdir()
+        self.control=self.base/'control';self.control.mkdir();self.failed=self.base/'failed';self.failed.mkdir();self.current=self.base/'new'
+        self.job={'root':str(self.current),'source':{'root':str(self.control),'read_binding':{'lineage_roots':list(map(str,roots))},'failed_audit':{'root':str(self.failed)}},'limits':{'disk_bytes':27*audit.GiB,'reserve_bytes':8*audit.GiB}}
+        self.history=18*audit.GiB-1
+        for p in [patch.object(audit.base,'history_bytes',side_effect=lambda b:self.history),patch.object(audit.base.real.shutil,'disk_usage',return_value=type('Usage',(),{'free':40*audit.GiB})())]:p.start();self.addCleanup(p.stop)
+    def sparse(self,root,name,size):
+        p=root/name;p.parent.mkdir(parents=True,exist_ok=True)
+        with p.open('wb') as f:f.truncate(size)
+        return p
+    def test_failed_temporaries_are_not_historical_artifacts_and_all_bytes_count(self):
+        self.sparse(self.failed,'compact/work/old.jsonl',2*audit.GiB)
+        self.sparse(self.current,'compact/work/new.jsonl',audit.GiB)
+        self.sparse(self.failed,'alignment-inputs/CTRL_compute/R1.fastq',audit.GiB//4)
+        self.sparse(self.current,'alignment-inputs/CTRL_compute/R1.fastq',audit.GiB//4)
+        with patch.object(Path,'open',side_effect=AssertionError('No bulk reads or mutation while accounting')):
+            usage=audit.disk_guard(self.job)
+        self.assertEqual(usage,{'artifacts':self.history,'compact':3*audit.GiB,'plain':audit.GiB//2,'receipts':0})
+        self.assertGreater(self.history+2*audit.GiB,18*audit.GiB)
+        self.assertEqual(sum(usage.values()),self.history+3*audit.GiB+audit.GiB//2)
+    def test_old_and_new_plaintext_share_same_2gib_cap(self):
+        for root in (self.failed,self.current):self.sparse(root,'alignment-inputs/CTRL_compute/R1.fastq',audit.GiB+1)
+        self.assertRaisesRegex(RuntimeError,'plain',audit.disk_guard,self.job)
+    def test_old_and_new_compact_files_share_same_6gib_cap(self):
+        self.sparse(self.failed,'compact/work/a',4*audit.GiB);self.sparse(self.current,'compact/work/b',3*audit.GiB)
+        self.assertRaisesRegex(RuntimeError,'compact',audit.disk_guard,self.job)
+    def test_old_and_new_receipts_share_same_quarter_gib_cap(self):
+        for root in (self.failed,self.current):self.sparse(root,'producer.log',audit.GiB//8+1)
+        self.assertRaisesRegex(RuntimeError,'receipts',audit.disk_guard,self.job)
+    def test_original_artifact_and_total_caps_are_still_enforced(self):
+        self.history=18*audit.GiB+1;self.assertRaisesRegex(RuntimeError,'artifacts',audit.disk_guard,self.job)
+        self.history=18*audit.GiB-1;self.job['limits']['disk_bytes']=self.history-1
+        self.assertRaisesRegex(RuntimeError,'total',audit.disk_guard,self.job)
+    def test_reserve_is_not_relaxed(self):
+        with patch.object(audit.base.real.shutil,'disk_usage',return_value=type('Usage',(),{'free':8*audit.GiB-1})()):
+            self.assertRaisesRegex(RuntimeError,'reserve',audit.disk_guard,self.job)
+    def test_fourteen_distinct_roots_required(self):
+        self.job['source']['failed_audit']['root']=self.job['source']['root']
+        self.assertRaisesRegex(ValueError,'Fourteen',audit.disk_guard,self.job)
+    def test_symlink_in_failed_attempt_rejected(self):
+        p=self.failed/'compact/work/link';p.parent.mkdir(parents=True);p.symlink_to(self.base/'absent')
+        self.assertRaisesRegex(ValueError,'symlink',audit.disk_guard,self.job)
+
+
 @unittest.skipUnless(HAS,'Pinned optional PySAM required; dedicated workflow installs it')
 class WorkerReplayTests(unittest.TestCase):
     def setUp(self):
