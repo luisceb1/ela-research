@@ -17,10 +17,10 @@ Si no hay entrada nueva, registrar que ambas líneas siguen bloqueadas y detener
 
 - [x] Separar estado/backlog actuales del historial íntegro.
 - [x] Documentar scripts históricos y puntos de entrada acotados.
-- [x] Hacer visibles pruebas ejecutadas/omitidas y exigir cero omisiones en el contrato paired-end. Verificar CI sobre el commit de la PR de mantenimiento antes de integrarla.
+- [x] Hacer visibles pruebas ejecutadas/omitidas y exigir cero omisiones en la suite completa de CI.
 - [x] Separar lectura, validación de células y diseño en el validador Fig.4d, conservando contrato, CLI y motivos de rechazo.
 - [ ] Cuando una nueva tarea aceptada necesite transporte/ejecución: extraer módulos comunes de transporte, presupuesto, reloj y supervisión; definir configuración explícita y conservar ejecutores históricos sin cambiar sus hashes. Comparar recibos/salidas en fixtures antes de adoptar el nuevo ejecutor.
-- [ ] Evaluar consolidación de trabajos CI redundantes después de documentar dependencias y cobertura efectivamente ejecutada.
+- [x] Consolidar los trabajos CI redundantes en una matriz completa Python 3.11/3.12 con PySAM/PyArrow fijados, compilación e informes. Los nombres de checks anteriores dependen de esa matriz y propagan su resultado sin repetir pruebas.
 
 ## Líneas diferidas y reglas de parada
 

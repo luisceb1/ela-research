@@ -1,0 +1,3 @@
+# Complete offline CI; analysis-specific dependencies remain in their own manifests.
+-r requirements-pe-contract.txt
+pyarrow==26.0.1

@@ -19,11 +19,12 @@ Las PR #36, #38 y #39 están integradas. Hay dos continuaciones bloqueadas por d
 ## Verificación
 
 ```bash
-python scripts/run_offline_tests.py --report test-results/offline.json
+python -m pip install -r research/requirements-ci.txt
+python scripts/run_offline_tests.py --fail-on-skip --report test-results/offline.json
 python -m compileall -q scripts tests
 ```
 
-La CI general ejecuta Python 3.11/3.12 y publica un informe con pruebas ejecutadas y omitidas. Las dependencias opcionales pueden producir omisiones explícitas. El trabajo paired-end instala PySAM fijado y exige cero omisiones en sus módulos seleccionados; véase el [inventario y contrato de verificación](research/SCRIPT_LIFECYCLE.md). Consultar siempre el SHA correspondiente. Las pruebas de software no sustituyen replicación biológica. Los análisis reales requieren sus fuentes y dependencias fijadas en cada informe; una CI offline correcta no significa que se hayan redescargado y reejecutado todos los análisis.
+La CI ejecuta la suite completa en Python 3.11/3.12 con PySAM/PyArrow fijados y exige cero omisiones. Publica informes de pruebas y versiones instaladas; los checks históricos conservan sus nombres y dependen de esa única matriz. Véase el [inventario y contrato de verificación](research/SCRIPT_LIFECYCLE.md). Consultar siempre el SHA correspondiente. Las pruebas de software no sustituyen replicación biológica. Los análisis reales requieren sus fuentes y dependencias fijadas en cada informe; una CI offline correcta no significa que se hayan redescargado y reejecutado todos los análisis.
 
 Originales fuera de git, en cachés reproducibles con URL/hash. Código e informes conservan comandos y límites. [Acta de integración](reports/integration-20261030/REPORT.md) e historial documental están separados del estado vigente.
 

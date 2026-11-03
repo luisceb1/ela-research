@@ -22,8 +22,17 @@ La conservación histórica explica parte de la duplicación, pero no convierte 
 
 ## Verificación
 
-Trabajo general: `python scripts/run_offline_tests.py --report test-results/offline.json`. Permite omisiones, enumera IDs/motivos y publica resumen. Si no descubre pruebas o un patrón solicitado no encuentra ninguna, falla.
+CI completa:
+```bash
+python -m pip install -r research/requirements-ci.txt
+python -m compileall -q scripts tests
+python scripts/run_offline_tests.py --fail-on-skip --report test-results/offline.json
+```
 
-Trabajo paired-end: instala `research/requirements-pe-contract.txt` y ejecuta los mismos 21 módulos seleccionados previamente con `--fail-on-skip`. Cualquier omisión hace fallar ese trabajo. El filtro de rutas incluye el runner y sus pruebas.
+Una sola definición en `.github/workflows/tests.yml` ejecuta todos los módulos `test_*.py` en Python 3.11/3.12, incluidos los 21 seleccionados anteriormente por el trabajo paired-end. Instala PySAM desde el manifiesto ya existente y PyArrow fijado; conserva `pip freeze` y el informe JSON como artefactos. Selección vacía, fallos, errores y cualquier omisión hacen fallar la suite.
 
-Los informes JSON y el resumen de GitHub Actions distinguen pruebas descubiertas, ejecutadas (descubiertas menos omitidas), correctas, fallos, errores y omisiones. El verde de un trabajo con omisiones no acredita esos controles omitidos ni pruebas de datos reales.
+Los nombres de checks `unit-tests (Python 3.11/3.12)`, `python-tests` y `pe-contract (3.11/3.12)` se conservan. Los dos últimos son comprobaciones de compatibilidad: dependen de la matriz completa y exigen explícitamente resultado `success`, incluso cuando la matriz falla. No ejecutan otra copia de la suite. Los workflows redundantes `unc13a-tests.yml` y `paired-end-tests.yml` se retiran; su historial permanece en Git.
+
+Para una comprobación local sin dependencias opcionales puede usarse el runner sin `--fail-on-skip`; sus omisiones quedan explícitas y no equivalen a controles verificados.
+
+Los informes JSON y el resumen de GitHub Actions distinguen pruebas descubiertas, ejecutadas (descubiertas menos omitidas), correctas, fallos, errores y omisiones. Pasar controles offline no acredita una reejecución de análisis reales.
