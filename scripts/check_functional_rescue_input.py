@@ -21,11 +21,15 @@ def check_contract(contract, contract_dir):
     def blocked(reason):
         return {"status": "blocked", "reason": reason, "effect_estimated": False}
 
+    if not isinstance(contract, dict):
+        return blocked("Contract must be a JSON object")
     if contract.get("schema_version") != "FR-K26-4d-v1":
         return blocked("Unrecognized contract version")
     if contract.get("enabled") is not True:
         return blocked(contract.get("disabled_reason", "Contract disabled"))
     review = contract.get("independence_review", {})
+    if not isinstance(review, dict):
+        return blocked("Independence review must be a JSON object")
     if (review.get("approved") is not True or
             not str(review.get("reviewer") or "").strip() or
             not str(review.get("evidence") or "").strip()):
@@ -64,7 +68,11 @@ def check_contract(contract, contract_dir):
     culture_map, coverslip_map = {}, {}
     excluded = 0
     for index, row in enumerate(rows, 2):
+        if None in row:
+            return blocked("CSV row has more fields than its header")
         required = FIELDS - {"exclusion_reason", "first_ASO_day", "KD_start_day"}
+        if row.get("included") == "false":
+            required -= {"value", "record_day"}
         if any(not str(row.get(key) or "").strip() for key in required):
             return blocked("Missing cell metadata at CSV line " + str(index))
         if row["condition"] not in CONDITIONS or row["included"] not in {"true", "false"}:
@@ -87,6 +95,15 @@ def check_contract(contract, contract_dir):
         if coverslip in coverslip_map and coverslip_map[coverslip] != slip_parent:
             return blocked("Coverslip assigned to conflicting parent or treatment")
         coverslip_map[coverslip] = slip_parent
+        # Failed recordings can have no amplitude or recording day. Retain their
+        # identities/reasons, but never invent measurements to pass the gate.
+        if row["included"] == "false":
+            if not row["exclusion_reason"].strip():
+                return blocked("Excluded cell without reason")
+            excluded += 1
+            continue
+        if row["exclusion_reason"].strip():
+            return blocked("Included cell has exclusion reason")
         try:
             value, record = float(row["value"]), float(row["record_day"])
             if not math.isfinite(value) or value < 0 or not math.isfinite(record):
@@ -107,13 +124,6 @@ def check_contract(contract, contract_dir):
                 return blocked("Unexpected KD in healthy control")
         except (ValueError, TypeError):
             return blocked("Unparseable amplitude or timing")
-        if row["included"] == "false":
-            if not row["exclusion_reason"].strip():
-                return blocked("Excluded cell without reason")
-            excluded += 1
-            continue
-        if row["exclusion_reason"].strip():
-            return blocked("Included cell has exclusion reason")
         counts[row["condition"]] += 1
         blocks[parent].add(row["condition"])
     if dict(counts) != contract["expected_included_cells"]:

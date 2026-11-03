@@ -122,6 +122,33 @@ class FunctionalInputGateTests(unittest.TestCase):
         self.rows[0]["culture_id"] = self.rows[1]["culture_id"]
         self.assertBlocked()
 
+    def test_failed_recording_retained_without_inventing_measurement(self):
+        self.rows.append(dict(self.rows[0], cell_id="failed-cell", source_row="failed-row",
+                              included="false", exclusion_reason="recording_failed",
+                              value="", record_day=""))
+        result = self.run_gate()
+        self.assertEqual(result["status"], "input_ready_for_design_review")
+        self.assertEqual(result["excluded_cells"], 1)
+        self.assertEqual(sum(result["included_cell_counts"].values()), 89)
+        self.assertFalse(result["effect_estimated"])
+
+    def test_non_object_contract_blocks(self):
+        self.assertEqual(GATE.check_contract([], self.path.parent)["status"], "blocked")
+
+    def test_non_object_independence_review_blocks(self):
+        self.contract["independence_review"] = []
+        self.assertBlocked()
+
+    def test_ragged_csv_blocks(self):
+        self.run_gate()
+        lines = self.path.read_text().splitlines()
+        lines[1] += ",unexpected"
+        self.path.write_text("\n".join(lines) + "\n")
+        self.contract["data_sha256"] = hashlib.sha256(self.path.read_bytes()).hexdigest()
+        result = GATE.check_contract(self.contract, self.path.parent)
+        self.assertEqual(result["status"], "blocked")
+        self.assertIn("more fields", result["reason"])
+
 
 if __name__ == "__main__":
     unittest.main()

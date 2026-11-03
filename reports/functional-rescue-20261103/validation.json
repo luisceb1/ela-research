@@ -2,20 +2,23 @@
   "data_effect_estimated": false,
   "files_sha256": {
     "reports/functional-rescue-20261103/DATA_AVAILABILITY.md": "f3f3f873d93757f263f13c8a8c4a04e5fa674539b6c3c882b9e501d67d89aebc",
+    "reports/functional-rescue-20261103/FIG4D_DATA_REQUEST.md": "04ea05a9258a557f5fa1a103bdda36e499973a136c13d9ae5240fdb98af8d924",
     "reports/functional-rescue-20261103/ORIGINALITY.md": "0ddcb0e69bf44eadc0c0e1da1fa22230bbdcfc6bcd846cb0b70bae351da6cf17",
     "reports/functional-rescue-20261103/REPORT.md": "355d26e73132cb16cf346cadb62868a9a5c0276d16a8182fbcc7df4bbf8c70dd",
     "reports/functional-rescue-20261103/REPRODUCTION_PLAN.md": "a4f2a2600d5adea440d426a2f40e912fb6e17b7e1f0ce6e2a812f538eb7c73b1",
+    "reports/functional-rescue-20261103/REVIEW.md": "16de5a60906b9ef90fee51cc2bc059fcf41edf51cb2d27ed7c196c2257f8c852",
     "reports/functional-rescue-20261103/evidence_matrix.tsv": "c3db87934adb29c4eb2a4ae20ffc3905d5d1e75220e5fa9cbace776112184426",
     "reports/functional-rescue-20261103/input_contract.json": "337f02bf57c69604ed6ef114fdc33eb93c13ae96d67c436f9dafd364b62d3366",
     "reports/functional-rescue-20261103/input_gate.json": "3b32a6f89b242fc899592cc144e6bd197df81ac1df30b1d85923833763d44ceb",
     "reports/functional-rescue-20261103/sources.json": "2e27d367e8f5f57c4cab5572d5b447032ec921e3a81b6aade62a75b1061b1886",
-    "scripts/check_functional_rescue_input.py": "ce0a3fff3d78d6a2907931d8931bbaeb1ec446f1192aa979d8a6ea054d4a0084",
-    "tests/test_functional_rescue_input.py": "ded353343dc4ba2cc994a2e47f6d8e16d5c1078117dbcf35cbd11b1d977dcc2d"
+    "scripts/check_functional_rescue_input.py": "bc8873948d6b2b3b67ddc28c3a147d9c817701dfd20752ad3eed10fd025538f3",
+    "tests/test_functional_rescue_input.py": "5d8aec631b8ac8868f2dc2604ce68eecf6c3139e6c88ac08342fc756bec880dd"
   },
   "full_historical_suite_run_locally": false,
   "matrix_rows": 12,
-  "new_tests_passed": 15,
+  "new_tests_passed": 19,
   "platform": "Linux-6.18.57-x86_64-with-glibc2.39",
   "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "review_of_commit": "1688e806e8071f6edb7b7d2a283cedd086b1e5a7",
   "source_references_valid": true
 }
