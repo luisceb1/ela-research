@@ -3,8 +3,10 @@ import csv
 import copy
 import hashlib
 import importlib.util
+import io
 import tempfile
 import unittest
+from unittest.mock import patch
 from pathlib import Path
 
 SCRIPT = Path(__file__).resolve().parents[1] / "scripts/check_functional_rescue_input.py"
@@ -169,7 +171,72 @@ class FunctionalInputGateTests(unittest.TestCase):
         self.assertEqual(result["status"], "blocked")
         self.assertIn("more fields", result["reason"])
 
+    def test_duplicate_required_header_is_rejected(self):
+        self.run_gate()
+        lines = self.path.read_text().splitlines()
+        lines[0] += ",value"
+        lines[1:] = [line + ",1" for line in lines[1:]]
+        self.path.write_text("\n".join(lines) + "\n", encoding="utf-8")
+        self.contract["data_sha256"] = hashlib.sha256(self.path.read_bytes()).hexdigest()
+        result = GATE.check_contract(self.contract, self.path.parent)
+        self.assertEqual(result["status"], "blocked")
+        self.assertEqual(result["reason"], "Duplicate CSV column names")
+
+    def test_duplicate_extra_header_is_rejected(self):
+        self.run_gate()
+        lines = self.path.read_text().splitlines()
+        lines[0] += ",note,note"
+        lines[1:] = [line + ",left,right" for line in lines[1:]]
+        self.path.write_text("\n".join(lines) + "\n", encoding="utf-8")
+        self.contract["data_sha256"] = hashlib.sha256(self.path.read_bytes()).hexdigest()
+        result = GATE.check_contract(self.contract, self.path.parent)
+        self.assertEqual(result["status"], "blocked")
+        self.assertEqual(result["reason"], "Duplicate CSV column names")
+
+    def test_hash_and_parser_use_same_snapshot_if_path_changes(self):
+        self.run_gate()
+        expected_digest = self.contract["data_sha256"]
+        original_read = Path.read_bytes
+        reads = []
+
+        def replace_after_read(path):
+            data = original_read(path)
+            if path == self.path:
+                reads.append(path)
+                path.write_bytes(b"different,unverified,table\n")
+            return data
+
+        with patch.object(Path, "read_bytes", replace_after_read):
+            result = GATE.check_contract(self.contract, self.path.parent)
+        self.assertEqual(result["status"], "input_ready_for_design_review")
+        self.assertEqual(result["sha256"], expected_digest)
+        self.assertEqual(len(reads), 1)
+        self.assertNotEqual(hashlib.sha256(original_read(self.path)).hexdigest(), expected_digest)
+
+    def test_bom_crlf_and_quoted_multiline_exclusion_remain_supported(self):
+        self.rows.append(dict(self.rows[0], cell_id="failed-cell", source_row="failed-row",
+                              included="false", exclusion_reason="registro fallido\nrevisión",
+                              value="", record_day=""))
+        text = io.StringIO(newline="")
+        writer = csv.DictWriter(text, fieldnames=sorted(GATE.FIELDS), lineterminator="\r\n")
+        writer.writeheader()
+        writer.writerows(self.rows)
+        self.path.write_bytes(b"\xef\xbb\xbf" + text.getvalue().encode("utf-8"))
+        self.contract["data_sha256"] = hashlib.sha256(self.path.read_bytes()).hexdigest()
+        result = GATE.check_contract(self.contract, self.path.parent)
+        self.assertEqual(result["status"], "input_ready_for_design_review")
+        self.assertEqual(result["excluded_cells"], 1)
+
+    def test_invalid_utf8_is_blocked_after_hash_verification(self):
+        self.run_gate()
+        self.path.write_bytes(b"\xff" + self.path.read_bytes())
+        self.contract["data_sha256"] = hashlib.sha256(self.path.read_bytes()).hexdigest()
+        result = GATE.check_contract(self.contract, self.path.parent)
+        self.assertEqual(result["status"], "blocked")
+        self.assertTrue(result["reason"].startswith("Cannot parse original CSV:"))
+
 
 if __name__ == "__main__":
     unittest.main()
+
 
