@@ -1,5 +1,15 @@
 # Estado vigente — 03/11/2026
 
+## Decisión vigente: timeout de CTRL_R1; recuperación del mate aislado — 03/11/2026
+
+Luis aceptó plan15f85f9d… en49f37a0. Índice preflight verificado; CTRL_R1 timeout, supervisor exit1/sinviolación/grupo vacío. Recibo354.631.727B, cargo nuevo356.515.840B, total4.712.318.573B. Diferencia1.884.113B sin reembolso;4.272,2037699222565s históricos. No otros mates/alineamientos. Evidencia en reports/ctrl-r1-recovery-20261103/user-reported-failure.json.
+
+Nuevo recover_ctrl_read.py prepara descriptor deshabilitado: audita metadatos ypartialSHA, copia comprobada, una peticiónRange606.225.236B, sóloMD5/tamaño enteros permiten promoción yexterno limpio sella. Nueva ventana propuesta2400s/1800sHTTP, socket30s, necesitaSHA yaceptación explícita. No modifica intento ni contador anteriores; cap12GB,512MiBRSSmuestreada/1GiBAS,2CPU,25GiB cinco árboles/reserva8GiB. Sin red real del agente/otros mates/descompresión/alineamiento.
+
+308 pruebas locales pasan sin omisiones(289+19). PositivoHTTP local y negativos; trabajadorCLI falla antes de red/grupo vacío. Dos fallos iniciales de fixtures conservados ycorregidos sin debilitar guardas. Informe reports/ctrl-r1-recovery-20261103/REPORT.md.
+
+Siguiente tarea única: emitir plan enWSL según research/runbooks/2026-11-03-ctrl-r1-recovery-powershell.md y revisarJSON antes de aceptar nueva ventana. Después del sello quedará adopción del mate/cargos por el piloto. No relanzarjob ni resetear. PR36 abierta/sinmerge. Cabeceras inferiores históricas.
+
 ## Continuidad comprobada y ayuda offline opcional — 03/11/2026
 
 El piloto desde caché sigue pendiente del descriptor deshabilitado y su revisión en WSL; no se ha recibido aquí ni se ha aceptado la nueva ventana. Se mantiene la tarea real definida abajo y el runbook existente, sin introducir un gate obligatorio adicional.

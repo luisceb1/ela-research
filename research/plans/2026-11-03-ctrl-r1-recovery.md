@@ -1,0 +1,7 @@
+# Recuperación acotada de CTRL_R1
+
+Pregunta previa: ¿se puede completar el primer mate interrumpido manteniendo los cargos y sin reiniciar el piloto? Evidencia de Luis: preflight verificado, CTRL_R1 timeout, supervisor exit1 sin infracción/grupo vacío; recibo354631727 bytes, cargo nuevo356515840, total4712318573 y tiempo histórico4272.2037699222565s. MD5 completo esperado ed58daa011d6508a3e8d1f05bc39fc29, tamaño960856963.
+
+Método: propuesta deshabilitada, raíz nueva derivada; auditar metadatos originales/aceptación/índice y hash del parcial; copiar prefijo comprobado, una sola petición Range restante con206/Content-Range/Length exactos, sin redirect/retry/proxy/encoding. MD5 completo y SHA256 local antes de promoción. No renovar/editar intento original, no reembolso del bloque pendiente. No solicitar otros mates, descomprimir FASTQ o alinear. Tiempo adicional2400s (300copia+1800HTTP+300verificación), timeout de socket30s bajo watchdog externo. Cap global12GB,512MiBRSS/1GiBAS,2CPU,disco25GiB todo el linaje/reserva8GiB. Requiere SHA y aceptación explícita de ventana.
+
+Predicción refutable: fixture positivo recupera exactamente el archivo y sella sólo tras exit0/grupo vacío; HTTP200/rangos cambiados, parcial alterado, MD5 incorrecto, deadline/cargo modificado, ausencia de aceptación y raíz reutilizada fallan sin promoción. No red real del agente ni afirmaciones biológicas. Tras sello, diseñar adopción por el piloto; recuperación sola no habilita ejecución RAW.

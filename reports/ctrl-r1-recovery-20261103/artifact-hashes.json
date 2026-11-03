@@ -1,0 +1,16 @@
+{
+  "scripts/recover_ctrl_read.py": "ac0ad1a995809660a17c6e9923ec7e2cf5666541a53a76b017318da01b165f5e",
+  "tests/test_recover_ctrl_read.py": "c7d8de21a24e10411bef6b28de89221bfdaff0860dc31ee7550e1d84de3a9e40",
+  ".github/workflows/paired-end-tests.yml": "cfe36d5788350d13aa019f61a26f4b60cf9d9590259a9bf3f11a65230e3e867c",
+  "research/STATE.md": "5f2bdf97ffa96bfc8280fc44aa288dd8509af5d3e034b3ac68ec377a79889d97",
+  "research/BACKLOG.md": "b388a979919fef4854f35ee0011bb530ce6cd455bf5511b49f8b0afb28ac5e69",
+  "research/plans/2026-11-03-ctrl-r1-recovery.md": "e86ed0ca868bfc1379ce6c0b230164c4d4115d295bba97b9b56eeab680d41b07",
+  "research/runbooks/2026-11-03-ctrl-r1-recovery-powershell.md": "caa316cf8fad23fa3916fc4fcc6583156a3ba69bf3fe9f8abf2ad05e87123937",
+  "reports/ctrl-r1-recovery-20261103/REPORT.md": "37b8b719632f3b745b34d8eb9118c6c12bd41981e1dfbf08443bdf00f59ecdde",
+  "reports/ctrl-r1-recovery-20261103/audit-fixture-failure.txt": "c9afb49a187e097a44ad0ba29fd35d090951e52372bc46f2c8ce6abc92d2fd45",
+  "reports/ctrl-r1-recovery-20261103/execution-proposal.json": "2bc723ba0c1a09801273305afeef09124a7e7f2d43c3478102d9df7f0404ed6c",
+  "reports/ctrl-r1-recovery-20261103/initial-tests-failure.txt": "18de11d6f7ba6fc281de859d37ebeeae7fa9db2ddab65dfdd356492afcad612f",
+  "reports/ctrl-r1-recovery-20261103/tests.txt": "83905481fbfbe7009ea81f435db9ea5498780ef67f3d19ccd98b227588933307",
+  "reports/ctrl-r1-recovery-20261103/user-reported-failure.json": "1f754e8b51ed2021d330430f64385138cb4f45544bdefe64f8ee45eb96f29026",
+  "reports/ctrl-r1-recovery-20261103/validation.json": "b4420dac1fda4717770342ee4d253b8240e9971a57d30e6541e3f4a89e917328"
+}

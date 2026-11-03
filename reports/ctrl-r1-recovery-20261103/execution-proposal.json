@@ -1,0 +1,20 @@
+{
+  "scope": "recover CTRL_R1 only",
+  "execution_enabled": false,
+  "prior_charged_body_bytes": 4712318573,
+  "partial_bytes_from_receipt_pending_local_audit": 354631727,
+  "full_bytes": 960856963,
+  "expected_md5": "ed58daa011d6508a3e8d1f05bc39fc29",
+  "remaining_body_bytes": 606225236,
+  "expected_cumulative_after_recovery": 5318543809,
+  "remaining_original_body_budget_after_recovery": 6681456191,
+  "unreceived_reservations_not_refunded": 1884113,
+  "new_wall_seconds": 2400,
+  "new_http_seconds": 1800,
+  "socket_timeout_seconds": 30,
+  "old_deadline_unchanged": 1793698176.656901,
+  "old_spent_transfer_seconds": 4272.2037699222565,
+  "new_window_accepted": false,
+  "further_mates_downloaded": false,
+  "raw_execution_ready": false
+}
