@@ -1,0 +1,9 @@
+{
+  "worker_source_commit": "49f37a0cbda83b8046cf40492f566bc27906171f",
+  "sha256_verified": {
+    "reports/pilot-readiness-audit-20261102/execution-proposal.json": "26e37170d60aa5ac63cd611dcc1c97f8e33c1daf3cf7f14d24e90b010473421f",
+    "reports/unc13a-reference-strand-20261102/contract.json": "a20ea058d038142b9a774bbd8a8c63656202ab914624cee642321408e303f7fe"
+  },
+  "real_WSL_plan_received": false,
+  "scientific_data_analyses_added": 0
+}

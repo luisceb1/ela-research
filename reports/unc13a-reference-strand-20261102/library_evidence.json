@@ -1,0 +1,21 @@
+{
+  "cached_soft_sha256": "17ec8d6e301dc33b6782a682caed137d9c6054cd5038b5791ae26ee9097c2bc5",
+  "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE296714",
+  "samples": [
+    {
+      "gsm": "GSM8975203",
+      "strand_specific_mentioned": true,
+      "kapa_mrna_hyperprep_mentioned": true,
+      "FR_RF_explicit": false
+    },
+    {
+      "gsm": "GSM8975210",
+      "strand_specific_mentioned": true,
+      "kapa_mrna_hyperprep_mentioned": true,
+      "FR_RF_explicit": false
+    }
+  ],
+  "manufacturer_url": "https://rochesequencingstore.com/catalog/kapa-mrna-hyperprep-kit/?attribute_options=96rxn",
+  "manufacturer_access": "web search primary product description, 2026-11-02; not a versioned kit execution record",
+  "RF_status": "methodological expectation only; primary pilot is unstranded"
+}

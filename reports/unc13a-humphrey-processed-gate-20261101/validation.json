@@ -1,0 +1,9 @@
+{
+  "two_runs_identical": true,
+  "sha256": {
+    "result.json": "99341594d3b189b2e56f1c6596cb3f1c0f07b30be4d6de184ba42059ef5668ee",
+    "event_definitions.tsv": "27f0bdfd28504ec6811720e227fff9dd81c05cf6209a88bd93c498dedf5ea12f"
+  },
+  "new_tests": 0,
+  "full_suite_local": false
+}

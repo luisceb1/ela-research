@@ -1,0 +1,9 @@
+{
+  "two_plan_runs_byte_identical": true,
+  "plan_sha256": "67f233a199210e2641c3bdc4dd8745f4a0ef0f2f48650ba017de87dccd7325e6",
+  "raw_downloaded": false,
+  "alignments_executed": false,
+  "dependencies_installed": false,
+  "new_tests": 0,
+  "resource_limits_are_stop_rules_not_benchmarks": true
+}

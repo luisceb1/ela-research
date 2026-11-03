@@ -1,0 +1,12 @@
+{
+  "manifest_sha256": "67f233a199210e2641c3bdc4dd8745f4a0ef0f2f48650ba017de87dccd7325e6",
+  "selected_fastq_bytes": 6349703881,
+  "transfer_limit": 12000000000,
+  "free_disk_bytes": 63686750208,
+  "planned_disk_plus_reserve": 35433480192,
+  "disk_budget_fits_observed_environment": true,
+  "simulated_resume_identical": true,
+  "simulation_transfer_bytes": 50,
+  "real_transport_implemented": false,
+  "raw_execution_ready": false
+}

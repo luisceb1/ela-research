@@ -1,0 +1,27 @@
+{
+  "absolute_tolerance": 1e-06,
+  "accepted": true,
+  "author_units": "proportion",
+  "biological_independence_or_function_validated": false,
+  "denominator_groups": [
+    "ENSG00000104435.14_1",
+    "ENSG00000104435.14_2"
+  ],
+  "failed": 0,
+  "gene": "ENSG00000104435.14",
+  "group_means_or_p_values_computed": false,
+  "indeterminate": 0,
+  "inputs_sha256": {
+    "ppau": "c4828ee5edd25a8c6c29719366735df268a669d8d5ba8d075dd015bdccd5ac42",
+    "samples": "818b8f6553a3ea1b44e0c1cf511c5dec1fcc35f7ccd68e2d8b45af6c46087573",
+    "tpm": "1037570e97c8ad4536f092a7bfb2b83c9710e8b402d04acdd6e3f0d69ba0466b"
+  },
+  "libraries": 12,
+  "max_absolute_difference": 4.440892098500626e-16,
+  "measurement": "last-exon-group TPM / sum of gene-group TPM; not junction PSI",
+  "numerator_group": "ENSG00000104435.14_1",
+  "passed": 12,
+  "ppau_table_rows": 43630,
+  "prior_counts_hypothesis_remains_rejected": true,
+  "tpm_table_rows": 43630
+}

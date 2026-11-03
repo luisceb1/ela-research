@@ -1,0 +1,57 @@
+[
+  {
+    "case": "test_crc_corruption_after_complete_members_rejected",
+    "phase_status": "failed",
+    "transfer_bytes_consumed": 128,
+    "deadline_epoch": 1793612939.2874057,
+    "receipt_status": "failed",
+    "gzip_eof_crc_validated": false,
+    "tar_stream_bytes": null,
+    "file_bytes": null
+  },
+  {
+    "case": "test_hard_external_timeout_keeps_started_and_partials",
+    "phase_status": "started",
+    "transfer_bytes_consumed": 128,
+    "deadline_epoch": 1793612939.4048958,
+    "receipt_status": "started",
+    "gzip_eof_crc_validated": false,
+    "tar_stream_bytes": null,
+    "file_bytes": null,
+    "exit_code": -9,
+    "violation": "timeout",
+    "elapsed_seconds": 1.0077574739998454,
+    "max_group_members": 2,
+    "live_group_members_after_cleanup": []
+  },
+  {
+    "case": "test_pax_header_rejected_without_loading_declared_payload",
+    "phase_status": "failed",
+    "transfer_bytes_consumed": 76,
+    "deadline_epoch": 1793612940.7564754,
+    "receipt_status": "failed",
+    "gzip_eof_crc_validated": false,
+    "tar_stream_bytes": null,
+    "file_bytes": null
+  },
+  {
+    "case": "test_sha_only_http_to_archive_and_cached_reuse",
+    "phase_status": "verified",
+    "transfer_bytes_consumed": 128,
+    "deadline_epoch": 1793612940.817701,
+    "receipt_status": "verified",
+    "gzip_eof_crc_validated": true,
+    "tar_stream_bytes": 10240,
+    "file_bytes": 197
+  },
+  {
+    "case": "test_success_reopen_preserves_budget_deadline_and_files",
+    "phase_status": "verified",
+    "transfer_bytes_consumed": 128,
+    "deadline_epoch": 1793612941.3354378,
+    "receipt_status": "verified",
+    "gzip_eof_crc_validated": true,
+    "tar_stream_bytes": 10240,
+    "file_bytes": 197
+  }
+]

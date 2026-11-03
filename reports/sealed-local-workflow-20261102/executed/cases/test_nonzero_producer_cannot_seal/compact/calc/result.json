@@ -1,0 +1,14 @@
+{
+  "status": "failed",
+  "policy": "compact-pe-v1",
+  "raw_execution_ready": false,
+  "error_type": "ValueError",
+  "error": "Producer did not complete successfully",
+  "input_bytes": 7151,
+  "records": 18,
+  "header_bytes": 657,
+  "initial_runs": 1,
+  "merge_passes": 0,
+  "peak_temp_bytes": 3881,
+  "producer_exit_code": 7
+}

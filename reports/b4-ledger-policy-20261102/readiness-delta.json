@@ -1,0 +1,10 @@
+{
+  "baseline_commit":"b6522a94689eee057b7abddb72bde7b5497b37dc",
+  "changed_gate":{"id":"B4","status":"local_verified","scope":"Manifest/ledger compact phase, dependency hashes, global/phase/subphase/transfer clocks, disk partitions, RSS/AS policy and union coverage; synthetic only"},
+  "coverage_change":{"old_draft":"sum of canonical/cryptic event supports, potentially overlapping","current":"at least20 accepted RG/QNAME groups with one or more target events, anchor15; event sum separate; not unique molecules","fixed_before_biological_data":true},
+  "remaining_blockers":["B1 fixed supervised real source/producer/consumer worker and exact external origins","B5 actual host/index/dialect/dependency verification and explicit execution decision"],
+  "remaining_blocker_count":2,
+  "execution_enabled":false,
+  "raw_execution_ready":false,
+  "next_task":"B1 design/local synthetic integration only; no real downloads, index or alignment"
+}

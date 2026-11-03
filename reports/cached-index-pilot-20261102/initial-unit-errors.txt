@@ -1,0 +1,1 @@
+Initial targeted test run: two fixture KeyError failures for missing prior_global_deadline_epoch in the synthetic recovery-plan original_audit. Fixed the synthetic fixture to include the recorded deadline and resealed its dependent metadata. No production validation fallback or weakened guard was introduced. Final targeted 16 tests and full selected 289 tests passed.

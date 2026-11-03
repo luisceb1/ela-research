@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "/workspace/scratch/dd06b558bed7/ela-audit/scripts/sealed_local_workflow.py", line 230, in <module>
+    p=argparse.ArgumentParser();p.add_argument('--job',type=Path,required=True);p.add_argument('--verify');a=p.parse_args();worker(read_metadata(a.job),a.verify)
+                                                                                                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/dd06b558bed7/ela-audit/scripts/sealed_local_workflow.py", line 175, in worker
+    else:run_stream(r,name)
+         ^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/dd06b558bed7/ela-audit/scripts/sealed_local_workflow.py", line 134, in run_stream
+    with process.stdout as stream:result=run(stream,runner.root/'compact'/name,spec['library'],spec['targets'],spec['limits'],finish,checkpoint=runner.guard)
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/dd06b558bed7/ela-audit/scripts/compact_pe_pipeline.py", line 132, in run
+    if type(code) is not int or code!=0:raise ValueError('Producer did not complete successfully')
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Producer did not complete successfully

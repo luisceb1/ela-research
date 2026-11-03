@@ -1,0 +1,7 @@
+{
+  "status": "failed",
+  "job_sha256": "ae9626b8acf26c5e309cba0d640b3347a019be5b14525615b955e652b3d4911b",
+  "external_receipt": "body.json",
+  "effective_timeout_seconds": 1,
+  "raw_execution_ready": false
+}

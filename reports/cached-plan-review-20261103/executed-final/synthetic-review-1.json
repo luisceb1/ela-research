@@ -1,0 +1,22 @@
+{
+  "status": "declared_offline_policy_checks_passed",
+  "prior_body_bytes": 4355802733,
+  "planned_read_body_bytes": 6349703881,
+  "cumulative_if_both_downloaded": 10705506614,
+  "margin_bytes": 1294493386,
+  "disabled_descriptor_provided": true,
+  "execution_enabled": false,
+  "raw_execution_ready": false,
+  "host_files_verified": false,
+  "window_authorized": false,
+  "descriptor_source_not_authenticated": true,
+  "worker_source_commit": "49f37a0cbda83b8046cf40492f566bc27906171f",
+  "not_verified": [
+    "host filesystem/seals/index",
+    "binary/Python/producer/decoder identities",
+    "complete compact reducer policy",
+    "resource observation",
+    "operator acceptance"
+  ],
+  "replaces_worker_validation": false
+}

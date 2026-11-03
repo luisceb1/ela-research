@@ -1,0 +1,23 @@
+{
+  "name": "run",
+  "argv": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "/workspace/scratch/dd06b558bed7/ela-audit/scripts/sealed_local_workflow.py",
+    "--job",
+    "/tmp/tmpvo3ey3hq/run/workflow-job.json"
+  ],
+  "status": "finished",
+  "memory_mode": "sampled group RSS; per-process RLIMIT_AS",
+  "detaching_supported": false,
+  "namespace_pid": 13,
+  "procfs_pid": 2895,
+  "procfs_group": 2895,
+  "exit_code": 0,
+  "violation": null,
+  "peak_group_rss_bytes_sampled": 71921664,
+  "samples": 52,
+  "max_group_members": 2,
+  "rss_observed": true,
+  "live_group_members_after_cleanup": [],
+  "elapsed_seconds": 0.6265595669992763
+}

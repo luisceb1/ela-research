@@ -1,0 +1,24 @@
+test_chunk_initial_runs_and_disk_caps (test_compact_pe_pipeline.CompactTests.test_chunk_initial_runs_and_disk_caps) ... ok
+test_decoder_disagreement_rejected (test_compact_pe_pipeline.CompactTests.test_decoder_disagreement_rejected) ... ok
+test_duplicate_tag_rejected (test_compact_pe_pipeline.CompactTests.test_duplicate_tag_rejected) ... ok
+test_four_existing_fixtures_equal_both_baselines_at_both_anchors (test_compact_pe_pipeline.CompactTests.test_four_existing_fixtures_equal_both_baselines_at_both_anchors) ... ok
+test_group_over_sixteen_fails_closed (test_compact_pe_pipeline.CompactTests.test_group_over_sixteen_fails_closed) ... ok
+test_header_after_records_rejected (test_compact_pe_pipeline.CompactTests.test_header_after_records_rejected) ... ok
+test_invalid_policy_rejected_before_destination (test_compact_pe_pipeline.CompactTests.test_invalid_policy_rejected_before_destination) ... ok
+test_line_byte_header_record_and_row_caps (test_compact_pe_pipeline.CompactTests.test_line_byte_header_record_and_row_caps) ... ok
+test_missing_or_wrong_reference_header_rejected (test_compact_pe_pipeline.CompactTests.test_missing_or_wrong_reference_header_rejected) ... ok
+test_nonseekable_stream_and_multiple_merge_passes (test_compact_pe_pipeline.CompactTests.test_nonseekable_stream_and_multiple_merge_passes) ... ok
+test_offtarget_splice_strand_still_affects_qc (test_compact_pe_pipeline.CompactTests.test_offtarget_splice_strand_still_affects_qc) ... ok
+test_output_directory_not_overwritten (test_compact_pe_pipeline.CompactTests.test_output_directory_not_overwritten) ... ok
+test_producer_nonzero_cannot_certify_eof (test_compact_pe_pipeline.CompactTests.test_producer_nonzero_cannot_certify_eof) ... ok
+test_result_cap_after_reduction (test_compact_pe_pipeline.CompactTests.test_result_cap_after_reduction) ... ok
+test_supervised_actual_pipe_success_and_nonzero_producer (test_compact_pe_pipeline.CompactTests.test_supervised_actual_pipe_success_and_nonzero_producer) ... ok
+test_supervised_blocked_pipe_kills_producer_and_consumer (test_compact_pe_pipeline.CompactTests.test_supervised_blocked_pipe_kills_producer_and_consumer) ... ok
+test_temp_runs_contain_no_read_sequence_quality_or_cigar (test_compact_pe_pipeline.CompactTests.test_temp_runs_contain_no_read_sequence_quality_or_cigar) ... ok
+test_truncated_line_rejected (test_compact_pe_pipeline.CompactTests.test_truncated_line_rejected) ... ok
+test_unsorted_rg_double_support_and_secondaries_preserve_counts (test_compact_pe_pipeline.CompactTests.test_unsorted_rg_double_support_and_secondaries_preserve_counts) ... ok
+
+----------------------------------------------------------------------
+Ran 19 tests in 1.409s
+
+OK

@@ -1,0 +1,34 @@
+Source commit: f8cc015956e7eef63980e6895fe7a87e6caab456
+Workflow: https://github.com/luisceb1/ela-research/actions/runs/41420961303
+Job: 125196113314
+Cause: test assumed pending reservation == 1 at every SIGKILL instant. It can
+be zero after settlement and before next read, with all delivered bytes charged.
+
+2026-11-02T09:29:04.0528397Z Traceback (most recent call last):
+2026-11-02T09:29:04.0534756Z   File "/home/runner/work/ela-research/ela-research/tests/test_external_local_stage.py", line 83, in test_slow_progress_cannot_extend_external_timeout
+2026-11-02T09:29:04.0535929Z     self.assertEqual(ledger['phases']['body']['unsettled_body_reservation_bytes'],1);self.assert_blocked_reopen()
+2026-11-02T09:29:04.0536906Z     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-11-02T09:29:04.0537301Z AssertionError: 0 != 1
+2026-11-02T09:29:04.0537469Z 
+2026-11-02T09:29:04.0537642Z ----------------------------------------------------------------------
+2026-11-02T09:29:04.0538066Z Ran 536 tests in 13.326s
+2026-11-02T09:29:04.0538234Z 
+2026-11-02T09:29:04.0538354Z FAILED (failures=1, skipped=1)
+2026-11-02T09:29:04.0809333Z ##[error]Process completed with exit code 1.
+2026-11-02T09:29:04.0929625Z Post job cleanup.
+2026-11-02T09:29:04.1768652Z [command]/usr/bin/git version
+2026-11-02T09:29:04.1862708Z git version 2.56.0
+2026-11-02T09:29:04.1968232Z Temporarily overriding HOME='/home/runner/work/_temp/dc756a6b-cb8c-4eb2-a568-821fdff07604' before making global git config changes
+2026-11-02T09:29:04.1972435Z Adding repository directory to the temporary git global config as a safe directory
+2026-11-02T09:29:04.1974398Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/ela-research/ela-research
+2026-11-02T09:29:04.1978862Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-02T09:29:04.2002579Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-02T09:29:04.2352857Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-02T09:29:04.2462538Z http.https://github.com/.extraheader
+2026-11-02T09:29:04.2489690Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2026-11-02T09:29:04.2491662Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-02T09:29:04.2930927Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-02T09:29:04.3018641Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-11-02T09:29:04.3565526Z Cleaning up orphan processes
+2026-11-02T09:29:04.3869854Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-python@v5. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+

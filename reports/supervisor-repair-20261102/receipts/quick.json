@@ -1,0 +1,22 @@
+{
+  "name": "quick",
+  "argv": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "-c",
+    "pass"
+  ],
+  "status": "finished",
+  "memory_mode": "sampled group RSS; per-process RLIMIT_AS",
+  "detaching_supported": false,
+  "namespace_pid": 10,
+  "procfs_pid": 675,
+  "procfs_group": 675,
+  "exit_code": 0,
+  "violation": null,
+  "peak_group_rss_bytes_sampled": 5767168,
+  "samples": 2,
+  "max_group_members": 1,
+  "rss_observed": true,
+  "live_group_members_after_cleanup": [],
+  "elapsed_seconds": 0.028386355000066033
+}

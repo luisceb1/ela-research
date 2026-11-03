@@ -1,0 +1,18 @@
+[
+  {
+    "kind": "preregistered_hypothesis_failure",
+    "details": "Counts-ratio/PPAU comparison fails in all 12 libraries; retained without threshold adjustment",
+    "expected_program_failure": false,
+    "gate": "stop_acceptance"
+  },
+  {
+    "kind": "previous_design_error",
+    "details": "Proposed counts-based formula was not the TPM-based PPAU definition in author code",
+    "resolution": "Preserve failed test; prepare new prospective TPM plan without executing it"
+  },
+  {
+    "kind": "documentation_patch_rejected",
+    "details": "apply_patch rejected delete/add targeting the same path; no files changed",
+    "resolution": "Applied an Update File patch instead"
+  }
+]

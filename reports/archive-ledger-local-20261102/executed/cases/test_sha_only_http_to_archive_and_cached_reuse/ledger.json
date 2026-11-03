@@ -1,0 +1,60 @@
+{
+  "fingerprint": "ff437b1fbaf411a82aabf8233f3fb74b02171190fc757b5519fdf10d916c1c39",
+  "limits": {
+    "wall_seconds": 30,
+    "transfer_bytes": 1048576,
+    "disk_bytes": 4194304,
+    "reserve_bytes": 0
+  },
+  "deadline_epoch": 1793612940.817701,
+  "transfer_bytes_consumed": 128,
+  "phases": {
+    "source": {
+      "kind": "transfer",
+      "status": "verified",
+      "signature": "e45f7ee26ea2ca15cb740c47ee10715d89fd1c56fc3251688aeaecdec40901d4",
+      "unsettled_body_reservation_bytes": 0,
+      "bytes": 128,
+      "md5": "a7a06a5a0ada89be389f950577afafef",
+      "sha256": "1e1a363f79773eaee57cf8f2353914a66a0333b8e524c06c898450df76f2af1e",
+      "attempts_used": 1
+    },
+    "unpack": {
+      "kind": "archive",
+      "status": "verified",
+      "signature": "0d2078c9dd925d33bcbf21555c488538d704799a92e3daf9c06815cf23da70a0",
+      "binding": {
+        "policy": "bounded-tar-gzip-ledger-v1",
+        "spec": {
+          "transfer": "source",
+          "identity": "synthetic/index-v1",
+          "expected": {
+            "bytes": 128,
+            "sha256": "1e1a363f79773eaee57cf8f2353914a66a0333b8e524c06c898450df76f2af1e"
+          },
+          "members": [
+            {
+              "name": "index/a.ht2",
+              "bytes": 83,
+              "sha256": "e14eff3310babb7d63933e8139833b5f2f0a3ec80a0bd01edede97f3c1edd52b"
+            },
+            {
+              "name": "index/b.ht2",
+              "bytes": 114,
+              "sha256": "f5d3dc3858f7d413dd80bb1a58f808ed771c90fc3cdf2067ab3804dff06cfa28"
+            }
+          ],
+          "max_members": 16,
+          "max_expanded_bytes": 4096,
+          "max_tar_bytes": 32768
+        },
+        "fingerprint": "ff437b1fbaf411a82aabf8233f3fb74b02171190fc757b5519fdf10d916c1c39",
+        "transfer_receipt_sha256": "c5501fce2d3c202682d26806d63b0675271199a9f936e8c63bc4fba4eee3a80c",
+        "http_receipt_sha256": "78d780e62364707cd421f6bfcecb14ff4fe589ba5290faa1f396854a61130545"
+      },
+      "receipt_sha256": "3a12c3f3bb1adadffd1acd72b28ee65f8309d70cfb6e2acf363bb17e59d78f74"
+    }
+  },
+  "mode": "synthetic-only",
+  "raw_pilot_ready": false
+}

@@ -1,0 +1,26 @@
+{
+  "absolute_tolerance": 1e-06,
+  "accepted": false,
+  "author_units": "proportion",
+  "count_table_rows": 43630,
+  "denominator_or_tolerance_changed": false,
+  "failed": 12,
+  "gate": "stopped_by_preregistered_rule",
+  "gene": "ENSG00000104435.14",
+  "group_means_or_p_values_computed": false,
+  "indeterminate": 0,
+  "inputs_sha256": {
+    "counts": "5b25fdea528e99ba647fd20b0d5f4ca5aab401d0e373df131bdc2145ded1a296",
+    "ppau": "c4828ee5edd25a8c6c29719366735df268a669d8d5ba8d075dd015bdccd5ac42",
+    "samples": "818b8f6553a3ea1b44e0c1cf511c5dec1fcc35f7ccd68e2d8b45af6c46087573"
+  },
+  "libraries": 12,
+  "max_absolute_difference": 0.17013297835212804,
+  "numerator_group": "ENSG00000104435.14_1",
+  "passed": 0,
+  "ppau_table_rows": 43630,
+  "target_groups": [
+    "ENSG00000104435.14_1",
+    "ENSG00000104435.14_2"
+  ]
+}

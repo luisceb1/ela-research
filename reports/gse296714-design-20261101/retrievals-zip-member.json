@@ -1,0 +1,16 @@
+[
+  {
+    "url": "https://zenodo.org/api/records/15538003/files/2025-05-28__tdp43-apa__data.zip/content",
+    "member": "tdp43-apa/preprocessing/data/PAPA/sample_tables/humphrey_i3_cortical/humphrey_i3_cortical_underscore_sample_tbl.csv",
+    "range": "bytes=808633616-808765019",
+    "at_utc": "2026-11-01T20:24:35.397980+00:00",
+    "status": 206,
+    "content_range": "bytes 808633616-808765019/831190727",
+    "saved": true,
+    "transferred_bytes": 131404,
+    "member_bytes": 3863,
+    "range_sha256": "f5e2b9be0a34bcb798d6c0832c60eb7a015a666e80cdb2ebe56cce3e189466e5",
+    "member_sha256": "98c07f236745a84e09aa19ffc16bf2ff411f928528a8f9894f4f7cfc6f136128",
+    "crc_verified": true
+  }
+]

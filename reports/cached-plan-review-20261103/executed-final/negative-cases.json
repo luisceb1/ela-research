@@ -1,0 +1,90 @@
+[
+  {
+    "synthetic_case": "execution_enabled",
+    "error": "Disabled job required"
+  },
+  {
+    "synthetic_case": "extra_byte_budget",
+    "error": "Fixed limits changed"
+  },
+  {
+    "synthetic_case": "new_total_window",
+    "error": "Fixed limits changed"
+  },
+  {
+    "synthetic_case": "new_http_window",
+    "error": "Phase/order/resource policy changed"
+  },
+  {
+    "synthetic_case": "refunded_previous_charge",
+    "error": "Cache history/inventory changed: cumulative_body_bytes"
+  },
+  {
+    "synthetic_case": "changed_prior_deadline",
+    "error": "Cache history/inventory changed: prior_global_deadline_epoch"
+  },
+  {
+    "synthetic_case": "lost_spent_time",
+    "error": "Prior spent time changed"
+  },
+  {
+    "synthetic_case": "more_prefix_pairs",
+    "error": "Fixed paired inputs/prefix changed"
+  },
+  {
+    "synthetic_case": "boolean_prefix",
+    "error": "Fixed paired inputs/prefix changed"
+  },
+  {
+    "synthetic_case": "relaxed_coverage",
+    "error": "Compute target/coverage/sample changed"
+  },
+  {
+    "synthetic_case": "changed_target",
+    "error": "Compute target/coverage/sample changed"
+  },
+  {
+    "synthetic_case": "index_download_added",
+    "error": "Index transfer/extraction forbidden in this route"
+  },
+  {
+    "synthetic_case": "retry_added",
+    "error": "Transport policy changed"
+  },
+  {
+    "synthetic_case": "alternate_origin",
+    "error": "Fixed origins, libraries or stage order changed"
+  },
+  {
+    "synthetic_case": "changed_md5",
+    "error": "Fixed origins, libraries or stage order changed"
+  },
+  {
+    "synthetic_case": "changed_url",
+    "error": "Fixed origins, libraries or stage order changed"
+  },
+  {
+    "synthetic_case": "tdp_before_ctrl_compute",
+    "error": "Fixed origins, libraries or stage order changed"
+  },
+  {
+    "synthetic_case": "extra_library",
+    "error": "Compute libraries changed"
+  },
+  {
+    "synthetic_case": "reused_original_root",
+    "error": "Exclusive derived root changed"
+  },
+  {
+    "synthetic_case": "path_traversal",
+    "error": "Non-canonical absolute POSIX path"
+  },
+  {
+    "synthetic_case": "altered_index_member",
+    "error": "Cache history/inventory changed: members"
+  },
+  {
+    "synthetic_case": "relaxed_temporary_cap",
+    "error": "Compact temporary allocation changed"
+  }
+]

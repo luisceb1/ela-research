@@ -1,0 +1,9 @@
+test_exonic_and_inclusive_labels_convert_to_same_span (test_unc13a_reference_contract.ReferenceGeometryTests.test_exonic_and_inclusive_labels_convert_to_same_span) ... ok
+test_off_by_one_breaks_motif (test_unc13a_reference_contract.ReferenceGeometryTests.test_off_by_one_breaks_motif) ... ok
+test_outside_window_rejected (test_unc13a_reference_contract.ReferenceGeometryTests.test_outside_window_rejected) ... ok
+test_sam_N_span_uses_contract_coordinates (test_unc13a_reference_contract.ReferenceGeometryTests.test_sam_N_span_uses_contract_coordinates) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.003s
+
+OK

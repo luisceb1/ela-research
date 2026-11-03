@@ -1,0 +1,57 @@
+{
+  "fingerprint": "a6c2f99b4d9c41ef1766f2da94a5fc7627acaae8dae3bd81a045c0fdaac6eb61",
+  "limits": {
+    "wall_seconds": 30,
+    "transfer_bytes": 1048576,
+    "disk_bytes": 4194304,
+    "reserve_bytes": 0
+  },
+  "deadline_epoch": 1793612939.2874057,
+  "transfer_bytes_consumed": 128,
+  "phases": {
+    "source": {
+      "kind": "transfer",
+      "status": "verified",
+      "signature": "e4bc5631eb070138c93e3e5c8bd319276d9cd421998f16582d44360ffc8d312d",
+      "bytes": 128,
+      "sha256": "cab0e1a40a43259285d0d2c653a1aec259dca71356a32c03d6dbabbe1e176b8a",
+      "md5": "27c83ce26d672daf6d9b2e0fe8a94266"
+    },
+    "unpack": {
+      "kind": "archive",
+      "status": "failed",
+      "signature": "48bbd57fa502e6d8d6d9108e730c08f6a6e270c06eed00b881eb39eec590f3ac",
+      "binding": {
+        "policy": "bounded-tar-gzip-ledger-v1",
+        "spec": {
+          "transfer": "source",
+          "identity": "synthetic/index-v1",
+          "expected": {
+            "bytes": 128,
+            "sha256": "cab0e1a40a43259285d0d2c653a1aec259dca71356a32c03d6dbabbe1e176b8a"
+          },
+          "members": [
+            {
+              "name": "index/a.ht2",
+              "bytes": 83,
+              "sha256": "e14eff3310babb7d63933e8139833b5f2f0a3ec80a0bd01edede97f3c1edd52b"
+            },
+            {
+              "name": "index/b.ht2",
+              "bytes": 114,
+              "sha256": "f5d3dc3858f7d413dd80bb1a58f808ed771c90fc3cdf2067ab3804dff06cfa28"
+            }
+          ],
+          "max_members": 16,
+          "max_expanded_bytes": 4096,
+          "max_tar_bytes": 32768
+        },
+        "fingerprint": "a6c2f99b4d9c41ef1766f2da94a5fc7627acaae8dae3bd81a045c0fdaac6eb61",
+        "transfer_receipt_sha256": "2cf12084b3af6821c27f42df7555cce01cf55269d5ae21b24f679c9a40fe51e8"
+      },
+      "error_type": "BadGzipFile"
+    }
+  },
+  "mode": "synthetic-only",
+  "raw_pilot_ready": false
+}

@@ -1,0 +1,23 @@
+{
+  "name": "unpack",
+  "argv": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "/workspace/scratch/dd06b558bed7/ela-audit/scripts/external_local_stage.py",
+    "--local-job",
+    "/tmp/tmpqszkgpmc/external-receipts/unpack.job.json"
+  ],
+  "status": "finished",
+  "memory_mode": "sampled group RSS; per-process RLIMIT_AS",
+  "detaching_supported": false,
+  "namespace_pid": 5,
+  "procfs_pid": 2115,
+  "procfs_group": 2115,
+  "exit_code": -9,
+  "violation": "timeout",
+  "peak_group_rss_bytes_sampled": 21626880,
+  "samples": 91,
+  "max_group_members": 2,
+  "rss_observed": true,
+  "live_group_members_after_cleanup": [],
+  "elapsed_seconds": 1.0077574739998454
+}

@@ -1,0 +1,31 @@
+{
+  "evidence": "terminal output supplied by Luis; no remote host inspection",
+  "recovery_plan_sha256": "532778b69d5511020cdbc9198d4961e6b7be69e0adb8b78edd33163835657c71",
+  "failed_phase": "range",
+  "error": "URLError: _ssl.c:983: The handshake operation timed out",
+  "copy_verified": true,
+  "new_body_charge": 0,
+  "cumulative_body_bytes": 5603756481,
+  "range_started_epoch": 1793698090.9158418,
+  "range_finished_epoch": 1793698123.2677617,
+  "range_elapsed_seconds": 32.35191988945007,
+  "prior_carry_seconds": 7267.721008300781,
+  "new_carry_seconds": 7300.072928190231,
+  "outer_elapsed_seconds": 33.54616941799999,
+  "outer_exit_code": 1,
+  "outer_violation": null,
+  "outer_group_empty": true,
+  "new_partial_bytes": 284799727,
+  "windows_curl": "not installed or not in PATH; no network test",
+  "windows_powershell_HEAD": 200,
+  "wsl_default_HEAD": "SSL connection timeout",
+  "wsl_ipv4_HEAD": {
+    "status": 200,
+    "content_length": 997549457,
+    "accept_ranges": "bytes",
+    "etag": "\"3b756591-63aae77915e40\"",
+    "last_modified": "Thu, 24 Jul 2025 15:27:45 GMT"
+  },
+  "causal_ipv6_failure_proven": false,
+  "raw_execution_ready": false
+}

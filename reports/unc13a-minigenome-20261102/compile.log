@@ -1,0 +1,70 @@
+/usr/bin/g++ -O3 -m64 -msse2 -funroll-loops -g3 -DCOMPILER_OPTIONS="\"-O3 -m64 -msse2 -funroll-loops -g3 -std=c++11 -DPOPCNT_CAPABILITY\"" -std=c++11 -DPOPCNT_CAPABILITY \
+-fno-strict-aliasing -DHISAT2_VERSION="\"`cat VERSION`\"" -DBUILD_HOST="\"`hostname`\"" -DBUILD_TIME="\"`date`\"" -DCOMPILER_VERSION="\"`/usr/bin/g++ -v 2>&1 | tail -1`\"" -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE  -DBOWTIE_MM   -DBOWTIE2 -DNDEBUG -Wall \
+-iquote . -I third_party  \
+-o hisat2-align-s hisat2.cpp \
+ccnt_lut.cpp ref_read.cpp alphabet.cpp shmem.cpp edit.cpp gfm.cpp reference.cpp ds.cpp multikey_qsort.cpp limit.cpp random_source.cpp tinythread.cpp qual.cpp pat.cpp read_qseq.cpp aligner_seed_policy.cpp aligner_seed.cpp aligner_seed2.cpp aligner_sw.cpp aligner_sw_driver.cpp aligner_cache.cpp aligner_result.cpp ref_coord.cpp mask.cpp pe.cpp aln_sink.cpp dp_framer.cpp scoring.cpp presets.cpp unique.cpp simple_func.cpp random_util.cpp aligner_bt.cpp sse_util.cpp aligner_swsse.cpp outq.cpp aligner_swsse_loc_i16.cpp aligner_swsse_ee_i16.cpp aligner_swsse_loc_u8.cpp aligner_swsse_ee_u8.cpp aligner_driver.cpp splice_site.cpp  hisat2_main.cpp \
+-lpthread  
+In file included from hgfm.h:24,
+                 from hisat2.cpp:33:
+gfm.h: In static member function ‘static std::pair<GFM<index_t>*, GFM<index_t>*> GFM<index_t>::fromStrings(const EList<std::__cxx11::basic_string<char> >&, bool, int, bool, int32_t, int32_t, int32_t, const std::string&, bool, index_t, index_t, index_t, int, uint32_t, bool, bool, bool)’:
+gfm.h:1185:17: warning: ‘template<class> class std::auto_ptr’ is deprecated: use 'std::unique_ptr' instead [-Wdeprecated-declarations]
+ 1185 |                 auto_ptr<stringstream> ss(new stringstream());
+      |                 ^~~~~~~~
+In file included from /usr/include/c++/13/memory:78,
+                 from gfm.h:28:
+/usr/include/c++/13/bits/unique_ptr.h:65:28: note: declared here
+   65 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+gfm.h:1189:17: warning: ‘template<class> class std::auto_ptr’ is deprecated: use 'std::unique_ptr' instead [-Wdeprecated-declarations]
+ 1189 |                 auto_ptr<FileBuf> fb(new FileBuf(ss.get()));
+      |                 ^~~~~~~~
+/usr/include/c++/13/bits/unique_ptr.h:65:28: note: declared here
+   65 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+hisat2.cpp: In function ‘void parseOptions(int, const char**)’:
+hisat2.cpp:1826:9: warning: ‘template<class> class std::auto_ptr’ is deprecated: use 'std::unique_ptr' instead [-Wdeprecated-declarations]
+ 1826 |         auto_ptr<Presets> presets(new PresetsV0());
+      |         ^~~~~~~~
+/usr/include/c++/13/bits/unique_ptr.h:65:28: note: declared here
+   65 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+hisat2.cpp: In function ‘void multiseedSearchWorker_hisat2(void*)’:
+hisat2.cpp:3170:9: warning: ‘template<class> class std::auto_ptr’ is deprecated: use 'std::unique_ptr' instead [-Wdeprecated-declarations]
+ 3170 |         auto_ptr<PatternSourcePerThreadFactory> patsrcFact(createPatsrcFactory(patsrc, tid));
+      |         ^~~~~~~~
+/usr/include/c++/13/bits/unique_ptr.h:65:28: note: declared here
+   65 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+hisat2.cpp:3171:9: warning: ‘template<class> class std::auto_ptr’ is deprecated: use 'std::unique_ptr' instead [-Wdeprecated-declarations]
+ 3171 |         auto_ptr<PatternSourcePerThread> ps(patsrcFact->create());
+      |         ^~~~~~~~
+/usr/include/c++/13/bits/unique_ptr.h:65:28: note: declared here
+   65 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+hisat2.cpp:3192:9: warning: ‘template<class> class std::auto_ptr’ is deprecated: use 'std::unique_ptr' instead [-Wdeprecated-declarations]
+ 3192 |         auto_ptr<Mapq> bmapq(new_mapq(mapqv, scoreMin, sc));
+      |         ^~~~~~~~
+/usr/include/c++/13/bits/unique_ptr.h:65:28: note: declared here
+   65 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+hisat2.cpp: In function ‘void driver(const char*, const std::string&, const std::string&)’:
+hisat2.cpp:4038:9: warning: ‘template<class> class std::auto_ptr’ is deprecated: use 'std::unique_ptr' instead [-Wdeprecated-declarations]
+ 4038 |         auto_ptr<BitPairReference> refs(
+      |         ^~~~~~~~
+/usr/include/c++/13/bits/unique_ptr.h:65:28: note: declared here
+   65 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from spliced_aligner.h:23,
+                 from hisat2.cpp:46:
+hi_aligner.h: In instantiation of ‘bool HI_Aligner<index_t, local_index_t>::alignMate(const Scoring&, const PairedEndPolicy&, const TranscriptomePolicy&, const GraphPolicy&, const GFM<index_t>&, const ALTDB<index_t>&, const RepeatDB<index_t>&, const BitPairReference&, SwAligner&, SpliceSiteDB&, index_t, bool, WalkMetrics&, PerReadMetrics&, SwMetrics&, HIMetrics&, RandomSource&, AlnSinkWrap<index_t>&, index_t, index_t) [with index_t = unsigned int; local_index_t = short unsigned int]’:
+hi_aligner.h:4107:39:   required from ‘int HI_Aligner<index_t, local_index_t>::go(const Scoring&, const PairedEndPolicy&, const TranscriptomePolicy&, const GraphPolicy&, const GFM<index_t>&, const GFM<index_t>*, const ALTDB<index_t>&, const RepeatDB<index_t>&, const ALTDB<index_t>&, const BitPairReference&, const BitPairReference*, SwAligner&, SpliceSiteDB&, WalkMetrics&, PerReadMetrics&, SwMetrics&, HIMetrics&, RandomSource&, AlnSinkWrap<index_t>&) [with index_t = unsigned int; local_index_t = short unsigned int]’
+hisat2.cpp:3540:48:   required from here
+hi_aligner.h:5688:105: warning: comparison of integer expressions of different signedness: ‘size_t’ {aka ‘long unsigned int’} and ‘TRefOff’ {aka ‘long int’} [-Wsign-compare]
+ 5688 |                         if(coord.off() + pepol.maxFragLen() * 2 < toff || toff + pepol.maxFragLen() * 2 < coord.off())
+      |                                                                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~
+gfm.h: In instantiation of ‘void GFM<index_t>::checkOrigs(const EList<SString<char> >&, bool) const [with index_t = unsigned int]’:
+hisat2.cpp:3818:17:   required from ‘void driver(const char*, const std::string&, const std::string&) [with TStr = SString<char>; std::string = std::__cxx11::basic_string<char>]’
+hisat2.cpp:4354:26:   required from here
+gfm.h:6935:13: warning: variable ‘lastorig’ set but not used [-Wunused-but-set-variable]
+ 6935 |         int lastorig = -1;
+      |             ^~~~~~~~

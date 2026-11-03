@@ -1,0 +1,22 @@
+{
+  "name": "allocation",
+  "argv": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "-c",
+    "import time;x=bytearray(32*1024**2);time.sleep(.2)"
+  ],
+  "status": "finished",
+  "memory_mode": "sampled group RSS; per-process RLIMIT_AS",
+  "detaching_supported": false,
+  "namespace_pid": 7,
+  "procfs_pid": 672,
+  "procfs_group": 672,
+  "exit_code": 0,
+  "violation": null,
+  "peak_group_rss_bytes_sampled": 39976960,
+  "samples": 24,
+  "max_group_members": 1,
+  "rss_observed": true,
+  "live_group_members_after_cleanup": [],
+  "elapsed_seconds": 0.2695462049999833
+}

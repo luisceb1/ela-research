@@ -1,0 +1,11 @@
+{
+  "two_offline_runs_byte_identical": true,
+  "sha256": {
+    "results.json": "7c8f40723150b6990f834c4cc87da29ea47d581c2baab568c58d643340795bdb",
+    "samples.tsv": "818b8f6553a3ea1b44e0c1cf511c5dec1fcc35f7ccd68e2d8b45af6c46087573",
+    "target_gene_counts.tsv": "12d78b5398b47a9f97a3d2477f7ab7835d67ae15683c85c87b860306840ab3b1",
+    "target_pas_group_counts.tsv": "031c936afcd28ef9f0d8c7dfb731a1988d5ec109323bf70adbc421cb625ceba3",
+    "target_annotations.tsv": "86b3c46728febd74e3d08f0cf2a02e0a9cc3aa4899b7fc6382c6e4e5ec5c093b",
+    "input_hashes.json": "2c822287fc1e2af71bfaca1881a6753715eae09bfb2dd805170cae60fd5fb4af"
+  }
+}

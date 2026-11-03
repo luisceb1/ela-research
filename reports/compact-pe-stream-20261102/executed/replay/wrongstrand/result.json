@@ -1,0 +1,198 @@
+{
+  "status": "verified",
+  "policy": "compact-pe-v1",
+  "library": "fixture",
+  "targets": [
+    [
+      "mini",
+      556,
+      1844,
+      "-"
+    ],
+    [
+      "mini",
+      556,
+      1413,
+      "-"
+    ],
+    [
+      "mini",
+      1541,
+      1844,
+      "-"
+    ]
+  ],
+  "limits": {
+    "max_input_bytes": 8388608,
+    "max_line_bytes": 65536,
+    "max_header_bytes": 1048576,
+    "max_records": 100000,
+    "max_row_bytes": 4096,
+    "chunk_bytes": 4096,
+    "merge_fan_in": 2,
+    "max_runs": 1024,
+    "max_temp_bytes": 33554432,
+    "max_result_bytes": 1048576,
+    "max_targets": 1000
+  },
+  "raw_execution_ready": false,
+  "retained_sam": false,
+  "independence": "CIGAR decoding; agreed metadata and shared pair reduction",
+  "producer_exit_code": 0,
+  "source_sha256": "c1aa932677c3c47703da3fce1c961c16cd2e0e80b4dc046808a6cbad67c4c676",
+  "input_eof": true,
+  "pysam_version": "0.23.3",
+  "htslib_samtools_version": "1.21",
+  "routes": {
+    "text15": {
+      "counts": [
+        {
+          "event": [
+            "mini",
+            556,
+            1844,
+            "-"
+          ],
+          "fragments": 0
+        },
+        {
+          "event": [
+            "mini",
+            556,
+            1413,
+            "-"
+          ],
+          "fragments": 0
+        },
+        {
+          "event": [
+            "mini",
+            1541,
+            1844,
+            "-"
+          ],
+          "fragments": 0
+        }
+      ],
+      "qc": {
+        "accepted_pairs": 1,
+        "groups": 1,
+        "nonprimary_excluded": 0
+      }
+    },
+    "hts15": {
+      "counts": [
+        {
+          "event": [
+            "mini",
+            556,
+            1844,
+            "-"
+          ],
+          "fragments": 0
+        },
+        {
+          "event": [
+            "mini",
+            556,
+            1413,
+            "-"
+          ],
+          "fragments": 0
+        },
+        {
+          "event": [
+            "mini",
+            1541,
+            1844,
+            "-"
+          ],
+          "fragments": 0
+        }
+      ],
+      "qc": {
+        "accepted_pairs": 1,
+        "groups": 1,
+        "nonprimary_excluded": 0
+      }
+    },
+    "text8": {
+      "counts": [
+        {
+          "event": [
+            "mini",
+            556,
+            1844,
+            "-"
+          ],
+          "fragments": 0
+        },
+        {
+          "event": [
+            "mini",
+            556,
+            1413,
+            "-"
+          ],
+          "fragments": 0
+        },
+        {
+          "event": [
+            "mini",
+            1541,
+            1844,
+            "-"
+          ],
+          "fragments": 0
+        }
+      ],
+      "qc": {
+        "accepted_pairs": 1,
+        "groups": 1,
+        "nonprimary_excluded": 0
+      }
+    },
+    "hts8": {
+      "counts": [
+        {
+          "event": [
+            "mini",
+            556,
+            1844,
+            "-"
+          ],
+          "fragments": 0
+        },
+        {
+          "event": [
+            "mini",
+            556,
+            1413,
+            "-"
+          ],
+          "fragments": 0
+        },
+        {
+          "event": [
+            "mini",
+            1541,
+            1844,
+            "-"
+          ],
+          "fragments": 0
+        }
+      ],
+      "qc": {
+        "accepted_pairs": 1,
+        "groups": 1,
+        "nonprimary_excluded": 0
+      }
+    }
+  },
+  "input_bytes": 1531,
+  "records": 2,
+  "header_bytes": 671,
+  "initial_runs": 1,
+  "merge_passes": 0,
+  "peak_temp_bytes": 531
+}

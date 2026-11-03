@@ -1,0 +1,15 @@
+{
+  "date_europe_madrid": "2026-11-01",
+  "base_commit": "b968b7a8aa7878e41c7da297702c525d6056f260",
+  "question": "Does STMN2 cryptic-group estimated count / sum of all STMN2 group estimated counts reproduce the original PPAU in each library?",
+  "gene_id": "ENSG00000104435.14",
+  "numerator_group": "ENSG00000104435.14_1",
+  "denominator": "all rows with the exact gene_id in the full PAPA counts table",
+  "counts_sha256": "5b25fdea528e99ba647fd20b0d5f4ca5aab401d0e373df131bdc2145ded1a296",
+  "ppau_member": "tdp43-apa/preprocessing/data/PAPA/i3_cortical_upf1_zanovello_novel/humphrey_i3_cortical/differential_apa/summarised_pas_quantification.ppau.tsv",
+  "absolute_tolerance_proportion_units": 0.000001,
+  "unit_rule": "Establish proportions versus percentages from the author calculation; no scaling selected to minimize discrepancies",
+  "zero_denominator": "indeterminate, never zero",
+  "stop_rule": "Any identity/denominator/tolerance failure stops acceptance; retain all libraries, no threshold adaptation",
+  "not_executed": ["group_means", "p_values", "pairing_inference", "raw_read_processing", "functional_or_clinical_inference"]
+}

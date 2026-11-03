@@ -1,0 +1,13 @@
+{
+  "date": "2026-11-02",
+  "expected_negative_probes": ["production disabled", "non-loopback HTTPS rejected", "SHA256-only transfer rejects missing MD5"],
+  "preparation_incidents": [
+    {"operation":"bulk local materialization","result":"exec process rejected argument list too long before launch","resolution":"split restoration into small groups; all source blobs verified"},
+    {"operation":"read reports/paired-fastq-local-20261102/validation.json","result":"path unavailable","resolution":"read executed-final/summary.json and ledger validation.json instead; no invented receipt"},
+    {"operation":"replace source-manifest using delete plus add in one patch","result":"patch rejected duplicate target before mutation","resolution":"write exact structured JSON once; reverify sources"}
+  ],
+  "raw_data_downloaded": false,
+  "human_index_restored": false,
+  "alignments_executed": false,
+  "communications_sent": false
+}

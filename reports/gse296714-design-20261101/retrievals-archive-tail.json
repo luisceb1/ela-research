@@ -1,0 +1,13 @@
+[
+  {
+    "url": "https://zenodo.org/api/records/15538003/files/2025-05-28__tdp43-apa__data.zip/content",
+    "requested_range": "bytes=-262144",
+    "at": "2026-11-01T20:23:18.530312+00:00",
+    "status": 206,
+    "content_range": "bytes 830928583-831190726/831190727",
+    "final_url": "https://zenodo.org/api/records/15538003/files/2025-05-28__tdp43-apa__data.zip/content",
+    "bytes": 262144,
+    "sha256": "ec2ccb8fff6a27d0ea3cd6e1fc64cf9935f89bd6158d2a7db24eeb7b856922c2",
+    "saved": true
+  }
+]

@@ -1,0 +1,17 @@
+{
+  "python": "3.12.14",
+  "local_tests_passed": 20,
+  "new_tests_in_this_phase": 9,
+  "compileall_passed": true,
+  "replay_byte_identical": true,
+  "scientific_comparison_accepted": false,
+  "p_values_computed": false,
+  "author_formula_tpm_reproduction_executed": false,
+  "prior_pr36_head_ci": {
+    "sha": "b968b7a8aa7878e41c7da297702c525d6056f260",
+    "run": 41347348721,
+    "python311": "success",
+    "python312": "success",
+    "tests_observed_python312": 415
+  }
+}

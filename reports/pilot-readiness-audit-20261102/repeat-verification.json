@@ -1,0 +1,14 @@
+{
+  "identical": true,
+  "sha256": {
+    "audit.json": "b041c8122fac16189a03b9b4904e9b72bfedf550beaaeeda98f9bba8c5392224",
+    "execution-proposal.json": "26e37170d60aa5ac63cd611dcc1c97f8e33c1daf3cf7f14d24e90b010473421f",
+    "gates.tsv": "005c06a7b9fb78f6bf136dd0f160aeacba210f9b6cd7e01338d74221cd05ec91"
+  },
+  "source_inputs_verified": 28,
+  "consistency_checks": 19,
+  "offline_probes": 3,
+  "biological_data_used": false,
+  "network_used": false,
+  "note": "Repeat audit output, not independent experiment"
+}

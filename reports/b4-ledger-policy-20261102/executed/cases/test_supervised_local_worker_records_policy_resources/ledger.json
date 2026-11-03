@@ -1,0 +1,120 @@
+{
+  "fingerprint": "5f4ea8f0791422786903919017f188abc1ad594aea8f87c2563ed05e2a0ec0dc",
+  "limits": {
+    "wall_seconds": 60,
+    "transfer_bytes": 1048576,
+    "disk_bytes": 8388608,
+    "reserve_bytes": 0,
+    "process_caps": {
+      "wall_seconds": 60,
+      "rss_bytes": 268435456,
+      "address_space_bytes": 402653184
+    }
+  },
+  "deadline_epoch": 1793620180.8233435,
+  "transfer_bytes_consumed": 7151,
+  "phases": {
+    "source": {
+      "kind": "transfer",
+      "status": "verified",
+      "signature": "9cf531b53a8310a8d8591b0b07c1cf1997c4ce755a353804a77a7ebcc7da5754",
+      "started_epoch": 1793620120.8251095,
+      "deadline_epoch": 1793620130.8251095,
+      "bytes": 7151,
+      "sha256": "b81c96bd204b38f7fad38ab7a39f177e89a2e23692f3a28c0fa1e80179724221",
+      "md5": "d1c6ec1fae2ec9715c3ecc7e1e5da08b",
+      "finished_epoch": 1793620120.8288493
+    },
+    "calc": {
+      "kind": "compact",
+      "status": "verified",
+      "signature": "40450fb00cab5d5e43d092c2b8b6324aebed5f9dcc026b5ce2aa6003aac7f307",
+      "started_epoch": 1793620120.920932,
+      "deadline_epoch": 1793620150.920932,
+      "substage": "reduce",
+      "subdeadline_epoch": 1793620130.942192,
+      "binding": {
+        "policy": "compact-ledger-v1",
+        "spec": {
+          "decoder": {
+            "pysam_version": "0.23.3",
+            "samtools_version": "1.21",
+            "sha256": {
+              "compact_ledger_phase.py": "ac0a6175ac4c0715248721160421f0bbed82aff99294d1253281a3417f5a9869",
+              "compact_pe_pipeline.py": "cb33f8b7c4f6edeaf726bce8f7c200081f2742f7ffc203926f9ca53644ec4455",
+              "external_local_stage.py": "c44213ea21ba086a314ae84384a5ae259b6f3425e5e52998b552926c2162c8e7",
+              "pe_fragment_contract.py": "695ac69cb2658c937cc9bd67030386375838b3108316f233c8206a19e9974dd4",
+              "pilot_dry_runner.py": "f83830b92c420ea9b86c4fd035be00e34e7c2ff910000f16d54dff2a6c2c66a0",
+              "pilot_execution_policy.py": "b2535bd32692bb425d1ea3ecac23d65808628b957a8a0a8cf616155e9344f9a3",
+              "process_supervisor_v2.py": "71f0eecd43f9ef0bdae949be72d45ad99d23ae5b1366ed25a1b65d1c52e91389",
+              "pysam": "47c1a657938298a9fcffbf01c41081d2a4eb91a9d3f48ea2e7573927c5870543",
+              "pysam.libcalignedsegment": "3e1b320aeb77f81fc5fe0bd92539fe8ee76d1ae062f4fe0b8dd13be46e6b11ee",
+              "pysam.libchtslib": "027a9864a563f8f3c2f2b5f16319325a90a6b184d6a0bf6f67a4274fad4ebcbb"
+            }
+          },
+          "library": "fixture",
+          "limits": {
+            "chunk_bytes": 4096,
+            "max_header_bytes": 1048576,
+            "max_input_bytes": 8388608,
+            "max_line_bytes": 65536,
+            "max_records": 100000,
+            "max_result_bytes": 65536,
+            "max_row_bytes": 4096,
+            "max_runs": 1024,
+            "max_targets": 1000,
+            "max_temp_bytes": 1048576,
+            "merge_fan_in": 8
+          },
+          "minimum_fragment_union": 20,
+          "source_scope": "existing-synthetic-sam-only",
+          "targets": [
+            [
+              "mini",
+              556,
+              1844,
+              "-"
+            ],
+            [
+              "mini",
+              556,
+              1413,
+              "-"
+            ],
+            [
+              "mini",
+              1541,
+              1844,
+              "-"
+            ]
+          ],
+          "transfer": "source"
+        },
+        "phase_caps": {
+          "address_space_bytes": 402653184,
+          "kind": "compact",
+          "producer_seconds": 20,
+          "reduce_seconds": 10,
+          "rss_bytes": 268435456,
+          "wall_seconds": 30
+        },
+        "fingerprint": "5f4ea8f0791422786903919017f188abc1ad594aea8f87c2563ed05e2a0ec0dc",
+        "source_receipt_sha256": "d45309ea0a104bd7fa56b973155ada3577457ef3e06a81a58954cc567ee651fe"
+      },
+      "receipt_sha256": "553df84f92ad81b0090ec08c4cccae39d4657d7587e6cfa137d529777d446afe",
+      "coverage": {
+        "definition": "accepted RG/QNAME groups with at least one target; marked duplicates retained, not unique molecules",
+        "anchor": 15,
+        "fragment_union": 6,
+        "event_support_sum": 6,
+        "minimum": 20,
+        "adequate": false
+      },
+      "finished_epoch": 1793620120.9871552
+    }
+  },
+  "mode": "synthetic-only",
+  "raw_pilot_ready": false,
+  "last_epoch": 1793620120.9871552,
+  "transfer_elapsed_seconds": 0.0037398338317871094
+}

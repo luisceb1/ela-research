@@ -1,0 +1,17 @@
+{
+  "python": "3.12.14",
+  "executable_version": "3.12.14",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.39",
+  "prior_pending_head": "22d285f8f1f2a7ee428e8dc4dbf523f795d8d426",
+  "local_test_modules": [
+    "test_paired_fastq_integrity",
+    "test_pilot_process_limits",
+    "test_pilot_dry_runner",
+    "test_bounded_http_transport"
+  ],
+  "tests_executed": 48,
+  "new_tests": 29,
+  "network_scope": "only existing loopback HTTP tests; no biological-data endpoints",
+  "full_repository_suite_local": false,
+  "ci_new_head_pending": true
+}

@@ -1,0 +1,33 @@
+{
+  "status": "failed",
+  "binding": {
+    "policy": "bounded-tar-gzip-ledger-v1",
+    "spec": {
+      "transfer": "source",
+      "identity": "synthetic/index-v1",
+      "expected": {
+        "bytes": 76,
+        "sha256": "fda139c79fb903ba5243b5a3aec1c2d91cd7a548de0d54f8124678b437331dac"
+      },
+      "members": [
+        {
+          "name": "index/a.ht2",
+          "bytes": 83,
+          "sha256": "e14eff3310babb7d63933e8139833b5f2f0a3ec80a0bd01edede97f3c1edd52b"
+        },
+        {
+          "name": "index/b.ht2",
+          "bytes": 114,
+          "sha256": "f5d3dc3858f7d413dd80bb1a58f808ed771c90fc3cdf2067ab3804dff06cfa28"
+        }
+      ],
+      "max_members": 16,
+      "max_expanded_bytes": 4096,
+      "max_tar_bytes": 32768
+    },
+    "fingerprint": "c46ac7241e56df49faf1c01b9c5850c7491e3d24c44c3fc8fd97d5f1223b1242",
+    "transfer_receipt_sha256": "f35ab830be2618dc2d03ff36f4fc6f7c4bf95029cab3689347c20016e9372dc0"
+  },
+  "raw_execution_ready": false,
+  "error_type": "ValueError"
+}

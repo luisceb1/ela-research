@@ -1,0 +1,25 @@
+{
+  "python": "3.12.14",
+  "synthetic_source_pairs": 3,
+  "prefix_pairs": 2,
+  "full_scan_eof_crc_validated": true,
+  "two_runs_byte_identical": true,
+  "crc_corruption_after_prefix_rejected": true,
+  "prefix_compressed": [
+    {
+      "bytes": 53,
+      "sha256": "8aebdaa57101006d6aee780b9ff97f069b6f8aead96d5c6399733eb7aa546fb5"
+    },
+    {
+      "bytes": 53,
+      "sha256": "fa1602869df30cdd17290808c94f41a33ca1941fd19bca185396b6a75b82f977"
+    }
+  ],
+  "production_execution_rejected": true,
+  "plan_values_only_not_resource_benchmark": true,
+  "biological_data_opened": false,
+  "external_data_connections": 0,
+  "raw_execution_ready": false,
+  "global_read_identity_uniqueness_certified": false,
+  "quality_encoding_inferred": false
+}

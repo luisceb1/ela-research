@@ -1,0 +1,40 @@
+{
+  "evidence": "terminal output supplied by Luis; no remote host access",
+  "plan_sha256": "ea8d25ad2b99a3a257e154d0d945b12cd7a0cb32ce9bbfaeb9f22c7291d49533",
+  "partial_bytes": 876279389,
+  "expected_full_bytes": 997549457,
+  "remaining_body_bytes": 121270068,
+  "attempt": {
+    "status": "started",
+    "body_bytes": 591396864,
+    "range_start": 284799727,
+    "range_end": 997549456,
+    "prior_charged_bytes": 5603756481,
+    "attempts": 1,
+    "address_family": "IPv4",
+    "budget_scope": "HTTP entity-body read, not wire bytes",
+    "accounting": "durable-block-reservation-v1",
+    "reservation_block_bytes": 4194304
+  },
+  "cumulative_body_bytes": 6199347649,
+  "new_body_charge": 595591168,
+  "charged_minus_actual_growth": 4111506,
+  "partial_beyond_durable_receipt_bytes": 82798,
+  "expected_cumulative_after_recovery": 6320617717,
+  "remaining_budget_after_recovery": 5679382283,
+  "prior_transfer_elapsed_seconds": 7300.072928190231,
+  "range_started_epoch": 1793699203.1383224,
+  "range_deadline_epoch": 1793704603.1383224,
+  "last_epoch": 1793704601.896862,
+  "global_deadline_epoch": 1793705199.6269245,
+  "outer": {
+    "status": "finished",
+    "exit_code": -9,
+    "supervisor_error": "RuntimeError: External phase deadline",
+    "live_group_members_after_cleanup": [],
+    "elapsed_seconds": 5156.817107145
+  },
+  "new_carry_seconds_conservative": 12700.072928190231,
+  "no_alignment_started": true,
+  "raw_execution_ready": false
+}

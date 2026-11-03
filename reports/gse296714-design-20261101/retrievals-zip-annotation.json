@@ -1,0 +1,16 @@
+[
+  {
+    "url": "https://zenodo.org/api/records/15538003/files/2025-05-28__tdp43-apa__data.zip/content",
+    "member": "tdp43-apa/misc/processed/cleaned.cryptics.all.novel_ref_combined.quant.gtf",
+    "range": "bytes=344318139-344489343",
+    "at_utc": "2026-11-01T20:26:51.735920+00:00",
+    "status": 206,
+    "content_range": "bytes 344318139-344489343/831190727",
+    "saved": true,
+    "transferred_bytes": 171205,
+    "member_bytes": 408294,
+    "range_sha256": "38cc3b301cccafb204da79f5ac7f7f90e9b38f7ebd0da69220330b80b7bf8659",
+    "member_sha256": "4962182fb5d4703799c3c2469eee24a2e5fd8cf434fa430a513cfbbf124cde25",
+    "crc_verified": true
+  }
+]

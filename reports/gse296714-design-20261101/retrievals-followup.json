@@ -1,0 +1,24 @@
+[
+  {
+    "name": "gene_counts_geo.csv.gz",
+    "url": "https://www.ncbi.nlm.nih.gov/geo/download/?acc=GSE296714&format=file&file=GSE296714%5Fgene%5Fcounts%2Ehumphrey%5Fi3%5Fcortical%2Ecsv%2Egz",
+    "retrieved_at_utc": "2026-11-01T20:22:46.400024+00:00",
+    "status": 200,
+    "final_url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE296nnn/GSE296714/suppl/GSE296714_gene_counts.humphrey_i3_cortical.csv.gz",
+    "content_type": "application/x-gzip",
+    "bytes": 1174016,
+    "sha256": "b40e6f1462e414d8b3bc1520ec19743f763d758ae4ad871ecd70a851d05d4413",
+    "saved": true
+  },
+  {
+    "name": "ena.tsv",
+    "url": "https://www.ebi.ac.uk/ena/portal/api/filereport?accession=PRJNA1256902&result=read_run&fields=run_accession,experiment_accession,sample_accession,secondary_sample_accession,sample_alias,experiment_alias,library_layout,read_count,base_count,fastq_bytes,fastq_md5&format=tsv",
+    "retrieved_at_utc": "2026-11-01T20:22:46.400809+00:00",
+    "status": 200,
+    "final_url": "https://www.ebi.ac.uk/ena/portal/api/filereport?accession=PRJNA1256902&result=read_run&fields=run_accession,experiment_accession,sample_accession,secondary_sample_accession,sample_alias,experiment_alias,library_layout,read_count,base_count,fastq_bytes,fastq_md5&format=tsv",
+    "content_type": "text/plain",
+    "bytes": 21452,
+    "sha256": "9936681849a58c9f06399cb8bb6ea149f46a754e5b13f4c70362e23503203525",
+    "saved": true
+  }
+]

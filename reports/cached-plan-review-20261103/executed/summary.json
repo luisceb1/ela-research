@@ -1,0 +1,15 @@
+{
+  "python": "3.12.14",
+  "worker_source_commit": "49f37a0cbda83b8046cf40492f566bc27906171f",
+  "real_proposal_metadata_checked": true,
+  "real_WSL_descriptor_provided": false,
+  "synthetic_descriptor_only": true,
+  "negative_mutations_rejected": 22,
+  "repeated_review_byte_identical": true,
+  "host_files_accessed": false,
+  "network_or_worker_execution": false,
+  "new_data_transfer_bytes": 0,
+  "window_authorized": false,
+  "execution_enabled": false,
+  "raw_execution_ready": false
+}

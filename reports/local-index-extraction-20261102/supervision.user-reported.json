@@ -1,0 +1,23 @@
+{
+  "name": "run",
+  "argv": [
+    "/home/luisceb/proyectos/ela-research-piloto/.venv/bin/python",
+    "/home/luisceb/proyectos/ela-research-piloto/scripts/recover_index_range.py",
+    "--worker",
+    "/home/luisceb/ela-piloto-real-01-index-recovery-01/recovery-plan.json"
+  ],
+  "status": "finished",
+  "memory_mode": "sampled group RSS; per-process RLIMIT_AS",
+  "detaching_supported": false,
+  "namespace_pid": 373,
+  "procfs_pid": 373,
+  "procfs_group": 373,
+  "exit_code": 0,
+  "violation": null,
+  "peak_group_rss_bytes_sampled": 28110848,
+  "samples": 14983,
+  "max_group_members": 1,
+  "rss_observed": true,
+  "live_group_members_after_cleanup": [],
+  "elapsed_seconds": 167.457363098
+}

@@ -1,0 +1,22 @@
+{
+  "name": "nonzero",
+  "argv": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "-c",
+    "raise SystemExit(7)"
+  ],
+  "status": "finished",
+  "memory_mode": "sampled group RSS; per-process RLIMIT_AS",
+  "detaching_supported": false,
+  "namespace_pid": 11,
+  "procfs_pid": 676,
+  "procfs_group": 676,
+  "exit_code": 7,
+  "violation": null,
+  "peak_group_rss_bytes_sampled": 6422528,
+  "samples": 2,
+  "max_group_members": 1,
+  "rss_observed": true,
+  "live_group_members_after_cleanup": [],
+  "elapsed_seconds": 0.028997797999977593
+}

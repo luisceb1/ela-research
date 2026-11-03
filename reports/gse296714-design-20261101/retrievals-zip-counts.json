@@ -1,0 +1,16 @@
+[
+  {
+    "url": "https://zenodo.org/api/records/15538003/files/2025-05-28__tdp43-apa__data.zip/content",
+    "member": "tdp43-apa/preprocessing/data/PAPA/i3_cortical_upf1_zanovello_novel/humphrey_i3_cortical/differential_apa/summarised_pas_quantification.counts.tsv",
+    "range": "bytes=710399233-713408495",
+    "at_utc": "2026-11-01T20:25:51.179303+00:00",
+    "status": 206,
+    "content_range": "bytes 710399233-713408495/831190727",
+    "saved": true,
+    "transferred_bytes": 3009263,
+    "member_bytes": 7148108,
+    "range_sha256": "6f7f370fba257fad4ce95d23c224aa5d313e2d5cb5b621cbdcfdcfe051b9e84d",
+    "member_sha256": "5b25fdea528e99ba647fd20b0d5f4ca5aab401d0e373df131bdc2145ded1a296",
+    "crc_verified": true
+  }
+]

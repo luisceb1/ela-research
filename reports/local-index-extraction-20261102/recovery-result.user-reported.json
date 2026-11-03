@@ -1,0 +1,14 @@
+{
+  "status": "verified_archive_pending_outer_seal",
+  "archive": "hg38_genome.tar.gz",
+  "bytes": 4355786349,
+  "sha256": "1848784403a0fb3ee7735b2f891d8be96fd2782e08aed3d8212d922666f077a5",
+  "cumulative_body_bytes": 4355802733,
+  "additional_body_bytes": 2723339065,
+  "prior_transfer_elapsed_seconds": 3600.0012652873993,
+  "additional_transfer_elapsed_seconds": 148.5145287513733,
+  "state_sha256": "592f58f26597027fb0a115a6dbe0689d79b013c782ef19677788e0a756d79565",
+  "source_verified": true,
+  "index_extracted": false,
+  "raw_execution_ready": false
+}

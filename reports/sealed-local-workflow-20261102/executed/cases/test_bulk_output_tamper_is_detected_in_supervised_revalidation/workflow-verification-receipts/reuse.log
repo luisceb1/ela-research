@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "/workspace/scratch/dd06b558bed7/ela-audit/scripts/sealed_local_workflow.py", line 230, in <module>
+    p=argparse.ArgumentParser();p.add_argument('--job',type=Path,required=True);p.add_argument('--verify');a=p.parse_args();worker(read_metadata(a.job),a.verify)
+                                                                                                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/dd06b558bed7/ela-audit/scripts/sealed_local_workflow.py", line 160, in worker
+    r=DryRunner(root,manifest,limits)
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/dd06b558bed7/ela-audit/scripts/pilot_dry_runner.py", line 46, in __init__
+    verify_phase(self,name,phase)
+  File "/workspace/scratch/dd06b558bed7/ela-audit/scripts/paired_fastq_phase.py", line 71, in verify_phase
+    if file_digest(out/f'prefix-R{i}.fastq.gz',runner.guard)!=expected:raise ValueError('Prefix changed')
+                                                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Prefix changed

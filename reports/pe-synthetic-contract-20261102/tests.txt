@@ -1,0 +1,22 @@
+test_adjacent_match_blocks_form_contiguous_anchor (test_pe_fragment_contract.PairedContractTests.test_adjacent_match_blocks_form_contiguous_anchor) ... ok
+test_anchor_primary_and_sensitivity (test_pe_fragment_contract.PairedContractTests.test_anchor_primary_and_sensitivity) ... ok
+test_both_mates_count_once (test_pe_fragment_contract.PairedContractTests.test_both_mates_count_once) ... ok
+test_distinct_events_remain_distinct (test_pe_fragment_contract.PairedContractTests.test_distinct_events_remain_distinct) ... ok
+test_explicit_library_required (test_pe_fragment_contract.PairedContractTests.test_explicit_library_required) ... ok
+test_htslib_independent_decode (test_pe_fragment_contract.PairedContractTests.test_htslib_independent_decode) ... ok
+test_insertion_interrupts_anchor (test_pe_fragment_contract.PairedContractTests.test_insertion_interrupts_anchor) ... ok
+test_mapping_filters (test_pe_fragment_contract.PairedContractTests.test_mapping_filters) ... ok
+test_marked_duplicates_retained_and_labeled (test_pe_fragment_contract.PairedContractTests.test_marked_duplicates_retained_and_labeled) ... ok
+test_nonreciprocal_coordinates (test_pe_fragment_contract.PairedContractTests.test_nonreciprocal_coordinates) ... ok
+test_one_mate_and_negative_transcript (test_pe_fragment_contract.PairedContractTests.test_one_mate_and_negative_transcript) ... ok
+test_orphan_and_extra_primary (test_pe_fragment_contract.PairedContractTests.test_orphan_and_extra_primary) ... ok
+test_rg_and_library_separation (test_pe_fragment_contract.PairedContractTests.test_rg_and_library_separation) ... ok
+test_secondary_and_supplementary_not_extra_fragments (test_pe_fragment_contract.PairedContractTests.test_secondary_and_supplementary_not_extra_fragments) ... ok
+test_strand_missing_or_conflicting (test_pe_fragment_contract.PairedContractTests.test_strand_missing_or_conflicting) ... ok
+test_wrong_order_and_group_cap_fail_closed (test_pe_fragment_contract.PairedContractTests.test_wrong_order_and_group_cap_fail_closed) ... ok
+test_wrong_orientation_and_read_roles (test_pe_fragment_contract.PairedContractTests.test_wrong_orientation_and_read_roles) ... ok
+
+----------------------------------------------------------------------
+Ran 17 tests in 0.057s
+
+OK

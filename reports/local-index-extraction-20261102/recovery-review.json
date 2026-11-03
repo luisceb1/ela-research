@@ -1,0 +1,22 @@
+{
+  "provenance": "uploaded terminal transcript from Luis; not direct filesystem/process access",
+  "attachment_sha256": "6afa42f8e3894944703752dbb17354edb2f99e63c450383579b7993ca6e13333",
+  "normalized_receipt_hashes_match_supplied_seal": {
+    "recovery-result.json": true,
+    "supervision/run.json": true
+  },
+  "recovery_total_seconds": 167.457363098,
+  "additional_transfer_seconds": 148.5145287513733,
+  "additional_body_bytes": 2723339065,
+  "average_decimal_MB_per_second": 18.33718955240477,
+  "peak_RSS_MiB": 26.80859375,
+  "outer_exit_code": 0,
+  "violation": null,
+  "live_group_members_after_cleanup": [],
+  "cumulative_body_bytes": 4355802733,
+  "remaining_body_budget_bytes": 7644197267,
+  "memory_scope": "recovery downloader only; not human alignment",
+  "causal_speedup_claim": false,
+  "index_extracted": false,
+  "raw_execution_ready": false
+}

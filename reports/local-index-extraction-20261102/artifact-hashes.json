@@ -1,0 +1,16 @@
+{
+  "scripts/prepare_verified_index.py": "506712400f156f9df059f93c03bea013e260b37e923648741b482bcc8fe3b544",
+  "tests/test_prepare_verified_index.py": "dd5ec028df83aef6bb9f6af5d1d8901ecff8a18ec8cc8ec490b9f253ff7bcfee",
+  ".github/workflows/paired-end-tests.yml": "95cc6d5d98547aa444547525b6ec55843596edc82942ff2d8595b0786f36a1e3",
+  "research/STATE.md": "e15b6779a641cee220266d8d20c51097f083fb3882b914a7739fc78b62842ce9",
+  "research/BACKLOG.md": "fa99cb9cd98a8f57055e52115d6f6cd5eee7ddd67e6d2e6ab6a0228dd7314b4a",
+  "research/plans/2026-11-02-local-index-extraction.md": "fdb848fd430b75418408feeda990fc6c4dcc75f53d0c26d56fc441770e0c5fa8",
+  "research/runbooks/2026-11-02-offline-index-powershell.md": "044b6d7e2fe77f5dbfea6255aaed4c51afdaa9abb4fc4a715c51b5259570e420",
+  "reports/local-index-extraction-20261102/REPORT.md": "17a582d0a7a5543998bd4d85a3e4a4885185bfb2fbf520d56f53df13e94611cd",
+  "reports/local-index-extraction-20261102/recovery-result.user-reported.json": "9bf192913753107acc2dda65e3652c066911acb4f11a3a5209d46f2e56a33b3f",
+  "reports/local-index-extraction-20261102/recovery-review.json": "9ca351e6b2a60a11c83a271dac116e067b5499077eb01714bbfdb1e80beb2c7c",
+  "reports/local-index-extraction-20261102/recovery-seal.user-reported.json": "3519fc87cd130bcaefee40055a209779641a86f20420a86fc67dbb2702ade159",
+  "reports/local-index-extraction-20261102/supervision.user-reported.json": "11d83f3bf2eb076a4b34e38b3e26cfb638d41f4ea47b1a5c5557edc44243d9aa",
+  "reports/local-index-extraction-20261102/tests.txt": "1159f16e8ee2ce6924735094782b2e436cc476ab6be57f6dd2d4ec2a8231c575",
+  "reports/local-index-extraction-20261102/validation.json": "0543514ce6cfa078606fad91c2ce9c5ec36d8d239ef665050ed6fb6b18d1a71d"
+}

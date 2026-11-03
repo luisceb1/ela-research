@@ -1,0 +1,54 @@
+{
+  "assembly": "hg38",
+  "chromosome": "chr19",
+  "transcript_strand": "-",
+  "interval_convention": "intronic 0-based half-open, same as PE parser N span",
+  "events": [
+    {
+      "event": "canonical",
+      "model": "exonic1",
+      "start0": 17641556,
+      "end0": 17642844,
+      "left_plus": "CT",
+      "right_plus": "AC",
+      "minus_gt_ag": true,
+      "canonical_transcripts": [
+        "ENST00000519716.7",
+        "ENST00000551649.5",
+        "ENST00000552293.5",
+        "ENST00000550896.1"
+      ]
+    },
+    {
+      "event": "cryptic_genomic_left",
+      "model": "exonic1",
+      "start0": 17641556,
+      "end0": 17642413,
+      "left_plus": "CT",
+      "right_plus": "AC",
+      "minus_gt_ag": true,
+      "canonical_transcripts": []
+    },
+    {
+      "event": "cryptic_genomic_right",
+      "model": "exonic1",
+      "start0": 17642541,
+      "end0": 17642844,
+      "left_plus": "CT",
+      "right_plus": "AC",
+      "minus_gt_ag": true,
+      "canonical_transcripts": []
+    }
+  ],
+  "cryptic_exon_interval0": [
+    17642413,
+    17642541
+  ],
+  "cryptic_exon_length": 128,
+  "primary_library_strandness": "unstranded: omit --rna-strandness",
+  "RF_expected_from_kit_but_not_certified_for_actual_libraries": true,
+  "require_XS_reference_motif_concordance": true,
+  "aligner_end_to_end_verified": false,
+  "raw_execution_ready": false,
+  "two_independent_sequence_providers": false
+}

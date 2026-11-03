@@ -1,0 +1,16 @@
+{
+  "scripts/recover_index_range.py": "4766befd3c3289669206e8aae080bef5847a88352d6da1dadbe1f8d391d29248",
+  "tests/test_recover_index_range.py": "4348d1050b58ac3aa47dc800b7b6a37c883bf47b6d34c5f3f743657edd462b41",
+  ".github/workflows/paired-end-tests.yml": "5d5e0981257ad11d13093d4fe3b04e859dcb615e10b654a7635022ac71796120",
+  "research/STATE.md": "fe682f48e7ceada47285ecc9dbfd02da75df6274224140b47bf30357af249131",
+  "research/BACKLOG.md": "190f93dad1d426846f6c22bdb3374d5fc7d6856e34acda975221fd8e3f7bfece",
+  "research/plans/2026-11-02-index-range-recovery.md": "3ce2cc53ec9e43fe030c335e9f7771edfa73c6c2374a3707035d1cb64f6cea7e",
+  "research/runbooks/2026-11-02-index-recovery-powershell.md": "208c87552433835ba61eb2cb162bee743f8b2f01311d56d65de8468529d605cb",
+  "research/runbooks/2026-11-02-wsl-pilot-powershell.md": "6b2cfc5c3be812727618797e494138ceb2db13a7d3f59dc050baf5c72aa5c806",
+  "reports/index-range-recovery-20261102/REPORT.md": "659e99a317af38b14937b6005d77fb68f2f30abd2ba558e37bdc61efa7d3e69b",
+  "reports/index-range-recovery-20261102/execution-proposal.json": "8688c6b79575282e973ef8e1fd25e120c0fee29cccbc1430780a1989061d6478",
+  "reports/index-range-recovery-20261102/tests.txt": "9831ca951e35e74a710f70ec4c4c883e2ab92eac1fd94fe10dc93bed9bab73fa",
+  "reports/index-range-recovery-20261102/user-reported-audit.json": "131962c2e0c68a94d44fbe716be00bace0b0061aff91f5c68ec61dff5d567564",
+  "reports/index-range-recovery-20261102/validation.json": "e0a61016fb45a81256135bbf154478abdbcdbdb61de133086326ef9afde57c5d",
+  "reports/index-range-recovery-20261102/ci-initial-failure.txt": "242bf4b1dfe5fc1f107d4a5c2316970956b5d154cd9cea82a9713dc69d349f9b"
+}

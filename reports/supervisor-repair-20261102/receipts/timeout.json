@@ -1,0 +1,22 @@
+{
+  "name": "timeout",
+  "argv": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "-c",
+    "import subprocess,sys,time;p=subprocess.Popen([sys.executable,\"-c\",\"import time;time.sleep(3)\"]);time.sleep(3)"
+  ],
+  "status": "finished",
+  "memory_mode": "sampled group RSS; per-process RLIMIT_AS",
+  "detaching_supported": false,
+  "namespace_pid": 13,
+  "procfs_pid": 678,
+  "procfs_group": 678,
+  "exit_code": -9,
+  "violation": "timeout",
+  "peak_group_rss_bytes_sampled": 15073280,
+  "samples": 29,
+  "max_group_members": 2,
+  "rss_observed": true,
+  "live_group_members_after_cleanup": [],
+  "elapsed_seconds": 0.31008837399997446
+}

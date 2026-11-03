@@ -1,0 +1,109 @@
+{
+  "status": "verified",
+  "binding": {
+    "policy": "bounded-tar-gzip-ledger-v1",
+    "spec": {
+      "expected": {
+        "bytes": 220,
+        "sha256": "85c5ed52f7c1263ea5a8ee67377ec90fd8d6c68f42ddb9d0727b19866f1f55a9"
+      },
+      "identity": "synthetic-index-placeholder",
+      "max_expanded_bytes": 4096,
+      "max_members": 16,
+      "max_tar_bytes": 32768,
+      "members": [
+        {
+          "bytes": 24,
+          "name": "toy/genome.1.ht2",
+          "sha256": "123b5afbc2fc5eca1fb88d4894e5817ba4932de73a88580879deebf82354e09d"
+        },
+        {
+          "bytes": 24,
+          "name": "toy/genome.2.ht2",
+          "sha256": "747842e0552998311843bb8c3669a8e1cdd8667dd18e9ff355ac3e7a2e1282f2"
+        },
+        {
+          "bytes": 24,
+          "name": "toy/genome.3.ht2",
+          "sha256": "f82a969233c0907587fc29dea70b2afe1cfaa534c8219d09ff1b03885677f911"
+        },
+        {
+          "bytes": 24,
+          "name": "toy/genome.4.ht2",
+          "sha256": "b6f24bb472eb4974e5d91dec36b29d770b9de09e6ede9cac47a9c9445bacb52d"
+        },
+        {
+          "bytes": 24,
+          "name": "toy/genome.5.ht2",
+          "sha256": "b04128d12712d276b3b5f4e0c00c2b524c8c53e9e377546796b9d5849e36bbcd"
+        },
+        {
+          "bytes": 24,
+          "name": "toy/genome.6.ht2",
+          "sha256": "a2dc08426c42a1c7474d0259e5be8044ca7867f0d1f500fd360abee7d1db0b76"
+        },
+        {
+          "bytes": 24,
+          "name": "toy/genome.7.ht2",
+          "sha256": "a72ee8aa6584f5090dfe2049e05179ed3aaa2849a644722b27e5d26fd7069d66"
+        },
+        {
+          "bytes": 24,
+          "name": "toy/genome.8.ht2",
+          "sha256": "4538820090dd3118ae1109db72b636af81a752b44c3644c85ca7e8ea8143a850"
+        }
+      ],
+      "transfer": "index"
+    },
+    "fingerprint": "f3bcffa3fab3096a8539214a3a05b19e28e48bf8673a075785ebe514d084506a",
+    "transfer_receipt_sha256": "8c30c322cf8664b4e480b08819019977c4173db04d02fdb0e22abfbdd68cbbd6",
+    "http_receipt_sha256": "ca1e447013637a99694b56f731a97128f9ffbe96dc4742dcd3877751379cf383"
+  },
+  "raw_execution_ready": false,
+  "files": [
+    {
+      "bytes": 24,
+      "name": "toy/genome.1.ht2",
+      "sha256": "123b5afbc2fc5eca1fb88d4894e5817ba4932de73a88580879deebf82354e09d"
+    },
+    {
+      "bytes": 24,
+      "name": "toy/genome.2.ht2",
+      "sha256": "747842e0552998311843bb8c3669a8e1cdd8667dd18e9ff355ac3e7a2e1282f2"
+    },
+    {
+      "bytes": 24,
+      "name": "toy/genome.3.ht2",
+      "sha256": "f82a969233c0907587fc29dea70b2afe1cfaa534c8219d09ff1b03885677f911"
+    },
+    {
+      "bytes": 24,
+      "name": "toy/genome.4.ht2",
+      "sha256": "b6f24bb472eb4974e5d91dec36b29d770b9de09e6ede9cac47a9c9445bacb52d"
+    },
+    {
+      "bytes": 24,
+      "name": "toy/genome.5.ht2",
+      "sha256": "b04128d12712d276b3b5f4e0c00c2b524c8c53e9e377546796b9d5849e36bbcd"
+    },
+    {
+      "bytes": 24,
+      "name": "toy/genome.6.ht2",
+      "sha256": "a2dc08426c42a1c7474d0259e5be8044ca7867f0d1f500fd360abee7d1db0b76"
+    },
+    {
+      "bytes": 24,
+      "name": "toy/genome.7.ht2",
+      "sha256": "a72ee8aa6584f5090dfe2049e05179ed3aaa2849a644722b27e5d26fd7069d66"
+    },
+    {
+      "bytes": 24,
+      "name": "toy/genome.8.ht2",
+      "sha256": "4538820090dd3118ae1109db72b636af81a752b44c3644c85ca7e8ea8143a850"
+    }
+  ],
+  "file_bytes": 192,
+  "tar_headers": 8,
+  "tar_stream_bytes": 10240,
+  "gzip_eof_crc_validated": true
+}

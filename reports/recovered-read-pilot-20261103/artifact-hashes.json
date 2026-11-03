@@ -1,0 +1,14 @@
+{
+  "scripts/recovered_read_pilot.py": "4a0110f896168729315532f3573784dfc01fdfba6ebbd855200d708f25d81e5c",
+  "tests/test_recovered_read_pilot.py": "96bc20d2ec92cf989b4fa5f4535305313c3899f4bbaf575dfae8c15fde70af89",
+  ".github/workflows/paired-end-tests.yml": "c9dce504c6ca133800a58ee5bd66dfc9a360b726315880e992b19a77bdc60802",
+  "research/STATE.md": "41551449e30e349c63c0354257afa380c206b9248d5ed530fbd588e4f2efa89c",
+  "research/BACKLOG.md": "f7152395c7fc4685bde2d386485a7c194d8a7c381a6f288cb5640f26a07ba4e3",
+  "research/plans/2026-11-03-recovered-read-pilot.md": "938a60f6576e460f815fb07c2a626d9b703576f8bc066cabbb6466187d63f970",
+  "research/runbooks/2026-11-03-recovered-read-pilot-powershell.md": "f67ef13ec947f9e23a3749989a43292c04149673664cf25605634300c103e417",
+  "reports/recovered-read-pilot-20261103/REPORT.md": "e7179360f4c9164bb17a053f591619a79c26742a7db7a21c1b8730599cd9333b",
+  "reports/recovered-read-pilot-20261103/execution-proposal.json": "347398ba07414a8573559df341f3ae73ac2786e7482d2c98db04a410550c703c",
+  "reports/recovered-read-pilot-20261103/tests.txt": "62b06c79ca0d03d6763f0a7436433f41edbb8b315dd64f4cc983d0eb105ecad2",
+  "reports/recovered-read-pilot-20261103/user-reported-recovery-seal.json": "27c329f99e50d7b3e90db1e7b46ff352ce8880082bf827e16b23892df4b3b498",
+  "reports/recovered-read-pilot-20261103/validation.json": "8277476f2fe56a4466dc25b7219fcf8fda3e8f8477a6e8e65cff3321cd7f6c9e"
+}

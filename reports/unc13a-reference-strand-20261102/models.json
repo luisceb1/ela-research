@@ -1,0 +1,127 @@
+[
+  {
+    "event": "canonical",
+    "model": "halfopen0",
+    "start0": 17641556,
+    "end0": 17642845,
+    "left_plus": "CT",
+    "right_plus": "CC",
+    "minus_gt_ag": false,
+    "canonical_transcripts": []
+  },
+  {
+    "event": "canonical",
+    "model": "inclusive1",
+    "start0": 17641555,
+    "end0": 17642845,
+    "left_plus": "TC",
+    "right_plus": "CC",
+    "minus_gt_ag": false,
+    "canonical_transcripts": []
+  },
+  {
+    "event": "canonical",
+    "model": "exonic1",
+    "start0": 17641556,
+    "end0": 17642844,
+    "left_plus": "CT",
+    "right_plus": "AC",
+    "minus_gt_ag": true,
+    "canonical_transcripts": [
+      "ENST00000519716.7",
+      "ENST00000551649.5",
+      "ENST00000552293.5",
+      "ENST00000550896.1"
+    ]
+  },
+  {
+    "event": "canonical",
+    "model": "closed0",
+    "start0": 17641556,
+    "end0": 17642846,
+    "left_plus": "CT",
+    "right_plus": "CT",
+    "minus_gt_ag": false,
+    "canonical_transcripts": []
+  },
+  {
+    "event": "cryptic_genomic_left",
+    "model": "halfopen0",
+    "start0": 17641556,
+    "end0": 17642414,
+    "left_plus": "CT",
+    "right_plus": "CC",
+    "minus_gt_ag": false,
+    "canonical_transcripts": []
+  },
+  {
+    "event": "cryptic_genomic_left",
+    "model": "inclusive1",
+    "start0": 17641555,
+    "end0": 17642414,
+    "left_plus": "TC",
+    "right_plus": "CC",
+    "minus_gt_ag": false,
+    "canonical_transcripts": []
+  },
+  {
+    "event": "cryptic_genomic_left",
+    "model": "exonic1",
+    "start0": 17641556,
+    "end0": 17642413,
+    "left_plus": "CT",
+    "right_plus": "AC",
+    "minus_gt_ag": true,
+    "canonical_transcripts": []
+  },
+  {
+    "event": "cryptic_genomic_left",
+    "model": "closed0",
+    "start0": 17641556,
+    "end0": 17642415,
+    "left_plus": "CT",
+    "right_plus": "CC",
+    "minus_gt_ag": false,
+    "canonical_transcripts": []
+  },
+  {
+    "event": "cryptic_genomic_right",
+    "model": "halfopen0",
+    "start0": 17642541,
+    "end0": 17642845,
+    "left_plus": "CT",
+    "right_plus": "CC",
+    "minus_gt_ag": false,
+    "canonical_transcripts": []
+  },
+  {
+    "event": "cryptic_genomic_right",
+    "model": "inclusive1",
+    "start0": 17642540,
+    "end0": 17642845,
+    "left_plus": "GC",
+    "right_plus": "CC",
+    "minus_gt_ag": false,
+    "canonical_transcripts": []
+  },
+  {
+    "event": "cryptic_genomic_right",
+    "model": "exonic1",
+    "start0": 17642541,
+    "end0": 17642844,
+    "left_plus": "CT",
+    "right_plus": "AC",
+    "minus_gt_ag": true,
+    "canonical_transcripts": []
+  },
+  {
+    "event": "cryptic_genomic_right",
+    "model": "closed0",
+    "start0": 17642541,
+    "end0": 17642846,
+    "left_plus": "CT",
+    "right_plus": "CT",
+    "minus_gt_ag": false,
+    "canonical_transcripts": []
+  }
+]

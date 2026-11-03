@@ -1,0 +1,71 @@
+test_audit_preserves_reserved_difference (test_recover_ctrl_read.AuditTests.test_audit_preserves_reserved_difference) ... ERROR
+test_audit_rejects_changed_charge_attempt_and_supervision (test_recover_ctrl_read.AuditTests.test_audit_rejects_changed_charge_attempt_and_supervision) ... 
+  test_audit_rejects_changed_charge_attempt_and_supervision (test_recover_ctrl_read.AuditTests.test_audit_rejects_changed_charge_attempt_and_supervision) (name='ledger.json') ... ERROR
+  test_audit_rejects_changed_charge_attempt_and_supervision (test_recover_ctrl_read.AuditTests.test_audit_rejects_changed_charge_attempt_and_supervision) (name='CTRL_R1.attempt-0.json') ... ERROR
+test_actual_supervised_worker_fails_before_http (test_recover_ctrl_read.ProposalTests.test_actual_supervised_worker_fails_before_http) ... ok
+test_existing_root_refused (test_recover_ctrl_read.ProposalTests.test_existing_root_refused) ... ok
+test_fixed_plan_mutations_rejected (test_recover_ctrl_read.ProposalTests.test_fixed_plan_mutations_rejected) ... ok
+test_low_disk_refused (test_recover_ctrl_read.ProposalTests.test_low_disk_refused) ... ok
+test_prepare_never_network_or_process (test_recover_ctrl_read.ProposalTests.test_prepare_never_network_or_process) ... ok
+test_bad_headers_redirect_or_short_body_never_promoted (test_recover_ctrl_read.RecoveryTests.test_bad_headers_redirect_or_short_body_never_promoted) ... ok
+test_changed_partial_rejected_before_http (test_recover_ctrl_read.RecoveryTests.test_changed_partial_rejected_before_http) ... ok
+test_corrupt_whole_md5_rejected (test_recover_ctrl_read.RecoveryTests.test_corrupt_whole_md5_rejected) ... ok
+test_external_guard_rejects_refunded_charge (test_recover_ctrl_read.RecoveryTests.test_external_guard_rejects_refunded_charge) ... ok
+test_lineage_disk_includes_all_five_roots (test_recover_ctrl_read.RecoveryTests.test_lineage_disk_includes_all_five_roots) ... ok
+test_missing_time_or_sha_acceptance_before_filesystem (test_recover_ctrl_read.RecoveryTests.test_missing_time_or_sha_acceptance_before_filesystem) ... ok
+test_no_automatic_budget_reopen (test_recover_ctrl_read.RecoveryTests.test_no_automatic_budget_reopen) ... ok
+test_original_changed_during_recovery_no_promotion (test_recover_ctrl_read.RecoveryTests.test_original_changed_during_recovery_no_promotion) ... ok
+test_partial_symlink_refused (test_recover_ctrl_read.RecoveryTests.test_partial_symlink_refused) ... ok
+test_positive_actual_range_whole_hash_and_outer_seal (test_recover_ctrl_read.RecoveryTests.test_positive_actual_range_whole_hash_and_outer_seal) ... ok
+test_prior_charge_floor_and_deadline (test_recover_ctrl_read.RecoveryTests.test_prior_charge_floor_and_deadline) ... ok
+test_read_timeout_keeps_reserved_charge_and_failed_receipt (test_recover_ctrl_read.RecoveryTests.test_read_timeout_keeps_reserved_charge_and_failed_receipt) ... ok
+
+======================================================================
+ERROR: test_audit_preserves_reserved_difference (test_recover_ctrl_read.AuditTests.test_audit_preserves_reserved_difference)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/dd06b558bed7/ela-audit/tests/test_recover_ctrl_read.py", line 163, in test_audit_preserves_reserved_difference
+    obs=self.audit();self.assertEqual(obs['charged_body_bytes']-4355802733-obs['partial_bytes'],1884113)
+        ^^^^^^^^^^^^
+  File "/workspace/scratch/dd06b558bed7/ela-audit/tests/test_recover_ctrl_read.py", line 161, in audit
+    with patch.object(mod,'JOB_SHA',self.sha),patch.object(mod.real,'validate_job'),patch.object(mod.cached,'index_binding',return_value=self.binding),patch.object(mod.base,'file_hash',return_value={'bytes':354631727,'sha256':'a'*64}):return mod.inspect(self.root)
+                                                                                                                                                                                                                                                  ^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/dd06b558bed7/ela-audit/scripts/recover_ctrl_read.py", line 59, in inspect
+    if cached.index_binding(binding['index_root'])!=binding:raise ValueError('Index lineage changed')
+                            ~~~~~~~^^^^^^^^^^^^^^
+KeyError: 'index_root'
+
+======================================================================
+ERROR: test_audit_rejects_changed_charge_attempt_and_supervision (test_recover_ctrl_read.AuditTests.test_audit_rejects_changed_charge_attempt_and_supervision) (name='ledger.json')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/dd06b558bed7/ela-audit/tests/test_recover_ctrl_read.py", line 168, in test_audit_rejects_changed_charge_attempt_and_supervision
+    with self.subTest(name=name),self.assertRaises(ValueError):self.audit()
+                                                               ^^^^^^^^^^^^
+  File "/workspace/scratch/dd06b558bed7/ela-audit/tests/test_recover_ctrl_read.py", line 161, in audit
+    with patch.object(mod,'JOB_SHA',self.sha),patch.object(mod.real,'validate_job'),patch.object(mod.cached,'index_binding',return_value=self.binding),patch.object(mod.base,'file_hash',return_value={'bytes':354631727,'sha256':'a'*64}):return mod.inspect(self.root)
+                                                                                                                                                                                                                                                  ^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/dd06b558bed7/ela-audit/scripts/recover_ctrl_read.py", line 59, in inspect
+    if cached.index_binding(binding['index_root'])!=binding:raise ValueError('Index lineage changed')
+                            ~~~~~~~^^^^^^^^^^^^^^
+KeyError: 'index_root'
+
+======================================================================
+ERROR: test_audit_rejects_changed_charge_attempt_and_supervision (test_recover_ctrl_read.AuditTests.test_audit_rejects_changed_charge_attempt_and_supervision) (name='CTRL_R1.attempt-0.json')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/dd06b558bed7/ela-audit/tests/test_recover_ctrl_read.py", line 168, in test_audit_rejects_changed_charge_attempt_and_supervision
+    with self.subTest(name=name),self.assertRaises(ValueError):self.audit()
+                                                               ^^^^^^^^^^^^
+  File "/workspace/scratch/dd06b558bed7/ela-audit/tests/test_recover_ctrl_read.py", line 161, in audit
+    with patch.object(mod,'JOB_SHA',self.sha),patch.object(mod.real,'validate_job'),patch.object(mod.cached,'index_binding',return_value=self.binding),patch.object(mod.base,'file_hash',return_value={'bytes':354631727,'sha256':'a'*64}):return mod.inspect(self.root)
+                                                                                                                                                                                                                                                  ^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/dd06b558bed7/ela-audit/scripts/recover_ctrl_read.py", line 59, in inspect
+    if cached.index_binding(binding['index_root'])!=binding:raise ValueError('Index lineage changed')
+                            ~~~~~~~^^^^^^^^^^^^^^
+KeyError: 'index_root'
+
+----------------------------------------------------------------------
+Ran 19 tests in 6.235s
+
+FAILED (errors=3)

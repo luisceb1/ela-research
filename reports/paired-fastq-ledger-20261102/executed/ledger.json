@@ -1,0 +1,76 @@
+{
+  "fingerprint": "279c43d7f96ec53adb3f16caafc60ecc2fb8c62a1654b9ae250e00e2e181b916",
+  "limits": {
+    "wall_seconds": 100,
+    "transfer_bytes": 10000,
+    "disk_bytes": 2097152,
+    "reserve_bytes": 0
+  },
+  "deadline_epoch": 200,
+  "transfer_bytes_consumed": 102,
+  "phases": {
+    "mate1": {
+      "kind": "transfer",
+      "status": "verified",
+      "signature": "2f5831572ad353aee5af1586e04f2289e34bacf4d6e75a782a0c333e439b196a",
+      "bytes": 51,
+      "sha256": "1fef2563a815b523ac4fa87ba9cbac45657246daa1af5b9811c4d7f4c9608baa",
+      "md5": "be5efeeb8463a7168e7e2b69747df8e3"
+    },
+    "mate2": {
+      "kind": "transfer",
+      "status": "verified",
+      "signature": "2d3892e1489bafe38cd604da762344a714a9aeb0a213eff2d998febb110ae2df",
+      "bytes": 51,
+      "sha256": "c4eabd204604ff85ee833749cdf664756f097110bc1ed2a2b065e9f691a51787",
+      "md5": "a21ce8b9f6d0b06575c3dcb476bcef99"
+    },
+    "pair": {
+      "kind": "paired_fastq",
+      "status": "verified",
+      "signature": "725428f8018376ef22ef3a67f34ad4a12bf18daf96ebf4e4e03d2b924dd68359",
+      "binding": {
+        "policy": "paired-fastq-ledger-v1",
+        "spec": {
+          "mates": [
+            {
+              "identity": "fixture/R1",
+              "transfer": "mate1",
+              "expected": {
+                "bytes": 51,
+                "md5": "be5efeeb8463a7168e7e2b69747df8e3",
+                "sha256": "1fef2563a815b523ac4fa87ba9cbac45657246daa1af5b9811c4d7f4c9608baa"
+              }
+            },
+            {
+              "identity": "fixture/R2",
+              "transfer": "mate2",
+              "expected": {
+                "bytes": 51,
+                "md5": "a21ce8b9f6d0b06575c3dcb476bcef99",
+                "sha256": "c4eabd204604ff85ee833749cdf664756f097110bc1ed2a2b065e9f691a51787"
+              }
+            }
+          ],
+          "prefix_pairs": 2
+        },
+        "transfers": [
+          {
+            "identity": "fixture/R1",
+            "transfer": "mate1",
+            "ledger_receipt_sha256": "9f01c75fd620a9651a4501f5301d101ff6bbdc3c35651618dbc77f939087c1e0"
+          },
+          {
+            "identity": "fixture/R2",
+            "transfer": "mate2",
+            "ledger_receipt_sha256": "2aec58f92ef75de1fcf9e20f0369e27b2035798041a91fa83367293ef7a5d84d"
+          }
+        ],
+        "fingerprint": "279c43d7f96ec53adb3f16caafc60ecc2fb8c62a1654b9ae250e00e2e181b916"
+      },
+      "receipt_sha256": "046ad8255f3bf4f2b78ae77dbb11719846b6c8e7c87c996f22f46f23a97b83d9"
+    }
+  },
+  "mode": "synthetic-only",
+  "raw_pilot_ready": false
+}

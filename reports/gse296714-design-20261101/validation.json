@@ -1,0 +1,13 @@
+{
+  "python": "3.12.14",
+  "new_local_tests_passed": 11,
+  "full_historical_suite_run_locally": false,
+  "compileall_passed": true,
+  "replay_byte_identical": true,
+  "counts_validated": true,
+  "http_range_and_member_crc_validated": true,
+  "full_zip_md5_validated": false,
+  "fastq_downloaded": false,
+  "differential_expression_executed": false,
+  "p_values_computed": false
+}

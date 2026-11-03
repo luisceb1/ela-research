@@ -1,0 +1,27 @@
+{
+  "paired_fastq": {
+    "pair": {
+      "mates": [
+        {
+          "identity": "fixture/R1",
+          "transfer": "mate1",
+          "expected": {
+            "bytes": 51,
+            "md5": "be5efeeb8463a7168e7e2b69747df8e3",
+            "sha256": "1fef2563a815b523ac4fa87ba9cbac45657246daa1af5b9811c4d7f4c9608baa"
+          }
+        },
+        {
+          "identity": "fixture/R2",
+          "transfer": "mate2",
+          "expected": {
+            "bytes": 51,
+            "md5": "a21ce8b9f6d0b06575c3dcb476bcef99",
+            "sha256": "c4eabd204604ff85ee833749cdf664756f097110bc1ed2a2b065e9f691a51787"
+          }
+        }
+      ],
+      "prefix_pairs": 2
+    }
+  }
+}

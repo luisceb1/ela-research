@@ -1,0 +1,180 @@
+{
+  "retrievals": [
+    {
+      "receipt": "retrievals-archive-central.json",
+      "url": "https://zenodo.org/api/records/15538003/files/2025-05-28__tdp43-apa__data.zip/content",
+      "range": "bytes=830745700-831190726",
+      "at": "2026-11-01T20:23:52.953382+00:00",
+      "status": 206,
+      "content_range": "bytes 830745700-831190726/831190727",
+      "bytes": 445027,
+      "sha256": "2c68e7b90f9ae750855cc036f57c2fdfbafe00a7eea2f71db69be97ee9923e15",
+      "saved": true
+    },
+    {
+      "receipt": "retrievals-archive-tail.json",
+      "url": "https://zenodo.org/api/records/15538003/files/2025-05-28__tdp43-apa__data.zip/content",
+      "requested_range": "bytes=-262144",
+      "at": "2026-11-01T20:23:18.530312+00:00",
+      "status": 206,
+      "content_range": "bytes 830928583-831190726/831190727",
+      "final_url": "https://zenodo.org/api/records/15538003/files/2025-05-28__tdp43-apa__data.zip/content",
+      "bytes": 262144,
+      "sha256": "ec2ccb8fff6a27d0ea3cd6e1fc64cf9935f89bd6158d2a7db24eeb7b856922c2",
+      "saved": true
+    },
+    {
+      "receipt": "retrievals-ensembl.json",
+      "name": "ensembl_ENSG00000104435.json",
+      "url": "https://rest.ensembl.org/lookup/id/ENSG00000104435?content-type=application/json",
+      "retrieved_at_utc": "2026-11-01T20:30:10.434843+00:00",
+      "saved": false,
+      "error": "TimeoutError: The read operation timed out"
+    },
+    {
+      "receipt": "retrievals-ensembl.json",
+      "name": "ensembl_ENSG00000130477.json",
+      "url": "https://rest.ensembl.org/lookup/id/ENSG00000130477?content-type=application/json",
+      "retrieved_at_utc": "2026-11-01T20:30:10.435747+00:00",
+      "saved": false,
+      "error": "TimeoutError: The read operation timed out"
+    },
+    {
+      "receipt": "retrievals-ensembl.json",
+      "name": "ensembl_ENSG00000120948.json",
+      "url": "https://rest.ensembl.org/lookup/id/ENSG00000120948?content-type=application/json",
+      "retrieved_at_utc": "2026-11-01T20:30:10.436433+00:00",
+      "saved": false,
+      "error": "TimeoutError: The read operation timed out"
+    },
+    {
+      "receipt": "retrievals-followup.json",
+      "name": "gene_counts_geo.csv.gz",
+      "url": "https://www.ncbi.nlm.nih.gov/geo/download/?acc=GSE296714&format=file&file=GSE296714%5Fgene%5Fcounts%2Ehumphrey%5Fi3%5Fcortical%2Ecsv%2Egz",
+      "retrieved_at_utc": "2026-11-01T20:22:46.400024+00:00",
+      "status": 200,
+      "final_url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE296nnn/GSE296714/suppl/GSE296714_gene_counts.humphrey_i3_cortical.csv.gz",
+      "content_type": "application/x-gzip",
+      "bytes": 1174016,
+      "sha256": "b40e6f1462e414d8b3bc1520ec19743f763d758ae4ad871ecd70a851d05d4413",
+      "saved": true
+    },
+    {
+      "receipt": "retrievals-followup.json",
+      "name": "ena.tsv",
+      "url": "https://www.ebi.ac.uk/ena/portal/api/filereport?accession=PRJNA1256902&result=read_run&fields=run_accession,experiment_accession,sample_accession,secondary_sample_accession,sample_alias,experiment_alias,library_layout,read_count,base_count,fastq_bytes,fastq_md5&format=tsv",
+      "retrieved_at_utc": "2026-11-01T20:22:46.400809+00:00",
+      "status": 200,
+      "final_url": "https://www.ebi.ac.uk/ena/portal/api/filereport?accession=PRJNA1256902&result=read_run&fields=run_accession,experiment_accession,sample_accession,secondary_sample_accession,sample_alias,experiment_alias,library_layout,read_count,base_count,fastq_bytes,fastq_md5&format=tsv",
+      "content_type": "text/plain",
+      "bytes": 21452,
+      "sha256": "9936681849a58c9f06399cb8bb6ea149f46a754e5b13f4c70362e23503203525",
+      "saved": true
+    },
+    {
+      "receipt": "retrievals-zip-annotation.json",
+      "url": "https://zenodo.org/api/records/15538003/files/2025-05-28__tdp43-apa__data.zip/content",
+      "member": "tdp43-apa/misc/processed/cleaned.cryptics.all.novel_ref_combined.quant.gtf",
+      "range": "bytes=344318139-344489343",
+      "at_utc": "2026-11-01T20:26:51.735920+00:00",
+      "status": 206,
+      "content_range": "bytes 344318139-344489343/831190727",
+      "saved": true,
+      "transferred_bytes": 171205,
+      "member_bytes": 408294,
+      "range_sha256": "38cc3b301cccafb204da79f5ac7f7f90e9b38f7ebd0da69220330b80b7bf8659",
+      "member_sha256": "4962182fb5d4703799c3c2469eee24a2e5fd8cf434fa430a513cfbbf124cde25",
+      "crc_verified": true
+    },
+    {
+      "receipt": "retrievals-zip-counts.json",
+      "url": "https://zenodo.org/api/records/15538003/files/2025-05-28__tdp43-apa__data.zip/content",
+      "member": "tdp43-apa/preprocessing/data/PAPA/i3_cortical_upf1_zanovello_novel/humphrey_i3_cortical/differential_apa/summarised_pas_quantification.counts.tsv",
+      "range": "bytes=710399233-713408495",
+      "at_utc": "2026-11-01T20:25:51.179303+00:00",
+      "status": 206,
+      "content_range": "bytes 710399233-713408495/831190727",
+      "saved": true,
+      "transferred_bytes": 3009263,
+      "member_bytes": 7148108,
+      "range_sha256": "6f7f370fba257fad4ce95d23c224aa5d313e2d5cb5b621cbdcfdcfe051b9e84d",
+      "member_sha256": "5b25fdea528e99ba647fd20b0d5f4ca5aab401d0e373df131bdc2145ded1a296",
+      "crc_verified": true
+    },
+    {
+      "receipt": "retrievals-zip-member.json",
+      "url": "https://zenodo.org/api/records/15538003/files/2025-05-28__tdp43-apa__data.zip/content",
+      "member": "tdp43-apa/preprocessing/data/PAPA/sample_tables/humphrey_i3_cortical/humphrey_i3_cortical_underscore_sample_tbl.csv",
+      "range": "bytes=808633616-808765019",
+      "at_utc": "2026-11-01T20:24:35.397980+00:00",
+      "status": 206,
+      "content_range": "bytes 808633616-808765019/831190727",
+      "saved": true,
+      "transferred_bytes": 131404,
+      "member_bytes": 3863,
+      "range_sha256": "f5e2b9be0a34bcb798d6c0832c60eb7a015a666e80cdb2ebe56cce3e189466e5",
+      "member_sha256": "98c07f236745a84e09aa19ffc16bf2ff411f928528a8f9894f4f7cfc6f136128",
+      "crc_verified": true
+    },
+    {
+      "receipt": "retrievals.json",
+      "name": "series.soft",
+      "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE296714&targ=self&form=text&view=full",
+      "retrieved_at_utc": "2026-11-01T20:22:09.247946+00:00",
+      "status": 200,
+      "final_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE296714&targ=self&form=text&view=full",
+      "content_type": "geo/text",
+      "bytes": 3608,
+      "sha256": "8d3cfc67fdfa88ef9c159e1312437d37a08ba2e8504a7b49230ea28758d0ddf0",
+      "saved": true
+    },
+    {
+      "receipt": "retrievals.json",
+      "name": "family.soft",
+      "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE296714&targ=all&form=text&view=full",
+      "retrieved_at_utc": "2026-11-01T20:22:09.248823+00:00",
+      "status": 200,
+      "final_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE296714&targ=all&form=text&view=full",
+      "content_type": "geo/text",
+      "bytes": 2348651,
+      "sha256": "17ec8d6e301dc33b6782a682caed137d9c6054cd5038b5791ae26ee9097c2bc5",
+      "saved": true
+    },
+    {
+      "receipt": "retrievals.json",
+      "name": "gene_counts.csv.gz",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE296nnn/GSE296714/suppl/GSE296714_gene_counts.humphrey_i3_cortical.csv.gz",
+      "retrieved_at_utc": "2026-11-01T20:22:09.249696+00:00",
+      "saved": false,
+      "error": "HTTPError: HTTP Error 403: Forbidden"
+    },
+    {
+      "receipt": "retrievals.json",
+      "name": "article.xml",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12586162/fullTextXML",
+      "retrieved_at_utc": "2026-11-01T20:22:09.250350+00:00",
+      "status": 200,
+      "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12586162/fullTextXML",
+      "content_type": "application/xml",
+      "bytes": 276583,
+      "sha256": "7a854a6bd739662edc0708d346d6f7adeb59416b2b53f125e0e1de286a7a1d52",
+      "saved": true
+    },
+    {
+      "receipt": "retrievals.json",
+      "name": "zenodo.json",
+      "url": "https://zenodo.org/api/records/15538002",
+      "retrieved_at_utc": "2026-11-01T20:22:09.251483+00:00",
+      "status": 200,
+      "final_url": "https://zenodo.org/api/records/15538003",
+      "content_type": "application/json",
+      "bytes": 3858,
+      "sha256": "73cee37c323a16cf97adbff163d00b49fcd7d752063a5a2e96cf745987da94dc",
+      "saved": true
+    }
+  ],
+  "git_base": "6b0d4204241d316f12a90915d61e79c4904be104",
+  "author_code_commit": "e0d54b6f60a094c79f05f57ab4c88e451127bcbb",
+  "biological_unit_map_reconstructed": false,
+  "originals_in_git": false
+}

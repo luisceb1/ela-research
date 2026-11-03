@@ -1,0 +1,389 @@
+[
+  {
+    "fixture": 0,
+    "anchor": 15,
+    "counts": [
+      {
+        "event": [
+          "lib",
+          "chr19",
+          120,
+          220,
+          "+"
+        ],
+        "fragments": 1
+      }
+    ],
+    "qc": {
+      "accepted_pairs": 1,
+      "groups": 1,
+      "nonprimary_excluded": 0
+    },
+    "text_equals_htslib": true
+  },
+  {
+    "fixture": 1,
+    "anchor": 15,
+    "counts": [
+      {
+        "event": [
+          "lib",
+          "chr19",
+          120,
+          220,
+          "+"
+        ],
+        "fragments": 1
+      }
+    ],
+    "qc": {
+      "accepted_pairs": 1,
+      "groups": 1,
+      "nonprimary_excluded": 0
+    },
+    "text_equals_htslib": true
+  },
+  {
+    "fixture": 2,
+    "anchor": 15,
+    "counts": [
+      {
+        "event": [
+          "lib",
+          "chr19",
+          120,
+          220,
+          "-"
+        ],
+        "fragments": 1
+      }
+    ],
+    "qc": {
+      "accepted_pairs": 1,
+      "groups": 1,
+      "nonprimary_excluded": 0
+    },
+    "text_equals_htslib": true
+  },
+  {
+    "fixture": 3,
+    "anchor": 15,
+    "counts": [],
+    "qc": {
+      "accepted_pairs": 1,
+      "groups": 1,
+      "nonprimary_excluded": 0
+    },
+    "text_equals_htslib": true
+  },
+  {
+    "fixture": 4,
+    "anchor": 15,
+    "counts": [],
+    "qc": {
+      "accepted_pairs": 1,
+      "groups": 1,
+      "nonprimary_excluded": 0
+    },
+    "text_equals_htslib": true
+  },
+  {
+    "fixture": 5,
+    "anchor": 15,
+    "counts": [],
+    "qc": {
+      "excluded:event_strand": 1,
+      "groups": 1,
+      "nonprimary_excluded": 0
+    },
+    "text_equals_htslib": true
+  },
+  {
+    "fixture": 6,
+    "anchor": 15,
+    "counts": [
+      {
+        "event": [
+          "lib",
+          "chr19",
+          120,
+          220,
+          "+"
+        ],
+        "fragments": 1
+      }
+    ],
+    "qc": {
+      "accepted_marked_duplicate_pairs": 1,
+      "accepted_pairs": 1,
+      "groups": 1,
+      "nonprimary_excluded": 0
+    },
+    "text_equals_htslib": true
+  },
+  {
+    "fixture": 7,
+    "anchor": 15,
+    "counts": [
+      {
+        "event": [
+          "lib",
+          "chr19",
+          120,
+          220,
+          "+"
+        ],
+        "fragments": 1
+      }
+    ],
+    "qc": {
+      "accepted_pairs": 1,
+      "groups": 1,
+      "nonprimary_excluded": 2
+    },
+    "text_equals_htslib": true
+  },
+  {
+    "fixture": 8,
+    "anchor": 15,
+    "counts": [
+      {
+        "event": [
+          "lib",
+          "chr19",
+          120,
+          220,
+          "+"
+        ],
+        "fragments": 2
+      }
+    ],
+    "qc": {
+      "accepted_pairs": 2,
+      "groups": 2,
+      "nonprimary_excluded": 0
+    },
+    "text_equals_htslib": true
+  },
+  {
+    "fixture": 9,
+    "anchor": 15,
+    "counts": [],
+    "qc": {
+      "excluded:primary_mate_count": 1,
+      "groups": 1,
+      "nonprimary_excluded": 0
+    },
+    "text_equals_htslib": true
+  },
+  {
+    "fixture": 10,
+    "anchor": 15,
+    "counts": [],
+    "qc": {
+      "excluded:mapping_quality": 1,
+      "groups": 1,
+      "nonprimary_excluded": 0
+    },
+    "text_equals_htslib": true
+  },
+  {
+    "fixture": 0,
+    "anchor": 8,
+    "counts": [
+      {
+        "event": [
+          "lib",
+          "chr19",
+          120,
+          220,
+          "+"
+        ],
+        "fragments": 1
+      }
+    ],
+    "qc": {
+      "accepted_pairs": 1,
+      "groups": 1,
+      "nonprimary_excluded": 0
+    },
+    "text_equals_htslib": true
+  },
+  {
+    "fixture": 1,
+    "anchor": 8,
+    "counts": [
+      {
+        "event": [
+          "lib",
+          "chr19",
+          120,
+          220,
+          "+"
+        ],
+        "fragments": 1
+      }
+    ],
+    "qc": {
+      "accepted_pairs": 1,
+      "groups": 1,
+      "nonprimary_excluded": 0
+    },
+    "text_equals_htslib": true
+  },
+  {
+    "fixture": 2,
+    "anchor": 8,
+    "counts": [
+      {
+        "event": [
+          "lib",
+          "chr19",
+          120,
+          220,
+          "-"
+        ],
+        "fragments": 1
+      }
+    ],
+    "qc": {
+      "accepted_pairs": 1,
+      "groups": 1,
+      "nonprimary_excluded": 0
+    },
+    "text_equals_htslib": true
+  },
+  {
+    "fixture": 3,
+    "anchor": 8,
+    "counts": [
+      {
+        "event": [
+          "lib",
+          "chr19",
+          114,
+          214,
+          "+"
+        ],
+        "fragments": 1
+      }
+    ],
+    "qc": {
+      "accepted_pairs": 1,
+      "groups": 1,
+      "nonprimary_excluded": 0
+    },
+    "text_equals_htslib": true
+  },
+  {
+    "fixture": 4,
+    "anchor": 8,
+    "counts": [],
+    "qc": {
+      "accepted_pairs": 1,
+      "groups": 1,
+      "nonprimary_excluded": 0
+    },
+    "text_equals_htslib": true
+  },
+  {
+    "fixture": 5,
+    "anchor": 8,
+    "counts": [],
+    "qc": {
+      "excluded:event_strand": 1,
+      "groups": 1,
+      "nonprimary_excluded": 0
+    },
+    "text_equals_htslib": true
+  },
+  {
+    "fixture": 6,
+    "anchor": 8,
+    "counts": [
+      {
+        "event": [
+          "lib",
+          "chr19",
+          120,
+          220,
+          "+"
+        ],
+        "fragments": 1
+      }
+    ],
+    "qc": {
+      "accepted_marked_duplicate_pairs": 1,
+      "accepted_pairs": 1,
+      "groups": 1,
+      "nonprimary_excluded": 0
+    },
+    "text_equals_htslib": true
+  },
+  {
+    "fixture": 7,
+    "anchor": 8,
+    "counts": [
+      {
+        "event": [
+          "lib",
+          "chr19",
+          120,
+          220,
+          "+"
+        ],
+        "fragments": 1
+      }
+    ],
+    "qc": {
+      "accepted_pairs": 1,
+      "groups": 1,
+      "nonprimary_excluded": 2
+    },
+    "text_equals_htslib": true
+  },
+  {
+    "fixture": 8,
+    "anchor": 8,
+    "counts": [
+      {
+        "event": [
+          "lib",
+          "chr19",
+          120,
+          220,
+          "+"
+        ],
+        "fragments": 2
+      }
+    ],
+    "qc": {
+      "accepted_pairs": 2,
+      "groups": 2,
+      "nonprimary_excluded": 0
+    },
+    "text_equals_htslib": true
+  },
+  {
+    "fixture": 9,
+    "anchor": 8,
+    "counts": [],
+    "qc": {
+      "excluded:primary_mate_count": 1,
+      "groups": 1,
+      "nonprimary_excluded": 0
+    },
+    "text_equals_htslib": true
+  },
+  {
+    "fixture": 10,
+    "anchor": 8,
+    "counts": [],
+    "qc": {
+      "excluded:mapping_quality": 1,
+      "groups": 1,
+      "nonprimary_excluded": 0
+    },
+    "text_equals_htslib": true
+  }
+]

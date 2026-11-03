@@ -1,0 +1,80 @@
+test_chain_preserves_body_and_manual_reserve (test_recover_ctrl_r2_clock.ClockFailureAuditTests.test_chain_preserves_body_and_manual_reserve) ... ok
+test_eleven_lineage_roots_counted (test_recover_ctrl_r2_clock.ClockFailureAuditTests.test_eleven_lineage_roots_counted) ... ok
+test_refunded_charge_or_changed_partial_refused (test_recover_ctrl_r2_clock.ClockFailureAuditTests.test_refunded_charge_or_changed_partial_refused) ... ok
+test_wrong_stop_reason_or_live_group_refused (test_recover_ctrl_r2_clock.ClockFailureAuditTests.test_wrong_stop_reason_or_live_group_refused) ... ok
+test_actual_phase_elapsed_expiry_remains_enforced (test_recover_ctrl_r2_clock.ElapsedClockTests.test_actual_phase_elapsed_expiry_remains_enforced) ... ok
+test_actual_total_elapsed_expiry_remains_enforced (test_recover_ctrl_r2_clock.ElapsedClockTests.test_actual_total_elapsed_expiry_remains_enforced) ... ok
+test_backward_and_large_forward_wall_adjustments_do_not_expire_elapsed_clock (test_recover_ctrl_r2_clock.ElapsedClockTests.test_backward_and_large_forward_wall_adjustments_do_not_expire_elapsed_clock) ... ok
+test_boot_change_refused (test_recover_ctrl_r2_clock.ElapsedClockTests.test_boot_change_refused) ... ok
+test_elapsed_clock_backwards_still_refused (test_recover_ctrl_r2_clock.ElapsedClockTests.test_elapsed_clock_backwards_still_refused) ... ok
+test_elapsed_clock_sealer_refuses_forged_deadline (test_recover_ctrl_r2_clock.ElapsedClockTests.test_elapsed_clock_sealer_refuses_forged_deadline) ... ok
+test_parent_checks_blocked_worker_without_using_wall_time (test_recover_ctrl_r2_clock.ElapsedClockTests.test_parent_checks_blocked_worker_without_using_wall_time) ... ok
+test_parent_samples_clock_after_reading_concurrent_worker_state (test_recover_ctrl_r2_clock.ElapsedClockTests.test_parent_samples_clock_after_reading_concurrent_worker_state) ... ok
+test_phase_cannot_restart_or_budget_reopen (test_recover_ctrl_r2_clock.ElapsedClockTests.test_phase_cannot_restart_or_budget_reopen) ... ok
+test_reproduces_old_guard_on_small_backward_civil_adjustment (test_recover_ctrl_r2_clock.ElapsedClockTests.test_reproduces_old_guard_on_small_backward_civil_adjustment) ... ok
+test_actual_supervised_worker_fails_before_http (test_recover_ctrl_r2_clock.ProposalTests.test_actual_supervised_worker_fails_before_http) ... ERROR
+test_existing_root_refused (test_recover_ctrl_r2_clock.ProposalTests.test_existing_root_refused) ... ok
+test_fixed_plan_mutations_rejected (test_recover_ctrl_r2_clock.ProposalTests.test_fixed_plan_mutations_rejected) ... ERROR
+test_low_disk_refused (test_recover_ctrl_r2_clock.ProposalTests.test_low_disk_refused) ... ERROR
+test_prepare_never_network_or_process (test_recover_ctrl_r2_clock.ProposalTests.test_prepare_never_network_or_process) ... ERROR
+test_bad_headers_redirect_or_short_body_never_promoted (test_recover_ctrl_r2_clock.RecoveryTests.test_bad_headers_redirect_or_short_body_never_promoted) ... ok
+test_changed_partial_rejected_before_http (test_recover_ctrl_r2_clock.RecoveryTests.test_changed_partial_rejected_before_http) ... ok
+test_corrupt_whole_md5_rejected (test_recover_ctrl_r2_clock.RecoveryTests.test_corrupt_whole_md5_rejected) ... ok
+test_external_guard_rejects_refunded_charge (test_recover_ctrl_r2_clock.RecoveryTests.test_external_guard_rejects_refunded_charge) ... ok
+test_missing_time_or_sha_acceptance_before_filesystem (test_recover_ctrl_r2_clock.RecoveryTests.test_missing_time_or_sha_acceptance_before_filesystem) ... ok
+test_no_automatic_budget_reopen (test_recover_ctrl_r2_clock.RecoveryTests.test_no_automatic_budget_reopen) ... ok
+test_original_changed_during_recovery_no_promotion (test_recover_ctrl_r2_clock.RecoveryTests.test_original_changed_during_recovery_no_promotion) ... ok
+test_partial_symlink_refused (test_recover_ctrl_r2_clock.RecoveryTests.test_partial_symlink_refused) ... ok
+test_positive_actual_range_whole_hash_and_outer_seal (test_recover_ctrl_r2_clock.RecoveryTests.test_positive_actual_range_whole_hash_and_outer_seal) ... ok
+test_prior_charge_floor_and_deadline (test_recover_ctrl_r2_clock.RecoveryTests.test_prior_charge_floor_and_deadline) ... ok
+test_read_timeout_keeps_reserved_charge_and_failed_receipt (test_recover_ctrl_r2_clock.RecoveryTests.test_read_timeout_keeps_reserved_charge_and_failed_receipt) ... ok
+
+======================================================================
+ERROR: test_actual_supervised_worker_fails_before_http (test_recover_ctrl_r2_clock.ProposalTests.test_actual_supervised_worker_fails_before_http)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/dd06b558bed7/ela-audit/tests/test_recover_ctrl_r2_clock.py", line 139, in test_actual_supervised_worker_fails_before_http
+    p=self.plan();p['identity']=mod.identity();out=Path(p['root']);out.mkdir();atomic_json(out/'recovery-plan.json',p);atomic_json(out/'operator-acceptance.json',{'prepared_sha256':mod.sha(out/'recovery-plan.json'),'accepted_elapsed_clock_window':True})
+      ^^^^^^^^^^^
+  File "/workspace/scratch/dd06b558bed7/ela-audit/tests/test_recover_ctrl_r2_clock.py", line 119, in plan
+    with patch.object(mod,'inspect',return_value=self.obs),patch.object(mod,'identity',return_value={}),patch.object(mod.shutil,'disk_usage',return_value=type('D',(),{'free':100*mod.GiB})()):return mod.prepare(self.original)
+                                                                                                                     ^^^^^^^^^^
+AttributeError: module 'recover_ctrl_r2_clock' has no attribute 'shutil'
+
+======================================================================
+ERROR: test_fixed_plan_mutations_rejected (test_recover_ctrl_r2_clock.ProposalTests.test_fixed_plan_mutations_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/dd06b558bed7/ela-audit/tests/test_recover_ctrl_r2_clock.py", line 125, in test_fixed_plan_mutations_rejected
+    p=self.plan()
+      ^^^^^^^^^^^
+  File "/workspace/scratch/dd06b558bed7/ela-audit/tests/test_recover_ctrl_r2_clock.py", line 119, in plan
+    with patch.object(mod,'inspect',return_value=self.obs),patch.object(mod,'identity',return_value={}),patch.object(mod.shutil,'disk_usage',return_value=type('D',(),{'free':100*mod.GiB})()):return mod.prepare(self.original)
+                                                                                                                     ^^^^^^^^^^
+AttributeError: module 'recover_ctrl_r2_clock' has no attribute 'shutil'
+
+======================================================================
+ERROR: test_low_disk_refused (test_recover_ctrl_r2_clock.ProposalTests.test_low_disk_refused)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/dd06b558bed7/ela-audit/tests/test_recover_ctrl_r2_clock.py", line 137, in test_low_disk_refused
+    with patch.object(mod,'inspect',return_value=self.obs),patch.object(mod.shutil,'disk_usage',return_value=type('D',(),{'free':1})()):self.assertRaises(ValueError,mod.prepare,self.original)
+                                                                        ^^^^^^^^^^
+AttributeError: module 'recover_ctrl_r2_clock' has no attribute 'shutil'
+
+======================================================================
+ERROR: test_prepare_never_network_or_process (test_recover_ctrl_r2_clock.ProposalTests.test_prepare_never_network_or_process)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/dd06b558bed7/ela-audit/tests/test_recover_ctrl_r2_clock.py", line 121, in test_prepare_never_network_or_process
+    with patch.object(mod.transport.urllib.request,'build_opener',side_effect=AssertionError('No network')),patch.object(mod,'supervise',side_effect=AssertionError('No process')):p=self.plan()
+                                                                                                                                                                                     ^^^^^^^^^^^
+  File "/workspace/scratch/dd06b558bed7/ela-audit/tests/test_recover_ctrl_r2_clock.py", line 119, in plan
+    with patch.object(mod,'inspect',return_value=self.obs),patch.object(mod,'identity',return_value={}),patch.object(mod.shutil,'disk_usage',return_value=type('D',(),{'free':100*mod.GiB})()):return mod.prepare(self.original)
+                                                                                                                     ^^^^^^^^^^
+AttributeError: module 'recover_ctrl_r2_clock' has no attribute 'shutil'
+
+----------------------------------------------------------------------
+Ran 30 tests in 6.143s
+
+FAILED (errors=4)

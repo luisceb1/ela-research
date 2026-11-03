@@ -1,0 +1,17 @@
+{
+  "prior_charged_body_bytes": 4355802733,
+  "planned_read_body_bytes": 6349703881,
+  "minimum_final_body_bytes": 10705506614,
+  "remaining_margin_bytes": 1294493386,
+  "original_body_cap": 12000000000,
+  "new_total_wall_seconds": 7200,
+  "new_transfer_seconds": 1800,
+  "prior_transfer_elapsed_seconds": 3748.5157940387726,
+  "prior_global_deadline_epoch": 1793658000.877632,
+  "prior_deadline_changed": false,
+  "new_window_accepted": false,
+  "execution_enabled": false,
+  "index_download_copy_extraction": false,
+  "libraries": "CTRL-4 first; TDP-5 only if control meets fixed coverage",
+  "raw_execution_ready": false
+}

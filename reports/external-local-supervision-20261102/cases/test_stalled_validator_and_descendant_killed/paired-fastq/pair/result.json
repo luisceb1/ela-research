@@ -1,0 +1,10 @@
+{
+  "status": "started",
+  "prefix_pairs_requested": 2,
+  "pairs_scanned": 0,
+  "prefix_pairs_written": 0,
+  "source_gzip_eof_crc_validated": false,
+  "global_identity_uniqueness_certified": false,
+  "format_policy": "four-line ACGTN DNA; ASCII33-126 syntax only; Phred encoding not inferred",
+  "raw_execution_ready": false
+}

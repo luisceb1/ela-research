@@ -1,0 +1,7 @@
+gene_name	paste_into_igv_junction	junc_cat	comparison	strand
+UNC13A	chr19:17623216-17623542	novel_acceptor	Humphrey-i3Cortical	-
+UNC13A	chr19:17642591-17642845	novel_acceptor	Humphrey-i3Cortical	-
+UNC13A	chr19:17642541-17642845	novel_acceptor	Humphrey-i3Cortical	-
+UNC13A	chr19:17618962-17623542	novel_exon_skip	Humphrey-i3Cortical	-
+UNC13A	chr19:17618962-17623118	novel_donor	Humphrey-i3Cortical	-
+UNC13A	chr19:17641556-17642414	novel_donor	Humphrey-i3Cortical	-

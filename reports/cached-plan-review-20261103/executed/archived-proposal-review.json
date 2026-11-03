@@ -1,0 +1,13 @@
+{
+  "status": "archived_proposal_arithmetic_passed",
+  "prior_body_bytes": 4355802733,
+  "planned_read_body_bytes": 6349703881,
+  "cumulative_if_both_downloaded": 10705506614,
+  "margin_bytes": 1294493386,
+  "disabled_descriptor_provided": false,
+  "execution_enabled": false,
+  "raw_execution_ready": false,
+  "host_files_verified": false,
+  "window_authorized": false,
+  "source_file_sha256": "90952a2fc54ed635c9be41bbc105d48cf5af961e6f245980e03a578c23be8b8b"
+}

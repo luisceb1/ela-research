@@ -1,0 +1,16 @@
+test_member_name_and_crc_checked (test_gse296714_design.ArchiveControls.test_member_name_and_crc_checked) ... ok
+test_truncation_and_output_limit_rejected (test_gse296714_design.ArchiveControls.test_truncation_and_output_limit_rejected) ... ok
+test_conflicting_biosample_or_duplicate_run_mapping_rejected (test_gse296714_design.IdentityControls.test_conflicting_biosample_or_duplicate_run_mapping_rejected) ... ok
+test_papa_uses_explicit_author_mapping_and_rejects_collapsed_units (test_gse296714_design.IdentityControls.test_papa_uses_explicit_author_mapping_and_rejects_collapsed_units) ... ok
+test_unrelated_project_samples_are_not_selected (test_gse296714_design.IdentityControls.test_unrelated_project_samples_are_not_selected) ... ok
+test_duplicate_columns_rejected (test_gse296714_design.MatrixControls.test_duplicate_columns_rejected) ... ok
+test_duplicate_gene_version_rejected (test_gse296714_design.MatrixControls.test_duplicate_gene_version_rejected) ... ok
+test_fractional_estimates_are_not_rejected_as_corrupt (test_gse296714_design.MatrixControls.test_fractional_estimates_are_not_rejected_as_corrupt) ... ok
+test_invalid_values_rejected (test_gse296714_design.MatrixControls.test_invalid_values_rejected) ... ok
+test_missing_target_rejected (test_gse296714_design.MatrixControls.test_missing_target_rejected) ... ok
+test_unlinked_column_rejected (test_gse296714_design.MatrixControls.test_unlinked_column_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.001s
+
+OK

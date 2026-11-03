@@ -1,0 +1,23 @@
+{
+  "name": "body",
+  "argv": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "/workspace/scratch/dd06b558bed7/ela-audit/scripts/external_local_stage.py",
+    "--local-job",
+    "/tmp/tmp42b_6_41/external-receipts/body.job.json"
+  ],
+  "status": "finished",
+  "memory_mode": "sampled group RSS; per-process RLIMIT_AS",
+  "detaching_supported": false,
+  "namespace_pid": 28,
+  "procfs_pid": 1023,
+  "procfs_group": 1023,
+  "exit_code": 0,
+  "violation": null,
+  "peak_group_rss_bytes_sampled": 16777216,
+  "samples": 43,
+  "max_group_members": 1,
+  "rss_observed": true,
+  "live_group_members_after_cleanup": [],
+  "elapsed_seconds": 0.47122431800005415
+}

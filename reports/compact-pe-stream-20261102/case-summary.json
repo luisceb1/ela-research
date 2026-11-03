@@ -1,0 +1,92 @@
+[
+  {
+    "path": "test_chunk_initial_runs_and_disk_caps/case0/result.json",
+    "status": "failed",
+    "producer_exit_code": null,
+    "error_type": "ValueError",
+    "input_bytes": 3223,
+    "records": 7,
+    "peak_temp_bytes": 826
+  },
+  {
+    "path": "test_chunk_initial_runs_and_disk_caps/case1/result.json",
+    "status": "failed",
+    "producer_exit_code": null,
+    "error_type": "ValueError",
+    "input_bytes": 6176,
+    "records": 15,
+    "peak_temp_bytes": 0
+  },
+  {
+    "path": "test_decoder_disagreement_rejected/out/result.json",
+    "status": "failed",
+    "producer_exit_code": null,
+    "error_type": "ValueError",
+    "input_bytes": 970,
+    "records": 1,
+    "peak_temp_bytes": 0
+  },
+  {
+    "path": "test_offtarget_splice_strand_still_affects_qc/out/result.json",
+    "status": "verified",
+    "producer_exit_code": 0,
+    "error_type": null,
+    "input_bytes": 370,
+    "records": 2,
+    "peak_temp_bytes": 475
+  },
+  {
+    "path": "test_supervised_actual_pipe_success_and_nonzero_producer/pipe0/out/result.json",
+    "status": "verified",
+    "producer_exit_code": 0,
+    "error_type": null,
+    "input_bytes": 7151,
+    "records": 18,
+    "peak_temp_bytes": 10030
+  },
+  {
+    "path": "test_supervised_actual_pipe_success_and_nonzero_producer/pipe0/receipts/pipe.json",
+    "status": "finished",
+    "exit_code": 0,
+    "violation": null,
+    "elapsed_seconds": 0.1141675489999443,
+    "max_group_members": 2,
+    "live_group_members_after_cleanup": []
+  },
+  {
+    "path": "test_supervised_actual_pipe_success_and_nonzero_producer/pipe7/out/result.json",
+    "status": "failed",
+    "producer_exit_code": 7,
+    "error_type": "ValueError",
+    "input_bytes": 7151,
+    "records": 18,
+    "peak_temp_bytes": 3881
+  },
+  {
+    "path": "test_supervised_actual_pipe_success_and_nonzero_producer/pipe7/receipts/pipe.json",
+    "status": "finished",
+    "exit_code": 1,
+    "violation": null,
+    "elapsed_seconds": 0.09015198500003407,
+    "max_group_members": 2,
+    "live_group_members_after_cleanup": []
+  },
+  {
+    "path": "test_supervised_blocked_pipe_kills_producer_and_consumer/out/result.json",
+    "status": "started",
+    "producer_exit_code": null,
+    "error_type": null,
+    "input_bytes": null,
+    "records": null,
+    "peak_temp_bytes": null
+  },
+  {
+    "path": "test_supervised_blocked_pipe_kills_producer_and_consumer/receipts/blocked.json",
+    "status": "finished",
+    "exit_code": -9,
+    "violation": "timeout",
+    "elapsed_seconds": 1.010383475000026,
+    "max_group_members": 2,
+    "live_group_members_after_cleanup": []
+  }
+]

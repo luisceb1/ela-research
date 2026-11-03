@@ -1,0 +1,21 @@
+{
+  "source_commit": "eab691f3c7e0bbf308d3c67c16390bad07d715da",
+  "scope": "Existing synthetic FASTQ and SAM only; generated index files are explicit placeholders",
+  "files": [
+    {
+      "path": "reports/unc13a-minigenome-20261102/fixtures/r1.fq",
+      "sha256": "696af636003bbc151e120961b16e173a682d93077129eaa9aee48d75e0e17db4",
+      "git_blob_sha": "a6dc754d46632bd25113794aae6143e8741df8f7"
+    },
+    {
+      "path": "reports/unc13a-minigenome-20261102/fixtures/r2.fq",
+      "sha256": "d1a980178154baae14a978b0b9586bdf8e878b20530de77dc23cf1296452edfe",
+      "git_blob_sha": "0538c4e28bc0f0e92c49e9375b2cfc8ade31e1bc"
+    },
+    {
+      "path": "reports/unc13a-minigenome-20261102/fixtures/wild.sam",
+      "sha256": "b81c96bd204b38f7fad38ab7a39f177e89a2e23692f3a28c0fa1e80179724221",
+      "git_blob_sha": "0621b6044ef3294dc638e9ede3707a36efb31f19"
+    }
+  ]
+}

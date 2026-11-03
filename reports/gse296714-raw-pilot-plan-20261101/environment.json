@@ -1,0 +1,15 @@
+{
+  "cpu_count_os": 9,
+  "disk": {
+    "total": 67586535424,
+    "used": 1459085312,
+    "free": 62674702336
+  },
+  "binaries": {
+    "hisat2": null,
+    "STAR": null,
+    "samtools": null
+  },
+  "/sys/fs/cgroup/memory.max": "8589934592",
+  "/sys/fs/cgroup/cpu.max": "800000 100000"
+}

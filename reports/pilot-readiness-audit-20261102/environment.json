@@ -1,0 +1,52 @@
+{
+  "python": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+  "python_version": "3.12.14",
+  "disk": {
+    "total": 67586535424,
+    "used": 456720384,
+    "free": 63677067264
+  },
+  "cpu_affinity": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "cpu_max": "800000 100000",
+  "memory_max": "8589934592",
+  "memory_current": "611069952",
+  "on_path": {
+    "hisat2": null,
+    "hisat2-align-s": null,
+    "samtools": null,
+    "sort": "/usr/bin/sort"
+  },
+  "binaries": [
+    {
+      "path": "/workspace/scratch/dd06b558bed7/ela-audit/reports/unc13a-minigenome-20261102/scratch/hisat2-0d244324f98de541bce04d45c75e83bc3522f7f4/hisat2-align-s",
+      "sha256": "ef3d9d2d1134ea74415968b9e06a74c30a0d7688604895c9bfb889d65adc96cd",
+      "matches_historical": true,
+      "version_exit": 0,
+      "version": "/workspace/scratch/dd06b558bed7/ela-audit/reports/unc13a-minigenome-20261102/scratch/hisat2-0d244324f98de541bce04d45c75e83bc3522f7f4/hisat2-align-s version 2.2.3\n64-bit\nBuilt on dc45c1f47bb8\nMon Nov  2 00:50:29 CET 2026\nCompiler: gcc version 13.3.0 (Ubuntu 13.3.0-6ubuntu2~24.04) \nOptions: -O3 -m64 -msse2 -funroll-loops -g3 -std=c++11 -DPOPCNT_CAPABILITY\nSizeof {int, long, long long, void*, size_t, off_t}: {4, 8, 8, 8, 8, 8}\n"
+    },
+    {
+      "path": "/workspace/scratch/dd06b558bed7/ela-audit/reports/unc13a-minigenome-20261102/scratch/hisat2-0d244324f98de541bce04d45c75e83bc3522f7f4/hisat2-build-s",
+      "sha256": "aba530dab9930cae29b2baf87337bef325c650d1f478ec6853f093a7fce4f269",
+      "matches_historical": true,
+      "version_exit": 0,
+      "version": "/workspace/scratch/dd06b558bed7/ela-audit/reports/unc13a-minigenome-20261102/scratch/hisat2-0d244324f98de541bce04d45c75e83bc3522f7f4/hisat2-build-s version 2.2.3\n64-bit\nBuilt on dc45c1f47bb8\nMon Nov  2 00:51:45 CET 2026\nCompiler: gcc version 13.3.0 (Ubuntu 13.3.0-6ubuntu2~24.04) \nOptions: -O3 -m64 -msse2 -funroll-loops -g3 -std=c++11 -DPOPCNT_CAPABILITY\nSizeof {int, long, long long, void*, size_t, off_t}: {4, 8, 8, 8, 8, 8}\n"
+    }
+  ],
+  "human_index_genome_ht2_paths": [],
+  "pysam_default_importable": false,
+  "pysam_explicit_local_path": {
+    "path": "/workspace/scratch/dd06b558bed7/pe-deps",
+    "version": "0.23.3",
+    "htslib_samtools": "1.21"
+  }
+}

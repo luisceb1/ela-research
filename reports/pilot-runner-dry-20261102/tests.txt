@@ -1,0 +1,15 @@
+test_changed_manifest_or_limits_rejected (test_pilot_dry_runner.RunnerTests.test_changed_manifest_or_limits_rejected) ... ok
+test_checksum_failure_keeps_partial_and_receipt (test_pilot_dry_runner.RunnerTests.test_checksum_failure_keeps_partial_and_receipt) ... ok
+test_deadline_not_reset_on_resume (test_pilot_dry_runner.RunnerTests.test_deadline_not_reset_on_resume) ... ok
+test_disk_limit_and_phase_type_mismatch (test_pilot_dry_runner.RunnerTests.test_disk_limit_and_phase_type_mismatch) ... ok
+test_failed_transfer_charged_and_not_automatically_resumed (test_pilot_dry_runner.RunnerTests.test_failed_transfer_charged_and_not_automatically_resumed) ... ok
+test_global_guard_callback_kills_process (test_pilot_dry_runner.RunnerTests.test_global_guard_callback_kills_process) ... ok
+test_interrupted_phase_blocks_resume (test_pilot_dry_runner.RunnerTests.test_interrupted_phase_blocks_resume) ... ok
+test_success_resume_no_new_transfer_and_same_deadline (test_pilot_dry_runner.RunnerTests.test_success_resume_no_new_transfer_and_same_deadline) ... ok
+test_supervisor_process_and_receipt_reuse (test_pilot_dry_runner.RunnerTests.test_supervisor_process_and_receipt_reuse) ... ok
+test_verified_file_tamper_rejected (test_pilot_dry_runner.RunnerTests.test_verified_file_tamper_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.094s
+
+OK

@@ -1,0 +1,265 @@
+{
+  "passed": true,
+  "references": {
+    "wild": {
+      "text_equals_htslib": true,
+      "details": [
+        {
+          "name": "canonical_a14",
+          "expected": [],
+          "actual": [],
+          "pass": true,
+          "qc": {
+            "accepted_pairs": 1,
+            "groups": 1,
+            "nonprimary_excluded": 0
+          }
+        },
+        {
+          "name": "canonical_a15",
+          "expected": [
+            [
+              "mini",
+              556,
+              1844,
+              "-"
+            ]
+          ],
+          "actual": [
+            [
+              "mini",
+              556,
+              1844,
+              "-"
+            ]
+          ],
+          "pass": true,
+          "qc": {
+            "accepted_pairs": 1,
+            "groups": 1,
+            "nonprimary_excluded": 0
+          }
+        },
+        {
+          "name": "canonical_a75",
+          "expected": [
+            [
+              "mini",
+              556,
+              1844,
+              "-"
+            ]
+          ],
+          "actual": [
+            [
+              "mini",
+              556,
+              1844,
+              "-"
+            ]
+          ],
+          "pass": true,
+          "qc": {
+            "accepted_pairs": 1,
+            "groups": 1,
+            "nonprimary_excluded": 0
+          }
+        },
+        {
+          "name": "cryptic_genomic_left_a14",
+          "expected": [],
+          "actual": [],
+          "pass": true,
+          "qc": {
+            "accepted_pairs": 1,
+            "groups": 1,
+            "nonprimary_excluded": 0
+          }
+        },
+        {
+          "name": "cryptic_genomic_left_a15",
+          "expected": [
+            [
+              "mini",
+              556,
+              1413,
+              "-"
+            ]
+          ],
+          "actual": [
+            [
+              "mini",
+              556,
+              1413,
+              "-"
+            ]
+          ],
+          "pass": true,
+          "qc": {
+            "accepted_pairs": 1,
+            "groups": 1,
+            "nonprimary_excluded": 0
+          }
+        },
+        {
+          "name": "cryptic_genomic_left_a75",
+          "expected": [
+            [
+              "mini",
+              556,
+              1413,
+              "-"
+            ]
+          ],
+          "actual": [
+            [
+              "mini",
+              556,
+              1413,
+              "-"
+            ]
+          ],
+          "pass": true,
+          "qc": {
+            "accepted_pairs": 1,
+            "groups": 1,
+            "nonprimary_excluded": 0
+          }
+        },
+        {
+          "name": "cryptic_genomic_right_a14",
+          "expected": [],
+          "actual": [],
+          "pass": true,
+          "qc": {
+            "accepted_pairs": 1,
+            "groups": 1,
+            "nonprimary_excluded": 0
+          }
+        },
+        {
+          "name": "cryptic_genomic_right_a15",
+          "expected": [
+            [
+              "mini",
+              1541,
+              1844,
+              "-"
+            ]
+          ],
+          "actual": [
+            [
+              "mini",
+              1541,
+              1844,
+              "-"
+            ]
+          ],
+          "pass": true,
+          "qc": {
+            "accepted_pairs": 1,
+            "groups": 1,
+            "nonprimary_excluded": 0
+          }
+        },
+        {
+          "name": "cryptic_genomic_right_a75",
+          "expected": [
+            [
+              "mini",
+              1541,
+              1844,
+              "-"
+            ]
+          ],
+          "actual": [
+            [
+              "mini",
+              1541,
+              1844,
+              "-"
+            ]
+          ],
+          "pass": true,
+          "qc": {
+            "accepted_pairs": 1,
+            "groups": 1,
+            "nonprimary_excluded": 0
+          }
+        }
+      ],
+      "pass": true,
+      "sam_sha256": "b8e4f64250f3d9ae48767d6cc1508f9848d9f7ab251546e2b5e37dfc27f23574"
+    },
+    "multicopy": {
+      "text_equals_htslib": true,
+      "details": [
+        {
+          "name": "negative",
+          "expected": [],
+          "actual": [],
+          "pass": true,
+          "qc": {
+            "excluded:mapping_quality": 1,
+            "groups": 1,
+            "nonprimary_excluded": 2
+          }
+        }
+      ],
+      "pass": true,
+      "sam_sha256": "5e8c615fdf700b1d9f00675cc444f8c31fdc1b5ed22f52a526c4382e5c1339c2"
+    },
+    "wrongstrand": {
+      "text_equals_htslib": true,
+      "details": [
+        {
+          "name": "negative",
+          "expected": [
+            [
+              "mini",
+              556,
+              1844,
+              "+"
+            ]
+          ],
+          "actual": [
+            [
+              "mini",
+              556,
+              1844,
+              "+"
+            ]
+          ],
+          "pass": true,
+          "qc": {
+            "accepted_pairs": 1,
+            "groups": 1,
+            "nonprimary_excluded": 0
+          }
+        }
+      ],
+      "pass": true,
+      "sam_sha256": "c1aa932677c3c47703da3fce1c961c16cd2e0e80b4dc046808a6cbad67c4c676"
+    },
+    "wrongmotif": {
+      "text_equals_htslib": true,
+      "details": [
+        {
+          "name": "negative",
+          "expected": [],
+          "actual": [],
+          "pass": true,
+          "qc": {
+            "excluded:pair_flags": 1,
+            "groups": 1,
+            "nonprimary_excluded": 0
+          }
+        }
+      ],
+      "pass": true,
+      "sam_sha256": "6ca25350a1c775473368e0a7d9cddc7f314542c5288b32a50111de81719ab382"
+    }
+  },
+  "raw_reads_used": false,
+  "scope": "miniature only; not global mappability or library orientation"
+}

@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "<string>", line 7, in <module>
+  File "/workspace/scratch/dd06b558bed7/ela-audit/scripts/compact_pe_pipeline.py", line 132, in run
+    if type(code) is not int or code!=0:raise ValueError('Producer did not complete successfully')
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Producer did not complete successfully

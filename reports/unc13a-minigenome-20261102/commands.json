@@ -1,0 +1,200 @@
+[
+  {
+    "name": "compile",
+    "argv": [
+      "make",
+      "-j1",
+      "USE_SRA=0",
+      "hisat2-align-s",
+      "hisat2-build-s"
+    ],
+    "cwd": "/workspace/scratch/dd06b558bed7/ela-audit/reports/unc13a-minigenome-20261102/scratch/hisat2-0d244324f98de541bce04d45c75e83bc3522f7f4",
+    "seconds": 108.13562297821045,
+    "exit": 0,
+    "max_tree_rss_bytes_sampled": 2568192,
+    "violation": null
+  },
+  {
+    "name": "build_wild",
+    "argv": [
+      "/workspace/scratch/dd06b558bed7/ela-audit/reports/unc13a-minigenome-20261102/scratch/hisat2-0d244324f98de541bce04d45c75e83bc3522f7f4/hisat2-build-s",
+      "-p",
+      "2",
+      "/workspace/scratch/dd06b558bed7/ela-audit/reports/unc13a-minigenome-20261102/scratch/wild.fa",
+      "/workspace/scratch/dd06b558bed7/ela-audit/reports/unc13a-minigenome-20261102/scratch/wild.idx"
+    ],
+    "cwd": "None",
+    "seconds": 0.20731544494628906,
+    "exit": 0,
+    "max_tree_rss_bytes_sampled": 0,
+    "violation": null
+  },
+  {
+    "name": "align_wild",
+    "argv": [
+      "/workspace/scratch/dd06b558bed7/ela-audit/reports/unc13a-minigenome-20261102/scratch/hisat2-0d244324f98de541bce04d45c75e83bc3522f7f4/hisat2-align-s",
+      "-x",
+      "/workspace/scratch/dd06b558bed7/ela-audit/reports/unc13a-minigenome-20261102/scratch/wild.idx",
+      "-1",
+      "/workspace/scratch/dd06b558bed7/ela-audit/reports/unc13a-minigenome-20261102/scratch/r1.fq",
+      "-2",
+      "/workspace/scratch/dd06b558bed7/ela-audit/reports/unc13a-minigenome-20261102/scratch/r2.fq",
+      "-S",
+      "/workspace/scratch/dd06b558bed7/ela-audit/reports/unc13a-minigenome-20261102/scratch/wild.sam",
+      "--no-mixed",
+      "--no-discordant",
+      "--fr",
+      "-p",
+      "2",
+      "--seed",
+      "0"
+    ],
+    "cwd": "None",
+    "seconds": 0.20786237716674805,
+    "exit": 0,
+    "max_tree_rss_bytes_sampled": 0,
+    "violation": null
+  },
+  {
+    "name": "collate_wild",
+    "argv": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "/workspace/scratch/dd06b558bed7/ela-audit/scripts/collate_pe_sam.py",
+      "/workspace/scratch/dd06b558bed7/ela-audit/reports/unc13a-minigenome-20261102/scratch/wild.sam",
+      "/workspace/scratch/dd06b558bed7/ela-audit/reports/unc13a-minigenome-20261102/scratch/wild.ordered.sam",
+      "/workspace/scratch/dd06b558bed7/ela-audit/reports/unc13a-minigenome-20261102/scratch/wild.sort"
+    ],
+    "cwd": "None",
+    "seconds": 0.2064650058746338,
+    "exit": 0,
+    "max_tree_rss_bytes_sampled": 0,
+    "violation": null
+  },
+  {
+    "name": "build_multicopy",
+    "argv": [
+      "/workspace/scratch/dd06b558bed7/ela-audit/reports/unc13a-minigenome-20261102/scratch/hisat2-0d244324f98de541bce04d45c75e83bc3522f7f4/hisat2-build-s",
+      "-p",
+      "2",
+      "/workspace/scratch/dd06b558bed7/ela-audit/reports/unc13a-minigenome-20261102/scratch/multicopy.fa",
+      "/workspace/scratch/dd06b558bed7/ela-audit/reports/unc13a-minigenome-20261102/scratch/multicopy.idx"
+    ],
+    "cwd": "None",
+    "seconds": 0.2083883285522461,
+    "exit": 0,
+    "max_tree_rss_bytes_sampled": 0,
+    "violation": null
+  },
+  {
+    "name": "align_multicopy",
+    "argv": [
+      "/workspace/scratch/dd06b558bed7/ela-audit/reports/unc13a-minigenome-20261102/scratch/hisat2-0d244324f98de541bce04d45c75e83bc3522f7f4/hisat2-align-s",
+      "-x",
+      "/workspace/scratch/dd06b558bed7/ela-audit/reports/unc13a-minigenome-20261102/scratch/multicopy.idx",
+      "-1",
+      "/workspace/scratch/dd06b558bed7/ela-audit/reports/unc13a-minigenome-20261102/scratch/n1.fq",
+      "-2",
+      "/workspace/scratch/dd06b558bed7/ela-audit/reports/unc13a-minigenome-20261102/scratch/n2.fq",
+      "-S",
+      "/workspace/scratch/dd06b558bed7/ela-audit/reports/unc13a-minigenome-20261102/scratch/multicopy.sam",
+      "--no-mixed",
+      "--no-discordant",
+      "--fr",
+      "-p",
+      "2",
+      "--seed",
+      "0"
+    ],
+    "cwd": "None",
+    "seconds": 0.20989179611206055,
+    "exit": 0,
+    "max_tree_rss_bytes_sampled": 0,
+    "violation": null
+  },
+  {
+    "name": "collate_multicopy",
+    "argv": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "/workspace/scratch/dd06b558bed7/ela-audit/scripts/collate_pe_sam.py",
+      "/workspace/scratch/dd06b558bed7/ela-audit/reports/unc13a-minigenome-20261102/scratch/multicopy.sam",
+      "/workspace/scratch/dd06b558bed7/ela-audit/reports/unc13a-minigenome-20261102/scratch/multicopy.ordered.sam",
+      "/workspace/scratch/dd06b558bed7/ela-audit/reports/unc13a-minigenome-20261102/scratch/multicopy.sort"
+    ],
+    "cwd": "None",
+    "seconds": 0.20894908905029297,
+    "exit": 0,
+    "max_tree_rss_bytes_sampled": 0,
+    "violation": null
+  },
+  {
+    "name": "build_wrongstrand",
+    "argv": [
+      "/workspace/scratch/dd06b558bed7/ela-audit/reports/unc13a-minigenome-20261102/scratch/hisat2-0d244324f98de541bce04d45c75e83bc3522f7f4/hisat2-build-s",
+      "-p",
+      "2",
+      "/workspace/scratch/dd06b558bed7/ela-audit/reports/unc13a-minigenome-20261102/scratch/wrongstrand.fa",
+      "/workspace/scratch/dd06b558bed7/ela-audit/reports/unc13a-minigenome-20261102/scratch/wrongstrand.idx"
+    ],
+    "cwd": "None",
+    "seconds": 0.207427978515625,
+    "exit": 0,
+    "max_tree_rss_bytes_sampled": 0,
+    "violation": null
+  },
+  {
+    "name": "align_wrongstrand",
+    "argv": [
+      "/workspace/scratch/dd06b558bed7/ela-audit/reports/unc13a-minigenome-20261102/scratch/hisat2-0d244324f98de541bce04d45c75e83bc3522f7f4/hisat2-align-s",
+      "-x",
+      "/workspace/scratch/dd06b558bed7/ela-audit/reports/unc13a-minigenome-20261102/scratch/wrongstrand.idx",
+      "-1",
+      "/workspace/scratch/dd06b558bed7/ela-audit/reports/unc13a-minigenome-20261102/scratch/n1.fq",
+      "-2",
+      "/workspace/scratch/dd06b558bed7/ela-audit/reports/unc13a-minigenome-20261102/scratch/n2.fq",
+      "-S",
+      "/workspace/scratch/dd06b558bed7/ela-audit/reports/unc13a-minigenome-20261102/scratch/wrongstrand.sam",
+      "--no-mixed",
+      "--no-discordant",
+      "--fr",
+      "-p",
+      "2",
+      "--seed",
+      "0"
+    ],
+    "cwd": "None",
+    "seconds": 0.20790529251098633,
+    "exit": 0,
+    "max_tree_rss_bytes_sampled": 0,
+    "violation": null
+  },
+  {
+    "name": "collate_wrongstrand",
+    "argv": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "/workspace/scratch/dd06b558bed7/ela-audit/scripts/collate_pe_sam.py",
+      "/workspace/scratch/dd06b558bed7/ela-audit/reports/unc13a-minigenome-20261102/scratch/wrongstrand.sam",
+      "/workspace/scratch/dd06b558bed7/ela-audit/reports/unc13a-minigenome-20261102/scratch/wrongstrand.ordered.sam",
+      "/workspace/scratch/dd06b558bed7/ela-audit/reports/unc13a-minigenome-20261102/scratch/wrongstrand.sort"
+    ],
+    "cwd": "None",
+    "seconds": 0.20848464965820312,
+    "exit": 0,
+    "max_tree_rss_bytes_sampled": 2105344,
+    "violation": null
+  },
+  {
+    "name": "build_wrongmotif",
+    "argv": [
+      "/workspace/scratch/dd06b558bed7/ela-audit/reports/unc13a-minigenome-20261102/scratch/hisat2-0d244324f98de541bce04d45c75e83bc3522f7f4/hisat2-build-s",
+      "-p",
+      "2",
+      "/workspace/scratch/dd06b558bed7/ela-audit/reports/unc13a-minigenome-20261102/scratch/wrongmotif.fa",
+      "/workspace/scratch/dd06b558bed7/ela-audit/reports/unc13a-minigenome-20261102/scratch/wrongmotif.idx"
+    ],
+    "cwd": "None",
+    "seconds": 0.2091381549835205,
+    "exit": 0,
+    "max_tree_rss_bytes_sampled": 0,
+    "violation": null
+  }
+]

@@ -1,0 +1,6 @@
+[
+  {
+    "error": "Initial test import aliased the HTTP package name to the transport module",
+    "resolution": "Imported server classes explicitly; final nine tests pass"
+  }
+]

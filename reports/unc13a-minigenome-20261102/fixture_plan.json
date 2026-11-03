@@ -1,0 +1,109 @@
+{
+  "origin0": 17641000,
+  "cases": {
+    "canonical_a75": {
+      "sequence": "GGCATCGTCACCCTTGGCATCTGGGATCTTCACGACCCCATTGTTCTGCACGTCGGTCACGAAGTGGAACAGGTTCTCATGCAGACAGGTGTACTGGACATGGTACGGGGCCACCTTCTCCTCGCCTTTGATCTCCACACTGATGTGGAG",
+      "expected_event": [
+        "mini",
+        556,
+        1844,
+        "-"
+      ],
+      "explanation": "exact positive"
+    },
+    "canonical_a15": {
+      "sequence": "GAAGTGGAACAGGTTCTCATGCAGACAGGTGTACTGGACATGGTACGGGGCCACCTTCTCCTCGCCTTTGATCTCCACACTGATGTGGAG",
+      "expected_event": [
+        "mini",
+        556,
+        1844,
+        "-"
+      ],
+      "explanation": "exact positive"
+    },
+    "canonical_a14": {
+      "sequence": "AAGTGGAACAGGTTCTCATGCAGACAGGTGTACTGGACATGGTACGGGGCCACCTTCTCCTCGCCTTTGATCTCCACACTGATGTGGAG",
+      "expected_event": null,
+      "explanation": "anchor below15 excluded"
+    },
+    "cryptic_genomic_left_a75": {
+      "sequence": "GGCATCGTCACCCTTGGCATCTGGGATCTTCACGACCCCATTGTTCTGCACGTCGGTCACGAAGTGGAACAGGTTCCATCTCTCCATCCATCCTTTTATCTACTCATCACTCATTCATCTGTTCAATCATTCATTCATTCACCAGCATTT",
+      "expected_event": [
+        "mini",
+        556,
+        1413,
+        "-"
+      ],
+      "explanation": "exact positive"
+    },
+    "cryptic_genomic_left_a15": {
+      "sequence": "GAAGTGGAACAGGTTCCATCTCTCCATCCATCCTTTTATCTACTCATCACTCATTCATCTGTTCAATCATTCATTCATTCACCAGCATTT",
+      "expected_event": [
+        "mini",
+        556,
+        1413,
+        "-"
+      ],
+      "explanation": "exact positive"
+    },
+    "cryptic_genomic_left_a14": {
+      "sequence": "AAGTGGAACAGGTTCCATCTCTCCATCCATCCTTTTATCTACTCATCACTCATTCATCTGTTCAATCATTCATTCATTCACCAGCATTT",
+      "expected_event": null,
+      "explanation": "anchor below15 excluded"
+    },
+    "cryptic_genomic_right_a75": {
+      "sequence": "ATTCATTCATTCACCAGCATTTATTCAACAAACTAGTTCCTGGGGATAAGAGTTCTTTCCAGGAAACCCAGGCAGCTCATGCAGACAGGTGTACTGGACATGGTACGGGGCCACCTTCTCCTCGCCTTTGATCTCCACACTGATGTGGAG",
+      "expected_event": [
+        "mini",
+        1541,
+        1844,
+        "-"
+      ],
+      "explanation": "exact positive"
+    },
+    "cryptic_genomic_right_a15": {
+      "sequence": "AGGAAACCCAGGCAGCTCATGCAGACAGGTGTACTGGACATGGTACGGGGCCACCTTCTCCTCGCCTTTGATCTCCACACTGATGTGGAG",
+      "expected_event": [
+        "mini",
+        1541,
+        1844,
+        "-"
+      ],
+      "explanation": "exact positive"
+    },
+    "cryptic_genomic_right_a14": {
+      "sequence": "GGAAACCCAGGCAGCTCATGCAGACAGGTGTACTGGACATGGTACGGGGCCACCTTCTCCTCGCCTTTGATCTCCACACTGATGTGGAG",
+      "expected_event": null,
+      "explanation": "anchor below15 excluded"
+    }
+  },
+  "negative_expected": {
+    "multicopy": "no accepted unique fragments",
+    "wrongstrand": "canonical plus-strand event, zero minus-strand target",
+    "wrongmotif": "no minus-strand target"
+  },
+  "limits": "source.json caps apply globally",
+  "aligner_options": [
+    "--no-mixed",
+    "--no-discordant",
+    "--fr",
+    "-p",
+    "2",
+    "--seed",
+    "0"
+  ],
+  "forbidden_options": [
+    "--rna-strandness",
+    "--tmo"
+  ],
+  "inputs_sha256": {
+    "r1.fq": "696af636003bbc151e120961b16e173a682d93077129eaa9aee48d75e0e17db4",
+    "wild.fa": "cc0602a802d506cd5dac60abbe8899855a39e8d1ae2ec343d37018ba8592b02e",
+    "multicopy.fa": "151abd914293d4cba3181118cf627bebef575be6c435c57e070132186fefb84b",
+    "r2.fq": "d1a980178154baae14a978b0b9586bdf8e878b20530de77dc23cf1296452edfe",
+    "n1.fq": "ff372fb8068267031f79aea6cc77e535beec8fac932e2f8e760c4e160e2c1469",
+    "wrongstrand.fa": "58efab0ac1466da9d4b0ea7286f17bb555d45578c8ff52d49c1131c7276e13af",
+    "wrongmotif.fa": "d9da9cc60530bbdbcfaebf116bd329074e3ebe7f97e0dfc5d2f85bf9e704c39c",
+    "n2.fq": "099537a477dc156e21790d791f5bd26d3f86cb5b9106e6a648227b8568f9b769"
+  }
+}

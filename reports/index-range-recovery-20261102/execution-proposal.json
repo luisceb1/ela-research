@@ -1,0 +1,26 @@
+{
+  "status": "PROPOSED_NOT_EXECUTED_REQUIRES_EXPLICIT_TIME_ACCEPTANCE",
+  "scope": "index archive only; no extraction/FASTQ/alignment",
+  "original_body_cap_bytes": 12000000000,
+  "prior_charged_body_bytes": 1632463668,
+  "retained_partial_bytes": 1632447284,
+  "uncertain_extra_charge_not_refunded": 16384,
+  "range_header": "bytes=1632447284-4355786348",
+  "remaining_index_body_bytes": 2723339065,
+  "expected_cumulative_body_after_success": 4355802733,
+  "expected_body_budget_remaining": 7644197267,
+  "prior_transfer_seconds_spent": 3600.0012652873993,
+  "proposed_additional_transfer_seconds": 1800,
+  "proposed_new_recovery_wall_seconds": 2400,
+  "phase_caps_seconds": {
+    "copy_and_audit": 300,
+    "range": 1800,
+    "verify": 300
+  },
+  "old_deadline_not_modified": 1793658000.877632,
+  "old_run_not_modified": true,
+  "root": "/home/luisceb/ela-piloto-real-01-index-recovery-01",
+  "retries": 0,
+  "additional_time_accepted_by_user": false,
+  "raw_execution_ready": false
+}

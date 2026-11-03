@@ -1,0 +1,71 @@
+{
+  "selection_rule": "minimum compressed FASTQ bytes per condition; tie-break run accession; no effect-based selection",
+  "selected": [
+    {
+      "library": "CTRL-4",
+      "gsm": "GSM8975203",
+      "srx": "SRX28666759",
+      "biosample": "SAMN48333874",
+      "run": "SRR33425816",
+      "group": "control",
+      "read_count_ena": 12709444,
+      "fastq_bytes": 1958406420,
+      "mates": [
+        {
+          "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR334/016/SRR33425816/SRR33425816_1.fastq.gz",
+          "bytes": 960856963,
+          "md5": "ed58daa011d6508a3e8d1f05bc39fc29"
+        },
+        {
+          "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR334/016/SRR33425816/SRR33425816_2.fastq.gz",
+          "bytes": 997549457,
+          "md5": "007d66223fe35f394284e4ebd631eaef"
+        }
+      ]
+    },
+    {
+      "library": "TDP-5",
+      "gsm": "GSM8975210",
+      "srx": "SRX28666756",
+      "biosample": "SAMN48333881",
+      "run": "SRR33425819",
+      "group": "TDP43_KD",
+      "read_count_ena": 36803627,
+      "fastq_bytes": 4391297461,
+      "mates": [
+        {
+          "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR334/019/SRR33425819/SRR33425819_1.fastq.gz",
+          "bytes": 2143112809,
+          "md5": "474e4af4ea1dcf57b008a58e0c824671"
+        },
+        {
+          "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR334/019/SRR33425819/SRR33425819_2.fastq.gz",
+          "bytes": 2248184652,
+          "md5": "eeb19a696f12a4f6950426f3f79ddf25"
+        }
+      ]
+    }
+  ],
+  "selected_fastq_bytes": 6349703881,
+  "all12_fastq_bytes": 79276637720,
+  "samples_sha256": "818b8f6553a3ea1b44e0c1cf511c5dec1fcc35f7ccd68e2d8b45af6c46087573",
+  "ena_metadata_sha256": "e0d7b769867fc334f079c49be9a9cc833647bd8eb0146268da2d812c548a86ae",
+  "limits": {
+    "threads": 2,
+    "memory_bytes": 6442450944,
+    "additional_disk_bytes": 26843545600,
+    "reserve_free_disk_bytes": 8589934592,
+    "raw_plus_reference_transfer_bytes": 12000000000,
+    "all_transfer_elapsed_seconds": 3600,
+    "prefix_pairs_per_library": 1000000,
+    "alignment_seconds_per_library": 900
+  },
+  "raw_execution_ready": false,
+  "blockers": [
+    "PE fragment-count contract and independent parser check not implemented",
+    "aligner and index not restored/verified in current environment",
+    "library strand orientation and UNC13A coordinate contract not fixed"
+  ],
+  "raw_downloaded_in_this_task": false,
+  "biological_contrast_permitted": false
+}

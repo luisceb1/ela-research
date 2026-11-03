@@ -1,0 +1,163 @@
+{
+  "evidence": "user terminal output; no remote host access",
+  "ledger": {
+    "fingerprint": "a9e12dd04196340d726c6777a1ce53e60516be85bcce55cfe4f805c8e70a917e",
+    "limits": {
+      "wall_seconds": 7200,
+      "transfer_bytes": 12000000000,
+      "disk_bytes": 28991029248,
+      "reserve_bytes": 8589934592,
+      "threads": 2,
+      "process_caps": {
+        "wall_seconds": 3600,
+        "rss_bytes": 6442450944,
+        "address_space_bytes": 8589934592
+      }
+    },
+    "deadline_epoch": 1793702652.9493718,
+    "transfer_bytes_consumed": 5603756481,
+    "prior_transfer_elapsed_seconds": 5467.721008300781,
+    "prior_deadline_epoch": 1793698176.656901,
+    "phases": {
+      "preflight": {
+        "kind": "process",
+        "status": "verified",
+        "signature": "3818f55bef0e35a6bc7bfb2addd7bfd62cb3bc1cb08639f0ba48382ae6df51dc",
+        "started_epoch": 1793695452.9604564,
+        "deadline_epoch": 1793695632.9604564,
+        "receipt": "cached-preflight.json",
+        "receipt_sha256": "19a203a2d14c2dcb5a86d0b6293f74127868de70867bdd4954dae1a7b9e3ee74",
+        "finished_epoch": 1793695476.8425362
+      },
+      "CTRL_R1": {
+        "kind": "transfer",
+        "status": "verified",
+        "signature": "06d46745215bc4c6e43bfbef26ea0e7c633dbdb07b60cc8a3cbd83f1ae3f3c43",
+        "started_epoch": 1793695476.8548684,
+        "deadline_epoch": 1793695656.8548684,
+        "bytes": 960856963,
+        "sha256": "298a8b4769fcd5434f883706c873d56795c5a20d855917d80a391b2e5c38beff",
+        "md5": "ed58daa011d6508a3e8d1f05bc39fc29",
+        "local_recovered_source": {
+          "root": "/home/luisceb/ela-piloto-real-01-index-recovery-01-extracted-01-reads-01-CTRL_R1-recovery-01",
+          "seal_sha256": "704dd9dde708ef3eb0f364572fa1944d7e1323bad2d9d15c6886206d89e3bff1",
+          "original_root": "/home/luisceb/ela-piloto-real-01-index-recovery-01-extracted-01-reads-01",
+          "index": {
+            "schema": "sealed-extracted-index-v1",
+            "index_root": "/home/luisceb/ela-piloto-real-01-index-recovery-01-extracted-01",
+            "index_prefix": "/home/luisceb/ela-piloto-real-01-index-recovery-01-extracted-01/index/files/hg38/genome",
+            "index_seal_sha256": "9c314c46593b45ec6b0491ce2e2f718d11ddac7902eabf748e5135060682e01e",
+            "recovery_root": "/home/luisceb/ela-piloto-real-01-index-recovery-01",
+            "original_root": "/home/luisceb/ela-piloto-real-01",
+            "cumulative_body_bytes": 4355802733,
+            "remaining_body_budget_bytes": 7644197267,
+            "prior_transfer_elapsed_seconds": 3748.5157940387726,
+            "prior_global_deadline_epoch": 1793658000.877632,
+            "aligner": {
+              "path": "/home/luisceb/ela-tools/hisat2-2.2.3/hisat2-align-s",
+              "sha256": "3c88123911d675aebdeab79e3e24f0aa0050c10a1043c30343d96419c6ddfae4",
+              "version": "2.2.3",
+              "source_commit": "0d244324f98de541bce04d45c75e83bc3522f7f4",
+              "inspect_path": "/home/luisceb/ela-tools/hisat2-2.2.3/hisat2-inspect-s",
+              "inspect_sha256": "6a88b48bbdabd7e0906b3d9ea0240c2194baeb23250529735b37a3814614925a"
+            },
+            "members": [
+              {
+                "name": "hg38/make_hg38.sh",
+                "bytes": 1292,
+                "sha256": "9e29e570495a5b237fce579bd5b2059f600ff061cdbc12c2438623e9ffad27d2"
+              },
+              {
+                "name": "hg38/genome.8.ht2",
+                "bytes": 8,
+                "sha256": "7c9fa136d4413fa6173637e883b6998d32e1d675f88cddff9dcbcf331820f4b8"
+              },
+              {
+                "name": "hg38/genome.5.ht2",
+                "bytes": 1342456349,
+                "sha256": "07400123a5033f85fd0152aae0a513771b5f5ba1afe878839bd9624b483fa503"
+              },
+              {
+                "name": "hg38/genome.7.ht2",
+                "bytes": 8,
+                "sha256": "7c9fa136d4413fa6173637e883b6998d32e1d675f88cddff9dcbcf331820f4b8"
+              },
+              {
+                "name": "hg38/genome.6.ht2",
+                "bytes": 776249234,
+                "sha256": "4a8f0d36ac6e459bbf682a5979de5e5d4883cd42a22866093d730797c87e35ae"
+              },
+              {
+                "name": "hg38/genome.4.ht2",
+                "bytes": 762328946,
+                "sha256": "2f5112d9a0c0855eea028ea4181e2af9dd261cdadac3eff541415dd5eb4ea413"
+              },
+              {
+                "name": "hg38/genome.3.ht2",
+                "bytes": 15065,
+                "sha256": "d7ecd66f14894242cb5153471028bb4f94bebd920c2c025c08ec24bcb13e6df5"
+              },
+              {
+                "name": "hg38/genome.1.ht2",
+                "bytes": 1020663384,
+                "sha256": "75c666c1bdcc6bd346a751e7277d26ce518c1e9a2612c301317248e3a4ee6014"
+              },
+              {
+                "name": "hg38/genome.2.ht2",
+                "bytes": 762328952,
+                "sha256": "ee1502737c1fe27706a91179584f99146102da7eac08ff5f76e9657476af619d"
+              }
+            ]
+          },
+          "file": "CTRL_R1.fastq.gz",
+          "bytes": 960856963,
+          "md5": "ed58daa011d6508a3e8d1f05bc39fc29",
+          "sha256": "298a8b4769fcd5434f883706c873d56795c5a20d855917d80a391b2e5c38beff",
+          "cumulative_body_bytes": 5318543809,
+          "prior_transfer_elapsed_seconds": 5467.721008300781,
+          "prior_deadline_epoch": 1793698176.656901
+        },
+        "new_body_bytes": 0,
+        "finished_epoch": 1793695489.4043283
+      },
+      "CTRL_R2": {
+        "kind": "transfer",
+        "status": "started",
+        "signature": "89c7bd2c90c1ca51e2db01cc840673e92eefad8bf727aa2c7a0093dda2b98053",
+        "started_epoch": 1793695490.4378257,
+        "deadline_epoch": 1793697277.8883657,
+        "unsettled_body_reservation_bytes": 4194304,
+        "reservation_start_body_bytes": 281018368
+      }
+    },
+    "mode": "real-pilot",
+    "raw_pilot_ready": false,
+    "last_epoch": 1793697251.4130332,
+    "transfer_elapsed_seconds": 1773.5246675014496,
+    "cumulative_transfer_elapsed_seconds": 7241.245675802231
+  },
+  "CTRL_R2_attempt": {
+    "status": "started",
+    "attempt": 0,
+    "body_bytes": 281018368,
+    "budget_scope": "HTTP entity-body read, not wire bytes",
+    "accounting": "durable-block-reservation-v1",
+    "reservation_block_bytes": 4194304
+  },
+  "partial_stat_bytes": 284799727,
+  "charged_new_body_bytes": 285212672,
+  "charged_minus_partial_bytes": 412945,
+  "expected_full_bytes": 997549457,
+  "expected_md5": "007d66223fe35f394284e4ebd631eaef",
+  "remaining_body_bytes": 712749730,
+  "expected_cumulative_after_recovery": 6316506211,
+  "outer": {
+    "status": "finished",
+    "exit_code": -9,
+    "supervisor_error": "RuntimeError: Cumulative transfer time cap",
+    "live_group_members_after_cleanup": [],
+    "elapsed_seconds": 1754.79194952
+  },
+  "no_alignment_started": true,
+  "raw_execution_ready": false
+}

@@ -1,0 +1,9 @@
+{
+  "baseline_commit":"76e1f9b9bd082adf8f7db728758eec548777f2c6",
+  "changed_gate":{"id":"B3","status":"local_verified","scope":"Stream decode, bounded derived external merge, target counts/QC, producer status and supervised pipe controls on existing synthetic SAM only","new_alignments_executed":false},
+  "remaining_blockers":["B1 fixed supervised production worker and exact external origins","B4 ledger binding and complete phase/global/resource/coverage policy","B5 actual runtime index and decoder dependencies verified"],
+  "remaining_blocker_count":3,
+  "execution_enabled":false,
+  "raw_execution_ready":false,
+  "next_task":"B4 with metadata and synthetic dry-run only"
+}

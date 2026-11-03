@@ -1,0 +1,27 @@
+{
+  "execution_enabled": false,
+  "new_index_body_bytes": 0,
+  "new_CTRL_R1_body_bytes": 0,
+  "remaining_http_files": [
+    "CTRL_R2",
+    "TDP_R1",
+    "TDP_R2"
+  ],
+  "planned_new_body_bytes": 5388846918,
+  "prior_charged_body_bytes": 5318543809,
+  "minimum_cumulative_if_both_libraries_downloaded": 10707390727,
+  "remaining_margin_bytes": 1292609273,
+  "original_body_cap": 12000000000,
+  "old_disk_gib": 25,
+  "new_disk_gib": 27,
+  "old_artifact_partition_gib": 16,
+  "new_artifact_partition_gib": 18,
+  "reason": "retain old partials and sealed files plus a checked local CTRL_R1 copy without deleting evidence",
+  "new_wall_seconds": 7200,
+  "new_transfer_seconds_including_local_copy": 1800,
+  "local_read_copy_phase_seconds": 180,
+  "remaining_HTTP_socket_seconds": 30,
+  "prior_transfer_seconds": "read from sealed recovery metadata; not supplied by user output",
+  "new_window_and_disk_accepted": false,
+  "raw_execution_ready": false
+}

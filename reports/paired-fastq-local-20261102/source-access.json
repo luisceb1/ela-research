@@ -1,0 +1,13 @@
+{
+  "doi": "10.1093/nar/gkp1137",
+  "title": "The Sanger FASTQ file format for sequences with quality scores, and the Solexa/Illumina FASTQ variants",
+  "source": "scite search_literature + read_fulltext + bibliography",
+  "retrieved_on": "2026-11-02",
+  "source_returned": "abstract",
+  "full_text_served": false,
+  "contentDenied": true,
+  "editorialNotices": "not supplied by returned record; status not certified",
+  "online_year_returned": 2009,
+  "abstract_excerpt": "existing in at least three incompatible variants",
+  "use": "Methodological context only; four-line ACGTN policy is a prospective implementation restriction, not a universal FASTQ-format claim"
+}

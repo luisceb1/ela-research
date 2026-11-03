@@ -1,0 +1,526 @@
+{
+  "status": "sealed_exploratory_locus_audit",
+  "root": "/home/luisceb/ela-piloto-real-01-index-recovery-01-extracted-01-reads-01-CTRL_R1-recovery-01-pilot-01-CTRL_R2-recovery-01-ipv4-01-final-01-resume-01-clock-01-control-01-locus-audit-01-guard-02",
+  "full_inventory_file": "/home/luisceb/ela-piloto-real-01-index-recovery-01-extracted-01-reads-01-CTRL_R1-recovery-01-pilot-01-CTRL_R2-recovery-01-ipv4-01-final-01-resume-01-clock-01-control-01-locus-audit-01-guard-02/audit-seal.json",
+  "original_control_gate": "coverage_insufficient",
+  "gate_promoted": false,
+  "coordinate_contract": [
+    {
+      "event": "canonical",
+      "model": "exonic1",
+      "start0": 17641556,
+      "end0": 17642844,
+      "left_plus": "CT",
+      "right_plus": "AC",
+      "minus_gt_ag": true,
+      "canonical_transcripts": [
+        "ENST00000519716.7",
+        "ENST00000551649.5",
+        "ENST00000552293.5",
+        "ENST00000550896.1"
+      ]
+    },
+    {
+      "event": "cryptic_genomic_left",
+      "model": "exonic1",
+      "start0": 17641556,
+      "end0": 17642413,
+      "left_plus": "CT",
+      "right_plus": "AC",
+      "minus_gt_ag": true,
+      "canonical_transcripts": []
+    },
+    {
+      "event": "cryptic_genomic_right",
+      "model": "exonic1",
+      "start0": 17642541,
+      "end0": 17642844,
+      "left_plus": "CT",
+      "right_plus": "AC",
+      "minus_gt_ag": true,
+      "canonical_transcripts": []
+    }
+  ],
+  "window": [
+    "chr19",
+    17600000,
+    17690000
+  ],
+  "same_prefix_target_and_qc_replay_identical": true,
+  "new_transfer_bytes": 0,
+  "cumulative_body_bytes": 7322807977,
+  "routes": {
+    "text15": {
+      "qc": {
+        "accepted_regional_candidate_groups": 115,
+        "excluded:mapping_quality": 1,
+        "primary_start_in_window_groups": 116,
+        "regional_candidate_groups": 116,
+        "spliced_overlap_before_filters_groups": 46
+      },
+      "distinct_junctions": 31,
+      "top20_by_support": [
+        {
+          "event": [
+            "chr19",
+            17611855,
+            17617701,
+            "-"
+          ],
+          "fragments": 6,
+          "near_original_targets": []
+        },
+        {
+          "event": [
+            "chr19",
+            17646111,
+            17647264,
+            "-"
+          ],
+          "fragments": 6,
+          "near_original_targets": []
+        },
+        {
+          "event": [
+            "chr19",
+            17630288,
+            17630653,
+            "-"
+          ],
+          "fragments": 5,
+          "near_original_targets": []
+        },
+        {
+          "event": [
+            "chr19",
+            17630750,
+            17632781,
+            "-"
+          ],
+          "fragments": 5,
+          "near_original_targets": []
+        },
+        {
+          "event": [
+            "chr19",
+            17632908,
+            17633107,
+            "-"
+          ],
+          "fragments": 5,
+          "near_original_targets": []
+        },
+        {
+          "event": [
+            "chr19",
+            17645843,
+            17645969,
+            "-"
+          ],
+          "fragments": 4,
+          "near_original_targets": []
+        },
+        {
+          "event": [
+            "chr19",
+            17606354,
+            17609939,
+            "-"
+          ],
+          "fragments": 3,
+          "near_original_targets": []
+        },
+        {
+          "event": [
+            "chr19",
+            17617849,
+            17618420,
+            "-"
+          ],
+          "fragments": 3,
+          "near_original_targets": []
+        },
+        {
+          "event": [
+            "chr19",
+            17639217,
+            17639435,
+            "-"
+          ],
+          "fragments": 3,
+          "near_original_targets": []
+        },
+        {
+          "event": [
+            "chr19",
+            17642960,
+            17645673,
+            "-"
+          ],
+          "fragments": 3,
+          "near_original_targets": []
+        },
+        {
+          "event": [
+            "chr19",
+            17656398,
+            17658061,
+            "-"
+          ],
+          "fragments": 3,
+          "near_original_targets": []
+        },
+        {
+          "event": [
+            "chr19",
+            17666704,
+            17668116,
+            "-"
+          ],
+          "fragments": 3,
+          "near_original_targets": []
+        },
+        {
+          "event": [
+            "chr19",
+            17668190,
+            17669552,
+            "-"
+          ],
+          "fragments": 3,
+          "near_original_targets": []
+        },
+        {
+          "event": [
+            "chr19",
+            17672495,
+            17674656,
+            "-"
+          ],
+          "fragments": 3,
+          "near_original_targets": []
+        },
+        {
+          "event": [
+            "chr19",
+            17618501,
+            17618905,
+            "-"
+          ],
+          "fragments": 2,
+          "near_original_targets": []
+        },
+        {
+          "event": [
+            "chr19",
+            17633193,
+            17636023,
+            "-"
+          ],
+          "fragments": 2,
+          "near_original_targets": []
+        },
+        {
+          "event": [
+            "chr19",
+            17636157,
+            17639082,
+            "-"
+          ],
+          "fragments": 2,
+          "near_original_targets": []
+        },
+        {
+          "event": [
+            "chr19",
+            17648650,
+            17648911,
+            "-"
+          ],
+          "fragments": 2,
+          "near_original_targets": []
+        },
+        {
+          "event": [
+            "chr19",
+            17610099,
+            17611762,
+            "-"
+          ],
+          "fragments": 1,
+          "near_original_targets": []
+        },
+        {
+          "event": [
+            "chr19",
+            17624952,
+            17626632,
+            "-"
+          ],
+          "fragments": 1,
+          "near_original_targets": []
+        }
+      ],
+      "all_target_neighbors_within_2bp": [
+        {
+          "event": [
+            "chr19",
+            17641556,
+            17642844,
+            "-"
+          ],
+          "fragments": 1,
+          "near_original_targets": [
+            {
+              "target": [
+                "chr19",
+                17641556,
+                17642844,
+                "-"
+              ],
+              "start_delta": 0,
+              "end_delta": 0
+            }
+          ]
+        }
+      ]
+    },
+    "text8": {
+      "qc": {
+        "accepted_regional_candidate_groups": 115,
+        "excluded:mapping_quality": 1,
+        "primary_start_in_window_groups": 116,
+        "regional_candidate_groups": 116,
+        "spliced_overlap_before_filters_groups": 46
+      },
+      "distinct_junctions": 33,
+      "top20_by_support": [
+        {
+          "event": [
+            "chr19",
+            17611855,
+            17617701,
+            "-"
+          ],
+          "fragments": 6,
+          "near_original_targets": []
+        },
+        {
+          "event": [
+            "chr19",
+            17646111,
+            17647264,
+            "-"
+          ],
+          "fragments": 6,
+          "near_original_targets": []
+        },
+        {
+          "event": [
+            "chr19",
+            17630288,
+            17630653,
+            "-"
+          ],
+          "fragments": 5,
+          "near_original_targets": []
+        },
+        {
+          "event": [
+            "chr19",
+            17630750,
+            17632781,
+            "-"
+          ],
+          "fragments": 5,
+          "near_original_targets": []
+        },
+        {
+          "event": [
+            "chr19",
+            17632908,
+            17633107,
+            "-"
+          ],
+          "fragments": 5,
+          "near_original_targets": []
+        },
+        {
+          "event": [
+            "chr19",
+            17645843,
+            17645969,
+            "-"
+          ],
+          "fragments": 4,
+          "near_original_targets": []
+        },
+        {
+          "event": [
+            "chr19",
+            17606354,
+            17609939,
+            "-"
+          ],
+          "fragments": 3,
+          "near_original_targets": []
+        },
+        {
+          "event": [
+            "chr19",
+            17617849,
+            17618420,
+            "-"
+          ],
+          "fragments": 3,
+          "near_original_targets": []
+        },
+        {
+          "event": [
+            "chr19",
+            17633193,
+            17636023,
+            "-"
+          ],
+          "fragments": 3,
+          "near_original_targets": []
+        },
+        {
+          "event": [
+            "chr19",
+            17639217,
+            17639435,
+            "-"
+          ],
+          "fragments": 3,
+          "near_original_targets": []
+        },
+        {
+          "event": [
+            "chr19",
+            17642960,
+            17645673,
+            "-"
+          ],
+          "fragments": 3,
+          "near_original_targets": []
+        },
+        {
+          "event": [
+            "chr19",
+            17656398,
+            17658061,
+            "-"
+          ],
+          "fragments": 3,
+          "near_original_targets": []
+        },
+        {
+          "event": [
+            "chr19",
+            17666704,
+            17668116,
+            "-"
+          ],
+          "fragments": 3,
+          "near_original_targets": []
+        },
+        {
+          "event": [
+            "chr19",
+            17668190,
+            17669552,
+            "-"
+          ],
+          "fragments": 3,
+          "near_original_targets": []
+        },
+        {
+          "event": [
+            "chr19",
+            17672495,
+            17674656,
+            "-"
+          ],
+          "fragments": 3,
+          "near_original_targets": []
+        },
+        {
+          "event": [
+            "chr19",
+            17618501,
+            17618905,
+            "-"
+          ],
+          "fragments": 2,
+          "near_original_targets": []
+        },
+        {
+          "event": [
+            "chr19",
+            17636157,
+            17639082,
+            "-"
+          ],
+          "fragments": 2,
+          "near_original_targets": []
+        },
+        {
+          "event": [
+            "chr19",
+            17648650,
+            17648911,
+            "-"
+          ],
+          "fragments": 2,
+          "near_original_targets": []
+        },
+        {
+          "event": [
+            "chr19",
+            17610099,
+            17611762,
+            "-"
+          ],
+          "fragments": 1,
+          "near_original_targets": []
+        },
+        {
+          "event": [
+            "chr19",
+            17624952,
+            17626632,
+            "-"
+          ],
+          "fragments": 1,
+          "near_original_targets": []
+        }
+      ],
+      "all_target_neighbors_within_2bp": [
+        {
+          "event": [
+            "chr19",
+            17641556,
+            17642844,
+            "-"
+          ],
+          "fragments": 1,
+          "near_original_targets": [
+            {
+              "target": [
+                "chr19",
+                17641556,
+                17642844,
+                "-"
+              ],
+              "start_delta": 0,
+              "end_delta": 0
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "console_inventory_is_summary": true,
+  "raw_execution_ready": false
+}

@@ -1,0 +1,12 @@
+{
+  "status": "verified",
+  "attempt": 0,
+  "body_bytes": 220,
+  "budget_scope": "HTTP entity-body read, not wire bytes",
+  "reserve_reads": true,
+  "expected_checksums": {
+    "sha256": "85c5ed52f7c1263ea5a8ee67377ec90fd8d6c68f42ddb9d0727b19866f1f55a9"
+  },
+  "md5": "fa5bdd6a823ea3edaa5f528f427fd97f",
+  "sha256": "85c5ed52f7c1263ea5a8ee67377ec90fd8d6c68f42ddb9d0727b19866f1f55a9"
+}

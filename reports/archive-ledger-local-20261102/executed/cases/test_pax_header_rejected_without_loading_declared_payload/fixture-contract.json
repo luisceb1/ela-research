@@ -1,0 +1,38 @@
+{
+  "manifest": {
+    "archives": {
+      "unpack": {
+        "transfer": "source",
+        "identity": "synthetic/index-v1",
+        "expected": {
+          "bytes": 76,
+          "sha256": "fda139c79fb903ba5243b5a3aec1c2d91cd7a548de0d54f8124678b437331dac"
+        },
+        "members": [
+          {
+            "name": "index/a.ht2",
+            "bytes": 83,
+            "sha256": "e14eff3310babb7d63933e8139833b5f2f0a3ec80a0bd01edede97f3c1edd52b"
+          },
+          {
+            "name": "index/b.ht2",
+            "bytes": 114,
+            "sha256": "f5d3dc3858f7d413dd80bb1a58f808ed771c90fc3cdf2067ab3804dff06cfa28"
+          }
+        ],
+        "max_members": 16,
+        "max_expanded_bytes": 4096,
+        "max_tar_bytes": 32768
+      }
+    }
+  },
+  "limits": {
+    "wall_seconds": 30,
+    "transfer_bytes": 1048576,
+    "disk_bytes": 4194304,
+    "reserve_bytes": 0
+  },
+  "raw_tar_bytes": 1536,
+  "compressed_bytes": 76,
+  "scope": "synthetic only; regenerate from test fixture"
+}

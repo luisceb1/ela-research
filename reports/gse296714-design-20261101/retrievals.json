@@ -1,0 +1,53 @@
+[
+  {
+    "name": "series.soft",
+    "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE296714&targ=self&form=text&view=full",
+    "retrieved_at_utc": "2026-11-01T20:22:09.247946+00:00",
+    "status": 200,
+    "final_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE296714&targ=self&form=text&view=full",
+    "content_type": "geo/text",
+    "bytes": 3608,
+    "sha256": "8d3cfc67fdfa88ef9c159e1312437d37a08ba2e8504a7b49230ea28758d0ddf0",
+    "saved": true
+  },
+  {
+    "name": "family.soft",
+    "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE296714&targ=all&form=text&view=full",
+    "retrieved_at_utc": "2026-11-01T20:22:09.248823+00:00",
+    "status": 200,
+    "final_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE296714&targ=all&form=text&view=full",
+    "content_type": "geo/text",
+    "bytes": 2348651,
+    "sha256": "17ec8d6e301dc33b6782a682caed137d9c6054cd5038b5791ae26ee9097c2bc5",
+    "saved": true
+  },
+  {
+    "name": "gene_counts.csv.gz",
+    "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE296nnn/GSE296714/suppl/GSE296714_gene_counts.humphrey_i3_cortical.csv.gz",
+    "retrieved_at_utc": "2026-11-01T20:22:09.249696+00:00",
+    "saved": false,
+    "error": "HTTPError: HTTP Error 403: Forbidden"
+  },
+  {
+    "name": "article.xml",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12586162/fullTextXML",
+    "retrieved_at_utc": "2026-11-01T20:22:09.250350+00:00",
+    "status": 200,
+    "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12586162/fullTextXML",
+    "content_type": "application/xml",
+    "bytes": 276583,
+    "sha256": "7a854a6bd739662edc0708d346d6f7adeb59416b2b53f125e0e1de286a7a1d52",
+    "saved": true
+  },
+  {
+    "name": "zenodo.json",
+    "url": "https://zenodo.org/api/records/15538002",
+    "retrieved_at_utc": "2026-11-01T20:22:09.251483+00:00",
+    "status": 200,
+    "final_url": "https://zenodo.org/api/records/15538003",
+    "content_type": "application/json",
+    "bytes": 3858,
+    "sha256": "73cee37c323a16cf97adbff163d00b49fcd7d752063a5a2e96cf745987da94dc",
+    "saved": true
+  }
+]

@@ -1,0 +1,45 @@
+{
+  "uploaded_file_sha256": "a42c22813d033baff2f73de07a894eb62f11624659790d3e6c5e3ef0cb74d8c8",
+  "accepted_plan_sha256": "27c4a38229d621059da941b84fadc3053dac811bf5d5e4ff497c17d99146121b",
+  "matches_previously_reported_plan_sha": true,
+  "full_text15_hts15_equal": true,
+  "full_text8_hts8_equal": true,
+  "prior_console_counts_and_qc_consistent": true,
+  "coordinate_contract_equals_prior_console": true,
+  "targets_canonical_cryptic_left_cryptic_right": [
+    [
+      "chr19",
+      17641556,
+      17642844,
+      "-"
+    ],
+    [
+      "chr19",
+      17641556,
+      17642413,
+      "-"
+    ],
+    [
+      "chr19",
+      17642541,
+      17642844,
+      "-"
+    ]
+  ],
+  "target_counts": {
+    "text15": [
+      1,
+      0,
+      0
+    ],
+    "text8": [
+      1,
+      0,
+      0
+    ]
+  },
+  "all_reported_junctions_now_available": true,
+  "independent_WSL_file_hash_verification": false,
+  "external_supervision_receipt_supplied_separately": false,
+  "new_alignment_or_download": false
+}

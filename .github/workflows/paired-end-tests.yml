@@ -1,0 +1,93 @@
+name: Paired-end parser contract
+on:
+  pull_request:
+    paths:
+      - 'scripts/pe_fragment_contract.py'
+      - 'tests/test_pe_fragment_contract.py'
+      - 'scripts/compact_pe_pipeline.py'
+      - 'scripts/compact_ledger_phase.py'
+      - 'scripts/pilot_execution_policy.py'
+      - 'scripts/pilot_dry_runner.py'
+      - 'scripts/unc13a_locus_audit_v2.py'
+      - 'tests/test_unc13a_locus_audit_v2.py'
+      - 'scripts/unc13a_locus_audit.py'
+      - 'scripts/unc13a_locus_pipeline.py'
+      - 'tests/test_unc13a_locus_audit.py'
+      - 'scripts/offline_control_pilot.py'
+      - 'tests/test_offline_control_pilot.py'
+      - 'scripts/recover_ctrl_r2_clock.py'
+      - 'tests/test_recover_ctrl_r2_clock.py'
+      - 'scripts/recover_ctrl_r2_resume.py'
+      - 'tests/test_recover_ctrl_r2_resume.py'
+      - 'scripts/recover_ctrl_r2_final.py'
+      - 'tests/test_recover_ctrl_r2_final.py'
+      - 'scripts/recover_ctrl_r2_ipv4.py'
+      - 'tests/test_recover_ctrl_r2_ipv4.py'
+      - 'scripts/recover_ctrl_r2.py'
+      - 'tests/test_recover_ctrl_r2.py'
+      - 'scripts/recovered_read_pilot.py'
+      - 'tests/test_recovered_read_pilot.py'
+      - 'scripts/recover_ctrl_read.py'
+      - 'tests/test_recover_ctrl_read.py'
+      - 'scripts/cached_index_pilot.py'
+      - 'tests/test_cached_index_pilot.py'
+      - 'scripts/prepare_verified_index.py'
+      - 'tests/test_prepare_verified_index.py'
+      - 'scripts/recover_index_range.py'
+      - 'tests/test_recover_index_range.py'
+      - 'scripts/inspect_interrupted_pilot.py'
+      - 'scripts/bounded_http_transport.py'
+      - 'tests/test_block_http_reservation.py'
+      - 'tests/test_inspect_interrupted_pilot.py'
+      - 'scripts/real_pilot_workflow.py'
+      - 'scripts/plan_b4_execution_policy.py'
+      - 'tests/test_real_pilot_workflow.py'
+      - 'tests/test_process_supervisor_v2.py'
+      - 'scripts/sealed_local_workflow.py'
+      - 'scripts/workflow_seal.py'
+      - 'scripts/synthetic_sam_producer.py'
+      - 'tests/test_sealed_local_workflow.py'
+      - 'scripts/external_local_stage.py'
+      - 'scripts/process_supervisor_v2.py'
+      - 'tests/test_b4_ledger_policy.py'
+      - 'tests/test_compact_pe_pipeline.py'
+      - 'reports/unc13a-minigenome-20261102/fixtures/*.sam'
+      - 'research/requirements-pe-contract.txt'
+      - '.github/workflows/paired-end-tests.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  pe-contract:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    strategy:
+      matrix:
+        python: ['3.11', '3.12']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - run: python -m pip install -r research/requirements-pe-contract.txt
+      - run: python -m unittest discover -s tests -p test_pe_fragment_contract.py -v
+      - run: python -m unittest discover -s tests -p test_compact_pe_pipeline.py -v
+      - run: python -m unittest discover -s tests -p test_b4_ledger_policy.py -v
+      - run: python -m unittest discover -s tests -p test_sealed_local_workflow.py -v
+      - run: python -m unittest discover -s tests -p test_real_pilot_workflow.py -v
+      - run: python -m unittest discover -s tests -p test_process_supervisor_v2.py -v
+      - run: python -m unittest discover -s tests -p test_block_http_reservation.py -v
+      - run: python -m unittest discover -s tests -p test_inspect_interrupted_pilot.py -v
+      - run: python -m unittest discover -s tests -p test_recover_index_range.py -v
+      - run: python -m unittest discover -s tests -p test_prepare_verified_index.py -v
+      - run: python -m unittest discover -s tests -p test_cached_index_pilot.py -v
+      - run: python -m unittest discover -s tests -p test_recover_ctrl_read.py -v
+      - run: python -m unittest discover -s tests -p test_recovered_read_pilot.py -v
+      - run: python -m unittest discover -s tests -p test_recover_ctrl_r2.py -v
+      - run: python -m unittest discover -s tests -p test_recover_ctrl_r2_ipv4.py -v
+      - run: python -m unittest discover -s tests -p test_recover_ctrl_r2_final.py -v
+      - run: python -m unittest discover -s tests -p test_recover_ctrl_r2_resume.py -v
+      - run: python -m unittest discover -s tests -p test_recover_ctrl_r2_clock.py -v
+      - run: python -m unittest discover -s tests -p test_offline_control_pilot.py -v
+      - run: python -m unittest discover -s tests -p test_unc13a_locus_audit.py -v
+      - run: python -m unittest discover -s tests -p test_unc13a_locus_audit_v2.py -v

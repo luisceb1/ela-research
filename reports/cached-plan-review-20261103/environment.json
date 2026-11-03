@@ -1,0 +1,13 @@
+{
+  "python": "3.12.14",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.39",
+  "reviewed_pending_head": "49f37a0cbda83b8046cf40492f566bc27906171f",
+  "main_observed": "a16b6d9c6e79783e0559bfa56b1676cf506be2d4",
+  "local_test_count": 16,
+  "local_full_repository_suite": false,
+  "expected_real_descriptor_provided": false,
+  "synthetic_negative_mutations": 22,
+  "dependencies": "Python standard library only",
+  "worker_code_changed": false,
+  "new_biological_data_or_alignment": false
+}

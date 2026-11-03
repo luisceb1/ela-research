@@ -1,0 +1,14 @@
+{
+  "status": "complete",
+  "completed_steps": [
+    "index",
+    "r1",
+    "r2",
+    "sam",
+    "index_extract",
+    "prefix",
+    "calc"
+  ],
+  "ledger_sha256": "36f3f5d883c4f04381e85aa2b0ed7d762b153f056335f751c0d02deee62a1b00",
+  "raw_execution_ready": false
+}

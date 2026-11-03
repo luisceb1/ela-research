@@ -1,0 +1,17 @@
+{
+  "scripts/bounded_http_transport.py": "1bb09c8218c23622e082b966ac65b81ec52a4f60eabd227bee4e387551f9cfcb",
+  "scripts/real_pilot_workflow.py": "052c8447f62454d95c2514a3b25536642fbe01687961886c734a1c53bfd16520",
+  "scripts/inspect_interrupted_pilot.py": "aac41351354593b0cdab3a5e92d7412e935541221e402ca8f941983fe5e72719",
+  "tests/test_block_http_reservation.py": "fce6f541c2f04e919fd6b98c4f89334c0b97286bf6c5a22dbcd32174b6bea1fd",
+  "tests/test_inspect_interrupted_pilot.py": "12d7e86e4ceffdd140fdf8df05f67534cbbcd7864882cb8cf6ec5afd91e570ae",
+  ".github/workflows/paired-end-tests.yml": "8a38b2ec06e4710d772267fc637ebe60c3b8dfd28e83fff6904d801cab264c2e",
+  "research/STATE.md": "39b2c4ce37d7f9b29f3c61cdb4e4019049e4057001ff3ab395906328f0a29585",
+  "research/BACKLOG.md": "05d802a0330d581ccc280c939d7b0dc50db7dd5206b7dd448e2939408afc1108",
+  "research/runbooks/2026-11-02-wsl-pilot-powershell.md": "e77acdc3a33f82d2e41d1ebb588e145f918f7ab192d6e6eb1d055bec63df9c52",
+  "research/plans/2026-11-02-interrupted-index-transport.md": "ee7777562ef0243fc1fee504d7a63f59ba92b547b8abbc3df49e2092467bfbc0",
+  "reports/interrupted-index-transport-20261102/REPORT.md": "7a84b09d5dd557c790ce0f9b1c8bcb87cf0bf2323aa5f395699fb203fc2ede9d",
+  "reports/interrupted-index-transport-20261102/benchmark.json": "080c6ceefa66ddb053c96619b97f9abe8e695b69f4b1bb72ecad5fdb74eccb1f",
+  "reports/interrupted-index-transport-20261102/tests.txt": "d34d2f8129ae258e4cdc584809863af56b8e3028171b1264f4deb37869eaa122",
+  "reports/interrupted-index-transport-20261102/user-reported-failure.json": "c13f592a45b0fd6fa391d6c2bbbfc217bb476d21374c8e883e11a8da6333e5bb",
+  "reports/interrupted-index-transport-20261102/validation.json": "2d33917b0a1ec024b1d3c41681e5b1542d15646727e053a5bfb10de3a8b9f166"
+}

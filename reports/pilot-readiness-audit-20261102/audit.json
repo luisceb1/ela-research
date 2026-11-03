@@ -1,0 +1,237 @@
+{
+  "source_commit": "019572483bf6e88665f9c852c33741c21cede53d",
+  "status": "BLOCKED",
+  "raw_execution_ready": false,
+  "consistency_checks": {
+    "two_libraries_four_mates": true,
+    "library_totals_consistent": true,
+    "raw_total_consistent": true,
+    "archive_hash_consistent": true,
+    "archive_size_consistent": true,
+    "extraction_size_consistent": true,
+    "eight_index_members": true,
+    "preflight_transfer_total_consistent": true,
+    "limits_consistent": true,
+    "miniature_function_pass": true,
+    "miniature_references_pass": true,
+    "pe_receipt_pass": true,
+    "paired_ledger_receipt_pass": true,
+    "full_fastq_fixture_receipt_pass": true,
+    "external_supervision_receipt_pass": true,
+    "sample_table_sha_matches_plan": true,
+    "ena_snapshot_sha_matches_plan": true,
+    "selection_minimum_and_identity_verified": true,
+    "all12_size_matches_plan": true
+  },
+  "source_inputs": [
+    {
+      "path": "research/plans/2026-11-01-humphrey-raw-pilot.md",
+      "git_blob_sha": "bf4faba158b05a38aac87f5873e964dbb8793490",
+      "sha256": "97a110ebac174065b90ef806f126b6b08f1528ceb3410dce6262bb00a2e51d41"
+    },
+    {
+      "path": "reports/gse296714-raw-pilot-plan-20261101/PLAN.json",
+      "git_blob_sha": "e756ecd95db79b990441b17d008e08d366440179",
+      "sha256": "67f233a199210e2641c3bdc4dd8745f4a0ef0f2f48650ba017de87dccd7325e6"
+    },
+    {
+      "path": "reports/gse296714-raw-pilot-plan-20261101/environment.json",
+      "git_blob_sha": "ba119b9094554a38000bd66e0207e977301318c7",
+      "sha256": "b8e86821d3f539dfc3ef5a45a06a6162d806159ab379983af4bb4b4d2b4bb10d"
+    },
+    {
+      "path": "reports/bounded-http-local-20261102/preflight.json",
+      "git_blob_sha": "cce43d14caec771299240827b35c604f97e02739",
+      "sha256": "eeeea89c709326bbb4132fccd399b2f8b89fa5311ef2a4f09b11e4b6e95d1af4"
+    },
+    {
+      "path": "reports/hisat2-index-inspection-20261031/verified_index.json",
+      "git_blob_sha": "672ad4207bee8ed8e12cbd6d1bfdfb6eaff8ae0f",
+      "sha256": "6012a0469968d2f0356d8cfb983f4a177361781936e03fd6654355aaaf4e2f42"
+    },
+    {
+      "path": "reports/hisat2-index-inspection-20261031/extraction.json",
+      "git_blob_sha": "183d040d504fba314b4f589f1ea6af9ee5ba96e9",
+      "sha256": "90f9a4e96491de9dd1a15fa6a08b9bcdd4de91067566a833be3204a7a0f101be"
+    },
+    {
+      "path": "reports/hisat2-index-inspection-20261031/REPORT.md",
+      "git_blob_sha": "bb519359faec31c11237f3f46a83087bec2b7a38",
+      "sha256": "f2a689c4c7d719cc492ab43bbf52a6b75377489e856fb162cc066ad0bd233576"
+    },
+    {
+      "path": "reports/unc13a-minigenome-20261102/REPORT.md",
+      "git_blob_sha": "f9ff394e914b36eed87595a882a43f9ff6caa487",
+      "sha256": "ac3f3861d46ff6a038d909073e116aca8b903b7828e1730a7ffd78cdad4b35fa"
+    },
+    {
+      "path": "reports/unc13a-minigenome-20261102/commands.json",
+      "git_blob_sha": "31eac04a137f7204f0697f01adebe4d704cceeaf",
+      "sha256": "69cbe22eb20a5f69d036a7fdf47eff6ee20ec32af6057087421eea66a1640c11"
+    },
+    {
+      "path": "reports/unc13a-reference-strand-20261102/contract.json",
+      "git_blob_sha": "b5be34eef7b6159237d0d8b527f4e1422b331c64",
+      "sha256": "a20ea058d038142b9a774bbd8a8c63656202ab914624cee642321408e303f7fe"
+    },
+    {
+      "path": "scripts/external_local_stage.py",
+      "git_blob_sha": "0bb18c4e290d605da6c381e7bae3e5a47c833435",
+      "sha256": "b2c0f555b91443e786e5d71294fcfb405ee62cbc66ed685878774139e477e75b"
+    },
+    {
+      "path": "scripts/pilot_dry_runner.py",
+      "git_blob_sha": "4a6837d93d1d36dbcea5af5249e912509a0800e5",
+      "sha256": "3c912a931377df63c208080ee23e3bdc736e4ddc72d56d688ad43c49d8eab960"
+    },
+    {
+      "path": "scripts/paired_fastq_phase.py",
+      "git_blob_sha": "7c65c96e75784141f544f2a803f223779274f8e5",
+      "sha256": "d6966112b7fbec98a05e6cf28040ca5df7da68e592f71cac8b12bcb635473ac2"
+    },
+    {
+      "path": "scripts/bounded_http_transport.py",
+      "git_blob_sha": "3de611f8a8924456355f5cdd573e307535331e62",
+      "sha256": "0e2c6e820b67b3326e6200306378b19c1655553bf84875095633d1fae4cf890f"
+    },
+    {
+      "path": "scripts/collate_pe_sam.py",
+      "git_blob_sha": "a0998a207b3642fd97955bf3e9f36b223824b5d8",
+      "sha256": "cfce675cdba6217a81be5f957a3690542fab4deeec8e565b5fe9af3fb179fc7b"
+    },
+    {
+      "path": "scripts/pe_fragment_contract.py",
+      "git_blob_sha": "21a8b2a1b17f0f6844a9705622402aec1c0b3894",
+      "sha256": "e06addaaea827cc9914f974ac59cc426962b5d735d25be05483fd4b8f2a9abf4"
+    },
+    {
+      "path": "scripts/run_unc13a_mini.py",
+      "git_blob_sha": "61730e493262e12c4be5206f432a97c547f13117",
+      "sha256": "b93a4e369db841e9e45b05c8973e5d55782479660a42e795f760bfd34b966fe2"
+    },
+    {
+      "path": "scripts/inspect_hisat2_index.py",
+      "git_blob_sha": "9e82d473d61b90be34a0a255dfaffafb56d5b853",
+      "sha256": "c43b5c160f1d1effbc276c31154f7aa07bc03fd4b656600e6849544e28525bdf"
+    },
+    {
+      "path": "reports/unc13a-minigenome-20261102/versions.json",
+      "git_blob_sha": "a06a59c9e757f9a0e522872c2ad4ad8bdc75a8d0",
+      "sha256": "81f63197dc7d13b6444524ef42a61d43b26bcc4218f2cffbb9dd0543d421debd"
+    },
+    {
+      "path": "reports/unc13a-minigenome-20261102/source.json",
+      "git_blob_sha": "2159688722b672f59773fe8f65c400a52bd5dd73",
+      "sha256": "3a5263fc36d7e84e507f2dad7c38d7b002b8b9f055c73ae02f5c0ebafee136bb"
+    },
+    {
+      "path": "reports/pe-synthetic-contract-20261102/validation.json",
+      "git_blob_sha": "cc141f4124979fd53508caf55f06825200c13c62",
+      "sha256": "22586b85d47f93a6a0c973eb5fe626a12d4c07452d7ad322b78a8488986a0698"
+    },
+    {
+      "path": "reports/external-local-supervision-20261102/validation.json",
+      "git_blob_sha": "973ccfa5f198a827d1755f96f9e4263f4c29cc2e",
+      "sha256": "d3e32d05f84b7df8e324d5eb7dc77401526984520c0dfc8a175385e08d9e901e"
+    },
+    {
+      "path": "reports/external-local-supervision-20261102/case-summary.json",
+      "git_blob_sha": "bf6d0a8740c6debf500bfd246b64654caf1cdb67",
+      "sha256": "94286e71f5b68c1d80c2704df2b2660be686b4eca55da3f5307780e625d66d15"
+    },
+    {
+      "path": "reports/unc13a-minigenome-20261102/result.json",
+      "git_blob_sha": "4c90db1308a21cf984e52055058fc5268e23621f",
+      "sha256": "aa57e439137b7156f52a3b354673f65392aebbda8909f106daa2a35b9ee607da"
+    },
+    {
+      "path": "reports/paired-fastq-ledger-20261102/validation.json",
+      "git_blob_sha": "2a094ced7000be7d249faf51b145a76c25a8b345",
+      "sha256": "3ce1fe9b83ed16ed790b0fc3188ed171b2dfc995d59f433d16e5eb91e77bc876"
+    },
+    {
+      "path": "reports/paired-fastq-local-20261102/executed-final/summary.json",
+      "git_blob_sha": "67fab13691050fe1f8236b7e316ab0fa4daca2a2",
+      "sha256": "090314fe61ea42c9ccfb5cfbc46eb610131b294f5af660c9bb18f497da389398"
+    },
+    {
+      "path": "reports/gse296714-raw-pilot-plan-20261101/ena-metadata.tsv",
+      "git_blob_sha": "70b283b00ce65db341d8a672080dd804adc9faf2",
+      "sha256": "e0d7b769867fc334f079c49be9a9cc833647bd8eb0146268da2d812c548a86ae"
+    },
+    {
+      "path": "reports/gse296714-design-20261101/samples.tsv",
+      "git_blob_sha": "6ba364dceff7082032190d1f0371bee04cec0d10",
+      "sha256": "818b8f6553a3ea1b44e0c1cf511c5dec1fcc35f7ccd68e2d8b45af6c46087573"
+    }
+  ],
+  "budget": {
+    "units": "bytes unless stated; GB=10^9, GiB=2^30",
+    "raw_four_mates": 6349703881,
+    "reference_archive": 4355786349,
+    "reference_extracted_including_recipe": 4664043238,
+    "minimum_transfer": 10705490230,
+    "transfer_cap": 12000000000,
+    "transfer_margin_before_dependencies_retries": 1294509770,
+    "all_artifacts_coexisting_disk_baseline": 15369533468,
+    "additional_disk_cap": 26843545600,
+    "disk_margin_before_prefixes_temporaries_outputs": 11474012132,
+    "reserve_disk": 8589934592,
+    "free_disk_observed": 63677067264,
+    "nominal_additional_plus_reserve_fits": true,
+    "memory_limit_proposed": 6442450944,
+    "cgroup_memory_max_observed": 8589934592,
+    "nominal_memory_limit_below_cgroup": true,
+    "minimum_body_rate_for_3600s_bytes_per_second": 2973747.2861111113,
+    "rate_is_requirement_not_measurement": true,
+    "full_single_artifact_retry_fits_after_all_base_downloads": [
+      {
+        "artifact": "SRR33425816_R1",
+        "bytes": 960856963,
+        "fits": true
+      },
+      {
+        "artifact": "SRR33425816_R2",
+        "bytes": 997549457,
+        "fits": true
+      },
+      {
+        "artifact": "SRR33425819_R1",
+        "bytes": 2143112809,
+        "fits": false
+      },
+      {
+        "artifact": "SRR33425819_R2",
+        "bytes": 2248184652,
+        "fits": false
+      },
+      {
+        "artifact": "hg38_index_archive",
+        "bytes": 4355786349,
+        "fits": false
+      }
+    ]
+  },
+  "offline_interface_probes": {
+    "production_process": {
+      "rejected": true,
+      "reason": "Production execution disabled in DryRunner; plan only",
+      "phase_created": false
+    },
+    "external_http_worker": {
+      "rejected": true,
+      "reason": "Literal loopback HTTP only"
+    },
+    "sha_only_transfer": {
+      "rejected": true,
+      "exception": "KeyError",
+      "missing_key": "'md5'",
+      "synthetic_bytes_charged": 3,
+      "phase_status": "failed"
+    },
+    "network_used": false,
+    "alignments_executed": false
+  },
+  "blocked_gate_count": 5,
+  "next_task": "checksum schema accepting SHA256-only plus bounded archive extraction receipt, tested only with synthetic archive; no remote restore"
+}

@@ -1,0 +1,118 @@
+{
+  "source_commit": "019572483bf6e88665f9c852c33741c21cede53d",
+  "repository": "luisceb1/ela-research",
+  "inputs": [
+    {
+      "path": "research/plans/2026-11-01-humphrey-raw-pilot.md",
+      "git_blob_sha": "bf4faba158b05a38aac87f5873e964dbb8793490"
+    },
+    {
+      "path": "reports/gse296714-raw-pilot-plan-20261101/PLAN.json",
+      "git_blob_sha": "e756ecd95db79b990441b17d008e08d366440179"
+    },
+    {
+      "path": "reports/gse296714-raw-pilot-plan-20261101/environment.json",
+      "git_blob_sha": "ba119b9094554a38000bd66e0207e977301318c7"
+    },
+    {
+      "path": "reports/bounded-http-local-20261102/preflight.json",
+      "git_blob_sha": "cce43d14caec771299240827b35c604f97e02739"
+    },
+    {
+      "path": "reports/hisat2-index-inspection-20261031/verified_index.json",
+      "git_blob_sha": "672ad4207bee8ed8e12cbd6d1bfdfb6eaff8ae0f"
+    },
+    {
+      "path": "reports/hisat2-index-inspection-20261031/extraction.json",
+      "git_blob_sha": "183d040d504fba314b4f589f1ea6af9ee5ba96e9"
+    },
+    {
+      "path": "reports/hisat2-index-inspection-20261031/REPORT.md",
+      "git_blob_sha": "bb519359faec31c11237f3f46a83087bec2b7a38"
+    },
+    {
+      "path": "reports/unc13a-minigenome-20261102/REPORT.md",
+      "git_blob_sha": "f9ff394e914b36eed87595a882a43f9ff6caa487"
+    },
+    {
+      "path": "reports/unc13a-minigenome-20261102/commands.json",
+      "git_blob_sha": "31eac04a137f7204f0697f01adebe4d704cceeaf"
+    },
+    {
+      "path": "reports/unc13a-reference-strand-20261102/contract.json",
+      "git_blob_sha": "b5be34eef7b6159237d0d8b527f4e1422b331c64"
+    },
+    {
+      "path": "scripts/external_local_stage.py",
+      "git_blob_sha": "0bb18c4e290d605da6c381e7bae3e5a47c833435"
+    },
+    {
+      "path": "scripts/pilot_dry_runner.py",
+      "git_blob_sha": "4a6837d93d1d36dbcea5af5249e912509a0800e5"
+    },
+    {
+      "path": "scripts/paired_fastq_phase.py",
+      "git_blob_sha": "7c65c96e75784141f544f2a803f223779274f8e5"
+    },
+    {
+      "path": "scripts/bounded_http_transport.py",
+      "git_blob_sha": "3de611f8a8924456355f5cdd573e307535331e62"
+    },
+    {
+      "path": "scripts/collate_pe_sam.py",
+      "git_blob_sha": "a0998a207b3642fd97955bf3e9f36b223824b5d8"
+    },
+    {
+      "path": "scripts/pe_fragment_contract.py",
+      "git_blob_sha": "21a8b2a1b17f0f6844a9705622402aec1c0b3894"
+    },
+    {
+      "path": "scripts/run_unc13a_mini.py",
+      "git_blob_sha": "61730e493262e12c4be5206f432a97c547f13117"
+    },
+    {
+      "path": "scripts/inspect_hisat2_index.py",
+      "git_blob_sha": "9e82d473d61b90be34a0a255dfaffafb56d5b853"
+    },
+    {
+      "path": "reports/unc13a-minigenome-20261102/versions.json",
+      "git_blob_sha": "a06a59c9e757f9a0e522872c2ad4ad8bdc75a8d0"
+    },
+    {
+      "path": "reports/unc13a-minigenome-20261102/source.json",
+      "git_blob_sha": "2159688722b672f59773fe8f65c400a52bd5dd73"
+    },
+    {
+      "path": "reports/pe-synthetic-contract-20261102/validation.json",
+      "git_blob_sha": "cc141f4124979fd53508caf55f06825200c13c62"
+    },
+    {
+      "path": "reports/external-local-supervision-20261102/validation.json",
+      "git_blob_sha": "973ccfa5f198a827d1755f96f9e4263f4c29cc2e"
+    },
+    {
+      "path": "reports/external-local-supervision-20261102/case-summary.json",
+      "git_blob_sha": "bf6d0a8740c6debf500bfd246b64654caf1cdb67"
+    },
+    {
+      "path": "reports/unc13a-minigenome-20261102/result.json",
+      "git_blob_sha": "4c90db1308a21cf984e52055058fc5268e23621f"
+    },
+    {
+      "path": "reports/paired-fastq-ledger-20261102/validation.json",
+      "git_blob_sha": "2a094ced7000be7d249faf51b145a76c25a8b345"
+    },
+    {
+      "path": "reports/paired-fastq-local-20261102/executed-final/summary.json",
+      "git_blob_sha": "67fab13691050fe1f8236b7e316ab0fa4daca2a2"
+    },
+    {
+      "path": "reports/gse296714-raw-pilot-plan-20261101/ena-metadata.tsv",
+      "git_blob_sha": "70b283b00ce65db341d8a672080dd804adc9faf2"
+    },
+    {
+      "path": "reports/gse296714-design-20261101/samples.tsv",
+      "git_blob_sha": "6ba364dceff7082032190d1f0371bee04cec0d10"
+    }
+  ]
+}

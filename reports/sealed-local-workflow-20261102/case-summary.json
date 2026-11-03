@@ -1,0 +1,199 @@
+[
+  {
+    "case": "test_blocked_producer_is_killed_without_seal",
+    "seal_present": false,
+    "requests": [
+      "/index",
+      "/r1",
+      "/r2",
+      "/sam"
+    ],
+    "transfer_bytes": 7890,
+    "transfer_elapsed_seconds": 0.05077815055847168,
+    "phases": {
+      "index": "verified",
+      "r1": "verified",
+      "r2": "verified",
+      "sam": "verified",
+      "index_extract": "verified",
+      "prefix": "verified",
+      "calc": "started"
+    },
+    "coverage": null,
+    "exit_code": -9,
+    "violation": null,
+    "supervisor_error": "RuntimeError: Phase/subphase deadline",
+    "elapsed_seconds": 1.3247552029997678,
+    "live_group_members_after_cleanup": []
+  },
+  {
+    "case": "test_bulk_output_tamper_is_detected_in_supervised_revalidation",
+    "seal_present": true,
+    "requests": [
+      "/index",
+      "/r1",
+      "/r2",
+      "/sam"
+    ],
+    "seal_status": "complete",
+    "inner_status": "complete",
+    "transfer_bytes": 7890,
+    "transfer_elapsed_seconds": 0.047116756439208984,
+    "phases": {
+      "index": "verified",
+      "r1": "verified",
+      "r2": "verified",
+      "sam": "verified",
+      "index_extract": "verified",
+      "prefix": "verified",
+      "calc": "verified"
+    },
+    "coverage": {
+      "definition": "accepted RG/QNAME groups with at least one target; marked duplicates retained, not unique molecules",
+      "anchor": 15,
+      "fragment_union": 6,
+      "event_support_sum": 6,
+      "minimum": 1,
+      "adequate": true
+    },
+    "exit_code": 0,
+    "violation": null,
+    "supervisor_error": null,
+    "elapsed_seconds": 0.6265595669992763,
+    "live_group_members_after_cleanup": []
+  },
+  {
+    "case": "test_external_failure_after_inner_complete_cannot_seal",
+    "seal_present": false,
+    "requests": [
+      "/index",
+      "/r1",
+      "/r2",
+      "/sam"
+    ],
+    "inner_status": "complete",
+    "transfer_bytes": 7890,
+    "transfer_elapsed_seconds": 0.06313872337341309,
+    "phases": {
+      "index": "verified",
+      "r1": "verified",
+      "r2": "verified",
+      "sam": "verified",
+      "index_extract": "verified",
+      "prefix": "verified",
+      "calc": "verified"
+    },
+    "coverage": {
+      "definition": "accepted RG/QNAME groups with at least one target; marked duplicates retained, not unique molecules",
+      "anchor": 15,
+      "fragment_union": 6,
+      "event_support_sum": 6,
+      "minimum": 1,
+      "adequate": true
+    },
+    "exit_code": 0,
+    "violation": null,
+    "supervisor_error": null,
+    "elapsed_seconds": 0.7167779630008226,
+    "live_group_members_after_cleanup": []
+  },
+  {
+    "case": "test_full_local_graph_seals_and_revalidates_without_transfer",
+    "seal_present": true,
+    "requests": [
+      "/index",
+      "/r1",
+      "/r2",
+      "/sam"
+    ],
+    "seal_status": "complete",
+    "inner_status": "complete",
+    "transfer_bytes": 7890,
+    "transfer_elapsed_seconds": 0.045876502990722656,
+    "phases": {
+      "index": "verified",
+      "r1": "verified",
+      "r2": "verified",
+      "sam": "verified",
+      "index_extract": "verified",
+      "prefix": "verified",
+      "calc": "verified"
+    },
+    "coverage": {
+      "definition": "accepted RG/QNAME groups with at least one target; marked duplicates retained, not unique molecules",
+      "anchor": 15,
+      "fragment_union": 6,
+      "event_support_sum": 6,
+      "minimum": 1,
+      "adequate": true
+    },
+    "exit_code": 0,
+    "violation": null,
+    "supervisor_error": null,
+    "elapsed_seconds": 0.6137561510004161,
+    "live_group_members_after_cleanup": []
+  },
+  {
+    "case": "test_insufficient_coverage_is_sealed_as_blocked_not_success",
+    "seal_present": true,
+    "requests": [
+      "/index",
+      "/r1",
+      "/r2",
+      "/sam"
+    ],
+    "seal_status": "coverage_insufficient",
+    "inner_status": "coverage_insufficient",
+    "transfer_bytes": 7890,
+    "transfer_elapsed_seconds": 0.04485201835632324,
+    "phases": {
+      "index": "verified",
+      "r1": "verified",
+      "r2": "verified",
+      "sam": "verified",
+      "index_extract": "verified",
+      "prefix": "verified",
+      "calc": "verified"
+    },
+    "coverage": {
+      "definition": "accepted RG/QNAME groups with at least one target; marked duplicates retained, not unique molecules",
+      "anchor": 15,
+      "fragment_union": 6,
+      "event_support_sum": 6,
+      "minimum": 20,
+      "adequate": false
+    },
+    "exit_code": 0,
+    "violation": null,
+    "supervisor_error": null,
+    "elapsed_seconds": 0.6050637349999306,
+    "live_group_members_after_cleanup": []
+  },
+  {
+    "case": "test_nonzero_producer_cannot_seal",
+    "seal_present": false,
+    "requests": [
+      "/index",
+      "/r1",
+      "/r2",
+      "/sam"
+    ],
+    "transfer_bytes": 7890,
+    "transfer_elapsed_seconds": 0.04593062400817871,
+    "phases": {
+      "index": "verified",
+      "r1": "verified",
+      "r2": "verified",
+      "sam": "verified",
+      "index_extract": "verified",
+      "prefix": "verified",
+      "calc": "failed"
+    },
+    "coverage": null,
+    "exit_code": 1,
+    "violation": null,
+    "supervisor_error": null,
+    "elapsed_seconds": 0.4804149089995917,
+    "live_group_members_after_cleanup": []
+  }
+]

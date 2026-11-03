@@ -1,0 +1,28 @@
+{
+  "provenance": "JSON provided by Luis from inspect_interrupted_pilot on his WSL; no direct access by agent",
+  "status": "AUDITED_INTERRUPTED_NOT_RESUMABLE",
+  "root": "/home/luisceb/ela-piloto-real-01",
+  "source_verified": false,
+  "metadata_sha256": {
+    "workflow-job.json": "d813b5d5c738f8391583446df54b744c7987516309aadb5c64eec7ff912bf878",
+    "operator-acceptance.json": "4d5f1e2338678a1fa0c61fe21f6d582c0517422bd18e07299ba1920fa7ff7bed",
+    "ledger.json": "a4b7eb2dc0b169c5f056c099a1804065103243a56c15e8e95eee719d4187dd5e",
+    "preflight-result.json": "461b647df7c083cd61e06973af06ee1af91e141544c8571772e9b9fd268a3909",
+    "index_archive.attempt-0.json": "9f4b8c7d48a50c046eaf0ec4909789f7652c9f3e701d7fc270f476e5e090541f",
+    "workflow-receipts/run.json": "5aab8d2236adb6d45eeec24cb79c57b9f73fbd58a5b6be21daeaf46bdf4873a4"
+  },
+  "expected_index_bytes": 4355786349,
+  "partial_bytes": 1632447284,
+  "partial_sha256": "af7750fc6ef148017aab8c339de670faebff34be5de69bddc0275dbeed21216d",
+  "partial_percent": 37.48,
+  "charged_body_bytes": 1632463668,
+  "charged_minus_partial_bytes": 16384,
+  "remaining_body_budget_bytes": 10367536332,
+  "minimum_remaining_body_if_range_is_later_validated": 9073042946,
+  "prior_transfer_elapsed_seconds": 3600.0012652873993,
+  "observed_average_body_bytes_per_second": 453461.97,
+  "prior_global_deadline_epoch": 1793658000.877632,
+  "outer_exit_code": -9,
+  "outer_error": "RuntimeError: Cumulative transfer time cap",
+  "worker_group_empty_at_cleanup": true
+}
