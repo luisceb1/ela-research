@@ -6,7 +6,7 @@ Estudio de las consecuencias transcriptómicas de la pérdida nuclear de TDP-43,
 
 Leer [AGENTS](AGENTS.md), [estado vigente](research/STATE.md), [evidencia](research/MASTER_EVIDENCE.md), [backlog](research/BACKLOG.md) y [protocolo](research/PROTOCOL.md), y comprobar las cabezas remotas antes de actuar.
 
-Esta versión reúne los contenidos de los PR #28 y #29, conservando la procedencia y los bloqueos. La próxima tarea es **seleccionar una sola fuente independiente con entradas públicas completas para un contraste directo de uniones**, siguiendo [el criterio de entrada](research/NEXT_STUDY_GATE.md). No repetir auditorías cerradas o búsquedas bloqueadas sin fuente nueva.
+Las PR #36, #38 y #39 están integradas. Hay dos continuaciones bloqueadas por datos: un manifiesto concreto Seddighi–AD Workbench para UNC13A y la tabla original K26 Fig.4d para reproducir eEPSC con su agrupación biológica. No repetir auditorías cerradas sin fuente nueva. Consultar [estado](research/STATE.md), [backlog](research/BACKLOG.md), [historial](research/history/README.md) e [inventario de scripts](research/SCRIPT_LIFECYCLE.md).
 
 ## Resultados y límites
 
@@ -19,11 +19,11 @@ Esta versión reúne los contenidos de los PR #28 y #29, conservando la proceden
 ## Verificación
 
 ```bash
-python -m unittest discover -s tests -v
+python scripts/run_offline_tests.py --report test-results/offline.json
 python -m compileall -q scripts tests
 ```
 
-La combinación de ambas ramas supera 244 tests offline en Python 3.12.14. La CI ejecuta Python 3.11/3.12 por commit; consultar el SHA correspondiente. Las pruebas de software no sustituyen replicación biológica. Los análisis reales requieren sus fuentes y dependencias fijadas en cada informe; una CI offline correcta no significa que se hayan redescargado y reejecutado todos los análisis.
+La CI general ejecuta Python 3.11/3.12 y publica un informe con pruebas ejecutadas y omitidas. Las dependencias opcionales pueden producir omisiones explícitas. El trabajo paired-end instala PySAM fijado y exige cero omisiones en sus módulos seleccionados; véase el [inventario y contrato de verificación](research/SCRIPT_LIFECYCLE.md). Consultar siempre el SHA correspondiente. Las pruebas de software no sustituyen replicación biológica. Los análisis reales requieren sus fuentes y dependencias fijadas en cada informe; una CI offline correcta no significa que se hayan redescargado y reejecutado todos los análisis.
 
 Originales fuera de git, en cachés reproducibles con URL/hash. Código e informes conservan comandos y límites. [Acta de integración](reports/integration-20261030/REPORT.md) e historial documental están separados del estado vigente.
 
