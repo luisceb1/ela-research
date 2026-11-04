@@ -1,0 +1,24 @@
+{
+  "figure_points": 54,
+  "figure_visually_reviewed": true,
+  "historical_suite_run_locally": false,
+  "new_tests_passed": 5,
+  "numeric_outputs_byte_identical_replay": true,
+  "original_R_rmd_executed": false,
+  "pvalues_or_rescue_effects_estimated": false,
+  "sha256": {
+    "reports/fratta-dox-replay-20261104/REPORT.md": "1549737a3f766f749b172a29e2e7c9622869c7129e302d8025aaa2433e3815e2",
+    "reports/fratta-dox-replay-20261104/all-groups.csv": "351ca091e7d1fd0f2baba2fa2864500a0dc896843a040925fa51fa324885f4dc",
+    "reports/fratta-dox-replay-20261104/errors.json": "a24f857b66066954758abc8c54528104933ad92a35e38e554f0cd2fb7465f649",
+    "reports/fratta-dox-replay-20261104/independent-checks.json": "df647828c90a3e40c8740f1e9732d61dd9f4afdda7d62397225286201a0c0b98",
+    "reports/fratta-dox-replay-20261104/key-preserving-join.csv": "96afd58a2a3735b5c2fd9cac6d3044f4699173c51848b7b4d074e78181de5d85",
+    "reports/fratta-dox-replay-20261104/qc.json": "ed43f6aa2c49bc3a293dbff31c4d4551d4b041aec2cc3b863302733ad66c780b",
+    "reports/fratta-dox-replay-20261104/source-order-join.csv": "8b5f8b35ee4200fe580aaf20779c8e1d44ea68104ee75c643910d1a9a072f2ea",
+    "reports/fratta-dox-replay-20261104/sources.json": "63545b131e9b3fba57cb6b983b4c0b6b30a954f2996db1d2c8cf7a2265cf1eab",
+    "reports/fratta-dox-replay-20261104/unc13a-means.csv": "e1ddb92933009d7c853a294799bfff9ac84b60225905fb4e67ee64a1487d7455",
+    "reports/fratta-dox-replay-20261104/unc13a-molecular.svg": "8db131924e2e683e30ddb94748a27486afb192fb14f11ef5a8c1fa251b7353b0",
+    "scripts/reproduce_fratta_dox.py": "763f469868645bcff18ab48e1cb6db39b9a11d52bd89a619773f047ed58d615c",
+    "tests/test_fratta_dox_replay.py": "050e1935fbd1f73104057d196c4c8f68cdf94edd7507417cf5cb6d393c90235c"
+  },
+  "svg_byte_identical_replay": true
+}

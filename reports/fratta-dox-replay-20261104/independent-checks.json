@@ -1,0 +1,11 @@
+{
+  "all_group_means_and_sem_match": true,
+  "all_identical_observations_preserved": true,
+  "biological_pairing_inferred": false,
+  "groups_with_3_rows": 36,
+  "groups_with_5_rows": 6,
+  "independent_fraction_checks": 42,
+  "row_permutation_preserves_summary": true,
+  "rows": 138,
+  "seed_for_order_check": 20261104
+}
