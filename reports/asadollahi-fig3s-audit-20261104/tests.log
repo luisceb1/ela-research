@@ -1,0 +1,19 @@
+test_blank_is_not_imputed_and_zero_is_preserved (test_audit_asadollahi_fig3s.SourceAuditTests.test_blank_is_not_imputed_and_zero_is_preserved) ... ok
+test_duplicate_numeric_values_are_flagged_not_deleted (test_audit_asadollahi_fig3s.SourceAuditTests.test_duplicate_numeric_values_are_flagged_not_deleted) ... ok
+test_empty_group_does_not_claim_available_comparison (test_audit_asadollahi_fig3s.SourceAuditTests.test_empty_group_does_not_claim_available_comparison) ... ok
+test_extra_numeric_metadata_requires_review (test_audit_asadollahi_fig3s.SourceAuditTests.test_extra_numeric_metadata_requires_review) ... ok
+test_formula_cache_is_not_used_as_observation (test_audit_asadollahi_fig3s.SourceAuditTests.test_formula_cache_is_not_used_as_observation) ... ok
+test_group_mismatch_is_rejected (test_audit_asadollahi_fig3s.SourceAuditTests.test_group_mismatch_is_rejected) ... ok
+test_missing_culture_map_never_enables_inference (test_audit_asadollahi_fig3s.SourceAuditTests.test_missing_culture_map_never_enables_inference) ... ok
+test_nonfinite_is_rejected_and_recorded (test_audit_asadollahi_fig3s.SourceAuditTests.test_nonfinite_is_rejected_and_recorded) ... ok
+test_projection_byte_hash_survives_text_transport (test_audit_asadollahi_fig3s.SourceAuditTests.test_projection_byte_hash_survives_text_transport) ... ok
+test_scope_marker_prevents_export (test_audit_asadollahi_fig3s.SourceAuditTests.test_scope_marker_prevents_export) ... ok
+test_source_hash_is_checked_before_parsing (test_audit_asadollahi_fig3s.SourceAuditTests.test_source_hash_is_checked_before_parsing) ... ok
+test_styles_do_not_create_cultures (test_audit_asadollahi_fig3s.SourceAuditTests.test_styles_do_not_create_cultures) ... ok
+test_unit_mismatch_is_rejected (test_audit_asadollahi_fig3s.SourceAuditTests.test_unit_mismatch_is_rejected) ... ok
+test_unselected_sheet_is_not_parsed (test_audit_asadollahi_fig3s.SourceAuditTests.test_unselected_sheet_is_not_parsed) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 0.006s
+
+OK
