@@ -1,6 +1,14 @@
-# Estado vigente — 03/11/2026
+# Estado vigente — 04/11/2026
 
-Base de esta síntesis: main `867e1478d4eaa5f31d078001785eed246783a27d`, con PR #36, #38 y #39 fusionadas. El [historial íntegro](history/README.md) conserva las decisiones anteriores; sus próximos pasos no son tareas actuales.
+Base comprobada para esta continuidad: main `95bf05ecc1f991ec9843d48519d0764b29dc5dfb`, con PR #36, #38, #39 y mantenimiento posterior hasta #45 fusionados. El [historial íntegro](history/README.md) conserva las decisiones anteriores; sus próximos pasos no son tareas actuales.
+
+## Comprobación de continuidad — 04/11/2026
+
+No hay PR abiertas ni archivo científico nuevo en las fuentes concretas revisadas. Fig.4d: el hilo conocido contiene solo la petición enviada y la búsqueda acotada de respuestas no devuelve nuevos mensajes. #37: Outlook contiene un aviso de aprobación del acceso al dataset (03/11 a17:35:13 Madrid) y otro de revisión del mismo acceso un segundo después. Los avisos de workspace dicen solicitud recibida/revisión. Esa combinación no acredita acceso efectivo, workspace operativo o disponibilidad del manifiesto; no se resuelve por suposición. El registro anterior que solo mencionaba recepción/revisión era incompleto.
+
+Cotejo reproducible en Python3.12.14 sobre metadatos administrativos reducidos: reports/continuity-20261104. Sin datos clínicos, tablas numéricas, adjuntos, nuevas búsquedas científicas o mensajes enviados. Se excluyen de la PR los cuerpos íntegros y enlaces de autenticación. No hay reanálisis científico ni nuevas pruebas unitarias.
+
+Ambas prioridades siguen bloqueadas por sus archivos concretos. Conforme a BACKLOG, este ciclo se detiene: no otra auditoría equivalente, simulación o candidato para eludir el bloqueo. La continuidad automática se pausa hasta nueva entrada y decisión de reanudación; las issues permanecen abiertas. Las condiciones de continuación de la tabla siguen vigentes.
 
 ## Líneas actuales
 
@@ -30,7 +38,7 @@ GSE310723 tiene una biblioteca por condición: no simular réplicas. GSE315972 e
 
 SH-SY5Y conserva cuatro alias UNC13A y dos conflictos de hebra STMN2 pendientes; solo reabrir con fichero fuente nuevo. AGRN, CAMK2B, simulador MEA y protocolo posdéficit UNC13A v0.4 permanecen aparcados/conceptuales; #15/#16/#18/#21 se cierran como no planificadas actualmente y conservan condiciones de reconsideración en BACKLOG. No hay rescate funcional propio ni beneficio clínico demostrado.
 
-Seguimiento administrativo #37, 03/11/2026: los correos localizados de la solicitud AD Workbench confirman recepción y revisión en curso; no incluyen aprobación ni manifiesto. Es estado de acceso, no evidencia científica. #37 y #44 son las dos prioridades; los bloqueos históricos #1/#2/#14/#20 no se reactivan por continuidad automática.
+Seguimiento administrativo anterior #37, 03/11/2026: el registro inicial solo reflejaba recepción/revisión. La comprobación del04/11 de arriba añade el aviso de aprobación y el de revisión posterior, sin acreditar acceso efectivo ni manifiesto. Es estado administrativo, no evidencia científica. #37 y #44 son las dos prioridades; los bloqueos históricos #1/#2/#14/#20 no se reactivan por continuidad automática.
 
 ## Operación y mantenimiento
 

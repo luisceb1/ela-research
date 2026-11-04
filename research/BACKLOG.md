@@ -1,6 +1,12 @@
-# Backlog vigente — 03/11/2026
+# Backlog vigente — 04/11/2026
 
 Este archivo contiene tareas actuales y condiciones de reapertura. [STATE](STATE.md) resume resultados; el [backlog anterior íntegro](history/README.md) conserva la cronología.
+
+## Ciclo detenido — comprobación del04/11/2026
+
+Ninguna de las dos entradas científicas se recibió en las fuentes acotadas revisadas. La comprobación administrativa distingue aviso de aprobación del dataset, revisión posterior y workspace pendiente; no confirma acceso efectivo o manifiesto. Fig.4d sigue sin respuesta con datos en el hilo/búsqueda revisados. Evidencia y límites: reports/continuity-20261104/REPORT.md.
+
+Se pausa la continuidad automática mientras faltan los archivos concretos. Reanudar tras nueva entrada y decisión; no enviar seguimientos, abrir candidatos o añadir controles equivalentes por defecto. Esta nota no cierra issues ni sustituye sus condiciones de aceptación.
 
 ## Continuaciones científicas bloqueadas
 
@@ -9,7 +15,7 @@ Este archivo contiene tareas actuales y condiciones de reapertura. [STATE](STATE
 | 1 | #37: inspeccionar un manifiesto concreto Seddighi–AD Workbench | Fuente nueva con cuentas de uniones o BAM/índices y mapa biblioteca→condición→unidad→lote | Tabla trazable de aceptación/rechazo; solo si cumple cobertura/diseño, redactar prospectivamente un único contraste |
 | 1 | #44: K26 Fig.4d: inspeccionar datos originales de eEPSC | Archivo nuevo con valores/unidades, grupos, claves de cultivo/diferenciación y procedencia | Adaptador trazable y revisión del diseño real; habilitar contrato solo tras comprobar independencia, exclusiones y agrupación |
 
-La petición Fig.4d ya fue enviada autorizadamente: [recibo](../reports/functional-rescue-20261103/COMMUNICATION_LOG.md). En la comprobación acotada del 03/11/2026 el hilo contiene solo la petición enviada; no se autoriza seguimiento automático. Los correos de AD Workbench localizados para la solicitud confirman recepción/revisión, sin aprobación ni manifiesto. #37 conserva el [ciclo de búsqueda cerrado](../reports/source-gate-issue37-20261103/REPORT.md); no añadir un cuarto candidato.
+La petición Fig.4d ya fue enviada autorizadamente: [recibo](../reports/functional-rescue-20261103/COMMUNICATION_LOG.md). En la comprobación acotada del 03/11/2026 el hilo contiene solo la petición enviada; no se autoriza seguimiento automático. En la revisión del04/11 aparecen tanto aviso de aprobación del dataset como revisión posterior; el workspace se declara en revisión. No se acredita acceso efectivo ni manifiesto. #37 conserva el [ciclo de búsqueda cerrado](../reports/source-gate-issue37-20261103/REPORT.md); no añadir un cuarto candidato.
 
 Si no hay entrada nueva, registrar que ambas líneas siguen bloqueadas y detener ese ciclo. No crear otra auditoría equivalente, sustituir datos por simulación o cambiar de endpoint para evitar el bloqueo.
 

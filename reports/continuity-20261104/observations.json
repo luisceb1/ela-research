@@ -1,0 +1,48 @@
+{
+  "observed_on": "2026-11-04",
+  "main": "95bf05ecc1f991ec9843d48519d0764b29dc5dfb",
+  "scope": "Administrative metadata from bounded connected-mail and GitHub checks only; no source tables or dataset files",
+  "ad_workbench_notices": [
+    {
+      "received_utc": "2026-11-03T16:48:40Z",
+      "subject": "Fwd: New Workspace Request received.",
+      "has_attachments": false,
+      "evidence_kind": "workspace_review_wording"
+    },
+    {
+      "received_utc": "2026-11-03T16:36:17Z",
+      "subject": "Auto Reply: Your workspace request",
+      "has_attachments": false,
+      "evidence_kind": "workspace_submission_wording"
+    },
+    {
+      "received_utc": "2026-11-03T16:35:14Z",
+      "subject": "Auto Reply: Your data access request for 'Mis-spliced transcripts generate de novo proteins in TDP-43-related ALS/FTD'",
+      "has_attachments": false,
+      "evidence_kind": "dataset_review_wording"
+    },
+    {
+      "received_utc": "2026-11-03T16:35:13Z",
+      "subject": "Your data access request for 'Mis-spliced transcripts generate de novo proteins in TDP-43-related ALS/FTD' has been approved.",
+      "has_attachments": false,
+      "evidence_kind": "dataset_approval_wording"
+    }
+  ],
+  "fig4d": {
+    "known_thread_messages_seen": 1,
+    "sent_messages_seen": 1,
+    "incoming_messages_seen": 0,
+    "scoped_incoming_search_results": 0,
+    "source_data_files_received_in_checked_sources": 0
+  },
+  "open_scientific_priorities": [
+    37,
+    44
+  ],
+  "open_pull_requests_before_run": 0,
+  "all_recent_pr_branches_accounted_for_as_merged": true,
+  "communication_sent_this_run": false,
+  "access_effectively_confirmed": false,
+  "manifest_received_in_checked_sources": false,
+  "raw_mail_bodies_or_auth_links_exported_to_repository": false
+}
