@@ -1,0 +1,10 @@
+file,replicate,probe,metric,deposited,computed,difference,matches_1e_8
+number_foci_ratio.csv,1,proximal,equal_image_per_nucleus,2.352951786,2.1782496439969727,-0.17470214200302717,False
+number_foci_ratio.csv,1,distal,equal_image_per_nucleus,5.389317247,5.294080259339942,-0.09523698766005795,False
+number_foci_ratio.csv,2,proximal,equal_image_per_nucleus,3.249457701,3.2494577006507592,-3.492407809110629e-10,True
+number_foci_ratio.csv,2,distal,equal_image_per_nucleus,8.943165468,8.9431654676259,-3.7410071942446043e-10,True
+number_foci_ratio.csv,3,proximal,equal_image_per_nucleus,2.328862216,2.328862215810287,-1.8971286818827487e-10,True
+number_foci_ratio.csv,3,distal,equal_image_per_nucleus,7.385817516,7.385817515992435,-7.564786287205217e-12,True
+nuclear_cyto_ratio.csv,1,proximal,equal_image_nuclear_extranuclear,0.38966462,0.38966461954606546,-4.53934526841894e-10,True
+nuclear_cyto_ratio.csv,2,proximal,equal_image_nuclear_extranuclear,0.734701496,0.7347014960167714,1.677135354383467e-11,True
+nuclear_cyto_ratio.csv,3,proximal,equal_image_nuclear_extranuclear,0.395139043,0.39513904266789734,-3.3210264136573697e-10,True

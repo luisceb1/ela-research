@@ -1,0 +1,11 @@
+test_duplicate_image_or_zero_nuclei_rejected (test_elk1_fish.FishTests.test_duplicate_image_or_zero_nuclei_rejected) ... ok
+test_equal_image_and_pooled_estimands_differ (test_elk1_fish.FishTests.test_equal_image_and_pooled_estimands_differ) ... ok
+test_missing_arm_cannot_be_paired (test_elk1_fish.FishTests.test_missing_arm_cannot_be_paired) ... ok
+test_order_does_not_change_summary (test_elk1_fish.FishTests.test_order_does_not_change_summary) ... ok
+test_pivot_counts_nuclei_twice_but_fold_is_invariant (test_elk1_fish.FishTests.test_pivot_counts_nuclei_twice_but_fold_is_invariant) ... ok
+test_zero_extranuclear_is_undefined_not_imputed (test_elk1_fish.FishTests.test_zero_extranuclear_is_undefined_not_imputed) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.003s
+
+OK

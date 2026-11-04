@@ -1,0 +1,21 @@
+{
+  "tests_passed": 6,
+  "outputs_byte_identical_on_repeat": true,
+  "source_git_blobs_verified": 8,
+  "R_executed": false,
+  "scope": "Computational molecular replay, unresolved source-summary discrepancies, no biological novelty or functional rescue",
+  "sha256": {
+    "reports/elk1-fish-replay-20261104/REPORT.md": "35587ce1ff9ea305588938700f58aef6a14cf9e76a99c8e0e5fafe498dd08505",
+    "reports/elk1-fish-replay-20261104/deposited-comparison.csv": "e9722a3b386cca1ba9485c0f0005435b26a4a7e13778835c8e7ef61d2c1342bf",
+    "reports/elk1-fish-replay-20261104/fold-changes.csv": "dd96adf2b44ba5bffb1515e5002c3c952ae0932c30bd5d28df809b642e46b7fc",
+    "reports/elk1-fish-replay-20261104/replicate-summary.csv": "151f35e05b8f0cfe718775554c3b2c9af580227e5ec451868d7f4a4ae9a92372",
+    "reports/elk1-fish-replay-20261104/run.json": "98aba3095c8e9ab8849ed36e373d606251fdfee843fcdca4d83d46b59b1baa9d",
+    "reports/elk1-fish-replay-20261104/sensitivity.csv": "d388ddac6349a30e9abf1cf395ba51ca54b63430ca4ac022572cd28a56b3f549",
+    "reports/elk1-fish-replay-20261104/sources.json": "da576e616b9cdfd38c19331bcd64141c2a05a18d138fc2da85014894de7e0a34",
+    "reports/elk1-fish-replay-20261104/tests.txt": "2a3fb2ab285630338e4bd12954cc5d14e2dc9cf2e1f09c686055fb3b8731a2c7",
+    "scripts/reproduce_elk1_fish.py": "69c248ce52447090b2047e1f706c590689c6e052f53e43c6c46492e0c09d6a5e",
+    "tests/test_elk1_fish.py": "70bb92f4c546f492f22437721fbbf3edd48f1de47b1f66a72ec9953c37e243af",
+    "research/STATE.md": "2971e7f9c12bc7769b64a9de042874a380d05cb8037ae204e39ab9dc02528e12",
+    "research/BACKLOG.md": "96b80314491d60591288107918aa2e77f32eb967ca5ffd785f60cbc6345f9f6d"
+  }
+}

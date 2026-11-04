@@ -40,3 +40,7 @@ Los bloqueos antiguos #1/#2/#14/#20 siguen abiertos por sus entradas concretas p
 No repetir STMN2/PPAU 12/12, el piloto UNC13A cerrado, Humphrey procesado o búsquedas agotadas como trabajo nuevo. No relajar cobertura 20, promover bibliotecas técnicas a réplicas ni sumar uniones ajenas al objetivo.
 
 No nuevas descargas masivas, control completo/TDP, contactos, gastos, datos personales, laboratorio o publicación externa por continuidad automática. [AGENTS](../AGENTS.md) y [PROTOCOL](PROTOCOL.md) siguen aplicando.
+
+## User-authorized bounded extension — 04/11/2026
+
+ELK1 RNA-FISH image-count replay: [report](../reports/elk1-fish-replay-20261104/REPORT.md). Sixty image rows, three source replicate labels; seven of nine deposited ratios reproduced, two unresolved. Molecular/descriptive only; no functional rescue or independent experimental validation. This completed extension does not replace #37/#44 or reopen their searches. No further ELK1 program is scheduled.

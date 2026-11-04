@@ -1,0 +1,23 @@
+{
+  "R_executed": false,
+  "comparisons": 9,
+  "fold_changes_invariant_to_factor_two": true,
+  "functional_rescue_estimated": false,
+  "independent_donor_or_differentiation_map_verified": false,
+  "matches": 7,
+  "pvalues_estimated": false,
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "source_images": 60,
+  "source_nuclei_doubled_by_pivot": true,
+  "source_replicate_labels": [
+    "1",
+    "2",
+    "3"
+  ],
+  "source_sha256": {
+    "fish_counts_cleaned.tsv": "e68958d7400487a5a718a491c1c4b5d99a29a4e6dfb4941f6b5bff5108b65ea7",
+    "nuclear_cyto_ratio.csv": "927507899e023a3f515a209b2f29e62217171ddf4803c88d5750f752ec91dd8f",
+    "number_foci_ratio.csv": "7f52429817bbb91dfc41707f9c0cc3cac023db57089330a314a4c3a094ae5f73"
+  },
+  "undefined_localization_groups": 3
+}
