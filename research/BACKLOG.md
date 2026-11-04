@@ -19,6 +19,9 @@ Si no hay entrada nueva, registrar que ambas líneas siguen bloqueadas y detener
 - [x] Continuación dirigida autorizada por Luis: Supplementary Data3 confirma n38/35 de Fig.3s sin asignaciones a cultivos; GOE-Seek260 devuelveHTTP403, contenido no inspeccionado. [Evidencia y límites](../reports/asadollahi-fig3s-audit-20261104/CULTURE_MAP_REPORT.md). Búsqueda acotada completada, sin inferencia.
 - Condición de reconsideración: mapa técnico primario que vincule las entradas con cultivos independientes y aclare exclusiones. No repetir la consulta bloqueada o ampliar archivos/candidatos/modelos por defecto. Esta auditoría limitada no sustituye las prioridades #37/#44 ni reactiva automatización. PR#46 sigue pendiente y contiene la comprobación administrativa/búsqueda del04/11; reconciliar al integrar, sin declarar sus informes incorporados.
 
+
+Comprobación pública adicional autorizada por Luis: /studies/260.json devuelveHTTP403 con error de aplicación «You may not view study:260». La API anónima no proporciona el manifiesto; no se presume que crear una cuenta baste. [Recibo y alcance](../reports/asadollahi-fig3s-audit-20261104/PUBLIC_ACCESS_REPORT.md). Se deja [consulta técnica propuesta](../reports/asadollahi-fig3s-audit-20261104/SUPPORT_REQUEST_DRAFT.md) al soporte oficial verificado, **sin enviar y pendiente de autorización explícita**. No nuevas consultas equivalentes hasta un enlace/cambio de acceso o respuesta institucional.
+
 ## Mantenimiento técnico
 
 - [x] Separar estado/backlog actuales del historial íntegro.

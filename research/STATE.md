@@ -19,6 +19,9 @@ Sesión limitada aprobada expresamente por Luis, independiente de #37/#44. Archi
 
 Auditoría inicial completada. En continuación dirigida expresamente autorizada por Luis, Supplementary Data3 (MOESM8,18581bytes; SHA2567ba494959360e824eb333eeadb2e0fd1bb431a32859da92cabdd5a958cf1c2e7) confirma n38/35 para Charge(pC),Fig.3s, sin mapa observación→cultivo. El depósito GOE-Seek260 enlazado devuelveHTTP403 y su contenido no pudo inspeccionarse. [Informe de continuación](../reports/asadollahi-fig3s-audit-20261104/CULTURE_MAP_REPORT.md). Se cierra la búsqueda dirigida sin inferencia, otro candidato o contacto. Solo reconsiderar ante un mapa técnico inequívoco observación→cultivo. La declaración publicada de al menos tres cultivos no reconstruye ese mapa. #37/#44 mantienen prioridades y bloqueos, y la automatización sigue pausada. PR#46 conserva por separado el estado administrativo/búsqueda actualizado del04/11 y sigue pendiente de incorporación a main.
 
+
+Comprobación pública adicional autorizada por Luis: /studies/260.json devuelveHTTP403 con error de aplicación «You may not view study:260». La API anónima no proporciona el manifiesto; no se presume que crear una cuenta baste. [Recibo y alcance](../reports/asadollahi-fig3s-audit-20261104/PUBLIC_ACCESS_REPORT.md). Se deja [consulta técnica propuesta](../reports/asadollahi-fig3s-audit-20261104/SUPPORT_REQUEST_DRAFT.md) al soporte oficial verificado, **sin enviar y pendiente de autorización explícita**. No nuevas consultas equivalentes hasta un enlace/cambio de acceso o respuesta institucional.
+
 ## Resultados cerrados que no se repiten como trabajo nuevo
 
 - Piloto CTRL-4 / SRR33425816: técnicamente completado, cobertura UNC13A [1,0,0] frente a mínimo 20 en anclajes 15/8. Piloto cerrado; no ampliar al control completo ni iniciar TDP por defecto. Conservar datos, intentos, sellos y cargos. [Cierre](../reports/unc13a-control-annotation-20261103/CLOSURE.md).

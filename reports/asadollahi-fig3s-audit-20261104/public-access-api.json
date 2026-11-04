@@ -1,0 +1,22 @@
+{
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "receipt": {
+    "url": "https://goeseek.gwdguser.de/studies/260.json",
+    "method": "GET",
+    "accept": "application/json",
+    "authentication_used": false,
+    "retrieved_at": "2026-11-04T10:13:19.001773+01:00",
+    "max_bytes": 2097152,
+    "timeout_seconds": 20,
+    "status": 403,
+    "content_type": "application/vnd.api+json; charset=utf-8",
+    "bytes_read": 73,
+    "sha256_response": "da151a44635eee7099a605f935722038b1c9e9eb5739965ed62a4ada31930406",
+    "errors": [
+      {
+        "title": "Forbidden",
+        "details": "You may not view study:260"
+      }
+    ]
+  }
+}
