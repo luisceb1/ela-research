@@ -229,6 +229,16 @@ def retrieve(path: Path) -> dict:
     return receipt | {'bytes': len(raw), 'sha256': digest(raw)}
 
 
+def write_projection(path: Path, records: list[dict]) -> None:
+    # GitHub text writes preserve LF. Keep byte hashes stable across transports.
+    with path.open('w', newline='', encoding='utf-8') as handle:
+        writer = csv.DictWriter(handle, lineterminator='\n', fieldnames=[
+            'source_sheet', 'source_cell', 'published_group',
+            'initial_epsc_charge_pC', 'neuron_id', 'culture_id'])
+        writer.writeheader()
+        writer.writerows(records)
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--source', type=Path, required=True)
@@ -251,11 +261,7 @@ def main() -> int:
             raise ValueError('download_size_limit_exceeded')
         result, records = audit_bytes(args.source.read_bytes())
         (args.output_dir / 'audit.json').write_text(json.dumps(result, indent=2, ensure_ascii=False) + '\n')
-        with (args.output_dir / 'fig3s-projection.csv').open('w', newline='') as handle:
-            writer = csv.DictWriter(handle, fieldnames=['source_sheet', 'source_cell', 'published_group',
-                                                       'initial_epsc_charge_pC', 'neuron_id', 'culture_id'])
-            writer.writeheader()
-            writer.writerows(records)
+        write_projection(args.output_dir / 'fig3s-projection.csv', records)
         execution['result'] = result['decision']
         execution['status'] = 'completed'
     except Exception as exc:

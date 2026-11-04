@@ -44,11 +44,13 @@ La proyección fig3s-projection.csv contiene únicamente coordenada fuente, grup
 
 Python3.12.14, biblioteca estándar; sin instalaciones, Excel, MATLAB, R o fórmulas ejecutadas. El plan y su hash se guardaron antes de descargar. retrieval.json conserva el recibo de esa recuperación inicial; execution.json identifica la ejecución del lector final sobre esos mismos bytes y el SHA256 del script. Semilla no aplicable: no se genera aleatoriedad.
 
-Trece controles de software pasaron localmente, cero fallos/errores/omisiones. Cubren: preservación de cero/vacío, rechazo de unidad/grupo/hash incorrectos, fórmula con caché y números no finitos, grupo vacío, ausencia de mapa sin inferencia, estilo sin cultivos inventados, exclusión de otra hoja no interpretable, marcador de contenido fuera de alcance y metadatos inesperados. Una repetición numérica de una fixture se marca sin eliminarla. Son fixtures informáticas, **no experimentos ni réplicas biológicas**.
+Catorce controles de software pasaron localmente, cero fallos/errores/omisiones. Cubren: preservación de cero/vacío, rechazo de unidad/grupo/hash incorrectos, fórmula con caché y números no finitos, grupo vacío, ausencia de mapa sin inferencia, estilo sin cultivos inventados, exclusión de otra hoja no interpretable, marcador de contenido fuera de alcance y metadatos inesperados. Una repetición numérica de una fixture se marca sin eliminarla. Se comprueba que el CSV conserve bytes/hash al transportarse como texto. Son fixtures informáticas, **no experimentos ni réplicas biológicas**.
 
 QC independiente de la salida:73 filas y73 coordenadas únicas,38/35 según grupo, ambas claves de identidad vacías y ningún efecto estimado. Compilación correcta. tests.json/tests.log conservan el resultado local; la CI remota debe leerse por cabeza exacta y no se presume correcta por estos controles.
 
 No hubo error de red en esta descarga. La consulta web posterior de PMC devolvió una comprobación de navegador; no se trató ese HTML como artículo ni como datos. La leyenda se había recuperado por el servicio de búsqueda primaria y el enlace de archivo por el editor/MBExC. No se afirma haber leído Supplementary Data3, cuyo contenido no forma parte del archivo único autorizado.
+
+La primera verificación remota detectó un desajuste de blob únicamente en el CSV: finales CRLF locales se normalizaban aLF al enviarlo como texto. Se corrigió el escritor para producir LF explícito, se añadió el control de transporte y se regeneraron proyección, ejecución y manifiesto. Los73 textos numéricos y el hash del XLSX permanecen iguales. No se oculta ese fallo de integridad de artefacto como un resultado biológico.
 
 ## Reproducción
 

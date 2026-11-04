@@ -3,6 +3,7 @@ import hashlib
 import importlib.util
 import io
 from pathlib import Path
+import tempfile
 import unittest
 import zipfile
 
@@ -102,6 +103,15 @@ class SourceAuditTests(unittest.TestCase):
         extra = '<row r="6"><c r="U6"><v>3</v></c></row>'
         result, _ = run(fixture(extra=extra))
         self.assertEqual(result['decision'], 'REVIEW_UNEXPECTED_METADATA')
+
+    def test_projection_byte_hash_survives_text_transport(self):
+        _, rows = run(fixture())
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / 'projection.csv'
+            audit.write_projection(path, rows)
+            raw = path.read_bytes()
+            self.assertNotIn(b'\r', raw)
+            self.assertEqual(raw, path.read_text().encode('utf-8'))
 
 
 if __name__ == '__main__':

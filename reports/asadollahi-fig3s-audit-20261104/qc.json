@@ -10,5 +10,12 @@
   "lexical_source_values_preserved": true,
   "offline_replay_audit_and_projection_identical": true,
   "effect_estimated": false,
-  "scope": "technical QC, no biological effect comparison"
+  "scope": "technical QC, no biological effect comparison",
+  "csv_line_endings": "LF",
+  "initial_remote_blob_mismatch": {
+    "artifact": "fig3s-projection.csv",
+    "reason": "CRLF normalized to LF in text transport",
+    "measurement_values_changed": false,
+    "fix": "explicit LF writer plus transport regression test"
+  }
 }
