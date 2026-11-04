@@ -1,0 +1,68 @@
+{
+  "source_commit": "e0d54b6f60a094c79f05f57ab4c88e451127bcbb",
+  "plan_commit": "e9572cdf005a3213bb66426a1d8a30e3a10a1262",
+  "main_base": "f1ce8470905296390261432d78fd6a69991168c2",
+  "files": [
+    {
+      "path": "wet/README.md",
+      "bytes": 820,
+      "git_blob": "9d12a4d8b6b47421eb47600ab40c15efe6649c45",
+      "sha256": "a71797290f28b36ca42afe31da6d7a0350aa5eedbbbaf6301b1adb5e05a7d581",
+      "url": "https://github.com/frattalab/tdp43-apa/blob/e0d54b6f60a094c79f05f57ab4c88e451127bcbb/wet/README.md"
+    },
+    {
+      "path": "wet/fish_process_counts.R",
+      "bytes": 2106,
+      "git_blob": "1084de2044eb20c23ae4febd358707a501fafbb2",
+      "sha256": "28f87c04bacd74bcbe43feeb26d8afc5512bbb2c724bc4fb1b41cc29370ff12d",
+      "url": "https://github.com/frattalab/tdp43-apa/blob/e0d54b6f60a094c79f05f57ab4c88e451127bcbb/wet/fish_process_counts.R"
+    },
+    {
+      "path": "wet/fish_stats.R",
+      "bytes": 1521,
+      "git_blob": "704616eff577f1ce1367d1283bd07e050f74e12b",
+      "sha256": "8b7ef4e1f643594a55857f8c8791f0beea10e4bc14c0712e641dba724dd9c181",
+      "url": "https://github.com/frattalab/tdp43-apa/blob/e0d54b6f60a094c79f05f57ab4c88e451127bcbb/wet/fish_stats.R"
+    },
+    {
+      "path": "wet/data/fish_counts_cleaned.tsv",
+      "bytes": 1756,
+      "git_blob": "aa4514be7991f271ce1c10c63e0b666981ab4a91",
+      "sha256": "e68958d7400487a5a718a491c1c4b5d99a29a4e6dfb4941f6b5bff5108b65ea7",
+      "url": "https://github.com/frattalab/tdp43-apa/blob/e0d54b6f60a094c79f05f57ab4c88e451127bcbb/wet/data/fish_counts_cleaned.tsv"
+    },
+    {
+      "path": "wet/data/nuclear_cyto_ratio.csv",
+      "bytes": 71,
+      "git_blob": "927bddfa88ccba241ed9eb8c31bea1e5e5d9a145",
+      "sha256": "927507899e023a3f515a209b2f29e62217171ddf4803c88d5750f752ec91dd8f",
+      "url": "https://github.com/frattalab/tdp43-apa/blob/e0d54b6f60a094c79f05f57ab4c88e451127bcbb/wet/data/nuclear_cyto_ratio.csv"
+    },
+    {
+      "path": "wet/data/number_foci_ratio.csv",
+      "bytes": 108,
+      "git_blob": "8d614242e8645bd82cdfb3b2ab5342aa42002ab1",
+      "sha256": "7f52429817bbb91dfc41707f9c0cc3cac023db57089330a314a4c3a094ae5f73",
+      "url": "https://github.com/frattalab/tdp43-apa/blob/e0d54b6f60a094c79f05f57ab4c88e451127bcbb/wet/data/number_foci_ratio.csv"
+    },
+    {
+      "path": "wet/fish_plot.R",
+      "bytes": 25602,
+      "git_blob": "9686a7d409939d8464346271e2cd7bea58fcfce4",
+      "sha256": "612fb79845fc2c190fd0bc6717ce8ad25311abd89832dcc3322264f00873cc43",
+      "url": "https://github.com/frattalab/tdp43-apa/blob/e0d54b6f60a094c79f05f57ab4c88e451127bcbb/wet/fish_plot.R"
+    },
+    {
+      "path": "wet/renv.lock",
+      "bytes": 43885,
+      "git_blob": "2923f5174ffe254857f631d4217a8be5c3c6d745",
+      "sha256": "3a24ddc9c826eaacc1bd821b9ef1d08b95af8366788c31d9bb82ed61d0aa471c",
+      "url": "https://github.com/frattalab/tdp43-apa/blob/e0d54b6f60a094c79f05f57ab4c88e451127bcbb/wet/renv.lock"
+    }
+  ],
+  "originals_republished": false,
+  "article_doi": "10.1038/s41593-025-02050-w",
+  "preprint_doi": "10.1101/2024.01.22.576625",
+  "editorial_source_workbook_verified": false,
+  "final_archive_reconciliation": "final-article/archive-source.json"
+}

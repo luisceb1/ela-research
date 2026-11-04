@@ -1,6 +1,6 @@
 # Current research state — 2026-11-04
 
-This replaces earlier planning snapshots. Historical reports and commits remain evidence, not automatic instructions to rerun work. Integration review: PRs #46/#48 merged; #47 contains the reconciled A25 work; #49 remains separately reviewable until merged.
+This replaces earlier planning snapshots. Historical reports and commits remain evidence, not automatic instructions to rerun work. This consolidated state accompanies integration of PRs #46–#49. Review details and exact checked commits are preserved in [INTEGRATION_REVIEW](../reports/integration-20261104/REVIEW.md).
 
 ## Active scientific priorities
 
@@ -26,9 +26,10 @@ Broad research continuity stays paused. The separately requested one-time public
 | Work | Project finding | Limit |
 |---|---|---|
 | A25 Fig.3s | 73 deposited observations reproduce 2/2 published means within prospective rounding tolerances: WT24.209923pC; R202H15.009117pC | Missing observation→culture/exclusions map; no inferential analysis, new biological replication or ALS rescue |
+| ELK1 RNA-FISH | 60 image rows; 7/9 older summary ratios match; final-paper-linked archive confirms 240 intermediate rows and 84 numeric fields; extranuclear endpoint reconstructed | Two old ratios unresolved; no independent culture map or editorial point-identity certification; no functional rescue |
 | UNC13A Dox | 138 rows, 42 groups; Python and actual R reproduce six missing SEMs from renamed join keys; key-preserving join changes no means | No biological pairing; UNC13B five-row versus declared n3 discrepancy; editorial numeric identity unverified |
 
-[A25 report](../reports/fig3s-descriptive-20261104/REPORT.md), [UNC13A Dox report](../reports/fratta-dox-replay-20261104/REPORT.md). The experiments and models are not pooled or treated as directly comparable. PR#49 contains a separate completed ELK1 molecular replay, pending integration at this snapshot; do not rerun it as a new task.
+[A25 report](../reports/fig3s-descriptive-20261104/REPORT.md), [UNC13A Dox report](../reports/fratta-dox-replay-20261104/REPORT.md). The experiments and models are not pooled or treated as directly comparable. [ELK1 final comparison](../reports/elk1-fish-replay-20261104/FINAL_ARTICLE_COMPARISON.md). All three bounded replays are closed computational results; do not rerun them as new tasks.
 
 ## Earlier closed results and deferred work
 

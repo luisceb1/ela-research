@@ -43,4 +43,4 @@ No nuevas descargas masivas, control completo/TDP, contactos, gastos, datos pers
 
 ## Completed user-authorized extensions
 
-A25 Fig.3s descriptive replay and UNC13A Dox replay are complete; see STATE.md. Missing culture identities and molecular metadata do not become new searches by default. ELK1 PR#49 is separately prepared; integrate its completed result without opening another intervention program. No new equivalent audit is scheduled. A new source file and prospective design review are needed before inference. The scheduled one-time Fratta publication check does not reactivate broad research continuity.
+A25 Fig.3s descriptive replay and UNC13A Dox replay are complete; see STATE.md. Missing culture identities and molecular metadata do not become new searches by default. ELK1 final-paper archive reconciliation is complete and integrated with its molecular replay; see STATE.md. No further ELK1 intervention program is scheduled. No new equivalent audit is scheduled. A new source file and prospective design review are needed before inference. The scheduled one-time Fratta publication check does not reactivate broad research continuity.

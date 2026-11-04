@@ -1,0 +1,9 @@
+probe,omitted_replicate,n_source_replicates,arithmetic_mean_fold
+proximal,,3,2.58552318681934
+proximal,1,2,2.789159958230523
+proximal,2,2,2.25355592990363
+proximal,3,2,2.713853672323866
+distal,,3,7.207687747652759
+distal,1,2,8.164491491809168
+distal,2,2,6.339948887666188
+distal,3,2,7.118622863482921
