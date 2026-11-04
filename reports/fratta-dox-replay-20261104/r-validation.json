@@ -1,0 +1,33 @@
+{
+  "R_version": "4.4.3",
+  "dplyr_version": "1.1.4",
+  "source_rows": 138,
+  "groups": 42,
+  "plot_groups": 36,
+  "original_missing_sem": 6,
+  "preserved_missing_sem": 0,
+  "means_unchanged": true,
+  "Python_R_match_tolerance": 1e-12,
+  "Python_R_match": true,
+  "functional_inference": false,
+  "run_url": "https://github.com/luisceb1/ela-research/actions/runs/41874295175",
+  "job_id": 126729394580,
+  "branch_head": "3721432cc2817bb9bef8971e0d9467947b9af62f",
+  "tested_merge_sha": "b78417215a6d7e1b2b4bc288d9dccb5f407a89a7",
+  "conclusion": "success",
+  "cran_snapshot": "https://packagemanager.posit.co/cran/__linux__/noble/2025-06-01",
+  "whole_Rmd_executed": false,
+  "editorial_numeric_comparison_completed": false,
+  "artifact": {
+    "id": 13346711090,
+    "bytes": 3013,
+    "sha256": "a0f9e3091b89dbe1e92d711da13a8948b7f57396cf92578f9cafb92ef489b244",
+    "retention_days": 7
+  },
+  "log_excerpt": [
+    "2026-11-04T17:07:35.1249566Z Joining with `by = join_by(Treatment, Gene, Line_Group, Color_Group)`",
+    "2026-11-04T17:07:35.1778612Z FRATTA_R_RESULT_BEGIN",
+    "2026-11-04T17:07:35.1781176Z {\"R_version\":\"4.4.3\",\"dplyr_version\":\"1.1.4\",\"source_rows\":138,\"groups\":42,\"plot_groups\":36,\"original_missing_sem\":6,\"preserved_missing_sem\":0,\"means_unchanged\":true,\"Python_R_match_tolerance\":1e-12,\"Python_R_match\":true,\"functional_inference\":false}",
+    "2026-11-04T17:07:35.1783384Z FRATTA_R_RESULT_END"
+  ]
+}

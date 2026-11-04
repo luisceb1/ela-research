@@ -1,0 +1,53 @@
+{
+  "date": "2026-11-04",
+  "repository": "frattalab/unc13a_cryptic_splicing",
+  "commit": "e05e8723e3d18e64c6c559db18de423282511c91",
+  "plan_commit": "9d61c4da691ab5c4aac34a036a4b8608f190f744",
+  "files": [
+    {
+      "path": "data/Protein_RNA_Corr_3.csv",
+      "bytes": 4738,
+      "git_blob": "490ccce919f32f0b74ffd4a756fa721610877f48",
+      "sha256": "c7de1f2d44f9a5ac243e0ef380f50c455254c1cbefc6a217dc091505918526e5",
+      "url": "https://github.com/frattalab/unc13a_cryptic_splicing/blob/e05e8723e3d18e64c6c559db18de423282511c91/data/Protein_RNA_Corr_3.csv"
+    },
+    {
+      "path": "paper_figures.Rmd",
+      "bytes": 148855,
+      "git_blob": "1534a7312bcee102fae9a60bb450ddd37da5c96c",
+      "sha256": "3c46c164af6572bef28507b707f39d996d687abb06da00bf5468f89d0d491502",
+      "locator": "heading Dox curves and protein/RNA levels; line 3779 onwards",
+      "url": "https://github.com/frattalab/unc13a_cryptic_splicing/blob/e05e8723e3d18e64c6c559db18de423282511c91/paper_figures.Rmd"
+    }
+  ],
+  "clinical_or_genotype_files_read": false,
+  "raw_files_republished": false,
+  "r_executed": true,
+  "whole_rmd_executed": false,
+  "r_execution_receipt": "r-validation.json",
+  "primary_publications": [
+    {
+      "doi": "10.1038/s41586-022-04436-3",
+      "published": "2022-02-23",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8891020/",
+      "locator": "Figure 2c; Extended Data 3f; Methods: Cell culture, RT-qPCR, Western blot; Supplementary Figure 1"
+    },
+    {
+      "doi": "10.1038/s41586-024-07577-9",
+      "published": "2024-06-18",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11236699/"
+    }
+  ],
+  "editorial_source_data": {
+    "file": "41586_2022_4436_MOESM16_ESM.xlsx",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/8891020/bin/41586_2022_4436_MOESM16_ESM.xlsx",
+    "valid_bytes_retrieved": false,
+    "sha256": null,
+    "failures": [
+      "PMC HTML challenge",
+      "Springer CDN HTTP 503 (encoded and unencoded DOI paths)",
+      "Europe PMC HTTP 403"
+    ],
+    "request_cap_bytes": 3145728
+  }
+}
