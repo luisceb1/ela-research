@@ -1,0 +1,41 @@
+{
+  "base": "95bf05ecc1f991ec9843d48519d0764b29dc5dfb",
+  "scope": "Reduced administrative continuity evidence only; no raw messages, credentials, attachments or clinical metadata; self excluded",
+  "files": {
+    "scripts/summarize_research_continuity.py": {
+      "bytes": 2983,
+      "sha256": "fc0a19f31d3c69b4d63d73d78701d4cf2f8f2d7d70a2ac720ddd3a834f315c0c",
+      "git_blob": "c3d4aabe8f88538fef4a455dbe349de4c304a382"
+    },
+    "research/STATE.md": {
+      "bytes": 6813,
+      "sha256": "ec6bf7dff1caf363996d94a14f20673201ab958672266f03e978d27f142e53bf",
+      "git_blob": "596564a3f112444b87cc83c34667a2fb51c9b444"
+    },
+    "research/BACKLOG.md": {
+      "bytes": 5824,
+      "sha256": "519acb23d4cd1be2ee879f741615fd57c7952a6e4ea41801a94406ce69bb1f31",
+      "git_blob": "9f402bd5dda5fcc9396a50bbe665d312356099a2"
+    },
+    "reports/continuity-20261104/PLAN.md": {
+      "bytes": 1604,
+      "sha256": "594147c015dc53f7bbd50cf500c6a0d3687a5bfb60dfa87610027944b2c044a7",
+      "git_blob": "91bdf28266bf20e65e49206ed2f11569703dbe44"
+    },
+    "reports/continuity-20261104/REPORT.md": {
+      "bytes": 4434,
+      "sha256": "a8b0b2a9ecb07a51d5c88c59180e6554182e73c820cbc651bb2d99fec49446a0",
+      "git_blob": "e640bd88e72d0332533aead1234d0fe294c82463"
+    },
+    "reports/continuity-20261104/observations.json": {
+      "bytes": 1765,
+      "sha256": "d0c014e001622110201bfbf85128f87431ae2d4e10284899c7da830c03a7a5e5",
+      "git_blob": "b40cb29b803271514c1e93fe56def6f05110bf65"
+    },
+    "reports/continuity-20261104/result.json": {
+      "bytes": 1167,
+      "sha256": "2fb5f6109bd6059314fa51fd06dbc77e1d61cd403287e22a2e2feb31c2742819",
+      "git_blob": "424d3b1db7d180933d004051b5a7a38166da5730"
+    }
+  }
+}

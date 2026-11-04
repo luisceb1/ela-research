@@ -1,0 +1,3 @@
+[
+  {"phase":"local_base64_materialization","error":"SyntaxError: unterminated string literal from base64 line wrapping","source_written":false,"resolution":"strip base64 whitespace; verify Git blob and SHA256 before parsing","biological_interpretation":false}
+]

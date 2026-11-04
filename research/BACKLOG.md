@@ -1,4 +1,4 @@
-# Backlog vigente — 04/11/2026
+# Current backlog — 2026-11-04
 
 Este archivo contiene tareas actuales y condiciones de reapertura. [STATE](STATE.md) resume resultados; el [backlog anterior íntegro](history/README.md) conserva la cronología.
 
@@ -9,25 +9,9 @@ Este archivo contiene tareas actuales y condiciones de reapertura. [STATE](STATE
 | 1 | #37: inspeccionar un manifiesto concreto Seddighi–AD Workbench | Fuente nueva con cuentas de uniones o BAM/índices y mapa biblioteca→condición→unidad→lote | Tabla trazable de aceptación/rechazo; solo si cumple cobertura/diseño, redactar prospectivamente un único contraste |
 | 1 | #44: K26 Fig.4d: inspeccionar datos originales de eEPSC | Archivo nuevo con valores/unidades, grupos, claves de cultivo/diferenciación y procedencia | Adaptador trazable y revisión del diseño real; habilitar contrato solo tras comprobar independencia, exclusiones y agrupación |
 
-La petición Fig.4d ya fue enviada autorizadamente: [recibo](../reports/functional-rescue-20261103/COMMUNICATION_LOG.md). En la comprobación acotada del 03/11/2026 el hilo contiene solo la petición enviada; no se autoriza seguimiento automático. La nota inicial de AD Workbench era incompleta: [PR #46, comprobación del04/11](https://github.com/luisceb1/ela-research/blob/9a69cb8caec3281a35dd29cd8add7a36d07ec968/reports/continuity-20261104/REPORT.md) documenta aprobación del dataset seguida de revisión y workspace pendiente, sin acreditar acceso efectivo o manifiesto; informe aún separado de main. #37 conserva el [ciclo de búsqueda cerrado](../reports/source-gate-issue37-20261103/REPORT.md); no añadir un cuarto candidato.
+The K26 request and separate A25 support message have already been sent with authorization; no new follow-up is authorized. The administrative audit records mixed approval/review notices and a pending workspace, not effective data access. [Current state](STATE.md), [administrative evidence](../reports/continuity-20261104/REPORT.md), [K26 search](../reports/fig4d-source-search-20261104/REPORT.md).
 
 Si no hay entrada nueva, registrar que ambas líneas siguen bloqueadas y detener ese ciclo. No crear otra auditoría equivalente, sustituir datos por simulación o cambiar de endpoint para evitar el bloqueo.
-
-## Auditoría puntual autorizada y completada —04/11/2026
-
-- [x] Asadollahi2025 Fig.3s: auditar el único archivo fuente experimental aprobado por Luis. Recuperadas38/35 entradas en pC, controles numéricos y de procedencia ejecutados. Falta mapa neurona→cultivo/exclusiones: disponibilidad parcial, sin reanálisis inferencial. [Decisión y reproducción](../reports/asadollahi-fig3s-audit-20261104/REPORT.md).
-- [x] Continuación dirigida autorizada por Luis: Supplementary Data3 confirma n38/35 de Fig.3s sin asignaciones a cultivos; GOE-Seek260 devuelveHTTP403, contenido no inspeccionado. [Evidencia y límites](../reports/asadollahi-fig3s-audit-20261104/CULTURE_MAP_REPORT.md). Búsqueda acotada completada, sin inferencia.
-- Condición de reconsideración: mapa técnico primario que vincule las entradas con cultivos independientes y aclare exclusiones. No repetir la consulta bloqueada o ampliar archivos/candidatos/modelos por defecto. Esta auditoría limitada no sustituye las prioridades #37/#44 ni reactiva automatización. PR#46 sigue pendiente y contiene la comprobación administrativa/búsqueda del04/11; reconciliar al integrar, sin declarar sus informes incorporados.
-
-
-Comprobación pública adicional autorizada por Luis: /studies/260.json devuelveHTTP403 con error de aplicación «You may not view study:260». La API anónima no proporciona el manifiesto; no se presume que crear una cuenta baste. [Recibo y alcance](../reports/asadollahi-fig3s-audit-20261104/PUBLIC_ACCESS_REPORT.md). Luis autorizó expresamente el envío de la versión final presentada en el chat: Gmail confirma mensaje enviado el04/11/2026 a las10:20:43 Europe/Madrid. [Texto final y recibo](../reports/asadollahi-fig3s-audit-20261104/COMMUNICATION_LOG.md). Sin adjuntos/CC/BCC; no se comprobaron respuestas ni se habilitó acceso o inferencia. No hay seguimiento automático autorizado. No nuevas consultas equivalentes hasta un enlace/cambio de acceso o respuesta institucional.
-
-## Reproducción descriptiva autorizada y completada — 04/11/2026
-
-- [x] Reproducir A25 Fig.3s con los73 valores experimentales ya auditados: medias WT24.209923pC y R202H15.009117pC,2/2 concordantes con24.2/15.01 dentro de tolerancias prospectivas0.05/0.005pC; sin efecto entre grupos, SEM/IC o pruebas inferenciales. [Informe](../reports/fig3s-descriptive-20261104/REPORT.md).
-- [x] Reconstruir los73 puntos, verificar conteos38/35, cotejar por fracciones racionales y repetir salidas numéricas byte a byte;24 controles de software correctos, sin omisiones. Mismo experimento publicado, no nueva replicación.
-- [x] Preparar [revisión de integración #46/#47](../reports/fig3s-descriptive-20261104/INTEGRATION_REVIEW.md), manteniendo ambas PR abiertas.
-- Entrada discriminante pendiente: mapa técnico inequívoco observación→cultivo y exclusiones. Mantener NO-GO inferencial si falta/ambigüedad. No repetir consultas bloqueadas, añadir otro endpoint/modelo o enviar seguimientos por defecto. Prioridades #37/#44 y automatización pausada se conservan.
 
 ## Mantenimiento técnico
 
@@ -57,3 +41,6 @@ No repetir STMN2/PPAU 12/12, el piloto UNC13A cerrado, Humphrey procesado o bús
 
 No nuevas descargas masivas, control completo/TDP, contactos, gastos, datos personales, laboratorio o publicación externa por continuidad automática. [AGENTS](../AGENTS.md) y [PROTOCOL](PROTOCOL.md) siguen aplicando.
 
+## Completed user-authorized extensions
+
+A25 Fig.3s descriptive replay and UNC13A Dox replay are complete; see STATE.md. Missing culture identities and molecular metadata do not become new searches by default. ELK1 PR#49 is separately prepared; integrate its completed result without opening another intervention program. No new equivalent audit is scheduled. A new source file and prospective design review are needed before inference. The scheduled one-time Fratta publication check does not reactivate broad research continuity.

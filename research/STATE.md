@@ -1,57 +1,48 @@
-# Estado vigente — 04/11/2026
+# Current research state — 2026-11-04
 
-Base remota comprobada: main `95bf05ecc1f991ec9843d48519d0764b29dc5dfb`, con mantenimiento hasta PR #45 fusionado. PR #46 y #47 siguen abiertas y separadas de main; esta síntesis pertenece a #47. El [historial íntegro](history/README.md) conserva las decisiones anteriores; sus próximos pasos no son tareas actuales.
+This replaces earlier planning snapshots. Historical reports and commits remain evidence, not automatic instructions to rerun work. Integration review: PRs #46/#48 merged; #47 contains the reconciled A25 work; #49 remains separately reviewable until merged.
 
-## Líneas actuales
+## Active scientific priorities
 
-| Línea | Estado comprobado | Única condición de continuación |
+| Priority | Status | Only input enabling analysis |
 |---|---|---|
-| Fuente independiente UNC13A, issue #37 | Ciclo Seddighi/Irwin/Baughn cerrado sin fuente aceptada | Archivo/manifiesto nuevo concreto Seddighi–AD Workbench con cuentas de uniones por biblioteca o BAM/índices, condiciones, unidades independientes y lotes |
-| Rescate funcional UNC13A, K26 Fig.4d, issue #44 | Auditoría y plan FR-K26-4d v1 preparados; reanálisis numérico bloqueado | Tabla original de eEPSC con valores/unidades y mapa célula→cultivo→diferenciación, procedencia y exclusiones verificables |
+| #37: independent UNC13A source | No accepted new technical source | Concrete Seddighi/AD Workbench file or manifest with junction counts or indexed alignments, condition→independent unit→batch map and access terms |
+| #44: K26 Fig.4d functional reproduction | FR-K26-4d v1 ready; contract disabled | Original eEPSC values/units, groups, cell→culture→differentiation map, exclusions and chronology |
 
-Para #37, conservar cobertura objetivo mínima 20 y al menos tres unidades biológicas independientes por condición antes de un contraste inferencial. No abrir un cuarto candidato ni repetir búsquedas cerradas. [Decisión y fuentes](../reports/source-gate-issue37-20261103/REPORT.md), [requisitos de acceso](../reports/source-gate-issue37-20261103/ACCESS_REQUIREMENTS.md).
+Keep target junction coverage ≥20 and at least three independent biological units per condition before an inferential contrast for #37. Do not reopen rejected candidates or the closed pilot by default. [Source gate](../reports/source-gate-issue37-20261103/REPORT.md).
 
-Fig.4d informa 34/30/25 células de tres experimentos; las células no equivalen a réplicas biológicas. El contrato sigue deshabilitado y no estima efectos. Petición enviada con autorización expresa de Luis el 03/11/2026; envío confirmado, sin datos recibidos documentados en el repositorio. [Informe](../reports/functional-rescue-20261103/REPORT.md), [plan](../reports/functional-rescue-20261103/REPRODUCTION_PLAN.md), [comunicación](../reports/functional-rescue-20261103/COMMUNICATION_LOG.md). En la comprobación acotada del hilo del 03/11/2026 solo figura el mensaje enviado. No hay seguimiento automático autorizado.
+K26 Fig.4d reports 34/30/25 cells across three experiments; cells do not establish biological replication. The selected ASO intervention is concurrent with TDP-43 depletion, not treatment after demonstrating a prior functional deficit. No effect is estimated. [Plan](../reports/functional-rescue-20261103/REPRODUCTION_PLAN.md).
 
-## Auditoría adicional autorizada — Asadollahi2025 Fig.3s,04/11/2026
+## Access and communications: dated evidence only
 
-Sesión limitada aprobada expresamente por Luis, independiente de #37/#44. Archivo fuente editorial1185531bytes, SHA25642f9a2266bf8e7dc157350fe588f1d87deb8d0e4c5067bc2c780b9fc7851a49f. Hoja Figure3_R202H, carga eEPSC en pC:38 entradas WT y35 R202H. QC estructural correcto, sin claves de neurona/cultivo ni exclusiones verificadas. Disponibilidad parcial, NO-GO para inferencia jerárquica; sin efecto estimado ni validación funcional propia. [Informe](../reports/asadollahi-fig3s-audit-20261104/REPORT.md).
+The 04 November administrative audit records AD Workbench dataset-approval wording followed by review wording, and a pending workspace. Neither establishes effective access or a technical manifest. [Audit](../reports/continuity-20261104/REPORT.md). The expanded public K26 search found no attributable source table in the checked routes; this is not universal proof of absence. [Search](../reports/fig4d-source-search-20261104/REPORT.md).
 
-Auditoría inicial completada. En continuación dirigida expresamente autorizada por Luis, Supplementary Data3 (MOESM8,18581bytes; SHA2567ba494959360e824eb333eeadb2e0fd1bb431a32859da92cabdd5a958cf1c2e7) confirma n38/35 para Charge(pC),Fig.3s, sin mapa observación→cultivo. El depósito GOE-Seek260 enlazado devuelveHTTP403 y su contenido no pudo inspeccionarse. [Informe de continuación](../reports/asadollahi-fig3s-audit-20261104/CULTURE_MAP_REPORT.md). Se cierra la búsqueda dirigida sin inferencia, otro candidato o contacto. Solo reconsiderar ante un mapa técnico inequívoco observación→cultivo. La declaración publicada de al menos tres cultivos no reconstruye ese mapa. #37/#44 mantienen prioridades y bloqueos, y la automatización sigue pausada. PR#46 conserva por separado el estado administrativo/búsqueda actualizado del04/11 y sigue pendiente de incorporación a main.
+K26 data request was sent with authorization on 03 November. Luis later supplied Fratta's reply anticipating availability the following week; that is not data delivery. No fresh mailbox inspection is claimed by this integration. A separate authorized A25 support message was sent on 04 November; culture identifiers remain unverified in the inspected files. [K26 communication](../reports/functional-rescue-20261103/COMMUNICATION_LOG.md), [A25 communication](../reports/asadollahi-fig3s-audit-20261104/COMMUNICATION_LOG.md). No automatic contact follow-up is authorized.
 
+Broad research continuity stays paused. The separately requested one-time publication/data check for 09 November is not blanket authority for recurring searches, access requests or analysis.
 
-Comprobación pública adicional autorizada por Luis: /studies/260.json devuelveHTTP403 con error de aplicación «You may not view study:260». La API anónima no proporciona el manifiesto; no se presume que crear una cuenta baste. [Recibo y alcance](../reports/asadollahi-fig3s-audit-20261104/PUBLIC_ACCESS_REPORT.md). Luis autorizó expresamente el envío de la versión final presentada en el chat: Gmail confirma mensaje enviado el04/11/2026 a las10:20:43 Europe/Madrid. [Texto final y recibo](../reports/asadollahi-fig3s-audit-20261104/COMMUNICATION_LOG.md). Sin adjuntos/CC/BCC; no se comprobaron respuestas ni se habilitó acceso o inferencia. No hay seguimiento automático autorizado. No nuevas consultas equivalentes hasta un enlace/cambio de acceso o respuesta institucional.
+## Completed bounded results
 
-## Reproducción descriptiva autorizada — A25 Fig.3s, 04/11/2026
+| Work | Project finding | Limit |
+|---|---|---|
+| A25 Fig.3s | 73 deposited observations reproduce 2/2 published means within prospective rounding tolerances: WT24.209923pC; R202H15.009117pC | Missing observation→culture/exclusions map; no inferential analysis, new biological replication or ALS rescue |
+| UNC13A Dox | 138 rows, 42 groups; Python and actual R reproduce six missing SEMs from renamed join keys; key-preserving join changes no means | No biological pairing; UNC13B five-row versus declared n3 discrepancy; editorial numeric identity unverified |
 
-Completada con Python3.12.14: los73 valores depositados reproducen2/2 medias dentro del redondeo prospectivo: WT n38,24.209923pC frente a24.2 (tolerancia0.05); R202H n35,15.009117pC frente a15.01 (tolerancia0.005). Figura de los73 puntos, cotejo racional independiente y repetición numérica byte a byte correctos;24 controles de software sin fallos/errores/omisiones, no24 experimentos. [Informe, fuentes y límites](../reports/fig3s-descriptive-20261104/REPORT.md), [SVG](../reports/fig3s-descriptive-20261104/fig3s-descriptive.svg).
+[A25 report](../reports/fig3s-descriptive-20261104/REPORT.md), [UNC13A Dox report](../reports/fratta-dox-replay-20261104/REPORT.md). The experiments and models are not pooled or treated as directly comparable. PR#49 contains a separate completed ELK1 molecular replay, pending integration at this snapshot; do not rerun it as a new task.
 
-Reproducción aritmética del mismo experimento publicado, sin replicación biológica externa, efecto entre grupos o validación funcional propia. Mapa observación→cultivo/exclusiones pendiente: NO-GO inferencial. No sustituye K26 Fig.4d. Sesión completada; siguiente entrada discriminante: mapa técnico primario verificable. Sin nuevas consultas equivalentes o comunicaciones por defecto. [Revisión concreta de integración #46/#47](../reports/fig3s-descriptive-20261104/INTEGRATION_REVIEW.md); no se ha fusionado ninguna.
+## Earlier closed results and deferred work
 
-## Resultados cerrados que no se repiten como trabajo nuevo
+- UNC13A CTRL-4 pilot: completed, insufficient target coverage [1,0,0] against20; no control expansion/TDP run by default. [Closure](../reports/unc13a-control-annotation-20261103/CLOSURE.md).
+- Regional annotation inventory:31/33 junctions; RefSeq clarifies a previously unannotated singleton, without new coverage or biological validation. [Comparison](../reports/source-gate-issue37-20261103/refseq-comparison/comparison.json).
+- STMN2/PAPA: descriptive TPM→PPAU reproduced for12/12 libraries, not direct junction PSI or function.
+- GEO/ENSG mapping and historical parser corrected; 1,901 support keys are not discoveries.
+- GSE126542/GSE121569 aggregate/QC complete; audited DEXSeq bins do not directly measure the target cryptic regions; refit blocked.
+- GSE122069 two controls complete; library→culture/batch/pairing map missing. Do not process remaining runs by automatic continuity.
 
-- Piloto CTRL-4 / SRR33425816: técnicamente completado, cobertura UNC13A [1,0,0] frente a mínimo 20 en anclajes 15/8. Piloto cerrado; no ampliar al control completo ni iniciar TDP por defecto. Conservar datos, intentos, sellos y cargos. [Cierre](../reports/unc13a-control-annotation-20261103/CLOSURE.md).
-- Inventario regional: 31/33 uniones. RefSeq coincide con 30/31 y 32/33; una unión unitaria antes no anotada en la caché coincide con NM_001387022.1/XM_017026502.2. Aclaración de referencia, sin cobertura nueva o validación biológica. [Comparación](../reports/source-gate-issue37-20261103/refseq-comparison/comparison.json).
-- STMN2/PAPA: reproducción descriptiva de TPM a PPAU completada en 12/12 bibliotecas; no medición directa de uniones, PSI o función.
-- GEO/mapeo ENSG y parser histórico corregidos. Catálogo de 1.901 claves con soporte asignado: 545 anotadas, 353 solo autores, 182 pendientes, 821 sin coincidencia en recursos limitados. No equivalen a descubrimientos.
-- GSE126542/GSE121569: reproducción agregada y QC ejecutados. Los bins DEXSeq auditados no miden directamente las regiones CE contrastadas. Refit bloqueado por diseño/dependencias incompletos.
-- GSE122069: dos controles procesados y QC seleccionado completados; mapa biblioteca→cultivo/lote/pareamiento pendiente. No procesar los cuatro runs restantes por continuidad automática.
+GSE310723 has one library per condition; GSE315972 heterogeneous tissue is not i3Neuron replication. Do not halve uniqueCounts by assumption. SH-SY5Y alias/strand issues remain source-dependent. AGRN, CAMK2B, synthetic MEA and UNC13A post-deficit v0.4 stay deferred under [BACKLOG](BACKLOG.md). No neuronal rescue or clinical benefit has been demonstrated by our project.
 
-El [registro de evidencia](MASTER_EVIDENCE.md) y el [historial](history/README.md) enlazan informes, hashes y resultados negativos.
+## Operation
 
-## Límites y líneas diferidas
+Preserve original source hashes, historical executors, reports and failures. CI must be read by exact commit and tested merge context; passing software controls does not reproduce every real-data analysis or establish biological validity. See [PROTOCOL](PROTOCOL.md), [MASTER_EVIDENCE](MASTER_EVIDENCE.md), [SCRIPT_LIFECYCLE](SCRIPT_LIFECYCLE.md) and [history](history/README.md).
 
-GSE310723 tiene una biblioteca por condición: no simular réplicas. GSE315972 es tejido heterogéneo y no se combina con i3N como replicación. Paridad/escala de uniqueCounts y soporte molecular siguen sin explicación completa; no dividir cuentas por dos por suposición.
-
-SH-SY5Y conserva cuatro alias UNC13A y dos conflictos de hebra STMN2 pendientes; solo reabrir con fichero fuente nuevo. AGRN, CAMK2B, simulador MEA y protocolo posdéficit UNC13A v0.4 permanecen aparcados/conceptuales; #15/#16/#18/#21 se cierran como no planificadas actualmente y conservan condiciones de reconsideración en BACKLOG. No hay rescate funcional propio ni beneficio clínico demostrado.
-
-Seguimiento administrativo #37: la nota inicial del03/11 solo reflejaba recepción/revisión y era incompleta. [La comprobación del04/11 en PR #46](https://github.com/luisceb1/ela-research/blob/9a69cb8caec3281a35dd29cd8add7a36d07ec968/reports/continuity-20261104/REPORT.md) documenta aprobación del dataset seguida de revisión y workspace pendiente; no acredita acceso efectivo ni manifiesto. Es una referencia a la rama pendiente, no un informe incorporado a main. Es estado de acceso, no evidencia científica. #37 y #44 son las dos prioridades; los bloqueos históricos #1/#2/#14/#20 no se reactivan por continuidad automática.
-
-## Operación y mantenimiento
-
-Consultar [BACKLOG](BACKLOG.md), [protocolo](PROTOCOL.md) e [inventario de scripts](SCRIPT_LIFECYCLE.md). Conservar los ejecutores históricos: sus identidades y hashes forman parte de los sellos. No moverlos, reescribirlos o ejecutarlos como próximo piloto por defecto.
-
-La CI debe leerse por commit y dependencias. Una matriz completa Python 3.11/3.12 instala PySAM/PyArrow fijados, compila scripts/tests y exige cero omisiones. Los checks históricos dependen del resultado de esa matriz sin repetir pruebas. Una CI correcta no reproduce automáticamente todos los análisis de datos reales.
-
-Sin comunicaciones adicionales, costes, publicación externa, datos personales, laboratorio o indicaciones clínicas sin autorización expresa.
-
+No new contacts, costs, personal data, laboratory work, clinical instructions or external publication without specific authorization. No new equivalent molecular replay is scheduled.

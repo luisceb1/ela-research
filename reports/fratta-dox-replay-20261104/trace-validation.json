@@ -1,0 +1,20 @@
+{
+  "date": "2026-11-04",
+  "R_result": "success",
+  "numeric_Python_outputs_changed": false,
+  "whole_Rmd_executed": false,
+  "editorial_workbook_verified": false,
+  "sha256": {
+    "reports/fratta-dox-replay-20261104/REPORT.md": "15a4fa10cf0120127e18fb86fc8081e6e148693ca96f6b92be707f7e5ff9df5c",
+    "reports/fratta-dox-replay-20261104/EXPERIMENT_TRACE.md": "114766e79a8a4ccfdc290ad05da6d2080f54ac62396153b1445fd71672beb92b",
+    "reports/fratta-dox-replay-20261104/sources.json": "391ad6b5045f74376bed061a220a44deafda75b1c059d73ee869793b3a8653d2",
+    "reports/fratta-dox-replay-20261104/validation.json": "992013476b75b2db7c0f7c3c762badf4708b7bb19a04baaa09eef81c791046d3",
+    "reports/fratta-dox-replay-20261104/r-validation.json": "4843af90e7e44fedf911b7dabbf74af41089ebc533e8a9a294c54b3c67bc1677",
+    "scripts/check_fratta_dox_join.R": "29146c56fa20496f9a63ae36d8b5266bc269cef1dee9cbe3156d18603e318100",
+    "reports/fratta-dox-replay-20261104/r-output/key-preserving-join-R.csv": "d54bc1a2d22e9376ad37bcd6bc57a6416f81cf843a9463714b10657a2b7371bf",
+    "reports/fratta-dox-replay-20261104/r-output/means-R.csv": "199b60e6bc0d878a10a6d7c1583728c29c4f4e3e51f4032b7acef779e321858b",
+    "reports/fratta-dox-replay-20261104/r-output/result.json": "10e983ae60789e1854b9524f51784a34d540599159234ae61653ca66acdb2224",
+    "reports/fratta-dox-replay-20261104/r-output/sessionInfo.txt": "ec20fe72144c909147e77fd3c6ba09dcedc6f9a3ac93e9749672d31a7995e3d4",
+    "reports/fratta-dox-replay-20261104/r-output/source-order-join-R.csv": "79f4d3f67088323b5f473fcd0fa7c80bad62f8df507b322b1102958499cba12c"
+  }
+}

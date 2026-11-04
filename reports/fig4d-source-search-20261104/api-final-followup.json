@@ -1,0 +1,506 @@
+[
+  {
+    "id": "zenodo-page2",
+    "url": "https://zenodo.org/api/records?page=2&q=UNC13A&size=10&sort=bestmatch",
+    "status": 200,
+    "bytes": 78859,
+    "sha256_response": "157c7b3ed9c5702422b8e1e9c1c36cb9c00631029c873b90c0e90a04848429fe",
+    "total": 15,
+    "next": null,
+    "items": [
+      {
+        "id": 21810622,
+        "title": "Dataset: analysis of the splicing landscape of the frontal cortex in ftld-tdp reveals subtype specific patterns and cryptic splicing - PathMap Experiment #000096",
+        "doi": "10.5281/zenodo.21810622",
+        "file_names": [
+          "96.zip"
+        ]
+      },
+      {
+        "id": 20650636,
+        "title": "FALS Therapeutics: Prompting a Blueprint for a Biotech Discovering and Developing Disease-Modifying Therapies for Amyotrophic Lateral Sclerosis Using an Agentic AI Framework",
+        "doi": "10.5281/zenodo.20650636",
+        "file_names": [
+          "Supplementary File 1.pdf",
+          "Supplementary File 11.pdf",
+          "Supplementary File 6.pdf",
+          "Supplementary File 3.pdf",
+          "Supplementary File 4.pdf",
+          "Supplementary File 10.pdf",
+          "MEDRXIV-2026-352683v1-Szalma.pdf",
+          "Supplementary File 8.pdf",
+          "Supplementary File 2.pdf",
+          "Supplementary File 5.pdf",
+          "Supplementary File 9.pdf",
+          "Supplementary File 14.pdf",
+          "Supplementary File 12.pdf",
+          "Supplementary File 13.pdf",
+          "Supplementary File 15 .pdf",
+          "Supplementary File 7.pdf"
+        ]
+      },
+      {
+        "id": 21851700,
+        "title": "Dataset: Identify specific patterns of TDP-43 proteinopathy induced cryptic mis-splicing of STMN2 and other \"cryptic mis-splicing\" patterns found within PubMed Literature, 2026. - PathMap Experiment #000111",
+        "doi": "10.5281/zenodo.21851700",
+        "file_names": [
+          "111.zip"
+        ]
+      },
+      {
+        "id": 21810727,
+        "title": "Dataset: Evaluation of Known Roles of ARHGAP32, RGNEF (ARHGEF28), and TDP-43 in Neurodegenerative Disease found in PubMed Literature as of August 5, 2026 - PathMap Experiment #000097",
+        "doi": "10.5281/zenodo.21810727",
+        "file_names": [
+          "97.zip"
+        ]
+      },
+      {
+        "id": 21271542,
+        "title": "Why are frontotemporal dementia and c9orf72 ALS considered different diseases if they are both driven by the same abnormal expansion of a GGGGCC (G₄C₂) sequence in the first intron of the C9orf72 gene?  Is it logical to think that CRISPR therapeutics for FTD potentially be used for ALS as well? - PathMap Experiment #000031",
+        "doi": "10.5281/zenodo.21271542",
+        "file_names": [
+          "31.json"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "datacite-all-retry",
+    "url": "https://api.datacite.org/dois?query=UNC13A&page%5Bsize%5D=25",
+    "status": 200,
+    "bytes": 215527,
+    "sha256_response": "c8981f01ca3dfc0a9a69f723e1c2f02647cac3f2176715d1a30cf8a1678b01f5",
+    "total": 77,
+    "next": "https://api.datacite.org/dois?page%5Bnumber%5D=2&page%5Bsize%5D=25&query=UNC13A",
+    "items": [
+      {
+        "doi": "10.5281/zenodo.20317395",
+        "titles": [
+          {
+            "title": "Advanced Biotechnological Interventions and the Blueprint for a Curative Genetic Modality in Amyotrophic Lateral Sclerosis"
+          }
+        ],
+        "url": "https://zenodo.org/doi/10.5281/zenodo.20317395",
+        "relatedIdentifiers": [
+          {
+            "relationType": "HasVersion",
+            "relatedIdentifier": "10.5281/zenodo.20317396",
+            "relatedIdentifierType": "DOI"
+          }
+        ]
+      },
+      {
+        "doi": "10.5281/zenodo.20317396",
+        "titles": [
+          {
+            "title": "Advanced Biotechnological Interventions and the Blueprint for a Curative Genetic Modality in Amyotrophic Lateral Sclerosis"
+          }
+        ],
+        "url": "https://zenodo.org/doi/10.5281/zenodo.20317396",
+        "relatedIdentifiers": [
+          {
+            "relationType": "IsVersionOf",
+            "relatedIdentifier": "10.5281/zenodo.20317395",
+            "relatedIdentifierType": "DOI"
+          }
+        ]
+      },
+      {
+        "doi": "10.5281/zenodo.20650635",
+        "titles": [
+          {
+            "title": "FALS Therapeutics: Prompting a Blueprint for a Biotech Discovering and Developing Disease-Modifying Therapies for Amyotrophic Lateral Sclerosis Using an Agentic AI Framework"
+          }
+        ],
+        "url": "https://zenodo.org/doi/10.5281/zenodo.20650635",
+        "relatedIdentifiers": [
+          {
+            "relationType": "HasVersion",
+            "relatedIdentifier": "10.5281/zenodo.20650636",
+            "relatedIdentifierType": "DOI"
+          }
+        ]
+      },
+      {
+        "doi": "10.5281/zenodo.20650636",
+        "titles": [
+          {
+            "title": "FALS Therapeutics: Prompting a Blueprint for a Biotech Discovering and Developing Disease-Modifying Therapies for Amyotrophic Lateral Sclerosis Using an Agentic AI Framework"
+          }
+        ],
+        "url": "https://zenodo.org/doi/10.5281/zenodo.20650636",
+        "relatedIdentifiers": [
+          {
+            "relationType": "IsVersionOf",
+            "relatedIdentifier": "10.5281/zenodo.20650635",
+            "relatedIdentifierType": "DOI"
+          }
+        ]
+      },
+      {
+        "doi": "10.5281/zenodo.22176970",
+        "titles": [
+          {
+            "title": "Cryptic splicing as a graded readout of TDP-43 dysfunction: mechanism, biomarkers, and a proposal for threshold-resolved staging across ALS, frontotemporal dementia, and LATE"
+          }
+        ],
+        "url": "https://zenodo.org/doi/10.5281/zenodo.22176970",
+        "relatedIdentifiers": [
+          {
+            "relationType": "IsVersionOf",
+            "relatedIdentifier": "10.5281/zenodo.22176969",
+            "relatedIdentifierType": "DOI"
+          }
+        ]
+      },
+      {
+        "doi": "10.5281/zenodo.22176969",
+        "titles": [
+          {
+            "title": "Cryptic splicing as a graded readout of TDP-43 dysfunction: mechanism, biomarkers, and a proposal for threshold-resolved staging across ALS, frontotemporal dementia, and LATE"
+          }
+        ],
+        "url": "https://zenodo.org/doi/10.5281/zenodo.22176969",
+        "relatedIdentifiers": [
+          {
+            "relationType": "HasVersion",
+            "relatedIdentifier": "10.5281/zenodo.22176970",
+            "relatedIdentifierType": "DOI"
+          }
+        ]
+      },
+      {
+        "doi": "10.5281/zenodo.21810621",
+        "titles": [
+          {
+            "title": "Dataset: analysis of the splicing landscape of the frontal cortex in ftld-tdp reveals subtype specific patterns and cryptic splicing - PathMap Experiment #000096"
+          }
+        ],
+        "url": "https://zenodo.org/doi/10.5281/zenodo.21810621",
+        "relatedIdentifiers": [
+          {
+            "relationType": "IsDocumentedBy",
+            "relatedIdentifier": "https://pathmap.org/viewer.php?id=96",
+            "relatedIdentifierType": "URL"
+          },
+          {
+            "relationType": "HasVersion",
+            "relatedIdentifier": "10.5281/zenodo.21810622",
+            "relatedIdentifierType": "DOI"
+          }
+        ]
+      },
+      {
+        "doi": "10.5281/zenodo.21810622",
+        "titles": [
+          {
+            "title": "Dataset: analysis of the splicing landscape of the frontal cortex in ftld-tdp reveals subtype specific patterns and cryptic splicing - PathMap Experiment #000096"
+          }
+        ],
+        "url": "https://zenodo.org/doi/10.5281/zenodo.21810622",
+        "relatedIdentifiers": [
+          {
+            "relationType": "IsDocumentedBy",
+            "relatedIdentifier": "https://pathmap.org/viewer.php?id=96",
+            "relatedIdentifierType": "URL"
+          },
+          {
+            "relationType": "IsVersionOf",
+            "relatedIdentifier": "10.5281/zenodo.21810621",
+            "relatedIdentifierType": "DOI"
+          }
+        ]
+      },
+      {
+        "doi": "10.5281/zenodo.21241654",
+        "titles": [
+          {
+            "title": "monarch-initiative/mondo: v2026-07-06"
+          }
+        ],
+        "url": "https://zenodo.org/doi/10.5281/zenodo.21241654",
+        "relatedIdentifiers": [
+          {
+            "relationType": "IsSupplementTo",
+            "resourceTypeGeneral": "Software",
+            "relatedIdentifier": "https://github.com/monarch-initiative/mondo/tree/v2026-07-06",
+            "relatedIdentifierType": "URL"
+          },
+          {
+            "relationType": "IsVersionOf",
+            "relatedIdentifier": "10.5281/zenodo.1045311",
+            "relatedIdentifierType": "DOI"
+          }
+        ]
+      },
+      {
+        "doi": "10.5281/zenodo.21810726",
+        "titles": [
+          {
+            "title": "Dataset: Evaluation of Known Roles of ARHGAP32, RGNEF (ARHGEF28), and TDP-43 in Neurodegenerative Disease found in PubMed Literature as of August 5, 2026 - PathMap Experiment #000097"
+          }
+        ],
+        "url": "https://zenodo.org/doi/10.5281/zenodo.21810726",
+        "relatedIdentifiers": [
+          {
+            "relationType": "IsDocumentedBy",
+            "relatedIdentifier": "https://pathmap.org/viewer.php?id=97",
+            "relatedIdentifierType": "URL"
+          },
+          {
+            "relationType": "HasVersion",
+            "relatedIdentifier": "10.5281/zenodo.21810727",
+            "relatedIdentifierType": "DOI"
+          }
+        ]
+      },
+      {
+        "doi": "10.5281/zenodo.21810727",
+        "titles": [
+          {
+            "title": "Dataset: Evaluation of Known Roles of ARHGAP32, RGNEF (ARHGEF28), and TDP-43 in Neurodegenerative Disease found in PubMed Literature as of August 5, 2026 - PathMap Experiment #000097"
+          }
+        ],
+        "url": "https://zenodo.org/doi/10.5281/zenodo.21810727",
+        "relatedIdentifiers": [
+          {
+            "relationType": "IsDocumentedBy",
+            "relatedIdentifier": "https://pathmap.org/viewer.php?id=97",
+            "relatedIdentifierType": "URL"
+          },
+          {
+            "relationType": "IsVersionOf",
+            "relatedIdentifier": "10.5281/zenodo.21810726",
+            "relatedIdentifierType": "DOI"
+          }
+        ]
+      },
+      {
+        "doi": "10.5281/zenodo.21271541",
+        "titles": [
+          {
+            "title": "Why are frontotemporal dementia and c9orf72 ALS considered different diseases if they are both driven by the same abnormal expansion of a GGGGCC (G₄C₂) sequence in the first intron of the C9orf72 gene?  Is it logical to think that CRISPR therapeutics for FTD potentially be used for ALS as well? - PathMap Experiment #000031"
+          }
+        ],
+        "url": "https://zenodo.org/doi/10.5281/zenodo.21271541",
+        "relatedIdentifiers": [
+          {
+            "relationType": "IsDocumentedBy",
+            "relatedIdentifier": "https://pathmap.org/viewer.php?id=31",
+            "relatedIdentifierType": "URL"
+          },
+          {
+            "relationType": "HasVersion",
+            "relatedIdentifier": "10.5281/zenodo.21271542",
+            "relatedIdentifierType": "DOI"
+          }
+        ]
+      },
+      {
+        "doi": "10.5281/zenodo.21271542",
+        "titles": [
+          {
+            "title": "Why are frontotemporal dementia and c9orf72 ALS considered different diseases if they are both driven by the same abnormal expansion of a GGGGCC (G₄C₂) sequence in the first intron of the C9orf72 gene?  Is it logical to think that CRISPR therapeutics for FTD potentially be used for ALS as well? - PathMap Experiment #000031"
+          }
+        ],
+        "url": "https://zenodo.org/doi/10.5281/zenodo.21271542",
+        "relatedIdentifiers": [
+          {
+            "relationType": "IsDocumentedBy",
+            "relatedIdentifier": "https://pathmap.org/viewer.php?id=31",
+            "relatedIdentifierType": "URL"
+          },
+          {
+            "relationType": "IsVersionOf",
+            "relatedIdentifier": "10.5281/zenodo.21271541",
+            "relatedIdentifierType": "DOI"
+          }
+        ]
+      },
+      {
+        "doi": "10.5281/zenodo.21851699",
+        "titles": [
+          {
+            "title": "Dataset: Identify specific patterns of TDP-43 proteinopathy induced cryptic mis-splicing of STMN2 and other \"cryptic mis-splicing\" patterns found within PubMed Literature, 2026. - PathMap Experiment #000111"
+          }
+        ],
+        "url": "https://zenodo.org/doi/10.5281/zenodo.21851699",
+        "relatedIdentifiers": [
+          {
+            "relationType": "IsDocumentedBy",
+            "relatedIdentifier": "https://pathmap.org/viewer.php?id=111",
+            "relatedIdentifierType": "URL"
+          },
+          {
+            "relationType": "HasVersion",
+            "relatedIdentifier": "10.5281/zenodo.21851700",
+            "relatedIdentifierType": "DOI"
+          }
+        ]
+      },
+      {
+        "doi": "10.5281/zenodo.21851700",
+        "titles": [
+          {
+            "title": "Dataset: Identify specific patterns of TDP-43 proteinopathy induced cryptic mis-splicing of STMN2 and other \"cryptic mis-splicing\" patterns found within PubMed Literature, 2026. - PathMap Experiment #000111"
+          }
+        ],
+        "url": "https://zenodo.org/doi/10.5281/zenodo.21851700",
+        "relatedIdentifiers": [
+          {
+            "relationType": "IsDocumentedBy",
+            "relatedIdentifier": "https://pathmap.org/viewer.php?id=111",
+            "relatedIdentifierType": "URL"
+          },
+          {
+            "relationType": "IsVersionOf",
+            "relatedIdentifier": "10.5281/zenodo.21851699",
+            "relatedIdentifierType": "DOI"
+          }
+        ]
+      },
+      {
+        "doi": "10.14288/1.0074635",
+        "titles": [
+          {
+            "title": "Genetic modifiers in carriers of repeat expansions in the C9ORF72 gene"
+          }
+        ],
+        "url": "https://doi.library.ubc.ca/10.14288/1.0074635",
+        "relatedIdentifiers": [
+          {
+            "relationType": "IsIdenticalTo",
+            "relatedIdentifier": "10.1186/1750-1326-9-38",
+            "relatedIdentifierType": "DOI"
+          }
+        ]
+      },
+      {
+        "doi": "10.5167/uzh-257958",
+        "titles": [
+          {
+            "lang": "",
+            "title": "Rapid homeostatic modulation of transsynapticnanocolumn rings"
+          }
+        ],
+        "url": "https://www.zora.uzh.ch/handle/20.500.14742/218035",
+        "relatedIdentifiers": []
+      },
+      {
+        "doi": "10.5167/uzh-233867",
+        "titles": [
+          {
+            "lang": "",
+            "title": "Rapid homeostatic modulation of transsynaptic nanocolumn rings"
+          }
+        ],
+        "url": "https://www.zora.uzh.ch/handle/20.500.14742/207895",
+        "relatedIdentifiers": []
+      },
+      {
+        "doi": "10.17879/freeneuropathology-2023-4899",
+        "titles": [
+          {
+            "title": "Neurodegeneration: 2023 update"
+          }
+        ],
+        "url": "https://ejournals.uni-muenster.de/fnp/article/view/4899",
+        "relatedIdentifiers": []
+      },
+      {
+        "doi": "10.25418/crick.19345568.v1",
+        "titles": [
+          {
+            "title": "TDP-43 loss and ALS-risk SNPs drive mis-splicing and depletion of UNC13A."
+          }
+        ],
+        "url": "https://crick.figshare.com/articles/journal_contribution/TDP-43_loss_and_ALS-risk_SNPs_drive_mis-splicing_and_depletion_of_UNC13A_/19345568/1",
+        "relatedIdentifiers": [
+          {
+            "relationType": "IsIdenticalTo",
+            "relatedIdentifier": "10.25418/crick.19345568",
+            "relatedIdentifierType": "DOI"
+          }
+        ]
+      },
+      {
+        "doi": "10.25418/crick.19345568",
+        "titles": [
+          {
+            "title": "TDP-43 loss and ALS-risk SNPs drive mis-splicing and depletion of UNC13A."
+          }
+        ],
+        "url": "https://crick.figshare.com/articles/journal_contribution/TDP-43_loss_and_ALS-risk_SNPs_drive_mis-splicing_and_depletion_of_UNC13A_/19345568",
+        "relatedIdentifiers": []
+      },
+      {
+        "doi": "10.25418/crick.27605109.v1",
+        "titles": [
+          {
+            "title": "Creation of de novo cryptic splicing for ALS and FTD precision medicine"
+          }
+        ],
+        "url": "https://crick.figshare.com/articles/journal_contribution/Creation_of_de_novo_cryptic_splicing_for_ALS_and_FTD_precision_medicine/27605109/1",
+        "relatedIdentifiers": [
+          {
+            "relationType": "IsIdenticalTo",
+            "relatedIdentifier": "10.25418/crick.27605109",
+            "relatedIdentifierType": "DOI"
+          }
+        ]
+      },
+      {
+        "doi": "10.25418/crick.27605109",
+        "titles": [
+          {
+            "title": "Creation of de novo cryptic splicing for ALS and FTD precision medicine"
+          }
+        ],
+        "url": "https://crick.figshare.com/articles/journal_contribution/Creation_of_de_novo_cryptic_splicing_for_ALS_and_FTD_precision_medicine/27605109",
+        "relatedIdentifiers": []
+      },
+      {
+        "doi": "10.5281/zenodo.18915637",
+        "titles": [
+          {
+            "title": "Unbiased discovery of genes required for pluripotency: UNC13A."
+          }
+        ],
+        "url": "https://zenodo.org/doi/10.5281/zenodo.18915637",
+        "relatedIdentifiers": [
+          {
+            "relationType": "HasVersion",
+            "relatedIdentifier": "10.5281/zenodo.18915638",
+            "relatedIdentifierType": "DOI"
+          }
+        ]
+      },
+      {
+        "doi": "10.5281/zenodo.18915638",
+        "titles": [
+          {
+            "title": "Unbiased discovery of genes required for pluripotency: UNC13A."
+          }
+        ],
+        "url": "https://zenodo.org/doi/10.5281/zenodo.18915638",
+        "relatedIdentifiers": [
+          {
+            "relationType": "IsVersionOf",
+            "relatedIdentifier": "10.5281/zenodo.18915637",
+            "relatedIdentifierType": "DOI"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "biostudies-exact",
+    "url": "https://www.ebi.ac.uk/biostudies/api/v1/search?query=%22UNC13A%20splice%20correction%22&pageSize=100",
+    "status": 200,
+    "bytes": 280,
+    "sha256_response": "f533a9149c6798be44b8d421fe70c1d9e4a9acb60bb1f27d7a3f81af3ef90e02",
+    "total": 0,
+    "items": []
+  }
+]
