@@ -1,77 +1,52 @@
-# UNC13A: reproducción molecular del repositorio Fratta — 04/11/2026
+# Fratta molecular Dox replay — 2026-11-04
 
-## Resultado
+## Result and scope
 
-Se han procesado **138 mediciones depositadas**, reconstruido **42 grupos moleculares** y reproducido en Python la agrupación y unión de tablas del bloque público «Dox curves and protein/RNA levels». El orden original de renombrado/unión deja sin error estándar los seis grupos `13A-Correct RNA`; unir por las claves originales antes de renombrar conserva esos seis errores, sin cambiar ninguna media.
+We reconstructed 42 molecular groups from 138 deposited observations. The pinned public R data-preparation sequence loses six standard errors when its group label is changed before joining tables. Joining on original keys before changing the label preserves all six, without changing means. Actual execution in R 4.4.3/dplyr 1.1.4 confirms the Python reconstruction within 1e-12; see `r-validation.json`, `r-output/` and `EXPERIMENT_TRACE.md`.
 
-**Alcance:** reproducción aritmética de un CSV y de las transformaciones descritas por un bloque R; R no está instalado y **no se ejecutó el Rmd**. No hay ajuste estadístico, descubrimiento biológico, replicación experimental independiente o rescate funcional. No se certifica cómo se generó la figura final del artículo.
+This is a computational replay of existing molecular measurements. It is not an independent biological replication, functional rescue, therapeutic threshold or clinical result. The whole Rmd and editorial figure generation were not reproduced. The public code issue does not establish an error in the published figure or its biological conclusions.
 
-Luis autorizó expresamente el 04/11 avanzar con los repositorios públicos de Fratta. El plan previo se publicó en commit `9d61c4da691ab5c4aac34a036a4b8608f190f744`, antes del cálculo. Tarea distinta de la auditoría de uniones ya completada, de STMN2/PPAU y de A25 Fig.3s (#47). No se cambian prioridades ni entradas de #37/#44. STATE/BACKLOG no se editan para evitar interferir con #46/#47.
+The experiment is contextually traced to Brown et al. (2022), Figure 2c, DOI [10.1038/s41586-022-04436-3](https://doi.org/10.1038/s41586-022-04436-3). Exact equivalence to the final Source Data 2 workbook remains unverified because no valid workbook was retrieved. The trace separates documented methods from unresolved CSV-level metadata and records the 2024 correction.
 
-## Fuentes y método
+## Provenance and analysis
 
-- Repositorio `frattalab/unc13a_cryptic_splicing`, commit `e05e8723e3d18e64c6c559db18de423282511c91`.
-- `data/Protein_RNA_Corr_3.csv`: 4.738 bytes; SHA256 `c7de1f2d44f9a5ac243e0ef380f50c455254c1cbefc6a217dc091505918526e5`.
-- `paper_figures.Rmd`: 148.855 bytes; SHA256 `3c46c164af6572bef28507b707f39d996d687abb06da00bf5468f89d0d491502`.
-- Ambos bytes cotejados también con sus Git blob originales. No se clonó el repositorio ni se leyeron sus archivos clínicos/genéticos. Originales temporales; los enlaces inmutables y hashes permiten recuperarlos.
+The source repository is `frattalab/unc13a_cryptic_splicing`, pinned commit `e05e8723e3d18e64c6c559db18de423282511c91`. Only the molecular CSV and figure Rmd were materialized; their sizes, SHA256 and Git blobs were verified. Immutable links are in `sources.json`. The prior plan was committed as `9d61c4da691ab5c4aac34a036a4b8608f190f744`, before calculation; the R trace plan is in commit `3721432cc2817bb9bef8971e0d9467947b9af62f` before R execution.
 
-Se agrupa por Treatment/Gene/Line_Group/Color_Group y se calcula media, desviación muestral y `sd/sqrt(n_rows)`, tal como el bloque autor. La aritmética de los 42 grupos se coteja con fracciones racionales independientes. Permutar filas no cambia los resúmenes. Una segunda ejecución produce los mismos cuatro CSV numéricos por bytes.
+Grouping uses Treatment/Gene/Line_Group/Color_Group. Means, sample SD and sd/sqrt(row count) reproduce the specified arithmetic. All 42 means were independently checked using rational fractions; a seeded row permutation and second execution preserve outputs. Five transformation tests passed. The original Python-stage receipts `qc.json` and `validation.json` are historical; `trace-validation.json` records current file hashes and `r-validation.json` records the later R execution.
 
-Estas operaciones reproducen la aritmética especificada, **no validan que cada fila sea una réplica biológica independiente**. Faltan identificadores de experimento, cultivo/diferenciación y emparejamiento entre ensayos. No se emparejan filas por orden ni se calcula correlación entre ARN y proteína.
+## A. Deposited observations; B. our calculated summaries
 
-## A. Datos publicados y B. cálculo de nuestro proyecto
+The observations belong to the authors. Our calculations give these UNC13A means on the original relative scale:
 
-Las mediciones son de los autores; nuestro trabajo reconstruye sus resúmenes. En la escala relativa original del archivo (NT aproximadamente 100), las medias calculadas para UNC13A son:
-
-| Condición | ARN total | ARN correcto | Proteína |
+| Condition | Total RNA | Correct RNA | Protein |
 |---|---:|---:|---:|
-| NT | 101,00 | 100,33 | 100,03 |
-| Dox-1 | 95,00 | 94,00 | 80,53 |
-| Dox-2 | 59,33 | 55,33 | 33,17 |
-| Dox-3 | 50,33 | 45,33 | 14,33 |
-| Dox-4 | 42,33 | 30,67 | 8,03 |
-| Dox-5 | 25,33 | 10,00 | 4,30 |
+| NT | 101.00 | 100.33 | 100.03 |
+| Dox-1 | 95.00 | 94.00 | 80.53 |
+| Dox-2 | 59.33 | 55.33 | 33.17 |
+| Dox-3 | 50.33 | 45.33 | 14.33 |
+| Dox-4 | 42.33 | 30.67 | 8.03 |
+| Dox-5 | 25.33 | 10.00 | 4.30 |
 
-La figura `unc13a-molecular.svg` conserva los 54 puntos de estas tres series y sus medias, sin intervalos inferenciales. Es un gráfico descriptivo nuevo a partir de datos ya publicados, no una copia exacta del gráfico autor: este elimina ARN total UNC13A y muestra también series UNC13B/TDP-43. Todas las series están disponibles en `all-groups.csv`.
+`unc13a-molecular.svg` shows 54 observations and means without inferential intervals. It is a new descriptive plot of published data, not an exact reproduction of the author plot, which omits total UNC13A RNA and includes UNC13B/TDP-43 series. The measurements are not interchangeable; this table alone cannot explain their differences or establish temporal order or significance.
 
-La diferencia entre las tres medidas es visible en este conjunto: ARN total, ARN correctamente procesado y proteína no deben tratarse como lecturas intercambiables. **No demuestra por qué difieren**, una relación temporal, un umbral terapéutico, una pérdida de función o una significación estadística entre ensayos. No se infieren concentraciones, duración ni magnitud exacta de perturbación desde las etiquetas `Dox-1…5`.
+## Join behavior and safeguards
 
-## Incidencia de las claves de unión
+The source removes `13A-RNA`, renames `Correct_RNA` to `RNA` in the means table, then performs an implicit common-column left join with a SEM table retaining `Correct_RNA`. All six correct-RNA groups fail to match. `source-order-join.csv` preserves that behavior; `key-preserving-join.csv` joins before renaming. Actual R results are also preserved separately.
 
-El bloque autor:
+Thirty-six source groups have three rows; six UNC13B protein groups have five. All 16 excess exact-value duplicate rows are retained because identities are unknown. Row-based SEMs are computational summaries, not validated biological uncertainty. No values are deduplicated, paired by row order, divided by zero TDP-43 values, or used for hypothesis tests. Missing experiment/culture identifiers and the mismatch with the declared n remain explicit limitations.
 
-1. Calcula medias y errores por las cuatro claves originales, incluido `Line_Group`.
-2. Quita `13A-RNA` del gráfico.
-3. Cambia `Correct_RNA` a `RNA` en la tabla de medias.
-4. Hace `left_join(tmp)` sin especificar claves. Las columnas comunes incluyen `Line_Group`; `tmp` conserva `Correct_RNA`.
+## Reproduction
 
-En la reproducción explícita de esas claves, los seis grupos de ARN correcto ya no tienen coincidencia: seis errores estándar ausentes de 36 grupos gráficos. Cambiar la secuencia a **unir primero y renombrar después** produce 36 coincidencias y deja todas las medias idénticas. `source-order-join.csv` y `key-preserving-join.csv` conservan ambos resultados.
-
-Esto es una incidencia técnica reproducible del bloque público fijado. No hemos ejecutado dplyr/ggplot en su entorno ni cotejado qué revisión generó la figura editorial. No se concluye que el artículo esté equivocado, que sus conclusiones cambien o que los autores omitieran deliberadamente incertidumbre. No se envía aviso ni se abre una issue externa sin autorización.
-
-## Composición y controles
-
-- 36 grupos contienen tres filas cada uno. Los seis grupos de proteína UNC13B contienen cinco. Un promedio global de todas las filas daría pesos distintos a los ensayos; no se realiza.
-- Existen 16 filas idénticas adicionales respecto a sus combinaciones de valores únicas. **Se conservan todas**: sin identificadores no se sabe si son repeticiones legítimas o duplicados. No se aplica la deduplicación de otra tabla histórica a esta fuente distinta.
-- Los errores `sem_rows` reproducidos usan filas; no se presentan como errores biológicos, IC o evidencia de significación. La figura descriptiva muestra puntos y medias sin esos errores.
-- Los valores cero de TDP-43 proteína se conservan; no se dividen valores por esa serie ni se calculan cocientes con denominadores cero.
-- El script verifica hashes, cabecera, etiquetas conocidas, valores finitos/no negativos y cuadrícula de grupos completa. Cinco pruebas de transformación verifican cambios de claves, desviación muestral, permutación, conservación de valores idénticos y rechazo de grupos de una sola fila.
-
-## Reproducción
-
-Descargar únicamente los dos archivos desde los enlaces inmutables de `sources.json`. El script exige que sus SHA256 coincidan. Desde raíz del proyecto:
+Fetch only the two immutable originals listed in `sources.json`; the Python script checks their SHA256. From project root:
 
 ```bash
-python scripts/reproduce_fratta_dox.py --source-csv /ruta/Protein_RNA_Corr_3.csv --source-rmd /ruta/paper_figures.Rmd --output reports/fratta-dox-replay-20261104 --plot
+python scripts/reproduce_fratta_dox.py --source-csv /path/Protein_RNA_Corr_3.csv --source-rmd /path/paper_figures.Rmd --output /path/replay --plot
 python -m unittest discover -s tests -p 'test_fratta_dox_replay.py' -v
+Rscript scripts/check_fratta_dox_join.R /path/Protein_RNA_Corr_3.csv /path/r-output
 ```
 
-Python 3.12.14; biblioteca estándar para tablas; Matplotlib 3.10.8/Agg para la figura, ya instalado. Sin paquetes nuevos, entrenamiento, descargas masivas o costes. `--plot` es opcional: sin él no se necesita Matplotlib. R no ejecutado; no se atribuye una concordancia de p-valores o gráficos editoriales.
+Python 3.12.14, standard library for tables, optional Matplotlib 3.10.8/Agg for plotting. R requirements and full session information are preserved in the trace and `r-output/sessionInfo.txt`. No author-era package environment is claimed.
 
-Se corrigió un fallo inicial de transporte local: el base64 del conector incluía saltos de línea y una cadena literal Python no los aceptó. No llegó a crearse el CSV; se eliminaron los espacios del base64 y después se verificaron tamaño, SHA256 y Git blob. No se modificó el dato para superar los hashes. Errores y validación en archivos adjuntos.
+## C. Recommendation
 
-## C. Interpretación y siguiente paso
-
-La contribución actual es técnica y descriptiva: resúmenes ejecutados, distinción entre lecturas moleculares y una incidencia de unión verificable. No es una nueva contribución biológica acreditada. Para inferencia molecular se necesitaría el mapa de independencia y emparejamiento de esta tabla; no se solicita ni se abre esa línea por defecto.
-
-Este ciclo termina con un único CSV/bloque. El siguiente objetivo funcional sigue siendo K26 Fig.4d cuando se publiquen sus datos. La respuesta de Fratta aportada por Luis el04/11 anticipa disponibilidad la semana siguiente; no constituye datos ya recibidos. No se repiten búsquedas ni se amplía a más herramientas para eludir el bloqueo.
+Conclude this molecular replay with a reproducible technical finding and no claim of biological novelty. Keep K26 Fig.4d as the single functional reproduction target, conditional on original numerical data with independent-unit identifiers. Do not expand this CSV into a new inferential project. No merge, external contact, access request or paid service was undertaken. STATE/BACKLOG and parallel work #37/#44/#46/#47 remain untouched.

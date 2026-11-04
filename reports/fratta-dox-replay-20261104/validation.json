@@ -6,6 +6,7 @@
   "numeric_outputs_byte_identical_replay": true,
   "original_R_rmd_executed": false,
   "pvalues_or_rescue_effects_estimated": false,
+  "scope": "Historical Python-stage validation; SHA256 values refer to that commit, not later edited reports. Later R execution: r-validation.json.",
   "sha256": {
     "reports/fratta-dox-replay-20261104/REPORT.md": "1549737a3f766f749b172a29e2e7c9622869c7129e302d8025aaa2433e3815e2",
     "reports/fratta-dox-replay-20261104/all-groups.csv": "351ca091e7d1fd0f2baba2fa2864500a0dc896843a040925fa51fa324885f4dc",
@@ -20,5 +21,6 @@
     "scripts/reproduce_fratta_dox.py": "763f469868645bcff18ab48e1cb6db39b9a11d52bd89a619773f047ed58d615c",
     "tests/test_fratta_dox_replay.py": "050e1935fbd1f73104057d196c4c8f68cdf94edd7507417cf5cb6d393c90235c"
   },
+  "snapshot_commit": "6d6d91f78508f1ba7ce6430f68259d6cdc4aeda4",
   "svg_byte_identical_replay": true
 }
