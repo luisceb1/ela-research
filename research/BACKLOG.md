@@ -16,7 +16,8 @@ Si no hay entrada nueva, registrar que ambas líneas siguen bloqueadas y detener
 ## Auditoría puntual autorizada y completada —04/11/2026
 
 - [x] Asadollahi2025 Fig.3s: auditar el único archivo fuente experimental aprobado por Luis. Recuperadas38/35 entradas en pC, controles numéricos y de procedencia ejecutados. Falta mapa neurona→cultivo/exclusiones: disponibilidad parcial, sin reanálisis inferencial. [Decisión y reproducción](../reports/asadollahi-fig3s-audit-20261104/REPORT.md).
-- Condición de reconsideración: mapa técnico primario que vincule las entradas con cultivos independientes y aclare exclusiones. No se abre una descarga/consulta adicional, otro candidato ni modelo por defecto. Esta auditoría limitada no sustituye las prioridades #37/#44 ni reactiva automatización. PR#46 sigue pendiente y contiene la comprobación administrativa/búsqueda del04/11; reconciliar al integrar, sin declarar sus informes incorporados.
+- [x] Continuación dirigida autorizada por Luis: Supplementary Data3 confirma n38/35 de Fig.3s sin asignaciones a cultivos; GOE-Seek260 devuelveHTTP403, contenido no inspeccionado. [Evidencia y límites](../reports/asadollahi-fig3s-audit-20261104/CULTURE_MAP_REPORT.md). Búsqueda acotada completada, sin inferencia.
+- Condición de reconsideración: mapa técnico primario que vincule las entradas con cultivos independientes y aclare exclusiones. No repetir la consulta bloqueada o ampliar archivos/candidatos/modelos por defecto. Esta auditoría limitada no sustituye las prioridades #37/#44 ni reactiva automatización. PR#46 sigue pendiente y contiene la comprobación administrativa/búsqueda del04/11; reconciliar al integrar, sin declarar sus informes incorporados.
 
 ## Mantenimiento técnico
 

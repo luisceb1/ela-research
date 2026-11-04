@@ -1,0 +1,45 @@
+{
+  "source_url": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41588-025-02361-5/MediaObjects/41588_2025_2361_MOESM8_ESM.xlsx",
+  "source_sha256": "7ba494959360e824eb333eeadb2e0fd1bb431a32859da92cabdd5a958cf1c2e7",
+  "source_bytes": 18581,
+  "sheet": "Table 3",
+  "selected_member": "xl/worksheets/sheet1.xml",
+  "member_sha256": {
+    "xl/workbook.xml": "9715dca680c85722d91720dcea2c84b0e4ba8a67bf70660365a28d9e38dc27ed",
+    "xl/_rels/workbook.xml.rels": "353383fbe90f202be596bdf0a86439c704d7024f4f8c19ebc9d06b42a341dba1",
+    "xl/worksheets/sheet1.xml": "e893ca0196bebb76152c6d6ef10caa41becdf89dd4d7e5aaa5c895fb5dd3763f",
+    "xl/sharedStrings.xml": "f0416a1c458836f3d6c7f0875fdf4b938a31af37de612e93dd6b9a198c21bf4f"
+  },
+  "selected_fields": {
+    "A1": "TABLE S3: Electrophysiological characterization of synaptic transmission in cultured hippocampal neurons expressing UNC13A disease variants (related to Figures 3-5 and Extended data Figures 4 and 8)",
+    "C18": "UNC13AWT",
+    "E18": "UNC13AR202H",
+    "B35": "Charge (pC)",
+    "I35": "3s",
+    "C36": "(n =38)",
+    "E36": "(n =35)"
+  },
+  "published_observation_counts": {
+    "UNC13AWT": 38,
+    "UNC13AR202H": 35
+  },
+  "design_label_candidates": [],
+  "defined_names_present": false,
+  "comment_members_present": false,
+  "culture_map_verified": false,
+  "culture_assignments": null,
+  "exclusions_verified": false,
+  "decision": "NO_MAP_IN_INSPECTED_SUPPLEMENT",
+  "effect_estimated": false,
+  "p_values_computed": false,
+  "p_values_exported": false,
+  "execution": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "script_sha256": "0e216c6259075953a6191f6a22a7e98df56c9f9c794aa79c44a230f94d9eb0b9",
+    "parameters": {
+      "max_bytes": 262144,
+      "timeout_seconds": 25,
+      "expected_source_sha256": "7ba494959360e824eb333eeadb2e0fd1bb431a32859da92cabdd5a958cf1c2e7"
+    }
+  }
+}

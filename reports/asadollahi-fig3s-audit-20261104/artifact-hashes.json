@@ -1,18 +1,29 @@
 {
   "source_url": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41588-025-02361-5/MediaObjects/41588_2025_2361_MOESM10_ESM.xlsx",
   "source_sha256": "42f9a2266bf8e7dc157350fe588f1d87deb8d0e4c5067bc2c780b9fc7851a49f",
+  "additional_source_url": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41588-025-02361-5/MediaObjects/41588_2025_2361_MOESM8_ESM.xlsx",
+  "additional_source_sha256": "7ba494959360e824eb333eeadb2e0fd1bb431a32859da92cabdd5a958cf1c2e7",
   "source_xlsx_committed": false,
   "files": {
+    "reports/asadollahi-fig3s-audit-20261104/CULTURE_MAP_PLAN.md": "660328e4ea7dbe212695cd2578115f9b35583888b38311e0e89cce91f2581261",
+    "reports/asadollahi-fig3s-audit-20261104/CULTURE_MAP_REPORT.md": "a4769a47ef9f151a5ab0bdc3a5305c53863dd1119eb412ed1cfe92d758eadb4e",
     "reports/asadollahi-fig3s-audit-20261104/PLAN.md": "417f50194e400dcb063b5b50f73a517d74b90e481806621bcf0f47c56401dd78",
-    "reports/asadollahi-fig3s-audit-20261104/REPORT.md": "6dedb1f7f4250e84fdc43720ecaaf876ee6d8f8a27d034bf997901dce8709e24",
+    "reports/asadollahi-fig3s-audit-20261104/REPORT.md": "7832040040cea041b9cfa34089725c6f6a8dee03e9b503090101d3c13ab658ed",
     "reports/asadollahi-fig3s-audit-20261104/audit.json": "52f244c6e3818df3fe5dce133fef2f94676791daca979c0be4f8f9d49df8dec5",
+    "reports/asadollahi-fig3s-audit-20261104/culture-map-audit.json": "13e6ce6658be7ac71c34c24c48d9fb83945148df1f6485fce859fc65fbd425d8",
+    "reports/asadollahi-fig3s-audit-20261104/culture-map-qc.json": "b6ebad7552959144c96d2735cab01c13bf2f5312d6c7564fca689963729c1340",
+    "reports/asadollahi-fig3s-audit-20261104/culture-map-retrieval.json": "e52afae054b1a306acf9c6c540d7bd44d28868bdc56d36ab23af4b129c63202c",
+    "reports/asadollahi-fig3s-audit-20261104/culture-map-tests.json": "7cd12ebf112ffa1125c4f519fd7c37c602509294a7f2ebf66f837ddb0d40b319",
+    "reports/asadollahi-fig3s-audit-20261104/culture-map-tests.log": "05658ad82aaf89be55f5dd8cbe64449a83cfa37af03aa6134624c3075d39fba8",
     "reports/asadollahi-fig3s-audit-20261104/execution.json": "29d1205eb7992d307284a96c07acbe5c738169194608bf396010c6dee2982e10",
     "reports/asadollahi-fig3s-audit-20261104/fig3s-projection.csv": "3b00a326b282aa85ee6b03db4eafccf14859131d0bca330d101b95f32896d701",
     "reports/asadollahi-fig3s-audit-20261104/qc.json": "c6a0eda0ce47ed5b54fced171589ee96073a9166ad09ef04c2ec2cd11c3e6b5e",
     "reports/asadollahi-fig3s-audit-20261104/retrieval.json": "9ec6237f99eaa82e619d7e68da9a8aecd450d5e16134934cb2822b1c170e4c70",
     "reports/asadollahi-fig3s-audit-20261104/tests.json": "47a0591a09129a09f491d17d59560d8f22d98e3f12b339371387049e10c17913",
     "reports/asadollahi-fig3s-audit-20261104/tests.log": "a2a8c67e54509d492858147db46a1f4e3feb137066b48e92dc3ee830be7700f9",
+    "scripts/audit_asadollahi_culture_map.py": "0e216c6259075953a6191f6a22a7e98df56c9f9c794aa79c44a230f94d9eb0b9",
     "scripts/audit_asadollahi_fig3s.py": "4c7a9d83b3b70e12bbea62e378a8acf44208c5aeb0fcf3cbac72712c2370e4b0",
+    "tests/test_audit_asadollahi_culture_map.py": "7cdec67a0807b596f0c7e4fcfdc9bed5385ed7e9cff0c593c758da33149adcde",
     "tests/test_audit_asadollahi_fig3s.py": "5fff517bfe94554096b1872fa5b4071b82e68315715527a5a03ff0444e25e12a"
   }
 }

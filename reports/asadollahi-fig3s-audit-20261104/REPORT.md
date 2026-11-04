@@ -48,7 +48,7 @@ Catorce controles de software pasaron localmente, cero fallos/errores/omisiones.
 
 QC independiente de la salida:73 filas y73 coordenadas únicas,38/35 según grupo, ambas claves de identidad vacías y ningún efecto estimado. Compilación correcta. tests.json/tests.log conservan el resultado local; la CI remota debe leerse por cabeza exacta y no se presume correcta por estos controles.
 
-No hubo error de red en esta descarga. La consulta web posterior de PMC devolvió una comprobación de navegador; no se trató ese HTML como artículo ni como datos. La leyenda se había recuperado por el servicio de búsqueda primaria y el enlace de archivo por el editor/MBExC. No se afirma haber leído Supplementary Data3, cuyo contenido no forma parte del archivo único autorizado.
+No hubo error de red en esta descarga. La consulta web posterior de PMC devolvió una comprobación de navegador; no se trató ese HTML como artículo ni como datos. La leyenda se había recuperado por el servicio de búsqueda primaria y el enlace de archivo por el editor/MBExC. Supplementary Data3 no se leyó en esta primera fase, limitada al archivo único. Su inspección posterior autorizada por Luis figura separadamente en [CULTURE_MAP_REPORT](CULTURE_MAP_REPORT.md).
 
 La primera verificación remota detectó un desajuste de blob únicamente en el CSV: finales CRLF locales se normalizaban aLF al enviarlo como texto. Se corrigió el escritor para producir LF explícito, se añadió el control de transporte y se regeneraron proyección, ejecución y manifiesto. Los73 textos numéricos y el hash del XLSX permanecen iguales. No se oculta ese fallo de integridad de artefacto como un resultado biológico.
 
@@ -70,3 +70,5 @@ Este es un avance de acceso y trazabilidad: ya hay valores funcionales experimen
 No se descargaron los suplementos clínicos, imágenes/vídeos de personas u otros archivos. No se exporta el libro completo a GitHub. Se conserva solo la proyección de cultivo autorizada y sus resultados técnicos.
 
 **Única prueba discriminante siguiente:** una tabla o documentación técnica primaria que vincule inequívocamente las entradas de Fig.3s con sus cultivos y aclare la identidad de las observaciones/exclusiones. Informar únicamente de un n total de cultivos no resuelve el mapa. Cualquier ampliación a otro archivo/análisis queda fuera de esta auditoría limitada. Se cierra esta sesión de viabilidad con disponibilidad parcial; no se ajusta un modelo, no se abre otro candidato y no se reactivan tareas automáticas. #37/#44 siguen bloqueadas por sus entradas respectivas.
+
+Continuación posterior expresamente autorizada: Supplementary Data3 confirma n38/35 sin mapa individual; GOE-Seek devuelve403 y no pudo inspeccionarse. El informe enlazado conserva la diferencia de alcance y el nuevo bloqueo de acceso. Sigue sin habilitarse inferencia.
