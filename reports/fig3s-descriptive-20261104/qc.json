@@ -1,0 +1,26 @@
+{
+  "exact_rational_crosscheck": {
+    "UNC13AWT": {
+      "fraction_mean_numerator": "367990828000000001",
+      "fraction_mean_denominator": "15200000000000000",
+      "decimal_agrees_with_exact_fraction_at_absolute_1e_minus46": true,
+      "rounding_concordance_rechecked": true,
+      "n": 38
+    },
+    "UNC13AR202H": {
+      "fraction_mean_numerator": "105063821999999999",
+      "fraction_mean_denominator": "7000000000000000",
+      "decimal_agrees_with_exact_fraction_at_absolute_1e_minus46": true,
+      "rounding_concordance_rechecked": true,
+      "n": 35
+    }
+  },
+  "numeric_result_and_csv_replay_byte_identical": true,
+  "visual_review": "PNG inspected; legend moved to empty upper-left area to avoid one high R202H point; labels, all73 points and both mean lines visible",
+  "plotted_counts_verified": {
+    "UNC13AWT": 38,
+    "UNC13AR202H": 35
+  },
+  "culture_map_inferred": false,
+  "between_group_effect_estimated": false
+}

@@ -1,0 +1,33 @@
+{
+  "started_at": "2026-11-04T10:44:39.364613+01:00",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.39",
+  "script_sha256": "4298161523d82ea707da1196764a6d042f664c4a2f1bbe57b84e93d2b9cad099",
+  "parameters": {
+    "decimal_precision": 50,
+    "tolerance": "inclusive half last published decimal unit",
+    "no_exclusions": true,
+    "no_imputation": true,
+    "plot": true
+  },
+  "render": {
+    "matplotlib": "3.10.8",
+    "backend": "Agg",
+    "figure_inches": [
+      6.4,
+      4.8
+    ],
+    "plotted_observation_counts": {
+      "UNC13AWT": 38,
+      "UNC13AR202H": 35
+    },
+    "svg_sha256": "fce9af02250428cf3de5f25931faee084ed37ba3dd267d62c1eba5f90b17517e",
+    "png_dpi": 160,
+    "png_sha256": "de8ad4d92d526c8a2ee1a6343ea11da33439d72273c2c93e4a479fa058522a62",
+    "horizontal_offset": "(((row_index*7)%17)-8)*0.014; cosmetic only",
+    "random_seed": null
+  },
+  "status": "completed",
+  "arithmetic_concordance": true,
+  "finished_at": "2026-11-04T10:44:39.837046+01:00"
+}

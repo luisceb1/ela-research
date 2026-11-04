@@ -1,0 +1,1885 @@
+{
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.39",
+  "parameters": {
+    "timeout_seconds": 25,
+    "max_response_bytes": 5000000,
+    "max_workers": 4
+  },
+  "results": [
+    {
+      "id": "crossref-new",
+      "url": "https://api.crossref.org/works?query.title=UNC13A+splice+correction+rescues+synaptic+dysfunction+induced+by+TDP-43+loss&rows=10",
+      "method": "GET",
+      "query_body": null,
+      "retrieved_at": "2026-11-04T09:10:03.936424+01:00",
+      "status": 200,
+      "content_type": "application/json",
+      "final_url": "https://api.crossref.org/works?query.title=UNC13A+splice+correction+rescues+synaptic+dysfunction+induced+by+TDP-43+loss&rows=10",
+      "bytes": 193830,
+      "sha256_response": "460d616d726067a573093e2e3c8b0344394593b3f5139c1f92c7847b90888437",
+      "result": {
+        "total": 2680116,
+        "items": [
+          {
+            "DOI": "10.1101/2024.06.20.599684",
+            "title": [
+              "Loss of TDP-43 induces synaptic dysfunction that is rescued by UNC13A splice-switching ASOs"
+            ],
+            "URL": "https://doi.org/10.1101/2024.06.20.599684",
+            "relation": null,
+            "link": [
+              {
+                "URL": "https://syndication.highwire.org/content/doi/10.1101/2024.06.20.599684",
+                "content-type": "unspecified",
+                "content-version": "vor",
+                "intended-application": "similarity-checking"
+              }
+            ],
+            "published": {
+              "date-parts": [
+                [
+                  2024,
+                  6,
+                  24
+                ]
+              ]
+            },
+            "resource": {
+              "primary": {
+                "URL": "http://biorxiv.org/lookup/doi/10.1101/2024.06.20.599684"
+              }
+            }
+          },
+          {
+            "DOI": "10.64898/2025.12.01.691001",
+            "title": [
+              "Dual-targeting snRNA gene therapy rescues STMN2 and UNC13A splicing in TDP-43 proteinopathies"
+            ],
+            "URL": "https://doi.org/10.64898/2025.12.01.691001",
+            "relation": null,
+            "link": [
+              {
+                "URL": "https://syndication.highwire.org/content/doi/10.64898/2025.12.01.691001",
+                "content-type": "unspecified",
+                "content-version": "vor",
+                "intended-application": "similarity-checking"
+              }
+            ],
+            "published": {
+              "date-parts": [
+                [
+                  2025,
+                  12,
+                  3
+                ]
+              ]
+            },
+            "resource": {
+              "primary": {
+                "URL": "http://biorxiv.org/lookup/doi/10.64898/2025.12.01.691001"
+              }
+            }
+          },
+          {
+            "DOI": "10.1038/s41586-024-07577-9",
+            "title": [
+              "Author Correction: TDP-43 loss and ALS-risk SNPs drive mis-splicing and depletion of UNC13A"
+            ],
+            "URL": "https://doi.org/10.1038/s41586-024-07577-9",
+            "relation": null,
+            "link": [
+              {
+                "URL": "https://www.nature.com/articles/s41586-024-07577-9.pdf",
+                "content-type": "application/pdf",
+                "content-version": "vor",
+                "intended-application": "text-mining"
+              },
+              {
+                "URL": "https://www.nature.com/articles/s41586-024-07577-9",
+                "content-type": "text/html",
+                "content-version": "vor",
+                "intended-application": "text-mining"
+              },
+              {
+                "URL": "https://www.nature.com/articles/s41586-024-07577-9.pdf",
+                "content-type": "application/pdf",
+                "content-version": "vor",
+                "intended-application": "similarity-checking"
+              }
+            ],
+            "published": {
+              "date-parts": [
+                [
+                  2024,
+                  6,
+                  18
+                ]
+              ]
+            },
+            "resource": {
+              "primary": {
+                "URL": "https://www.nature.com/articles/s41586-024-07577-9"
+              }
+            }
+          },
+          {
+            "DOI": "10.64898/2026.09.11.751082",
+            "title": [
+              "Restoring multiple TDP-43 cryptic targets, but not solely\n                  <i>Unc13a</i>\n                  , rescues motor neuron disease"
+            ],
+            "URL": "https://doi.org/10.64898/2026.09.11.751082",
+            "relation": null,
+            "link": [
+              {
+                "URL": "https://syndication.highwire.org/content/doi/10.64898/2026.09.11.751082",
+                "content-type": "unspecified",
+                "content-version": "vor",
+                "intended-application": "similarity-checking"
+              }
+            ],
+            "published": {
+              "date-parts": [
+                [
+                  2026,
+                  9,
+                  18
+                ]
+              ]
+            },
+            "resource": {
+              "primary": {
+                "URL": "http://biorxiv.org/lookup/doi/10.64898/2026.09.11.751082"
+              }
+            }
+          },
+          {
+            "DOI": "10.1038/s41380-021-01346-0",
+            "title": [
+              "Loss of TDP-43 function underlies hippocampal and cortical synaptic deficits in TDP-43 proteinopathies"
+            ],
+            "URL": "https://doi.org/10.1038/s41380-021-01346-0",
+            "relation": null,
+            "link": [
+              {
+                "URL": "https://www.nature.com/articles/s41380-021-01346-0.pdf",
+                "content-type": "application/pdf",
+                "content-version": "vor",
+                "intended-application": "text-mining"
+              },
+              {
+                "URL": "https://www.nature.com/articles/s41380-021-01346-0",
+                "content-type": "text/html",
+                "content-version": "vor",
+                "intended-application": "text-mining"
+              },
+              {
+                "URL": "https://www.nature.com/articles/s41380-021-01346-0.pdf",
+                "content-type": "application/pdf",
+                "content-version": "vor",
+                "intended-application": "similarity-checking"
+              }
+            ],
+            "published": {
+              "date-parts": [
+                [
+                  2021,
+                  10,
+                  25
+                ]
+              ]
+            },
+            "resource": {
+              "primary": {
+                "URL": "https://www.nature.com/articles/s41380-021-01346-0"
+              }
+            }
+          },
+          {
+            "DOI": "10.1038/s41586-022-04436-3",
+            "title": [
+              "TDP-43 loss and ALS-risk SNPs drive mis-splicing and depletion of UNC13A"
+            ],
+            "URL": "https://doi.org/10.1038/s41586-022-04436-3",
+            "relation": {
+              "has-preprint": [
+                {
+                  "id-type": "doi",
+                  "id": "10.21203/rs.3.rs-386600/v1",
+                  "asserted-by": "object"
+                }
+              ]
+            },
+            "link": [
+              {
+                "URL": "https://www.nature.com/articles/s41586-022-04436-3.pdf",
+                "content-type": "application/pdf",
+                "content-version": "vor",
+                "intended-application": "text-mining"
+              },
+              {
+                "URL": "https://www.nature.com/articles/s41586-022-04436-3",
+                "content-type": "text/html",
+                "content-version": "vor",
+                "intended-application": "text-mining"
+              },
+              {
+                "URL": "https://www.nature.com/articles/s41586-022-04436-3.pdf",
+                "content-type": "application/pdf",
+                "content-version": "vor",
+                "intended-application": "similarity-checking"
+              }
+            ],
+            "published": {
+              "date-parts": [
+                [
+                  2022,
+                  2,
+                  23
+                ]
+              ]
+            },
+            "resource": {
+              "primary": {
+                "URL": "https://www.nature.com/articles/s41586-022-04436-3"
+              }
+            }
+          },
+          {
+            "DOI": "10.1101/2025.08.28.672801",
+            "title": [
+              "Cryptic splicing in synaptic and membrane excitability genes links TDP-43 loss to neuronal dysfunction"
+            ],
+            "URL": "https://doi.org/10.1101/2025.08.28.672801",
+            "relation": null,
+            "link": [
+              {
+                "URL": "https://syndication.highwire.org/content/doi/10.1101/2025.08.28.672801",
+                "content-type": "unspecified",
+                "content-version": "vor",
+                "intended-application": "similarity-checking"
+              }
+            ],
+            "published": {
+              "date-parts": [
+                [
+                  2025,
+                  9,
+                  2
+                ]
+              ]
+            },
+            "resource": {
+              "primary": {
+                "URL": "http://biorxiv.org/lookup/doi/10.1101/2025.08.28.672801"
+              }
+            }
+          },
+          {
+            "DOI": "10.1126/scitranslmed.aeb8517",
+            "title": [
+              "Cryptic splicing in synaptic and membrane excitability genes links TDP-43 loss to neuronal dysfunction"
+            ],
+            "URL": "https://doi.org/10.1126/scitranslmed.aeb8517",
+            "relation": null,
+            "link": [
+              {
+                "URL": "https://www.science.org/doi/pdf/10.1126/scitranslmed.aeb8517",
+                "content-type": "unspecified",
+                "content-version": "vor",
+                "intended-application": "similarity-checking"
+              }
+            ],
+            "published": {
+              "date-parts": [
+                [
+                  2026,
+                  6,
+                  3
+                ]
+              ]
+            },
+            "resource": {
+              "primary": {
+                "URL": "https://www.science.org/doi/10.1126/scitranslmed.aeb8517"
+              }
+            }
+          },
+          {
+            "DOI": "10.21203/rs.3.rs-386600/v1",
+            "title": [
+              "Common ALS/FTD risk variants in UNC13A exacerbate its cryptic splicing and loss upon TDP-43 mislocalization"
+            ],
+            "URL": "https://doi.org/10.21203/rs.3.rs-386600/v1",
+            "relation": {
+              "is-preprint-of": [
+                {
+                  "id-type": "doi",
+                  "id": "10.1038/s41586-022-04436-3",
+                  "asserted-by": "subject"
+                }
+              ]
+            },
+            "link": [
+              {
+                "URL": "https://www.researchsquare.com/article/rs-386600/v1",
+                "content-type": "text/html",
+                "content-version": "vor",
+                "intended-application": "text-mining"
+              },
+              {
+                "URL": "https://www.researchsquare.com/article/rs-386600/v1.html",
+                "content-type": "unspecified",
+                "content-version": "vor",
+                "intended-application": "similarity-checking"
+              }
+            ],
+            "published": {
+              "date-parts": [
+                [
+                  2021,
+                  4,
+                  19
+                ]
+              ]
+            },
+            "resource": {
+              "primary": {
+                "URL": "https://www.researchsquare.com/article/rs-386600/v1"
+              }
+            }
+          },
+          {
+            "DOI": "10.64898/2026.01.27.701787",
+            "title": [
+              "Pathological TDP-43 filaments accumulate at synapses and cause synaptic dysfunction"
+            ],
+            "URL": "https://doi.org/10.64898/2026.01.27.701787",
+            "relation": null,
+            "link": [
+              {
+                "URL": "https://syndication.highwire.org/content/doi/10.64898/2026.01.27.701787",
+                "content-type": "unspecified",
+                "content-version": "vor",
+                "intended-application": "similarity-checking"
+              }
+            ],
+            "published": {
+              "date-parts": [
+                [
+                  2026,
+                  1,
+                  27
+                ]
+              ]
+            },
+            "resource": {
+              "primary": {
+                "URL": "http://biorxiv.org/lookup/doi/10.64898/2026.01.27.701787"
+              }
+            }
+          }
+        ]
+      },
+      "elapsed_seconds": 5.173
+    },
+    {
+      "id": "crossref-old",
+      "url": "https://api.crossref.org/works?query.title=Loss+of+TDP-43+induces+synaptic+dysfunction+that+is+rescued+by+UNC13A+splice-switching+ASOs&rows=10",
+      "method": "GET",
+      "query_body": null,
+      "retrieved_at": "2026-11-04T09:10:03.937301+01:00",
+      "status": 200,
+      "content_type": "application/json",
+      "final_url": "https://api.crossref.org/works?query.title=Loss+of+TDP-43+induces+synaptic+dysfunction+that+is+rescued+by+UNC13A+splice-switching+ASOs&rows=10",
+      "bytes": 252864,
+      "sha256_response": "f0c2ef8d69f7f1629873d224032dfe6bc3ca922233e2393aa732a618d80060bd",
+      "result": {
+        "total": 1029590,
+        "items": [
+          {
+            "DOI": "10.1101/2024.06.20.599684",
+            "title": [
+              "Loss of TDP-43 induces synaptic dysfunction that is rescued by UNC13A splice-switching ASOs"
+            ],
+            "URL": "https://doi.org/10.1101/2024.06.20.599684",
+            "relation": null,
+            "link": [
+              {
+                "URL": "https://syndication.highwire.org/content/doi/10.1101/2024.06.20.599684",
+                "content-type": "unspecified",
+                "content-version": "vor",
+                "intended-application": "similarity-checking"
+              }
+            ],
+            "published": {
+              "date-parts": [
+                [
+                  2024,
+                  6,
+                  24
+                ]
+              ]
+            },
+            "resource": {
+              "primary": {
+                "URL": "http://biorxiv.org/lookup/doi/10.1101/2024.06.20.599684"
+              }
+            }
+          },
+          {
+            "DOI": "10.1038/s41586-022-04436-3",
+            "title": [
+              "TDP-43 loss and ALS-risk SNPs drive mis-splicing and depletion of UNC13A"
+            ],
+            "URL": "https://doi.org/10.1038/s41586-022-04436-3",
+            "relation": {
+              "has-preprint": [
+                {
+                  "id-type": "doi",
+                  "id": "10.21203/rs.3.rs-386600/v1",
+                  "asserted-by": "object"
+                }
+              ]
+            },
+            "link": [
+              {
+                "URL": "https://www.nature.com/articles/s41586-022-04436-3.pdf",
+                "content-type": "application/pdf",
+                "content-version": "vor",
+                "intended-application": "text-mining"
+              },
+              {
+                "URL": "https://www.nature.com/articles/s41586-022-04436-3",
+                "content-type": "text/html",
+                "content-version": "vor",
+                "intended-application": "text-mining"
+              },
+              {
+                "URL": "https://www.nature.com/articles/s41586-022-04436-3.pdf",
+                "content-type": "application/pdf",
+                "content-version": "vor",
+                "intended-application": "similarity-checking"
+              }
+            ],
+            "published": {
+              "date-parts": [
+                [
+                  2022,
+                  2,
+                  23
+                ]
+              ]
+            },
+            "resource": {
+              "primary": {
+                "URL": "https://www.nature.com/articles/s41586-022-04436-3"
+              }
+            }
+          },
+          {
+            "DOI": "10.1038/s41380-021-01346-0",
+            "title": [
+              "Loss of TDP-43 function underlies hippocampal and cortical synaptic deficits in TDP-43 proteinopathies"
+            ],
+            "URL": "https://doi.org/10.1038/s41380-021-01346-0",
+            "relation": null,
+            "link": [
+              {
+                "URL": "https://www.nature.com/articles/s41380-021-01346-0.pdf",
+                "content-type": "application/pdf",
+                "content-version": "vor",
+                "intended-application": "text-mining"
+              },
+              {
+                "URL": "https://www.nature.com/articles/s41380-021-01346-0",
+                "content-type": "text/html",
+                "content-version": "vor",
+                "intended-application": "text-mining"
+              },
+              {
+                "URL": "https://www.nature.com/articles/s41380-021-01346-0.pdf",
+                "content-type": "application/pdf",
+                "content-version": "vor",
+                "intended-application": "similarity-checking"
+              }
+            ],
+            "published": {
+              "date-parts": [
+                [
+                  2021,
+                  10,
+                  25
+                ]
+              ]
+            },
+            "resource": {
+              "primary": {
+                "URL": "https://www.nature.com/articles/s41380-021-01346-0"
+              }
+            }
+          },
+          {
+            "DOI": "10.1016/j.neuron.2025.03.004",
+            "title": [
+              "TDP-43 seeding induces cytoplasmic aggregation heterogeneity and nuclear loss of function of TDP-43"
+            ],
+            "URL": "https://doi.org/10.1016/j.neuron.2025.03.004",
+            "relation": null,
+            "link": [
+              {
+                "URL": "https://api.elsevier.com/content/article/PII:S089662732500176X?httpAccept=text/xml",
+                "content-type": "text/xml",
+                "content-version": "vor",
+                "intended-application": "text-mining"
+              },
+              {
+                "URL": "https://api.elsevier.com/content/article/PII:S089662732500176X?httpAccept=text/plain",
+                "content-type": "text/plain",
+                "content-version": "vor",
+                "intended-application": "text-mining"
+              }
+            ],
+            "published": {
+              "date-parts": [
+                [
+                  2025,
+                  5
+                ]
+              ]
+            },
+            "resource": {
+              "primary": {
+                "URL": "https://linkinghub.elsevier.com/retrieve/pii/S089662732500176X"
+              }
+            }
+          },
+          {
+            "DOI": "10.1101/2025.08.28.672801",
+            "title": [
+              "Cryptic splicing in synaptic and membrane excitability genes links TDP-43 loss to neuronal dysfunction"
+            ],
+            "URL": "https://doi.org/10.1101/2025.08.28.672801",
+            "relation": null,
+            "link": [
+              {
+                "URL": "https://syndication.highwire.org/content/doi/10.1101/2025.08.28.672801",
+                "content-type": "unspecified",
+                "content-version": "vor",
+                "intended-application": "similarity-checking"
+              }
+            ],
+            "published": {
+              "date-parts": [
+                [
+                  2025,
+                  9,
+                  2
+                ]
+              ]
+            },
+            "resource": {
+              "primary": {
+                "URL": "http://biorxiv.org/lookup/doi/10.1101/2025.08.28.672801"
+              }
+            }
+          },
+          {
+            "DOI": "10.1126/scitranslmed.aeb8517",
+            "title": [
+              "Cryptic splicing in synaptic and membrane excitability genes links TDP-43 loss to neuronal dysfunction"
+            ],
+            "URL": "https://doi.org/10.1126/scitranslmed.aeb8517",
+            "relation": null,
+            "link": [
+              {
+                "URL": "https://www.science.org/doi/pdf/10.1126/scitranslmed.aeb8517",
+                "content-type": "unspecified",
+                "content-version": "vor",
+                "intended-application": "similarity-checking"
+              }
+            ],
+            "published": {
+              "date-parts": [
+                [
+                  2026,
+                  6,
+                  3
+                ]
+              ]
+            },
+            "resource": {
+              "primary": {
+                "URL": "https://www.science.org/doi/10.1126/scitranslmed.aeb8517"
+              }
+            }
+          },
+          {
+            "DOI": "10.1038/s41593-025-02050-w",
+            "title": [
+              "TDP-43 loss induces cryptic polyadenylation in ALS/FTD"
+            ],
+            "URL": "https://doi.org/10.1038/s41593-025-02050-w",
+            "relation": null,
+            "link": [
+              {
+                "URL": "https://www.nature.com/articles/s41593-025-02050-w.pdf",
+                "content-type": "application/pdf",
+                "content-version": "vor",
+                "intended-application": "text-mining"
+              },
+              {
+                "URL": "https://www.nature.com/articles/s41593-025-02050-w",
+                "content-type": "text/html",
+                "content-version": "vor",
+                "intended-application": "text-mining"
+              },
+              {
+                "URL": "https://www.nature.com/articles/s41593-025-02050-w.pdf",
+                "content-type": "application/pdf",
+                "content-version": "vor",
+                "intended-application": "similarity-checking"
+              }
+            ],
+            "published": {
+              "date-parts": [
+                [
+                  2025,
+                  10,
+                  21
+                ]
+              ]
+            },
+            "resource": {
+              "primary": {
+                "URL": "https://www.nature.com/articles/s41593-025-02050-w"
+              }
+            }
+          },
+          {
+            "DOI": "10.1038/s41586-024-07577-9",
+            "title": [
+              "Author Correction: TDP-43 loss and ALS-risk SNPs drive mis-splicing and depletion of UNC13A"
+            ],
+            "URL": "https://doi.org/10.1038/s41586-024-07577-9",
+            "relation": null,
+            "link": [
+              {
+                "URL": "https://www.nature.com/articles/s41586-024-07577-9.pdf",
+                "content-type": "application/pdf",
+                "content-version": "vor",
+                "intended-application": "text-mining"
+              },
+              {
+                "URL": "https://www.nature.com/articles/s41586-024-07577-9",
+                "content-type": "text/html",
+                "content-version": "vor",
+                "intended-application": "text-mining"
+              },
+              {
+                "URL": "https://www.nature.com/articles/s41586-024-07577-9.pdf",
+                "content-type": "application/pdf",
+                "content-version": "vor",
+                "intended-application": "similarity-checking"
+              }
+            ],
+            "published": {
+              "date-parts": [
+                [
+                  2024,
+                  6,
+                  18
+                ]
+              ]
+            },
+            "resource": {
+              "primary": {
+                "URL": "https://www.nature.com/articles/s41586-024-07577-9"
+              }
+            }
+          },
+          {
+            "DOI": "10.64898/2026.09.17.752342",
+            "title": [
+              "TDP-43 dysfunction induces cryptic circular RNAs in ALS/FTD"
+            ],
+            "URL": "https://doi.org/10.64898/2026.09.17.752342",
+            "relation": null,
+            "link": [
+              {
+                "URL": "https://syndication.highwire.org/content/doi/10.64898/2026.09.17.752342",
+                "content-type": "unspecified",
+                "content-version": "vor",
+                "intended-application": "similarity-checking"
+              }
+            ],
+            "published": {
+              "date-parts": [
+                [
+                  2026,
+                  9,
+                  20
+                ]
+              ]
+            },
+            "resource": {
+              "primary": {
+                "URL": "http://biorxiv.org/lookup/doi/10.64898/2026.09.17.752342"
+              }
+            }
+          },
+          {
+            "DOI": "10.21203/rs.3.rs-386600/v1",
+            "title": [
+              "Common ALS/FTD risk variants in UNC13A exacerbate its cryptic splicing and loss upon TDP-43 mislocalization"
+            ],
+            "URL": "https://doi.org/10.21203/rs.3.rs-386600/v1",
+            "relation": {
+              "is-preprint-of": [
+                {
+                  "id-type": "doi",
+                  "id": "10.1038/s41586-022-04436-3",
+                  "asserted-by": "subject"
+                }
+              ]
+            },
+            "link": [
+              {
+                "URL": "https://www.researchsquare.com/article/rs-386600/v1",
+                "content-type": "text/html",
+                "content-version": "vor",
+                "intended-application": "text-mining"
+              },
+              {
+                "URL": "https://www.researchsquare.com/article/rs-386600/v1.html",
+                "content-type": "unspecified",
+                "content-version": "vor",
+                "intended-application": "similarity-checking"
+              }
+            ],
+            "published": {
+              "date-parts": [
+                [
+                  2021,
+                  4,
+                  19
+                ]
+              ]
+            },
+            "resource": {
+              "primary": {
+                "URL": "https://www.researchsquare.com/article/rs-386600/v1"
+              }
+            }
+          }
+        ]
+      },
+      "elapsed_seconds": 5.067
+    },
+    {
+      "id": "datacite",
+      "url": "https://api.datacite.org/dois?query=UNC13A&page%5Bsize%5D=100",
+      "method": "GET",
+      "query_body": null,
+      "retrieved_at": "2026-11-04T09:10:03.937926+01:00",
+      "error_type": "HTTPError",
+      "error": "HTTP Error 500: Internal Server Error",
+      "status": 500,
+      "elapsed_seconds": 6.184
+    },
+    {
+      "id": "zenodo",
+      "url": "https://zenodo.org/api/records?q=UNC13A&size=50",
+      "method": "GET",
+      "query_body": null,
+      "retrieved_at": "2026-11-04T09:10:03.938795+01:00",
+      "error_type": "HTTPError",
+      "error": "HTTP Error 400: Bad Request",
+      "status": 400,
+      "elapsed_seconds": 5.028
+    },
+    {
+      "id": "figshare",
+      "url": "https://api.figshare.com/v2/articles/search",
+      "method": "POST-search",
+      "query_body": {
+        "search_for": "UNC13A",
+        "limit": 100
+      },
+      "retrieved_at": "2026-11-04T09:10:08.967077+01:00",
+      "status": 200,
+      "content_type": "application/json",
+      "final_url": "https://api.figshare.com/v2/articles/search",
+      "bytes": 50375,
+      "sha256_response": "4d7a72ac8d75151e55758845cd42b01e4969100e75a3483b7531f0a1e7603f47",
+      "result": [
+        {
+          "id": 32325660,
+          "title": "Prioritizing neuropsychological research and care in amyotrophic lateral sclerosis (ALS): building an international neuropsychological framework for ALS",
+          "doi": "",
+          "url": "https://api.figshare.com/v2/articles/32325660",
+          "url_public_html": "https://repository.rcsi.com/articles/journal_contribution/Prioritizing_neuropsychological_research_and_care_in_amyotrophic_lateral_sclerosis_ALS_building_an_international_neuropsychological_framework_for_ALS/32325660"
+        },
+        {
+          "id": 32357589,
+          "title": "Table 1_Human iPSC-derived motor neurons as a platform for elucidating TDP-43-related amyotrophic lateral sclerosis pathogenesis: a mini review.xlsx",
+          "doi": "10.3389/fnmol.2026.1864964.s001",
+          "url": "https://api.figshare.com/v2/articles/32357589",
+          "url_public_html": "https://frontiersin.figshare.com/articles/dataset/Table_1_Human_iPSC-derived_motor_neurons_as_a_platform_for_elucidating_TDP-43-related_amyotrophic_lateral_sclerosis_pathogenesis_a_mini_review_xlsx/32357589"
+        },
+        {
+          "id": 28674375,
+          "title": "Additional file 4 of C9ORF72 poly-PR disrupts expression of ALS/FTD-implicated STMN2 through SRSF7",
+          "doi": "10.6084/m9.figshare.28674375.v1",
+          "url": "https://api.figshare.com/v2/articles/28674375",
+          "url_public_html": "https://springernature.figshare.com/articles/journal_contribution/Additional_file_4_of_C9ORF72_poly-PR_disrupts_expression_of_ALS_FTD-implicated_STMN2_through_SRSF7/28674375"
+        },
+        {
+          "id": 28613882,
+          "title": "Table 1_Combined impact of CHCHD10 p.Gly66Val and three other variants suggests oligogenic contributions to ALS.docx",
+          "doi": "10.3389/fneur.2025.1438207.s001",
+          "url": "https://api.figshare.com/v2/articles/28613882",
+          "url_public_html": "https://frontiersin.figshare.com/articles/dataset/Table_1_Combined_impact_of_CHCHD10_p_Gly66Val_and_three_other_variants_suggests_oligogenic_contributions_to_ALS_docx/28613882"
+        },
+        {
+          "id": 28587995,
+          "title": "Data Sheet 1_DYRK1A roles in human neural progenitors.docx",
+          "doi": "10.3389/fnins.2025.1533253.s002",
+          "url": "https://api.figshare.com/v2/articles/28587995",
+          "url_public_html": "https://frontiersin.figshare.com/articles/dataset/Data_Sheet_1_DYRK1A_roles_in_human_neural_progenitors_docx/28587995"
+        },
+        {
+          "id": 28588004,
+          "title": "Table 1_DYRK1A roles in human neural progenitors.xlsx",
+          "doi": "10.3389/fnins.2025.1533253.s001",
+          "url": "https://api.figshare.com/v2/articles/28588004",
+          "url_public_html": "https://frontiersin.figshare.com/articles/dataset/Table_1_DYRK1A_roles_in_human_neural_progenitors_xlsx/28588004"
+        },
+        {
+          "id": 28107610,
+          "title": "Association of <i>UNC13A</i> with increased amyotrophic lateral sclerosis risk, bulbar onset, and lower motor neuron involvement in a Norwegian ALS cohort",
+          "doi": "10.6084/m9.figshare.28107610.v1",
+          "url": "https://api.figshare.com/v2/articles/28107610",
+          "url_public_html": "https://tandf.figshare.com/articles/journal_contribution/Association_of_i_UNC13A_i_with_increased_amyotrophic_lateral_sclerosis_risk_bulbar_onset_and_lower_motor_neuron_involvement_in_a_Norwegian_ALS_cohort/28107610"
+        },
+        {
+          "id": 27605109,
+          "title": "Creation of de novo cryptic splicing for ALS and FTD precision medicine",
+          "doi": "10.25418/crick.27605109.v1",
+          "url": "https://api.figshare.com/v2/articles/27605109",
+          "url_public_html": "https://crick.figshare.com/articles/journal_contribution/Creation_of_de_novo_cryptic_splicing_for_ALS_and_FTD_precision_medicine/27605109"
+        },
+        {
+          "id": 23453615,
+          "title": "Meta-analysis of pharmacogenetic interactions in amyotrophic lateral sclerosis clinical trials",
+          "doi": "",
+          "url": "https://api.figshare.com/v2/articles/23453615",
+          "url_public_html": "https://sussex.figshare.com/articles/journal_contribution/Meta-analysis_of_pharmacogenetic_interactions_in_amyotrophic_lateral_sclerosis_clinical_trials/23453615"
+        },
+        {
+          "id": 23439995,
+          "title": "Rare genetic variation in UNC13A may modify survival in amyotrophic lateral sclerosis",
+          "doi": "",
+          "url": "https://api.figshare.com/v2/articles/23439995",
+          "url_public_html": "https://sussex.figshare.com/articles/journal_contribution/Rare_genetic_variation_in_UNC13A_may_modify_survival_in_amyotrophic_lateral_sclerosis/23439995"
+        },
+        {
+          "id": 23416886,
+          "title": "C9orf72 and UNC13A are shared risk loci for amyotrophic lateral sclerosis and frontotemporal dementia: a genome-wide meta-analysis",
+          "doi": "",
+          "url": "https://api.figshare.com/v2/articles/23416886",
+          "url_public_html": "https://sussex.figshare.com/articles/journal_contribution/C9orf72_and_UNC13A_are_shared_risk_loci_for_amyotrophic_lateral_sclerosis_and_frontotemporal_dementia_a_genome-wide_meta-analysis/23416886"
+        },
+        {
+          "id": 23391374,
+          "title": "Genome-wide association study identifies 19p13.3 (UNC13A) and 9p21.2 as susceptibility loci for sporadic amyotrophic lateral sclerosis",
+          "doi": "",
+          "url": "https://api.figshare.com/v2/articles/23391374",
+          "url_public_html": "https://sussex.figshare.com/articles/journal_contribution/Genome-wide_association_study_identifies_19p13_3_UNC13A_and_9p21_2_as_susceptibility_loci_for_sporadic_amyotrophic_lateral_sclerosis/23391374"
+        },
+        {
+          "id": 22296526,
+          "title": "hnRNP L protein levels associate with <i>UNC13A</i> cryptic RNA accumulation in FTLD-TDP cases, and hnRNP L can bind and repress <i>UNC13A</i> cryptic exon splicing in human neuroblastoma (M17) cells upon TDP-43 down-regulation.",
+          "doi": "10.1371/journal.pbio.3002028.g006",
+          "url": "https://api.figshare.com/v2/articles/22296526",
+          "url_public_html": "https://plos.figshare.com/articles/figure/hnRNP_L_protein_levels_associate_with_i_UNC13A_i_cryptic_RNA_accumulation_in_FTLD-TDP_cases_and_hnRNP_L_can_bind_and_repress_i_UNC13A_i_cryptic_exon_splicing_in_human_neuroblastoma_M17_cells_upon_TDP-43_down-regulation_/22296526"
+        },
+        {
+          "id": 22296523,
+          "title": "hnRNP L, hnRNP A1, and hnRNP A2B1 can repress <i>UNC13A</i> cryptic exon splicing but TDP-43 down-regulation is critical to observe <i>UNC13A</i> cryptic RNA accumulation.",
+          "doi": "10.1371/journal.pbio.3002028.g005",
+          "url": "https://api.figshare.com/v2/articles/22296523",
+          "url_public_html": "https://plos.figshare.com/articles/figure/hnRNP_L_hnRNP_A1_and_hnRNP_A2B1_can_repress_i_UNC13A_i_cryptic_exon_splicing_but_TDP-43_down-regulation_is_critical_to_observe_i_UNC13A_i_cryptic_RNA_accumulation_/22296523"
+        },
+        {
+          "id": 22296520,
+          "title": "The presence of the risk haplotype in <i>UNC13A</i> cryptic exon affects its binding ability to hnRNP L, hnRNP A1, and hnRNP A2B1.",
+          "doi": "10.1371/journal.pbio.3002028.g004",
+          "url": "https://api.figshare.com/v2/articles/22296520",
+          "url_public_html": "https://plos.figshare.com/articles/figure/The_presence_of_the_risk_haplotype_in_i_UNC13A_i_cryptic_exon_affects_its_binding_ability_to_hnRNP_L_hnRNP_A1_and_hnRNP_A2B1_/22296520"
+        },
+        {
+          "id": 22296517,
+          "title": "hnRNP L, hnRNP A1, and hnRNP A2B1 bind to <i>UNC13A</i> RNA independent of TDP-43.",
+          "doi": "10.1371/journal.pbio.3002028.g003",
+          "url": "https://api.figshare.com/v2/articles/22296517",
+          "url_public_html": "https://plos.figshare.com/articles/figure/hnRNP_L_hnRNP_A1_and_hnRNP_A2B1_bind_to_i_UNC13A_i_RNA_independent_of_TDP-43_/22296517"
+        },
+        {
+          "id": 22296514,
+          "title": "The extreme N-terminus of TDP-43 is required to repress <i>UNC13A</i> cryptic exon splicing.",
+          "doi": "10.1371/journal.pbio.3002028.g002",
+          "url": "https://api.figshare.com/v2/articles/22296514",
+          "url_public_html": "https://plos.figshare.com/articles/figure/The_extreme_N-terminus_of_TDP-43_is_required_to_repress_i_UNC13A_i_cryptic_exon_splicing_/22296514"
+        },
+        {
+          "id": 22296511,
+          "title": "The accumulation of <i>UNC13A</i> cryptic RNA is sensitive to TDP-43 levels.",
+          "doi": "10.1371/journal.pbio.3002028.g001",
+          "url": "https://api.figshare.com/v2/articles/22296511",
+          "url_public_html": "https://plos.figshare.com/articles/figure/The_accumulation_of_i_UNC13A_i_cryptic_RNA_is_sensitive_to_TDP-43_levels_/22296511"
+        },
+        {
+          "id": 22296508,
+          "title": "Uncropped blots from Figs 1B, 2B, 3B, 3D, 4, 5B, S3A, and S6B.",
+          "doi": "10.1371/journal.pbio.3002028.s013",
+          "url": "https://api.figshare.com/v2/articles/22296508",
+          "url_public_html": "https://plos.figshare.com/articles/journal_contribution/Uncropped_blots_from_Figs_1B_2B_3B_3D_4_5B_S3A_and_S6B_/22296508"
+        },
+        {
+          "id": 22296505,
+          "title": "Data used to generate graphs in Figs 1, 2, 4–6, S1, S3, S4, and S6–S9.",
+          "doi": "10.1371/journal.pbio.3002028.s012",
+          "url": "https://api.figshare.com/v2/articles/22296505",
+          "url_public_html": "https://plos.figshare.com/articles/dataset/Data_used_to_generate_graphs_in_Figs_1_2_4_6_S1_S3_S4_and_S6_S9_/22296505"
+        },
+        {
+          "id": 22296502,
+          "title": "Data used to generate graphs in S2 Fig.",
+          "doi": "10.1371/journal.pbio.3002028.s011",
+          "url": "https://api.figshare.com/v2/articles/22296502",
+          "url_public_html": "https://plos.figshare.com/articles/dataset/Data_used_to_generate_graphs_in_S2_Fig_/22296502"
+        },
+        {
+          "id": 22296499,
+          "title": "Data used to generate the volcano plot in Fig 3C.",
+          "doi": "10.1371/journal.pbio.3002028.s010",
+          "url": "https://api.figshare.com/v2/articles/22296499",
+          "url_public_html": "https://plos.figshare.com/articles/dataset/Data_used_to_generate_the_volcano_plot_in_Fig_3C_/22296499"
+        },
+        {
+          "id": 22296496,
+          "title": "hnRNP A1 and hnRNP A2B1 protein levels do not associate with <i>UNC13A cryptic</i> RNA levels.",
+          "doi": "10.1371/journal.pbio.3002028.s009",
+          "url": "https://api.figshare.com/v2/articles/22296496",
+          "url_public_html": "https://plos.figshare.com/articles/journal_contribution/hnRNP_A1_and_hnRNP_A2B1_protein_levels_do_not_associate_with_i_UNC13A_cryptic_i_RNA_levels_/22296496"
+        },
+        {
+          "id": 22296493,
+          "title": "Down-regulation of <i>HNRNPL</i> further enhances <i>UNC13A</i> cryptic RNA containing the reference haplotype, in the context of <i>TARDBP</i> KO HeLa cells.",
+          "doi": "10.1371/journal.pbio.3002028.s008",
+          "url": "https://api.figshare.com/v2/articles/22296493",
+          "url_public_html": "https://plos.figshare.com/articles/journal_contribution/Down-regulation_of_i_HNRNPL_i_further_enhances_i_UNC13A_i_cryptic_RNA_containing_the_reference_haplotype_in_the_context_of_i_TARDBP_i_KO_HeLa_cells_/22296493"
+        },
+        {
+          "id": 22296490,
+          "title": "Reducing levels of hnRNP L, hnRNPA1, or A2B1 under normal levels of TDP-43 does not lead to <i>UNC13A</i> cryptic exon inclusion.",
+          "doi": "10.1371/journal.pbio.3002028.s007",
+          "url": "https://api.figshare.com/v2/articles/22296490",
+          "url_public_html": "https://plos.figshare.com/articles/journal_contribution/Reducing_levels_of_hnRNP_L_hnRNPA1_or_A2B1_under_normal_levels_of_TDP-43_does_not_lead_to_i_UNC13A_i_cryptic_exon_inclusion_/22296490"
+        },
+        {
+          "id": 22296487,
+          "title": "The deletion of <i>UNC13A</i> cryptic exon affects its binding ability to hnRNP L.",
+          "doi": "10.1371/journal.pbio.3002028.s006",
+          "url": "https://api.figshare.com/v2/articles/22296487",
+          "url_public_html": "https://plos.figshare.com/articles/journal_contribution/The_deletion_of_i_UNC13A_i_cryptic_exon_affects_its_binding_ability_to_hnRNP_L_/22296487"
+        },
+        {
+          "id": 22296484,
+          "title": "RNA-binding sites for hnRNP L, hnRNP A1, and hnRNP A2B1 were found in the intronic regions flanking the <i>UNC13A</i> cryptic exon.",
+          "doi": "10.1371/journal.pbio.3002028.s005",
+          "url": "https://api.figshare.com/v2/articles/22296484",
+          "url_public_html": "https://plos.figshare.com/articles/journal_contribution/RNA-binding_sites_for_hnRNP_L_hnRNP_A1_and_hnRNP_A2B1_were_found_in_the_intronic_regions_flanking_the_i_UNC13A_i_cryptic_exon_/22296484"
+        },
+        {
+          "id": 22296481,
+          "title": "Endogenous hnRNP L bind <i>UNC13A</i> WT minigene RNA in <i>TARDBP</i> KO HeLa cells.",
+          "doi": "10.1371/journal.pbio.3002028.s004",
+          "url": "https://api.figshare.com/v2/articles/22296481",
+          "url_public_html": "https://plos.figshare.com/articles/journal_contribution/Endogenous_hnRNP_L_bind_i_UNC13A_i_WT_minigene_RNA_in_i_TARDBP_i_KO_HeLa_cells_/22296481"
+        },
+        {
+          "id": 22296478,
+          "title": "The expression levels of hnRNP L, hnRNP A1, and hnRNP A2B1 are not affected by TDP-43 depletion.",
+          "doi": "10.1371/journal.pbio.3002028.s003",
+          "url": "https://api.figshare.com/v2/articles/22296478",
+          "url_public_html": "https://plos.figshare.com/articles/journal_contribution/The_expression_levels_of_hnRNP_L_hnRNP_A1_and_hnRNP_A2B1_are_not_affected_by_TDP-43_depletion_/22296478"
+        },
+        {
+          "id": 22296475,
+          "title": "Pathway analyses of <i>UNC13A</i> RNA binders identified by proteomics reveal proteins involved in RNA metabolism.",
+          "doi": "10.1371/journal.pbio.3002028.s002",
+          "url": "https://api.figshare.com/v2/articles/22296475",
+          "url_public_html": "https://plos.figshare.com/articles/journal_contribution/Pathway_analyses_of_i_UNC13A_i_RNA_binders_identified_by_proteomics_reveal_proteins_involved_in_RNA_metabolism_/22296475"
+        },
+        {
+          "id": 22296469,
+          "title": "TDP-43 can efficiently inhibit <i>UNC13A</i> cryptic exon inclusion independently of GWAS SNP.",
+          "doi": "10.1371/journal.pbio.3002028.s001",
+          "url": "https://api.figshare.com/v2/articles/22296469",
+          "url_public_html": "https://plos.figshare.com/articles/journal_contribution/TDP-43_can_efficiently_inhibit_i_UNC13A_i_cryptic_exon_inclusion_independently_of_GWAS_SNP_/22296469"
+        },
+        {
+          "id": 22116425,
+          "title": "Screening and Identification of Potential Diagnostic Biomarkers in Peripheral Blood for Post-traumatic Stress Disorder",
+          "doi": "10.6084/m9.figshare.22116425.v1",
+          "url": "https://api.figshare.com/v2/articles/22116425",
+          "url_public_html": "https://figshare.com/articles/dataset/Screening_and_Identification_of_Potential_Diagnostic_Biomarkers_in_Peripheral_Blood_for_Post-traumatic_Stress_Disorder/22116425"
+        },
+        {
+          "id": 21987755,
+          "title": "Table_1_Association of the risk factor UNC13A with survival and upper motor neuron involvement in amyotrophic lateral sclerosis.DOCX",
+          "doi": "10.3389/fnagi.2023.1067954.s001",
+          "url": "https://api.figshare.com/v2/articles/21987755",
+          "url_public_html": "https://frontiersin.figshare.com/articles/dataset/Table_1_Association_of_the_risk_factor_UNC13A_with_survival_and_upper_motor_neuron_involvement_in_amyotrophic_lateral_sclerosis_DOCX/21987755"
+        },
+        {
+          "id": 21688310,
+          "title": "Lithium carbonate in amyotrophic lateral sclerosis patients homozygous for the C-allele at SNP rs12608932 in UNC13A: protocol for a confirmatory, randomized, group-sequential, event-driven, double-blind, placebo-controlled trial",
+          "doi": "",
+          "url": "https://api.figshare.com/v2/articles/21688310",
+          "url_public_html": "https://repository.rcsi.com/articles/journal_contribution/Lithium_carbonate_in_amyotrophic_lateral_sclerosis_patients_homozygous_for_the_C-allele_at_SNP_rs12608932_in_UNC13A_protocol_for_a_confirmatory_randomized_group-sequential_event-driven_double-blind_placebo-controlled_trial/21688310"
+        },
+        {
+          "id": 21675869,
+          "title": "Synaptic plasticity across the fly lifespan.",
+          "doi": "10.1371/journal.pbio.3001730.g001",
+          "url": "https://api.figshare.com/v2/articles/21675869",
+          "url_public_html": "https://plos.figshare.com/articles/figure/Synaptic_plasticity_across_the_fly_lifespan_/21675869"
+        },
+        {
+          "id": 20109557,
+          "title": "Table_1_Characterization of Different Subtypes of Immune Cell Infiltration in Glioblastoma to Aid Immunotherapy.docx",
+          "doi": "10.3389/fimmu.2022.799509.s001",
+          "url": "https://api.figshare.com/v2/articles/20109557",
+          "url_public_html": "https://frontiersin.figshare.com/articles/dataset/Table_1_Characterization_of_Different_Subtypes_of_Immune_Cell_Infiltration_in_Glioblastoma_to_Aid_Immunotherapy_docx/20109557"
+        },
+        {
+          "id": 19345568,
+          "title": "TDP-43 loss and ALS-risk SNPs drive mis-splicing and depletion of UNC13A.",
+          "doi": "10.25418/crick.19345568.v1",
+          "url": "https://api.figshare.com/v2/articles/19345568",
+          "url_public_html": "https://crick.figshare.com/articles/journal_contribution/TDP-43_loss_and_ALS-risk_SNPs_drive_mis-splicing_and_depletion_of_UNC13A_/19345568"
+        },
+        {
+          "id": 14980977,
+          "title": "Data_Sheet_1_Epigenetic Markers Are Associated With Differences in Isocyanate Biomarker Levels in Exposed Spray-Painters.pdf",
+          "doi": "10.3389/fgene.2021.700636.s001",
+          "url": "https://api.figshare.com/v2/articles/14980977",
+          "url_public_html": "https://frontiersin.figshare.com/articles/dataset/Data_Sheet_1_Epigenetic_Markers_Are_Associated_With_Differences_in_Isocyanate_Biomarker_Levels_in_Exposed_Spray-Painters_pdf/14980977"
+        },
+        {
+          "id": 11719554,
+          "title": "The Unc13A isoform is important for phasic release and olfactory memory formation at mushroom body synapses",
+          "doi": "10.6084/m9.figshare.11719554.v1",
+          "url": "https://api.figshare.com/v2/articles/11719554",
+          "url_public_html": "https://tandf.figshare.com/articles/journal_contribution/The_Unc13A_isoform_is_important_for_phasic_release_and_olfactory_memory_formation_at_mushroom_body_synapses/11719554"
+        },
+        {
+          "id": 4444517,
+          "title": "Additional file 7: Table S3. of Whole-genome bisulfite sequencing of cell-free DNA identifies signature associated with metastatic breast cancer",
+          "doi": "10.6084/m9.figshare.c.3637367_D8.v1",
+          "url": "https://api.figshare.com/v2/articles/4444517",
+          "url_public_html": "https://springernature.figshare.com/articles/figure/Additional_file_7_Table_S3_of_Whole-genome_bisulfite_sequencing_of_cell-free_DNA_identifies_signature_associated_with_metastatic_breast_cancer/4444517"
+        },
+        {
+          "id": 4444502,
+          "title": "Additional file 6: Figure S4. of Whole-genome bisulfite sequencing of cell-free DNA identifies signature associated with metastatic breast cancer",
+          "doi": "10.6084/m9.figshare.c.3637367_D4.v1",
+          "url": "https://api.figshare.com/v2/articles/4444502",
+          "url_public_html": "https://springernature.figshare.com/articles/dataset/Additional_file_6_Figure_S4_of_Whole-genome_bisulfite_sequencing_of_cell-free_DNA_identifies_signature_associated_with_metastatic_breast_cancer/4444502"
+        },
+        {
+          "id": 3798555,
+          "title": "Rare genetic variation in UNC13A may modify survival in amyotrophic lateral sclerosis",
+          "doi": "10.6084/m9.figshare.3798555.v1",
+          "url": "https://api.figshare.com/v2/articles/3798555",
+          "url_public_html": "https://tandf.figshare.com/articles/figure/Rare_genetic_variation_in_UNC13A_may_modify_survival_in_amyotrophic_lateral_sclerosis/3798555"
+        }
+      ],
+      "elapsed_seconds": 5.276
+    },
+    {
+      "id": "biostudies-index",
+      "url": "https://www.ebi.ac.uk/biostudies/api/v1/search?query=UNC13A&pageSize=100",
+      "method": "GET",
+      "query_body": null,
+      "retrieved_at": "2026-11-04T09:10:09.004242+01:00",
+      "status": 200,
+      "content_type": "application/json;charset=UTF-8",
+      "final_url": "https://www.ebi.ac.uk/biostudies/api/v1/search?query=UNC13A&pageSize=100",
+      "bytes": 66015,
+      "sha256_response": "b71e6bb27ffded557efdfb615e0ca462d9b26fb25a547e0b4455f49460f98e56",
+      "result": {
+        "page": 1,
+        "pageSize": 100,
+        "totalHits": 376,
+        "isTotalHitsExact": true,
+        "query": "UNC13A",
+        "items": [
+          {
+            "accession": "S-EPMC9581527",
+            "title": "Phorbolester-activated Munc13-1 and ubMunc13-2 exert opposing effects on dense-core vesicle secretion.",
+            "files": 15,
+            "links": 4
+          },
+          {
+            "accession": "S-EPMC7997984",
+            "title": "Unc13A and Unc13B contribute to the decoding of distinct sensory information in Drosophila.",
+            "files": 3,
+            "links": 8
+          },
+          {
+            "accession": "S-EPMC12188394",
+            "title": "Endogenous SNAP-Tagging of Munc13‑1 for Monitoring Synapse Nanoarchitecture.",
+            "files": 1,
+            "links": 4
+          },
+          {
+            "accession": "S-EPMC9482821",
+            "title": "Molecular dynamics simulation studies on binding of activator and inhibitor to Munc13-1 C1 in the presence of membrane.",
+            "files": 1,
+            "links": 7
+          },
+          {
+            "accession": "S-EPMC6620733",
+            "title": "Munc13 Is a Molecular Target of Bryostatin 1.",
+            "files": 1,
+            "links": 9
+          },
+          {
+            "accession": "S-EPMC7255523",
+            "title": "Re-examining how Munc13-1 facilitates opening of syntaxin-1.",
+            "files": 0,
+            "links": 6
+          },
+          {
+            "accession": "S-EPMC5482055",
+            "title": "Munc13-1 and Munc18-1 together prevent NSF-dependent de-priming of synaptic vesicles.",
+            "files": 2,
+            "links": 3
+          },
+          {
+            "accession": "S-EPMC3766433",
+            "title": "The pre-synaptic Munc13-1 binds alcohol and modulates alcohol self-administration in Drosophila.",
+            "files": 1,
+            "links": 4
+          },
+          {
+            "accession": "S-EPMC12904202",
+            "title": "Munc13-1 couples DAG and Ca&lt;sup&gt;2+&lt;/sup&gt; signaling to dynamic vesicle priming, synaptic short-term plasticity, and posttetanic potentiation.",
+            "files": 1,
+            "links": 3
+          },
+          {
+            "accession": "S-EPMC12485113",
+            "title": "Munc13-1 restoration mitigates presynaptic pathology in spinal muscular atrophy.",
+            "files": 7,
+            "links": 3
+          },
+          {
+            "accession": "S-EPMC1472246",
+            "title": "Structural basis for a Munc13-1 homodimer to Munc13-1/RIM heterodimer switch.",
+            "files": 3,
+            "links": 6
+          },
+          {
+            "accession": "S-EPMC8906797",
+            "title": "Probing the Diacylglycerol Binding Site of Presynaptic Munc13-1.",
+            "files": 2,
+            "links": 7
+          },
+          {
+            "accession": "S-EPMC5623624",
+            "title": "Resveratrol inhibits phorbol ester-induced membrane translocation of presynaptic Munc13-1.",
+            "files": 1,
+            "links": 4
+          },
+          {
+            "accession": "S-EPMC5344669",
+            "title": "Mechanistic insights into neurotransmitter release and presynaptic plasticity from the crystal structure of Munc13-1 C1C2BMUN.",
+            "files": 0,
+            "links": 11
+          },
+          {
+            "accession": "S-EPMC124419",
+            "title": "Total arrest of spontaneous and evoked synaptic transmission but normal synaptogenesis in the absence of Munc13-mediated vesicle priming.",
+            "files": 0,
+            "links": 5
+          },
+          {
+            "accession": "S-EPMC10623011",
+            "title": "Diacylglycerol-dependent hexamers of the SNARE-assembling chaperone Munc13-1 cooperatively bind vesicles.",
+            "files": 1,
+            "links": 4
+          },
+          {
+            "accession": "S-EPMC6008642",
+            "title": "Critical Role of Trp-588 of Presynaptic Munc13-1 for Ligand Binding and Membrane Translocation.",
+            "files": 1,
+            "links": 6
+          },
+          {
+            "accession": "S-EPMC10849727",
+            "title": "Control of Munc13-1 Activity by Autoinhibitory Interactions Involving the Variable N-terminal Region.",
+            "files": 0,
+            "links": 7
+          },
+          {
+            "accession": "S-EPMC9623535",
+            "title": "Neuronal SNARE complex assembly guided by Munc18-1 and Munc13-1.",
+            "files": 0,
+            "links": 11
+          },
+          {
+            "accession": "S-EPMC6969487",
+            "title": "Munc13-1 MUN domain and Munc18-1 cooperatively chaperone SNARE assembly through a tetrameric complex.",
+            "files": 1,
+            "links": 6
+          },
+          {
+            "accession": "S-EPMC7572713",
+            "title": "Effect of ethanol on Munc13-1 C1 in Membrane: A Molecular Dynamics Simulation Study.",
+            "files": 1,
+            "links": 5
+          },
+          {
+            "accession": "S-EPMC12184661",
+            "title": "A specific negatively charged sequence confers intramolecular regulation on Munc13-1 function in synaptic exocytosis.",
+            "files": 1,
+            "links": 3
+          },
+          {
+            "accession": "S-EPMC6353594",
+            "title": "Multiple factors maintain assembled trans-SNARE complexes in the presence of NSF and αSNAP.",
+            "files": 1,
+            "links": 5
+          },
+          {
+            "accession": "S-EPMC8068094",
+            "title": "Munc13 binds and recruits SNAP25 to chaperone SNARE complex assembly.",
+            "files": 1,
+            "links": 3
+          },
+          {
+            "accession": "S-EPMC8116053",
+            "title": "Variability in the Munc13-1 content of excitatory release sites.",
+            "files": 9,
+            "links": 3
+          },
+          {
+            "accession": "S-EPMC3794949",
+            "title": "Munc13-like skMLCK variants cannot mimic the unique calmodulin binding mode of Munc13 as evidenced by chemical cross-linking and mass spectrometry.",
+            "files": 1,
+            "links": 7
+          },
+          {
+            "accession": "S-EPMC5559510",
+            "title": "A Stimulation Function of Synaptotagmin-1 in Ternary SNARE Complex Formation Dependent on Munc18 and Munc13.",
+            "files": 1,
+            "links": 6
+          },
+          {
+            "accession": "S-EPMC9501808",
+            "title": "Interdomain Dynamics via Paramagnetic NMR on the Highly Flexible Complex Calmodulin/Munc13-1.",
+            "files": 1,
+            "links": 5
+          },
+          {
+            "accession": "S-EPMC4128701",
+            "title": "DOC2B and Munc13-1 differentially regulate neuronal network activity.",
+            "files": 4,
+            "links": 3
+          },
+          {
+            "accession": "S-EPMC6325239",
+            "title": "Munc18 and Munc13 serve as a functional template to orchestrate neuronal SNARE complex assembly.",
+            "files": 4,
+            "links": 5
+          },
+          {
+            "accession": "S-EPMC8648301",
+            "title": "Control of neurotransmitter release by two distinct membrane-binding faces of the Munc13-1 C<sub>1</sub>C<sub>2</sub>B region.",
+            "files": 13,
+            "links": 9
+          },
+          {
+            "accession": "S-EPMC11047112",
+            "title": "Differential nanoscale organization of excitatory synapses onto excitatory vs. inhibitory neurons.",
+            "files": 1,
+            "links": 3
+          },
+          {
+            "accession": "S-EPMC8518729",
+            "title": "Endogenous neurosteroids pregnanolone and pregnanolone sulfate potentiate presynaptic glutamate release through distinct mechanisms.",
+            "files": 0,
+            "links": 4
+          },
+          {
+            "accession": "S-EPMC6407922",
+            "title": "Membrane bridging by Munc13-1 is crucial for neurotransmitter release.",
+            "files": 5,
+            "links": 5
+          },
+          {
+            "accession": "S-EPMC5464772",
+            "title": "Autoinhibition of Munc18-1 modulates synaptobrevin binding and helps to enable Munc13-dependent regulation of membrane fusion.",
+            "files": 0,
+            "links": 8
+          },
+          {
+            "accession": "S-EPMC3518216",
+            "title": "Munc13 controls the location and efficiency of dense-core vesicle release in neurons.",
+            "files": 0,
+            "links": 5
+          },
+          {
+            "accession": "S-EPMC2173811",
+            "title": "Cast: a novel protein of the cytomatrix at the active zone of synapses that forms a ternary complex with RIM1 and munc13-1.",
+            "files": 0,
+            "links": 4
+          },
+          {
+            "accession": "S-EPMC13080031",
+            "title": "Munc13 serves as a molecular filter for SNARE sorting and assembly in active zone condensates.",
+            "files": 1,
+            "links": 10
+          },
+          {
+            "accession": "S-EPMC3151491",
+            "title": "Diacylglycerol signaling underlies astrocytic ATP release.",
+            "files": 1,
+            "links": 4
+          },
+          {
+            "accession": "S-EPMC7848701",
+            "title": "Synaptotagmin-1-, Munc18-1-, and Munc13-1-dependent liposome fusion with a few neuronal SNAREs.",
+            "files": 2,
+            "links": 3
+          },
+          {
+            "accession": "S-EPMC8728020",
+            "title": "Exploring the Two Coupled Conformational Changes That Activate the Munc18-1/Syntaxin-1 Complex.",
+            "files": 1,
+            "links": 5
+          },
+          {
+            "accession": "S-EPMC5379939",
+            "title": "ELKS1 localizes the synaptic vesicle priming protein bMunc13-2 to a specific subset of active zones.",
+            "files": 1,
+            "links": 9
+          },
+          {
+            "accession": "E-MTAB-10297",
+            "title": "TDP-43 iCLIP of cells transfected with UNC13A minigene",
+            "files": 2,
+            "links": 1
+          },
+          {
+            "accession": "S-EPMC5588468",
+            "title": "UNC-18 and Tomosyn Antagonistically Control Synaptic Vesicle Priming Downstream of UNC-13 in <i>Caenorhabditis elegans</i>.",
+            "files": 0,
+            "links": 5
+          },
+          {
+            "accession": "S-EPMC12397458",
+            "title": "Loss of synaptic Munc13-1 underlies neurotransmission abnormalities in spinal muscular atrophy",
+            "files": 1,
+            "links": 1
+          },
+          {
+            "accession": "S-EPMC2830703",
+            "title": "Modular architecture of Munc13/calmodulin complexes: dual regulation by Ca2+ and possible function in short-term synaptic plasticity.",
+            "files": 2,
+            "links": 4
+          },
+          {
+            "accession": "S-EPMC10769418",
+            "title": "Trans-synaptic molecular context of NMDA receptor nanodomains.",
+            "files": 1,
+            "links": 3
+          },
+          {
+            "accession": "S-EPMC7540607",
+            "title": "The Distinct Traits of the UNC13A Polymorphism in Amyotrophic Lateral Sclerosis.",
+            "files": 0,
+            "links": 4
+          },
+          {
+            "accession": "S-EPMC12343948",
+            "title": "Trans-synaptic molecular context of NMDA receptor nanodomains.",
+            "files": 3,
+            "links": 3
+          },
+          {
+            "accession": "S-EPMC6752948",
+            "title": "RIM-BP2 primes synaptic vesicles via recruitment of Munc13-1 at hippocampal mossy fiber synapses.",
+            "files": 13,
+            "links": 3
+          },
+          {
+            "accession": "S-EPMC11573138",
+            "title": "Presynaptic cAMP-PKA-mediated potentiation induces reconfiguration of synaptic vesicle pools and channel-vesicle coupling at hippocampal mossy fiber boutons.",
+            "files": 13,
+            "links": 4
+          },
+          {
+            "accession": "S-EPMC12082005",
+            "title": "UNC13A Polymorphism Influences Survival in Patients with Frontotemporal Dementia.",
+            "files": 2,
+            "links": 4
+          },
+          {
+            "accession": "S-EPMC3486184",
+            "title": "Nonconserved Ca(2+)/calmodulin binding sites in Munc13s differentially control synaptic short-term plasticity.",
+            "files": 2,
+            "links": 10
+          },
+          {
+            "accession": "S-EPMC5451232",
+            "title": "Ca2+ channel clustering with insulin-containing granules is disturbed in type 2 diabetes.",
+            "files": 2,
+            "links": 3
+          },
+          {
+            "accession": "S-EPMC3829451",
+            "title": "β-Adrenergic receptors activate exchange protein directly activated by cAMP (Epac), translocate Munc13-1, and enhance the Rab3A-RIM1α interaction to potentiate glutamate release at cerebrocortical nerve terminals.",
+            "files": 0,
+            "links": 6
+          },
+          {
+            "accession": "S-EPMC5747255",
+            "title": "Molecular Mechanisms of Synaptic Vesicle Priming by Munc13 and Munc18.",
+            "files": 1,
+            "links": 4
+          },
+          {
+            "accession": "S-EPMC4809529",
+            "title": "Syntaxin opening by the MUN domain underlies the function of Munc13 in synaptic-vesicle priming.",
+            "files": 1,
+            "links": 7
+          },
+          {
+            "accession": "S-EPMC3202169",
+            "title": "Show me the MUN-y.",
+            "files": 0,
+            "links": 5
+          },
+          {
+            "accession": "S-EPMC8891019",
+            "title": "TDP-43 represses cryptic exon inclusion in the FTD-ALS gene UNC13A.",
+            "files": 7,
+            "links": 13
+          },
+          {
+            "accession": "S-EPMC7980281",
+            "title": "A unique C2 domain at the C terminus of Munc13 promotes synaptic vesicle priming.",
+            "files": 1,
+            "links": 14
+          },
+          {
+            "accession": "S-EPMC12912961",
+            "title": "Synaptic transmission: Munc13 assembles onto PI(4,5)P&lt;sub&gt;2&lt;/sub&gt;-rich domains into trimers that cooperate to capture vesicles.",
+            "files": 4,
+            "links": 3
+          },
+          {
+            "accession": "S-EPMC11230273",
+            "title": "Loss of TDP-43 induces synaptic dysfunction that is rescued by <i>UNC13A</i> splice-switching ASOs.",
+            "files": 1,
+            "links": 4
+          },
+          {
+            "accession": "S-SCDT-10_1038-S44318-025-00506-0",
+            "title": "ALS-associated RNA-binding proteins promote UNC13A transcription through REST downregulation",
+            "files": 62,
+            "links": 2
+          },
+          {
+            "accession": "S-EPMC2823526",
+            "title": "Fbxo45, a novel ubiquitin ligase, regulates synaptic activity.",
+            "files": 2,
+            "links": 4
+          },
+          {
+            "accession": "S-EPMC12402202",
+            "title": "ALS-associated RNA-binding proteins promote UNC13A transcription through REST downregulation.",
+            "files": 13,
+            "links": 9
+          },
+          {
+            "accession": "S-EPMC10057836",
+            "title": "TDP-43 and other hnRNPs regulate cryptic exon inclusion of a key ALS/FTD risk gene, UNC13A.",
+            "files": 13,
+            "links": 7
+          },
+          {
+            "accession": "S-EPMC10347870",
+            "title": "Identification of residues critical for the extension of Munc18-1 domain 3a.",
+            "files": 4,
+            "links": 4
+          },
+          {
+            "accession": "S-EPMC5350566",
+            "title": "Conformational change of syntaxin linker region induced by Munc13s initiates SNARE complex formation in synaptic exocytosis.",
+            "files": 8,
+            "links": 4
+          },
+          {
+            "accession": "S-EPMC8891020",
+            "title": "TDP-43 loss and ALS-risk SNPs drive mis-splicing and depletion of UNC13A.",
+            "files": 18,
+            "links": 10
+          },
+          {
+            "accession": "S-EPMC10359588",
+            "title": "&lt;i&gt;UNC13A&lt;/i&gt; in amyotrophic lateral sclerosis: from genetic association to therapeutic target.",
+            "files": 1,
+            "links": 10
+          },
+          {
+            "accession": "S-EPMC5125285",
+            "title": "Rare genetic variation in UNC13A may modify survival in amyotrophic lateral sclerosis.",
+            "files": 1,
+            "links": 7
+          },
+          {
+            "accession": "S-EPMC10766724",
+            "title": "Cryptic splicing of stathmin-2 and UNC13A mRNAs is a pathological hallmark of TDP-43-associated Alzheimer's disease.",
+            "files": 1,
+            "links": 5
+          },
+          {
+            "accession": "S-EPMC3483408",
+            "title": "UNC13A influences survival in Italian amyotrophic lateral sclerosis patients: a population-based study.",
+            "files": 0,
+            "links": 6
+          },
+          {
+            "accession": "S-EPMC7815645",
+            "title": "Structural Roles for the Juxtamembrane Linker Region and Transmembrane Region of Synaptobrevin 2 in Membrane Fusion.",
+            "files": 1,
+            "links": 3
+          },
+          {
+            "accession": "E-MTAB-11244",
+            "title": "Nanopore sequencing of UNC13A from SHSY5Y and patient RNA",
+            "files": 2,
+            "links": 1
+          },
+          {
+            "accession": "S-EPMC5989918",
+            "title": "C<sub>19</sub>-Diterpenoid alkaloid arabinosides from an aqueous extract of the lateral root of <i>Aconitum carmichaelii</i> and their analgesic activities.",
+            "files": 1,
+            "links": 17
+          },
+          {
+            "accession": "S-EPMC10169678",
+            "title": "The role of RIM in neurotransmitter release: promotion of synaptic vesicle docking, priming, and fusion.",
+            "files": 0,
+            "links": 6
+          },
+          {
+            "accession": "S-EPMC9608390",
+            "title": "Clinical and Metabolic Signature of <i>UNC13A</i> rs12608932 Variant in Amyotrophic Lateral Sclerosis.",
+            "files": 0,
+            "links": 5
+          },
+          {
+            "accession": "S-EPMC6251755",
+            "title": "UNC13A polymorphism contributes to frontotemporal disease in sporadic amyotrophic lateral sclerosis.",
+            "files": 1,
+            "links": 6
+          },
+          {
+            "accession": "S-EPMC9931189",
+            "title": "Association of the risk factor <i>UNC13A</i> with survival and upper motor neuron involvement in amyotrophic lateral sclerosis.",
+            "files": 1,
+            "links": 6
+          },
+          {
+            "accession": "S-EPMC12697360",
+            "title": "U7 small nuclear RNA splice-switching therapeutics for STMN2 and UNC13A in Amyotrophic Lateral Sclerosis.",
+            "files": 1,
+            "links": 3
+          },
+          {
+            "accession": "S-EPMC9490555",
+            "title": "Molecular Mechanisms Underlying Neurotransmitter Release.",
+            "files": 0,
+            "links": 17
+          },
+          {
+            "accession": "S-EPMC8900292",
+            "title": "Chaperoning SNARE Folding and Assembly.",
+            "files": 0,
+            "links": 9
+          },
+          {
+            "accession": "S-EPMC9946361",
+            "title": "Increased vesicle fusion competence underlies long-term potentiation at hippocampal mossy fiber synapses.",
+            "files": 2,
+            "links": 3
+          },
+          {
+            "accession": "S-EPMC30485",
+            "title": "Human munc13 is a diacylglycerol receptor that induces apoptosis and may contribute to renal cell injury in hyperglycemia.",
+            "files": 0,
+            "links": 7
+          },
+          {
+            "accession": "S-EPMC12597829",
+            "title": "Pathogenic UNC13A variants cause a neurodevelopmental syndrome by impairing synaptic function.",
+            "files": 10,
+            "links": 8
+          },
+          {
+            "accession": "S-EPMC4137231",
+            "title": "C9orf72 and UNC13A are shared risk loci for amyotrophic lateral sclerosis and frontotemporal dementia: a genome-wide meta-analysis.",
+            "files": 1,
+            "links": 20
+          },
+          {
+            "accession": "S-EPMC10605128",
+            "title": "Interaction of the <i>C9orf72</i>-Amyotrophic Lateral Sclerosis-Related Proline-Arginine Dipeptide Repeat Protein with the RNA-Binding Protein NOVA1 Causes Decreased Expression of UNC13A Due to Enhanced Inclusion of Cryptic Exons, Which Is Reversed by Betulin Treatment.",
+            "files": 0,
+            "links": 6
+          },
+          {
+            "accession": "S-EPMC5496739",
+            "title": "Exophilin-8 assembles secretory granules for exocytosis in the actin cortex via interaction with RIM-BP2 and myosin-VIIa.",
+            "files": 0,
+            "links": 6
+          },
+          {
+            "accession": "S-EPMC8866005",
+            "title": "Selective Enrichment of Munc13-2 in Presynaptic Active Zones of Hippocampal Pyramidal Cells That Innervate mGluR1α Expressing Interneurons.",
+            "files": 1,
+            "links": 4
+          },
+          {
+            "accession": "S-EPMC4798968",
+            "title": "Identification of a Munc13-sensitive step in chromaffin cell large dense-core vesicle exocytosis.",
+            "files": 1,
+            "links": 3
+          },
+          {
+            "accession": "S-EPMC6757768",
+            "title": "Identification of Munc13-3 as a candidate gene for critical-period neuroplasticity in visual cortex.",
+            "files": 0,
+            "links": 7
+          },
+          {
+            "accession": "S-EPMC8216508",
+            "title": "Recruitment of release sites underlies chemical presynaptic potentiation at hippocampal mossy fiber boutons.",
+            "files": 6,
+            "links": 4
+          },
+          {
+            "accession": "S-EPMC5989829",
+            "title": "<sup>131</sup>I-Evans blue: evaluation of necrosis targeting property and preliminary assessment of the mechanism in animal models.",
+            "files": 1,
+            "links": 17
+          },
+          {
+            "accession": "S-EPMC6389284",
+            "title": "Heterodimerization of UNC-13/RIM regulates synaptic vesicle release probability but not priming in C. elegans.",
+            "files": 1,
+            "links": 3
+          },
+          {
+            "accession": "S-EPMC10319914",
+            "title": "Comparison of the ligand binding site of C1 domains: a molecular dynamics simulation study of the C1 domain-phorbol 13-acetate-membrane system.",
+            "files": 1,
+            "links": 3
+          },
+          {
+            "accession": "S-EPMC8403915",
+            "title": "α-Synuclein kinetically regulates the nascent fusion pore dynamics.",
+            "files": 1,
+            "links": 3
+          },
+          {
+            "accession": "S-EPMC6757032",
+            "title": "Munc18-1 is crucial to overcome the inhibition of synaptic vesicle fusion by αSNAP.",
+            "files": 6,
+            "links": 3
+          },
+          {
+            "accession": "S-EPMC11856406",
+            "title": "DYRK1A Up-Regulation Specifically Impairs a Presynaptic Form of Long-Term Potentiation.",
+            "files": 1,
+            "links": 3
+          },
+          {
+            "accession": "S-EPMC6694340",
+            "title": "CYP46A1 Activation by Efavirenz Leads to Behavioral Improvement without Significant Changes in Amyloid Plaque Load in the Brain of 5XFAD Mice.",
+            "files": 0,
+            "links": 4
+          }
+        ]
+      },
+      "elapsed_seconds": 6.169
+    },
+    {
+      "id": "biostudies-k24",
+      "url": "https://www.ebi.ac.uk/biostudies/api/v1/studies/S-EPMC11230273",
+      "method": "GET",
+      "query_body": null,
+      "retrieved_at": "2026-11-04T09:10:09.109626+01:00",
+      "status": 200,
+      "content_type": "application/json;charset=UTF-8",
+      "final_url": "https://www.ebi.ac.uk/biostudies/api/v1/studies/S-EPMC11230273",
+      "bytes": 9587,
+      "sha256_response": "f3df6d4d65dfeeb1e5d6802a8bf7d1ca2410a080518c201f6b18ac0a48650a2b",
+      "result": {
+        "accno": "S-EPMC11230273",
+        "attributes": [
+          {
+            "name": "DataSource",
+            "value": "Europe PMC"
+          },
+          {
+            "name": "Title",
+            "value": "Loss of TDP-43 induces synaptic dysfunction that is rescued by <i>UNC13A</i> splice-switching ASOs."
+          },
+          {
+            "name": "ReleaseDate",
+            "value": "2024-01-01"
+          },
+          {
+            "name": "AttachTo",
+            "value": "EuropePMC"
+          }
+        ],
+        "files": [
+          {
+            "path": "media-1.pdf",
+            "size": 840350,
+            "type": "file"
+          }
+        ]
+      },
+      "elapsed_seconds": 5.332
+    },
+    {
+      "id": "epmc-title",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE%3A%22UNC13A+splice+correction%22&format=json&pageSize=100&resultType=core",
+      "method": "GET",
+      "query_body": null,
+      "retrieved_at": "2026-11-04T09:10:10.122000+01:00",
+      "status": 200,
+      "content_type": "application/json;charset=UTF-8",
+      "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE%3A%22UNC13A+splice+correction%22&format=json&pageSize=100&resultType=core",
+      "bytes": 198,
+      "sha256_response": "1809894327ef8d93a2c0c6f06cc2a6c3513162e01ad4c06b35ebdaf4fc85cc58",
+      "result": {
+        "total": 0,
+        "next": null,
+        "items": []
+      },
+      "elapsed_seconds": 4.146
+    },
+    {
+      "id": "epmc-author",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=AUTH_LAST%3AKeuss+AND+UNC13A&format=json&pageSize=100&resultType=core",
+      "method": "GET",
+      "query_body": null,
+      "retrieved_at": "2026-11-04T09:10:14.243226+01:00",
+      "status": 200,
+      "content_type": "application/json;charset=UTF-8",
+      "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=AUTH_LAST%3AKeuss+AND+UNC13A&format=json&pageSize=100&resultType=core",
+      "bytes": 190,
+      "sha256_response": "87e2c4b66fe3472ca682da292052a53da9508017ab140cc219448d4c1eeb24aa",
+      "result": {
+        "total": 0,
+        "next": null,
+        "items": []
+      },
+      "elapsed_seconds": 4.763
+    },
+    {
+      "id": "epmc-k24-xml",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11230273/fullTextXML",
+      "method": "GET",
+      "query_body": null,
+      "retrieved_at": "2026-11-04T09:10:14.267843+01:00",
+      "status": 200,
+      "content_type": "application/xml",
+      "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11230273/fullTextXML",
+      "bytes": 109092,
+      "sha256_response": "e90aa2ee8c8df84748ae7ad957fee7531eb1deaa5f0cce565dfa9b5a28514f22",
+      "xml_root": "article",
+      "title": "Loss of TDP-43 induces synaptic dysfunction that is rescued by  UNC13A  splice-switching ASOs",
+      "supplement_links": [
+        {
+          "id": "SD1",
+          "position": "float"
+        },
+        {
+          "id": "d67e1305",
+          "{http://www.w3.org/1999/xlink}href": "media-1.pdf",
+          "mimetype": "application",
+          "mime-subtype": "pdf"
+        },
+        {
+          "id": "db_ds_supplementary-material1_reqid_",
+          "position": "float"
+        },
+        {
+          "{http://www.w3.org/1999/xlink}href": "media-1.pdf",
+          "mimetype": "application",
+          "mime-subtype": "pdf"
+        }
+      ],
+      "availability_sections": [
+        "Data availability Source data is provided with this paper.",
+        "Associated Data Supplementary Materials Supplement 1 Data Availability Statement Source data is provided with this paper.",
+        "Data Availability Statement Source data is provided with this paper."
+      ],
+      "elapsed_seconds": 9.141
+    },
+    {
+      "id": "biorxiv-versions",
+      "url": "https://api.biorxiv.org/details/biorxiv/10.1101/2024.06.20.599684",
+      "method": "GET",
+      "query_body": null,
+      "retrieved_at": "2026-11-04T09:10:14.441463+01:00",
+      "status": 200,
+      "content_type": "application/json",
+      "final_url": "https://api.biorxiv.org/details/biorxiv/10.1101/2024.06.20.599684",
+      "bytes": 1642,
+      "sha256_response": "0b7417e64ac45ec657838f064e249623e858a5a00049487b0d265857eacb8130",
+      "result": {
+        "messages": [
+          {
+            "status": "ok",
+            "category": "all"
+          }
+        ],
+        "items": [
+          {
+            "title": "Loss of TDP-43 induces synaptic dysfunction that is rescued by UNC13A splice-switching ASOs",
+            "date": "2024-06-24",
+            "version": "1",
+            "doi": "10.1101/2024.06.20.599684",
+            "published": "NA",
+            "jatsxml": "https://www.biorxiv.org/content/early/2024/06/24/2024.06.20.599684.source.xml"
+          }
+        ]
+      },
+      "elapsed_seconds": 3.713
+    }
+  ]
+}

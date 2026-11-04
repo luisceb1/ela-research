@@ -1,0 +1,27 @@
+{
+  "R_executed": false,
+  "functional_rescue_estimated": false,
+  "groups": 42,
+  "identical_rows_not_deduplicated": 16,
+  "independent_biological_replicates": null,
+  "interpretation": "row arithmetic and join replay only",
+  "key_preserving_missing_sem": 0,
+  "matplotlib": "3.10.8",
+  "means_unchanged_by_join_order": true,
+  "plot_groups": 36,
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "source_order_missing_sem": [
+    "NT:13A-Correct RNA",
+    "Dox-1:13A-Correct RNA",
+    "Dox-2:13A-Correct RNA",
+    "Dox-3:13A-Correct RNA",
+    "Dox-4:13A-Correct RNA",
+    "Dox-5:13A-Correct RNA"
+  ],
+  "source_rows": 138,
+  "source_sha256": {
+    "csv": "c7de1f2d44f9a5ac243e0ef380f50c455254c1cbefc6a217dc091505918526e5",
+    "rmd": "3c46c164af6572bef28507b707f39d996d687abb06da00bf5468f89d0d491502"
+  },
+  "unc13a_points": 54
+}

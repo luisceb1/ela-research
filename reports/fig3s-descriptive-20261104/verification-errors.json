@@ -1,0 +1,11 @@
+{
+  "analysis_errors": [],
+  "repository_verification": [
+    {
+      "operation": "connector GET branch using percent-encoded branch path",
+      "result": "tool rejection with no detailed reason returned",
+      "resolved_by": "open pull-request listing verified exact head/base; Git commit endpoint verified parent tree; update uses expected_sha lease",
+      "data_or_analysis_changed": false
+    }
+  ]
+}

@@ -24,5 +24,7 @@
     "reports/elk1-fish-replay-20261104/final-article/fig3g-endpoint.csv": "6efff779fe1b59614647004f1b113e47475980e4cabf031ac0a94ba57f52ce1d",
     "reports/elk1-fish-replay-20261104/final-article/retrieval/inspect_remote_zip.py": "7935c6eec27b4342f9cef8735c3294b2502b4f449c8d37d67313e715f949f6bc",
     "reports/elk1-fish-replay-20261104/final-article/retrieval/extract_selected.py": "dfd296b579990f7c91018b1e838f70fc0b4dd028b172ed56f5bc7f0180c232f8"
-  }
+  },
+  "snapshot_commit": "2c30bd9d6a8a2c6242c4704be4e6025a689c2ea8",
+  "scope": "Historical successful-data reconciliation receipt. Acquisition helpers now propagate failures; current integration checks are recorded in reports/integration-20261104/REVIEW.md."
 }

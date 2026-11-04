@@ -1,0 +1,12 @@
+{
+  "files": {
+    "PLAN.md": "62cf5a51a720fe9062cab264533e9c822ab6de0e3635b0d431399b9c82015cf4",
+    "REPORT.md": "f7517c434994d4d64db56d07699073802366fa6345e28d4b4ef383ae4eb6c953",
+    "api-final-followup.json": "e6dde91da8857f0be0f88d974832f7d7e4b5638fe940019482416d55ad28ba1d",
+    "api-followup.json": "05789ddf817563cdb836213607c492d8e8a0b21c43d82bde6d8f5ac09838b103",
+    "api-results.json": "b41dfeea867e44b15d65bba0cf397aa6a620613e31d6d42c5f71ab2f6b7de1df",
+    "datacite-pages.json": "306254cb1635b32c500233c7398e7623b9cb6efa29146da86bb619ce8ab9f2ad",
+    "pdf-retrieval.json": "591cbdf53b9284f67899b0feaf1dc5b3591ed6bda4499a8a57fef4c205e586b4",
+    "scripts/search_fig4d_sources.py": "d66c613289180e08e2bfc0aab0105d73d026050bb07b2e95eae09c05f67888db"
+  }
+}

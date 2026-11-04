@@ -1,4 +1,4 @@
-# Backlog vigente — 03/11/2026
+# Current backlog — 2026-11-04
 
 Este archivo contiene tareas actuales y condiciones de reapertura. [STATE](STATE.md) resume resultados; el [backlog anterior íntegro](history/README.md) conserva la cronología.
 
@@ -9,7 +9,7 @@ Este archivo contiene tareas actuales y condiciones de reapertura. [STATE](STATE
 | 1 | #37: inspeccionar un manifiesto concreto Seddighi–AD Workbench | Fuente nueva con cuentas de uniones o BAM/índices y mapa biblioteca→condición→unidad→lote | Tabla trazable de aceptación/rechazo; solo si cumple cobertura/diseño, redactar prospectivamente un único contraste |
 | 1 | #44: K26 Fig.4d: inspeccionar datos originales de eEPSC | Archivo nuevo con valores/unidades, grupos, claves de cultivo/diferenciación y procedencia | Adaptador trazable y revisión del diseño real; habilitar contrato solo tras comprobar independencia, exclusiones y agrupación |
 
-La petición Fig.4d ya fue enviada autorizadamente: [recibo](../reports/functional-rescue-20261103/COMMUNICATION_LOG.md). En la comprobación acotada del 03/11/2026 el hilo contiene solo la petición enviada; no se autoriza seguimiento automático. Los correos de AD Workbench localizados para la solicitud confirman recepción/revisión, sin aprobación ni manifiesto. #37 conserva el [ciclo de búsqueda cerrado](../reports/source-gate-issue37-20261103/REPORT.md); no añadir un cuarto candidato.
+The K26 request and separate A25 support message have already been sent with authorization; no new follow-up is authorized. The administrative audit records mixed approval/review notices and a pending workspace, not effective data access. [Current state](STATE.md), [administrative evidence](../reports/continuity-20261104/REPORT.md), [K26 search](../reports/fig4d-source-search-20261104/REPORT.md).
 
 Si no hay entrada nueva, registrar que ambas líneas siguen bloqueadas y detener ese ciclo. No crear otra auditoría equivalente, sustituir datos por simulación o cambiar de endpoint para evitar el bloqueo.
 
@@ -41,8 +41,6 @@ No repetir STMN2/PPAU 12/12, el piloto UNC13A cerrado, Humphrey procesado o bús
 
 No nuevas descargas masivas, control completo/TDP, contactos, gastos, datos personales, laboratorio o publicación externa por continuidad automática. [AGENTS](../AGENTS.md) y [PROTOCOL](PROTOCOL.md) siguen aplicando.
 
-## User-authorized bounded extension — 04/11/2026
+## Completed user-authorized extensions
 
-ELK1 RNA-FISH image-count replay: [report](../reports/elk1-fish-replay-20261104/REPORT.md). Sixty image rows, three source replicate labels; seven of nine deposited ratios reproduced, two unresolved. Molecular/descriptive only; no functional rescue or independent experimental validation. This completed extension does not replace #37/#44 or reopen their searches. No further ELK1 program is scheduled.
-
-Final-paper-linked ELK1 archive reconciliation completed: [comparison](../reports/elk1-fish-replay-20261104/FINAL_ARTICLE_COMPARISON.md). Inputs identical, 240 long rows and 84 aggregate fields match; two old ratio discrepancies persist. Fig.3g-style extranuclear counts reconstructed without P values or editorial point-identity certification. Bounded task closed; no new ELK1 study scheduled.
+A25 Fig.3s descriptive replay and UNC13A Dox replay are complete; see STATE.md. Missing culture identities and molecular metadata do not become new searches by default. ELK1 final-paper archive reconciliation is complete and integrated with its molecular replay; see STATE.md. No further ELK1 intervention program is scheduled. No new equivalent audit is scheduled. A new source file and prospective design review are needed before inference. The scheduled one-time Fratta publication check does not reactivate broad research continuity.

@@ -1,0 +1,13 @@
+{
+  "count_concordance": {
+    "UNC13AWT": 38,
+    "UNC13AR202H": 35
+  },
+  "matched_panel": "3s",
+  "matched_unit": "pC",
+  "observation_to_culture_map_recovered": false,
+  "deposit_content_inspected": false,
+  "deposit_error": "HTTP403",
+  "base73measurements_reanalysed_for_effect": false,
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]"
+}

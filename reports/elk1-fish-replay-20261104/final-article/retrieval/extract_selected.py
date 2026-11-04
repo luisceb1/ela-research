@@ -26,6 +26,7 @@ try:
     print('Verified',name,len(raw),flush=True)
 except Exception as error:
  print(type(error).__name__,str(error),flush=True)
+ raise
 finally:
  (p/'extracted-members.json').write_text(json.dumps(outputs,indent=2)+'\n')
  (p/'range-receipt.json').write_text(json.dumps(dict(bytes_read=remote.used,cap=remote.CAP,requests=remote.requests),indent=2)+'\n')

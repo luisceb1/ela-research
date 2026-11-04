@@ -1,0 +1,21 @@
+{
+  "status": "pass",
+  "source_cells_verified_against_selected_xml": 73,
+  "unique_source_coordinates": 73,
+  "numeric_counts": {
+    "UNC13AWT": 38,
+    "UNC13AR202H": 35
+  },
+  "fabricated_culture_or_neuron_ids": 0,
+  "lexical_source_values_preserved": true,
+  "offline_replay_audit_and_projection_identical": true,
+  "effect_estimated": false,
+  "scope": "technical QC, no biological effect comparison",
+  "csv_line_endings": "LF",
+  "initial_remote_blob_mismatch": {
+    "artifact": "fig3s-projection.csv",
+    "reason": "CRLF normalized to LF in text transport",
+    "measurement_values_changed": false,
+    "fix": "explicit LF writer plus transport regression test"
+  }
+}

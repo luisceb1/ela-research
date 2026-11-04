@@ -42,5 +42,7 @@ def main():
 
 if __name__=='__main__':
     try:main()
-    except Exception as error:print(type(error).__name__,str(error))
+    except Exception as error:
+        print(type(error).__name__,str(error))
+        raise
     finally:Path('elk1-final-cache/range-receipt.json').write_text(json.dumps(dict(bytes_read=used,cap=CAP,requests=requests),indent=2)+'\n')

@@ -1,0 +1,76 @@
+{
+  "url": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41588-025-02361-5/MediaObjects/41588_2025_2361_MOESM10_ESM.xlsx",
+  "retrieved_at": "2026-11-04T09:36:10.125343+01:00",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "plan_sha256_before_download": "417f50194e400dcb063b5b50f73a517d74b90e481806621bcf0f47c56401dd78",
+  "max_bytes": 2097152,
+  "timeout_seconds": 25,
+  "status": 200,
+  "content_type": "application/octet-stream",
+  "declared_length": "1185531",
+  "final_url": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41588-025-02361-5/MediaObjects/41588_2025_2361_MOESM10_ESM.xlsx",
+  "bytes": 1185531,
+  "sha256": "42f9a2266bf8e7dc157350fe588f1d87deb8d0e4c5067bc2c780b9fc7851a49f",
+  "sheets": [
+    {
+      "name": "Figure 2",
+      "id": "1",
+      "state": "visible",
+      "target": "worksheets/sheet1.xml"
+    },
+    {
+      "name": "Figure 3_E52K",
+      "id": "2",
+      "state": "visible",
+      "target": "worksheets/sheet2.xml"
+    },
+    {
+      "name": "Figure 3_R202H",
+      "id": "3",
+      "state": "visible",
+      "target": "worksheets/sheet3.xml"
+    },
+    {
+      "name": "Figure 4_G808D",
+      "id": "5",
+      "state": "visible",
+      "target": "worksheets/sheet4.xml"
+    },
+    {
+      "name": "Figure 5_C587F",
+      "id": "6",
+      "state": "visible",
+      "target": "worksheets/sheet5.xml"
+    },
+    {
+      "name": "Figure 6_STP",
+      "id": "7",
+      "state": "visible",
+      "target": "worksheets/sheet6.xml"
+    },
+    {
+      "name": "ED Figure 4_R799Q ",
+      "id": "8",
+      "state": "visible",
+      "target": "worksheets/sheet7.xml"
+    },
+    {
+      "name": "ED Figure 4_N1013S",
+      "id": "9",
+      "state": "visible",
+      "target": "worksheets/sheet8.xml"
+    },
+    {
+      "name": "ED Figure 8",
+      "id": "4",
+      "state": "visible",
+      "target": "worksheets/sheet9.xml"
+    }
+  ],
+  "zip_member_count": 18,
+  "zip_crc_check": null,
+  "metadata_member_sha256": {
+    "xl/workbook.xml": "07c731d2cffcfd94279ab362dcff6d9f964771ce07f9dfd5363ce62d53a21176",
+    "xl/_rels/workbook.xml.rels": "4882faf6a711955ab340967e279eae85e5fce156e9678cef83eb204ca57963a2"
+  }
+}

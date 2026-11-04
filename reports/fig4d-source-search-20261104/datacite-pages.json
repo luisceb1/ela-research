@@ -1,0 +1,941 @@
+[
+  {
+    "url": "https://api.datacite.org/dois?query=UNC13A&page%5Bsize%5D=25&page%5Bnumber%5D=2",
+    "status": 200,
+    "bytes": 163730,
+    "sha256_response": "5754af03fcf92879ae390d971b819782e2a499bf633705b446be37c6c3b78060",
+    "total": 77,
+    "next": "https://api.datacite.org/dois?page%5Bnumber%5D=3&page%5Bsize%5D=25&query=UNC13A",
+    "items": [
+      {
+        "doi": "10.5061/dryad.cjsxksnfr",
+        "titles": [
+          {
+            "title": "Data from: Creation of de novo cryptic splicing for ALS/FTD precision medicine"
+          }
+        ],
+        "url": "https://datadryad.org/dataset/doi:10.5061/dryad.cjsxksnfr",
+        "relatedIdentifiers": [
+          {
+            "relationType": "IsCitedBy",
+            "relatedIdentifier": "10.1101/2023.11.15.565967",
+            "relatedIdentifierType": "DOI"
+          },
+          {
+            "relationType": "IsDerivedFrom",
+            "relatedIdentifier": "10.5281/zenodo.11576269",
+            "relatedIdentifierType": "DOI"
+          },
+          {
+            "relationType": "IsCitedBy",
+            "relatedIdentifier": "10.1126/science.adk2539",
+            "relatedIdentifierType": "DOI"
+          }
+        ]
+      },
+      {
+        "doi": "10.6084/m9.figshare.28674375.v1",
+        "titles": [
+          {
+            "title": "Additional file 4 of C9ORF72 poly-PR disrupts expression of ALS/FTD-implicated STMN2 through SRSF7"
+          }
+        ],
+        "url": "https://springernature.figshare.com/articles/journal_contribution/Additional_file_4_of_C9ORF72_poly-PR_disrupts_expression_of_ALS_FTD-implicated_STMN2_through_SRSF7/28674375/1",
+        "relatedIdentifiers": [
+          {
+            "relationType": "IsIdenticalTo",
+            "relatedIdentifier": "10.6084/m9.figshare.28674375",
+            "relatedIdentifierType": "DOI"
+          },
+          {
+            "relationType": "IsSupplementTo",
+            "relatedIdentifier": "10.1186/s40478-025-01977-2",
+            "relatedIdentifierType": "DOI"
+          }
+        ]
+      },
+      {
+        "doi": "10.6084/m9.figshare.28674375",
+        "titles": [
+          {
+            "title": "Additional file 4 of C9ORF72 poly-PR disrupts expression of ALS/FTD-implicated STMN2 through SRSF7"
+          }
+        ],
+        "url": "https://springernature.figshare.com/articles/journal_contribution/Additional_file_4_of_C9ORF72_poly-PR_disrupts_expression_of_ALS_FTD-implicated_STMN2_through_SRSF7/28674375",
+        "relatedIdentifiers": [
+          {
+            "relationType": "IsSupplementTo",
+            "relatedIdentifier": "10.1186/s40478-025-01977-2",
+            "relatedIdentifierType": "DOI"
+          }
+        ]
+      },
+      {
+        "doi": "10.17632/rd8kt4brt5.2",
+        "titles": [
+          {
+            "title": "Trancriptional profile of iGNs and iMNs after TDP-43 knockdown"
+          }
+        ],
+        "url": "https://data.mendeley.com/datasets/rd8kt4brt5/2",
+        "relatedIdentifiers": [
+          {
+            "relationType": "IsVersionOf",
+            "resourceTypeGeneral": "Dataset",
+            "relatedIdentifier": "10.17632/rd8kt4brt5",
+            "relatedIdentifierType": "DOI"
+          }
+        ]
+      },
+      {
+        "doi": "10.17632/rd8kt4brt5",
+        "titles": [
+          {
+            "title": "Trancriptional profile of iGNs and iMNs after TDP-43 knockdown"
+          }
+        ],
+        "url": "https://data.mendeley.com/datasets/rd8kt4brt5",
+        "relatedIdentifiers": [
+          {
+            "relationType": "HasVersion",
+            "resourceTypeGeneral": "Dataset",
+            "relatedIdentifier": "10.17632/rd8kt4brt5.2",
+            "relatedIdentifierType": "DOI"
+          },
+          {
+            "relationType": "HasVersion",
+            "resourceTypeGeneral": "Dataset",
+            "relatedIdentifier": "10.17632/rd8kt4brt5.1",
+            "relatedIdentifierType": "DOI"
+          }
+        ]
+      },
+      {
+        "doi": "10.17632/rd8kt4brt5.1",
+        "titles": [
+          {
+            "title": "Trancriptional profile of iGNs and iMNs after TDP-43 knockdown"
+          }
+        ],
+        "url": "https://data.mendeley.com/datasets/rd8kt4brt5/1",
+        "relatedIdentifiers": [
+          {
+            "relationType": "IsVersionOf",
+            "resourceTypeGeneral": "Dataset",
+            "relatedIdentifier": "10.17632/rd8kt4brt5",
+            "relatedIdentifierType": "DOI"
+          }
+        ]
+      },
+      {
+        "doi": "10.6084/m9.figshare.28107610.v1",
+        "titles": [
+          {
+            "title": "Association of <i>UNC13A</i> with increased amyotrophic lateral sclerosis risk, bulbar onset, and lower motor neuron involvement in a Norwegian ALS cohort"
+          }
+        ],
+        "url": "https://tandf.figshare.com/articles/journal_contribution/Association_of_i_UNC13A_i_with_increased_amyotrophic_lateral_sclerosis_risk_bulbar_onset_and_lower_motor_neuron_involvement_in_a_Norwegian_ALS_cohort/28107610/1",
+        "relatedIdentifiers": [
+          {
+            "relationType": "IsIdenticalTo",
+            "relatedIdentifier": "10.6084/m9.figshare.28107610",
+            "relatedIdentifierType": "DOI"
+          },
+          {
+            "relationType": "IsSupplementTo",
+            "relatedIdentifier": "10.1080/21678421.2024.2447922",
+            "relatedIdentifierType": "DOI"
+          }
+        ]
+      },
+      {
+        "doi": "10.6084/m9.figshare.28107610",
+        "titles": [
+          {
+            "title": "Association of <i>UNC13A</i> with increased amyotrophic lateral sclerosis risk, bulbar onset, and lower motor neuron involvement in a Norwegian ALS cohort"
+          }
+        ],
+        "url": "https://tandf.figshare.com/articles/journal_contribution/Association_of_i_UNC13A_i_with_increased_amyotrophic_lateral_sclerosis_risk_bulbar_onset_and_lower_motor_neuron_involvement_in_a_Norwegian_ALS_cohort/28107610",
+        "relatedIdentifiers": [
+          {
+            "relationType": "IsSupplementTo",
+            "relatedIdentifier": "10.1080/21678421.2024.2447922",
+            "relatedIdentifierType": "DOI"
+          }
+        ]
+      },
+      {
+        "doi": "10.5167/uzh-280879",
+        "titles": [
+          {
+            "lang": "",
+            "title": "Pathogenic UNC13A variants cause a neurodevelopmental syndrome by impairing synaptic function"
+          }
+        ],
+        "url": "https://www.zora.uzh.ch/handle/20.500.14742/238665",
+        "relatedIdentifiers": []
+      },
+      {
+        "doi": "10.17169/refubium-50166",
+        "titles": [
+          {
+            "lang": "",
+            "title": "Blobby: A Novel Active Zone Scaffold Protein Regulating Synaptic Organization, Sensory Processing, and Sleep in Drosophila"
+          }
+        ],
+        "url": "https://refubium.fu-berlin.de/handle/fub188/50439",
+        "relatedIdentifiers": []
+      },
+      {
+        "doi": "10.17169/refubium-30509",
+        "titles": [
+          {
+            "lang": "",
+            "title": "Unc13A and Unc13B contribute to the decoding of distinct sensory information in Drosophila"
+          }
+        ],
+        "url": "https://refubium.fu-berlin.de/handle/fub188/30770",
+        "relatedIdentifiers": [
+          {
+            "relationType": "IsIdenticalTo",
+            "relatedIdentifier": "10.1038/s41467-021-22180-6",
+            "relatedIdentifierType": "DOI"
+          },
+          {
+            "relationType": "IsIdenticalTo",
+            "relatedIdentifier": "https://doi.org/10.1038/s41467-021-22180-6",
+            "relatedIdentifierType": "URL"
+          }
+        ]
+      },
+      {
+        "doi": "10.17169/refubium-49705",
+        "titles": [
+          {
+            "lang": "",
+            "title": "Monoamine-induced diacylglycerol signaling rapidly accumulates Unc13 in nanoclusters for fast presynaptic potentiation"
+          }
+        ],
+        "url": "https://refubium.fu-berlin.de/handle/fub188/49980",
+        "relatedIdentifiers": [
+          {
+            "relationType": "IsIdenticalTo",
+            "relatedIdentifier": "10.1073/pnas.2514151122",
+            "relatedIdentifierType": "DOI"
+          },
+          {
+            "relationType": "IsIdenticalTo",
+            "relatedIdentifier": "https://doi.org/10.1073/pnas.2514151122",
+            "relatedIdentifierType": "URL"
+          }
+        ]
+      },
+      {
+        "doi": "10.3929/ethz-b-000581705",
+        "titles": [
+          {
+            "title": "Rapid homeostatic modulation of transsynaptic nanocolumn rings"
+          }
+        ],
+        "url": "http://hdl.handle.net/20.500.11850/581705",
+        "relatedIdentifiers": []
+      },
+      {
+        "doi": "10.5281/zenodo.14554776",
+        "titles": [
+          {
+            "title": "Pathogenic UNC13A variants cause a neurodevelopmental syndrome by impairing synaptic function"
+          }
+        ],
+        "url": "https://zenodo.org/doi/10.5281/zenodo.14554776",
+        "relatedIdentifiers": [
+          {
+            "relationType": "IsVersionOf",
+            "relatedIdentifier": "10.5281/zenodo.14554775",
+            "relatedIdentifierType": "DOI"
+          }
+        ]
+      },
+      {
+        "doi": "10.5281/zenodo.14554775",
+        "titles": [
+          {
+            "title": "Pathogenic UNC13A variants cause a neurodevelopmental syndrome by impairing synaptic function"
+          }
+        ],
+        "url": "https://zenodo.org/doi/10.5281/zenodo.14554775",
+        "relatedIdentifiers": [
+          {
+            "relationType": "HasVersion",
+            "relatedIdentifier": "10.5281/zenodo.14554776",
+            "relatedIdentifierType": "DOI"
+          }
+        ]
+      },
+      {
+        "doi": "10.5281/zenodo.10964637",
+        "titles": [
+          {
+            "title": "Quantification of serum TDP-43 and neurofilament-light chain in patients with amyotrophic lateral sclerosis stratified by UNC13A genotype"
+          }
+        ],
+        "url": "https://zenodo.org/doi/10.5281/zenodo.10964637",
+        "relatedIdentifiers": [
+          {
+            "relationType": "Describes",
+            "resourceTypeGeneral": "Text",
+            "relatedIdentifier": "10.1016/j.jns.2024.123210",
+            "relatedIdentifierType": "DOI"
+          },
+          {
+            "relationType": "HasVersion",
+            "relatedIdentifier": "10.5281/zenodo.10964638",
+            "relatedIdentifierType": "DOI"
+          }
+        ]
+      },
+      {
+        "doi": "10.5281/zenodo.10964638",
+        "titles": [
+          {
+            "title": "Quantification of serum TDP-43 and neurofilament-light chain in patients with amyotrophic lateral sclerosis stratified by UNC13A genotype"
+          }
+        ],
+        "url": "https://zenodo.org/doi/10.5281/zenodo.10964638",
+        "relatedIdentifiers": [
+          {
+            "relationType": "Describes",
+            "resourceTypeGeneral": "Text",
+            "relatedIdentifier": "10.1016/j.jns.2024.123210",
+            "relatedIdentifierType": "DOI"
+          },
+          {
+            "relationType": "IsVersionOf",
+            "relatedIdentifier": "10.5281/zenodo.10964637",
+            "relatedIdentifierType": "DOI"
+          }
+        ]
+      },
+      {
+        "doi": "10.5281/zenodo.8199919",
+        "titles": [
+          {
+            "title": "Modeling of TDP-43 proteinopathy by chronic oxidative stress identifies rapamycin as beneficial in ALS patient-derived 2D and 3D iPSC models"
+          }
+        ],
+        "url": "https://zenodo.org/doi/10.5281/zenodo.8199919",
+        "relatedIdentifiers": [
+          {
+            "relationType": "Describes",
+            "resourceTypeGeneral": "Text",
+            "relatedIdentifier": "10.1016/j.expneurol.2024.115057",
+            "relatedIdentifierType": "DOI"
+          },
+          {
+            "relationType": "HasVersion",
+            "relatedIdentifier": "10.5281/zenodo.8199920",
+            "relatedIdentifierType": "DOI"
+          }
+        ]
+      },
+      {
+        "doi": "10.5281/zenodo.8199920",
+        "titles": [
+          {
+            "title": "Modeling of TDP-43 proteinopathy by chronic oxidative stress identifies rapamycin as beneficial in ALS patient-derived 2D and 3D iPSC models"
+          }
+        ],
+        "url": "https://zenodo.org/doi/10.5281/zenodo.8199920",
+        "relatedIdentifiers": [
+          {
+            "relationType": "Describes",
+            "resourceTypeGeneral": "Text",
+            "relatedIdentifier": "10.1016/j.expneurol.2024.115057",
+            "relatedIdentifierType": "DOI"
+          },
+          {
+            "relationType": "IsVersionOf",
+            "relatedIdentifier": "10.5281/zenodo.8199919",
+            "relatedIdentifierType": "DOI"
+          }
+        ]
+      },
+      {
+        "doi": "10.5281/zenodo.14244152",
+        "titles": [
+          {
+            "title": "Characterization of human healthy i3 lower motor neurons exposed to CSF from ALS patients stratified by UNC13A and C9ORF72 genotype"
+          }
+        ],
+        "url": "https://zenodo.org/doi/10.5281/zenodo.14244152",
+        "relatedIdentifiers": [
+          {
+            "relationType": "HasVersion",
+            "relatedIdentifier": "10.5281/zenodo.14244153",
+            "relatedIdentifierType": "DOI"
+          }
+        ]
+      },
+      {
+        "doi": "10.5281/zenodo.14244153",
+        "titles": [
+          {
+            "title": "Characterization of human healthy i3 lower motor neurons exposed to CSF from ALS patients stratified by UNC13A and C9ORF72 genotype"
+          }
+        ],
+        "url": "https://zenodo.org/doi/10.5281/zenodo.14244153",
+        "relatedIdentifiers": [
+          {
+            "relationType": "IsVersionOf",
+            "relatedIdentifier": "10.5281/zenodo.14244152",
+            "relatedIdentifierType": "DOI"
+          }
+        ]
+      },
+      {
+        "doi": "10.6084/m9.figshare.c.3637367_d8.v1",
+        "titles": [
+          {
+            "title": "Additional file 7: Table S3. of Whole-genome bisulfite sequencing of cell-free DNA identifies signature associated with metastatic breast cancer"
+          }
+        ],
+        "url": "https://springernature.figshare.com/articles/figure/Additional_file_7_Table_S3_of_Whole-genome_bisulfite_sequencing_of_cell-free_DNA_identifies_signature_associated_with_metastatic_breast_cancer/4444517/1",
+        "relatedIdentifiers": [
+          {
+            "relationType": "IsSupplementTo",
+            "relatedIdentifier": "10.1186/s13148-015-0135-8",
+            "relatedIdentifierType": "DOI"
+          },
+          {
+            "relationType": "IsIdenticalTo",
+            "relatedIdentifier": "10.6084/m9.figshare.c.3637367_d8",
+            "relatedIdentifierType": "DOI"
+          }
+        ]
+      },
+      {
+        "doi": "10.6084/m9.figshare.c.3637367_d4.v1",
+        "titles": [
+          {
+            "title": "Additional file 6: Figure S4. of Whole-genome bisulfite sequencing of cell-free DNA identifies signature associated with metastatic breast cancer"
+          }
+        ],
+        "url": "https://springernature.figshare.com/articles/dataset/Additional_file_6_Figure_S4_of_Whole-genome_bisulfite_sequencing_of_cell-free_DNA_identifies_signature_associated_with_metastatic_breast_cancer/4444502/1",
+        "relatedIdentifiers": [
+          {
+            "relationType": "IsSupplementTo",
+            "relatedIdentifier": "10.1186/s13148-015-0135-8",
+            "relatedIdentifierType": "DOI"
+          },
+          {
+            "relationType": "IsIdenticalTo",
+            "relatedIdentifier": "10.6084/m9.figshare.c.3637367_d4",
+            "relatedIdentifierType": "DOI"
+          }
+        ]
+      },
+      {
+        "doi": "10.6084/m9.figshare.c.3637367_d8",
+        "titles": [
+          {
+            "title": "Additional file 7: Table S3. of Whole-genome bisulfite sequencing of cell-free DNA identifies signature associated with metastatic breast cancer"
+          }
+        ],
+        "url": "https://springernature.figshare.com/articles/figure/Additional_file_7_Table_S3_of_Whole-genome_bisulfite_sequencing_of_cell-free_DNA_identifies_signature_associated_with_metastatic_breast_cancer/4444517",
+        "relatedIdentifiers": [
+          {
+            "relationType": "IsSupplementTo",
+            "relatedIdentifier": "10.1186/s13148-015-0135-8",
+            "relatedIdentifierType": "DOI"
+          }
+        ]
+      },
+      {
+        "doi": "10.6084/m9.figshare.c.3637367_d4",
+        "titles": [
+          {
+            "title": "Additional file 6: Figure S4. of Whole-genome bisulfite sequencing of cell-free DNA identifies signature associated with metastatic breast cancer"
+          }
+        ],
+        "url": "https://springernature.figshare.com/articles/dataset/Additional_file_6_Figure_S4_of_Whole-genome_bisulfite_sequencing_of_cell-free_DNA_identifies_signature_associated_with_metastatic_breast_cancer/4444502",
+        "relatedIdentifiers": [
+          {
+            "relationType": "IsSupplementTo",
+            "relatedIdentifier": "10.1186/s13148-015-0135-8",
+            "relatedIdentifierType": "DOI"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "url": "https://api.datacite.org/dois?query=UNC13A&page%5Bsize%5D=25&page%5Bnumber%5D=3",
+    "status": 200,
+    "bytes": 125492,
+    "sha256_response": "e2d2d649fb79c1a2476ad951db418e1cf61bdaf409cb23db89dca401c1bed500",
+    "total": 77,
+    "next": "https://api.datacite.org/dois?page%5Bnumber%5D=4&page%5Bsize%5D=25&query=UNC13A",
+    "items": [
+      {
+        "doi": "10.17639/nott.6958",
+        "titles": [
+          {
+            "title": "An in vivo systematic genetic analysis of tumour progression in Drosophila - RNAi line: 2999R3"
+          }
+        ],
+        "url": "https://rdmc.nottingham.ac.uk/handle/internal/6965",
+        "relatedIdentifiers": [
+          {
+            "relationType": "IsReferencedBy",
+            "relatedIdentifier": "http://flycancerscreen.nottingham.ac.uk",
+            "relatedIdentifierType": "URL"
+          },
+          {
+            "relationType": "IsReferencedBy",
+            "relatedIdentifier": "http://flybase.org/reports/FBgn0025726",
+            "relatedIdentifierType": "URL"
+          }
+        ]
+      },
+      {
+        "doi": "10.17639/nott.6959",
+        "titles": [
+          {
+            "title": "An in vivo systematic genetic analysis of tumour progression in Drosophila - RNAi line: 33606"
+          }
+        ],
+        "url": "https://rdmc.nottingham.ac.uk/handle/internal/6966",
+        "relatedIdentifiers": [
+          {
+            "relationType": "IsReferencedBy",
+            "relatedIdentifier": "http://flycancerscreen.nottingham.ac.uk",
+            "relatedIdentifierType": "URL"
+          },
+          {
+            "relationType": "IsReferencedBy",
+            "relatedIdentifier": "http://flybase.org/reports/FBgn0025726",
+            "relatedIdentifierType": "URL"
+          }
+        ]
+      },
+      {
+        "doi": "10.13028/m2vq38",
+        "titles": [
+          {
+            "titleType": null,
+            "lang": null,
+            "title": "Identification of Novel Genetic Variations for Amyotrophic Lateral Sclerosis (ALS)"
+          }
+        ],
+        "url": "https://repository.escholarship.umassmed.edu/handle/20.500.14038/32343",
+        "relatedIdentifiers": []
+      },
+      {
+        "doi": "10.6084/m9.figshare.c.6799199.v1",
+        "titles": [
+          {
+            "title": "TDP-43-regulated cryptic RNAs accumulate in Alzheimer’s disease brains"
+          }
+        ],
+        "url": "https://springernature.figshare.com/collections/TDP-43-regulated_cryptic_RNAs_accumulate_in_Alzheimer_s_disease_brains/6799199/1",
+        "relatedIdentifiers": [
+          {
+            "relationType": "IsIdenticalTo",
+            "relatedIdentifier": "10.6084/m9.figshare.c.6799199",
+            "relatedIdentifierType": "DOI"
+          }
+        ]
+      },
+      {
+        "doi": "10.6084/m9.figshare.c.6799199",
+        "titles": [
+          {
+            "title": "TDP-43-regulated cryptic RNAs accumulate in Alzheimer’s disease brains"
+          }
+        ],
+        "url": "https://springernature.figshare.com/collections/TDP-43-regulated_cryptic_RNAs_accumulate_in_Alzheimer_s_disease_brains/6799199",
+        "relatedIdentifiers": []
+      },
+      {
+        "doi": "10.17169/refubium-43063",
+        "titles": [
+          {
+            "title": "The Molecular mechanisms of aminergic release at type II synaptic terminals of Drosophila melanogaster and the effects of spermidine on mitochondrial redox status"
+          },
+          {
+            "titleType": "TranslatedTitle",
+            "title": "Die molekularen Mechanismen von aminerger Vesikelfreisetzung an Typ II synaptischen Terminalen von Drosophila melanogaster und die Effekte von Spermidin auf mitochondrialen Oxidationsstatus"
+          }
+        ],
+        "url": "https://refubium.fu-berlin.de/handle/fub188/43347",
+        "relatedIdentifiers": []
+      },
+      {
+        "doi": "10.5287/ora-qq9ozab5p",
+        "titles": [
+          {
+            "title": "Translational profiling of motor neurons with C9orf72 mutations under acute oxidative stress"
+          }
+        ],
+        "url": "https://ora.ox.ac.uk/objects/uuid:92c56fef-106b-453f-b365-c323fdc6947c",
+        "relatedIdentifiers": []
+      },
+      {
+        "doi": "10.6084/m9.figshare.11719554.v1",
+        "titles": [
+          {
+            "title": "The Unc13A isoform is important for phasic release and olfactory memory formation at mushroom body synapses"
+          }
+        ],
+        "url": "https://tandf.figshare.com/articles/journal_contribution/The_Unc13A_isoform_is_important_for_phasic_release_and_olfactory_memory_formation_at_mushroom_body_synapses/11719554/1",
+        "relatedIdentifiers": [
+          {
+            "relationType": "IsIdenticalTo",
+            "relatedIdentifier": "10.6084/m9.figshare.11719554",
+            "relatedIdentifierType": "DOI"
+          },
+          {
+            "relationType": "IsSupplementTo",
+            "relatedIdentifier": "10.1080/01677063.2019.1710146",
+            "relatedIdentifierType": "DOI"
+          }
+        ]
+      },
+      {
+        "doi": "10.6084/m9.figshare.11719554",
+        "titles": [
+          {
+            "title": "The Unc13A isoform is important for phasic release and olfactory memory formation at mushroom body synapses"
+          }
+        ],
+        "url": "https://tandf.figshare.com/articles/journal_contribution/The_Unc13A_isoform_is_important_for_phasic_release_and_olfactory_memory_formation_at_mushroom_body_synapses/11719554",
+        "relatedIdentifiers": [
+          {
+            "relationType": "IsSupplementTo",
+            "relatedIdentifier": "10.1080/01677063.2019.1710146",
+            "relatedIdentifierType": "DOI"
+          }
+        ]
+      },
+      {
+        "doi": "10.5281/zenodo.7128673",
+        "titles": [
+          {
+            "title": "Association of the risk factor UNC13A with survival and upper motor neuron involvement in amyotrophic lateral sclerosis"
+          }
+        ],
+        "url": "https://zenodo.org/record/7128673",
+        "relatedIdentifiers": [
+          {
+            "relationType": "HasVersion",
+            "relatedIdentifier": "10.5281/zenodo.7128674",
+            "relatedIdentifierType": "DOI"
+          }
+        ]
+      },
+      {
+        "doi": "10.5281/zenodo.7128674",
+        "titles": [
+          {
+            "title": "Association of the risk factor UNC13A with survival and upper motor neuron involvement in amyotrophic lateral sclerosis"
+          }
+        ],
+        "url": "https://zenodo.org/record/7128674",
+        "relatedIdentifiers": [
+          {
+            "relationType": "IsVersionOf",
+            "relatedIdentifier": "10.5281/zenodo.7128673",
+            "relatedIdentifierType": "DOI"
+          }
+        ]
+      },
+      {
+        "doi": "10.5281/zenodo.7852140",
+        "titles": [
+          {
+            "title": "TheWalterLab/Jusyteetal2023: Unc13A dynamically stabilizes vesicle priming at synaptic release sites for short-term facilitation and homeostatic potentiation"
+          }
+        ],
+        "url": "https://zenodo.org/record/7852140",
+        "relatedIdentifiers": [
+          {
+            "relationType": "IsSupplementTo",
+            "relatedIdentifier": "https://github.com/TheWalterLab/Jusyteetal2023/tree/v1.0.0",
+            "relatedIdentifierType": "URL"
+          },
+          {
+            "relationType": "HasVersion",
+            "relatedIdentifier": "10.5281/zenodo.7852141",
+            "relatedIdentifierType": "DOI"
+          }
+        ]
+      },
+      {
+        "doi": "10.5281/zenodo.7852141",
+        "titles": [
+          {
+            "title": "TheWalterLab/Jusyteetal2023: Unc13A dynamically stabilizes vesicle priming at synaptic release sites for short-term facilitation and homeostatic potentiation"
+          }
+        ],
+        "url": "https://zenodo.org/record/7852141",
+        "relatedIdentifiers": [
+          {
+            "relationType": "IsSupplementTo",
+            "relatedIdentifier": "https://github.com/TheWalterLab/Jusyteetal2023/tree/v1.0.0",
+            "relatedIdentifierType": "URL"
+          },
+          {
+            "relationType": "IsVersionOf",
+            "relatedIdentifier": "10.5281/zenodo.7852140",
+            "relatedIdentifierType": "DOI"
+          }
+        ]
+      },
+      {
+        "doi": "10.6084/m9.figshare.22116425",
+        "titles": [
+          {
+            "title": "Screening and Identification of Potential Diagnostic Biomarkers in Peripheral Blood for Post-traumatic Stress Disorder"
+          }
+        ],
+        "url": "https://figshare.com/articles/dataset/Screening_and_Identification_of_Potential_Diagnostic_Biomarkers_in_Peripheral_Blood_for_Post-traumatic_Stress_Disorder/22116425",
+        "relatedIdentifiers": []
+      },
+      {
+        "doi": "10.6084/m9.figshare.22116425.v1",
+        "titles": [
+          {
+            "title": "Screening and Identification of Potential Diagnostic Biomarkers in Peripheral Blood for Post-traumatic Stress Disorder"
+          }
+        ],
+        "url": "https://figshare.com/articles/dataset/Screening_and_Identification_of_Potential_Diagnostic_Biomarkers_in_Peripheral_Blood_for_Post-traumatic_Stress_Disorder/22116425/1",
+        "relatedIdentifiers": [
+          {
+            "relationType": "IsIdenticalTo",
+            "relatedIdentifier": "10.6084/m9.figshare.22116425",
+            "relatedIdentifierType": "DOI"
+          }
+        ]
+      },
+      {
+        "doi": "10.17169/refubium-33123",
+        "titles": [
+          {
+            "title": "(M)Unc13s in Active Zone Diversity"
+          },
+          {
+            "titleType": "Subtitle",
+            "title": "A Drosophila Perspective"
+          }
+        ],
+        "url": "https://refubium.fu-berlin.de/handle/fub188/33402",
+        "relatedIdentifiers": [
+          {
+            "relationType": "IsIdenticalTo",
+            "relatedIdentifier": "10.3389/fnsyn.2021.798204",
+            "relatedIdentifierType": "DOI"
+          },
+          {
+            "relationType": "IsIdenticalTo",
+            "relatedIdentifier": "https://doi.org/10.3389/fnsyn.2021.798204",
+            "relatedIdentifierType": "URL"
+          }
+        ]
+      },
+      {
+        "doi": "10.5281/zenodo.5759046",
+        "titles": [
+          {
+            "title": "rosaxma/TDP-43-UNC13A-2021: Release for publication (v1.0.1)"
+          }
+        ],
+        "url": "https://zenodo.org/record/5759046",
+        "relatedIdentifiers": [
+          {
+            "relationType": "IsSupplementTo",
+            "relatedIdentifier": "https://github.com/rosaxma/TDP-43-UNC13A-2021/tree/v1.0.1",
+            "relatedIdentifierType": "URL"
+          },
+          {
+            "relationType": "HasVersion",
+            "relatedIdentifier": "10.5281/zenodo.5759047",
+            "relatedIdentifierType": "DOI"
+          },
+          {
+            "relationType": "HasVersion",
+            "relatedIdentifier": "10.5281/zenodo.5770954",
+            "relatedIdentifierType": "DOI"
+          }
+        ]
+      },
+      {
+        "doi": "10.5281/zenodo.5770954",
+        "titles": [
+          {
+            "title": "rosaxma/TDP-43-UNC13A-2021: Release for publication (v1.0.1)"
+          }
+        ],
+        "url": "https://zenodo.org/record/5770954",
+        "relatedIdentifiers": [
+          {
+            "relationType": "IsSupplementTo",
+            "relatedIdentifier": "https://github.com/rosaxma/TDP-43-UNC13A-2021/tree/v1.0.1",
+            "relatedIdentifierType": "URL"
+          },
+          {
+            "relationType": "IsVersionOf",
+            "relatedIdentifier": "10.5281/zenodo.5759046",
+            "relatedIdentifierType": "DOI"
+          }
+        ]
+      },
+      {
+        "doi": "10.5281/zenodo.5759047",
+        "titles": [
+          {
+            "title": "rosaxma/TDP-43-UNC13A-2021: v1.0.0"
+          }
+        ],
+        "url": "https://zenodo.org/record/5759047",
+        "relatedIdentifiers": [
+          {
+            "relationType": "IsSupplementTo",
+            "relatedIdentifier": "https://github.com/rosaxma/TDP-43-UNC13A-2021/tree/v1.0.0",
+            "relatedIdentifierType": "URL"
+          },
+          {
+            "relationType": "IsVersionOf",
+            "relatedIdentifier": "10.5281/zenodo.5759046",
+            "relatedIdentifierType": "DOI"
+          }
+        ]
+      },
+      {
+        "doi": "10.17169/refubium-27447",
+        "titles": [
+          {
+            "title": "Characterizing the molecular determinants of neurotransmission using computational and experimental approaches"
+          },
+          {
+            "titleType": "TranslatedTitle",
+            "title": "Charakterisierung von molekularen Bestimmungsfaktoren der Neurotransmission anhand computerbasierter und experimenteller Ansätze"
+          }
+        ],
+        "url": "https://refubium.fu-berlin.de/handle/fub188/27693",
+        "relatedIdentifiers": []
+      },
+      {
+        "doi": "10.17169/refubium-30618",
+        "titles": [
+          {
+            "title": "Characterization of synaptic transmission in autaptic cultured neurons derived from human induced pluripotent stem cells"
+          }
+        ],
+        "url": "https://refubium.fu-berlin.de/handle/fub188/30879",
+        "relatedIdentifiers": []
+      },
+      {
+        "doi": "10.17169/refubium-25580",
+        "titles": [
+          {
+            "title": "Autaptic cultures of human induced neurons as a versatile platform for studying synaptic function and neuronal morphology"
+          }
+        ],
+        "url": "https://refubium.fu-berlin.de/handle/fub188/25819",
+        "relatedIdentifiers": [
+          {
+            "relationType": "IsIdenticalTo",
+            "relatedIdentifier": "10.1038/s41598-019-41259-1",
+            "relatedIdentifierType": "DOI"
+          },
+          {
+            "relationType": "IsIdenticalTo",
+            "relatedIdentifier": "30894602",
+            "relatedIdentifierType": "PMID"
+          }
+        ]
+      },
+      {
+        "doi": "10.6084/m9.figshare.3798555.v1",
+        "titles": [
+          {
+            "title": "Rare genetic variation in UNC13A may modify survival in amyotrophic lateral sclerosis"
+          }
+        ],
+        "url": "https://tandf.figshare.com/articles/figure/Rare_genetic_variation_in_UNC13A_may_modify_survival_in_amyotrophic_lateral_sclerosis/3798555/1",
+        "relatedIdentifiers": [
+          {
+            "relationType": "IsSupplementTo",
+            "relatedIdentifier": "10.1080/21678421.2016.1213852",
+            "relatedIdentifierType": "DOI"
+          },
+          {
+            "relationType": "IsIdenticalTo",
+            "relatedIdentifier": "10.6084/m9.figshare.3798555",
+            "relatedIdentifierType": "DOI"
+          }
+        ]
+      },
+      {
+        "doi": "10.6084/m9.figshare.3798555",
+        "titles": [
+          {
+            "title": "Rare genetic variation in UNC13A may modify survival in amyotrophic lateral sclerosis"
+          }
+        ],
+        "url": "https://tandf.figshare.com/articles/figure/Rare_genetic_variation_in_UNC13A_may_modify_survival_in_amyotrophic_lateral_sclerosis/3798555",
+        "relatedIdentifiers": [
+          {
+            "relationType": "IsSupplementTo",
+            "relatedIdentifier": "10.1080/21678421.2016.1213852",
+            "relatedIdentifierType": "DOI"
+          }
+        ]
+      },
+      {
+        "doi": "10.17169/refubium-14078",
+        "titles": [
+          {
+            "title": "The Role of Molecular Scaffolds at the Active Zone in Synaptic Vesicle Distribution and Release Probability"
+          },
+          {
+            "titleType": "TranslatedTitle",
+            "title": "Die Rolle der Gerüstproteine an der Aktiven Zone in der Verteilung und Freisetzungswahrscheinlichkeit synaptischer Vesikel"
+          }
+        ],
+        "url": "https://refubium.fu-berlin.de/handle/fub188/9880",
+        "relatedIdentifiers": []
+      }
+    ]
+  },
+  {
+    "url": "https://api.datacite.org/dois?query=UNC13A&page%5Bsize%5D=25&page%5Bnumber%5D=4",
+    "status": 200,
+    "bytes": 14705,
+    "sha256_response": "f00ce6e20e879ce28eaf115578e4bf7fb77e191c2c3cfa37cf4abc643f73832f",
+    "total": 77,
+    "next": null,
+    "items": [
+      {
+        "doi": "10.17169/refubium-1688",
+        "titles": [
+          {
+            "title": "Studies on the assembly and architecture of the Drosophila active zone scaffold"
+          }
+        ],
+        "url": "https://refubium.fu-berlin.de/handle/fub188/23913",
+        "relatedIdentifiers": []
+      },
+      {
+        "doi": "10.17169/refubium-27449",
+        "titles": [
+          {
+            "title": "Molecular mechanisms that regulate neurotransmission and establish presynaptic homeostasis at the Drosophila melanogaster neuromuscular junction"
+          }
+        ],
+        "url": "https://refubium.fu-berlin.de/handle/fub188/27695",
+        "relatedIdentifiers": []
+      }
+    ]
+  }
+]
