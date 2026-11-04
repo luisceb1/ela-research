@@ -1,0 +1,22 @@
+{
+  "R_executed": false,
+  "archive_member_sha256": {
+    "data/fish_counts_cleaned.tsv": "e68958d7400487a5a718a491c1c4b5d99a29a4e6dfb4941f6b5bff5108b65ea7",
+    "data/nuclear_cyto_ratio.csv": "927507899e023a3f515a209b2f29e62217171ddf4803c88d5750f752ec91dd8f",
+    "data/number_foci_ratio.csv": "7f52429817bbb91dfc41707f9c0cc3cac023db57089330a314a4c3a094ae5f73",
+    "fish_plot.R": "612fb79845fc2c190fd0bc6717ce8ad25311abd89832dcc3322264f00873cc43",
+    "processed/2023-10-13_fish_counts_cleaned_longer.tsv": "059061e571cbf094c54e890d1dde8e9a1b6cb0ec447827a4be79ccb66dac008a",
+    "processed/2023-10-13_fish_counts_processed.tsv": "fc31a31d5ba6f6617a06c4c9d6ce314d5e1017e862af9158068d9583b8c6d34f"
+  },
+  "deposited_ratio_count": 9,
+  "deposited_ratio_matches": 7,
+  "editorial_plot_point_identity_verified": false,
+  "final_paper_linked_input_verified": true,
+  "github_data_and_plot_bytes_match": true,
+  "independent_culture_map_verified": false,
+  "long_numeric_counts_matching": 480,
+  "long_rows_matching": 240,
+  "pvalues_estimated": false,
+  "summary_fields_matching": 84,
+  "summary_numeric_fields": 84
+}

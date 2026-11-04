@@ -43,3 +43,5 @@ Sin comunicaciones adicionales, costes, publicación externa, datos personales, 
 ## User-authorized bounded extension — 04/11/2026
 
 ELK1 RNA-FISH image-count replay: [report](../reports/elk1-fish-replay-20261104/REPORT.md). Sixty image rows, three source replicate labels; seven of nine deposited ratios reproduced, two unresolved. Molecular/descriptive only; no functional rescue or independent experimental validation. This completed extension does not replace #37/#44 or reopen their searches. No further ELK1 program is scheduled.
+
+Final-paper-linked ELK1 archive reconciliation completed: [comparison](../reports/elk1-fish-replay-20261104/FINAL_ARTICLE_COMPARISON.md). Inputs identical, 240 long rows and 84 aggregate fields match; two old ratio discrepancies persist. Fig.3g-style extranuclear counts reconstructed without P values or editorial point-identity certification. Bounded task closed; no new ELK1 study scheduled.

@@ -1,0 +1,28 @@
+{
+  "date": "2026-11-04",
+  "tests_passed": 6,
+  "repeat_outputs_byte_identical": true,
+  "summary_matches": 84,
+  "long_rows_match": 240,
+  "editorial_point_identity_certified": false,
+  "numerical_effect_inference_performed": false,
+  "sha256": {
+    "reports/elk1-fish-replay-20261104/REPORT.md": "d405446d8267557f697656eadd9069c6b5f92c911602624089b4f72ef52f2239",
+    "reports/elk1-fish-replay-20261104/FINAL_ARTICLE_COMPARISON.md": "b76396073029880c07f13851014cfa7d9defbdb783ba02e44186d9d0704cd14e",
+    "reports/elk1-fish-replay-20261104/RECONCILIATION_PLAN.md": "1bd76f7c73ee211f2fb72f465306ac90f23db8df6ca5a1ae2fce5fc6ea51e669",
+    "reports/elk1-fish-replay-20261104/validation.json": "13ad6c71c5e0d24ee9bee875c04a500f71e5b3c21b6002b34ef26d8c501301d4",
+    "reports/elk1-fish-replay-20261104/sources.json": "8f4a65d03acd822d1181ec95cccdeca34629b2a479fc3779e5286892f6c949fd",
+    "research/STATE.md": "f29607d5420c3ae884d60821ece178c7613834f667907404d8625d533f78ad15",
+    "research/BACKLOG.md": "a3300bbdef63664732432a5590fcc113f3782869249e53687d4689a018e1c829",
+    "scripts/reconcile_elk1_archive.py": "1164117c995ff71c1eac03fdbeca347dd06fa348765a27e20a60339ee9e8d449",
+    "reports/elk1-fish-replay-20261104/final-article/range-receipt.json": "7397b57ec96e2caa1163229924bd7db486ad502b4f8fa990e449396b95e0bf7c",
+    "reports/elk1-fish-replay-20261104/final-article/fig3g-image-counts.csv": "f2a2982b1aa80b65d7cc7564e52bf9c003a205b8f25f1fab2d5d23db7b4fee62",
+    "reports/elk1-fish-replay-20261104/final-article/extracted-members.json": "711b5610ad258f4beb63a1908fef61ed9f78df0a3bbb3c3fb299c81e7ec06c85",
+    "reports/elk1-fish-replay-20261104/final-article/reconciliation-run.json": "a6bcac094339c76a2f3c6d3f6dfc57915c31a315e8f07788f8fa9101f655c568",
+    "reports/elk1-fish-replay-20261104/final-article/archive-source.json": "d1efa991d708101f08c888f89193956fc646112d9f69ad39f2264086e4a8e29f",
+    "reports/elk1-fish-replay-20261104/final-article/processed-table-comparison.csv": "971a89a4162259d91aaec5193b3fd44568b71c7a61d72d71121c72c0c188e64e",
+    "reports/elk1-fish-replay-20261104/final-article/fig3g-endpoint.csv": "6efff779fe1b59614647004f1b113e47475980e4cabf031ac0a94ba57f52ce1d",
+    "reports/elk1-fish-replay-20261104/final-article/retrieval/inspect_remote_zip.py": "7935c6eec27b4342f9cef8735c3294b2502b4f449c8d37d67313e715f949f6bc",
+    "reports/elk1-fish-replay-20261104/final-article/retrieval/extract_selected.py": "dfd296b579990f7c91018b1e838f70fc0b4dd028b172ed56f5bc7f0180c232f8"
+  }
+}

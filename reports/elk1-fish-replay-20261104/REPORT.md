@@ -2,6 +2,8 @@
 
 ## Result
 
+**Final-paper reconciliation completed:** the linked Zenodo archive confirms identical inputs and all 240 long-table rows/84 aggregate numeric fields. The two older replicate-1 ratio discrepancies persist. Fig.3g-style extranuclear counts are reconstructed separately; see [final comparison](FINAL_ARTICLE_COMPARISON.md). This does not certify editorial point identity.
+
 We processed the 60 deposited image-count rows into 12 replicate/condition/probe summaries. There are three source replicate labels, two arms and ten images per arm/replicate. Images are nested observations, not 60 biological replicates. The authors describe biological replicates; the table does not identify donors, differentiation batches, cultures or coverslips, so their independence cannot be independently verified from this file.
 
 Seven of nine deposited ratio values match an equal-image calculation within 1e-8. Two count ratios for replicate 1 do not match. No values or identities were changed to make them agree. This is an executed computational reproduction with unresolved discrepancies, not an independent experimental validation, rescue experiment or new biological discovery.

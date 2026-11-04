@@ -3,7 +3,7 @@
   "outputs_byte_identical_on_repeat": true,
   "source_git_blobs_verified": 8,
   "R_executed": false,
-  "scope": "Computational molecular replay, unresolved source-summary discrepancies, no biological novelty or functional rescue",
+  "scope": "Historical initial replay receipt; hashes refer to that commit. Current reconciliation validation: final-article/validation.json.",
   "sha256": {
     "reports/elk1-fish-replay-20261104/REPORT.md": "35587ce1ff9ea305588938700f58aef6a14cf9e76a99c8e0e5fafe498dd08505",
     "reports/elk1-fish-replay-20261104/deposited-comparison.csv": "e9722a3b386cca1ba9485c0f0005435b26a4a7e13778835c8e7ef61d2c1342bf",
@@ -17,5 +17,6 @@
     "tests/test_elk1_fish.py": "70bb92f4c546f492f22437721fbbf3edd48f1de47b1f66a72ec9953c37e243af",
     "research/STATE.md": "2971e7f9c12bc7769b64a9de042874a380d05cb8037ae204e39ab9dc02528e12",
     "research/BACKLOG.md": "96b80314491d60591288107918aa2e77f32eb967ca5ffd785f60cbc6345f9f6d"
-  }
+  },
+  "snapshot_commit": "4598793cf9dcb797ee52a2fedcc42386f268fc19"
 }
