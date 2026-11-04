@@ -47,3 +47,9 @@ Consultar [BACKLOG](BACKLOG.md), [protocolo](PROTOCOL.md) e [inventario de scrip
 La CI debe leerse por commit y dependencias. Una matriz completa Python 3.11/3.12 instala PySAM/PyArrow fijados, compila scripts/tests y exige cero omisiones. Los checks históricos dependen del resultado de esa matriz sin repetir pruebas. Una CI correcta no reproduce automáticamente todos los análisis de datos reales.
 
 Sin comunicaciones adicionales, costes, publicación externa, datos personales, laboratorio o indicaciones clínicas sin autorización expresa.
+
+## Búsqueda manual ampliada de Fig.4d — 04/11/2026
+
+A petición expresa de Luis se amplió la búsqueda pública, sin reactivar la automatización. DataCite:77 registros DOI (incluyen versiones), Zenodo:15 entradas, Figshare:42; también Crossref, Europe PMC/BioStudies, bioRxiv, GitHub y páginas de grupos. No se localizó una tabla original identificable K26 Fig.4d. BioStudies lista solo media-1.pdf del preprint2024; descarga HTTP503, sin inspección de bytes. XML K24 identifica Fig.4d como intensidad UNC13A, no eEPSC espinal. Errores y recuperación incompleta de índices documentados; no se demuestra inexistencia de datos. [Informe y registro](../reports/fig4d-source-search-20261104/REPORT.md).
+
+#44 sigue bloqueada; contrato deshabilitado, sin estimación funcional ni nuevas réplicas. No repetir esta ampliación por defecto: continuar con enlace/archivo original nuevo y revisión del mapa de independencia. #37 y las condiciones previas no cambian. La continuidad automática permanece pausada; sin nuevos contactos, costes, merge o cierre de issues.

@@ -46,3 +46,9 @@ Los bloqueos antiguos #1/#2/#14/#20 siguen abiertos por sus entradas concretas p
 No repetir STMN2/PPAU 12/12, el piloto UNC13A cerrado, Humphrey procesado o búsquedas agotadas como trabajo nuevo. No relajar cobertura 20, promover bibliotecas técnicas a réplicas ni sumar uniones ajenas al objetivo.
 
 No nuevas descargas masivas, control completo/TDP, contactos, gastos, datos personales, laboratorio o publicación externa por continuidad automática. [AGENTS](../AGENTS.md) y [PROTOCOL](PROTOCOL.md) siguen aplicando.
+
+## Búsqueda manual ampliada de Fig.4d — 04/11/2026
+
+A petición expresa de Luis se amplió la búsqueda pública, sin reactivar la automatización. DataCite:77 registros DOI (incluyen versiones), Zenodo:15 entradas, Figshare:42; también Crossref, Europe PMC/BioStudies, bioRxiv, GitHub y páginas de grupos. No se localizó una tabla original identificable K26 Fig.4d. BioStudies lista solo media-1.pdf del preprint2024; descarga HTTP503, sin inspección de bytes. XML K24 identifica Fig.4d como intensidad UNC13A, no eEPSC espinal. Errores y recuperación incompleta de índices documentados; no se demuestra inexistencia de datos. [Informe y registro](../reports/fig4d-source-search-20261104/REPORT.md).
+
+#44 sigue bloqueada; contrato deshabilitado, sin estimación funcional ni nuevas réplicas. No repetir esta ampliación por defecto: continuar con enlace/archivo original nuevo y revisión del mapa de independencia. #37 y las condiciones previas no cambian. La continuidad automática permanece pausada; sin nuevos contactos, costes, merge o cierre de issues.
