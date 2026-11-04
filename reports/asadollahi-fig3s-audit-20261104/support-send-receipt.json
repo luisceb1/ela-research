@@ -1,0 +1,25 @@
+{
+  "status": "sent_verified",
+  "authorization": "Luis explicitly approved the complete proposed email in chat on 2026-11-04",
+  "recipient": "menoci@medizin.uni-goettingen.de",
+  "subject": "Public metadata access for GOE-Seek study 260 (UNC13A)",
+  "sent_at_utc": "2026-11-04T09:20:43.000Z",
+  "sent_at_madrid": "2026-11-04 10:20:43",
+  "sender": "verified connected Gmail account; personal address omitted from repository receipt",
+  "gmail_message_id": "1a1a5dc5946aab02",
+  "gmail_thread_id": "1a1a5dc5946aab02",
+  "labels": [
+    "SENT"
+  ],
+  "approved_body_matches_sent_html": true,
+  "duplicate_search_before_send": {
+    "query": "in:sent to:menoci@medizin.uni-goettingen.de subject:\"Public metadata access for GOE-Seek study 260\" newer_than:14d",
+    "matches": 0
+  },
+  "cc": [],
+  "bcc": [],
+  "attachments": [],
+  "reply_status": "not_checked; only the sent message was verified",
+  "approved_body_utf8_sha256": "067721861fc6f9baabc0e8e5ffe58035f83139d7b6e9fdcc6fa126d37db04fb0",
+  "matched_sent_html_utf8_sha256": "0734e7b1602d047390350d2bcc5ac7de853879785f51876df2ec0f256e3e66b3"
+}

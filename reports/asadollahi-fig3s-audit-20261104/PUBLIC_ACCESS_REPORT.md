@@ -22,7 +22,7 @@ No se obtuvo manifiesto, lista de archivos ni mapa de cultivos. No se enumeran I
 
 La [plataforma oficial GoeSeek Uploader](https://upload.goeseek.gwdguser.de/) identifica al servicio como parte del marco de datos de investigación de University Medical Center Göttingen y publica `menoci@medizin.uni-goettingen.de` como soporte técnico. Se elige ese canal específico del servicio para una consulta de enlace/permisos, sin atribuir a soporte la autoría del experimento. No se adivina una persona ni se añade CC. El registro MBExC también publica un alias de soporte de su plataforma; no se mezclan destinatarios por defecto.
 
-[SUPPORT_REQUEST_DRAFT.md](SUPPORT_REQUEST_DRAFT.md) contiene el texto íntegro propuesto. Estado: **no enviado**, tampoco creado como borrador en un buzón. La instrucción de Luis para el proyecto exige autorización expresa antes de comunicaciones externas. No se incluyen el repositorio privado, resultados propios, datos personales, adjuntos o información clínica.
+[SUPPORT_REQUEST_DRAFT.md](SUPPORT_REQUEST_DRAFT.md) conserva el borrador histórico, que no se envió. Tras presentarse una versión final más breve en el chat, Luis autorizó expresamente su envío el04/11/2026. Ese texto final y su recibo verificado constan en [COMMUNICATION_LOG.md](COMMUNICATION_LOG.md) y [SUPPORT_REQUEST_SENT.md](SUPPORT_REQUEST_SENT.md). No se incluyen el repositorio privado, resultados propios, datos personales, adjuntos o información clínica. La autorización de este mensaje no habilita seguimientos u otros contactos.
 
 ## Reproducción del chequeo
 

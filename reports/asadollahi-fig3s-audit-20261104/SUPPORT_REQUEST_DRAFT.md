@@ -1,5 +1,7 @@
 # Proposed email — not sent
 
+Historical draft. Luis subsequently approved a shorter final version in chat. That final version was sent on04/11/2026; see SUPPORT_REQUEST_SENT.md and COMMUNICATION_LOG.md. This earlier wording was not sent.
+
 To: menoci@medizin.uni-goettingen.de
 
 Subject: Public metadata access for GOE-Seek study 260 (UNC13A)
