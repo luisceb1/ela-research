@@ -1,0 +1,29 @@
+test_changed_source_is_rejected_before_parsing (test_audit_asadollahi_culture_map.CultureMapTests.test_changed_source_is_rejected_before_parsing) ... ok
+test_culture_label_requests_review_without_inventing_map (test_audit_asadollahi_culture_map.CultureMapTests.test_culture_label_requests_review_without_inventing_map) ... ok
+test_implicit_count_is_rejected (test_audit_asadollahi_culture_map.CultureMapTests.test_implicit_count_is_rejected) ... ok
+test_n_counts_are_not_culture_assignments (test_audit_asadollahi_culture_map.CultureMapTests.test_n_counts_are_not_culture_assignments) ... ok
+test_wrong_measure_or_panel_cannot_match_by_n_alone (test_audit_asadollahi_culture_map.CultureMapTests.test_wrong_measure_or_panel_cannot_match_by_n_alone) ... ok
+test_blank_is_not_imputed_and_zero_is_preserved (test_audit_asadollahi_fig3s.SourceAuditTests.test_blank_is_not_imputed_and_zero_is_preserved) ... ok
+test_duplicate_numeric_values_are_flagged_not_deleted (test_audit_asadollahi_fig3s.SourceAuditTests.test_duplicate_numeric_values_are_flagged_not_deleted) ... ok
+test_empty_group_does_not_claim_available_comparison (test_audit_asadollahi_fig3s.SourceAuditTests.test_empty_group_does_not_claim_available_comparison) ... ok
+test_extra_numeric_metadata_requires_review (test_audit_asadollahi_fig3s.SourceAuditTests.test_extra_numeric_metadata_requires_review) ... ok
+test_formula_cache_is_not_used_as_observation (test_audit_asadollahi_fig3s.SourceAuditTests.test_formula_cache_is_not_used_as_observation) ... ok
+test_group_mismatch_is_rejected (test_audit_asadollahi_fig3s.SourceAuditTests.test_group_mismatch_is_rejected) ... ok
+test_missing_culture_map_never_enables_inference (test_audit_asadollahi_fig3s.SourceAuditTests.test_missing_culture_map_never_enables_inference) ... ok
+test_nonfinite_is_rejected_and_recorded (test_audit_asadollahi_fig3s.SourceAuditTests.test_nonfinite_is_rejected_and_recorded) ... ok
+test_projection_byte_hash_survives_text_transport (test_audit_asadollahi_fig3s.SourceAuditTests.test_projection_byte_hash_survives_text_transport) ... ok
+test_scope_marker_prevents_export (test_audit_asadollahi_fig3s.SourceAuditTests.test_scope_marker_prevents_export) ... ok
+test_source_hash_is_checked_before_parsing (test_audit_asadollahi_fig3s.SourceAuditTests.test_source_hash_is_checked_before_parsing) ... ok
+test_styles_do_not_create_cultures (test_audit_asadollahi_fig3s.SourceAuditTests.test_styles_do_not_create_cultures) ... ok
+test_unit_mismatch_is_rejected (test_audit_asadollahi_fig3s.SourceAuditTests.test_unit_mismatch_is_rejected) ... ok
+test_unselected_sheet_is_not_parsed (test_audit_asadollahi_fig3s.SourceAuditTests.test_unselected_sheet_is_not_parsed) ... ok
+test_all_values_and_zero_are_in_the_denominator (test_reproduce_asadollahi_fig3s_descriptive.DescriptiveReproductionTests.test_all_values_and_zero_are_in_the_denominator) ... ok
+test_ambiguous_or_nonfinite_data_are_not_repaired (test_reproduce_asadollahi_fig3s_descriptive.DescriptiveReproductionTests.test_ambiguous_or_nonfinite_data_are_not_repaired) ... ok
+test_boundary_is_inclusive_and_just_outside_fails (test_reproduce_asadollahi_fig3s_descriptive.DescriptiveReproductionTests.test_boundary_is_inclusive_and_just_outside_fails) ... ok
+test_count_mismatch_stops_before_summary_comparison (test_reproduce_asadollahi_fig3s_descriptive.DescriptiveReproductionTests.test_count_mismatch_stops_before_summary_comparison) ... ok
+test_published_precision_sets_rounding_tolerance (test_reproduce_asadollahi_fig3s_descriptive.DescriptiveReproductionTests.test_published_precision_sets_rounding_tolerance) ... ok
+
+----------------------------------------------------------------------
+Ran 24 tests in 0.008s
+
+OK

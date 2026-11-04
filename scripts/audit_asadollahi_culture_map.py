@@ -19,7 +19,7 @@ DESIGN_RE = re.compile(r'\bcultures?\b|\bbatch\b|\breplicates?\b|\bindependent\b
                        r'\b(?:neuron|cell)[ _-]?id\b|\bexclu', re.I)
 
 
-def inspect_table(data, expected_sha=SOURCE_SHA256):
+def inspect_table(data, expected_sha=SOURCE_SHA256, include_published_means=False):
     if len(data) > MAX_BYTES or digest(data) != expected_sha:
         raise ValueError('source_size_or_sha256_mismatch')
     hashes = {}
@@ -65,9 +65,14 @@ def inspect_table(data, expected_sha=SOURCE_SHA256):
             counts[group] = int(match[1])
         candidates = [{'source_cell': addr, 'text': value} for addr, value in cells.items()
                       if DESIGN_RE.search(value)]
+        selected_fields = ['A1', *expected, 'C36', 'E36']
+        if include_published_means:
+            if not all(cells.get(a) for a in ('C35', 'E35')):
+                raise ValueError('published_summary_missing')
+            selected_fields += ['C35', 'E35']
         return {'source_url': SOURCE_URL, 'source_sha256': digest(data), 'source_bytes': len(data),
                 'sheet': 'Table 3', 'selected_member': path, 'member_sha256': hashes,
-                'selected_fields': {addr: cells.get(addr) for addr in ['A1', *expected, 'C36', 'E36']},
+                'selected_fields': {addr: cells.get(addr) for addr in selected_fields},
                 'published_observation_counts': counts,
                 'design_label_candidates': candidates,
                 'defined_names_present': wb.find('s:definedNames', NS) is not None,

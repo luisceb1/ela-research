@@ -1,6 +1,6 @@
-# Estado vigente — 03/11/2026
+# Estado vigente — 04/11/2026
 
-Base de esta síntesis: main `867e1478d4eaa5f31d078001785eed246783a27d`, con PR #36, #38 y #39 fusionadas. El [historial íntegro](history/README.md) conserva las decisiones anteriores; sus próximos pasos no son tareas actuales.
+Base remota comprobada: main `95bf05ecc1f991ec9843d48519d0764b29dc5dfb`, con mantenimiento hasta PR #45 fusionado. PR #46 y #47 siguen abiertas y separadas de main; esta síntesis pertenece a #47. El [historial íntegro](history/README.md) conserva las decisiones anteriores; sus próximos pasos no son tareas actuales.
 
 ## Líneas actuales
 
@@ -22,6 +22,12 @@ Auditoría inicial completada. En continuación dirigida expresamente autorizada
 
 Comprobación pública adicional autorizada por Luis: /studies/260.json devuelveHTTP403 con error de aplicación «You may not view study:260». La API anónima no proporciona el manifiesto; no se presume que crear una cuenta baste. [Recibo y alcance](../reports/asadollahi-fig3s-audit-20261104/PUBLIC_ACCESS_REPORT.md). Luis autorizó expresamente el envío de la versión final presentada en el chat: Gmail confirma mensaje enviado el04/11/2026 a las10:20:43 Europe/Madrid. [Texto final y recibo](../reports/asadollahi-fig3s-audit-20261104/COMMUNICATION_LOG.md). Sin adjuntos/CC/BCC; no se comprobaron respuestas ni se habilitó acceso o inferencia. No hay seguimiento automático autorizado. No nuevas consultas equivalentes hasta un enlace/cambio de acceso o respuesta institucional.
 
+## Reproducción descriptiva autorizada — A25 Fig.3s, 04/11/2026
+
+Completada con Python3.12.14: los73 valores depositados reproducen2/2 medias dentro del redondeo prospectivo: WT n38,24.209923pC frente a24.2 (tolerancia0.05); R202H n35,15.009117pC frente a15.01 (tolerancia0.005). Figura de los73 puntos, cotejo racional independiente y repetición numérica byte a byte correctos;24 controles de software sin fallos/errores/omisiones, no24 experimentos. [Informe, fuentes y límites](../reports/fig3s-descriptive-20261104/REPORT.md), [SVG](../reports/fig3s-descriptive-20261104/fig3s-descriptive.svg).
+
+Reproducción aritmética del mismo experimento publicado, sin replicación biológica externa, efecto entre grupos o validación funcional propia. Mapa observación→cultivo/exclusiones pendiente: NO-GO inferencial. No sustituye K26 Fig.4d. Sesión completada; siguiente entrada discriminante: mapa técnico primario verificable. Sin nuevas consultas equivalentes o comunicaciones por defecto. [Revisión concreta de integración #46/#47](../reports/fig3s-descriptive-20261104/INTEGRATION_REVIEW.md); no se ha fusionado ninguna.
+
 ## Resultados cerrados que no se repiten como trabajo nuevo
 
 - Piloto CTRL-4 / SRR33425816: técnicamente completado, cobertura UNC13A [1,0,0] frente a mínimo 20 en anclajes 15/8. Piloto cerrado; no ampliar al control completo ni iniciar TDP por defecto. Conservar datos, intentos, sellos y cargos. [Cierre](../reports/unc13a-control-annotation-20261103/CLOSURE.md).
@@ -39,7 +45,7 @@ GSE310723 tiene una biblioteca por condición: no simular réplicas. GSE315972 e
 
 SH-SY5Y conserva cuatro alias UNC13A y dos conflictos de hebra STMN2 pendientes; solo reabrir con fichero fuente nuevo. AGRN, CAMK2B, simulador MEA y protocolo posdéficit UNC13A v0.4 permanecen aparcados/conceptuales; #15/#16/#18/#21 se cierran como no planificadas actualmente y conservan condiciones de reconsideración en BACKLOG. No hay rescate funcional propio ni beneficio clínico demostrado.
 
-Seguimiento administrativo #37, 03/11/2026: los correos localizados de la solicitud AD Workbench confirman recepción y revisión en curso; no incluyen aprobación ni manifiesto. Es estado de acceso, no evidencia científica. #37 y #44 son las dos prioridades; los bloqueos históricos #1/#2/#14/#20 no se reactivan por continuidad automática.
+Seguimiento administrativo #37: la nota inicial del03/11 solo reflejaba recepción/revisión y era incompleta. [La comprobación del04/11 en PR #46](https://github.com/luisceb1/ela-research/blob/9a69cb8caec3281a35dd29cd8add7a36d07ec968/reports/continuity-20261104/REPORT.md) documenta aprobación del dataset seguida de revisión y workspace pendiente; no acredita acceso efectivo ni manifiesto. Es una referencia a la rama pendiente, no un informe incorporado a main. Es estado de acceso, no evidencia científica. #37 y #44 son las dos prioridades; los bloqueos históricos #1/#2/#14/#20 no se reactivan por continuidad automática.
 
 ## Operación y mantenimiento
 
@@ -48,3 +54,4 @@ Consultar [BACKLOG](BACKLOG.md), [protocolo](PROTOCOL.md) e [inventario de scrip
 La CI debe leerse por commit y dependencias. Una matriz completa Python 3.11/3.12 instala PySAM/PyArrow fijados, compila scripts/tests y exige cero omisiones. Los checks históricos dependen del resultado de esa matriz sin repetir pruebas. Una CI correcta no reproduce automáticamente todos los análisis de datos reales.
 
 Sin comunicaciones adicionales, costes, publicación externa, datos personales, laboratorio o indicaciones clínicas sin autorización expresa.
+

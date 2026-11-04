@@ -27,9 +27,25 @@
     "reports/asadollahi-fig3s-audit-20261104/support-send-receipt.json": "7b9d46de15660f5851173f50f7c158a5b0fca7d80a40c53603af77901a1ebdd8",
     "reports/asadollahi-fig3s-audit-20261104/tests.json": "47a0591a09129a09f491d17d59560d8f22d98e3f12b339371387049e10c17913",
     "reports/asadollahi-fig3s-audit-20261104/tests.log": "a2a8c67e54509d492858147db46a1f4e3feb137066b48e92dc3ee830be7700f9",
-    "scripts/audit_asadollahi_culture_map.py": "0e216c6259075953a6191f6a22a7e98df56c9f9c794aa79c44a230f94d9eb0b9",
+    "reports/fig3s-descriptive-20261104/INTEGRATION_REVIEW.md": "44535a29778048435299a4846ffca6a707873a3dcae221d81d3d938eb032f794",
+    "reports/fig3s-descriptive-20261104/PLAN.md": "65d55eb840ad5724349204c456f71a3137417ffb5ed1d3325575114fc73f4050",
+    "reports/fig3s-descriptive-20261104/REPORT.md": "fa71d49b03855e6fc43fb13f483089d2eaece6ca207d267f37c852fd546fd493",
+    "reports/fig3s-descriptive-20261104/execution.json": "5581806b24414d7d747deb764b62b606c914c698f8fa8b199211e8ade487a5a4",
+    "reports/fig3s-descriptive-20261104/fig3s-descriptive.svg": "fce9af02250428cf3de5f25931faee084ed37ba3dd267d62c1eba5f90b17517e",
+    "reports/fig3s-descriptive-20261104/mean-concordance.csv": "53db1bfefc50a495b3fd24d8422d824ecbd3a091186642476d16dc79980ab69b",
+    "reports/fig3s-descriptive-20261104/qc.json": "7fe614d6ac4dea8846d19dd1c69fb30a48c725cef7294722cb339aeff4d77a0b",
+    "reports/fig3s-descriptive-20261104/result.json": "d9508834413da65663715ca5176ef5b556439125576da2bde8535aeca321d668",
+    "reports/fig3s-descriptive-20261104/tests.json": "a16efbddbe61a470536baccffc85fa444f6c07bba71ac7deaff3f61e60154c9c",
+    "reports/fig3s-descriptive-20261104/tests.log": "d3af958abe85b7fb2cc81227d1e7a5e0c57851770a6e582c65d34f006fe75166",
+    "reports/fig3s-descriptive-20261104/verification-errors.json": "bc19fed099149ec5eca5fd4f3954e4c139b8c6aa59db5aae459cfcd4c632b541",
+    "research/BACKLOG.md": "87eed80cd8d028768c0bf570099d97e8ecdc33dce81634c8aada553c491ac578",
+    "research/STATE.md": "c9fd5b6a8333c7ef1966aeb669d4592e757244f7770cb4e21a9d374dcda74953",
+    "scripts/audit_asadollahi_culture_map.py": "b0fc87e97e44a75b3cad2816c57702de61998c6de8b288d441af0f79418b9113",
     "scripts/audit_asadollahi_fig3s.py": "4c7a9d83b3b70e12bbea62e378a8acf44208c5aeb0fcf3cbac72712c2370e4b0",
+    "scripts/reproduce_asadollahi_fig3s_descriptive.py": "4298161523d82ea707da1196764a6d042f664c4a2f1bbe57b84e93d2b9cad099",
     "tests/test_audit_asadollahi_culture_map.py": "7cdec67a0807b596f0c7e4fcfdc9bed5385ed7e9cff0c593c758da33149adcde",
-    "tests/test_audit_asadollahi_fig3s.py": "5fff517bfe94554096b1872fa5b4071b82e68315715527a5a03ff0444e25e12a"
-  }
+    "tests/test_audit_asadollahi_fig3s.py": "5fff517bfe94554096b1872fa5b4071b82e68315715527a5a03ff0444e25e12a",
+    "tests/test_reproduce_asadollahi_fig3s_descriptive.py": "2de303199079630141cb077d407df5cb717c7727d8d2d3f42da45d2e43d76e0d"
+  },
+  "inventory_scope": "Current materialized A25 artifacts and research docs; not a full repository inventory. Earlier commit inventories remain immutable."
 }

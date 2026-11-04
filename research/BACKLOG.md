@@ -1,4 +1,4 @@
-# Backlog vigente — 03/11/2026
+# Backlog vigente — 04/11/2026
 
 Este archivo contiene tareas actuales y condiciones de reapertura. [STATE](STATE.md) resume resultados; el [backlog anterior íntegro](history/README.md) conserva la cronología.
 
@@ -9,7 +9,7 @@ Este archivo contiene tareas actuales y condiciones de reapertura. [STATE](STATE
 | 1 | #37: inspeccionar un manifiesto concreto Seddighi–AD Workbench | Fuente nueva con cuentas de uniones o BAM/índices y mapa biblioteca→condición→unidad→lote | Tabla trazable de aceptación/rechazo; solo si cumple cobertura/diseño, redactar prospectivamente un único contraste |
 | 1 | #44: K26 Fig.4d: inspeccionar datos originales de eEPSC | Archivo nuevo con valores/unidades, grupos, claves de cultivo/diferenciación y procedencia | Adaptador trazable y revisión del diseño real; habilitar contrato solo tras comprobar independencia, exclusiones y agrupación |
 
-La petición Fig.4d ya fue enviada autorizadamente: [recibo](../reports/functional-rescue-20261103/COMMUNICATION_LOG.md). En la comprobación acotada del 03/11/2026 el hilo contiene solo la petición enviada; no se autoriza seguimiento automático. Los correos de AD Workbench localizados para la solicitud confirman recepción/revisión, sin aprobación ni manifiesto. #37 conserva el [ciclo de búsqueda cerrado](../reports/source-gate-issue37-20261103/REPORT.md); no añadir un cuarto candidato.
+La petición Fig.4d ya fue enviada autorizadamente: [recibo](../reports/functional-rescue-20261103/COMMUNICATION_LOG.md). En la comprobación acotada del 03/11/2026 el hilo contiene solo la petición enviada; no se autoriza seguimiento automático. La nota inicial de AD Workbench era incompleta: [PR #46, comprobación del04/11](https://github.com/luisceb1/ela-research/blob/9a69cb8caec3281a35dd29cd8add7a36d07ec968/reports/continuity-20261104/REPORT.md) documenta aprobación del dataset seguida de revisión y workspace pendiente, sin acreditar acceso efectivo o manifiesto; informe aún separado de main. #37 conserva el [ciclo de búsqueda cerrado](../reports/source-gate-issue37-20261103/REPORT.md); no añadir un cuarto candidato.
 
 Si no hay entrada nueva, registrar que ambas líneas siguen bloqueadas y detener ese ciclo. No crear otra auditoría equivalente, sustituir datos por simulación o cambiar de endpoint para evitar el bloqueo.
 
@@ -21,6 +21,13 @@ Si no hay entrada nueva, registrar que ambas líneas siguen bloqueadas y detener
 
 
 Comprobación pública adicional autorizada por Luis: /studies/260.json devuelveHTTP403 con error de aplicación «You may not view study:260». La API anónima no proporciona el manifiesto; no se presume que crear una cuenta baste. [Recibo y alcance](../reports/asadollahi-fig3s-audit-20261104/PUBLIC_ACCESS_REPORT.md). Luis autorizó expresamente el envío de la versión final presentada en el chat: Gmail confirma mensaje enviado el04/11/2026 a las10:20:43 Europe/Madrid. [Texto final y recibo](../reports/asadollahi-fig3s-audit-20261104/COMMUNICATION_LOG.md). Sin adjuntos/CC/BCC; no se comprobaron respuestas ni se habilitó acceso o inferencia. No hay seguimiento automático autorizado. No nuevas consultas equivalentes hasta un enlace/cambio de acceso o respuesta institucional.
+
+## Reproducción descriptiva autorizada y completada — 04/11/2026
+
+- [x] Reproducir A25 Fig.3s con los73 valores experimentales ya auditados: medias WT24.209923pC y R202H15.009117pC,2/2 concordantes con24.2/15.01 dentro de tolerancias prospectivas0.05/0.005pC; sin efecto entre grupos, SEM/IC o pruebas inferenciales. [Informe](../reports/fig3s-descriptive-20261104/REPORT.md).
+- [x] Reconstruir los73 puntos, verificar conteos38/35, cotejar por fracciones racionales y repetir salidas numéricas byte a byte;24 controles de software correctos, sin omisiones. Mismo experimento publicado, no nueva replicación.
+- [x] Preparar [revisión de integración #46/#47](../reports/fig3s-descriptive-20261104/INTEGRATION_REVIEW.md), manteniendo ambas PR abiertas.
+- Entrada discriminante pendiente: mapa técnico inequívoco observación→cultivo y exclusiones. Mantener NO-GO inferencial si falta/ambigüedad. No repetir consultas bloqueadas, añadir otro endpoint/modelo o enviar seguimientos por defecto. Prioridades #37/#44 y automatización pausada se conservan.
 
 ## Mantenimiento técnico
 
@@ -49,3 +56,4 @@ Los bloqueos antiguos #1/#2/#14/#20 siguen abiertos por sus entradas concretas p
 No repetir STMN2/PPAU 12/12, el piloto UNC13A cerrado, Humphrey procesado o búsquedas agotadas como trabajo nuevo. No relajar cobertura 20, promover bibliotecas técnicas a réplicas ni sumar uniones ajenas al objetivo.
 
 No nuevas descargas masivas, control completo/TDP, contactos, gastos, datos personales, laboratorio o publicación externa por continuidad automática. [AGENTS](../AGENTS.md) y [PROTOCOL](PROTOCOL.md) siguen aplicando.
+
