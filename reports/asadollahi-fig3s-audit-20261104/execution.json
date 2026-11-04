@@ -1,0 +1,28 @@
+{
+  "started_at": "2026-11-04T09:43:34.176100+01:00",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.39",
+  "script_sha256": "9495359dc938658fa94f6d1730fdd49bb7e292bac1a46d56d0a308ea298cf76a",
+  "parameters": {
+    "expected_sha256": "42f9a2266bf8e7dc157350fe588f1d87deb8d0e4c5067bc2c780b9fc7851a49f",
+    "sheet": "Figure 3_R202H",
+    "header_cells": [
+      "I1",
+      "I3",
+      "J3"
+    ],
+    "data_columns": [
+      "I",
+      "J"
+    ],
+    "data_first_row": 4,
+    "max_source_bytes": 2097152,
+    "max_member_bytes": 20971520,
+    "max_rows": 1000,
+    "download": false,
+    "random_seed": null
+  },
+  "result": "PARTIAL_VALUES_AVAILABLE_NO_GO_INFERENCE",
+  "status": "completed",
+  "finished_at": "2026-11-04T09:43:34.186377+01:00"
+}

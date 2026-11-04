@@ -1,0 +1,166 @@
+{
+  "source_url": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41588-025-02361-5/MediaObjects/41588_2025_2361_MOESM10_ESM.xlsx",
+  "source_sha256": "42f9a2266bf8e7dc157350fe588f1d87deb8d0e4c5067bc2c780b9fc7851a49f",
+  "source_bytes": 1185531,
+  "selected_sheet": "Figure 3_R202H",
+  "selected_member": "xl/worksheets/sheet3.xml",
+  "sheet_manifest": [
+    {
+      "name": "Figure 2",
+      "state": "visible"
+    },
+    {
+      "name": "Figure 3_E52K",
+      "state": "visible"
+    },
+    {
+      "name": "Figure 3_R202H",
+      "state": "visible"
+    },
+    {
+      "name": "Figure 4_G808D",
+      "state": "visible"
+    },
+    {
+      "name": "Figure 5_C587F",
+      "state": "visible"
+    },
+    {
+      "name": "Figure 6_STP",
+      "state": "visible"
+    },
+    {
+      "name": "ED Figure 4_R799Q ",
+      "state": "visible"
+    },
+    {
+      "name": "ED Figure 4_N1013S",
+      "state": "visible"
+    },
+    {
+      "name": "ED Figure 8",
+      "state": "visible"
+    }
+  ],
+  "member_sha256": {
+    "xl/workbook.xml": "07c731d2cffcfd94279ab362dcff6d9f964771ce07f9dfd5363ce62d53a21176",
+    "xl/_rels/workbook.xml.rels": "4882faf6a711955ab340967e279eae85e5fce156e9678cef83eb204ca57963a2",
+    "xl/worksheets/sheet3.xml": "078feec30b051f7204add49fae7963c01b6287107dcbf3c63e274be418b366b0",
+    "xl/sharedStrings.xml": "6eba71b599bba118b4758f63e00955345f2e6a10e3a83caef46ee51f89b37b7e"
+  },
+  "panel": "3s",
+  "measure": "Initial EPSC Charge",
+  "unit": "pC",
+  "metadata_survey_text": [
+    {
+      "source_cell": "A1",
+      "text": "Figure 3p: mEPSC Amplitude (pA)"
+    },
+    {
+      "source_cell": "E1",
+      "text": "Figure 3q: mEPSC Frequency (Hz)"
+    },
+    {
+      "source_cell": "I1",
+      "text": "Figure 3s: Initial EPSC Charge (pC)"
+    },
+    {
+      "source_cell": "M1",
+      "text": "Figure 3u: Sucrose-evoked RRP estimates (nC)"
+    },
+    {
+      "source_cell": "Q1",
+      "text": "Figure 3v: Probability of vesicular release (%)"
+    },
+    {
+      "source_cell": "A3",
+      "text": "UNC13AWT"
+    },
+    {
+      "source_cell": "B3",
+      "text": "UNC13AR202H"
+    },
+    {
+      "source_cell": "E3",
+      "text": "UNC13AWT"
+    },
+    {
+      "source_cell": "F3",
+      "text": "UNC13AR202H"
+    },
+    {
+      "source_cell": "I3",
+      "text": "UNC13AWT"
+    },
+    {
+      "source_cell": "J3",
+      "text": "UNC13AR202H"
+    },
+    {
+      "source_cell": "M3",
+      "text": "UNC13AWT"
+    },
+    {
+      "source_cell": "N3",
+      "text": "UNC13AR202H"
+    },
+    {
+      "source_cell": "Q3",
+      "text": "UNC13AWT"
+    },
+    {
+      "source_cell": "R3",
+      "text": "UNC13AR202H"
+    }
+  ],
+  "populated_cells_outside_known_measurement_columns": [],
+  "metadata_labels_requiring_review": [],
+  "defined_names_present": false,
+  "comment_members_present": false,
+  "selected_sheet_external_relationship_file_present": false,
+  "selected_sheet_table_parts": 0,
+  "numeric_qc": {
+    "UNC13AWT": {
+      "numeric_count": 38,
+      "blank_cells": [],
+      "internal_blank_cells": [],
+      "invalid_cells": [],
+      "zero_count": 0,
+      "negative_count": 0,
+      "repeated_numeric_values": 0,
+      "styles": {
+        "2": 38
+      }
+    },
+    "UNC13AR202H": {
+      "numeric_count": 35,
+      "blank_cells": [
+        "J39",
+        "J40",
+        "J41"
+      ],
+      "internal_blank_cells": [],
+      "invalid_cells": [],
+      "zero_count": 0,
+      "negative_count": 0,
+      "repeated_numeric_values": 0,
+      "styles": {
+        "2": 35
+      }
+    }
+  },
+  "total_numeric_values": 73,
+  "neuron_ids_verified": false,
+  "culture_map_verified": false,
+  "exclusions_verified": false,
+  "culture_count": null,
+  "decision": "PARTIAL_VALUES_AVAILABLE_NO_GO_INFERENCE",
+  "reasons": [
+    "culture_map_not_verified",
+    "neuron_ids_not_verified",
+    "exclusions_not_verified"
+  ],
+  "effect_estimated": false,
+  "p_values_computed": false,
+  "other_sheet_values_decoded": false
+}

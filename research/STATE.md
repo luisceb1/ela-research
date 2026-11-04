@@ -13,6 +13,12 @@ Para #37, conservar cobertura objetivo mínima 20 y al menos tres unidades biol�
 
 Fig.4d informa 34/30/25 células de tres experimentos; las células no equivalen a réplicas biológicas. El contrato sigue deshabilitado y no estima efectos. Petición enviada con autorización expresa de Luis el 03/11/2026; envío confirmado, sin datos recibidos documentados en el repositorio. [Informe](../reports/functional-rescue-20261103/REPORT.md), [plan](../reports/functional-rescue-20261103/REPRODUCTION_PLAN.md), [comunicación](../reports/functional-rescue-20261103/COMMUNICATION_LOG.md). En la comprobación acotada del hilo del 03/11/2026 solo figura el mensaje enviado. No hay seguimiento automático autorizado.
 
+## Auditoría adicional autorizada — Asadollahi2025 Fig.3s,04/11/2026
+
+Sesión limitada aprobada expresamente por Luis, independiente de #37/#44. Archivo fuente editorial1185531bytes, SHA25642f9a2266bf8e7dc157350fe588f1d87deb8d0e4c5067bc2c780b9fc7851a49f. Hoja Figure3_R202H, carga eEPSC en pC:38 entradas WT y35 R202H. QC estructural correcto, sin claves de neurona/cultivo ni exclusiones verificadas. Disponibilidad parcial, NO-GO para inferencia jerárquica; sin efecto estimado ni validación funcional propia. [Informe](../reports/asadollahi-fig3s-audit-20261104/REPORT.md).
+
+Auditoría completada; no se amplía a otros archivos, contactos o modelos. Solo reconsiderar ante un mapa técnico inequívoco observación→cultivo. La declaración publicada de al menos tres cultivos no reconstruye ese mapa. #37/#44 mantienen prioridades y bloqueos, y la automatización sigue pausada. PR#46 conserva por separado el estado administrativo/búsqueda actualizado del04/11 y sigue pendiente de incorporación a main.
+
 ## Resultados cerrados que no se repiten como trabajo nuevo
 
 - Piloto CTRL-4 / SRR33425816: técnicamente completado, cobertura UNC13A [1,0,0] frente a mínimo 20 en anclajes 15/8. Piloto cerrado; no ampliar al control completo ni iniciar TDP por defecto. Conservar datos, intentos, sellos y cargos. [Cierre](../reports/unc13a-control-annotation-20261103/CLOSURE.md).
