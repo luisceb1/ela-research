@@ -26,6 +26,13 @@ Confirmado por Luis: sin archivo K26 y sin acceso AD Workbench. Las dos líneas 
 
 La laguna que motiva #18 queda documentada en su forma **precisa**: ninguna corrección *específica de UNC13A* probada tras un déficit funcional medido (0 de 9), mientras la restauración *multidiana* posdéficit sí rescata función en ratón (Mallika, CTR). Eso **no** autoriza ningún ensayo: seguiría exigiendo déficit medido antes de la primera dosis, unidades independientes verificables y autorización específica. No tratar el rescate multidiana como evidencia a favor de una diana aislada: no hay control factorial.
 
+## Entradas del 10/11/2026 (tarde)
+
+- [x] Replay descriptivo de los datos fuente de Ikegami/Koike 2026: R1–R4 reproducidos, con control de permutación y descarte de la duración de enfermedad como explicación. Ver [informe](../reports/ikegami-source-replay-20261110/REPORT.md). Reproducibilidad interna, **no** replicación; sigue sin aportar cuentas de uniones y **no reabre #37**.
+- [x] Vigilante diario ampliado para detectar versiones revisadas por pares de los 6 preprints seguidos, con pruebas. Primer hallazgo real: Guo publicado en *Sci Transl Med* (PMID 42234776).
+- [ ] **Métodos de Guo revisado por pares**: de pago y sin registro PMC. Las filas G-a/G-b de la matriz siguen atribuidas al preprint de 2025. Entrada necesaria: acceso legítimo al texto publicado. No reintentar por continuidad.
+- [ ] Table S1 del Additional file 1 (46×15, metadatos por caso) **no inspeccionada**. Solo merece abrirse si contiene pérdida de TDP-43 cuantificada por caso, que permitiría discriminar si la coordinación UNC13A–STMN2 es efecto de dosis compartida. Requiere decisión de alcance antes de abrirla.
+
 ## Mantenimiento técnico
 
 - [x] Separar estado/backlog actuales del historial íntegro.

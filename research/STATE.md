@@ -31,6 +31,14 @@ PMID 42983891 (Ikegami/Koike 2026, peer reviewed) was checked against the #37 ga
 
 The daily watcher's `long_reads` query searched all fields including reference lists (11,040 hits, unrelated papers); it is now restricted to TITLE_ABS (42 hits), with tests. This is a scope fix, not a quality filter.
 
+## New bounded result — Ikegami source-data replay, 10 November
+
+The deposited source data of Ikegami/Koike 2026 (*Acta Neuropathol Commun* 14:229, **peer reviewed**, open access) **reproduce their published statistics**. Group sizes match exactly (12/12/11, n=35); Spearman between UNC13A cryptic RNA and truncated STMN2 RNA reproduces at **rho 0.5737** against a published 0.58, inside the prespecified tolerance; subtype differences reproduce in direction and significance, Type 2b above Types 1 and 2a for both measures while Types 1 and 2a do not differ. A label-permutation control destroys the effect and disease duration does not account for it (rho -0.24 and -0.26, both non-significant), independently confirming the paper's own claim. The ddPCR/qRT-PCR concordance the paper calls "strong" is quantified here for the first time: rho 0.859 and 0.870 on 26 cases. [Report](../reports/ikegami-source-replay-20261110/REPORT.md).
+
+This is internal reproducibility, not replication: same subjects, same measurements, same laboratory. It carries **no junction counts**, so **#37 stays blocked and this source stays rejected for that gate**. Post-mortem tissue is still not equated with i3N culture. The rho ~0.57 correlation across 35 human cases is the strongest observational support we hold for hypothesis **H2** (coordinated dysregulation across TDP-43 targets), and it agrees in direction with Mallika's experimental finding that correcting one target alone was insufficient. Correlation of two markers in the same tissue is not mechanism, causality or patient benefit.
+
+The watcher extension found that **Guo's preprint is now peer reviewed** in *Science Translational Medicine* (PMID 42234776, DOI 10.1126/scitranslmed.aeb8517, 2026-06-03). It is paywalled with no PMC record, so its methods were **not** inspected: the two Guo rows of the timing matrix remain attributed to the 2025 preprint and may differ from the published version.
+
 ## Access and communications: dated evidence only
 
 The 04 November administrative audit records AD Workbench dataset-approval wording followed by review wording, and a pending workspace. Neither establishes effective access or a technical manifest. [Audit](../reports/continuity-20261104/REPORT.md). The expanded public K26 search found no attributable source table in the checked routes; this is not universal proof of absence. [Search](../reports/fig4d-source-search-20261104/REPORT.md).

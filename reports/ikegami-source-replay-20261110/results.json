@@ -1,0 +1,170 @@
+{
+ "source_file": "src_MOESM3.xlsx",
+ "sha256": "d72b8ebc18c1b71be8bc4c26ffde1edd6f5da65541a7711c686073f4a36ad385",
+ "bytes": 29237,
+ "versions": {
+  "numpy": "2.5.3",
+  "scipy": "1.18.1"
+ },
+ "sheets": [
+  "Fig. 2a",
+  "Fig. 2b",
+  "Fig. 2c",
+  "Fig. S1c",
+  "Fig. S2a",
+  "Fig. S2b",
+  "Fig. S3a",
+  "Fig. S3b",
+  "Fig. S4a",
+  "Fig. S4b",
+  "Fig. S5a",
+  "Fig. S5b",
+  "Fig. S5c",
+  "Fig. S5d",
+  "Fig. S5e",
+  "Fig. S5f"
+ ],
+ "R3_group_sizes": {
+  "UNC13A_cryptic_qRT_PCR": {
+   "ALS Type 1": 12,
+   "ALS Type 2a": 12,
+   "ALS Type 2b": 11
+  },
+  "truncated_STMN2_qRT_PCR": {
+   "ALS Type 1": 12,
+   "ALS Type 2a": 12,
+   "ALS Type 2b": 11
+  },
+  "published": {
+   "ALS Type 1": 12,
+   "ALS Type 2a": 12,
+   "ALS Type 2b": 11
+  }
+ },
+ "R1_spearman_unc13a_vs_stmn2": {
+  "n_pairs": 35,
+  "rho": 0.5736694677871148,
+  "p_value": 0.0003148549055706022,
+  "published_rho": 0.58,
+  "delta_vs_published": -0.006330532212885154,
+  "tie_handling": "scipy.stats.spearmanr, average ranks",
+  "leave_one_out": {
+   "min": 0.5349121466768525,
+   "max": 0.653170359052712,
+   "n": 35
+  },
+  "pairs_per_subtype": {
+   "ALS Type 1": 12,
+   "ALS Type 2a": 12,
+   "ALS Type 2b": 11
+  }
+ },
+ "R2_subtype_differences": {
+  "UNC13A_cryptic_qRT_PCR": {
+   "kruskal_H": 12.994733044733053,
+   "kruskal_p": 0.0015074036843740629,
+   "medians": {
+    "ALS Type 1": 0.000804462,
+    "ALS Type 2a": 0.000383936,
+    "ALS Type 2b": 0.002980975
+   },
+   "dunn_holm": [
+    {
+     "a": "ALS Type 1",
+     "b": "ALS Type 2a",
+     "z": 1.0557852715787146,
+     "p_unadjusted": 0.29106632866864046,
+     "p_holm": 0.29106632866864046
+    },
+    {
+     "a": "ALS Type 1",
+     "b": "ALS Type 2b",
+     "z": -2.4902318735136846,
+     "p_unadjusted": 0.012765977875909475,
+     "p_holm": 0.02553195575181895
+    },
+    {
+     "a": "ALS Type 2a",
+     "b": "ALS Type 2b",
+     "z": -3.5228102392736265,
+     "p_unadjusted": 0.00042699696663180776,
+     "p_holm": 0.0012809908998954232
+    }
+   ],
+   "permutation_control": {
+    "observed_H": 12.994733044733053,
+    "iterations": 2000,
+    "p_permutation": 0.0014992503748125937,
+    "seed": 20261110
+   }
+  },
+  "truncated_STMN2_qRT_PCR": {
+   "kruskal_H": 16.29747474747475,
+   "kruskal_p": 0.00028910015472769076,
+   "medians": {
+    "ALS Type 1": 0.0015486534999999998,
+    "ALS Type 2a": 0.0026501905,
+    "ALS Type 2b": 0.024860515
+   },
+   "dunn_holm": [
+    {
+     "a": "ALS Type 1",
+     "b": "ALS Type 2a",
+     "z": -0.4183300132670378,
+     "p_unadjusted": 0.6757058487030954,
+     "p_holm": 0.6757058487030954
+    },
+    {
+     "a": "ALS Type 1",
+     "b": "ALS Type 2b",
+     "z": -3.7070094674709413,
+     "p_unadjusted": 0.0002097211056533255,
+     "p_holm": 0.0006291633169599766
+    },
+    {
+     "a": "ALS Type 2a",
+     "b": "ALS Type 2b",
+     "z": -3.2978746433019075,
+     "p_unadjusted": 0.0009741961638147883,
+     "p_holm": 0.0019483923276295766
+    }
+   ],
+   "permutation_control": {
+    "observed_H": 16.29747474747475,
+    "iterations": 2000,
+    "p_permutation": 0.0004997501249375312,
+    "seed": 20261110
+   }
+  }
+ },
+ "R4_ddpcr_concordance": {
+  "UNC13A_cryptic": {
+   "sheet": "Fig. S5e",
+   "n_pairs": 26,
+   "spearman_rho": 0.859145299145299,
+   "p_value": 1.9253528460087283e-08,
+   "published_claim": "strong correlations (no coefficient stated in the abstract)"
+  },
+  "truncated_STMN2": {
+   "sheet": "Fig. S5f",
+   "n_pairs": 26,
+   "spearman_rho": 0.87008547008547,
+   "p_value": 7.740401604277592e-09,
+   "published_claim": "strong correlations (no coefficient stated in the abstract)"
+  }
+ },
+ "alternative_disease_duration": {
+  "UNC13A_cryptic": {
+   "sheet": "Fig. S3a",
+   "n_pairs": 35,
+   "spearman_rho": -0.2373310020084514,
+   "p_value": 0.16981965404141902
+  },
+  "truncated_STMN2": {
+   "sheet": "Fig. S3b",
+   "n_pairs": 35,
+   "spearman_rho": -0.2580781894256107,
+   "p_value": 0.1344321729509977
+  }
+ }
+}

@@ -60,3 +60,26 @@ class TestQueryScope(unittest.TestCase):
         for name, query in pubmed_watch.QUERIES.items():
             with self.subTest(query=name):
                 self.assertTrue(any(a in query for a in anchors))
+
+class TestTrackedPreprints(unittest.TestCase):
+    """El seguimiento de versiones revisadas por pares no valida nada por si solo."""
+
+    def test_every_tracked_preprint_is_in_the_timing_matrix(self):
+        self.assertEqual(len(pubmed_watch.TRACKED_PREPRINTS), 6)
+        for label, title in pubmed_watch.TRACKED_PREPRINTS.items():
+            with self.subTest(label=label):
+                self.assertNotIn('"', title)
+                self.assertGreater(len(title), 20)
+
+    def test_reports_hits_per_label(self):
+        record = {"source": "MED", "id": "999", "title": "T",
+                  "journalTitle": "J", "firstPublicationDate": "2026-01-01"}
+        with patch.object(pubmed_watch, "search_pubmed", return_value=[record]):
+            found = pubmed_watch.check_published_versions()
+        self.assertEqual(len(found), len(pubmed_watch.TRACKED_PREPRINTS))
+        first = next(iter(found.values()))
+        self.assertEqual(first[0]["pmid"], "999")
+
+    def test_no_hits_yields_empty_mapping(self):
+        with patch.object(pubmed_watch, "search_pubmed", return_value=[]):
+            self.assertEqual(pubmed_watch.check_published_versions(), {})
