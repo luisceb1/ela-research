@@ -52,3 +52,23 @@ Refutación / hallazgo: cualquier discrepancia que no se explique por redondeo, 
 ## Entregables
 
 `reports/ikegami-source-replay-20261110/`: `REPORT.md` (Evidencia / Interpretación / Limitaciones / Siguiente), `results.json`, tablas derivadas propias, script con pruebas, y procedencia con hashes y versiones. Etiqueta de evidencia: **reproducción descriptiva interna**, no replicación externa ni validación funcional. Sin indicaciones clínicas.
+
+---
+
+## Addendum (10/11/2026, tras el primer ciclo): covariables de Table S1/S2
+
+Luis dejó el alcance a mi criterio. Este addendum se fija **antes** de calcular cualquier estadístico con Table S1/S2, tras inspeccionar **solo** cabeceras y dimensiones.
+
+**Hallazgo de viabilidad:** el depósito **no** contiene carga de pTDP-43 cuantificada por caso, solo el subtipo categórico. Por tanto la prueba discriminante que propuse —condicionar la correlación UNC13A–STMN2 en la carga de TDP-43— **no es ejecutable con esta fuente**. Se registra como limitación, no se sustituye por un proxy.
+
+**Lo que sí es verificable.** Table S1 (46×15) aporta por caso: sexo, edad a la muerte, edad de inicio, duración de enfermedad, duración de soporte respiratorio, intervalo post mortem (PMI), subtipo, RIN y qué ensayos se aplicaron. Table S2 (42×4) aporta subtipo y **puntuación de pérdida neuronal**. El artículo afirma que las diferencias por subtipo «were not readily accounted for by disease duration, RNA quality, normalization strategy, or semiquantitative neuronal loss scores». En el primer ciclo solo comprobé la duración. Ahora pueden comprobarse RIN, PMI y pérdida neuronal.
+
+**Problema de enlace, y regla para resolverlo.** Las hojas de figura no llevan identificador de caso: dan columnas por subtipo. El plan prohíbe emparejar por orden de filas. Por tanto:
+
+1. Se intenta establecer la correspondencia usando la **duración de enfermedad como clave**, que aparece tanto en Table S1 (por caso) como en `Fig. S3a`/`Fig. S3b` (emparejada con la medida).
+2. La clave se acepta **solo si es única dentro de cada subtipo**. Si hay duraciones repetidas en un subtipo, ese subtipo queda **no enlazable** y sus casos se excluyen del análisis de covariables, sin imputar.
+3. Si la clave es única, se verifica además que el multiconjunto de valores de medida enlazados coincide exactamente con el de `Fig. 2a`/`Fig. 2b`. Si no coincide, el enlace se declara fallido y se para.
+
+**Predicciones refutables.** Si la afirmación del artículo es correcta: RIN, PMI y pérdida neuronal **no** mostrarán correlación significativa con ninguna de las dos medidas (p ≥ 0,05 sin corregir), y la pérdida neuronal **no** diferirá entre subtipos lo suficiente para explicar el patrón. Cualquier covariable que sí correlacione de forma significativa se informa como **discrepancia con la afirmación publicada**, sin reinterpretarla a favor del artículo.
+
+**Criterio de fracaso.** Enlace no establecido con clave única y verificada ⇒ no se informa ninguna correlación de covariables. Un solo ciclo; no se abre el Additional file 2 ni se contacta a los autores.
