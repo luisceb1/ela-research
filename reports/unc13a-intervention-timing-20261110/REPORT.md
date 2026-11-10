@@ -1,7 +1,7 @@
-# Cronología de intervenciones UNC13A: predicción refutada por un experimento multidiana; la laguna específica de UNC13A persiste
+# Cronología de intervenciones UNC13A: la laguna específica persiste bajo las dos lecturas del criterio
 
 **Fecha:** 2026-11-10. **Base:** main `3916b77ec0546e9d327e6d54e4dacd90d1a51ce4`, plan prefijado en `research/plans/2026-11-10-unc13a-intervention-timing-matrix.md` (commit `626c259`, **anterior** a la recuperación de los textos).
-**Etiqueta de evidencia:** auditoría documental exploratoria de un solo lector. **Requiere segunda revisión humana** antes de considerarse curada. No es un experimento propio ni una estimación de efecto.
+**Etiqueta de evidencia:** auditoría documental exploratoria. Primera pasada y curación ejecutadas **por el mismo agente**; no hay revisión independiente. Ver [CURATION](CURATION.md).
 
 Autorización: Luis confirmó el 10/11/2026 que **no** ha llegado el archivo K26 y que AD Workbench **no** ha concedido acceso, e indicó continuar con el resto. #37 y #44 siguen bloqueadas e intactas. Luis aportó después los PDF de Mallika y Cao, que completaron la matriz a 6/6 fuentes.
 
@@ -9,37 +9,44 @@ Autorización: Luis confirmó el 10/11/2026 que **no** ha llegado el archivo K26
 
 ¿Algún experimento primario accesible que corrija o impida el exón críptico de UNC13A/Unc13a bajo pérdida de TDP-43 inicia la intervención **después** de documentar, en el mismo sistema y endpoint, un déficit funcional basal?
 
-Predicción prefijada: ninguno lo cumple para un endpoint funcional. Se refutaría con un solo experimento que lo cumpliese con localizador textual verificable.
+Predicción prefijada: ninguno lo cumple para un endpoint funcional.
 
-## Resultado: la predicción queda REFUTADA
+## Resultado
 
-**14 experimentos sobre 6 fuentes: 1 *post-deficit recovery*, 12 *prevention*, 1 *indeterminate*.**
+**14 experimentos sobre 6 fuentes.** Todas las citas verificadas literalmente contra el texto primario: 14/14 PASS con `scripts/verify_matrix_quotes.py`.
 
-El experimento que la refuta es **Mallika M-a**: AAV-PHP.eB-CTR administrado por vena caudal **a las 6 semanas de edad, «when fine tremors are already apparent»**, en ratones ChAT-Cre;Tardbp^f/f^. Los autores lo describen explícitamente como tratamiento «at a symptomatic stage» y «after onset of symptoms». El rescate funcional es grande: fuerza de agarre mantenida, peso normal, y supervivencia de ~47 semanas (brazo GFP) a **≥110 semanas** sin parálisis, con n=20 por grupo.
+La suerte de la predicción depende de un juicio de criterio, así que la matriz registra **dos lecturas** en columnas separadas y contables:
 
-Registro la refutación en los términos del plan, sin reescribir el criterio después de ver el resultado.
+| Lectura | Definición | Posdéficit | Predicción |
+|---|---|---:|---|
+| `strict_rule_verdict` | La letra del criterio prefijado, que **excluye** el brazo paralelo como prueba basal | **0 de 14** | **no refutada** |
+| `classification` | Lectura sustantiva: síntomas documentados al dosificar, enmarcado por los autores como «after onset of symptoms» | **1 de 14** | refutada |
 
-**Pero la laguna que motivaba la pregunta no desaparece, se vuelve más precisa.** CTR es un *Chimeric TDP-43 splicing Repressor* (dominio de reconocimiento de ARN de TDP-43 fusionado a RAVER1): restaura la represión de splicing de **muchas** dianas, **no es una intervención específica de UNC13A**. Separando por especificidad:
+El único experimento en discrepancia es **Mallika M-a**: AAV-PHP.eB-CTR a las 6 semanas, «when fine tremors are already apparent», con rescate grande de fuerza de agarre y supervivencia de ~47 a **≥110 semanas** (n=20 por grupo). Bajo mi criterio estricto no basta, porque lo documentado antes de dosificar son temblores (cualitativo, y no es el endpoint medido) y el déficit de agarre se evidencia en el **brazo GFP paralelo**. Doy las dos lecturas en lugar de elegir una en silencio.
 
-| Tipo de intervención | Experimentos | Posdéficit |
-|---|---:|---:|
-| **Específica de UNC13A** (deleción germinal del CE, ASO anti-CE, tU7 anti-CE) | 9 | **0** |
-| **Multidiana** (CTR, ASO combinados, snRNA dual) | 5 | 1 |
+**El resultado central no depende de esa elección.** Por alcance de diana, verificado fila por fila:
 
-**Para intervenciones específicas de UNC13A, la predicción se sostiene: ninguna de las 9 actúa después de un déficit medido.** Todas son preventivas por construcción —deleción germinal del exón críptico, o dosis que preceden o coinciden con la pérdida de TDP-43.
+| Alcance | Experimentos | Posdéficit (estricto) | Posdéficit (sustantivo) |
+|---|---:|---:|---:|
+| **`unc13a_only`** | **6** | **0** | **0** |
+| `mixed` (ASO single/combinados) | 2 | 0 | 0 |
+| `multi_target` | 5 | 0 | 1 |
+| `stmn2_focused` | 1 | 0 | 0 |
 
-Matriz completa y citable: [`matrix.tsv`](matrix.tsv), 14 filas con cita literal y sección de origen. Procedencia, versiones, bytes y SHA256: [`sources.json`](sources.json).
+**Ninguna de las 6 intervenciones específicas de UNC13A actúa tras un déficit medido, en ninguna de las dos lecturas.** Todas son preventivas por construcción.
+
+Matriz completa: [`matrix.tsv`](matrix.tsv), 14 filas, 16 campos. Procedencia y SHA256: [`sources.json`](sources.json). Fallos encontrados y corregidos en la curación: [`CURATION.md`](CURATION.md).
 
 ## Evidencia por fuente
 
-| Fuente | Acceso | Experimentos | Clasificación |
+| Fuente | Acceso | Experimentos | Lectura estricta / sustantiva |
 |---|---|---:|---|
-| S1 Keuss 2024 | texto completo | 3 | 2 prevention, 1 indeterminate |
-| S2 Guo 2025 | texto completo | 2 | 2 prevention |
-| S3 Mallika 2026 | **PDF aportado por Luis** | 2 | **1 post-deficit (CTR, multidiana)**, 1 prevention (Unc13a-específica) |
-| S4 Cao 2026 | **PDF aportado por Luis** | 2 | 2 prevention |
-| S5 Mehta 2025 | texto completo | 2 | 2 prevention |
-| S6 Gomberg 2025 | texto completo | 3 | 3 prevention |
+| S1 Keuss 2024 | texto completo (Europe PMC) | 3 | 3 prevention / igual |
+| S2 Guo 2025 | texto completo (Europe PMC) | 2 | 2 prevention / igual |
+| S3 Mallika 2026 | **PDF aportado por Luis** | 2 | 2 prevention / **1 post-deficit (M-a, multidiana)** + 1 prevention |
+| S4 Cao 2026 | **PDF aportado por Luis** | 2 | 2 prevention / igual |
+| S5 Mehta 2025 | texto completo (Europe PMC) | 2 | 2 prevention / igual |
+| S6 Gomberg 2025 | texto completo (Europe PMC) | 3 | 3 prevention / igual |
 
 Cronologías que fijan la clasificación, con cita literal:
 
@@ -55,9 +62,9 @@ Cronologías que fijan la clasificación, con cita literal:
 
 Tres lecturas, en orden de solidez:
 
-1. **La corrección aislada de UNC13A nunca se ha probado después de un déficit medido.** Las 9 intervenciones específicas accesibles son preventivas. Lo que la literatura sostiene es que *impedir* el exón críptico preserva función si se actúa antes o a la vez que la pérdida de TDP-43; no que *corregirlo* recupere función ya perdida, que es el escenario del paciente diagnosticado.
+1. **La corrección aislada de UNC13A nunca se ha probado después de un déficit medido.** Las **6** intervenciones `unc13a_only` accesibles son preventivas por construcción, en las dos lecturas del criterio. Lo que la literatura sostiene es que *impedir* el exón críptico preserva función si se actúa antes o a la vez que la pérdida de TDP-43; no que *corregirlo* recupere función ya perdida, que es el escenario del paciente diagnosticado. El molde más cercano que existe es **K-c** (Keuss, SH-SY5Y): dosis con el knockdown ya establecido tras 5 días de doxiciclina, aunque sin medición del defecto previa a la dosis.
 
-2. **La restauración multidiana posdéficit sí rescata función en un modelo murino.** Mallika lo demuestra con un efecto grande sobre supervivencia. Esto no es un dato contra la hipótesis UNC13A: es la prueba de que la ventana posdéficit **no es intrínsecamente intratable** en este modelo, lo que hace la pregunta específica de UNC13A más pertinente, no menos.
+2. **La restauración multidiana posdéficit rescata función en un modelo murino, bajo la lectura sustantiva.** Mallika M-a muestra un efecto grande sobre supervivencia. No es un dato contra la hipótesis UNC13A: sugiere que la ventana posdéficit **no es intrínsecamente intratable** en este modelo, lo que hace la pregunta específica de UNC13A más pertinente, no menos. Bajo la lectura estricta, ni siquiera eso queda acreditado, porque la prueba basal procede del brazo paralelo.
 
 3. **UNC13A sola divide resultados por endpoint, no por calidad del estudio.** Preventiva, falla para enfermedad de motoneurona (Mallika) y preserva memoria (Cao). Coherente con la hipótesis H1 de dependencia del tipo neuronal, y con el dato observacional de Ikegami (abajo) de desregulación coordinada entre dianas. No es una contradicción: son endpoints y poblaciones distintos.
 
@@ -65,8 +72,9 @@ Esto refuerza el criterio ya aplicado a #44, donde la intervención seleccionada
 
 ## Limitaciones
 
-- **Un solo lector automatizado.** Las 14 clasificaciones necesitan segunda curación humana. El script `scripts/extract_intervention_timing.py` solo **localiza** frases; no clasifica.
-- **La clasificación posdéficit de M-a cumple el criterio solo en parte.** Mi regla prefijada exige el déficit *del mismo endpoint* medido *en los mismos animales* antes de la dosis. Lo documentado antes de dosificar son **temblores finos** (cualitativo); el déficit de fuerza de agarre se evidencia en el brazo GFP **paralelo**, no pre-dosis en los mismos animales. Lo clasifico como posdéficit porque los autores documentan síntomas presentes en el momento de dosificar y lo enmarcan así, pero la base basal es más débil de lo que pedía mi criterio. Esta es la fila que más necesita tu revisión.
+- **Un solo lector, sin revisión independiente.** La primera pasada y la curación las hizo el mismo agente. La curación caza fallos de transcripción y de aplicación de reglas —cazó cuatro, incluido un bug del propio verificador y tres citas mías mal unidas con elipsis— pero **no puede detectar un sesgo sistemático mío ni un criterio mal concebido**. Ver [CURATION](CURATION.md). El script `extract_intervention_timing.py` solo localiza frases; `verify_matrix_quotes.py` solo comprueba transcripción. Ninguno clasifica.
+- **M-a es la fila en discrepancia y la que más necesita ojos ajenos.** Mi criterio exige el déficit *del mismo endpoint* medido *en los mismos animales* antes de la dosis, y excluye explícitamente el brazo paralelo. En M-a lo documentado antes de dosificar son **temblores finos** (cualitativo, y no es el endpoint medido) y el déficit de agarre viene del brazo GFP. Si ese criterio es demasiado estricto para un modelo murino con progresión por edad bien caracterizada es un juicio que **no puedo evaluar con independencia, porque la regla la escribí yo**.
+- **Recuento corregido durante la curación:** mi cifra inicial de «9 específicas / 5 multidiana» era un recuento a mano sin respaldo. El reparto verificado por fila es 6 `unc13a_only`, 2 `mixed`, 5 `multi_target`, 1 `stmn2_focused`.
 - **S3 y S4 no son independientes entre sí:** mismo autor corresponsal (Philip C. Wong, Johns Hopkins) y **6 autores compartidos** entre los 10 de S3 y los 18 de S4. Pueden compartir animales, construcciones y cohortes. No se cuentan como réplicas independientes.
 - **Las 6 fuentes son preprints**, sujetos a revisión y corrección. La versión Nature 2026 de Keuss **no** fue inspeccionada; su cronología se atribuye solo al preprint de 2024.
 - **Extrapolación murina:** el exón críptico de *Unc13a* de ratón está en el **intrón 1**, mientras el humano está en el **intrón 20** (confirmado en la discusión de Mallika). Las dos intervenciones no se equiparan mecánicamente. El AAV-PHP.eB cruza la barrera hematoencefálica de ratón; no acredita aplicabilidad humana.
@@ -90,10 +98,18 @@ Valor retenido como **contexto**: el subtipo 2b muestra niveles significativamen
 
 ## Siguiente experimento discriminante
 
-1. **Segunda curación humana** de las 14 filas de `matrix.tsv`, empezando por M-a (base basal cualitativa) y K-c (la única *indeterminate*).
-2. La laguna documentada, ahora precisa, es: **ninguna corrección específica de UNC13A probada después de un déficit funcional medido**, mientras la restauración multidiana posdéficit sí rescata función en ratón. Eso justifica documentalmente el protocolo #18 en su forma específica, y **no** autoriza ningún ensayo: seguiría exigiendo déficit medido antes de la primera dosis, unidades independientes verificables y autorización concreta.
-3. Antes de cualquier diseño, comprobar si la versión revisada por pares de Mallika o Cao modifica cronologías o n.
+1. La laguna documentada, ahora precisa, es: **ninguna corrección específica de UNC13A probada después de un déficit funcional medido** (0 de 6, en las dos lecturas). Eso justifica documentalmente el protocolo #18 en su forma específica, y **no** autoriza ningún ensayo: seguiría exigiendo déficit medido antes de la primera dosis, unidades independientes verificables y autorización concreta.
+2. Antes de cualquier diseño, comprobar si la versión revisada por pares de Mallika o Cao modifica cronologías o tamaños de grupo.
 
-**Criterio de abandono:** si la curación humana identifica una intervención *específica de UNC13A* posdéficit ya publicada, esta laguna se cierra y #18 pierde su justificación en la forma aquí descrita.
+### Revisión independiente: vías sin coste
+
+La curación la he hecho yo, así que la independencia sigue pendiente. Rutas gratuitas, en orden de esfuerzo para Luis:
+
+- **Esperar la versión revisada por pares.** Keuss ya tiene aceptación en Nature; Mallika y Cao están en revisión. Los revisores harán gratis, y con más autoridad, el juicio sobre la cronología de M-a. Coste: cero; plazo: meses.
+- **Comentario público en bioRxiv.** Cualquiera puede comentar un preprint sin coste ni registro de pago. Una pregunta concreta y cortés sobre si hubo medida basal de fuerza de agarre antes de la inyección a las 6 semanas la resolvería. **Requiere tu autorización expresa**, porque `AGENTS.md` prohíbe comunicaciones externas sin ella, y la firmarías tú, no yo.
+- **Comunidades de investigación en ELA.** Foros y listas académicas abiertas donde una pregunta metodológica suele recibir respuesta experta sin coste. Mismo requisito de autorización.
+- **Servicios de revisión estadística/metodológica de pago.** Existen, pero no los recomiendo aquí: el juicio pendiente es de criterio de diseño, no de estadística, y los revisores de pares lo resolverán gratis. Si en algún momento consideras esta vía, te daría precios antes de cualquier gasto.
+
+**Criterio de abandono:** si una revisión externa identifica una intervención *específica de UNC13A* posdéficit ya publicada, esta laguna se cierra y #18 pierde su justificación en la forma aquí descrita.
 
 Sin contactos, gastos, datos personales, laboratorio ni publicación externa. Marco: [AGENTS](../../AGENTS.md), [PROTOCOL](../../research/PROTOCOL.md), [STATE](../../research/STATE.md).
