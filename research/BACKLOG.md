@@ -17,12 +17,13 @@ Si no hay entrada nueva, registrar que ambas líneas siguen bloqueadas y detener
 
 Confirmado por Luis: sin archivo K26 y sin acceso AD Workbench. Las dos líneas prioritarias (#37, #44) siguen bloqueadas por sus entradas ya registradas; sin seguimiento automático.
 
-- [ ] **Segunda curación humana** de las 12 filas de `reports/unc13a-intervention-timing-20261110/matrix.tsv`, con atención a las 2 clasificadas *indeterminate*. Hasta entonces la matriz no se considera curada ni se cita como conclusión.
-- [ ] Métodos de Mallika (PMID 42779622) y Cao (PMID 42779638): **ambas vías públicas agotadas el 10/11**. Europe PMC no los sirve (`PPR1322482`/`PPR1319997`, `inEPMC N`, `OA N`); bioRxiv devuelve error 1015 de Cloudflare a clientes automatizados y no se falsea el cliente. Entrada necesaria: esos métodos por vía legítima (PDF abierto por una persona, o versión revisada por pares). **No reintentar la descarga automática por continuidad.** Verificado de paso: ambos preprints son del mismo laboratorio (Wong, Johns Hopkins; 6 autores compartidos), luego no son replicaciones independientes entre sí.
+- [ ] **Segunda curación humana** de las 14 filas de `reports/unc13a-intervention-timing-20261110/matrix.tsv`. Prioridad: la fila **M-a** (clasificada posdéficit con base basal solo cualitativa) y **K-c** (única *indeterminate*). Hasta entonces la matriz no se considera curada ni se cita como conclusión.
+- [x] Métodos de Mallika (PMID 42779622) y Cao (PMID 42779638): **resueltos el 10/11** con los PDF aportados por Luis, tras agotar las dos vías públicas (Europe PMC `PPR1322482`/`PPR1319997` con `inEPMC N`; bioRxiv con error 1015 de Cloudflare, sin falsear el cliente). Matriz completa a 6/6 fuentes. Verificado: ambos preprints son del mismo laboratorio (Wong, Johns Hopkins; 6 autores compartidos), luego no son replicaciones independientes entre sí. El PDF de Cao es `cc_no`: no se versiona ni se redistribuye.
+- [ ] Comprobar si la versión revisada por pares de Mallika o Cao modifica cronologías o tamaños de grupo, antes de usar la matriz para cualquier diseño.
 - [x] Revisar PMID 42983891 contra la puerta de #37: **rechazada** como fuente técnica (qRT-PCR/ddPCR post mortem, sin cuentas de uniones). Conservada como contexto. No abre un cuarto candidato.
 - [x] Acotar a TITLE_ABS la consulta `long_reads` del vigilante diario, con pruebas de alcance de campo.
 
-El hallazgo negativo (0 experimentos posdéficit accesibles) documenta la laguna que motiva #18, pero **no** autoriza ningún ensayo: seguiría exigiendo datos con déficit funcional medido antes de la primera dosis y autorización específica.
+La laguna que motiva #18 queda documentada en su forma **precisa**: ninguna corrección *específica de UNC13A* probada tras un déficit funcional medido (0 de 9), mientras la restauración *multidiana* posdéficit sí rescata función en ratón (Mallika, CTR). Eso **no** autoriza ningún ensayo: seguiría exigiendo déficit medido antes de la primera dosis, unidades independientes verificables y autorización específica. No tratar el rescate multidiana como evidencia a favor de una diana aislada: no hay control factorial.
 
 ## Mantenimiento técnico
 

@@ -1,9 +1,9 @@
-# Cronología de intervenciones sobre UNC13A: ninguna acreditada como rescate posdéficit
+# Cronología de intervenciones UNC13A: predicción refutada por un experimento multidiana; la laguna específica de UNC13A persiste
 
 **Fecha:** 2026-11-10. **Base:** main `3916b77ec0546e9d327e6d54e4dacd90d1a51ce4`, plan prefijado en `research/plans/2026-11-10-unc13a-intervention-timing-matrix.md` (commit `626c259`, **anterior** a la recuperación de los textos).
 **Etiqueta de evidencia:** auditoría documental exploratoria de un solo lector. **Requiere segunda revisión humana** antes de considerarse curada. No es un experimento propio ni una estimación de efecto.
 
-Autorización: Luis confirmó el 10/11/2026 que **no** ha llegado el archivo K26 y que AD Workbench **no** ha concedido acceso, e indicó continuar con el resto. #37 y #44 siguen bloqueadas e intactas.
+Autorización: Luis confirmó el 10/11/2026 que **no** ha llegado el archivo K26 y que AD Workbench **no** ha concedido acceso, e indicó continuar con el resto. #37 y #44 siguen bloqueadas e intactas. Luis aportó después los PDF de Mallika y Cao, que completaron la matriz a 6/6 fuentes.
 
 ## Pregunta y predicción prefijadas
 
@@ -11,78 +11,89 @@ Autorización: Luis confirmó el 10/11/2026 que **no** ha llegado el archivo K26
 
 Predicción prefijada: ninguno lo cumple para un endpoint funcional. Se refutaría con un solo experimento que lo cumpliese con localizador textual verificable.
 
-## Evidencia
+## Resultado: la predicción queda REFUTADA
 
-Matriz completa y citable: [`matrix.tsv`](matrix.tsv) — 12 experimentos extraídos de 6 fuentes, 14 campos, cada fila con cita literal y sección de origen. Procedencia, versiones, bytes y SHA256: [`sources.json`](sources.json).
+**14 experimentos sobre 6 fuentes: 1 *post-deficit recovery*, 12 *prevention*, 1 *indeterminate*.**
 
-**Resultado: 12 experimentos; 0 clasificados como *post-deficit recovery*; 10 *prevention*; 2 *indeterminate*. La predicción no queda refutada.**
+El experimento que la refuta es **Mallika M-a**: AAV-PHP.eB-CTR administrado por vena caudal **a las 6 semanas de edad, «when fine tremors are already apparent»**, en ratones ChAT-Cre;Tardbp^f/f^. Los autores lo describen explícitamente como tratamiento «at a symptomatic stage» y «after onset of symptoms». El rescate funcional es grande: fuerza de agarre mantenida, peso normal, y supervivencia de ~47 semanas (brazo GFP) a **≥110 semanas** sin parálisis, con n=20 por grupo.
+
+Registro la refutación en los términos del plan, sin reescribir el criterio después de ver el resultado.
+
+**Pero la laguna que motivaba la pregunta no desaparece, se vuelve más precisa.** CTR es un *Chimeric TDP-43 splicing Repressor* (dominio de reconocimiento de ARN de TDP-43 fusionado a RAVER1): restaura la represión de splicing de **muchas** dianas, **no es una intervención específica de UNC13A**. Separando por especificidad:
+
+| Tipo de intervención | Experimentos | Posdéficit |
+|---|---:|---:|
+| **Específica de UNC13A** (deleción germinal del CE, ASO anti-CE, tU7 anti-CE) | 9 | **0** |
+| **Multidiana** (CTR, ASO combinados, snRNA dual) | 5 | 1 |
+
+**Para intervenciones específicas de UNC13A, la predicción se sostiene: ninguna de las 9 actúa después de un déficit medido.** Todas son preventivas por construcción —deleción germinal del exón críptico, o dosis que preceden o coinciden con la pérdida de TDP-43.
+
+Matriz completa y citable: [`matrix.tsv`](matrix.tsv), 14 filas con cita literal y sección de origen. Procedencia, versiones, bytes y SHA256: [`sources.json`](sources.json).
+
+## Evidencia por fuente
 
 | Fuente | Acceso | Experimentos | Clasificación |
 |---|---|---:|---|
-| S1 Keuss 2024 (PMC11230273) | texto completo | 3 | 2 prevention, 1 indeterminate |
-| S2 Guo 2025 (PMC12424808) | texto completo | 2 | 2 prevention |
-| S3 Mallika 2026 (PMC13596259) | **solo abstract** (registro restringido en PMC) | 1 | 1 indeterminate |
-| S4 Cao 2026 (sin PMCID) | **solo abstract** | 1 | 1 prevention |
-| S5 Mehta 2025 (PMC12697360) | texto completo | 2 | 2 prevention |
-| S6 Gomberg 2025 (PMC12822690) | texto completo | 3 | 3 prevention |
+| S1 Keuss 2024 | texto completo | 3 | 2 prevention, 1 indeterminate |
+| S2 Guo 2025 | texto completo | 2 | 2 prevention |
+| S3 Mallika 2026 | **PDF aportado por Luis** | 2 | **1 post-deficit (CTR, multidiana)**, 1 prevention (Unc13a-específica) |
+| S4 Cao 2026 | **PDF aportado por Luis** | 2 | 2 prevention |
+| S5 Mehta 2025 | texto completo | 2 | 2 prevention |
+| S6 Gomberg 2025 | texto completo | 3 | 3 prevention |
 
-Hallazgos de cronología que fijan la clasificación, con cita literal:
+Cronologías que fijan la clasificación, con cita literal:
 
-- **Keuss, brazo ASO:** «ASO treatments were started **at the same time as** PROTAC treatment and were included in each media change for two weeks until cells were harvested.» La dosis es concurrente con el inicio de la degradación de TDP-43. El brazo de deleción genómica del exón críptico es constitutivo, luego preventivo por construcción.
-- **Guo:** la primera dosis **precede** a la pérdida de TDP-43 en los dos diseños: ASO días 3 y 10 con shRNA el día 5, y ASO días 20 y 27 con shRNA el día **21**. Esto confirma y precisa lo que el informe de la PR #51 anotaba solo para el primer diseño. Los propios autores sitúan su medida funcional «prior to any cell loss».
-- **Mehta:** el tU7 anti-UNC13A se expresa desde líneas estables seleccionadas **antes** de inducir el knockdown con doxiciclina; el rescate de frecuencia de mEPSC se mide en células que nunca estuvieron sin la intervención.
-- **Gomberg:** ASO anti-TDP-43 el día 30, lentivirus SURF el día **32**, axotomía el día **42**. La intervención precede al reto funcional; no hay medida de regeneración basal antes del día 32. Además, el endpoint funcional (regeneración axonal) se atribuye a **STMN2**, no a UNC13A.
-- **Cao:** clasificado *prevention* desde el abstract por ser ablación genética constitutiva; el propio título dice «**Prevention** of Unc13a cryptic splicing is sufficient to preserve memory».
-
-## Ampliación del 10/11 tarde: métodos de Mallika y Cao siguen inaccesibles
-
-Intento registrado de resolver la limitación de acceso de S3/S4, tras permitir `biorxiv.org` en la red de la sesión:
-
-- **Europe PMC, registros de preprint:** S3 es `PPR1322482`, S4 es `PPR1319997`. Ambos devuelven `inEPMC: N`, `isOpenAccess: N`, sin `fullTextIdList`. Europe PMC **no** sirve el texto completo de ninguno de los dos.
-- **bioRxiv directo:** `api.biorxiv.org/details` responde con metadatos, pero la descarga del JATS (`.source.xml`) devuelve **error 1015** (limitación de Cloudflare). No se intentó falsear el cliente para sortear ese control antibot. **Los métodos siguen sin recuperarse; las dos filas continúan *indeterminate*.**
-
-Un dato nuevo y verificable sí se obtuvo de los metadatos: **S3 y S4 provienen del mismo laboratorio.** Autor corresponsal idéntico (Philip C. Wong, Johns Hopkins) y **6 autores compartidos** entre los 10 de S3 y los 18 de S4: Baghel, Cao, Ling, Peethambaran Mallika, Renganathan, Wong.
-
-Esto refuerza, con evidencia concreta, dos límites ya anotados: los resultados aparentemente contrapuestos de S3 (impedir solo *Unc13a* no mitigó la enfermedad motora) y S4 (preservó memoria) **no son replicaciones independientes** entre sí, y pueden compartir animales, construcciones y cohortes. La diferencia entre ellos sigue atribuyéndose a endpoint y población, no a una contradicción resuelta.
-
-Licencia de S4: `cc_no` (sin licencia de reutilización declarada). Solo se registran hashes de metadatos y citas cortas con fin de auditoría.
+- **Keuss, brazo ASO:** «ASO treatments were started **at the same time as** PROTAC treatment». Concurrente con la degradación de TDP-43.
+- **Guo:** la primera dosis **precede** al knockdown en ambos diseños — ASO días 3 y 10 con shRNA el día 5, y ASO días 20 y 27 con shRNA el día **21**. Los autores sitúan su medida «prior to any cell loss».
+- **Mehta:** tU7 expresado desde líneas estables seleccionadas antes de inducir doxiciclina.
+- **Gomberg:** ASO anti-TDP-43 día 30, lentivirus día 32, axotomía día **42**; la intervención precede al reto funcional, y su endpoint funcional se atribuye a STMN2.
+- **Mallika, brazo Unc13a-específico:** deleción germinal de ~44 pb del CE cruzada al modelo cKO. Resultado: «could not maintain the normal grip strength and body weight … **indistinguishable** from those observed in ChAT-Cre;Tardbpf/f mice», y la conclusión de los autores: «**preventing cryptic splicing of Unc13a is insufficient to attenuate motor neuron disease**».
+- **Cao, brazo Unc13a-específico:** deleción germinal, tamoxifeno a los 2 meses; preserva reconocimiento de objeto novedoso. Título: «**Prevention** of Unc13a cryptic splicing is sufficient to preserve memory».
+- **Cao, brazo CTR:** «Tamoxifen was administered at 5 months of age to deplete TDP-43, followed by ICV injection of AAV-PHP.eB-CTR … **2 weeks later**». No se reporta medición conductual previa a la dosis, luego no acredita posdéficit.
 
 ## Interpretación
 
-La bibliografía accesible sostiene que impedir el exón críptico de UNC13A preserva función cuando se actúa **antes o a la vez** que la pérdida de TDP-43. **No** sostiene todavía que corregir UNC13A recupere función ya perdida, que es el escenario relevante para un paciente diagnosticado. Esto no es un defecto de los estudios: ninguno declara probar un rescate posdéficit. Es una laguna de diseño en el conjunto del campo, y es exactamente la laguna que el protocolo diferido #18 («UNC13A posdéficit v0.4») apunta en el BACKLOG.
+Tres lecturas, en orden de solidez:
 
-Un hallazgo negativo con valor operativo: refuerza el criterio ya aplicado a #44, donde la intervención ASO seleccionada también es concurrente con la depleción de TDP-43 y por tanto no acredita recuperación posterior a un déficit previo.
+1. **La corrección aislada de UNC13A nunca se ha probado después de un déficit medido.** Las 9 intervenciones específicas accesibles son preventivas. Lo que la literatura sostiene es que *impedir* el exón críptico preserva función si se actúa antes o a la vez que la pérdida de TDP-43; no que *corregirlo* recupere función ya perdida, que es el escenario del paciente diagnosticado.
+
+2. **La restauración multidiana posdéficit sí rescata función en un modelo murino.** Mallika lo demuestra con un efecto grande sobre supervivencia. Esto no es un dato contra la hipótesis UNC13A: es la prueba de que la ventana posdéficit **no es intrínsecamente intratable** en este modelo, lo que hace la pregunta específica de UNC13A más pertinente, no menos.
+
+3. **UNC13A sola divide resultados por endpoint, no por calidad del estudio.** Preventiva, falla para enfermedad de motoneurona (Mallika) y preserva memoria (Cao). Coherente con la hipótesis H1 de dependencia del tipo neuronal, y con el dato observacional de Ikegami (abajo) de desregulación coordinada entre dianas. No es una contradicción: son endpoints y poblaciones distintos.
+
+Esto refuerza el criterio ya aplicado a #44, donde la intervención seleccionada también es concurrente con la depleción de TDP-43.
 
 ## Limitaciones
 
-- **Un solo lector automatizado.** Las 12 clasificaciones necesitan segunda curación humana. El script `scripts/extract_intervention_timing.py` solo **localiza** frases; no clasifica.
-- **2 de 6 fuentes sin métodos accesibles**, tras agotar las dos vías públicas (ver ampliación arriba). Mallika y Cao quedan sin cronología verificable; Mallika es precisamente el estudio que reporta que impedir solo Unc13a **no** mitigó la enfermedad motora. Con 4/6 textos completos, la matriz queda **en el mínimo** prefijado: es utilizable, no concluyente.
-- **S3 y S4 no son independientes entre sí** (mismo laboratorio, 6 autores compartidos). Tampoco debe asumirse independencia entre otras fuentes sin comprobarla.
-- **Las 6 fuentes son preprints**, sujetos a revisión y corrección. La versión Nature 2026 de Keuss **no** fue inspeccionada; la cronología citada se atribuye solo al preprint de 2024.
-- Ausencia de un diseño en los textos accesibles **no** demuestra que no exista en datos no publicados, en versiones posteriores o en material suplementario no descargado.
-- No se cuantificó ningún efecto, no se ejecutó ningún modelo y no se compararon magnitudes entre sistemas. Modelos murinos y cultivos humanos no se equiparan; el exón críptico de *Unc13a* de ratón no es homólogo posicional del humano (intrón 1 frente a intrón 20), según lo ya registrado.
-- Corrección de splicing ≠ rescate molecular ≠ función neuronal ≠ beneficio clínico. Nada aquí respalda ninguna indicación clínica.
+- **Un solo lector automatizado.** Las 14 clasificaciones necesitan segunda curación humana. El script `scripts/extract_intervention_timing.py` solo **localiza** frases; no clasifica.
+- **La clasificación posdéficit de M-a cumple el criterio solo en parte.** Mi regla prefijada exige el déficit *del mismo endpoint* medido *en los mismos animales* antes de la dosis. Lo documentado antes de dosificar son **temblores finos** (cualitativo); el déficit de fuerza de agarre se evidencia en el brazo GFP **paralelo**, no pre-dosis en los mismos animales. Lo clasifico como posdéficit porque los autores documentan síntomas presentes en el momento de dosificar y lo enmarcan así, pero la base basal es más débil de lo que pedía mi criterio. Esta es la fila que más necesita tu revisión.
+- **S3 y S4 no son independientes entre sí:** mismo autor corresponsal (Philip C. Wong, Johns Hopkins) y **6 autores compartidos** entre los 10 de S3 y los 18 de S4. Pueden compartir animales, construcciones y cohortes. No se cuentan como réplicas independientes.
+- **Las 6 fuentes son preprints**, sujetos a revisión y corrección. La versión Nature 2026 de Keuss **no** fue inspeccionada; su cronología se atribuye solo al preprint de 2024.
+- **Extrapolación murina:** el exón críptico de *Unc13a* de ratón está en el **intrón 1**, mientras el humano está en el **intrón 20** (confirmado en la discusión de Mallika). Las dos intervenciones no se equiparan mecánicamente. El AAV-PHP.eB cruza la barrera hematoencefálica de ratón; no acredita aplicabilidad humana.
+- El efecto de CTR **no permite adjudicar mejora a cada diana por separado**: no hay control factorial.
+- No se cuantificó ningún efecto propio, no se ejecutó ningún modelo y no se compararon magnitudes entre sistemas. Corrección de splicing ≠ rescate molecular ≠ función neuronal ≠ beneficio clínico. Nada aquí respalda ninguna indicación clínica.
+- Licencia de S4: «All rights reserved. No reuse allowed without permission». Solo se versionan hashes y citas cortas con fin de auditoría; no se redistribuye el PDF.
 
 ## Comprobación colateral de la puerta de fuentes (#37)
 
-Se evaluó **PMID 42983891** (Ikegami/Koike 2026, *Acta Neuropathologica Communications* 14:229, revisado por pares, acceso abierto), detectado por el vigilante automático el 09/11, como posible fuente nueva para #37.
+Se evaluó **PMID 42983891** (Ikegami/Koike 2026, *Acta Neuropathologica Communications* 14:229, revisado por pares, acceso abierto) como posible fuente nueva para #37.
 
 **Decisión: RECHAZADA como fuente técnica para #37.** Motivos verificados en el texto completo (SHA256 en `sources.json` C1):
 
-1. **No hay cuentas de uniones.** La cuantificación es qRT-PCR y ddPCR, no RNA-seq. Búsquedas en el texto completo: `RNA-seq` 0 apariciones, `sequencing` 0, `GEO` 0, `BAM` 0, `FASTQ` 0. No existe matriz de uniones ni alineamiento que someter al criterio de cobertura ≥20.
-2. **Disponibilidad de datos insuficiente para nuestro contraste:** «The datasets generated and/or analyzed during the current study are available from the corresponding author on reasonable request.» Los datos fuente numéricos están en el Additional file 3 (XLSX, 29 KB), no descargado en este ciclo.
-3. **Tejido post mortem, no cultivo.** Corteza motora de ALS esporádica (Tipo 1 n=12, Tipo 2a n=12, Tipo 2b n=11). Por `AGENTS.md` y el estado vigente, no sustituye el contraste en cultivo i3N ni se equipara a él.
+1. **No hay cuentas de uniones.** La cuantificación es qRT-PCR y ddPCR, no RNA-seq. En el texto completo: `RNA-seq` 0 apariciones, `sequencing` 0, `GEO` 0, `BAM` 0, `FASTQ` 0. No hay matriz de uniones ni alineamiento que someter al criterio de cobertura ≥20.
+2. **Disponibilidad insuficiente:** «available from the corresponding author on reasonable request». Datos fuente en Additional file 3 (XLSX, 29 KB), no descargado.
+3. **Tejido post mortem, no cultivo.** Corteza motora de ALS esporádica (Tipo 1 n=12, Tipo 2a n=12, Tipo 2b n=11). No sustituye el contraste en cultivo i3N ni se equipara a él.
 
-Valor retenido como **contexto**, no como fuente aceptada: reporta que el subtipo patológico 2b muestra niveles significativamente más altos de RNA críptico de UNC13A y de STMN2 truncado, y una correlación positiva entre ambos (Spearman ρ = 0.58). Es evidencia observacional de desregulación coordinada entre dianas, coherente con la hipótesis H2 del informe de la PR #51, y no un rescate ni una causalidad.
+Valor retenido como **contexto**: el subtipo 2b muestra niveles significativamente más altos de RNA críptico de UNC13A y de STMN2 truncado, con correlación positiva entre ambos (Spearman ρ = 0.58). Desregulación coordinada observacional, no rescate ni causalidad.
 
-#37 sigue bloqueada por su única entrada: un manifiesto concreto Seddighi–AD Workbench. Esta revisión **no** abre un cuarto candidato ni reactiva búsquedas.
+#37 sigue bloqueada por su única entrada: un manifiesto concreto Seddighi–AD Workbench. Esta revisión **no** abre un cuarto candidato.
 
 ## Siguiente experimento discriminante
 
-1. **Segunda curación humana** de las 12 filas de `matrix.tsv`, con atención a las 2 *indeterminate*.
-2. Métodos de Mallika y Cao: **ambas vías públicas agotadas** el 10/11 (Europe PMC no los sirve; bioRxiv responde 1015 a clientes automatizados). Queda como entrada concreta pendiente: obtener esos métodos por una vía legítima —PDF abierto por una persona, o la versión revisada por pares cuando se publique— antes de dar por cerrada la clasificación de esas dos filas. No reintentar la descarga automática por continuidad.
-3. Solo entonces, y solo si la segunda curación confirma 0 experimentos posdéficit, el protocolo #18 queda justificado documentalmente como laguna real. Eso **no** autoriza ningún ensayo: seguiría requiriendo datos con déficit funcional medido antes de la primera dosis y autorización específica.
+1. **Segunda curación humana** de las 14 filas de `matrix.tsv`, empezando por M-a (base basal cualitativa) y K-c (la única *indeterminate*).
+2. La laguna documentada, ahora precisa, es: **ninguna corrección específica de UNC13A probada después de un déficit funcional medido**, mientras la restauración multidiana posdéficit sí rescata función en ratón. Eso justifica documentalmente el protocolo #18 en su forma específica, y **no** autoriza ningún ensayo: seguiría exigiendo déficit medido antes de la primera dosis, unidades independientes verificables y autorización concreta.
+3. Antes de cualquier diseño, comprobar si la versión revisada por pares de Mallika o Cao modifica cronologías o n.
 
-**Criterio de abandono:** si la curación humana identifica un experimento posdéficit ya publicado, esta laguna se cierra y #18 pierde su justificación en la forma aquí descrita.
+**Criterio de abandono:** si la curación humana identifica una intervención *específica de UNC13A* posdéficit ya publicada, esta laguna se cierra y #18 pierde su justificación en la forma aquí descrita.
 
 Sin contactos, gastos, datos personales, laboratorio ni publicación externa. Marco: [AGENTS](../../AGENTS.md), [PROTOCOL](../../research/PROTOCOL.md), [STATE](../../research/STATE.md).

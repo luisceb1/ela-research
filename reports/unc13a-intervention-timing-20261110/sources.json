@@ -46,16 +46,25 @@
       "doi": "10.64898/2026.09.11.751082",
       "venue": "bioRxiv preprint",
       "first_publication_date": "2026-09-18",
-      "full_text": false,
-      "access_limit": "Europe PMC returned a PMC-restricted record (processing-meta restricted-by=pmc): front matter and abstract only, 2 body paragraphs. Methods chronology NOT accessible.",
-      "file": "PMC13596259.xml",
-      "bytes": 8993,
-      "sha256": "ce03bbc4199e3dda7c36595f64be8f32ca121dd5fb5e007b831854678b9a7586",
+      "full_text": true,
+      "file": "mallika_751082v1.full.pdf (aportado por el usuario; no versionado)",
+      "bytes": 4700000,
+      "sha256": "f0da10d3dd121d5ccd97e80097eeb0b6bd6cbbe64a63971baf3489ba46bd8b9e",
       "epmc_preprint_id": "PPR1322482",
       "second_attempt_20261110": "Europe PMC preprint record: inEPMC=N, isOpenAccess=N, no fullTextIdList. bioRxiv .source.xml returned Cloudflare error 1015; no client spoofing attempted. Methods still NOT accessible.",
       "corresponding_author": "Philip C Wong, Johns Hopkins Medicine",
       "n_authors": 10,
-      "license": "cc_by_nc_nd"
+      "license": "cc_by_nc_nd",
+      "pages": 43,
+      "access_resolved_20261110": "Europe PMC and bioRxiv both failed (PPR1322482 inEPMC=N; Cloudflare 1015). Resolved when the user supplied the PDF. Methods now fully read.",
+      "shared_authors_with_S4": [
+        "Baghel, M. S.",
+        "Cao, T.",
+        "Ling, J. P.",
+        "Peethambaran Mallika, A.",
+        "Renganathan, S.",
+        "Wong, P. C."
+      ]
     },
     {
       "id": "S4",
@@ -65,16 +74,18 @@
       "doi": "10.64898/2026.09.11.751031",
       "venue": "bioRxiv preprint",
       "first_publication_date": "2026-09-15",
-      "full_text": false,
-      "access_limit": "No PMCID in the Europe PMC core record; no full text retrieved. Abstract only.",
-      "file": "meta_42779638.json",
-      "bytes": 4641,
-      "sha256": "37c4283e410c76be5f693f57a4ca81af82bff97064a74d26f6adde11ea824b90",
+      "full_text": true,
+      "file": "cao_751031v1.full.pdf (aportado por el usuario; no versionado)",
+      "bytes": 10700000,
+      "sha256": "9c4bf93dcd44aae7db03b77e80c64479a60fd91fb2486fc5a5a43c6daf194020",
       "epmc_preprint_id": "PPR1319997",
       "second_attempt_20261110": "Europe PMC preprint record: inEPMC=N, isOpenAccess=N, no fullTextIdList. bioRxiv .source.xml returned Cloudflare error 1015; no client spoofing attempted. Methods still NOT accessible.",
       "corresponding_author": "Philip C Wong, The Johns Hopkins University School of Medicine",
       "n_authors": 18,
-      "license": "cc_no (no declared reuse licence; only hashes and short quotations recorded)"
+      "license": "cc_no (no declared reuse licence; only hashes and short quotations recorded)",
+      "pages": 67,
+      "access_resolved_20261110": "Europe PMC and bioRxiv both failed (PPR1319997 inEPMC=N; Cloudflare 1015). Resolved when the user supplied the PDF. Methods now fully read.",
+      "license_note": "'All rights reserved. No reuse allowed without permission.' PDF NOT redistributed; only hashes and short quotations recorded."
     },
     {
       "id": "S5",
@@ -118,5 +129,6 @@
       "sha256": "40e145be007c6cd4d5904c283ca43674d8d37a99c3809847b84915515f58ac57",
       "why_context": "Observational post-mortem motor cortex, no intervention. Separately assessed as an issue #37 source candidate: see REPORT.md section 'Collateral source-gate check'."
     }
-  ]
+  ],
+  "note_20261110": "Prediction REFUTED by one experiment (S3 M-a, multi-target CTR delivered at a symptomatic stage). For UNC13A-specific interventions (9 experiments) it holds: none is post-deficit. See REPORT.md."
 }
