@@ -11,6 +11,7 @@ import json
 from pathlib import Path
 import re
 import sys
+from time import sleep
 
 from .sources import MAX_PAPERS, fetch_pubmed
 
@@ -156,6 +157,8 @@ def check_full_corpus(corpus: dict) -> dict:
     sources = corpus["sources"]
     rows = []
     for offset in range(0, len(sources), MAX_PAPERS):
+        if offset:
+            sleep(0.8)  # NCBI default policy: at most 3 E-utils requests/second.
         group = sources[offset:offset + MAX_PAPERS]
         query = " OR ".join(f'{source["pmid"]}[PMID]' for source in group)
         live = {paper.pmid: paper for paper in fetch_pubmed(query, limit=len(group))}
