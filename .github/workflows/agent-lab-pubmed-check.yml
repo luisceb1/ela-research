@@ -4,11 +4,6 @@ on:
     paths:
       - 'agent_lab/**'
       - '.github/workflows/agent-lab-pubmed-check.yml'
-  push:
-    branches: ['feature/ela-agent-lab-*']
-    paths:
-      - 'agent_lab/**'
-      - '.github/workflows/agent-lab-pubmed-check.yml'
   workflow_dispatch:
 
 permissions:
@@ -27,7 +22,7 @@ jobs:
         run: |
           python -m agent_lab.benchmark --validate
           python -m agent_lab.benchmark --validate-corpus
-      - name: Query LIVE PubMed in three bounded batches: 20 PMIDs (free, no models)
+      - name: 'Query LIVE PubMed in three bounded batches: 20 PMIDs (free, no models)'
         run: |
           mkdir -p test-results
           python -m agent_lab.benchmark --check-corpus --output test-results/agent-lab-pubmed-20-source-check.json
