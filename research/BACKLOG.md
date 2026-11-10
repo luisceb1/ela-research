@@ -18,7 +18,7 @@ Si no hay entrada nueva, registrar que ambas líneas siguen bloqueadas y detener
 Confirmado por Luis: sin archivo K26 y sin acceso AD Workbench. Las dos líneas prioritarias (#37, #44) siguen bloqueadas por sus entradas ya registradas; sin seguimiento automático.
 
 - [ ] **Segunda curación humana** de las 12 filas de `reports/unc13a-intervention-timing-20261110/matrix.tsv`, con atención a las 2 clasificadas *indeterminate*. Hasta entonces la matriz no se considera curada ni se cita como conclusión.
-- [ ] Métodos de Mallika (PMID 42779622) y Cao (PMID 42779638): inaccesibles vía Europe PMC (registro restringido y sin PMCID). Requeriría permitir `biorxiv.org` en la red de la sesión. Son las dos fuentes que más pesan para la hipótesis de dependencia del tipo neuronal.
+- [ ] Métodos de Mallika (PMID 42779622) y Cao (PMID 42779638): **ambas vías públicas agotadas el 10/11**. Europe PMC no los sirve (`PPR1322482`/`PPR1319997`, `inEPMC N`, `OA N`); bioRxiv devuelve error 1015 de Cloudflare a clientes automatizados y no se falsea el cliente. Entrada necesaria: esos métodos por vía legítima (PDF abierto por una persona, o versión revisada por pares). **No reintentar la descarga automática por continuidad.** Verificado de paso: ambos preprints son del mismo laboratorio (Wong, Johns Hopkins; 6 autores compartidos), luego no son replicaciones independientes entre sí.
 - [x] Revisar PMID 42983891 contra la puerta de #37: **rechazada** como fuente técnica (qRT-PCR/ddPCR post mortem, sin cuentas de uniones). Conservada como contexto. No abre un cuarto candidato.
 - [x] Acotar a TITLE_ABS la consulta `long_reads` del vigilante diario, con pruebas de alcance de campo.
 

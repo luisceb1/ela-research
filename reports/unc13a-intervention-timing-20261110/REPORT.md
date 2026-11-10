@@ -34,6 +34,19 @@ Hallazgos de cronología que fijan la clasificación, con cita literal:
 - **Gomberg:** ASO anti-TDP-43 el día 30, lentivirus SURF el día **32**, axotomía el día **42**. La intervención precede al reto funcional; no hay medida de regeneración basal antes del día 32. Además, el endpoint funcional (regeneración axonal) se atribuye a **STMN2**, no a UNC13A.
 - **Cao:** clasificado *prevention* desde el abstract por ser ablación genética constitutiva; el propio título dice «**Prevention** of Unc13a cryptic splicing is sufficient to preserve memory».
 
+## Ampliación del 10/11 tarde: métodos de Mallika y Cao siguen inaccesibles
+
+Intento registrado de resolver la limitación de acceso de S3/S4, tras permitir `biorxiv.org` en la red de la sesión:
+
+- **Europe PMC, registros de preprint:** S3 es `PPR1322482`, S4 es `PPR1319997`. Ambos devuelven `inEPMC: N`, `isOpenAccess: N`, sin `fullTextIdList`. Europe PMC **no** sirve el texto completo de ninguno de los dos.
+- **bioRxiv directo:** `api.biorxiv.org/details` responde con metadatos, pero la descarga del JATS (`.source.xml`) devuelve **error 1015** (limitación de Cloudflare). No se intentó falsear el cliente para sortear ese control antibot. **Los métodos siguen sin recuperarse; las dos filas continúan *indeterminate*.**
+
+Un dato nuevo y verificable sí se obtuvo de los metadatos: **S3 y S4 provienen del mismo laboratorio.** Autor corresponsal idéntico (Philip C. Wong, Johns Hopkins) y **6 autores compartidos** entre los 10 de S3 y los 18 de S4: Baghel, Cao, Ling, Peethambaran Mallika, Renganathan, Wong.
+
+Esto refuerza, con evidencia concreta, dos límites ya anotados: los resultados aparentemente contrapuestos de S3 (impedir solo *Unc13a* no mitigó la enfermedad motora) y S4 (preservó memoria) **no son replicaciones independientes** entre sí, y pueden compartir animales, construcciones y cohortes. La diferencia entre ellos sigue atribuyéndose a endpoint y población, no a una contradicción resuelta.
+
+Licencia de S4: `cc_no` (sin licencia de reutilización declarada). Solo se registran hashes de metadatos y citas cortas con fin de auditoría.
+
 ## Interpretación
 
 La bibliografía accesible sostiene que impedir el exón críptico de UNC13A preserva función cuando se actúa **antes o a la vez** que la pérdida de TDP-43. **No** sostiene todavía que corregir UNC13A recupere función ya perdida, que es el escenario relevante para un paciente diagnosticado. Esto no es un defecto de los estudios: ninguno declara probar un rescate posdéficit. Es una laguna de diseño en el conjunto del campo, y es exactamente la laguna que el protocolo diferido #18 («UNC13A posdéficit v0.4») apunta en el BACKLOG.
@@ -43,7 +56,8 @@ Un hallazgo negativo con valor operativo: refuerza el criterio ya aplicado a #44
 ## Limitaciones
 
 - **Un solo lector automatizado.** Las 12 clasificaciones necesitan segunda curación humana. El script `scripts/extract_intervention_timing.py` solo **localiza** frases; no clasifica.
-- **2 de 6 fuentes sin métodos accesibles.** Mallika y Cao quedan sin cronología verificable; Mallika es precisamente el estudio que reporta que impedir solo Unc13a **no** mitigó la enfermedad motora. Con 4/6 textos completos, la matriz queda **en el mínimo** prefijado: es utilizable, no concluyente.
+- **2 de 6 fuentes sin métodos accesibles**, tras agotar las dos vías públicas (ver ampliación arriba). Mallika y Cao quedan sin cronología verificable; Mallika es precisamente el estudio que reporta que impedir solo Unc13a **no** mitigó la enfermedad motora. Con 4/6 textos completos, la matriz queda **en el mínimo** prefijado: es utilizable, no concluyente.
+- **S3 y S4 no son independientes entre sí** (mismo laboratorio, 6 autores compartidos). Tampoco debe asumirse independencia entre otras fuentes sin comprobarla.
 - **Las 6 fuentes son preprints**, sujetos a revisión y corrección. La versión Nature 2026 de Keuss **no** fue inspeccionada; la cronología citada se atribuye solo al preprint de 2024.
 - Ausencia de un diseño en los textos accesibles **no** demuestra que no exista en datos no publicados, en versiones posteriores o en material suplementario no descargado.
 - No se cuantificó ningún efecto, no se ejecutó ningún modelo y no se compararon magnitudes entre sistemas. Modelos murinos y cultivos humanos no se equiparan; el exón críptico de *Unc13a* de ratón no es homólogo posicional del humano (intrón 1 frente a intrón 20), según lo ya registrado.
@@ -66,7 +80,7 @@ Valor retenido como **contexto**, no como fuente aceptada: reporta que el subtip
 ## Siguiente experimento discriminante
 
 1. **Segunda curación humana** de las 12 filas de `matrix.tsv`, con atención a las 2 *indeterminate*.
-2. Resolver el acceso a los métodos de Mallika y Cao por vía pública (bioRxiv directo), ya que son las dos fuentes que más pesan para la hipótesis de dependencia del tipo neuronal. No está hecho: requiere permitir `biorxiv.org` en la red de la sesión.
+2. Métodos de Mallika y Cao: **ambas vías públicas agotadas** el 10/11 (Europe PMC no los sirve; bioRxiv responde 1015 a clientes automatizados). Queda como entrada concreta pendiente: obtener esos métodos por una vía legítima —PDF abierto por una persona, o la versión revisada por pares cuando se publique— antes de dar por cerrada la clasificación de esas dos filas. No reintentar la descarga automática por continuidad.
 3. Solo entonces, y solo si la segunda curación confirma 0 experimentos posdéficit, el protocolo #18 queda justificado documentalmente como laguna real. Eso **no** autoriza ningún ensayo: seguiría requiriendo datos con déficit funcional medido antes de la primera dosis y autorización específica.
 
 **Criterio de abandono:** si la curación humana identifica un experimento posdéficit ya publicado, esta laguna se cierra y #18 pierde su justificación en la forma aquí descrita.

@@ -50,7 +50,12 @@
       "access_limit": "Europe PMC returned a PMC-restricted record (processing-meta restricted-by=pmc): front matter and abstract only, 2 body paragraphs. Methods chronology NOT accessible.",
       "file": "PMC13596259.xml",
       "bytes": 8993,
-      "sha256": "ce03bbc4199e3dda7c36595f64be8f32ca121dd5fb5e007b831854678b9a7586"
+      "sha256": "ce03bbc4199e3dda7c36595f64be8f32ca121dd5fb5e007b831854678b9a7586",
+      "epmc_preprint_id": "PPR1322482",
+      "second_attempt_20261110": "Europe PMC preprint record: inEPMC=N, isOpenAccess=N, no fullTextIdList. bioRxiv .source.xml returned Cloudflare error 1015; no client spoofing attempted. Methods still NOT accessible.",
+      "corresponding_author": "Philip C Wong, Johns Hopkins Medicine",
+      "n_authors": 10,
+      "license": "cc_by_nc_nd"
     },
     {
       "id": "S4",
@@ -64,7 +69,12 @@
       "access_limit": "No PMCID in the Europe PMC core record; no full text retrieved. Abstract only.",
       "file": "meta_42779638.json",
       "bytes": 4641,
-      "sha256": "37c4283e410c76be5f693f57a4ca81af82bff97064a74d26f6adde11ea824b90"
+      "sha256": "37c4283e410c76be5f693f57a4ca81af82bff97064a74d26f6adde11ea824b90",
+      "epmc_preprint_id": "PPR1319997",
+      "second_attempt_20261110": "Europe PMC preprint record: inEPMC=N, isOpenAccess=N, no fullTextIdList. bioRxiv .source.xml returned Cloudflare error 1015; no client spoofing attempted. Methods still NOT accessible.",
+      "corresponding_author": "Philip C Wong, The Johns Hopkins University School of Medicine",
+      "n_authors": 18,
+      "license": "cc_no (no declared reuse licence; only hashes and short quotations recorded)"
     },
     {
       "id": "S5",
