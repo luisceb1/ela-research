@@ -55,6 +55,31 @@ Un workflow específico de PR ejecuta la comprobación bibliográfica, sin model
 
 **Estado de los cuatro agentes:** su código y su test con proveedores simulados están integrados; ejecutar los cuatro de verdad exige clave API, permiso de coste y evaluación manual de sus resultados. No se ha hecho tal ejecución por defecto.
 
+### Primer ensayo real del modelo: requisito pendiente de autorización
+
+El laboratorio distingue tres pruebas que no deben confundirse:
+
+1. CI offline de Python 3.11/3.12: valida código, el contrato HTTP del adaptador y el recorrido de cuatro agentes **con respuestas simuladas**.
+2. Publicaciones NCBI en vivo: verifica 20/20 registros y sus metadatos usando PubMed **sin modelo**.
+3. Ejecución real de los cuatro agentes **y evaluación ciega del benchmark**: requiere una clave de la API de OpenAI con facturación y aprobación explícita del operador. Todavía no ha sido realizada.
+
+El benchmark ya está conectado a una ejecución del modelo, sin facilitarle las etiquetas correctas. Primero comprobar la procedencia, después activar voluntariamente **una** llamada de evaluación:
+
+~~~bash
+python -m agent_lab.benchmark --source-check
+python -m agent_lab.benchmark --evaluate-model --model gpt-6.1-terra --output data/unc13a-eval-local.json
+~~~
+
+Para ejecutar los **cuatro roles**, que son diferentes de la llamada de evaluación:
+
+~~~bash
+python -m agent_lab --live --model gpt-6.1-terra --query "UNC13A TDP-43 synaptic rescue" --max-papers 5 --output data/unc13a-four-agents-local.json
+~~~
+
+En total son cinco llamadas a la API si se lanzan ambas órdenes. Cada llamada permite como máximo 3.500 tokens de salida, sin reintentos automáticos. Los informes se guardan en **data/** (ignorado por Git). El código pide una variable de entorno **OPENAI_API_KEY** que **NO** debe introducirse en repositorios, tickets, logs ni mensajes de chat. La suscripción de ChatGPT es distinta de la facturación de API. Consultar precios y límites vigentes antes de habilitarla: https://developers.openai.com/api/docs/pricing.
+
+La evaluación de 20 afirmaciones comprueba concordancia con etiquetas iniciales, que todavía requieren segunda adjudicación independiente. Ni una concordancia alta ni una PR en verde acreditan ciencia original o eficacia terapéutica.
+
 ## Garantías y límites
 
 - Solo dos endpoints oficiales NCBI: esearch + efetch; máximo ocho artículos por solicitud, tamaño y tiempo limitados.
