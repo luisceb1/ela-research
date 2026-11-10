@@ -1,0 +1,112 @@
+{
+  "generated": "2026-11-10",
+  "plan": "research/plans/2026-11-10-unc13a-intervention-timing-matrix.md",
+  "retrieval": {
+    "api": "Europe PMC REST",
+    "endpoints": [
+      "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:<pmid>%20AND%20SRC:MED&format=json&resultType=core",
+      "https://www.ebi.ac.uk/europepmc/webservices/rest/<pmcid>/fullTextXML"
+    ],
+    "date": "2026-11-10",
+    "note": "Originals kept outside the repository (session scratchpad); only hashes, sizes and short quotations are committed. No PDF, dataset, weights or supplementary file was downloaded."
+  },
+  "sources": [
+    {
+      "id": "S1",
+      "label": "Keuss 2024",
+      "pmid": "38979232",
+      "pmcid": "PMC11230273",
+      "doi": "10.1101/2024.06.20.599684",
+      "venue": "bioRxiv preprint",
+      "first_publication_date": "2024-06-24",
+      "version_caveat": "Preprint. A Nature 2026 acceptance is recorded in the PR #51 report; the accepted version was NOT inspected here, so timing is attributed to the preprint only.",
+      "full_text": true,
+      "file": "PMC11230273.xml",
+      "bytes": 109092,
+      "sha256": "e90aa2ee8c8df84748ae7ad957fee7531eb1deaa5f0cce565dfa9b5a28514f22"
+    },
+    {
+      "id": "S2",
+      "label": "Guo 2025",
+      "pmid": "40949955",
+      "pmcid": "PMC12424808",
+      "doi": "10.1101/2025.08.28.672801",
+      "venue": "bioRxiv preprint",
+      "first_publication_date": "2025-09-02",
+      "full_text": true,
+      "file": "PMC12424808.xml",
+      "bytes": 136829,
+      "sha256": "2288f098489ec18f0b4461ed42299f70159fdca4c25a9a1e08a84b6cc1469249"
+    },
+    {
+      "id": "S3",
+      "label": "Mallika 2026",
+      "pmid": "42779622",
+      "pmcid": "PMC13596259",
+      "doi": "10.64898/2026.09.11.751082",
+      "venue": "bioRxiv preprint",
+      "first_publication_date": "2026-09-18",
+      "full_text": false,
+      "access_limit": "Europe PMC returned a PMC-restricted record (processing-meta restricted-by=pmc): front matter and abstract only, 2 body paragraphs. Methods chronology NOT accessible.",
+      "file": "PMC13596259.xml",
+      "bytes": 8993,
+      "sha256": "ce03bbc4199e3dda7c36595f64be8f32ca121dd5fb5e007b831854678b9a7586"
+    },
+    {
+      "id": "S4",
+      "label": "Cao 2026",
+      "pmid": "42779638",
+      "pmcid": null,
+      "doi": "10.64898/2026.09.11.751031",
+      "venue": "bioRxiv preprint",
+      "first_publication_date": "2026-09-15",
+      "full_text": false,
+      "access_limit": "No PMCID in the Europe PMC core record; no full text retrieved. Abstract only.",
+      "file": "meta_42779638.json",
+      "bytes": 4641,
+      "sha256": "37c4283e410c76be5f693f57a4ca81af82bff97064a74d26f6adde11ea824b90"
+    },
+    {
+      "id": "S5",
+      "label": "Mehta 2025",
+      "pmid": "41394711",
+      "pmcid": "PMC12697360",
+      "doi": "10.1101/2025.11.26.690143",
+      "venue": "bioRxiv preprint",
+      "first_publication_date": "2025-11-30",
+      "full_text": true,
+      "file": "PMC12697360.xml",
+      "bytes": 93117,
+      "sha256": "e599d114ccd4dc8fb123513d6949a4bc1273168964901842beb7a55460213ab8"
+    },
+    {
+      "id": "S6",
+      "label": "Gomberg 2025",
+      "pmid": "41573891",
+      "pmcid": "PMC12822690",
+      "doi": "10.64898/2025.12.01.691001",
+      "venue": "bioRxiv preprint",
+      "first_publication_date": "2025-12-03",
+      "full_text": true,
+      "file": "PMC12822690.xml",
+      "bytes": 125736,
+      "sha256": "5882a63a21bdf8bf1e4639256511b367e4671f9706ad12253ff20ec13155479b"
+    }
+  ],
+  "context_only_not_classified": [
+    {
+      "id": "C1",
+      "label": "Ikegami/Koike 2026",
+      "pmid": "42983891",
+      "pmcid": "PMC13737708",
+      "doi": "10.1186/s40478-026-02400-0",
+      "venue": "Acta Neuropathologica Communications 14:229",
+      "first_publication_date": "2026-08-08",
+      "peer_reviewed": true,
+      "file": "PMC13737708.xml",
+      "bytes": 94330,
+      "sha256": "40e145be007c6cd4d5904c283ca43674d8d37a99c3809847b84915515f58ac57",
+      "why_context": "Observational post-mortem motor cortex, no intervention. Separately assessed as an issue #37 source candidate: see REPORT.md section 'Collateral source-gate check'."
+    }
+  ]
+}

@@ -17,7 +17,18 @@ BASE = "https://www.ebi.ac.uk/europepmc/webservices/rest/search"
 QUERIES = {
     "STMN2_UNC13A": '(TARDBP OR "TDP-43") AND (STMN2 OR UNC13A)',
     "cryptic_splicing": '(TARDBP OR "TDP-43") AND ("cryptic exon" OR "cryptic splicing")',
-    "long_reads": '"amyotrophic lateral sclerosis" AND ("long-read" OR isoform)',
+    # Restringido a TITLE_ABS el 10/11/2026: la consulta anterior
+    # ('"amyotrophic lateral sclerosis" AND ("long-read" OR isoform)') buscaba en
+    # todos los campos, incluidas las listas de referencias, y devolvía 11.040
+    # resultados con artículos ajenos (APOE, prion, Huntington). La versión
+    # restringida devuelve 42. No es un filtro de calidad: solo acota el campo.
+    "long_reads": (
+        '(TITLE_ABS:"amyotrophic lateral sclerosis" OR TITLE_ABS:"frontotemporal dementia"'
+        ' OR TITLE_ABS:"TDP-43" OR TITLE_ABS:TARDBP)'
+        ' AND (TITLE_ABS:"long-read" OR TITLE_ABS:"long read" OR TITLE_ABS:"Iso-Seq"'
+        ' OR TITLE_ABS:nanopore OR TITLE_ABS:"PacBio" OR TITLE_ABS:"isoform-level"'
+        ' OR TITLE_ABS:"full-length transcript")'
+    ),
 }
 
 def request_json(url):

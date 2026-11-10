@@ -42,3 +42,21 @@ class TestPubmed(unittest.TestCase):
 
     def test_untrusted_title_sanitized(self):
         self.assertEqual(pubmed_watch.clean_title("<i>Gene</i> [important]"), "Gene \\[important\\]")
+
+class TestQueryScope(unittest.TestCase):
+    """La consulta de lecturas largas debe acotar campos, no buscar en referencias."""
+
+    def test_long_reads_query_is_field_restricted(self):
+        query = pubmed_watch.QUERIES["long_reads"]
+        self.assertIn("TITLE_ABS:", query)
+        # Ningún término suelto sin campo: cada comilla de término va precedida de TITLE_ABS.
+        self.assertNotRegex(query, r'(?<!TITLE_ABS:)"amyotrophic lateral sclerosis"')
+        # 'isoform' genérico fue la causa del ruido; solo se admite acotado.
+        self.assertNotIn("OR isoform)", query)
+
+    def test_every_query_keeps_a_disease_or_gene_anchor(self):
+        anchors = ("TDP-43", "TARDBP", "amyotrophic lateral sclerosis",
+                   "frontotemporal dementia", "STMN2", "UNC13A")
+        for name, query in pubmed_watch.QUERIES.items():
+            with self.subTest(query=name):
+                self.assertTrue(any(a in query for a in anchors))
