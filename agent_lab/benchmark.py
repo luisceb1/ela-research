@@ -14,6 +14,7 @@ import sys
 from time import sleep
 
 from .sources import MAX_PAPERS, fetch_pubmed
+from .provider import ProviderError
 
 
 BENCHMARK = Path(__file__).parent / "benchmarks" / "unc13a_v01.json"
@@ -237,7 +238,6 @@ def main(argv=None) -> int:
             # Explicitly selected: ONE paid model call after source identity checks.
             from .evaluation import evaluate_benchmark
             from .provider import OpenAIProvider
-            from .provider import ProviderError
             ids = [source["pmid"] for source in benchmark["sources"]]
             query = " OR ".join(f"{pmid}[PMID]" for pmid in ids)
             papers = fetch_pubmed(query, limit=len(ids))
@@ -252,7 +252,7 @@ def main(argv=None) -> int:
         return 1 if report["status"] in {
             "LIVE_PUBMED_SOURCE_CHECK_FAIL", "LIVE_20_PUBMED_SOURCE_CHECK_FAIL"
         } else 0
-    except (BenchmarkError, ValueError, KeyError, OSError, TimeoutError) as exc:
+    except (BenchmarkError, ProviderError, ValueError, KeyError, OSError, TimeoutError) as exc:
         print(f"Benchmark stopped: {type(exc).__name__}: {exc}", file=sys.stderr)
         return 2
 
