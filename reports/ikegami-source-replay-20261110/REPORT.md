@@ -3,6 +3,10 @@
 **Fecha:** 2026-11-10. **Plan prefijado:** [`research/plans/2026-11-10-ikegami-source-data-replay.md`](../../research/plans/2026-11-10-ikegami-source-data-replay.md), commit `2dd8ba9`, **anterior a abrir el archivo**.
 **Etiqueta de evidencia:** reproducción descriptiva interna. **No** es replicación independiente —son los mismos sujetos y las mismas medidas— **ni** validación biológica. **No aporta cuentas de uniones y no avanza #37.**
 
+## Corrección interpretativa — 10/11/2026
+
+Se corrigen inferencias excesivas sobre confusión, independencia y varianza, conservando todos los estadísticos originales. El análisis condicionado por subtipo se documenta por separado en [el nuevo informe](../ikegami-subtype-conditioning-20261110/REPORT.md).
+
 ## Fuente
 
 Ikegami I, Hongo S, Koyama A, Hayakawa-Yano Y, Yano M, Sugai A, Ishihara T, Tada M, Kakita A, Onodera O, Koike YM. *Acta Neuropathologica Communications* 14:229 (2026-08-08). DOI 10.1186/s40478-026-02400-0. PMID 42983891, PMC13737708. **Revisado por pares**, acceso abierto CC-BY-NC-ND 4.0.
@@ -68,7 +72,7 @@ El subconjunto con ddPCR es de 26 casos, no 35.
 ### Controles
 
 - **Control negativo por permutación** (2.000 iteraciones, semilla 20261110): al barajar las etiquetas de subtipo, la diferencia se destruye. p de permutación 1,5 × 10⁻³ (UNC13A) y 5,0 × 10⁻⁴ (STMN2), concordantes con los p asintóticos. El resultado depende de las etiquetas reales, no de la estructura del reparto.
-- **Explicación alternativa comprobada:** correlación con la duración de enfermedad **no significativa** en ninguna medida: ρ = −0,237 (p = 0,17) para UNC13A críptico y ρ = −0,258 (p = 0,13) para STMN2 truncado, n=35. Confirma de forma independiente la afirmación del artículo de que las diferencias por subtipo no se explican por la duración.
+- **Explicación alternativa comprobada:** correlación con la duración de enfermedad **no significativa** en ninguna medida: ρ = −0,237 (p = 0,17) para UNC13A críptico y ρ = −0,258 (p = 0,13) para STMN2 truncado, n=35. Reproduce el cálculo con los mismos datos, pero no descarta una contribución de la duración ni constituye replicación independiente.
 
 ## Segundo ciclo: cribado de confusores con Table S1/S2
 
@@ -86,7 +90,7 @@ Así que **no** calculo correlaciones por caso entre covariables y medidas. La c
 
 ### Lo que sí se puede comprobar sin enlace
 
-Una covariable que **no** difiere entre subtipos no puede explicar una diferencia entre esos subtipos. Kruskal–Wallis sobre los 35 casos, con corrección de Holm sobre las **seis** covariables cribadas:
+Se cribaron diferencias entre subtipos mediante Kruskal–Wallis sobre los 35 casos, con corrección de Holm sobre las **seis** covariables. No detectar una diferencia no prueba equivalencia ni excluye confusión; este cribado no mide la relación individual entre covariable y marcador:
 
 | Covariable | H | p sin corregir | p Holm | Veredicto |
 |---|---|---|---|---|
@@ -97,19 +101,19 @@ Una covariable que **no** difiere entre subtipos no puede explicar una diferenci
 | Pérdida neuronal (semicuantitativa) | 3,83 | 0,148 | 0,351 | ns |
 | **RIN (calidad de RNA)** | 1,37 | 0,504 | 0,504 | ns |
 
-**Dos afirmaciones del artículo quedan confirmadas de forma independiente:** ni la calidad de RNA (RIN) ni la pérdida neuronal semicuantitativa difieren entre subtipos, luego no pueden explicar el patrón. El PMI tampoco.
+**No se detectaron diferencias significativas** de RIN, pérdida neuronal semicuantitativa ni PMI entre subtipos. Es una comprobación interna de los mismos datos; no permite excluir estas variables como explicaciones parciales del patrón.
 
-**Un matiz importante sobre la duración.** La duración **sí** difiere fuertemente entre subtipos, y en la dirección esperada: Tipo 1 mediana 32 meses, Tipo 2a 19, **Tipo 2b 11**. Es decir, el subtipo con más RNA críptico es el de curso más corto. El artículo afirma que las diferencias «no se explican fácilmente» por la duración, y su apoyo es la correlación no significativa entre duración y medidas, que reproduje en el primer ciclo (ρ = −0,24 y −0,26, ns). Las dos cosas son compatibles: la duración acompaña al subtipo pero no predice el nivel de marcador. Conviene ser exacto sobre la fuerza de esa conclusión: con n=35 y ρ ≈ −0,25, la potencia para detectar un efecto moderado de la duración es limitada, de modo que esto es **ausencia de evidencia más que evidencia de ausencia**.
+**Un matiz importante sobre la duración.** La duración **sí** difiere fuertemente entre subtipos, y en la dirección esperada: Tipo 1 mediana 32 meses, Tipo 2a 19, **Tipo 2b 11**. Es decir, el subtipo con más RNA críptico es el de curso más corto. El artículo afirma que las diferencias «no se explican fácilmente» por la duración, y su apoyo es la correlación no significativa entre duración y medidas, que reproduje en el primer ciclo (ρ = −0,24 y −0,26, ns). Las dos cosas son compatibles: la duración acompaña al subtipo, mientras la correlación marginal con el marcador no alcanza significación en estos 35 casos. Conviene ser exacto sobre la fuerza de esa conclusión: con n=35 y ρ ≈ −0,25, la potencia para detectar un efecto moderado de la duración es limitada, de modo que esto es **ausencia de evidencia más que evidencia de ausencia**.
 
 **Una discrepancia menor con el texto.** El artículo dice: «cases were selected to achieve comparable age distributions across ALS pathological subtypes». En los datos depositados, la **edad de inicio** difiere nominalmente (p = 0,044; medianas 64,5 / 67,5 / **74,0**) y la edad a la muerte muestra una diferencia nominal entre Tipo 1 y Tipo 2b (p = 0,034 por pares). Ninguna sobrevive a la corrección de Holm sobre las seis covariables, así que **la afirmación de comparabilidad no queda contradicha a nivel corregido**. Lo registro porque la dirección es consistente —los casos Tipo 2b son unos 10 años mayores al inicio— y porque la edad no figura entre los confusores que el resumen declara haber comprobado.
 
 ## Interpretación
 
-Los datos fuente depositados **sostienen los estadísticos publicados**: tamaños de grupo exactos, ρ dentro de tolerancia, diferencias por subtipo idénticas en dirección y significación, y la explicación alternativa por duración descartada con los mismos datos. Es un ejercicio de reproducibilidad superado, y vale la pena decirlo: en este proyecto varios depósitos previos **no** reprodujeron sin fricción.
+Los datos fuente depositados **sostienen los estadísticos publicados**: tamaños de grupo exactos, ρ dentro de tolerancia, diferencias por subtipo idénticas en dirección y significación, y correlaciones marginales con duración sin significación estadística. La duración no queda descartada como explicación parcial. Es un ejercicio de reproducibilidad superado, y vale la pena decirlo: en este proyecto varios depósitos previos **no** reprodujeron sin fricción.
 
-Qué añade a nuestra línea científica: la correlación ρ ≈ 0,57–0,58 entre el RNA críptico de UNC13A y el STMN2 truncado en **35 casos humanos revisados por pares** es el respaldo observacional más sólido que tenemos para la hipótesis **H2** de desregulación coordinada entre dianas de TDP-43. Coincide en dirección con el hallazgo experimental de Mallika: corregir una sola diana fue insuficiente para la enfermedad de motoneurona, mientras la restauración multidiana sí rescató fenotipos.
+Qué añade a nuestra línea científica: la correlación ρ ≈ 0,57–0,58 entre el RNA críptico de UNC13A y el STMN2 truncado en **35 casos humanos revisados por pares** es evidencia observacional interna compatible con **H2**, pendiente de separar asociación entre subtipos y asociación dentro de ellos. Coincide en dirección con el hallazgo experimental de Mallika: corregir una sola diana fue insuficiente para la enfermedad de motoneurona, mientras la restauración multidiana sí rescató fenotipos.
 
-Qué **no** añade: correlación entre dos marcadores en el mismo tejido no demuestra mecanismo compartido, causalidad ni que corregir ambas dianas beneficie a un paciente. Una correlación de 0,57 deja más de dos tercios de la varianza sin explicar.
+Qué **no** añade: correlación entre dos marcadores en el mismo tejido no demuestra mecanismo compartido, causalidad ni que corregir ambas dianas beneficie a un paciente. Spearman cuantifica asociación entre rangos; su cuadrado no se interpreta aquí como proporción de varianza de los niveles de RNA explicada.
 
 ## Limitaciones
 
@@ -121,16 +125,16 @@ Qué **no** añade: correlación entre dos marcadores en el mismo tejido no demu
 - **Sin asignación caso→muestra entre hojas.** Las hojas comparten orden aparente dentro de cada subtipo, pero **no he enlazado un caso concreto entre paneles por posición de fila**, conforme al plan. Por eso R1 se calculó solo donde el propio archivo deposita los pares (Fig. 2c), no cruzando hojas.
 - No se descargó el Additional file 2 (DOCX, 3,7 MB) ni se extrajo número alguno de imágenes.
 - **Sin carga de TDP-43 por caso**, luego la prueba discriminante central de H2 queda fuera del alcance de esta fuente.
-- **Covariables no enlazables por caso** a las medidas: la duración no es clave única en Tipos 2a y 2b. El cribado de confusores es por tanto **entre subtipos**, que descarta un confusor si no difiere, pero no cuantifica su efecto sobre el marcador.
+- **Covariables no enlazables por caso** a las medidas: la duración no es clave única en Tipos 2a y 2b. El cribado de confusores es por tanto **entre subtipos**, que no permite excluir confusores ni cuantifica su efecto individual sobre el marcador.
 - Las seis covariables se cribaron a la vez y se corrigieron por Holm. La duración sobrevive; la edad de inicio no. No se declara diferencia a partir de un p nominal aislado.
 - Correlación de marcadores ≠ mecanismo ≠ función ≠ beneficio clínico. **Nada aquí respalda ninguna indicación clínica.**
 
 ## Siguiente prueba discriminante
 
-1. La pregunta que estos datos **no** pueden responder sigue siendo si la coordinación UNC13A–STMN2 refleja una dependencia mecanística común o solo la intensidad de la pérdida nuclear de TDP-43. El segundo ciclo confirmó que **este depósito no la puede responder**: no hay carga de pTDP-43 cuantificada por caso. Haría falta una fuente con esa medida junto a ambos marcadores. Si la correlación se anula al condicionar en la carga, es efecto de dosis compartida; si persiste, apunta a algo más.
+1. La pregunta que estos datos **no** pueden responder sigue siendo si la coordinación UNC13A–STMN2 refleja una dependencia mecanística común o solo la intensidad de la pérdida nuclear de TDP-43. El segundo ciclo confirmó que **este depósito no la puede responder**: no hay carga de pTDP-43 cuantificada por caso. Haría falta una fuente con esa medida junto a ambos marcadores. La atenuación o persistencia tras ajustar por una medida de patología sería informativa, pero no identificaría por sí sola un mecanismo: persistirían error de medida y confusores no observados. La carga de agregados pTDP-43 no es intercambiable con pérdida de función nuclear de TDP-43.
 2. Un confusor que esta fuente **sí** deja planteado: el Tipo 2b combina más RNA críptico, curso más corto y mayor edad de inicio. Separar «intensidad de patología» de «velocidad de progresión» exigiría una cohorte con esos ejes desacoplados. No lo tenemos.
 3. No se amplía a otros artículos del grupo, no se contacta a los autores, no se abre el Additional file 2 y no se inicia un ciclo nuevo sin decisión de alcance.
 
-**Criterio de abandono de H2:** si una fuente con medida directa de uniones y unidades biológicas independientes no reproduce la asociación entre dianas, H2 deja de sostenerse como hipótesis de trabajo.
+**Criterio para revisar H2:** una fuente independiente y adecuadamente informativa que no reproduzca la asociación debilitaría la hipótesis. Un resultado no significativo por sí solo no la refuta: deben examinarse efecto, incertidumbre, cobertura y diseño.
 
 Sin contactos, gastos, datos personales, laboratorio ni publicación externa. Marco: [AGENTS](../../AGENTS.md), [PROTOCOL](../../research/PROTOCOL.md), [STATE](../../research/STATE.md).

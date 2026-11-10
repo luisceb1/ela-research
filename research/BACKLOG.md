@@ -28,7 +28,7 @@ La laguna que motiva #18 queda documentada en su forma **precisa**: ninguna corr
 
 ## Entradas del 10/11/2026 (tarde)
 
-- [x] Replay descriptivo de los datos fuente de Ikegami/Koike 2026: R1–R4 reproducidos, con control de permutación y descarte de la duración de enfermedad como explicación. Ver [informe](../reports/ikegami-source-replay-20261110/REPORT.md). Reproducibilidad interna, **no** replicación; sigue sin aportar cuentas de uniones y **no reabre #37**.
+- [x] Replay descriptivo de los datos fuente de Ikegami/Koike 2026: R1–R4 reproducidos, con control de permutación y correlaciones marginales no significativas con duración; la duración no se descarta como explicación parcial. Ver [informe](../reports/ikegami-source-replay-20261110/REPORT.md). Reproducibilidad interna, **no** replicación; sigue sin aportar cuentas de uniones y **no reabre #37**.
 - [x] Vigilante diario ampliado para detectar versiones revisadas por pares de los 6 preprints seguidos, con pruebas. Primer hallazgo real: Guo publicado en *Sci Transl Med* (PMID 42234776).
 - [ ] **Métodos de Guo revisado por pares**: de pago y sin registro PMC. Las filas G-a/G-b de la matriz siguen atribuidas al preprint de 2025. Entrada necesaria: acceso legítimo al texto publicado. No reintentar por continuidad.
 - [x] Table S1/S2 inspeccionadas: **no** contienen carga de pTDP-43 por caso, luego la prueba discriminante de H2 no es ejecutable con esta fuente. Cribado de confusores entre subtipos ejecutado: RIN, PMI y pérdida neuronal no difieren; la duración sí (32/19/11 meses); la edad de inicio solo nominalmente. Enlace por caso rechazado por clave no única en Tipos 2a y 2b.
@@ -65,3 +65,9 @@ No nuevas descargas masivas, control completo/TDP, contactos, gastos, datos pers
 ## Completed user-authorized extensions
 
 A25 Fig.3s descriptive replay and UNC13A Dox replay are complete; see STATE.md. Missing culture identities and molecular metadata do not become new searches by default. ELK1 final-paper archive reconciliation is complete and integrated with its molecular replay; see STATE.md. No further ELK1 intervention program is scheduled. No new equivalent audit is scheduled. A new source file and prospective design review are needed before inference. The scheduled one-time Fratta publication check does not reactivate broad research continuity.
+
+
+## Cierre del análisis condicionado — 10/11/2026
+
+- [x] Análisis exploratorio condicionado por subtipo, protocolo commit `88fc61f`: rho global 0,57367 → ajustado 0,31669; permutación estratificada bilateral p=0,07825; intervalo marginal 95% [-0,02342; 0,62758]. La predicción no se cumple; no equivale a ausencia de asociación. Corregidas inferencias excesivas sobre confusores y varianza. [Informe](../reports/ikegami-subtype-conditioning-20261110/REPORT.md). Ciclo cerrado; no se repite para buscar significación.
+- Próxima entrada propuesta: fuente independiente con ambos marcadores, unidades identificables, covariables enlazables y medida justificada de función nuclear de TDP-43. El patrón por subtipo requiere una prueba prospectiva independiente. No se inicia aquí otra cohorte ni se reabren #37/#44.

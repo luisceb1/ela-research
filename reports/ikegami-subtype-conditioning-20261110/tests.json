@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "python": "3.12.14",
+  "patterns": {
+    "test_ikegami_subtype_association.py": 10,
+    "test_replay_ikegami.py": 6,
+    "test_ikegami_covariates.py": 6
+  },
+  "discovered": 22,
+  "run": 22,
+  "executed": 22,
+  "passed": 22,
+  "failures": [],
+  "errors": [],
+  "skipped": [],
+  "expected_failures": [],
+  "unexpected_successes": [],
+  "missing_patterns": [],
+  "fail_on_skip": true
+}
