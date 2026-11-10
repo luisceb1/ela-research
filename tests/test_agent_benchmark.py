@@ -7,7 +7,7 @@ import unittest
 from unittest.mock import patch
 
 from agent_lab.benchmark import (
-    BenchmarkError, check_pubmed_sources, load_benchmark, score_predictions,
+    BenchmarkError, check_pubmed_sources, check_full_corpus, load_benchmark, load_corpus, score_predictions,
 )
 from agent_lab.sources import Paper
 
@@ -95,6 +95,43 @@ class TestUNC13ABenchmark(unittest.TestCase):
             report = check_pubmed_sources(self.benchmark)
         self.assertEqual(report["status"], "LIVE_PUBMED_SOURCE_CHECK_FAIL")
         self.assertEqual(report["retrieved_sources"], 0)
+
+
+    def test_20_distinct_study_corpus(self):
+        corpus = load_corpus()
+        self.assertEqual(len(corpus["sources"]), 20)
+        self.assertEqual(
+            len({s["independent_study_id"] for s in corpus["sources"]}), 20
+        )
+        self.assertIn("42779622", {s["pmid"] for s in corpus["sources"]})
+        self.assertIn("42779638", {s["pmid"] for s in corpus["sources"]})
+
+    def test_20_paper_corpus_live_batches_are_bounded(self):
+        corpus = load_corpus()
+        def fake_fetch(query, limit):
+            self.assertLessEqual(limit, 8)
+            pmids = [term.split("[")[0] for term in query.split(" OR ")]
+            self.assertEqual(len(pmids), limit)
+            subset = {s["pmid"]: s for s in corpus["sources"]}
+            return [
+                Paper(pmid, subset[pmid]["short"], "Mock abstract for offline test",
+                      str(subset[pmid]["year"]), "Mock journal", subset[pmid]["doi"])
+                for pmid in pmids
+            ]
+
+        with patch("agent_lab.benchmark.fetch_pubmed", side_effect=fake_fetch) as fetch:
+            report = check_full_corpus(corpus)
+        self.assertEqual(fetch.call_count, 3)
+        self.assertEqual([c.kwargs["limit"] for c in fetch.call_args_list], [8, 8, 4])
+        self.assertEqual(report["verified_sources"], 20)
+        self.assertEqual(report["status"], "LIVE_20_PUBMED_SOURCE_CHECK_PASS")
+        self.assertEqual(report["model_calls"], 0)
+
+    def test_20_paper_corpus_missing_source_fails(self):
+        with patch("agent_lab.benchmark.fetch_pubmed", return_value=[]):
+            report = check_full_corpus(load_corpus())
+        self.assertEqual(report["verified_sources"], 0)
+        self.assertEqual(report["status"], "LIVE_20_PUBMED_SOURCE_CHECK_FAIL")
 
 
 if __name__ == "__main__":
