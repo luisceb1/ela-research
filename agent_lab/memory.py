@@ -92,6 +92,8 @@ def list_hypotheses(db_path: Path, limit: int = 20) -> list[dict]:
     """Read-only list of candidate hypotheses; they remain unverified drafts."""
     if not 1 <= limit <= 100:
         raise ValueError("limit must be within 1..100")
+    if not Path(db_path).exists():
+        return []
     with sqlite3.connect(db_path) as db:
         db.row_factory = sqlite3.Row
         rows = db.execute(
