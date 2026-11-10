@@ -1,0 +1,134 @@
+{
+  "generated": "2026-11-10",
+  "plan": "research/plans/2026-11-10-unc13a-intervention-timing-matrix.md",
+  "retrieval": {
+    "api": "Europe PMC REST",
+    "endpoints": [
+      "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:<pmid>%20AND%20SRC:MED&format=json&resultType=core",
+      "https://www.ebi.ac.uk/europepmc/webservices/rest/<pmcid>/fullTextXML"
+    ],
+    "date": "2026-11-10",
+    "note": "Originals kept outside the repository (session scratchpad); only hashes, sizes and short quotations are committed. No PDF, dataset, weights or supplementary file was downloaded."
+  },
+  "sources": [
+    {
+      "id": "S1",
+      "label": "Keuss 2024",
+      "pmid": "38979232",
+      "pmcid": "PMC11230273",
+      "doi": "10.1101/2024.06.20.599684",
+      "venue": "bioRxiv preprint",
+      "first_publication_date": "2024-06-24",
+      "version_caveat": "Preprint. A Nature 2026 acceptance is recorded in the PR #51 report; the accepted version was NOT inspected here, so timing is attributed to the preprint only.",
+      "full_text": true,
+      "file": "PMC11230273.xml",
+      "bytes": 109092,
+      "sha256": "e90aa2ee8c8df84748ae7ad957fee7531eb1deaa5f0cce565dfa9b5a28514f22"
+    },
+    {
+      "id": "S2",
+      "label": "Guo 2025",
+      "pmid": "40949955",
+      "pmcid": "PMC12424808",
+      "doi": "10.1101/2025.08.28.672801",
+      "venue": "bioRxiv preprint",
+      "first_publication_date": "2025-09-02",
+      "full_text": true,
+      "file": "PMC12424808.xml",
+      "bytes": 136829,
+      "sha256": "2288f098489ec18f0b4461ed42299f70159fdca4c25a9a1e08a84b6cc1469249"
+    },
+    {
+      "id": "S3",
+      "label": "Mallika 2026",
+      "pmid": "42779622",
+      "pmcid": "PMC13596259",
+      "doi": "10.64898/2026.09.11.751082",
+      "venue": "bioRxiv preprint",
+      "first_publication_date": "2026-09-18",
+      "full_text": true,
+      "file": "mallika_751082v1.full.pdf (aportado por el usuario; no versionado)",
+      "bytes": 4700000,
+      "sha256": "f0da10d3dd121d5ccd97e80097eeb0b6bd6cbbe64a63971baf3489ba46bd8b9e",
+      "epmc_preprint_id": "PPR1322482",
+      "second_attempt_20261110": "Europe PMC preprint record: inEPMC=N, isOpenAccess=N, no fullTextIdList. bioRxiv .source.xml returned Cloudflare error 1015; no client spoofing attempted. Methods still NOT accessible.",
+      "corresponding_author": "Philip C Wong, Johns Hopkins Medicine",
+      "n_authors": 10,
+      "license": "cc_by_nc_nd",
+      "pages": 43,
+      "access_resolved_20261110": "Europe PMC and bioRxiv both failed (PPR1322482 inEPMC=N; Cloudflare 1015). Resolved when the user supplied the PDF. Methods now fully read.",
+      "shared_authors_with_S4": [
+        "Baghel, M. S.",
+        "Cao, T.",
+        "Ling, J. P.",
+        "Peethambaran Mallika, A.",
+        "Renganathan, S.",
+        "Wong, P. C."
+      ]
+    },
+    {
+      "id": "S4",
+      "label": "Cao 2026",
+      "pmid": "42779638",
+      "pmcid": null,
+      "doi": "10.64898/2026.09.11.751031",
+      "venue": "bioRxiv preprint",
+      "first_publication_date": "2026-09-15",
+      "full_text": true,
+      "file": "cao_751031v1.full.pdf (aportado por el usuario; no versionado)",
+      "bytes": 10700000,
+      "sha256": "9c4bf93dcd44aae7db03b77e80c64479a60fd91fb2486fc5a5a43c6daf194020",
+      "epmc_preprint_id": "PPR1319997",
+      "second_attempt_20261110": "Europe PMC preprint record: inEPMC=N, isOpenAccess=N, no fullTextIdList. bioRxiv .source.xml returned Cloudflare error 1015; no client spoofing attempted. Methods still NOT accessible.",
+      "corresponding_author": "Philip C Wong, The Johns Hopkins University School of Medicine",
+      "n_authors": 18,
+      "license": "cc_no (no declared reuse licence; only hashes and short quotations recorded)",
+      "pages": 67,
+      "access_resolved_20261110": "Europe PMC and bioRxiv both failed (PPR1319997 inEPMC=N; Cloudflare 1015). Resolved when the user supplied the PDF. Methods now fully read.",
+      "license_note": "'All rights reserved. No reuse allowed without permission.' PDF NOT redistributed; only hashes and short quotations recorded."
+    },
+    {
+      "id": "S5",
+      "label": "Mehta 2025",
+      "pmid": "41394711",
+      "pmcid": "PMC12697360",
+      "doi": "10.1101/2025.11.26.690143",
+      "venue": "bioRxiv preprint",
+      "first_publication_date": "2025-11-30",
+      "full_text": true,
+      "file": "PMC12697360.xml",
+      "bytes": 93117,
+      "sha256": "e599d114ccd4dc8fb123513d6949a4bc1273168964901842beb7a55460213ab8"
+    },
+    {
+      "id": "S6",
+      "label": "Gomberg 2025",
+      "pmid": "41573891",
+      "pmcid": "PMC12822690",
+      "doi": "10.64898/2025.12.01.691001",
+      "venue": "bioRxiv preprint",
+      "first_publication_date": "2025-12-03",
+      "full_text": true,
+      "file": "PMC12822690.xml",
+      "bytes": 125736,
+      "sha256": "5882a63a21bdf8bf1e4639256511b367e4671f9706ad12253ff20ec13155479b"
+    }
+  ],
+  "context_only_not_classified": [
+    {
+      "id": "C1",
+      "label": "Ikegami/Koike 2026",
+      "pmid": "42983891",
+      "pmcid": "PMC13737708",
+      "doi": "10.1186/s40478-026-02400-0",
+      "venue": "Acta Neuropathologica Communications 14:229",
+      "first_publication_date": "2026-08-08",
+      "peer_reviewed": true,
+      "file": "PMC13737708.xml",
+      "bytes": 94330,
+      "sha256": "40e145be007c6cd4d5904c283ca43674d8d37a99c3809847b84915515f58ac57",
+      "why_context": "Observational post-mortem motor cortex, no intervention. Separately assessed as an issue #37 source candidate: see REPORT.md section 'Collateral source-gate check'."
+    }
+  ],
+  "note_20261110": "Prediction REFUTED by one experiment (S3 M-a, multi-target CTR delivered at a symptomatic stage). For UNC13A-specific interventions (9 experiments) it holds: none is post-deficit. See REPORT.md."
+}

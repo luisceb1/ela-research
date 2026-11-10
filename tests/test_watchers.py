@@ -42,3 +42,44 @@ class TestPubmed(unittest.TestCase):
 
     def test_untrusted_title_sanitized(self):
         self.assertEqual(pubmed_watch.clean_title("<i>Gene</i> [important]"), "Gene \\[important\\]")
+
+class TestQueryScope(unittest.TestCase):
+    """La consulta de lecturas largas debe acotar campos, no buscar en referencias."""
+
+    def test_long_reads_query_is_field_restricted(self):
+        query = pubmed_watch.QUERIES["long_reads"]
+        self.assertIn("TITLE_ABS:", query)
+        # Ningún término suelto sin campo: cada comilla de término va precedida de TITLE_ABS.
+        self.assertNotRegex(query, r'(?<!TITLE_ABS:)"amyotrophic lateral sclerosis"')
+        # 'isoform' genérico fue la causa del ruido; solo se admite acotado.
+        self.assertNotIn("OR isoform)", query)
+
+    def test_every_query_keeps_a_disease_or_gene_anchor(self):
+        anchors = ("TDP-43", "TARDBP", "amyotrophic lateral sclerosis",
+                   "frontotemporal dementia", "STMN2", "UNC13A")
+        for name, query in pubmed_watch.QUERIES.items():
+            with self.subTest(query=name):
+                self.assertTrue(any(a in query for a in anchors))
+
+class TestTrackedPreprints(unittest.TestCase):
+    """El seguimiento de versiones revisadas por pares no valida nada por si solo."""
+
+    def test_every_tracked_preprint_is_in_the_timing_matrix(self):
+        self.assertEqual(len(pubmed_watch.TRACKED_PREPRINTS), 6)
+        for label, title in pubmed_watch.TRACKED_PREPRINTS.items():
+            with self.subTest(label=label):
+                self.assertNotIn('"', title)
+                self.assertGreater(len(title), 20)
+
+    def test_reports_hits_per_label(self):
+        record = {"source": "MED", "id": "999", "title": "T",
+                  "journalTitle": "J", "firstPublicationDate": "2026-01-01"}
+        with patch.object(pubmed_watch, "search_pubmed", return_value=[record]):
+            found = pubmed_watch.check_published_versions()
+        self.assertEqual(len(found), len(pubmed_watch.TRACKED_PREPRINTS))
+        first = next(iter(found.values()))
+        self.assertEqual(first[0]["pmid"], "999")
+
+    def test_no_hits_yields_empty_mapping(self):
+        with patch.object(pubmed_watch, "search_pubmed", return_value=[]):
+            self.assertEqual(pubmed_watch.check_published_versions(), {})

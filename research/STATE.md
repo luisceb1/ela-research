@@ -13,6 +13,32 @@ Keep target junction coverage ≥20 and at least three independent biological un
 
 K26 Fig.4d reports 34/30/25 cells across three experiments; cells do not establish biological replication. The selected ASO intervention is concurrent with TDP-43 depletion, not treatment after demonstrating a prior functional deficit. No effect is estimated. [Plan](../reports/functional-rescue-20261103/REPRODUCTION_PLAN.md).
 
+## Update — 10 November 2026
+
+Luis confirmed on 10 November that the K26 file has **not** arrived (Fratta indicated publication "this week") and that AD Workbench has **not** granted access. Both #37 and #44 therefore remain blocked on exactly the inputs already recorded; no follow-up contact is authorized.
+
+Completed instead, as bounded documentary work: an intervention-chronology matrix over the six UNC13A intervention preprints, completed to 6/6 when Luis supplied the Mallika and Cao PDFs that neither Europe PMC nor bioRxiv would serve. **14 experiments; 1 post-deficit recovery; 12 prevention; 1 indeterminate.**
+
+**The prespecified prediction is refuted**, by Mallika's AAV-PHP.eB-CTR arm: delivered at 6 weeks "when fine tremors are already apparent", at what the authors call a symptomatic stage, it maintained grip strength and extended survival from ~47 to ≥110 weeks (n=20 per group). CTR is a chimeric TDP-43 splicing repressor acting on many targets, **not a UNC13A-specific intervention**.
+
+Split by specificity, the gap persists and sharpens: of **9 UNC13A-specific** experiments, **0** act after a measured deficit — all are preventive by construction. The UNC13A-specific arms also diverge by endpoint, failing for motor neuron disease ("preventing cryptic splicing of Unc13a is insufficient to attenuate motor neuron disease", Mallika) while preserving memory (Cao). The post-deficit window is therefore not intrinsically intractable in these models, which makes the UNC13A-specific question more pointed, not less.
+
+A curation pass re-derived every row against the prespecified rule and verified all 14 locator quotations verbatim against the primary text (14/14, `scripts/verify_matrix_quotes.py`). It found and fixed four defects, including a bug in the verifier itself and three quotations I had joined with ellipses into sentences no author wrote, and corrected a hand count of target specificity. Because the prediction's fate turns on a judgement rather than a datum, the matrix now records both readings in separate countable columns: under the letter of the rule, which excludes a parallel untreated arm as baseline evidence, **0 of 14** are post-deficit and the prediction is **not** refuted; under the substantive reading, 1 of 14 is. Either way **0 of the 6 UNC13A-specific experiments** act after a measured deficit.
+
+The curation is not independent review: the same agent did both passes, so it cannot detect a systematic bias of its own or a criterion that was ill-conceived from the start. That need stays open, with free routes recorded (peer review of Mallika/Cao; a bioRxiv comment, which would need Luis's express authorization). Mallika and Cao share a corresponding author and six authors, so they are not independent replications of each other. [Matrix and report](../reports/unc13a-intervention-timing-20261110/REPORT.md), [plan](plans/2026-11-10-unc13a-intervention-timing-matrix.md).
+
+PMID 42983891 (Ikegami/Koike 2026, peer reviewed) was checked against the #37 gate and **rejected as a technical source**: qRT-PCR/ddPCR on post-mortem motor cortex, no junction counts, no RNA-seq/GEO/BAM, data by author request. Kept as context only: pathological subtype 2b shows higher UNC13A cryptic and truncated STMN2 RNA, correlated at Spearman ρ = 0.58. This does not open a fourth candidate.
+
+The daily watcher's `long_reads` query searched all fields including reference lists (11,040 hits, unrelated papers); it is now restricted to TITLE_ABS (42 hits), with tests. This is a scope fix, not a quality filter.
+
+## New bounded result — Ikegami source-data replay, 10 November
+
+The deposited source data of Ikegami/Koike 2026 (*Acta Neuropathol Commun* 14:229, **peer reviewed**, open access) **reproduce their published statistics**. Group sizes match exactly (12/12/11, n=35); Spearman between UNC13A cryptic RNA and truncated STMN2 RNA reproduces at **rho 0.5737** against a published 0.58, inside the prespecified tolerance; subtype differences reproduce in direction and significance, Type 2b above Types 1 and 2a for both measures while Types 1 and 2a do not differ. A label-permutation control destroys the effect and disease duration does not account for it (rho -0.24 and -0.26, both non-significant), independently confirming the paper's own claim. The ddPCR/qRT-PCR concordance the paper calls "strong" is quantified here for the first time: rho 0.859 and 0.870 on 26 cases. [Report](../reports/ikegami-source-replay-20261110/REPORT.md).
+
+This is internal reproducibility, not replication: same subjects, same measurements, same laboratory. It carries **no junction counts**, so **#37 stays blocked and this source stays rejected for that gate**. Post-mortem tissue is still not equated with i3N culture. The rho ~0.57 correlation across 35 human cases is the strongest observational support we hold for hypothesis **H2** (coordinated dysregulation across TDP-43 targets), and it agrees in direction with Mallika's experimental finding that correcting one target alone was insufficient. Correlation of two markers in the same tissue is not mechanism, causality or patient benefit.
+
+The watcher extension found that **Guo's preprint is now peer reviewed** in *Science Translational Medicine* (PMID 42234776, DOI 10.1126/scitranslmed.aeb8517, 2026-06-03). It is paywalled with no PMC record, so its methods were **not** inspected: the two Guo rows of the timing matrix remain attributed to the 2025 preprint and may differ from the published version.
+
 ## Access and communications: dated evidence only
 
 The 04 November administrative audit records AD Workbench dataset-approval wording followed by review wording, and a pending workspace. Neither establishes effective access or a technical manifest. [Audit](../reports/continuity-20261104/REPORT.md). The expanded public K26 search found no attributable source table in the checked routes; this is not universal proof of absence. [Search](../reports/fig4d-source-search-20261104/REPORT.md).

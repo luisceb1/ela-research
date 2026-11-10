@@ -1,0 +1,7 @@
+# Dependencias fijadas del replay descriptivo de Ikegami/Koike 2026.
+# scipy 1.17.0 es la version ya fijada en requirements-issue14.txt y cubre
+# Python 3.11, que forma parte de la matriz de CI; scipy 1.18.x exige >=3.12 y
+# rompería el trabajo de 3.11.
+numpy==2.3.4
+openpyxl==3.1.5
+scipy==1.17.0
