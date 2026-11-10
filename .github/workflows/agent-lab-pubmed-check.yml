@@ -1,4 +1,4 @@
-name: ELA Agent Lab PubMed verification (no model API)
+name: ELA Agent Lab 20-paper PubMed verification (no model API)
 on:
   pull_request:
     paths:
@@ -19,11 +19,13 @@ jobs:
         with:
           python-version: '3.12'
       - name: Validate curated benchmark offline
-        run: python -m agent_lab.benchmark --validate
-      - name: Query LIVE PubMed by eight fixed PMIDs (free, no models)
+        run: |
+          python -m agent_lab.benchmark --validate
+          python -m agent_lab.benchmark --validate-corpus
+      - name: Query LIVE PubMed in three bounded batches: 20 PMIDs (free, no models)
         run: |
           mkdir -p test-results
-          python -m agent_lab.benchmark --source-check --output test-results/agent-lab-pubmed-source-check.json
+          python -m agent_lab.benchmark --check-corpus --output test-results/agent-lab-pubmed-20-source-check.json
       - name: Upload source verification report
         if: always()
         uses: actions/upload-artifact@v4
