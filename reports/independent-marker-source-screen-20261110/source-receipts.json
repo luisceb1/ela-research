@@ -1,0 +1,46 @@
+{
+  "date": "2026-11-10",
+  "protocol_commit": "2b23019a9836767ddffc50fb0e9627425d6471da",
+  "downloads": [
+    {
+      "name": "quadros primary XML",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10766724/fullTextXML",
+      "status": 200,
+      "bytes": 203334,
+      "sha256": "4d605046832aa11ab6cf4285d5cf48adb8eb0bf747cd5ddd70eca9fea2ee90a1",
+      "redistributed": false
+    },
+    {
+      "name": "c9sn primary XML",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10412668/fullTextXML",
+      "status": 200,
+      "bytes": 185211,
+      "sha256": "822c8a00ad99fb03cad66f8c77db10772fd3274db7cb847a5fc67021222aacfd",
+      "redistributed": false
+    },
+    {
+      "name": "jci primary XML",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13367973/fullTextXML",
+      "status": 200,
+      "bytes": 163582,
+      "sha256": "7d6a9c3ed4a0cd8a8260511638432b825fcb19c79a927824dae2280ee8776138",
+      "redistributed": false
+    },
+    {
+      "name": "JCI190035.sdval.xlsx",
+      "url": "https://dm5migu4zj3pb.cloudfront.net/manuscripts/190000/190035/JCI190035.sdval.xlsx",
+      "status": 200,
+      "bytes": 74783,
+      "sha256": "db027322133460279ceacdc3d5fccd314c9f262cff8a45c7a2ad7bd57a9779ad",
+      "redistributed": false
+    },
+    {
+      "name": "JCI190035.sd.pdf",
+      "url": "https://dm5migu4zj3pb.cloudfront.net/manuscripts/190000/190035/JCI190035.sd.pdf",
+      "status": 200,
+      "bytes": 11476925,
+      "sha256": "f353a4adc36e0f50b76c9635d48a67edaa739745682cc056388f2e9108b13990",
+      "redistributed": false
+    }
+  ]
+}

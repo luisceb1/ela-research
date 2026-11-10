@@ -71,3 +71,10 @@ A25 Fig.3s descriptive replay and UNC13A Dox replay are complete; see STATE.md. 
 
 - [x] Análisis exploratorio condicionado por subtipo, protocolo commit `88fc61f`: rho global 0,57367 → ajustado 0,31669; permutación estratificada bilateral p=0,07825; intervalo marginal 95% [-0,02342; 0,62758]. La predicción no se cumple; no equivale a ausencia de asociación. Corregidas inferencias excesivas sobre confusores y varianza. [Informe](../reports/ikegami-subtype-conditioning-20261110/REPORT.md). Ciclo cerrado; no se repite para buscar significación.
 - Próxima entrada propuesta: fuente independiente con ambos marcadores, unidades identificables, covariables enlazables y medida justificada de función nuclear de TDP-43. El patrón por subtipo requiere una prueba prospectiva independiente. No se inicia aquí otra cohorte ni se reabren #37/#44.
+
+
+## Fuente independiente tras el ajuste por subtipo — 10/11/2026
+
+- [x] Cribado acotado autorizado por Luis de Quadros 2024, Gittings 2023 y Ramsey 2026, protocolo `2b23019` anterior al libro original. **Ninguna fuente admitida para inferencia ahora**; [informe](../reports/independent-marker-source-screen-20261110/REPORT.md).
+- [x] Recuperado y hashado el Supporting Data Values de Ramsey: ambos marcadores disponibles, pero sin claves verificables de réplica ni enlace a patología. No convertir sus 18/27 observaciones PCR humanas en sujetos independientes. Gittings queda descartado para esta pregunta por no detectar la unión críptica UNC13A.
+- [ ] Entrada prioritaria propuesta: tabla pública completamente anonimizada de Quadros, ambos marcadores + carga pTDP-43 por unidad/región, con normalización, no detección y agregación de réplicas. [Solicitud redactada, no enviada](../reports/independent-marker-source-screen-20261110/DATA_REQUEST_DRAFT.md). El contacto necesita autorización expresa de Luis. No abrir cuarta candidata ni procesar una cohorte para sustituir esta entrada por inercia. #37/#44 mantienen sus requisitos originales.
