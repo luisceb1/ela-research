@@ -9,7 +9,9 @@ Ikegami I, Hongo S, Koyama A, Hayakawa-Yano Y, Yano M, Sugai A, Ishihara T, Tada
 
 Additional file 3 (Source Data), `40478_2026_2400_MOESM3_ESM.xlsx`, 29.237 bytes, SHA256 `d72b8ebc18c1b71be8bc4c26ffde1edd6f5da65541a7711c686073f4a36ad385`. 16 hojas, una por panel. Obtenido de `static-content.springer.com` tras fallar el endpoint `supplementaryFiles` de Europe PMC (cinco intentos: ZIP truncado a 2,8 MB o HTML) y la ruta `/bin/` de PMC (interstitial, no el archivo). **El libro no se versiona**; solo su hash y los estadísticos derivados.
 
-Entorno: numpy 2.5.3, scipy 1.18.1. Resultados completos y legibles por máquina: [`results.json`](results.json). Script: [`scripts/replay_ikegami_source_data.py`](../../scripts/replay_ikegami_source_data.py), con 6 pruebas en `tests/test_replay_ikegami.py`.
+Entorno fijado: **numpy 2.3.4, scipy 1.17.0, openpyxl 3.1.5** ([`research/requirements-ikegami-replay.txt`](../../research/requirements-ikegami-replay.txt), referenciado desde el manifiesto de CI). Los resultados se obtuvieron primero con numpy 2.5.3 / scipy 1.18.1 y se **reejecutaron bajo el stack fijado**: salida **byte a byte idéntica** salvo el campo de versiones. Se fijó 1.17.0 porque scipy 1.18.x y numpy 2.5.x exigen Python ≥3.12 y romperían el trabajo de Python 3.11 de la matriz de CI.
+
+Resultados completos y legibles por máquina: [`results.json`](results.json). Script: [`scripts/replay_ikegami_source_data.py`](../../scripts/replay_ikegami_source_data.py), con 6 pruebas en `tests/test_replay_ikegami.py` que **se ejecutan en CI sin omisiones**.
 
 ## Evidencia
 

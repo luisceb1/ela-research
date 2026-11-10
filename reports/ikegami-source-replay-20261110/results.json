@@ -3,8 +3,8 @@
  "sha256": "d72b8ebc18c1b71be8bc4c26ffde1edd6f5da65541a7711c686073f4a36ad385",
  "bytes": 29237,
  "versions": {
-  "numpy": "2.5.3",
-  "scipy": "1.18.1"
+  "numpy": "2.3.4",
+  "scipy": "1.17.0"
  },
  "sheets": [
   "Fig. 2a",
