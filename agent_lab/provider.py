@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import json
 import os
+from urllib.error import HTTPError
 from urllib.request import Request, urlopen
 
 
@@ -12,7 +13,8 @@ class ProviderError(RuntimeError):
 
 class OpenAIProvider:
     def __init__(self, model: str | None = None, api_key: str | None = None):
-        self.model = model or os.environ.get("ELA_LAB_MODEL", "gpt-5-mini")
+        self.model = model or os.environ.get("ELA_LAB_MODEL", "gpt-6.1-terra")
+        self.usage: list[dict] = []
         self.api_key = api_key or os.environ.get("OPENAI_API_KEY")
         if not self.api_key:
             raise ProviderError("OPENAI_API_KEY is required for --live; --preview is free of model calls")
@@ -25,7 +27,8 @@ class OpenAIProvider:
             "text": {"format": {
                 "type": "json_schema", "name": role, "strict": True, "schema": schema,
             }},
-            "max_output_tokens": 2400,
+            "max_output_tokens": 3500,
+            "reasoning": {"effort": "low"},
             "store": False,
         }
         req = Request(
@@ -38,6 +41,9 @@ class OpenAIProvider:
         try:
             with urlopen(req, timeout=120) as response:
                 data = json.loads(response.read(1_000_001))
+        except HTTPError as exc:
+            # HTTP status is diagnostically useful; never echo response bodies or keys.
+            raise ProviderError(f"Model request failed for {role}: HTTP {exc.code}") from None
         except Exception as exc:
             # Never include HTTP response content or authorization material in logs.
             raise ProviderError(f"Model request failed for {role}: {type(exc).__name__}") from None
@@ -61,4 +67,12 @@ class OpenAIProvider:
             raise ProviderError(f"Invalid JSON returned by {role}") from None
         if not isinstance(result, dict):
             raise ProviderError(f"Invalid object returned by {role}")
+        usage = data.get("usage", {})
+        if isinstance(usage, dict):
+            self.usage.append({
+                "role": role,
+                "input_tokens": usage.get("input_tokens"),
+                "output_tokens": usage.get("output_tokens"),
+                "total_tokens": usage.get("total_tokens"),
+            })
         return result
