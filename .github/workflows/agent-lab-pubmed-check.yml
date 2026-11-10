@@ -4,6 +4,11 @@ on:
     paths:
       - 'agent_lab/**'
       - '.github/workflows/agent-lab-pubmed-check.yml'
+  push:
+    branches: ['feature/ela-agent-lab-*']
+    paths:
+      - 'agent_lab/**'
+      - '.github/workflows/agent-lab-pubmed-check.yml'
   workflow_dispatch:
 
 permissions:
