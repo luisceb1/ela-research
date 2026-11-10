@@ -204,9 +204,13 @@ def main(argv=None) -> int:
                       help="Offline comparison with 20 author-curated label controls")
     mode.add_argument("--validate-corpus", action="store_true", help="Offline check of 20-paper register")
     mode.add_argument("--check-corpus", action="store_true", help="LIVE three-batch retrieval of 20 PubMed records")
+    mode.add_argument("--evaluate-model", action="store_true",
+                      help="One PAID Responses API model call to evaluate 20 gold-blind claims")
     mode.add_argument("--source-check", action="store_true",
                       help="LIVE PubMed source retrieval, no model API or spending")
     parser.add_argument("--output", type=Path, help="Write a local JSON report")
+    parser.add_argument("--model", default=None,
+                        help="Model for --evaluate-model (default gpt-6.1-terra)")
     args = parser.parse_args(argv)
     try:
         benchmark = load_benchmark()
@@ -229,6 +233,15 @@ def main(argv=None) -> int:
                       "records": len(corpus["sources"]), "model_calls": 0}
         elif args.check_corpus:
             report = check_full_corpus(load_corpus())
+        elif args.evaluate_model:
+            # Explicitly selected: ONE paid model call after source identity checks.
+            from .evaluation import evaluate_benchmark
+            from .provider import OpenAIProvider
+            from .provider import ProviderError
+            ids = [source["pmid"] for source in benchmark["sources"]]
+            query = " OR ".join(f"{pmid}[PMID]" for pmid in ids)
+            papers = fetch_pubmed(query, limit=len(ids))
+            report = evaluate_benchmark(benchmark, papers, OpenAIProvider(model=args.model))
         else:
             report = check_pubmed_sources(benchmark)
         rendered = json.dumps(report, indent=2, ensure_ascii=False) + "\n"
