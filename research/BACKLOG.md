@@ -31,7 +31,8 @@ La laguna que motiva #18 queda documentada en su forma **precisa**: ninguna corr
 - [x] Replay descriptivo de los datos fuente de Ikegami/Koike 2026: R1–R4 reproducidos, con control de permutación y descarte de la duración de enfermedad como explicación. Ver [informe](../reports/ikegami-source-replay-20261110/REPORT.md). Reproducibilidad interna, **no** replicación; sigue sin aportar cuentas de uniones y **no reabre #37**.
 - [x] Vigilante diario ampliado para detectar versiones revisadas por pares de los 6 preprints seguidos, con pruebas. Primer hallazgo real: Guo publicado en *Sci Transl Med* (PMID 42234776).
 - [ ] **Métodos de Guo revisado por pares**: de pago y sin registro PMC. Las filas G-a/G-b de la matriz siguen atribuidas al preprint de 2025. Entrada necesaria: acceso legítimo al texto publicado. No reintentar por continuidad.
-- [ ] Table S1 del Additional file 1 (46×15, metadatos por caso) **no inspeccionada**. Solo merece abrirse si contiene pérdida de TDP-43 cuantificada por caso, que permitiría discriminar si la coordinación UNC13A–STMN2 es efecto de dosis compartida. Requiere decisión de alcance antes de abrirla.
+- [x] Table S1/S2 inspeccionadas: **no** contienen carga de pTDP-43 por caso, luego la prueba discriminante de H2 no es ejecutable con esta fuente. Cribado de confusores entre subtipos ejecutado: RIN, PMI y pérdida neuronal no difieren; la duración sí (32/19/11 meses); la edad de inicio solo nominalmente. Enlace por caso rechazado por clave no única en Tipos 2a y 2b.
+- [ ] **Entrada necesaria para H2**: una fuente con carga de pTDP-43 cuantificada por caso junto a ambos marcadores, o una cohorte que desacople intensidad de patología y velocidad de progresión. No buscar por continuidad: requiere decisión de alcance.
 
 ## Mantenimiento técnico
 
