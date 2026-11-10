@@ -21,7 +21,7 @@ def main(argv: list[str] | None = None) -> int:
     mode.add_argument("--preview", action="store_true", help="PubMed-only, zero model calls")
     mode.add_argument("--live", action="store_true", help="Four paid OpenAI API calls")
     mode.add_argument("--history", action="store_true", help="Read saved hypotheses, no network or model calls")
-    parser.add_argument("--model", default=os.environ.get("ELA_LAB_MODEL", "gpt-5-mini"))
+    parser.add_argument("--model", default=os.environ.get("ELA_LAB_MODEL", "gpt-6.1-terra"))
     parser.add_argument("--output", type=Path, help="Optional output JSON file (local only)")
     parser.add_argument("--database", type=Path, default=Path("data/ela-agent-lab.sqlite"),
                         help="Local SQLite store for --live and --history (gitignored by default)")
