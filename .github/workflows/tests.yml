@@ -17,6 +17,26 @@ jobs:
         python: ['3.11', '3.12']
     steps:
       - uses: actions/checkout@v4
+      - name: Free unused SDK disk space for historical 8 GiB reserve checks
+        shell: bash
+        run: |
+          set -euo pipefail
+          echo "Disk before removing unused GitHub-hosted SDKs:"
+          df -h .
+          # GitHub ubuntu-latest contains large SDKs unused by this Python-only suite.
+          # Keep the existing 8 GiB reserve guards intact; never skip tests.
+          sudo rm -rf -- /usr/local/lib/android /usr/share/dotnet /opt/ghc /opt/hostedtoolcache/CodeQL
+          echo "Disk after cleanup:"
+          df -h .
+          python - <<'PY'
+          import shutil
+          from pathlib import Path
+          free = shutil.disk_usage(Path.cwd()).free
+          print(f"Available disk after runner cleanup: {free / 2**30:.2f} GiB")
+          # Extra headroom avoids flaky checks inside temporary test fixtures.
+          if free < 12 * 2**30:
+              raise SystemExit("Insufficient CI disk space: >=12 GiB required before suite")
+          PY
       - uses: actions/setup-python@v5
         with:
           python-version: ${{ matrix.python }}
