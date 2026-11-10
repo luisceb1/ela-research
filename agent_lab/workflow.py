@@ -203,6 +203,7 @@ def run_lab(query: str, papers: list[Paper], provider, root: Path) -> dict:
         "question": query,
         "model": provider.model,
         "model_calls": 4,
+        "model_usage": getattr(provider, "usage", []),
         "source_metadata_sha256": sha256(snapshot.encode("utf-8")).hexdigest(),
         "papers": sources,
         "repository_context": context,
