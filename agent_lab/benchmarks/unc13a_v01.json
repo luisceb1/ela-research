@@ -1,0 +1,267 @@
+{
+  "version": "v0.1",
+  "date": "2026-11-10",
+  "mission": "UNC13A post-deficit functional rescue evidence benchmark",
+  "scope": "Abstract-only evidence; intentionally contains wrong or overreaching claims; not 20 independent papers",
+  "expected_labels": [
+    "supported",
+    "contradicted",
+    "insufficient"
+  ],
+  "sources": [
+    {
+      "pmid": "35197626",
+      "short": "Ma et al., Nature 2022",
+      "year": 2022,
+      "kind": "journal",
+      "doi": "10.1038/s41586-022-04424-7",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/35197626/"
+    },
+    {
+      "pmid": "35197628",
+      "short": "Brown et al., Nature 2022",
+      "year": 2022,
+      "kind": "journal",
+      "doi": "10.1038/s41586-022-04436-3",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/35197628/"
+    },
+    {
+      "pmid": "38979232",
+      "short": "Keuss et al., bioRxiv 2024",
+      "year": 2024,
+      "kind": "preprint",
+      "doi": "10.1101/2024.06.20.599684",
+      "related_work": "Keuss Nature accepted 2026: do not count as independent replication",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38979232/"
+    },
+    {
+      "pmid": "40949955",
+      "short": "Guo et al., bioRxiv 2025",
+      "year": 2025,
+      "kind": "preprint",
+      "doi": "10.1101/2025.08.28.672801",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40949955/"
+    },
+    {
+      "pmid": "41573891",
+      "short": "Gomberg et al., bioRxiv 2025",
+      "year": 2025,
+      "kind": "preprint",
+      "doi": "10.64898/2025.12.01.691001",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41573891/"
+    },
+    {
+      "pmid": "36927019",
+      "short": "Baughn et al., Science 2023",
+      "year": 2023,
+      "kind": "journal",
+      "doi": "",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/36927019/"
+    },
+    {
+      "pmid": "30643292",
+      "short": "Klim et al., Nature Neuroscience 2019",
+      "year": 2019,
+      "kind": "journal",
+      "doi": "10.1038/s41593-018-0300-4",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/30643292/"
+    },
+    {
+      "pmid": "30643298",
+      "short": "Melamed et al., Nature Neuroscience 2019",
+      "year": 2019,
+      "kind": "journal",
+      "doi": "10.1038/s41593-018-0293-z",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/30643298/"
+    }
+  ],
+  "cases": [
+    {
+      "id": "UNC13A-001",
+      "pmid": "35197626",
+      "claim": "TDP-43 nuclear loss is associated with abnormal UNC13A cryptic-exon inclusion in human neuronal models.",
+      "expected": "supported",
+      "focus": "molecular",
+      "scope": "PubMed abstract",
+      "curation": "human-authored initial label; confirm against versioned full text before high-stakes conclusions"
+    },
+    {
+      "id": "UNC13A-002",
+      "pmid": "35197626",
+      "claim": "UNC13A ALS/FTD risk variants exacerbate cryptic splicing in the context of TDP-43 dysfunction.",
+      "expected": "supported",
+      "focus": "genetics",
+      "scope": "PubMed abstract",
+      "curation": "human-authored initial label; confirm against versioned full text before high-stakes conclusions"
+    },
+    {
+      "id": "UNC13A-003",
+      "pmid": "35197626",
+      "claim": "The study demonstrates a measurable survival advantage in people treated with an UNC13A antisense therapy.",
+      "expected": "insufficient",
+      "focus": "clinical",
+      "scope": "PubMed abstract",
+      "curation": "human-authored initial label; confirm against versioned full text before high-stakes conclusions"
+    },
+    {
+      "id": "UNC13A-004",
+      "pmid": "35197628",
+      "claim": "TDP-43 depletion drives UNC13A cryptic exon inclusion and loss of UNC13A protein.",
+      "expected": "supported",
+      "focus": "molecular",
+      "scope": "PubMed abstract",
+      "curation": "human-authored initial label; confirm against versioned full text before high-stakes conclusions"
+    },
+    {
+      "id": "UNC13A-005",
+      "pmid": "35197628",
+      "claim": "The study links two ALS/FTD risk-associated intronic variants to TDP-43 binding regions of UNC13A.",
+      "expected": "supported",
+      "focus": "genetics",
+      "scope": "PubMed abstract",
+      "curation": "human-authored initial label; confirm against versioned full text before high-stakes conclusions"
+    },
+    {
+      "id": "UNC13A-006",
+      "pmid": "35197628",
+      "claim": "The article reports a randomized clinical trial proving an UNC13A correction drug improves respiratory function.",
+      "expected": "insufficient",
+      "focus": "clinical",
+      "scope": "PubMed abstract",
+      "curation": "human-authored initial label; confirm against versioned full text before high-stakes conclusions"
+    },
+    {
+      "id": "UNC13A-007",
+      "pmid": "38979232",
+      "claim": "Keuss and colleagues reported ASO-mediated UNC13A splice correction and improved synaptic function in experimental neurons.",
+      "expected": "supported",
+      "focus": "functional",
+      "scope": "PubMed abstract",
+      "curation": "human-authored initial label; confirm against versioned full text before high-stakes conclusions"
+    },
+    {
+      "id": "UNC13A-008",
+      "pmid": "38979232",
+      "claim": "Its abstract proves ASO began only after synaptic dysfunction was measured in each biological replicate.",
+      "expected": "insufficient",
+      "focus": "chronology",
+      "scope": "PubMed abstract",
+      "curation": "human-authored initial label; confirm against versioned full text before high-stakes conclusions"
+    },
+    {
+      "id": "UNC13A-009",
+      "pmid": "38979232",
+      "claim": "The preprint itself establishes clinical efficacy of the ASO in ALS patients.",
+      "expected": "insufficient",
+      "focus": "clinical",
+      "scope": "PubMed abstract",
+      "curation": "human-authored initial label; confirm against versioned full text before high-stakes conclusions"
+    },
+    {
+      "id": "UNC13A-010",
+      "pmid": "40949955",
+      "claim": "The investigators identified additional TDP-43-associated cryptic splicing targets including KALRN, RAP1GAP, SYT7 and KCNQ2.",
+      "expected": "supported",
+      "focus": "targets",
+      "scope": "PubMed abstract",
+      "curation": "human-authored initial label; confirm against versioned full text before high-stakes conclusions"
+    },
+    {
+      "id": "UNC13A-011",
+      "pmid": "40949955",
+      "claim": "In the abstract, combined targeting of cryptic splicing nearly rescued the synaptic deficit in the experimental neuronal system.",
+      "expected": "supported",
+      "focus": "functional",
+      "scope": "PubMed abstract",
+      "curation": "human-authored initial label; confirm against versioned full text before high-stakes conclusions"
+    },
+    {
+      "id": "UNC13A-012",
+      "pmid": "40949955",
+      "claim": "According to the abstract, every single ASO individually restored neuronal function completely.",
+      "expected": "contradicted",
+      "focus": "functional",
+      "scope": "PubMed abstract",
+      "curation": "human-authored initial label; confirm against versioned full text before high-stakes conclusions"
+    },
+    {
+      "id": "UNC13A-013",
+      "pmid": "41573891",
+      "claim": "The snRNA strategy was reported to correct mis-splicing of both STMN2 and UNC13A transcripts under TDP-43 loss.",
+      "expected": "supported",
+      "focus": "molecular",
+      "scope": "PubMed abstract",
+      "curation": "human-authored initial label; confirm against versioned full text before high-stakes conclusions"
+    },
+    {
+      "id": "UNC13A-014",
+      "pmid": "41573891",
+      "claim": "The authors report restored axonal regeneration capacity in their STMN2-related human motor neuron experiments.",
+      "expected": "supported",
+      "focus": "functional",
+      "scope": "PubMed abstract",
+      "curation": "human-authored initial label; confirm against versioned full text before high-stakes conclusions"
+    },
+    {
+      "id": "UNC13A-015",
+      "pmid": "41573891",
+      "claim": "The abstract explicitly demonstrates UNC13A-targeted treatment restores eEPSC in human neurons with a documented pretreatment deficit.",
+      "expected": "insufficient",
+      "focus": "chronology",
+      "scope": "PubMed abstract",
+      "curation": "human-authored initial label; confirm against versioned full text before high-stakes conclusions"
+    },
+    {
+      "id": "UNC13A-016",
+      "pmid": "36927019",
+      "claim": "Targeting abnormal STMN2 RNA processing with ASOs restored axonal regeneration in TDP-43-deficient motor neuron models.",
+      "expected": "supported",
+      "focus": "functional",
+      "scope": "PubMed abstract",
+      "curation": "human-authored initial label; confirm against versioned full text before high-stakes conclusions"
+    },
+    {
+      "id": "UNC13A-017",
+      "pmid": "36927019",
+      "claim": "A mouse model with humanized STMN2 processing enabled an in-vivo test of molecular splicing correction.",
+      "expected": "supported",
+      "focus": "model",
+      "scope": "PubMed abstract",
+      "curation": "human-authored initial label; confirm against versioned full text before high-stakes conclusions"
+    },
+    {
+      "id": "UNC13A-018",
+      "pmid": "30643292",
+      "claim": "STMN2 stabilization improved axonal regeneration or neurite outgrowth after TDP-43 depletion in experimental models.",
+      "expected": "supported",
+      "focus": "functional",
+      "scope": "PubMed abstract",
+      "curation": "human-authored initial label; confirm against versioned full text before high-stakes conclusions"
+    },
+    {
+      "id": "UNC13A-019",
+      "pmid": "30643298",
+      "claim": "Reduced TDP-43 revealed a cryptic polyadenylation event that truncates STMN2 transcripts.",
+      "expected": "supported",
+      "focus": "molecular",
+      "scope": "PubMed abstract",
+      "curation": "human-authored initial label; confirm against versioned full text before high-stakes conclusions"
+    },
+    {
+      "id": "UNC13A-020",
+      "pmid": "30643298",
+      "claim": "The study demonstrated clinical recovery in patients after therapeutic STMN2 restoration.",
+      "expected": "insufficient",
+      "focus": "clinical",
+      "scope": "PubMed abstract",
+      "curation": "human-authored initial label; confirm against versioned full text before high-stakes conclusions"
+    }
+  ],
+  "notes": [
+    "20 claim-level controls drawn from eight independently identified PubMed records, NOT a 20-paper review.",
+    "Insufficient means not justified by the abstract, not proven false in the universe of evidence.",
+    "Preprints may later be peer-reviewed: do not double count versions of the same experiment.",
+    "For temporal conclusions compare full protocols; abstract-only evidence is inadequate.",
+    "Labels were authored from public source summaries and need independent curator confirmation."
+  ]
+}
