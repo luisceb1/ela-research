@@ -5,6 +5,7 @@ import tempfile
 import unittest
 from unittest.mock import patch
 
+from agent_lab.memory import list_hypotheses, save_report
 from agent_lab.provider import OpenAIProvider, ProviderError
 from agent_lab.sources import Paper, fetch_pubmed
 from agent_lab.workflow import EvidenceError, run_lab
@@ -142,6 +143,52 @@ class TestWorkflow(unittest.TestCase):
         with patch.dict("os.environ", {}, clear=True):
             with self.assertRaises(ProviderError):
                 OpenAIProvider()
+
+
+class TestMemory(unittest.TestCase):
+    def setUp(self):
+        self.temp = tempfile.TemporaryDirectory()
+        self.addCleanup(self.temp.cleanup)
+        self.root = Path(self.temp.name)
+        self.database = self.root / "data" / "memory.sqlite"
+        for filename in ("AGENTS.md", "research/STATE.md",
+                         "research/BACKLOG.md", "research/PROTOCOL.md"):
+            path = self.root / filename
+            path.parent.mkdir(parents=True, exist_ok=True)
+            path.write_text("No analysis without data gates.", encoding="utf-8")
+        paper = Paper("123", "Example", "Measured response.", "2022", "Journal", "")
+        self.report = run_lab("Question", [paper], FakeProvider(), self.root)
+
+    def test_idempotent_storage_and_queryable_hypotheses(self):
+        first = save_report(self.database, self.report)
+        second = save_report(self.database, self.report)
+        self.assertEqual(first, second)
+        self.assertEqual(len(first), 64)
+        items = list_hypotheses(self.database)
+        self.assertEqual(len(items), 1)
+        self.assertEqual(items[0]["pmids"], ["123"])
+        self.assertEqual(items[0]["report_id"], first)
+
+    def test_refuse_publishing_invalid_or_unreviewed_data(self):
+        report = dict(self.report)
+        report["status"] = "VALIDATED_CLINICALLY"
+        with self.assertRaises(ValueError):
+            save_report(self.database, report)
+        report = dict(self.report)
+        report["agents"] = {
+            **self.report["agents"],
+            "hypothesis": {"hypotheses": [
+                {**self.report["agents"]["hypothesis"]["hypotheses"][0],
+                 "pmids": ["999"]},
+            ]},
+        }
+        with self.assertRaises(ValueError):
+            save_report(self.database, report)
+
+    def test_limit_fails_closed(self):
+        save_report(self.database, self.report)
+        with self.assertRaises(ValueError):
+            list_hypotheses(self.database, limit=0)
 
 
 if __name__ == "__main__":
