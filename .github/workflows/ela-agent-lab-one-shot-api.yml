@@ -1,0 +1,86 @@
+name: ELA Agent Lab - one-time authorized API evaluation
+on:
+  push:
+    branches:
+      - feature/ela-agent-lab-mvp-20261110
+    paths:
+      - agent_lab/live_runs/20261110-authorized.trigger
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ela-api-20261110-one-time
+  cancel-in-progress: false
+
+jobs:
+  run-real-model:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      ELA_LAB_MODEL: gpt-6.1-terra
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Require existing repository API secret without logging it
+        shell: bash
+        run: |
+          if [ -z "${OPENAI_API_KEY:-}" ]; then
+            echo "::error::Missing GitHub Actions secret OPENAI_API_KEY. No model calls made."
+            exit 1
+          fi
+          echo "Repository API credential is configured (value hidden)."
+      - name: Evaluate 20 UNC13A claims against real PubMed abstracts (one paid model call)
+        run: |
+          mkdir -p data
+          python -m agent_lab.benchmark --evaluate-model --model gpt-6.1-terra --output data/unc13a-benchmark-real-20261110.json
+      - name: Run four agent roles on real PubMed abstracts (four paid model calls)
+        run: |
+          python -m agent_lab --live --model gpt-6.1-terra --max-papers 5 \
+            --query 'UNC13A AND TDP-43 AND synaptic rescue' \
+            --output data/unc13a-four-agents-real-20261110.json
+      - name: Record safe token and validation metrics
+        if: success()
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json, os
+          from pathlib import Path
+          a=json.loads(Path('data/unc13a-benchmark-real-20261110.json').read_text())
+          b=json.loads(Path('data/unc13a-four-agents-real-20261110.json').read_text())
+          usage=a.get('usage',[])+b.get('model_usage',[])
+          inp=sum(x.get('input_tokens') or 0 for x in usage)
+          out=sum(x.get('output_tokens') or 0 for x in usage)
+          estimated_standard_max=(inp*1+out*5)/1_000_000
+          lines=[
+            '# ELA Research Lab: real OpenAI API evaluation',
+            '',
+            f"- Model: {a['model']}",
+            f"- API calls recorded: {a['model_calls']+b['model_calls']}",
+            f"- Benchmark labels: {a['score']['correct']}/{a['score']['total']} correct vs provisional curator labels",
+            f"- Unsupported 'supported' claims: {len(a['score']['unsafe_overclaims'])}",
+            f"- Literature sources used by agents: {len(b['papers'])}",
+            f"- Agent output: {b['status']}",
+            f"- Usage: {inp} input / {out} output tokens",
+            f"- Estimated upper bound at standard uncached text rates: US$ {estimated_standard_max:.4f} (does not include any other fees)",
+            '',
+            'This is a software/evidence-consistency test, NOT a scientific discovery or medical finding.',
+            'The benchmark labels are provisional and require independent review.',
+          ]
+          with open(os.environ['GITHUB_STEP_SUMMARY'],'a',encoding='utf-8') as f:
+            f.write('\n'.join(lines)+'\n')
+          print('Model run reports stored as private 7-day GitHub Actions artifacts.')
+          PY
+      - name: Preserve draft reports for scientific review
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ela-agent-lab-real-20261110
+          path: |
+            data/unc13a-benchmark-real-20261110.json
+            data/unc13a-four-agents-real-20261110.json
+          if-no-files-found: ignore
+          retention-days: 7
