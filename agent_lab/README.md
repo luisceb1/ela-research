@@ -38,7 +38,7 @@ Las dependencias del MVP son solo las de la biblioteca estándar Python 3.11+. L
 ## Pruebas
 
 ~~~bash
-python -m unittest tests.test_agent_lab -v
+python -m unittest discover -s tests -p test_agent_lab.py -v
 python scripts/run_offline_tests.py --fail-on-skip --report test-results/offline.json
 ~~~
 
