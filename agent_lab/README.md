@@ -16,13 +16,13 @@ Ejecutar las cuatro fases, **solo mediante autorización explícita del operador
 
 ~~~bash
 export OPENAI_API_KEY="your-private-key"
-export ELA_LAB_MODEL="gpt-5-mini"
+export ELA_LAB_MODEL="gpt-6.1-terra"
 python -m agent_lab --live --query "UNC13A TDP-43 synaptic rescue" --max-papers 5 --output reports/agent_lab/local-draft.json
 ~~~
 
 En PowerShell, sustituir **export** por **$env:OPENAI_API_KEY="..."** y **$env:ELA_LAB_MODEL="..."**. No introducir claves en GitHub ni en los comandos compartidos. Recomendable definir **NCBI_EMAIL** según las directrices de NCBI. **NCBI_API_KEY** es opcional.
 
-Las dependencias del MVP son solo las de la biblioteca estándar Python 3.11+. Los modelos compatibles con Structured Outputs pueden configurarse con **ELA_LAB_MODEL**. Cuatro llamadas por ejecución, sin bucles o reintentos automáticos. La ejecución en modo **--preview** consulta PubMed pero **no** llama a modelos.
+Las dependencias del MVP son solo las de la biblioteca estándar Python 3.11+. Los modelos compatibles con Structured Outputs pueden configurarse con **ELA_LAB_MODEL**. Cuatro llamadas por ejecución, sin bucles o reintentos automáticos. El modelo por defecto es `gpt-6.1-terra` (Responses API, Structured Outputs); el adaptador limita cada respuesta a 3.500 tokens de salida, con razonamiento bajo. Debe verificarse la tarifa API vigente antes de ejecutar; la suscripción ChatGPT no incluye crédito API. La primera prueba de extremo a extremo de la API real sigue pendiente de credenciales y aprobación de gasto. La ejecución en modo **--preview** consulta PubMed pero **no** llama a modelos.
 
 Las ejecuciones **--live** guardan además el informe y las hipótesis candidatas en SQLite, por defecto en **data/ela-agent-lab.sqlite** (ignorado por Git). Para inspeccionar memoria local sin red ni coste:
 
