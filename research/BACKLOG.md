@@ -13,6 +13,17 @@ The K26 request and separate A25 support message have already been sent with aut
 
 Si no hay entrada nueva, registrar que ambas líneas siguen bloqueadas y detener ese ciclo. No crear otra auditoría equivalente, sustituir datos por simulación o cambiar de endpoint para evitar el bloqueo.
 
+## Entradas del 10/11/2026
+
+Confirmado por Luis: sin archivo K26 y sin acceso AD Workbench. Las dos líneas prioritarias (#37, #44) siguen bloqueadas por sus entradas ya registradas; sin seguimiento automático.
+
+- [ ] **Segunda curación humana** de las 12 filas de `reports/unc13a-intervention-timing-20261110/matrix.tsv`, con atención a las 2 clasificadas *indeterminate*. Hasta entonces la matriz no se considera curada ni se cita como conclusión.
+- [ ] Métodos de Mallika (PMID 42779622) y Cao (PMID 42779638): inaccesibles vía Europe PMC (registro restringido y sin PMCID). Requeriría permitir `biorxiv.org` en la red de la sesión. Son las dos fuentes que más pesan para la hipótesis de dependencia del tipo neuronal.
+- [x] Revisar PMID 42983891 contra la puerta de #37: **rechazada** como fuente técnica (qRT-PCR/ddPCR post mortem, sin cuentas de uniones). Conservada como contexto. No abre un cuarto candidato.
+- [x] Acotar a TITLE_ABS la consulta `long_reads` del vigilante diario, con pruebas de alcance de campo.
+
+El hallazgo negativo (0 experimentos posdéficit accesibles) documenta la laguna que motiva #18, pero **no** autoriza ningún ensayo: seguiría exigiendo datos con déficit funcional medido antes de la primera dosis y autorización específica.
+
 ## Mantenimiento técnico
 
 - [x] Separar estado/backlog actuales del historial íntegro.
