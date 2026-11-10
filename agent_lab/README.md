@@ -32,6 +32,29 @@ python -m agent_lab --history
 
 Los informes se guardan como **borradores inmutables** identificados por hash. La memoria es local y no sincroniza contenido con terceros. No equivale a una enciclopedia verificada.
 
+## Primera misión y benchmark (10/11/2026)
+
+Se ha añadido **un corpus de 20 publicaciones indexadas en PubMed** (los preprints están etiquetados como tales), más un conjunto de **20 afirmaciones de control sobre 8 artículos**. Son dos objetos distintos: no confundir veinte artículos con veinte afirmaciones.
+
+~~~bash
+# Validación de formatos y claves, siempre offline
+python -m agent_lab.benchmark --validate
+python -m agent_lab.benchmark --validate-corpus
+
+# Comprobación REAL de metadatos por HTTPS: 8 artículos, o los 20 en grupos 8+8+4
+python -m agent_lab.benchmark --source-check
+python -m agent_lab.benchmark --check-corpus
+
+# Pruebas offline del evaluador
+python -m unittest discover -s tests -p 'test_agent_benchmark.py' -v
+~~~
+
+Un workflow específico de PR ejecuta la comprobación bibliográfica, sin modelos de pago. Los controles comprueban únicamente identidad, DOI cuando consta y presencia de resumen. **No demuestran que el etiquetado científico sea correcto.**
+
+**Informe de revisión exploratoria:** [contraste UNC13A por tipo neuronal](../reports/agent-lab/2026-11-10-unc13a-context/REPORT.md). Los dos preprints de septiembre de 2026 (Mallika y Cao) merecen revisión crítica de sus diferencias entre neuronas espinales y del prosencéfalo. No implican eficacia clínica ni una nueva replicación del proyecto.
+
+**Estado de los cuatro agentes:** su código y su test con proveedores simulados están integrados; ejecutar los cuatro de verdad exige clave API, permiso de coste y evaluación manual de sus resultados. No se ha hecho tal ejecución por defecto.
+
 ## Garantías y límites
 
 - Solo dos endpoints oficiales NCBI: esearch + efetch; máximo ocho artículos por solicitud, tamaño y tiempo limitados.
