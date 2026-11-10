@@ -7,6 +7,7 @@ import os
 from pathlib import Path
 import sys
 
+from .memory import list_hypotheses, save_report
 from .provider import OpenAIProvider, ProviderError
 from .sources import fetch_pubmed
 from .workflow import EvidenceError, run_lab
@@ -14,15 +15,25 @@ from .workflow import EvidenceError, run_lab
 
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--query", required=True, help="PubMed search, not an instruction to execute")
+    parser.add_argument("--query", help="PubMed search, not an instruction to execute")
     parser.add_argument("--max-papers", type=int, default=5, choices=range(1, 9), metavar="1-8")
     mode = parser.add_mutually_exclusive_group(required=True)
     mode.add_argument("--preview", action="store_true", help="PubMed-only, zero model calls")
     mode.add_argument("--live", action="store_true", help="Four paid OpenAI API calls")
+    mode.add_argument("--history", action="store_true", help="Read saved hypotheses, no network or model calls")
     parser.add_argument("--model", default=os.environ.get("ELA_LAB_MODEL", "gpt-5-mini"))
     parser.add_argument("--output", type=Path, help="Optional output JSON file (local only)")
+    parser.add_argument("--database", type=Path, default=Path("data/ela-agent-lab.sqlite"),
+                        help="Local SQLite store for --live and --history (gitignored by default)")
     args = parser.parse_args(argv)
+    if not args.history and not args.query:
+        parser.error("--query is required for --preview and --live")
     try:
+        if args.history:
+            print(json.dumps({"status": "UNVERIFIED_HYPOTHESIS_HISTORY",
+                              "hypotheses": list_hypotheses(args.database)},
+                             ensure_ascii=False, indent=2))
+            return 0
         papers = fetch_pubmed(args.query, args.max_papers)
         if args.preview:
             result = {
@@ -35,6 +46,7 @@ def main(argv: list[str] | None = None) -> int:
             provider = OpenAIProvider(model=args.model)
             root = Path(__file__).resolve().parents[1]
             result = run_lab(args.query, papers, provider, root)
+            result["memory_report_id"] = save_report(args.database, result)
 
         rendered = json.dumps(result, ensure_ascii=False, indent=2) + "\n"
         if args.output:
