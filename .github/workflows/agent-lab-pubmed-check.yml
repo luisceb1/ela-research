@@ -1,0 +1,33 @@
+name: ELA Agent Lab PubMed verification (no model API)
+on:
+  pull_request:
+    paths:
+      - 'agent_lab/**'
+      - '.github/workflows/agent-lab-pubmed-check.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  source-check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 4
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate curated benchmark offline
+        run: python -m agent_lab.benchmark --validate
+      - name: Query LIVE PubMed by eight fixed PMIDs (free, no models)
+        run: |
+          mkdir -p test-results
+          python -m agent_lab.benchmark --source-check --output test-results/agent-lab-pubmed-source-check.json
+      - name: Upload source verification report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: agent-lab-pubmed-source-check
+          path: test-results/
+          if-no-files-found: warn
