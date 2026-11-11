@@ -1,0 +1,24 @@
+{
+  "project": "SRP166282",
+  "provenance": "reports/unc13a-control-annotation-20261103/complete-assessment.json, field targets_canonical_cryptic_left_cryptic_right",
+  "assembly": "GRCh38/hg38",
+  "convention": "intronic 0-based half-open; converted by the probe to [start0+1, end0] 1-based inclusive",
+  "chromosome": "chr19",
+  "strand": "-",
+  "junctions": {
+    "canonical": [
+      17641556,
+      17642844
+    ],
+    "cryptic_left": [
+      17641556,
+      17642413
+    ],
+    "cryptic_right": [
+      17642541,
+      17642844
+    ]
+  },
+  "positive_control": "canonical",
+  "positive_control_note": "Annotated exon 20-21 junction; shows the measurement works at this locus and is excluded from the coverage gate."
+}

@@ -49,6 +49,18 @@ A **laboratory collaboration message** and the **structure of a commentary** are
 
 Honest ceiling, recorded so it is not forgotten: with no laboratory, no budget and the raw-data pilot already closed at coverage [1,0,0], this project's realistic contribution is verification and synthesis of published work, not new biological measurement. Nothing here helps a patient today and nothing here supports any clinical decision.
 
+## recount3 breakthrough and its limit — 11 November
+
+**Issue #37's measurement blocker is solved as a capability.** All four candidate families were rejected for want of accessible junction counts; recount3 publishes them already quantified. For 24.5 MB and no cost, the project now holds exon-exon junction counts for a TDP-43 depletion experiment in human neurons, with conditions **declared by the deposit** rather than inferred, and no FASTQ or alignment involved. The probe is written and tested, so applying the same route to another project costs minutes and a few megabytes. [Report](../reports/recount3-unc13a-20261111/REPORT.md).
+
+**The dataset inspected does not pass the gate.** SRP166282 is Klim 2019, whose data #37 had rejected through Irwin for lacking linkable junction counts; recount3 supplies them. Design reconstructed from declared metadata: 6 TDP-43 knockdown against 12 controls, both batches containing both conditions, **but a single cell line (HUES3)**, so replicates are independent cultures and not genetically independent donors. All three sealed target junctions match **exactly**, the coordinate-convention guard passes, and the annotation pattern is as the biology predicts: canonical annotated, both cryptic not.
+
+Coverage decides it. The canonical positive control is measured in 18/18 samples at up to 66 reads, so measurement is not the failure, yet the cryptic junctions reach a maximum of **5 reads against the prospective minimum of 20**, and `gate_met` is false with the positive control excluded from the gate. **Rejected on coverage**, cause isolated to depth at the locus.
+
+Recorded as an observation strictly below threshold and carrying no inference: every cryptic read seen is in a knockdown sample, none in the 12 controls. At a maximum of 5 reads those zeros are **missing data at this depth, not biological zeros**; no PSI, p-value or effect is computed, and the minimum of 20 is not relaxed.
+
+Next discriminating step: UNC13A is expressed lower in spinal cord than cortex (Ikegami 2026, Mallika's GTEx panel), and these are spinal motor neurons, so a cortical or i3Neuron depletion dataset is the natural candidate. ANSWER_ALS and TARGET_ALS are in recount3 but are **patient cohorts, not depletion experiments**, so using them would answer a different question and needs its own plan; the endpoint is not switched to dodge this rejection.
+
 ## Access and communications: dated evidence only
 
 The 04 November administrative audit records AD Workbench dataset-approval wording followed by review wording, and a pending workspace. Neither establishes effective access or a technical manifest. [Audit](../reports/continuity-20261104/REPORT.md). The expanded public K26 search found no attributable source table in the checked routes; this is not universal proof of absence. [Search](../reports/fig4d-source-search-20261104/REPORT.md).

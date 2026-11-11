@@ -1,0 +1,468 @@
+{
+ "project": "SRP166282",
+ "chromosome": "chr19",
+ "coordinate_conversion": "sealed intronic 0-based half-open -> [start0+1, end0] 1-based inclusive",
+ "inputs": {
+  "sra.junctions.SRP166282.ALL.RR.gz": {
+   "sha256": "1f2f8e066481e457d92687bbb6bdc8bef3c4555ab3c3a2ea5b6daaeb7ce3ae8a",
+   "bytes": 9646299
+  },
+  "sra.junctions.SRP166282.ALL.MM.gz": {
+   "sha256": "27d905cd182c4de61d810f1b35f6ac368ca72ee5817dedabc22c854fa53c7bf1",
+   "bytes": 14862092
+  },
+  "sra.junctions.SRP166282.ALL.ID.gz": {
+   "sha256": "3b07b01736c0702a795ed01077b94cb840bcb55c555b7cbda8988b334931f37a",
+   "bytes": 95
+  },
+  "sra.recount_project.SRP166282.MD.gz": {
+   "sha256": "b6e4fcbc40d616a49298eba8de9d3300d53166701b706a8347e84092d1d54d8f",
+   "bytes": 271
+  },
+  "sra.sra.SRP166282.MD.gz": {
+   "sha256": "ba799f89188d047104c883217d7720e131ee06cd64f0e67df1149dd6e1257930",
+   "bytes": 3108
+  }
+ },
+ "matrix_header": {
+  "rows": 599768,
+  "columns": 18,
+  "nonzeros": 3978841
+ },
+ "n_samples": 18,
+ "per_junction": {
+  "canonical": {
+   "max": 66,
+   "samples_at_or_above_threshold": 10,
+   "samples_with_any_read": 18,
+   "located": {
+    "row": 280856,
+    "start_1based": 17641557,
+    "end_1based": 17642844,
+    "strand": "-",
+    "annotated": "1",
+    "left_motif": "CT",
+    "right_motif": "AC"
+   }
+  },
+  "cryptic_left": {
+   "max": 4,
+   "samples_at_or_above_threshold": 0,
+   "samples_with_any_read": 3,
+   "located": {
+    "row": 280855,
+    "start_1based": 17641557,
+    "end_1based": 17642413,
+    "strand": "-",
+    "annotated": "0",
+    "left_motif": "CT",
+    "right_motif": "AC"
+   }
+  },
+  "cryptic_right": {
+   "max": 5,
+   "samples_at_or_above_threshold": 0,
+   "samples_with_any_read": 4,
+   "located": {
+    "row": 280858,
+    "start_1based": 17642542,
+    "end_1based": 17642844,
+    "strand": "-",
+    "annotated": "0",
+    "left_motif": "CT",
+    "right_motif": "AC"
+   }
+  }
+ },
+ "verdict": {
+  "min_coverage_required": 20,
+  "positive_control": "canonical",
+  "positive_control_meets_coverage": true,
+  "gate_junctions": [
+   "cryptic_left",
+   "cryptic_right"
+  ],
+  "gate_met": false,
+  "interpretation_rule": "A count below the threshold is MISSING DATA, not a biological zero. No effect, PSI or test is computed here."
+ },
+ "samples": [
+  {
+   "column": 1,
+   "rail_id": "1641630",
+   "run": "SRR8083864",
+   "sample_name": "GSM3439289",
+   "sample_title": "fluorescent siRNA rep1",
+   "genotype": "control",
+   "sirna_type": "fluorescent",
+   "cell_type": "differentiated HUES3 into hMNs",
+   "date": "2013-01-10",
+   "counts": {
+    "canonical": 66,
+    "cryptic_left": 0,
+    "cryptic_right": 0
+   },
+   "meets_coverage": {
+    "canonical": true,
+    "cryptic_left": false,
+    "cryptic_right": false
+   }
+  },
+  {
+   "column": 2,
+   "rail_id": "1641662",
+   "run": "SRR8083865",
+   "sample_name": "GSM3439290",
+   "sample_title": "scramble siRNA rep1",
+   "genotype": "control",
+   "sirna_type": "scramble",
+   "cell_type": "differentiated HUES3 into hMNs",
+   "date": "2013-01-10",
+   "counts": {
+    "canonical": 56,
+    "cryptic_left": 0,
+    "cryptic_right": 0
+   },
+   "meets_coverage": {
+    "canonical": true,
+    "cryptic_left": false,
+    "cryptic_right": false
+   }
+  },
+  {
+   "column": 3,
+   "rail_id": "1641727",
+   "run": "SRR8083867",
+   "sample_name": "GSM3439292",
+   "sample_title": "TDP43 siRNA rep1",
+   "genotype": "TDP43 knockdown",
+   "sirna_type": "TDP43",
+   "cell_type": "differentiated HUES3 into hMNs",
+   "date": "2013-01-10",
+   "counts": {
+    "canonical": 62,
+    "cryptic_left": 4,
+    "cryptic_right": 3
+   },
+   "meets_coverage": {
+    "canonical": true,
+    "cryptic_left": false,
+    "cryptic_right": false
+   }
+  },
+  {
+   "column": 4,
+   "rail_id": "1641757",
+   "run": "SRR8083868",
+   "sample_name": "GSM3439293",
+   "sample_title": "TDP43 siRNA rep2",
+   "genotype": "TDP43 knockdown",
+   "sirna_type": "TDP43",
+   "cell_type": "differentiated HUES3 into hMNs",
+   "date": "2013-01-10",
+   "counts": {
+    "canonical": 53,
+    "cryptic_left": 4,
+    "cryptic_right": 5
+   },
+   "meets_coverage": {
+    "canonical": true,
+    "cryptic_left": false,
+    "cryptic_right": false
+   }
+  },
+  {
+   "column": 5,
+   "rail_id": "1641790",
+   "run": "SRR8083869",
+   "sample_name": "GSM3439294",
+   "sample_title": "no siRNA rep1",
+   "genotype": "control",
+   "sirna_type": "none",
+   "cell_type": "differentiated HUES3 into hMNs",
+   "date": "2013-01-10",
+   "counts": {
+    "canonical": 61,
+    "cryptic_left": 0,
+    "cryptic_right": 0
+   },
+   "meets_coverage": {
+    "canonical": true,
+    "cryptic_left": false,
+    "cryptic_right": false
+   }
+  },
+  {
+   "column": 6,
+   "rail_id": "1642175",
+   "run": "SRR8083875",
+   "sample_name": "GSM3439300",
+   "sample_title": "TDP43 siRNA rep4",
+   "genotype": "TDP43 knockdown",
+   "sirna_type": "TDP43",
+   "cell_type": "differentiated HUES3 into hMNs",
+   "date": "2013-06-10",
+   "counts": {
+    "canonical": 23,
+    "cryptic_left": 1,
+    "cryptic_right": 1
+   },
+   "meets_coverage": {
+    "canonical": true,
+    "cryptic_left": false,
+    "cryptic_right": false
+   }
+  },
+  {
+   "column": 7,
+   "rail_id": "1642271",
+   "run": "SRR8083878",
+   "sample_name": "GSM3439303",
+   "sample_title": "scramble siRNA rep5",
+   "genotype": "control",
+   "sirna_type": "scramble",
+   "cell_type": "differentiated HUES3 into hMNs",
+   "date": "2013-06-10",
+   "counts": {
+    "canonical": 10,
+    "cryptic_left": 0,
+    "cryptic_right": 0
+   },
+   "meets_coverage": {
+    "canonical": false,
+    "cryptic_left": false,
+    "cryptic_right": false
+   }
+  },
+  {
+   "column": 8,
+   "rail_id": "1642301",
+   "run": "SRR8083879",
+   "sample_name": "GSM3439304",
+   "sample_title": "scramble siRNA rep6",
+   "genotype": "control",
+   "sirna_type": "scramble",
+   "cell_type": "differentiated HUES3 into hMNs",
+   "date": "2013-06-10",
+   "counts": {
+    "canonical": 19,
+    "cryptic_left": 0,
+    "cryptic_right": 0
+   },
+   "meets_coverage": {
+    "canonical": false,
+    "cryptic_left": false,
+    "cryptic_right": false
+   }
+  },
+  {
+   "column": 9,
+   "rail_id": "1642524",
+   "run": "SRR8083880",
+   "sample_name": "GSM3439305",
+   "sample_title": "TDP43 siRNA rep5",
+   "genotype": "TDP43 knockdown",
+   "sirna_type": "TDP43",
+   "cell_type": "differentiated HUES3 into hMNs",
+   "date": "2013-06-10",
+   "counts": {
+    "canonical": 15,
+    "cryptic_left": 0,
+    "cryptic_right": 0
+   },
+   "meets_coverage": {
+    "canonical": false,
+    "cryptic_left": false,
+    "cryptic_right": false
+   }
+  },
+  {
+   "column": 10,
+   "rail_id": "1642553",
+   "run": "SRR8083881",
+   "sample_name": "GSM3439306",
+   "sample_title": "TDP43 siRNA rep6",
+   "genotype": "TDP43 knockdown",
+   "sirna_type": "TDP43",
+   "cell_type": "differentiated HUES3 into hMNs",
+   "date": "2013-06-10",
+   "counts": {
+    "canonical": 14,
+    "cryptic_left": 0,
+    "cryptic_right": 0
+   },
+   "meets_coverage": {
+    "canonical": false,
+    "cryptic_left": false,
+    "cryptic_right": false
+   }
+  },
+  {
+   "column": 11,
+   "rail_id": "3283360",
+   "run": "SRR8083866",
+   "sample_name": "GSM3439291",
+   "sample_title": "scramble siRNA rep2",
+   "genotype": "control",
+   "sirna_type": "scramble",
+   "cell_type": "differentiated HUES3 into hMNs",
+   "date": "2013-01-10",
+   "counts": {
+    "canonical": 61,
+    "cryptic_left": 0,
+    "cryptic_right": 0
+   },
+   "meets_coverage": {
+    "canonical": true,
+    "cryptic_left": false,
+    "cryptic_right": false
+   }
+  },
+  {
+   "column": 12,
+   "rail_id": "3284000",
+   "run": "SRR8083870",
+   "sample_name": "GSM3439295",
+   "sample_title": "no siRNA rep2",
+   "genotype": "control",
+   "sirna_type": "none",
+   "cell_type": "differentiated HUES3 into hMNs",
+   "date": "2013-06-10",
+   "counts": {
+    "canonical": 17,
+    "cryptic_left": 0,
+    "cryptic_right": 0
+   },
+   "meets_coverage": {
+    "canonical": false,
+    "cryptic_left": false,
+    "cryptic_right": false
+   }
+  },
+  {
+   "column": 13,
+   "rail_id": "3284064",
+   "run": "SRR8083871",
+   "sample_name": "GSM3439296",
+   "sample_title": "fluorescent siRNA rep2",
+   "genotype": "control",
+   "sirna_type": "fluorescent",
+   "cell_type": "differentiated HUES3 into hMNs",
+   "date": "2013-06-10",
+   "counts": {
+    "canonical": 31,
+    "cryptic_left": 0,
+    "cryptic_right": 0
+   },
+   "meets_coverage": {
+    "canonical": true,
+    "cryptic_left": false,
+    "cryptic_right": false
+   }
+  },
+  {
+   "column": 14,
+   "rail_id": "3284128",
+   "run": "SRR8083872",
+   "sample_name": "GSM3439297",
+   "sample_title": "scramble siRNA rep3",
+   "genotype": "control",
+   "sirna_type": "scramble",
+   "cell_type": "differentiated HUES3 into hMNs",
+   "date": "2013-06-10",
+   "counts": {
+    "canonical": 36,
+    "cryptic_left": 0,
+    "cryptic_right": 0
+   },
+   "meets_coverage": {
+    "canonical": true,
+    "cryptic_left": false,
+    "cryptic_right": false
+   }
+  },
+  {
+   "column": 15,
+   "rail_id": "3284192",
+   "run": "SRR8083873",
+   "sample_name": "GSM3439298",
+   "sample_title": "scramble siRNA rep4",
+   "genotype": "control",
+   "sirna_type": "scramble",
+   "cell_type": "differentiated HUES3 into hMNs",
+   "date": "2013-06-10",
+   "counts": {
+    "canonical": 17,
+    "cryptic_left": 0,
+    "cryptic_right": 0
+   },
+   "meets_coverage": {
+    "canonical": false,
+    "cryptic_left": false,
+    "cryptic_right": false
+   }
+  },
+  {
+   "column": 16,
+   "rail_id": "3284257",
+   "run": "SRR8083874",
+   "sample_name": "GSM3439299",
+   "sample_title": "TDP43 siRNA rep3",
+   "genotype": "TDP43 knockdown",
+   "sirna_type": "TDP43",
+   "cell_type": "differentiated HUES3 into hMNs",
+   "date": "2013-06-10",
+   "counts": {
+    "canonical": 25,
+    "cryptic_left": 0,
+    "cryptic_right": 2
+   },
+   "meets_coverage": {
+    "canonical": true,
+    "cryptic_left": false,
+    "cryptic_right": false
+   }
+  },
+  {
+   "column": 17,
+   "rail_id": "3284384",
+   "run": "SRR8083876",
+   "sample_name": "GSM3439301",
+   "sample_title": "no siRNA rep3",
+   "genotype": "control",
+   "sirna_type": "none",
+   "cell_type": "differentiated HUES3 into hMNs",
+   "date": "2013-06-10",
+   "counts": {
+    "canonical": 7,
+    "cryptic_left": 0,
+    "cryptic_right": 0
+   },
+   "meets_coverage": {
+    "canonical": false,
+    "cryptic_left": false,
+    "cryptic_right": false
+   }
+  },
+  {
+   "column": 18,
+   "rail_id": "3284449",
+   "run": "SRR8083877",
+   "sample_name": "GSM3439302",
+   "sample_title": "fluorescent siRNA rep3",
+   "genotype": "control",
+   "sirna_type": "fluorescent",
+   "cell_type": "differentiated HUES3 into hMNs",
+   "date": "2013-06-10",
+   "counts": {
+    "canonical": 16,
+    "cryptic_left": 0,
+    "cryptic_right": 0
+   },
+   "meets_coverage": {
+    "canonical": false,
+    "cryptic_left": false,
+    "cryptic_right": false
+   }
+  }
+ ]
+}
