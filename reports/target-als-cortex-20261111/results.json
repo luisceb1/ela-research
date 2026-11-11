@@ -73,11 +73,40 @@
    "n": 3,
    "samples_with_any_cryptic_read": 0,
    "samples_with_cryptic_at_or_above_threshold": 0,
-   "cryptic_fraction": {
+   "summed_ratio": {
     "n": 3,
     "median": 0.0,
     "min": 0.0,
     "max": 0.0
+   },
+   "inclusion_psi": {
+    "n": 3,
+    "median": 0.0,
+    "min": 0.0,
+    "max": 0.0
+   },
+   "per_junction_counts": {
+    "canonical": {
+     "median": 139,
+     "min": 109,
+     "max": 200,
+     "samples_with_any_read": 3,
+     "samples_at_or_above_threshold": 3
+    },
+    "cryptic_left": {
+     "median": 0,
+     "min": 0,
+     "max": 0,
+     "samples_with_any_read": 0,
+     "samples_at_or_above_threshold": 0
+    },
+    "cryptic_right": {
+     "median": 0,
+     "min": 0,
+     "max": 0,
+     "samples_with_any_read": 0,
+     "samples_at_or_above_threshold": 0
+    }
    },
    "canonical_counts": {
     "median": 139,
@@ -89,11 +118,40 @@
    "n": 84,
    "samples_with_any_cryptic_read": 16,
    "samples_with_cryptic_at_or_above_threshold": 0,
-   "cryptic_fraction": {
+   "summed_ratio": {
     "n": 84,
     "median": 0.0,
     "min": 0.0,
     "max": 0.07955
+   },
+   "inclusion_psi": {
+    "n": 84,
+    "median": 0.0,
+    "min": 0.0,
+    "max": 0.04142
+   },
+   "per_junction_counts": {
+    "canonical": {
+     "median": 102.0,
+     "min": 6,
+     "max": 253,
+     "samples_with_any_read": 84,
+     "samples_at_or_above_threshold": 83
+    },
+    "cryptic_left": {
+     "median": 0.0,
+     "min": 0,
+     "max": 3,
+     "samples_with_any_read": 7,
+     "samples_at_or_above_threshold": 0
+    },
+    "cryptic_right": {
+     "median": 0.0,
+     "min": 0,
+     "max": 4,
+     "samples_with_any_read": 11,
+     "samples_at_or_above_threshold": 0
+    }
    },
    "canonical_counts": {
     "median": 102.0,
@@ -105,11 +163,40 @@
    "n": 25,
    "samples_with_any_cryptic_read": 7,
    "samples_with_cryptic_at_or_above_threshold": 0,
-   "cryptic_fraction": {
+   "summed_ratio": {
     "n": 25,
     "median": 0.0,
     "min": 0.0,
     "max": 0.05085
+   },
+   "inclusion_psi": {
+    "n": 25,
+    "median": 0.0,
+    "min": 0.0,
+    "max": 0.02609
+   },
+   "per_junction_counts": {
+    "canonical": {
+     "median": 105,
+     "min": 28,
+     "max": 413,
+     "samples_with_any_read": 25,
+     "samples_at_or_above_threshold": 25
+    },
+    "cryptic_left": {
+     "median": 0,
+     "min": 0,
+     "max": 3,
+     "samples_with_any_read": 6,
+     "samples_at_or_above_threshold": 0
+    },
+    "cryptic_right": {
+     "median": 0,
+     "min": 0,
+     "max": 2,
+     "samples_with_any_read": 2,
+     "samples_at_or_above_threshold": 0
+    }
    },
    "canonical_counts": {
     "median": 105,
@@ -121,11 +208,40 @@
    "n": 23,
    "samples_with_any_cryptic_read": 2,
    "samples_with_cryptic_at_or_above_threshold": 0,
-   "cryptic_fraction": {
+   "summed_ratio": {
     "n": 22,
     "median": 0.0,
     "min": 0.0,
     "max": 0.02913
+   },
+   "inclusion_psi": {
+    "n": 22,
+    "median": 0.0,
+    "min": 0.0,
+    "max": 0.01478
+   },
+   "per_junction_counts": {
+    "canonical": {
+     "median": 101,
+     "min": 0,
+     "max": 178,
+     "samples_with_any_read": 22,
+     "samples_at_or_above_threshold": 22
+    },
+    "cryptic_left": {
+     "median": 0,
+     "min": 0,
+     "max": 2,
+     "samples_with_any_read": 1,
+     "samples_at_or_above_threshold": 0
+    },
+    "cryptic_right": {
+     "median": 0,
+     "min": 0,
+     "max": 1,
+     "samples_with_any_read": 2,
+     "samples_at_or_above_threshold": 0
+    }
    },
    "canonical_counts": {
     "median": 101,
@@ -137,11 +253,40 @@
    "n": 13,
    "samples_with_any_cryptic_read": 0,
    "samples_with_cryptic_at_or_above_threshold": 0,
-   "cryptic_fraction": {
+   "summed_ratio": {
     "n": 13,
     "median": 0.0,
     "min": 0.0,
     "max": 0.0
+   },
+   "inclusion_psi": {
+    "n": 13,
+    "median": 0.0,
+    "min": 0.0,
+    "max": 0.0
+   },
+   "per_junction_counts": {
+    "canonical": {
+     "median": 148,
+     "min": 37,
+     "max": 435,
+     "samples_with_any_read": 13,
+     "samples_at_or_above_threshold": 13
+    },
+    "cryptic_left": {
+     "median": 0,
+     "min": 0,
+     "max": 0,
+     "samples_with_any_read": 0,
+     "samples_at_or_above_threshold": 0
+    },
+    "cryptic_right": {
+     "median": 0,
+     "min": 0,
+     "max": 0,
+     "samples_with_any_read": 0,
+     "samples_at_or_above_threshold": 0
+    }
    },
    "canonical_counts": {
     "median": 148,
@@ -153,11 +298,40 @@
    "n": 1,
    "samples_with_any_cryptic_read": 0,
    "samples_with_cryptic_at_or_above_threshold": 0,
-   "cryptic_fraction": {
+   "summed_ratio": {
     "n": 1,
     "median": 0.0,
     "min": 0.0,
     "max": 0.0
+   },
+   "inclusion_psi": {
+    "n": 1,
+    "median": 0.0,
+    "min": 0.0,
+    "max": 0.0
+   },
+   "per_junction_counts": {
+    "canonical": {
+     "median": 26,
+     "min": 26,
+     "max": 26,
+     "samples_with_any_read": 1,
+     "samples_at_or_above_threshold": 1
+    },
+    "cryptic_left": {
+     "median": 0,
+     "min": 0,
+     "max": 0,
+     "samples_with_any_read": 0,
+     "samples_at_or_above_threshold": 0
+    },
+    "cryptic_right": {
+     "median": 0,
+     "min": 0,
+     "max": 0,
+     "samples_with_any_read": 0,
+     "samples_at_or_above_threshold": 0
+    }
    },
    "canonical_counts": {
     "median": 26,
@@ -165,6 +339,10 @@
     "max": 26
    }
   }
+ },
+ "ratio_definitions": {
+  "summed_ratio": "(cryptic_left + cryptic_right) / (that sum + canonical); kept for continuity, inflated about twofold at low values",
+  "inclusion_psi": "mean(cryptic_left, cryptic_right) / (that mean + canonical); puts inclusion and exclusion on the same per-junction footing"
  },
  "samples": [
   {
@@ -175,7 +353,8 @@
     "cryptic_left": 0,
     "cryptic_right": 0
    },
-   "cryptic_fraction": 0.0
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
   },
   {
    "rail_id": "829473",
@@ -185,7 +364,8 @@
     "cryptic_left": 0,
     "cryptic_right": 1
    },
-   "cryptic_fraction": 0.00833
+   "summed_ratio": 0.00833,
+   "inclusion_psi": 0.00418
   },
   {
    "rail_id": "829476",
@@ -195,7 +375,8 @@
     "cryptic_left": 0,
     "cryptic_right": 0
    },
-   "cryptic_fraction": 0.0
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
   },
   {
    "rail_id": "829477",
@@ -205,7 +386,8 @@
     "cryptic_left": 0,
     "cryptic_right": 0
    },
-   "cryptic_fraction": 0.0
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
   },
   {
    "rail_id": "829478",
@@ -215,7 +397,8 @@
     "cryptic_left": 0,
     "cryptic_right": 0
    },
-   "cryptic_fraction": 0.0
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
   },
   {
    "rail_id": "829480",
@@ -225,7 +408,8 @@
     "cryptic_left": 0,
     "cryptic_right": 0
    },
-   "cryptic_fraction": 0.0
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
   },
   {
    "rail_id": "829481",
@@ -235,7 +419,8 @@
     "cryptic_left": 0,
     "cryptic_right": 0
    },
-   "cryptic_fraction": 0.0
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
   },
   {
    "rail_id": "829482",
@@ -245,7 +430,8 @@
     "cryptic_left": 0,
     "cryptic_right": 0
    },
-   "cryptic_fraction": 0.0
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
   },
   {
    "rail_id": "829483",
@@ -255,7 +441,8 @@
     "cryptic_left": 0,
     "cryptic_right": 0
    },
-   "cryptic_fraction": 0.0
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
   },
   {
    "rail_id": "829484",
@@ -265,7 +452,8 @@
     "cryptic_left": 0,
     "cryptic_right": 0
    },
-   "cryptic_fraction": 0.0
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
   },
   {
    "rail_id": "829485",
@@ -275,7 +463,8 @@
     "cryptic_left": 0,
     "cryptic_right": 0
    },
-   "cryptic_fraction": 0.0
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
   },
   {
    "rail_id": "829486",
@@ -285,7 +474,8 @@
     "cryptic_left": 0,
     "cryptic_right": 0
    },
-   "cryptic_fraction": 0.0
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
   },
   {
    "rail_id": "829488",
@@ -295,7 +485,8 @@
     "cryptic_left": 1,
     "cryptic_right": 0
    },
-   "cryptic_fraction": 0.01493
+   "summed_ratio": 0.01493,
+   "inclusion_psi": 0.00752
   },
   {
    "rail_id": "829490",
@@ -305,7 +496,8 @@
     "cryptic_left": 0,
     "cryptic_right": 1
    },
-   "cryptic_fraction": 0.01099
+   "summed_ratio": 0.01099,
+   "inclusion_psi": 0.00552
   },
   {
    "rail_id": "829604",
@@ -315,7 +507,8 @@
     "cryptic_left": 0,
     "cryptic_right": 0
    },
-   "cryptic_fraction": 0.0
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
   },
   {
    "rail_id": "829605",
@@ -325,7 +518,8 @@
     "cryptic_left": 2,
     "cryptic_right": 2
    },
-   "cryptic_fraction": 0.03226
+   "summed_ratio": 0.03226,
+   "inclusion_psi": 0.01639
   },
   {
    "rail_id": "829606",
@@ -335,7 +529,8 @@
     "cryptic_left": 0,
     "cryptic_right": 0
    },
-   "cryptic_fraction": 0.0
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
   },
   {
    "rail_id": "829607",
@@ -345,7 +540,8 @@
     "cryptic_left": 0,
     "cryptic_right": 0
    },
-   "cryptic_fraction": 0.0
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
   },
   {
    "rail_id": "829610",
@@ -355,7 +551,8 @@
     "cryptic_left": 0,
     "cryptic_right": 0
    },
-   "cryptic_fraction": 0.0
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
   },
   {
    "rail_id": "829612",
@@ -365,7 +562,8 @@
     "cryptic_left": 3,
     "cryptic_right": 4
    },
-   "cryptic_fraction": 0.07955
+   "summed_ratio": 0.07955,
+   "inclusion_psi": 0.04142
   },
   {
    "rail_id": "829613",
@@ -375,7 +573,8 @@
     "cryptic_left": 0,
     "cryptic_right": 0
    },
-   "cryptic_fraction": 0.0
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
   },
   {
    "rail_id": "829616",
@@ -385,7 +584,8 @@
     "cryptic_left": 1,
     "cryptic_right": 0
    },
-   "cryptic_fraction": 0.00667
+   "summed_ratio": 0.00667,
+   "inclusion_psi": 0.00334
   },
   {
    "rail_id": "829617",
@@ -395,7 +595,8 @@
     "cryptic_left": 0,
     "cryptic_right": 0
    },
-   "cryptic_fraction": 0.0
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
   },
   {
    "rail_id": "829730",
@@ -405,7 +606,8 @@
     "cryptic_left": 0,
     "cryptic_right": 0
    },
-   "cryptic_fraction": 0.0
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
   },
   {
    "rail_id": "829731",
@@ -415,7 +617,8 @@
     "cryptic_left": 0,
     "cryptic_right": 0
    },
-   "cryptic_fraction": 0.0
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
   },
   {
    "rail_id": "829732",
@@ -425,7 +628,8 @@
     "cryptic_left": 0,
     "cryptic_right": 0
    },
-   "cryptic_fraction": 0.0
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
   },
   {
    "rail_id": "829733",
@@ -435,7 +639,8 @@
     "cryptic_left": 0,
     "cryptic_right": 0
    },
-   "cryptic_fraction": 0.0
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
   },
   {
    "rail_id": "829734",
@@ -445,7 +650,8 @@
     "cryptic_left": 0,
     "cryptic_right": 0
    },
-   "cryptic_fraction": 0.0
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
   },
   {
    "rail_id": "829736",
@@ -455,7 +661,8 @@
     "cryptic_left": 0,
     "cryptic_right": 0
    },
-   "cryptic_fraction": 0.0
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
   },
   {
    "rail_id": "829737",
@@ -465,7 +672,8 @@
     "cryptic_left": 0,
     "cryptic_right": 0
    },
-   "cryptic_fraction": 0.0
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
   },
   {
    "rail_id": "829738",
@@ -475,7 +683,8 @@
     "cryptic_left": 0,
     "cryptic_right": 0
    },
-   "cryptic_fraction": 0.0
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
   },
   {
    "rail_id": "829739",
@@ -485,7 +694,8 @@
     "cryptic_left": 0,
     "cryptic_right": 0
    },
-   "cryptic_fraction": 0.0
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
   },
   {
    "rail_id": "829740",
@@ -495,7 +705,8 @@
     "cryptic_left": 0,
     "cryptic_right": 0
    },
-   "cryptic_fraction": 0.0
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
   },
   {
    "rail_id": "829744",
@@ -505,7 +716,8 @@
     "cryptic_left": 0,
     "cryptic_right": 0
    },
-   "cryptic_fraction": 0.0
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
   },
   {
    "rail_id": "829745",
@@ -515,7 +727,8 @@
     "cryptic_left": 0,
     "cryptic_right": 0
    },
-   "cryptic_fraction": 0.0
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
   },
   {
    "rail_id": "829746",
@@ -525,7 +738,8 @@
     "cryptic_left": 0,
     "cryptic_right": 0
    },
-   "cryptic_fraction": 0.0
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
   },
   {
    "rail_id": "829856",
@@ -535,7 +749,8 @@
     "cryptic_left": 0,
     "cryptic_right": 0
    },
-   "cryptic_fraction": 0.0
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
   },
   {
    "rail_id": "829860",
@@ -545,7 +760,8 @@
     "cryptic_left": 0,
     "cryptic_right": 0
    },
-   "cryptic_fraction": 0.0
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
   },
   {
    "rail_id": "829862",
@@ -555,7 +771,8 @@
     "cryptic_left": 0,
     "cryptic_right": 0
    },
-   "cryptic_fraction": 0.0
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
   },
   {
    "rail_id": "829864",
@@ -565,7 +782,8 @@
     "cryptic_left": 0,
     "cryptic_right": 0
    },
-   "cryptic_fraction": 0.0
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
   },
   {
    "rail_id": "829865",
@@ -575,7 +793,8 @@
     "cryptic_left": 0,
     "cryptic_right": 0
    },
-   "cryptic_fraction": 0.0
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
   },
   {
    "rail_id": "829866",
@@ -585,7 +804,8 @@
     "cryptic_left": 0,
     "cryptic_right": 0
    },
-   "cryptic_fraction": 0.0
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
   },
   {
    "rail_id": "829867",
@@ -595,7 +815,8 @@
     "cryptic_left": 0,
     "cryptic_right": 0
    },
-   "cryptic_fraction": 0.0
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
   },
   {
    "rail_id": "829868",
@@ -605,7 +826,8 @@
     "cryptic_left": 0,
     "cryptic_right": 0
    },
-   "cryptic_fraction": 0.0
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
   },
   {
    "rail_id": "829869",
@@ -615,7 +837,8 @@
     "cryptic_left": 0,
     "cryptic_right": 0
    },
-   "cryptic_fraction": 0.0
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
   },
   {
    "rail_id": "829872",
@@ -625,7 +848,8 @@
     "cryptic_left": 0,
     "cryptic_right": 2
    },
-   "cryptic_fraction": 0.02198
+   "summed_ratio": 0.02198,
+   "inclusion_psi": 0.01111
   },
   {
    "rail_id": "829873",
@@ -635,7 +859,8 @@
     "cryptic_left": 0,
     "cryptic_right": 0
    },
-   "cryptic_fraction": 0.0
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
   },
   {
    "rail_id": "829984",
@@ -645,7 +870,8 @@
     "cryptic_left": 0,
     "cryptic_right": 0
    },
-   "cryptic_fraction": 0.0
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
   },
   {
    "rail_id": "829985",
@@ -655,7 +881,8 @@
     "cryptic_left": 0,
     "cryptic_right": 2
    },
-   "cryptic_fraction": 0.0241
+   "summed_ratio": 0.0241,
+   "inclusion_psi": 0.0122
   },
   {
    "rail_id": "829990",
@@ -665,7 +892,8 @@
     "cryptic_left": 0,
     "cryptic_right": 2
    },
-   "cryptic_fraction": 0.02083
+   "summed_ratio": 0.02083,
+   "inclusion_psi": 0.01053
   },
   {
    "rail_id": "829992",
@@ -675,7 +903,8 @@
     "cryptic_left": 0,
     "cryptic_right": 0
    },
-   "cryptic_fraction": 0.0
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
   },
   {
    "rail_id": "829994",
@@ -685,7 +914,8 @@
     "cryptic_left": 0,
     "cryptic_right": 0
    },
-   "cryptic_fraction": 0.0
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
   },
   {
    "rail_id": "829996",
@@ -695,7 +925,8 @@
     "cryptic_left": 0,
     "cryptic_right": 0
    },
-   "cryptic_fraction": 0.0
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
   },
   {
    "rail_id": "829997",
@@ -705,7 +936,8 @@
     "cryptic_left": 1,
     "cryptic_right": 2
    },
-   "cryptic_fraction": 0.03704
+   "summed_ratio": 0.03704,
+   "inclusion_psi": 0.01887
   },
   {
    "rail_id": "829998",
@@ -715,7 +947,8 @@
     "cryptic_left": 0,
     "cryptic_right": 0
    },
-   "cryptic_fraction": 0.0
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
   },
   {
    "rail_id": "830000",
@@ -725,7 +958,8 @@
     "cryptic_left": 0,
     "cryptic_right": 0
    },
-   "cryptic_fraction": 0.0
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
   },
   {
    "rail_id": "830114",
@@ -735,7 +969,8 @@
     "cryptic_left": 0,
     "cryptic_right": 0
    },
-   "cryptic_fraction": 0.0
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
   },
   {
    "rail_id": "830115",
@@ -745,7 +980,8 @@
     "cryptic_left": 0,
     "cryptic_right": 0
    },
-   "cryptic_fraction": 0.0
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
   },
   {
    "rail_id": "830116",
@@ -755,7 +991,8 @@
     "cryptic_left": 0,
     "cryptic_right": 0
    },
-   "cryptic_fraction": 0.0
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
   },
   {
    "rail_id": "830117",
@@ -765,7 +1002,8 @@
     "cryptic_left": 0,
     "cryptic_right": 0
    },
-   "cryptic_fraction": 0.0
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
   },
   {
    "rail_id": "830118",
@@ -775,7 +1013,8 @@
     "cryptic_left": 0,
     "cryptic_right": 0
    },
-   "cryptic_fraction": 0.0
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
   },
   {
    "rail_id": "830126",
@@ -785,7 +1024,8 @@
     "cryptic_left": 0,
     "cryptic_right": 1
    },
-   "cryptic_fraction": 0.00758
+   "summed_ratio": 0.00758,
+   "inclusion_psi": 0.0038
   },
   {
    "rail_id": "830128",
@@ -795,7 +1035,8 @@
     "cryptic_left": 0,
     "cryptic_right": 0
    },
-   "cryptic_fraction": 0.0
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
   },
   {
    "rail_id": "830130",
@@ -805,7 +1046,8 @@
     "cryptic_left": 0,
     "cryptic_right": 0
    },
-   "cryptic_fraction": 0.0
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
   },
   {
    "rail_id": "830131",
@@ -815,7 +1057,8 @@
     "cryptic_left": 0,
     "cryptic_right": 0
    },
-   "cryptic_fraction": 0.0
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
   },
   {
    "rail_id": "830242",
@@ -825,7 +1068,8 @@
     "cryptic_left": 0,
     "cryptic_right": 0
    },
-   "cryptic_fraction": 0.0
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
   },
   {
    "rail_id": "830243",
@@ -835,7 +1079,8 @@
     "cryptic_left": 0,
     "cryptic_right": 0
    },
-   "cryptic_fraction": 0.0
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
   },
   {
    "rail_id": "830244",
@@ -845,7 +1090,8 @@
     "cryptic_left": 0,
     "cryptic_right": 0
    },
-   "cryptic_fraction": 0.0
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
   },
   {
    "rail_id": "830245",
@@ -855,7 +1101,8 @@
     "cryptic_left": 0,
     "cryptic_right": 0
    },
-   "cryptic_fraction": 0.0
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
   },
   {
    "rail_id": "830246",
@@ -865,7 +1112,8 @@
     "cryptic_left": 0,
     "cryptic_right": 0
    },
-   "cryptic_fraction": 0.0
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
   },
   {
    "rail_id": "830248",
@@ -875,7 +1123,8 @@
     "cryptic_left": 0,
     "cryptic_right": 0
    },
-   "cryptic_fraction": 0.0
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
   },
   {
    "rail_id": "830249",
@@ -885,7 +1134,8 @@
     "cryptic_left": 0,
     "cryptic_right": 0
    },
-   "cryptic_fraction": 0.0
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
   },
   {
    "rail_id": "830250",
@@ -895,7 +1145,8 @@
     "cryptic_left": 0,
     "cryptic_right": 0
    },
-   "cryptic_fraction": 0.0
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
   },
   {
    "rail_id": "830254",
@@ -905,7 +1156,8 @@
     "cryptic_left": 1,
     "cryptic_right": 0
    },
-   "cryptic_fraction": 0.01136
+   "summed_ratio": 0.01136,
+   "inclusion_psi": 0.00571
   },
   {
    "rail_id": "830258",
@@ -915,7 +1167,8 @@
     "cryptic_left": 0,
     "cryptic_right": 1
    },
-   "cryptic_fraction": 0.00629
+   "summed_ratio": 0.00629,
+   "inclusion_psi": 0.00315
   },
   {
    "rail_id": "830259",
@@ -925,7 +1178,8 @@
     "cryptic_left": 0,
     "cryptic_right": 0
    },
-   "cryptic_fraction": 0.0
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
   },
   {
    "rail_id": "830370",
@@ -935,7 +1189,8 @@
     "cryptic_left": 0,
     "cryptic_right": 0
    },
-   "cryptic_fraction": 0.0
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
   },
   {
    "rail_id": "830374",
@@ -945,7 +1200,8 @@
     "cryptic_left": 1,
     "cryptic_right": 0
    },
-   "cryptic_fraction": 0.00398
+   "summed_ratio": 0.00398,
+   "inclusion_psi": 0.002
   },
   {
    "rail_id": "830376",
@@ -955,7 +1211,8 @@
     "cryptic_left": 0,
     "cryptic_right": 0
    },
-   "cryptic_fraction": 0.0
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
   },
   {
    "rail_id": "830378",
@@ -965,7 +1222,8 @@
     "cryptic_left": 1,
     "cryptic_right": 0
    },
-   "cryptic_fraction": 0.00552
+   "summed_ratio": 0.00552,
+   "inclusion_psi": 0.00277
   },
   {
    "rail_id": "830379",
@@ -975,7 +1233,8 @@
     "cryptic_left": 0,
     "cryptic_right": 0
    },
-   "cryptic_fraction": 0.0
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
   },
   {
    "rail_id": "830380",
@@ -985,7 +1244,8 @@
     "cryptic_left": 0,
     "cryptic_right": 0
    },
-   "cryptic_fraction": 0.0
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
   },
   {
    "rail_id": "830382",
@@ -995,7 +1255,8 @@
     "cryptic_left": 0,
     "cryptic_right": 0
    },
-   "cryptic_fraction": 0.0
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
   },
   {
    "rail_id": "830384",
@@ -1005,7 +1266,8 @@
     "cryptic_left": 0,
     "cryptic_right": 0
    },
-   "cryptic_fraction": 0.0
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
   },
   {
    "rail_id": "830385",
@@ -1015,7 +1277,8 @@
     "cryptic_left": 0,
     "cryptic_right": 0
    },
-   "cryptic_fraction": 0.0
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
   },
   {
    "rail_id": "830496",
@@ -1025,7 +1288,8 @@
     "cryptic_left": 0,
     "cryptic_right": 2
    },
-   "cryptic_fraction": 0.01739
+   "summed_ratio": 0.01739,
+   "inclusion_psi": 0.00877
   },
   {
    "rail_id": "830498",
@@ -1035,7 +1299,8 @@
     "cryptic_left": 0,
     "cryptic_right": 2
    },
-   "cryptic_fraction": 0.0117
+   "summed_ratio": 0.0117,
+   "inclusion_psi": 0.00588
   },
   {
    "rail_id": "830499",
@@ -1045,7 +1310,8 @@
     "cryptic_left": 0,
     "cryptic_right": 0
    },
-   "cryptic_fraction": 0.0
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
   },
   {
    "rail_id": "830500",
@@ -1055,7 +1321,8 @@
     "cryptic_left": 1,
     "cryptic_right": 0
    },
-   "cryptic_fraction": 0.00532
+   "summed_ratio": 0.00532,
+   "inclusion_psi": 0.00267
   },
   {
    "rail_id": "830501",
@@ -1065,7 +1332,8 @@
     "cryptic_left": 0,
     "cryptic_right": 0
    },
-   "cryptic_fraction": 0.0
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
   },
   {
    "rail_id": "830502",
@@ -1075,7 +1343,8 @@
     "cryptic_left": 0,
     "cryptic_right": 0
    },
-   "cryptic_fraction": 0.0
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
   },
   {
    "rail_id": "830503",
@@ -1085,7 +1354,8 @@
     "cryptic_left": 0,
     "cryptic_right": 0
    },
-   "cryptic_fraction": 0.0
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
   },
   {
    "rail_id": "830504",
@@ -1095,7 +1365,8 @@
     "cryptic_left": 1,
     "cryptic_right": 0
    },
-   "cryptic_fraction": 0.01235
+   "summed_ratio": 0.01235,
+   "inclusion_psi": 0.00621
   },
   {
    "rail_id": "830505",
@@ -1105,7 +1376,8 @@
     "cryptic_left": 0,
     "cryptic_right": 0
    },
-   "cryptic_fraction": 0.0
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
   },
   {
    "rail_id": "830506",
@@ -1115,7 +1387,8 @@
     "cryptic_left": 1,
     "cryptic_right": 0
    },
-   "cryptic_fraction": 0.00741
+   "summed_ratio": 0.00741,
+   "inclusion_psi": 0.00372
   },
   {
    "rail_id": "830507",
@@ -1125,7 +1398,8 @@
     "cryptic_left": 0,
     "cryptic_right": 0
    },
-   "cryptic_fraction": 0.0
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
   },
   {
    "rail_id": "830508",
@@ -1135,7 +1409,8 @@
     "cryptic_left": 0,
     "cryptic_right": 0
    },
-   "cryptic_fraction": 0.0
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
   },
   {
    "rail_id": "830509",
@@ -1145,7 +1420,8 @@
     "cryptic_left": 0,
     "cryptic_right": 0
    },
-   "cryptic_fraction": 0.0
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
   },
   {
    "rail_id": "830510",
@@ -1155,7 +1431,8 @@
     "cryptic_left": 0,
     "cryptic_right": 0
    },
-   "cryptic_fraction": 0.0
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
   },
   {
    "rail_id": "830511",
@@ -1165,7 +1442,8 @@
     "cryptic_left": 0,
     "cryptic_right": 0
    },
-   "cryptic_fraction": 0.0
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
   },
   {
    "rail_id": "830512",
@@ -1175,7 +1453,8 @@
     "cryptic_left": 0,
     "cryptic_right": 0
    },
-   "cryptic_fraction": 0.0
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
   },
   {
    "rail_id": "830513",
@@ -1185,7 +1464,8 @@
     "cryptic_left": 0,
     "cryptic_right": 0
    },
-   "cryptic_fraction": 0.0
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
   },
   {
    "rail_id": "830514",
@@ -1195,7 +1475,8 @@
     "cryptic_left": 0,
     "cryptic_right": 0
    },
-   "cryptic_fraction": 0.0
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
   },
   {
    "rail_id": "830624",
@@ -1205,7 +1486,8 @@
     "cryptic_left": 0,
     "cryptic_right": 0
    },
-   "cryptic_fraction": 0.0
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
   },
   {
    "rail_id": "830625",
@@ -1215,7 +1497,8 @@
     "cryptic_left": 0,
     "cryptic_right": 0
    },
-   "cryptic_fraction": 0.0
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
   },
   {
    "rail_id": "830626",
@@ -1225,7 +1508,8 @@
     "cryptic_left": 0,
     "cryptic_right": 0
    },
-   "cryptic_fraction": 0.0
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
   },
   {
    "rail_id": "830628",
@@ -1235,7 +1519,8 @@
     "cryptic_left": 0,
     "cryptic_right": 0
    },
-   "cryptic_fraction": 0.0
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
   },
   {
    "rail_id": "830630",
@@ -1245,7 +1530,8 @@
     "cryptic_left": 0,
     "cryptic_right": 2
    },
-   "cryptic_fraction": 0.02062
+   "summed_ratio": 0.02062,
+   "inclusion_psi": 0.01042
   },
   {
    "rail_id": "830631",
@@ -1255,7 +1541,8 @@
     "cryptic_left": 3,
     "cryptic_right": 0
    },
-   "cryptic_fraction": 0.05085
+   "summed_ratio": 0.05085,
+   "inclusion_psi": 0.02609
   },
   {
    "rail_id": "830632",
@@ -1265,7 +1552,8 @@
     "cryptic_left": 0,
     "cryptic_right": 0
    },
-   "cryptic_fraction": 0.0
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
   },
   {
    "rail_id": "830633",
@@ -1275,7 +1563,8 @@
     "cryptic_left": 0,
     "cryptic_right": 0
    },
-   "cryptic_fraction": 0.0
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
   },
   {
    "rail_id": "830634",
@@ -1285,7 +1574,8 @@
     "cryptic_left": 0,
     "cryptic_right": 0
    },
-   "cryptic_fraction": 0.0
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
   },
   {
    "rail_id": "830635",
@@ -1295,7 +1585,8 @@
     "cryptic_left": 0,
     "cryptic_right": 0
    },
-   "cryptic_fraction": 0.0
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
   },
   {
    "rail_id": "830636",
@@ -1305,7 +1596,8 @@
     "cryptic_left": 0,
     "cryptic_right": 0
    },
-   "cryptic_fraction": 0.0
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
   },
   {
    "rail_id": "830638",
@@ -1315,7 +1607,8 @@
     "cryptic_left": 0,
     "cryptic_right": 0
    },
-   "cryptic_fraction": 0.0
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
   },
   {
    "rail_id": "830639",
@@ -1325,7 +1618,8 @@
     "cryptic_left": 0,
     "cryptic_right": 0
    },
-   "cryptic_fraction": 0.0
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
   },
   {
    "rail_id": "830642",
@@ -1335,7 +1629,8 @@
     "cryptic_left": 0,
     "cryptic_right": 0
    },
-   "cryptic_fraction": 0.0
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
   },
   {
    "rail_id": "830643",
@@ -1345,7 +1640,8 @@
     "cryptic_left": 0,
     "cryptic_right": 0
    },
-   "cryptic_fraction": 0.0
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
   },
   {
    "rail_id": "1658946",
@@ -1355,7 +1651,8 @@
     "cryptic_left": 0,
     "cryptic_right": 0
    },
-   "cryptic_fraction": 0.0
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
   },
   {
    "rail_id": "1659210",
@@ -1365,7 +1662,8 @@
     "cryptic_left": 0,
     "cryptic_right": 0
    },
-   "cryptic_fraction": 0.0
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
   },
   {
    "rail_id": "1659462",
@@ -1375,7 +1673,8 @@
     "cryptic_left": 0,
     "cryptic_right": 0
    },
-   "cryptic_fraction": 0.0
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
   },
   {
    "rail_id": "1659466",
@@ -1385,7 +1684,8 @@
     "cryptic_left": 0,
     "cryptic_right": 0
    },
-   "cryptic_fraction": 0.0
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
   },
   {
    "rail_id": "1659474",
@@ -1395,7 +1695,8 @@
     "cryptic_left": 0,
     "cryptic_right": 0
    },
-   "cryptic_fraction": 0.0
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
   },
   {
    "rail_id": "1659490",
@@ -1405,7 +1706,8 @@
     "cryptic_left": 0,
     "cryptic_right": 0
    },
-   "cryptic_fraction": 0.0
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
   },
   {
    "rail_id": "1659491",
@@ -1415,7 +1717,8 @@
     "cryptic_left": 0,
     "cryptic_right": 0
    },
-   "cryptic_fraction": 0.0
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
   },
   {
    "rail_id": "1659970",
@@ -1425,7 +1728,8 @@
     "cryptic_left": 0,
     "cryptic_right": 0
    },
-   "cryptic_fraction": 0.0
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
   },
   {
    "rail_id": "1659971",
@@ -1435,7 +1739,8 @@
     "cryptic_left": 0,
     "cryptic_right": 0
    },
-   "cryptic_fraction": 0.0
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
   },
   {
    "rail_id": "1659994",
@@ -1445,7 +1750,8 @@
     "cryptic_left": 0,
     "cryptic_right": 0
    },
-   "cryptic_fraction": 0.0
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
   },
   {
    "rail_id": "1659995",
@@ -1455,7 +1761,8 @@
     "cryptic_left": 0,
     "cryptic_right": 1
    },
-   "cryptic_fraction": 0.00725
+   "summed_ratio": 0.00725,
+   "inclusion_psi": 0.00364
   },
   {
    "rail_id": "1660230",
@@ -1465,7 +1772,8 @@
     "cryptic_left": 0,
     "cryptic_right": 0
    },
-   "cryptic_fraction": 0.0
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
   },
   {
    "rail_id": "1660234",
@@ -1475,7 +1783,8 @@
     "cryptic_left": 2,
     "cryptic_right": 1
    },
-   "cryptic_fraction": 0.02913
+   "summed_ratio": 0.02913,
+   "inclusion_psi": 0.01478
   },
   {
    "rail_id": "1660262",
@@ -1485,7 +1794,8 @@
     "cryptic_left": 0,
     "cryptic_right": 0
    },
-   "cryptic_fraction": 0.0
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
   },
   {
    "rail_id": "1660518",
@@ -1495,7 +1805,8 @@
     "cryptic_left": 0,
     "cryptic_right": 0
    },
-   "cryptic_fraction": 0.0
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
   },
   {
    "rail_id": "1660519",
@@ -1505,7 +1816,8 @@
     "cryptic_left": 0,
     "cryptic_right": 0
    },
-   "cryptic_fraction": 0.0
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
   },
   {
    "rail_id": "1660758",
@@ -1515,7 +1827,8 @@
     "cryptic_left": 1,
     "cryptic_right": 0
    },
-   "cryptic_fraction": 0.00645
+   "summed_ratio": 0.00645,
+   "inclusion_psi": 0.00324
   },
   {
    "rail_id": "1660759",
@@ -1525,7 +1838,8 @@
     "cryptic_left": 0,
     "cryptic_right": 0
    },
-   "cryptic_fraction": 0.0
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
   },
   {
    "rail_id": "1660770",
@@ -1535,7 +1849,8 @@
     "cryptic_left": 0,
     "cryptic_right": 0
    },
-   "cryptic_fraction": 0.0
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
   },
   {
    "rail_id": "1660998",
@@ -1545,7 +1860,8 @@
     "cryptic_left": 0,
     "cryptic_right": 0
    },
-   "cryptic_fraction": 0.0
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
   },
   {
    "rail_id": "1660999",
@@ -1555,7 +1871,8 @@
     "cryptic_left": 0,
     "cryptic_right": 0
    },
-   "cryptic_fraction": 0.0
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
   },
   {
    "rail_id": "1661002",
@@ -1565,7 +1882,8 @@
     "cryptic_left": 0,
     "cryptic_right": 0
    },
-   "cryptic_fraction": 0.0
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
   },
   {
    "rail_id": "1661006",
@@ -1575,7 +1893,8 @@
     "cryptic_left": 0,
     "cryptic_right": 0
    },
-   "cryptic_fraction": 0.0
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
   },
   {
    "rail_id": "1661010",
@@ -1585,7 +1904,8 @@
     "cryptic_left": 0,
     "cryptic_right": 0
    },
-   "cryptic_fraction": 0.0
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
   },
   {
    "rail_id": "1661022",
@@ -1595,7 +1915,8 @@
     "cryptic_left": 0,
     "cryptic_right": 0
    },
-   "cryptic_fraction": 0.0
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
   },
   {
    "rail_id": "1661023",
@@ -1605,7 +1926,8 @@
     "cryptic_left": 0,
     "cryptic_right": 0
    },
-   "cryptic_fraction": 0.0
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
   },
   {
    "rail_id": "1661026",
@@ -1615,7 +1937,8 @@
     "cryptic_left": 0,
     "cryptic_right": 0
    },
-   "cryptic_fraction": 0.0
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
   },
   {
    "rail_id": "3318980",
@@ -1625,7 +1948,8 @@
     "cryptic_left": 0,
     "cryptic_right": 0
    },
-   "cryptic_fraction": null
+   "summed_ratio": null,
+   "inclusion_psi": null
   },
   {
    "rail_id": "3318981",
@@ -1635,7 +1959,8 @@
     "cryptic_left": 0,
     "cryptic_right": 0
    },
-   "cryptic_fraction": 0.0
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
   },
   {
    "rail_id": "3322044",
@@ -1645,7 +1970,8 @@
     "cryptic_left": 0,
     "cryptic_right": 0
    },
-   "cryptic_fraction": 0.0
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
   },
   {
    "rail_id": "3322045",
@@ -1655,7 +1981,8 @@
     "cryptic_left": 0,
     "cryptic_right": 0
    },
-   "cryptic_fraction": 0.0
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
   }
  ]
 }

@@ -8,7 +8,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
 
 from target_als_cortex_cryptic import (  # noqa: E402
-    GROUP_COLUMN, UNLABELLED, cryptic_fraction, read_groups, summarise,
+    GROUP_COLUMN, UNLABELLED, inclusion_psi, read_groups, summarise, summed_ratio,
 )
 
 STUDY = (
@@ -46,17 +46,31 @@ class CortexCycleTest(unittest.TestCase):
     def test_blank_group_becomes_an_explicit_unlabelled_marker(self):
         self.assertEqual(read_groups(self.study)["13"], UNLABELLED)
 
-    def test_cryptic_fraction_is_within_gene_and_excludes_the_control(self):
+    def test_summed_ratio_is_within_gene_and_excludes_the_control(self):
         counts = {"canonical": 90, "cryptic_left": 6, "cryptic_right": 4}
-        self.assertAlmostEqual(cryptic_fraction(counts, "canonical"), 0.1)
+        self.assertAlmostEqual(summed_ratio(counts, "canonical"), 0.1)
 
-    def test_cryptic_fraction_is_none_when_the_locus_has_no_reads(self):
+    def test_summed_ratio_double_counts_included_molecules(self):
+        # Equal molecular abundance: the two cryptic junctions together collect
+        # about twice the canonical junction's reads, so the summed form reads
+        # 0.667 where the per-junction estimate reads 0.5.
+        counts = {"canonical": 100, "cryptic_left": 100, "cryptic_right": 100}
+        self.assertAlmostEqual(summed_ratio(counts, "canonical"), 2 / 3)
+        self.assertAlmostEqual(inclusion_psi(counts, "canonical"), 0.5)
+
+    def test_inclusion_psi_averages_the_two_cryptic_junctions(self):
+        counts = {"canonical": 90, "cryptic_left": 6, "cryptic_right": 4}
+        self.assertAlmostEqual(inclusion_psi(counts, "canonical"), 5 / 95)
+
+    def test_both_ratios_are_none_when_the_locus_has_no_reads(self):
         counts = {"canonical": 0, "cryptic_left": 0, "cryptic_right": 0}
-        self.assertIsNone(cryptic_fraction(counts, "canonical"))
+        self.assertIsNone(summed_ratio(counts, "canonical"))
+        self.assertIsNone(inclusion_psi(counts, "canonical"))
 
-    def test_all_cryptic_and_no_canonical_gives_one(self):
+    def test_all_cryptic_and_no_canonical_gives_one_for_both(self):
         counts = {"canonical": 0, "cryptic_left": 5, "cryptic_right": 5}
-        self.assertEqual(cryptic_fraction(counts, "canonical"), 1.0)
+        self.assertEqual(summed_ratio(counts, "canonical"), 1.0)
+        self.assertEqual(inclusion_psi(counts, "canonical"), 1.0)
 
     def test_summarise_ignores_missing_values(self):
         out = summarise([0.0, None, 0.5, 0.25])
