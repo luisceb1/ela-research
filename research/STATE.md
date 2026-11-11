@@ -93,6 +93,22 @@ By-product verification: STMN2 falls 51.8% in the same counts, independently rep
 
 No explanation is ruled out or demonstrated. What the cycle does yield is a sharper entry requirement for #37: whole-transcriptome RNA-seq, with **documented depletion efficiency**, deep enough at UNC13A (of the order of 200 canonical reads if the fraction is near 0.10), and with at least three independent biological units per condition. The second criterion is new, and without it a low fraction cannot be told apart from a weak knockdown.
 
+## TARGET_ALS motor cortex: the cleanest empirical result so far, and why the gate is unreachable
+
+A fourth cycle, on patient tissue rather than culture: TARGET_ALS motor cortex via recount3, **149 samples**, 194 MB against a 400 MB budget. Every setup control passes — not a targeted assay (2.7M junctions across 127 chromosomes), the convention guard holds, all three sealed junctions match exactly, annotation pattern as predicted. [Report](../reports/target-als-cortex-20261111/REPORT.md).
+
+**The cortical expression hypothesis is supported:** canonical coverage runs at a median of 102–148 reads per sample against 7–66 in Klim's spinal motor neurons, so UNC13A is two to three times better covered in motor cortex.
+
+**Clean qualitative separation: 23 of 109 ALS-spectrum samples (21%) carry cryptic reads; 0 of 17 non-ALS samples carry any** — and the controls have *better* canonical coverage (median 148), so their zero is not a depth artefact.
+
+Of the three prespecified predictions, **P1 is refuted** (0 of 149 samples reach 20 cryptic reads) while P2 (median fraction below 0.10) and P3 (higher in ALS) are confirmed.
+
+**The arithmetic explains the repeated failures and is the cycle's main contribution.** Depth is no longer the limit; the *fraction* is. At a fraction of 0.08 reaching 20 cryptic reads needs about 250 canonical reads, and at 0.02 about 1,000 — two to ten times the locus depth of one of the largest ALS cohorts in existence. The cause is biological dilution: bulk tissue is mostly cells without nuclear TDP-43 loss. More samples cannot fix it; cell enrichment or a targeted assay could.
+
+**Third datapoint on the discrepancy: the amplicon is the lone outlier.** Two whole-transcriptome measurements now agree in order of magnitude — Klim's culture at 0.000–0.145 and patient cortex at 0.000–0.0796 — across different labs, decades and systems, against the amplicon's 0.390–0.690. This does not prove the amplicon biased, since each transcriptome source has its own downward-bias explanation, but it shifts the burden of proof onto the single high figure.
+
+No novelty is claimed: the consortium has published on these data and Ma 2022 carries a supplementary table on UNC13A and STMN2 variants in the NYGC cohort. Personal data: only the subject-group column was read; sex, ethnicity, ages and site of onset were not read, no individual clinical row is in the output, and the metadata file is not versioned.
+
 ## Access and communications: dated evidence only
 
 The 04 November administrative audit records AD Workbench dataset-approval wording followed by review wording, and a pending workspace. Neither establishes effective access or a technical manifest. [Audit](../reports/continuity-20261104/REPORT.md). The expanded public K26 search found no attributable source table in the checked routes; this is not universal proof of absence. [Search](../reports/fig4d-source-search-20261104/REPORT.md).
