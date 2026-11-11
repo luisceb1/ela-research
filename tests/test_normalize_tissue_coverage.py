@@ -123,3 +123,61 @@ class NormalisationTest(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+# Profundidades grandes, para que las razones queden lo bastante pequenas como
+# que redondear a 4 decimales mueva un cociente en la segunda cifra.
+QC_DEEP = (
+    "rail_id\t" + "\t".join(DENOMINATORS) + "\n"
+    "1\t300000000\t1\t1\t1\t1\n"
+    "2\t700000000\t1\t1\t1\t1\n"
+)
+
+
+class PrecisionTest(unittest.TestCase):
+    """La division se hace con precision completa, no sobre medianas redondeadas."""
+
+    def setUp(self):
+        self.tmp = tempfile.TemporaryDirectory()
+        self.qc = gz(self.tmp.name, "qc.MD.gz", QC)
+        self.deep = gz(self.tmp.name, "deep.MD.gz", QC_DEEP)
+
+    def tearDown(self):
+        self.tmp.cleanup()
+
+    def test_exact_median_is_deposited_alongside_the_rounded_one(self):
+        depths = read_depths(self.qc)
+        samples = [{"rail_id": "1", "group": "G", "counts": {"canonical": 1}},
+                   {"rail_id": "2", "group": "G", "counts": {"canonical": 7}},
+                   {"rail_id": "3", "group": "G", "counts": {"canonical": 9}}]
+        field = normalise_group(samples, depths, "canonical")["per_million"][PRIMARY]
+        exact = field["per_library_median_exact"]
+        # Razones 0.1, 0.35, 0.09 -> mediana 0.1
+        self.assertAlmostEqual(exact, 0.1)
+        self.assertEqual(field["per_library_ratios"]["median"], round(exact, 4))
+
+    def test_fold_uses_exact_medians_and_flags_the_rounded_variant(self):
+        # 1/300 = 0.003333... y 1/700 = 0.001428..., cuyo cociente exacto es
+        # 7/3 = 2.33; redondeadas a 0.0033 y 0.0014 el cociente da 2.36.
+        a = [{"rail_id": "1", "group": "G", "counts": {"canonical": 1}}]
+        b = [{"rail_id": "2", "group": "G", "counts": {"canonical": 1}}]
+        ra = Path(self.tmp.name) / "a.json"
+        rb = Path(self.tmp.name) / "b.json"
+        ra.write_text(json.dumps({"tissue": "A", "samples": a}), encoding="utf-8")
+        rb.write_text(json.dumps({"tissue": "B", "samples": b}), encoding="utf-8")
+
+        class Args:
+            tissue = [f"A:{ra}:{self.deep}", f"B:{rb}:{self.deep}"]
+            junction = "canonical"
+            group = "G"
+
+        fold = run(Args())["cross_tissue_fold"][PRIMARY]
+        self.assertAlmostEqual(fold["fold"], 2.33, places=2)
+        self.assertAlmostEqual(fold["fold_from_rounded_medians_do_not_use"],
+                               2.36, places=2)
+        self.assertNotEqual(fold["fold"],
+                            fold["fold_from_rounded_medians_do_not_use"])
+
+
+if __name__ == "__main__":
+    unittest.main()

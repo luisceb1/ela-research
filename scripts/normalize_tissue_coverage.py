@@ -135,6 +135,10 @@ def normalise_group(samples: list[dict], depths: dict[str, dict[str, float]],
             depths[s["rail_id"]][field] for s in usable)
         per_field[field] = {
             "per_library_ratios": describe(ratios),
+            # Full precision, kept so folds are never computed from rounded
+            # inputs. Rounding belongs at presentation only: dividing two
+            # 4-decimal medians moved the headline fold by 0.01.
+            "per_library_median_exact": statistics.median(ratios),
             "median_depth_M": round(median_depth / 1e6, 3),
             "ratio_of_medians_NOT_a_normalisation": round(
                 statistics.median(counts) / (median_depth / 1e6), 4),
@@ -177,16 +181,18 @@ def run(args) -> dict:
         for field in DENOMINATORS:
             try:
                 va = tissues[a]["by_group"][args.group]["per_million"][field][
-                    "per_library_ratios"]["median"]
+                    "per_library_median_exact"]
                 vb = tissues[b]["by_group"][args.group]["per_million"][field][
-                    "per_library_ratios"]["median"]
+                    "per_library_median_exact"]
             except (KeyError, TypeError):
                 continue
             if vb > 0:
                 folds[field] = {
-                    f"{a}_per_million": va,
-                    f"{b}_per_million": vb,
+                    f"{a}_per_million": round(va, 4),
+                    f"{b}_per_million": round(vb, 4),
                     "fold": round(va / vb, 2),
+                    "fold_from_rounded_medians_do_not_use": round(
+                        round(va, 4) / round(vb, 4), 2),
                 }
 
     return {

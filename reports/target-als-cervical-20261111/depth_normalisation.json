@@ -14,7 +14,7 @@
  "primary_denominator_note": "exon_fc_count_all.total is the reads SUBMITTED to featureCounts, not the reads assigned to exons. The report must not call it the latter.",
  "withdrawn_figures": {
   "2.30 / 0.11 per million": "ratio of medians against a single 44.4 M applied to both tissues",
-  "2.530 / 0.113 per million (22.3x)": "undeposited, does not reproduce against any QC field; withdrawn"
+  "2.530 / 0.113 per million (22.3x)": "arithmetically correct against exon_fc_count_all.total per library, but published with no deposited procedure and with the denominator named wrongly; superseded by this script"
  },
  "unpaired": "Different sample sets, no donor pairing used here, unmeasured confounders. Folds are descriptive, not effects.",
  "tissues": {
@@ -43,6 +43,7 @@
         "min": 0.0,
         "max": 4.5076
        },
+       "per_library_median_exact": 2.4152215528793963,
        "median_depth_M": 42.419,
        "ratio_of_medians_NOT_a_normalisation": 2.381
       },
@@ -53,6 +54,7 @@
         "min": 0.0,
         "max": 7.8335
        },
+       "per_library_median_exact": 4.808946277975569,
        "median_depth_M": 21.112,
        "ratio_of_medians_NOT_a_normalisation": 4.784
       },
@@ -63,6 +65,7 @@
         "min": 0.0,
         "max": 4.7106
        },
+       "per_library_median_exact": 2.5039199899987756,
        "median_depth_M": 40.689,
        "ratio_of_medians_NOT_a_normalisation": 2.4823
       },
@@ -73,6 +76,7 @@
         "min": 0.0,
         "max": 4.8154
        },
+       "per_library_median_exact": 2.5770080405307576,
        "median_depth_M": 39.728,
        "ratio_of_medians_NOT_a_normalisation": 2.5423
       },
@@ -83,6 +87,7 @@
         "min": 0.0,
         "max": 4.9587
        },
+       "per_library_median_exact": 2.661116035852311,
        "median_depth_M": 37.936,
        "ratio_of_medians_NOT_a_normalisation": 2.6624
       }
@@ -105,6 +110,7 @@
         "min": 0.1389,
         "max": 4.2396
        },
+       "per_library_median_exact": 2.5303603064916116,
        "median_depth_M": 42.714,
        "ratio_of_medians_NOT_a_normalisation": 2.388
       },
@@ -115,6 +121,7 @@
         "min": 0.2827,
         "max": 8.5989
        },
+       "per_library_median_exact": 5.250232195062177,
        "median_depth_M": 20.321,
        "ratio_of_medians_NOT_a_normalisation": 5.0195
       },
@@ -125,6 +132,7 @@
         "min": 0.1404,
         "max": 4.3661
        },
+       "per_library_median_exact": 2.7099267320315663,
        "median_depth_M": 41.438,
        "ratio_of_medians_NOT_a_normalisation": 2.4615
       },
@@ -135,6 +143,7 @@
         "min": 0.1476,
         "max": 4.5445
        },
+       "per_library_median_exact": 2.829459643777846,
        "median_depth_M": 39.735,
        "ratio_of_medians_NOT_a_normalisation": 2.567
       },
@@ -145,6 +154,7 @@
         "min": 0.1514,
         "max": 4.677
        },
+       "per_library_median_exact": 2.9051121265925146,
        "median_depth_M": 38.563,
        "ratio_of_medians_NOT_a_normalisation": 2.645
       }
@@ -167,6 +177,7 @@
         "min": 0.5008,
         "max": 4.7282
        },
+       "per_library_median_exact": 2.2695053856173337,
        "median_depth_M": 47.91,
        "ratio_of_medians_NOT_a_normalisation": 2.1916
       },
@@ -177,6 +188,7 @@
         "min": 1.0096,
         "max": 8.3877
        },
+       "per_library_median_exact": 5.005557733320777,
        "median_depth_M": 22.077,
        "ratio_of_medians_NOT_a_normalisation": 4.7561
       },
@@ -187,6 +199,7 @@
         "min": 0.5125,
         "max": 4.6478
        },
+       "per_library_median_exact": 2.370076330424361,
        "median_depth_M": 46.356,
        "ratio_of_medians_NOT_a_normalisation": 2.2651
       },
@@ -197,6 +210,7 @@
         "min": 0.539,
         "max": 4.9312
        },
+       "per_library_median_exact": 2.4386229715896106,
        "median_depth_M": 44.36,
        "ratio_of_medians_NOT_a_normalisation": 2.367
       },
@@ -207,6 +221,7 @@
         "min": 0.5559,
         "max": 5.034
        },
+       "per_library_median_exact": 2.521026344488954,
        "median_depth_M": 42.994,
        "ratio_of_medians_NOT_a_normalisation": 2.4422
       }
@@ -229,6 +244,7 @@
         "min": 0.75,
         "max": 5.8193
        },
+       "per_library_median_exact": 2.844730246630818,
        "median_depth_M": 50.383,
        "ratio_of_medians_NOT_a_normalisation": 2.9375
       },
@@ -239,6 +255,7 @@
         "min": 1.3134,
         "max": 11.0798
        },
+       "per_library_median_exact": 6.961827075391956,
        "median_depth_M": 26.718,
        "ratio_of_medians_NOT_a_normalisation": 5.5393
       },
@@ -249,6 +266,7 @@
         "min": 0.8495,
         "max": 6.0057
        },
+       "per_library_median_exact": 2.9368313186503148,
        "median_depth_M": 47.107,
        "ratio_of_medians_NOT_a_normalisation": 3.1418
       },
@@ -259,6 +277,7 @@
         "min": 0.8928,
         "max": 6.2793
        },
+       "per_library_median_exact": 3.064192705569361,
        "median_depth_M": 45.036,
        "ratio_of_medians_NOT_a_normalisation": 3.2862
       },
@@ -269,6 +288,7 @@
         "min": 0.9668,
         "max": 6.4784
        },
+       "per_library_median_exact": 3.2036553242952337,
        "median_depth_M": 43.076,
        "ratio_of_medians_NOT_a_normalisation": 3.4358
       }
@@ -291,6 +311,7 @@
         "min": 2.2494,
         "max": 4.6925
        },
+       "per_library_median_exact": 2.5898566605635485,
        "median_depth_M": 48.457,
        "ratio_of_medians_NOT_a_normalisation": 2.8685
       },
@@ -301,6 +322,7 @@
         "min": 4.2636,
         "max": 7.2066
        },
+       "per_library_median_exact": 5.217748663824658,
        "median_depth_M": 26.64,
        "ratio_of_medians_NOT_a_normalisation": 5.2177
       },
@@ -311,6 +333,7 @@
         "min": 2.2481,
         "max": 4.628
        },
+       "per_library_median_exact": 2.553194334494835,
        "median_depth_M": 48.486,
        "ratio_of_medians_NOT_a_normalisation": 2.8668
       },
@@ -321,6 +344,7 @@
         "min": 2.3562,
         "max": 4.8902
        },
+       "per_library_median_exact": 2.691349321729629,
        "median_depth_M": 46.261,
        "ratio_of_medians_NOT_a_normalisation": 3.0047
       },
@@ -331,6 +355,7 @@
         "min": 2.4079,
         "max": 4.9988
        },
+       "per_library_median_exact": 2.7462771989861374,
        "median_depth_M": 45.268,
        "ratio_of_medians_NOT_a_normalisation": 3.0706
       }
@@ -353,6 +378,7 @@
         "min": 0.4766,
         "max": 0.4766
        },
+       "per_library_median_exact": 0.4766425271058814,
        "median_depth_M": 54.548,
        "ratio_of_medians_NOT_a_normalisation": 0.4766
       },
@@ -363,6 +389,7 @@
         "min": 0.9747,
         "max": 0.9747
        },
+       "per_library_median_exact": 0.9747328257324668,
        "median_depth_M": 26.674,
        "ratio_of_medians_NOT_a_normalisation": 0.9747
       },
@@ -373,6 +400,7 @@
         "min": 0.4848,
         "max": 0.4848
        },
+       "per_library_median_exact": 0.4847615757987929,
        "median_depth_M": 53.635,
        "ratio_of_medians_NOT_a_normalisation": 0.4848
       },
@@ -383,6 +411,7 @@
         "min": 0.5077,
         "max": 0.5077
        },
+       "per_library_median_exact": 0.5076681715252984,
        "median_depth_M": 51.215,
        "ratio_of_medians_NOT_a_normalisation": 0.5077
       },
@@ -393,6 +422,7 @@
         "min": 0.5209,
         "max": 0.5209
        },
+       "per_library_median_exact": 0.5208979655849125,
        "median_depth_M": 49.914,
        "ratio_of_medians_NOT_a_normalisation": 0.5209
       }
@@ -425,6 +455,7 @@
         "min": 0.0,
         "max": 0.2956
        },
+       "per_library_median_exact": 0.08261671736771442,
        "median_depth_M": 43.225,
        "ratio_of_medians_NOT_a_normalisation": 0.081
       },
@@ -435,6 +466,7 @@
         "min": 0.0,
         "max": 0.5728
        },
+       "per_library_median_exact": 0.15815949651260677,
        "median_depth_M": 23.649,
        "ratio_of_medians_NOT_a_normalisation": 0.148
       },
@@ -445,6 +477,7 @@
         "min": 0.0,
         "max": 0.3099
        },
+       "per_library_median_exact": 0.08936734795029797,
        "median_depth_M": 40.151,
        "ratio_of_medians_NOT_a_normalisation": 0.0872
       },
@@ -455,6 +488,7 @@
         "min": 0.0,
         "max": 0.3167
        },
+       "per_library_median_exact": 0.09130040363095812,
        "median_depth_M": 39.153,
        "ratio_of_medians_NOT_a_normalisation": 0.0894
       },
@@ -465,6 +499,7 @@
         "min": 0.0,
         "max": 0.3271
        },
+       "per_library_median_exact": 0.09541427433761993,
        "median_depth_M": 37.692,
        "ratio_of_medians_NOT_a_normalisation": 0.0929
       }
@@ -487,6 +522,7 @@
         "min": 0.0,
         "max": 0.7629
        },
+       "per_library_median_exact": 0.11328569613168148,
        "median_depth_M": 43.246,
        "ratio_of_medians_NOT_a_normalisation": 0.1156
       },
@@ -497,6 +533,7 @@
         "min": 0.0,
         "max": 1.4494
        },
+       "per_library_median_exact": 0.20552735682159343,
        "median_depth_M": 23.898,
        "ratio_of_medians_NOT_a_normalisation": 0.2092
       },
@@ -507,6 +544,7 @@
         "min": 0.0,
         "max": 0.8258
        },
+       "per_library_median_exact": 0.11496013833843208,
        "median_depth_M": 42.196,
        "ratio_of_medians_NOT_a_normalisation": 0.1185
       },
@@ -517,6 +555,7 @@
         "min": 0.0,
         "max": 0.8603
        },
+       "per_library_median_exact": 0.12381340074120067,
        "median_depth_M": 40.216,
        "ratio_of_medians_NOT_a_normalisation": 0.1243
       },
@@ -527,6 +566,7 @@
         "min": 0.0,
         "max": 0.8989
        },
+       "per_library_median_exact": 0.13107097834261797,
        "median_depth_M": 38.771,
        "ratio_of_medians_NOT_a_normalisation": 0.129
       }
@@ -549,6 +589,7 @@
         "min": 0.0,
         "max": 0.3144
        },
+       "per_library_median_exact": 0.11515096532609312,
        "median_depth_M": 46.016,
        "ratio_of_medians_NOT_a_normalisation": 0.0978
       },
@@ -559,6 +600,7 @@
         "min": 0.0,
         "max": 0.6012
        },
+       "per_library_median_exact": 0.2164339755497005,
        "median_depth_M": 24.886,
        "ratio_of_medians_NOT_a_normalisation": 0.1808
       },
@@ -569,6 +611,7 @@
         "min": 0.0,
         "max": 0.3328
        },
+       "per_library_median_exact": 0.12211369927957622,
        "median_depth_M": 43.596,
        "ratio_of_medians_NOT_a_normalisation": 0.1032
       },
@@ -579,6 +622,7 @@
         "min": 0.0,
         "max": 0.348
        },
+       "per_library_median_exact": 0.1283312361843149,
        "median_depth_M": 41.736,
        "ratio_of_medians_NOT_a_normalisation": 0.1078
       },
@@ -589,6 +633,7 @@
         "min": 0.0,
         "max": 0.3622
        },
+       "per_library_median_exact": 0.13444102691835746,
        "median_depth_M": 39.968,
        "ratio_of_medians_NOT_a_normalisation": 0.1126
       }
@@ -611,6 +656,7 @@
         "min": 0.0,
         "max": 0.4417
        },
+       "per_library_median_exact": 0.1742112666563664,
        "median_depth_M": 49.518,
        "ratio_of_medians_NOT_a_normalisation": 0.1616
       },
@@ -621,6 +667,7 @@
         "min": 0.0,
         "max": 0.7763
        },
+       "per_library_median_exact": 0.31447090957369345,
        "median_depth_M": 26.608,
        "ratio_of_medians_NOT_a_normalisation": 0.3007
       },
@@ -631,6 +678,7 @@
         "min": 0.0,
         "max": 0.4547
        },
+       "per_library_median_exact": 0.18217644421685544,
        "median_depth_M": 43.985,
        "ratio_of_medians_NOT_a_normalisation": 0.1819
       },
@@ -641,6 +689,7 @@
         "min": 0.0,
         "max": 0.4854
        },
+       "per_library_median_exact": 0.19012763672274427,
        "median_depth_M": 42.077,
        "ratio_of_medians_NOT_a_normalisation": 0.1901
       },
@@ -651,6 +700,7 @@
         "min": 0.0,
         "max": 0.5191
        },
+       "per_library_median_exact": 0.19611510682022154,
        "median_depth_M": 40.792,
        "ratio_of_medians_NOT_a_normalisation": 0.1961
       }
@@ -673,6 +723,7 @@
         "min": 0.7902,
         "max": 0.7902
        },
+       "per_library_median_exact": 0.79019721720197,
        "median_depth_M": 45.558,
        "ratio_of_medians_NOT_a_normalisation": 0.7902
       },
@@ -683,6 +734,7 @@
         "min": 1.5005,
         "max": 1.5005
        },
+       "per_library_median_exact": 1.5005166779094268,
        "median_depth_M": 23.992,
        "ratio_of_medians_NOT_a_normalisation": 1.5005
       },
@@ -693,6 +745,7 @@
         "min": 0.8147,
         "max": 0.8147
        },
+       "per_library_median_exact": 0.8147041424537349,
        "median_depth_M": 44.188,
        "ratio_of_medians_NOT_a_normalisation": 0.8147
       },
@@ -703,6 +756,7 @@
         "min": 0.8462,
         "max": 0.8462
        },
+       "per_library_median_exact": 0.8462231134936575,
        "median_depth_M": 42.542,
        "ratio_of_medians_NOT_a_normalisation": 0.8462
       },
@@ -713,6 +767,7 @@
         "min": 0.8706,
         "max": 0.8706
        },
+       "per_library_median_exact": 0.870614118139724,
        "median_depth_M": 41.35,
        "ratio_of_medians_NOT_a_normalisation": 0.8706
       }
@@ -735,6 +790,7 @@
         "min": 0.0,
         "max": 0.4293
        },
+       "per_library_median_exact": 0.35563925025555815,
        "median_depth_M": 47.801,
        "ratio_of_medians_NOT_a_normalisation": 0.3556
       },
@@ -745,6 +801,7 @@
         "min": 0.0,
         "max": 0.6668
        },
+       "per_library_median_exact": 0.5769482302995427,
        "median_depth_M": 29.465,
        "ratio_of_medians_NOT_a_normalisation": 0.5769
       },
@@ -755,6 +812,7 @@
         "min": 0.0,
         "max": 0.4288
        },
+       "per_library_median_exact": 0.36486906694995386,
        "median_depth_M": 46.592,
        "ratio_of_medians_NOT_a_normalisation": 0.3649
       },
@@ -765,6 +823,7 @@
         "min": 0.0,
         "max": 0.4547
        },
+       "per_library_median_exact": 0.38214869261762013,
        "median_depth_M": 44.485,
        "ratio_of_medians_NOT_a_normalisation": 0.3821
       },
@@ -775,6 +834,7 @@
         "min": 0.0,
         "max": 0.4676
        },
+       "per_library_median_exact": 0.3927474607028442,
        "median_depth_M": 43.285,
        "ratio_of_medians_NOT_a_normalisation": 0.3927
       }
@@ -797,6 +857,7 @@
         "min": 0.1278,
         "max": 0.1874
        },
+       "per_library_median_exact": 0.15758279925382923,
        "median_depth_M": 47.493,
        "ratio_of_medians_NOT_a_normalisation": 0.1579
       },
@@ -807,6 +868,7 @@
         "min": 0.2333,
         "max": 0.3072
        },
+       "per_library_median_exact": 0.27025747108385334,
        "median_depth_M": 27.507,
        "ratio_of_medians_NOT_a_normalisation": 0.2727
       },
@@ -817,6 +879,7 @@
         "min": 0.1317,
         "max": 0.1865
        },
+       "per_library_median_exact": 0.15909800282891562,
        "median_depth_M": 46.909,
        "ratio_of_medians_NOT_a_normalisation": 0.1599
       },
@@ -827,6 +890,7 @@
         "min": 0.1427,
         "max": 0.199
        },
+       "per_library_median_exact": 0.1708292629965043,
        "median_depth_M": 43.642,
        "ratio_of_medians_NOT_a_normalisation": 0.1719
       },
@@ -837,6 +901,7 @@
         "min": 0.148,
         "max": 0.2048
        },
+       "per_library_median_exact": 0.17636151869577676,
        "median_depth_M": 42.252,
        "ratio_of_medians_NOT_a_normalisation": 0.1775
       }
@@ -849,27 +914,32 @@
   "exon_fc_count_all.total": {
    "Cortex_Motor_Lateral_per_million": 2.5304,
    "Spinal_Cord_Cervical_per_million": 0.1133,
-   "fold": 22.33
+   "fold": 22.34,
+   "fold_from_rounded_medians_do_not_use": 22.33
   },
   "exon_fc_count_all.assigned": {
    "Cortex_Motor_Lateral_per_million": 5.2502,
    "Spinal_Cord_Cervical_per_million": 0.2055,
-   "fold": 25.55
+   "fold": 25.55,
+   "fold_from_rounded_medians_do_not_use": 25.55
   },
   "star.number_of_input_reads": {
    "Cortex_Motor_Lateral_per_million": 2.7099,
    "Spinal_Cord_Cervical_per_million": 0.115,
-   "fold": 23.56
+   "fold": 23.57,
+   "fold_from_rounded_medians_do_not_use": 23.56
   },
   "star.all_mapped_reads": {
    "Cortex_Motor_Lateral_per_million": 2.8295,
    "Spinal_Cord_Cervical_per_million": 0.1238,
-   "fold": 22.86
+   "fold": 22.85,
+   "fold_from_rounded_medians_do_not_use": 22.86
   },
   "star.uniquely_mapped_reads_number": {
    "Cortex_Motor_Lateral_per_million": 2.9051,
    "Spinal_Cord_Cervical_per_million": 0.1311,
-   "fold": 22.16
+   "fold": 22.16,
+   "fold_from_rounded_medians_do_not_use": 22.16
   }
  }
 }
