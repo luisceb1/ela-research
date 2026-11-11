@@ -3,6 +3,14 @@
 This replaces earlier planning snapshots. Historical reports and commits remain evidence, not automatic instructions to rerun work. This consolidated state accompanies integration of PRs #46–#49. Review details and exact checked commits are preserved in [INTEGRATION_REVIEW](../reports/integration-20261104/REVIEW.md).
 
 
+## ST7 composition gate completed — 11 November 2026
+
+[Report](../reports/stmn2-composition-20261111/REPORT.md): ST7 supplies exact valid composition vectors for all 90 libraries of the 45 original pairs. 16,985 rows, 1,724 valid sample/reference vectors, finite simplex values and complete observed taxonomies. Technical linkage accepted; no new adjusted tissue effect fitted.
+
+Cortex (8 classes, MuSiC GSE140231 reference) and spinal cord (11 classes, GSE190442 reference) use different taxonomies. Cross-reference calibration and exact raw/transformed ST7 provenance are not established by the worksheet. Do not subtract/divide these fractions or claim a common-scale composition correction without a defensible measurement/model protocol. Shared algorithm and sum-one alone do not establish comparability.
+
+The earlier ST7 inspection task is complete. Cheapest next concrete task: fix a within-region-only STMN2/neuronal-estimate association protocol, handling coverage/RIN and keeping cortical and spinal reference scales separate. This can probe an alternative explanation but cannot be labelled correction of the paired tissue effect. A common-scale tissue adjustment instead requires harmonized/calibrated composition estimates and provenance. No extra cohort search or new p-value executed here; #37/#44 unchanged.
+
 ## STMN2 RIN sensitivity completed — 11 November 2026
 
 [RIN report](../reports/stmn2-rin-20261111/REPORT.md), fixed protocol c444b5443b671f0aa8436109eb05a600f1fb0b86. All original 45 pairs reproduce and agree with ST3 on donor/region/preparation; valid RIN in all 90 libraries. Main restriction (RIN≥6 both, absolute difference≤1) leaves **19 pairs: 10 cervical-higher / 8 ties / 1 lower**, median paired local-ratio difference **+0.002551**. Stricter RIN≥7 leaves **9 pairs, 4/4/1, median zero** and fails the fixed ≥10-pair interpretation gate. No additional p-values or regression. This is descriptive sensitivity, not full QC adjustment or independent replication; do not claim uniform robustness to RIN.
