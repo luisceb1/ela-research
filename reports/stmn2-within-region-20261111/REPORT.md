@@ -1,5 +1,8 @@
 # Cierre del ciclo STMN2: asociación tisular exploratoria y composición aún no resuelta
 
+[English](REPORT.en.md)
+
+
 11/11/2026. Análisis final dentro de cada región, sin nuevos p-valores ni corrección del efecto tisular. [Protocolo](../../research/plans/2026-11-11-stmn2-within-region.md) fijado en `3a43db16981ab7dd5d0d887fb46099db74ee45d1` antes de calcular estas asociaciones. Los resultados anteriores ya eran conocidos; no es confirmación prospectiva externa.
 
 ## Evidencia del análisis final

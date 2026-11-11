@@ -1,5 +1,8 @@
 # STMN2: unión validada y mapa parcial de donantes recuperado
 
+[English](REPORT.en.md)
+
+
 Fecha: 11/11/2026. Base de los conteos: `ad96ec5e3e5ebb40a12324c0802a4979916f5c4d`.
 Alcance fijado antes de los nuevos cruces en el commit `7f9b04c613fc7ad80032ff0bc25fa0377392a6af`, [plan](../../research/plans/2026-11-11-stmn2-map-audit.md).
 Los conteos y las afirmaciones originales ya eran conocidos: esto es una auditoría retrospectiva de medida y diseño, no una validación prospectiva ni un descubrimiento biológico.

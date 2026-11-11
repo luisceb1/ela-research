@@ -1,5 +1,8 @@
 # Cronología de intervenciones UNC13A: la laguna específica persiste bajo las dos lecturas del criterio
 
+[English](REPORT.en.md)
+
+
 **Fecha:** 2026-11-10. **Base:** main `3916b77ec0546e9d327e6d54e4dacd90d1a51ce4`, plan prefijado en `research/plans/2026-11-10-unc13a-intervention-timing-matrix.md` (commit `626c259`, **anterior** a la recuperación de los textos).
 **Etiqueta de evidencia:** auditoría documental exploratoria. Primera pasada y curación ejecutadas **por el mismo agente**; no hay revisión independiente. Ver [CURATION](CURATION.md).
 

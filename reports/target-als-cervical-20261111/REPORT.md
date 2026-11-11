@@ -1,5 +1,8 @@
 # Médula cervical frente a corteza motora: 22× menos cobertura de UNC13A
 
+[English](REPORT.en.md)
+
+
 **Fecha:** 2026-11-11. **Plan prefijado:** [`research/plans/2026-11-11-target-als-cervical-cord.md`](../../research/plans/2026-11-11-target-als-cervical-cord.md), commit `9816f9d`, **anterior a descargar las uniones de médula**. El diseño incorpora las cinco correcciones de la revisión externa del ciclo anterior.
 **Etiqueta de evidencia:** descriptivo exploratorio en tejido post mortem, **comparación no emparejada entre tejidos**. Sin p-valores entre tejidos, sin efectos, sin interpretación clínica.
 

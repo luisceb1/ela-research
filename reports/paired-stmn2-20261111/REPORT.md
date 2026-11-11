@@ -1,5 +1,8 @@
 # STMN2 emparejado: 45 donantes utilizables y mayor cociente cervical
 
+[English](REPORT.en.md)
+
+
 11/11/2026. **Evidencia exploratoria**, misma cohorte previamente inspeccionada; no replicación independiente. [Protocolo](../../research/plans/2026-11-11-paired-stmn2.md), commit `60b1246c44b0ff1f8e7cb7a6579a2a0ee0340fb0`, fijado antes de contar pares elegibles o calcular diferencias. Los resultados marginales previos ya eran conocidos y motivaron la pregunta.
 
 ## Evidencia

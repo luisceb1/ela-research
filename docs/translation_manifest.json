@@ -9,7 +9,8 @@
     "Numerical locale converted in prose/tables; commands and inline identifiers unchanged.",
     "Bounded wording makes inspected-experiment scope explicit for timing claims and limits denominator robustness to the five examined choices.",
     "The timing source proposes peer review as a route; the English text explicitly does not guarantee that reviewers will resolve M-a.",
-    "Publication/access statements are dated source statements, not newly checked status."
+    "Publication/access statements are dated source statements, not newly checked status.",
+    "Spanish originals now include a reciprocal English link after the title. source_sha256 identifies the pinned translation source; current_source_sha256 includes this navigation-only insertion. Scientific bodies remain byte-for-byte unchanged."
   ],
   "translations": [
     {
@@ -18,12 +19,14 @@
       "source_sha256": "595b24c56efe3cd33316bc301e5ec3df5edc6fe5d3e6bb3447933fa7dd6ae651",
       "translation_sha256": "919e1ba62b4e20b09c98f38130fd998f057c977ca7f0e4ae95e6083476bca446",
       "checks": {
-        "original_unchanged": true,
         "fenced_command_blocks_identical": true,
         "source_inline_literals_preserved": true,
         "source_hashes_and_commit_ids_preserved": true,
-        "table_numbers_match_after_locale_conversion": true
-      }
+        "table_numbers_match_after_locale_conversion": true,
+        "source_body_matches_pinned_original_after_removing_navigation": true
+      },
+      "current_source_sha256": "7a6ebc43e395c5892dfbd19d546559bc00df52564b873b330feb7f9b09f78f6f",
+      "source_navigation_note": "Only an English companion link was inserted after the title; removing that insertion yields the pinned source bytes."
     },
     {
       "source": "reports/stmn2-composition-20261111/REPORT.md",
@@ -31,12 +34,14 @@
       "source_sha256": "b06d095feb3dbb03c7477ba59f3f08b3245fa0b6cbb4eabe2e3ab828a36b5da3",
       "translation_sha256": "c5179dae0366b7369d65f907b1aee2657528444e8629b8604e1f74b5fe45def6",
       "checks": {
-        "original_unchanged": true,
         "fenced_command_blocks_identical": true,
         "source_inline_literals_preserved": true,
         "source_hashes_and_commit_ids_preserved": true,
-        "table_numbers_match_after_locale_conversion": true
-      }
+        "table_numbers_match_after_locale_conversion": true,
+        "source_body_matches_pinned_original_after_removing_navigation": true
+      },
+      "current_source_sha256": "74b1980519f9c7411c6d0ae030beb81804233213bf4aaf4438711923b5b13a7e",
+      "source_navigation_note": "Only an English companion link was inserted after the title; removing that insertion yields the pinned source bytes."
     },
     {
       "source": "reports/stmn2-map-audit-20261111/REPORT.md",
@@ -44,12 +49,14 @@
       "source_sha256": "bb17d236ce40be28ff9ce10e55a2d2528da11760d67df5269f45269af9418542",
       "translation_sha256": "d127dc980457efaa8f862b31804c2b1f96bf2c3d64caa97168f8d97cf5bb0fa3",
       "checks": {
-        "original_unchanged": true,
         "fenced_command_blocks_identical": true,
         "source_inline_literals_preserved": true,
         "source_hashes_and_commit_ids_preserved": true,
-        "table_numbers_match_after_locale_conversion": true
-      }
+        "table_numbers_match_after_locale_conversion": true,
+        "source_body_matches_pinned_original_after_removing_navigation": true
+      },
+      "current_source_sha256": "047b4cc1d756192a67588fd8a10c630c999addeb844224cf9c2197c85e360141",
+      "source_navigation_note": "Only an English companion link was inserted after the title; removing that insertion yields the pinned source bytes."
     },
     {
       "source": "reports/stmn2-rin-20261111/REPORT.md",
@@ -57,12 +64,14 @@
       "source_sha256": "485fda1b3e042e261151b1e8aa929c6eb65de76f6b381516898d9b4727fe47df",
       "translation_sha256": "f66f2b7537ac0b140103c7ae196ab134d7bfe1e4e8e76c5a0d79ceaffabbc666",
       "checks": {
-        "original_unchanged": true,
         "fenced_command_blocks_identical": true,
         "source_inline_literals_preserved": true,
         "source_hashes_and_commit_ids_preserved": true,
-        "table_numbers_match_after_locale_conversion": true
-      }
+        "table_numbers_match_after_locale_conversion": true,
+        "source_body_matches_pinned_original_after_removing_navigation": true
+      },
+      "current_source_sha256": "41be554441fffea93fb81cf5c08f2018a890b143a67251c0f89fda9ef68853a1",
+      "source_navigation_note": "Only an English companion link was inserted after the title; removing that insertion yields the pinned source bytes."
     },
     {
       "source": "reports/stmn2-within-region-20261111/REPORT.md",
@@ -70,12 +79,14 @@
       "source_sha256": "a348768fc4e525818542e0013b51efa28f335a3eee2e72b2a7812757a3a2d279",
       "translation_sha256": "1d58a66b23416d5a91fb716877233db8f74895952c9044bcddc6f1b154578153",
       "checks": {
-        "original_unchanged": true,
         "fenced_command_blocks_identical": true,
         "source_inline_literals_preserved": true,
         "source_hashes_and_commit_ids_preserved": true,
-        "table_numbers_match_after_locale_conversion": true
-      }
+        "table_numbers_match_after_locale_conversion": true,
+        "source_body_matches_pinned_original_after_removing_navigation": true
+      },
+      "current_source_sha256": "5b24a8d8a1252ee483fe064af018ecfbbd48fbfe897cc1ced2a11038967bb592",
+      "source_navigation_note": "Only an English companion link was inserted after the title; removing that insertion yields the pinned source bytes."
     },
     {
       "source": "reports/target-als-cervical-20261111/REPORT.md",
@@ -83,12 +94,14 @@
       "source_sha256": "fe197702a9437bf64357137c433990ed882a83157a15796b0104c916945a2e73",
       "translation_sha256": "f041048dd4fc788dcad6b460acdeb102e44224d7634614c9fbfb033e537f454a",
       "checks": {
-        "original_unchanged": true,
         "fenced_command_blocks_identical": true,
         "source_inline_literals_preserved": true,
         "source_hashes_and_commit_ids_preserved": true,
-        "table_numbers_match_after_locale_conversion": true
-      }
+        "table_numbers_match_after_locale_conversion": true,
+        "source_body_matches_pinned_original_after_removing_navigation": true
+      },
+      "current_source_sha256": "23dc01818d6a489b2b928686bfc55a8e6573b5085b39eea115bb42b014dea685",
+      "source_navigation_note": "Only an English companion link was inserted after the title; removing that insertion yields the pinned source bytes."
     },
     {
       "source": "reports/unc13a-intervention-timing-20261110/REPORT.md",
@@ -96,12 +109,14 @@
       "source_sha256": "b03c86efca1dd1150dc9f6655b3f752258dfe9665fc8767fa31d9111ec8872b2",
       "translation_sha256": "c7dcd13b80a55f40f96e3ddcd29961835e7739771b6ac0ef8e46a31600ce9d9c",
       "checks": {
-        "original_unchanged": true,
         "fenced_command_blocks_identical": true,
         "source_inline_literals_preserved": true,
         "source_hashes_and_commit_ids_preserved": true,
-        "table_numbers_match_after_locale_conversion": true
-      }
+        "table_numbers_match_after_locale_conversion": true,
+        "source_body_matches_pinned_original_after_removing_navigation": true
+      },
+      "current_source_sha256": "5c23fe91f40ffc1a8daf7f545b122db3e2db45378f588ce3e0ddb783c36aef36",
+      "source_navigation_note": "Only an English companion link was inserted after the title; removing that insertion yields the pinned source bytes."
     }
   ]
 }
