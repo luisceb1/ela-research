@@ -93,6 +93,62 @@ By-product verification: STMN2 falls 51.8% in the same counts, independently rep
 
 No explanation is ruled out or demonstrated. What the cycle does yield is a sharper entry requirement for #37: whole-transcriptome RNA-seq, with **documented depletion efficiency**, deep enough at UNC13A (of the order of 200 canonical reads if the fraction is near 0.10), and with at least three independent biological units per condition. The second criterion is new, and without it a low fraction cannot be told apart from a weak knockdown.
 
+## TARGET_ALS motor cortex: the cleanest empirical result so far, and why the gate is unreachable
+
+A fourth cycle, on patient tissue rather than culture: TARGET_ALS motor cortex via recount3, **149 samples**, 194 MB against a 400 MB budget. Every setup control passes — not a targeted assay (2.7M junctions across 127 chromosomes), the convention guard holds, all three sealed junctions match exactly, annotation pattern as predicted. [Report](../reports/target-als-cortex-20261111/REPORT.md).
+
+**The cortical expression hypothesis is supported:** canonical coverage runs at a median of 102–148 reads per sample against 7–66 in Klim's spinal motor neurons, so UNC13A is two to three times better covered in motor cortex.
+
+**Clean qualitative separation: 23 of 109 ALS-spectrum samples (21%) carry cryptic reads; 0 of 17 non-ALS samples carry any** — and the controls have *better* canonical coverage (median 148), so their zero is not a depth artefact.
+
+Of the three prespecified predictions, **P1 is refuted** (0 of 149 samples reach 20 cryptic reads) while P2 (median fraction below 0.10) and P3 (higher in ALS) are confirmed.
+
+**The arithmetic explains the repeated failures and is the cycle's main contribution.** Depth is no longer the limit; the *fraction* is. At a fraction of 0.08 reaching 20 cryptic reads needs about 250 canonical reads, and at 0.02 about 1,000 — two to ten times the locus depth of one of the largest ALS cohorts in existence. The cause is biological dilution: bulk tissue is mostly cells without nuclear TDP-43 loss. More samples cannot fix it; cell enrichment or a targeted assay could.
+
+**Third datapoint on the discrepancy: the amplicon is the lone outlier.** Two whole-transcriptome measurements now agree in order of magnitude — Klim's culture at 0.000–0.145 and patient cortex at 0.000–0.0796 — across different labs, decades and systems, against the amplicon's 0.390–0.690. This does not prove the amplicon biased, since each transcriptome source has its own downward-bias explanation, but it shifts the burden of proof onto the single high figure.
+
+No novelty is claimed: the consortium has published on these data and Ma 2022 carries a supplementary table on UNC13A and STMN2 variants in the NYGC cohort. Personal data: only the subject-group column was read; sex, ethnicity, ages and site of onset were not read, no individual clinical row is in the output, and the metadata file is not versioned.
+
+## Cervical cord against motor cortex: 21x less UNC13A coverage at identical depth
+
+The cortex report was corrected the same day after **the project's first independent review**, which Luis obtained from a second reader. It flagged four overstatements; I checked all four and all four were right. Library depth explained most of the coverage difference I had called evidence of cortical expression. The ratio double-counted inclusion, because a transcript carrying the cryptic exon offers two junctions a read can span while one without it offers one, so the maximum fell from 0.0796 to 0.0414 and the per-junction maximum is **four reads**. Cell dilution is now stated as the most plausible explanation rather than a demonstrated cause, and the closing claim is narrowed to the datasets examined. Verification also established that **the metadata exposes no donor identity**, so tissue comparisons cannot be paired.
+
+The cervical cycle then ran with that corrected design. [Report](../reports/target-als-cervical-20261111/REPORT.md), table in `tissue_comparison.tsv`.
+
+**Sequencing depth is identical between tissues** — median 44.4M exon-assigned reads in both, ratio 1.00 — which removes the confounder that invalidated the earlier cross-study comparison. With depth matched, **UNC13A canonical coverage is about 21 times lower in cervical cord than in motor cortex** (0.11 against 2.30 per million in ALS). All three predictions are confirmed: lower normalised coverage, lower detection (0.053 against 0.190, Wilson intervals just failing to overlap), and no sample reaching twenty reads on a single cryptic junction.
+
+This retrospectively explains the project's failures: **the closed pilot and the Klim dataset were spinal motor neurons**, the tissue where this locus is worst covered. Not bad luck — the wrong tissue for the locus.
+
+Two things it does **not** show. The lower detection in cord needs no difference in biology, since it is what 21-fold less coverage produces on its own. And in cord no ratio is interpretable at all: with a canonical median of 5 reads, the apparent high PSI values are one cryptic read over two canonical, which is sampling noise.
+
+**Conclusion, as prespecified:** of the five datasets examined none reaches the threshold, so **this search closes for lack of precision with the data examined**. No claim is made about all public RNA-seq. What is established is where not to look, and that the route to the threshold is cell enrichment or a targeted assay rather than more samples or more depth.
+
+## STMN2 passes the coverage threshold: the failure was the locus, not the method
+
+The coverage search had closed for UNC13A. This cycle changed gene rather than reopening it, on a measured basis: in Klim's motor neurons STMN2 runs at CPM 2,145.6 against UNC13A's 178.5, twelve times higher. [Report](../reports/stmn2-derivation-20261111/REPORT.md).
+
+**Coordinates were derived, not improvised.** Two independent features of NM_007029.4 — the exon 1 end and the exon 2 start, read from UCSC's ncbiRefSeq in both assemblies — give the **same** offset of 912,235, which places the published hg19 cryptic-exon interval at hg38 79,616,822–79,617,049. The observed junction chr8:79,611,215–79,616,821 puts its acceptor exon start at exactly 79,616,822, and the canonical junction matches the transcript's exon boundaries exactly. Sealed in `research/references/stmn2_targets_sealed.json`.
+
+**My own prespecified criterion was wrong and the cross-check caught it.** The plan required `annotated=0` for the cryptic junction; the true junction is flagged `annotated=1` in recount3's reference set, so the criterion would have excluded it. Five `annotated=0` candidates did pass every structural check and none is the published event. Stopping before measuring, as the plan required with more than one candidate, is what prevented measuring an arbitrary junction and calling it STMN2's cryptic exon.
+
+**The threshold is passed for the first time in this project.** In cervical cord, 4 ALS samples reach 20 or more cryptic reads (21–52 reads, PSI 0.148–0.544 on solid denominators), and detection is 48 of 95 against 1 of 13 controls, with Wilson intervals that do not overlap. So the repeated failure with UNC13A was **the locus, not the method or the access**.
+
+**The signal sits where the biology predicts, and it mirrors UNC13A.** Motor cortex holds 19 times more canonical STMN2 coverage than cervical cord and still shows fewer cryptic junctions (31 of 84) and far lower PSI (max 0.029 against 0.544), which a coverage difference cannot explain. **No discovery is claimed**: STMN2 truncation in ALS cord is among the field's most replicated findings, and this is reproduction with adequate coverage.
+
+No effect is computed: 4 samples above threshold in ALS and none in controls, with no donor identity, so an inferential contrast needs its own prospective design. Ratios were read only where cryptic plus canonical reached 20, since 25 of 95 cord samples have canonical below 10 and their apparent PSI of 1.0 is two cryptic reads over zero canonical.
+
+Next: UNC13A's own sealed coordinates came from an earlier derivation and **should face the same double-anchor cross-check**, since its `annotated=0` assumption may have been wrong too.
+
+## UNC13A's coordinates audited and confirmed: 88 of 88 boundaries agree
+
+Because the STMN2 cycle showed a prespecified criterion of mine could exclude the published event, UNC13A's sealed coordinates were put through the same double-anchor cross-check they had never faced. [Report](../reports/unc13a-coordinate-audit-20261111/REPORT.md).
+
+All **88** exon boundaries of NM_001080421.3 give a single offset, 110,809, with no exception, so the region lifted between assemblies without structural change. Applying it to the published hg19 cryptic-exon interval yields **17,642,414–17,642,541**, exactly what the sealed junctions imply, and the canonical intron begins one base after a real hg38 exon end and finishes at a real exon start. The offset was written into the plan **before** querying UCSC, so this was a checked prediction rather than a fitted adjustment.
+
+**Coordinates unchanged; none was needed. No measurement from this week is affected** — the recount3 reports, the fraction discrepancy, motor cortex and cervical cord all measured the right junctions, and the coverage closure for UNC13A stands on locus coverage rather than a coordinate error.
+
+One methodological lesson does change practice: UNC13A's cryptic junctions are flagged `annotated=0` in recount3 while STMN2's is flagged `annotated=1`, so **that flag is inconsistent across genes and unreliable in either direction**. Using it to include would have failed for UNC13A; using it to exclude did fail for STMN2. What worked in both cases was cross-checking a published interval through a double anchor, and the note is recorded in the sealed files so no future cycle leans on the flag again.
+
 ## Access and communications: dated evidence only
 
 The 04 November administrative audit records AD Workbench dataset-approval wording followed by review wording, and a pending workspace. Neither establishes effective access or a technical manifest. [Audit](../reports/continuity-20261104/REPORT.md). The expanded public K26 search found no attributable source table in the checked routes; this is not universal proof of absence. [Search](../reports/fig4d-source-search-20261104/REPORT.md).
