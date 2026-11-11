@@ -131,11 +131,53 @@ La trampa es reutilizable, así que la sonda ahora la detecta sola:
 
 `assay_shape()` marca `looks_targeted_not_transcriptome_wide` y el veredicto queda `gate_qualified_by_assay_shape: true`. Es una heurística, no una prueba: obliga a verificar contra el artículo, no sustituye esa verificación.
 
+## Tercer candidato: Brown 2022 — ninguno de sus depósitos es elegible
+
+Decidido **desde la propia declaración de datos del artículo**, antes de tocar ningún dato. Brown 2022 enumera lo que depositó y lo que reutilizó:
+
+| Accesión | Qué es | Elegible para #37 |
+|---|---|---|
+| E-MTAB-10235 | Riboseq | **No**: no es RNA-seq de uniones |
+| E-MTAB-10237 | RNA-seq **dirigido** | **No**: dirigido |
+| E-MTAB-10297 | iCLIP de minigén | **No**: otro ensayo |
+| E-MTAB-11243 | iCLIP de TDP-43 en SH-SY5Y | **No**: otro ensayo |
+| E-MTAB-11244 | nanopore **dirigido** a UNC13A | **No**: dirigido |
+| GSE121569 (reutilizado) | «iPS cell MNs» | **= SRP166282**, ya probado y rechazado por cobertura |
+| GSE126543 (reutilizado) | núcleos neuronales de córtex frontal por FACS | **Sin registros SRA** (`count=0`): no está en recount3 |
+| GSE97262 (reutilizado) | SK-N-BE(2)b | Sin accesión SRA enlazada; línea de neuroblastoma, no neuronas corticales |
+
+**Brown 2022 no puede probar la hipótesis cortical.** Su única fuente de transcriptoma completo reutilizada es el dataset de Klim que ya rechazamos, y su candidato cortical (GSE126543) no tiene depósito en SRA alcanzable por esta vía.
+
+Dato relevante de paso: los dos artículos que **establecieron** el exón críptico de UNC13A depositaron **ensayos dirigidos** —amplicón, RNA-seq dirigido, nanopore dirigido—. Eso es coherente con que la unión críptica sea difícil de detectar en RNA-seq de transcriptoma completo a profundidad habitual.
+
+## Discrepancia entre fuentes que NO se resuelve aquí
+
+Las dos fuentes miden la misma cosa en condiciones de knockdown y **no concuerdan**:
+
+| Fuente | Ensayo | Fracción críptica en knockdown |
+|---|---|---|
+| SRP166282 (Klim) | RNA-seq de transcriptoma completo | **0,000 – 0,145** |
+| SRP334561 (Ma) | amplicón dirigido | **0,390 – 0,690** |
+
+Una diferencia de **4 a 5 veces**. La fracción es independiente de la profundidad, de modo que **la discrepancia no se explica por cobertura**. Explicaciones alternativas posibles, ninguna comprobada aquí: eficacia distinta del knockdown (siRNA frente a shRNA), sesgo de amplificación del ensayo de amplicón, diferencias de línea o tipo celular, filtros de uniones de recount3 sobre el RNA-seq, o longitud de lectura y mapeabilidad de la unión críptica en los datos de 2013.
+
+**No se resuelve y no se promedia.** Se registra como inconsistencia abierta entre fuentes, y refuerza la advertencia de no tratar la fracción del amplicón como PSI no sesgado.
+
+### Por qué esta discrepancia decide el futuro de la puerta de #37
+
+Con la fracción que muestra Klim (≈0,10) y su cobertura canónica (≈60 lecturas), alcanzar 20 lecturas crípticas exigiría unas **200 lecturas en la unión canónica**. Con la fracción de Ma (≈0,5) bastarían unas **40**.
+
+Es decir: **si el umbral de 20 es alcanzable en RNA-seq público depende de cuál de las dos fracciones es la real**, y eso es precisamente lo que no sabemos. La pregunta previa a seguir buscando datasets ya no es «¿hay uno más profundo?» sino «¿cuál es el nivel real de inclusión críptica?».
+
+**Esto es una decisión de alcance para Luis, no del agente:** reorientar #37 hacia resolver esa discrepancia, o seguir buscando datasets de transcriptoma completo más profundos. El agente **no** cambia el umbral de 20 ni la pregunta de #37 por su cuenta.
+
 ## Limitaciones
 
 - **SRP166282: rechazo por cobertura**, igual que el piloto cerrado. La causa está aislada: profundidad en el locus, no acceso. **Una sola línea celular**, sin independencia genética.
 - **SRP334561: no elegible** para la puerta de #37 por ser ensayo de amplicón dirigido, pese a tener el mejor diseño (3 líneas de donante) y cobertura altísima. Su fracción críptica no es PSI de transcriptoma completo.
-- **La hipótesis cortical sigue SIN PROBAR.** Los dos datasets son de motoneuronas. Ninguno responde si la cobertura de UNC13A mejora en neuronas corticales.
+- **La hipótesis cortical sigue SIN PROBAR**, y Brown 2022 no puede probarla: sus depósitos son dirigidos o de otro ensayo, y su candidato cortical no tiene SRA. Los tres candidatos examinados son de motoneuronas o inelegibles.
+- **No se ha hecho una búsqueda exhaustiva de recount3.** Se comprobaron accesiones concretas derivadas de los dos artículos de referencia. **No se afirma que no exista** un dataset adecuado; se afirma que los de estos artículos no sirven.
+- **Discrepancia abierta de 4–5× en la fracción críptica** entre las dos fuentes, sin resolver. Mientras siga abierta, no se puede saber si el umbral de 20 es alcanzable en RNA-seq público.
 - **Los metadatos de SRA pueden mentir sobre la estrategia de librería.** Aquí un amplicón figura como `RNA-Seq`. No fiarse del campo sin comprobar la forma de la cuantificación y el artículo.
 - Depleción por siRNA, no degradación controlada; el grado de knockdown por muestra **no** se ha verificado en estos datos.
 - Las cuantificaciones de recount3 usan su propia tubería y filtros de uniones. Otra herramienta contaría distinto y habría que justificar la equivalencia.

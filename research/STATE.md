@@ -71,6 +71,16 @@ The probe now detects this trap itself: 43 junctions with 76.7% on chr19 across 
 
 **The cortical hypothesis remains untested** — both datasets are motor neurons. And a reusable caution is recorded: SRA's library_strategy field can misdescribe a targeted assay.
 
+## Brown 2022 ruled out, and an open discrepancy that reframes #37
+
+Brown 2022 was ruled out **from its own data statement**, before touching any data. Everything it deposited is targeted or another assay entirely — Riboseq, targeted RNA-seq, two iCLIP sets, targeted nanopore — and of what it reused, the only whole-transcriptome source is GSE121569, which resolves to SRP166282, the Klim dataset already rejected on coverage. Its cortical candidate, GSE126543, has no SRA records at all. So Brown cannot test the cortical-depth hypothesis, which **remains untested** across all three candidates examined. This was not an exhaustive search of recount3: specific accessions from the two defining papers were checked, and no claim is made that no suitable dataset exists.
+
+Worth noting: both papers that **established** the UNC13A cryptic exon deposited targeted assays, consistent with the junction being hard to see in whole-transcriptome RNA-seq at ordinary depth.
+
+**The finding that matters most is a discrepancy between the two sources.** In knockdown samples the cryptic fraction is **0.000–0.145** by Klim's whole-transcriptome RNA-seq and **0.390–0.690** by Ma's amplicon — four to five fold apart. A fraction is depth-independent, so coverage does not explain it. Candidate explanations, none tested here: knockdown efficiency (siRNA against shRNA), amplification bias in the amplicon assay, cell line or type, recount3's junction filters, or read length and mappability in 2013-era data. It is recorded as an open inconsistency and is not averaged away.
+
+This reframes the gate. At Klim's fraction (~0.10) and canonical coverage (~60), reaching 20 cryptic reads would need roughly **200** reads on the canonical junction; at Ma's fraction (~0.5), about **40** would do. So whether the threshold of 20 is reachable in public RNA-seq **depends on which fraction is real**, which is exactly what is unknown. The prior question is no longer "is there a deeper dataset" but "what is the true cryptic inclusion level". Whether to reorient #37 towards resolving that is a **scope decision for Luis**; the agent does not change the threshold or the question on its own.
+
 ## Access and communications: dated evidence only
 
 The 04 November administrative audit records AD Workbench dataset-approval wording followed by review wording, and a pending workspace. Neither establishes effective access or a technical manifest. [Audit](../reports/continuity-20261104/REPORT.md). The expanded public K26 search found no attributable source table in the checked routes; this is not universal proof of absence. [Search](../reports/fig4d-source-search-20261104/REPORT.md).
