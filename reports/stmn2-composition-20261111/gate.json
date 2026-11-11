@@ -1,0 +1,69 @@
+{
+  "source_sha256": "6b24edc4279eebb0d8560ef277573745fa0110e1e8d1a07009621d020cd2abfc",
+  "schema": [
+    "Sample",
+    "cell type",
+    "estimate",
+    "tissue"
+  ],
+  "data_rows": 16985,
+  "validated_sample_reference_vectors": 1724,
+  "vector_validation_failures": {
+    "incomplete_taxonomy": 0
+  },
+  "reference_taxonomies": {
+    "Spinal Cord": [
+      "Astrocytes",
+      "Endothelial",
+      "Ependymal.Cells",
+      "Lymphocytes",
+      "Meninges",
+      "Microglia",
+      "Neurons",
+      "OPC",
+      "Oligodendrocytes",
+      "Pericytes",
+      "Schwann"
+    ],
+    "Cortex": [
+      "Astrocytes",
+      "Endothelial",
+      "Excitatory",
+      "Inhibitory",
+      "Microglia",
+      "Oligodendrocytes",
+      "Opc",
+      "Pericytes"
+    ],
+    "Cerebellum": [
+      "AS",
+      "BG",
+      "END",
+      "GC",
+      "GoC",
+      "MG",
+      "MLI1",
+      "MLI2",
+      "OL",
+      "OPC",
+      "PC",
+      "PER",
+      "UBC"
+    ]
+  },
+  "baseline_pairs": 45,
+  "exact_unique_vectors_for_baseline_libraries": {
+    "cortex": 45,
+    "cervical": 45
+  },
+  "source_reference_labels_by_baseline_region": {
+    "cortex": {
+      "Cortex": 45
+    },
+    "cervical": {
+      "Spinal Cord": 45
+    }
+  },
+  "pairs_with_two_exact_vectors": 45,
+  "decision": "technical sample join assessed only; do not assume cross-reference fractions are calibrated"
+}

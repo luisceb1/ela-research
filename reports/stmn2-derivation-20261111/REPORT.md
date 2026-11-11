@@ -1,9 +1,15 @@
-# STMN2 supera el umbral de cobertura por primera vez, y la señal está donde la biología predice
+# STMN2: lecturas crípticas suficientes en cuatro muestras cervicales de ELA
+
+**Revisión:** auditoría posterior de [medida y unidades](../stmn2-map-audit-20261111/REPORT.md). Corrige P1, la interpretación de P3 y las limitaciones de donante; conserva los conteos originales.
 
 **Fecha:** 2026-11-11. **Plan prefijado:** [`research/plans/2026-11-11-stmn2-junction-derivation.md`](../../research/plans/2026-11-11-stmn2-junction-derivation.md), commit `c378db1`, **anterior a derivar coordenadas o calcular nada**.
 **Etiqueta de evidencia:** derivación de coordenadas verificada + medición descriptiva en tejido post mortem. Sin contraste inferencial, sin efectos, sin p-valores entre grupos.
 
 **No se reclama ningún descubrimiento.** El splicing críptico de STMN2 en médula espinal de ELA es uno de los hallazgos más replicados del campo. Lo nuevo **para este proyecto** es que por primera vez puede medirlo con cobertura suficiente.
+
+## Corrección integrada de P1 y de la población de resumen
+
+La rama de Claude reconoció el error de etiquetado de P1 (commit `a85f950`): el umbral era ≥10× y no se alcanzó. Conservamos esa corrección con la distinción de escala comprobada en #57: **6,6× bruto y 8,085× normalizado por lecturas de entrada**. P2 se observa en cuatro bibliotecas de cuatro donantes; **P3 queda descriptiva**, y P2 no identifica por sí sola la causa de la escasa cobertura de UNC13A. Se conservan los conteos originales y se separan explícitamente las poblaciones con denominador >0 y ≥20. [Revisión de integración](../integration-20261111/REVIEW.md).
 
 ## Parte 1: derivación de coordenadas, y una corrección a mi propio criterio
 
@@ -18,9 +24,9 @@ Transcrito `NM_007029.4`, pista `ncbiRefSeq` de UCSC, consultada en **ambos** en
 | Fin del exón 1 | 80.523.449 | 79.611.214 | **912.235** |
 | Inicio del exón 2 | 80.549.036 | 79.636.801 | **912.235** |
 
-Dos rasgos independientes del mismo transcrito dan **el mismo desplazamiento**. No es una suposición.
+Dos rasgos distintos del mismo transcrito dan **el mismo desplazamiento**. Son anclas concordantes, pero por sí solas no prueban la alineación de la región intermedia. La auditoría posterior la comprobó con la cadena UCSC hg19→hg38 y contrastó el inicio con la coordenada hg38 de Melamed 2019. Los límites RefSeq de esta tabla son 0-based.
 
-Aplicado al intervalo de conteo del exón críptico publicado (hg19 `chr8:80.529.057–80.529.284`, ancho 228, DOI `10.1007/s00401-023-02655-0`): **hg38 79.616.822–79.617.049**.
+Aplicado al intervalo de conteo del exón críptico publicado (hg19 `chr8:80.529.057–80.529.284`, ancho 228, DOI `10.1007/s00401-023-02655-0`): **hg38 79.616.822–79.617.049**. Es un intervalo de conteo: Melamed describe el extremo de un transcrito de 227 nt en 79.617.048, una base antes; el inicio aceptor es el mismo.
 
 ### Verificación cruzada que resultó decisiva
 
@@ -44,14 +50,18 @@ El exón críptico de STMN2 es **terminal** (contiene una señal de poliadenilac
 
 ## Parte 2: medición
 
-Razones interpretadas **solo** cuando `(críptica + canónica) ≥ 20`, umbral declarado de antemano. En médula cervical, 25 de 95 muestras tienen canónica <10 y sus cocientes son ruido: el «PSI de 1,0» que aparece son **2 lecturas crípticas sobre 0 canónicas**.
+Razones interpretadas **solo** cuando `(críptica + canónica) ≥ 20`, umbral declarado de antemano. En médula cervical, 25 de 95 muestras tienen canónica <10 y sus cocientes tienen poca precisión: el «PSI de 1,0» que aparece son **2 lecturas crípticas sobre 0 canónicas**.
 
-| Tejido | Grupo | n | Interpretables | Canónica (mediana) | Con lectura críptica | Detección [Wilson 95 %] | **≥20 crípticas** | PSI mediana / máx. |
-|---|---|---:|---:|---:|---:|---|---:|---|
-| Corteza motora | ELA | 84 | 82 | 632 | 31 | 0,369 [0,274–0,476] | 0 | 0,000 / 0,029 |
-| Corteza motora | Control | 13 | 12 | 883 | 1 | 0,077 [0,014–0,333] | 0 | 0,000 / 0,009 |
-| **Médula cervical** | **ELA** | 95 | 58 | 33 | **48** | **0,505 [0,406–0,604]** | **4** | **0,006 / 0,544** |
-| Médula cervical | Control | 13 | 8 | 55 | 1 | 0,077 [0,014–0,333] | 0 | 0,000 / 0,001 |
+Las detecciones y medianas canónicas de la tabla usan todas las muestras; las razones usan únicamente C+K≥20. Se retiran los intervalos de Wilson como criterio de confirmación de una diferencia.
+
+| Tejido | Grupo | n total | n C+K≥20 | Canónica mediana, todas | Con K>0, todas | K≥20 | Cociente mediana / máximo, C+K≥20 |
+|---|---|---:|---:|---:|---:|---:|---|
+| Corteza motora | ELA pura | 84 | 82 | 632 | 31 | 0 | 0,000 / 0,029 |
+| Corteza motora | Control | 13 | 12 | 883 | 1 | 0 | 0,000 / 0,009 |
+| Médula cervical | ELA pura | 95 | 58 | 33 | 48 | 4 | 0,006 / 0,544 |
+| Médula cervical | Control | 13 | 8 | 55 | 1 | 0 | 0,000 / 0,001 |
+
+En cervical ELA, hay 92 denominadores no nulos y su máximo sin filtrar es 1,0; tras C+K≥20 quedan 58 y el máximo es 0,543860. La mediana coincide numéricamente (0,005684) en ambos subconjuntos. Las etiquetas de población se corrigen sin modificar ningún conteo.
 
 Las cuatro muestras que superan el umbral, con denominadores sólidos:
 
@@ -66,47 +76,38 @@ Las cuatro muestras que superan el umbral, con denominadores sólidos:
 
 | | Predicción | Resultado |
 |---|---|---|
-| **P1** | Cobertura canónica de STMN2 en médula ≥10× la de UNC13A (0,11 por millón) | **CONFIRMADA.** Canónica mediana 33 frente a 5, es decir ≈6,6× en cuentas brutas a profundidad idéntica |
+| **P1** | Cobertura canónica de STMN2 en médula ≥10× la de UNC13A (0,11 por millón) | **NO SE CUMPLE.** Medianas tras normalizar cada biblioteca por lecturas de entrada: 0,929460 frente a 0,114960 por millón, razón 8,085×. Sensibilidades 7,782× y 7,769×. La razón bruta 33/5=6,6 tampoco alcanza 10 |
 | **P2** | Al menos una muestra alcanzará ≥20 lecturas crípticas | **CONFIRMADA. Cuatro muestras**, con 21–52 lecturas |
-| **P3** | Detección mayor en espectro ELA que en controles | **CONFIRMADA en médula cervical**, donde los intervalos de Wilson **no se solapan** (0,406 frente a 0,333). **NO en corteza**, donde sí se solapan |
+| **P3** | Detección mayor en espectro ELA que en controles | **DIRECCIÓN DESCRIPTIVA OBSERVADA** en ambas regiones (48/95 frente a 1/13 y 31/84 frente a 1/13). No es confirmación inferencial; el solapamiento de intervalos de Wilson no prueba esta hipótesis |
 
 ## Interpretación
 
-### El umbral se supera, y eso valida el método
+### El evento puede medirse en algunas bibliotecas
 
-Es la primera vez que este proyecto obtiene **≥20 lecturas en una unión críptica** a partir de datos públicos de transcriptoma completo. El fracaso repetido con UNC13A **no era del método ni del acceso: era del locus.** La sonda, las coordenadas selladas y la ruta recount3 funcionan.
+Es la primera vez que este proyecto obtiene ≥20 lecturas en su unión críptica sellada a partir de datos públicos de transcriptoma completo. La literatura y la cadena respaldan la identidad de STMN2; cuatro bibliotecas de ELA cervical superan el umbral. Esto no valida todos los sesgos del ensayo ni establece la causa de la escasa cobertura de UNC13A.
 
-### La señal está donde la biología predice, y es el espejo de UNC13A
+### Diferencia descriptiva entre tejidos
 
-| Gen | Mejor cubierto en | Splicing críptico más prevalente en |
-|---|---|---|
-| UNC13A | corteza motora (21× sobre médula) | no detectable con precisión en ninguno |
-| **STMN2** | corteza motora en cuentas brutas (632 frente a 33) | **médula cervical** |
-
-El dato que lo hace informativo: la corteza tiene **19 veces más** cobertura canónica de STMN2 que la médula, y **aun así** detecta menos uniones crípticas (31/84 frente a 48/95) y PSI mucho menor (máx. 0,029 frente a 0,544). **Una diferencia de cobertura no puede explicar eso**; apunta a que el splicing críptico de STMN2 es genuinamente más prevalente en médula cervical, que es donde están las motoneuronas.
-
-Coherente con la literatura establecida, y es reproducción, no descubrimiento.
+La canónica STMN2 tiene mediana 632 en corteza frente a 33 en cervical entre las muestras de ELA pura, mientras que la detección críptica es 31/84 frente a 48/95. Es un patrón compatible con la literatura, pendiente de un contraste que respete donante, selección, calidad, profundidad y composición celular. No se excluye que esos factores expliquen parte de la diferencia. El cociente K/(C+K) es una medida local de lecturas, no una fracción molecular calibrada ni una medida de proteína o función.
 
 ### Lo que NO se hace aquí
 
-Con 4 muestras por encima del umbral en ELA y 0 en controles, **no se calcula ningún efecto**. La puerta de #37 exige ≥3 unidades biológicas independientes por condición, y aquí no hay identidad de donante ni controles por encima del umbral. Un contraste inferencial exigiría diseño prospectivo propio.
+No se calcula un efecto. La auditoría posterior recupera donante para 293/313 muestras y confirma cuatro donantes distintos en las cuatro bibliotecas cervicales de ELA pura con K≥20. Hay 128 donantes compartidos entre regiones contando todos los grupos, pero no son automáticamente pares con cobertura y diseño utilizables. La puerta original de #37 para UNC13A no se redefine: un análisis STMN2 necesita protocolo propio. Exigir K≥20 a controles seleccionaría controles positivos; deben admitirse ceros con denominador total adecuado bajo una regla fijada antes del contraste.
 
 ## Limitaciones
 
 - **Tejido bulk**; composición celular no medida y confusora.
-- **Comparación no emparejada** entre tejidos: los metadatos no exponen identidad de donante.
-- **13 controles por tejido.** Su intervalo de detección llega al 33 %, de modo que en **corteza no se puede afirmar diferencia** frente a controles.
+- **Comparación original no emparejada.** La auditoría posterior recupera un mapa parcial de donante, con 128 compartidos entre regiones; no se ha recalculado un efecto emparejado. Hay un donante con dos muestras cervicales y 20 bibliotecas sin enlace exacto.
+- **13 controles originales por tejido.** El mapa posterior enlaza 13 en corteza y 12 en cervical. La muestra control pequeña limita precisión; no se usa el solapamiento de intervalos para confirmar ni descartar diferencias.
 - **37 de 95 muestras cervicales no son interpretables** por denominador insuficiente; se excluyen de las razones, no se imputan.
 - **No se reclama novedad.** El truncamiento de STMN2 en ELA está ampliamente replicado y el consorcio ha trabajado estos datos.
-- La derivación de coordenadas se apoya en `ncbiRefSeq` de UCSC y en un intervalo publicado; otra anotación podría diferir en un par de bases.
+- La cadena y la coordenada hg38 publicada respaldan el aceptor; no se resuelven sitios alternativos de poliadenilación. El extremo del intervalo exónico de conteo difiere una base del extremo terminal descrito por Melamed.
 - Cuantificaciones de la tubería de recount3.
-- **Datos personales:** se leyó **únicamente** la columna de grupo.
+- **Metadatos de la medición original:** solo grupo. La auditoría posterior usa claves técnicas de muestra/donante, región, proyecto y preparación, y exporta únicamente agregados.
 - Observación de splicing ≠ rescate ≠ función ≠ beneficio clínico. **Nada aquí respalda ninguna indicación clínica.**
 
 ## Siguiente prueba discriminante
 
-1. **El contraste que ahora sí es posible, pero requiere diseño prospectivo:** con cobertura suficiente en médula cervical, un contraste único ELA frente a control sobre PSI de STMN2 es por fin planteable. Antes hace falta resolver unidades biológicas independientes, que los metadatos no dan, y prefijar el contraste.
-2. **Volver a UNC13A con la lección aprendida:** su criterio de `annotated=0` también podría haber sido erróneo. Las coordenadas selladas de UNC13A proceden de una derivación anterior del propio proyecto, pero **convendría someterlas al mismo cruce con ancla doble** que se hizo aquí. Es barato y podría cambiar lo que medimos.
-3. No ampliar a lumbar ni torácica sin motivo.
+Fijar un protocolo único STMN2 corteza/cervical del mismo donante: compatibilidad de preparación/lote, exclusiones, agregación de multiplicidades y elegibilidad por denominador total. Contar los pares utilizables antes de ajustar el contraste y detenerlo si el diseño queda confundido o escaso. El mapa parcial y los límites del ensayo están en la [auditoría](../stmn2-map-audit-20261111/REPORT.md). No se amplía a lumbar/torácica ni se repite la auditoría de UNC13A ya completada.
 
 Sin contactos, gastos, laboratorio ni publicación externa. Marco: [AGENTS](../../AGENTS.md), [PROTOCOL](../../research/PROTOCOL.md), [STATE](../../research/STATE.md).

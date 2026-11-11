@@ -2,6 +2,56 @@
 
 This replaces earlier planning snapshots. Historical reports and commits remain evidence, not automatic instructions to rerun work. This consolidated state accompanies integration of PRs #46–#49. Review details and exact checked commits are preserved in [INTEGRATION_REVIEW](../reports/integration-20261104/REVIEW.md).
 
+
+## Current integrated status — 11 November 2026
+
+The six Claude commits ending at 5ef8825 and the closed STMN2 #57 analysis are reconciled in [INTEGRATION REVIEW](../reports/integration-20261111/REVIEW.md). Plans and original counts are preserved, the audit table has an explicit integration-review column, and unsupported inferential wording is corrected at its source (including the Ikegami report relied on by the audit). No new biological analysis or broad historical audit was opened.
+
+The current scientific balance is the [closing report](../reports/stmn2-within-region-20261111/REPORT.md): exploratory paired tissue pattern, quality sensitivities and unresolved composition/batch/selection. P1 is below its fixed threshold; P3 directions are descriptive. Stop further fits on the same 45 donors. Older dated sections below preserve chronology and do not reopen completed tasks or override this status. Pre-10-November review remains pending, prioritized only if a current conclusion relies on it. No functional, causal or independent-replication claim. #37/#44 remain unchanged.
+
+## STMN2 cycle closed — 11 November 2026
+
+[Integrated closing report](../reports/stmn2-within-region-20261111/REPORT.md). Final fixed within-region analysis, same 45 donors, no new p-values or corrected tissue effect: cortical Spearman −0.229 / partial rank correlation −0.299; cervical −0.093 / −0.105, accounting for RIN, total junction coverage and preparation within each region. Leave-one-donor-out ranges remain negative; these are influence checks, not confidence intervals. The existing 19-pair RIN sensitivity gives unadjusted −0.285 / −0.117. **22/45 cervical neuronal estimates are zero** (10/19 in RIN subset), limiting this composition probe. Composition is not ruled out; inverse associations do not identify mechanism.
+
+All previously pending within-region/RIN/ST7 tasks below are now complete. **Stop this cycle on the same donors**: no more cutoffs, correlations or models by inertia. Supported result is exploratory paired tissue pattern, partially resistant to measured quality restrictions, with composition/batch/selection unresolved. P1 ≥10× is not met; P2's four covered cases do not establish that UNC13A failed solely because of the locus; original P3 frequencies are descriptive. No functional, causal, clinical or independent-discovery claim.
+
+Next enabling input is a genuinely discriminating composition/QC measurement or independent paired cohort with target junction coverage and verified design, not another analysis of these 45 donors. PR #57 is consolidated for human review. Claude's historical prediction-label audit is separate and not marked complete here. #37 UNC13A and #44 K26 gates remain unchanged.
+
+## ST7 composition gate completed — 11 November 2026
+
+[Report](../reports/stmn2-composition-20261111/REPORT.md): ST7 supplies exact valid composition vectors for all 90 libraries of the 45 original pairs. 16,985 rows, 1,724 valid sample/reference vectors, finite simplex values and complete observed taxonomies. Technical linkage accepted; no new adjusted tissue effect fitted.
+
+Cortex (8 classes, MuSiC GSE140231 reference) and spinal cord (11 classes, GSE190442 reference) use different taxonomies. Cross-reference calibration and exact raw/transformed ST7 provenance are not established by the worksheet. Do not subtract/divide these fractions or claim a common-scale composition correction without a defensible measurement/model protocol. Shared algorithm and sum-one alone do not establish comparability.
+
+The earlier ST7 inspection task is complete. Cheapest next concrete task: fix a within-region-only STMN2/neuronal-estimate association protocol, handling coverage/RIN and keeping cortical and spinal reference scales separate. This can probe an alternative explanation but cannot be labelled correction of the paired tissue effect. A common-scale tissue adjustment instead requires harmonized/calibrated composition estimates and provenance. No extra cohort search or new p-value executed here; #37/#44 unchanged.
+
+## STMN2 RIN sensitivity completed — 11 November 2026
+
+[RIN report](../reports/stmn2-rin-20261111/REPORT.md), fixed protocol c444b5443b671f0aa8436109eb05a600f1fb0b86. All original 45 pairs reproduce and agree with ST3 on donor/region/preparation; valid RIN in all 90 libraries. Main restriction (RIN≥6 both, absolute difference≤1) leaves **19 pairs: 10 cervical-higher / 8 ties / 1 lower**, median paired local-ratio difference **+0.002551**. Stricter RIN≥7 leaves **9 pairs, 4/4/1, median zero** and fails the fixed ≥10-pair interpretation gate. No additional p-values or regression. This is descriptive sensitivity, not full QC adjustment or independent replication; do not claim uniform robustness to RIN.
+
+The earlier pending RIN task is complete. Next concrete input is ST7 NYGC composition estimates: fix inspection scope, verify per-library granularity/exact keys and method, then define one analysis before inspecting effects. Do not search further RIN thresholds. Composition, true extraction/sequencing batch, selection and unequal depth remain unresolved. #37 UNC13A and #44 K26 unchanged.
+
+## Source gate completed — 11 November 2026
+
+[Three-source availability review](../reports/paired-stmn2-source-gate-20261111/REPORT.md): no independent replication source accepted yet. **New executable QC input found:** NYGC ST3 metadata, Zenodo 20090702, exact rna_id matches for 308/313 original libraries (147 cortex, 161 cervical), all with valid RIN and preparation. This is demonstrated overlap with the original cohort, not independent validation. No new effect was fitted.
+
+Next actionable task: fix an RIN/QC sensitivity protocol for the original 45 pairs and validate donor/region/preparation compatibility before modelling. Composition lead is NYGC ST7 (32.7MB expression workbook, not downloaded); per-library granularity and exact key remain unverified. EGA EGAD00001009686 has the relevant paired bulk/nuclear design but requires controlled access and independence checks. GSE330130 provides lumbar/cortex multiome matrices; donor pairing, independence and STMN2-junction suitability are unresolved. Do not treat matrices of gene counts or different accession names as replication. No request/contact or new biological contrast executed; #37/#44 unchanged.
+
+## Paired STMN2 completed — 11 November 2026
+
+[Paired exploratory report](../reports/paired-stmn2-20261111/REPORT.md), protocol committed before pair counting and effect calculation (marginal outcomes were already known). The dual-source technical subset has 104 shared donors; after pure-ALS status, matching preparation, unique library and C+K≥20 in both regions, **45 donor pairs** remain. Cervical higher/tied/lower: **24/14/7**; median paired local-ratio difference **+0.003676**; one prespecified exact two-sided sign-test nominal p=0.0033269. Direction persists descriptively at denominators ≥50 (32 pairs) and ≥100 (22 pairs). Only four eligible control pairs: no disease-vs-control test.
+
+The paired-design task previously listed below is now **completed**, not a pending instruction to rerun. This reduces between-person and recorded preparation mismatch, but does not resolve extraction/sequencing batch, RNA quality, composition, discrete-depth bias or selection on denominator. It is neither independent replication nor proof of neuron-type dependence. Next enabling input: a concrete independent paired manifest with composition/QC/batch information and usable junction coverage. Stop this cycle rather than add contrasts on the same donors. UNC13A #37 and K26 #44 gates remain unchanged.
+
+## Current override — STMN2 measurement and technical units, 11 November 2026
+
+[Completed bounded audit](../reports/stmn2-map-audit-20261111/REPORT.md) supersedes older STMN2 claims below about unavailable donor identity, P1 confirmation, inference from Wilson overlap, and coverage ruling out confounding. No original counts were changed.
+
+- The sealed exon-1→2a junction is retained: direct hg38 literature and UCSC chain support the acceptor. A one-base difference at the terminal exon counting endpoint does not change the junction. The assay is a local junction-use proxy and cannot resolve alternative polyadenylation endpoints.
+- Exact region-scoped recount keys recover 293/313 library→declared-donor links: cortex 140/149, cervical 153/164. There are 128 shared donors across regions (all groups), 164 unique donors in the mapped union, and one cervical donor with two samples. The four pure-ALS cervical K≥20 samples are four declared donors. Two metadata routes agree on all 246 overlapping library links; four original GEO spot checks agree. This is partial technical design recovery, not independent cohort replication.
+- P1 ≥10x canonical coverage is **not met**: per-input-read normalized median ratio 8.085 (sensitivities 7.782/7.769), raw ratio 6.6. The cervical ALS C+K≥20 ratio summary is n=58, median 0.005684, max 0.543860; including all nonzero denominators gives n=92 and max 1.0. No new inferential biological test was performed.
+- Next bounded scientific task: fix a single paired STMN2 cortex/cervical protocol, verify library-preparation/batch compatibility, define coverage-based eligibility and multiplicity handling, then count eligible pairs before any effect. K=0 controls remain eligible if their total denominator is adequate. This task is distinct from the unchanged UNC13A #37 gate and functional K26 #44 request.
+
 ## Active scientific priorities
 
 | Priority | Status | Only input enabling analysis |
@@ -148,6 +198,12 @@ All **88** exon boundaries of NM_001080421.3 give a single offset, 110,809, with
 **Coordinates unchanged; none was needed. No measurement from this week is affected** — the recount3 reports, the fraction discrepancy, motor cortex and cervical cord all measured the right junctions, and the coverage closure for UNC13A stands on locus coverage rather than a coordinate error.
 
 One methodological lesson does change practice: UNC13A's cryptic junctions are flagged `annotated=0` in recount3 while STMN2's is flagged `annotated=1`, so **that flag is inconsistent across genes and unreliable in either direction**. Using it to include would have failed for UNC13A; using it to exclude did fail for STMN2. What worked in both cases was cross-checking a published interval through a double anchor, and the note is recorded in the sealed files so no future cycle leans on the flag again.
+
+## Integrated Claude coordinate and prediction review — 11 November
+
+The six Claude commits ending at 5ef8825 are incorporated with [integration review](../reports/integration-20261111/REVIEW.md). Coordinate plans and the 16-row prediction audit remain traceable. P1 is not met: 6.6x raw, 8.085x normalized. P2 is observed in four covered samples, not proof of a locus-only explanation; P3 remains descriptive. Nondetection of an outgoing junction is not proof of terminality/completeness. Three splice donors are not three biological donors. The 484/9 comparison refers only to unannotated alternatives.
+
+The prediction audit's 14/1/1 classification describes its original narrow rule, not 14 validated scientific conclusions. Its table now distinguishes descriptive directions, a test never performed as written, and inference unsupported by Wilson-overlap or p>0.05. The numerical 11 / qualitative five split is explicit. Earlier pre-10-November cycles are not certified; review them only where a current conclusion relies on them.
 
 ## Access and communications: dated evidence only
 

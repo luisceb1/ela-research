@@ -1,0 +1,12 @@
+{
+  "python": "3.12.14",
+  "local_tests": 8,
+  "failures": 0,
+  "skips": 0,
+  "script_sha256": "037f8d16f5dc26ab19afdf9c6dc46fb221cb8b3d584906434ee108347844d480",
+  "results_sha256": "382b1f738a06d49efd2b1fdafbb74d1ac56570d3057d90971c1ec91b70ba3d31",
+  "independent_spearman_check_scipy_absolute_error": {
+    "cortex": 2.7755575615628914e-17,
+    "cervical": 1.3877787807814457e-17
+  }
+}

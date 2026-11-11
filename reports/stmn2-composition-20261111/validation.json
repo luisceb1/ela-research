@@ -1,0 +1,10 @@
+{
+  "python": "3.12.14",
+  "local_tests": 5,
+  "failures": 0,
+  "skipped": 0,
+  "script_sha256": "efebd923f92dc5d8ebe8d33badf1db1f877ce916b35f2137eb68cd2a1d5e3f05",
+  "result_sha256": "810349334830a9a3850e347f2c654b1965b87e1894a7581e3aaefa43e2856cd1",
+  "source_url": "https://zenodo.org/api/records/20090702/files/NYGC_Flagship_ST_4_16_expression.xlsx/content",
+  "authors_code_tree": "bed82ad63b0d959237f9368561e1145230463ecb"
+}

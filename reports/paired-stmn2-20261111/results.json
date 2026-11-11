@@ -1,0 +1,228 @@
+{
+  "evidence": "exploratory paired association in previously inspected cohort; no independent replication",
+  "hashes": {
+    "project_global.source": "fcdc1568241d95689eca59ce8b04307f6b6f922cd11e9e6e357c61c3d8bbaaa9",
+    "author_map.source": "52d62469ab4252c12e2eed4b8190e9b0e668ce51182a106bf49540dcfaf63df0",
+    "jung_table.source": "0398917532469cb20849e57ed74e6b5f12954b337fdde935a45f4d0d56cc2cba",
+    "repo/reports/stmn2-derivation-20261111/results_corteza.json": "9053d7e24421419b70741322f2fc5514c18c5b04cba627d13f29ea71cd8b9e7a",
+    "repo/reports/stmn2-derivation-20261111/results_cervical.json": "27b5b82dd2624193e810cf0d0417842de15267de5e48df3601f3bd078a11dc18"
+  },
+  "python": "3.12.14",
+  "joins": {
+    "cortex": {
+      "samples": 149,
+      "matched_both_agreeing": 117,
+      "donor_disagreements": 0,
+      "author_join_failures": {
+        "unmatched_external_key": 9
+      },
+      "jung_join_failures": {
+        "unmatched_external_key": 32
+      }
+    },
+    "cervical": {
+      "samples": 164,
+      "matched_both_agreeing": 129,
+      "donor_disagreements": 0,
+      "author_join_failures": {
+        "unmatched_external_key": 11
+      },
+      "jung_join_failures": {
+        "unmatched_external_key": 35
+      }
+    }
+  },
+  "analyses": {
+    "ALS Spectrum MND": {
+      "20": {
+        "selection": {
+          "common_declared_donors_before_filters": 104,
+          "exclusions_in_order": {
+            "not_target_group_in_both": 29,
+            "insufficient_total_denominator": 29,
+            "preparation_mismatch": 1
+          }
+        },
+        "summary": {
+          "n_pairs": 45,
+          "cervical_higher": 24,
+          "ties": 14,
+          "cervical_lower": 7,
+          "median_paired_difference": 0.003676470588235294,
+          "preparation_strata": {
+            "Manual KAPA Total": 25,
+            "Automated KAPA Total": 20
+          },
+          "coverage": {
+            "cortex": {
+              "canonical_median": 844,
+              "total_median": 845
+            },
+            "cervical": {
+              "canonical_median": 80,
+              "total_median": 89
+            }
+          },
+          "primary_gate_passed": true,
+          "two_sided_exact_sign_p": 0.003326892852783203,
+          "prediction_median_positive": true
+        }
+      },
+      "50": {
+        "selection": {
+          "common_declared_donors_before_filters": 104,
+          "exclusions_in_order": {
+            "not_target_group_in_both": 29,
+            "insufficient_total_denominator": 42,
+            "preparation_mismatch": 1
+          }
+        },
+        "summary": {
+          "n_pairs": 32,
+          "cervical_higher": 20,
+          "ties": 8,
+          "cervical_lower": 4,
+          "median_paired_difference": 0.010664506322604426,
+          "preparation_strata": {
+            "Manual KAPA Total": 19,
+            "Automated KAPA Total": 13
+          },
+          "coverage": {
+            "cortex": {
+              "canonical_median": 907.0,
+              "total_median": 907.0
+            },
+            "cervical": {
+              "canonical_median": 172.5,
+              "total_median": 175.0
+            }
+          }
+        }
+      },
+      "100": {
+        "selection": {
+          "common_declared_donors_before_filters": 104,
+          "exclusions_in_order": {
+            "insufficient_total_denominator": 52,
+            "not_target_group_in_both": 29,
+            "preparation_mismatch": 1
+          }
+        },
+        "summary": {
+          "n_pairs": 22,
+          "cervical_higher": 14,
+          "ties": 7,
+          "cervical_lower": 1,
+          "median_paired_difference": 0.010006660006660006,
+          "preparation_strata": {
+            "Manual KAPA Total": 13,
+            "Automated KAPA Total": 9
+          },
+          "coverage": {
+            "cortex": {
+              "canonical_median": 958.0,
+              "total_median": 958.0
+            },
+            "cervical": {
+              "canonical_median": 232.0,
+              "total_median": 235.5
+            }
+          }
+        }
+      }
+    },
+    "Non-Neurological Control": {
+      "20": {
+        "selection": {
+          "common_declared_donors_before_filters": 104,
+          "exclusions_in_order": {
+            "not_target_group_in_both": 97,
+            "insufficient_total_denominator": 2,
+            "preparation_mismatch": 1
+          }
+        },
+        "summary": {
+          "n_pairs": 4,
+          "cervical_higher": 1,
+          "ties": 3,
+          "cervical_lower": 0,
+          "median_paired_difference": 0.0,
+          "preparation_strata": {
+            "Manual KAPA Total": 3,
+            "Automated KAPA Total": 1
+          },
+          "coverage": {
+            "cortex": {
+              "canonical_median": 1495.5,
+              "total_median": 1495.5
+            },
+            "cervical": {
+              "canonical_median": 122.0,
+              "total_median": 122.0
+            }
+          }
+        }
+      },
+      "50": {
+        "selection": {
+          "common_declared_donors_before_filters": 104,
+          "exclusions_in_order": {
+            "not_target_group_in_both": 97,
+            "insufficient_total_denominator": 3,
+            "preparation_mismatch": 1
+          }
+        },
+        "summary": {
+          "n_pairs": 3,
+          "cervical_higher": 1,
+          "ties": 2,
+          "cervical_lower": 0,
+          "median_paired_difference": 0.0,
+          "preparation_strata": {
+            "Manual KAPA Total": 3
+          },
+          "coverage": {
+            "cortex": {
+              "canonical_median": 1870,
+              "total_median": 1870
+            },
+            "cervical": {
+              "canonical_median": 155,
+              "total_median": 155
+            }
+          }
+        }
+      },
+      "100": {
+        "selection": {
+          "common_declared_donors_before_filters": 104,
+          "exclusions_in_order": {
+            "not_target_group_in_both": 97,
+            "insufficient_total_denominator": 4,
+            "preparation_mismatch": 1
+          }
+        },
+        "summary": {
+          "n_pairs": 2,
+          "cervical_higher": 1,
+          "ties": 1,
+          "cervical_lower": 0,
+          "median_paired_difference": 0.000513347022587269,
+          "preparation_strata": {
+            "Manual KAPA Total": 2
+          },
+          "coverage": {
+            "cortex": {
+              "canonical_median": 1948.0,
+              "total_median": 1948.0
+            },
+            "cervical": {
+              "canonical_median": 564.0,
+              "total_median": 564.5
+            }
+          }
+        }
+      }
+    }
+  }
+}
