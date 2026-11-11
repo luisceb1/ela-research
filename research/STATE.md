@@ -3,6 +3,12 @@
 This replaces earlier planning snapshots. Historical reports and commits remain evidence, not automatic instructions to rerun work. This consolidated state accompanies integration of PRs #46–#49. Review details and exact checked commits are preserved in [INTEGRATION_REVIEW](../reports/integration-20261104/REVIEW.md).
 
 
+## Current integrated status — 11 November 2026
+
+The six Claude commits ending at 5ef8825 and the closed STMN2 #57 analysis are reconciled in [INTEGRATION REVIEW](../reports/integration-20261111/REVIEW.md). Plans and original counts are preserved, the audit table has an explicit integration-review column, and unsupported inferential wording is corrected at its source (including the Ikegami report relied on by the audit). No new biological analysis or broad historical audit was opened.
+
+The current scientific balance is the [closing report](../reports/stmn2-within-region-20261111/REPORT.md): exploratory paired tissue pattern, quality sensitivities and unresolved composition/batch/selection. P1 is below its fixed threshold; P3 directions are descriptive. Stop further fits on the same 45 donors. Older dated sections below preserve chronology and do not reopen completed tasks or override this status. Pre-10-November review remains pending, prioritized only if a current conclusion relies on it. No functional, causal or independent-replication claim. #37/#44 remain unchanged.
+
 ## STMN2 cycle closed — 11 November 2026
 
 [Integrated closing report](../reports/stmn2-within-region-20261111/REPORT.md). Final fixed within-region analysis, same 45 donors, no new p-values or corrected tissue effect: cortical Spearman −0.229 / partial rank correlation −0.299; cervical −0.093 / −0.105, accounting for RIN, total junction coverage and preparation within each region. Leave-one-donor-out ranges remain negative; these are influence checks, not confidence intervals. The existing 19-pair RIN sensitivity gives unadjusted −0.285 / −0.117. **22/45 cervical neuronal estimates are zero** (10/19 in RIN subset), limiting this composition probe. Composition is not ruled out; inverse associations do not identify mechanism.
@@ -192,6 +198,12 @@ All **88** exon boundaries of NM_001080421.3 give a single offset, 110,809, with
 **Coordinates unchanged; none was needed. No measurement from this week is affected** — the recount3 reports, the fraction discrepancy, motor cortex and cervical cord all measured the right junctions, and the coverage closure for UNC13A stands on locus coverage rather than a coordinate error.
 
 One methodological lesson does change practice: UNC13A's cryptic junctions are flagged `annotated=0` in recount3 while STMN2's is flagged `annotated=1`, so **that flag is inconsistent across genes and unreliable in either direction**. Using it to include would have failed for UNC13A; using it to exclude did fail for STMN2. What worked in both cases was cross-checking a published interval through a double anchor, and the note is recorded in the sealed files so no future cycle leans on the flag again.
+
+## Integrated Claude coordinate and prediction review — 11 November
+
+The six Claude commits ending at 5ef8825 are incorporated with [integration review](../reports/integration-20261111/REVIEW.md). Coordinate plans and the 16-row prediction audit remain traceable. P1 is not met: 6.6x raw, 8.085x normalized. P2 is observed in four covered samples, not proof of a locus-only explanation; P3 remains descriptive. Nondetection of an outgoing junction is not proof of terminality/completeness. Three splice donors are not three biological donors. The 484/9 comparison refers only to unannotated alternatives.
+
+The prediction audit's 14/1/1 classification describes its original narrow rule, not 14 validated scientific conclusions. Its table now distinguishes descriptive directions, a test never performed as written, and inference unsupported by Wilson-overlap or p>0.05. The numerical 11 / qualitative five split is explicit. Earlier pre-10-November cycles are not certified; review them only where a current conclusion relies on them.
 
 ## Access and communications: dated evidence only
 

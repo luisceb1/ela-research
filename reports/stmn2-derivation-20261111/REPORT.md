@@ -7,6 +7,10 @@
 
 **No se reclama ningún descubrimiento.** El splicing críptico de STMN2 en médula espinal de ELA es uno de los hallazgos más replicados del campo. Lo nuevo **para este proyecto** es que por primera vez puede medirlo con cobertura suficiente.
 
+## Corrección integrada de P1 y de la población de resumen
+
+La rama de Claude reconoció el error de etiquetado de P1 (commit `a85f950`): el umbral era ≥10× y no se alcanzó. Conservamos esa corrección con la distinción de escala comprobada en #57: **6,6× bruto y 8,085× normalizado por lecturas de entrada**. P2 se observa en cuatro bibliotecas de cuatro donantes; **P3 queda descriptiva**, y P2 no identifica por sí sola la causa de la escasa cobertura de UNC13A. Se conservan los conteos originales y se separan explícitamente las poblaciones con denominador >0 y ≥20. [Revisión de integración](../integration-20261111/REVIEW.md).
+
 ## Parte 1: derivación de coordenadas, y una corrección a mi propio criterio
 
 El proyecto no tenía coordenadas de uniones de STMN2 en hg38. La derivación **no** usó ninguna conversión de ensamblaje improvisada.

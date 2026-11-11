@@ -1,0 +1,16 @@
+{
+  "checks": {
+    "original_plans_unchanged": true,
+    "sealed_target_semantically_unchanged_except_audit_notes": true,
+    "original_16_audit_rows_preserved": true,
+    "original_counts_modified": false
+  },
+  "recomputed": {
+    "cortex_cryptic_total": 215,
+    "cervical_cryptic_total": 484,
+    "cervical_canonical_total": 15004,
+    "cervical_cryptic_positive_libraries": 72
+  },
+  "full_combined_suite": "required in PR CI before merge",
+  "new_biological_analysis": false
+}

@@ -3,6 +3,12 @@
 Este archivo contiene tareas actuales y condiciones de reapertura. [STATE](STATE.md) resume resultados; el [backlog anterior íntegro](history/README.md) conserva la cronología.
 
 
+## Current integrated status — 11 November 2026
+
+The six Claude commits ending at 5ef8825 and the closed STMN2 #57 analysis are reconciled in [INTEGRATION REVIEW](../reports/integration-20261111/REVIEW.md). Plans and original counts are preserved, the audit table has an explicit integration-review column, and unsupported inferential wording is corrected at its source (including the Ikegami report relied on by the audit). No new biological analysis or broad historical audit was opened.
+
+The current scientific balance is the [closing report](../reports/stmn2-within-region-20261111/REPORT.md): exploratory paired tissue pattern, quality sensitivities and unresolved composition/batch/selection. P1 is below its fixed threshold; P3 directions are descriptive. Stop further fits on the same 45 donors. Older dated sections below preserve chronology and do not reopen completed tasks or override this status. Pre-10-November review remains pending, prioritized only if a current conclusion relies on it. No functional, causal or independent-replication claim. #37/#44 remain unchanged.
+
 ## STMN2 cycle closed — 11 November 2026
 
 [Integrated closing report](../reports/stmn2-within-region-20261111/REPORT.md). Final fixed within-region analysis, same 45 donors, no new p-values or corrected tissue effect: cortical Spearman −0.229 / partial rank correlation −0.299; cervical −0.093 / −0.105, accounting for RIN, total junction coverage and preparation within each region. Leave-one-donor-out ranges remain negative; these are influence checks, not confidence intervals. The existing 19-pair RIN sensitivity gives unadjusted −0.285 / −0.117. **22/45 cervical neuronal estimates are zero** (10/19 in RIN subset), limiting this composition probe. Composition is not ruled out; inverse associations do not identify mechanism.
@@ -93,6 +99,7 @@ La laguna que motiva #18 queda documentada en su forma **precisa**: ninguna corr
 - [x] **Coordenadas de UNC13A auditadas y CONFIRMADAS** con ancla doble: 88/88 límites exónicos dan el mismo desplazamiento (110.809), y el intervalo publicado derivado coincide **exactamente** con el exón críptico implicado. Sin cambios; **ninguna medición de la semana queda afectada**. Ver [informe](../reports/unc13a-coordinate-audit-20261111/REPORT.md).
 - [x] **Lección registrada en ambos archivos sellados:** el indicador `annotated` de recount3 es **inconsistente entre genes** (UNC13A `0`, STMN2 `1`) y no sirve como criterio en ninguna dirección. El criterio válido es el cruce con intervalo publicado vía ancla doble.
 - [ ] ~~Revisar las coordenadas selladas de UNC13A~~ Su derivación es anterior y su supuesto de `annotated=0` pudo ser igualmente erróneo. Barato y podría cambiar lo que medimos.
+- [x] **Auditoría STMN2 integrada y acotada:** coordenadas conservadas; observaciones regionales no prueban terminalidad ni completitud. Ver [revisión](../reports/integration-20261111/REVIEW.md).
 - [ ] **Contraste STMN2 ELA frente a control en médula cervical**: ahora es planteable con cobertura suficiente, pero exige resolver unidades biológicas independientes (los metadatos no dan donante) y prefijar un único contraste. No calcular ningún efecto antes.
 - [ ] Continuación para **UNC13A**: **enriquecimiento celular** (núcleos clasificados por TDP-43, tipo GSE126543, sin registros SRA alcanzables). Requiere otra ruta de acceso y decisión de alcance.
 - [ ] ~~Ciclo siguiente: córtex frente a médula en la MISMA cohorte~~ (`TALS_Spinal_Cord_Cervical/Lumbar/Thoracic`). Es el contraste más limpio de H1 disponible, controlando cohorte y tubería. ~200 MB por tejido, plan propio.
@@ -104,6 +111,15 @@ La laguna que motiva #18 queda documentada en su forma **precisa**: ninguna corr
 - [ ] **Borrador de mensaje a laboratorio: redactado y NO enviado.** Requiere autorización expresa y lo firmaría Luis. Ver [borradores](drafts/2026-11-11-borradores-pendientes-de-autorizacion.md).
 - [ ] **Estructura de comentario/preprint: redactada y NO publicada.** Espera revisión independiente de la fila M-a o la versión revisada por pares de Mallika/Cao. Publicar es irreversible.
 - [ ] El repositorio es **privado**: la URL del borrador de contacto no funcionaría para un tercero sin cambiar eso. Decisión de Luis.
+
+## Corrección del 11/11/2026 (tarde)
+
+- [x] **P1 STMN2 corregida:** 6,6× bruto / 8,085× normalizado, ambos <10. P2 se observa, P3 es descriptiva; no se sostiene una causa exclusiva del locus.
+- [x] **Resúmenes separados:** conteos originales conservados; tablas distinguen denominadores >0 y ≥20. Ver informes consolidados.
+- [x] **Auditoría de 16 predicciones integrada:** se conserva su clasificación original estrecha 14/1/1; no valida inferencia. Once filas numéricas y cinco cualitativas, con columna de revisión en [tabla](../reports/prediction-audit-20261111/audit.tsv).
+- [ ] **Revisión anterior al 10/11:** pendiente; priorizar solo afirmaciones que sigan sosteniendo conclusiones actuales, sin declarar auditado todo el histórico.
+- [ ] **Necesidad estructural identificada:** mis informes necesitan un segundo lector **sistemático**. Hoy dos revisiones externas encontraron cuatro sobreafirmaciones y una predicción mal etiquetada; **ninguna la encontré yo**.
+- [x] **Error de git propio, corregido:** al abrir el ciclo de auditoría reseteé la rama a `main` y un push forzado descartó tres commits ya empujados, incluida la corrección de P1. Recuperados por `cherry-pick` desde el reflog y verificados en el árbol. Ningún contenido se perdió; el incidente queda registrado en vez de borrado.
 
 ## Mantenimiento técnico
 
