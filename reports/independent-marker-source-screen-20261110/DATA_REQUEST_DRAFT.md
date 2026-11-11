@@ -1,8 +1,8 @@
-# Draft — not sent
+# Approved request — sent 11 November 2026
 
-Proposed recipient: Clotilde Lagier-Tourenne <clagier-tourenne@mgh.harvard.edu>
+Recipient: Clotilde Lagier-Tourenne <clagier-tourenne@mgh.harvard.edu>
 Recipient verified in the corresponding-authors section of the publication: https://link.springer.com/article/10.1007/s00401-023-02655-0
-No CC proposed. Sending requires Luis's explicit authorization.
+No CC. Luis explicitly authorized sending on 11 November 2026. Sent through Gmail at 08:21 Europe/Madrid (07:21 UTC), message ID `1a1c97ba8ab9cf9d`, verified with SENT label. No reply or data receipt is implied.
 
 Subject: Public source-data request — paired STMN2/UNC13A and pTDP-43 measurements
 

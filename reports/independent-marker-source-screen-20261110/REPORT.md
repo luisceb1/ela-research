@@ -60,3 +60,8 @@ Se deja [una solicitud redactada](DATA_REQUEST_DRAFT.md), **no enviada**. Destin
 ## Verificación y cierre
 
 Protocolo anterior al libro; hash, cabeceras, hojas y posiciones verificados directamente. Tres XML primarios recuperados por Europe PMC y hashados; originales no redistribuidos. Descargas de datos/métodos: 11.551.708 bytes, por debajo del límite de 25 MB. No se descargaron BAM/FASTQ ni matrices de expresión. No hay inferencia nueva ni pruebas de software que ejecutar por esta auditoría documental. CI del repositorio se revisa por commit si se activa. Ciclo de tres candidatas cerrado, sin cuarta fuente por inercia. Ningún contacto enviado, gasto, intervención ni nueva indicación clínica.
+
+
+## Actualización operativa — 11/11/2026
+
+Luis autorizó expresamente enviar la solicitud preparada. Se envió a Clotilde Lagier-Tourenne, sin CC, a las **08:21 Europe/Madrid**; Gmail confirmó etiqueta SENT e ID `1a1c97ba8ab9cf9d`. Se conservó el texto aprobado. Esto sustituye el estado «no enviada» del 10/11; no acredita respuesta ni entrega de datos. [Registro](../publication-access-check-20261111/COMMUNICATION_LOG.md).

@@ -1,0 +1,75 @@
+{
+  "date": "2026-11-11",
+  "time_zone": "Europe/Madrid",
+  "retrievals": [
+    {
+      "source": "crossref",
+      "status": 200,
+      "bytes": 162724,
+      "sha256": "02c4046ac657fd8b3f6f342afa4a9e870283a96a520e0ac90b4ff82b02b643eb",
+      "query_title": "UNC13A splice correction rescues synaptic dysfunction induced by TDP-43 loss",
+      "returned_items": 8,
+      "dois": [
+        "10.1101/2024.06.20.599684",
+        "10.64898/2025.12.01.691001",
+        "10.1038/s41586-024-07577-9",
+        "10.64898/2026.09.11.751082",
+        "10.1038/s41380-021-01346-0",
+        "10.1038/s41586-022-04436-3",
+        "10.1101/2025.08.28.672801",
+        "10.1126/scitranslmed.aeb8517"
+      ],
+      "url": "https://api.crossref.org/works?query.title=UNC13A+splice+correction+rescues+synaptic+dysfunction+induced+by+TDP-43+loss&rows=8"
+    },
+    {
+      "source": "epmc",
+      "status": 200,
+      "bytes": 198669,
+      "sha256": "d62eaa826ebe13364159518ff39f9e3cc53c87d51d38f7f25f28f959d111b9d8",
+      "query": "Keuss AND UNC13A",
+      "hit_count": 16,
+      "record_ids": [
+        "PPR1323289",
+        "PPR1128018",
+        "PPR871740",
+        "39361759",
+        "40707625",
+        "38890465",
+        "41174170",
+        "PPR760253",
+        "PPR306804",
+        "PPR313807",
+        "38277467",
+        "35197628",
+        "40737092",
+        "PMC13742461",
+        "39789319",
+        "PMC12038215"
+      ],
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=Keuss+AND+UNC13A&format=json&resultType=core&pageSize=100"
+    },
+    {
+      "source": "biorxiv",
+      "status": 200,
+      "bytes": 1642,
+      "sha256": "0b7417e64ac45ec657838f064e249623e858a5a00049487b0d265857eacb8130",
+      "doi": "10.1101/2024.06.20.599684",
+      "versions": [
+        {
+          "version": "1",
+          "date": "2024-06-24",
+          "published": "NA"
+        }
+      ],
+      "url": "https://api.biorxiv.org/details/biorxiv/10.1101/2024.06.20.599684"
+    }
+  ],
+  "kcl": {
+    "metadata_url": "https://kclpure.kcl.ac.uk/portal/en/publications/unc13a-splice-correction-rescues-synaptic-dysfunction-induced-by-/",
+    "web_open": "readable, accepted/in press 6 October 2026; accepted-author-manuscript link only",
+    "direct_python_status": 403,
+    "linked_pdf_url": "https://kclpure.kcl.ac.uk/portal/files/391373721/LossOfTDP_Keuss_GreenAAM.pdf",
+    "linked_pdf_web_status": 403,
+    "pdf_bytes_inspected": false
+  }
+}
