@@ -59,3 +59,19 @@ Si se cumple, el resultado es un rechazo documentado con la causa aislada. Si se
 ## Entregables
 
 `reports/recount3-unc13a-20261111/`: `REPORT.md` (Evidencia / Interpretación / Limitaciones / Siguiente), `results.json`, registro de consultas con tamaños y hashes, script con pruebas si se ejecuta código de análisis. Etiqueta de evidencia: **auditoría de viabilidad de fuente**. Sin PSI, sin efectos, sin interpretación clínica.
+
+---
+
+## Addendum: segundo candidato, fijado antes de ver cuentas
+
+Luis pidió probar un dataset cortical tras el rechazo de SRP166282 por cobertura. Candidato **fijado ahora, antes de extraer ninguna cuenta**:
+
+**SRP334561** = GSE182976, `study_title` = «TDP-43 represses cryptic exon inclusion in FTD/ALS gene UNC13A». Es el **dataset propio de Ma et al. 2022**, el artículo de referencia del exón críptico de UNC13A. 12 muestras.
+
+Selección justificada **antes** de ver cuentas: coincidencia exacta de título con el artículo de UNC13A, frente a los otros candidatos extraídos de Brown 2022 y Ma 2022 (`GSE126543` sin accesión SRA enlazada y de tema LINE; `GSE137810` = consorcio NYGC, tejido de paciente; `GSE116622` = SRP151960, cohorte C9ORF72 de paciente). No se prueban varios y se elige después el que pase.
+
+**Desviación declarada respecto al backlog:** el backlog pedía un dataset **cortical**. Este es de **motoneuronas derivadas de iPSC**, no cortical. Se acepta porque la razón de peso es distinta y mejor: es el dataset del propio artículo de UNC13A, y **aporta múltiples líneas de donante** (`cell line;;NDS00262-NINDS`, `NDS00209-NINDS`, …), es decir independencia genética, que es exactamente lo que le faltaba a SRP166282 (línea única HUES3). La hipótesis de profundidad cortical **queda sin probar** y se mantiene abierta.
+
+**Hallazgo de inventario, previo a las cuentas:** recount3 cuantifica solo **43 uniones** para este proyecto, de las cuales **33 están en chr19**, concentradas en el locus UNC13A. Los metadatos declaran `library_strategy: RNA-Seq` en las 12 muestras, pero esa distribución es propia de un **ensayo dirigido o enriquecido**, no de transcriptoma completo.
+
+**Consecuencia para la interpretación, fijada de antemano:** si la cobertura supera 20 en una unión críptica, **no se tratará como equivalente a cobertura de transcriptoma completo**. Un ensayo dirigido concentra lecturas en el locus por diseño, de modo que superar el umbral **no** acredita la detectabilidad que el umbral pretendía garantizar. En ese caso el resultado se informa como **cobertura obtenida en un ensayo de naturaleza dirigida, no comparable con el piloto ni con SRP166282**, y **no** habilita un contraste inferencial sin verificar antes la naturaleza del ensayo contra el artículo. No se declara superada la puerta de #37 por esta vía sin esa verificación.
