@@ -1,6 +1,6 @@
 # Mensaje a Philip C. Wong (Johns Hopkins) — BORRADOR LISTO, NO ENVIADO
 
-Fecha: 2026-11-11, **versión 2**. La versión 1 (mía) queda descartada tras una revisión externa que señaló cuatro problemas. **Los cuatro eran correctos.** Esta versión adopta la redacción propuesta en esa revisión, que es mejor que la mía.
+Fecha: 2026-11-11, **versión 2**. El texto del mensaje no cambia respecto a lo acordado; solo se amplía el registro de errores propios tras una cuarta revisión externa. La versión 1 (mía) queda descartada tras una revisión externa que señaló cuatro problemas. **Los cuatro eran correctos.** Esta versión adopta la redacción propuesta en esa revisión, que es mejor que la mía.
 
 **No lo envío yo.** `AGENTS.md` exige autorización expresa para comunicaciones externas, lo firmas tú y es tu reputación la que queda comprometida.
 
@@ -9,7 +9,7 @@ Fecha: 2026-11-11, **versión 2**. La versión 1 (mía) queda descartada tras un
 | Mi texto | Problema |
 |---|---|
 | «no donor pairing available in the metadata» | **Desactualizado.** La rama de la PR #57 recuperó un mapa de donante y estableció **45 pares**, con análisis exploratorios ya hechos. Enviar eso habría sido afirmar algo falso sobre nuestro propio trabajo |
-| «with sequencing depth matched between tissues» | **No es un control.** Coincidir en la mediana no controla la profundidad. Y mi cifra de 21× era una **razón de medianas**, no una normalización por biblioteca. Recalculado: **22,3×**. Corregido en el informe |
+| «with sequencing depth matched between tissues» | **No es un control.** Coincidir en la mediana no controla la profundidad, y el campo que coincidía estaba **mal nombrado**. Mi cifra de 21× era una **razón de medianas**. Y mi primera corrección (22,3×) se publicó **sin procedimiento reproducible**, lo que obligó a una cuarta revisión. Ahora está depositada: **22,33×**, entre 22,2× y 25,6× según el denominador. Nada de esto aparece ya en el mensaje |
 | «the limitation appears to be gene-specific rather than general» | **Sobreafirmación.** Dos genes que se comportan distinto muestran que difieren, no que la limitación sea «específica del gen» como propiedad general |
 | «they are preventive by construction» | **No se sigue.** No documentar un déficit antes de tratar no demuestra que la intervención fuese preventiva. Para las deleciones germinales sí; para la fila K-c, donde el knockdown llevaba 5 días establecido, **no**. Lo correcto es «no pude establecer que el tratamiento empezara tras un déficit documentado» |
 
