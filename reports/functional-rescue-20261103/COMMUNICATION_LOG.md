@@ -2,7 +2,7 @@
 
 Fecha: 03/11/2026 (Europe/Madrid). Autorización de Luis en esta conversación: «Adelante, hazlo en inglés y sé correcto».
 
-Remitente verificado mediante perfil Gmail: `luis.ceb.fr@gmail.com`. Destinatario de correspondencia verificado en p.2 del manuscrito K26: `p.fratta@ucl.ac.uk`. Sin CC, BCC o adjuntos. Gmail confirmó mensaje/hilo `1a1a307be60459fe`, etiqueta SENT. No demuestra entrega, lectura, respuesta ni disponibilidad de datos.
+Remitente verificado mediante perfil Gmail: `[dirección del remitente, verificada en su momento; no republicada]`. Destinatario de correspondencia verificado en p.2 del manuscrito K26: `[dirección de correspondencia publicada en el manuscrito; no republicada aquí]`. Sin CC, BCC o adjuntos. Gmail confirmó mensaje/hilo `1a1a307be60459fe`, etiqueta SENT. No demuestra entrega, lectura, respuesta ni disponibilidad de datos.
 
 **Asunto:** Source data for Fig. 4d — UNC13A splice correction in spinal motor neurons
 

@@ -2,7 +2,7 @@
 
 Enviado: 2026-11-04 10:20:43 Europe/Madrid (2026-11-04T09:20:43.000Z).
 
-To: menoci@medizin.uni-goettingen.de
+To: [dirección de soporte institucional del repositorio; no republicada aquí]
 
 Subject: Public metadata access for GOE-Seek study 260 (UNC13A)
 

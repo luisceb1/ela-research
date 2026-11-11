@@ -41,6 +41,58 @@ This is internal reproducibility, not replication: same subjects, same measureme
 
 The watcher extension found that **Guo's preprint is now peer reviewed** in *Science Translational Medicine* (PMID 42234776, DOI 10.1126/scitranslmed.aeb8517, 2026-06-03). It is paywalled with no PMC record, so its methods were **not** inspected: the two Guo rows of the timing matrix remain attributed to the 2025 preprint and may differ from the published version.
 
+## Strategic routes — 11 November
+
+Three routes were set out and acted on. **Snaptron/recount3**, the one route that could unblock #37 without money or third-party permission, was attempted and is **blocked by TLS**: the CONNECT tunnel succeeds once the host is allowed, but the server's certificate chain does not verify even with the proxy CA supplied, and verification was not disabled. The feasibility question is therefore **unanswered, not refuted**, and the prespecified stop rule forbade chasing alternatives inside that cycle. Opening a cycle on the recount3 file store instead needs its own scope decision and plan. [Report](../reports/snaptron-unc13a-feasibility-20261111/REPORT.md).
+
+A **laboratory collaboration message** and the **structure of a commentary** are drafted and deliberately **not executed**: both are external and irreversible, both would carry Luis's name, and the commentary should wait for the independent review of row M-a that the watcher will surface for free. [Drafts](drafts/2026-11-11-borradores-pendientes-de-autorizacion.md).
+
+Honest ceiling, recorded so it is not forgotten: with no laboratory, no budget and the raw-data pilot already closed at coverage [1,0,0], this project's realistic contribution is verification and synthesis of published work, not new biological measurement. Nothing here helps a patient today and nothing here supports any clinical decision.
+
+## recount3 breakthrough and its limit — 11 November
+
+**Issue #37's measurement blocker is solved as a capability.** All four candidate families were rejected for want of accessible junction counts; recount3 publishes them already quantified. For 24.5 MB and no cost, the project now holds exon-exon junction counts for a TDP-43 depletion experiment in human neurons, with conditions **declared by the deposit** rather than inferred, and no FASTQ or alignment involved. The probe is written and tested, so applying the same route to another project costs minutes and a few megabytes. [Report](../reports/recount3-unc13a-20261111/REPORT.md).
+
+**The dataset inspected does not pass the gate.** SRP166282 is Klim 2019, whose data #37 had rejected through Irwin for lacking linkable junction counts; recount3 supplies them. Design reconstructed from declared metadata: 6 TDP-43 knockdown against 12 controls, both batches containing both conditions, **but a single cell line (HUES3)**, so replicates are independent cultures and not genetically independent donors. All three sealed target junctions match **exactly**, the coordinate-convention guard passes, and the annotation pattern is as the biology predicts: canonical annotated, both cryptic not.
+
+Coverage decides it. The canonical positive control is measured in 18/18 samples at up to 66 reads, so measurement is not the failure, yet the cryptic junctions reach a maximum of **5 reads against the prospective minimum of 20**, and `gate_met` is false with the positive control excluded from the gate. **Rejected on coverage**, cause isolated to depth at the locus.
+
+Recorded as an observation strictly below threshold and carrying no inference: every cryptic read seen is in a knockdown sample, none in the 12 controls. At a maximum of 5 reads those zeros are **missing data at this depth, not biological zeros**; no PSI, p-value or effect is computed, and the minimum of 20 is not relaxed.
+
+Next discriminating step: UNC13A is expressed lower in spinal cord than cortex (Ikegami 2026, Mallika's GTEx panel), and these are spinal motor neurons, so a cortical or i3Neuron depletion dataset is the natural candidate. ANSWER_ALS and TARGET_ALS are in recount3 but are **patient cohorts, not depletion experiments**, so using them would answer a different question and needs its own plan; the endpoint is not switched to dodge this rejection.
+
+## Second recount3 candidate — amplicon, not eligible
+
+SRP334561 (GSE182976) is Ma 2022's own dataset for the UNC13A cryptic-exon paper, fixed as the candidate **before any count was extracted**. Its design is better than Klim's: `shTDP-43` against `shScramble` across **three donor lines**, so three genetically independent units per condition, which SRP166282 lacked. Coverage clears the threshold enormously, up to 57,709 reads on a cryptic junction, with complete separation — cryptic fraction 0.000–0.002 in six controls against 0.390–0.690 in six knockdowns, consistent across all three lines.
+
+**The gate still is not passed, and the prespecified rule is why.** The plan fixed in advance that clearing the threshold in a targeted assay does not demonstrate transcriptome-wide detectability, and required verifying the assay against the publication first. Ma 2022 states the deposit is **amplicon sequencing**, by RT-PCR from UNC13A exon 19 to exon 21, while SRA metadata labels it `library_strategy: RNA-Seq`. So this is depth at one locus, not coverage: not comparable with the closed pilot or SRP166282, and it does not enable #37's inferential contrast. What it does establish is an independent reproduction of the published qualitative finding from deposited counts.
+
+The probe now detects this trap itself: 43 junctions with 76.7% on chr19 across 6 chromosomes flags as targeted, against 599,768 junctions and 5.7% across 77 chromosomes for real RNA-seq. A heuristic that forces verification, not a substitute for it.
+
+**The cortical hypothesis remains untested** — both datasets are motor neurons. And a reusable caution is recorded: SRA's library_strategy field can misdescribe a targeted assay.
+
+## Brown 2022 ruled out, and an open discrepancy that reframes #37
+
+Brown 2022 was ruled out **from its own data statement**, before touching any data. Everything it deposited is targeted or another assay entirely — Riboseq, targeted RNA-seq, two iCLIP sets, targeted nanopore — and of what it reused, the only whole-transcriptome source is GSE121569, which resolves to SRP166282, the Klim dataset already rejected on coverage. Its cortical candidate, GSE126543, has no SRA records at all. So Brown cannot test the cortical-depth hypothesis, which **remains untested** across all three candidates examined. This was not an exhaustive search of recount3: specific accessions from the two defining papers were checked, and no claim is made that no suitable dataset exists.
+
+Worth noting: both papers that **established** the UNC13A cryptic exon deposited targeted assays, consistent with the junction being hard to see in whole-transcriptome RNA-seq at ordinary depth.
+
+**The finding that matters most is a discrepancy between the two sources.** In knockdown samples the cryptic fraction is **0.000–0.145** by Klim's whole-transcriptome RNA-seq and **0.390–0.690** by Ma's amplicon — four to five fold apart. A fraction is depth-independent, so coverage does not explain it. Candidate explanations, none tested here: knockdown efficiency (siRNA against shRNA), amplification bias in the amplicon assay, cell line or type, recount3's junction filters, or read length and mappability in 2013-era data. It is recorded as an open inconsistency and is not averaged away.
+
+This reframes the gate. At Klim's fraction (~0.10) and canonical coverage (~60), reaching 20 cryptic reads would need roughly **200** reads on the canonical junction; at Ma's fraction (~0.5), about **40** would do. So whether the threshold of 20 is reachable in public RNA-seq **depends on which fraction is real**, which is exactly what is unknown. The prior question is no longer "is there a deeper dataset" but "what is the true cryptic inclusion level". Whether to reorient #37 towards resolving that is a **scope decision for Luis**; the agent does not change the threshold or the question on its own.
+
+## #37 reoriented, and the discrepancy is bounded rather than resolved
+
+Luis reoriented #37 on 11 November towards arbitrating the cryptic-fraction disagreement. The threshold of 20 is **not changed**; its use as a source-acceptance criterion is suspended until the disagreement is arbitrated. [Report](../reports/unc13a-fraction-discrepancy-20261111/REPORT.md).
+
+**The main finding is that the two measurements are not comparable as PSI estimates.** The amplicon nature of SRP334561 is now confirmed by a second, independent route: at gene level its twelve samples detect only 8 to 17 genes, **one gene carries 100% of the counts**, and the modal fragment is 1,508 bp, the size of the exon 19 to 21 PCR product. Klim's project, by contrast, detects 29,646 to 36,965 genes with a top-gene share of 1.6%. So one figure is a junction fraction over a transcriptome and the other a proportion of products within one amplicon; the "discrepancy" is in large part an artefact of comparing two non-equivalent assays.
+
+**Knockdown efficiency is measured on one side only.** In Klim's deposited gene counts TARDBP falls 58.8% (CPM 132 to 54), so **roughly 41% of TARDBP remains** — a partial knockdown, compatible with low cryptic inclusion without demonstrating it. For Ma the script **refuses** to read a knockdown level off an amplicon library, as the plan required, and the paper does not state one in its accessible text, which the plan required to be recorded as unavailable rather than estimated. The prespecified prediction, that Klim's knockdown would prove substantially weaker than Ma's, is therefore **not testable** and is neither confirmed nor refuted.
+
+By-product verification: STMN2 falls 51.8% in the same counts, independently reproducing Klim 2019's headline finding, which was not this cycle's aim.
+
+No explanation is ruled out or demonstrated. What the cycle does yield is a sharper entry requirement for #37: whole-transcriptome RNA-seq, with **documented depletion efficiency**, deep enough at UNC13A (of the order of 200 canonical reads if the fraction is near 0.10), and with at least three independent biological units per condition. The second criterion is new, and without it a low fraction cannot be told apart from a weak knockdown.
+
 ## Access and communications: dated evidence only
 
 The 04 November administrative audit records AD Workbench dataset-approval wording followed by review wording, and a pending workspace. Neither establishes effective access or a technical manifest. [Audit](../reports/continuity-20261104/REPORT.md). The expanded public K26 search found no attributable source table in the checked routes; this is not universal proof of absence. [Search](../reports/fig4d-source-search-20261104/REPORT.md).
