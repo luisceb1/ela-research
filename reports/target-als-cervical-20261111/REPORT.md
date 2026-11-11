@@ -77,7 +77,7 @@ Esto es, en sí mismo, una lección metodológica: **una razón sin denominador 
 
 ### Un dato colateral que no se explota
 
-En los dos tejidos la cobertura canónica normalizada es **menor en ELA que en los controles** (2,530 frente a 2,845; 0,113 frente a 0,174). Es la dirección que cabría esperar si la pérdida de TDP-43 redujera el empalme canónico, pero con **13 controles**, sin emparejar y sin contraste prefijado, **no se somete a prueba ni se interpreta**. Queda anotado como observación, con el emparejamiento de 45 pares como vía para examinarlo en serio.
+En los dos tejidos la cobertura canónica normalizada es **menor en ELA que en los controles** (2,530 frente a 2,845; 0,113 frente a 0,174). Es la dirección que cabría esperar si la pérdida de TDP-43 redujera el empalme canónico, pero con **13 controles**, sin emparejar y sin contraste prefijado, **no se somete a prueba ni se interpreta**. Queda anotado como observación, y **sin vía propuesta**: los 45 pares no sirven para esto, porque son todos donantes con ELA.
 
 ### La pregunta se formuló sobre tejidos, y así se responde
 
@@ -89,7 +89,7 @@ De los cinco datasets examinados, **ninguno alcanza el umbral de 20 lecturas en 
 
 No se concluye que el umbral sea inalcanzable en todo el RNA-seq público. Lo que sí queda establecido, con evidencia, es **dónde la cobertura es peor**: médula espinal, unas 22 veces.
 
-> **Corrección del 11/11/2026.** La versión anterior añadía que «más muestras no bastarían» y que «la vía no es más n ni más profundidad». **Eso no está demostrado.** Lo que estos datos permiten es cerrar **la búsqueda realizada** por cobertura insuficiente. Descartar que más profundidad sirviera exigiría una estimación de la profundidad necesaria, y esa estimación **no se puede hacer hoy**: depende de la fracción críptica real, que es justamente lo que la puerta #37 no ha podido establecer, porque la cifra de Klim y la de Ma no son comparables. Sin esa fracción, cualquier cálculo de profundidad requerida sería circular.
+> **Corrección del 11/11/2026.** La versión anterior añadía que «más muestras no bastarían» y que «la vía no es más n ni más profundidad». **Eso no está demostrado.** Lo que estos datos permiten es cerrar **la búsqueda realizada** por cobertura insuficiente. Descartar que más profundidad sirviera exigiría una estimación de la profundidad necesaria, y **no disponemos de una estimación validada**. Escenarios condicionados a distintas fracciones crípticas supuestas sí se pueden calcular; lo que falta es evidencia para elegir una, porque la cifra de Klim y la de Ma no son comparables y la puerta #37 no ha podido fijar la fracción real.
 
 Dos vías **razonables, no demostradas como las únicas**: **enriquecimiento celular** —núcleos neuronales clasificados por presencia o ausencia de TDP-43, como GSE126543— o un ensayo dirigido. Ese dataset no tiene registros SRA alcanzables, de modo que exigiría otra ruta de acceso.
 
@@ -100,7 +100,7 @@ Dos vías **razonables, no demostradas como las únicas**: **enriquecimiento cel
 - **13 controles por tejido.** Su 0/13 es compatible con tasas de hasta 22,8 %, de modo que **no se puede distinguir a los controles de la ELA cortical** solo por proporción de detección. La separación limpia del ciclo anterior se sostiene como patrón, no como contraste estadístico.
 - **La no superposición de los intervalos de Wilson en P2 es de 0,004** y no se usa para sostener ninguna afirmación.
 - **La cifra central depende del denominador** entre 22,2× y 25,6×. Se publica el intervalo completo, calculado con precisión completa: redondear las medianas antes de dividir movía la cifra principal en 0,01.
-- **No se descarta que más profundidad sirviera.** No hay estimación de la profundidad necesaria, porque la fracción críptica real sigue sin establecer (#37).
+- **No se descarta que más profundidad sirviera.** No disponemos de una **estimación validada** de la profundidad necesaria: se pueden calcular escenarios condicionados a una fracción críptica supuesta, pero no hay evidencia para elegirla (#37).
 - **Sin p-valores entre tejidos**: conjuntos de muestras distintos, sin emparejamiento, con confusores no medidos.
 - **STMN2 no se analizó en este ciclo**: sin coordenadas selladas en hg38 en su momento. Ya las tiene.
 - **No se reclama novedad**: el consorcio ha publicado sobre estos datos.
