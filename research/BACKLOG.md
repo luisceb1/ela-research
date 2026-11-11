@@ -64,6 +64,12 @@ La laguna que motiva #18 queda documentada en su forma **precisa**: ninguna corr
 - [ ] **Estructura de comentario/preprint: redactada y NO publicada.** Espera revisión independiente de la fila M-a o la versión revisada por pares de Mallika/Cao. Publicar es irreversible.
 - [ ] El repositorio es **privado**: la URL del borrador de contacto no funcionaría para un tercero sin cambiar eso. Decisión de Luis.
 
+## Corrección del 11/11/2026 (tarde)
+
+- [x] **P1 del ciclo STMN2 estaba mal etiquetada: era REFUTADA, no confirmada.** Umbral prefijado ≥10×; resultado 6,6×. Detectado por el segundo lector de la rama de la PR #57, verificado y corregido en el informe y en STATE. **P2 (umbral superado) y P3 no se ven afectadas**, ni las coordenadas ni la auditoría.
+- [x] **Discrepancia informe/JSON documentada:** `results_cervical.json` contiene resúmenes `by_group` sin la restricción de denominador ≥20 que sí aplica el informe (n=92 frente a 58). Usar las cifras del informe.
+- [ ] Revisar si otros informes propios declaran confirmada alguna predicción por debajo de su propio umbral. **No se ha hecho esa revisión sistemática.**
+
 ## Mantenimiento técnico
 
 - [x] Separar estado/backlog actuales del historial íntegro.

@@ -5,6 +5,25 @@
 
 **No se reclama ningún descubrimiento.** El splicing críptico de STMN2 en médula espinal de ELA es uno de los hallazgos más replicados del campo. Lo nuevo **para este proyecto** es que por primera vez puede medirlo con cobertura suficiente.
 
+## Corrección del 11/11/2026: P1 estaba mal etiquetada
+
+**Una revisión externa encontró que declaré CONFIRMADA una predicción que mi propio plan refuta.** Lo verifiqué y es cierto.
+
+Mi plan prefijó: «la cobertura canónica normalizada de STMN2 en médula cervical será **al menos 10 veces** la de UNC13A». El resultado fue **6,6×** (mediana 33 frente a 5). **6,6 < 10: P1 queda REFUTADA.**
+
+Escribí el umbral yo y después declaré éxito por debajo de él. Es exactamente el desplazamiento de criterio que este protocolo existe para impedir, y lo cometí en el mismo informe donde celebraba haber parado a tiempo ante otro criterio erróneo.
+
+**Qué cambia y qué no:**
+
+- **P1: REFUTADA.** La cobertura de STMN2 en médula cervical es mayor que la de UNC13A, pero **no alcanza** el margen de 10× que fijé. La diferencia entre dianas es menor de lo que predije.
+- **P2 sigue CONFIRMADA** y es la predicción central: 4 muestras con ≥20 lecturas crípticas. **El umbral se superó**, y eso no depende de P1.
+- **P3 sigue CONFIRMADA** en médula cervical.
+- Las coordenadas, las cuentas y la auditoría posterior **no se ven afectadas**.
+
+La conclusión del ciclo se mantiene —el fracaso con UNC13A era del locus y el método funciona— porque se apoya en P2, no en P1. Pero el margen cuantitativo entre las dos dianas era **menor** de lo que anuncié.
+
+**Segunda discrepancia, también corregida aquí:** las tablas de este informe aplican la restricción de denominador ≥20, pero `results_cervical.json` contiene resúmenes `by_group` calculados sobre **todas** las muestras, sin marcar esa restricción (n=92 frente a n=58, con un máximo de 1,0 que es ruido de denominador). El JSON y el informe no coinciden, y el JSON no advierte de ello. **Al leer esos JSON, usar solo las cifras restringidas de este informe.**
+
 ## Parte 1: derivación de coordenadas, y una corrección a mi propio criterio
 
 El proyecto no tenía coordenadas de uniones de STMN2 en hg38. La derivación **no** usó ninguna conversión de ensamblaje improvisada.
@@ -66,7 +85,7 @@ Las cuatro muestras que superan el umbral, con denominadores sólidos:
 
 | | Predicción | Resultado |
 |---|---|---|
-| **P1** | Cobertura canónica de STMN2 en médula ≥10× la de UNC13A (0,11 por millón) | **CONFIRMADA.** Canónica mediana 33 frente a 5, es decir ≈6,6× en cuentas brutas a profundidad idéntica |
+| **P1** | Cobertura canónica de STMN2 en médula **≥10×** la de UNC13A | **REFUTADA.** Ratio bruto 33/5 = **6,6×**, por debajo del umbral de 10 que yo mismo fijé. Ver «Corrección» arriba |
 | **P2** | Al menos una muestra alcanzará ≥20 lecturas crípticas | **CONFIRMADA. Cuatro muestras**, con 21–52 lecturas |
 | **P3** | Detección mayor en espectro ELA que en controles | **CONFIRMADA en médula cervical**, donde los intervalos de Wilson **no se solapan** (0,406 frente a 0,333). **NO en corteza**, donde sí se solapan |
 

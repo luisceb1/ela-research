@@ -161,6 +161,16 @@ Unresolved and recorded as such: the junction carries `right_annotated=cH38` and
 
 **Coordinates unchanged and no STMN2 measurement affected.** Both of the project's target genes now have sealed coordinates audited by the same procedure.
 
+## Correction — P1 of the STMN2 cycle was mislabelled
+
+A second reader, working on the parallel branch behind PR #57, found that **I declared CONFIRMED a prediction my own plan refutes.** I verified it and it is true.
+
+The plan fixed P1 as STMN2's normalised canonical coverage in cervical cord being **at least ten times** UNC13A's. The result was **6.6x** (median 33 against 5). **6.6 is below 10, so P1 is REFUTED.** I wrote the threshold myself and then declared success beneath it — the very goalpost-moving this protocol exists to prevent, committed in the same report where I was congratulating myself for stopping in time at a different faulty criterion.
+
+**P2 remains confirmed and is the cycle's central claim:** four samples reach 20 or more cryptic reads, so the threshold was genuinely passed, and that does not depend on P1. P3 remains confirmed. Coordinates, counts and the later audit are unaffected. The conclusion that the UNC13A failure was the locus still stands, because it rests on P2 — but **the quantitative margin between the two targets was smaller than I announced**.
+
+A second discrepancy is corrected in the same place: the report's tables apply the denominator restriction of 20, while `results_cervical.json` carries `by_group` summaries computed over **all** samples without flagging it (n=92 against n=58, with a maximum of 1.0 that is denominator noise). Read only the restricted figures from the report.
+
 ## Access and communications: dated evidence only
 
 The 04 November administrative audit records AD Workbench dataset-approval wording followed by review wording, and a pending workspace. Neither establishes effective access or a technical manifest. [Audit](../reports/continuity-20261104/REPORT.md). The expanded public K26 search found no attributable source table in the checked routes; this is not universal proof of absence. [Search](../reports/fig4d-source-search-20261104/REPORT.md).
