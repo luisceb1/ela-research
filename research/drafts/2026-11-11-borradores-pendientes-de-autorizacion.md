@@ -31,7 +31,9 @@ Luis dijo «adelante con todo» el 11/11/2026. He ejecutado la parte técnica. E
 > Un saludo cordial,
 > [Luis]
 
-**Antes de enviarlo, revisa:** que la cita de Keuss y la de Mallika son literales (lo son, verificadas 14/14 por `scripts/verify_matrix_quotes.py`); que el repositorio es **privado** ahora mismo, así que la URL no funcionaría para un tercero sin cambiar eso; y que la fila M-a de la matriz sigue sin revisión independiente.
+**SUPERADO el 11/11/2026.** Este borrador se reescribió para **Wong** y con tres correcciones: se eliminó la advertencia del repositorio privado (ya es público), se añadió la salvedad sobre la fila M-a y se añadió el hallazgo tisular. **Usa [`2026-11-11-mensaje-wong-borrador.md`](2026-11-11-mensaje-wong-borrador.md)**, no este texto.
+
+Se conserva aquí por historial. Dos inexactitudes propias que arrastraba: afirmé en conversación que «ya lleva tres hallazgos» cuando el texto solo contenía el de cronología, y su nota final da por privado un repositorio que ya es público.
 
 ---
 
