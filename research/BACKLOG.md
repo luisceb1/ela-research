@@ -68,7 +68,10 @@ La laguna que motiva #18 queda documentada en su forma **precisa**: ninguna corr
 
 - [x] **P1 del ciclo STMN2 estaba mal etiquetada: era REFUTADA, no confirmada.** Umbral prefijado ≥10×; resultado 6,6×. Detectado por el segundo lector de la rama de la PR #57, verificado y corregido en el informe y en STATE. **P2 (umbral superado) y P3 no se ven afectadas**, ni las coordenadas ni la auditoría.
 - [x] **Discrepancia informe/JSON documentada:** `results_cervical.json` contiene resúmenes `by_group` sin la restricción de denominador ≥20 que sí aplica el informe (n=92 frente a 58). Usar las cifras del informe.
-- [ ] Revisar si otros informes propios declaran confirmada alguna predicción por debajo de su propio umbral. **No se ha hecho esa revisión sistemática.**
+- [x] **Auditoría de predicciones ejecutada**: 16 predicciones de 8 ciclos (10–11/11). **14 coherentes, 1 fallo** (la P1 de STMN2, ya corregida) **y 1 sustitución de prueba declarada** (covariables de Ikegami: la correlación prefijada nunca se ejecutó; se sustituyó por una prueba entre subtipos, declarada con su lógica y su límite). Las 11 numéricas se verificaron **recalculando desde los JSON depositados**. Ver [informe](../reports/prediction-audit-20261111/REPORT.md).
+- [ ] **Pendiente: auditar los ciclos anteriores al 10/11** con el mismo procedimiento. No se abrió en este ciclo.
+- [ ] **Necesidad estructural identificada:** mis informes necesitan un segundo lector **sistemático**. Hoy dos revisiones externas encontraron cuatro sobreafirmaciones y una predicción mal etiquetada; **ninguna la encontré yo**.
+- [x] **Error de git propio, corregido:** al abrir el ciclo de auditoría reseteé la rama a `main` y un push forzado descartó tres commits ya empujados, incluida la corrección de P1. Recuperados por `cherry-pick` desde el reflog y verificados en el árbol. Ningún contenido se perdió; el incidente queda registrado en vez de borrado.
 
 ## Mantenimiento técnico
 
