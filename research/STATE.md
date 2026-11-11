@@ -139,6 +139,16 @@ No effect is computed: 4 samples above threshold in ALS and none in controls, wi
 
 Next: UNC13A's own sealed coordinates came from an earlier derivation and **should face the same double-anchor cross-check**, since its `annotated=0` assumption may have been wrong too.
 
+## UNC13A's coordinates audited and confirmed: 88 of 88 boundaries agree
+
+Because the STMN2 cycle showed a prespecified criterion of mine could exclude the published event, UNC13A's sealed coordinates were put through the same double-anchor cross-check they had never faced. [Report](../reports/unc13a-coordinate-audit-20261111/REPORT.md).
+
+All **88** exon boundaries of NM_001080421.3 give a single offset, 110,809, with no exception, so the region lifted between assemblies without structural change. Applying it to the published hg19 cryptic-exon interval yields **17,642,414–17,642,541**, exactly what the sealed junctions imply, and the canonical intron begins one base after a real hg38 exon end and finishes at a real exon start. The offset was written into the plan **before** querying UCSC, so this was a checked prediction rather than a fitted adjustment.
+
+**Coordinates unchanged; none was needed. No measurement from this week is affected** — the recount3 reports, the fraction discrepancy, motor cortex and cervical cord all measured the right junctions, and the coverage closure for UNC13A stands on locus coverage rather than a coordinate error.
+
+One methodological lesson does change practice: UNC13A's cryptic junctions are flagged `annotated=0` in recount3 while STMN2's is flagged `annotated=1`, so **that flag is inconsistent across genes and unreliable in either direction**. Using it to include would have failed for UNC13A; using it to exclude did fail for STMN2. What worked in both cases was cross-checking a published interval through a double anchor, and the note is recorded in the sealed files so no future cycle leans on the flag again.
+
 ## Access and communications: dated evidence only
 
 The 04 November administrative audit records AD Workbench dataset-approval wording followed by review wording, and a pending workspace. Neither establishes effective access or a technical manifest. [Audit](../reports/continuity-20261104/REPORT.md). The expanded public K26 search found no attributable source table in the checked routes; this is not universal proof of absence. [Search](../reports/fig4d-source-search-20261104/REPORT.md).
