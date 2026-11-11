@@ -2,6 +2,13 @@
 
 This replaces earlier planning snapshots. Historical reports and commits remain evidence, not automatic instructions to rerun work. This consolidated state accompanies integration of PRs #46–#49. Review details and exact checked commits are preserved in [INTEGRATION_REVIEW](../reports/integration-20261104/REVIEW.md).
 
+
+## Paired STMN2 completed — 11 November 2026
+
+[Paired exploratory report](../reports/paired-stmn2-20261111/REPORT.md), protocol committed before pair counting and effect calculation (marginal outcomes were already known). The dual-source technical subset has 104 shared donors; after pure-ALS status, matching preparation, unique library and C+K≥20 in both regions, **45 donor pairs** remain. Cervical higher/tied/lower: **24/14/7**; median paired local-ratio difference **+0.003676**; one prespecified exact two-sided sign-test nominal p=0.0033269. Direction persists descriptively at denominators ≥50 (32 pairs) and ≥100 (22 pairs). Only four eligible control pairs: no disease-vs-control test.
+
+The paired-design task previously listed below is now **completed**, not a pending instruction to rerun. This reduces between-person and recorded preparation mismatch, but does not resolve extraction/sequencing batch, RNA quality, composition, discrete-depth bias or selection on denominator. It is neither independent replication nor proof of neuron-type dependence. Next enabling input: a concrete independent paired manifest with composition/QC/batch information and usable junction coverage. Stop this cycle rather than add contrasts on the same donors. UNC13A #37 and K26 #44 gates remain unchanged.
+
 ## Current override — STMN2 measurement and technical units, 11 November 2026
 
 [Completed bounded audit](../reports/stmn2-map-audit-20261111/REPORT.md) supersedes older STMN2 claims below about unavailable donor identity, P1 confirmation, inference from Wilson overlap, and coverage ruling out confounding. No original counts were changed.
