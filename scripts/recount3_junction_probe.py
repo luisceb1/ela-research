@@ -101,6 +101,40 @@ def find_target_rows(rr_path: Path, chromosome: str,
     return found
 
 
+def assay_shape(rr_path: Path, chromosome: str) -> dict:
+    """Flag a quantification that looks targeted rather than transcriptome-wide.
+
+    A real RNA-seq project yields hundreds of thousands of junctions spread
+    across every chromosome. A targeted amplicon run yields a handful, nearly
+    all at one locus, and SRA metadata may still label it "RNA-Seq" (observed
+    for SRP334561, whose paper states the deposit is amplicon sequencing). The
+    distinction matters: huge counts in a targeted assay do not demonstrate the
+    transcriptome-wide detectability a coverage threshold is meant to ensure.
+    """
+    total = 0
+    on_chrom = 0
+    chroms = set()
+    with gzip.open(rr_path, "rt") as fh:
+        reader = csv.DictReader(fh, delimiter="\t")
+        for row in reader:
+            total += 1
+            chroms.add(row["chromosome"])
+            if row["chromosome"] == chromosome:
+                on_chrom += 1
+    share = (on_chrom / total) if total else 0.0
+    looks_targeted = bool(total < 5000 and share > 0.5)
+    return {
+        "total_junctions": total,
+        "junctions_on_target_chromosome": on_chrom,
+        "share_on_target_chromosome": round(share, 4),
+        "distinct_chromosomes": len(chroms),
+        "looks_targeted_not_transcriptome_wide": looks_targeted,
+        "note": ("Heuristic, not proof. When true, verify the assay against the "
+                 "source publication before treating coverage as comparable to "
+                 "transcriptome-wide junction counts."),
+    }
+
+
 def read_counts(mm_path: Path, rows: dict[int, str]) -> tuple[dict[str, dict[int, int]], dict]:
     """Stream the MatrixMarket file, keeping only the requested rows."""
     counts: dict[str, dict[int, int]] = {name: {} for name in rows.values()}
@@ -155,6 +189,7 @@ def run(args) -> dict:
     chromosome = spec["chromosome"]
     targets = {k: tuple(v) for k, v in spec["junctions"].items()}
 
+    shape = assay_shape(Path(args.rr), chromosome)
     located = find_target_rows(Path(args.rr), chromosome, targets)
     row_map = {info["row"]: name for name, info in located.items()
                if info.get("row")}
@@ -195,6 +230,7 @@ def run(args) -> dict:
         "interpretation_rule": (
             "A count below the threshold is MISSING DATA, not a biological "
             "zero. No effect, PSI or test is computed here."),
+        "gate_qualified_by_assay_shape": shape["looks_targeted_not_transcriptome_wide"],
     }
     return {
         "project": spec.get("project", ""),
@@ -203,6 +239,7 @@ def run(args) -> dict:
         "inputs": {Path(p).name: {"sha256": sha256(Path(p)),
                                   "bytes": Path(p).stat().st_size}
                    for p in (args.rr, args.mm, args.ids, args.project, args.sra)},
+        "assay_shape": shape,
         "matrix_header": header,
         "n_samples": len(samples),
         "per_junction": per_junction,

@@ -1,0 +1,351 @@
+{
+ "project": "SRP334561",
+ "chromosome": "chr19",
+ "coordinate_conversion": "sealed intronic 0-based half-open -> [start0+1, end0] 1-based inclusive",
+ "inputs": {
+  "sra.junctions.SRP334561.ALL.RR.gz": {
+   "sha256": "d8a8e02085a1aa1374dbafd69c8523d8cf96c652fc4439f88f5e3729f5e09526",
+   "bytes": 825
+  },
+  "sra.junctions.SRP334561.ALL.MM.gz": {
+   "sha256": "dcc9169302e0d596cb99495bc37435eae93e606e1d586a904c4d350e239ee5e5",
+   "bytes": 740
+  },
+  "sra.junctions.SRP334561.ALL.ID.gz": {
+   "sha256": "0255ebac17d6c96a924b7a36fb24c1d74b38c7d3e300fcf56ecabc7d9d27e31f",
+   "bytes": 77
+  },
+  "sra.recount_project.SRP334561.MD.gz": {
+   "sha256": "6ba27469392361594de4f3310a6cd2ef7b925f14fdd8047c8b57c72d23eb1ec7",
+   "bytes": 245
+  },
+  "sra.sra.SRP334561.MD.gz": {
+   "sha256": "c9d54d5698d7494f40a1912b9d50976ef1dc4e4a0faca03be41bfe42e4b8403d",
+   "bytes": 2839
+  }
+ },
+ "assay_shape": {
+  "total_junctions": 43,
+  "junctions_on_target_chromosome": 33,
+  "share_on_target_chromosome": 0.7674,
+  "distinct_chromosomes": 6,
+  "looks_targeted_not_transcriptome_wide": true,
+  "note": "Heuristic, not proof. When true, verify the assay against the source publication before treating coverage as comparable to transcriptome-wide junction counts."
+ },
+ "matrix_header": {
+  "rows": 43,
+  "columns": 12,
+  "nonzeros": 175
+ },
+ "n_samples": 12,
+ "per_junction": {
+  "canonical": {
+   "max": 93815,
+   "samples_at_or_above_threshold": 12,
+   "samples_with_any_read": 12,
+   "located": {
+    "row": 16,
+    "start_1based": 17641557,
+    "end_1based": 17642844,
+    "strand": "-",
+    "annotated": "1",
+    "left_motif": "CT",
+    "right_motif": "AC"
+   }
+  },
+  "cryptic_left": {
+   "max": 57709,
+   "samples_at_or_above_threshold": 12,
+   "samples_with_any_read": 12,
+   "located": {
+    "row": 14,
+    "start_1based": 17641557,
+    "end_1based": 17642413,
+    "strand": "-",
+    "annotated": "0",
+    "left_motif": "CT",
+    "right_motif": "AC"
+   }
+  },
+  "cryptic_right": {
+   "max": 49314,
+   "samples_at_or_above_threshold": 11,
+   "samples_with_any_read": 12,
+   "located": {
+    "row": 29,
+    "start_1based": 17642542,
+    "end_1based": 17642844,
+    "strand": "-",
+    "annotated": "0",
+    "left_motif": "CT",
+    "right_motif": "AC"
+   }
+  }
+ },
+ "verdict": {
+  "min_coverage_required": 20,
+  "positive_control": "canonical",
+  "positive_control_meets_coverage": true,
+  "gate_junctions": [
+   "cryptic_left",
+   "cryptic_right"
+  ],
+  "gate_met": true,
+  "interpretation_rule": "A count below the threshold is MISSING DATA, not a biological zero. No effect, PSI or test is computed here.",
+  "gate_qualified_by_assay_shape": true
+ },
+ "samples": [
+  {
+   "column": 1,
+   "rail_id": "5149224",
+   "run": "SRR15661976",
+   "sample_name": "GSM5548014",
+   "sample_title": "iPSC_iMN1_sh_shScramble_rep1",
+   "genotype": "",
+   "sirna_type": "",
+   "cell_type": "iPSC-derived motor neurons (iPSC-MNs)",
+   "date": "",
+   "counts": {
+    "canonical": 74450,
+    "cryptic_left": 44,
+    "cryptic_right": 45
+   },
+   "meets_coverage": {
+    "canonical": true,
+    "cryptic_left": true,
+    "cryptic_right": true
+   }
+  },
+  {
+   "column": 2,
+   "rail_id": "5149238",
+   "run": "SRR15661977",
+   "sample_name": "GSM5548015",
+   "sample_title": "iPSC_iMN1_sh_shScramble_rep2",
+   "genotype": "",
+   "sirna_type": "",
+   "cell_type": "iPSC-derived motor neurons (iPSC-MNs)",
+   "date": "",
+   "counts": {
+    "canonical": 84591,
+    "cryptic_left": 49,
+    "cryptic_right": 44
+   },
+   "meets_coverage": {
+    "canonical": true,
+    "cryptic_left": true,
+    "cryptic_right": true
+   }
+  },
+  {
+   "column": 3,
+   "rail_id": "5149251",
+   "run": "SRR15661978",
+   "sample_name": "GSM5548016",
+   "sample_title": "iPSC_iMN1_sh_shTDP-43_rep1",
+   "genotype": "",
+   "sirna_type": "",
+   "cell_type": "iPSC-derived motor neurons (iPSC-MNs)",
+   "date": "",
+   "counts": {
+    "canonical": 45737,
+    "cryptic_left": 50544,
+    "cryptic_right": 45163
+   },
+   "meets_coverage": {
+    "canonical": true,
+    "cryptic_left": true,
+    "cryptic_right": true
+   }
+  },
+  {
+   "column": 4,
+   "rail_id": "5149265",
+   "run": "SRR15661979",
+   "sample_name": "GSM5548017",
+   "sample_title": "iPSC_iMN1_sh_shTDP-43_rep2",
+   "genotype": "",
+   "sirna_type": "",
+   "cell_type": "iPSC-derived motor neurons (iPSC-MNs)",
+   "date": "",
+   "counts": {
+    "canonical": 48073,
+    "cryptic_left": 57709,
+    "cryptic_right": 49314
+   },
+   "meets_coverage": {
+    "canonical": true,
+    "cryptic_left": true,
+    "cryptic_right": true
+   }
+  },
+  {
+   "column": 5,
+   "rail_id": "5149278",
+   "run": "SRR15661980",
+   "sample_name": "GSM5548018",
+   "sample_title": "iPSC_iMN2_sh_shScramble_rep1",
+   "genotype": "",
+   "sirna_type": "",
+   "cell_type": "iPSC-derived motor neurons (iPSC-MNs)",
+   "date": "",
+   "counts": {
+    "canonical": 93815,
+    "cryptic_left": 89,
+    "cryptic_right": 68
+   },
+   "meets_coverage": {
+    "canonical": true,
+    "cryptic_left": true,
+    "cryptic_right": true
+   }
+  },
+  {
+   "column": 6,
+   "rail_id": "5149291",
+   "run": "SRR15661981",
+   "sample_name": "GSM5548019",
+   "sample_title": "iPSC_iMN2_sh_shScramble_rep2",
+   "genotype": "",
+   "sirna_type": "",
+   "cell_type": "iPSC-derived motor neurons (iPSC-MNs)",
+   "date": "",
+   "counts": {
+    "canonical": 85645,
+    "cryptic_left": 21,
+    "cryptic_right": 16
+   },
+   "meets_coverage": {
+    "canonical": true,
+    "cryptic_left": true,
+    "cryptic_right": false
+   }
+  },
+  {
+   "column": 7,
+   "rail_id": "5149304",
+   "run": "SRR15661982",
+   "sample_name": "GSM5548020",
+   "sample_title": "iPSC_iMN2_sh_shTDP-43_rep1",
+   "genotype": "",
+   "sirna_type": "",
+   "cell_type": "iPSC-derived motor neurons (iPSC-MNs)",
+   "date": "",
+   "counts": {
+    "canonical": 40467,
+    "cryptic_left": 13870,
+    "cryptic_right": 12015
+   },
+   "meets_coverage": {
+    "canonical": true,
+    "cryptic_left": true,
+    "cryptic_right": true
+   }
+  },
+  {
+   "column": 8,
+   "rail_id": "5149318",
+   "run": "SRR15661983",
+   "sample_name": "GSM5548021",
+   "sample_title": "iPSC_iMN2_sh_shTDP-43_rep2",
+   "genotype": "",
+   "sirna_type": "",
+   "cell_type": "iPSC-derived motor neurons (iPSC-MNs)",
+   "date": "",
+   "counts": {
+    "canonical": 55670,
+    "cryptic_left": 20724,
+    "cryptic_right": 17457
+   },
+   "meets_coverage": {
+    "canonical": true,
+    "cryptic_left": true,
+    "cryptic_right": true
+   }
+  },
+  {
+   "column": 9,
+   "rail_id": "5149331",
+   "run": "SRR15661984",
+   "sample_name": "GSM5548022",
+   "sample_title": "iPSC_iMN3_sh_shScramble_rep1",
+   "genotype": "",
+   "sirna_type": "",
+   "cell_type": "iPSC-derived motor neurons (iPSC-MNs)",
+   "date": "",
+   "counts": {
+    "canonical": 83188,
+    "cryptic_left": 36,
+    "cryptic_right": 22
+   },
+   "meets_coverage": {
+    "canonical": true,
+    "cryptic_left": true,
+    "cryptic_right": true
+   }
+  },
+  {
+   "column": 10,
+   "rail_id": "5149345",
+   "run": "SRR15661985",
+   "sample_name": "GSM5548023",
+   "sample_title": "iPSC_iMN3_sh_shScramble_rep2",
+   "genotype": "",
+   "sirna_type": "",
+   "cell_type": "iPSC-derived motor neurons (iPSC-MNs)",
+   "date": "",
+   "counts": {
+    "canonical": 80275,
+    "cryptic_left": 27,
+    "cryptic_right": 25
+   },
+   "meets_coverage": {
+    "canonical": true,
+    "cryptic_left": true,
+    "cryptic_right": true
+   }
+  },
+  {
+   "column": 11,
+   "rail_id": "5149359",
+   "run": "SRR15661986",
+   "sample_name": "GSM5548024",
+   "sample_title": "iPSC_iMN3_sh_shTDP-43_rep1",
+   "genotype": "",
+   "sirna_type": "",
+   "cell_type": "iPSC-derived motor neurons (iPSC-MNs)",
+   "date": "",
+   "counts": {
+    "canonical": 37238,
+    "cryptic_left": 31590,
+    "cryptic_right": 25873
+   },
+   "meets_coverage": {
+    "canonical": true,
+    "cryptic_left": true,
+    "cryptic_right": true
+   }
+  },
+  {
+   "column": 12,
+   "rail_id": "5149374",
+   "run": "SRR15661987",
+   "sample_name": "GSM5548025",
+   "sample_title": "iPSC_iMN3_sh_shTDP-43_rep2",
+   "genotype": "",
+   "sirna_type": "",
+   "cell_type": "iPSC-derived motor neurons (iPSC-MNs)",
+   "date": "",
+   "counts": {
+    "canonical": 33380,
+    "cryptic_left": 33105,
+    "cryptic_right": 29018
+   },
+   "meets_coverage": {
+    "canonical": true,
+    "cryptic_left": true,
+    "cryptic_right": true
+   }
+  }
+ ]
+}

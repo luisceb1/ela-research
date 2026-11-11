@@ -9,7 +9,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
 
 from recount3_junction_probe import (  # noqa: E402
-    attribute, build_samples, find_target_rows, read_counts,
+    assay_shape, attribute, build_samples, find_target_rows, read_counts,
 )
 
 RR = (
@@ -89,6 +89,27 @@ class ProbeTest(unittest.TestCase):
         self.assertEqual(samples[0]["genotype"], "control")
         self.assertEqual(samples[1]["genotype"], "TDP43 knockdown")
         self.assertEqual(samples[1]["sirna_type"], "TDP43")
+
+    def test_assay_shape_flags_a_concentrated_quantification(self):
+        # Three of four junctions on the target chromosome, tiny total: the
+        # shape of a targeted amplicon run mislabelled as RNA-Seq.
+        shape = assay_shape(self.rr, "chr19")
+        self.assertEqual(shape["total_junctions"], 4)
+        self.assertEqual(shape["junctions_on_target_chromosome"], 3)
+        self.assertTrue(shape["looks_targeted_not_transcriptome_wide"])
+
+    def test_assay_shape_does_not_flag_a_spread_quantification(self):
+        header = RR.splitlines()[0]
+        wide = [header]
+        for i in range(6000):
+            chrom = f"chr{(i % 20) + 1}"
+            start = 1000 + i * 10
+            wide.append(f"{chrom}\t{start}\t{start + 100}\t101\t+\t1\tGT\tAG\t1\t1")
+        path = gz(self.tmp.name, "wide.gz", "\n".join(wide) + "\n")
+        shape = assay_shape(path, "chr19")
+        self.assertGreater(shape["total_junctions"], 5000)
+        self.assertLess(shape["share_on_target_chromosome"], 0.5)
+        self.assertFalse(shape["looks_targeted_not_transcriptome_wide"])
 
     def test_attribute_returns_empty_for_missing_key(self):
         self.assertEqual(attribute("genotype;;control", "sirna type"), "")

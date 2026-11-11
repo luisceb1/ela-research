@@ -61,6 +61,16 @@ Recorded as an observation strictly below threshold and carrying no inference: e
 
 Next discriminating step: UNC13A is expressed lower in spinal cord than cortex (Ikegami 2026, Mallika's GTEx panel), and these are spinal motor neurons, so a cortical or i3Neuron depletion dataset is the natural candidate. ANSWER_ALS and TARGET_ALS are in recount3 but are **patient cohorts, not depletion experiments**, so using them would answer a different question and needs its own plan; the endpoint is not switched to dodge this rejection.
 
+## Second recount3 candidate — amplicon, not eligible
+
+SRP334561 (GSE182976) is Ma 2022's own dataset for the UNC13A cryptic-exon paper, fixed as the candidate **before any count was extracted**. Its design is better than Klim's: `shTDP-43` against `shScramble` across **three donor lines**, so three genetically independent units per condition, which SRP166282 lacked. Coverage clears the threshold enormously, up to 57,709 reads on a cryptic junction, with complete separation — cryptic fraction 0.000–0.002 in six controls against 0.390–0.690 in six knockdowns, consistent across all three lines.
+
+**The gate still is not passed, and the prespecified rule is why.** The plan fixed in advance that clearing the threshold in a targeted assay does not demonstrate transcriptome-wide detectability, and required verifying the assay against the publication first. Ma 2022 states the deposit is **amplicon sequencing**, by RT-PCR from UNC13A exon 19 to exon 21, while SRA metadata labels it `library_strategy: RNA-Seq`. So this is depth at one locus, not coverage: not comparable with the closed pilot or SRP166282, and it does not enable #37's inferential contrast. What it does establish is an independent reproduction of the published qualitative finding from deposited counts.
+
+The probe now detects this trap itself: 43 junctions with 76.7% on chr19 across 6 chromosomes flags as targeted, against 599,768 junctions and 5.7% across 77 chromosomes for real RNA-seq. A heuristic that forces verification, not a substitute for it.
+
+**The cortical hypothesis remains untested** — both datasets are motor neurons. And a reusable caution is recorded: SRA's library_strategy field can misdescribe a targeted assay.
+
 ## Access and communications: dated evidence only
 
 The 04 November administrative audit records AD Workbench dataset-approval wording followed by review wording, and a pending workspace. Neither establishes effective access or a technical manifest. [Audit](../reports/continuity-20261104/REPORT.md). The expanded public K26 search found no attributable source table in the checked routes; this is not universal proof of absence. [Search](../reports/fig4d-source-search-20261104/REPORT.md).

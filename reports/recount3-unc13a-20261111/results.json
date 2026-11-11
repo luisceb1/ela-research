@@ -24,6 +24,14 @@
    "bytes": 3108
   }
  },
+ "assay_shape": {
+  "total_junctions": 599768,
+  "junctions_on_target_chromosome": 34031,
+  "share_on_target_chromosome": 0.0567,
+  "distinct_chromosomes": 77,
+  "looks_targeted_not_transcriptome_wide": false,
+  "note": "Heuristic, not proof. When true, verify the assay against the source publication before treating coverage as comparable to transcriptome-wide junction counts."
+ },
  "matrix_header": {
   "rows": 599768,
   "columns": 18,
@@ -83,7 +91,8 @@
    "cryptic_right"
   ],
   "gate_met": false,
-  "interpretation_rule": "A count below the threshold is MISSING DATA, not a biological zero. No effect, PSI or test is computed here."
+  "interpretation_rule": "A count below the threshold is MISSING DATA, not a biological zero. No effect, PSI or test is computed here.",
+  "gate_qualified_by_assay_shape": false
  },
  "samples": [
   {

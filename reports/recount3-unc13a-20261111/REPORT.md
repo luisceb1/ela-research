@@ -79,10 +79,64 @@ Toda lectura críptica observada está en muestras de knockdown; ninguna en los 
 
 **Por qué esto NO es un resultado:** con un máximo de 5 lecturas, los ceros de los controles son **dato ausente a esta profundidad, no ceros biológicos**. No se calcula PSI, ni p-valor, ni efecto. No se promedia entre muestras para superar el umbral. El proyecto no relaja el mínimo de 20, y esta observación no es una excepción.
 
+## Segundo candidato: SRP334561 (Ma 2022) — cobertura enorme, pero ensayo dirigido
+
+Candidato **fijado antes de extraer cuentas** (addendum del plan, commit `b593cb0`), elegido por coincidencia exacta de `study_title` con el artículo de referencia del exón críptico de UNC13A, no por haber probado varios y quedarse con el que pasara.
+
+**SRP334561** = GSE182976, «TDP-43 represses cryptic exon inclusion in FTD/ALS gene UNC13A», 12 muestras. Descarga total: **3 KB**.
+
+### El diseño es superior al de Klim
+
+Metadatos declarados: `treatment;;shTDP-43` frente a `treatment;;shScramble`, en **tres líneas de donante distintas** (`cell line;;NDS00262-NINDS`, `NDS00209-NINDS`, …), 2 réplicas por condición y línea. Eso aporta la **independencia genética** que a SRP166282 le faltaba (línea única HUES3): 3 unidades genéticamente independientes por condición.
+
+### Las cuentas superan el umbral con enorme margen
+
+| Unión | máx. | muestras ≥20 |
+|---|---:|---:|
+| canónica (control positivo) | 93.815 | 12/12 |
+| críptica izquierda | **57.709** | **12/12** |
+| críptica derecha | **49.314** | 11/12 |
+
+Fracción críptica `(izq+der)/(izq+der+canónica)` por condición:
+
+| Condición | n | Fracción críptica |
+|---|---:|---|
+| shScramble (control) | 6 | **0,000 – 0,002** |
+| shTDP-43 (knockdown) | 6 | **0,390 – 0,690** |
+
+Separación completa, consistente en las tres líneas de donante.
+
+### Y sin embargo la puerta de #37 NO queda superada
+
+El plan fijaba de antemano que superar el umbral en un ensayo dirigido **no acredita** la detectabilidad que el umbral pretendía garantizar, y exigía verificar la naturaleza del ensayo contra el artículo antes de declarar nada. Verificado:
+
+> «The **amplicon sequencing** data has been deposited in the Gene Expression Omnibus (GEO) at GSE182976.» (Ma 2022, Data availability)
+
+> «**Amplicon sequencing of the splice variants.** Splice variants in iPSC-MNs were established by **PCR amplification from UNC13A exon 19 to exon 21** … Resulting products were purified … and submitted for NGS (**Amplicon EZ**, Genewiz).» (Métodos)
+
+**Es secuenciación de amplicón por RT-PCR de un solo locus, etiquetada como `library_strategy: RNA-Seq` en los metadatos de SRA.** Las 50.000–90.000 lecturas sobre tres uniones son profundidad de amplicón, no cobertura transcriptómica.
+
+Por tanto: **cobertura obtenida en un ensayo de naturaleza dirigida, no comparable con el piloto cerrado ni con SRP166282**, y **no habilita el contraste inferencial de #37**. El denominador de la fracción críptica es específico del amplicón, está sujeto a sesgo de PCR y no equivale a PSI calculado sobre uniones de transcriptoma completo.
+
+Lo que sí queda establecido: los datos depositados **reproducen de forma independiente el hallazgo cualitativo publicado** —la pérdida de TDP-43 induce inclusión del exón críptico de UNC13A— con separación limpia entre condiciones en tres líneas de donante.
+
+### Detector añadido a la sonda
+
+La trampa es reutilizable, así que la sonda ahora la detecta sola:
+
+| Proyecto | Uniones totales | En chr19 | Cromosomas | ¿Parece dirigido? |
+|---|---:|---:|---:|---|
+| SRP166282 (RNA-seq real) | 599.768 | 34.031 (5,7 %) | 77 | **No** |
+| SRP334561 (amplicón) | 43 | 33 (**76,7 %**) | 6 | **Sí** |
+
+`assay_shape()` marca `looks_targeted_not_transcriptome_wide` y el veredicto queda `gate_qualified_by_assay_shape: true`. Es una heurística, no una prueba: obliga a verificar contra el artículo, no sustituye esa verificación.
+
 ## Limitaciones
 
-- **Rechazo por cobertura**, igual que el piloto cerrado. La diferencia es que ahora la causa está aislada: profundidad en el locus, no acceso.
-- **Una sola línea celular**: sin independencia genética.
+- **SRP166282: rechazo por cobertura**, igual que el piloto cerrado. La causa está aislada: profundidad en el locus, no acceso. **Una sola línea celular**, sin independencia genética.
+- **SRP334561: no elegible** para la puerta de #37 por ser ensayo de amplicón dirigido, pese a tener el mejor diseño (3 líneas de donante) y cobertura altísima. Su fracción críptica no es PSI de transcriptoma completo.
+- **La hipótesis cortical sigue SIN PROBAR.** Los dos datasets son de motoneuronas. Ninguno responde si la cobertura de UNC13A mejora en neuronas corticales.
+- **Los metadatos de SRA pueden mentir sobre la estrategia de librería.** Aquí un amplicón figura como `RNA-Seq`. No fiarse del campo sin comprobar la forma de la cuantificación y el artículo.
 - Depleción por siRNA, no degradación controlada; el grado de knockdown por muestra **no** se ha verificado en estos datos.
 - Las cuantificaciones de recount3 usan su propia tubería y filtros de uniones. Otra herramienta contaría distinto y habría que justificar la equivalencia.
 - No se ha comprobado STMN2 en este ciclo; el plan fijaba UNC13A.
