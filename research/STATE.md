@@ -81,6 +81,18 @@ Worth noting: both papers that **established** the UNC13A cryptic exon deposited
 
 This reframes the gate. At Klim's fraction (~0.10) and canonical coverage (~60), reaching 20 cryptic reads would need roughly **200** reads on the canonical junction; at Ma's fraction (~0.5), about **40** would do. So whether the threshold of 20 is reachable in public RNA-seq **depends on which fraction is real**, which is exactly what is unknown. The prior question is no longer "is there a deeper dataset" but "what is the true cryptic inclusion level". Whether to reorient #37 towards resolving that is a **scope decision for Luis**; the agent does not change the threshold or the question on its own.
 
+## #37 reoriented, and the discrepancy is bounded rather than resolved
+
+Luis reoriented #37 on 11 November towards arbitrating the cryptic-fraction disagreement. The threshold of 20 is **not changed**; its use as a source-acceptance criterion is suspended until the disagreement is arbitrated. [Report](../reports/unc13a-fraction-discrepancy-20261111/REPORT.md).
+
+**The main finding is that the two measurements are not comparable as PSI estimates.** The amplicon nature of SRP334561 is now confirmed by a second, independent route: at gene level its twelve samples detect only 8 to 17 genes, **one gene carries 100% of the counts**, and the modal fragment is 1,508 bp, the size of the exon 19 to 21 PCR product. Klim's project, by contrast, detects 29,646 to 36,965 genes with a top-gene share of 1.6%. So one figure is a junction fraction over a transcriptome and the other a proportion of products within one amplicon; the "discrepancy" is in large part an artefact of comparing two non-equivalent assays.
+
+**Knockdown efficiency is measured on one side only.** In Klim's deposited gene counts TARDBP falls 58.8% (CPM 132 to 54), so **roughly 41% of TARDBP remains** — a partial knockdown, compatible with low cryptic inclusion without demonstrating it. For Ma the script **refuses** to read a knockdown level off an amplicon library, as the plan required, and the paper does not state one in its accessible text, which the plan required to be recorded as unavailable rather than estimated. The prespecified prediction, that Klim's knockdown would prove substantially weaker than Ma's, is therefore **not testable** and is neither confirmed nor refuted.
+
+By-product verification: STMN2 falls 51.8% in the same counts, independently reproducing Klim 2019's headline finding, which was not this cycle's aim.
+
+No explanation is ruled out or demonstrated. What the cycle does yield is a sharper entry requirement for #37: whole-transcriptome RNA-seq, with **documented depletion efficiency**, deep enough at UNC13A (of the order of 200 canonical reads if the fraction is near 0.10), and with at least three independent biological units per condition. The second criterion is new, and without it a low fraction cannot be told apart from a weak knockdown.
+
 ## Access and communications: dated evidence only
 
 The 04 November administrative audit records AD Workbench dataset-approval wording followed by review wording, and a pending workspace. Neither establishes effective access or a technical manifest. [Audit](../reports/continuity-20261104/REPORT.md). The expanded public K26 search found no attributable source table in the checked routes; this is not universal proof of absence. [Search](../reports/fig4d-source-search-20261104/REPORT.md).
