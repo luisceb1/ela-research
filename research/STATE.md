@@ -149,6 +149,18 @@ All **88** exon boundaries of NM_001080421.3 give a single offset, 110,809, with
 
 One methodological lesson does change practice: UNC13A's cryptic junctions are flagged `annotated=0` in recount3 while STMN2's is flagged `annotated=1`, so **that flag is inconsistent across genes and unreliable in either direction**. Using it to include would have failed for UNC13A; using it to exclude did fail for STMN2. What worked in both cases was cross-checking a published interval through a double anchor, and the note is recorded in the sealed files so no future cycle leans on the flag again.
 
+## Prediction audit: 16 reviewed, one real failure, one declared substitution
+
+After the mislabelled P1, the open question was whether it was isolated or a pattern. [Report](../reports/prediction-audit-20261111/REPORT.md), table in `audit.tsv`. Self-audit bias is declared: the 11 numeric predictions were checked by **recomputing from the deposited JSON**, not by re-reading my own prose.
+
+**16 predictions across 8 cycles: 14 coherent, 1 real failure, 1 declared substitution.** The failure is the STMN2 P1 already corrected. The substitution is Ikegami's covariate prediction: the correlation test it specified was never run, because the per-case join was refused as the plan required, and a different between-subtype test was run instead. That substitution is declared in the report with its logic and its limit, so it is acceptable rather than hidden — but the prediction as written was not tested, and the report says "all three confirmed" without flagging that what was confirmed is a different quantity. Recorded.
+
+Among the coherent ones, two deserve care: cervical P2's Wilson intervals miss overlapping by 0.004, so nothing should be built on that margin, and cortex P1 was correctly called refuted at 4 reads against a threshold of 20.
+
+One failure in sixteen is not a pattern, but three things keep it from being reassuring: I did not find it, it sat in the very cycle where I was crediting myself for stopping at a different faulty criterion, and this audit carries the same bias — its value is in having been mechanical, not in my judgement. What the audit does vindicate is prespecification itself: without written thresholds there would have been nothing to audit.
+
+Not done and not opened here: auditing the cycles before 10 November by the same procedure.
+
 ## Access and communications: dated evidence only
 
 The 04 November administrative audit records AD Workbench dataset-approval wording followed by review wording, and a pending workspace. Neither establishes effective access or a technical manifest. [Audit](../reports/continuity-20261104/REPORT.md). The expanded public K26 search found no attributable source table in the checked routes; this is not universal proof of absence. [Search](../reports/fig4d-source-search-20261104/REPORT.md).
