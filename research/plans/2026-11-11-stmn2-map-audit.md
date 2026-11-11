@@ -1,0 +1,25 @@
+# STMN2 endpoint audit and TARGET_ALS technical-unit mapping
+
+Date: 2026-11-11. Luis authorized both tasks after the review of the STMN2 report. Base: ad96ec5e3e5ebb40a12324c0802a4979916f5c4d. This is a bounded measurement/design audit; the existing STMN2 counts and report have already been inspected. No new biological hypothesis test is authorized or claimed by this plan.
+
+## Questions
+1. Does the sealed hg38 exon-1→cryptic-acceptor junction represent the documented STMN2 exon-2a terminal event? Which documented alternatives could it miss?
+2. Can the existing TARGET_ALS cortex/cervical sample identifiers be joined exactly to a public technical sample→anonymous donor→region→library/replicate map?
+3. Do the report's stated predictions and denominator-restricted summaries match its own deposited counts?
+
+## Known issues before new calculations
+P1 requires >=10-fold normalized canonical coverage but is labelled confirmed with a reported raw ratio 33/5=6.6. Only four pure-ALS cervical samples have >=20 cryptic reads. The report uses denominator >=20 for interpretable ratios, while the deposited JSON contains summaries including low denominators. Independence and cohort overlap have not been established. These are retrospective consistency checks, not new prospective discoveries.
+
+## Scope and method fixed now
+- Read original Klim/Melamed 2019, Baughn 2023 and Quadros 2024 methods/sequence definitions and relevant small technical supplements as needed; primary-source evidence only. Maximum four source families, no claim of an exhaustive literature review or of all possible STMN2 events.
+- Independently check the cryptic acceptor with an assembly chain and/or local sequence conservation around splice boundaries; a constant offset inferred from neighbouring exons is not itself a genome alignment. Check exact assembly, strand, donor/acceptor and half-open versus inclusive conventions. Do not replace the sealed junction without explicit verified evidence and a versioned amendment.
+- Distinguish mature full-length canonical junction from terminal cryptic junction. A count ratio is a local junction-use proxy, not an unbiased molecular fraction or protein-function measurement. The annotation flag is descriptive only. Enumerate documented alternatives found, or state none identified within the sources screened, without claiming completeness.
+- Recalculate only existing descriptive totals using the prespecified C+K>=20 rule; keep all source counts unchanged. Compare all-sample summaries with denominator-qualified summaries explicitly. Check the P1 claim from existing counts and available depth metadata; if exact normalization cannot be recovered, mark it unresolved rather than equating ratios of medians to medians of per-sample ratios.
+- Technical mapping sources: recount3 sample-ID/project metadata; public GEO records (GSE153960 as the lead suggested by a primary reanalysis, not an assumed identical cohort); author technical metadata already cited in the project. Exact string joins only, preserve -2 and other library suffixes. Conflicting duplicate keys, missing fields or mismatched region/project are rejected, not fixed by guessed prefixes.
+- Only technical keys, anonymous donor keys, region and library/project descriptors may be used. No age, sex, ethnicity, mutation, onset, clinical outcomes or reidentification. Do not publish individual disease-labelled donor/sample rows or raw mixed clinical tables. Keep source responses transient; publish hashes, schema and aggregate match/ambiguity counts only. No account creation, access changes, communications or participant contact.
+- Maximum 25 MB additional technical metadata/reference material; no RNA matrices/FASTQ/BAM and no extra tissue. If a source requires login or unavailable fields, record the bounded failure. No effect, p-value, donor-level disease comparison or new association fit even if a map is recovered: a separate design must be fixed before that analysis.
+
+## Acceptance and stopping
+An independent-unit map is accepted only if each included sample has an exact unambiguous original sample key, a declared donor key and compatible region; technical duplicates and multiple samples per donor are quantified rather than promoted to replicates. Secondary author metadata can propose a link, but source provenance and exact assay/tissue/sample compatibility must be checked. A mapping that covers only part of the cohort is reported as partial, with exclusions and no inference.
+
+Stop after the four STMN2 source families and the three mapping routes above, whether a usable map exists or not. Output a measurement-scope statement, corrected report/addendum without altering historical numerical data, a tested technical matching checker if needed, aggregate evidence JSON and source receipts, and a reviewable PR. Update STATE/BACKLOG on an isolated branch and preserve other agents' work. No repeated broad audits, altered thresholds, new contacts, laboratory work, spending or external publication.
