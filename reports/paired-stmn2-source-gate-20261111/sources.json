@@ -1,0 +1,72 @@
+{
+  "20090702": {
+    "url": "https://zenodo.org/api/records/20090702",
+    "sha256": "c9d6218a73ed1442704e9e0a9ab5532ea9b1935936d0adb8ebfa663b68d651d1",
+    "files": [
+      {
+        "key": "NYGC_Flagship_ST_1_3_Metadata.xlsx",
+        "size": 4136212,
+        "checksum": "md5:4f0ff6f23ca0e48da461a6574a146a93",
+        "url": "https://zenodo.org/api/records/20090702/files/NYGC_Flagship_ST_1_3_Metadata.xlsx/content"
+      },
+      {
+        "key": "NYGC_Flagship_ST_32_35_genetics.xlsx",
+        "size": 76065,
+        "checksum": "md5:1f8b855c02c91c6e4671eb5a29aacb0b",
+        "url": "https://zenodo.org/api/records/20090702/files/NYGC_Flagship_ST_32_35_genetics.xlsx/content"
+      },
+      {
+        "key": "NYGC_Flagship_ST_17_31_splicing.xlsx",
+        "size": 14388620,
+        "checksum": "md5:b47ab8c8b54dd3f0737e58d9a0fb96fc",
+        "url": "https://zenodo.org/api/records/20090702/files/NYGC_Flagship_ST_17_31_splicing.xlsx/content"
+      },
+      {
+        "key": "NYGC_Flagship_ST_4_16_expression.xlsx",
+        "size": 32702280,
+        "checksum": "md5:d49eca47d62502c5b89627c96dae4d75",
+        "url": "https://zenodo.org/api/records/20090702/files/NYGC_Flagship_ST_4_16_expression.xlsx/content"
+      }
+    ]
+  },
+  "18989237": {
+    "url": "https://zenodo.org/api/records/18989237",
+    "sha256": "bffd63ce42316192ab93edf95aff75bc040267a5566a4842ef82945fa097c385",
+    "files": [
+      {
+        "key": "tpm_data_NYGC_ALS_Consortium.csv.gz",
+        "size": 109777701,
+        "checksum": "md5:28fa8d8e560faef01b834b574f53542f",
+        "url": "https://zenodo.org/api/records/18989237/files/tpm_data_NYGC_ALS_Consortium.csv.gz/content"
+      },
+      {
+        "key": "count_data_NYGC_ALS_Consortium.csv.gz",
+        "size": 107767584,
+        "checksum": "md5:34e47a2f7883d3b45afec9a9412bcd25",
+        "url": "https://zenodo.org/api/records/18989237/files/count_data_NYGC_ALS_Consortium.csv.gz/content"
+      }
+    ]
+  },
+  "19223231": {
+    "url": "https://zenodo.org/api/records/19223231",
+    "sha256": "0ac578c71ecd1601c4850698c1d97f527cb64bbd57ea334623324faf7626e0c3",
+    "files": [
+      {
+        "key": "splice_count_data_NYGC_ALS_Consortium.csv.gz",
+        "size": 210147878,
+        "checksum": "md5:b036c7ab1f6e0232dfa6288ae1db12bb",
+        "url": "https://zenodo.org/api/records/19223231/files/splice_count_data_NYGC_ALS_Consortium.csv.gz/content"
+      },
+      {
+        "key": "splice_phen_annots_leafidex_gen33.csv.gz",
+        "size": 6325102,
+        "checksum": "md5:1b294f349a3b012329508464934f1f4f",
+        "url": "https://zenodo.org/api/records/19223231/files/splice_phen_annots_leafidex_gen33.csv.gz/content"
+      }
+    ]
+  },
+  "GSE330130": {
+    "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE330130&targ=self&form=text&view=quick",
+    "sha256": "81a94319df7a0e9a74b79d5ac33c7886b6cc5013ab8d2b39a6d11ebd3e2c3203"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "source_sha256": "c1bf21493c4a2773e27ff787e60267fc2e1304ce11e84e644c03c700cc68f048",
+  "rows": 2574,
+  "technical_columns_used": [
+    "donor_id",
+    "region",
+    "rin",
+    "rna_id",
+    "rna_platform",
+    "rna_prep",
+    "sra_run",
+    "tissue_clean",
+    "tissue_code",
+    "tissue_full"
+  ],
+  "regions": {
+    "Cortex_Motor_Lateral": {
+      "original_samples": 149,
+      "exact_rna_id_matches": 147,
+      "rin_valid_1_to_10": 147,
+      "preparation_nonmissing": 147,
+      "source_tissue_labels": {
+        "Cortex_Motor_Lateral": 147
+      }
+    },
+    "Spinal_Cord_Cervical": {
+      "original_samples": 164,
+      "exact_rna_id_matches": 161,
+      "rin_valid_1_to_10": 161,
+      "preparation_nonmissing": 161,
+      "source_tissue_labels": {
+        "Spinal_Cord_Cervical": 161
+      }
+    }
+  }
+}

@@ -3,6 +3,12 @@
 This replaces earlier planning snapshots. Historical reports and commits remain evidence, not automatic instructions to rerun work. This consolidated state accompanies integration of PRs #46–#49. Review details and exact checked commits are preserved in [INTEGRATION_REVIEW](../reports/integration-20261104/REVIEW.md).
 
 
+## Source gate completed — 11 November 2026
+
+[Three-source availability review](../reports/paired-stmn2-source-gate-20261111/REPORT.md): no independent replication source accepted yet. **New executable QC input found:** NYGC ST3 metadata, Zenodo 20090702, exact rna_id matches for 308/313 original libraries (147 cortex, 161 cervical), all with valid RIN and preparation. This is demonstrated overlap with the original cohort, not independent validation. No new effect was fitted.
+
+Next actionable task: fix an RIN/QC sensitivity protocol for the original 45 pairs and validate donor/region/preparation compatibility before modelling. Composition lead is NYGC ST7 (32.7MB expression workbook, not downloaded); per-library granularity and exact key remain unverified. EGA EGAD00001009686 has the relevant paired bulk/nuclear design but requires controlled access and independence checks. GSE330130 provides lumbar/cortex multiome matrices; donor pairing, independence and STMN2-junction suitability are unresolved. Do not treat matrices of gene counts or different accession names as replication. No request/contact or new biological contrast executed; #37/#44 unchanged.
+
 ## Paired STMN2 completed — 11 November 2026
 
 [Paired exploratory report](../reports/paired-stmn2-20261111/REPORT.md), protocol committed before pair counting and effect calculation (marginal outcomes were already known). The dual-source technical subset has 104 shared donors; after pure-ALS status, matching preparation, unique library and C+K≥20 in both regions, **45 donor pairs** remain. Cervical higher/tied/lower: **24/14/7**; median paired local-ratio difference **+0.003676**; one prespecified exact two-sided sign-test nominal p=0.0033269. Direction persists descriptively at denominators ≥50 (32 pairs) and ≥100 (22 pairs). Only four eligible control pairs: no disease-vs-control test.
