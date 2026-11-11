@@ -1,0 +1,945 @@
+{
+ "generated": "2026-11-11",
+ "junction": "canonical",
+ "group_for_fold": "ALS Spectrum MND",
+ "method": "per-library ratio = count / (that library's depth / 1e6); the group figure is the MEDIAN OF THOSE RATIOS. The ratio of medians is reported alongside only to show what the withdrawn figures did.",
+ "denominator_fields": [
+  "exon_fc_count_all.total",
+  "exon_fc_count_all.assigned",
+  "star.number_of_input_reads",
+  "star.all_mapped_reads",
+  "star.uniquely_mapped_reads_number"
+ ],
+ "primary_denominator": "exon_fc_count_all.total",
+ "primary_denominator_note": "exon_fc_count_all.total is the reads SUBMITTED to featureCounts, not the reads assigned to exons. The report must not call it the latter.",
+ "withdrawn_figures": {
+  "2.30 / 0.11 per million": "ratio of medians against a single 44.4 M applied to both tissues",
+  "2.530 / 0.113 per million (22.3x)": "arithmetically correct against exon_fc_count_all.total per library, but published with no deposited procedure and with the denominator named wrongly; superseded by this script"
+ },
+ "unpaired": "Different sample sets, no donor pairing used here, unmeasured confounders. Folds are descriptive, not effects.",
+ "tissues": {
+  "Cortex_Motor_Lateral": {
+   "results_file": "reports/target-als-cortex-20261111/results.json",
+   "results_sha256": "87112ea4b9ef99fb6e1670238bfaead30d46f7302994ab96711ade881aa6f960",
+   "qc_file": "qc.MD.gz",
+   "qc_sha256": "2b01e20344f9cadf7d4d9c0f220c8ee9a2960696b8035d28085b3eb57e6d05c2",
+   "qc_rows": 149,
+   "tissue_in_results": "TALS_Cortex_Motor_Lateral",
+   "by_group": {
+    "(unlabelled)": {
+     "n_samples": 23,
+     "missing_qc_rows": [],
+     "raw_counts": {
+      "n": 23,
+      "median": 101.0,
+      "min": 0.0,
+      "max": 178.0
+     },
+     "per_million": {
+      "exon_fc_count_all.total": {
+       "per_library_ratios": {
+        "n": 23,
+        "median": 2.4152,
+        "min": 0.0,
+        "max": 4.5076
+       },
+       "per_library_median_exact": 2.4152215528793963,
+       "median_depth_M": 42.419,
+       "ratio_of_medians_NOT_a_normalisation": 2.381
+      },
+      "exon_fc_count_all.assigned": {
+       "per_library_ratios": {
+        "n": 23,
+        "median": 4.8089,
+        "min": 0.0,
+        "max": 7.8335
+       },
+       "per_library_median_exact": 4.808946277975569,
+       "median_depth_M": 21.112,
+       "ratio_of_medians_NOT_a_normalisation": 4.784
+      },
+      "star.number_of_input_reads": {
+       "per_library_ratios": {
+        "n": 23,
+        "median": 2.5039,
+        "min": 0.0,
+        "max": 4.7106
+       },
+       "per_library_median_exact": 2.5039199899987756,
+       "median_depth_M": 40.689,
+       "ratio_of_medians_NOT_a_normalisation": 2.4823
+      },
+      "star.all_mapped_reads": {
+       "per_library_ratios": {
+        "n": 23,
+        "median": 2.577,
+        "min": 0.0,
+        "max": 4.8154
+       },
+       "per_library_median_exact": 2.5770080405307576,
+       "median_depth_M": 39.728,
+       "ratio_of_medians_NOT_a_normalisation": 2.5423
+      },
+      "star.uniquely_mapped_reads_number": {
+       "per_library_ratios": {
+        "n": 23,
+        "median": 2.6611,
+        "min": 0.0,
+        "max": 4.9587
+       },
+       "per_library_median_exact": 2.661116035852311,
+       "median_depth_M": 37.936,
+       "ratio_of_medians_NOT_a_normalisation": 2.6624
+      }
+     }
+    },
+    "ALS Spectrum MND": {
+     "n_samples": 84,
+     "missing_qc_rows": [],
+     "raw_counts": {
+      "n": 84,
+      "median": 102.0,
+      "min": 6.0,
+      "max": 253.0
+     },
+     "per_million": {
+      "exon_fc_count_all.total": {
+       "per_library_ratios": {
+        "n": 84,
+        "median": 2.5304,
+        "min": 0.1389,
+        "max": 4.2396
+       },
+       "per_library_median_exact": 2.5303603064916116,
+       "median_depth_M": 42.714,
+       "ratio_of_medians_NOT_a_normalisation": 2.388
+      },
+      "exon_fc_count_all.assigned": {
+       "per_library_ratios": {
+        "n": 84,
+        "median": 5.2502,
+        "min": 0.2827,
+        "max": 8.5989
+       },
+       "per_library_median_exact": 5.250232195062177,
+       "median_depth_M": 20.321,
+       "ratio_of_medians_NOT_a_normalisation": 5.0195
+      },
+      "star.number_of_input_reads": {
+       "per_library_ratios": {
+        "n": 84,
+        "median": 2.7099,
+        "min": 0.1404,
+        "max": 4.3661
+       },
+       "per_library_median_exact": 2.7099267320315663,
+       "median_depth_M": 41.438,
+       "ratio_of_medians_NOT_a_normalisation": 2.4615
+      },
+      "star.all_mapped_reads": {
+       "per_library_ratios": {
+        "n": 84,
+        "median": 2.8295,
+        "min": 0.1476,
+        "max": 4.5445
+       },
+       "per_library_median_exact": 2.829459643777846,
+       "median_depth_M": 39.735,
+       "ratio_of_medians_NOT_a_normalisation": 2.567
+      },
+      "star.uniquely_mapped_reads_number": {
+       "per_library_ratios": {
+        "n": 84,
+        "median": 2.9051,
+        "min": 0.1514,
+        "max": 4.677
+       },
+       "per_library_median_exact": 2.9051121265925146,
+       "median_depth_M": 38.563,
+       "ratio_of_medians_NOT_a_normalisation": 2.645
+      }
+     }
+    },
+    "ALS Spectrum MND, Other Neurological Disorders": {
+     "n_samples": 25,
+     "missing_qc_rows": [],
+     "raw_counts": {
+      "n": 25,
+      "median": 105.0,
+      "min": 28.0,
+      "max": 413.0
+     },
+     "per_million": {
+      "exon_fc_count_all.total": {
+       "per_library_ratios": {
+        "n": 25,
+        "median": 2.2695,
+        "min": 0.5008,
+        "max": 4.7282
+       },
+       "per_library_median_exact": 2.2695053856173337,
+       "median_depth_M": 47.91,
+       "ratio_of_medians_NOT_a_normalisation": 2.1916
+      },
+      "exon_fc_count_all.assigned": {
+       "per_library_ratios": {
+        "n": 25,
+        "median": 5.0056,
+        "min": 1.0096,
+        "max": 8.3877
+       },
+       "per_library_median_exact": 5.005557733320777,
+       "median_depth_M": 22.077,
+       "ratio_of_medians_NOT_a_normalisation": 4.7561
+      },
+      "star.number_of_input_reads": {
+       "per_library_ratios": {
+        "n": 25,
+        "median": 2.3701,
+        "min": 0.5125,
+        "max": 4.6478
+       },
+       "per_library_median_exact": 2.370076330424361,
+       "median_depth_M": 46.356,
+       "ratio_of_medians_NOT_a_normalisation": 2.2651
+      },
+      "star.all_mapped_reads": {
+       "per_library_ratios": {
+        "n": 25,
+        "median": 2.4386,
+        "min": 0.539,
+        "max": 4.9312
+       },
+       "per_library_median_exact": 2.4386229715896106,
+       "median_depth_M": 44.36,
+       "ratio_of_medians_NOT_a_normalisation": 2.367
+      },
+      "star.uniquely_mapped_reads_number": {
+       "per_library_ratios": {
+        "n": 25,
+        "median": 2.521,
+        "min": 0.5559,
+        "max": 5.034
+       },
+       "per_library_median_exact": 2.521026344488954,
+       "median_depth_M": 42.994,
+       "ratio_of_medians_NOT_a_normalisation": 2.4422
+      }
+     }
+    },
+    "Non-Neurological Control": {
+     "n_samples": 13,
+     "missing_qc_rows": [],
+     "raw_counts": {
+      "n": 13,
+      "median": 148.0,
+      "min": 37.0,
+      "max": 435.0
+     },
+     "per_million": {
+      "exon_fc_count_all.total": {
+       "per_library_ratios": {
+        "n": 13,
+        "median": 2.8447,
+        "min": 0.75,
+        "max": 5.8193
+       },
+       "per_library_median_exact": 2.844730246630818,
+       "median_depth_M": 50.383,
+       "ratio_of_medians_NOT_a_normalisation": 2.9375
+      },
+      "exon_fc_count_all.assigned": {
+       "per_library_ratios": {
+        "n": 13,
+        "median": 6.9618,
+        "min": 1.3134,
+        "max": 11.0798
+       },
+       "per_library_median_exact": 6.961827075391956,
+       "median_depth_M": 26.718,
+       "ratio_of_medians_NOT_a_normalisation": 5.5393
+      },
+      "star.number_of_input_reads": {
+       "per_library_ratios": {
+        "n": 13,
+        "median": 2.9368,
+        "min": 0.8495,
+        "max": 6.0057
+       },
+       "per_library_median_exact": 2.9368313186503148,
+       "median_depth_M": 47.107,
+       "ratio_of_medians_NOT_a_normalisation": 3.1418
+      },
+      "star.all_mapped_reads": {
+       "per_library_ratios": {
+        "n": 13,
+        "median": 3.0642,
+        "min": 0.8928,
+        "max": 6.2793
+       },
+       "per_library_median_exact": 3.064192705569361,
+       "median_depth_M": 45.036,
+       "ratio_of_medians_NOT_a_normalisation": 3.2862
+      },
+      "star.uniquely_mapped_reads_number": {
+       "per_library_ratios": {
+        "n": 13,
+        "median": 3.2037,
+        "min": 0.9668,
+        "max": 6.4784
+       },
+       "per_library_median_exact": 3.2036553242952337,
+       "median_depth_M": 43.076,
+       "ratio_of_medians_NOT_a_normalisation": 3.4358
+      }
+     }
+    },
+    "Other Neurological Disorders": {
+     "n_samples": 3,
+     "missing_qc_rows": [],
+     "raw_counts": {
+      "n": 3,
+      "median": 139.0,
+      "min": 109.0,
+      "max": 200.0
+     },
+     "per_million": {
+      "exon_fc_count_all.total": {
+       "per_library_ratios": {
+        "n": 3,
+        "median": 2.5899,
+        "min": 2.2494,
+        "max": 4.6925
+       },
+       "per_library_median_exact": 2.5898566605635485,
+       "median_depth_M": 48.457,
+       "ratio_of_medians_NOT_a_normalisation": 2.8685
+      },
+      "exon_fc_count_all.assigned": {
+       "per_library_ratios": {
+        "n": 3,
+        "median": 5.2177,
+        "min": 4.2636,
+        "max": 7.2066
+       },
+       "per_library_median_exact": 5.217748663824658,
+       "median_depth_M": 26.64,
+       "ratio_of_medians_NOT_a_normalisation": 5.2177
+      },
+      "star.number_of_input_reads": {
+       "per_library_ratios": {
+        "n": 3,
+        "median": 2.5532,
+        "min": 2.2481,
+        "max": 4.628
+       },
+       "per_library_median_exact": 2.553194334494835,
+       "median_depth_M": 48.486,
+       "ratio_of_medians_NOT_a_normalisation": 2.8668
+      },
+      "star.all_mapped_reads": {
+       "per_library_ratios": {
+        "n": 3,
+        "median": 2.6913,
+        "min": 2.3562,
+        "max": 4.8902
+       },
+       "per_library_median_exact": 2.691349321729629,
+       "median_depth_M": 46.261,
+       "ratio_of_medians_NOT_a_normalisation": 3.0047
+      },
+      "star.uniquely_mapped_reads_number": {
+       "per_library_ratios": {
+        "n": 3,
+        "median": 2.7463,
+        "min": 2.4079,
+        "max": 4.9988
+       },
+       "per_library_median_exact": 2.7462771989861374,
+       "median_depth_M": 45.268,
+       "ratio_of_medians_NOT_a_normalisation": 3.0706
+      }
+     }
+    },
+    "Pre-fALS, Other Neurological Disorders": {
+     "n_samples": 1,
+     "missing_qc_rows": [],
+     "raw_counts": {
+      "n": 1,
+      "median": 26.0,
+      "min": 26.0,
+      "max": 26.0
+     },
+     "per_million": {
+      "exon_fc_count_all.total": {
+       "per_library_ratios": {
+        "n": 1,
+        "median": 0.4766,
+        "min": 0.4766,
+        "max": 0.4766
+       },
+       "per_library_median_exact": 0.4766425271058814,
+       "median_depth_M": 54.548,
+       "ratio_of_medians_NOT_a_normalisation": 0.4766
+      },
+      "exon_fc_count_all.assigned": {
+       "per_library_ratios": {
+        "n": 1,
+        "median": 0.9747,
+        "min": 0.9747,
+        "max": 0.9747
+       },
+       "per_library_median_exact": 0.9747328257324668,
+       "median_depth_M": 26.674,
+       "ratio_of_medians_NOT_a_normalisation": 0.9747
+      },
+      "star.number_of_input_reads": {
+       "per_library_ratios": {
+        "n": 1,
+        "median": 0.4848,
+        "min": 0.4848,
+        "max": 0.4848
+       },
+       "per_library_median_exact": 0.4847615757987929,
+       "median_depth_M": 53.635,
+       "ratio_of_medians_NOT_a_normalisation": 0.4848
+      },
+      "star.all_mapped_reads": {
+       "per_library_ratios": {
+        "n": 1,
+        "median": 0.5077,
+        "min": 0.5077,
+        "max": 0.5077
+       },
+       "per_library_median_exact": 0.5076681715252984,
+       "median_depth_M": 51.215,
+       "ratio_of_medians_NOT_a_normalisation": 0.5077
+      },
+      "star.uniquely_mapped_reads_number": {
+       "per_library_ratios": {
+        "n": 1,
+        "median": 0.5209,
+        "min": 0.5209,
+        "max": 0.5209
+       },
+       "per_library_median_exact": 0.5208979655849125,
+       "median_depth_M": 49.914,
+       "ratio_of_medians_NOT_a_normalisation": 0.5209
+      }
+     }
+    }
+   }
+  },
+  "Spinal_Cord_Cervical": {
+   "results_file": "reports/target-als-cervical-20261111/results.json",
+   "results_sha256": "cf19813d00db0fa039e6ecf3ce8380988024d0eeb9ed2b19dd2247a7d8a375ab",
+   "qc_file": "qc_cerv.MD.gz",
+   "qc_sha256": "fef948a36baeaf3a3573d00c7e0e521907dbd1be608055314a064c352658f001",
+   "qc_rows": 164,
+   "tissue_in_results": "TALS_Spinal_Cord_Cervical",
+   "by_group": {
+    "(unlabelled)": {
+     "n_samples": 24,
+     "missing_qc_rows": [],
+     "raw_counts": {
+      "n": 24,
+      "median": 3.5,
+      "min": 0.0,
+      "max": 13.0
+     },
+     "per_million": {
+      "exon_fc_count_all.total": {
+       "per_library_ratios": {
+        "n": 24,
+        "median": 0.0826,
+        "min": 0.0,
+        "max": 0.2956
+       },
+       "per_library_median_exact": 0.08261671736771442,
+       "median_depth_M": 43.225,
+       "ratio_of_medians_NOT_a_normalisation": 0.081
+      },
+      "exon_fc_count_all.assigned": {
+       "per_library_ratios": {
+        "n": 24,
+        "median": 0.1582,
+        "min": 0.0,
+        "max": 0.5728
+       },
+       "per_library_median_exact": 0.15815949651260677,
+       "median_depth_M": 23.649,
+       "ratio_of_medians_NOT_a_normalisation": 0.148
+      },
+      "star.number_of_input_reads": {
+       "per_library_ratios": {
+        "n": 24,
+        "median": 0.0894,
+        "min": 0.0,
+        "max": 0.3099
+       },
+       "per_library_median_exact": 0.08936734795029797,
+       "median_depth_M": 40.151,
+       "ratio_of_medians_NOT_a_normalisation": 0.0872
+      },
+      "star.all_mapped_reads": {
+       "per_library_ratios": {
+        "n": 24,
+        "median": 0.0913,
+        "min": 0.0,
+        "max": 0.3167
+       },
+       "per_library_median_exact": 0.09130040363095812,
+       "median_depth_M": 39.153,
+       "ratio_of_medians_NOT_a_normalisation": 0.0894
+      },
+      "star.uniquely_mapped_reads_number": {
+       "per_library_ratios": {
+        "n": 24,
+        "median": 0.0954,
+        "min": 0.0,
+        "max": 0.3271
+       },
+       "per_library_median_exact": 0.09541427433761993,
+       "median_depth_M": 37.692,
+       "ratio_of_medians_NOT_a_normalisation": 0.0929
+      }
+     }
+    },
+    "ALS Spectrum MND": {
+     "n_samples": 95,
+     "missing_qc_rows": [],
+     "raw_counts": {
+      "n": 95,
+      "median": 5.0,
+      "min": 0.0,
+      "max": 37.0
+     },
+     "per_million": {
+      "exon_fc_count_all.total": {
+       "per_library_ratios": {
+        "n": 95,
+        "median": 0.1133,
+        "min": 0.0,
+        "max": 0.7629
+       },
+       "per_library_median_exact": 0.11328569613168148,
+       "median_depth_M": 43.246,
+       "ratio_of_medians_NOT_a_normalisation": 0.1156
+      },
+      "exon_fc_count_all.assigned": {
+       "per_library_ratios": {
+        "n": 95,
+        "median": 0.2055,
+        "min": 0.0,
+        "max": 1.4494
+       },
+       "per_library_median_exact": 0.20552735682159343,
+       "median_depth_M": 23.898,
+       "ratio_of_medians_NOT_a_normalisation": 0.2092
+      },
+      "star.number_of_input_reads": {
+       "per_library_ratios": {
+        "n": 95,
+        "median": 0.115,
+        "min": 0.0,
+        "max": 0.8258
+       },
+       "per_library_median_exact": 0.11496013833843208,
+       "median_depth_M": 42.196,
+       "ratio_of_medians_NOT_a_normalisation": 0.1185
+      },
+      "star.all_mapped_reads": {
+       "per_library_ratios": {
+        "n": 95,
+        "median": 0.1238,
+        "min": 0.0,
+        "max": 0.8603
+       },
+       "per_library_median_exact": 0.12381340074120067,
+       "median_depth_M": 40.216,
+       "ratio_of_medians_NOT_a_normalisation": 0.1243
+      },
+      "star.uniquely_mapped_reads_number": {
+       "per_library_ratios": {
+        "n": 95,
+        "median": 0.1311,
+        "min": 0.0,
+        "max": 0.8989
+       },
+       "per_library_median_exact": 0.13107097834261797,
+       "median_depth_M": 38.771,
+       "ratio_of_medians_NOT_a_normalisation": 0.129
+      }
+     }
+    },
+    "ALS Spectrum MND, Other Neurological Disorders": {
+     "n_samples": 26,
+     "missing_qc_rows": [],
+     "raw_counts": {
+      "n": 26,
+      "median": 4.5,
+      "min": 0.0,
+      "max": 15.0
+     },
+     "per_million": {
+      "exon_fc_count_all.total": {
+       "per_library_ratios": {
+        "n": 26,
+        "median": 0.1152,
+        "min": 0.0,
+        "max": 0.3144
+       },
+       "per_library_median_exact": 0.11515096532609312,
+       "median_depth_M": 46.016,
+       "ratio_of_medians_NOT_a_normalisation": 0.0978
+      },
+      "exon_fc_count_all.assigned": {
+       "per_library_ratios": {
+        "n": 26,
+        "median": 0.2164,
+        "min": 0.0,
+        "max": 0.6012
+       },
+       "per_library_median_exact": 0.2164339755497005,
+       "median_depth_M": 24.886,
+       "ratio_of_medians_NOT_a_normalisation": 0.1808
+      },
+      "star.number_of_input_reads": {
+       "per_library_ratios": {
+        "n": 26,
+        "median": 0.1221,
+        "min": 0.0,
+        "max": 0.3328
+       },
+       "per_library_median_exact": 0.12211369927957622,
+       "median_depth_M": 43.596,
+       "ratio_of_medians_NOT_a_normalisation": 0.1032
+      },
+      "star.all_mapped_reads": {
+       "per_library_ratios": {
+        "n": 26,
+        "median": 0.1283,
+        "min": 0.0,
+        "max": 0.348
+       },
+       "per_library_median_exact": 0.1283312361843149,
+       "median_depth_M": 41.736,
+       "ratio_of_medians_NOT_a_normalisation": 0.1078
+      },
+      "star.uniquely_mapped_reads_number": {
+       "per_library_ratios": {
+        "n": 26,
+        "median": 0.1344,
+        "min": 0.0,
+        "max": 0.3622
+       },
+       "per_library_median_exact": 0.13444102691835746,
+       "median_depth_M": 39.968,
+       "ratio_of_medians_NOT_a_normalisation": 0.1126
+      }
+     }
+    },
+    "Non-Neurological Control": {
+     "n_samples": 13,
+     "missing_qc_rows": [],
+     "raw_counts": {
+      "n": 13,
+      "median": 8.0,
+      "min": 0.0,
+      "max": 29.0
+     },
+     "per_million": {
+      "exon_fc_count_all.total": {
+       "per_library_ratios": {
+        "n": 13,
+        "median": 0.1742,
+        "min": 0.0,
+        "max": 0.4417
+       },
+       "per_library_median_exact": 0.1742112666563664,
+       "median_depth_M": 49.518,
+       "ratio_of_medians_NOT_a_normalisation": 0.1616
+      },
+      "exon_fc_count_all.assigned": {
+       "per_library_ratios": {
+        "n": 13,
+        "median": 0.3145,
+        "min": 0.0,
+        "max": 0.7763
+       },
+       "per_library_median_exact": 0.31447090957369345,
+       "median_depth_M": 26.608,
+       "ratio_of_medians_NOT_a_normalisation": 0.3007
+      },
+      "star.number_of_input_reads": {
+       "per_library_ratios": {
+        "n": 13,
+        "median": 0.1822,
+        "min": 0.0,
+        "max": 0.4547
+       },
+       "per_library_median_exact": 0.18217644421685544,
+       "median_depth_M": 43.985,
+       "ratio_of_medians_NOT_a_normalisation": 0.1819
+      },
+      "star.all_mapped_reads": {
+       "per_library_ratios": {
+        "n": 13,
+        "median": 0.1901,
+        "min": 0.0,
+        "max": 0.4854
+       },
+       "per_library_median_exact": 0.19012763672274427,
+       "median_depth_M": 42.077,
+       "ratio_of_medians_NOT_a_normalisation": 0.1901
+      },
+      "star.uniquely_mapped_reads_number": {
+       "per_library_ratios": {
+        "n": 13,
+        "median": 0.1961,
+        "min": 0.0,
+        "max": 0.5191
+       },
+       "per_library_median_exact": 0.19611510682022154,
+       "median_depth_M": 40.792,
+       "ratio_of_medians_NOT_a_normalisation": 0.1961
+      }
+     }
+    },
+    "Other MND": {
+     "n_samples": 1,
+     "missing_qc_rows": [],
+     "raw_counts": {
+      "n": 1,
+      "median": 36.0,
+      "min": 36.0,
+      "max": 36.0
+     },
+     "per_million": {
+      "exon_fc_count_all.total": {
+       "per_library_ratios": {
+        "n": 1,
+        "median": 0.7902,
+        "min": 0.7902,
+        "max": 0.7902
+       },
+       "per_library_median_exact": 0.79019721720197,
+       "median_depth_M": 45.558,
+       "ratio_of_medians_NOT_a_normalisation": 0.7902
+      },
+      "exon_fc_count_all.assigned": {
+       "per_library_ratios": {
+        "n": 1,
+        "median": 1.5005,
+        "min": 1.5005,
+        "max": 1.5005
+       },
+       "per_library_median_exact": 1.5005166779094268,
+       "median_depth_M": 23.992,
+       "ratio_of_medians_NOT_a_normalisation": 1.5005
+      },
+      "star.number_of_input_reads": {
+       "per_library_ratios": {
+        "n": 1,
+        "median": 0.8147,
+        "min": 0.8147,
+        "max": 0.8147
+       },
+       "per_library_median_exact": 0.8147041424537349,
+       "median_depth_M": 44.188,
+       "ratio_of_medians_NOT_a_normalisation": 0.8147
+      },
+      "star.all_mapped_reads": {
+       "per_library_ratios": {
+        "n": 1,
+        "median": 0.8462,
+        "min": 0.8462,
+        "max": 0.8462
+       },
+       "per_library_median_exact": 0.8462231134936575,
+       "median_depth_M": 42.542,
+       "ratio_of_medians_NOT_a_normalisation": 0.8462
+      },
+      "star.uniquely_mapped_reads_number": {
+       "per_library_ratios": {
+        "n": 1,
+        "median": 0.8706,
+        "min": 0.8706,
+        "max": 0.8706
+       },
+       "per_library_median_exact": 0.870614118139724,
+       "median_depth_M": 41.35,
+       "ratio_of_medians_NOT_a_normalisation": 0.8706
+      }
+     }
+    },
+    "Other Neurological Disorders": {
+     "n_samples": 3,
+     "missing_qc_rows": [],
+     "raw_counts": {
+      "n": 3,
+      "median": 17.0,
+      "min": 0.0,
+      "max": 21.0
+     },
+     "per_million": {
+      "exon_fc_count_all.total": {
+       "per_library_ratios": {
+        "n": 3,
+        "median": 0.3556,
+        "min": 0.0,
+        "max": 0.4293
+       },
+       "per_library_median_exact": 0.35563925025555815,
+       "median_depth_M": 47.801,
+       "ratio_of_medians_NOT_a_normalisation": 0.3556
+      },
+      "exon_fc_count_all.assigned": {
+       "per_library_ratios": {
+        "n": 3,
+        "median": 0.5769,
+        "min": 0.0,
+        "max": 0.6668
+       },
+       "per_library_median_exact": 0.5769482302995427,
+       "median_depth_M": 29.465,
+       "ratio_of_medians_NOT_a_normalisation": 0.5769
+      },
+      "star.number_of_input_reads": {
+       "per_library_ratios": {
+        "n": 3,
+        "median": 0.3649,
+        "min": 0.0,
+        "max": 0.4288
+       },
+       "per_library_median_exact": 0.36486906694995386,
+       "median_depth_M": 46.592,
+       "ratio_of_medians_NOT_a_normalisation": 0.3649
+      },
+      "star.all_mapped_reads": {
+       "per_library_ratios": {
+        "n": 3,
+        "median": 0.3821,
+        "min": 0.0,
+        "max": 0.4547
+       },
+       "per_library_median_exact": 0.38214869261762013,
+       "median_depth_M": 44.485,
+       "ratio_of_medians_NOT_a_normalisation": 0.3821
+      },
+      "star.uniquely_mapped_reads_number": {
+       "per_library_ratios": {
+        "n": 3,
+        "median": 0.3927,
+        "min": 0.0,
+        "max": 0.4676
+       },
+       "per_library_median_exact": 0.3927474607028442,
+       "median_depth_M": 43.285,
+       "ratio_of_medians_NOT_a_normalisation": 0.3927
+      }
+     }
+    },
+    "Pre-fALS, Other Neurological Disorders": {
+     "n_samples": 2,
+     "missing_qc_rows": [],
+     "raw_counts": {
+      "n": 2,
+      "median": 7.5,
+      "min": 6.0,
+      "max": 9.0
+     },
+     "per_million": {
+      "exon_fc_count_all.total": {
+       "per_library_ratios": {
+        "n": 2,
+        "median": 0.1576,
+        "min": 0.1278,
+        "max": 0.1874
+       },
+       "per_library_median_exact": 0.15758279925382923,
+       "median_depth_M": 47.493,
+       "ratio_of_medians_NOT_a_normalisation": 0.1579
+      },
+      "exon_fc_count_all.assigned": {
+       "per_library_ratios": {
+        "n": 2,
+        "median": 0.2703,
+        "min": 0.2333,
+        "max": 0.3072
+       },
+       "per_library_median_exact": 0.27025747108385334,
+       "median_depth_M": 27.507,
+       "ratio_of_medians_NOT_a_normalisation": 0.2727
+      },
+      "star.number_of_input_reads": {
+       "per_library_ratios": {
+        "n": 2,
+        "median": 0.1591,
+        "min": 0.1317,
+        "max": 0.1865
+       },
+       "per_library_median_exact": 0.15909800282891562,
+       "median_depth_M": 46.909,
+       "ratio_of_medians_NOT_a_normalisation": 0.1599
+      },
+      "star.all_mapped_reads": {
+       "per_library_ratios": {
+        "n": 2,
+        "median": 0.1708,
+        "min": 0.1427,
+        "max": 0.199
+       },
+       "per_library_median_exact": 0.1708292629965043,
+       "median_depth_M": 43.642,
+       "ratio_of_medians_NOT_a_normalisation": 0.1719
+      },
+      "star.uniquely_mapped_reads_number": {
+       "per_library_ratios": {
+        "n": 2,
+        "median": 0.1764,
+        "min": 0.148,
+        "max": 0.2048
+       },
+       "per_library_median_exact": 0.17636151869577676,
+       "median_depth_M": 42.252,
+       "ratio_of_medians_NOT_a_normalisation": 0.1775
+      }
+     }
+    }
+   }
+  }
+ },
+ "cross_tissue_fold": {
+  "exon_fc_count_all.total": {
+   "Cortex_Motor_Lateral_per_million": 2.5304,
+   "Spinal_Cord_Cervical_per_million": 0.1133,
+   "fold": 22.34,
+   "fold_from_rounded_medians_do_not_use": 22.33
+  },
+  "exon_fc_count_all.assigned": {
+   "Cortex_Motor_Lateral_per_million": 5.2502,
+   "Spinal_Cord_Cervical_per_million": 0.2055,
+   "fold": 25.55,
+   "fold_from_rounded_medians_do_not_use": 25.55
+  },
+  "star.number_of_input_reads": {
+   "Cortex_Motor_Lateral_per_million": 2.7099,
+   "Spinal_Cord_Cervical_per_million": 0.115,
+   "fold": 23.57,
+   "fold_from_rounded_medians_do_not_use": 23.56
+  },
+  "star.all_mapped_reads": {
+   "Cortex_Motor_Lateral_per_million": 2.8295,
+   "Spinal_Cord_Cervical_per_million": 0.1238,
+   "fold": 22.85,
+   "fold_from_rounded_medians_do_not_use": 22.86
+  },
+  "star.uniquely_mapped_reads_number": {
+   "Cortex_Motor_Lateral_per_million": 2.9051,
+   "Spinal_Cord_Cervical_per_million": 0.1311,
+   "fold": 22.16,
+   "fold_from_rounded_medians_do_not_use": 22.16
+  }
+ }
+}

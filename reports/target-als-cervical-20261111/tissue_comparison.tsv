@@ -1,5 +1,5 @@
-tissue	group	n_samples	n_subjects	median_exon_reads_M	canonical_median	canonical_per_million	cryptic_left_with_read	cryptic_right_with_read	samples_with_any_cryptic	detection_proportion	wilson95_low	wilson95_high	samples_at_or_above_20	ratio_interpretable
-Cortex_Motor_Lateral	ALS Spectrum MND	84	unknown	44.4	102.0	2.30	7	11	16	0.190	0.121	0.287	0	yes
-Cortex_Motor_Lateral	Non-Neurological Control	13	unknown	44.4	148.0	3.33	0	0	0	0.000	0.000	0.228	0	yes
-Spinal_Cord_Cervical	ALS Spectrum MND	95	unknown	44.4	5.0	0.11	4	3	5	0.053	0.023	0.117	0	no
-Spinal_Cord_Cervical	Non-Neurological Control	13	unknown	44.4	8.0	0.18	0	0	0	0.000	0.000	0.228	0	no
+tissue	group	n_samples	n_donor_pairs_available	denominator_field	median_depth_M	canonical_median	canonical_per_million_per_library_median	per_library_min	per_library_max	ratio_of_medians_withdrawn	canonical_per_million_assigned_reads	cryptic_left_with_read	cryptic_right_with_read	samples_with_any_cryptic	detection_proportion	wilson95_low	wilson95_high	samples_at_or_above_20	ratio_interpretable
+Cortex_Motor_Lateral	ALS Spectrum MND	84	45 (project-wide, not used in this contrast)	exon_fc_count_all.total	42.714	102.0	2.5304	0.1389	4.2396	2.388	5.2502	7	11	16	0.190	0.121	0.287	0	yes
+Cortex_Motor_Lateral	Non-Neurological Control	13	45 (project-wide, not used in this contrast)	exon_fc_count_all.total	50.383	148.0	2.8447	0.75	5.8193	2.9375	6.9618	0	0	0	0.000	0.000	0.228	0	yes
+Spinal_Cord_Cervical	ALS Spectrum MND	95	45 (project-wide, not used in this contrast)	exon_fc_count_all.total	43.246	5.0	0.1133	0.0	0.7629	0.1156	0.2055	4	3	5	0.053	0.023	0.117	0	no
+Spinal_Cord_Cervical	Non-Neurological Control	13	45 (project-wide, not used in this contrast)	exon_fc_count_all.total	49.518	8.0	0.1742	0.0	0.4417	0.1616	0.3145	0	0	0	0.000	0.000	0.228	0	no

@@ -11,7 +11,7 @@ Luis sometió la primera versión a un segundo lector (ChatGPT), que señaló cu
 
 | # | Afirmación original | Comprobación | Corrección |
 |---|---|---|---|
-| 1 | «La hipótesis de expresión cortical queda apoyada», por cobertura canónica 102–148 frente a 7–66 | Las librerías de TARGET_ALS tienen **44,4 M** lecturas asignadas a exones (mediana) frente a **21,8 M** en Klim: **2× más profundas** | Casi toda la diferencia era profundidad de secuenciación. Normalizado queda ≈1,8×, evidencia **débil** entre estudios distintos, no demostración |
+| 1 | «La hipótesis de expresión cortical queda apoyada», por cobertura canónica 102–148 frente a 7–66 | Las librerías de TARGET_ALS tienen **44,4 M** de mediana en `exon_fc_count_all.total` frente a **21,8 M** en Klim: **2× más profundas**. **Corrección del 11/11/2026:** este campo son las lecturas *entregadas* a featureCounts, **no las asignadas a exones** como decía aquí; las asignadas son 20,3 M en esta cohorte. Y **no está verificado** que la cifra de Klim proceda del mismo campo, de modo que el 1,8× normalizado queda pendiente de comprobación | Casi toda la diferencia era profundidad de secuenciación. Normalizado queda ≈1,8×, evidencia **débil** entre estudios distintos, no demostración |
 | 2 | Razón críptica = (cL+cR)/(cL+cR+canónica) | Una molécula **con** exón críptico ofrece **dos** uniones donde leer; una sin él, **una**. Sumarlas infla ≈2× a valores bajos | Se informan **ambas** razones y **cada unión por separado**. El máximo baja de 0,0796 a **0,0414** en estimación por unión |
 | 3 | «La causa es biológica, no de disponibilidad de datos» | No se ha medido composición celular en estas muestras | Es una **explicación plausible**, no una causa demostrada |
 | 4 | «Cerrar esa puerta como inalcanzable con RNA-seq público» | Se examinaron cuatro datasets, no todo el RNA-seq público | Alcance limitado a **los datos examinados** |
@@ -62,7 +62,7 @@ P1 se registra como refutada, sin reinterpretarla.
 
 ### Por qué el umbral de 20 no se alcanza aquí, con alcance limitado
 
-La cobertura canónica de esta cohorte es buena (mediana ~100, hasta 435) y sus librerías son profundas (44,4 M lecturas de exón). Lo que limita no es la profundidad: es la **razón**, con máximo 0,04 por unión y normalmente 0.
+La cobertura canónica de esta cohorte es buena (mediana ~100, hasta 435) y sus librerías son profundas (44,4 M en `exon_fc_count_all.total`, 20,3 M realmente asignadas a exones). Lo que limita no es la profundidad: es la **razón**, con máximo 0,04 por unión y normalmente 0.
 
 Aritmética: para 20 lecturas en una unión críptica con razón 0,04 harían falta unas **500** lecturas canónicas; con 0,01, unas **2.000**. Es decir, entre 5 y 20 veces la profundidad en el locus que tiene esta cohorte, que es de las mayores que existen.
 
