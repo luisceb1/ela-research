@@ -1,0 +1,74 @@
+{
+  "evidence": "exploratory within-region associations, same 45 donors; no p-values or tissue-effect correction",
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "baseline_pairs": 45,
+  "rin_subset_pairs": 19,
+  "regions": {
+    "cortex": {
+      "neuronal_proxy": "Excitatory+Inhibitory (GSE140231)",
+      "main": {
+        "n_donors": 45,
+        "distinct_neuronal_values": 45,
+        "distinct_ratio_values": 17,
+        "zero_neuronal_estimates": 0,
+        "zero_cryptic_ratios": 29,
+        "spearman": -0.22874969605711667,
+        "partial_rank_correlation": -0.29885796726973324,
+        "partial_status": "ok",
+        "leave_one_out": {
+          "valid_estimates": 45,
+          "failed_estimates": 0,
+          "min": -0.36370048822438733,
+          "max": -0.24652705794437405,
+          "same_sign_as_full": 45
+        }
+      },
+      "rin_sensitivity_unadjusted": {
+        "n_donors": 19,
+        "distinct_neuronal_values": 19,
+        "distinct_ratio_values": 6,
+        "zero_neuronal_estimates": 0,
+        "zero_cryptic_ratios": 14,
+        "spearman": -0.2851693392623421
+      }
+    },
+    "cervical": {
+      "neuronal_proxy": "Neurons (GSE190442)",
+      "main": {
+        "n_donors": 45,
+        "distinct_neuronal_values": 24,
+        "distinct_ratio_values": 24,
+        "zero_neuronal_estimates": 22,
+        "zero_cryptic_ratios": 21,
+        "spearman": -0.0928752892474805,
+        "partial_rank_correlation": -0.1050611632371247,
+        "partial_status": "ok",
+        "leave_one_out": {
+          "valid_estimates": 45,
+          "failed_estimates": 0,
+          "min": -0.18540266907305764,
+          "max": -0.05380526134282325,
+          "same_sign_as_full": 45
+        }
+      },
+      "rin_sensitivity_unadjusted": {
+        "n_donors": 19,
+        "distinct_neuronal_values": 10,
+        "distinct_ratio_values": 11,
+        "zero_neuronal_estimates": 10,
+        "zero_cryptic_ratios": 9,
+        "spearman": -0.11732308333125645
+      }
+    }
+  },
+  "input_sha256": {
+    "source-gate/nygc-expression-tables.xlsx": "6b24edc4279eebb0d8560ef277573745fa0110e1e8d1a07009621d020cd2abfc",
+    "source-gate/nygc-metadata.xlsx": "c1bf21493c4a2773e27ff787e60267fc2e1304ce11e84e644c03c700cc68f048",
+    "project_global.source": "fcdc1568241d95689eca59ce8b04307f6b6f922cd11e9e6e357c61c3d8bbaaa9",
+    "author_map.source": "52d62469ab4252c12e2eed4b8190e9b0e668ce51182a106bf49540dcfaf63df0",
+    "jung_table.source": "0398917532469cb20849e57ed74e6b5f12954b337fdde935a45f4d0d56cc2cba",
+    "repo/reports/stmn2-derivation-20261111/results_corteza.json": "9053d7e24421419b70741322f2fc5514c18c5b04cba627d13f29ea71cd8b9e7a",
+    "repo/reports/stmn2-derivation-20261111/results_cervical.json": "27b5b82dd2624193e810cf0d0417842de15267de5e48df3601f3bd078a11dc18"
+  }
+}

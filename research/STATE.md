@@ -3,6 +3,14 @@
 This replaces earlier planning snapshots. Historical reports and commits remain evidence, not automatic instructions to rerun work. This consolidated state accompanies integration of PRs #46–#49. Review details and exact checked commits are preserved in [INTEGRATION_REVIEW](../reports/integration-20261104/REVIEW.md).
 
 
+## STMN2 cycle closed — 11 November 2026
+
+[Integrated closing report](../reports/stmn2-within-region-20261111/REPORT.md). Final fixed within-region analysis, same 45 donors, no new p-values or corrected tissue effect: cortical Spearman −0.229 / partial rank correlation −0.299; cervical −0.093 / −0.105, accounting for RIN, total junction coverage and preparation within each region. Leave-one-donor-out ranges remain negative; these are influence checks, not confidence intervals. The existing 19-pair RIN sensitivity gives unadjusted −0.285 / −0.117. **22/45 cervical neuronal estimates are zero** (10/19 in RIN subset), limiting this composition probe. Composition is not ruled out; inverse associations do not identify mechanism.
+
+All previously pending within-region/RIN/ST7 tasks below are now complete. **Stop this cycle on the same donors**: no more cutoffs, correlations or models by inertia. Supported result is exploratory paired tissue pattern, partially resistant to measured quality restrictions, with composition/batch/selection unresolved. P1 ≥10× is not met; P2's four covered cases do not establish that UNC13A failed solely because of the locus; original P3 frequencies are descriptive. No functional, causal, clinical or independent-discovery claim.
+
+Next enabling input is a genuinely discriminating composition/QC measurement or independent paired cohort with target junction coverage and verified design, not another analysis of these 45 donors. PR #57 is consolidated for human review. Claude's historical prediction-label audit is separate and not marked complete here. #37 UNC13A and #44 K26 gates remain unchanged.
+
 ## ST7 composition gate completed — 11 November 2026
 
 [Report](../reports/stmn2-composition-20261111/REPORT.md): ST7 supplies exact valid composition vectors for all 90 libraries of the 45 original pairs. 16,985 rows, 1,724 valid sample/reference vectors, finite simplex values and complete observed taxonomies. Technical linkage accepted; no new adjusted tissue effect fitted.
