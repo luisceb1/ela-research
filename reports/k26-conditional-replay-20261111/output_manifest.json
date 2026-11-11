@@ -1,0 +1,172 @@
+[
+  {
+    "path": "reports/k26-conditional-replay-20261111/REPORT.md",
+    "bytes": 10725,
+    "sha256": "6f4286c9161bebc1cb1ebe8312856aff88b045a67f1f94bd1a47058e74959ad9"
+  },
+  {
+    "path": "reports/k26-conditional-replay-20261111/adapter_receipt.json",
+    "bytes": 608,
+    "sha256": "030c0ec407dd063bfa2fca2b82fdd47db089f5634d3f8493822a9f9a7d4ecdd1"
+  },
+  {
+    "path": "reports/k26-conditional-replay-20261111/arithmetic_validation.txt",
+    "bytes": 294,
+    "sha256": "73a9fc4876c7c53299bd2cfdfaaa86f1b5995e1154576b7acc088ca56852da72"
+  },
+  {
+    "path": "reports/k26-conditional-replay-20261111/batch_condition_summaries.csv",
+    "bytes": 570,
+    "sha256": "e3ef4f591b494da4c015748a2357def9676bcc26fdc9a8c312bf757169d70343"
+  },
+  {
+    "path": "reports/k26-conditional-replay-20261111/batch_mean_differences.csv",
+    "bytes": 179,
+    "sha256": "addb10efc0f0b46631a00bfd4a528f4c6c8623648daeaa5df006aea3184ca79b"
+  },
+  {
+    "path": "reports/k26-conditional-replay-20261111/conditional_contract.json",
+    "bytes": 996,
+    "sha256": "87377af77a3f838219fcde829a6566569ef7f98307ee0f238e650cce313dad0d"
+  },
+  {
+    "path": "reports/k26-conditional-replay-20261111/equal_batch_descriptive.csv",
+    "bytes": 344,
+    "sha256": "8657867405e0141b43d64f1eb93fb63f0c1f3af593103270bf25f7c7f787a8c6"
+  },
+  {
+    "path": "reports/k26-conditional-replay-20261111/execution.log",
+    "bytes": 467,
+    "sha256": "30241c690f2c87d6f3d593336e1ae0cbbe8be999d148f5cafe96bf6b96532a89"
+  },
+  {
+    "path": "reports/k26-conditional-replay-20261111/execution_provenance.txt",
+    "bytes": 277,
+    "sha256": "bdf8e6e9bcefeb599156fbf35fdd6afe32bbced33582462f969774730ec10a8e"
+  },
+  {
+    "path": "reports/k26-conditional-replay-20261111/leave_one_batch_out.csv",
+    "bytes": 709,
+    "sha256": "d89b2103e95700833c96c1148733237d6d947ce199923be2be8f6df44006d8eb"
+  },
+  {
+    "path": "reports/k26-conditional-replay-20261111/model_diagnostics.csv",
+    "bytes": 908,
+    "sha256": "a5c61d4062a929cdfdffa9fa6add09f51590b08763774d644fed5ea37e96949d"
+  },
+  {
+    "path": "reports/k26-conditional-replay-20261111/observations.csv",
+    "bytes": 3186,
+    "sha256": "971ab59ed7b0f021f776944d01f99b3e4eeb67465e5d43fbf939fc3dcd5e2cda"
+  },
+  {
+    "path": "reports/k26-conditional-replay-20261111/primary_contrasts.csv",
+    "bytes": 454,
+    "sha256": "bf4c9be183812d79c14ea8e034b9fc6e6a646fa2dd4e7f8cc4fe00ea35b7d46c"
+  },
+  {
+    "path": "reports/k26-conditional-replay-20261111/primary_contrasts.txt",
+    "bytes": 369,
+    "sha256": "63dcae33a8bfe46d01f2174e3f04f73c7aa9b80dcfdb2c7b9ff61094f63b270b"
+  },
+  {
+    "path": "reports/k26-conditional-replay-20261111/primary_log1p_residuals.csv",
+    "bytes": 5631,
+    "sha256": "400763e08dc24eb701f30940eade6a7bd395d63bd079e2fe1bffaf39fd2ec583"
+  },
+  {
+    "path": "reports/k26-conditional-replay-20261111/primary_log1p_summary.txt",
+    "bytes": 934,
+    "sha256": "56e087d50153d91317ad7cc79b3c5d8aafe18b11446583eae128f8611236dab9"
+  },
+  {
+    "path": "reports/k26-conditional-replay-20261111/raw_scale_contrasts.csv",
+    "bytes": 458,
+    "sha256": "bf0f052169f70ea790b17ada2a464abb418513bfb00efe2ead87e3b34aabb34d"
+  },
+  {
+    "path": "reports/k26-conditional-replay-20261111/raw_scale_sensitivity_residuals.csv",
+    "bytes": 5561,
+    "sha256": "ecce2917631f929f7add90f557f11505cce3cc8b33a6ea869fabbc1e92de4fb8"
+  },
+  {
+    "path": "reports/k26-conditional-replay-20261111/raw_scale_sensitivity_summary.txt",
+    "bytes": 926,
+    "sha256": "7346dd8044f1fd63dc6c5264e391ffe591a598aec96b032ab3bd61fde5448766"
+  },
+  {
+    "path": "reports/k26-conditional-replay-20261111/residual_diagnostics.png",
+    "bytes": 129695,
+    "sha256": "fa4f568d7a2b3ba459045f72389f55007efc5f3aa9abb291b597a465b1ba5e3b"
+  },
+  {
+    "path": "reports/k26-conditional-replay-20261111/results.json",
+    "bytes": 7285,
+    "sha256": "79202f64af59c7b1e6db1a3670cb6422b91828d3aff0a51a8580d675581b82be"
+  },
+  {
+    "path": "reports/k26-conditional-replay-20261111/runtime_packages.json",
+    "bytes": 24277,
+    "sha256": "deb22f46e907c2d5017c0287fad8d212379bc34adcfc27acd3c72e51eb9e48f7"
+  },
+  {
+    "path": "reports/k26-conditional-replay-20261111/sessionInfo.txt",
+    "bytes": 1501,
+    "sha256": "e87f778fba8ecb880fa3c1de159658d605363298c819097ed7f4f082aef9d441"
+  },
+  {
+    "path": "reports/k26-conditional-replay-20261111/without_Batch_1_residuals.csv",
+    "bytes": 3704,
+    "sha256": "2382e0fde335e569f7df4c3ae8e431256acf48a23c6c3b24fbd4d090eccd8c71"
+  },
+  {
+    "path": "reports/k26-conditional-replay-20261111/without_Batch_1_summary.txt",
+    "bytes": 930,
+    "sha256": "79969f80167e78f81c8a2a14b4d50b202b833b7546a1b42f35299b416a42fa75"
+  },
+  {
+    "path": "reports/k26-conditional-replay-20261111/without_Batch_2_residuals.csv",
+    "bytes": 3860,
+    "sha256": "2a0c7e09598760babe6388c4654b153dfb4e89b33cc47bc7b5a2258ec3e8415a"
+  },
+  {
+    "path": "reports/k26-conditional-replay-20261111/without_Batch_2_summary.txt",
+    "bytes": 926,
+    "sha256": "5d4ad5a739ce6c356d292fa06736d096c6ea7d113d0c43b2f083983cbea9f66d"
+  },
+  {
+    "path": "reports/k26-conditional-replay-20261111/without_Batch_3_residuals.csv",
+    "bytes": 3749,
+    "sha256": "c2d6bfa6baba4e6cc1b32834c1198d9d03675abd015133b9e97b5564f6871a4d"
+  },
+  {
+    "path": "reports/k26-conditional-replay-20261111/without_Batch_3_summary.txt",
+    "bytes": 932,
+    "sha256": "fd0067f147cf99649f4182dbc66c9ab1e6b39556a07656dafbb84f608f590de6"
+  },
+  {
+    "path": "research/plans/2026-11-11-k26-fig4d-conditional-v2.md",
+    "bytes": 7353,
+    "sha256": "855a89171f71c8fe4a6d90c545e82c763446e86b6ad23fbef58673e1492a02c5"
+  },
+  {
+    "path": "scripts/adapt_k26_conditional_source.py",
+    "bytes": 7063,
+    "sha256": "3534c54d095cdaca988a1219799793bac4c27a4d125103b9ccbff1590020353c"
+  },
+  {
+    "path": "scripts/check_k26_replay_outputs.R",
+    "bytes": 2542,
+    "sha256": "7378b20ad4fdb00c8f037234cd7ee1639a60f91417d18ad696fcdd528ce342e8"
+  },
+  {
+    "path": "scripts/replay_k26_conditional.R",
+    "bytes": 9064,
+    "sha256": "15a45bbac315ec2fe9bc0b99910939f1d0501d0b71afb71694f9e32f887ef242"
+  },
+  {
+    "path": "tests/test_adapt_k26_conditional_source.py",
+    "bytes": 3355,
+    "sha256": "71beb3c9d6367710ff1c089d384fd579fbead10c5d77d99f0d46086be37ed7a4"
+  }
+]

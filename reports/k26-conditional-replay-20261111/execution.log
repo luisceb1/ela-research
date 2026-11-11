@@ -1,0 +1,9 @@
+null device 
+          1 
+Completed conditional published-block replay. Strict v1 remains closed.
+          model     contrast  estimate        se       df        t    p_nominal
+1 primary_log1p  KD_ASO - KD 0.4744019 0.1717222 84.42501 2.762612 7.036213e-03
+2 primary_log1p Control - KD 0.7161227 0.1588252 84.43293 4.508872 2.084921e-05
+   ci95_low ci95_high p_holm_two_contrasts
+1 0.1329385 0.8158652         7.036213e-03
+2 0.4003050 1.0319404         4.169843e-05

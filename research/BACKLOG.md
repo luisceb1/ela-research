@@ -3,6 +3,14 @@
 Este archivo contiene tareas actuales y condiciones de reapertura. [STATE](STATE.md) resume resultados; el [backlog anterior íntegro](history/README.md) conserva la cronología.
 
 
+## K26 conditional replay completed — 11 November 2026
+
+- [x] Commit the explicitly user-authorized v2 amendment before modelling; preserve nA and declared source blocks, with strict v1 disabled. Plan `55f84fe26f77d631d417f382bff176ca4528b1f3`.
+- [x] Execute actual R primary/raw/leave-one-block-out fits, per-block/equal-block summaries, diagnostics and independent GLS/t-interval/Holm arithmetic checks. [Report](../reports/k26-conditional-replay-20261111/REPORT.md). Positive full-model ASO contrast p=0.007036; two reduced-fit intervals include zero; raw Gaussian residuals flagged.
+- [x] Retain unresolved ASO star-band mismatch: published three stars versus two-star band from fixed nA/log1p replay. Do not tune units/transformation to force agreement.
+- [ ] Author block/nesting clarification and panel-specific model execution/scale; original follow-up sent, no additional message authorized by this entry. Stop further fits under this fixed cycle.
+
+
 ## K26 public source found — 11 November 2026
 
 - [x] Complete final-figure/methods/Reporting Summary and actual R-code review before fitting. [Decision](../reports/k26-published-source-20261111/DESIGN_REVIEW.md): source unit nA differs from the historical pA contract; author-declared blocks are supported, full nested per-record map is not recovered. Original strict gate remains closed.

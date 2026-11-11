@@ -1,0 +1,2 @@
+"mean_KD_nA","mean_Control_nA","mean_KD_ASO_nA","equal_batch_ASO_minus_KD_nA","equal_batch_Control_minus_KD_nA","recovery_ratio","recovery_ratio_defined","interpretation"
+1.48997222222222,5.28355034965035,3.71214718614719,2.22217496392496,3.79357812742813,0.585772821668891,TRUE,"descriptive, conditional; not equivalence or clinical recovery"

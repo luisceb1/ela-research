@@ -1,0 +1,6 @@
+Conditional replay; original nA values, author-labelled source blocks.
+Strict v1 gate NOT passed. No independent biological replication.
+Input SHA256: 971ab59ed7b0f021f776944d01f99b3e4eeb67465e5d43fbf939fc3dcd5e2cda
+R: R version 4.5.0 (2025-04-11)
+lme4: 1.1.37
+lmerTest: 3.1.3
