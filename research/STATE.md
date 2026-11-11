@@ -109,6 +109,20 @@ Of the three prespecified predictions, **P1 is refuted** (0 of 149 samples reach
 
 No novelty is claimed: the consortium has published on these data and Ma 2022 carries a supplementary table on UNC13A and STMN2 variants in the NYGC cohort. Personal data: only the subject-group column was read; sex, ethnicity, ages and site of onset were not read, no individual clinical row is in the output, and the metadata file is not versioned.
 
+## Cervical cord against motor cortex: 21x less UNC13A coverage at identical depth
+
+The cortex report was corrected the same day after **the project's first independent review**, which Luis obtained from a second reader. It flagged four overstatements; I checked all four and all four were right. Library depth explained most of the coverage difference I had called evidence of cortical expression. The ratio double-counted inclusion, because a transcript carrying the cryptic exon offers two junctions a read can span while one without it offers one, so the maximum fell from 0.0796 to 0.0414 and the per-junction maximum is **four reads**. Cell dilution is now stated as the most plausible explanation rather than a demonstrated cause, and the closing claim is narrowed to the datasets examined. Verification also established that **the metadata exposes no donor identity**, so tissue comparisons cannot be paired.
+
+The cervical cycle then ran with that corrected design. [Report](../reports/target-als-cervical-20261111/REPORT.md), table in `tissue_comparison.tsv`.
+
+**Sequencing depth is identical between tissues** — median 44.4M exon-assigned reads in both, ratio 1.00 — which removes the confounder that invalidated the earlier cross-study comparison. With depth matched, **UNC13A canonical coverage is about 21 times lower in cervical cord than in motor cortex** (0.11 against 2.30 per million in ALS). All three predictions are confirmed: lower normalised coverage, lower detection (0.053 against 0.190, Wilson intervals just failing to overlap), and no sample reaching twenty reads on a single cryptic junction.
+
+This retrospectively explains the project's failures: **the closed pilot and the Klim dataset were spinal motor neurons**, the tissue where this locus is worst covered. Not bad luck — the wrong tissue for the locus.
+
+Two things it does **not** show. The lower detection in cord needs no difference in biology, since it is what 21-fold less coverage produces on its own. And in cord no ratio is interpretable at all: with a canonical median of 5 reads, the apparent high PSI values are one cryptic read over two canonical, which is sampling noise.
+
+**Conclusion, as prespecified:** of the five datasets examined none reaches the threshold, so **this search closes for lack of precision with the data examined**. No claim is made about all public RNA-seq. What is established is where not to look, and that the route to the threshold is cell enrichment or a targeted assay rather than more samples or more depth.
+
 ## Access and communications: dated evidence only
 
 The 04 November administrative audit records AD Workbench dataset-approval wording followed by review wording, and a pending workspace. Neither establishes effective access or a technical manifest. [Audit](../reports/continuity-20261104/REPORT.md). The expanded public K26 search found no attributable source table in the checked routes; this is not universal proof of absence. [Search](../reports/fig4d-source-search-20261104/REPORT.md).
