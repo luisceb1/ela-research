@@ -1,68 +1,63 @@
-# Mensaje a Philip C. Wong (Johns Hopkins) — BORRADOR, NO ENVIADO
+# Mensaje a Philip C. Wong (Johns Hopkins) — BORRADOR LISTO, NO ENVIADO
 
-Fecha: 2026-11-11. Reescritura del borrador anterior con las tres correcciones acordadas, dirigido a **Wong** en vez de a Fratta.
+Fecha: 2026-11-11, **versión 2**. La versión 1 (mía) queda descartada tras una revisión externa que señaló cuatro problemas. **Los cuatro eran correctos.** Esta versión adopta la redacción propuesta en esa revisión, que es mejor que la mía.
 
-**No lo envío yo.** Notifica a un investigador real, lo firmas tú y es tu reputación la que queda comprometida. `AGENTS.md` exige autorización expresa para comunicaciones externas.
+**No lo envío yo.** `AGENTS.md` exige autorización expresa para comunicaciones externas, lo firmas tú y es tu reputación la que queda comprometida.
 
-## Por qué Wong y no Fratta
+## Qué estaba mal en mi versión 1
 
-Wong es el autor corresponsal de Mallika 2026 y Cao 2026. Es **quien hizo el experimento multidiana posdéficit**, es decir el contraste que hace interesante la observación. El mensaje **cita su trabajo como el caso que abre la pregunta**, no lo cuestiona.
+| Mi texto | Problema |
+|---|---|
+| «no donor pairing available in the metadata» | **Desactualizado.** La rama de la PR #57 recuperó un mapa de donante y estableció **45 pares**, con análisis exploratorios ya hechos. Enviar eso habría sido afirmar algo falso sobre nuestro propio trabajo |
+| «with sequencing depth matched between tissues» | **No es un control.** Coincidir en la mediana no controla la profundidad. Y mi cifra de 21× era una **razón de medianas**, no una normalización por biblioteca. Recalculado: **22,3×**. Corregido en el informe |
+| «the limitation appears to be gene-specific rather than general» | **Sobreafirmación.** Dos genes que se comportan distinto muestran que difieren, no que la limitación sea «específica del gen» como propiedad general |
+| «they are preventive by construction» | **No se sigue.** No documentar un déficit antes de tratar no demuestra que la intervención fuese preventiva. Para las deleciones germinales sí; para la fila K-c, donde el knockdown llevaba 5 días establecido, **no**. Lo correcto es «no pude establecer que el tratamiento empezara tras un déficit documentado» |
 
-Fratta, en cambio, es autor de Keuss 2024, el trabajo cuya cronología se señala. Habría sido decirle que su propio experimento es preventivo. Legítimo, pero innecesariamente incómodo cuando existe un destinatario mejor.
+Y la decisión de fondo que también comparto: **fuera el apartado tisular**. Un primer contacto frío con dos hallazgos y una salvedad metodológica pide demasiado. Una pregunta concreta tiene más probabilidad de respuesta y menos superficie de error.
 
-Es un correo **frío**: hay que presentarse desde cero y ser breve.
+## Destinatario
 
-## Las tres correcciones aplicadas
+**Philip C. Wong**, Johns Hopkins University School of Medicine. Autor corresponsal de Mallika 2026 y Cao 2026. **La dirección exacta hay que tomarla del artículo**, no de este archivo.
 
-1. **Eliminada** la advertencia sobre el repositorio privado: ya es público, así que el enlace funciona.
-2. **Añadida** la salvedad sobre la fila M-a, que es la pieza más débil del argumento y sostiene precisamente el contraste con Mallika.
-3. **Añadido** el hallazgo tisular, de utilidad inmediata para cualquiera que diseñe un estudio de UNC13A.
-
-## Dirección
-
-Correspondencia de Mallika 2026 y Cao 2026: Philip C. Wong, Johns Hopkins University School of Medicine. **La dirección exacta hay que tomarla del artículo**, no de aquí.
+Correo **frío**: presentación desde cero y breve.
 
 ## Asunto propuesto
 
-`Intervention timing in UNC13A cryptic-exon studies, and a tissue-coverage observation`
+`Question on treatment timing in the AAV-PHP.eB-CTR experiment (Mallika et al.)`
 
 ---
 
 > Dear Professor Wong,
 >
-> I am writing in a personal capacity. I am a lawyer in Spain, and I run a small independent documentation project on the transcriptomic consequences of TDP-43 nuclear loss of function, using public sources only. The analysis is carried out by an automated agent (Claude) under my direction; the full material, including its provenance, its limitations and the corrections made to my own earlier claims, is public at https://github.com/luisceb1/ela-research
+> I am a lawyer in Spain conducting a small, AI-assisted review of public studies on TDP-43 loss of function, with a particular interest in UNC13A. Our source matrix, methods and corrections are available here:
+> https://github.com/luisceb1/ela-research
 >
-> Two observations from it may be of interest to your group. I am not claiming either is novel to someone working in the field directly.
+> I am writing with a question about the timing of treatment in Mallika et al.'s AAV-PHP.eB-CTR experiment.
 >
-> **1. Intervention timing.** Tabulating the accessible experiments that correct or prevent UNC13A cryptic-exon inclusion, I find that of the six UNC13A-specific experiments I could examine, none administers the intervention after a baseline functional deficit has been documented in the same system and endpoint. They are preventive by construction, either through germline deletion of the cryptic exon or because dosing precedes or coincides with TDP-43 loss. In Keuss 2024, for example, the methods state that "ASO treatments were started at the same time as PROTAC treatment".
+> In the six UNC13A-specific experiments included in our bounded review, I could not establish that treatment began after a functional deficit had been documented under our operational criterion. Your multi-target CTR experiment raised an interesting comparison because dosing began at six weeks, when fine tremors were already apparent.
 >
-> What drew my attention was the contrast with your multi-target work. Mallika et al. 2026 delivers AAV-PHP.eB-CTR at six weeks, "when fine tremors are already apparent", and reports maintained grip strength and survival extended from roughly 47 to at least 110 weeks. The post-deficit window therefore does not look intrinsically intractable in that model, which makes it more pointed to ask what an isolated UNC13A correction would do when given after a measured deficit.
+> Was grip strength assessed before dosing in the animals subsequently receiving CTR, or was their symptomatic status established through tremor onset and the model's age-dependent characterisation?
 >
-> **An important caveat on my own classification.** My prespecified rule required the deficit of the same endpoint to be measured in the same animals before dosing, and explicitly excluded a parallel untreated arm as baseline evidence. Under that strict reading your CTR arm does not qualify either, since what is documented at dosing age are fine tremors rather than the measured endpoint, and the grip-strength deficit comes from the GFP arm. I record both readings rather than choosing one, and this particular row has had no independent review. It is the weakest part of the argument and I would rather flag it than let it pass.
+> Our original classification required a deficit in the same functional endpoint to be documented in the same animals before treatment. I recognise that this criterion may be too restrictive for this model. We therefore record both readings and do not treat the classification as settled.
 >
-> **2. A tissue-coverage observation that may be practically useful.** Using recount3 junction counts from the TARGET_ALS cohort, with sequencing depth matched between tissues (median 44.4M exon-assigned reads in both), UNC13A canonical junction coverage is about 21 times lower in cervical spinal cord than in motor cortex: 0.11 against 2.30 reads per million in ALS-spectrum samples. In that cohort no sample reaches 20 reads on a cryptic UNC13A junction, the maximum on any single junction being four.
+> This is a request to clarify our interpretation of the chronology. I would welcome any correction, including an UNC13A-specific experiment that our review may have missed.
 >
-> The practical implication, if it holds, is that standard whole-transcriptome RNA-seq of spinal cord is unlikely to detect UNC13A cryptic junctions at useful precision, which may be part of why the defining studies used targeted assays. STMN2 behaves in the opposite direction in the same data, with cryptic junctions readily detectable in cord, so the limitation appears to be gene-specific rather than general.
+> Thank you for your time.
 >
-> I should be clear about what this is not: bulk post-mortem tissue with unmeasured cell composition, no donor pairing available in the metadata, and no inference attempted. It is a coverage observation, not a biological result.
->
-> If the timing table would be useful, I am glad to send it with its sources and locators. And if I have misread the chronology of any study, including yours, I would value the correction more than anything else.
->
-> I am aware your group's time is scarce and expect no reply if none is warranted.
->
-> With kind regards,
+> Kind regards,
 > Luis Cebrián Fraile
 
 ---
 
 ## Antes de enviarlo, comprueba
 
-- **Las dos citas son literales**, verificadas 14/14 por `scripts/verify_matrix_quotes.py`: la de Keuss y la de Mallika.
-- **Las cifras del punto 2** salen de `reports/target-als-cervical-20261111/tissue_comparison.tsv`.
-- **El enlace del repositorio funciona** (es público desde hoy). Verás también en él los informes donde se corrigen errores propios, incluidas tres correcciones de hoy a mis propias sobreafirmaciones. Eso es deliberado: un proyecto que registra sus fallos es más creíble que uno que solo muestra aciertos.
-- **La dirección exacta** tómala del artículo, no de este archivo.
-- **Tu nombre completo** figura en la firma. Si prefieres no exponerlo, cámbialo antes de enviar.
+- **La dirección exacta** tómala del artículo de Mallika o Cao, no de aquí.
+- **Tu nombre completo** figura en la firma. Si prefieres no exponerlo, cámbialo.
+- **El enlace funciona**: el repositorio es público. Verá también los informes donde se corrigen errores propios, incluidas cuatro correcciones de hoy. Es deliberado.
+- La cita «when fine tremors are already apparent» es **literal**, verificada por `scripts/verify_matrix_quotes.py`.
 
-## Lo que el mensaje deliberadamente NO hace
+## Lo que el mensaje hace y no hace
 
-No pide datos. No propone colaboración formal. No reclama novedad. No sugiere que nadie haya cometido un error. No menciona #37 ni #44 ni pide acceso a nada. Es una observación ofrecida, con su parte más débil señalada por mí mismo, y una invitación a corregirme.
+**Hace:** una pregunta factual concreta y respondible, reconoce que nuestro criterio puede ser demasiado restrictivo para ese modelo, declara el uso de IA, e invita a corregirnos — incluido señalarnos un experimento que se nos haya pasado.
+
+**No hace:** no pide datos ni colaboración, no reclama novedad, no afirma que nadie se haya equivocado, no incluye el apartado tisular, no menciona #37 ni #44, y **no afirma que los seis experimentos sean preventivos** — solo que no pudimos establecer lo contrario bajo nuestro criterio.

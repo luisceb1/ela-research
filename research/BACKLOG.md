@@ -121,6 +121,13 @@ La laguna que motiva #18 queda documentada en su forma **precisa**: ninguna corr
 - [ ] **Necesidad estructural identificada:** mis informes necesitan un segundo lector **sistemático**. Hoy dos revisiones externas encontraron cuatro sobreafirmaciones y una predicción mal etiquetada; **ninguna la encontré yo**.
 - [x] **Error de git propio, corregido:** al abrir el ciclo de auditoría reseteé la rama a `main` y un push forzado descartó tres commits ya empujados, incluida la corrección de P1. Recuperados por `cherry-pick` desde el reflog y verificados en el árbol. Ningún contenido se perdió; el incidente queda registrado en vez de borrado.
 
+## Correcciones del 11/11/2026 (tarde, tercera revisión externa)
+
+- [x] **Error de método en el informe cervical corregido:** «canónica por millón» era una **razón de medianas**, no normalización por biblioteca. Recalculado: **22,3×** (medianas por biblioteca 2,530 frente a 0,113) en lugar de 20,9×. Dirección y orden de magnitud se mantienen.
+- [x] **Dos sobreafirmaciones del mismo informe corregidas:** «la profundidad es idéntica» y «elimina el confusor». Coincidir en la mediana no es un control.
+- [x] **Mensaje a Wong reescrito (versión 2)**: fuera el apartado tisular, fuera la afirmación «preventivos por construcción», fuera el dato desactualizado sobre emparejamiento de donante. Queda una **pregunta metodológica concreta**. Ver [borrador](drafts/2026-11-11-mensaje-wong-borrador.md). **No enviado.**
+- [ ] **Patrón de calibración registrado:** tres revisiones externas en un día han encontrado, en total, cuatro sobreafirmaciones, una predicción mal etiquetada y un error de método. **Todas en la dirección de afirmar de más, y ninguna la encontré yo.** Leer mis informes con ese sesgo en cuenta.
+
 ## Mantenimiento técnico
 
 - [x] Separar estado/backlog actuales del historial íntegro.

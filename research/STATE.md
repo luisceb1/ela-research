@@ -205,6 +205,16 @@ The six Claude commits ending at 5ef8825 are incorporated with [integration revi
 
 The prediction audit's 14/1/1 classification describes its original narrow rule, not 14 validated scientific conclusions. Its table now distinguishes descriptive directions, a test never performed as written, and inference unsupported by Wilson-overlap or p>0.05. The numerical 11 / qualitative five split is explicit. Earlier pre-10-November cycles are not certified; review them only where a current conclusion relies on them.
 
+## Correction — the cervical coverage ratio was a ratio of medians
+
+A third external review of the day, on the draft message for Wong, pointed out that the table it cited does not support a claim that depth was controlled between tissues. Checking that, I found a methodological error in the merged cervical report.
+
+The column reading "canonical per million" was computed as a **ratio of medians** — a group median count divided by a project median depth — which is not per-library normalisation. Recomputed as the **median of per-library ratios**: motor cortex **2.530** and cervical cord **0.113** per million, so **22.3-fold** rather than the published 20.9-fold. Direction and order of magnitude hold; the method was wrong.
+
+Two overstatements in the same report are also corrected. It said sequencing depth "is identical" and that this "eliminates the confounder". Matching medians does neither: per-library distributions differ, and equal medians only make it unlikely that depth explains a twentyfold gap. The comparison remains unpaired with unmeasured confounders.
+
+Three further points from the same review are accepted and fixed in the draft rather than the reports: the draft's claim of no donor pairing was outdated, since the #57 branch recovered a map of 45 pairs; "the limitation appears to be gene-specific" overreaches from two genes; and **failing to document a deficit before dosing does not demonstrate that an intervention was preventive**, which held for the germline deletions but not for the row where knockdown had run five days. The message now says only that we could not establish treatment began after a documented deficit.
+
 ## Access and communications: dated evidence only
 
 The 04 November administrative audit records AD Workbench dataset-approval wording followed by review wording, and a pending workspace. Neither establishes effective access or a technical manifest. [Audit](../reports/continuity-20261104/REPORT.md). The expanded public K26 search found no attributable source table in the checked routes; this is not universal proof of absence. [Search](../reports/fig4d-source-search-20261104/REPORT.md).

@@ -5,7 +5,9 @@
 
 ## Lo que hace esta comparación inusualmente limpia, y lo que no
 
-**A favor:** mismo consorcio, misma tubería de cuantificación, mismos criterios de grupo, mismas coordenadas selladas. Y un dato comprobado, no supuesto: **la profundidad de secuenciación es idéntica** — mediana de **44,4 M** lecturas asignadas a exones en ambos tejidos, ratio **1,00**. Esto elimina el confusor que invalidó mi comparación anterior con Klim.
+**A favor:** mismo consorcio, misma tubería de cuantificación, mismos criterios de grupo, mismas coordenadas selladas. Y la **mediana** de profundidad coincide: **44,4 M** lecturas asignadas a exones en ambos tejidos.
+
+> **Corrección del 11/11/2026 (tarde).** La versión original de este informe decía que la profundidad «es idéntica» y que eso «elimina el confusor». **Las dos afirmaciones eran demasiado fuertes.** Coincidir en la mediana no controla la profundidad: las distribuciones por biblioteca pueden diferir y de hecho difieren. Lo correcto es **normalizar cada biblioteca** por sus propias lecturas de exón, que es lo que ahora se hace abajo. La coincidencia de medianas solo hace improbable que la profundidad explique una diferencia de veinte veces; no la descarta, y no es un control.
 
 **En contra, declarado de antemano:** los metadatos **no exponen identidad de donante** (`CGND-HRA-…` identifica muestra, no sujeto; no hay columna de sujeto). El número de sujetos por tejido es **desconocido** y la comparación es **entre conjuntos de muestras distintos, no emparejada**.
 
@@ -14,6 +16,8 @@ Controles de montaje superados en médula: no parece dirigido (2.695.965 uniones
 ## Tabla por tejido: el entregable
 
 Tabla completa en [`tissue_comparison.tsv`](tissue_comparison.tsv).
+
+> **Corrección del método de normalización.** La columna «canónica por millón» de la versión original se calculó como **razón de medianas** (mediana de cuentas ÷ mediana de profundidad), que no es una normalización por biblioteca. Recalculado correctamente como **mediana de las razones por biblioteca**: corteza **2,530** y médula cervical **0,113** por millón, es decir **22,3×** en lugar del 20,9× publicado. La dirección y el orden de magnitud se mantienen; el método estaba mal. Rangos por biblioteca: corteza 0,139–4,240; cervical 0,000–0,763.
 
 | Tejido | Grupo | n | Sujetos | Lecturas exón (mediana) | Canónica (mediana) | **Canónica por millón** | Con alguna lectura críptica | Detección [Wilson 95 %] | ≥20 |
 |---|---|---:|---|---:|---:|---:|---:|---|---:|
@@ -26,7 +30,7 @@ Tabla completa en [`tissue_comparison.tsv`](tissue_comparison.tsv).
 
 | | Predicción | Resultado |
 |---|---|---|
-| **P1** | Cobertura canónica normalizada **menor** en médula cervical | **CONFIRMADA, y con margen amplio: 21× menor** (2,30 frente a 0,11 por millón en ELA) |
+| **P1** | Cobertura canónica normalizada **menor** en médula cervical | **CONFIRMADA. 22,3× menor** con normalización por biblioteca (medianas 2,530 frente a 0,113 por millón en ELA). El 21× original venía de una razón de medianas; ver corrección |
 | **P2** | Menor proporción de muestras ELA con alguna lectura críptica en médula | **CONFIRMADA.** 0,053 frente a 0,190; los intervalos de Wilson **no se solapan** (0,117 < 0,121), por poco |
 | **P3** | Ninguna muestra de médula alcanzará 20 lecturas en una unión críptica | **CONFIRMADA.** Máximo 2 |
 
@@ -34,7 +38,7 @@ Tabla completa en [`tissue_comparison.tsv`](tissue_comparison.tsv).
 
 ### El hallazgo principal: la diferencia tisular es real, grande y ahora está medida con profundidad controlada
 
-Con la profundidad igualada por diseño del propio consorcio, **UNC13A está unas 21 veces menos cubierto en médula cervical que en corteza motora**. Esto convierte en comprobada, dentro de una sola cohorte y tubería, la observación que Ikegami 2026 y el panel GTEx de Mallika 2026 hacían entre estudios.
+Normalizando cada biblioteca por sus propias lecturas de exón, **UNC13A está unas 22 veces menos cubierto en médula cervical que en corteza motora**. No se afirma que la profundidad quede «controlada»: se normaliza, y la comparación sigue siendo **no emparejada** y con confusores no medidos. Esto convierte en comprobada, dentro de una sola cohorte y tubería, la observación que Ikegami 2026 y el panel GTEx de Mallika 2026 hacían entre estudios.
 
 Y explica retrospectivamente los fracasos del proyecto: **el piloto cerrado y el dataset de Klim eran de motoneuronas espinales**, es decir el tejido donde UNC13A está peor cubierto. No era mala suerte ni mala ejecución; era el tejido equivocado para este locus.
 
