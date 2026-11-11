@@ -3,6 +3,11 @@
 This replaces earlier planning snapshots. Historical reports and commits remain evidence, not automatic instructions to rerun work. This consolidated state accompanies integration of PRs #46–#49. Review details and exact checked commits are preserved in [INTEGRATION_REVIEW](../reports/integration-20261104/REVIEW.md).
 
 
+## K26 public source found — 11 November 2026
+
+The final Nature article is published today, DOI `10.1038/s41586-026-11256-2`. Its public Source Data Fig.4 workbook was downloaded and hash-pinned. Panel 4d contains explicit Batch 1/2/3 blocks and 34 control, 30 KD, 25 KD+21-6 numerical observations, matching the final legend. [Bounded inspection and reproduction script](../reports/k26-published-source-20261111/REPORT.md). This is a new reopening input for #44; older statements that the numerical file is unavailable are superseded. No effect was estimated and the input contract remains disabled. Next: reconcile units, batch-to-differentiation/culture structure, identities/exclusions/QC and the now reachable actual R model against the existing FR-K26-4d v1 plan before inference. This does not unblock #37 or reopen STMN2.
+
+
 ## English documentation entry — 11 November 2026
 
 PR #58 is merged at `c7d8f7e92e7eb02e3fb619f6e8984f075ef84784`; the corrected UNC13A coverage calculation and its limitations are integrated. The [current findings page](../docs/CURRENT_FINDINGS.md) and [English evidence/reproduction guide](../docs/ENGLISH_GUIDE.md) provide the public reading route, with seven source-pinned report translations. Spanish originals and dated sections below remain preserved. No new biological analysis, data-access check or contact was performed for this documentation update. The language policy applies to new scientific/public documentation and new code comments/docstrings; it does not reopen closed scientific cycles.

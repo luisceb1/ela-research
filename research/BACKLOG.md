@@ -3,6 +3,12 @@
 Este archivo contiene tareas actuales y condiciones de reapertura. [STATE](STATE.md) resume resultados; el [backlog anterior íntegro](history/README.md) conserva la cronología.
 
 
+## K26 public source found — 11 November 2026
+
+- [x] Verify final Nature publication and download/hash-pin Source Data Fig.4; inspect exact panel 4d and explicit batch counts with deposited script. [Report](../reports/k26-published-source-20261111/REPORT.md). This supersedes the numerical-file availability blocker, not the design gate.
+- [ ] Under the existing #44 plan, verify amplitude units/sign, explicit batch-to-independent-differentiation and nested culture structure, cell/repeat identities and exclusions/QC; reconcile the actual public R model before any fit. Keep the input contract disabled until that review. No new endpoint or author follow-up is authorized by this entry.
+
+
 ## English documentation entry — 11 November 2026
 
 - [x] Integrate reviewed normalization/corrections through PR #58, merge `c7d8f7e92e7eb02e3fb619f6e8984f075ef84784`.

@@ -30,10 +30,15 @@ The six-source, 14-experiment matrix contains **six UNC13A-specific experiments*
 
 Multi-target Mallika row M-a differs between readings: zero of 14 experiments qualify under the strict same-endpoint baseline rule, versus one of 14 under a symptom-based substantive reading. Fine tremors were documented at dosing; the grip-strength deficit is evidenced by the parallel GFP arm rather than a same-endpoint pretreatment measurement in the CTR animals. The row and the suitability of the rule still need independent methodological review. Multi-target benefit cannot be assigned to isolated UNC13A correction. [Timing report](../reports/unc13a-intervention-timing-20261110/REPORT.en.md). The reviewed source versions and access limitations are stated there; this translation is not a new publication-status search.
 
+## Source-availability update — 11 November 2026
+
+The final Keuss Nature article (`10.1038/s41586-026-11256-2`) is now published and its public Fig.4 source workbook has been downloaded. The exact 4d sheet supplies 34/30/25 observations in three explicit batch blocks, matching the legend. [Source inspection](../reports/k26-published-source-20261111/REPORT.md). This changes file availability for #44, not the current scientific conclusions: units, batch/differentiation identity, nested structure and exclusions/QC still need reconciliation, and no new model or effect has been calculated. Older dated statements of missing source values are superseded; the inference contract remains disabled.
+
+
 ## What would enable further work
 
 - **STMN2:** a discriminating, traceable composition/QC measurement; external validation requires a genuinely independent cohort with the event counts, donor structure and technical design verified. Another model on the same donors is not replication.
 - **UNC13A #37:** an accepted concrete file/manifest with usable event measurements and independently verifiable condition/unit/batch structure, under the documented coverage/design criteria. Whole-transcriptome and targeted-amplicon fractions cannot simply be pooled.
-- **Functional #44:** original Fig.4d eEPSC values and units, groups, cell→culture→differentiation mapping, exclusions and chronology. Cells alone do not establish independent biological replication.
+- **Functional #44:** the numerical workbook is now available (update above). Validate its units, explicit batch→differentiation/culture map, cell/repeat identity, exclusions and chronology against the existing plan. Cells alone do not establish independent biological replication.
 
 Access and communication records are dated evidence, not proof that files have now arrived. No new contact or follow-up was sent for this documentation work. None of these findings supports treatment advice or a clinical decision.

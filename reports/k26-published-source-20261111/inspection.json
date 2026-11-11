@@ -1,0 +1,52 @@
+{
+  "source_url": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41586-026-11256-2/MediaObjects/41586_2026_11256_MOESM7_ESM.xlsx",
+  "source_sha256": "7a01e468d3eaf89a2af9bd0c3fb16434f815e3020033df771d9872799cba3eb7",
+  "source_bytes": 126052,
+  "sheet_names": [
+    "4a",
+    "4b",
+    "4c",
+    "4d",
+    "4e",
+    "4g"
+  ],
+  "panel": "4d",
+  "title": "Figure 4d, Measurement of evoked EPSCs in spinal motor neuron",
+  "condition_headers": {
+    "B": "TDP-43 KD",
+    "C": "Control",
+    "D": "TDP-43 KD +21-6"
+  },
+  "counts_by_explicit_batch": {
+    "Batch 1": {
+      "TDP-43 KD": 10,
+      "Control": 10,
+      "TDP-43 KD +21-6": 11
+    },
+    "Batch 2": {
+      "TDP-43 KD": 8,
+      "Control": 13,
+      "TDP-43 KD +21-6": 7
+    },
+    "Batch 3": {
+      "TDP-43 KD": 12,
+      "Control": 11,
+      "TDP-43 KD +21-6": 7
+    }
+  },
+  "total_by_condition": {
+    "TDP-43 KD": 30,
+    "Control": 34,
+    "TDP-43 KD +21-6": 25
+  },
+  "total_numeric_observations": 89,
+  "all_values_finite_and_nonnegative": true,
+  "analysis_gate_opened": false,
+  "effect_estimated": false,
+  "remaining_checks": [
+    "Verify amplitude unit and sign/processing against the published axis and methods.",
+    "Reconcile explicit Batch labels with the three independent differentiations in the legend.",
+    "Review culture/coverslip/cell identity, repeated measurements, QC and exclusions.",
+    "Inspect the actual R implementation and reconcile it with the existing prospective plan."
+  ]
+}
