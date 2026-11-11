@@ -149,17 +149,17 @@ All **88** exon boundaries of NM_001080421.3 give a single offset, 110,809, with
 
 One methodological lesson does change practice: UNC13A's cryptic junctions are flagged `annotated=0` in recount3 while STMN2's is flagged `annotated=1`, so **that flag is inconsistent across genes and unreliable in either direction**. Using it to include would have failed for UNC13A; using it to exclude did fail for STMN2. What worked in both cases was cross-checking a published interval through a double anchor, and the note is recorded in the sealed files so no future cycle leans on the flag again.
 
-## Prediction audit: 16 reviewed, one real failure, one declared substitution
+## STMN2's coordinates audited: confirmed, and the terminal-exon assumption validated by the data
 
-After the mislabelled P1, the open question was whether it was isolated or a pattern. [Report](../reports/prediction-audit-20261111/REPORT.md), table in `audit.tsv`. Self-audit bias is declared: the 11 numeric predictions were checked by **recomputing from the deposited JSON**, not by re-reading my own prose.
+The UNC13A audit confirmed its coordinates but never asked whether the event measured is the only cryptic event at the locus. This audit asks that of STMN2, on five checks fixed before looking. [Report](../reports/stmn2-coordinate-audit-20261111/REPORT.md).
 
-**16 predictions across 8 cycles: 14 coherent, 1 real failure, 1 declared substitution.** The failure is the STMN2 P1 already corrected. The substitution is Ikegami's covariate prediction: the correlation test it specified was never run, because the per-case join was refused as the plan required, and a different between-subtype test was run instead. That substitution is declared in the report with its logic and its limit, so it is acceptable rather than hidden — but the prediction as written was not tested, and the report says "all three confirmed" without flagging that what was confirmed is a different quantity. Recorded.
+Four pass and one is left unresolved rather than guessed. The sealed junction carries **identical coordinates in both tissues**. The PSI denominator rests on the cryptic exon being terminal, and **no junction with a donor at its 3' end exists in any of the 313 samples**, so that assumption is now validated empirically rather than assumed from the literature. The five `annotated=0` candidates rejected during derivation carry **1–2 reads each** against 215 and 484 for the sealed junction, and do not appear at all in cervical cord.
 
-Among the coherent ones, two deserve care: cervical P2's Wilson intervals miss overlapping by 0.004, so nothing should be built on that margin, and cortex P1 was correctly called refuted at 4 reads against a threshold of 20.
+On whether another event is being missed, the data answer better than the literature did: of **50** junctions at the locus in cervical cord, **34 are unannotated and none exceeds 9 reads**, so the sealed cryptic junction is the dominant non-canonical event by roughly fiftyfold. A bounded title-and-abstract search found no second documented event, which on its own is weak. Incidentally, the cryptic acceptor is used by three donors, the canonical exon-1 donor dominating at 484 reads against 4 and 3 — a real splice acceptor, as the literature describes.
 
-One failure in sixteen is not a pattern, but three things keep it from being reassuring: I did not find it, it sat in the very cycle where I was crediting myself for stopping at a different faulty criterion, and this audit carries the same bias — its value is in having been mechanical, not in my judgement. What the audit does vindicate is prespecification itself: without written thresholds there would have been nothing to audit.
+Unresolved and recorded as such: the junction carries `right_annotated=cH38` and no documentation of that source code was available, so why recount3 flags it annotated is unknown. It does not affect acceptance.
 
-Not done and not opened here: auditing the cycles before 10 November by the same procedure.
+**Coordinates unchanged and no STMN2 measurement affected.** Both of the project's target genes now have sealed coordinates audited by the same procedure.
 
 ## Access and communications: dated evidence only
 

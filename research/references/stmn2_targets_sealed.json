@@ -7,8 +7,14 @@
   "chromosome": "chr8",
   "strand": "+",
   "junctions": {
-    "canonical": [79611214, 79636801],
-    "cryptic": [79611214, 79616821]
+    "canonical": [
+      79611214,
+      79636801
+    ],
+    "cryptic": [
+      79611214,
+      79616821
+    ]
   },
   "positive_control": "canonical",
   "positive_control_note": "Annotated exon 1 to exon 2 junction of NM_007029.4; excluded from the coverage gate.",
@@ -19,14 +25,44 @@
     "anchor_transcript": "NM_007029.4",
     "anchor_source": "UCSC api.genome.ucsc.edu, track ncbiRefSeq, chr8:79000000-81000000, hg19 and hg38",
     "anchors": [
-      {"feature": "exon 1 end", "hg19": 80523449, "hg38": 79611214, "offset": 912235},
-      {"feature": "exon 2 start", "hg19": 80549036, "hg38": 79636801, "offset": 912235}
+      {
+        "feature": "exon 1 end",
+        "hg19": 80523449,
+        "hg38": 79611214,
+        "offset": 912235
+      },
+      {
+        "feature": "exon 2 start",
+        "hg19": 80549036,
+        "hg38": 79636801,
+        "offset": 912235
+      }
     ],
     "offset_agreement": "Both anchors give 912235 independently.",
-    "published_cryptic_exon_hg19": {"chrom": "chr8", "start": 80529057, "end": 80529284, "width": 228, "source_doi": "10.1007/s00401-023-02655-0"},
-    "published_cryptic_exon_hg38_derived": {"start": 79616822, "end": 79617049},
+    "published_cryptic_exon_hg19": {
+      "chrom": "chr8",
+      "start": 80529057,
+      "end": 80529284,
+      "width": 228,
+      "source_doi": "10.1007/s00401-023-02655-0"
+    },
+    "published_cryptic_exon_hg38_derived": {
+      "start": 79616822,
+      "end": 79617049
+    },
     "match": "The observed junction chr8:79611215-79616821 (1-based inclusive intron) places its acceptor exon start at 79616822, exactly the derived hg38 cryptic-exon start.",
     "correction_to_the_plan": "The prespecified criterion required annotated=0 for the cryptic junction. This junction is flagged annotated=1 in recount3's reference set, so that criterion would have wrongly excluded the true target. The literature cross-check overrode it. Five annotated=0 candidates that passed every structural check are recorded in reports/stmn2-derivation-20261111/derivation.json and are NOT the published event.",
     "canonical_cross_check": "The canonical junction chr8:79611215-79636801 matches exon 1 end and exon 2 start of NM_007029.4 exactly in hg38."
+  },
+  "audit_20261111": {
+    "checks": {
+      "A1_same_coordinates_both_tissues": "PASS. Identical in motor cortex (row 2389629) and cervical cord (row 2415963).",
+      "A2_cryptic_exon_is_terminal": "PASS. No junction with a donor at the cryptic exon 3' end (~79617049) exists in any of the 313 samples across both tissues, so the single-cryptic-junction denominator is validated empirically.",
+      "A3_rejected_candidates_negligible": "PASS. The five annotated=0 candidates carry 1-2 reads each across 149 samples against 215 (cortex) and 484 (cord) for the sealed junction; they do not appear at all in cervical cord.",
+      "A4_no_other_cryptic_event_missed": "PASS on the data. Of 50 junctions at the locus in cervical cord, 34 are unannotated and none exceeds 9 reads; the sealed cryptic junction is the dominant non-canonical event by roughly fiftyfold. A bounded title/abstract literature search found no second documented event, which is weak evidence on its own.",
+      "A5_annotation_source_code": "UNRESOLVED. The sealed junction carries right_annotated=cH38 and no documentation of that source code was available, so it is recorded without interpretation and was not guessed."
+    },
+    "incidental_finding": "The cryptic acceptor 79616821 is used by three donors: the canonical exon-1 donor (484 reads), 79613938 (4) and 79612283 (3). It is a real splice acceptor and the dominant donor is the canonical one.",
+    "outcome": "CONFIRMED. Coordinates unchanged; no STMN2 measurement is affected."
   }
 }
