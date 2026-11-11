@@ -1,5 +1,7 @@
 # K26 is published: public Fig.4 source values and explicit batch blocks found
 
+> Follow-up completed: [design/unit review and strict-gate decision](DESIGN_REVIEW.md). Source counts below are unchanged; the later review establishes nA as the published scale and identifies the remaining strict-v1 metadata gap. No effect fitted.
+
 **11 November 2026. Bounded source-availability inspection under the existing FR-K26-4d v1 plan, not an effect analysis.** Repository baseline: `8257b71335ef39b0f8ccadfd899d68f577c99738`. No new endpoint, fitted model, p-value, threshold change or contact.
 
 ## New primary source

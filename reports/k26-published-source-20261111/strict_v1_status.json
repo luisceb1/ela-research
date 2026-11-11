@@ -1,0 +1,10 @@
+{
+  "schema_version": "FR-K26-4d-v1",
+  "enabled": false,
+  "legacy_unit": "pA_magnitude",
+  "published_axis_unit": "nA",
+  "source_values_available": true,
+  "strict_gate_ready": false,
+  "reason": "Metadata missing for strict v1; unit/version amendment needed before analysis; no human independence approval recorded.",
+  "effect_estimated": false
+}
