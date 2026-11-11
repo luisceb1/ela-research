@@ -26,3 +26,9 @@ Prohibido sin autorización expresa: enviar mensajes a investigadores o terceros
 
 ## Qué cuenta como avance
 Código ejecutado y probado, tabla verificable, auditoría de fuentes, hipótesis falsable documentada o interpretación sustentada en referencias específicas. Un resumen genérico no basta.
+
+## Documentation language and translation integrity
+
+New scientific and public-facing documentation, and new code comments/docstrings, use English. Spanish originals, internal working material and historical reports remain available. Do not rename data keys, identifiers or existing executors merely for language consistency.
+
+For a translated report, preserve its source version/hash, numerical results, units, thresholds, negative statements, uncertainty and correction history. Compare against the original before submission; update affected translations and current summaries when a source conclusion changes. A translation is not a new analysis or independent expert review. Follow [the English guide](docs/ENGLISH_GUIDE.md#translation-policy-and-review).

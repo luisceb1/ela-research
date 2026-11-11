@@ -3,6 +3,11 @@
 This replaces earlier planning snapshots. Historical reports and commits remain evidence, not automatic instructions to rerun work. This consolidated state accompanies integration of PRs #46–#49. Review details and exact checked commits are preserved in [INTEGRATION_REVIEW](../reports/integration-20261104/REVIEW.md).
 
 
+## English documentation entry — 11 November 2026
+
+PR #58 is merged at `c7d8f7e92e7eb02e3fb619f6e8984f075ef84784`; the corrected UNC13A coverage calculation and its limitations are integrated. The [current findings page](../docs/CURRENT_FINDINGS.md) and [English evidence/reproduction guide](../docs/ENGLISH_GUIDE.md) provide the public reading route, with seven source-pinned report translations. Spanish originals and dated sections below remain preserved. No new biological analysis, data-access check or contact was performed for this documentation update. The language policy applies to new scientific/public documentation and new code comments/docstrings; it does not reopen closed scientific cycles.
+
+
 ## Current integrated status — 11 November 2026
 
 The six Claude commits ending at 5ef8825 and the closed STMN2 #57 analysis are reconciled in [INTEGRATION REVIEW](../reports/integration-20261111/REVIEW.md). Plans and original counts are preserved, the audit table has an explicit integration-review column, and unsupported inferential wording is corrected at its source (including the Ikegami report relied on by the audit). No new biological analysis or broad historical audit was opened.

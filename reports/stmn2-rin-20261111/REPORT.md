@@ -1,5 +1,8 @@
 # STMN2 y calidad de RNA: patrón positivo en 19 pares, límite en el filtro más estricto
 
+[English](REPORT.en.md)
+
+
 11/11/2026. **Sensibilidad exploratoria en la misma cohorte**, sin replicación independiente ni nuevos p-valores. [Protocolo](../../research/plans/2026-11-11-paired-stmn2-rin.md) fijado en `c444b5443b671f0aa8436109eb05a600f1fb0b86` antes de cruzar calidad con las diferencias de STMN2. El resultado original y la disponibilidad general del RIN ya eran conocidos.
 
 ## Evidencia

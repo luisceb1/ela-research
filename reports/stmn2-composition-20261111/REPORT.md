@@ -1,5 +1,8 @@
 # ST7 enlaza con los 45 pares; ajuste tisular común todavía no justificado
 
+[English](REPORT.en.md)
+
+
 11/11/2026. Revisión técnica y de comparabilidad, sin nuevo contraste biológico. [Alcance fijado](../../research/plans/2026-11-11-stmn2-composition-gate.md) antes de leer ST7. Los resultados STMN2 y RIN anteriores ya eran conocidos.
 
 ## Evidencia

@@ -3,6 +3,13 @@
 Este archivo contiene tareas actuales y condiciones de reapertura. [STATE](STATE.md) resume resultados; el [backlog anterior íntegro](history/README.md) conserva la cronología.
 
 
+## English documentation entry — 11 November 2026
+
+- [x] Integrate reviewed normalization/corrections through PR #58, merge `c7d8f7e92e7eb02e3fb619f6e8984f075ef84784`.
+- [x] Prepare an English README, current-findings page, reproduction guide and seven source-pinned report translations, preserving the Spanish originals. See [guide](../docs/ENGLISH_GUIDE.md). This is documentation work, not a new scientific analysis or independent validation.
+- [ ] When a translated source changes, update the affected English text, translation manifest and current summary together. Do not translate the entire historical archive or refit the same donors by default.
+
+
 ## Current integrated status — 11 November 2026
 
 The six Claude commits ending at 5ef8825 and the closed STMN2 #57 analysis are reconciled in [INTEGRATION REVIEW](../reports/integration-20261111/REVIEW.md). Plans and original counts are preserved, the audit table has an explicit integration-review column, and unsupported inferential wording is corrected at its source (including the Ikegami report relied on by the audit). No new biological analysis or broad historical audit was opened.
