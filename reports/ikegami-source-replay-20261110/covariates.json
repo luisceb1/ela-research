@@ -1,0 +1,271 @@
+{
+ "source_file": "src_MOESM1.xlsx",
+ "sha256": "aeacd9fdf134a8e0dbf02bf574e32338f22f38d55c542b8c4a4bf17424e7e1c9",
+ "bytes": 17845,
+ "versions": {
+  "numpy": "2.3.4",
+  "scipy": "1.17.0"
+ },
+ "n_cases": 35,
+ "cases_by_subtype": {
+  "Type 1": 12,
+  "Type 2a": 12,
+  "Type 2b": 11
+ },
+ "neuronal_loss_scores_matched": 35,
+ "covariate_tests": {
+  "age_at_death_years": {
+   "status": "tested",
+   "n_by_subtype": {
+    "Type 1": 12,
+    "Type 2a": 12,
+    "Type 2b": 11
+   },
+   "medians": {
+    "Type 1": 67.0,
+    "Type 2a": 69.0,
+    "Type 2b": 75.0
+   },
+   "kruskal_H": 5.262630873340139,
+   "kruskal_p": 0.07198370992041517,
+   "differs_at_0_05": false,
+   "pairwise_unadjusted": [
+    {
+     "a": "Type 1",
+     "b": "Type 2a",
+     "mannwhitney_u": 59.0,
+     "p_unadjusted": 0.46903335708602945
+    },
+    {
+     "a": "Type 1",
+     "b": "Type 2b",
+     "mannwhitney_u": 31.0,
+     "p_unadjusted": 0.033594658887971605
+    },
+    {
+     "a": "Type 2a",
+     "b": "Type 2b",
+     "mannwhitney_u": 39.5,
+     "p_unadjusted": 0.10894266704425758
+    }
+   ],
+   "kruskal_p_holm": 0.28793483968166067,
+   "differs_after_holm": false
+  },
+  "age_at_onset_years": {
+   "status": "tested",
+   "n_by_subtype": {
+    "Type 1": 12,
+    "Type 2a": 12,
+    "Type 2b": 11
+   },
+   "medians": {
+    "Type 1": 64.5,
+    "Type 2a": 67.5,
+    "Type 2b": 74.0
+   },
+   "kruskal_H": 6.250549724498538,
+   "kruskal_p": 0.04392485867855499,
+   "differs_at_0_05": true,
+   "pairwise_unadjusted": [
+    {
+     "a": "Type 1",
+     "b": "Type 2a",
+     "mannwhitney_u": 53.5,
+     "p_unadjusted": 0.29732825726942136
+    },
+    {
+     "a": "Type 1",
+     "b": "Type 2b",
+     "mannwhitney_u": 27.5,
+     "p_unadjusted": 0.019139993265400362
+    },
+    {
+     "a": "Type 2a",
+     "b": "Type 2b",
+     "mannwhitney_u": 40.0,
+     "p_unadjusted": 0.11546670862797681
+    }
+   ],
+   "kruskal_p_holm": 0.21962429339277495,
+   "differs_after_holm": false
+  },
+  "disease_duration_months": {
+   "status": "tested",
+   "n_by_subtype": {
+    "Type 1": 12,
+    "Type 2a": 12,
+    "Type 2b": 11
+   },
+   "medians": {
+    "Type 1": 32.0,
+    "Type 2a": 19.0,
+    "Type 2b": 11.0
+   },
+   "kruskal_H": 15.393593930039852,
+   "kruskal_p": 0.00045427992955067274,
+   "differs_at_0_05": true,
+   "pairwise_unadjusted": [
+    {
+     "a": "Type 1",
+     "b": "Type 2a",
+     "mannwhitney_u": 126.5,
+     "p_unadjusted": 0.0017935462457653356
+    },
+    {
+     "a": "Type 1",
+     "b": "Type 2b",
+     "mannwhitney_u": 117.0,
+     "p_unadjusted": 0.00187342829884136
+    },
+    {
+     "a": "Type 2a",
+     "b": "Type 2b",
+     "mannwhitney_u": 99.5,
+     "p_unadjusted": 0.04179653773696003
+    }
+   ],
+   "kruskal_p_holm": 0.0027256795773040366,
+   "differs_after_holm": true
+  },
+  "postmortem_interval_hours": {
+   "status": "tested",
+   "n_by_subtype": {
+    "Type 1": 12,
+    "Type 2a": 12,
+    "Type 2b": 11
+   },
+   "medians": {
+    "Type 1": 3.15,
+    "Type 2a": 3.05,
+    "Type 2b": 2.3
+   },
+   "kruskal_H": 4.289833925540144,
+   "kruskal_p": 0.11707775845324947,
+   "differs_at_0_05": false,
+   "pairwise_unadjusted": [
+    {
+     "a": "Type 1",
+     "b": "Type 2a",
+     "mannwhitney_u": 76.0,
+     "p_unadjusted": 0.8389246134671988
+    },
+    {
+     "a": "Type 1",
+     "b": "Type 2b",
+     "mannwhitney_u": 98.0,
+     "p_unadjusted": 0.05085149243290616
+    },
+    {
+     "a": "Type 2a",
+     "b": "Type 2b",
+     "mannwhitney_u": 91.5,
+     "p_unadjusted": 0.12305512976828485
+    }
+   ],
+   "kruskal_p_holm": 0.3512332753597484,
+   "differs_after_holm": false
+  },
+  "RIN": {
+   "status": "tested",
+   "n_by_subtype": {
+    "Type 1": 12,
+    "Type 2a": 12,
+    "Type 2b": 11
+   },
+   "medians": {
+    "Type 1": 7.4,
+    "Type 2a": 7.8,
+    "Type 2b": 8.2
+   },
+   "kruskal_H": 1.3716588829889496,
+   "kruskal_p": 0.5036722895738073,
+   "differs_at_0_05": false,
+   "pairwise_unadjusted": [
+    {
+     "a": "Type 1",
+     "b": "Type 2a",
+     "mannwhitney_u": 60.5,
+     "p_unadjusted": 0.5239256210897972
+    },
+    {
+     "a": "Type 1",
+     "b": "Type 2b",
+     "mannwhitney_u": 50.5,
+     "p_unadjusted": 0.3548381732048944
+    },
+    {
+     "a": "Type 2a",
+     "b": "Type 2b",
+     "mannwhitney_u": 51.5,
+     "p_unadjusted": 0.3872386246442894
+    }
+   ],
+   "kruskal_p_holm": 0.5036722895738073,
+   "differs_after_holm": false
+  },
+  "neuronal_loss_score": {
+   "status": "tested",
+   "n_by_subtype": {
+    "Type 1": 12,
+    "Type 2a": 12,
+    "Type 2b": 11
+   },
+   "medians": {
+    "Type 1": 2.0,
+    "Type 2a": 2.0,
+    "Type 2b": 3.0
+   },
+   "kruskal_H": 3.828111502024551,
+   "kruskal_p": 0.1474810256685523,
+   "differs_at_0_05": false,
+   "pairwise_unadjusted": [
+    {
+     "a": "Type 1",
+     "b": "Type 2a",
+     "mannwhitney_u": 63.0,
+     "p_unadjusted": 0.6001562830334498
+    },
+    {
+     "a": "Type 1",
+     "b": "Type 2b",
+     "mannwhitney_u": 38.5,
+     "p_unadjusted": 0.07681225229373918
+    },
+    {
+     "a": "Type 2a",
+     "b": "Type 2b",
+     "mannwhitney_u": 43.5,
+     "p_unadjusted": 0.14292933880036512
+    }
+   ],
+   "kruskal_p_holm": 0.3512332753597484,
+   "differs_after_holm": false
+  }
+ },
+ "join_key_uniqueness_disease_duration": {
+  "Type 1": {
+   "n": 12,
+   "unique": true,
+   "duplicated_values": {}
+  },
+  "Type 2a": {
+   "n": 12,
+   "unique": false,
+   "duplicated_values": {
+    "18.0": 2,
+    "20.0": 2,
+    "26.0": 2
+   }
+  },
+  "Type 2b": {
+   "n": 11,
+   "unique": false,
+   "duplicated_values": {
+    "12.0": 2,
+    "10.0": 2
+   }
+  }
+ },
+ "note": "A covariate that does not differ between subtypes cannot explain a difference between those subtypes. Per-case correlation with the measures is not computed: the figure sheets carry no case identifier and the plan forbids joining by row position."
+}
