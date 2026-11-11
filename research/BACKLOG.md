@@ -2,6 +2,13 @@
 
 Este archivo contiene tareas actuales y condiciones de reapertura. [STATE](STATE.md) resume resultados; el [backlog anterior íntegro](history/README.md) conserva la cronología.
 
+## Next actionable task — paired STMN2 design (11/11/2026)
+
+- [x] Bounded STMN2 junction/endpoint audit and exact technical-unit map, [report](../reports/stmn2-map-audit-20261111/REPORT.md). Partial map: 293/313 libraries, 128 shared donors across regions, one within-cervical multiplicity; four pure-ALS high-K cases represent four donors. No disease-effect model run.
+- [x] Correct STMN2 P1 (8.085x normalized, <10), denominator-summary labels and unsupported causal/inferential wording. Historical counts retained.
+- [ ] Write one paired STMN2 cortex/cervical protocol, separate from the UNC13A gate: verify preparation/batch compatibility, choose aggregation and total-denominator eligibility, count eligible donor pairs; stop if confounded or too sparse. Preserve zero-cryptic controls. Only then perform the one specified comparison. Existing signal has already informed this question; external replication remains necessary.
+- [ ] The 20 unmapped libraries remain excluded unless an exact documented technical key becomes available; do not infer donor from sample prefixes or expand downloads by default.
+
 ## Continuaciones científicas bloqueadas
 
 | Prioridad | Tarea | Entrada necesaria | Criterio de finalización |

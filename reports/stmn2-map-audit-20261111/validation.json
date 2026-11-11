@@ -1,0 +1,11 @@
+{
+  "python": "3.12.14",
+  "local_command": "python -m unittest discover -s tests -p test_audit_stmn2_units.py -v",
+  "tests": 12,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "full_suite": "CI required on PR; not claimed as locally executed",
+  "script_sha256": "7e7576277810b0030e1b79012074f6581dc57e033cf89c2804a43d49788acbfa",
+  "results_sha256": "635095b6273c2bd1dda3d6865c82198f2b9cdd2143d650878931c36f66ec5da8"
+}

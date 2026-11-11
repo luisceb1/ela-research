@@ -1,0 +1,113 @@
+{
+  "sources": {
+    "melamed.source": {
+      "name": "melamed",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6348009/fullTextXML",
+      "resolved_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6348009/fullTextXML",
+      "status": 200,
+      "bytes": 145455,
+      "sha256": "838b7539f38ba7cfb115cf41df1dbdc98f9318d26a6055f4e698dc650bc997cb"
+    },
+    "chain.source": {
+      "name": "chain",
+      "url": "https://hgdownload.soe.ucsc.edu/goldenPath/hg19/liftOver/hg19ToHg38.over.chain.gz",
+      "status": 200,
+      "bytes": 227698,
+      "sha256": "5c0598e500ceb5a78c73086929e8ef993aec309bcafb595139b53d440b125a1d"
+    },
+    "homes.source": {
+      "name": "homes",
+      "url": "https://duffel.rail.bio/recount3/human/homes_index",
+      "status": 200,
+      "bytes": 136,
+      "sha256": "df619a1c2752510be617c5e06f7563fcf7f2b42308ab463d678785cffbc0607d"
+    },
+    "author_map.source": {
+      "name": "author_map",
+      "url": "https://raw.githubusercontent.com/frattalab/cryptic_biology/80fa3d70418a4665a85d414e33c7c470a9312086/data/metadta_nygc.csv",
+      "status": 200,
+      "bytes": 933959,
+      "sha256": "52d62469ab4252c12e2eed4b8190e9b0e668ce51182a106bf49540dcfaf63df0"
+    },
+    "project_global.source": {
+      "name": "project_global",
+      "url": "https://duffel.rail.bio/recount3/human/data_sources/TARGET_ALS/metadata/TARGET_ALS.recount_project.MD.gz",
+      "resolved_url": "https://recount-opendata.s3.amazonaws.com/recount3/release/human/data_sources/TARGET_ALS/metadata/TARGET_ALS.recount_project.MD.gz",
+      "status": 200,
+      "bytes": 4556,
+      "sha256": "fcdc1568241d95689eca59ce8b04307f6b6f922cd11e9e6e357c61c3d8bbaaa9"
+    },
+    "study_cervical.source": {
+      "name": "study_cervical",
+      "url": "https://duffel.rail.bio/recount3/human/data_sources/TARGET_ALS/metadata/al/TALS_Spinal_Cord_Cervical/TARGET_ALS.recount_project.TALS_Spinal_Cord_Cervical.MD.gz",
+      "resolved_url": "https://recount-opendata.s3.amazonaws.com/recount3/release/human/data_sources/TARGET_ALS/metadata/al/TALS_Spinal_Cord_Cervical/TARGET_ALS.recount_project.TALS_Spinal_Cord_Cervical.MD.gz",
+      "status": 200,
+      "bytes": 1316,
+      "sha256": "97ecf225c3734fdf386def8c4507e69a344c94013f093ee49766316ba5d1a235"
+    },
+    "jung_table.source": {
+      "name": "jung_table",
+      "url": "https://raw.githubusercontent.com/chaeyunjung/pd-als-transcriptomics/8e57756b7b875e0e4b326ecb900ee43d14e49c9b/tables/TableS1_GSE153960_samples.tsv",
+      "resolved_url": "https://raw.githubusercontent.com/chaeyunjung/pd-als-transcriptomics/8e57756b7b875e0e4b326ecb900ee43d14e49c9b/tables/TableS1_GSE153960_samples.tsv",
+      "status": 200,
+      "bytes": 258914,
+      "sha256": "0398917532469cb20849e57ed74e6b5f12954b337fdde935a45f4d0d56cc2cba"
+    },
+    "study_cortex.source": {
+      "name": "study_cortex",
+      "url": "https://duffel.rail.bio/recount3/human/data_sources/TARGET_ALS/metadata/al/TALS_Cortex_Motor_Lateral/TARGET_ALS.recount_project.TALS_Cortex_Motor_Lateral.MD.gz",
+      "resolved_url": "https://recount-opendata.s3.amazonaws.com/recount3/release/human/data_sources/TARGET_ALS/metadata/al/TALS_Cortex_Motor_Lateral/TARGET_ALS.recount_project.TALS_Cortex_Motor_Lateral.MD.gz",
+      "status": 200,
+      "bytes": 1220,
+      "sha256": "e7cdce18b4e267b9de6d34b14bf90f65e4182e76ed129a20697e1724e07a57fe"
+    },
+    "quadros.source": {
+      "name": "quadros",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10766724/fullTextXML",
+      "resolved_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10766724/fullTextXML",
+      "status": 200,
+      "bytes": 203334,
+      "sha256": "4d605046832aa11ab6cf4285d5cf48adb8eb0bf747cd5ddd70eca9fea2ee90a1"
+    },
+    "qc_cervical.source": {
+      "name": "qc_cervical",
+      "url": "https://duffel.rail.bio/recount3/human/data_sources/TARGET_ALS/metadata/al/TALS_Spinal_Cord_Cervical/TARGET_ALS.recount_qc.TALS_Spinal_Cord_Cervical.MD.gz",
+      "resolved_url": "https://recount-opendata.s3.amazonaws.com/recount3/release/human/data_sources/TARGET_ALS/metadata/al/TALS_Spinal_Cord_Cervical/TARGET_ALS.recount_qc.TALS_Spinal_Cord_Cervical.MD.gz",
+      "status": 200,
+      "bytes": 42452,
+      "sha256": "fef948a36baeaf3a3573d00c7e0e521907dbd1be608055314a064c352658f001"
+    }
+  },
+  "pins": {
+    "Fratta": "80fa3d70418a4665a85d414e33c7c470a9312086",
+    "Jung": "8e57756b7b875e0e4b326ecb900ee43d14e49c9b"
+  },
+  "source_schema_used": {
+    "recount": [
+      "rail_id",
+      "external_id",
+      "project"
+    ],
+    "Fratta": [
+      "sample_id_rna",
+      "sample",
+      "external_subject_id",
+      "rna_tissue_source",
+      "project"
+    ],
+    "Jung": [
+      "gsm",
+      "sample_id_alt",
+      "subject_id",
+      "tissue",
+      "project",
+      "libprep"
+    ]
+  },
+  "source_policy": "Download to scratch only; no mixed or individual donor metadata committed; output aggregates only. GEO spot checks are recorded separately.",
+  "retrieval_failures": [
+    "GEO full-series response discarded at 7MB read limit; replaced by four technical record checks",
+    "Klim/Baughn Europe PMC XML returned errors/timeouts; primary PMC text read through browser retrieval"
+  ],
+  "runtime": "3.12.14"
+}

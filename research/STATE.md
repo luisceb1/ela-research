@@ -2,6 +2,15 @@
 
 This replaces earlier planning snapshots. Historical reports and commits remain evidence, not automatic instructions to rerun work. This consolidated state accompanies integration of PRs #46–#49. Review details and exact checked commits are preserved in [INTEGRATION_REVIEW](../reports/integration-20261104/REVIEW.md).
 
+## Current override — STMN2 measurement and technical units, 11 November 2026
+
+[Completed bounded audit](../reports/stmn2-map-audit-20261111/REPORT.md) supersedes older STMN2 claims below about unavailable donor identity, P1 confirmation, inference from Wilson overlap, and coverage ruling out confounding. No original counts were changed.
+
+- The sealed exon-1→2a junction is retained: direct hg38 literature and UCSC chain support the acceptor. A one-base difference at the terminal exon counting endpoint does not change the junction. The assay is a local junction-use proxy and cannot resolve alternative polyadenylation endpoints.
+- Exact region-scoped recount keys recover 293/313 library→declared-donor links: cortex 140/149, cervical 153/164. There are 128 shared donors across regions (all groups), 164 unique donors in the mapped union, and one cervical donor with two samples. The four pure-ALS cervical K≥20 samples are four declared donors. Two metadata routes agree on all 246 overlapping library links; four original GEO spot checks agree. This is partial technical design recovery, not independent cohort replication.
+- P1 ≥10x canonical coverage is **not met**: per-input-read normalized median ratio 8.085 (sensitivities 7.782/7.769), raw ratio 6.6. The cervical ALS C+K≥20 ratio summary is n=58, median 0.005684, max 0.543860; including all nonzero denominators gives n=92 and max 1.0. No new inferential biological test was performed.
+- Next bounded scientific task: fix a single paired STMN2 cortex/cervical protocol, verify library-preparation/batch compatibility, define coverage-based eligibility and multiplicity handling, then count eligible pairs before any effect. K=0 controls remain eligible if their total denominator is adequate. This task is distinct from the unchanged UNC13A #37 gate and functional K26 #44 request.
+
 ## Active scientific priorities
 
 | Priority | Status | Only input enabling analysis |

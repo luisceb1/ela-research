@@ -1,0 +1,61 @@
+{
+  "selection": "first GSM in each region/library-preparation stratum among exact matches; no count-based selection",
+  "records": [
+    {
+      "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM4659184&targ=self&form=text&view=quick",
+      "bytes": 4098,
+      "sha256": "55374f140fa7eb857d51e82d01f1342a1b2391ffdcc89b9f3371c7761d0c00cb",
+      "technical_fields_present": [
+        "project",
+        "sample id alt",
+        "subject id",
+        "tissue"
+      ],
+      "sample_key_found": true,
+      "donor_key_found": true,
+      "region_found": true
+    },
+    {
+      "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM4660002&targ=self&form=text&view=quick",
+      "bytes": 4103,
+      "sha256": "c00d6a7e7862d0bd2291bd49d0e2bf4b14c996776840ab28486b25dcaa678e30",
+      "technical_fields_present": [
+        "project",
+        "sample id alt",
+        "subject id",
+        "tissue"
+      ],
+      "sample_key_found": true,
+      "donor_key_found": true,
+      "region_found": true
+    },
+    {
+      "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM4659170&targ=self&form=text&view=quick",
+      "bytes": 4098,
+      "sha256": "740d868cd98f0a77e1bde142264b4b0042585f916e7ee2d4ee090e5bdeea4ed5",
+      "technical_fields_present": [
+        "project",
+        "sample id alt",
+        "subject id",
+        "tissue"
+      ],
+      "sample_key_found": true,
+      "donor_key_found": true,
+      "region_found": true
+    },
+    {
+      "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM4659991&targ=self&form=text&view=quick",
+      "bytes": 4097,
+      "sha256": "fdf63316446400717d044c63ccf762a62e8ab732dd7ed1e14ce09e27a93621db",
+      "technical_fields_present": [
+        "project",
+        "sample id alt",
+        "subject id",
+        "tissue"
+      ],
+      "sample_key_found": true,
+      "donor_key_found": true,
+      "region_found": true
+    }
+  ]
+}
