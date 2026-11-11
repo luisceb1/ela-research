@@ -1,0 +1,140 @@
+{
+  "evidence": "exploratory RIN restriction of original cohort, no additional p-values",
+  "metadata_sha256": "c1bf21493c4a2773e27ff787e60267fc2e1304ce11e84e644c03c700cc68f048",
+  "input_sha256": {
+    "project_global.source": "fcdc1568241d95689eca59ce8b04307f6b6f922cd11e9e6e357c61c3d8bbaaa9",
+    "author_map.source": "52d62469ab4252c12e2eed4b8190e9b0e668ce51182a106bf49540dcfaf63df0",
+    "jung_table.source": "0398917532469cb20849e57ed74e6b5f12954b337fdde935a45f4d0d56cc2cba",
+    "repo/reports/stmn2-derivation-20261111/results_corteza.json": "9053d7e24421419b70741322f2fc5514c18c5b04cba627d13f29ea71cd8b9e7a",
+    "repo/reports/stmn2-derivation-20261111/results_cervical.json": "27b5b82dd2624193e810cf0d0417842de15267de5e48df3601f3bd078a11dc18"
+  },
+  "baseline_n_pairs": 45,
+  "baseline_selection": {
+    "common_declared_donors_before_filters": 104,
+    "exclusions_in_order": {
+      "not_target_group_in_both": 29,
+      "insufficient_total_denominator": 29,
+      "preparation_mismatch": 1
+    }
+  },
+  "metadata_compatible_pairs": 45,
+  "baseline_pair_failures": {},
+  "observed_qc_preparation_labels": {
+    "Manual KAPA Total": 124,
+    "Automated KAPA Total": 122
+  },
+  "subsets": {
+    "6": {
+      "rule": "RIN>=6 both, absolute RIN difference<=1",
+      "retained": {
+        "n_pairs": 19,
+        "cervical_higher": 10,
+        "ties": 8,
+        "cervical_lower": 1,
+        "median_paired_difference": 0.002551020408163265,
+        "preparation_strata": {
+          "Manual KAPA Total": 10,
+          "Automated KAPA Total": 9
+        },
+        "coverage": {
+          "cortex": {
+            "canonical_median": 1150,
+            "total_median": 1150,
+            "rin_median": 6.9
+          },
+          "cervical": {
+            "canonical_median": 116,
+            "total_median": 120,
+            "rin_median": 7.2
+          }
+        },
+        "rin_abs_difference_median": 0.5
+      },
+      "excluded_compatible_pairs": {
+        "n_pairs": 26,
+        "cervical_higher": 14,
+        "ties": 6,
+        "cervical_lower": 6,
+        "median_paired_difference": 0.011058708733127337,
+        "preparation_strata": {
+          "Manual KAPA Total": 15,
+          "Automated KAPA Total": 11
+        },
+        "coverage": {
+          "cortex": {
+            "canonical_median": 657.0,
+            "total_median": 663.0,
+            "rin_median": 5.9
+          },
+          "cervical": {
+            "canonical_median": 78.0,
+            "total_median": 84.5,
+            "rin_median": 6.55
+          }
+        },
+        "rin_abs_difference_median": 1.2500000000000004
+      },
+      "exclusion_reasons_nonexclusive": {
+        "either_RIN_below_minimum": 18,
+        "paired_RIN_difference_over_1": 16
+      },
+      "interpretation": "positive_median_persists_descriptively"
+    },
+    "7": {
+      "rule": "RIN>=7 both, absolute RIN difference<=1",
+      "retained": {
+        "n_pairs": 9,
+        "cervical_higher": 4,
+        "ties": 4,
+        "cervical_lower": 1,
+        "median_paired_difference": 0.0,
+        "preparation_strata": {
+          "Manual KAPA Total": 5,
+          "Automated KAPA Total": 4
+        },
+        "coverage": {
+          "cortex": {
+            "canonical_median": 921,
+            "total_median": 921,
+            "rin_median": 7.5
+          },
+          "cervical": {
+            "canonical_median": 45,
+            "total_median": 53,
+            "rin_median": 7.6
+          }
+        },
+        "rin_abs_difference_median": 0.39999999999999947
+      },
+      "excluded_compatible_pairs": {
+        "n_pairs": 36,
+        "cervical_higher": 20,
+        "ties": 10,
+        "cervical_lower": 6,
+        "median_paired_difference": 0.010006660006660006,
+        "preparation_strata": {
+          "Manual KAPA Total": 20,
+          "Automated KAPA Total": 16
+        },
+        "coverage": {
+          "cortex": {
+            "canonical_median": 783.0,
+            "total_median": 784.0,
+            "rin_median": 6.0
+          },
+          "cervical": {
+            "canonical_median": 92.0,
+            "total_median": 96.5,
+            "rin_median": 6.75
+          }
+        },
+        "rin_abs_difference_median": 0.8999999999999999
+      },
+      "exclusion_reasons_nonexclusive": {
+        "either_RIN_below_minimum": 35,
+        "paired_RIN_difference_over_1": 16
+      },
+      "interpretation": "insufficient_pairs"
+    }
+  }
+}

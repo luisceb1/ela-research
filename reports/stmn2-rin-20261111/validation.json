@@ -1,0 +1,8 @@
+{
+  "python": "3.12.14",
+  "local_tests": 5,
+  "failures": 0,
+  "skips": 0,
+  "script_sha256": "e6701c0a2fb68d212d4340434c84aeb450ded4d00779fa1b9149ff44aa7c873d",
+  "results_sha256": "722508125df5c706aabd9cd2ee686e0c2274d53741381f4aa18b41066e742901"
+}

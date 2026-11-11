@@ -3,6 +3,12 @@
 Este archivo contiene tareas actuales y condiciones de reapertura. [STATE](STATE.md) resume resultados; el [backlog anterior íntegro](history/README.md) conserva la cronología.
 
 
+## STMN2 RIN sensitivity completed — 11 November 2026
+
+[RIN report](../reports/stmn2-rin-20261111/REPORT.md), fixed protocol c444b5443b671f0aa8436109eb05a600f1fb0b86. All original 45 pairs reproduce and agree with ST3 on donor/region/preparation; valid RIN in all 90 libraries. Main restriction (RIN≥6 both, absolute difference≤1) leaves **19 pairs: 10 cervical-higher / 8 ties / 1 lower**, median paired local-ratio difference **+0.002551**. Stricter RIN≥7 leaves **9 pairs, 4/4/1, median zero** and fails the fixed ≥10-pair interpretation gate. No additional p-values or regression. This is descriptive sensitivity, not full QC adjustment or independent replication; do not claim uniform robustness to RIN.
+
+The earlier pending RIN task is complete. Next concrete input is ST7 NYGC composition estimates: fix inspection scope, verify per-library granularity/exact keys and method, then define one analysis before inspecting effects. Do not search further RIN thresholds. Composition, true extraction/sequencing batch, selection and unequal depth remain unresolved. #37 UNC13A and #44 K26 unchanged.
+
 ## Source gate completed — 11 November 2026
 
 [Three-source availability review](../reports/paired-stmn2-source-gate-20261111/REPORT.md): no independent replication source accepted yet. **New executable QC input found:** NYGC ST3 metadata, Zenodo 20090702, exact rna_id matches for 308/313 original libraries (147 cortex, 161 cervical), all with valid RIN and preparation. This is demonstrated overlap with the original cohort, not independent validation. No new effect was fitted.
