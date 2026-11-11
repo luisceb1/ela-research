@@ -26,7 +26,7 @@ This is a limitation of the inspected metadata **relative to our specified contr
 
 An author clarification should establish whether Batch 1–3 correspond one-to-one to the declared independent differentiations, whether each numeric entry represents a distinct neuron, and whether shared cultures/coverslips or repeat recordings add nesting. An existing technical mapping and any available recording-day/QC information are welcome; no custom schema or new experiment is requested.
 
-The follow-up is [drafted](../../research/drafts/2026-11-11-fratta-published-fig4d-metadata.md), not sent. It acknowledges the now-public values and asks only about remaining design information. Its authorization is separate from the already approved source review.
+The follow-up was [sent with explicit authorization](COMMUNICATION_LOG.md) on 11 November 2026. It acknowledges the now-public values and asks only about remaining design information. The approved body is retained in its original draft path; no further follow-up is authorized by this record.
 
 ## Reproduction and limits of this review
 

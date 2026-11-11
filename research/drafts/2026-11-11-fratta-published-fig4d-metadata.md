@@ -1,6 +1,6 @@
-# Fratta follow-up: published Fig.4d metadata — DRAFT, NOT SENT
+# Fratta follow-up: published Fig.4d metadata — SENT WITH AUTHORIZATION
 
-11 November 2026. Intended as a reply in the existing Fig.4d source-data thread with Pietro Fratta. This file does not authorize or execute sending.
+Sent on 11 November 2026, after Luis explicitly authorized this follow-up, as a reply in the existing Fig.4d source-data thread with Pietro Fratta. Gmail confirmed SENT. The approved body below was used unchanged; this record does not authorize further messages.
 
 Subject: Re: Source data for Fig. 4d — UNC13A splice correction in spinal motor neurons
 
