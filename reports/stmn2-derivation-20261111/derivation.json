@@ -1,0 +1,49 @@
+{
+ "date": "2026-11-11",
+ "gene": "STMN2",
+ "assembly": "GRCh38/hg38",
+ "chromosome": "chr8",
+ "strand": "+",
+ "accepted": {
+  "canonical": [
+   79611214,
+   79636801
+  ],
+  "cryptic": [
+   79611214,
+   79616821
+  ]
+ },
+ "anchors": [
+  {
+   "feature": "exon 1 end",
+   "hg19": 80523449,
+   "hg38": 79611214,
+   "offset": 912235
+  },
+  {
+   "feature": "exon 2 start",
+   "hg19": 80549036,
+   "hg38": 79636801,
+   "offset": 912235
+  }
+ ],
+ "published_cryptic_exon_hg19": [
+  80529057,
+  80529284
+ ],
+ "published_cryptic_exon_hg38_derived": [
+  79616822,
+  79617049
+ ],
+ "accepted_cryptic_is_flagged_annotated": 1,
+ "plan_criterion_that_failed": "annotated==0 would have excluded the published event",
+ "annotated0_candidates_rejected": [
+  79613669,
+  79613822,
+  79615701,
+  79630995,
+  79631040
+ ],
+ "rejection_reason": "Passed every structural check (shared donor, GT/AG, novel acceptor inside intron 1) but none matches the published cryptic-exon start derived from the double anchor."
+}

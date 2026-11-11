@@ -1,0 +1,1788 @@
+{
+ "tissue": "",
+ "coordinate_conversion": "sealed intronic 0-based half-open -> [start0+1, end0] 1-based inclusive",
+ "inputs": {
+  "jx.ALL.RR.gz": {
+   "sha256": "b5ec4d141178846a122fe5fd47c41fc1b6e056e525eecf4674fea85b8e870199",
+   "bytes": 35861888
+  },
+  "jx.ALL.MM.gz": {
+   "sha256": "31a8ec93a7f949f92e84aa693cd152cb0f03288b52d5361b25ac6eec5aec7428",
+   "bytes": 157771693
+  },
+  "jx.ALL.ID.gz": {
+   "sha256": "a0b62fff4fc9c361cd0d1d735cb1de4e18cdcba582bedcc9bd2ee599b0ed61a6",
+   "bytes": 427
+  },
+  "study.MD.gz": {
+   "sha256": "a5eb2449eec94ae5f513e523f64c97b484a73d00e6dfe80e76dd3db5728d068e",
+   "bytes": 2432
+  }
+ },
+ "assay_shape": {
+  "total_junctions": 2678581,
+  "junctions_on_target_chromosome": 109969,
+  "share_on_target_chromosome": 0.0411,
+  "distinct_chromosomes": 127,
+  "looks_targeted_not_transcriptome_wide": false,
+  "note": "Heuristic, not proof. When true, verify the assay against the source publication before treating coverage as comparable to transcriptome-wide junction counts."
+ },
+ "matrix_header": {
+  "rows": 2678581,
+  "columns": 149,
+  "nonzeros": 42269332
+ },
+ "positive_control": "canonical",
+ "located": {
+  "cryptic": {
+   "row": 2389629,
+   "start_1based": 79611215,
+   "end_1based": 79616821,
+   "strand": "+",
+   "annotated": "1",
+   "left_motif": "GT",
+   "right_motif": "AG"
+  },
+  "canonical": {
+   "row": 2389633,
+   "start_1based": 79611215,
+   "end_1based": 79636801,
+   "strand": "+",
+   "annotated": "1",
+   "left_motif": "GT",
+   "right_motif": "AG"
+  }
+ },
+ "min_coverage": 20,
+ "metadata_columns_read": [
+  "Subject Group"
+ ],
+ "personal_data_note": "Only the subject-group column was read. Sex, ethnicity, ages and site of onset were deliberately not read, and no individual clinical row appears in this output.",
+ "n_samples": 149,
+ "by_group": {
+  "Other Neurological Disorders": {
+   "n": 3,
+   "samples_with_any_cryptic_read": 0,
+   "samples_with_cryptic_at_or_above_threshold": 0,
+   "summed_ratio": {
+    "n": 3,
+    "median": 0.0,
+    "min": 0.0,
+    "max": 0.0
+   },
+   "inclusion_psi": {
+    "n": 3,
+    "median": 0.0,
+    "min": 0.0,
+    "max": 0.0
+   },
+   "per_junction_counts": {
+    "canonical": {
+     "median": 1425,
+     "min": 1153,
+     "max": 2316,
+     "samples_with_any_read": 3,
+     "samples_at_or_above_threshold": 3
+    },
+    "cryptic": {
+     "median": 0,
+     "min": 0,
+     "max": 0,
+     "samples_with_any_read": 0,
+     "samples_at_or_above_threshold": 0
+    }
+   },
+   "canonical_counts": {
+    "median": 1425,
+    "min": 1153,
+    "max": 2316
+   }
+  },
+  "ALS Spectrum MND": {
+   "n": 84,
+   "samples_with_any_cryptic_read": 31,
+   "samples_with_cryptic_at_or_above_threshold": 0,
+   "summed_ratio": {
+    "n": 84,
+    "median": 0.0,
+    "min": 0.0,
+    "max": 0.02911
+   },
+   "inclusion_psi": {
+    "n": 84,
+    "median": 0.0,
+    "min": 0.0,
+    "max": 0.02911
+   },
+   "per_junction_counts": {
+    "canonical": {
+     "median": 632.5,
+     "min": 12,
+     "max": 2235,
+     "samples_with_any_read": 84,
+     "samples_at_or_above_threshold": 82
+    },
+    "cryptic": {
+     "median": 0.0,
+     "min": 0,
+     "max": 14,
+     "samples_with_any_read": 31,
+     "samples_at_or_above_threshold": 0
+    }
+   },
+   "canonical_counts": {
+    "median": 632.5,
+    "min": 12,
+    "max": 2235
+   }
+  },
+  "ALS Spectrum MND, Other Neurological Disorders": {
+   "n": 25,
+   "samples_with_any_cryptic_read": 9,
+   "samples_with_cryptic_at_or_above_threshold": 0,
+   "summed_ratio": {
+    "n": 25,
+    "median": 0.0,
+    "min": 0.0,
+    "max": 0.01821
+   },
+   "inclusion_psi": {
+    "n": 25,
+    "median": 0.0,
+    "min": 0.0,
+    "max": 0.01821
+   },
+   "per_junction_counts": {
+    "canonical": {
+     "median": 623,
+     "min": 181,
+     "max": 3224,
+     "samples_with_any_read": 25,
+     "samples_at_or_above_threshold": 25
+    },
+    "cryptic": {
+     "median": 0,
+     "min": 0,
+     "max": 10,
+     "samples_with_any_read": 9,
+     "samples_at_or_above_threshold": 0
+    }
+   },
+   "canonical_counts": {
+    "median": 623,
+    "min": 181,
+    "max": 3224
+   }
+  },
+  "(unlabelled)": {
+   "n": 23,
+   "samples_with_any_cryptic_read": 9,
+   "samples_with_cryptic_at_or_above_threshold": 0,
+   "summed_ratio": {
+    "n": 23,
+    "median": 0.0,
+    "min": 0.0,
+    "max": 0.01435
+   },
+   "inclusion_psi": {
+    "n": 23,
+    "median": 0.0,
+    "min": 0.0,
+    "max": 0.01435
+   },
+   "per_junction_counts": {
+    "canonical": {
+     "median": 687,
+     "min": 10,
+     "max": 1304,
+     "samples_with_any_read": 23,
+     "samples_at_or_above_threshold": 22
+    },
+    "cryptic": {
+     "median": 0,
+     "min": 0,
+     "max": 12,
+     "samples_with_any_read": 9,
+     "samples_at_or_above_threshold": 0
+    }
+   },
+   "canonical_counts": {
+    "median": 687,
+    "min": 10,
+    "max": 1304
+   }
+  },
+  "Non-Neurological Control": {
+   "n": 13,
+   "samples_with_any_cryptic_read": 1,
+   "samples_with_cryptic_at_or_above_threshold": 0,
+   "summed_ratio": {
+    "n": 13,
+    "median": 0.0,
+    "min": 0.0,
+    "max": 0.00855
+   },
+   "inclusion_psi": {
+    "n": 13,
+    "median": 0.0,
+    "min": 0.0,
+    "max": 0.00855
+   },
+   "per_junction_counts": {
+    "canonical": {
+     "median": 883,
+     "min": 14,
+     "max": 2152,
+     "samples_with_any_read": 13,
+     "samples_at_or_above_threshold": 12
+    },
+    "cryptic": {
+     "median": 0,
+     "min": 0,
+     "max": 1,
+     "samples_with_any_read": 1,
+     "samples_at_or_above_threshold": 0
+    }
+   },
+   "canonical_counts": {
+    "median": 883,
+    "min": 14,
+    "max": 2152
+   }
+  },
+  "Pre-fALS, Other Neurological Disorders": {
+   "n": 1,
+   "samples_with_any_cryptic_read": 0,
+   "samples_with_cryptic_at_or_above_threshold": 0,
+   "summed_ratio": {
+    "n": 1,
+    "median": 0.0,
+    "min": 0.0,
+    "max": 0.0
+   },
+   "inclusion_psi": {
+    "n": 1,
+    "median": 0.0,
+    "min": 0.0,
+    "max": 0.0
+   },
+   "per_junction_counts": {
+    "canonical": {
+     "median": 76,
+     "min": 76,
+     "max": 76,
+     "samples_with_any_read": 1,
+     "samples_at_or_above_threshold": 1
+    },
+    "cryptic": {
+     "median": 0,
+     "min": 0,
+     "max": 0,
+     "samples_with_any_read": 0,
+     "samples_at_or_above_threshold": 0
+    }
+   },
+   "canonical_counts": {
+    "median": 76,
+    "min": 76,
+    "max": 76
+   }
+  }
+ },
+ "ratio_definitions": {
+  "summed_ratio": "(cryptic_left + cryptic_right) / (that sum + canonical); kept for continuity, inflated about twofold at low values",
+  "inclusion_psi": "mean(cryptic_left, cryptic_right) / (that mean + canonical); puts inclusion and exclusion on the same per-junction footing"
+ },
+ "samples": [
+  {
+   "rail_id": "829472",
+   "group": "Other Neurological Disorders",
+   "counts": {
+    "canonical": 2316,
+    "cryptic": 0
+   },
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
+  },
+  {
+   "rail_id": "829473",
+   "group": "ALS Spectrum MND",
+   "counts": {
+    "canonical": 508,
+    "cryptic": 0
+   },
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
+  },
+  {
+   "rail_id": "829476",
+   "group": "ALS Spectrum MND, Other Neurological Disorders",
+   "counts": {
+    "canonical": 646,
+    "cryptic": 1
+   },
+   "summed_ratio": 0.00155,
+   "inclusion_psi": 0.00155
+  },
+  {
+   "rail_id": "829477",
+   "group": "ALS Spectrum MND",
+   "counts": {
+    "canonical": 717,
+    "cryptic": 1
+   },
+   "summed_ratio": 0.00139,
+   "inclusion_psi": 0.00139
+  },
+  {
+   "rail_id": "829478",
+   "group": "ALS Spectrum MND",
+   "counts": {
+    "canonical": 83,
+    "cryptic": 0
+   },
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
+  },
+  {
+   "rail_id": "829480",
+   "group": "ALS Spectrum MND",
+   "counts": {
+    "canonical": 1464,
+    "cryptic": 0
+   },
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
+  },
+  {
+   "rail_id": "829481",
+   "group": "(unlabelled)",
+   "counts": {
+    "canonical": 687,
+    "cryptic": 10
+   },
+   "summed_ratio": 0.01435,
+   "inclusion_psi": 0.01435
+  },
+  {
+   "rail_id": "829482",
+   "group": "ALS Spectrum MND, Other Neurological Disorders",
+   "counts": {
+    "canonical": 3224,
+    "cryptic": 0
+   },
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
+  },
+  {
+   "rail_id": "829483",
+   "group": "ALS Spectrum MND, Other Neurological Disorders",
+   "counts": {
+    "canonical": 575,
+    "cryptic": 0
+   },
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
+  },
+  {
+   "rail_id": "829484",
+   "group": "Other Neurological Disorders",
+   "counts": {
+    "canonical": 1153,
+    "cryptic": 0
+   },
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
+  },
+  {
+   "rail_id": "829485",
+   "group": "ALS Spectrum MND",
+   "counts": {
+    "canonical": 131,
+    "cryptic": 0
+   },
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
+  },
+  {
+   "rail_id": "829486",
+   "group": "ALS Spectrum MND",
+   "counts": {
+    "canonical": 154,
+    "cryptic": 0
+   },
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
+  },
+  {
+   "rail_id": "829488",
+   "group": "ALS Spectrum MND, Other Neurological Disorders",
+   "counts": {
+    "canonical": 196,
+    "cryptic": 0
+   },
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
+  },
+  {
+   "rail_id": "829490",
+   "group": "ALS Spectrum MND",
+   "counts": {
+    "canonical": 652,
+    "cryptic": 10
+   },
+   "summed_ratio": 0.01511,
+   "inclusion_psi": 0.01511
+  },
+  {
+   "rail_id": "829604",
+   "group": "Other Neurological Disorders",
+   "counts": {
+    "canonical": 1425,
+    "cryptic": 0
+   },
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
+  },
+  {
+   "rail_id": "829605",
+   "group": "ALS Spectrum MND, Other Neurological Disorders",
+   "counts": {
+    "canonical": 943,
+    "cryptic": 8
+   },
+   "summed_ratio": 0.00841,
+   "inclusion_psi": 0.00841
+  },
+  {
+   "rail_id": "829606",
+   "group": "ALS Spectrum MND",
+   "counts": {
+    "canonical": 1291,
+    "cryptic": 3
+   },
+   "summed_ratio": 0.00232,
+   "inclusion_psi": 0.00232
+  },
+  {
+   "rail_id": "829607",
+   "group": "Non-Neurological Control",
+   "counts": {
+    "canonical": 451,
+    "cryptic": 0
+   },
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
+  },
+  {
+   "rail_id": "829610",
+   "group": "ALS Spectrum MND",
+   "counts": {
+    "canonical": 464,
+    "cryptic": 2
+   },
+   "summed_ratio": 0.00429,
+   "inclusion_psi": 0.00429
+  },
+  {
+   "rail_id": "829612",
+   "group": "ALS Spectrum MND",
+   "counts": {
+    "canonical": 476,
+    "cryptic": 6
+   },
+   "summed_ratio": 0.01245,
+   "inclusion_psi": 0.01245
+  },
+  {
+   "rail_id": "829613",
+   "group": "(unlabelled)",
+   "counts": {
+    "canonical": 1080,
+    "cryptic": 0
+   },
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
+  },
+  {
+   "rail_id": "829616",
+   "group": "ALS Spectrum MND, Other Neurological Disorders",
+   "counts": {
+    "canonical": 372,
+    "cryptic": 0
+   },
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
+  },
+  {
+   "rail_id": "829617",
+   "group": "ALS Spectrum MND",
+   "counts": {
+    "canonical": 662,
+    "cryptic": 2
+   },
+   "summed_ratio": 0.00301,
+   "inclusion_psi": 0.00301
+  },
+  {
+   "rail_id": "829730",
+   "group": "ALS Spectrum MND",
+   "counts": {
+    "canonical": 877,
+    "cryptic": 0
+   },
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
+  },
+  {
+   "rail_id": "829731",
+   "group": "ALS Spectrum MND",
+   "counts": {
+    "canonical": 498,
+    "cryptic": 0
+   },
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
+  },
+  {
+   "rail_id": "829732",
+   "group": "ALS Spectrum MND",
+   "counts": {
+    "canonical": 208,
+    "cryptic": 0
+   },
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
+  },
+  {
+   "rail_id": "829733",
+   "group": "(unlabelled)",
+   "counts": {
+    "canonical": 399,
+    "cryptic": 0
+   },
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
+  },
+  {
+   "rail_id": "829734",
+   "group": "ALS Spectrum MND",
+   "counts": {
+    "canonical": 1811,
+    "cryptic": 5
+   },
+   "summed_ratio": 0.00275,
+   "inclusion_psi": 0.00275
+  },
+  {
+   "rail_id": "829736",
+   "group": "Non-Neurological Control",
+   "counts": {
+    "canonical": 1121,
+    "cryptic": 0
+   },
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
+  },
+  {
+   "rail_id": "829737",
+   "group": "ALS Spectrum MND",
+   "counts": {
+    "canonical": 605,
+    "cryptic": 0
+   },
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
+  },
+  {
+   "rail_id": "829738",
+   "group": "ALS Spectrum MND",
+   "counts": {
+    "canonical": 441,
+    "cryptic": 0
+   },
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
+  },
+  {
+   "rail_id": "829739",
+   "group": "ALS Spectrum MND",
+   "counts": {
+    "canonical": 453,
+    "cryptic": 2
+   },
+   "summed_ratio": 0.0044,
+   "inclusion_psi": 0.0044
+  },
+  {
+   "rail_id": "829740",
+   "group": "ALS Spectrum MND",
+   "counts": {
+    "canonical": 1092,
+    "cryptic": 1
+   },
+   "summed_ratio": 0.00091,
+   "inclusion_psi": 0.00091
+  },
+  {
+   "rail_id": "829744",
+   "group": "ALS Spectrum MND, Other Neurological Disorders",
+   "counts": {
+    "canonical": 248,
+    "cryptic": 0
+   },
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
+  },
+  {
+   "rail_id": "829745",
+   "group": "ALS Spectrum MND",
+   "counts": {
+    "canonical": 542,
+    "cryptic": 0
+   },
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
+  },
+  {
+   "rail_id": "829746",
+   "group": "ALS Spectrum MND",
+   "counts": {
+    "canonical": 819,
+    "cryptic": 0
+   },
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
+  },
+  {
+   "rail_id": "829856",
+   "group": "ALS Spectrum MND",
+   "counts": {
+    "canonical": 1524,
+    "cryptic": 0
+   },
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
+  },
+  {
+   "rail_id": "829860",
+   "group": "ALS Spectrum MND",
+   "counts": {
+    "canonical": 730,
+    "cryptic": 0
+   },
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
+  },
+  {
+   "rail_id": "829862",
+   "group": "ALS Spectrum MND",
+   "counts": {
+    "canonical": 616,
+    "cryptic": 3
+   },
+   "summed_ratio": 0.00485,
+   "inclusion_psi": 0.00485
+  },
+  {
+   "rail_id": "829864",
+   "group": "(unlabelled)",
+   "counts": {
+    "canonical": 912,
+    "cryptic": 6
+   },
+   "summed_ratio": 0.00654,
+   "inclusion_psi": 0.00654
+  },
+  {
+   "rail_id": "829865",
+   "group": "(unlabelled)",
+   "counts": {
+    "canonical": 349,
+    "cryptic": 0
+   },
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
+  },
+  {
+   "rail_id": "829866",
+   "group": "ALS Spectrum MND",
+   "counts": {
+    "canonical": 1085,
+    "cryptic": 0
+   },
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
+  },
+  {
+   "rail_id": "829867",
+   "group": "ALS Spectrum MND",
+   "counts": {
+    "canonical": 479,
+    "cryptic": 0
+   },
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
+  },
+  {
+   "rail_id": "829868",
+   "group": "ALS Spectrum MND",
+   "counts": {
+    "canonical": 704,
+    "cryptic": 0
+   },
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
+  },
+  {
+   "rail_id": "829869",
+   "group": "ALS Spectrum MND",
+   "counts": {
+    "canonical": 627,
+    "cryptic": 0
+   },
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
+  },
+  {
+   "rail_id": "829872",
+   "group": "ALS Spectrum MND",
+   "counts": {
+    "canonical": 314,
+    "cryptic": 1
+   },
+   "summed_ratio": 0.00317,
+   "inclusion_psi": 0.00317
+  },
+  {
+   "rail_id": "829873",
+   "group": "ALS Spectrum MND, Other Neurological Disorders",
+   "counts": {
+    "canonical": 703,
+    "cryptic": 0
+   },
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
+  },
+  {
+   "rail_id": "829984",
+   "group": "ALS Spectrum MND",
+   "counts": {
+    "canonical": 826,
+    "cryptic": 0
+   },
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
+  },
+  {
+   "rail_id": "829985",
+   "group": "ALS Spectrum MND, Other Neurological Disorders",
+   "counts": {
+    "canonical": 539,
+    "cryptic": 10
+   },
+   "summed_ratio": 0.01821,
+   "inclusion_psi": 0.01821
+  },
+  {
+   "rail_id": "829990",
+   "group": "ALS Spectrum MND",
+   "counts": {
+    "canonical": 489,
+    "cryptic": 7
+   },
+   "summed_ratio": 0.01411,
+   "inclusion_psi": 0.01411
+  },
+  {
+   "rail_id": "829992",
+   "group": "(unlabelled)",
+   "counts": {
+    "canonical": 991,
+    "cryptic": 2
+   },
+   "summed_ratio": 0.00201,
+   "inclusion_psi": 0.00201
+  },
+  {
+   "rail_id": "829994",
+   "group": "ALS Spectrum MND, Other Neurological Disorders",
+   "counts": {
+    "canonical": 715,
+    "cryptic": 0
+   },
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
+  },
+  {
+   "rail_id": "829996",
+   "group": "ALS Spectrum MND, Other Neurological Disorders",
+   "counts": {
+    "canonical": 182,
+    "cryptic": 0
+   },
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
+  },
+  {
+   "rail_id": "829997",
+   "group": "ALS Spectrum MND",
+   "counts": {
+    "canonical": 467,
+    "cryptic": 14
+   },
+   "summed_ratio": 0.02911,
+   "inclusion_psi": 0.02911
+  },
+  {
+   "rail_id": "829998",
+   "group": "Non-Neurological Control",
+   "counts": {
+    "canonical": 14,
+    "cryptic": 0
+   },
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
+  },
+  {
+   "rail_id": "830000",
+   "group": "ALS Spectrum MND",
+   "counts": {
+    "canonical": 1150,
+    "cryptic": 0
+   },
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
+  },
+  {
+   "rail_id": "830114",
+   "group": "ALS Spectrum MND",
+   "counts": {
+    "canonical": 1563,
+    "cryptic": 11
+   },
+   "summed_ratio": 0.00699,
+   "inclusion_psi": 0.00699
+  },
+  {
+   "rail_id": "830115",
+   "group": "ALS Spectrum MND, Other Neurological Disorders",
+   "counts": {
+    "canonical": 802,
+    "cryptic": 0
+   },
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
+  },
+  {
+   "rail_id": "830116",
+   "group": "ALS Spectrum MND, Other Neurological Disorders",
+   "counts": {
+    "canonical": 623,
+    "cryptic": 1
+   },
+   "summed_ratio": 0.0016,
+   "inclusion_psi": 0.0016
+  },
+  {
+   "rail_id": "830117",
+   "group": "(unlabelled)",
+   "counts": {
+    "canonical": 761,
+    "cryptic": 0
+   },
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
+  },
+  {
+   "rail_id": "830118",
+   "group": "ALS Spectrum MND, Other Neurological Disorders",
+   "counts": {
+    "canonical": 280,
+    "cryptic": 5
+   },
+   "summed_ratio": 0.01754,
+   "inclusion_psi": 0.01754
+  },
+  {
+   "rail_id": "830126",
+   "group": "ALS Spectrum MND",
+   "counts": {
+    "canonical": 1165,
+    "cryptic": 0
+   },
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
+  },
+  {
+   "rail_id": "830128",
+   "group": "(unlabelled)",
+   "counts": {
+    "canonical": 768,
+    "cryptic": 10
+   },
+   "summed_ratio": 0.01285,
+   "inclusion_psi": 0.01285
+  },
+  {
+   "rail_id": "830130",
+   "group": "ALS Spectrum MND",
+   "counts": {
+    "canonical": 47,
+    "cryptic": 0
+   },
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
+  },
+  {
+   "rail_id": "830131",
+   "group": "Non-Neurological Control",
+   "counts": {
+    "canonical": 2152,
+    "cryptic": 0
+   },
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
+  },
+  {
+   "rail_id": "830242",
+   "group": "Non-Neurological Control",
+   "counts": {
+    "canonical": 1683,
+    "cryptic": 0
+   },
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
+  },
+  {
+   "rail_id": "830243",
+   "group": "ALS Spectrum MND",
+   "counts": {
+    "canonical": 324,
+    "cryptic": 0
+   },
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
+  },
+  {
+   "rail_id": "830244",
+   "group": "ALS Spectrum MND",
+   "counts": {
+    "canonical": 847,
+    "cryptic": 0
+   },
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
+  },
+  {
+   "rail_id": "830245",
+   "group": "ALS Spectrum MND",
+   "counts": {
+    "canonical": 1312,
+    "cryptic": 0
+   },
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
+  },
+  {
+   "rail_id": "830246",
+   "group": "ALS Spectrum MND",
+   "counts": {
+    "canonical": 604,
+    "cryptic": 0
+   },
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
+  },
+  {
+   "rail_id": "830248",
+   "group": "ALS Spectrum MND",
+   "counts": {
+    "canonical": 13,
+    "cryptic": 0
+   },
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
+  },
+  {
+   "rail_id": "830249",
+   "group": "ALS Spectrum MND",
+   "counts": {
+    "canonical": 1563,
+    "cryptic": 2
+   },
+   "summed_ratio": 0.00128,
+   "inclusion_psi": 0.00128
+  },
+  {
+   "rail_id": "830250",
+   "group": "(unlabelled)",
+   "counts": {
+    "canonical": 673,
+    "cryptic": 6
+   },
+   "summed_ratio": 0.00884,
+   "inclusion_psi": 0.00884
+  },
+  {
+   "rail_id": "830254",
+   "group": "ALS Spectrum MND",
+   "counts": {
+    "canonical": 427,
+    "cryptic": 4
+   },
+   "summed_ratio": 0.00928,
+   "inclusion_psi": 0.00928
+  },
+  {
+   "rail_id": "830258",
+   "group": "ALS Spectrum MND",
+   "counts": {
+    "canonical": 543,
+    "cryptic": 1
+   },
+   "summed_ratio": 0.00184,
+   "inclusion_psi": 0.00184
+  },
+  {
+   "rail_id": "830259",
+   "group": "Non-Neurological Control",
+   "counts": {
+    "canonical": 1870,
+    "cryptic": 0
+   },
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
+  },
+  {
+   "rail_id": "830370",
+   "group": "(unlabelled)",
+   "counts": {
+    "canonical": 131,
+    "cryptic": 0
+   },
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
+  },
+  {
+   "rail_id": "830374",
+   "group": "ALS Spectrum MND",
+   "counts": {
+    "canonical": 1357,
+    "cryptic": 0
+   },
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
+  },
+  {
+   "rail_id": "830376",
+   "group": "ALS Spectrum MND",
+   "counts": {
+    "canonical": 2235,
+    "cryptic": 0
+   },
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
+  },
+  {
+   "rail_id": "830378",
+   "group": "ALS Spectrum MND",
+   "counts": {
+    "canonical": 990,
+    "cryptic": 3
+   },
+   "summed_ratio": 0.00302,
+   "inclusion_psi": 0.00302
+  },
+  {
+   "rail_id": "830379",
+   "group": "ALS Spectrum MND",
+   "counts": {
+    "canonical": 844,
+    "cryptic": 1
+   },
+   "summed_ratio": 0.00118,
+   "inclusion_psi": 0.00118
+  },
+  {
+   "rail_id": "830380",
+   "group": "ALS Spectrum MND, Other Neurological Disorders",
+   "counts": {
+    "canonical": 668,
+    "cryptic": 1
+   },
+   "summed_ratio": 0.00149,
+   "inclusion_psi": 0.00149
+  },
+  {
+   "rail_id": "830382",
+   "group": "(unlabelled)",
+   "counts": {
+    "canonical": 658,
+    "cryptic": 0
+   },
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
+  },
+  {
+   "rail_id": "830384",
+   "group": "Non-Neurological Control",
+   "counts": {
+    "canonical": 93,
+    "cryptic": 0
+   },
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
+  },
+  {
+   "rail_id": "830385",
+   "group": "ALS Spectrum MND",
+   "counts": {
+    "canonical": 37,
+    "cryptic": 0
+   },
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
+  },
+  {
+   "rail_id": "830496",
+   "group": "ALS Spectrum MND",
+   "counts": {
+    "canonical": 539,
+    "cryptic": 8
+   },
+   "summed_ratio": 0.01463,
+   "inclusion_psi": 0.01463
+  },
+  {
+   "rail_id": "830498",
+   "group": "ALS Spectrum MND",
+   "counts": {
+    "canonical": 362,
+    "cryptic": 1
+   },
+   "summed_ratio": 0.00275,
+   "inclusion_psi": 0.00275
+  },
+  {
+   "rail_id": "830499",
+   "group": "Non-Neurological Control",
+   "counts": {
+    "canonical": 1063,
+    "cryptic": 0
+   },
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
+  },
+  {
+   "rail_id": "830500",
+   "group": "ALS Spectrum MND, Other Neurological Disorders",
+   "counts": {
+    "canonical": 1281,
+    "cryptic": 0
+   },
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
+  },
+  {
+   "rail_id": "830501",
+   "group": "ALS Spectrum MND",
+   "counts": {
+    "canonical": 921,
+    "cryptic": 0
+   },
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
+  },
+  {
+   "rail_id": "830502",
+   "group": "ALS Spectrum MND",
+   "counts": {
+    "canonical": 1163,
+    "cryptic": 0
+   },
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
+  },
+  {
+   "rail_id": "830503",
+   "group": "ALS Spectrum MND",
+   "counts": {
+    "canonical": 1279,
+    "cryptic": 0
+   },
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
+  },
+  {
+   "rail_id": "830504",
+   "group": "ALS Spectrum MND",
+   "counts": {
+    "canonical": 470,
+    "cryptic": 1
+   },
+   "summed_ratio": 0.00212,
+   "inclusion_psi": 0.00212
+  },
+  {
+   "rail_id": "830505",
+   "group": "ALS Spectrum MND",
+   "counts": {
+    "canonical": 399,
+    "cryptic": 0
+   },
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
+  },
+  {
+   "rail_id": "830506",
+   "group": "ALS Spectrum MND",
+   "counts": {
+    "canonical": 728,
+    "cryptic": 10
+   },
+   "summed_ratio": 0.01355,
+   "inclusion_psi": 0.01355
+  },
+  {
+   "rail_id": "830507",
+   "group": "ALS Spectrum MND",
+   "counts": {
+    "canonical": 1212,
+    "cryptic": 1
+   },
+   "summed_ratio": 0.00082,
+   "inclusion_psi": 0.00082
+  },
+  {
+   "rail_id": "830508",
+   "group": "ALS Spectrum MND, Other Neurological Disorders",
+   "counts": {
+    "canonical": 181,
+    "cryptic": 0
+   },
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
+  },
+  {
+   "rail_id": "830509",
+   "group": "ALS Spectrum MND, Other Neurological Disorders",
+   "counts": {
+    "canonical": 930,
+    "cryptic": 0
+   },
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
+  },
+  {
+   "rail_id": "830510",
+   "group": "ALS Spectrum MND",
+   "counts": {
+    "canonical": 241,
+    "cryptic": 0
+   },
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
+  },
+  {
+   "rail_id": "830511",
+   "group": "ALS Spectrum MND",
+   "counts": {
+    "canonical": 680,
+    "cryptic": 8
+   },
+   "summed_ratio": 0.01163,
+   "inclusion_psi": 0.01163
+  },
+  {
+   "rail_id": "830512",
+   "group": "ALS Spectrum MND, Other Neurological Disorders",
+   "counts": {
+    "canonical": 1477,
+    "cryptic": 6
+   },
+   "summed_ratio": 0.00405,
+   "inclusion_psi": 0.00405
+  },
+  {
+   "rail_id": "830513",
+   "group": "ALS Spectrum MND, Other Neurological Disorders",
+   "counts": {
+    "canonical": 257,
+    "cryptic": 0
+   },
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
+  },
+  {
+   "rail_id": "830514",
+   "group": "ALS Spectrum MND",
+   "counts": {
+    "canonical": 1287,
+    "cryptic": 0
+   },
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
+  },
+  {
+   "rail_id": "830624",
+   "group": "ALS Spectrum MND",
+   "counts": {
+    "canonical": 893,
+    "cryptic": 0
+   },
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
+  },
+  {
+   "rail_id": "830625",
+   "group": "(unlabelled)",
+   "counts": {
+    "canonical": 1304,
+    "cryptic": 1
+   },
+   "summed_ratio": 0.00077,
+   "inclusion_psi": 0.00077
+  },
+  {
+   "rail_id": "830626",
+   "group": "Non-Neurological Control",
+   "counts": {
+    "canonical": 2026,
+    "cryptic": 0
+   },
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
+  },
+  {
+   "rail_id": "830628",
+   "group": "ALS Spectrum MND, Other Neurological Disorders",
+   "counts": {
+    "canonical": 708,
+    "cryptic": 0
+   },
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
+  },
+  {
+   "rail_id": "830630",
+   "group": "ALS Spectrum MND",
+   "counts": {
+    "canonical": 638,
+    "cryptic": 4
+   },
+   "summed_ratio": 0.00623,
+   "inclusion_psi": 0.00623
+  },
+  {
+   "rail_id": "830631",
+   "group": "ALS Spectrum MND, Other Neurological Disorders",
+   "counts": {
+    "canonical": 364,
+    "cryptic": 2
+   },
+   "summed_ratio": 0.00546,
+   "inclusion_psi": 0.00546
+  },
+  {
+   "rail_id": "830632",
+   "group": "ALS Spectrum MND",
+   "counts": {
+    "canonical": 995,
+    "cryptic": 0
+   },
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
+  },
+  {
+   "rail_id": "830633",
+   "group": "ALS Spectrum MND",
+   "counts": {
+    "canonical": 573,
+    "cryptic": 1
+   },
+   "summed_ratio": 0.00174,
+   "inclusion_psi": 0.00174
+  },
+  {
+   "rail_id": "830634",
+   "group": "ALS Spectrum MND",
+   "counts": {
+    "canonical": 612,
+    "cryptic": 0
+   },
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
+  },
+  {
+   "rail_id": "830635",
+   "group": "Non-Neurological Control",
+   "counts": {
+    "canonical": 883,
+    "cryptic": 0
+   },
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
+  },
+  {
+   "rail_id": "830636",
+   "group": "ALS Spectrum MND",
+   "counts": {
+    "canonical": 1338,
+    "cryptic": 1
+   },
+   "summed_ratio": 0.00075,
+   "inclusion_psi": 0.00075
+  },
+  {
+   "rail_id": "830638",
+   "group": "Pre-fALS, Other Neurological Disorders",
+   "counts": {
+    "canonical": 76,
+    "cryptic": 0
+   },
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
+  },
+  {
+   "rail_id": "830639",
+   "group": "(unlabelled)",
+   "counts": {
+    "canonical": 552,
+    "cryptic": 0
+   },
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
+  },
+  {
+   "rail_id": "830642",
+   "group": "ALS Spectrum MND",
+   "counts": {
+    "canonical": 438,
+    "cryptic": 0
+   },
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
+  },
+  {
+   "rail_id": "830643",
+   "group": "ALS Spectrum MND",
+   "counts": {
+    "canonical": 97,
+    "cryptic": 0
+   },
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
+  },
+  {
+   "rail_id": "1658946",
+   "group": "ALS Spectrum MND",
+   "counts": {
+    "canonical": 495,
+    "cryptic": 0
+   },
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
+  },
+  {
+   "rail_id": "1659210",
+   "group": "ALS Spectrum MND",
+   "counts": {
+    "canonical": 206,
+    "cryptic": 0
+   },
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
+  },
+  {
+   "rail_id": "1659462",
+   "group": "ALS Spectrum MND",
+   "counts": {
+    "canonical": 810,
+    "cryptic": 0
+   },
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
+  },
+  {
+   "rail_id": "1659466",
+   "group": "(unlabelled)",
+   "counts": {
+    "canonical": 679,
+    "cryptic": 2
+   },
+   "summed_ratio": 0.00294,
+   "inclusion_psi": 0.00294
+  },
+  {
+   "rail_id": "1659474",
+   "group": "ALS Spectrum MND",
+   "counts": {
+    "canonical": 652,
+    "cryptic": 0
+   },
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
+  },
+  {
+   "rail_id": "1659490",
+   "group": "ALS Spectrum MND",
+   "counts": {
+    "canonical": 614,
+    "cryptic": 0
+   },
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
+  },
+  {
+   "rail_id": "1659491",
+   "group": "ALS Spectrum MND",
+   "counts": {
+    "canonical": 746,
+    "cryptic": 0
+   },
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
+  },
+  {
+   "rail_id": "1659970",
+   "group": "(unlabelled)",
+   "counts": {
+    "canonical": 470,
+    "cryptic": 0
+   },
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
+  },
+  {
+   "rail_id": "1659971",
+   "group": "(unlabelled)",
+   "counts": {
+    "canonical": 841,
+    "cryptic": 0
+   },
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
+  },
+  {
+   "rail_id": "1659994",
+   "group": "(unlabelled)",
+   "counts": {
+    "canonical": 769,
+    "cryptic": 0
+   },
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
+  },
+  {
+   "rail_id": "1659995",
+   "group": "(unlabelled)",
+   "counts": {
+    "canonical": 835,
+    "cryptic": 12
+   },
+   "summed_ratio": 0.01417,
+   "inclusion_psi": 0.01417
+  },
+  {
+   "rail_id": "1660230",
+   "group": "(unlabelled)",
+   "counts": {
+    "canonical": 457,
+    "cryptic": 0
+   },
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
+  },
+  {
+   "rail_id": "1660234",
+   "group": "(unlabelled)",
+   "counts": {
+    "canonical": 480,
+    "cryptic": 3
+   },
+   "summed_ratio": 0.00621,
+   "inclusion_psi": 0.00621
+  },
+  {
+   "rail_id": "1660262",
+   "group": "ALS Spectrum MND, Other Neurological Disorders",
+   "counts": {
+    "canonical": 534,
+    "cryptic": 0
+   },
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
+  },
+  {
+   "rail_id": "1660518",
+   "group": "ALS Spectrum MND, Other Neurological Disorders",
+   "counts": {
+    "canonical": 319,
+    "cryptic": 0
+   },
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
+  },
+  {
+   "rail_id": "1660519",
+   "group": "ALS Spectrum MND",
+   "counts": {
+    "canonical": 1039,
+    "cryptic": 0
+   },
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
+  },
+  {
+   "rail_id": "1660758",
+   "group": "ALS Spectrum MND, Other Neurological Disorders",
+   "counts": {
+    "canonical": 948,
+    "cryptic": 7
+   },
+   "summed_ratio": 0.00733,
+   "inclusion_psi": 0.00733
+  },
+  {
+   "rail_id": "1660759",
+   "group": "ALS Spectrum MND",
+   "counts": {
+    "canonical": 504,
+    "cryptic": 4
+   },
+   "summed_ratio": 0.00787,
+   "inclusion_psi": 0.00787
+  },
+  {
+   "rail_id": "1660770",
+   "group": "Non-Neurological Control",
+   "counts": {
+    "canonical": 792,
+    "cryptic": 0
+   },
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
+  },
+  {
+   "rail_id": "1660998",
+   "group": "Non-Neurological Control",
+   "counts": {
+    "canonical": 116,
+    "cryptic": 1
+   },
+   "summed_ratio": 0.00855,
+   "inclusion_psi": 0.00855
+  },
+  {
+   "rail_id": "1660999",
+   "group": "ALS Spectrum MND",
+   "counts": {
+    "canonical": 224,
+    "cryptic": 0
+   },
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
+  },
+  {
+   "rail_id": "1661002",
+   "group": "ALS Spectrum MND",
+   "counts": {
+    "canonical": 747,
+    "cryptic": 2
+   },
+   "summed_ratio": 0.00267,
+   "inclusion_psi": 0.00267
+  },
+  {
+   "rail_id": "1661006",
+   "group": "(unlabelled)",
+   "counts": {
+    "canonical": 1252,
+    "cryptic": 0
+   },
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
+  },
+  {
+   "rail_id": "1661010",
+   "group": "ALS Spectrum MND",
+   "counts": {
+    "canonical": 854,
+    "cryptic": 0
+   },
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
+  },
+  {
+   "rail_id": "1661022",
+   "group": "ALS Spectrum MND",
+   "counts": {
+    "canonical": 24,
+    "cryptic": 0
+   },
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
+  },
+  {
+   "rail_id": "1661023",
+   "group": "Non-Neurological Control",
+   "counts": {
+    "canonical": 479,
+    "cryptic": 0
+   },
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
+  },
+  {
+   "rail_id": "1661026",
+   "group": "ALS Spectrum MND",
+   "counts": {
+    "canonical": 12,
+    "cryptic": 0
+   },
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
+  },
+  {
+   "rail_id": "3318980",
+   "group": "(unlabelled)",
+   "counts": {
+    "canonical": 10,
+    "cryptic": 0
+   },
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
+  },
+  {
+   "rail_id": "3318981",
+   "group": "(unlabelled)",
+   "counts": {
+    "canonical": 691,
+    "cryptic": 0
+   },
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
+  },
+  {
+   "rail_id": "3322044",
+   "group": "ALS Spectrum MND",
+   "counts": {
+    "canonical": 1747,
+    "cryptic": 0
+   },
+   "summed_ratio": 0.0,
+   "inclusion_psi": 0.0
+  },
+  {
+   "rail_id": "3322045",
+   "group": "ALS Spectrum MND",
+   "counts": {
+    "canonical": 437,
+    "cryptic": 1
+   },
+   "summed_ratio": 0.00228,
+   "inclusion_psi": 0.00228
+  }
+ ]
+}

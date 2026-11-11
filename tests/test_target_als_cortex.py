@@ -72,6 +72,21 @@ class CortexCycleTest(unittest.TestCase):
         self.assertEqual(summed_ratio(counts, "canonical"), 1.0)
         self.assertEqual(inclusion_psi(counts, "canonical"), 1.0)
 
+    def test_single_cryptic_junction_needs_no_correction(self):
+        # STMN2's cryptic exon is terminal (premature polyA), so inclusion
+        # yields ONE junction and exclusion ONE, unlike UNC13A's two. With a
+        # single cryptic junction both ratios must agree.
+        counts = {"canonical": 90, "cryptic": 10}
+        self.assertAlmostEqual(summed_ratio(counts, "canonical"), 0.1)
+        self.assertAlmostEqual(inclusion_psi(counts, "canonical"), 0.1)
+
+    def test_ratio_with_zero_canonical_is_one_and_flagged_by_caller(self):
+        # 2 cryptic over 0 canonical gives 1.0, which is sampling noise, not
+        # inclusion. The minimum-denominator rule lives in the report, so the
+        # function must still return the arithmetic value rather than hide it.
+        counts = {"canonical": 0, "cryptic": 2}
+        self.assertEqual(inclusion_psi(counts, "canonical"), 1.0)
+
     def test_summarise_ignores_missing_values(self):
         out = summarise([0.0, None, 0.5, 0.25])
         self.assertEqual(out["n"], 3)
