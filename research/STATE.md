@@ -41,6 +41,14 @@ This is internal reproducibility, not replication: same subjects, same measureme
 
 The watcher extension found that **Guo's preprint is now peer reviewed** in *Science Translational Medicine* (PMID 42234776, DOI 10.1126/scitranslmed.aeb8517, 2026-06-03). It is paywalled with no PMC record, so its methods were **not** inspected: the two Guo rows of the timing matrix remain attributed to the 2025 preprint and may differ from the published version.
 
+## Strategic routes — 11 November
+
+Three routes were set out and acted on. **Snaptron/recount3**, the one route that could unblock #37 without money or third-party permission, was attempted and is **blocked by TLS**: the CONNECT tunnel succeeds once the host is allowed, but the server's certificate chain does not verify even with the proxy CA supplied, and verification was not disabled. The feasibility question is therefore **unanswered, not refuted**, and the prespecified stop rule forbade chasing alternatives inside that cycle. Opening a cycle on the recount3 file store instead needs its own scope decision and plan. [Report](../reports/snaptron-unc13a-feasibility-20261111/REPORT.md).
+
+A **laboratory collaboration message** and the **structure of a commentary** are drafted and deliberately **not executed**: both are external and irreversible, both would carry Luis's name, and the commentary should wait for the independent review of row M-a that the watcher will surface for free. [Drafts](drafts/2026-11-11-borradores-pendientes-de-autorizacion.md).
+
+Honest ceiling, recorded so it is not forgotten: with no laboratory, no budget and the raw-data pilot already closed at coverage [1,0,0], this project's realistic contribution is verification and synthesis of published work, not new biological measurement. Nothing here helps a patient today and nothing here supports any clinical decision.
+
 ## Access and communications: dated evidence only
 
 The 04 November administrative audit records AD Workbench dataset-approval wording followed by review wording, and a pending workspace. Neither establishes effective access or a technical manifest. [Audit](../reports/continuity-20261104/REPORT.md). The expanded public K26 search found no attributable source table in the checked routes; this is not universal proof of absence. [Search](../reports/fig4d-source-search-20261104/REPORT.md).

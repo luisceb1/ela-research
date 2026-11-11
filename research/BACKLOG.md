@@ -34,6 +34,14 @@ La laguna que motiva #18 queda documentada en su forma **precisa**: ninguna corr
 - [x] Table S1/S2 inspeccionadas: **no** contienen carga de pTDP-43 por caso, luego la prueba discriminante de H2 no es ejecutable con esta fuente. Cribado de confusores entre subtipos ejecutado: RIN, PMI y pérdida neuronal no difieren; la duración sí (32/19/11 meses); la edad de inicio solo nominalmente. Enlace por caso rechazado por clave no única en Tipos 2a y 2b.
 - [ ] **Entrada necesaria para H2**: una fuente con carga de pTDP-43 cuantificada por caso junto a ambos marcadores, o una cohorte que desacople intensidad de patología y velocidad de progresión. No buscar por continuidad: requiere decisión de alcance.
 
+## Entradas del 11/11/2026
+
+- [x] Vía Snaptron/recount3 intentada para las uniones crípticas de UNC13A. **Bloqueada por TLS**: el túnel CONNECT se establece tras permitir el host, pero la cadena del certificado del servidor no verifica ni aportando el CA del proxy, y no se desactiva la verificación. **La pregunta de viabilidad queda sin responder, no refutada.** Ver [informe](../reports/snaptron-unc13a-feasibility-20261111/REPORT.md).
+- [ ] **Decisión de alcance pendiente**: abrir o no un ciclo sobre el almacén de archivos de recount3, distinto de la API de Snaptron. El plan prefijado prohibía perseguir rutas alternativas por continuidad, así que requiere autorización explícita y plan propio. Criterio de parada: si no se puede consultar por región sin descargas desproporcionadas, se cierra la vía recount3 completa.
+- [ ] **Borrador de mensaje a laboratorio: redactado y NO enviado.** Requiere autorización expresa y lo firmaría Luis. Ver [borradores](drafts/2026-11-11-borradores-pendientes-de-autorizacion.md).
+- [ ] **Estructura de comentario/preprint: redactada y NO publicada.** Espera revisión independiente de la fila M-a o la versión revisada por pares de Mallika/Cao. Publicar es irreversible.
+- [ ] El repositorio es **privado**: la URL del borrador de contacto no funcionaría para un tercero sin cambiar eso. Decisión de Luis.
+
 ## Mantenimiento técnico
 
 - [x] Separar estado/backlog actuales del historial íntegro.
