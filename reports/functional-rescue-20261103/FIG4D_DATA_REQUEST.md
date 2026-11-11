@@ -1,6 +1,6 @@
 # Fig.4d — solicitud enviada
 
-Estado actualizado 03/11/2026: Luis autorizó expresamente el envío. Enviado desde `luis.ceb.fr@gmail.com` a `p.fratta@ucl.ac.uk`, sin CC ni adjuntos; Gmail devolvió etiqueta SENT, mensaje/hilo `1a1a307be60459fe`. Esto confirma envío, no entrega, lectura o respuesta. Texto exacto en `COMMUNICATION_LOG.md`. Pendiente de datos; no se estima ningún efecto.
+Estado actualizado 03/11/2026: Luis autorizó expresamente el envío. Enviado desde `[dirección del remitente, verificada en su momento; no republicada]` a `[dirección de correspondencia publicada en el manuscrito; no republicada aquí]`, sin CC ni adjuntos; Gmail devolvió etiqueta SENT, mensaje/hilo `1a1a307be60459fe`. Esto confirma envío, no entrega, lectura o respuesta. Texto exacto en `COMMUNICATION_LOG.md`. Pendiente de datos; no se estima ningún efecto.
 
 La preparación anterior se conserva a continuación como historial; sus indicaciones «sin enviar» describen el estado previo, no el actual.
 
@@ -12,13 +12,13 @@ Estado 03/11/2026: **no enviada; requiere autorización expresa de Luis**. No se
 
 ## Destinatario propuesto y comprobación
 
-Pietro Fratta, `p.fratta@ucl.ac.uk`, autor de correspondencia de K26. La dirección aparece en p.2 del manuscrito aceptado aportado por Luis, junto con las de Juan Burrone, Matthew Keuss y Peter Harley. Se elige un solo destinatario, sin CC, para que pueda remitir la petición al equipo responsable del panel espinal. No se presupone que Fratta adquiriese personalmente esos registros.
+Pietro Fratta, `[dirección de correspondencia publicada en el manuscrito; no republicada aquí]`, autor de correspondencia de K26. La dirección aparece en p.2 del manuscrito aceptado aportado por Luis, junto con las de Juan Burrone, Matthew Keuss y Peter Harley. Se elige un solo destinatario, sin CC, para que pueda remitir la petición al equipo responsable del panel espinal. No se presupone que Fratta adquiriese personalmente esos registros.
 
 Consulta acotada de Gmail conectado: mensajes desde/hacia Fratta o Keuss posteriores al 20/10/2026, sin coincidencias. Esto **no demuestra que Luis no haya contactado antes**, por otras direcciones, cuentas, alias o fechas. Antes de enviar, confirmar que no existe una petición pendiente en otra cuenta o hilo; si existe, adaptar como seguimiento, sin duplicarla. No se ha inspeccionado otro buzón ni se amplió la búsqueda.
 
 ## Mensaje preparado en inglés
 
-**To:** Pietro Fratta <p.fratta@ucl.ac.uk>  
+**To:** Pietro Fratta <[dirección de correspondencia publicada en el manuscrito; no republicada aquí]>  
 **Subject:** Source data for Fig. 4d — UNC13A splice correction in spinal motor neurons
 
 Dear Professor Fratta,
