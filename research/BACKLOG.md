@@ -5,6 +5,7 @@
 - [x] Execute the explicitly authorized metadata-only selection after committing exact queries before requests. [Report](../reports/recount3-metadata-stageA-20261112/REPORT.md): five queries, fixed 30-series cap; 636,037 bytes of metadata/text, zero eligible/nominated sources. All 30 decisions preserved; no count download.
 - [x] Apply the proposed cross-background requirement without relabelling cultures/assays as donors. Three design rejections; one DCPS metadata uncertainty archived without active follow-up; other sources rejected by prior-family/scope gates. No cutoff of 200 applied.
 - [x] Close this finite selection at its record cap. Stage B manifest empty and Stage B unauthorized. Do not expand to a sixth query, substitute candidates, relax the design or reopen #37. Count coverage remains unmeasured.
+- Scope decision pending, not scheduled: **A**, measurement reproduction in a separate experiment with one genetic background, versus **B**, reproducibility across backgrounds. The three-background zero is not an A-feasibility or depth failure; GSE252892/GSE307054/GSE299341 fail the background rule, while GSE298758 linkage is unresolved. No permanent impossibility for B was established. A would require a new prospective protocol and explicit scope decision before reappraising sources/counts; no dataset is newly accepted. [Interpretive review](../reports/recount3-metadata-stageA-20261112/INTERPRETATION_REVIEW.md).
 
 ## Bounded independent post-deficit source screen — 12 November 2026
 

@@ -2,6 +2,8 @@
 
 **No project nominated for Stage B.** Five locked GEO discovery queries reached the 30-distinct-series cap; the sixth query was not run. All 30 series have a recorded decision: 12 prior/sibling exclusions, 14 scope rejections, three design rejections and one unresolved metadata case, archived without active follow-up. These are series records, not 30 independent experiments or three selected candidates. No junction count, count matrix or raw experimental file was downloaded; coverage remains unmeasured.
 
+**Interpretive conclusion:** this zero applies to the frozen **three-genetic-background criterion**, not to measurement feasibility in a separate single-background experiment. Among the four focal neuronal depletion records, three fail the background rule and one has unresolved background linkage; **none was rejected on measured depth/coverage**. Question A (single-background measurement reproduction) remains untested here; question B (cross-background reproducibility) has no accepted source in this finite screen. No permanent-impossibility or field-wide prevalence claim follows. [Explicit distinction and pending scope decision](INTERPRETATION_REVIEW.md).
+
 ## Prospective scope and actual execution
 
 Luis authorized Stage A after [the plan](../../research/plans/2026-11-12-recount3-independent-metadata-screen.md), commit `55ab5a8777887d855c19e8b3d725517deeb67473`. The [exact-query lock](../../research/plans/2026-11-12-recount3-stageA-query-lock.md) and [six terms/parameters](QUERIES.json) were committed remotely at `3bbc9326a926a77e6224600a8250e189d5c679b3` **before the first new scientific request**. The plan's earlier drafting-only status is historical; Stage B remains unauthorized. No #37 reopening or automatic merge.
@@ -38,7 +40,7 @@ For prior/sibling sources, GSE304547/304548/304550 share the already inspected A
 
 [Stage B manifest](stageB_manifest.json) is empty: **zero eligible, zero nominated, zero count downloads**. Stage A is closed at its fixed record cap; no fourth candidate, sixth query or expansion is scheduled. Keep the negative decisions and the archived DCPS uncertainty. Do not ask to download counts for a source that fails this plan's design gate, or silently weaken the background rule to produce a positive result.
 
-The concrete recommendation is to stop this screen. Review the already pending author clarifications and actual workspace access when available. Any future use of these single-background datasets would require a separately stated question/estimand and scope decision; this report neither proposes an effect nor opens that work by inertia. #37 and the closed STMN2 cycle remain unchanged.
+The concrete recommendation is to stop this screen under its original three-background rule. This does not settle which question Luis should pursue next. GSE252892/GSE299341 could be reconsidered only under a separately authorized single-background measurement question; they are not already eligible because efficacy, experimental-unit/batch mapping and recount3 availability remain to be checked. Question A is not initiated, and B is not declared permanently unreachable. Review the already pending author clarifications and actual workspace access when available. #37 and the closed STMN2 cycle remain unchanged.
 
 ## Verification and reproducibility
 
