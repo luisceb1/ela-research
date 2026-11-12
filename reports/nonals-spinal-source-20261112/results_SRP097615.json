@@ -1,0 +1,918 @@
+{
+ "project": "SRP097615",
+ "targets_provenance_project": "SRP166282",
+ "chromosome": "chr19",
+ "coordinate_conversion": "sealed intronic 0-based half-open -> [start0+1, end0] 1-based inclusive",
+ "inputs": {
+  "sra.junctions.SRP097615.ALL.RR.gz": {
+   "sha256": "e2550f3986bfa340b2bd4567bf55565e0e7a3eea42c40c20508c9aa63190b41a",
+   "bytes": 1957224
+  },
+  "sra.junctions.SRP097615.ALL.MM.gz": {
+   "sha256": "d07896d09f57f0aff0520cdcdbd2527fb8a503659cf0d5648c5e04e7299813df",
+   "bytes": 1116418
+  },
+  "sra.junctions.SRP097615.ALL.ID.gz": {
+   "sha256": "6e17e918983d5a0c3ab4595f13eb3084975c94fdadbc675f4bd0b9ec58ecb94a",
+   "bytes": 142
+  },
+  "sra.recount_project.SRP097615.MD.gz": {
+   "sha256": "53ff895295d8b15e6a977ea13c04604508abfdc8119778e77069fb3f8d7f8bc2",
+   "bytes": 391
+  },
+  "sra.sra.SRP097615.MD.gz": {
+   "sha256": "01efe46316012a8d447ab3cf01929db788423219fa2da63d316c83aaed979f0c",
+   "bytes": 4506
+  }
+ },
+ "assay_shape": {
+  "total_junctions": 121078,
+  "junctions_on_target_chromosome": 6226,
+  "share_on_target_chromosome": 0.0514,
+  "distinct_chromosomes": 90,
+  "looks_targeted_not_transcriptome_wide": false,
+  "note": "Heuristic, not proof. When true, verify the assay against the source publication before treating coverage as comparable to transcriptome-wide junction counts."
+ },
+ "matrix_header": {},
+ "n_samples": 39,
+ "per_junction": {
+  "canonical": {
+   "max": 0,
+   "samples_at_or_above_threshold": 0,
+   "samples_with_any_read": 0,
+   "located": {
+    "row": null,
+    "absent": true,
+    "nearest_junction": {
+     "distance_sum": 3982,
+     "start_1based": 17639909,
+     "end_1based": 17640510,
+     "note": "context only; never adopted as the target"
+    }
+   }
+  },
+  "cryptic_left": {
+   "max": 0,
+   "samples_at_or_above_threshold": 0,
+   "samples_with_any_read": 0,
+   "located": {
+    "row": null,
+    "absent": true,
+    "nearest_junction": {
+     "distance_sum": 3551,
+     "start_1based": 17639909,
+     "end_1based": 17640510,
+     "note": "context only; never adopted as the target"
+    }
+   }
+  },
+  "cryptic_right": {
+   "max": 0,
+   "samples_at_or_above_threshold": 0,
+   "samples_with_any_read": 0,
+   "located": {
+    "row": null,
+    "absent": true,
+    "nearest_junction": {
+     "distance_sum": 4967,
+     "start_1based": 17639909,
+     "end_1based": 17640510,
+     "note": "context only; never adopted as the target"
+    }
+   }
+  }
+ },
+ "verdict": {
+  "min_coverage_required": 20,
+  "positive_control": "canonical",
+  "positive_control_meets_coverage": false,
+  "gate_junctions": [
+   "cryptic_left",
+   "cryptic_right"
+  ],
+  "gate_met": false,
+  "interpretation_rule": "A count below the threshold is MISSING DATA, not a biological zero. No effect, PSI or test is computed here.",
+  "gate_qualified_by_assay_shape": false
+ },
+ "samples": [
+  {
+   "column": 1,
+   "rail_id": "997663",
+   "run": "SRR8602391",
+   "sample_name": "GSM3615520",
+   "sample_title": "Oculomotor neuron control rep8 [OMN_Ctrl_8]",
+   "genotype": "",
+   "sirna_type": "",
+   "cell_type": "",
+   "date": "",
+   "counts": {
+    "canonical": 0,
+    "cryptic_left": 0,
+    "cryptic_right": 0
+   },
+   "meets_coverage": {
+    "canonical": false,
+    "cryptic_left": false,
+    "cryptic_right": false
+   }
+  },
+  {
+   "column": 2,
+   "rail_id": "1994328",
+   "run": "SRR8602372",
+   "sample_name": "GSM3615501",
+   "sample_title": "Spinal motor neuron control rep1 [SC_Ctrl_1]",
+   "genotype": "",
+   "sirna_type": "",
+   "cell_type": "",
+   "date": "",
+   "counts": {
+    "canonical": 0,
+    "cryptic_left": 0,
+    "cryptic_right": 0
+   },
+   "meets_coverage": {
+    "canonical": false,
+    "cryptic_left": false,
+    "cryptic_right": false
+   }
+  },
+  {
+   "column": 3,
+   "rail_id": "1994361",
+   "run": "SRR8602373",
+   "sample_name": "GSM3615502",
+   "sample_title": "Spinal motor neuron control rep2 [SC_Ctrl_2]",
+   "genotype": "",
+   "sirna_type": "",
+   "cell_type": "",
+   "date": "",
+   "counts": {
+    "canonical": 0,
+    "cryptic_left": 0,
+    "cryptic_right": 0
+   },
+   "meets_coverage": {
+    "canonical": false,
+    "cryptic_left": false,
+    "cryptic_right": false
+   }
+  },
+  {
+   "column": 4,
+   "rail_id": "1994389",
+   "run": "SRR8602374",
+   "sample_name": "GSM3615503",
+   "sample_title": "Spinal motor neuron control rep4 [SC_Ctrl_3]",
+   "genotype": "",
+   "sirna_type": "",
+   "cell_type": "",
+   "date": "",
+   "counts": {
+    "canonical": 0,
+    "cryptic_left": 0,
+    "cryptic_right": 0
+   },
+   "meets_coverage": {
+    "canonical": false,
+    "cryptic_left": false,
+    "cryptic_right": false
+   }
+  },
+  {
+   "column": 5,
+   "rail_id": "1994420",
+   "run": "SRR8602375",
+   "sample_name": "GSM3615504",
+   "sample_title": "Spinal motor neuron control rep5 [SC_Ctrl_4]",
+   "genotype": "",
+   "sirna_type": "",
+   "cell_type": "",
+   "date": "",
+   "counts": {
+    "canonical": 0,
+    "cryptic_left": 0,
+    "cryptic_right": 0
+   },
+   "meets_coverage": {
+    "canonical": false,
+    "cryptic_left": false,
+    "cryptic_right": false
+   }
+  },
+  {
+   "column": 6,
+   "rail_id": "1994452",
+   "run": "SRR8602376",
+   "sample_name": "GSM3615505",
+   "sample_title": "Spinal motor neuron control rep6 [SC_Ctrl_5]",
+   "genotype": "",
+   "sirna_type": "",
+   "cell_type": "",
+   "date": "",
+   "counts": {
+    "canonical": 0,
+    "cryptic_left": 0,
+    "cryptic_right": 0
+   },
+   "meets_coverage": {
+    "canonical": false,
+    "cryptic_left": false,
+    "cryptic_right": false
+   }
+  },
+  {
+   "column": 7,
+   "rail_id": "1994481",
+   "run": "SRR8602377",
+   "sample_name": "GSM3615506",
+   "sample_title": "Spinal motor neuron control rep7 [SC_Ctrl_6]",
+   "genotype": "",
+   "sirna_type": "",
+   "cell_type": "",
+   "date": "",
+   "counts": {
+    "canonical": 0,
+    "cryptic_left": 0,
+    "cryptic_right": 0
+   },
+   "meets_coverage": {
+    "canonical": false,
+    "cryptic_left": false,
+    "cryptic_right": false
+   }
+  },
+  {
+   "column": 8,
+   "rail_id": "1994514",
+   "run": "SRR8602378",
+   "sample_name": "GSM3615507",
+   "sample_title": "Spinal motor neuron control rep8 [SC_Ctrl_7]",
+   "genotype": "",
+   "sirna_type": "",
+   "cell_type": "",
+   "date": "",
+   "counts": {
+    "canonical": 0,
+    "cryptic_left": 0,
+    "cryptic_right": 0
+   },
+   "meets_coverage": {
+    "canonical": false,
+    "cryptic_left": false,
+    "cryptic_right": false
+   }
+  },
+  {
+   "column": 9,
+   "rail_id": "1994547",
+   "run": "SRR8602379",
+   "sample_name": "GSM3615508",
+   "sample_title": "Spinal motor neuron control rep9 [SC_Ctrl_8]",
+   "genotype": "",
+   "sirna_type": "",
+   "cell_type": "",
+   "date": "",
+   "counts": {
+    "canonical": 0,
+    "cryptic_left": 0,
+    "cryptic_right": 0
+   },
+   "meets_coverage": {
+    "canonical": false,
+    "cryptic_left": false,
+    "cryptic_right": false
+   }
+  },
+  {
+   "column": 10,
+   "rail_id": "1994770",
+   "run": "SRR8602380",
+   "sample_name": "GSM3615509",
+   "sample_title": "Spinal motor neuron control rep10 [SC_Ctrl_9]",
+   "genotype": "",
+   "sirna_type": "",
+   "cell_type": "",
+   "date": "",
+   "counts": {
+    "canonical": 0,
+    "cryptic_left": 0,
+    "cryptic_right": 0
+   },
+   "meets_coverage": {
+    "canonical": false,
+    "cryptic_left": false,
+    "cryptic_right": false
+   }
+  },
+  {
+   "column": 11,
+   "rail_id": "1994803",
+   "run": "SRR8602381",
+   "sample_name": "GSM3615510",
+   "sample_title": "Spinal motor neuron control rep11 [SC_Ctrl_10]",
+   "genotype": "",
+   "sirna_type": "",
+   "cell_type": "",
+   "date": "",
+   "counts": {
+    "canonical": 0,
+    "cryptic_left": 0,
+    "cryptic_right": 0
+   },
+   "meets_coverage": {
+    "canonical": false,
+    "cryptic_left": false,
+    "cryptic_right": false
+   }
+  },
+  {
+   "column": 12,
+   "rail_id": "1994836",
+   "run": "SRR8602382",
+   "sample_name": "GSM3615511",
+   "sample_title": "Spinal motor neuron control rep12 [SC_Ctrl_11]",
+   "genotype": "",
+   "sirna_type": "",
+   "cell_type": "",
+   "date": "",
+   "counts": {
+    "canonical": 0,
+    "cryptic_left": 0,
+    "cryptic_right": 0
+   },
+   "meets_coverage": {
+    "canonical": false,
+    "cryptic_left": false,
+    "cryptic_right": false
+   }
+  },
+  {
+   "column": 13,
+   "rail_id": "1994868",
+   "run": "SRR8602383",
+   "sample_name": "GSM3615512",
+   "sample_title": "Spinal motor neuron control rep13 [SC_Ctrl_12]",
+   "genotype": "",
+   "sirna_type": "",
+   "cell_type": "",
+   "date": "",
+   "counts": {
+    "canonical": 0,
+    "cryptic_left": 0,
+    "cryptic_right": 0
+   },
+   "meets_coverage": {
+    "canonical": false,
+    "cryptic_left": false,
+    "cryptic_right": false
+   }
+  },
+  {
+   "column": 14,
+   "rail_id": "1994898",
+   "run": "SRR8602384",
+   "sample_name": "GSM3615513",
+   "sample_title": "Oculomotor neuron control rep1 [OMN_Ctrl_1]",
+   "genotype": "",
+   "sirna_type": "",
+   "cell_type": "",
+   "date": "",
+   "counts": {
+    "canonical": 0,
+    "cryptic_left": 0,
+    "cryptic_right": 0
+   },
+   "meets_coverage": {
+    "canonical": false,
+    "cryptic_left": false,
+    "cryptic_right": false
+   }
+  },
+  {
+   "column": 15,
+   "rail_id": "1994931",
+   "run": "SRR8602385",
+   "sample_name": "GSM3615514",
+   "sample_title": "Oculomotor neuron control rep2 [OMN_Ctrl_2]",
+   "genotype": "",
+   "sirna_type": "",
+   "cell_type": "",
+   "date": "",
+   "counts": {
+    "canonical": 0,
+    "cryptic_left": 0,
+    "cryptic_right": 0
+   },
+   "meets_coverage": {
+    "canonical": false,
+    "cryptic_left": false,
+    "cryptic_right": false
+   }
+  },
+  {
+   "column": 16,
+   "rail_id": "1994962",
+   "run": "SRR8602386",
+   "sample_name": "GSM3615515",
+   "sample_title": "Oculomotor neuron control rep3 [OMN_Ctrl_3]",
+   "genotype": "",
+   "sirna_type": "",
+   "cell_type": "",
+   "date": "",
+   "counts": {
+    "canonical": 0,
+    "cryptic_left": 0,
+    "cryptic_right": 0
+   },
+   "meets_coverage": {
+    "canonical": false,
+    "cryptic_left": false,
+    "cryptic_right": false
+   }
+  },
+  {
+   "column": 17,
+   "rail_id": "1994995",
+   "run": "SRR8602387",
+   "sample_name": "GSM3615516",
+   "sample_title": "Oculomotor neuron control rep4 [OMN_Ctrl_4]",
+   "genotype": "",
+   "sirna_type": "",
+   "cell_type": "",
+   "date": "",
+   "counts": {
+    "canonical": 0,
+    "cryptic_left": 0,
+    "cryptic_right": 0
+   },
+   "meets_coverage": {
+    "canonical": false,
+    "cryptic_left": false,
+    "cryptic_right": false
+   }
+  },
+  {
+   "column": 18,
+   "rail_id": "1995024",
+   "run": "SRR8602388",
+   "sample_name": "GSM3615517",
+   "sample_title": "Oculomotor neuron control rep5 [OMN_Ctrl_5]",
+   "genotype": "",
+   "sirna_type": "",
+   "cell_type": "",
+   "date": "",
+   "counts": {
+    "canonical": 0,
+    "cryptic_left": 0,
+    "cryptic_right": 0
+   },
+   "meets_coverage": {
+    "canonical": false,
+    "cryptic_left": false,
+    "cryptic_right": false
+   }
+  },
+  {
+   "column": 19,
+   "rail_id": "1995057",
+   "run": "SRR8602389",
+   "sample_name": "GSM3615518",
+   "sample_title": "Oculomotor neuron control rep6 [OMN_Ctrl_6]",
+   "genotype": "",
+   "sirna_type": "",
+   "cell_type": "",
+   "date": "",
+   "counts": {
+    "canonical": 0,
+    "cryptic_left": 0,
+    "cryptic_right": 0
+   },
+   "meets_coverage": {
+    "canonical": false,
+    "cryptic_left": false,
+    "cryptic_right": false
+   }
+  },
+  {
+   "column": 20,
+   "rail_id": "1995280",
+   "run": "SRR8602390",
+   "sample_name": "GSM3615519",
+   "sample_title": "Oculomotor neuron control rep7 [OMN_Ctrl_7]",
+   "genotype": "",
+   "sirna_type": "",
+   "cell_type": "",
+   "date": "",
+   "counts": {
+    "canonical": 0,
+    "cryptic_left": 0,
+    "cryptic_right": 0
+   },
+   "meets_coverage": {
+    "canonical": false,
+    "cryptic_left": false,
+    "cryptic_right": false
+   }
+  },
+  {
+   "column": 21,
+   "rail_id": "1995344",
+   "run": "SRR8602392",
+   "sample_name": "GSM3615521",
+   "sample_title": "Oculomotor neuron control rep9 [OMN_Ctrl_9]",
+   "genotype": "",
+   "sirna_type": "",
+   "cell_type": "",
+   "date": "",
+   "counts": {
+    "canonical": 0,
+    "cryptic_left": 0,
+    "cryptic_right": 0
+   },
+   "meets_coverage": {
+    "canonical": false,
+    "cryptic_left": false,
+    "cryptic_right": false
+   }
+  },
+  {
+   "column": 22,
+   "rail_id": "1995378",
+   "run": "SRR8602393",
+   "sample_name": "GSM3615522",
+   "sample_title": "Oculomotor neuron control rep10 [OMN_Ctrl_10]",
+   "genotype": "",
+   "sirna_type": "",
+   "cell_type": "",
+   "date": "",
+   "counts": {
+    "canonical": 0,
+    "cryptic_left": 0,
+    "cryptic_right": 0
+   },
+   "meets_coverage": {
+    "canonical": false,
+    "cryptic_left": false,
+    "cryptic_right": false
+   }
+  },
+  {
+   "column": 23,
+   "rail_id": "1995412",
+   "run": "SRR8602394",
+   "sample_name": "GSM3615523",
+   "sample_title": "Oculomotor neuron control rep11 [OMN_Ctrl_11]",
+   "genotype": "",
+   "sirna_type": "",
+   "cell_type": "",
+   "date": "",
+   "counts": {
+    "canonical": 0,
+    "cryptic_left": 0,
+    "cryptic_right": 0
+   },
+   "meets_coverage": {
+    "canonical": false,
+    "cryptic_left": false,
+    "cryptic_right": false
+   }
+  },
+  {
+   "column": 24,
+   "rail_id": "1995445",
+   "run": "SRR8602395",
+   "sample_name": "GSM3615524",
+   "sample_title": "Oculomotor neuron control rep12 [OMN_Ctrl_12]",
+   "genotype": "",
+   "sirna_type": "",
+   "cell_type": "",
+   "date": "",
+   "counts": {
+    "canonical": 0,
+    "cryptic_left": 0,
+    "cryptic_right": 0
+   },
+   "meets_coverage": {
+    "canonical": false,
+    "cryptic_left": false,
+    "cryptic_right": false
+   }
+  },
+  {
+   "column": 25,
+   "rail_id": "1995478",
+   "run": "SRR8602396",
+   "sample_name": "GSM3615525",
+   "sample_title": "Oculomotor neuron control rep13 [OMN_Ctrl_13]",
+   "genotype": "",
+   "sirna_type": "",
+   "cell_type": "",
+   "date": "",
+   "counts": {
+    "canonical": 0,
+    "cryptic_left": 0,
+    "cryptic_right": 0
+   },
+   "meets_coverage": {
+    "canonical": false,
+    "cryptic_left": false,
+    "cryptic_right": false
+   }
+  },
+  {
+   "column": 26,
+   "rail_id": "1995509",
+   "run": "SRR8602397",
+   "sample_name": "GSM3615526",
+   "sample_title": "Oculomotor neuron control rep14 [OMN_Ctrl_14]",
+   "genotype": "",
+   "sirna_type": "",
+   "cell_type": "",
+   "date": "",
+   "counts": {
+    "canonical": 0,
+    "cryptic_left": 0,
+    "cryptic_right": 0
+   },
+   "meets_coverage": {
+    "canonical": false,
+    "cryptic_left": false,
+    "cryptic_right": false
+   }
+  },
+  {
+   "column": 27,
+   "rail_id": "1995540",
+   "run": "SRR8602398",
+   "sample_name": "GSM3615527",
+   "sample_title": "Oculomotor neuron control rep15 [OMN_Ctrl_15]",
+   "genotype": "",
+   "sirna_type": "",
+   "cell_type": "",
+   "date": "",
+   "counts": {
+    "canonical": 0,
+    "cryptic_left": 0,
+    "cryptic_right": 0
+   },
+   "meets_coverage": {
+    "canonical": false,
+    "cryptic_left": false,
+    "cryptic_right": false
+   }
+  },
+  {
+   "column": 28,
+   "rail_id": "1995574",
+   "run": "SRR8602399",
+   "sample_name": "GSM3615528",
+   "sample_title": "Oculomotor neuron control rep16 [OMN_Ctrl_16]",
+   "genotype": "",
+   "sirna_type": "",
+   "cell_type": "",
+   "date": "",
+   "counts": {
+    "canonical": 0,
+    "cryptic_left": 0,
+    "cryptic_right": 0
+   },
+   "meets_coverage": {
+    "canonical": false,
+    "cryptic_left": false,
+    "cryptic_right": false
+   }
+  },
+  {
+   "column": 29,
+   "rail_id": "1998870",
+   "run": "SRR8602400",
+   "sample_name": "GSM3615529",
+   "sample_title": "Oculomotor neuron control rep17 [OMN_Ctrl_17]",
+   "genotype": "",
+   "sirna_type": "",
+   "cell_type": "",
+   "date": "",
+   "counts": {
+    "canonical": 0,
+    "cryptic_left": 0,
+    "cryptic_right": 0
+   },
+   "meets_coverage": {
+    "canonical": false,
+    "cryptic_left": false,
+    "cryptic_right": false
+   }
+  },
+  {
+   "column": 30,
+   "rail_id": "1998902",
+   "run": "SRR8602401",
+   "sample_name": "GSM3615530",
+   "sample_title": "Oculomotor neuron control rep18 [OMN_Ctrl_18]",
+   "genotype": "",
+   "sirna_type": "",
+   "cell_type": "",
+   "date": "",
+   "counts": {
+    "canonical": 0,
+    "cryptic_left": 0,
+    "cryptic_right": 0
+   },
+   "meets_coverage": {
+    "canonical": false,
+    "cryptic_left": false,
+    "cryptic_right": false
+   }
+  },
+  {
+   "column": 31,
+   "rail_id": "1998933",
+   "run": "SRR8602402",
+   "sample_name": "GSM3615531",
+   "sample_title": "Oculomotor neuron control rep19 [OMN_Ctrl_19]",
+   "genotype": "",
+   "sirna_type": "",
+   "cell_type": "",
+   "date": "",
+   "counts": {
+    "canonical": 0,
+    "cryptic_left": 0,
+    "cryptic_right": 0
+   },
+   "meets_coverage": {
+    "canonical": false,
+    "cryptic_left": false,
+    "cryptic_right": false
+   }
+  },
+  {
+   "column": 32,
+   "rail_id": "1998963",
+   "run": "SRR8602403",
+   "sample_name": "GSM3615532",
+   "sample_title": "Oculomotor neuron control rep20 [OMN_Ctrl_20]",
+   "genotype": "",
+   "sirna_type": "",
+   "cell_type": "",
+   "date": "",
+   "counts": {
+    "canonical": 0,
+    "cryptic_left": 0,
+    "cryptic_right": 0
+   },
+   "meets_coverage": {
+    "canonical": false,
+    "cryptic_left": false,
+    "cryptic_right": false
+   }
+  },
+  {
+   "column": 33,
+   "rail_id": "1998994",
+   "run": "SRR8602404",
+   "sample_name": "GSM3615533",
+   "sample_title": "Onuf's nucleus rep1 [Onuf_Ctrl_1]",
+   "genotype": "",
+   "sirna_type": "",
+   "cell_type": "",
+   "date": "",
+   "counts": {
+    "canonical": 0,
+    "cryptic_left": 0,
+    "cryptic_right": 0
+   },
+   "meets_coverage": {
+    "canonical": false,
+    "cryptic_left": false,
+    "cryptic_right": false
+   }
+  },
+  {
+   "column": 34,
+   "rail_id": "1999027",
+   "run": "SRR8602405",
+   "sample_name": "GSM3615534",
+   "sample_title": "Onuf's nucleus rep2 [Onuf_Ctrl_2]",
+   "genotype": "",
+   "sirna_type": "",
+   "cell_type": "",
+   "date": "",
+   "counts": {
+    "canonical": 0,
+    "cryptic_left": 0,
+    "cryptic_right": 0
+   },
+   "meets_coverage": {
+    "canonical": false,
+    "cryptic_left": false,
+    "cryptic_right": false
+   }
+  },
+  {
+   "column": 35,
+   "rail_id": "1999057",
+   "run": "SRR8602406",
+   "sample_name": "GSM3615535",
+   "sample_title": "Onuf's nucleus rep3 [Onuf_Ctrl_3]",
+   "genotype": "",
+   "sirna_type": "",
+   "cell_type": "",
+   "date": "",
+   "counts": {
+    "canonical": 0,
+    "cryptic_left": 0,
+    "cryptic_right": 0
+   },
+   "meets_coverage": {
+    "canonical": false,
+    "cryptic_left": false,
+    "cryptic_right": false
+   }
+  },
+  {
+   "column": 36,
+   "rail_id": "1999090",
+   "run": "SRR8602407",
+   "sample_name": "GSM3615536",
+   "sample_title": "Onuf's nucleus rep4 [Onuf_Ctrl_4]",
+   "genotype": "",
+   "sirna_type": "",
+   "cell_type": "",
+   "date": "",
+   "counts": {
+    "canonical": 0,
+    "cryptic_left": 0,
+    "cryptic_right": 0
+   },
+   "meets_coverage": {
+    "canonical": false,
+    "cryptic_left": false,
+    "cryptic_right": false
+   }
+  },
+  {
+   "column": 37,
+   "rail_id": "1999122",
+   "run": "SRR8602408",
+   "sample_name": "GSM3615537",
+   "sample_title": "Onuf's nucleus rep5 [Onuf_Ctrl_5]",
+   "genotype": "",
+   "sirna_type": "",
+   "cell_type": "",
+   "date": "",
+   "counts": {
+    "canonical": 0,
+    "cryptic_left": 0,
+    "cryptic_right": 0
+   },
+   "meets_coverage": {
+    "canonical": false,
+    "cryptic_left": false,
+    "cryptic_right": false
+   }
+  },
+  {
+   "column": 38,
+   "rail_id": "1999156",
+   "run": "SRR8602409",
+   "sample_name": "GSM3615538",
+   "sample_title": "Onuf's nucleus rep6 [Onuf_Ctrl_6]",
+   "genotype": "",
+   "sirna_type": "",
+   "cell_type": "",
+   "date": "",
+   "counts": {
+    "canonical": 0,
+    "cryptic_left": 0,
+    "cryptic_right": 0
+   },
+   "meets_coverage": {
+    "canonical": false,
+    "cryptic_left": false,
+    "cryptic_right": false
+   }
+  },
+  {
+   "column": 39,
+   "rail_id": "1999379",
+   "run": "SRR8602410",
+   "sample_name": "GSM3615539",
+   "sample_title": "Onuf's nucleus rep7 [Onuf_Ctrl_7]",
+   "genotype": "",
+   "sirna_type": "",
+   "cell_type": "",
+   "date": "",
+   "counts": {
+    "canonical": 0,
+    "cryptic_left": 0,
+    "cryptic_right": 0
+   },
+   "meets_coverage": {
+    "canonical": false,
+    "cryptic_left": false,
+    "cryptic_right": false
+   }
+  }
+ ]
+}
