@@ -1,5 +1,9 @@
 # Current research state — 2026-11-04
 
+## Local disabled descriptor prepared on user host — 12 November 2026
+
+Luis supplied a successful terminal summary from the pinned `4fa5346` preparer: 9 index members, 4 input-file entries and zero raw bytes downloaded; descriptor SHA256 `97a578839d72088bab1403b0c9ef6bd9b8e3ff064bbe3008314fb34545b6af26`. [Receipt and limits](../reports/local-raw-feasibility-20261112/user-prepared-summary.json). Full descriptor bytes have not been inspected by the agent. Resource/assay/runner gates remain unresolved. GEO documents fastp adapter trimming followed by STAR; a future HISAT2 count workflow must document its differences and processing parameters. Local fastp installation/version confirmation is the next setup step. No sequencing transfer or old-pilot activation is authorized by this receipt.
+
 ## Local index hash check and disabled preparation — 12 November 2026
 
 Luis's nine reported index hashes match the historical record (8 HISAT2 members plus make script). An [offline preparer/runbook](runbooks/2026-11-12-gse252892-offline-preparation.md) rechecks current local files and writes a disabled descriptor for four fixed GSE252892 FASTQs; no raw execution path or transfer is implemented. Existing tool versions are user-reported. See [comparison and limits](../reports/local-raw-feasibility-20261112/user-index-check.json). Full successful host preparation, resource benchmark, assay/reference review and bounded runner remain pending. No old pilot is reactivated.
