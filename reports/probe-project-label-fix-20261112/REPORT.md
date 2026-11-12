@@ -12,7 +12,7 @@ Code correction required by the [Question A plan](../../research/plans/2026-11-1
 
 `research/references/unc13a_targets_sealed.json` carries `"project": "SRP166282"` as provenance for the sealed coordinates. Measurement never used that field — targets come from `spec["junctions"]` and `spec["chromosome"]` — but it was copied into every result. Run unchanged against a different project, the output would have claimed `"project": "SRP166282"`, labelling new counts with the accession of the already-rejected Klim dataset.
 
-No published result is known to be wrong because of this: both existing result files name the project they report. But `reports/recount3-unc13a-20261111/results_SRP334561.json` reports `"project": "SRP334561"`, which the current sealed file cannot produce, and how that run was labelled remains **unexplained**. If the sealed file was edited in place for that run, its seal was broken at that moment. This is recorded as an open provenance question, not resolved here.
+No published result is known to be wrong because of this: both existing result files name the project they report. But `reports/recount3-unc13a-20261111/results_SRP334561.json` reports `"project": "SRP334561"`, which the current sealed file cannot produce, and how that run was labelled remains **unexplained**. **Resolved 12 November 2026** in [the loose-ends report](../loose-ends-resolved-20261112/REPORT.md): the sealed file has exactly two commits and both carry `SRP166282`, and no second UNC13A targets file was ever committed, so the **committed seal was never broken** and the speculation that it was is withdrawn. The label came from an uncommitted artifact whose identity cannot be determined from the repository; the measurement is unaffected.
 
 ## Fix
 
