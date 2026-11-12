@@ -128,7 +128,7 @@ Confirmado por Luis: sin archivo K26 y sin acceso AD Workbench. Las dos líneas 
 - [x] Revisar PMID 42983891 contra la puerta de #37: **rechazada** como fuente técnica (qRT-PCR/ddPCR post mortem, sin cuentas de uniones). Conservada como contexto. No abre un cuarto candidato.
 - [x] Acotar a TITLE_ABS la consulta `long_reads` del vigilante diario, con pruebas de alcance de campo.
 
-La laguna que motiva #18 queda documentada en su forma **precisa**: ninguna corrección *específica de UNC13A* probada tras un déficit funcional medido (0 de 9), mientras la restauración *multidiana* posdéficit sí rescata función en ratón (Mallika, CTR). Eso **no** autoriza ningún ensayo: seguiría exigiendo déficit medido antes de la primera dosis, unidades independientes verificables y autorización específica. No tratar el rescate multidiana como evidencia a favor de una diana aislada: no hay control factorial.
+**Correction — 12 November 2026:** among the **6 UNC13A-specific interventions** in the inspected matrix, treatment after a documented functional deficit was not established (**0 of 6**, replacing the pre-curation hand count of nine left in this entry). The 10 November curation already contained the correct denominator. Mallika CTR provides multi-target symptomatic-treatment evidence under the substantive reading; the strict same-endpoint pretreatment baseline remains unresolved. This does not authorize an experiment or establish isolated UNC13A benefit; no factorial control is available.
 
 ## Entradas del 10/11/2026 (tarde)
 
