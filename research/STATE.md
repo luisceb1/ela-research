@@ -1,5 +1,19 @@
 # Current research state — 2026-11-04
 
+## recount3 non-SRA collections inventoried; the gap is a control, not a source — 12 November 2026
+
+[Catalogue inventory](../reports/recount3-collections-inventory-20261112/REPORT.md), listing only: no junction counts, no coverage, no new candidate accepted.
+
+**Correction:** a previous session summary called `TARGET_ALS` uninspected. It is not — two prespecified cycles already used it via recount3 ([motor cortex](../reports/target-als-cortex-20261111/REPORT.md), [cervical](../reports/target-als-cervical-20261111/REPORT.md)). `ANSWER_ALS` is genuinely uninspected and was already an open backlog item.
+
+Holdings: ANSWER_ALS 2,229 samples / 4 releases; TARGET_ALS 683 across 5 tissues, of which motor medial 148, lumbar 147 and thoracic 75 are untouched; gtex 19,214 (BRAIN 2,931); tcga 11,348 (irrelevant); ega 8,783 including SPORADIC_ALS_EGAD00001006022 at 19; LIBD 1,203 brain.
+
+**The useful gap is a missing control, not a new source.** The project has counted UNC13A cryptic reads in ALS cortex (1–4 per positive sample) but has **never measured that locus in non-ALS brain at comparable depth**, so those counts cannot be distinguished from assay background. gtex BRAIN and LIBD are that baseline and are reachable by the existing probe. This would qualify a result already held; it is not a source for #37 and must not be presented as one.
+
+Unverified and required before any plan: per-collection junction file sizes (TARGET_ALS cortex was 194 MB for 149 samples, so gtex BRAIN likely needs a subset), and access terms for ANSWER_ALS and the EGA set. TARGET_ALS's three remaining tissues are the weakest lead: donor identity is not exposed in that cohort, so more samples are not independent donors.
+
+#37, the 20-read minimum and the three-background question are untouched.
+
 ## Question A detection measurement: not detected, and depth was the real constraint — 12 November 2026
 
 [Measurement on SRP069787](../reports/questionA-detection-SRP069787-20261112/REPORT.md), under the [amendment committed before any count was downloaded](plans/2026-11-12-questionA-amendment-detection-floor.md) at `daf9d24`, which fixed every outcome reading in advance. Luis authorised relaxing the replicate floor from three to two, for this deposit and for detection only.
