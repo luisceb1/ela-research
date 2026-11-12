@@ -1,5 +1,13 @@
 # Current research state — 2026-11-04
 
+## Two loose ends closed — 12 November 2026
+
+[Verification report](../reports/loose-ends-resolved-20261112/REPORT.md). No new biological measurement.
+
+**SRP166282 re-run done with the real bytes.** All five recount3 inputs re-fetched and both SHA256 and byte size reproduce the values recorded in November, so the earlier result rests on inputs still reproducible exactly. Re-running the fixed probe over them gives output in which **every field shared with the committed result is identical** — `per_junction`, `verdict`, `samples`, `matrix_header`, `assay_shape`, `inputs`, `n_samples` and `project` — with the single added key `targets_provenance_project`, the documented schema change. PR #66's deferred equivalence check is closed against real data rather than a fixture.
+
+**SRP334561 label resolved as far as the repository allows.** The sealed targets file has exactly two commits, `afa84bb` and `83cf23a`, and **both carry `SRP166282`**; no second UNC13A targets file was ever committed. The label therefore came from an uncommitted artifact — an ad-hoc targets file or a manual edit — and **which cannot be determined**, so the uncertainty stands rather than being resolved by assumption. Three things can be stated: the **committed seal was never broken**, so the earlier suggestion that it was is withdrawn; the measurement is unaffected, since the probe never read `project` for measurement and the recorded input hashes are SRP334561's own files; and it cannot recur, because the label now comes from a required `--project-id` with a regression test. The residual item is a documentation gap in that November cycle, not a data-integrity problem.
+
 ## Non-ALS spinal cord search: baseline already existed, new source fails its control — 12 November 2026
 
 [Search and measurement](../reports/nonals-spinal-source-20261112/REPORT.md), under the [plan committed before any query](plans/2026-11-12-nonals-spinal-cord-source.md) at `6906a58`.
