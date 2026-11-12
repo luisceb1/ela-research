@@ -1,5 +1,19 @@
 # Current research state — 2026-11-04
 
+## Non-ALS background measured: cryptic junctions absent at comparable coverage — 12 November 2026
+
+[gtex BRAIN control](../reports/gtex-brain-negative-control-20261112/REPORT.md), under the [plan committed before any download](plans/2026-11-12-gtex-brain-negative-control.md) at `b2ff4f2`, which fixed the comparability window in advance. 2,931 libraries, 9,484,210 junctions, 2.8 GB.
+
+**In the 26 libraries with canonical coverage in the published ALS cortex range (102–148), both sealed cryptic junctions carry zero reads.** Fifteen of the 26 are cortical. Across all 2,931 libraries cryptic reads appear in 7, maximum 2 reads, all outside the window. Canonical control measured in 2,655/2,931, maximum 286.
+
+Per the prespecified table this reads as: the published ALS cortical cryptic reads are **above the non-ALS background at comparable local coverage**. The plan's qualification is not softened now the result is favourable — GTEx and TARGET_ALS are different studies, and by the standard this project set when it demoted a 1.8× cross-study claim, this is weak evidence. It is consistent with the ALS counts being signal; it does not demonstrate it. **n=15 cortical libraries bounds the background loosely, not tightly**, and only 0.9% of GTEx brain is depth-comparable at all, so the other 2,905 zeros are missing data at that depth.
+
+**The cervical measurement could not be controlled.** GTEx cervical spinal cord has median canonical 1.0 and maximum 21; no library reaches the window, so the published cervical result still has no non-ALS baseline.
+
+**Bonus, within GTEx only:** cervical cord median canonical 1.0 against cortex 15.0 — the same direction as the cortex-over-cervical asymmetry reported in ALS tissue and in the GTEx panels cited by Ikegami and Mallika. No ratio is formed from these medians, since ratio-of-medians was the subject of two earlier corrections. The direction holding in tissue without TDP-43 pathology argues the asymmetry is a property of the tissue, not of disease or of the TARGET_ALS cohort.
+
+No p-value, no ALS-versus-GTEx test, no pooling. #37, the 20-read minimum and the three-background question are untouched.
+
 ## recount3 non-SRA collections inventoried; the gap is a control, not a source — 12 November 2026
 
 [Catalogue inventory](../reports/recount3-collections-inventory-20261112/REPORT.md), listing only: no junction counts, no coverage, no new candidate accepted.
