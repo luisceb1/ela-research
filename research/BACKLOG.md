@@ -3,9 +3,13 @@
 ## Bounded independent post-deficit source screen — 12 November 2026
 
 - [x] Commit a new finite selection protocol before external discovery; exclude previously audited functional/source families.
-- [x] Review three new families and accessible artifacts; [report and decisions](../reports/independent-postdeficit-screen-20261112/REPORT.md). Zero accepted: Walker/Huang require numeric animal-level baseline/dose/follow-up and control linkage; Matson requires accessible methods establishing a relevant intervention. No new effect analysis.
+- [x] Review three primary records and accessible artifacts (not three independent validations); [report and decisions](../reports/independent-postdeficit-screen-20261112/REPORT.md). Zero accepted: Walker/Huang require numeric animal-level baseline/dose/follow-up and control linkage; Matson is discarded at abstract triage, with accessible API abstract and uninspected full methods. No new effect analysis.
 - [x] Close this search after four query groups; do not fill uncertainty with more candidates, contacts or simulated evidence.
-- Conditional input only: a concrete new artifact satisfying the original gate may justify a separate prospective decision. C1 Walker is the first lead for **transgene-suppression** recovery; it cannot validate isolated STMN2/UNC13A rescue. No outreach or analysis is authorized by this entry. Preserve #37/#44/STMN2 closure and actual-workspace requirement.
+- Conditional input only: a concrete new artifact satisfying the original gate may justify a separate prospective decision. Walker/Huang are archived **transgene-suppression** prior art, not active waits or outreach priorities; neither validates isolated STMN2/UNC13A rescue. No outreach or analysis is authorized by this entry. Preserve #37/#44/STMN2 closure and actual-workspace requirement.
+
+### Review proposal only — recount3 (not scheduled)
+
+The reusable probe and existing counts are retained. A separately authorized finite metadata-first screen could prioritize previously unexamined whole-transcriptome TDP-43 depletion projects using depth/read length, documented depletion and condition→biological-unit mapping, then verify actual sealed-junction coverage under a prospective budget and stop rule. It would not establish functional recovery. Insufficient observed locus coverage does not prove total depth is the sole cause; targeted Ma data are not equivalent to whole-transcriptome RNA-seq, and the later fraction audit retains alternative explanations. No new screening/SRA enumeration/download is launched, no source is accepted on depth alone, and #37 stays closed pending its existing concrete-input gate. See [review assessment](../reports/independent-postdeficit-screen-20261112/REVIEW_CORRECTIONS.md).
 
 ## Authorized closure and Wong contact — 12 November 2026
 

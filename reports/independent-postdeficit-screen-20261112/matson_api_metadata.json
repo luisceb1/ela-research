@@ -1,0 +1,16 @@
+{
+  "doi": "10.64898/2026.11.07.764673",
+  "title": "Stathmin-2 regulates microtubule dynamics and axonal resilience in human motor neurons",
+  "authors": "Matson, K. J. E.; Petruconis, C. R.; Hernandez, A.; Dave, J. R.; Das, S.; Holzbaur, E. L. F.",
+  "date": "2026-11-09",
+  "version": "1",
+  "license": "cc_by",
+  "jatsxml": "https://www.biorxiv.org/content/early/2026/11/09/2026.11.07.764673.source.xml",
+  "api_url": "https://api.biorxiv.org/details/biorxiv/10.64898/2026.11.07.764673",
+  "http_status": 200,
+  "response_bytes": 2653,
+  "response_sha256": "287c8062d7ccb52cdbe751f41a3c1a394faf205713addd8693a130d522706dbe",
+  "abstract_sha256": "c16891f560643a61069454e5e59b75d93983095cd44dcd87f679d4950e31b807",
+  "abstract_characters": 1957,
+  "decision": "discarded at abstract triage;no eligible restorative intervention described;full-text absence not established"
+}

@@ -26,8 +26,8 @@
       "version": "v1;posted2026-11-09;preprint",
       "url": "https://www.biorxiv.org/content/10.64898/2026.11.07.764673v1",
       "full_route": "https://www.biorxiv.org/content/10.64898/2026.11.07.764673v1.full",
-      "web_read": "primary indexed author list/abstract/licence only",
-      "access_limit": "direct full inaccessible,landing403;no PDF/supplement inspected",
+      "web_read": "original indexed abstract;review correction complete abstract and metadata via public API HTTP200",
+      "access_limit": "original web full/landing failed;API was omitted initially but is accessible;API-linked JATS403 in this review;full methods remain uninspected",
       "authors": [
         "Kaya J.E. Matson",
         "Cecilia R. Petruconis",
@@ -36,7 +36,8 @@
         "Suradip Das",
         "Erika L.F. Holzbaur"
       ],
-      "licence_indexed": "CC BY4.0;not a claim about unseen data files"
+      "licence_indexed": "CC BY4.0;not a claim about unseen data files",
+      "api_url": "https://api.biorxiv.org/details/biorxiv/10.64898/2026.11.07.764673"
     },
     {
       "id": "C3",
@@ -139,5 +140,24 @@
   "no_effect_analysis": true,
   "no_contacts": true,
   "no_mass_downloads": true,
-  "no_automatic_merge": true
+  "no_automatic_merge": true,
+  "review_correction": {
+    "date": "2026-11-12",
+    "reviewed_head": "5f0364b961d5840d4de736bc44f690578f70cd70",
+    "api_metadata_file": "matson_api_metadata.json",
+    "jats_retrieval": {
+      "url": "https://www.biorxiv.org/content/early/2026/11/09/2026.11.07.764673.source.xml",
+      "checked_utc": "2026-11-12T09:26:33.318293+00:00",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    "decisions": {
+      "C1": "pending data gate;archived",
+      "C2": "discarded at abstract triage",
+      "C3": "pending data gate;archived"
+    },
+    "new_candidates": 0,
+    "new_effects": 0,
+    "new_recount3_screen_authorized": false,
+    "walker_locators": "design Fig6a;functional Fig8f/g;Results1week and wirehang legend3week significance retained without resolving onset"
+  }
 }

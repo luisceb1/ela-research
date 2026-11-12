@@ -21,3 +21,7 @@ Date: 12 November 2026. Repository protocol commit `bac77055aa0e7eaaab9cced0513e
 ## Nondiscovery and closure
 
 No primary-source hit was promoted merely because it said “recovery,” “rescue,” or “after.” C2 remains weak/unresolved rather than being converted into a therapeutic experiment. No sources replaced after adverse eligibility findings. Three selected families, four query groups, eleven queries: selection stops. This is not a systematic review, notice/retraction audit, exhaustive repository search, or proof against alternative explanations.
+
+## Review correction — 12 November 2026
+
+The eleven original discovery queries above remain historical. This review introduced no new candidate: targeted searches rechecked Walker's Results/legend/design locators, and a direct request to the public bioRxiv API retrieved Matson's complete abstract/metadata (HTTP200, hash in `matson_api_metadata.json`). The API was missing from the original method. The API-linked JATS XML returned HTTP403 here; another reviewer's reported HTTP429 is not reproduced or relabelled as this session's result. A failure in one client/route is not global source inaccessibility. Original JCI binary success/hash is retained; a different session's DNS failure does not invalidate it. C2 is now discarded at abstract triage; its full-paper contents are not declared exhaustively read. No new literature discovery cycle, SRA enumeration or count-file download was performed.
