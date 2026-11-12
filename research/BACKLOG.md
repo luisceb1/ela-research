@@ -3,6 +3,15 @@
 Este archivo contiene tareas actuales y condiciones de reapertura. [STATE](STATE.md) resume resultados; el [backlog anterior íntegro](history/README.md) conserva la cronología.
 
 
+## K26 public source found — 11 November 2026
+
+- [x] Complete final-figure/methods/Reporting Summary and actual R-code review before fitting. [Decision](../reports/k26-published-source-20261111/DESIGN_REVIEW.md): source unit nA differs from the historical pA contract; author-declared blocks are supported, full nested per-record map is not recovered. Original strict gate remains closed.
+- [ ] Resolve Batch 1–3 correspondence and cell/culture/coverslip/repeat structure; recording-day/QC information where available. [Focused follow-up sent with explicit authorization](../reports/k26-published-source-20261111/COMMUNICATION_LOG.md), 11 November 2026; await technical clarification, no automatic further message. Do not fabricate IDs/days or silently rescale before log1p. Record the required unit/version amendment before any fit.
+
+- [x] Verify final Nature publication and download/hash-pin Source Data Fig.4; inspect exact panel 4d and explicit batch counts with deposited script. [Report](../reports/k26-published-source-20261111/REPORT.md). This supersedes the numerical-file availability blocker, not the design gate.
+- [x] Under the existing #44 plan, review the available amplitude/unit, design and R sources before any fit. Outcome: partial design recovery, strict gate not met; remaining inputs are listed above. No new endpoint or author follow-up is authorized by this entry.
+
+
 ## English documentation entry — 11 November 2026
 
 - [x] Integrate reviewed normalization/corrections through PR #58, merge `c7d8f7e92e7eb02e3fb619f6e8984f075ef84784`.
