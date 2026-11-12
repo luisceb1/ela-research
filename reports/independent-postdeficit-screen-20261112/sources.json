@@ -1,0 +1,163 @@
+{
+  "date": "2026-11-12",
+  "base_commit": "d09203c8546f3cca7bfeb54911eb322d3451404a",
+  "prospective_plan_commit": "bac77055aa0e7eaaab9cced0513ef1cbb19819d5",
+  "candidate_order": [
+    "C1",
+    "C2",
+    "C3"
+  ],
+  "query_groups_used": 4,
+  "queries_used": 11,
+  "primary_sources": [
+    {
+      "id": "C1",
+      "doi": "10.1007/s00401-015-1460-x",
+      "version": "PMC author manuscript;article2015",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5127391/",
+      "web_read": "Methods phenotype monitoring;Results;Fig8;Supplementary Material",
+      "supplement": "https://pmc.ncbi.nlm.nih.gov/articles/instance/5127391/bin/NIHMS830527-supplement-supplemental.pdf",
+      "publisher_route": "https://doi.org/10.1007/s00401-015-1460-x",
+      "access_limit": "supplement challenge;publisher failure;no binary PDF authenticated"
+    },
+    {
+      "id": "C2",
+      "doi": "10.64898/2026.11.07.764673",
+      "version": "v1;posted2026-11-09;preprint",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.11.07.764673v1",
+      "full_route": "https://www.biorxiv.org/content/10.64898/2026.11.07.764673v1.full",
+      "web_read": "original indexed abstract;review correction complete abstract and metadata via public API HTTP200",
+      "access_limit": "original web full/landing failed;API was omitted initially but is accessible;API-linked JATS403 in this review;full methods remain uninspected",
+      "authors": [
+        "Kaya J.E. Matson",
+        "Cecilia R. Petruconis",
+        "Amber Hernandez",
+        "Jay R. Dave",
+        "Suradip Das",
+        "Erika L.F. Holzbaur"
+      ],
+      "licence_indexed": "CC BY4.0;not a claim about unseen data files",
+      "api_url": "https://api.biorxiv.org/details/biorxiv/10.64898/2026.11.07.764673"
+    },
+    {
+      "id": "C3",
+      "doi": "10.1172/JCI59130",
+      "version": "JCI2012;122(1):107-118;online2011",
+      "url": "https://www.jci.org/articles/view/59130",
+      "supplement_landing": "https://www.jci.org/articles/view/59130/sd/1",
+      "supplement_route": "https://www.jci.org/articles/view/59130/sd/pdf/render/1",
+      "web_read": "Results;Methods;Fig4E/F;Fig7 kept separate",
+      "binary_read": "9page supplement text all pages;p9 rendered and viewed;0 embedded files",
+      "access_limit": "no linked row-level numerical table verified;no videos acquired"
+    },
+    {
+      "id": "family_check_only",
+      "doi": "10.1186/s40478-022-01373-0",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9107273/",
+      "version": "Hur2022",
+      "web_read": "authors,Fig1,Associated Data",
+      "not_a_candidate": true,
+      "reason": "rNLS8 family check;not certified independent;no linked numeric table verified;DOCX not acquired"
+    }
+  ],
+  "local_retrievals": [
+    {
+      "id": "walker_html",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5127391/",
+      "retrieved_at_utc": "2026-11-12T09:11:37.578810+00:00",
+      "status": 203,
+      "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5127391/",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 5581,
+      "sha256": "ae0761412f509616b96fffd4eab40aa5b78a9a5da81f57b7113f9cefdb1a36a6",
+      "format_verified": "HTML; not a verified PDF",
+      "scientific_content_verified": false,
+      "warning": "Challenge/error HTML; hash does not authenticate scientific source content"
+    },
+    {
+      "id": "walker_supp",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/5127391/bin/NIHMS830527-supplement-supplemental.pdf",
+      "retrieved_at_utc": "2026-11-12T09:11:44.714371+00:00",
+      "status": 200,
+      "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/5127391/bin/NIHMS830527-supplement-supplemental.pdf",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 21574,
+      "sha256": "2d0121c4a1f607557bd04c56e22657b191c71f0abb382bf019092a2b658e1944",
+      "format_verified": "HTML; not a verified PDF",
+      "scientific_content_verified": false,
+      "warning": "Challenge/error HTML; hash does not authenticate scientific source content"
+    },
+    {
+      "id": "huang_html",
+      "url": "https://www.jci.org/articles/view/59130",
+      "retrieved_at_utc": "2026-11-12T09:11:48.922633+00:00",
+      "status": 200,
+      "final_url": "https://www.jci.org/articles/view/59130",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 169390,
+      "sha256": "f494e00fcf822cfed1c60797659039a24c640da2989e84118babea9bad292334",
+      "format_verified": "HTML; not a verified PDF",
+      "scientific_content_verified": true
+    },
+    {
+      "id": "huang_supp",
+      "url": "https://www.jci.org/articles/view/59130/sd/pdf/render/1",
+      "retrieved_at_utc": "2026-11-12T09:11:53.913316+00:00",
+      "status": 200,
+      "final_url": "https://dm5migu4zj3pb.cloudfront.net/manuscripts/59000/59130/JCI59130sd.pdf",
+      "content_type": "application/pdf",
+      "bytes": 15235286,
+      "sha256": "e5e9040526bd6eb948f397d997caea18a2d235666994a3a49590cc73e22a2562",
+      "format_verified": "PDF",
+      "scientific_content_verified": true
+    }
+  ],
+  "operations_errors": [
+    {
+      "operation": "initial local HTML retrieval helper",
+      "error": "ModuleNotFoundError: requests",
+      "resolution": "used standard-library urllib;no package installed"
+    },
+    {
+      "operation": "Walker figure route",
+      "error": "challenge HTML"
+    },
+    {
+      "operation": "JCI figure4 route",
+      "error": "webHTTP502"
+    },
+    {
+      "operation": "JCI supplementary web route",
+      "error": "web400",
+      "resolution": "bounded local PDF retrieval succeeded"
+    },
+    {
+      "operation": "git push",
+      "error": "CLI HTTPS credentials unavailable",
+      "resolution": "import using authenticated GitHub connector; retain original local prospective commit payload;do not mislabel remote import time as prespecification time"
+    }
+  ],
+  "no_effect_analysis": true,
+  "no_contacts": true,
+  "no_mass_downloads": true,
+  "no_automatic_merge": true,
+  "review_correction": {
+    "date": "2026-11-12",
+    "reviewed_head": "5f0364b961d5840d4de736bc44f690578f70cd70",
+    "api_metadata_file": "matson_api_metadata.json",
+    "jats_retrieval": {
+      "url": "https://www.biorxiv.org/content/early/2026/11/09/2026.11.07.764673.source.xml",
+      "checked_utc": "2026-11-12T09:26:33.318293+00:00",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    "decisions": {
+      "C1": "pending data gate;archived",
+      "C2": "discarded at abstract triage",
+      "C3": "pending data gate;archived"
+    },
+    "new_candidates": 0,
+    "new_effects": 0,
+    "new_recount3_screen_authorized": false,
+    "walker_locators": "design Fig6a;functional Fig8f/g;Results1week and wirehang legend3week significance retained without resolving onset"
+  }
+}

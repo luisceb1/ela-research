@@ -5,7 +5,7 @@
 
 ## Resultado en una línea
 
-**La vía funciona y el bloqueo de medición de #37 queda resuelto como capacidad**, pero **este estudio concreto no supera el umbral de cobertura ≥20** en ninguna de las dos uniones crípticas. La causa está aislada: profundidad en el locus, no acceso ni diseño.
+**La vía funciona y el bloqueo de medición de #37 queda resuelto como capacidad**, pero **este estudio concreto no supera el umbral de cobertura ≥20** en ninguna de las dos uniones crípticas. **Correction — 12 November 2026:** observed cryptic-junction coverage is insufficient in this dataset; the earlier attribution solely to depth is withdrawn. Access to counts and detection of the canonical junction do not establish total depth as the unique cause or validate all design requirements. Depletion efficacy, assay, mapping/read length and biological alternatives remain unresolved.
 
 ## Lo que se consiguió, y es nuevo para el proyecto
 
@@ -173,7 +173,7 @@ Es decir: **si el umbral de 20 es alcanzable en RNA-seq público depende de cuá
 
 ## Limitaciones
 
-- **SRP166282: rechazo por cobertura**, igual que el piloto cerrado. La causa está aislada: profundidad en el locus, no acceso. **Una sola línea celular**, sin independencia genética.
+- **SRP166282: rejected on observed cryptic-junction coverage**, like the closed pilot. Counts are accessible, but the cause of low coverage is not isolated; see the dated correction above. One cell line does not provide genetic independence. No counts, threshold or gate result changed.
 - **SRP334561: no elegible** para la puerta de #37 por ser ensayo de amplicón dirigido, pese a tener el mejor diseño (3 líneas de donante) y cobertura altísima. Su fracción críptica no es PSI de transcriptoma completo.
 - **La hipótesis cortical sigue SIN PROBAR**, y Brown 2022 no puede probarla: sus depósitos son dirigidos o de otro ensayo, y su candidato cortical no tiene SRA. Los tres candidatos examinados son de motoneuronas o inelegibles.
 - **No se ha hecho una búsqueda exhaustiva de recount3.** Se comprobaron accesiones concretas derivadas de los dos artículos de referencia. **No se afirma que no exista** un dataset adecuado; se afirma que los de estos artículos no sirven.
