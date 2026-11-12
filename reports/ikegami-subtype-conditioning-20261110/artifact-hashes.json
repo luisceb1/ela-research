@@ -1,0 +1,6 @@
+{
+  "scripts/check_ikegami_subtype_association.py": "64e8ceda82578021d8a158aca1ab7fa3349c7f0e7cebca3c13bbfd2b2a89b669",
+  "scripts/plot_ikegami_subtype_association.py": "04d5e2a12e85232f2592ed7c5a3bfce3251f1ef73862d550bf3d84b7ab75b03e",
+  "tests/test_ikegami_subtype_association.py": "f548a5449e9a0892affc09cd52f63f854bb9cea2d4c983b9465f6b8b0f908f4b",
+  "research/plans/2026-11-10-ikegami-subtype-conditioning.md": "66e3d55148442aec37175e535cf75361e13cf359c5ef167d64d6dd03040acdab"
+}

@@ -1,5 +1,15 @@
 # Current backlog — 2026-11-04
 
+## PR #53 integrated for review — 12 November 2026
+
+The historical subtype-conditioned Ikegami cycle is now included: pooled rho 0.57367, adjusted rank rho 0.31669, stratified two-sided permutation p=0.07825 and marginal bootstrap 95% interval [-0.02342, 0.62758], using the same 35 cases. The fixed prediction was not met; absence of association, subtype heterogeneity and mechanism are not established. This is internal reproduction, not independent validation. No new fit or raw-data acquisition was performed during integration. [Result](../reports/ikegami-subtype-conditioning-20261110/REPORT.md), [integration/validation](../reports/pr53-integration-20261112/REPORT.md).
+
+The fixed three-source paired-marker screen admitted no new source. The authorized Quadros request was recorded as sent on 11 November; no reply/data receipt is verified in this integration. Earlier unsent wording below is historical and superseded by its communication log. No reminder or fourth candidate is scheduled.
+
+The early 11 November Keuss publication check below is historical: final source data and the conditional replay were subsequently integrated through #60–#62. #44 and #37 are closed; strict v1 and biological-unit clarification remain unresolved. No source search, model sweep or equivalent replay is reopened. The prior seven report translations retain their pinned scope; current English findings now include this result.
+
+PR #51 is closed unmerged as not currently planned, with its branch retained. Reconsider agent infrastructure only for a concrete accepted task and separately authorized execution/budget; no live API workflow is integrated here.
+
 ## Interpretation review and access update — 12 November 2026
 
 The [bounded review](../reports/nov12-interpretation-review-20261112/REPORT.md) corrects the GTEx window rationale, withdraws the canonical-count upper-bound claim and limits the spinal/laser-capture conclusions to the inspected observations. Numerical outputs, thresholds and prospective plans are retained. This is a documentation/committed-output check, not a re-run of the original sequencing inputs.
@@ -147,7 +157,7 @@ Confirmado por Luis: sin archivo K26 y sin acceso AD Workbench. Las dos líneas 
 
 ## Entradas del 10/11/2026 (tarde)
 
-- [x] Replay descriptivo de los datos fuente de Ikegami/Koike 2026: R1–R4 reproducidos, con control de permutación y descarte de la duración de enfermedad como explicación. Ver [informe](../reports/ikegami-source-replay-20261110/REPORT.md). Reproducibilidad interna, **no** replicación; sigue sin aportar cuentas de uniones y **no reabre #37**.
+- [x] Replay descriptivo de los datos fuente de Ikegami/Koike 2026: R1–R4 reproducidos, con control de permutación y correlaciones marginales no significativas con duración; la duración no se descarta como explicación parcial. Ver [informe](../reports/ikegami-source-replay-20261110/REPORT.md). Reproducibilidad interna, **no** replicación; sigue sin aportar cuentas de uniones y **no reabre #37**.
 - [x] Vigilante diario ampliado para detectar versiones revisadas por pares de los 6 preprints seguidos, con pruebas. Primer hallazgo real: Guo publicado en *Sci Transl Med* (PMID 42234776).
 - [ ] **Métodos de Guo revisado por pares**: de pago y sin registro PMC. Las filas G-a/G-b de la matriz siguen atribuidas al preprint de 2025. Entrada necesaria: acceso legítimo al texto publicado. No reintentar por continuidad.
 - [x] Table S1/S2 inspeccionadas: **no** contienen carga de pTDP-43 por caso, luego la prueba discriminante de H2 no es ejecutable con esta fuente. Cribado de confusores entre subtipos ejecutado: RIN, PMI y pérdida neuronal no difieren; la duración sí (32/19/11 meses); la edad de inicio solo nominalmente. Enlace por caso rechazado por clave no única en Tipos 2a y 2b.
@@ -243,3 +253,22 @@ No nuevas descargas masivas, control completo/TDP, contactos, gastos, datos pers
 ## Completed user-authorized extensions
 
 A25 Fig.3s descriptive replay and UNC13A Dox replay are complete; see STATE.md. Missing culture identities and molecular metadata do not become new searches by default. ELK1 final-paper archive reconciliation is complete and integrated with its molecular replay; see STATE.md. No further ELK1 intervention program is scheduled. No new equivalent audit is scheduled. A new source file and prospective design review are needed before inference. The scheduled one-time Fratta publication check does not reactivate broad research continuity.
+
+
+## Cierre del análisis condicionado — 10/11/2026
+
+- [x] Análisis exploratorio condicionado por subtipo, protocolo commit `88fc61f`: rho global 0,57367 → ajustado 0,31669; permutación estratificada bilateral p=0,07825; intervalo marginal 95% [-0,02342; 0,62758]. La predicción no se cumple; no equivale a ausencia de asociación. Corregidas inferencias excesivas sobre confusores y varianza. [Informe](../reports/ikegami-subtype-conditioning-20261110/REPORT.md). Ciclo cerrado; no se repite para buscar significación.
+- Próxima entrada propuesta: fuente independiente con ambos marcadores, unidades identificables, covariables enlazables y medida justificada de función nuclear de TDP-43. El patrón por subtipo requiere una prueba prospectiva independiente. No se inicia aquí otra cohorte ni se reabren #37/#44.
+
+
+## Fuente independiente tras el ajuste por subtipo — 10/11/2026
+
+- [x] Cribado acotado autorizado por Luis de Quadros 2024, Gittings 2023 y Ramsey 2026, protocolo `2b23019` anterior al libro original. **Ninguna fuente admitida para inferencia ahora**; [informe](../reports/independent-marker-source-screen-20261110/REPORT.md).
+- [x] Recuperado y hashado el Supporting Data Values de Ramsey: ambos marcadores disponibles, pero sin claves verificables de réplica ni enlace a patología. No convertir sus 18/27 observaciones PCR humanas en sujetos independientes. Gittings queda descartado para esta pregunta por no detectar la unión críptica UNC13A.
+- [ ] Entrada prioritaria propuesta: tabla pública completamente anonimizada de Quadros, ambos marcadores + carga pTDP-43 por unidad/región, con normalización, no detección y agregación de réplicas. [Approved request, subsequently sent with explicit authorization](../reports/independent-marker-source-screen-20261110/DATA_REQUEST_DRAFT.md); no additional contact is scheduled. No abrir cuarta candidata ni procesar una cohorte para sustituir esta entrada por inercia. #37/#44 mantienen sus requisitos originales.
+
+
+## Actualización — 11/11/2026
+
+- [x] Enviada la solicitud de datos de Quadros a Clotilde Lagier-Tourenne con autorización expresa de Luis; mensaje Gmail `1a1c97ba8ab9cf9d`. Sustituye el estado previo de borrador no enviado. Respuesta y datos aún no acreditados.
+- [x] Historical early check, superseded by the subsequent source recovery and conditional replay (#60–#62): KCL sigue mostrando aceptado/en prensa, sin tabla original nueva recuperada. #44 sigue bloqueada por valores eEPSC y mapa de unidades; [resultado y límites](../reports/publication-access-check-20261111/REPORT.md). No se envía seguimiento a Fratta ni se programa vigilancia por esta instrucción.

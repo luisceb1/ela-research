@@ -1,0 +1,59 @@
+[
+  {
+    "study": "Agra Almeida Quadros et al. 2024",
+    "doi": "10.1007/s00401-023-02655-0",
+    "pmid": "38175301",
+    "source": "https://link.springer.com/article/10.1007/s00401-023-02655-0",
+    "model": "AD postmortem amygdala / entorhinal cortex; separate SH-SY5Y dose-response experiments",
+    "markers": "Both cryptic markers by qRT-PCR; pTDP-43 area burden in tissue",
+    "availability": "Original paired PCR/pathology values by corresponding-author request; Mayo syn5550404 / MSBB syn3157743 refer to separate RNA-seq resources",
+    "pairing": "Published marker-marker scatter and marker-pathology correlations, but source observations/keys not recovered",
+    "independence": "Different primary study and source site from Japanese Ikegami cohort; exact sample-overlap exclusion not verified",
+    "decision": "Not admitted for analysis now; best targeted data request",
+    "missing": "Public anonymous paired molecular table; biological-unit / technical-replicate and TDP-43 linkage; detection and normalization rules",
+    "locators": [
+      "Methods > RT-PCR and quantitative PCR",
+      "Methods > Data availability",
+      "Results > Different sensitivity of STMN2 and UNC13A RNAs to TDP-43 loss",
+      "Figures 2f and 3; Results describing pTDP-43 burden",
+      "Author information > Corresponding authors"
+    ]
+  },
+  {
+    "study": "Gittings et al. 2023",
+    "doi": "10.1007/s00401-023-02599-5",
+    "pmid": "37466726",
+    "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10412668/",
+    "model": "C9ORF72 ALS/FTD postmortem cortex snRNA-seq",
+    "markers": "STMN2 and KALRN cryptic events detected; UNC13A cryptic junction not detected by authors",
+    "availability": "Synapse syn45351388; CELLxGENE gene expression browser",
+    "pairing": "Cannot construct observed UNC13A cryptic / STMN2 paired contrast from a dataset with no detected target junction",
+    "independence": "Own cohort in primary study; reuses Liu 2019 to select a CE catalogue, not as evidence that own nuclei measure UNC13A",
+    "decision": "Rejected for this paired-marker question; no raw download",
+    "missing": "Adequately measured UNC13A cryptic event; low/3-prime-biased coverage is not biological absence",
+    "locators": [
+      "Results paragraph beginning Another transcript described to include a CE",
+      "Discussion > limitations of 10x 3-prime coverage",
+      "Data availability"
+    ]
+  },
+  {
+    "study": "Ramsey et al. 2026",
+    "doi": "10.1172/JCI190035",
+    "pmid": "42302828",
+    "source": "https://www.jci.org/articles/view/190035",
+    "model": "GRN organoids and separate human FTLD-GRN tissue",
+    "markers": "Source workbook has both markers; pathology measurements in another sheet; organoid CE not detected according to primary text",
+    "availability": "Verified public JCI190035.sdval.xlsx; code v1.0 tree and GSE282668 accession checked against primary article",
+    "pairing": "Group-labelled columns lack sample/replicate keys; no validated link from PCR columns to pathology rows",
+    "independence": "Different source study/site from Ikegami; organoids are not ALS tissue replication; participant overlap not explicitly audited",
+    "decision": "Rejected for inferential correlation now; accepted as a verified source-file/layout and published contextual evidence",
+    "missing": "Column-to-biological-unit and technical-replicate map, marker pairing confirmation, pathology linkage and detection-limit metadata",
+    "locators": [
+      "Results around Figure 6",
+      "Data availability",
+      "Supporting Data Values: Fig6D / Fig6E / Fig6F",
+      "Supplement SD1, Figure S9 legend"
+    ]
+  }
+]

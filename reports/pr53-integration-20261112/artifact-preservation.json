@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "original_pr53_head": "fedfa4fd8122b40f45fbd2d0d88c28d3b7e92e6f",
+  "integration_main": "e2fbdc09283239c373fa806727b88c3abac9f476",
+  "scope": "Committed artifact preservation only; original scientific data not reacquired or refitted",
+  "unchanged_artifacts_sha256": {
+    "reports/ikegami-subtype-conditioning-20261110/artifact-hashes.json": "7a7e6706e4de0ba12c92d54191232d95b0f2d18136e3d56052430402db3cbf33",
+    "reports/ikegami-subtype-conditioning-20261110/tests.json": "0a10e91e4b9bb36dd19dd1a298620100a86df05f45d74cdc6751f82952acf1a0",
+    "reports/ikegami-subtype-conditioning-20261110/association.svg": "71419d1c71397e1e72122eaf80e3d150e5f69bcd3f699142ae68983656c7e4d0",
+    "reports/ikegami-subtype-conditioning-20261110/results.json": "770beb0669b2cfc63e9062043853513b8517e3da5858dc26789a1e52afc36559",
+    "reports/independent-marker-source-screen-20261110/source-receipts.json": "2d5dd0767ea36180cacd02816d72edd4fe58903541622448b7529ca3b5f55a25",
+    "reports/independent-marker-source-screen-20261110/candidate-decisions.json": "1eb4d4253bb64881e58b858df609a5691c206089ba3377edbfbe7dcd411f4961",
+    "reports/independent-marker-source-screen-20261110/ramsey-workbook-layout.json": "cdad2800b58f1515f4995e181b4e1ffd00b0848eb9e9670c260269f0a7cc6ce4",
+    "reports/independent-marker-source-screen-20261110/candidate-decisions.tsv": "4ab1850553dde259955b75fdfb2172aea6e3536350da126f2f152d8f1bd6490a",
+    "reports/publication-access-check-20261111/COMMUNICATION_LOG.md": "aaadb2ca1116fcb29c0c7c3d2de1c1d92e0ac2718d9f2ca26ec2205634355485",
+    "reports/publication-access-check-20261111/retrieval-summary.json": "e3ef4abc2f7ed1f0a23b223a673de2d698d7edfc4acbbb6a824b813b918b7408",
+    "scripts/check_ikegami_subtype_association.py": "64e8ceda82578021d8a158aca1ab7fa3349c7f0e7cebca3c13bbfd2b2a89b669",
+    "scripts/plot_ikegami_subtype_association.py": "04d5e2a12e85232f2592ed7c5a3bfce3251f1ef73862d550bf3d84b7ab75b03e",
+    "tests/test_ikegami_subtype_association.py": "f548a5449e9a0892affc09cd52f63f854bb9cea2d4c983b9465f6b8b0f908f4b",
+    "research/plans/2026-11-10-ikegami-subtype-conditioning.md": "66e3d55148442aec37175e535cf75361e13cf359c5ef167d64d6dd03040acdab",
+    "research/plans/2026-11-10-independent-marker-source-screen.md": "d559377c4875baf4ed6f13225b575e69985ba6aec3b49eb35bf26c38b45ed712"
+  }
+}

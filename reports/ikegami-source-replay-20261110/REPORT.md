@@ -5,6 +5,10 @@
 **Fecha:** 2026-11-10. **Plan prefijado:** [`research/plans/2026-11-10-ikegami-source-data-replay.md`](../../research/plans/2026-11-10-ikegami-source-data-replay.md), commit `2dd8ba9`, **anterior a abrir el archivo**.
 **Etiqueta de evidencia:** reproducción descriptiva interna. **No** es replicación independiente —son los mismos sujetos y las mismas medidas— **ni** validación biológica. **No aporta cuentas de uniones y no avanza #37.**
 
+## Corrección interpretativa — 10/11/2026
+
+Se corrigen inferencias excesivas sobre confusión, independencia y varianza, conservando todos los estadísticos originales. El análisis condicionado por subtipo se documenta por separado en [el nuevo informe](../ikegami-subtype-conditioning-20261110/REPORT.md).
+
 ## Fuente
 
 Ikegami I, Hongo S, Koyama A, Hayakawa-Yano Y, Yano M, Sugai A, Ishihara T, Tada M, Kakita A, Onodera O, Koike YM. *Acta Neuropathologica Communications* 14:229 (2026-08-08). DOI 10.1186/s40478-026-02400-0. PMID 42983891, PMC13737708. **Revisado por pares**, acceso abierto CC-BY-NC-ND 4.0.
@@ -109,7 +113,7 @@ No se detectaron diferencias significativas de RIN, pérdida neuronal semicuanti
 
 Los datos fuente depositados **sostienen los estadísticos publicados**: tamaños de grupo exactos, ρ dentro de tolerancia, diferencias por subtipo idénticas en dirección y significación, sin poder descartar la explicación alternativa por duración con estos mismos datos. Es un ejercicio de reproducibilidad superado, y vale la pena decirlo: en este proyecto varios depósitos previos **no** reprodujeron sin fricción.
 
-Qué añade a nuestra línea científica: la correlación ρ ≈ 0,57–0,58 entre el RNA críptico de UNC13A y el STMN2 truncado en **35 casos humanos revisados por pares** es el respaldo observacional más sólido que tenemos para la hipótesis **H2** de desregulación coordinada entre dianas de TDP-43. Coincide en dirección con el hallazgo experimental de Mallika: corregir una sola diana fue insuficiente para la enfermedad de motoneurona, mientras la restauración multidiana sí rescató fenotipos.
+Update — 12 November 2026: the pooled association is internal observational evidence. The subsequently completed [subtype-conditioned cycle](../ikegami-subtype-conditioning-20261110/REPORT.md) gives adjusted rank rho 0.31669 and p=0.07825; its fixed prediction is not met. The association does not establish coordinated mechanism or benefit of multi-target correction, and is not independent validation of Mallika.
 
 Qué **no** añade: correlación entre dos marcadores en el mismo tejido no demuestra mecanismo compartido, causalidad ni que corregir ambas dianas beneficie a un paciente. El coeficiente de Spearman describe asociación entre rangos; su cuadrado no cuantifica directamente la fracción de varianza biológica explicada.
 
@@ -129,10 +133,10 @@ Qué **no** añade: correlación entre dos marcadores en el mismo tejido no demu
 
 ## Siguiente prueba discriminante
 
-1. La pregunta que estos datos **no** pueden responder sigue siendo si la coordinación UNC13A–STMN2 refleja una dependencia mecanística común o solo la intensidad de la pérdida nuclear de TDP-43. El segundo ciclo confirmó que **este depósito no la puede responder**: no hay carga de pTDP-43 cuantificada por caso. Haría falta una fuente con esa medida junto a ambos marcadores. Si la correlación se anula al condicionar en la carga, es efecto de dosis compartida; si persiste, apunta a algo más.
+1. La pregunta que estos datos **no** pueden responder sigue siendo si la coordinación UNC13A–STMN2 refleja una dependencia mecanística común o solo la intensidad de la pérdida nuclear de TDP-43. El segundo ciclo confirmó que **este depósito no la puede responder**: no hay carga de pTDP-43 cuantificada por caso. Haría falta una fuente con esa medida junto a ambos marcadores. La atenuación o persistencia tras ajustar por una medida de patología sería informativa, pero no identificaría por sí sola un mecanismo: persistirían error de medida y confusores no observados. La carga de agregados pTDP-43 no es intercambiable con pérdida de función nuclear de TDP-43.
 2. Un confusor que esta fuente **sí** deja planteado: el Tipo 2b combina más RNA críptico, curso más corto y mayor edad de inicio. Separar «intensidad de patología» de «velocidad de progresión» exigiría una cohorte con esos ejes desacoplados. No lo tenemos.
 3. No se amplía a otros artículos del grupo, no se contacta a los autores, no se abre el Additional file 2 y no se inicia un ciclo nuevo sin decisión de alcance.
 
-**Criterio de abandono de H2:** si una fuente con medida directa de uniones y unidades biológicas independientes no reproduce la asociación entre dianas, H2 deja de sostenerse como hipótesis de trabajo.
+**Criterio para revisar H2:** una fuente independiente y adecuadamente informativa que no reproduzca la asociación debilitaría la hipótesis. Un resultado no significativo por sí solo no la refuta: deben examinarse efecto, incertidumbre, cobertura y diseño.
 
 Sin contactos, gastos, datos personales, laboratorio ni publicación externa. Marco: [AGENTS](../../AGENTS.md), [PROTOCOL](../../research/PROTOCOL.md), [STATE](../../research/STATE.md).

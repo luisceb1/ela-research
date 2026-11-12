@@ -1,0 +1,1030 @@
+{
+  "file": "JCI190035.sdval.xlsx",
+  "bytes": 74783,
+  "sha256": "db027322133460279ceacdc3d5fccd314c9f262cff8a45c7a2ad7bd57a9779ad",
+  "sheets": [
+    {
+      "name": "Fig1C",
+      "rows": 10,
+      "columns": 6
+    },
+    {
+      "name": "Fig1D",
+      "rows": 6,
+      "columns": 25
+    },
+    {
+      "name": "Fig1D (inset)",
+      "rows": 9,
+      "columns": 47
+    },
+    {
+      "name": "Fig1G (left)",
+      "rows": 11,
+      "columns": 41
+    },
+    {
+      "name": "Fig1G (right)",
+      "rows": 11,
+      "columns": 41
+    },
+    {
+      "name": "Fig1I (left)",
+      "rows": 11,
+      "columns": 43
+    },
+    {
+      "name": "Fig1I (right)",
+      "rows": 11,
+      "columns": 43
+    },
+    {
+      "name": "Fig.4D",
+      "rows": 4,
+      "columns": 20
+    },
+    {
+      "name": "Fig4F",
+      "rows": 11,
+      "columns": 2
+    },
+    {
+      "name": "Fig4H",
+      "rows": 11,
+      "columns": 6
+    },
+    {
+      "name": "Fig4J",
+      "rows": 11,
+      "columns": 14
+    },
+    {
+      "name": "Fig5F",
+      "rows": 26,
+      "columns": 6
+    },
+    {
+      "name": "Fig6B",
+      "rows": 7,
+      "columns": 10
+    },
+    {
+      "name": "Fig6D",
+      "rows": 11,
+      "columns": 10
+    },
+    {
+      "name": "Fig6E",
+      "rows": 21,
+      "columns": 40
+    },
+    {
+      "name": "Fig6F",
+      "rows": 17,
+      "columns": 48
+    },
+    {
+      "name": "Fig7B",
+      "rows": 5,
+      "columns": 36
+    },
+    {
+      "name": "Fig7C",
+      "rows": 4,
+      "columns": 36
+    },
+    {
+      "name": "Fig7D",
+      "rows": 4,
+      "columns": 36
+    },
+    {
+      "name": "Fig7F",
+      "rows": 5,
+      "columns": 36
+    },
+    {
+      "name": "Fig7G",
+      "rows": 5,
+      "columns": 36
+    },
+    {
+      "name": "Fig7H",
+      "rows": 5,
+      "columns": 36
+    },
+    {
+      "name": "Fig10B",
+      "rows": 13,
+      "columns": 18
+    },
+    {
+      "name": "FigS1C (left)",
+      "rows": 8,
+      "columns": 42
+    },
+    {
+      "name": "FigS1C (left, inset)",
+      "rows": 14,
+      "columns": 47
+    },
+    {
+      "name": "FigS1C (right)",
+      "rows": 8,
+      "columns": 49
+    },
+    {
+      "name": "FigS1B",
+      "rows": 11,
+      "columns": 49
+    },
+    {
+      "name": "FigS1C (right, inset)",
+      "rows": 14,
+      "columns": 47
+    },
+    {
+      "name": "FigS1D",
+      "rows": 13,
+      "columns": 41
+    },
+    {
+      "name": "FigS1E (left)",
+      "rows": 11,
+      "columns": 45
+    },
+    {
+      "name": "FigS1E (right)",
+      "rows": 11,
+      "columns": 45
+    },
+    {
+      "name": "FigS4C",
+      "rows": 11,
+      "columns": 6
+    },
+    {
+      "name": "FigS5E",
+      "rows": 9,
+      "columns": 13
+    },
+    {
+      "name": "Suppl Fig7A",
+      "rows": 40,
+      "columns": 6
+    }
+  ],
+  "target_sheets": {
+    "Fig6D": {
+      "labels": [
+        {
+          "cell": "A1",
+          "label": "NFκB+;SOX9+ cells / 45,000 μm2"
+        },
+        {
+          "cell": "E1",
+          "label": "% pTDP43+;NFκB+;SOX9+\n/NFκB+;SOX9+"
+        },
+        {
+          "cell": "I1",
+          "label": "pSMAD3+;SOX9+ cells / 45,000 μm2"
+        },
+        {
+          "cell": "A2",
+          "label": "GRN +/+"
+        },
+        {
+          "cell": "B2",
+          "label": "GRN -/-"
+        },
+        {
+          "cell": "E2",
+          "label": "GRN +/+"
+        },
+        {
+          "cell": "F2",
+          "label": "GRN -/-"
+        },
+        {
+          "cell": "I2",
+          "label": "GRN +/+"
+        },
+        {
+          "cell": "J2",
+          "label": "GRN -/-"
+        }
+      ],
+      "numeric_cells_by_row": [
+        {
+          "row": 3,
+          "count": 6,
+          "cells": [
+            "A3",
+            "B3",
+            "E3",
+            "F3",
+            "I3",
+            "J3"
+          ]
+        },
+        {
+          "row": 4,
+          "count": 6,
+          "cells": [
+            "A4",
+            "B4",
+            "E4",
+            "F4",
+            "I4",
+            "J4"
+          ]
+        },
+        {
+          "row": 5,
+          "count": 6,
+          "cells": [
+            "A5",
+            "B5",
+            "E5",
+            "F5",
+            "I5",
+            "J5"
+          ]
+        },
+        {
+          "row": 6,
+          "count": 6,
+          "cells": [
+            "A6",
+            "B6",
+            "E6",
+            "F6",
+            "I6",
+            "J6"
+          ]
+        },
+        {
+          "row": 7,
+          "count": 6,
+          "cells": [
+            "A7",
+            "B7",
+            "E7",
+            "F7",
+            "I7",
+            "J7"
+          ]
+        },
+        {
+          "row": 8,
+          "count": 6,
+          "cells": [
+            "A8",
+            "B8",
+            "E8",
+            "F8",
+            "I8",
+            "J8"
+          ]
+        },
+        {
+          "row": 9,
+          "count": 6,
+          "cells": [
+            "A9",
+            "B9",
+            "E9",
+            "F9",
+            "I9",
+            "J9"
+          ]
+        },
+        {
+          "row": 10,
+          "count": 6,
+          "cells": [
+            "A10",
+            "B10",
+            "E10",
+            "F10",
+            "I10",
+            "J10"
+          ]
+        },
+        {
+          "row": 11,
+          "count": 1,
+          "cells": [
+            "I11"
+          ]
+        }
+      ],
+      "comment_cells": [],
+      "merged_ranges": [
+        "I1:J1",
+        "E1:G1"
+      ]
+    },
+    "Fig6E": {
+      "labels": [
+        {
+          "cell": "A1",
+          "label": "Full length RNA"
+        },
+        {
+          "cell": "B2",
+          "label": "16wk WTC11"
+        },
+        {
+          "cell": "G2",
+          "label": "16wk GRNKO"
+        },
+        {
+          "cell": "L2",
+          "label": "25wk WTC11"
+        },
+        {
+          "cell": "Q2",
+          "label": "25wk GRNKO"
+        },
+        {
+          "cell": "A3",
+          "label": "UNC13A"
+        },
+        {
+          "cell": "A4",
+          "label": "KALRN"
+        },
+        {
+          "cell": "A5",
+          "label": "STMN2"
+        },
+        {
+          "cell": "A6",
+          "label": "SYT7"
+        },
+        {
+          "cell": "A16",
+          "label": "Cryptic exon retention"
+        },
+        {
+          "cell": "B17",
+          "label": "16wk WTC11"
+        },
+        {
+          "cell": "G17",
+          "label": "16wk GRNKO"
+        },
+        {
+          "cell": "L17",
+          "label": "25wk WTC11"
+        },
+        {
+          "cell": "Q17",
+          "label": "25wk GRNKO"
+        },
+        {
+          "cell": "A18",
+          "label": "UNC13A"
+        },
+        {
+          "cell": "A19",
+          "label": "KALRN"
+        },
+        {
+          "cell": "A20",
+          "label": "STMN2"
+        },
+        {
+          "cell": "A21",
+          "label": "SYT7"
+        }
+      ],
+      "numeric_cells_by_row": [
+        {
+          "row": 3,
+          "count": 12,
+          "cells": [
+            "B3",
+            "C3",
+            "D3",
+            "G3",
+            "H3",
+            "I3",
+            "L3",
+            "M3",
+            "N3",
+            "Q3",
+            "R3",
+            "S3"
+          ]
+        },
+        {
+          "row": 4,
+          "count": 12,
+          "cells": [
+            "B4",
+            "C4",
+            "D4",
+            "G4",
+            "H4",
+            "I4",
+            "L4",
+            "M4",
+            "N4",
+            "Q4",
+            "R4",
+            "S4"
+          ]
+        },
+        {
+          "row": 5,
+          "count": 12,
+          "cells": [
+            "B5",
+            "C5",
+            "D5",
+            "G5",
+            "H5",
+            "I5",
+            "L5",
+            "M5",
+            "N5",
+            "Q5",
+            "R5",
+            "S5"
+          ]
+        },
+        {
+          "row": 6,
+          "count": 12,
+          "cells": [
+            "B6",
+            "C6",
+            "D6",
+            "G6",
+            "H6",
+            "I6",
+            "L6",
+            "M6",
+            "N6",
+            "Q6",
+            "R6",
+            "S6"
+          ]
+        },
+        {
+          "row": 18,
+          "count": 12,
+          "cells": [
+            "B18",
+            "C18",
+            "D18",
+            "G18",
+            "H18",
+            "I18",
+            "L18",
+            "M18",
+            "N18",
+            "Q18",
+            "R18",
+            "S18"
+          ]
+        },
+        {
+          "row": 19,
+          "count": 12,
+          "cells": [
+            "B19",
+            "C19",
+            "D19",
+            "G19",
+            "H19",
+            "I19",
+            "L19",
+            "M19",
+            "N19",
+            "Q19",
+            "R19",
+            "S19"
+          ]
+        },
+        {
+          "row": 20,
+          "count": 12,
+          "cells": [
+            "B20",
+            "C20",
+            "D20",
+            "G20",
+            "H20",
+            "I20",
+            "L20",
+            "M20",
+            "N20",
+            "Q20",
+            "R20",
+            "S20"
+          ]
+        },
+        {
+          "row": 21,
+          "count": 12,
+          "cells": [
+            "B21",
+            "C21",
+            "D21",
+            "G21",
+            "H21",
+            "I21",
+            "L21",
+            "M21",
+            "N21",
+            "Q21",
+            "R21",
+            "S21"
+          ]
+        }
+      ],
+      "comment_cells": [],
+      "merged_ranges": []
+    },
+    "Fig6F": {
+      "labels": [
+        {
+          "cell": "A1",
+          "label": "Full length RNA"
+        },
+        {
+          "cell": "B2",
+          "label": "Control"
+        },
+        {
+          "cell": "V2",
+          "label": "FTLD"
+        },
+        {
+          "cell": "A3",
+          "label": "UNC13A"
+        },
+        {
+          "cell": "A4",
+          "label": "KALRN"
+        },
+        {
+          "cell": "A5",
+          "label": "STMN2"
+        },
+        {
+          "cell": "A6",
+          "label": "SYT7"
+        },
+        {
+          "cell": "A12",
+          "label": "Cryptic exon retention"
+        },
+        {
+          "cell": "B13",
+          "label": "Control"
+        },
+        {
+          "cell": "V13",
+          "label": "FTLD"
+        },
+        {
+          "cell": "A14",
+          "label": "UNC13A"
+        },
+        {
+          "cell": "A15",
+          "label": "KALRN"
+        },
+        {
+          "cell": "A16",
+          "label": "STMN2"
+        },
+        {
+          "cell": "A17",
+          "label": "SYT7"
+        }
+      ],
+      "numeric_cells_by_row": [
+        {
+          "row": 3,
+          "count": 45,
+          "cells": [
+            "B3",
+            "C3",
+            "D3",
+            "E3",
+            "F3",
+            "G3",
+            "H3",
+            "I3",
+            "J3",
+            "K3",
+            "L3",
+            "M3",
+            "N3",
+            "O3",
+            "P3",
+            "Q3",
+            "R3",
+            "S3",
+            "V3",
+            "W3",
+            "X3",
+            "Y3",
+            "Z3",
+            "AA3",
+            "AB3",
+            "AC3",
+            "AD3",
+            "AE3",
+            "AF3",
+            "AG3",
+            "AH3",
+            "AI3",
+            "AJ3",
+            "AK3",
+            "AL3",
+            "AM3",
+            "AN3",
+            "AO3",
+            "AP3",
+            "AQ3",
+            "AR3",
+            "AS3",
+            "AT3",
+            "AU3",
+            "AV3"
+          ]
+        },
+        {
+          "row": 4,
+          "count": 45,
+          "cells": [
+            "B4",
+            "C4",
+            "D4",
+            "E4",
+            "F4",
+            "G4",
+            "H4",
+            "I4",
+            "J4",
+            "K4",
+            "L4",
+            "M4",
+            "N4",
+            "O4",
+            "P4",
+            "Q4",
+            "R4",
+            "S4",
+            "V4",
+            "W4",
+            "X4",
+            "Y4",
+            "Z4",
+            "AA4",
+            "AB4",
+            "AC4",
+            "AD4",
+            "AE4",
+            "AF4",
+            "AG4",
+            "AH4",
+            "AI4",
+            "AJ4",
+            "AK4",
+            "AL4",
+            "AM4",
+            "AN4",
+            "AO4",
+            "AP4",
+            "AQ4",
+            "AR4",
+            "AS4",
+            "AT4",
+            "AU4",
+            "AV4"
+          ]
+        },
+        {
+          "row": 5,
+          "count": 45,
+          "cells": [
+            "B5",
+            "C5",
+            "D5",
+            "E5",
+            "F5",
+            "G5",
+            "H5",
+            "I5",
+            "J5",
+            "K5",
+            "L5",
+            "M5",
+            "N5",
+            "O5",
+            "P5",
+            "Q5",
+            "R5",
+            "S5",
+            "V5",
+            "W5",
+            "X5",
+            "Y5",
+            "Z5",
+            "AA5",
+            "AB5",
+            "AC5",
+            "AD5",
+            "AE5",
+            "AF5",
+            "AG5",
+            "AH5",
+            "AI5",
+            "AJ5",
+            "AK5",
+            "AL5",
+            "AM5",
+            "AN5",
+            "AO5",
+            "AP5",
+            "AQ5",
+            "AR5",
+            "AS5",
+            "AT5",
+            "AU5",
+            "AV5"
+          ]
+        },
+        {
+          "row": 6,
+          "count": 45,
+          "cells": [
+            "B6",
+            "C6",
+            "D6",
+            "E6",
+            "F6",
+            "G6",
+            "H6",
+            "I6",
+            "J6",
+            "K6",
+            "L6",
+            "M6",
+            "N6",
+            "O6",
+            "P6",
+            "Q6",
+            "R6",
+            "S6",
+            "V6",
+            "W6",
+            "X6",
+            "Y6",
+            "Z6",
+            "AA6",
+            "AB6",
+            "AC6",
+            "AD6",
+            "AE6",
+            "AF6",
+            "AG6",
+            "AH6",
+            "AI6",
+            "AJ6",
+            "AK6",
+            "AL6",
+            "AM6",
+            "AN6",
+            "AO6",
+            "AP6",
+            "AQ6",
+            "AR6",
+            "AS6",
+            "AT6",
+            "AU6",
+            "AV6"
+          ]
+        },
+        {
+          "row": 14,
+          "count": 45,
+          "cells": [
+            "B14",
+            "C14",
+            "D14",
+            "E14",
+            "F14",
+            "G14",
+            "H14",
+            "I14",
+            "J14",
+            "K14",
+            "L14",
+            "M14",
+            "N14",
+            "O14",
+            "P14",
+            "Q14",
+            "R14",
+            "S14",
+            "V14",
+            "W14",
+            "X14",
+            "Y14",
+            "Z14",
+            "AA14",
+            "AB14",
+            "AC14",
+            "AD14",
+            "AE14",
+            "AF14",
+            "AG14",
+            "AH14",
+            "AI14",
+            "AJ14",
+            "AK14",
+            "AL14",
+            "AM14",
+            "AN14",
+            "AO14",
+            "AP14",
+            "AQ14",
+            "AR14",
+            "AS14",
+            "AT14",
+            "AU14",
+            "AV14"
+          ]
+        },
+        {
+          "row": 15,
+          "count": 45,
+          "cells": [
+            "B15",
+            "C15",
+            "D15",
+            "E15",
+            "F15",
+            "G15",
+            "H15",
+            "I15",
+            "J15",
+            "K15",
+            "L15",
+            "M15",
+            "N15",
+            "O15",
+            "P15",
+            "Q15",
+            "R15",
+            "S15",
+            "V15",
+            "W15",
+            "X15",
+            "Y15",
+            "Z15",
+            "AA15",
+            "AB15",
+            "AC15",
+            "AD15",
+            "AE15",
+            "AF15",
+            "AG15",
+            "AH15",
+            "AI15",
+            "AJ15",
+            "AK15",
+            "AL15",
+            "AM15",
+            "AN15",
+            "AO15",
+            "AP15",
+            "AQ15",
+            "AR15",
+            "AS15",
+            "AT15",
+            "AU15",
+            "AV15"
+          ]
+        },
+        {
+          "row": 16,
+          "count": 45,
+          "cells": [
+            "B16",
+            "C16",
+            "D16",
+            "E16",
+            "F16",
+            "G16",
+            "H16",
+            "I16",
+            "J16",
+            "K16",
+            "L16",
+            "M16",
+            "N16",
+            "O16",
+            "P16",
+            "Q16",
+            "R16",
+            "S16",
+            "V16",
+            "W16",
+            "X16",
+            "Y16",
+            "Z16",
+            "AA16",
+            "AB16",
+            "AC16",
+            "AD16",
+            "AE16",
+            "AF16",
+            "AG16",
+            "AH16",
+            "AI16",
+            "AJ16",
+            "AK16",
+            "AL16",
+            "AM16",
+            "AN16",
+            "AO16",
+            "AP16",
+            "AQ16",
+            "AR16",
+            "AS16",
+            "AT16",
+            "AU16",
+            "AV16"
+          ]
+        },
+        {
+          "row": 17,
+          "count": 45,
+          "cells": [
+            "B17",
+            "C17",
+            "D17",
+            "E17",
+            "F17",
+            "G17",
+            "H17",
+            "I17",
+            "J17",
+            "K17",
+            "L17",
+            "M17",
+            "N17",
+            "O17",
+            "P17",
+            "Q17",
+            "R17",
+            "S17",
+            "V17",
+            "W17",
+            "X17",
+            "Y17",
+            "Z17",
+            "AA17",
+            "AB17",
+            "AC17",
+            "AD17",
+            "AE17",
+            "AF17",
+            "AG17",
+            "AH17",
+            "AI17",
+            "AJ17",
+            "AK17",
+            "AL17",
+            "AM17",
+            "AN17",
+            "AO17",
+            "AP17",
+            "AQ17",
+            "AR17",
+            "AS17",
+            "AT17",
+            "AU17",
+            "AV17"
+          ]
+        }
+      ],
+      "comment_cells": [],
+      "merged_ranges": [
+        "V2:AV2",
+        "B2:S2",
+        "V13:AV13",
+        "B13:S13"
+      ]
+    }
+  }
+}
