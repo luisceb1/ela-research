@@ -1,3 +1,9 @@
+# Sent status — 12 November 2026
+
+The version-2 message reproduced below was sent with Luis’s explicit authorization on 12 November 2026 at 09:45 Europe/Madrid to Philip C. Wong, using the corresponding address in the Mallika article. Gmail SENT and message content were verified. This is not proof of delivery or reading. The historical draft and correction ledger below are preserved; their “not sent” labels describe the earlier state. No automatic follow-up is authorized. Scientific results and their current values are in [CURRENT_FINDINGS](../../docs/CURRENT_FINDINGS.md); the discarded-v1 ledger is historical.
+
+---
+
 # Mensaje a Philip C. Wong (Johns Hopkins) — BORRADOR LISTO, NO ENVIADO
 
 Fecha: 2026-11-11, **versión 2**. El texto del mensaje no cambia respecto a lo acordado; solo se amplía el registro de errores propios tras una cuarta revisión externa. La versión 1 (mía) queda descartada tras una revisión externa que señaló cuatro problemas. **Los cuatro eran correctos.** Esta versión adopta la redacción propuesta en esa revisión, que es mejor que la mía.

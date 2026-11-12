@@ -1,5 +1,8 @@
 # Current findings and limits
 
+**Cycle closure — 12 November 2026:** PRs #60/#61 are merged at `f312d3cf41fe6f2ace004f4a05fc893e6bc5abed`. The conditional K26 replay is closed pending discriminating new input; strict v1 remains disabled and the ASO star-band discrepancy unresolved. The approved factual chronology question was sent to Philip C. Wong with Luis’s explicit authorization. No reply, independent validation or new biological analysis is claimed. [Current operational status](../research/STATE.md#authorized-closure-and-wong-contact--12-november-2026).
+
+
 **Reviewed scientific baseline: 11 November 2026, source commit `c7d8f7e92e7eb02e3fb619f6e8984f075ef84784` (PR #58 merged).** This page summarizes selected current conclusions; it does not certify every historical report. No new biological analysis was performed for the English documentation. [Evidence/reproduction guide](ENGLISH_GUIDE.md) · [Spanish project entry](../README.es.md).
 
 ## STMN2: a measured junction and an exploratory paired tissue pattern

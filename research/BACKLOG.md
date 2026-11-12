@@ -1,5 +1,18 @@
 # Current backlog — 2026-11-04
 
+## Authorized closure and Wong contact — 12 November 2026
+
+Luis authorized both the Wong email and closure of this computational cycle. PRs #60 and #61 are merged; the reviewed scientific baseline is `f312d3cf41fe6f2ace004f4a05fc893e6bc5abed`.
+
+**K26 Fig.4d conditional replay is closed.** The favorable ASO−KD direction is reproduced under the stated source-block assumptions; the published ASO star band remains unmatched, its cause unresolved. Block heterogeneity and the post-hoc ASO−Control comparison do not establish complete rescue or equivalence. This is reuse of the same observations, not independent biological validation. Strict v1 remains disabled. No further transformations, model sweeps or thresholds on these observations are scheduled.
+
+Reopen only for concrete author clarification of biological nesting/panel execution, a corrected primary source, or an independently eligible dataset after a new prospective design review. Issue #44 may close as completion of this bounded computational task, not satisfaction of strict v1 or resolution of the star discrepancy. The separate STMN2 cycle remains closed.
+
+**Wong email sent:** the approved version-2 text was sent on 12 November 2026 at 09:45 Europe/Madrid to the corresponding address verified in [Mallika et al.](https://www.biorxiv.org/content/10.64898/2026.09.11.751082v1.full), corroborated by the Johns Hopkins directory. Gmail SENT and the stored message body were checked; this does not establish delivery, reading or a reply. No attachments, tissue-coverage claims or extra recipients were added. [Exact approved text and historical draft](drafts/2026-11-11-mensaje-wong-borrador.md). No automatic follow-up is authorized.
+
+**Next decision:** review substantive author replies when received; confirm actual AD Workbench access/file inventory before reopening #37. A bounded Gmail search on 12 November found no new Fratta message after 10 November and no matching AD Workbench/Seddighi notification after 3 November; absence of matching mail does not establish portal access status. No new source search or download was performed. #37's selection cycle is already closed and remains conditional on a concrete usable manifest. New studies require a separate question, eligible data and prospective controls; no fourth candidate is opened by this closure.
+
+
 Este archivo contiene tareas actuales y condiciones de reapertura. [STATE](STATE.md) resume resultados; el [backlog anterior íntegro](history/README.md) conserva la cronología.
 
 
