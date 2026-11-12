@@ -1,5 +1,15 @@
 # Current research state — 2026-11-04
 
+## recount3 availability closes Question A candidates — 12 November 2026
+
+[Availability check](../reports/recount3-availability-check-20261112/REPORT.md): **GSE252892 (SRP482832), GSE299341 (SRP590954) and GSE298758 (SRP589302) are all absent from recount3**, so Question A closes for them before any coverage question. The two already-measured projects are present with run counts matching their recorded results exactly, which is the lookup's positive control.
+
+recount3's human SRA index holds 8,103 distinct projects and is overwhelmingly its 2019 build: about 125 projects were added across 2021-2025, latest `date_processed` 2025-09-26. The capability recorded earlier stands — junction counts without FASTQ or alignment — but its **catalogue is nearly static**, so recent deposits are reached only by exception. Not a claim about future updates, other recount3 collections or other access routes.
+
+**Process correction:** the Stage A screen selected candidates from GEO that recount3 could never have measured. Any future recount3-based screen must intersect the project index **first**, then inspect design and efficacy metadata for survivors. Stage A's design observations are unaffected.
+
+Question A is closed for these candidates on availability, **not answered**: no cryptic coverage was measured in any new deposit. The 20-read minimum was neither applied nor relaxed. Question B's negative result stands as recorded. #37 remains closed; nothing here nominates a design review.
+
 ## recount3 Stage A completed — 12 November 2026
 
 Luis authorized the metadata-only stage after PR #64's prospective plan. [Query lock](plans/2026-11-12-recount3-stageA-query-lock.md) committed at `3bbc9326a926a77e6224600a8250e189d5c679b3` before discovery. [Completed report](../reports/recount3-metadata-stageA-20261112/REPORT.md): five queries reached the 30-series cap, 39 successful metadata/text responses, 636,037 received body bytes. Zero sources nominated under the proposed three-genetic-background rule. WA01/WTC11 sources fail that rule; DCPS remains unresolved for exact RNA-seq background linkage and is archived without active follow-up. Full decisions, 26 culture-library metadata records and empty Stage B manifest are deposited.
