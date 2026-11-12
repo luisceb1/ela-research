@@ -1,5 +1,9 @@
 # Current research state — 2026-11-04
 
+## Local raw-data feasibility inventory — 12 November 2026
+
+Luis selected a local-computer route and supplied WSL tool/version evidence. A prospectively bounded [inventory](../reports/local-raw-feasibility-20261112/REPORT.md) prefers previously known **GSE252892 for preparation only**: six total-RNA libraries advertise 12 FASTQs / 40,589,186,698 compressed bytes. The provisional first control/KD inputs advertise four files / 12,826,593,031 bytes; no transfer is authorized/executed by the inventory. GSE299341 advertises 40 files / 86,561,386,307 bytes; unresolved processing/efficacy and one 358,774-byte library remain recorded. Two ENA metadata requests used 36,284 bytes; zero raw/count transfers. This is not independent-donor validation, a KD effect or a reopened #37/#44/STMN2 cycle. A separate hash-locked runner and resource/transfer/stop budget must precede any approved raw execution. Current index integrity, primary-to-library depletion linkage and peak local resources remain unverified. AD workspace/dataset access and author replies are unchanged.
+
 ## PR #53 integrated for review — 12 November 2026
 
 The historical subtype-conditioned Ikegami cycle is now included: pooled rho 0.57367, adjusted rank rho 0.31669, stratified two-sided permutation p=0.07825 and marginal bootstrap 95% interval [-0.02342, 0.62758], using the same 35 cases. The fixed prediction was not met; absence of association, subtype heterogeneity and mechanism are not established. This is internal reproduction, not independent validation. No new fit or raw-data acquisition was performed during integration. [Result](../reports/ikegami-subtype-conditioning-20261110/REPORT.md), [integration/validation](../reports/pr53-integration-20261112/REPORT.md).

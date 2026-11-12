@@ -1,0 +1,38 @@
+{
+  "GSE252892": {
+    "project": "PRJNA1063175",
+    "selected_libraries": 6,
+    "mapped_libraries_with_fastq": 6,
+    "run_records_with_fastq": 6,
+    "files": 12,
+    "compressed_bytes": 40589186698,
+    "per_library_bytes": {
+      "GSM8009878": 5685827519,
+      "GSM8009879": 8215502333,
+      "GSM8009880": 7108440940,
+      "GSM8009881": 7140765512,
+      "GSM8009882": 6038473176,
+      "GSM8009883": 6400177218
+    }
+  },
+  "GSE299341": {
+    "project": "PRJNA1273942",
+    "selected_libraries": 10,
+    "mapped_libraries_with_fastq": 10,
+    "run_records_with_fastq": 20,
+    "files": 40,
+    "compressed_bytes": 86561386307,
+    "per_library_bytes": {
+      "GSM9037603": 10889804611,
+      "GSM9037604": 7066078231,
+      "GSM9037605": 5942592744,
+      "GSM9037606": 8686148160,
+      "GSM9037607": 11199856345,
+      "GSM9037613": 9168798831,
+      "GSM9037614": 9490285470,
+      "GSM9037615": 9569155455,
+      "GSM9037616": 14548307686,
+      "GSM9037617": 358774
+    }
+  }
+}

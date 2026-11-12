@@ -1,0 +1,86 @@
+{
+  "GSE252892": {
+    "GSM8009878": {
+      "srx": "SRX23148890",
+      "declared_title": "iNeuron, shControl, day 7, RNA-seq, rep 1",
+      "geo_source_sha256": "981d01622427c89d87d80c9b4c5ef2548720edb12b28a475844cdf335cf1fe9d"
+    },
+    "GSM8009879": {
+      "srx": "SRX23148891",
+      "declared_title": "iNeuron, shControl, day 7, RNA-seq, rep 2",
+      "geo_source_sha256": "d3a6f912a44ae92492194174fa1d15d7a2ca87ea5eb735a43fed0724b0793fcf"
+    },
+    "GSM8009880": {
+      "srx": "SRX23148892",
+      "declared_title": "iNeuron, shControl, day 7, RNA-seq, rep 3",
+      "geo_source_sha256": "d03a079d2efac55110c2e6ff54f1bd1401c42928169245db8dead9ee016d8733"
+    },
+    "GSM8009881": {
+      "srx": "SRX23148893",
+      "declared_title": "iNeuron, shTDP-43, day 7, RNA-seq, rep 1",
+      "geo_source_sha256": "cadb93d2fe2537111c19de469422b437649b270cadb074b0956d831b5ec6e18a"
+    },
+    "GSM8009882": {
+      "srx": "SRX23148894",
+      "declared_title": "iNeuron, shTDP-43, day 7, RNA-seq, rep 2",
+      "geo_source_sha256": "86160cc6fbe50df1ca4d41acfefd64089cb1346a83b5a17ff549e9d4bf2ca7dc"
+    },
+    "GSM8009883": {
+      "srx": "SRX23148895",
+      "declared_title": "iNeuron, shTDP-43, day 7, RNA-seq, rep 3",
+      "geo_source_sha256": "be98d6ababfc954185bc528d1daafe42ad7d5a0ca21f308015b255768f227d43"
+    }
+  },
+  "GSE299341": {
+    "GSM9037603": {
+      "srx": "SRX29112919",
+      "declared_title": "TDP43 Experiment (nontargeting-sgRNA) sample 1, Soma Fraction",
+      "geo_source_sha256": "e83a890097262b44babd4e27d7c5f9ecac5198b238f33a8b5fdd73babf775e63"
+    },
+    "GSM9037604": {
+      "srx": "SRX29112920",
+      "declared_title": "TDP43 Experiment (nontargeting-sgRNA) sample 2, Soma Fraction",
+      "geo_source_sha256": "7216dd9bdc36dd27e451a2904ce14372769fbe11b2239862899e92c83f24daf3"
+    },
+    "GSM9037605": {
+      "srx": "SRX29112921",
+      "declared_title": "TDP43 Experiment (nontargeting-sgRNA) sample 4, Soma Fraction",
+      "geo_source_sha256": "fd7f491ad5f7dcd79f49d59dd7b3b101c7c29717ea4728916bb36294afd8b27b"
+    },
+    "GSM9037606": {
+      "srx": "SRX29112922",
+      "declared_title": "TDP43 Experiment (nontargeting-sgRNA) sample 5, Soma Fraction",
+      "geo_source_sha256": "9c057e9f9baeb72ad331fa33bb39d4db535f1962c89ec5cd18345baad3592fe9"
+    },
+    "GSM9037607": {
+      "srx": "SRX29112923",
+      "declared_title": "TDP43 Experiment (nontargeting-sgRNA) sample 6, Soma Fraction",
+      "geo_source_sha256": "d223d5f77d998a2f6651cb1645d368926f61c60f52e97fb96976e9a3914a4475"
+    },
+    "GSM9037613": {
+      "srx": "SRX29112929",
+      "declared_title": "TDP43 Experiment (TDP43-knockdown) sample 1, Soma Fraction",
+      "geo_source_sha256": "27fa425c38bc4e8a22669cb08fbd65979c90ce2d91159ca7ea0a318b0d957aaa"
+    },
+    "GSM9037614": {
+      "srx": "SRX29112930",
+      "declared_title": "TDP43 Experiment (TDP43-knockdown) sample 2, Soma Fraction",
+      "geo_source_sha256": "1bb5a0d3d66bf284b6d377faa413f33fbabef74cb607aed910e0aa9a4adbc792"
+    },
+    "GSM9037615": {
+      "srx": "SRX29112931",
+      "declared_title": "TDP43 Experiment (TDP43-knockdown) sample 3, Soma Fraction",
+      "geo_source_sha256": "cc02beebe5678cb5d95dad54b0d66cba655ed6ab22a5750c5d99d59312987cb0"
+    },
+    "GSM9037616": {
+      "srx": "SRX29112932",
+      "declared_title": "TDP43 Experiment (TDP43-knockdown) sample 4, Soma Fraction",
+      "geo_source_sha256": "257e05aa07443f720a724153c76ebe8e9d7360124dd750ec56897e943b7597dc"
+    },
+    "GSM9037617": {
+      "srx": "SRX29112933",
+      "declared_title": "TDP43 Experiment (TDP43-knockdown) sample 5, Soma Fraction",
+      "geo_source_sha256": "4571fccc9d305e236fa4e9d9cd2a424bd68666929e4e846864eef8ab03a6e792"
+    }
+  }
+}

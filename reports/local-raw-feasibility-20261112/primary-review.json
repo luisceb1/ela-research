@@ -1,0 +1,18 @@
+{
+  "GSE252892": {
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12586192/fullTextXML",
+    "sha256": "b59f6f120483a4f3a3c48e61bafbc9fc173d4092c7fdeafb71e8ceebfa6114f6",
+    "provenance": "reused earlier cache, no new request",
+    "locators": [
+      "Fig. 1c caption: western blot after seven days; n=3 per arm",
+      "Methods: iNeuron differentiation/knockdown; total RNA-seq library construction",
+      "Data availability: new in-house GSE252892 distinct from listed reused datasets"
+    ],
+    "interpretation": "assay-level knockdown check documented; numeric efficacy per selected library and independent differentiation nesting not established"
+  },
+  "GSE299341": {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12309387/",
+    "provenance": "prior access attempts failed; full methods not read; no fresh attempt",
+    "interpretation": "GEO records CRISPRi/soma and UMI processing; exact processing/efficacy not certified here"
+  }
+}
