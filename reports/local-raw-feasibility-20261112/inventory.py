@@ -64,7 +64,7 @@ def derive():
         summary[geo]={'project':project,'selected_libraries':len(gsms),'mapped_libraries_with_fastq':len({x['gsm'] for x in selected}),'run_records_with_fastq':len({x['run'] for x in selected}),'files':len(selected),'compressed_bytes':sum(x['compressed_bytes'] for x in selected),'per_library_bytes':{g:sum(x['compressed_bytes'] for x in selected if x['gsm']==g) for g in gsms}}
     fields=list(rows[0])
     with (OUT/'fastq-manifest.tsv').open('w') as f:
-        w=csv.DictWriter(f,fieldnames=fields,delimiter='\t');w.writeheader();w.writerows(rows)
+        w=csv.DictWriter(f,fieldnames=fields,delimiter='\t',lineterminator='\n');w.writeheader();w.writerows(rows)
     (OUT/'summary.json').write_text(json.dumps(summary,indent=2)+'\n')
     print(json.dumps(summary,indent=2))
 
