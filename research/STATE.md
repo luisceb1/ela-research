@@ -1,5 +1,15 @@
 # Current research state — 2026-11-04
 
+## Index-first search finds no eligible source; the constraint moves to replicates — 12 November 2026
+
+[Index-first screen](../reports/recount3-index-first-20261112/REPORT.md), plan committed at `6318d6d` before the first query. Three queries gave 42 SRA studies; **12 are held by recount3; zero are unaudited neuronal TDP-43 depletion experiments with three or more replicates per arm.** Only two of the twelve are prior work: the other ten were never eligible, so the earlier source gate did not miss accessible material.
+
+Three screens have now failed for three different reasons — genetic background (PR #64), recount3 holdings (PR #67), and now **replicate count**. The two projects with the right model and contrast, SRP069787 (iPSC motor neurons, declared TDP43 Knockdown vs Scramble) and SRP169127 (SH-SY5Y shRNA), have **two** biological replicates per arm, a 2016-era norm in a catalogue built in 2019. Depth was never tested in this screen.
+
+**Open decision, not taken here:** SRP069787 fails only the three-replicate floor, which was added for a coverage table, while Question A's actual question is whether the cryptic junction is *detectable* at depth. Relaxing the floor after seeing it is the only obstacle would be threshold-tuning, so it requires a prospective amendment that permits detection only and forbids any inference from two libraries. SRP219885 is recorded solely as the one KO-plus-rescue design surfaced; it is HeLa and not a candidate.
+
+No coverage measured, 20-read minimum neither applied nor relaxed, three-background question untouched. Not a claim that no public junction counts can answer Question A, nor about other recount3 collections or non-recount3 routes. #37 stays closed; nothing nominates a design review.
+
 ## recount3 availability closes Question A candidates — 12 November 2026
 
 [Availability check](../reports/recount3-availability-check-20261112/REPORT.md): **GSE252892 (SRP482832), GSE299341 (SRP590954) and GSE298758 (SRP589302) are all absent from recount3**, so Question A closes for them before any coverage question. The two already-measured projects are present with run counts matching their recorded results exactly, which is the lookup's positive control.

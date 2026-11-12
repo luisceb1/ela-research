@@ -1,0 +1,170 @@
+{
+ "SRP399239": {
+  "sra_runs": 8,
+  "recount3_runs": 47,
+  "date_processed": "2023-12-02",
+  "strategy": [
+   "RNA-Seq"
+  ],
+  "source": [
+   "TRANSCRIPTOMIC"
+  ],
+  "organism": [
+   "Homo sapiens"
+  ]
+ },
+ "SRP254044": {
+  "sra_runs": 10,
+  "recount3_runs": 10,
+  "date_processed": "2023-12-05",
+  "strategy": [
+   "RNA-Seq"
+  ],
+  "source": [
+   "TRANSCRIPTOMIC"
+  ],
+  "organism": [
+   "Homo sapiens"
+  ]
+ },
+ "SRP358326": {
+  "sra_runs": 9,
+  "recount3_runs": 15,
+  "date_processed": "2022-06-07",
+  "strategy": [
+   "RNA-Seq"
+  ],
+  "source": [
+   "TRANSCRIPTOMIC"
+  ],
+  "organism": [
+   "Homo sapiens"
+  ]
+ },
+ "SRP013565": {
+  "sra_runs": 4,
+  "recount3_runs": 2212,
+  "date_processed": "2019-10-01",
+  "strategy": [
+   "RNA-Seq"
+  ],
+  "source": [
+   "TRANSCRIPTOMIC"
+  ],
+  "organism": [
+   "Homo sapiens"
+  ]
+ },
+ "SRP169127": {
+  "sra_runs": 6,
+  "recount3_runs": 6,
+  "date_processed": "2019-10-01",
+  "strategy": [
+   "RNA-Seq"
+  ],
+  "source": [
+   "TRANSCRIPTOMIC"
+  ],
+  "organism": [
+   "Homo sapiens"
+  ]
+ },
+ "SRP496259": {
+  "sra_runs": 16,
+  "recount3_runs": 32,
+  "date_processed": "2024-04-04",
+  "strategy": [
+   "RNA-Seq"
+  ],
+  "source": [
+   "TRANSCRIPTOMIC"
+  ],
+  "organism": [
+   "Homo sapiens"
+  ]
+ },
+ "SRP576070": {
+  "sra_runs": 12,
+  "recount3_runs": 12,
+  "date_processed": "2025-09-24",
+  "strategy": [
+   "RNA-Seq"
+  ],
+  "source": [
+   "TRANSCRIPTOMIC"
+  ],
+  "organism": [
+   "Homo sapiens"
+  ]
+ },
+ "SRP069789": {
+  "sra_runs": 18,
+  "recount3_runs": 18,
+  "date_processed": "2019-10-01",
+  "strategy": [
+   "RNA-Seq"
+  ],
+  "source": [
+   "TRANSCRIPTOMIC"
+  ],
+  "organism": [
+   "Homo sapiens"
+  ]
+ },
+ "SRP166282": {
+  "sra_runs": 6,
+  "recount3_runs": 18,
+  "date_processed": "2019-10-01",
+  "strategy": [
+   "RNA-Seq"
+  ],
+  "source": [
+   "TRANSCRIPTOMIC"
+  ],
+  "organism": [
+   "Homo sapiens"
+  ]
+ },
+ "SRP219885": {
+  "sra_runs": 6,
+  "recount3_runs": 6,
+  "date_processed": "2019-10-01",
+  "strategy": [
+   "RNA-Seq"
+  ],
+  "source": [
+   "TRANSCRIPTOMIC"
+  ],
+  "organism": [
+   "Homo sapiens"
+  ]
+ },
+ "SRP057819": {
+  "sra_runs": 2,
+  "recount3_runs": 2,
+  "date_processed": "2019-10-01",
+  "strategy": [
+   "RNA-Seq"
+  ],
+  "source": [
+   "TRANSCRIPTOMIC"
+  ],
+  "organism": [
+   "Homo sapiens"
+  ]
+ },
+ "SRP069787": {
+  "sra_runs": 10,
+  "recount3_runs": 16,
+  "date_processed": "2019-10-01",
+  "strategy": [
+   "RNA-Seq"
+  ],
+  "source": [
+   "TRANSCRIPTOMIC"
+  ],
+  "organism": [
+   "Homo sapiens"
+  ]
+ }
+}
