@@ -172,6 +172,37 @@ class CountTests(unittest.TestCase):
 
 
 class StopTests(unittest.TestCase):
+    def test_windows_probe_uses_existing_PATH_entry(self):
+        with patch.object(m.shutil,'which',return_value='/fixture/powershell.exe'),patch.object(m.Path,'is_file',return_value=True):
+            self.assertEqual(m.windows_powershell(),'/fixture/powershell.exe')
+
+    def test_windows_probe_falls_back_when_PATH_has_no_Windows_entries(self):
+        with patch.object(m.shutil,'which',return_value=None),patch.object(m.Path,'is_file',return_value=True):
+            self.assertEqual(m.windows_powershell(),'/mnt/c/Windows/System32/WindowsPowerShell/v1.0/powershell.exe')
+
+    def test_missing_both_windows_locations_still_blocks(self):
+        with patch.object(m.shutil,'which',return_value=None),patch.object(m.Path,'is_file',return_value=False):
+            with self.assertRaisesRegex(ValueError,'real C: free space is still required'):m.windows_free()
+
+    def test_real_space_query_uses_resolved_executable(self):
+        path='/mnt/c/Windows/System32/WindowsPowerShell/v1.0/powershell.exe'
+        with patch.object(m,'windows_powershell',return_value=path),patch.object(m.subprocess,'check_output',return_value='\ufeff123456789012\r\n') as call:
+            self.assertEqual(m.windows_free(),123456789012)
+            self.assertEqual(call.call_args.args[0][0],path)
+            self.assertEqual(call.call_args.args[0][-1],'(Get-PSDrive -Name C).Free')
+
+    def test_invalid_space_output_cannot_fall_back_to_virtual_disk(self):
+        with patch.object(m,'windows_powershell',return_value='fixture'),patch.object(m.subprocess,'check_output',return_value='not a byte count'):
+            with self.assertRaisesRegex(ValueError,'Cannot parse'):m.windows_free()
+
+    def test_disabled_Windows_executable_interop_still_blocks(self):
+        with patch.object(m,'windows_powershell',return_value='fixture'),patch.object(m.subprocess,'check_output',side_effect=OSError('Exec format error')):
+            with self.assertRaisesRegex(ValueError,'verify Windows executable interop'):m.windows_free()
+
+    def test_timeout_does_not_weaken_physical_space_guard(self):
+        with patch.object(m,'windows_powershell',return_value='fixture'),patch.object(m.subprocess,'check_output',side_effect=subprocess.TimeoutExpired('fixture',15)):
+            with self.assertRaisesRegex(ValueError,'Cannot query real C: free space'):m.windows_free()
+
     def test_unsupported_tool_option_stops_preparation(self):
         with patch.object(m.subprocess,'run',return_value=SimpleNamespace(stdout='fixture help',stderr='')):
             with self.assertRaisesRegex(ValueError,'CLI options'):m.check_options('fixture',['--detect_adapter_for_pe'])

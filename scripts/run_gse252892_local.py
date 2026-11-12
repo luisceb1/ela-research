@@ -41,12 +41,21 @@ def read_small(path):
     return json.loads(path.read_text())
 
 
+def windows_powershell():
+    candidates=[shutil.which('powershell.exe'),
+        '/mnt/c/Windows/System32/WindowsPowerShell/v1.0/powershell.exe']
+    for candidate in candidates:
+        if candidate and Path(candidate).is_file():return str(candidate)
+    raise ValueError('Cannot locate Windows PowerShell in PATH or its standard /mnt/c/Windows/System32/WindowsPowerShell/v1.0 path; real C: free space is still required')
+
+
 def windows_free():
-    exe = shutil.which('powershell.exe')
-    if not exe:
-        raise ValueError('Windows PowerShell interop required to measure real C: free space')
-    text = subprocess.check_output([exe, '-NoProfile', '-NonInteractive', '-Command',
-        '(Get-PSDrive -Name C).Free'], text=True, timeout=15).strip().lstrip('\ufeff')
+    exe = windows_powershell()
+    try:
+        text = subprocess.check_output([exe, '-NoProfile', '-NonInteractive', '-Command',
+            '(Get-PSDrive -Name C).Free'], text=True, timeout=15).strip().lstrip('\ufeff')
+    except (OSError,subprocess.CalledProcessError,subprocess.TimeoutExpired) as exc:
+        raise ValueError('Cannot query real C: free space through '+exe+'; verify Windows executable interop in this WSL distribution') from exc
     if not text.isdigit():
         raise ValueError('Cannot parse physical Windows C: free bytes')
     return int(text)

@@ -1,0 +1,19 @@
+{
+  "status": "passed",
+  "python": "3.12.14",
+  "patterns": {
+    "test_run_gse252892_local.py": 37,
+    "test_prepare_gse252892_local.py": 7
+  },
+  "discovered": 44,
+  "run": 44,
+  "executed": 44,
+  "passed": 44,
+  "failures": [],
+  "errors": [],
+  "skipped": [],
+  "expected_failures": [],
+  "unexpected_successes": [],
+  "missing_patterns": [],
+  "fail_on_skip": true
+}

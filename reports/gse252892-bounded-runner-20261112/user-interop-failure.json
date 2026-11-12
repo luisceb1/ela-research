@@ -1,0 +1,11 @@
+{
+  "source": "user-supplied terminal attachment; not remote inspection",
+  "attachment_sha256": "49c1bfb3f9716eba53b15216ebffc4007efa9e2ad249eedafa7f487b3dfff756",
+  "attempted_commit": "ddfd6218330c53c988b087b6ab450ca55ddb05fd",
+  "action": "prepare",
+  "failure": "Windows PowerShell interop required to measure real C: free space",
+  "cause_observed": "shutil.which(powershell.exe) did not resolve an executable; standard Windows path was not attempted",
+  "not_established": "The Windows executable is absent or interop is disabled; neither follows from PATH discovery failure",
+  "outcome": "Preparation stopped before descriptor write; no raw transfer or execution claim",
+  "correction": "Try existing PATH candidate and explicit standard /mnt/c/Windows/System32/WindowsPowerShell/v1.0/powershell.exe path; still require actual C: free-byte query and 50 GiB reserve"
+}

@@ -42,3 +42,12 @@ All reads, responses and subprocesses used in these tests are software fixtures.
 ## Next step and stopping boundary
 
 Follow the [preparation-only runbook](../../research/runbooks/2026-11-12-gse252892-bounded-execution.md) at the exact reviewed commit, and report the resulting proposal hash/resource summary. It uses the existing environment; no new packages or FASTQ are acquired by preparation. Review the concrete proposal before accepting its SHA/14 GB cap. No execute invocation or transfer authorization is inferred from installing fastp, preparing either descriptor, passing tests or this PR. Do not reuse the old pilot or edit its ledger/descriptor. No contact, cost, auto merge or public experimental claim is authorized.
+
+
+## Preparation failure and discovery correction
+
+Luis's [terminal trace](user-interop-failure.json) at `ddfd621` stops in preparation when `shutil.which('powershell.exe')` finds nothing. That does not establish that PowerShell is absent or Windows executable interop is disabled. The code had incorrectly relied only on PATH discovery. The failed attempt reaches no descriptor write, raw HTTP or alignment. The prior successful disabled base descriptor is retained unchanged.
+
+The corrected discovery checks an existing PATH entry and then the standard `/mnt/c/Windows/System32/WindowsPowerShell/v1.0/powershell.exe` file. Failure to locate/execute/parse the Windows query still blocks preparation; no virtual-disk substitution, stale free-space value, zero/default value, changed reserve or altered execution cap is introduced. No PATH or WSL setting is modified. Actual fallback success on Luis's machine remains unverified until his retry.
+
+[Regression controls](interop-fix-tests.json): **44/44 pass, no skips** (the previous 37 plus seven probe regressions). They cover a PATH entry, missing-PATH fallback, both locations absent, resolved command identity, malformed output, disabled executable interop and timeout. These are software mocks; no live Windows probe or raw biological processing occurred on the agent host. Original artifact hashes are preserved in [the previous manifest](artifact-hashes.ddfd621.json), with current code/test hashes in [artifact-hashes.json](artifact-hashes.json). All scientific inputs, filters, commands and budgets remain as prespecified; this fixes executable discovery only. Full CI is checked by the corrected head, not inferred from the earlier green head.
