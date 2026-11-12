@@ -21,7 +21,13 @@ sealed convention, intronic 0-based half-open, and converted as
 Usage:
   python -I scripts/recount3_junction_probe.py \
       --rr RR.gz --mm MM.gz --ids ID.gz --project PROJ.MD.gz --sra SRA.MD.gz \
-      --targets targets.json [--min-coverage 20] [--json OUT]
+      --targets targets.json --project-id SRPxxxxxx \
+      [--min-coverage 20] [--json OUT]
+
+--project-id is REQUIRED and is the only source of the output's project
+label. The targets file's own "project" field is provenance for the sealed
+coordinates and is never copied into a result: a sealed file carrying one
+project must not silently relabel counts measured from another.
 
 targets.json maps a name to [start0, end0] plus "chromosome", e.g.
   {"chromosome": "chr19",
@@ -185,6 +191,15 @@ def build_samples(ids_path: Path, project_path: Path, sra_path: Path) -> list[di
 
 
 def run(args) -> dict:
+    project_id = getattr(args, "project_id", None)
+    if not project_id:
+        # No fallback. Inheriting the targets file's project would label counts
+        # from one experiment with the accession of another.
+        raise ValueError(
+            "project_id is required: the output project label must name the "
+            "project actually measured, never the sealed targets file's own "
+            "provenance field.")
+
     spec = json.loads(Path(args.targets).read_text(encoding="utf-8"))
     chromosome = spec["chromosome"]
     targets = {k: tuple(v) for k, v in spec["junctions"].items()}
@@ -233,7 +248,8 @@ def run(args) -> dict:
         "gate_qualified_by_assay_shape": shape["looks_targeted_not_transcriptome_wide"],
     }
     return {
-        "project": spec.get("project", ""),
+        "project": project_id,
+        "targets_provenance_project": spec.get("project", ""),
         "chromosome": chromosome,
         "coordinate_conversion": "sealed intronic 0-based half-open -> [start0+1, end0] 1-based inclusive",
         "inputs": {Path(p).name: {"sha256": sha256(Path(p)),
@@ -252,6 +268,9 @@ def main(argv: list[str] | None = None) -> int:
     ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     for flag in ("rr", "mm", "ids", "project", "sra", "targets"):
         ap.add_argument(f"--{flag}", required=True)
+    ap.add_argument("--project-id", required=True,
+                    help="Accession of the project actually measured, e.g. "
+                         "SRP166282. Never defaulted from the targets file.")
     ap.add_argument("--min-coverage", type=int, default=20)
     ap.add_argument("--json", type=Path)
     args = ap.parse_args(argv)

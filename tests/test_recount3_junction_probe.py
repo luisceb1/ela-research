@@ -1,4 +1,5 @@
 """Pruebas de la sonda de uniones recount3 (no son validación científica)."""
+import argparse
 import gzip
 import json
 import sys
@@ -9,8 +10,12 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
 
 from recount3_junction_probe import (  # noqa: E402
-    assay_shape, attribute, build_samples, find_target_rows, read_counts,
+    assay_shape, attribute, build_samples, find_target_rows, main, read_counts,
+    run,
 )
+
+SEALED = Path(__file__).resolve().parents[1] / (
+    "research/references/unc13a_targets_sealed.json")
 
 RR = (
     "chromosome\tstart\tend\tlength\tstrand\tannotated\tleft_motif\tright_motif\t"
@@ -114,6 +119,72 @@ class ProbeTest(unittest.TestCase):
     def test_attribute_returns_empty_for_missing_key(self):
         self.assertEqual(attribute("genotype;;control", "sirna type"), "")
         self.assertEqual(attribute("", "genotype"), "")
+
+
+class ProjectLabelTest(unittest.TestCase):
+    """The output must name the project measured, not the sealed file's own.
+
+    The sealed UNC13A targets carry "project": "SRP166282" as provenance for
+    the coordinates. Copying it into a result would relabel counts from a new
+    experiment as the already-rejected Klim dataset.
+    """
+
+    def setUp(self):
+        self.tmp = tempfile.TemporaryDirectory()
+        d = self.tmp.name
+        self.args = argparse.Namespace(
+            rr=gz(d, "rr.gz", RR), mm=gz(d, "mm.gz", MM),
+            ids=gz(d, "ids.gz", IDS), project=gz(d, "proj.gz", PROJ),
+            sra=gz(d, "sra.gz", SRA), targets=SEALED,
+            min_coverage=20, project_id=None, json=None)
+
+    def tearDown(self):
+        self.tmp.cleanup()
+
+    def test_sealed_file_still_carries_the_old_project_as_provenance(self):
+        # Guards the premise: if this ever changes, the test below is vacuous.
+        spec = json.loads(SEALED.read_text(encoding="utf-8"))
+        self.assertEqual(spec["project"], "SRP166282")
+
+    def test_new_project_is_not_relabelled_as_the_sealed_provenance(self):
+        self.args.project_id = "SRP999999"
+        out = run(self.args)
+        self.assertEqual(out["project"], "SRP999999")
+        self.assertNotEqual(out["project"], "SRP166282")
+        # Provenance is still reported, but in its own field.
+        self.assertEqual(out["targets_provenance_project"], "SRP166282")
+
+    def test_missing_project_id_fails_loudly_instead_of_defaulting(self):
+        self.args.project_id = None
+        with self.assertRaises(ValueError):
+            run(self.args)
+        self.args.project_id = ""
+        with self.assertRaises(ValueError):
+            run(self.args)
+
+    def test_cli_requires_project_id(self):
+        d = self.tmp.name
+        argv = ["--rr", str(self.args.rr), "--mm", str(self.args.mm),
+                "--ids", str(self.args.ids), "--project", str(self.args.project),
+                "--sra", str(self.args.sra), "--targets", str(SEALED)]
+        with self.assertRaises(SystemExit) as caught:
+            main(argv)
+        self.assertNotEqual(caught.exception.code, 0)
+        self.assertEqual(main(argv + ["--project-id", "SRP166282",
+                                      "--json", str(Path(d) / "o.json")]), 0)
+
+    def test_label_is_the_only_field_the_fix_changes(self):
+        """Measurement output must be identical whatever the label."""
+        self.args.project_id = "SRP166282"
+        as_old = run(self.args)
+        self.args.project_id = "SRP999999"
+        as_new = run(self.args)
+        self.assertNotEqual(as_old["project"], as_new["project"])
+        for key in set(as_old) | set(as_new):
+            if key == "project":
+                continue
+            self.assertEqual(as_old[key], as_new[key],
+                             f"field {key} must not depend on the label")
 
 
 if __name__ == "__main__":
