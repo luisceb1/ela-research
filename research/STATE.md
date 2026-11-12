@@ -1,5 +1,17 @@
 # Current research state — 2026-11-04
 
+## Question A detection measurement: not detected, and depth was the real constraint — 12 November 2026
+
+[Measurement on SRP069787](../reports/questionA-detection-SRP069787-20261112/REPORT.md), under the [amendment committed before any count was downloaded](plans/2026-11-12-questionA-amendment-detection-floor.md) at `daf9d24`, which fixed every outcome reading in advance. Luis authorised relaxing the replicate floor from three to two, for this deposit and for detection only.
+
+**Both sealed cryptic junctions are absent from the project's junction catalogue: zero reads in all 16 libraries.** The canonical positive control is measured in 16/16, maximum 26. Per the prespecified table this reads as **missing data at this depth, never a biological zero**; Question A closes for this deposit. No PSI, fraction, effect, interval, p-value or knockdown-versus-scramble comparison was computed.
+
+**The relaxed floor turned out to be irrelevant.** The two TDP-43 knockdown libraries carry **9 and 2 canonical reads** — the positive control itself falls below the 20-read threshold in exactly the arm the question is about. At that depth no cryptic junction could reach 20 at any fraction, so the negative measures the sequencing, not the biology. SRP069787's canonical maximum of 26 is shallower at this locus than SRP166282's 66, which was already rejected on coverage. Replicate count was never what stood between this project and an answer here.
+
+Incidentally, this is the first new project measured since PR #66: the output reports `project: SRP069787` with provenance `SRP166282` in its own field, where the pre-fix probe would have mislabelled the whole file as the rejected Klim dataset.
+
+The 20-read minimum was applied as written and is not lowered now the result is known. #64's three-background result is untouched. #37 stays closed; nothing nominates a design review.
+
 ## Index-first search finds no eligible source; the constraint moves to replicates — 12 November 2026
 
 [Index-first screen](../reports/recount3-index-first-20261112/REPORT.md), plan committed at `6318d6d` before the first query. Three queries gave 42 SRA studies; **12 are held by recount3; zero are unaudited neuronal TDP-43 depletion experiments with three or more replicates per arm.** Only two of the twelve are prior work: the other ten were never eligible, so the earlier source gate did not miss accessible material.
