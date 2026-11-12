@@ -1,6 +1,8 @@
 # Question A detection measurement — SRP069787, 12 November 2026
 
-**Not detected. Question A closes for this deposit as missing data at this depth, not as evidence of absence.** And the relaxed replicate floor turned out to be irrelevant: the real obstacle here was never the replicate count.
+**Interpretation correction — 12 November 2026:** reviewed against committed outputs; see the [correction record](../nov12-interpretation-review-20261112/REPORT.md). Counts and executed prospective rules are preserved; the stronger original interpretations are superseded below.
+
+**Not detected. Question A closes for this deposit without sufficient cryptic support, not as evidence of biological absence.** Low canonical counts provide a coverage warning; they do not identify the sole cause of non-detection.
 
 Executed under the [amendment committed before any count was downloaded](../../research/plans/2026-11-12-questionA-amendment-detection-floor.md), `daf9d24`, which fixed every outcome reading in advance.
 
@@ -45,9 +47,9 @@ The amendment's table maps this outcome to one conclusion and no other: canonica
 
 ## What the numbers add beyond that
 
-The two TDP-43 knockdown libraries carry **9 and 2 canonical reads**. The positive control itself sits below the 20-read threshold in exactly the arm the question is about. At that depth no cryptic junction could reach 20 at any plausible fraction, so the negative is uninformative in the strongest possible sense — it measures the sequencing, not the biology.
+The two TDP-43 knockdown libraries carry **9 and 2 canonical reads**, while both cryptic counts are zero. Canonical and cryptic junctions are alternative paths; the observed canonical count is not an upper bound on the cryptic count, and a cryptic fraction relative to their combined counts can exceed one half. The earlier claim that 20 cryptic reads were impossible at any plausible fraction is withdrawn. No fraction or required sequencing depth is estimated here.
 
-This also settles what the real constraint was. The [index-first screen](../recount3-index-first-20261112/REPORT.md) excluded SRP069787 on replicate count, and relaxing that floor was the authorised next step. Having relaxed it, the deposit fails on **depth at the locus** — by a wide margin, and independently of how many replicates it has. The replicate floor was never what stood between this project and an answer here.
+Relaxing the replicate floor did not produce an eligible measurement: the observed cryptic counts still fail the fixed support requirement. Replicate count remains a separate design constraint; this result does not show that it was irrelevant or that sequencing depth uniquely caused the negative. Depletion efficacy, assay, mapping and biology remain unresolved alternatives.
 
 For scale: SRP166282 reached a canonical maximum of 66 and a cryptic maximum of 5, and was rejected on coverage. SRP069787's canonical maximum is **26**. It is shallower at this locus than the deposit already rejected.
 

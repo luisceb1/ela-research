@@ -1,5 +1,7 @@
 # Non-ALS spinal cord source for the cervical control — 12 November 2026
 
+**Interpretation correction — 12 November 2026:** reviewed against committed outputs; see the [correction record](../nov12-interpretation-review-20261112/REPORT.md). Counts and executed prospective rules are preserved; the stronger original interpretations are superseded below.
+
 **Two results. The baseline I said was missing already exists, and the one genuinely new source that is biologically ideal fails its positive control.**
 
 Executed under the [plan committed before any discovery query](../../research/plans/2026-11-12-nonals-spinal-cord-source.md), `6906a58`. Transfers: 2.9 MB index plus 3.1 MB of junction data.
@@ -39,13 +41,13 @@ Sealed targets verified unchanged first. Probe run with `--project-id SRP097615`
 
 **The positive control is absent.** Per the prespecified rule carried from the Question A amendment, that means the measurement failed at this locus and **nothing is concluded** about the cryptic junctions in either direction. These zeros are not a background measurement.
 
-Diagnosis: the project's whole junction catalogue is **121,078 junctions** across 39 libraries, against 9,484,210 for gtex BRAIN and 2,678,581 for TARGET_ALS motor cortex. In the 100 kb around UNC13A only 19 junctions exist at all, and the nearest to the sealed canonical target is 3,982 bp away. This is the signature of low-complexity libraries, which is what laser-capture microdissection of post-mortem tissue tends to produce from very low RNA input.
+The project catalogue contains **121,078 distinct junction rows** across 39 libraries, versus 9,484,210 across 2,931 GTEx libraries and 2,678,581 across 149 TARGET_ALS cortical libraries. Only 19 rows lie in the inspected 100 kb around UNC13A. These are catalogue observations across different sample counts and assays, not a standardized measure of library complexity or proof of its cause. Low input, RNA quality, preparation, sequencing and mapping remain possible explanations.
 
-So cell-type enrichment does not rescue junction-level coverage here. It **costs** library complexity, and the positive control disappears with it.
+Cell-type enrichment did not yield a measurable canonical junction in this deposit. There is no matched enriched-versus-bulk experiment here, so the failure cannot be causally assigned to laser capture.
 
 ## 4. The prediction
 
-The plan predicted that no public non-ALS spinal cord source would have materially better UNC13A coverage, because the limit is a property of the tissue rather than the cohort, and set the refutation condition as median canonical ≥20 or a substantial share of libraries in the 102–148 window.
+The plan predicted that no public non-ALS spinal cord source would have materially better UNC13A coverage, under the hypothesis that tissue-associated coverage limits recur across cohorts (a hypothesis, not an established cause), and set the refutation condition as median canonical ≥20 or a substantial share of libraries in the 102–148 window.
 
 **Not refuted.** SRP097615's median canonical is 0, in every one of its three neuron populations. The result goes further than predicted in the unfavourable direction: the one source with ideal biology is worse, not better, than bulk cord.
 
@@ -53,7 +55,7 @@ The plan predicted that no public non-ALS spinal cord source would have material
 
 The cervical control that exists is the TARGET_ALS same-cohort one, with its stated weakness: 0 of 13 is compatible with background rates up to 22.8 % by the Wilson interval the earlier report already recorded. **This cycle does not improve it**, and no public source found here would.
 
-Improving it is not a sourcing problem. UNC13A canonical coverage is about 22× lower in cervical cord than motor cortex within TARGET_ALS, and GTEx independently shows cervical median canonical 1.0 against cortex 15.0. Three cohorts now agree that the locus is poorly covered in spinal cord at standard bulk depth, and the one cell-type-enriched deposit is worse. What would change this is **deeper or targeted sequencing of spinal cord at this locus**, which this project cannot obtain on its own.
+No better cervical control was identified in this finite search. TARGET_ALS and GTEx show low cervical canonical coverage, and SRP097615 fails the canonical control in all 39 libraries; its libraries include spinal, oculomotor and Onuf populations, not 39 equivalent cervical samples. These observations do not exclude other cohorts, library preparations or public sources. Deeper or targeted sequencing are possible routes, not established necessities or the only options.
 
 ## Provenance
 

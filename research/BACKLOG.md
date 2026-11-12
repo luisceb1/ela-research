@@ -1,11 +1,19 @@
 # Current backlog — 2026-11-04
 
+## Interpretation review and access update — 12 November 2026
+
+The [bounded review](../reports/nov12-interpretation-review-20261112/REPORT.md) corrects the GTEx window rationale, withdraws the canonical-count upper-bound claim and limits the spinal/laser-capture conclusions to the inspected observations. Numerical outputs, thresholds and prospective plans are retained. This is a documentation/committed-output check, not a re-run of the original sequencing inputs.
+
+**AD Workbench:** Luis supplied a support reply headed “Fwd: New Workspace Request received.” Support states that the request was received and is under review. This is user-reported correspondence, not a mailbox/portal verification; approval, active workspace and dataset access remain unconfirmed. The reply's timestamp was not supplied. No duplicate request or reminder is scheduled. Luis reports no other updates; no new Fratta/Wong reply is claimed.
+
+**Next step:** await a concrete author clarification or verified workspace/dataset inventory before a new prospective data task. The old `codex/unc13a-single-background-A-20261112` protocol branch is superseded by the integrated availability/detection work; no merge or deletion is needed for this review. Closed cycles remain closed.
+
 ## recount3 Stage A completed — 12 November 2026
 
 - [x] Execute the explicitly authorized metadata-only selection after committing exact queries before requests. [Report](../reports/recount3-metadata-stageA-20261112/REPORT.md): five queries, fixed 30-series cap; 636,037 bytes of metadata/text, zero eligible/nominated sources. All 30 decisions preserved; no count download.
 - [x] Apply the proposed cross-background requirement without relabelling cultures/assays as donors. Three design rejections; one DCPS metadata uncertainty archived without active follow-up; other sources rejected by prior-family/scope gates. No cutoff of 200 applied.
 - [x] Close this finite selection at its record cap. Stage B manifest empty and Stage B unauthorized. Do not expand to a sixth query, substitute candidates, relax the design or reopen #37. Count coverage remains unmeasured.
-- Scope decision pending, not scheduled: **A**, measurement reproduction in a separate experiment with one genetic background, versus **B**, reproducibility across backgrounds. The three-background zero is not an A-feasibility or depth failure; GSE252892/GSE307054/GSE299341 fail the background rule, while GSE298758 linkage is unresolved. No permanent impossibility for B was established. A would require a new prospective protocol and explicit scope decision before reappraising sources/counts; no dataset is newly accepted. [Interpretive review](../reports/recount3-metadata-stageA-20261112/INTERPRETATION_REVIEW.md).
+- Scope decision completed for **A**: single-background detection was authorized and executed through availability checks, index-first selection and the SRP069787 detection-only amendment. These finite cycles are closed without an eligible source; **B** remains unanswered. No new source, count acquisition, threshold change or reopening of #37 is scheduled. [Current review](../reports/nov12-interpretation-review-20261112/REPORT.md).
 
 ## Bounded independent post-deficit source screen — 12 November 2026
 

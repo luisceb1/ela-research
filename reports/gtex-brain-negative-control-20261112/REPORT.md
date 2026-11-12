@@ -1,5 +1,7 @@
 # Non-ALS background for the UNC13A cryptic junctions — gtex BRAIN, 12 November 2026
 
+**Interpretation correction — 12 November 2026:** reviewed against committed outputs; see the [correction record](../nov12-interpretation-review-20261112/REPORT.md). Counts and executed prospective rules are preserved; the stronger original interpretations are superseded below.
+
 **In the 26 non-ALS brain libraries with canonical coverage comparable to the published ALS cortex measurement, both sealed cryptic junctions carry zero reads.** Across all 2,931 libraries, cryptic reads appear in 7 of them at a maximum of 2 reads. By this project's own standard a cross-study comparison is weak evidence, so this is consistent with the published ALS counts being signal — it does not demonstrate it.
 
 Executed under the [plan committed before any junction file was downloaded](../../research/plans/2026-11-12-gtex-brain-negative-control.md), `b2ff4f2`, which fixed the comparability window and every outcome reading in advance.
@@ -24,7 +26,7 @@ Sealed targets verified unchanged first (`e35f6e05…bc3a`). Probe run with `--p
 
 ### The comparability window
 
-Depth comparability was fixed in advance on the canonical junction itself — not on library depth fields, which caused three successive published corrections in this project. The window is **canonical 102–148**, the observed TARGET_ALS cortex range.
+Depth comparability was fixed in advance on the canonical junction itself — not on library depth fields, which caused three successive published corrections in this project. The window is **canonical 102–148**, bounded by the TARGET_ALS ALS-group median (102) and non-neurological-control median (148), not the observed per-library range.
 
 **26 libraries of 2,931 fall in that window. In all 26, both cryptic junctions are zero.** Fifteen of the 26 are cortical: Frontal Cortex BA9 (8), Anterior cingulate BA24 (5), Cortex (2).
 
@@ -64,21 +66,21 @@ Three of the seven share the donor prefix `GTEX-13X6K` across three tissues. Tha
 
 ## Reading, per the prespecified table
 
-Fifteen cortical libraries reach the window, so the "not depth-comparable, inconclusive" branch does not apply. Both cryptic junctions are zero throughout the window, which is the branch reading: **the published ALS cortical cryptic reads are above the non-ALS background at comparable local coverage.**
+Fifteen cortical libraries meet the fixed 102–148 window and both cryptic counts are zero in them. The prespecified outcome table labelled this as ALS counts above background, but that interpretation overreaches: the window was derived from two group medians, not the ALS per-library range, and the ALS positive libraries were not matched individually to these controls. The retained result is the descriptive zero in this fixed GTEx subset. It does not establish an ALS-versus-background difference.
 
 The plan's own qualification stands and is not softened now the result is favourable. GTEx and TARGET_ALS are different studies with different donors, handling, library preparation and sequencing. By the standard this project set when it demoted a 1.8× cross-study claim to weak evidence, this comparison is weak whatever it shows. It is **consistent with** the ALS counts being real signal; it does not demonstrate it, because processing differences alone can suppress low-count junction detection.
 
 Two further limits belong next to the result:
 
-**n = 15 cortical libraries is small.** Zero cryptic reads in 15 libraries is compatible with a background rate of a few percent. This bounds the background loosely, not tightly.
+**n = 15 cortical libraries is a small descriptive subset.** Libraries are not automatically independent donors; no donor-level background-rate bound or interval is established here.
 
-**Only 0.9 % of GTEx brain is depth-comparable at all.** Median canonical coverage runs from 1 to 35.5 by tissue, against TARGET_ALS cortex's 102–148. For the other 2,905 libraries the zeros are **missing data at that depth**, not biological zeros, exactly as in every previous cycle — and they are not evidence of background absence.
+**Only 0.9 % of GTEx brain meets the prespecified window.** The other 2,905 libraries lie outside this selection, including libraries above its upper bound; that does not make all their zeros missing data or establish insufficient coverage in each. No new window or coverage classification is substituted after seeing the results.
 
 ## One thing this could not control, and one it corroborates
 
 **The cervical measurement cannot be controlled from GTEx.** `Brain - Spinal cord (cervical c-1)` has median canonical 1.0 and maximum 21, so **no library reaches the window**. The published [cervical cord result](../target-als-cervical-20261111/REPORT.md) has no non-ALS baseline here, and this cycle does not provide one.
 
-**The tissue asymmetry reproduces in non-diseased tissue.** Within GTEx alone — same study, same processing, so not a cross-study comparison — cervical spinal cord has median canonical 1.0 against cortex's 15.0, the same direction as the cortex-over-cervical coverage difference this project reported in ALS tissue, and the same direction as the GTEx expression panels cited by Ikegami and Mallika. No ratio is formed between these medians: ratio-of-medians versus median-of-ratios was the subject of two published corrections here, and forming one from a descriptive side observation would repeat that error. The observation is that the direction holds in tissue without TDP-43 pathology, which argues the asymmetry is a property of the tissue rather than of disease or of the TARGET_ALS cohort.
+**The coverage direction also occurs in GTEx.** Cervical median canonical coverage is 1.0 versus 15.0 in cortex within GTEx. This shows that this direction can occur outside the ALS cohort; it does not isolate tissue biology from composition, preparation, mapping or other differences, nor verify absence of TDP-43 pathology per donor.
 
 ## Provenance
 
