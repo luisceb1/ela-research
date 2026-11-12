@@ -1,0 +1,314 @@
+{
+ "project": "BRAIN",
+ "targets_provenance_project": "SRP166282",
+ "n_samples": 2931,
+ "matrix_header": {
+  "rows": 9484210,
+  "columns": 2931,
+  "nonzeros": 699368828
+ },
+ "assay_shape": {
+  "total_junctions": 9484210,
+  "junctions_on_target_chromosome": 628244,
+  "share_on_target_chromosome": 0.0662,
+  "distinct_chromosomes": 156,
+  "looks_targeted_not_transcriptome_wide": false,
+  "note": "Heuristic, not proof. When true, verify the assay against the source publication before treating coverage as comparable to transcriptome-wide junction counts."
+ },
+ "inputs": {
+  "gtex.junctions.BRAIN.ALL.RR.gz": {
+   "sha256": "0f2807de027777c65d22865db801c58ea15950633f014f8613fd1a127b0f7091",
+   "bytes": 112590478
+  },
+  "gtex.junctions.BRAIN.ALL.MM.gz": {
+   "sha256": "93da00d3de042aea218c6fe1183f053ea3ca7eefe70460f044eb8f4be243a0a1",
+   "bytes": 2819422875
+  },
+  "gtex.junctions.BRAIN.ALL.ID.gz": {
+   "sha256": "6d2bca353542a783fcf041adfa3420d830d79f644956f300cf92ae2d6efd7c22",
+   "bytes": 6423
+  },
+  "gtex.recount_project.BRAIN.MD.gz": {
+   "sha256": "546ab0c809dc31253f5d7bc0d89dd6e5a7814d7b5f3e4b93af358c12296d2f3e",
+   "bytes": 33279
+  },
+  "gtex.gtex.BRAIN.MD.gz": {
+   "sha256": "4cdc75aad388ca432d7f9b9fb84c3b4fc07973559b72b92378c81b25fc41b189",
+   "bytes": 475816
+  }
+ },
+ "per_junction": {
+  "canonical": {
+   "max": 286,
+   "samples_at_or_above_threshold": 895,
+   "samples_with_any_read": 2655,
+   "located": {
+    "row": 4394975,
+    "start_1based": 17641557,
+    "end_1based": 17642844,
+    "strand": "-",
+    "annotated": "1",
+    "left_motif": "CT",
+    "right_motif": "AC"
+   }
+  },
+  "cryptic_left": {
+   "max": 2,
+   "samples_at_or_above_threshold": 0,
+   "samples_with_any_read": 5,
+   "located": {
+    "row": 4394973,
+    "start_1based": 17641557,
+    "end_1based": 17642413,
+    "strand": "-",
+    "annotated": "0",
+    "left_motif": "CT",
+    "right_motif": "AC"
+   }
+  },
+  "cryptic_right": {
+   "max": 1,
+   "samples_at_or_above_threshold": 0,
+   "samples_with_any_read": 4,
+   "located": {
+    "row": 4394983,
+    "start_1based": 17642542,
+    "end_1based": 17642844,
+    "strand": "-",
+    "annotated": "0",
+    "left_motif": "CT",
+    "right_motif": "AC"
+   }
+  }
+ },
+ "verdict": {
+  "min_coverage_required": 20,
+  "positive_control": "canonical",
+  "positive_control_meets_coverage": true,
+  "gate_junctions": [
+   "cryptic_left",
+   "cryptic_right"
+  ],
+  "gate_met": false,
+  "interpretation_rule": "A count below the threshold is MISSING DATA, not a biological zero. No effect, PSI or test is computed here.",
+  "gate_qualified_by_assay_shape": false
+ },
+ "comparability_window": {
+  "definition": "canonical 102-148, the observed TARGET_ALS cortex range",
+  "basis": "canonical UNC13A junction, not library depth fields"
+ },
+ "by_tissue": {
+  "Brain - Cortex": {
+   "n": 286,
+   "canonical_median": 15.0,
+   "canonical_max": 137,
+   "libraries_in_window": 2,
+   "window_cryptic_left_positive": 0,
+   "window_cryptic_right_positive": 0,
+   "cryptic_left_positive": 0,
+   "cryptic_right_positive": 0,
+   "cryptic_left_max": 0,
+   "cryptic_right_max": 0
+  },
+  "Brain - Cerebellum": {
+   "n": 285,
+   "canonical_median": 27,
+   "canonical_max": 141,
+   "libraries_in_window": 2,
+   "window_cryptic_left_positive": 0,
+   "window_cryptic_right_positive": 0,
+   "cryptic_left_positive": 1,
+   "cryptic_right_positive": 1,
+   "cryptic_left_max": 2,
+   "cryptic_right_max": 1
+  },
+  "Brain - Caudate (basal ganglia)": {
+   "n": 273,
+   "canonical_median": 5,
+   "canonical_max": 82,
+   "libraries_in_window": 0,
+   "window_cryptic_left_positive": 0,
+   "window_cryptic_right_positive": 0,
+   "cryptic_left_positive": 0,
+   "cryptic_right_positive": 0,
+   "cryptic_left_max": 0,
+   "cryptic_right_max": 0
+  },
+  "Brain - Nucleus accumbens (basal ganglia)": {
+   "n": 262,
+   "canonical_median": 9.5,
+   "canonical_max": 121,
+   "libraries_in_window": 1,
+   "window_cryptic_left_positive": 0,
+   "window_cryptic_right_positive": 0,
+   "cryptic_left_positive": 0,
+   "cryptic_right_positive": 1,
+   "cryptic_left_max": 0,
+   "cryptic_right_max": 1
+  },
+  "Brain - Cerebellar Hemisphere": {
+   "n": 250,
+   "canonical_median": 35.5,
+   "canonical_max": 205,
+   "libraries_in_window": 4,
+   "window_cryptic_left_positive": 0,
+   "window_cryptic_right_positive": 0,
+   "cryptic_left_positive": 0,
+   "cryptic_right_positive": 0,
+   "cryptic_left_max": 0,
+   "cryptic_right_max": 0
+  },
+  "Brain - Frontal Cortex (BA9)": {
+   "n": 224,
+   "canonical_median": 23.0,
+   "canonical_max": 286,
+   "libraries_in_window": 8,
+   "window_cryptic_left_positive": 0,
+   "window_cryptic_right_positive": 0,
+   "cryptic_left_positive": 1,
+   "cryptic_right_positive": 1,
+   "cryptic_left_max": 1,
+   "cryptic_right_max": 1
+  },
+  "Brain - Hypothalamus": {
+   "n": 221,
+   "canonical_median": 6,
+   "canonical_max": 104,
+   "libraries_in_window": 1,
+   "window_cryptic_left_positive": 0,
+   "window_cryptic_right_positive": 0,
+   "cryptic_left_positive": 1,
+   "cryptic_right_positive": 1,
+   "cryptic_left_max": 1,
+   "cryptic_right_max": 1
+  },
+  "Brain - Putamen (basal ganglia)": {
+   "n": 221,
+   "canonical_median": 4,
+   "canonical_max": 38,
+   "libraries_in_window": 0,
+   "window_cryptic_left_positive": 0,
+   "window_cryptic_right_positive": 0,
+   "cryptic_left_positive": 1,
+   "cryptic_right_positive": 0,
+   "cryptic_left_max": 1,
+   "cryptic_right_max": 0
+  },
+  "Brain - Hippocampus": {
+   "n": 220,
+   "canonical_median": 5.0,
+   "canonical_max": 122,
+   "libraries_in_window": 3,
+   "window_cryptic_left_positive": 0,
+   "window_cryptic_right_positive": 0,
+   "cryptic_left_positive": 0,
+   "cryptic_right_positive": 0,
+   "cryptic_left_max": 0,
+   "cryptic_right_max": 0
+  },
+  "Brain - Anterior cingulate cortex (BA24)": {
+   "n": 201,
+   "canonical_median": 12,
+   "canonical_max": 127,
+   "libraries_in_window": 5,
+   "window_cryptic_left_positive": 0,
+   "window_cryptic_right_positive": 0,
+   "cryptic_left_positive": 0,
+   "cryptic_right_positive": 0,
+   "cryptic_left_max": 0,
+   "cryptic_right_max": 0
+  },
+  "Brain - Spinal cord (cervical c-1)": {
+   "n": 171,
+   "canonical_median": 1,
+   "canonical_max": 21,
+   "libraries_in_window": 0,
+   "window_cryptic_left_positive": 0,
+   "window_cryptic_right_positive": 0,
+   "cryptic_left_positive": 0,
+   "cryptic_right_positive": 0,
+   "cryptic_left_max": 0,
+   "cryptic_right_max": 0
+  },
+  "Brain - Amygdala": {
+   "n": 163,
+   "canonical_median": 5,
+   "canonical_max": 83,
+   "libraries_in_window": 0,
+   "window_cryptic_left_positive": 0,
+   "window_cryptic_right_positive": 0,
+   "cryptic_left_positive": 1,
+   "cryptic_right_positive": 0,
+   "cryptic_left_max": 1,
+   "cryptic_right_max": 0
+  },
+  "Brain - Substantia nigra": {
+   "n": 154,
+   "canonical_median": 2.0,
+   "canonical_max": 49,
+   "libraries_in_window": 0,
+   "window_cryptic_left_positive": 0,
+   "window_cryptic_right_positive": 0,
+   "cryptic_left_positive": 0,
+   "cryptic_right_positive": 0,
+   "cryptic_left_max": 0,
+   "cryptic_right_max": 0
+  }
+ },
+ "libraries_with_any_cryptic_read": [
+  {
+   "sample": "GTEX-13X6K-0011-R10a-SM-5P9JR.1",
+   "tissue": "Brain - Frontal Cortex (BA9)",
+   "canonical": 56,
+   "cryptic_left": 0,
+   "cryptic_right": 1
+  },
+  {
+   "sample": "GTEX-13N2G-0011-R10a-SM-5MR34.1",
+   "tissue": "Brain - Frontal Cortex (BA9)",
+   "canonical": 10,
+   "cryptic_left": 1,
+   "cryptic_right": 0
+  },
+  {
+   "sample": "GTEX-11EQ8-2826-SM-5N9C1.1",
+   "tissue": "Brain - Cerebellum",
+   "canonical": 24,
+   "cryptic_left": 2,
+   "cryptic_right": 1
+  },
+  {
+   "sample": "GTEX-13X6K-0011-R8b-SM-5PNZ4.1",
+   "tissue": "Brain - Hypothalamus",
+   "canonical": 20,
+   "cryptic_left": 1,
+   "cryptic_right": 1
+  },
+  {
+   "sample": "GTEX-13X6K-0011-R7b-SM-5P9K7.1",
+   "tissue": "Brain - Putamen (basal ganglia)",
+   "canonical": 12,
+   "cryptic_left": 1,
+   "cryptic_right": 0
+  },
+  {
+   "sample": "GTEX-13OW5-0011-R6b-SM-5O9BW.1",
+   "tissue": "Brain - Nucleus accumbens (basal ganglia)",
+   "canonical": 11,
+   "cryptic_left": 0,
+   "cryptic_right": 1
+  },
+  {
+   "sample": "GTEX-X4EP-0011-R4B-SM-3P627.1",
+   "tissue": "Brain - Amygdala",
+   "canonical": 3,
+   "cryptic_left": 1,
+   "cryptic_right": 0
+  }
+ ],
+ "window_totals": {
+  "libraries": 26,
+  "cryptic_left_positive": 0,
+  "cryptic_right_positive": 0
+ }
+}
