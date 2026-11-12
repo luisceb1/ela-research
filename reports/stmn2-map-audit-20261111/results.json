@@ -1,0 +1,511 @@
+{
+  "evidence": "retrospective descriptive and technical design audit; no biological test",
+  "identifier_policy": "aggregate output only; no sample or donor keys exported",
+  "input_sha256": {
+    "project_global.source": "fcdc1568241d95689eca59ce8b04307f6b6f922cd11e9e6e357c61c3d8bbaaa9",
+    "author_map.source": "52d62469ab4252c12e2eed4b8190e9b0e668ce51182a106bf49540dcfaf63df0",
+    "jung_table.source": "0398917532469cb20849e57ed74e6b5f12954b337fdde935a45f4d0d56cc2cba",
+    "chain.source": "5c0598e500ceb5a78c73086929e8ef993aec309bcafb595139b53d440b125a1d",
+    "results_corteza.json": "9053d7e24421419b70741322f2fc5514c18c5b04cba627d13f29ea71cd8b9e7a",
+    "results_cervical.json": "27b5b82dd2624193e810cf0d0417842de15267de5e48df3601f3bd078a11dc18",
+    "results.json": "cf19813d00db0fa039e6ecf3ce8380988024d0eeb9ed2b19dd2247a7d8a375ab",
+    "qc_cervical.source": "fef948a36baeaf3a3573d00c7e0e521907dbd1be608055314a064c352658f001"
+  },
+  "tissues": {
+    "cortex": {
+      "descriptive_recheck": {
+        "(unlabelled)": {
+          "samples": 23,
+          "nonzero_denominator": {
+            "n": 23,
+            "median": 0.0,
+            "max": 0.014347202295552367
+          },
+          "denominator_ge20": {
+            "n": 22,
+            "median": 0.0,
+            "max": 0.014347202295552367
+          },
+          "observed_cryptic_ge20": 0
+        },
+        "ALS Spectrum MND": {
+          "samples": 84,
+          "nonzero_denominator": {
+            "n": 84,
+            "median": 0.0,
+            "max": 0.029106029106029108
+          },
+          "denominator_ge20": {
+            "n": 82,
+            "median": 0.0,
+            "max": 0.029106029106029108
+          },
+          "observed_cryptic_ge20": 0
+        },
+        "ALS Spectrum MND, Other Neurological Disorders": {
+          "samples": 25,
+          "nonzero_denominator": {
+            "n": 25,
+            "median": 0.0,
+            "max": 0.018214936247723135
+          },
+          "denominator_ge20": {
+            "n": 25,
+            "median": 0.0,
+            "max": 0.018214936247723135
+          },
+          "observed_cryptic_ge20": 0
+        },
+        "Non-Neurological Control": {
+          "samples": 13,
+          "nonzero_denominator": {
+            "n": 13,
+            "median": 0.0,
+            "max": 0.008547008547008548
+          },
+          "denominator_ge20": {
+            "n": 12,
+            "median": 0.0,
+            "max": 0.008547008547008548
+          },
+          "observed_cryptic_ge20": 0
+        },
+        "Other Neurological Disorders": {
+          "samples": 3,
+          "nonzero_denominator": {
+            "n": 3,
+            "median": 0.0,
+            "max": 0.0
+          },
+          "denominator_ge20": {
+            "n": 3,
+            "median": 0.0,
+            "max": 0.0
+          },
+          "observed_cryptic_ge20": 0
+        },
+        "Pre-fALS, Other Neurological Disorders": {
+          "samples": 1,
+          "nonzero_denominator": {
+            "n": 1,
+            "median": 0.0,
+            "max": 0.0
+          },
+          "denominator_ge20": {
+            "n": 1,
+            "median": 0.0,
+            "max": 0.0
+          },
+          "observed_cryptic_ge20": 0
+        }
+      },
+      "mapping": {
+        "fratta_primary_metadata": {
+          "samples": 149,
+          "matched_samples": 140,
+          "distinct_declared_donors": 140,
+          "donors_with_multiple_samples_in_this_region": 0,
+          "max_samples_per_donor": 1,
+          "failures": {
+            "unmatched_external_key": 9
+          },
+          "by_group": {
+            "(unlabelled)": {
+              "samples": 23,
+              "matched_samples": 22,
+              "distinct_declared_donors": 22
+            },
+            "ALS Spectrum MND": {
+              "samples": 84,
+              "matched_samples": 81,
+              "distinct_declared_donors": 81
+            },
+            "ALS Spectrum MND, Other Neurological Disorders": {
+              "samples": 25,
+              "matched_samples": 24,
+              "distinct_declared_donors": 24
+            },
+            "Non-Neurological Control": {
+              "samples": 13,
+              "matched_samples": 13,
+              "distinct_declared_donors": 13
+            },
+            "Other Neurological Disorders": {
+              "samples": 3,
+              "matched_samples": 0,
+              "distinct_declared_donors": 0
+            },
+            "Pre-fALS, Other Neurological Disorders": {
+              "samples": 1,
+              "matched_samples": 0,
+              "distinct_declared_donors": 0
+            }
+          },
+          "samples_with_cryptic_ge20": 0,
+          "matched_samples_with_cryptic_ge20": 0,
+          "distinct_declared_donors_with_cryptic_ge20": 0
+        },
+        "jung_GEO_curation": {
+          "samples": 149,
+          "matched_samples": 117,
+          "distinct_declared_donors": 117,
+          "donors_with_multiple_samples_in_this_region": 0,
+          "max_samples_per_donor": 1,
+          "failures": {
+            "unmatched_external_key": 32
+          },
+          "by_group": {
+            "(unlabelled)": {
+              "samples": 23,
+              "matched_samples": 0,
+              "distinct_declared_donors": 0
+            },
+            "ALS Spectrum MND": {
+              "samples": 84,
+              "matched_samples": 81,
+              "distinct_declared_donors": 81
+            },
+            "ALS Spectrum MND, Other Neurological Disorders": {
+              "samples": 25,
+              "matched_samples": 24,
+              "distinct_declared_donors": 24
+            },
+            "Non-Neurological Control": {
+              "samples": 13,
+              "matched_samples": 12,
+              "distinct_declared_donors": 12
+            },
+            "Other Neurological Disorders": {
+              "samples": 3,
+              "matched_samples": 0,
+              "distinct_declared_donors": 0
+            },
+            "Pre-fALS, Other Neurological Disorders": {
+              "samples": 1,
+              "matched_samples": 0,
+              "distinct_declared_donors": 0
+            }
+          },
+          "samples_with_cryptic_ge20": 0,
+          "matched_samples_with_cryptic_ge20": 0,
+          "distinct_declared_donors_with_cryptic_ge20": 0
+        }
+      },
+      "cross_source_check": {
+        "samples_mapped_in_both": 117,
+        "identical_donor_keys": 117,
+        "different_donor_keys": 0
+      }
+    },
+    "cervical": {
+      "descriptive_recheck": {
+        "(unlabelled)": {
+          "samples": 24,
+          "nonzero_denominator": {
+            "n": 23,
+            "median": 0.0,
+            "max": 0.5
+          },
+          "denominator_ge20": {
+            "n": 8,
+            "median": 0.0,
+            "max": 0.3333333333333333
+          },
+          "observed_cryptic_ge20": 1
+        },
+        "ALS Spectrum MND": {
+          "samples": 95,
+          "nonzero_denominator": {
+            "n": 92,
+            "median": 0.005684389140271494,
+            "max": 1.0
+          },
+          "denominator_ge20": {
+            "n": 58,
+            "median": 0.005684389140271494,
+            "max": 0.543859649122807
+          },
+          "observed_cryptic_ge20": 4
+        },
+        "ALS Spectrum MND, Other Neurological Disorders": {
+          "samples": 26,
+          "nonzero_denominator": {
+            "n": 26,
+            "median": 0.03599137931034482,
+            "max": 1.0
+          },
+          "denominator_ge20": {
+            "n": 18,
+            "median": 0.03875,
+            "max": 0.4489795918367347
+          },
+          "observed_cryptic_ge20": 3
+        },
+        "Non-Neurological Control": {
+          "samples": 13,
+          "nonzero_denominator": {
+            "n": 13,
+            "median": 0.0,
+            "max": 0.001026694045174538
+          },
+          "denominator_ge20": {
+            "n": 8,
+            "median": 0.0,
+            "max": 0.001026694045174538
+          },
+          "observed_cryptic_ge20": 0
+        },
+        "Other MND": {
+          "samples": 1,
+          "nonzero_denominator": {
+            "n": 1,
+            "median": 0.0,
+            "max": 0.0
+          },
+          "denominator_ge20": {
+            "n": 1,
+            "median": 0.0,
+            "max": 0.0
+          },
+          "observed_cryptic_ge20": 0
+        },
+        "Other Neurological Disorders": {
+          "samples": 3,
+          "nonzero_denominator": {
+            "n": 3,
+            "median": 0.0,
+            "max": 0.0
+          },
+          "denominator_ge20": {
+            "n": 2,
+            "median": 0.0,
+            "max": 0.0
+          },
+          "observed_cryptic_ge20": 0
+        },
+        "Pre-fALS, Other Neurological Disorders": {
+          "samples": 2,
+          "nonzero_denominator": {
+            "n": 2,
+            "median": 0.0,
+            "max": 0.0
+          },
+          "denominator_ge20": {
+            "n": 2,
+            "median": 0.0,
+            "max": 0.0
+          },
+          "observed_cryptic_ge20": 0
+        }
+      },
+      "mapping": {
+        "fratta_primary_metadata": {
+          "samples": 164,
+          "matched_samples": 153,
+          "distinct_declared_donors": 152,
+          "donors_with_multiple_samples_in_this_region": 1,
+          "max_samples_per_donor": 2,
+          "failures": {
+            "unmatched_external_key": 11
+          },
+          "by_group": {
+            "(unlabelled)": {
+              "samples": 24,
+              "matched_samples": 23,
+              "distinct_declared_donors": 23
+            },
+            "ALS Spectrum MND": {
+              "samples": 95,
+              "matched_samples": 92,
+              "distinct_declared_donors": 92
+            },
+            "ALS Spectrum MND, Other Neurological Disorders": {
+              "samples": 26,
+              "matched_samples": 26,
+              "distinct_declared_donors": 25
+            },
+            "Non-Neurological Control": {
+              "samples": 13,
+              "matched_samples": 12,
+              "distinct_declared_donors": 12
+            },
+            "Other MND": {
+              "samples": 1,
+              "matched_samples": 0,
+              "distinct_declared_donors": 0
+            },
+            "Other Neurological Disorders": {
+              "samples": 3,
+              "matched_samples": 0,
+              "distinct_declared_donors": 0
+            },
+            "Pre-fALS, Other Neurological Disorders": {
+              "samples": 2,
+              "matched_samples": 0,
+              "distinct_declared_donors": 0
+            }
+          },
+          "samples_with_cryptic_ge20": 8,
+          "matched_samples_with_cryptic_ge20": 8,
+          "distinct_declared_donors_with_cryptic_ge20": 8
+        },
+        "jung_GEO_curation": {
+          "samples": 164,
+          "matched_samples": 129,
+          "distinct_declared_donors": 128,
+          "donors_with_multiple_samples_in_this_region": 1,
+          "max_samples_per_donor": 2,
+          "failures": {
+            "unmatched_external_key": 35
+          },
+          "by_group": {
+            "(unlabelled)": {
+              "samples": 24,
+              "matched_samples": 0,
+              "distinct_declared_donors": 0
+            },
+            "ALS Spectrum MND": {
+              "samples": 95,
+              "matched_samples": 91,
+              "distinct_declared_donors": 91
+            },
+            "ALS Spectrum MND, Other Neurological Disorders": {
+              "samples": 26,
+              "matched_samples": 26,
+              "distinct_declared_donors": 25
+            },
+            "Non-Neurological Control": {
+              "samples": 13,
+              "matched_samples": 12,
+              "distinct_declared_donors": 12
+            },
+            "Other MND": {
+              "samples": 1,
+              "matched_samples": 0,
+              "distinct_declared_donors": 0
+            },
+            "Other Neurological Disorders": {
+              "samples": 3,
+              "matched_samples": 0,
+              "distinct_declared_donors": 0
+            },
+            "Pre-fALS, Other Neurological Disorders": {
+              "samples": 2,
+              "matched_samples": 0,
+              "distinct_declared_donors": 0
+            }
+          },
+          "samples_with_cryptic_ge20": 8,
+          "matched_samples_with_cryptic_ge20": 7,
+          "distinct_declared_donors_with_cryptic_ge20": 7
+        }
+      },
+      "cross_source_check": {
+        "samples_mapped_in_both": 129,
+        "identical_donor_keys": 129,
+        "different_donor_keys": 0
+      }
+    }
+  },
+  "cross_tissue_overlap": {
+    "fratta_primary_metadata": {
+      "declared_donors_in_both_regions": 128,
+      "donors_in_either_region": 164
+    },
+    "jung_GEO_curation": {
+      "declared_donors_in_both_regions": 104,
+      "donors_in_either_region": 141
+    }
+  },
+  "pure_ALS_cervical_cryptic_ge20_units": {
+    "samples": 4,
+    "matched_samples": 4,
+    "distinct_declared_donors": 4
+  },
+  "coverage_recheck": {
+    "method": "per-library normalization followed by group medians; retrospective check of P1",
+    "primary_denominator": "star.number_of_input_reads_both (matches prior UNC13A ~0.11/million)",
+    "sensitivity_denominators": "unique mapped reads; assigned exonic reads",
+    "results": {
+      "star.number_of_input_reads_both": {
+        "n_each_gene": 95,
+        "STMN2_median_per_million": 0.929459574405418,
+        "UNC13A_median_per_million": 0.11496013833843208,
+        "ratio_of_medians": 8.085059637534313,
+        "P1_ge10_met": false
+      },
+      "star.uniquely_mapped_reads_number_both": {
+        "n_each_gene": 95,
+        "STMN2_median_per_million": 1.0199552892399408,
+        "UNC13A_median_per_million": 0.13107097834261797,
+        "ratio_of_medians": 7.781701961312823,
+        "P1_ge10_met": false
+      },
+      "exon_fc_count_all.assigned": {
+        "n_each_gene": 95,
+        "STMN2_median_per_million": 1.5967190191802147,
+        "UNC13A_median_per_million": 0.20552735682159343,
+        "ratio_of_medians": 7.768888015069622,
+        "P1_ge10_met": false
+      }
+    }
+  },
+  "stmn2_chain_mapped_bases": {
+    "80523448": [
+      {
+        "chromosome": "chr8",
+        "position0": 79611213,
+        "strand": "+"
+      }
+    ],
+    "80523449": [
+      {
+        "chromosome": "chr8",
+        "position0": 79611214,
+        "strand": "+"
+      }
+    ],
+    "80529055": [
+      {
+        "chromosome": "chr8",
+        "position0": 79616820,
+        "strand": "+"
+      }
+    ],
+    "80529056": [
+      {
+        "chromosome": "chr8",
+        "position0": 79616821,
+        "strand": "+"
+      }
+    ],
+    "80529283": [
+      {
+        "chromosome": "chr8",
+        "position0": 79617048,
+        "strand": "+"
+      }
+    ],
+    "80529284": [
+      {
+        "chromosome": "chr8",
+        "position0": 79617049,
+        "strand": "+"
+      }
+    ],
+    "80549035": [
+      {
+        "chromosome": "chr8",
+        "position0": 79636800,
+        "strand": "+"
+      }
+    ],
+    "80549036": [
+      {
+        "chromosome": "chr8",
+        "position0": 79636801,
+        "strand": "+"
+      }
+    ]
+  }
+}

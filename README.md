@@ -1,31 +1,45 @@
-# ELA — investigación computacional reproducible
+# ALS — reproducible computational research
 
-Estudio de las consecuencias transcriptómicas de la pérdida nuclear de TDP-43, con foco en STMN2 y UNC13A. El proyecto reúne reproducciones técnicas, descriptivos y propuestas experimentales. No acredita una nueva diana, un tratamiento propio o beneficio clínico.
+[Español](README.es.md) · [Current findings](docs/CURRENT_FINDINGS.md) · [English evidence and reproduction guide](docs/ENGLISH_GUIDE.md)
 
-## Estado y próxima tarea
+Independent, AI-assisted research on the transcriptomic consequences of nuclear TDP-43 loss of function, focusing on **STMN2** and **UNC13A**. The project is directed by Luis Cebrián Fraile and uses public sources. It contains technical reproductions, exploratory analyses, source audits and experimental proposals. It has not demonstrated a new therapeutic target, neuronal rescue or clinical benefit.
 
-Leer [AGENTS](AGENTS.md), [estado vigente](research/STATE.md), [evidencia](research/MASTER_EVIDENCE.md), [backlog](research/BACKLOG.md) y [protocolo](research/PROTOCOL.md), y comprobar las cabezas remotas antes de actuar.
+## Start with the current evidence
 
-Las PR #36, #38 y #39 están integradas. Hay dos continuaciones bloqueadas por datos: un manifiesto concreto Seddighi–AD Workbench para UNC13A y la tabla original K26 Fig.4d para reproducir eEPSC con su agrupación biológica. No repetir auditorías cerradas sin fuente nueva. Consultar [estado](research/STATE.md), [backlog](research/BACKLOG.md), [historial](research/history/README.md) e [inventario de scripts](research/SCRIPT_LIFECYCLE.md).
+The current reviewed baseline is **11 November 2026**, after integration of PRs [#57](https://github.com/luisceb1/ela-research/pull/57) and [#58](https://github.com/luisceb1/ela-research/pull/58). Older reports preserve the work and its errors; later corrections take precedence. This is not a certification of the entire historical archive.
 
-## Resultados y límites
+| Question | Supported result | Main limitation |
+|---|---|---|
+| Can public junction counts measure the documented STMN2 event? | The retained junction is supported by literature and genome-chain checks; four cervical ALS libraries with ≥20 cryptic reads map to four donors | A local junction-use proxy, not a calibrated molecular fraction or functional assay |
+| Does STMN2 differ between tissues from the same donor? | In 45 eligible ALS donor pairs: cervical higher/tied/lower in 24/14/7; median local-ratio difference +0.368 percentage points | Exploratory, same cohort; composition, batch, selection and unequal coverage remain unresolved |
+| Is UNC13A coverage sufficient in the examined data? | Canonical junction coverage is about 22–26 times lower in cervical cord than motor cortex under five library-depth denominators | Unpaired descriptive comparison; the cryptic-read threshold was not reached; this does not exclude all public RNA-seq or greater depth |
+| Does the published Keuss Fig.4d block model reproduce? | A [conditional R replay](reports/k26-conditional-replay-20261111/REPORT.md) gives a positive ASO contrast, p≈0.007 | Same data; two reduced-fit intervals include zero; published ASO star band not reproduced; strict metadata gate remains unmet |
+| Was isolated UNC13A correction tested after a measured functional deficit? | In the six UNC13A-specific experiments inspected, treatment after a documented baseline deficit could not be established | Bounded documentary review; absent documentation does not establish absent deficit; multi-target row M-a has two rule readings |
 
-- GEO/mapeo y corrección del parser: ejecutados. Las 21 uniones históricas no constituían un cribado exhaustivo válido.
-- Catálogo: 1901 claves; partición conjunta de referencia/autores 545 anotadas, 353 solo autores, 182 de identidad pendiente y 821 sin coincidencia en recursos limitados. No son 821 descubrimientos.
-- GSE126542/GSE121569: reproducción agregada e integridad técnica ejecutadas. DEXSeq no mide directamente las regiones CE contrastadas; no se ha reajustado el modelo inferencial.
-- SH-SY5Y: seis bibliotecas enlazadas a ENA; reanálisis conjunto de siete uniones bloqueado por cuatro alias y dos conflictos de hebra sin resolver.
-- Originalidad: revisión dirigida y propuesta UNC13A v0.4 como extensión conceptual. No validación funcional propia ni originalidad certificada.
+Read [Current findings](docs/CURRENT_FINDINGS.md) for the qualifications, source links and closed/open boundaries. The [English guide](docs/ENGLISH_GUIDE.md) links seven translated reports, their original Spanish texts, scripts, outputs and source manifests.
 
-## Verificación
+## Reproduce the software checks
 
-```bash
+From the repository root, using Python 3.11 or 3.12:
+
+```sh
 python -m pip install -r research/requirements-ci.txt
 python scripts/run_offline_tests.py --fail-on-skip --report test-results/offline.json
 python -m compileall -q scripts tests
 ```
 
-La CI ejecuta la suite completa en Python 3.11/3.12 con PySAM/PyArrow fijados y exige cero omisiones. Publica informes de pruebas y versiones instaladas; los checks históricos conservan sus nombres y dependen de esa única matriz. Véase el [inventario y contrato de verificación](research/SCRIPT_LIFECYCLE.md). Consultar siempre el SHA correspondiente. Las pruebas de software no sustituyen replicación biológica. Los análisis reales requieren sus fuentes y dependencias fijadas en cada informe; una CI offline correcta no significa que se hayan redescargado y reejecutado todos los análisis.
+CI runs the complete offline suite on both Python versions with pinned dependencies, requires zero skips, and uploads test/dependency reports. Inspect checks for the exact commit. **Passing software tests does not rerun every real-data analysis or establish biological validity.**
 
-Originales fuera de git, en cachés reproducibles con URL/hash. Código e informes conservan comandos y límites. [Acta de integración](reports/integration-20261030/REPORT.md) e historial documental están separados del estado vigente.
+For real-data reproduction, follow the selected report's commands, exact input URLs/hashes, source-directory layout and analysis-specific dependencies. Large originals and mixed metadata workbooks are not committed. The [English guide](docs/ENGLISH_GUIDE.md#reproduction) explains the entry points and remaining prerequisites; the [script lifecycle inventory](research/SCRIPT_LIFECYCLE.md) remains in Spanish.
 
-Sin datos clínicos personales, contactos, publicación externa, costes o laboratorio sin autorización. No inferencia con replicación inadecuada ni equivalencia entre cuentas, ARN funcional, proteína y recuperación neuronal. Esta integración concreta está autorizada; futuros merges o cierres de issues requieren la autorización aplicable.
+## Scope and next enabling inputs
+
+The STMN2 cycle on these 45 donors is closed. More fits on the same donors are not independent replication. Further progress requires discriminating composition/QC evidence or an independent cohort with verified design and usable event coverage.
+
+UNC13A [#37](https://github.com/luisceb1/ela-research/issues/37) and functional reproduction [#44](https://github.com/luisceb1/ela-research/issues/44) remain subject to their documented data/design gates. See [Current findings](docs/CURRENT_FINDINGS.md#what-would-enable-further-work). No fresh external-access or mailbox check is implied by this documentation update.
+
+## Documentation and provenance
+
+New scientific documentation, public-facing documentation and new code comments/docstrings are written in English. Spanish originals, internal working material and the historical archive remain available. The English reports are dated translations with pinned source hashes, not new analyses; [language policy and translation review](docs/ENGLISH_GUIDE.md#translation-policy-and-review) explains their status and how corrections propagate.
+
+For agent operations, read [AGENTS](AGENTS.md), [STATE](research/STATE.md), [BACKLOG](research/BACKLOG.md), [PROTOCOL](research/PROTOCOL.md) and [MASTER_EVIDENCE](research/MASTER_EVIDENCE.md). These operational/historical files may contain superseded dated sections; the current findings page identifies the reviewed scientific baseline. New communications, spending, personal-data handling, laboratory work and clinical instructions require the applicable explicit authorization.

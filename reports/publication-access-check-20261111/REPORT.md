@@ -1,5 +1,7 @@
 # Keuss/Fratta publication and Fig.4d source-data check — 11/11/2026
 
+**Historical check, superseded in part — integration review, 12 November 2026.** The observations below describe the earlier bounded check, not present publication/access status. The final K26 source and conditional replay were subsequently integrated: see [source](../k26-published-source-20261111/REPORT.md) and [replay](../k26-conditional-replay-20261111/REPORT.md). The original-value availability blocker is superseded; biological nesting/strict v1 remain unresolved. #44 is closed. This integration performs no new search or mailbox read and authorizes no contact.
+
 ## Decision
 
 At this check, **final editorial publication is not confirmed, and no new original Fig.4d eEPSC table has been recovered**. KCL still labels the work Accepted/In press (6 October 2026). The original functional-reproduction input gate stays disabled; no effect is estimated. This is the one-time check explicitly requested by Luis on 11 November, not a new recurring search or authorization to contact Fratta again.

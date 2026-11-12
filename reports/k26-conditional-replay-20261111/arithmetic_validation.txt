@@ -1,0 +1,5 @@
+PASS: GLS coefficients and SE from fitted V
+PASS: Satterthwaite t-tail/pointwise interval arithmetic and Holm family
+PASS: equal-batch summaries and descriptive recovery arithmetic
+PASS: three distinct leave-one-block-out results
+These checks validate computation, not biological independence.

@@ -1,7 +1,7 @@
 {
   "status": "sent_verified",
   "authorization": "Luis explicitly approved the complete proposed email in chat on 2026-11-04",
-  "recipient": "menoci@medizin.uni-goettingen.de",
+  "recipient": "[dirección de soporte institucional del repositorio; no republicada aquí]",
   "subject": "Public metadata access for GOE-Seek study 260 (UNC13A)",
   "sent_at_utc": "2026-11-04T09:20:43.000Z",
   "sent_at_madrid": "2026-11-04 10:20:43",
@@ -13,7 +13,7 @@
   ],
   "approved_body_matches_sent_html": true,
   "duplicate_search_before_send": {
-    "query": "in:sent to:menoci@medizin.uni-goettingen.de subject:\"Public metadata access for GOE-Seek study 260\" newer_than:14d",
+    "query": "in:sent to:[dirección de soporte institucional del repositorio; no republicada aquí] subject:\"Public metadata access for GOE-Seek study 260\" newer_than:14d",
     "matches": 0
   },
   "cc": [],

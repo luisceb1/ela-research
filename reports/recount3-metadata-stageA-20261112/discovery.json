@@ -1,0 +1,170 @@
+{
+  "query_lock": "3bbc9326a926a77e6224600a8250e189d5c679b3",
+  "queries": [
+    {
+      "id": "G1-Q1",
+      "status": "ok",
+      "declared_hits": "37",
+      "returned_ids": [
+        "200298758",
+        "200298756",
+        "200304550",
+        "200304548",
+        "200304547",
+        "200252892",
+        "200307054",
+        "200299341",
+        "200296716",
+        "200296714"
+      ],
+      "opened_ids": [
+        "200298758",
+        "200298756",
+        "200304550",
+        "200304548",
+        "200304547",
+        "200252892",
+        "200307054",
+        "200299341",
+        "200296716",
+        "200296714"
+      ],
+      "unopened_ids": [],
+      "translation": "(TARDBP[All Fields] OR \"TDP-43\"[All Fields] OR TDP43[All Fields]) AND (knockdown[All Fields] OR depletion[All Fields]) AND ((\"neurons\"[MeSH Terms] OR neuron[All Fields]) OR neuronal[All Fields] OR iPSC[All Fields]) AND \"Homo sapiens\"[Organism] AND gse[Entry Type]",
+      "warninglist": null
+    },
+    {
+      "id": "G1-Q2",
+      "status": "ok",
+      "declared_hits": "10",
+      "returned_ids": [
+        "200308462",
+        "200248847",
+        "200272626",
+        "200272624",
+        "200271156",
+        "200252200",
+        "200124439",
+        "200067027",
+        "200097262",
+        "200018632"
+      ],
+      "opened_ids": [
+        "200308462",
+        "200248847",
+        "200272626",
+        "200272624",
+        "200271156",
+        "200252200",
+        "200124439",
+        "200067027",
+        "200097262",
+        "200018632"
+      ],
+      "unopened_ids": [],
+      "translation": "(TARDBP[All Fields] OR \"TDP-43\"[All Fields] OR TDP43[All Fields]) AND silencing[All Fields] AND ((\"neurons\"[MeSH Terms] OR neuron[All Fields]) OR neuronal[All Fields] OR iPSC[All Fields]) AND \"Homo sapiens\"[Organism] AND gse[Entry Type]",
+      "warninglist": null
+    },
+    {
+      "id": "G2-Q1",
+      "status": "ok",
+      "declared_hits": "20",
+      "returned_ids": [
+        "200344875",
+        "200252892",
+        "200299976",
+        "200296716",
+        "200296714",
+        "200296711",
+        "200296710",
+        "200296063",
+        "200260532",
+        "200259432"
+      ],
+      "opened_ids": [
+        "200344875",
+        "200299976",
+        "200296711",
+        "200296710",
+        "200296063",
+        "200260532",
+        "200259432"
+      ],
+      "unopened_ids": [],
+      "translation": "(TARDBP[All Fields] OR \"TDP-43\"[All Fields] OR TDP43[All Fields]) AND ((\"kidney cortex\"[MeSH Terms] OR \"cerebral cortex\"[MeSH Terms] OR \"adrenal cortex\"[MeSH Terms] OR cortical[All Fields]) OR i3Neuron[All Fields] OR iNeuron[All Fields]) AND (loss[All Fields] OR depletion[All Fields] OR knockdown[All Fields]) AND \"Homo sapiens\"[Organism] AND gse[Entry Type]",
+      "warninglist": null
+    },
+    {
+      "id": "G2-Q2",
+      "status": "ok",
+      "declared_hits": "0",
+      "returned_ids": [],
+      "opened_ids": [],
+      "unopened_ids": [],
+      "translation": "(TARDBP[All Fields] OR \"TDP-43\"[All Fields] OR TDP43[All Fields]) AND (HaloPROTAC[All Fields] OR degron[All Fields]) AND \"Homo sapiens\"[Organism] AND gse[Entry Type]",
+      "warninglist": null
+    },
+    {
+      "id": "G3-Q1",
+      "status": "ok",
+      "declared_hits": "9",
+      "returned_ids": [
+        "200248847",
+        "200290437",
+        "200182976",
+        "200121569",
+        "200077707",
+        "200077702",
+        "200056500",
+        "200033855",
+        "200040651"
+      ],
+      "opened_ids": [
+        "200290437",
+        "200182976",
+        "200121569"
+      ],
+      "unopened_ids": [
+        "200077707",
+        "200077702",
+        "200056500",
+        "200033855",
+        "200040651"
+      ],
+      "translation": "(TARDBP[All Fields] OR \"TDP-43\"[All Fields] OR TDP43[All Fields]) AND \"motor neuron\"[All Fields] AND (depletion[All Fields] OR knockdown[All Fields] OR silencing[All Fields]) AND \"Homo sapiens\"[Organism] AND gse[Entry Type]",
+      "warninglist": null
+    }
+  ],
+  "inspected_ids": [
+    "200298758",
+    "200298756",
+    "200304550",
+    "200304548",
+    "200304547",
+    "200252892",
+    "200307054",
+    "200299341",
+    "200296716",
+    "200296714",
+    "200308462",
+    "200248847",
+    "200272626",
+    "200272624",
+    "200271156",
+    "200252200",
+    "200124439",
+    "200067027",
+    "200097262",
+    "200018632",
+    "200344875",
+    "200299976",
+    "200296711",
+    "200296710",
+    "200296063",
+    "200260532",
+    "200259432",
+    "200290437",
+    "200182976",
+    "200121569"
+  ]
+}

@@ -1,5 +1,7 @@
 # UNC13A–STMN2: la asociación se atenúa al condicionar por subtipo
 
+**Integration note — 12 November 2026.** This dated analysis and its numerical artifacts are preserved from PR #53, not rerun on participant data. Focused software controls are rerun for integration; see [validation record](../pr53-integration-20261112/REPORT.md). The fixed cycle remains closed. References below to blocked #37/#44 or proposed later work are historical: both issues are now closed, and the later conditional K26 replay does not resolve strict v1. No additional fit, source search or contact is authorized.
+
 Fecha: 10/11/2026. Etiqueta: **reanálisis observacional exploratorio interno**, con los mismos 35 casos. No es replicación independiente.
 
 ## Evidencia

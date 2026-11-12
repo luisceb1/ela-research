@@ -1,0 +1,19 @@
+{
+  "schema_version": "FR-K26-4d-conditional-v2",
+  "enabled_for_conditional_replay": true,
+  "strict_v1_gate_passed": false,
+  "authorization": "Luis explicitly approved the proposed conditional published-block replay on 2026-11-11",
+  "plan": "research/plans/2026-11-11-k26-fig4d-conditional-v2.md",
+  "source_sha256": "7a01e468d3eaf89a2af9bd0c3fb16434f815e3020033df771d9872799cba3eb7",
+  "panel": "4d",
+  "unit": "nA_magnitude",
+  "expected_counts": {"Control": 34, "KD": 30, "KD_ASO": 25},
+  "source_batch_labels": ["Batch 1", "Batch 2", "Batch 3"],
+  "block_interpretation": "conditional use of author-labelled source blocks; full nested biological identity is unverified",
+  "primary_model": "log1p(value_nA) ~ condition + (1 | source_batch)",
+  "reference_condition": "KD",
+  "estimation": "REML",
+  "primary_contrast": "KD_ASO - KD",
+  "secondary_contrast": "Control - KD",
+  "inference": "Satterthwaite, pointwise 95% intervals; nominal and Holm across the two prespecified contrasts"
+}

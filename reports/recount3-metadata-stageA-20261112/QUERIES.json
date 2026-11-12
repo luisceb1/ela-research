@@ -1,0 +1,46 @@
+{
+  "plan_commit": "55ab5a8777887d855c19e8b3d725517deeb67473",
+  "authorization": "Luis: adelante, after PR64 plan;StageA only",
+  "status_at_commit": "before first new discovery request",
+  "database": "NCBI GEO DataSets (gds)",
+  "endpoint": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi",
+  "parameters": {
+    "retmode": "json",
+    "retmax": 10,
+    "sort": "relevance"
+  },
+  "queries": [
+    {
+      "id": "G1-Q1",
+      "term": "(TARDBP OR \"TDP-43\" OR TDP43) AND (knockdown OR depletion) AND (neuron OR neuronal OR iPSC) AND \"Homo sapiens\"[Organism] AND gse[Entry Type]"
+    },
+    {
+      "id": "G1-Q2",
+      "term": "(TARDBP OR \"TDP-43\" OR TDP43) AND silencing AND (neuron OR neuronal OR iPSC) AND \"Homo sapiens\"[Organism] AND gse[Entry Type]"
+    },
+    {
+      "id": "G2-Q1",
+      "term": "(TARDBP OR \"TDP-43\" OR TDP43) AND (cortical OR i3Neuron OR iNeuron) AND (loss OR depletion OR knockdown) AND \"Homo sapiens\"[Organism] AND gse[Entry Type]"
+    },
+    {
+      "id": "G2-Q2",
+      "term": "(TARDBP OR \"TDP-43\" OR TDP43) AND (HaloPROTAC OR degron) AND \"Homo sapiens\"[Organism] AND gse[Entry Type]"
+    },
+    {
+      "id": "G3-Q1",
+      "term": "(TARDBP OR \"TDP-43\" OR TDP43) AND \"motor neuron\" AND (depletion OR knockdown OR silencing) AND \"Homo sapiens\"[Organism] AND gse[Entry Type]"
+    },
+    {
+      "id": "G3-Q2",
+      "term": "(TARDBP OR \"TDP-43\" OR TDP43) AND (shRNA OR siRNA) AND (pluripotent OR iPSC OR motor) AND \"Homo sapiens\"[Organism] AND gse[Entry Type]"
+    }
+  ],
+  "max_queries": 6,
+  "max_inspected_distinct_series": 30,
+  "metadata_byte_cap": 10000000,
+  "one_response_byte_cap": 700000,
+  "retry_policy": "one retry for HTTP429/5xx; same request; count all received bytes; no new term or TLS weakening",
+  "ordering": "group/query order then returned API relevance order;deduplicate GSE before30recordcap",
+  "metadata_only": true,
+  "stageB_authorized": false
+}

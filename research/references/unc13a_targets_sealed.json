@@ -1,0 +1,48 @@
+{
+  "project": "SRP166282",
+  "provenance": "reports/unc13a-control-annotation-20261103/complete-assessment.json, field targets_canonical_cryptic_left_cryptic_right",
+  "assembly": "GRCh38/hg38",
+  "convention": "intronic 0-based half-open; converted by the probe to [start0+1, end0] 1-based inclusive",
+  "chromosome": "chr19",
+  "strand": "-",
+  "junctions": {
+    "canonical": [
+      17641556,
+      17642844
+    ],
+    "cryptic_left": [
+      17641556,
+      17642413
+    ],
+    "cryptic_right": [
+      17642541,
+      17642844
+    ]
+  },
+  "positive_control": "canonical",
+  "positive_control_note": "Annotated exon 20-21 junction; shows the measurement works at this locus and is excluded from the coverage gate.",
+  "verification_20261111": {
+    "method": "Double-anchor assembly cross-check, the same procedure that corrected the STMN2 derivation.",
+    "anchor_source": "UCSC api.genome.ucsc.edu, track ncbiRefSeq, chr19:17400000-17900000, hg19 and hg38",
+    "anchor_transcript": "NM_001080421.3",
+    "boundaries_compared": 88,
+    "offset_hg19_to_hg38": 110809,
+    "offset_agreement": "All 88 exon boundaries give 110809 with no exception, so this region lifted without structural change.",
+    "published_cryptic_exon_hg19": [
+      17753223,
+      17753350
+    ],
+    "published_cryptic_exon_hg38_derived": [
+      17642414,
+      17642541
+    ],
+    "cryptic_exon_implied_by_sealed_junctions": [
+      17642414,
+      17642541
+    ],
+    "match": "exact",
+    "canonical_cross_check": "The sealed canonical intron 17641557-17642844 begins one base after a real hg38 exon end and ends at a real hg38 exon start.",
+    "annotation_flag_note": "UNC13A's two cryptic junctions are flagged annotated=0 in recount3 while STMN2's cryptic junction is flagged annotated=1. The flag is therefore inconsistent across genes and is not a reliable criterion in either direction.",
+    "outcome": "CONFIRMED. Coordinates unchanged; no adjustment was made or needed."
+  }
+}

@@ -1,0 +1,312 @@
+{
+ "label": "SRP334561",
+ "inputs": {
+  "gene_sums.G026.gz": {
+   "sha256": "4e9297581e7660d2a7be51c39e765136f16245cee9cb1501de7bb5a26259c586",
+   "bytes": 344666
+  },
+  "recount_qc.gz": {
+   "sha256": "8e1d502bbb15684c9e1a9acf3d7696a336b86f4fe50064f6933aa151196eca1c",
+   "bytes": 3407
+  },
+  "sra.sra.SRP334561.MD.gz": {
+   "sha256": "c9d54d5698d7494f40a1912b9d50976ef1dc4e4a0faca03be41bfe42e4b8403d",
+   "bytes": 2839
+  }
+ },
+ "gene_ids": {
+  "TARDBP": "ENSG00000120948",
+  "UNC13A": "ENSG00000130477",
+  "STMN2": "ENSG00000104435"
+ },
+ "shape_thresholds": {
+  "min_genes_detected": 5000,
+  "max_top_gene_share": 0.5
+ },
+ "read_length_by_rail_id": {
+  "5149304": {
+   "mode_length": "1508",
+   "kallisto_mean_length": "162.212",
+   "unique_pct": "97.94"
+  },
+  "5149251": {
+   "mode_length": "1508",
+   "kallisto_mean_length": "105.536",
+   "unique_pct": "100.01"
+  },
+  "5149345": {
+   "mode_length": "1508",
+   "kallisto_mean_length": "270.383",
+   "unique_pct": "99.96"
+  },
+  "5149291": {
+   "mode_length": "1508",
+   "kallisto_mean_length": "293.224",
+   "unique_pct": "99.66"
+  },
+  "5149224": {
+   "mode_length": "1508",
+   "kallisto_mean_length": "325.973",
+   "unique_pct": "98.91"
+  },
+  "5149359": {
+   "mode_length": "1508",
+   "kallisto_mean_length": "142.514",
+   "unique_pct": "100.06"
+  },
+  "5149331": {
+   "mode_length": "1508",
+   "kallisto_mean_length": "257.143",
+   "unique_pct": "99.92"
+  },
+  "5149265": {
+   "mode_length": "1508",
+   "kallisto_mean_length": "112.467",
+   "unique_pct": "100.05"
+  },
+  "5149318": {
+   "mode_length": "1508",
+   "kallisto_mean_length": "137.725",
+   "unique_pct": "98.95"
+  },
+  "5149374": {
+   "mode_length": "1508",
+   "kallisto_mean_length": "124.930",
+   "unique_pct": "99.45"
+  },
+  "5149238": {
+   "mode_length": "1508",
+   "kallisto_mean_length": "319.708",
+   "unique_pct": "99.92"
+  },
+  "5149278": {
+   "mode_length": "1508",
+   "kallisto_mean_length": "287.254",
+   "unique_pct": "99.42"
+  }
+ },
+ "verdict": {
+  "samples": 12,
+  "transcriptome_wide_samples": 0,
+  "knockdown_efficiency_computable": false,
+  "refusal_reason": "Gene counts are not transcriptome-wide for every sample, so a knockdown level read off them would not measure expression. No number is produced; see the per-sample shape field."
+ },
+ "rows": [
+  {
+   "sample": "SRR15661976",
+   "group": "control",
+   "declared": "shScramble",
+   "cell_line": "GM25256-Corriell Institute",
+   "shape": {
+    "total_counts": 16333365,
+    "genes_detected": 13,
+    "top_gene_share": 0.9996,
+    "transcriptome_wide": false
+   },
+   "TARDBP": 0,
+   "TARDBP_per_million": 0.0,
+   "UNC13A": 16326624,
+   "UNC13A_per_million": 999587.29,
+   "STMN2": 0,
+   "STMN2_per_million": 0.0
+  },
+  {
+   "sample": "SRR15661977",
+   "group": "control",
+   "declared": "shScramble",
+   "cell_line": "GM25256-Corriell Institute",
+   "shape": {
+    "total_counts": 18733034,
+    "genes_detected": 11,
+    "top_gene_share": 0.9996,
+    "transcriptome_wide": false
+   },
+   "TARDBP": 0,
+   "TARDBP_per_million": 0.0,
+   "UNC13A": 18725218,
+   "UNC13A_per_million": 999582.77,
+   "STMN2": 0,
+   "STMN2_per_million": 0.0
+  },
+  {
+   "sample": "SRR15661978",
+   "group": "TDP43_depleted",
+   "declared": "shTDP-43",
+   "cell_line": "GM25256-Corriell Institute",
+   "shape": {
+    "total_counts": 21213216,
+    "genes_detected": 8,
+    "top_gene_share": 0.9985,
+    "transcriptome_wide": false
+   },
+   "TARDBP": 0,
+   "TARDBP_per_million": 0.0,
+   "UNC13A": 21181340,
+   "UNC13A_per_million": 998497.35,
+   "STMN2": 0,
+   "STMN2_per_million": 0.0
+  },
+  {
+   "sample": "SRR15661979",
+   "group": "TDP43_depleted",
+   "declared": "shTDP-43",
+   "cell_line": "GM25256-Corriell Institute",
+   "shape": {
+    "total_counts": 23200722,
+    "genes_detected": 9,
+    "top_gene_share": 0.9994,
+    "transcriptome_wide": false
+   },
+   "TARDBP": 0,
+   "TARDBP_per_million": 0.0,
+   "UNC13A": 23187941,
+   "UNC13A_per_million": 999449.11,
+   "STMN2": 0,
+   "STMN2_per_million": 0.0
+  },
+  {
+   "sample": "SRR15661980",
+   "group": "control",
+   "declared": "shScramble",
+   "cell_line": "NDS00209-NINDS",
+   "shape": {
+    "total_counts": 20576049,
+    "genes_detected": 11,
+    "top_gene_share": 0.9994,
+    "transcriptome_wide": false
+   },
+   "TARDBP": 0,
+   "TARDBP_per_million": 0.0,
+   "UNC13A": 20564179,
+   "UNC13A_per_million": 999423.12,
+   "STMN2": 0,
+   "STMN2_per_million": 0.0
+  },
+  {
+   "sample": "SRR15661981",
+   "group": "control",
+   "declared": "shScramble",
+   "cell_line": "NDS00209-NINDS",
+   "shape": {
+    "total_counts": 19000465,
+    "genes_detected": 10,
+    "top_gene_share": 0.9988,
+    "transcriptome_wide": false
+   },
+   "TARDBP": 0,
+   "TARDBP_per_million": 0.0,
+   "UNC13A": 18978418,
+   "UNC13A_per_million": 998839.66,
+   "STMN2": 0,
+   "STMN2_per_million": 0.0
+  },
+  {
+   "sample": "SRR15661982",
+   "group": "TDP43_depleted",
+   "declared": "shTDP-43",
+   "cell_line": "NDS00209-NINDS",
+   "shape": {
+    "total_counts": 11961152,
+    "genes_detected": 15,
+    "top_gene_share": 0.995,
+    "transcriptome_wide": false
+   },
+   "TARDBP": 0,
+   "TARDBP_per_million": 0.0,
+   "UNC13A": 11901152,
+   "UNC13A_per_million": 994983.76,
+   "STMN2": 0,
+   "STMN2_per_million": 0.0
+  },
+  {
+   "sample": "SRR15661983",
+   "group": "TDP43_depleted",
+   "declared": "shTDP-43",
+   "cell_line": "NDS00209-NINDS",
+   "shape": {
+    "total_counts": 16841626,
+    "genes_detected": 9,
+    "top_gene_share": 0.9972,
+    "transcriptome_wide": false
+   },
+   "TARDBP": 0,
+   "TARDBP_per_million": 0.0,
+   "UNC13A": 16794887,
+   "UNC13A_per_million": 997224.79,
+   "STMN2": 0,
+   "STMN2_per_million": 0.0
+  },
+  {
+   "sample": "SRR15661984",
+   "group": "control",
+   "declared": "shScramble",
+   "cell_line": "NDS00262-NINDS",
+   "shape": {
+    "total_counts": 18248983,
+    "genes_detected": 10,
+    "top_gene_share": 0.9995,
+    "transcriptome_wide": false
+   },
+   "TARDBP": 0,
+   "TARDBP_per_million": 0.0,
+   "UNC13A": 18239875,
+   "UNC13A_per_million": 999500.9,
+   "STMN2": 0,
+   "STMN2_per_million": 0.0
+  },
+  {
+   "sample": "SRR15661985",
+   "group": "control",
+   "declared": "shScramble",
+   "cell_line": "NDS00262-NINDS",
+   "shape": {
+    "total_counts": 17612154,
+    "genes_detected": 14,
+    "top_gene_share": 0.9991,
+    "transcriptome_wide": false
+   },
+   "TARDBP": 0,
+   "TARDBP_per_million": 0.0,
+   "UNC13A": 17596162,
+   "UNC13A_per_million": 999091.99,
+   "STMN2": 0,
+   "STMN2_per_million": 0.0
+  },
+  {
+   "sample": "SRR15661986",
+   "group": "TDP43_depleted",
+   "declared": "shTDP-43",
+   "cell_line": "NDS00262-NINDS",
+   "shape": {
+    "total_counts": 15124443,
+    "genes_detected": 13,
+    "top_gene_share": 0.9971,
+    "transcriptome_wide": false
+   },
+   "TARDBP": 0,
+   "TARDBP_per_million": 0.0,
+   "UNC13A": 15081036,
+   "UNC13A_per_million": 997130.01,
+   "STMN2": 0,
+   "STMN2_per_million": 0.0
+  },
+  {
+   "sample": "SRR15661987",
+   "group": "TDP43_depleted",
+   "declared": "shTDP-43",
+   "cell_line": "NDS00262-NINDS",
+   "shape": {
+    "total_counts": 14584622,
+    "genes_detected": 17,
+    "top_gene_share": 0.9987,
+    "transcriptome_wide": false
+   },
+   "TARDBP": 0,
+   "TARDBP_per_million": 0.0,
+   "UNC13A": 14565696,
+   "UNC13A_per_million": 998702.33,
+   "STMN2": 0,
+   "STMN2_per_million": 0.0
+  }
+ ]
+}

@@ -1,5 +1,7 @@
 # Fuente independiente para UNC13A–STMN2: tres candidatas, ninguna lista para inferencia
 
+**Current status — integration review, 12 November 2026.** The screen below is a closed historical cycle, with no source admitted. Its proposed Quadros contact was later explicitly authorized and [recorded as sent](../publication-access-check-20261111/COMMUNICATION_LOG.md). Earlier unsent/request-authorization wording below is historical, not an instruction to send again. No reply or data delivery was verified in this integration. #37/#44 are now closed; later K26 source/replay work supersedes their historical availability status. The screen's source decisions and numerical records are unchanged.
+
 Fecha: 10/11/2026. Autorización: Luis indicó continuar hacia una fuente independiente tras el análisis condicionado por subtipo. Protocolo de este ciclo: [plan](../../research/plans/2026-11-10-independent-marker-source-screen.md), commit `2b23019a9836767ddffc50fb0e9627425d6471da`, anterior a inspeccionar el libro de valores originales. Es una auditoría acotada de viabilidad, no otro contraste de H2.
 
 ## Evidencia y decisión

@@ -1,0 +1,13 @@
+srp	recount3_runs	date_processed	declared_model	declared_contrast	tdp43_depletion_arm_n	decision	reason
+SRP166282	18	2019-10-01	iPSC motor neurons (HUES3)	TDP-43 KD vs control	6	prior_work	Klim 2019; already measured, rejected on cryptic coverage (max 5 reads)
+SRP069787	16	2019-10-01	iPSC motor neurons	TDP43 Knockdown vs Scramble Knockdown	2	near_miss_replicates	Correct model and contrast, junction counts available; only 2 KD and 2 scramble libraries
+SRP169127	6	2019-10-01	SH-SY5Y neuroblastoma line	TARDBP shRNA vs two control hairpins	2	near_miss_model_and_replicates	Neuroblastoma line, not neurons; 2 KD libraries; 4 controls across two hairpins
+SRP219885	6	2019-10-01	HeLa M	TDP-43 KO vs rescued KO	3	rejected_model	Non-neuronal. Only KO-plus-rescue design seen; recorded for that reason alone
+SRP496259	32	2024-04-04	iPSC motor neurons (line 11a)	TDP-43dNLS:YFP or TDP-43:YFP overexpression vs YFP vs empty vector; ATXN2 KO arms	0	rejected_contrast	Declared overexpression of mislocalised TDP-43, not depletion of endogenous TDP-43. Single cell line. Needs its own design review if ever considered
+SRP358326	15	2022-06-07	iPSC-derived neurons and NPC	TARDBP K263E vs wild-type (201B7)	0	rejected_contrast	Point mutation, not depletion
+SRP254044	10	2023-12-05	iPSC motor neurons, ALS patients	TARDBP M337V patient vs control lines	0	rejected_contrast	Patient mutation, not depletion
+SRP069789	18	2019-10-01	NPC	FUS KD and TAF15 KD time course	0	rejected_no_target_arm	No TDP-43 arm in the deposit
+SRP399239	47	2023-12-02	ALS motor neurons	VCP ATPase inhibition	0	rejected_contrast	Not a TDP-43 depletion experiment
+SRP576070	12	2025-09-24	immune cells	TDP-43 aggregate exposure	0	rejected_model	Non-neuronal
+SRP013565	2212	2019-10-01	ENCODE cell lines	RIP-seq	0	rejected_assay	RIP-seq, not a depletion RNA-seq contrast
+SRP057819	2	2019-10-01	HeLa	TDP-43 knockdown vs control	1	prior_work_rejected_model	Already recorded in the issue 37 candidate decisions; non-neuronal, 2 runs total

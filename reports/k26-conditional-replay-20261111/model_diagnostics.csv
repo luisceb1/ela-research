@@ -1,0 +1,6 @@
+"model","n","blocks","status","singular","batch_variance","residual_sd","shapiro_W","shapiro_p","gaussian_assumption_flag","optimizer","optimizer_code","convergence_messages","warnings","messages"
+"primary_log1p",89,3,"fitted",FALSE,0.0439872098246398,0.631275692049324,0.988594239833356,0.635273704683091,FALSE,"nloptwrap","0","","",""
+"raw_scale_sensitivity",89,3,"fitted",FALSE,1.81630142991462,3.61708367651012,0.836974194144477,1.7264118997242e-08,TRUE,"nloptwrap","0","","",""
+"without_Batch_1",58,2,"fitted",FALSE,0.0132619678262333,0.597875208248189,0.983827564790359,0.631393542092123,FALSE,"nloptwrap","0","","",""
+"without_Batch_2",61,2,"fitted",FALSE,0.0133215295408461,0.614914641557375,0.973381338009413,0.204500296692581,FALSE,"nloptwrap","0","","",""
+"without_Batch_3",59,2,"fitted",FALSE,0.0981468064310265,0.665712157104477,0.98160600290928,0.511683774944496,FALSE,"nloptwrap","0","","",""

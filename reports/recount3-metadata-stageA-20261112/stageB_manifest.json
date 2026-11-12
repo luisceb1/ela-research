@@ -1,0 +1,8 @@
+{
+  "stageA_status": "closed_no_eligible_source",
+  "eligible_projects": [],
+  "stageB_authorized": false,
+  "count_downloads": 0,
+  "coverage_assessed": false,
+  "source_gate_reopened": false
+}

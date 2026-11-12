@@ -1,0 +1,2 @@
+# Same NumPy pin used by the complete offline CI.
+numpy==2.3.4

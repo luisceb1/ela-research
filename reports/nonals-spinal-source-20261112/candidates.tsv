@@ -1,0 +1,13 @@
+srp	recount3_runs	title	tissue_class	decision
+SRP097615	39	RNA-seq of laser captured oculomotor, cervical and lumbar spinal motor, and Onuf's nucleus motor neurons in post mortem material of control human subjects	non-ALS post-mortem spinal motor neurons	measured; positive control absent
+SRP270799	2256	Truncated stathmin-2 is a marker of TDP-43 pathology in frontotemporal dementia	FTD/TDP-43 pathology cohort, brain	rejected: not spinal cord, TDP-43 pathology cohort
+SRP044860	77	Whole exome and transcriptome sequencing in sporadic ALS	sporadic ALS	rejected: ALS cohort
+SRP489681	71	Stem cell derived spinal cord chips reproduce disease biomarkers in sporadic ALS patients	iPSC-derived, sporadic ALS	rejected: ALS, not post-mortem tissue
+SRP379191	66	Generation of functional posterior spinal motor neurons from hPSC-derived spinal cord neural progenitors	hPSC-derived	rejected: not post-mortem tissue
+SRP078234	66	Left-right asymmetry of maturation rates in human embryonic neural development	embryonic	rejected: embryonic, not adult spinal cord
+SRP118836	56	NFIA is a gliogenic switch enabling rapid derivation of functional human astrocytes from pluripotent stem cells	hPSC-derived astrocytes	rejected: not spinal cord tissue
+SRP212278	24	Regionally specified human pluripotent stem cell-derived astrocytes	hPSC-derived astrocytes	rejected: not spinal cord tissue
+SRP076270	13	Comparison of human brain and spinal cord neural stem cells	neural stem cells	rejected: cultured NSC, not tissue
+SRP001371	167	University of Washington Human Reference Epigenome Mapping Project	mixed reference epigenome	rejected: not a spinal cord cohort
+SRP013565	2212	ENCODE RIP-seq	ENCODE cell lines	rejected: wrong assay
+SRP496259	32	iPSC motor neurons, TDP-43dNLS overexpression	iPSC-derived	rejected: already classified in the index-first screen

@@ -1,0 +1,3 @@
+"model","contrast","selection","estimate","se","df","t","p_nominal_exploratory","ci95_low_pointwise","ci95_high_pointwise","original_primary_family_unchanged","equivalence_test_performed","singular"
+"primary_log1p","KD_ASO - Control","post-hoc external-review clarification",-0.241720842879645,0.167359845764667,84.587614507684,-1.44431803085873,0.152343519777187,-0.574500474182205,0.0910587884229147,TRUE,FALSE,FALSE
+"raw_scale_sensitivity","KD_ASO - Control","post-hoc external-review clarification",-1.52570119142062,0.959240289721003,84.5002322406529,-1.5905307645745,0.115449753811508,-3.43309073002026,0.381688347179032,TRUE,FALSE,FALSE

@@ -1,0 +1,16 @@
+{
+  "plan_commit": "55f84fe26f77d631d417f382bff176ca4528b1f3",
+  "source_sha256": "7a01e468d3eaf89a2af9bd0c3fb16434f815e3020033df771d9872799cba3eb7",
+  "contract_sha256": "87377af77a3f838219fcde829a6566569ef7f98307ee0f238e650cce313dad0d",
+  "csv_sha256": "971ab59ed7b0f021f776944d01f99b3e4eeb67465e5d43fbf939fc3dcd5e2cda",
+  "n_observations": 89,
+  "unit": "nA_magnitude",
+  "scale_factor_applied": 1,
+  "batch_labels": [
+    "Batch 1",
+    "Batch 2",
+    "Batch 3"
+  ],
+  "strict_v1_gate_passed": false,
+  "observation_key_meaning": "Original worksheet cell coordinate; not a verified biological cell ID"
+}

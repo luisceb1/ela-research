@@ -1,0 +1,58 @@
+{
+  "date": "2026-11-11",
+  "scope": "Published-design validation under FR-K26-4d v1; no fitted effect",
+  "source_workbook_sha256": "7a01e468d3eaf89a2af9bd0c3fb16434f815e3020033df771d9872799cba3eb7",
+  "sources": [
+    {
+      "cache_name": "fig4.png",
+      "url": "https://media.springernature.com/lw1200/springer-static/image/art%3A10.1038%2Fs41586-026-11256-2/MediaObjects/41586_2026_11256_Fig4_HTML.png",
+      "bytes": 682406,
+      "sha256": "aee806802c0faee143d2dd45eb082587ae0a1e31c1675f54b5c3ab66cd36b26a"
+    },
+    {
+      "cache_name": "supplement.pdf",
+      "url": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41586-026-11256-2/MediaObjects/41586_2026_11256_MOESM1_ESM.pdf",
+      "bytes": 7871272,
+      "sha256": "672ab51c279710736f76ac511c636740cfcb979618e150f1d2f35b3ac629c5f6"
+    },
+    {
+      "cache_name": "reporting-summary.pdf",
+      "url": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41586-026-11256-2/MediaObjects/41586_2026_11256_MOESM2_ESM.pdf",
+      "bytes": 65095,
+      "sha256": "119375e52ddb87c8303c4e067e22967cb16f4af27fbcb8ce7a7f6a984f5917d7"
+    },
+    {
+      "cache_name": "peer-review.pdf",
+      "url": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41586-026-11256-2/MediaObjects/41586_2026_11256_MOESM3_ESM.pdf",
+      "bytes": 2675983,
+      "sha256": "cd1b23d7e41f598c0e3f76c3458c9716aac3e1de8d65109094ac17a19af8ff9a"
+    },
+    {
+      "cache_name": "published-nature.html",
+      "url": "https://www.nature.com/articles/s41586-026-11256-2",
+      "bytes": 715072,
+      "sha256": "89e1a1b70e9325c59703632339c3a9424f254e8f11bd7f2eb14b452215895fa6"
+    }
+  ],
+  "checks": {
+    "source_panel_and_counts": "pass: exact 4d, 34/30/25 and three explicit batch labels",
+    "unit": "nA magnitude shown on final Fig4d axis; source contract expects pA_magnitude",
+    "published_replicates": "three independent differentiations declared in Fig4d legend; Methods say three cultures",
+    "allocation": "reporting-summary pp2-3: intervention groups in parallel wells from the same differentiation; no randomization",
+    "blinding": "reporting-summary p3: spinal motor neuron electrophysiology blinded",
+    "exclusions": "reporting-summary p2 declares all data included; no per-record QC/exclusion ledger recovered",
+    "nested_ids": "no per-value cell, culture or coverslip identifier columns in 4d; exact mapping not supplied",
+    "per_value_record_day": "not supplied; Methods give DIV60-70 window",
+    "explicit_batch_to_differentiation_key": "not supplied; grouping is consistent with author-declared design but full nesting is not independently reconstructible",
+    "author_R_script": "available, REML log1p group plus batch intercept; needs explicit sheet/header adaptation"
+  },
+  "strict_v1_contract_status": "blocked",
+  "legacy_contract_enabled": false,
+  "effects_estimated": false,
+  "interpretation": "The public source supports inspection and a possible assumption-conditional published-batch replay. It does not satisfy every strict v1 metadata requirement; do not invent IDs, exact dates or human approval. Any weaker replay needs an explicit prospective amendment before fitting.",
+  "needed_clarification": [
+    "Whether Batch 1-3 each denote one independent differentiation and whether every numeric entry is one distinct neuron.",
+    "Whether shared cultures/coverslips or repeated recordings create additional nesting; provide an existing mapping if available.",
+    "Available per-record timing/QC or exclusions; do not require authors to adopt our schema."
+  ]
+}

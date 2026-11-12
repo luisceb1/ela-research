@@ -1,5 +1,8 @@
 # Cronología de intervenciones UNC13A: la laguna específica persiste bajo las dos lecturas del criterio
 
+[English](REPORT.en.md)
+
+
 **Fecha:** 2026-11-10. **Base:** main `3916b77ec0546e9d327e6d54e4dacd90d1a51ce4`, plan prefijado en `research/plans/2026-11-10-unc13a-intervention-timing-matrix.md` (commit `626c259`, **anterior** a la recuperación de los textos).
 **Etiqueta de evidencia:** auditoría documental exploratoria. Primera pasada y curación ejecutadas **por el mismo agente**; no hay revisión independiente. Ver [CURATION](CURATION.md).
 
@@ -33,7 +36,9 @@ El único experimento en discrepancia es **Mallika M-a**: AAV-PHP.eB-CTR a las 6
 | `multi_target` | 5 | 0 | 1 |
 | `stmn2_focused` | 1 | 0 | 0 |
 
-**Ninguna de las 6 intervenciones específicas de UNC13A actúa tras un déficit medido, en ninguna de las dos lecturas.** Todas son preventivas por construcción.
+**En ninguna de las 6 intervenciones específicas de UNC13A pudo establecerse que la dosis siguiera a un déficit funcional documentado, en ninguna de las dos lecturas.**
+
+> **Corrección del 11/11/2026.** La versión original añadía «todas son preventivas por construcción». **Eso no se sigue.** Para las deleciones germinales del exón críptico sí: el diseño lo garantiza. Para el resto, y señaladamente para **K-c** (Keuss, SH-SY5Y), donde el knockdown llevaba **5 días** establecido al dosificar, **no**: que no se midiera un déficit previo no demuestra que no lo hubiera. Lo que la matriz acredita es la **ausencia de documentación**, no la ausencia de déficit. Invertir lo uno en lo otro es convertir ausencia de evidencia en evidencia de ausencia.
 
 Matriz completa: [`matrix.tsv`](matrix.tsv), 14 filas, 16 campos. Procedencia y SHA256: [`sources.json`](sources.json). Fallos encontrados y corregidos en la curación: [`CURATION.md`](CURATION.md).
 
@@ -62,7 +67,7 @@ Cronologías que fijan la clasificación, con cita literal:
 
 Tres lecturas, en orden de solidez:
 
-1. **La corrección aislada de UNC13A nunca se ha probado después de un déficit medido.** Las **6** intervenciones `unc13a_only` accesibles son preventivas por construcción, en las dos lecturas del criterio. Lo que la literatura sostiene es que *impedir* el exón críptico preserva función si se actúa antes o a la vez que la pérdida de TDP-43; no que *corregirlo* recupere función ya perdida, que es el escenario del paciente diagnosticado. El molde más cercano que existe es **K-c** (Keuss, SH-SY5Y): dosis con el knockdown ya establecido tras 5 días de doxiciclina, aunque sin medición del defecto previa a la dosis.
+1. **La corrección aislada de UNC13A nunca se ha probado después de un déficit medido.** En las **6** intervenciones `unc13a_only` accesibles no consta que la dosis siguiera a un déficit documentado, en ninguna de las dos lecturas; **preventivas por construcción lo son solo las deleciones germinales** (ver corrección arriba). Lo que la literatura sostiene es que *impedir* el exón críptico preserva función si se actúa antes o a la vez que la pérdida de TDP-43; no que *corregirlo* recupere función ya perdida, que es el escenario del paciente diagnosticado. El molde más cercano que existe es **K-c** (Keuss, SH-SY5Y): dosis con el knockdown ya establecido tras 5 días de doxiciclina, aunque sin medición del defecto previa a la dosis.
 
 2. **La restauración multidiana posdéficit rescata función en un modelo murino, bajo la lectura sustantiva.** Mallika M-a muestra un efecto grande sobre supervivencia. No es un dato contra la hipótesis UNC13A: sugiere que la ventana posdéficit **no es intrínsecamente intratable** en este modelo, lo que hace la pregunta específica de UNC13A más pertinente, no menos. Bajo la lectura estricta, ni siquiera eso queda acreditado, porque la prueba basal procede del brazo paralelo.
 

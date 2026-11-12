@@ -39,7 +39,7 @@ Por tanto la matriz registra ahora **dos lecturas**, en columnas separadas y con
 
 **Bajo la lectura estricta, la predicción NO queda refutada.** Bajo la sustantiva, sí, por un único experimento multidiana. Doy las dos en lugar de elegir una en silencio, porque la diferencia es un juicio sobre qué cuenta como déficit basal, no un dato.
 
-**En ambas lecturas, el resultado central no cambia:** de las **6** intervenciones `unc13a_only`, **0** actúan tras un déficit medido. Todas son preventivas por construcción.
+**En ambas lecturas, el resultado central no cambia:** de las **6** intervenciones `unc13a_only`, en **0** consta que la dosis siguiera a un déficit medido. **Corrección del 11/11/2026:** eso acredita ausencia de documentación, no que todas sean «preventivas por construcción»; esto último solo se sostiene para las deleciones germinales. Ver la corrección en el informe.
 
 ## Reclasificación de K-c
 
