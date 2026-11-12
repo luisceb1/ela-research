@@ -1,0 +1,31 @@
+{
+  "status": "PASS",
+  "scope": "committed derived outputs only; no raw-input rerun",
+  "base_commit": "f6e66099103986507b9ad52c34fc5fc39c478fe3",
+  "checks": [
+    "GTEx recorded totals and cortical window subset",
+    "KD recorded canonical and cryptic counts",
+    "SRP097615 recorded failed positive control",
+    "GTEx numerical fields unchanged",
+    "source group medians",
+    "plans, sealed targets, probe and two result files unchanged"
+  ],
+  "sources": {
+    "reports/gtex-brain-negative-control-20261112/summary_BRAIN.json": {
+      "base_sha256": "2d6b9d4ddaa04d3270c9559fff2f8ed4139d9e5378cb798e3e6216895ac60489",
+      "reviewed_sha256": "17365f78c1fb9c607b8ae2893616219208423ab9ed79a4790d50becb220b88e4"
+    },
+    "reports/questionA-detection-SRP069787-20261112/results_SRP069787.json": {
+      "base_sha256": "3c000d7ab0c125c6ace8627bf165cab15252ba87840e206310cd0c0a6fcc37ec",
+      "reviewed_sha256": "3c000d7ab0c125c6ace8627bf165cab15252ba87840e206310cd0c0a6fcc37ec"
+    },
+    "reports/nonals-spinal-source-20261112/results_SRP097615.json": {
+      "base_sha256": "c1979ed8c4f22bd9de27f81f5ffb07aa6a72b0ec0920d5215c9f1944115aca93",
+      "reviewed_sha256": "c1979ed8c4f22bd9de27f81f5ffb07aa6a72b0ec0920d5215c9f1944115aca93"
+    },
+    "reports/target-als-cortex-20261111/REPORT.md": {
+      "base_sha256": "1f8f9668f42d5e676340eae94001a0c6559cac5da7aee0115579b0d123489340",
+      "reviewed_sha256": "1f8f9668f42d5e676340eae94001a0c6559cac5da7aee0115579b0d123489340"
+    }
+  }
+}

@@ -94,7 +94,7 @@
   "gate_qualified_by_assay_shape": false
  },
  "comparability_window": {
-  "definition": "canonical 102-148, the observed TARGET_ALS cortex range",
+  "definition": "canonical 102-148, fixed between TARGET_ALS ALS-group median 102 and non-neurological-control median 148; not the per-library range",
   "basis": "canonical UNC13A junction, not library depth fields"
  },
  "by_tissue": {

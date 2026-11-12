@@ -1,5 +1,13 @@
 # Current research state — 2026-11-04
 
+## Interpretation review and access update — 12 November 2026
+
+The [bounded review](../reports/nov12-interpretation-review-20261112/REPORT.md) corrects the GTEx window rationale, withdraws the canonical-count upper-bound claim and limits the spinal/laser-capture conclusions to the inspected observations. Numerical outputs, thresholds and prospective plans are retained. This is a documentation/committed-output check, not a re-run of the original sequencing inputs.
+
+**AD Workbench:** Luis supplied a support reply headed “Fwd: New Workspace Request received.” Support states that the request was received and is under review. This is user-reported correspondence, not a mailbox/portal verification; approval, active workspace and dataset access remain unconfirmed. The reply's timestamp was not supplied. No duplicate request or reminder is scheduled. Luis reports no other updates; no new Fratta/Wong reply is claimed.
+
+**Next step:** await a concrete author clarification or verified workspace/dataset inventory before a new prospective data task. The old `codex/unc13a-single-background-A-20261112` protocol branch is superseded by the integrated availability/detection work; no merge or deletion is needed for this review. Closed cycles remain closed.
+
 ## Two loose ends closed — 12 November 2026
 
 [Verification report](../reports/loose-ends-resolved-20261112/REPORT.md). No new biological measurement.
@@ -16,23 +24,23 @@
 
 Index-first search: three queries, 107 human SRA studies, **24 held by recount3**, of which exactly **one** is non-ALS post-mortem spinal cord tissue. SRP097615 (laser-captured motor neurons from control subjects: 12 spinal, 20 oculomotor, 7 Onuf's) is not prior work and is biologically ideal, since laser capture enriches the cell type at issue.
 
-**It fails its positive control.** The canonical UNC13A junction is **absent in all 39 libraries**, so per the prespecified rule nothing is concluded about the cryptic junctions. Diagnosis: the whole project holds 121,078 junctions against 9.48M for gtex BRAIN and 2.68M for TARGET_ALS cortex, with only 19 junctions in the 100 kb around UNC13A. Cell-type enrichment by laser capture **costs** library complexity rather than rescuing coverage.
+**It fails its positive control.** The canonical junction is absent in all 39 libraries. No conclusion about cryptic absence follows. Catalogue size differs across studies and sample counts; it neither measures standardized library complexity nor isolates laser capture as the cause. See the corrected source report.
 
 Prediction not refuted, and exceeded in the unfavourable direction: median canonical 0 in all three neuron populations.
 
-**What remains:** the cervical control is the TARGET_ALS same-cohort one, with 0/13 compatible with background up to 22.8%. This cycle does not improve it and no public source found would. Three cohorts now agree the locus is poorly covered in spinal cord at standard bulk depth. Changing that needs deeper or targeted sequencing at this locus, which this project cannot obtain alone. #37, the 20-read minimum and the three-background question are untouched.
+**What remains:** TARGET_ALS supplies a same-cohort cervical control, with the reported n/depth limits. No better source was identified in the finite search. The failures in the examined deposits do not establish a universal public-data or tissue limit; deeper sequencing, other preparation or another source remain possible routes, not proven solutions.
 
-## Non-ALS background measured: cryptic junctions absent at comparable coverage — 12 November 2026
+## Non-ALS background measured: cryptic junctions absent in the fixed window — 12 November 2026
 
 [gtex BRAIN control](../reports/gtex-brain-negative-control-20261112/REPORT.md), under the [plan committed before any download](plans/2026-11-12-gtex-brain-negative-control.md) at `b2ff4f2`, which fixed the comparability window in advance. 2,931 libraries, 9,484,210 junctions, 2.8 GB.
 
-**In the 26 libraries with canonical coverage in the published ALS cortex range (102–148), both sealed cryptic junctions carry zero reads.** Fifteen of the 26 are cortical. Across all 2,931 libraries cryptic reads appear in 7, maximum 2 reads, all outside the window. Canonical control measured in 2,655/2,931, maximum 286.
+**In the 26 libraries with canonical coverage in the prespecified canonical window (102–148), both sealed cryptic junctions carry zero reads.** Fifteen of the 26 are cortical. Across all 2,931 libraries cryptic reads appear in 7, maximum 2 reads, all outside the window. Canonical control measured in 2,655/2,931, maximum 286.
 
-Per the prespecified table this reads as: the published ALS cortical cryptic reads are **above the non-ALS background at comparable local coverage**. The plan's qualification is not softened now the result is favourable — GTEx and TARGET_ALS are different studies, and by the standard this project set when it demoted a 1.8× cross-study claim, this is weak evidence. It is consistent with the ALS counts being signal; it does not demonstrate it. **n=15 cortical libraries bounds the background loosely, not tightly**, and only 0.9% of GTEx brain is depth-comparable at all, so the other 2,905 zeros are missing data at that depth.
+The fixed GTEx subset has zero cryptic counts. The original table interpreted this as ALS counts above background, but the 102–148 window uses two group medians rather than the ALS per-library range. That label does not establish matched coverage or an ALS-versus-background difference. The counts and window are preserved; the stronger interpretation is withdrawn.
 
-**The cervical measurement could not be controlled.** GTEx cervical spinal cord has median canonical 1.0 and maximum 21; no library reaches the window, so the published cervical result still has no non-ALS baseline.
+**GTEx supplies no cervical library in the fixed window.** This does not remove the existing TARGET_ALS same-cohort cervical control. The earlier statement that no non-ALS baseline existed is withdrawn.
 
-**Bonus, within GTEx only:** cervical cord median canonical 1.0 against cortex 15.0 — the same direction as the cortex-over-cervical asymmetry reported in ALS tissue and in the GTEx panels cited by Ikegami and Mallika. No ratio is formed from these medians, since ratio-of-medians was the subject of two earlier corrections. The direction holding in tissue without TDP-43 pathology argues the asymmetry is a property of the tissue, not of disease or of the TARGET_ALS cohort.
+**Within GTEx:** cervical median canonical coverage is 1.0 versus cortex 15.0. This repeats the direction outside TARGET_ALS but does not isolate a tissue-intrinsic cause or rule out composition, preparation and mapping differences.
 
 No p-value, no ALS-versus-GTEx test, no pooling. #37, the 20-read minimum and the three-background question are untouched.
 
@@ -50,13 +58,13 @@ Unverified and required before any plan: per-collection junction file sizes (TAR
 
 #37, the 20-read minimum and the three-background question are untouched.
 
-## Question A detection measurement: not detected, and depth was the real constraint — 12 November 2026
+## Question A detection measurement: no sufficient cryptic support — 12 November 2026
 
 [Measurement on SRP069787](../reports/questionA-detection-SRP069787-20261112/REPORT.md), under the [amendment committed before any count was downloaded](plans/2026-11-12-questionA-amendment-detection-floor.md) at `daf9d24`, which fixed every outcome reading in advance. Luis authorised relaxing the replicate floor from three to two, for this deposit and for detection only.
 
 **Both sealed cryptic junctions are absent from the project's junction catalogue: zero reads in all 16 libraries.** The canonical positive control is measured in 16/16, maximum 26. Per the prespecified table this reads as **missing data at this depth, never a biological zero**; Question A closes for this deposit. No PSI, fraction, effect, interval, p-value or knockdown-versus-scramble comparison was computed.
 
-**The relaxed floor turned out to be irrelevant.** The two TDP-43 knockdown libraries carry **9 and 2 canonical reads** — the positive control itself falls below the 20-read threshold in exactly the arm the question is about. At that depth no cryptic junction could reach 20 at any fraction, so the negative measures the sequencing, not the biology. SRP069787's canonical maximum of 26 is shallower at this locus than SRP166282's 66, which was already rejected on coverage. Replicate count was never what stood between this project and an answer here.
+**After the authorized replicate-floor amendment**, the KD libraries have canonical counts 9 and 2 and zero cryptic counts. The fixed cryptic support gate remains unmet. Canonical counts are not an upper bound on cryptic counts; the previous impossibility claim is withdrawn. Low coverage is a warning, not an identified sole cause, and replicate count remains a separate design limitation.
 
 Incidentally, this is the first new project measured since PR #66: the output reports `project: SRP069787` with provenance `SRP166282` in its own field, where the pre-fix probe would have mislabelled the whole file as the rejected Klim dataset.
 
@@ -68,7 +76,7 @@ The 20-read minimum was applied as written and is not lowered now the result is 
 
 Three screens have now failed for three different reasons — genetic background (PR #64), recount3 holdings (PR #67), and now **replicate count**. The two projects with the right model and contrast, SRP069787 (iPSC motor neurons, declared TDP43 Knockdown vs Scramble) and SRP169127 (SH-SY5Y shRNA), have **two** biological replicates per arm, a 2016-era norm in a catalogue built in 2019. Depth was never tested in this screen.
 
-**Open decision, not taken here:** SRP069787 fails only the three-replicate floor, which was added for a coverage table, while Question A's actual question is whether the cryptic junction is *detectable* at depth. Relaxing the floor after seeing it is the only obstacle would be threshold-tuning, so it requires a prospective amendment that permits detection only and forbids any inference from two libraries. SRP219885 is recorded solely as the one KO-plus-rescue design surfaced; it is HeLa and not a candidate.
+**Historical decision, subsequently taken:** Luis authorized the detection-only amendment for SRP069787, now measured and closed as recorded above. This is no longer a pending scope decision; no inference from two libraries or new source is authorized.
 
 No coverage measured, 20-read minimum neither applied nor relaxed, three-background question untouched. Not a claim that no public junction counts can answer Question A, nor about other recount3 collections or non-recount3 routes. #37 stays closed; nothing nominates a design review.
 
