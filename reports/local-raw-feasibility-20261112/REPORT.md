@@ -45,3 +45,10 @@ python reports/local-raw-feasibility-20261112/inventory.py
 ```
 
 The opt-in metadata acquisition mode refuses an existing ledger; it is not a FASTQ downloader. [Validation](VALIDATION.json) checks response sizes/hashes, 16 source links, 52 distinct file URLs and checksums, source totals and the proposed two-library sum. No raw checksum, biological effect or local performance was validated. Stop this inventory after the two fixed decisions; no third source or new primary route is pursued.
+
+
+## Subsequent offline preparation — user hash check
+
+Luis supplied SHA256 values for all eight index members and the build script; **9/9 match** the historical verified-index record. [Recorded comparison](user-index-check.json) is user-reported terminal evidence, not direct host inspection. The files need not be restored on the strength of this result.
+
+A new standard-library-only preparer, `scripts/prepare_gse252892_local.py`, validates the four fixed manifest entries, clean checkout, index sizes/hashes, local binary versions/hashes, existing PySAM 0.23.3 and sealed target hash before writing a new descriptor outside the checkout. It refuses overwrites and has no network/download/alignment or execute path. Output explicitly remains `prepared_disabled`; the old pilot cannot be enabled with this descriptor. Seven [focused controls](preparer-tests.json) pass; tests use software fixtures and do not run a human index/alignment on the agent host. Full positive host preparation remains pending Luis's run. This does not implement or validate the eventual raw runner/resource controls.

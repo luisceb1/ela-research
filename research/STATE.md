@@ -1,5 +1,9 @@
 # Current research state — 2026-11-04
 
+## Local index hash check and disabled preparation — 12 November 2026
+
+Luis's nine reported index hashes match the historical record (8 HISAT2 members plus make script). An [offline preparer/runbook](runbooks/2026-11-12-gse252892-offline-preparation.md) rechecks current local files and writes a disabled descriptor for four fixed GSE252892 FASTQs; no raw execution path or transfer is implemented. Existing tool versions are user-reported. See [comparison and limits](../reports/local-raw-feasibility-20261112/user-index-check.json). Full successful host preparation, resource benchmark, assay/reference review and bounded runner remain pending. No old pilot is reactivated.
+
 ## Local raw-data feasibility inventory — 12 November 2026
 
 Luis selected a local-computer route and supplied WSL tool/version evidence. A prospectively bounded [inventory](../reports/local-raw-feasibility-20261112/REPORT.md) prefers previously known **GSE252892 for preparation only**: six total-RNA libraries advertise 12 FASTQs / 40,589,186,698 compressed bytes. The provisional first control/KD inputs advertise four files / 12,826,593,031 bytes; no transfer is authorized/executed by the inventory. GSE299341 advertises 40 files / 86,561,386,307 bytes; unresolved processing/efficacy and one 358,774-byte library remain recorded. Two ENA metadata requests used 36,284 bytes; zero raw/count transfers. This is not independent-donor validation, a KD effect or a reopened #37/#44/STMN2 cycle. A separate hash-locked runner and resource/transfer/stop budget must precede any approved raw execution. Current index integrity, primary-to-library depletion linkage and peak local resources remain unverified. AD workspace/dataset access and author replies are unchanged.
