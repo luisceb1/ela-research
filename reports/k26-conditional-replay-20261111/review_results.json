@@ -1,0 +1,76 @@
+{
+  "date": "2026-11-12",
+  "scope_commit": "94f3af13a2b18e7c8bcec403e6838c99ab32bb59",
+  "posthoc": true,
+  "original_primary_family_unchanged": true,
+  "strict_v1_gate_passed": false,
+  "block_ratios": [
+    {
+      "source_batch": "Batch 1",
+      "ASO_minus_KD_nA": 2.69642727272727,
+      "Control_minus_KD_nA": 7.8744,
+      "block_recovery_ratio": 0.342429553074173,
+      "weight_in_prespecified_aggregate": 0.691906140280152
+    },
+    {
+      "source_batch": "Batch 2",
+      "ASO_minus_KD_nA": 0.716321428571429,
+      "Control_minus_KD_nA": 0.683519230769231,
+      "block_recovery_ratio": 1.04799016081125,
+      "weight_in_prespecified_aggregate": 0.0600593255065525
+    },
+    {
+      "source_batch": "Batch 3",
+      "ASO_minus_KD_nA": 3.25377619047619,
+      "Control_minus_KD_nA": 2.82281515151515,
+      "block_recovery_ratio": 1.15267065529591,
+      "weight_in_prespecified_aggregate": 0.248034534213296
+    }
+  ],
+  "ratio_summary": [
+    {
+      "prespecified_ratio_of_equal_block_aggregates": 0.585772821668891,
+      "posthoc_unweighted_mean_of_block_ratios": 0.847696789727111,
+      "posthoc_unweighted_median_of_block_ratios": 1.04799016081125,
+      "min_block_ratio": 0.342429553074173,
+      "max_block_ratio": 1.15267065529591,
+      "blocks_with_point_ratio_above_one": 2.0,
+      "recovery_ratio_CI_calculated": false,
+      "equivalence_claim": false
+    }
+  ],
+  "exploratory_ASO_Control": [
+    {
+      "model": "primary_log1p",
+      "contrast": "KD_ASO - Control",
+      "selection": "post-hoc external-review clarification",
+      "estimate": -0.241720842879645,
+      "se": 0.167359845764667,
+      "df": 84.587614507684,
+      "t": -1.44431803085873,
+      "p_nominal_exploratory": 0.152343519777187,
+      "ci95_low_pointwise": -0.574500474182205,
+      "ci95_high_pointwise": 0.0910587884229147,
+      "original_primary_family_unchanged": true,
+      "equivalence_test_performed": false,
+      "singular": false
+    },
+    {
+      "model": "raw_scale_sensitivity",
+      "contrast": "KD_ASO - Control",
+      "selection": "post-hoc external-review clarification",
+      "estimate": -1.52570119142062,
+      "se": 0.959240289721003,
+      "df": 84.5002322406529,
+      "t": -1.5905307645745,
+      "p_nominal_exploratory": 0.115449753811508,
+      "ci95_low_pointwise": -3.43309073002026,
+      "ci95_high_pointwise": 0.381688347179032,
+      "original_primary_family_unchanged": true,
+      "equivalence_test_performed": false,
+      "singular": false
+    }
+  ],
+  "star_band_cause": "unresolved; a finite specification scan does not imply a unique different-n explanation",
+  "equivalence_claim": false
+}

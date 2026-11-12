@@ -1,0 +1,21 @@
+Review completed; original primary contrasts/family and strict gate unchanged.
+                  model         contrast                              selection
+1         primary_log1p KD_ASO - Control post-hoc external-review clarification
+2 raw_scale_sensitivity KD_ASO - Control post-hoc external-review clarification
+    estimate        se       df         t p_nominal_exploratory
+1 -0.2417208 0.1673598 84.58761 -1.444318             0.1523435
+2 -1.5257012 0.9592403 84.50023 -1.590531             0.1154498
+  ci95_low_pointwise ci95_high_pointwise original_primary_family_unchanged
+1         -0.5745005          0.09105879                              TRUE
+2         -3.4330907          0.38168835                              TRUE
+  equivalence_test_performed singular
+1                      FALSE    FALSE
+2                      FALSE    FALSE
+  source_batch ASO_minus_KD_nA Control_minus_KD_nA block_recovery_ratio
+1      Batch 1       2.6964273           7.8744000            0.3424296
+2      Batch 2       0.7163214           0.6835192            1.0479902
+3      Batch 3       3.2537762           2.8228152            1.1526707
+  weight_in_prespecified_aggregate
+1                       0.69190614
+2                       0.06005933
+3                       0.24803453
