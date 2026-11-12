@@ -1,5 +1,12 @@
 # Current backlog — 2026-11-04
 
+## recount3 Stage A completed — 12 November 2026
+
+- [x] Execute the explicitly authorized metadata-only selection after committing exact queries before requests. [Report](../reports/recount3-metadata-stageA-20261112/REPORT.md): five queries, fixed 30-series cap; 636,037 bytes of metadata/text, zero eligible/nominated sources. All 30 decisions preserved; no count download.
+- [x] Apply the proposed cross-background requirement without relabelling cultures/assays as donors. Three design rejections; one DCPS metadata uncertainty archived without active follow-up; other sources rejected by prior-family/scope gates. No cutoff of 200 applied.
+- [x] Close this finite selection at its record cap. Stage B manifest empty and Stage B unauthorized. Do not expand to a sixth query, substitute candidates, relax the design or reopen #37. Count coverage remains unmeasured.
+- Scope decision pending, not scheduled: **A**, measurement reproduction in a separate experiment with one genetic background, versus **B**, reproducibility across backgrounds. The three-background zero is not an A-feasibility or depth failure; GSE252892/GSE307054/GSE299341 fail the background rule, while GSE298758 linkage is unresolved. No permanent impossibility for B was established. A would require a new prospective protocol and explicit scope decision before reappraising sources/counts; no dataset is newly accepted. [Interpretive review](../reports/recount3-metadata-stageA-20261112/INTERPRETATION_REVIEW.md).
+
 ## Bounded independent post-deficit source screen — 12 November 2026
 
 - [x] Commit a new finite selection protocol before external discovery; exclude previously audited functional/source families.
@@ -7,9 +14,9 @@
 - [x] Close this search after four query groups; do not fill uncertainty with more candidates, contacts or simulated evidence.
 - Conditional input only: a concrete new artifact satisfying the original gate may justify a separate prospective decision. Walker/Huang are archived **transgene-suppression** prior art, not active waits or outreach priorities; neither validates isolated STMN2/UNC13A rescue. No outreach or analysis is authorized by this entry. Preserve #37/#44/STMN2 closure and actual-workspace requirement.
 
-### Review proposal only — recount3 (not scheduled)
+### recount3 proposal history — superseded by authorized Stage A above
 
-The reusable probe and existing counts are retained. A separately authorized finite metadata-first screen could prioritize previously unexamined whole-transcriptome TDP-43 depletion projects using depth/read length, documented depletion and condition→biological-unit mapping, then verify actual sealed-junction coverage under a prospective budget and stop rule. It would not establish functional recovery. Insufficient observed locus coverage does not prove total depth is the sole cause; targeted Ma data are not equivalent to whole-transcriptome RNA-seq, and the later fraction audit retains alternative explanations. No new screening/SRA enumeration/download is launched, no source is accepted on depth alone, and #37 stays closed pending its existing concrete-input gate. See [review assessment](../reports/independent-postdeficit-screen-20261112/REVIEW_CORRECTIONS.md).
+Historical proposal before Luis's Stage A authorization: the reusable probe and existing counts were retained, with a finite metadata-first screen proposed for previously unexamined whole-transcriptome TDP-43 depletion projects. Its later authorized metadata-only result is recorded above; Stage B is not authorized or launched. Depth/read length, documented depletion and condition→biological-unit mapping remain relevant, but neither depth alone nor targeted Ma data establish eligibility or a true whole-transcriptome fraction. Molecular coverage would not establish functional recovery. #37 stays closed. [Earlier review assessment](../reports/independent-postdeficit-screen-20261112/REVIEW_CORRECTIONS.md).
 
 ## Authorized closure and Wong contact — 12 November 2026
 
