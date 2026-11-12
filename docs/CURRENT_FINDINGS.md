@@ -1,5 +1,7 @@
 # Current findings and limits
 
+**Independent post-deficit source screen — 12 November 2026:** a new prespecified documentary search closed with three candidate families and zero accepted executable validation sources. TDP-43 transgene-switch recovery experiments are relevant prior art, mechanistically distinct from STMN2/UNC13A-specific correction; required numerical unit/control linkage is unverified. A new STMN2 preprint remains abstract-only for eligibility. This result does not exclude suitable experiments elsewhere. [Report/table/access limits](../reports/independent-postdeficit-screen-20261112/REPORT.md). No new effect analysis or contact; prior closed cycles remain closed.
+
 **Cycle closure — 12 November 2026:** PRs #60/#61 are merged at `f312d3cf41fe6f2ace004f4a05fc893e6bc5abed`. The conditional K26 replay is closed pending discriminating new input; strict v1 remains disabled and the ASO star-band discrepancy unresolved. The approved factual chronology question was sent to Philip C. Wong with Luis’s explicit authorization. No reply, independent validation or new biological analysis is claimed. [Current operational status](../research/STATE.md#authorized-closure-and-wong-contact--12-november-2026).
 
 

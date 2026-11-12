@@ -1,0 +1,10 @@
+families	reviewed_record	record_blob_at_base	exclusion
+Keuss2024/2026	reports/functional-data-inventory/inventory.tsv	13ec63bd31c16327157737cbbb9956549f26e768	same family;conditional Fig4d replay closed;no new source by version
+Baughn2023	reports/originality-audit/REPORT.md	339c3e280afaf8b589617642215b278fef449372	post-KD/pre-axotomy already audited;not new
+Chan2026	reports/chan-timing/matrix.tsv	ebbcd4e29f330dfc65d39b68b2352847cf0d45cf	predose growth and immediate postinjury already audited
+Beccari2025	reports/functional-data-inventory/inventory.tsv	13ec63bd31c16327157737cbbb9956549f26e768	preinjury intervention already audited
+Guo2025/2026	reports/originality-audit/FOLLOWUP.md	74a26efc41b80f69b80037d8ab8f27fba94dfa15	preprint timing and final-version access limit already recorded
+Mallika2025/2026;Cao2026	reports/unc13a-intervention-timing-20261110/matrix.tsv	c9ea3dbf2b823ccaf2b518e7cd2c36186caecda5	same-lab CTR/CE experiments;Wong question pending;not independent renamed families
+Mehta2025;Gomberg2025	reports/unc13a-intervention-timing-20261110/matrix.tsv	c9ea3dbf2b823ccaf2b518e7cd2c36186caecda5	stable/concurrent/early and neonatal regimens already audited
+pilot;Humphrey;Ma;Klim;Melamed;Liu/Brown;fractionation;IsoSeq;Alessandrini;relocalization;RiMOD/NYGC;catalogs	reports/source-gate-issue37-20261103/prior_sources.tsv	6db56e5e7bba6233ff7ae6cbb1d0697382464e42	15-family historical technical inventory;not new functional intervention;later dated overrides in STATE apply
+45donorSTMN2;NYGCST3/ST7;EGA;GSE330130	reports/paired-stmn2-source-gate-20261111/REPORT.md	f28b10ebc5a08670e7941b10d50a65b8ee47487a	closed same-donor or pending paired-tissue sources;no intervention data

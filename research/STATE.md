@@ -1,5 +1,11 @@
 # Current research state — 2026-11-04
 
+## Bounded independent post-deficit source screen — 12 November 2026
+
+[Completed documentary screen](../reports/independent-postdeficit-screen-20261112/REPORT.md), prospectively committed at `bac77055aa0e7eaaab9cced0513ef1cbb19819d5` from verified main `d09203c8546f3cca7bfeb54911eb322d3451404a`: three new candidate families, four query groups, zero accepted for a validation-analysis protocol. Walker 2015 and Huang 2012 are relevant TDP-43 transgene-suppression recovery experiments, not isolated STMN2/UNC13A correction; numeric longitudinal unit/control linkage remains unverified. Matson 2026 v1 is pending at abstract-only eligibility; full methods/data were inaccessible. Hur 2022 is a related-family check, not another independent candidate. [Traceable table](../reports/independent-postdeficit-screen-20261112/candidates.tsv).
+
+This finite search is closed, not a claim that no suitable experiment exists. No effects, new tests of biological hypotheses, contacts or mass downloads. Reconsider only upon a concrete eligible artifact; do not pursue a fourth candidate. #37/#44 and the 45-donor STMN2 cycle are unchanged. Luis reports no active AD Workbench workspace; no new portal or mailbox check is claimed. Existing Wong/Fratta communications remain awaiting substantive clarification, without automatic follow-up.
+
 ## Authorized closure and Wong contact — 12 November 2026
 
 Luis authorized both the Wong email and closure of this computational cycle. PRs #60 and #61 are merged; the reviewed scientific baseline is `f312d3cf41fe6f2ace004f4a05fc893e6bc5abed`.

@@ -1,5 +1,12 @@
 # Current backlog — 2026-11-04
 
+## Bounded independent post-deficit source screen — 12 November 2026
+
+- [x] Commit a new finite selection protocol before external discovery; exclude previously audited functional/source families.
+- [x] Review three new families and accessible artifacts; [report and decisions](../reports/independent-postdeficit-screen-20261112/REPORT.md). Zero accepted: Walker/Huang require numeric animal-level baseline/dose/follow-up and control linkage; Matson requires accessible methods establishing a relevant intervention. No new effect analysis.
+- [x] Close this search after four query groups; do not fill uncertainty with more candidates, contacts or simulated evidence.
+- Conditional input only: a concrete new artifact satisfying the original gate may justify a separate prospective decision. C1 Walker is the first lead for **transgene-suppression** recovery; it cannot validate isolated STMN2/UNC13A rescue. No outreach or analysis is authorized by this entry. Preserve #37/#44/STMN2 closure and actual-workspace requirement.
+
 ## Authorized closure and Wong contact — 12 November 2026
 
 Luis authorized both the Wong email and closure of this computational cycle. PRs #60 and #61 are merged; the reviewed scientific baseline is `f312d3cf41fe6f2ace004f4a05fc893e6bc5abed`.
