@@ -1,5 +1,19 @@
 # Current research state — 2026-11-04
 
+## Non-ALS spinal cord search: baseline already existed, new source fails its control — 12 November 2026
+
+[Search and measurement](../reports/nonals-spinal-source-20261112/REPORT.md), under the [plan committed before any query](plans/2026-11-12-nonals-spinal-cord-source.md) at `6906a58`.
+
+**Correction:** after the gtex cycle I said the published cervical measurement had no non-ALS baseline. Wrong. The [cervical report](../reports/target-als-cervical-20261111/REPORT.md) already carries **13 non-neurological controls per tissue, same cohort and pipeline** — cervical controls canonical median 8, detection 0/13 — which is *stronger* than the external GTEx comparison because it avoids the cross-study weakness. Its limitation is n and depth, not absence.
+
+Index-first search: three queries, 107 human SRA studies, **24 held by recount3**, of which exactly **one** is non-ALS post-mortem spinal cord tissue. SRP097615 (laser-captured motor neurons from control subjects: 12 spinal, 20 oculomotor, 7 Onuf's) is not prior work and is biologically ideal, since laser capture enriches the cell type at issue.
+
+**It fails its positive control.** The canonical UNC13A junction is **absent in all 39 libraries**, so per the prespecified rule nothing is concluded about the cryptic junctions. Diagnosis: the whole project holds 121,078 junctions against 9.48M for gtex BRAIN and 2.68M for TARGET_ALS cortex, with only 19 junctions in the 100 kb around UNC13A. Cell-type enrichment by laser capture **costs** library complexity rather than rescuing coverage.
+
+Prediction not refuted, and exceeded in the unfavourable direction: median canonical 0 in all three neuron populations.
+
+**What remains:** the cervical control is the TARGET_ALS same-cohort one, with 0/13 compatible with background up to 22.8%. This cycle does not improve it and no public source found would. Three cohorts now agree the locus is poorly covered in spinal cord at standard bulk depth. Changing that needs deeper or targeted sequencing at this locus, which this project cannot obtain alone. #37, the 20-read minimum and the three-background question are untouched.
+
 ## Non-ALS background measured: cryptic junctions absent at comparable coverage — 12 November 2026
 
 [gtex BRAIN control](../reports/gtex-brain-negative-control-20261112/REPORT.md), under the [plan committed before any download](plans/2026-11-12-gtex-brain-negative-control.md) at `b2ff4f2`, which fixed the comparability window in advance. 2,931 libraries, 9,484,210 junctions, 2.8 GB.
