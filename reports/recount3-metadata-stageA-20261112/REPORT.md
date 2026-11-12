@@ -1,0 +1,45 @@
+# recount3 source screen — Stage A closed, 12 November 2026
+
+**No project nominated for Stage B.** Five locked GEO discovery queries reached the 30-distinct-series cap; the sixth query was not run. All 30 series have a recorded decision: 12 prior/sibling exclusions, 14 scope rejections, three design rejections and one unresolved metadata case, archived without active follow-up. These are series records, not 30 independent experiments or three selected candidates. No junction count, count matrix or raw experimental file was downloaded; coverage remains unmeasured.
+
+## Prospective scope and actual execution
+
+Luis authorized Stage A after [the plan](../../research/plans/2026-11-12-recount3-independent-metadata-screen.md), commit `55ab5a8777887d855c19e8b3d725517deeb67473`. The [exact-query lock](../../research/plans/2026-11-12-recount3-stageA-query-lock.md) and [six terms/parameters](QUERIES.json) were committed remotely at `3bbc9326a926a77e6224600a8250e189d5c679b3` **before the first new scientific request**. The plan's earlier drafting-only status is historical; Stage B remains unauthorized. No #37 reopening or automatic merge.
+
+The first five query result counts were 37, 10, 20, 0 and 9. These are overlapping search-engine hit counts, not inspected independent studies. Each query returned at most ten IDs, retained in returned relevance order and deduplicated; the first 30 distinct series were inspected. Returned IDs beyond the cap remain unopened in [discovery.json](discovery.json). No new term, sixth query, broader search or replacement source was used after reaching the cap.
+
+There were **39 HTTP response bodies, all HTTP200, totalling 636,037 bytes** against the 10,000,000-byte Stage A cap. Largest body: 304,899 bytes, below the 700,000-byte response cap. No error/retry/partial response was observed. These are measured received body bytes; headers/TLS overhead and server-side work are not measured. [Request/hash manifest](retrievals.json) and [execution summary](execution_summary.json). The raw GEO summary includes mixed studies; only study-level records and technical culture metadata are exported, not clinical sample tables.
+
+## Traceable decisions
+
+[All 30 series and reasons](records.tsv) · [Five more detailed triage records](focal_triage.tsv) · [All 26 inspected relevant culture-library records](library_metadata.tsv). Five detailed triage records are not five nominated candidates: none satisfies Stage A. The maximum-three nomination rule was not filled artificially.
+
+| Series | Primary metadata inspected | Decision under the frozen design |
+|---|---|---|
+| [GSE298758](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE298758), DCPS | Six standard RNA-seq control/TDP-43-KD libraries, generic cell-line field “i3Neurons”, shared recorded batch. Primary [paper](https://pmc.ncbi.nlm.nih.gov/articles/PMC13058276/) RNA-seq methods report three biological replicates/group, 150bp paired-end and 40 million raw reads/sample. | **Metadata pending, closed:** no map establishing three genetic backgrounds/differentiations for these RNA-seq libraries. Other donor-derived motor-neuron assays in the paper cannot supply that map. No numerical efficacy was linked to these exact libraries in this inspection. Not nominated. |
+| [GSE252892](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE252892), APA | All six relevant whole-transcriptome libraries explicitly identify WA01; three scrambled and three KD, seven days. The six 3′-end-seq libraries are a separate modality. | **Design rejected:** one background. Replicate labels and another assay do not yield three backgrounds. |
+| [GSE307054](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE307054), NMD | Two simple KD and two guide-control libraries identify WTC-11. Combined NMD-depletion arms remain separate; day-14 harvest. | **Design rejected:** one background and only two simple-KD libraries. Combined perturbations cannot be relabelled as distinct donors. |
+| [GSE299341](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE299341), local transport | All ten relevant TDP-43-experiment soma libraries identify WTC11; five KD/five nontargeting, day-17 harvest. | **Design rejected:** one background. Soma/neurite fractions are not independent backgrounds; sample numbers do not establish donor identities. |
+| [GSE248847](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE248847), RGNEF | Series overall design explicitly uses SH-SY5Y neuroblastoma. | **Scope rejected:** not the proposed cross-background differentiated-neuron experiment. No further sample/efficacy retrieval. |
+
+**The genetic-background rule is the new restriction proposed in PR #64.** These rejections do not imply independent cultures are never biological replicates or that these datasets cannot support a different single-background question. No rule was relaxed after seeing results. DCPS is unresolved rather than proven single-background; three named biological replicates alone do not satisfy the rule, and “H1” in its screening-library label is not a donor/cell-line identification.
+
+For prior/sibling sources, GSE304547/304548/304550 share the already inspected Alessandrini family; four GSE2967xx modalities share the closed Humphrey APA family. GSE182976 and GSE121569 are the explicitly excluded SRP334561 and SRP166282. GSE290437 is the miRNA modality of the already named relocalization family. Primary series/publication links are retained so new accessions are not counted as independent validation. GSE296063 is the UPF1 arm sharing PMID40737092 with GSE299341, not an additional eligible TDP-43 contrast. Postmortem cohorts, microarrays, injury, C9 editing and BORCS6 perturbation sources fail the specified contrast/assay gate; they are not claimed biologically uninformative.
+
+## What was not established
+
+- No eligible project survived the earlier design/metadata gates, so SRA-run depth fields, SRP/recount3 file mappings/sizes and junction files were **not pursued**. A GEO/SRX link is not confirmed recount3 availability. This screen does not establish that any of these projects is absent from recount3.
+- No new canonical or cryptic count, PSI, effect, model or p-value was calculated. No source was rejected for low measured coverage or a canonical cutoff of 200; neither quantity was measured here. The coverage component of the plan's expectation remains untested, rather than “confirmed” by the empty manifest.
+- Efficiencies, batch/differentiation identifiers and transfer sizes not inspected after an earlier gate failure are explicitly unverified, not zero or absent. The DCPS read-depth/read-length values are reported primary-method descriptions, not independently inspected SRA run statistics; read-pair versus individual-read normalization is not imposed.
+- The fixed query/record caps, relevance ordering, GEO-only discovery interface and new three-background restriction limit generalizability. The hit list is not exhaustive, random or a systematic review; no universal statement about suitable public studies follows.
+- No contacts, permission/access requests, expenses, watcher edits, AD Workbench checks or new biological experiments occurred.
+
+## Decision and stop
+
+[Stage B manifest](stageB_manifest.json) is empty: **zero eligible, zero nominated, zero count downloads**. Stage A is closed at its fixed record cap; no fourth candidate, sixth query or expansion is scheduled. Keep the negative decisions and the archived DCPS uncertainty. Do not ask to download counts for a source that fails this plan's design gate, or silently weaken the background rule to produce a positive result.
+
+The concrete recommendation is to stop this screen. Review the already pending author clarifications and actual workspace access when available. Any future use of these single-background datasets would require a separately stated question/estimand and scope decision; this report neither proposes an effect nor opens that work by inertia. #37 and the closed STMN2 cycle remain unchanged.
+
+## Verification and reproducibility
+
+Local checks verify the 30-row catalogue, decision totals, exact six-query lock with five executed, 26 library mappings, empty Stage B manifest, response-byte hashes/budget, frozen target/probe hashes and unchanged historical data. [Validation](VALIDATION.md). [Historical executed-code snapshots](execution_snapshot/README.md) preserve the acquisition/extraction procedure, including original scratch-cache paths; they are not new production entry points. These checks validate record consistency and provenance, not donor independence or the truth of every primary claim.

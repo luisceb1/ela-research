@@ -1,0 +1,25 @@
+{
+  "query_lock_commit": "3bbc9326a926a77e6224600a8250e189d5c679b3",
+  "original_plan_commit": "55ab5a8777887d855c19e8b3d725517deeb67473",
+  "queries_executed": 5,
+  "queries_not_executed": [
+    "G3-Q2"
+  ],
+  "stop_reason": "30-distinct-series cap reached after G3-Q1",
+  "series_inspected": 30,
+  "request_attempts": 39,
+  "received_body_bytes": 636037,
+  "metadata_byte_cap": 10000000,
+  "status_counts": {
+    "metadata_pending_closed": 1,
+    "scope_rejected": 14,
+    "prior_or_sibling_excluded": 12,
+    "design_rejected": 3
+  },
+  "technical_library_records_inspected": 26,
+  "eligible_projects": 0,
+  "nominated_projects": 0,
+  "coverage_results": "not measured;StageB not authorized",
+  "retry_or_access_errors": [],
+  "source_headers_tls_overhead_bytes": "not measured;payload bodies only"
+}
