@@ -1,8 +1,8 @@
 [
   {
     "path": "reports/k26-conditional-replay-20261111/REPORT.md",
-    "bytes": 10725,
-    "sha256": "6f4286c9161bebc1cb1ebe8312856aff88b045a67f1f94bd1a47058e74959ad9"
+    "bytes": 14477,
+    "sha256": "6975dc53e0f1c29c4cc7592c61dc1819babd6aa90ec81d3f308fc3701cd83206"
   },
   {
     "path": "reports/k26-conditional-replay-20261111/adapter_receipt.json",
@@ -101,8 +101,38 @@
   },
   {
     "path": "reports/k26-conditional-replay-20261111/results.json",
-    "bytes": 7285,
-    "sha256": "79202f64af59c7b1e6db1a3670cb6422b91828d3aff0a51a8580d675581b82be"
+    "bytes": 10112,
+    "sha256": "48e6e53516ad230d35af27999fa50f86e2a7a080f9cae916ec7e0ad4a4b3d2b2"
+  },
+  {
+    "path": "reports/k26-conditional-replay-20261111/review_arithmetic_validation.txt",
+    "bytes": 411,
+    "sha256": "173b360f5447b622246164e90d59e4456d29fe2c96cb122c0c6ae67d81659531"
+  },
+  {
+    "path": "reports/k26-conditional-replay-20261111/review_block_recovery.csv",
+    "bytes": 344,
+    "sha256": "14c45ee904cdf19d86970dc6a768257f3e983eb10c7c67d6062c6dbd14c30e56"
+  },
+  {
+    "path": "reports/k26-conditional-replay-20261111/review_execution.log",
+    "bytes": 1278,
+    "sha256": "2163d68c023951d60349bb3de76c6c4a7c9287bb3f93f6c3f4abd72976d65e63"
+  },
+  {
+    "path": "reports/k26-conditional-replay-20261111/review_posthoc_ASO_Control.csv",
+    "bytes": 644,
+    "sha256": "145175b70cd423eb86ca7440d1266c6ef801f3d44e91d31e9f37a167f54b6ee3"
+  },
+  {
+    "path": "reports/k26-conditional-replay-20261111/review_ratio_summary.csv",
+    "bytes": 358,
+    "sha256": "c8243c40eec49b65dfe6d7bb133500b915dee12bbc527a496821ce73add47177"
+  },
+  {
+    "path": "reports/k26-conditional-replay-20261111/review_results.json",
+    "bytes": 2650,
+    "sha256": "0cb91919123e91faad5f14d076e587085269c2239f62fc87e3932aa56a331a0e"
   },
   {
     "path": "reports/k26-conditional-replay-20261111/runtime_packages.json",
@@ -150,6 +180,11 @@
     "sha256": "855a89171f71c8fe4a6d90c545e82c763446e86b6ad23fbef58673e1492a02c5"
   },
   {
+    "path": "research/plans/2026-11-12-k26-review-clarification.md",
+    "bytes": 2627,
+    "sha256": "b1092ef63509e95c53738d3e427dc9d3662cc700572b19345d720095f0485440"
+  },
+  {
     "path": "scripts/adapt_k26_conditional_source.py",
     "bytes": 7063,
     "sha256": "3534c54d095cdaca988a1219799793bac4c27a4d125103b9ccbff1590020353c"
@@ -163,6 +198,11 @@
     "path": "scripts/replay_k26_conditional.R",
     "bytes": 9064,
     "sha256": "15a45bbac315ec2fe9bc0b99910939f1d0501d0b71afb71694f9e32f887ef242"
+  },
+  {
+    "path": "scripts/review_k26_outputs.R",
+    "bytes": 4353,
+    "sha256": "ebeb711878b3ad5f7402ed8dbc8bf95ff432810f6a3cb356ae31a651a4c7a94b"
   },
   {
     "path": "tests/test_adapt_k26_conditional_source.py",

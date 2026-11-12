@@ -3,6 +3,14 @@
 Este archivo contiene tareas actuales y condiciones de reapertura. [STATE](STATE.md) resume resultados; el [backlog anterior íntegro](history/README.md) conserva la cronología.
 
 
+
+## K26 review clarification — 12 November 2026
+
+[Updated report](../reports/k26-conditional-replay-20261111/REPORT.md) retains the prespecified aggregate ratio 0.585773 and adds heterogeneous block ratios 0.342430/1.047990/1.152671 plus their implicit weights. The mean/median of block ratios answer different questions and are labelled post-hoc descriptive, not replacements for the original estimand. Two point ratios exceed 1; this does not establish complete rescue/equivalence.
+
+The explicitly post-hoc ASO−Control R contrast gives log1p estimate −0.241721, pointwise 95% interval −0.574500 to +0.091059, nominal exploratory p=0.152344; raw p=0.115450 with the existing residual limitation. Original primary contrasts/Holm family are unchanged. Non-rejection does not establish equivalence. The external 18-specification scan cannot exclude all alternative inputs/preprocessing/model choices or prove that a different n uniquely explains the stars; cause remains unresolved. Scope was recorded before the added contrast in `94f3af13a2b18e7c8bcec403e6838c99ab32bb59`. No new communication or model search; strict v1 remains disabled.
+
+
 ## K26 conditional replay completed — 11 November 2026
 
 - [x] Commit the explicitly user-authorized v2 amendment before modelling; preserve nA and declared source blocks, with strict v1 disabled. Plan `55f84fe26f77d631d417f382bff176ca4528b1f3`.

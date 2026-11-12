@@ -1,6 +1,6 @@
 # K26 Fig.4d conditional replay: positive ASO contrast, block sensitivity and unmatched star band
 
-11 November 2026. **Conditional computational reproduction using the same published observations, not independent biological replication.** The user authorized the narrower published-block replay after the strict v1 limitations were explained. [Plan amendment](../../research/plans/2026-11-11-k26-fig4d-conditional-v2.md) was committed at **`55f84fe26f77d631d417f382bff176ca4528b1f3` before model fitting and group/effect summaries**. Published direction and individual values had already been seen. The original FR-K26-4d v1 contract remains unchanged and disabled; no human independence approval is fabricated.
+11 November 2026; review clarification added 12 November 2026. **Conditional computational reproduction using the same published observations, not independent biological replication.** The user authorized the narrower published-block replay after the strict v1 limitations were explained. [Plan amendment](../../research/plans/2026-11-11-k26-fig4d-conditional-v2.md) was committed at **`55f84fe26f77d631d417f382bff176ca4528b1f3` before model fitting and group/effect summaries**. Published direction and individual values had already been seen. The original FR-K26-4d v1 contract remains unchanged and disabled; no human independence approval is fabricated.
 
 ## Evidence
 
@@ -41,15 +41,37 @@ The **direction remains positive in all three**, but two intervals include zero.
 
 All entries below use equal block weights, regardless of cell count.
 
-| Source block | Mean ASO−KD, nA | Mean Control−KD, nA |
-|---|---:|---:|
-| Batch 1 | +2.696427 | +7.874400 |
-| Batch 2 | +0.716321 | +0.683519 |
-| Batch 3 | +3.253776 | +2.822815 |
+| Source block | Mean ASO−KD, nA | Mean Control−KD, nA | Block ratio | Weight in aggregate ratio |
+|---|---:|---:|---:|---:|
+| Batch 1 | +2.696427 | +7.874400 | **0.342430** | **0.691906** |
+| Batch 2 | +0.716321 | +0.683519 | **1.047990** | **0.060059** |
+| Batch 3 | +3.253776 | +2.822815 | **1.152671** | **0.248035** |
 
-Equal-block condition means: KD **1.489972 nA**, Control **5.283550 nA**, KD_ASO **3.712147 nA**. The mean ASO−KD difference is **+2.222175 nA**. The descriptive recovery ratio fixed in v1/v2 is **0.585773**, numerator 2.222175 divided by Control−KD denominator 3.793578; all three Control−KD block differences are positive, so its predefined reporting condition passes. This is roughly 59% of the *mean amplitude deficit in these deposited observations under equal block weighting*, **not** a rate of neurons recovered, clinical recovery, an inferential effect interval, equivalence or proof of full rescue. No ratio confidence interval was calculated with three blocks.
+Equal-block condition means remain KD **1.489972 nA**, Control **5.283550 nA**, KD_ASO **3.712147 nA**; equal-block ASO−KD is **+2.222175 nA**. The prespecified ratio of those mean differences remains **0.585773** (numerator 2.222175, denominator 3.793578). It is a valid, explicitly defined aggregate estimand; it is **not** the mean or median of within-block ratios.
+
+**Review clarification, 12 November:** ratios are heterogeneous, **0.342430–1.152671**, and the point estimates straddle 1. The unweighted mean of block ratios is **0.847697** and their median **1.047990**; these are post-hoc descriptive summaries, not replacements selected to declare a more favorable outcome. If A_b=ASO−KD and D_b=Control−KD, then sum(A_b)/sum(D_b)=sum[w_b*(A_b/D_b)], where w_b=D_b/sum(D_b). Thus the original aggregate implicitly gives the largest deficit, Batch 1, **69.19% of ratio weight**, even though the condition means use equal block weights. The script verifies this identity.
+
+The earlier shorthand “roughly 59% of the mean amplitude deficit” is removed to prevent reading this aggregate as a stable or typical recovery fraction. Two within-block point ratios exceed 1, which only describes their observed means; **it does not establish complete recovery or equivalence**. No block-ratio confidence interval or clinical recovery interpretation is claimed with these three blocks.
 
 The fixed raw-scale Gaussian LMM gives ASO−KD **+2.180178 nA**, pointwise 95% interval +0.223202 to +4.137154, nominal/Holm p=0.029435. Its residual W=0.836974, p≈1.73×10⁻⁸ flags a poor Gaussian residual approximation, visible in its Q–Q plot. It is retained as a limited sensitivity, not selected instead of the primary model. No extra Gamma model or transformation was added after observing this result.
+
+
+### Post-hoc ASO–Control clarification, requested during review
+
+[Review scope](../../research/plans/2026-11-12-k26-review-clarification.md) was recorded in commit `94f3af13a2b18e7c8bcec403e6838c99ab32bb59` before the added contrast test. This contrast is **post-hoc and exploratory**, not a third prespecified confirmatory contrast. The original primary/secondary estimates and two-contrast Holm family remain unchanged.
+
+Actual R/lmerTest `contest1D` uses the same full-data models and fixed-effect covariance, with Satterthwaite degrees of freedom. Both refits first reproduce the original coefficients and batch variance. Nominal p-values and pointwise intervals are shown without a claim of confirmatory family control across this later addition.
+
+| Model | ASO−Control estimate | Pointwise 95% interval | Exploratory nominal p |
+|---|---:|---|---:|
+| Primary log1p(nA) | **−0.241721** | **−0.574500 to +0.091059** | **0.152344** |
+| Raw nA sensitivity | **−1.525701 nA** | **−3.433091 to +0.381688 nA** | **0.115450** |
+
+These are the p-values for the declared R models, not the external review's untraced 0.52/0.30 values. A different test/unit of analysis may give other results, but its method must be stated before comparing them. The raw model retains its poor residual diagnostic. Both intervals include zero; this **does not prove equality, full rescue or that a meaningful residual deficit is absent**. No equivalence margin was prespecified and no equivalence test was performed.
+
+### What the external specification scan can and cannot establish
+
+The external review reports 18 specifications without p<0.001. That scan was not independently reproduced in this follow-up; even if every reported result is correct, it only describes the procedures actually tested. It **does not exhaust all preprocessing, versions, contrasts or covariance choices** and does not prove that a different analysis n is the only explanation. A star annotation error is also an unexcluded possibility, not a finding. The final ASO star-band cause therefore remains **unresolved**. Asking which observations/n, input scale, preprocessing and panel-specific code/output produced the annotation is appropriate as an open question; selecting a single explanation by elimination from 18 tests is not justified. No additional email was sent for this review.
 
 ## Interpretation
 
@@ -75,6 +97,8 @@ From the repository root with the pinned original workbook downloaded outside gi
 python scripts/adapt_k26_conditional_source.py --source /path/to/41586_2026_11256_MOESM7_ESM.xlsx --contract reports/k26-conditional-replay-20261111/conditional_contract.json --output-dir /tmp/k26-replay --plan-commit 55f84fe26f77d631d417f382bff176ca4528b1f3
 Rscript --vanilla scripts/replay_k26_conditional.R /tmp/k26-replay/observations.csv /tmp/k26-replay
 Rscript --vanilla scripts/check_k26_replay_outputs.R /tmp/k26-replay
+# Later, explicitly post-hoc review clarification:
+Rscript --vanilla scripts/review_k26_outputs.R /tmp/k26-replay
 python -m unittest discover -s tests -p test_adapt_k26_conditional_source.py -v
 ```
 
@@ -82,4 +106,4 @@ The local environment lacked system R; official Debian trixie packages were down
 
 Eight new artificial adapter tests check units, source coordinates, blanks/counts, negative/nonfinite refusal, batch identity/order, missing block labels, header/extra-row drift, source-hash refusal and no strict-gate substitution. Real-source hash/schema/count checks passed. An independent base-R GLS reconstruction from the fitted covariance reproduced coefficients and standard errors; t-tail, interval, Holm and equal-block arithmetic checks passed. These are software/arithmetic checks, not biological validation.
 
-`results.json` consolidates the numerical outputs without refitting; `output_manifest.json` hashes deposited outputs. `observations.csv` retains original source-cell coordinates, raw numeric text and unchanged nA values; the adaptation is attributed to Keuss et al. under the article's CC BY 4.0 terms, with the original DOI/source URL above. The cached XLSX is not redistributed here.
+`review_k26_outputs.R` adds only the dated review clarification, first checking that unchanged-model refits reproduce the stored primary coefficients/variance. Its `contest1D` estimate/SE were checked against the fixed-effect covariance and its aggregate-ratio identity against the original result. `review_*` outputs keep that later analysis separate. `results.json` consolidates the numerical outputs without changing the original contrasts; `output_manifest.json` hashes deposited outputs. `observations.csv` retains original source-cell coordinates, raw numeric text and unchanged nA values; the adaptation is attributed to Keuss et al. under the article's CC BY 4.0 terms, with the original DOI/source URL above. The cached XLSX is not redistributed here.

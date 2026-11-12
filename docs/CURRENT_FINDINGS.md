@@ -30,6 +30,14 @@ The six-source, 14-experiment matrix contains **six UNC13A-specific experiments*
 
 Multi-target Mallika row M-a differs between readings: zero of 14 experiments qualify under the strict same-endpoint baseline rule, versus one of 14 under a symptom-based substantive reading. Fine tremors were documented at dosing; the grip-strength deficit is evidenced by the parallel GFP arm rather than a same-endpoint pretreatment measurement in the CTR animals. The row and the suitability of the rule still need independent methodological review. Multi-target benefit cannot be assigned to isolated UNC13A correction. [Timing report](../reports/unc13a-intervention-timing-20261110/REPORT.en.md). The reviewed source versions and access limitations are stated there; this translation is not a new publication-status search.
 
+
+## K26 review clarification — 12 November 2026
+
+[Updated report](../reports/k26-conditional-replay-20261111/REPORT.md) retains the prespecified aggregate ratio 0.585773 and adds heterogeneous block ratios 0.342430/1.047990/1.152671 plus their implicit weights. The mean/median of block ratios answer different questions and are labelled post-hoc descriptive, not replacements for the original estimand. Two point ratios exceed 1; this does not establish complete rescue/equivalence.
+
+The explicitly post-hoc ASO−Control R contrast gives log1p estimate −0.241721, pointwise 95% interval −0.574500 to +0.091059, nominal exploratory p=0.152344; raw p=0.115450 with the existing residual limitation. Original primary contrasts/Holm family are unchanged. Non-rejection does not establish equivalence. The external 18-specification scan cannot exclude all alternative inputs/preprocessing/model choices or prove that a different n uniquely explains the stars; cause remains unresolved. Scope was recorded before the added contrast in `94f3af13a2b18e7c8bcec403e6838c99ab32bb59`. No new communication or model search; strict v1 remains disabled.
+
+
 ## Conditional functional-data replay — 11 November 2026
 
 After explicit user authorization of a narrower published-block analysis, [Keuss Fig.4d was replayed in R](../reports/k26-conditional-replay-20261111/REPORT.md) under a plan committed before fitting. The same 89 source observations were kept in nA with three author-labelled blocks; the original strict metadata gate remains unmet. The REML log1p model gives ASO−KD +0.474402, pointwise 95% interval +0.132939 to +0.815865, nominal/Holm p=0.007036. Direction is positive in all three leave-one-block-out fits, but two intervals include zero. The raw-scale Gaussian residual check is poor.

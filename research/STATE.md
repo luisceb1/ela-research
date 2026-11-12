@@ -3,11 +3,19 @@
 This replaces earlier planning snapshots. Historical reports and commits remain evidence, not automatic instructions to rerun work. This consolidated state accompanies integration of PRs #46–#49. Review details and exact checked commits are preserved in [INTEGRATION_REVIEW](../reports/integration-20261104/REVIEW.md).
 
 
+
+## K26 review clarification — 12 November 2026
+
+[Updated report](../reports/k26-conditional-replay-20261111/REPORT.md) retains the prespecified aggregate ratio 0.585773 and adds heterogeneous block ratios 0.342430/1.047990/1.152671 plus their implicit weights. The mean/median of block ratios answer different questions and are labelled post-hoc descriptive, not replacements for the original estimand. Two point ratios exceed 1; this does not establish complete rescue/equivalence.
+
+The explicitly post-hoc ASO−Control R contrast gives log1p estimate −0.241721, pointwise 95% interval −0.574500 to +0.091059, nominal exploratory p=0.152344; raw p=0.115450 with the existing residual limitation. Original primary contrasts/Holm family are unchanged. Non-rejection does not establish equivalence. The external 18-specification scan cannot exclude all alternative inputs/preprocessing/model choices or prove that a different n uniquely explains the stars; cause remains unresolved. Scope was recorded before the added contrast in `94f3af13a2b18e7c8bcec403e6838c99ab32bb59`. No new communication or model search; strict v1 remains disabled.
+
+
 ## K26 conditional replay completed — 11 November 2026
 
 [Conditional replay report](../reports/k26-conditional-replay-20261111/REPORT.md), with v2 plan committed at `55f84fe26f77d631d417f382bff176ca4528b1f3` before fitting. User explicitly authorized using the three published source blocks and original nA scale under a narrower assumption. Strict v1 remains unchanged/disabled; its full nested biological-identity requirements are not declared satisfied. Earlier no-fit statements below describe the preceding strict-gate review.
 
-Actual R/lme4/lmerTest REML log1p fit: ASO−KD +0.474402, pointwise 95% interval +0.132939 to +0.815865, nominal/Holm-two-contrasts p=0.007036. Default fit converged and was nonsingular. Direction remains positive in all three leave-one-block-out fits; two intervals include zero. Equal-block original-scale difference is +2.222175 nA; descriptive deficit-recovery ratio 0.585773 is not clinical recovery or equivalence. Raw-scale Gaussian residuals violate the prespecified W<0.90 check. The final figure's ASO three-star band (p<0.001) is **not reproduced**; this run corresponds to two stars. Cause unresolved, no tuning/rescaling performed. R 4.5.0 differs from the Methods' 4.4.1.
+Actual R/lme4/lmerTest REML log1p fit: ASO−KD +0.474402, pointwise 95% interval +0.132939 to +0.815865, nominal/Holm-two-contrasts p=0.007036. Default fit converged and was nonsingular. Direction remains positive in all three leave-one-block-out fits; two intervals include zero. Equal-block original-scale difference is +2.222175 nA; prespecified aggregate ratio 0.585773 is heterogeneous across blocks (0.342430/1.047990/1.152671); Batch 1 carries 69.19% of its implicit deficit weight. It is not a stable recovery fraction, clinical recovery or equivalence. Raw-scale Gaussian residuals violate the prespecified W<0.90 check. The final figure's ASO three-star band (p<0.001) is **not reproduced**; this run corresponds to two stars. Cause unresolved, no tuning/rescaling performed. R 4.5.0 differs from the Methods' 4.4.1.
 
 This is conditional computational scrutiny of the same data, not independent biological replication. Stop this fixed replay. Next discriminating input: author block/nesting clarification and panel-specific execution/scale for the star-band discrepancy. No new contact is authorized by this entry; the previously approved follow-up is already recorded. #37 and the closed STMN2 cycle remain unchanged.
 

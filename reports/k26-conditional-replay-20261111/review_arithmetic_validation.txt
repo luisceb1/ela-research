@@ -1,0 +1,6 @@
+PASS: same-source SHA256 and original environment
+PASS: unchanged full-model coefficients and batch variance reproduce before added contrast
+PASS: contest1D linear estimate/SE match fixed-effect covariance arithmetic
+PASS: contrast t-tail/pointwise interval arithmetic
+PASS: aggregate ratio equals deficit-weighted mean of block ratios
+Post-hoc contrasts and descriptive summaries do not establish equivalence.
