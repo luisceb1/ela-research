@@ -1,0 +1,27 @@
+{
+  "evidence": "user-pasted ledger, supervision, traceback and per-failed-attempt summary; host files not fetched by agent",
+  "proposal_sha256": "98a89d95c199fb13e90ac5f68c2b33cec1251daf62313d83ec4b4b1fe649af6d",
+  "status": "failed_partial_not_interpretable",
+  "error": "Short range body / premature EOF",
+  "elapsed_seconds": 1185.936071458,
+  "peak_sampled_group_rss_bytes": 71811072,
+  "peak_sampled_combined_root_bytes": 2111166018,
+  "cleanup_error": null,
+  "request_attempts": 60,
+  "complete_attempts": 50,
+  "failed_attempts": 10,
+  "complete_attempt_body_bytes": 1645215744,
+  "new_observed_body_bytes": 1759157246,
+  "lineage_body_upper_bound_bytes": 2111084972,
+  "active_requests": [],
+  "exhausted_range": {
+    "start": 1962540462,
+    "end": 1996094893,
+    "observed_bytes_by_attempt": [
+      0,
+      29407660,
+      0
+    ]
+  },
+  "interpretation": "Range support/initial overlap succeeded. A range exhausted retries; peer requests were cancelled. Underlying network/server cause unknown. No fastp/alignment or biological result."
+}

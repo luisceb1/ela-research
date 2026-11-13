@@ -16,6 +16,7 @@ import urllib.request
 
 import prepare_gse252892_local as prep
 import gse252892_range_transport as ranged
+import gse252892_retained_blocks as retained
 
 ROOT = Path(__file__).resolve().parents[1]
 CAPS = {'transfer_bytes': 14_000_000_000, 'wall_seconds': 172800, 'root_bytes': 100*1024**3,
@@ -23,7 +24,7 @@ CAPS = {'transfer_bytes': 14_000_000_000, 'wall_seconds': 172800, 'root_bytes': 
         'process_as_bytes': 8*1024**3, 'cpus': 2}
 BASE_SHA = '97a578839d72088bab1403b0c9ef6bd9b8e3ff064bbe3008314fb34545b6af26'
 CODE = ['scripts/run_gse252892_local.py', 'scripts/prepare_gse252892_local.py',
-        'scripts/gse252892_range_transport.py',
+        'scripts/gse252892_range_transport.py', 'scripts/gse252892_retained_blocks.py',
         'research/references/unc13a_targets_sealed.json',
         'reports/local-raw-feasibility-20261112/fastq-manifest.tsv']
 PRIOR_PLAN_SHA='911c5be6f8a470d085ab57279ee8d3ce40bb31edcb990a3064238d9c4b9d9a9f'
@@ -124,6 +125,10 @@ def prior_record(plan_path, current_prefix=True):
         'prefix':{'path':str(prefix),'bytes':PRIOR_BYTES,'sha256':PREFIX_SHA,'url':first['url']}}
 
 
+def recovery_record(plan_path,current_files=True):
+    return retained.record(plan_path,read_small,prior_record,ranged.SETTINGS,BASE_SHA,CAPS['transfer_bytes'],current_files)
+
+
 def commands(plan, gsm):
     d = Path(plan['run_root'])/gsm
     run = {'GSM8009878':'SRR27477544', 'GSM8009881':'SRR27477541'}[gsm]
@@ -140,7 +145,7 @@ def commands(plan, gsm):
 
 
 def validate_plan(plan, current_files=True):
-    if plan.get('schema') != 'gse252892-range-v2' or plan.get('caps') != CAPS or plan.get('transport')!=ranged.SETTINGS:
+    if plan.get('schema') != 'gse252892-retained-v3' or plan.get('caps') != CAPS or plan.get('transport')!=ranged.RECOVERY_SETTINGS:
         raise ValueError('Execution schema/caps changed')
     if plan.get('base_sha256') != BASE_SHA or plan['base'].get('execution_enabled') is not False:
         raise ValueError('Expected exact disabled base')
@@ -151,7 +156,7 @@ def validate_plan(plan, current_files=True):
         raise ValueError('Runner/code commit changed')
     if prep.git('status','--porcelain','--untracked-files=all'):
         raise ValueError('Checkout must remain clean')
-    lineage=prior_record(plan['lineage']['prior_plan_path'],current_prefix=current_files)
+    lineage=recovery_record(plan['lineage']['prior_plan_path'],current_files=current_files)
     if lineage!=plan['lineage']:raise ValueError('Prior evidence/charge changed')
     root = Path(plan['run_root'])
     if not root.is_absolute() or root == ROOT or ROOT in root.parents or root.is_symlink():
@@ -189,16 +194,16 @@ def prepare(base, fastp, root, output, prior_plan):
         raise ValueError('Base SHA does not match the user-reported descriptor')
     data = read_small(base)
     fastp = Path(fastp).resolve(strict=True)
-    lineage=prior_record(prior_plan)
-    if root==Path(lineage['prior_root']) or Path(lineage['prior_root']) in root.parents:
+    lineage=recovery_record(prior_plan)
+    if any(root==Path(p) or Path(p) in root.parents or root in Path(p).parents for p in lineage['prior_roots']):
         raise ValueError('New root must preserve the prior root')
-    plan = {'schema':'gse252892-range-v2','prepared_for_review':True,
+    plan = {'schema':'gse252892-retained-v3','prepared_for_review':True,
             'base_path':str(base),'base_sha256':BASE_SHA,'base':data,
             'repository_commit':prep.git('rev-parse','HEAD'),'python_executable':sys.executable,
             'fastp':{'path':str(fastp),'sha256':prep.sha256(fastp),'version_output':version(fastp,'fastp 0.23.4')},
-            'run_root':str(root),'caps':CAPS.copy(),'transport':ranged.SETTINGS.copy(),'lineage':lineage,'code_sha256':code_hashes(),
+            'run_root':str(root),'caps':CAPS.copy(),'transport':ranged.RECOVERY_SETTINGS.copy(),'lineage':lineage,'code_sha256':code_hashes(),
             'endpoint':'fragment/event/library with primary anchor 15; no inference',
-            'protocol':'research/plans/2026-11-13-gse252892-range-transport.md'}
+            'protocol':'research/plans/2026-11-13-gse252892-retained-blocks.md'}
     plan['commands'] = {g:commands(plan,g) for g in prep.SELECTED}
     check_options(fastp,['--detect_adapter_for_pe','--dont_eval_duplication','--thread'])
     check_options(data['tools']['aligner']['path'],['--no-temp-splicesite','--reorder','--no-mixed','--no-discordant','--summary-file'])
@@ -209,9 +214,11 @@ def prepare(base, fastp, root, output, prior_plan):
     return {'status':'execution_proposal_not_started','output':str(output),
             'descriptor_sha256':hashlib.sha256(encoded).hexdigest(),'advertised_input_bytes':prep.EXPECTED_INPUT_BYTES,
             'maximum_transfer_bytes':CAPS['transfer_bytes'],'wall_seconds':CAPS['wall_seconds'],
-            'prior_charge_bytes':PRIOR_BYTES,'prefix_bytes_proposed_for_reuse':PRIOR_BYTES,
-            'minimum_new_body_bytes_if_prefix_valid':prep.EXPECTED_INPUT_BYTES-PRIOR_BYTES+ranged.SETTINGS['overlap_bytes'],
-            'raw_bytes_downloaded':0,'caps':CAPS,'transport':ranged.SETTINGS}
+            'prior_charge_bytes':lineage['prior_charge_bytes'],'prefix_bytes_proposed_for_reuse':lineage['prefix']['bytes'],
+            'retained_complete_blocks':len(lineage['retained_blocks']),
+            'retained_complete_block_bytes':sum(p['bytes'] for p in lineage['retained_blocks']),
+            'minimum_new_body_bytes_if_reuse_valid':prep.EXPECTED_INPUT_BYTES-lineage['prefix']['bytes']-sum(p['bytes'] for p in lineage['retained_blocks'])+ranged.RECOVERY_SETTINGS['overlap_bytes'],
+            'raw_bytes_downloaded':0,'caps':CAPS,'transport':ranged.RECOVERY_SETTINGS}
 
 
 class NoRedirect(urllib.request.HTTPRedirectHandler):
@@ -338,7 +345,7 @@ def stage(plan,gsm,ledger,root):
     for row in plan['base']['input_files']:
         if row['gsm']==gsm:
             prefix=plan['lineage']['prefix'] if row['url']==plan['lineage']['prefix']['url'] else None
-            ranged.download(row,d,ledger,prefix=prefix)
+            ranged.download(row,d,ledger,prefix=prefix,settings=plan['transport'],retained=[p for p in plan['lineage']['retained_blocks'] if p['url']==row['url']])
     cmd=plan['commands'][gsm]
     save(root/'progress.json',{'phase':'fastp','library':gsm})
     with (d/'fastp.log').open('wb') as log:
@@ -441,7 +448,8 @@ def execute(path,accepted_sha,accepted_transfer):
                 elapsed=time.monotonic()-started
                 if elapsed>CAPS['wall_seconds']:raise ValueError('Wall time cap exceeded')
                 rss=group_rss(proc.pid);size=root_bytes(root)
-                if plan.get('lineage'):size+=root_bytes(plan['lineage']['prior_root'])
+                if plan.get('lineage'):
+                    size+=sum(root_bytes(p) for p in plan['lineage']['prior_roots'])
                 peak_rss=max(peak_rss,rss);peak_disk=max(peak_disk,size)
                 if rss>CAPS['group_rss_bytes']:raise ValueError('Sampled group RSS cap exceeded')
                 if size>CAPS['root_bytes']:raise ValueError('Sampled root disk cap exceeded')

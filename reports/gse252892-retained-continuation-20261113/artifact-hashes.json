@@ -1,0 +1,8 @@
+{
+  "scripts/gse252892_range_transport.py": "c35d10a91a4f188145fcbf5e69a82961bc8ba9130c85745b5c74a45640dacf16",
+  "scripts/gse252892_retained_blocks.py": "7465277502a742674cd6a88a30d4747f798601e2db51440645dff1860f488d0e",
+  "scripts/run_gse252892_local.py": "db6bc70fce76b97479673809bf31f063b11a373e910afeb3dcb131a15216389e",
+  "tests/test_gse252892_retained_blocks.py": "8b9f73841da106b8894c620a105aa371a8e51c1bed3a95a437d48d337bf41fe9",
+  "research/references/unc13a_targets_sealed.json": "e35f6e05016b30eab89f8d3aacc2d4ec101840e24e2b6f07159e6c5235d0bc3a",
+  "reports/local-raw-feasibility-20261112/fastq-manifest.tsv": "c29e8b64c5fd8affb399bf7ff19dbc15a51b6aba7f53cf000129c6ca316eaae1"
+}

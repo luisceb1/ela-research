@@ -14,6 +14,8 @@ import urllib.request
 
 SETTINGS={'chunk_bytes':32*1024**2,'workers':4,'attempts':3,'socket_seconds':120,'overlap_bytes':1024**2,'backoff_seconds':[2,10]}
 
+RECOVERY_SETTINGS={'chunk_bytes':8*1024**2,'workers':2,'attempts':5,'socket_seconds':120,'overlap_bytes':1024**2,'backoff_seconds':[2,10,30,60]}
+
 
 class IntegrityError(ValueError):pass
 class RetryableError(OSError):
@@ -176,7 +178,17 @@ def assemble(item,pieces,prefix,target):
     return {'path':str(target),'bytes':offset,'md5':md5.hexdigest(),'sha256':sha.hexdigest(),'status':'verified_complete'}
 
 
-def download(item,directory,budget,prefix=None,settings=None,opener=None,sleep=time.sleep):
+def missing_ranges(start,total,pieces,size):
+    """Partition only uncovered intervals, rejecting overlaps and out-of-bounds pieces."""
+    todo=[];offset=start
+    for piece in sorted(pieces,key=lambda p:p['start']):
+        if piece['start']<offset or piece['end']<piece['start'] or piece['end']>=total or piece['bytes']!=piece['end']-piece['start']+1:
+            raise IntegrityError('Invalid retained interval or overlap')
+        todo.extend(blocks(offset,piece['start'],size));offset=piece['end']+1
+    todo.extend(blocks(offset,total,size));return todo
+
+
+def download(item,directory,budget,prefix=None,settings=None,opener=None,sleep=time.sleep,retained=None):
     cfg=settings or SETTINGS;directory=Path(directory);target=directory/Path(item['url']).name
     parts=directory/(target.name+'.ranges');parts.mkdir()
     if target.exists():raise IntegrityError('No input overwrite')
@@ -195,7 +207,15 @@ def download(item,directory,budget,prefix=None,settings=None,opener=None,sleep=t
     else:
         first=one_range(item,0,min(cfg['chunk_bytes'],total)-1,parts,budget,cfg,stop,opener=opener,sleep=sleep)
         pieces.append(first);start=first['end']+1;etag=first['etag']
-    todo=blocks(start,total,cfg['chunk_bytes'])
+    retained=retained or []
+    if retained and not prefix:raise IntegrityError('Retained pieces require verified prefix context')
+    for piece in retained:
+        path=Path(piece['path'])
+        if path.is_symlink() or not path.is_file() or path.stat().st_size!=piece['bytes'] or digest_file(path)!=piece['sha256']:
+            raise IntegrityError('Retained block integrity mismatch')
+        if piece.get('url')!=item['url']:raise IntegrityError('Retained source URL mismatch')
+    todo=missing_ranges(start,total,retained,cfg['chunk_bytes'])
+    pieces.extend(retained)
     with ThreadPoolExecutor(max_workers=cfg['workers']) as pool:
         futures=[pool.submit(one_range,item,a,b,parts,budget,cfg,stop,etag,opener,sleep) for a,b in todo]
         try:
@@ -205,7 +225,9 @@ def download(item,directory,budget,prefix=None,settings=None,opener=None,sleep=t
             for f in futures:f.cancel()
             raise
     result=assemble(item,pieces,prefix,target)
-    result.update(reused_prefix_bytes=prefix['bytes'] if prefix else 0,range_blocks=len(pieces),remote_overlap_bytes=min(cfg['overlap_bytes'],prefix['bytes']) if prefix else 0)
+    result.update(reused_complete_block_bytes=sum(p['bytes'] for p in retained),reused_prefix_bytes=prefix['bytes'] if prefix else 0,range_blocks=len(pieces),remote_overlap_bytes=min(cfg['overlap_bytes'],prefix['bytes']) if prefix else 0)
     save(directory/(target.name+'.verified.json'),result)
-    for p in pieces+([probe] if probe else []):Path(p['path']).unlink()
+    old_paths={p['path'] for p in retained}
+    for p in pieces+([probe] if probe else []):
+        if p['path'] not in old_paths:Path(p['path']).unlink()
     return target

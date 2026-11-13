@@ -1,5 +1,7 @@
 # GSE252892 transport recovery — 13 November 2026
 
+Current status: the v2 host attempt subsequently failed on a short range after bounded retries. See the [retained-block continuation](../gse252892-retained-continuation-20261113/REPORT.md). Earlier test results and commands below describe v2, not a successful live completion.
+
 ## Evidence
 
 The [user terminal record](user-failed-run.json) reports HTTP 200 followed by premature EOF in the first control FASTQ: 351,927,726 of 2,772,553,416 expected bytes. The old run stopped after 2,098.952 seconds with a raw length/MD5 mismatch, cleanup_error null and peak sampled group RSS 38,105,088 bytes. No fastp or alignment ran. The agent has inspected supplied terminal text, not the original host files. Preparation must recheck those files.

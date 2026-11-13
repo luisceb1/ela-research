@@ -1,5 +1,11 @@
 # Current research state — 2026-11-04
 
+## Current local raw attempt: retain complete blocks after v2 EOF — 13 November 2026
+
+This supersedes the v2 preparation/range-support uncertainty below: the user successfully prepared proposal `98a89d95…` and ran it. Initial remote overlap and many ranges succeeded, but one 32 MiB range exhausted three attempts; the worker then cancelled peers. User receipts show **50 complete attempts (one overlap plus 49 blocks), 10 failed**, 1,759,157,246 new bytes and **2,111,084,972 cumulative charged bytes**, cleanup_error null. No fastp/alignment or biological output. The underlying truncation cause remains unknown; no host resource cap was reached. [Failure and continuation](../reports/gse252892-retained-continuation-20261113/REPORT.md).
+
+The [prospective continuation](plans/2026-11-13-gse252892-retained-blocks.md), committed before implementation/new live requests, introduces a new v3 proposal/root. It hashes all old evidence and 49 complete blocks, retains both failed roots unchanged, downloads uncovered intervals with 8 MiB blocks/two connections/five bounded attempts, and verifies the original whole-file MD5. All cumulative charges remain within the same 14 GB cap; a new 48 h window and existing memory/CPU/physical-disk guards apply across three roots. Software fixtures pass; host validation and live continuation remain pending. Standing local-resource authorization persists; no cloud purchase/contact/merge or scientific-scope change. Next: prepare the new hash-locked proposal on the user host and execute only if old evidence/blocks verify.
+
 ## Current local raw attempt: truncated download and prospective recovery — 13 November 2026
 
 This entry supersedes the historical preparation/execution status below. Luis successfully prepared and explicitly started the v1 proposal `911c5be6…`; its first HTTP response ended after **351,927,726 / 2,772,553,416 bytes**. The worker failed the length/MD5 check before fastp or alignment. This is a transport failure, not a biological negative or a demonstrated host-capacity failure; the underlying cause is unknown. Preserve the consumed proposal, old root, partial and receipts. [Evidence and recovery](../reports/gse252892-range-recovery-20261113/REPORT.md).
