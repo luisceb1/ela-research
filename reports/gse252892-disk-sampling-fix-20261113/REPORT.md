@@ -1,5 +1,7 @@
 # Disk sampler atomic-rename race — 13 November 2026
 
+Current status: final host receipts have now been supplied; see [post-sampler evidence and continuation](../gse252892-after-sampler-20261113/REPORT.md). The missing-receipt status below describes the earlier diagnosis.
+
 ## Evidence and cause
 
 The [user traceback](user-failure.json) is in the supervisor, not the range downloader: `root_bytes` observed `transport-receipts/000232.json.tmp` as a file and then attempted a second stat after the worker atomically renamed it. The vanished temporary pathname caused an unhandled FileNotFoundError. This is a software race introduced by the runner, not an observed memory/disk/transfer limit or evidence of a new network failure. The last heartbeat (9,592 s; lineage upper bound 3,948,860,671 bytes) precedes failure and must not be treated as the final charge.

@@ -1,5 +1,11 @@
 # Current research state — 2026-11-04
 
+## Current local raw recovery: verified first input and conservative final charge — 13 November 2026
+
+The user supplied final v3 receipts after the supervisor race: failed/cleanup_error null, first FASTQ **2,772,553,416 bytes with published MD5 and recorded SHA256 verified**, and 232 durable attempt receipts (217 complete/15 failed). Aggregate request state stopped before ID232 finalization; its durable complete receipt must be deduplicated against the active snapshot. ID233's 1 MiB in-flight reservation remains charged: **3,962,492,159 observed versus 3,963,540,735 conservative spent bytes**. [Final evidence and continuation](../reports/gse252892-after-sampler-20261113/REPORT.md). Actual reusable files remain subject to host hash checks; no biological output.
+
+The [prospective v4 amendment](plans/2026-11-13-gse252892-after-sampler.md) was committed before implementation/new requests. A fresh proposal/root can copy the fully revalidated first FASTQ without HTTP, revalidate 123 second-file blocks/1,031,798,784 bytes and download uncovered ranges. Old roots/claims remain unchanged, uncertain charges retained, corrected disk sampler active. Same 14 GB cumulative cap, transport/scientific settings, new 48 h window and sampled/physical-resource guards across four roots. 107 focused tests pass. Host preparation/live completion pending; standing local authorization persists. No cloud purchase/contact/merge or reopened scientific cycle.
+
 ## Current local raw attempt: supervisor disk-sampling race — 13 November 2026
 
 This supersedes the earlier pending v3/live-continuation status. Luis's traceback shows the supervisor failed while stat-ing `transport-receipts/000232.json.tmp`, which the worker could atomically rename between the sampler's repeated checks. This is a runner software defect, not an observed resource limit or a new demonstrated network failure. The last heartbeat at 9,592 s reports 1,836,727,123 new body bytes and lineage upper bound 3,948,860,671; these are **not final accounting**. Final supervision/ledger, reservations, verified files and remaining blocks must be inspected before a new continuation. [Diagnosis and fix](../reports/gse252892-disk-sampling-fix-20261113/REPORT.md).

@@ -41,15 +41,18 @@ def digest_file(path):
 
 
 class Budget:
-    def __init__(self,path,cap,prior):
+    def __init__(self,path,cap,prior,prior_observed=None):
         self.path=Path(path);self.cap=cap;self.prior=prior
+        self.prior_observed=prior if prior_observed is None else prior_observed
+        if not 0<=self.prior_observed<=prior<=cap:raise IntegrityError('Invalid prior observed/conservative charge')
         self.observed=0;self.charged=0;self.active={};self.serial=0;self.completed=0
         self.lock=threading.RLock();self.receipts=self.path.parent/'transport-receipts';self.receipts.mkdir()
         self.last=None;self.persist()
     def upper(self):return self.prior+self.charged+sum(r['inflight_max_bytes'] for r in self.active.values())
     def persist(self):
-        save(self.path,{'prior_charge_bytes':self.prior,'new_observed_body_bytes':self.observed,
-            'actual_body_bytes':self.prior+self.observed,'new_charged_upper_bytes':self.charged,
+        save(self.path,{'prior_charge_bytes':self.prior,'prior_observed_body_bytes':self.prior_observed,
+            'prior_unobserved_bytes_charged':self.prior-self.prior_observed,'new_observed_body_bytes':self.observed,
+            'actual_body_bytes':self.prior_observed+self.observed,'new_charged_upper_bytes':self.charged,
             'body_upper_bound_bytes':self.upper(),'cap_bytes':self.cap,'request_attempts':self.serial,
             'completed_attempts':self.completed,'active_requests':list(self.active.values()),
             'last_completed':self.last,'receipt_directory':str(self.receipts)})
@@ -193,6 +196,12 @@ def download(item,directory,budget,prefix=None,settings=None,opener=None,sleep=t
     parts=directory/(target.name+'.ranges');parts.mkdir()
     if target.exists():raise IntegrityError('No input overwrite')
     total=int(item['compressed_bytes']);stop=threading.Event();pieces=[];etag=None;start=0;probe=None
+    retained=retained or []
+    for piece in retained:
+        path=Path(piece['path'])
+        if path.is_symlink() or not path.is_file() or path.stat().st_size!=piece['bytes'] or digest_file(path)!=piece['sha256']:
+            raise IntegrityError('Retained block integrity mismatch')
+        if piece.get('url')!=item['url']:raise IntegrityError('Retained source URL mismatch')
     if prefix:
         path=Path(prefix['path'])
         if not 0<prefix['bytes']<total or path.stat().st_size!=prefix['bytes'] or digest_file(path)!=prefix['sha256']:
@@ -204,16 +213,17 @@ def download(item,directory,budget,prefix=None,settings=None,opener=None,sleep=t
         with path.open('rb') as f:f.seek(start-n);expected=f.read(n)
         if Path(probe['path']).read_bytes()!=expected:raise IntegrityError('Remote overlap differs from old prefix')
         etag=probe['etag']
+    elif retained:
+        first_piece=min(retained,key=lambda p:p['start'])
+        if first_piece['start']!=0:raise IntegrityError('Retained-only context requires first block')
+        n=min(cfg['overlap_bytes'],first_piece['bytes'])
+        probe=one_range(item,0,n-1,parts,budget,cfg,stop,opener=opener,sleep=sleep)
+        with Path(first_piece['path']).open('rb') as f:expected=f.read(n)
+        if Path(probe['path']).read_bytes()!=expected:raise IntegrityError('Remote probe differs from retained first block')
+        etag=probe['etag']
     else:
         first=one_range(item,0,min(cfg['chunk_bytes'],total)-1,parts,budget,cfg,stop,opener=opener,sleep=sleep)
         pieces.append(first);start=first['end']+1;etag=first['etag']
-    retained=retained or []
-    if retained and not prefix:raise IntegrityError('Retained pieces require verified prefix context')
-    for piece in retained:
-        path=Path(piece['path'])
-        if path.is_symlink() or not path.is_file() or path.stat().st_size!=piece['bytes'] or digest_file(path)!=piece['sha256']:
-            raise IntegrityError('Retained block integrity mismatch')
-        if piece.get('url')!=item['url']:raise IntegrityError('Retained source URL mismatch')
     todo=missing_ranges(start,total,retained,cfg['chunk_bytes'])
     pieces.extend(retained)
     with ThreadPoolExecutor(max_workers=cfg['workers']) as pool:
@@ -225,7 +235,7 @@ def download(item,directory,budget,prefix=None,settings=None,opener=None,sleep=t
             for f in futures:f.cancel()
             raise
     result=assemble(item,pieces,prefix,target)
-    result.update(reused_complete_block_bytes=sum(p['bytes'] for p in retained),reused_prefix_bytes=prefix['bytes'] if prefix else 0,range_blocks=len(pieces),remote_overlap_bytes=min(cfg['overlap_bytes'],prefix['bytes']) if prefix else 0)
+    result.update(reused_complete_block_bytes=sum(p['bytes'] for p in retained),reused_prefix_bytes=prefix['bytes'] if prefix else 0,range_blocks=len(pieces),remote_overlap_bytes=(probe['bytes'] if probe else 0))
     save(directory/(target.name+'.verified.json'),result)
     old_paths={p['path'] for p in retained}
     for p in pieces+([probe] if probe else []):
