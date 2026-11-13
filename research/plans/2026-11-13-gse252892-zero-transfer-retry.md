@@ -1,0 +1,9 @@
+# Prospective retry after user interruption — 13 November 2026
+
+Parent runtime 30c7442975cc9fc8c6128a14210bf1ceb005344f. User supplied final v5 supervision: KeyboardInterrupt at 98.115 s, cleanup_error null, consumed proposal 7a39bc2df33e54d95846bb309292d57aa5f0aa35607427f80c8d4d7aaaadaec0. Final ledger shows zero new observed/charged bytes, zero attempts and no active requests. Prior charge stays 5,859,663,274 versus 5,858,614,698 observed. Control copies reached fastp; no completed count.
+
+Commit before implementation/new transfer. New v6 single-use proposal/root binds exact interrupted v5/claim/supervision/zero-transfer ledger, inherited v4 evidence and absent result/count receipts. Preserve the interrupted root unchanged and include it in combined disk accounting (six roots with the new run). Reuse fully rehashed original control FASTQs from run04 through the inherited record; repeat unchanged fastp/full alignment/count from scratch. No use of partial preprocessing/alignment. No control HTTP or reset/deletion of old claims.
+
+No assay/transport/budget change: 14 GB cumulative including 5,859,663,274 prior charge; new 48 h window, two CPU affinity/8 GiB per-process AS/6 GiB sampled group RSS/100 GiB all six roots/50 GiB verified physical C: reserve. Same drvfs verification, fixed library/URL/MD5/targets/filters/count units and control canonical >0 before KD. Keep all failures; stop on fatal validation/resource/integrity failure, exhausted retries/cap/window, failed control or both complete libraries. Standing local authorization applies; no cloud spending/contact/merge or reopened scientific cycle.
+
+Fixtures: zero-byte interrupted lineage accepted, nonzero/active/reset charges or wrong consumed identity rejected, old root retained, original scientific functions unchanged. No agent raw transfer. Prediction: user interruption incurred no transfer and original verified inputs can be reused; completion not guaranteed.
