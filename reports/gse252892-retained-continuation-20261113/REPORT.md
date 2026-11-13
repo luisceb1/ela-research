@@ -1,5 +1,7 @@
 # Retained-block continuation — 13 November 2026
 
+Current status: the v3 host run subsequently stopped on a supervisor disk-sampling race. See the [race diagnosis and fix](../gse252892-disk-sampling-fix-20261113/REPORT.md). Earlier counts below describe software tests and prospective transfer, not successful live completion.
+
 ## Evidence
 
 The [user-supplied v2 failure record](user-v2-failure.json) establishes a short range body after bounded retries, not inadequate biological coverage. Of 60 completed attempts, 50 were complete: the 1 MiB overlap and 49 full 32 MiB blocks (1,644,167,168 bytes excluding the probe). Ten failed attempts include peer cancellations after one range exhausted three attempts. Total actual/conservative lineage charge is 2,111,084,972 bytes with no outstanding requests. Cleanup completed. No fastp/alignment ran; the underlying network/server cause is unknown. Original host files have not been fetched by the agent.

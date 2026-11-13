@@ -8,6 +8,7 @@ from pathlib import Path
 import resource
 import shutil
 import signal
+import stat
 import subprocess
 import sys
 import time
@@ -394,12 +395,22 @@ def worker(plan_path):
 
 
 def root_bytes(root):
+    root=Path(root)
+    mode=root.lstat().st_mode
+    if stat.S_ISLNK(mode):raise ValueError('Symlink in run root')
+    if not stat.S_ISDIR(mode):raise ValueError('Expected run-root directory')
+    def walk_error(error):raise error
     total=0
-    for directory,dirs,files in os.walk(root,followlinks=False):
+    for directory,dirs,files in os.walk(root,followlinks=False,onerror=walk_error):
         for name in dirs+files:
             p=Path(directory)/name
-            if p.is_symlink():raise ValueError('Symlink in run root')
-            if p.is_file():total+=p.stat().st_size
+            try:info=p.lstat()
+            except FileNotFoundError:
+                # Atomic receipt/block promotion may remove a name after listing.
+                # This remains a sampled disk guard, not a transactional quota.
+                continue
+            if stat.S_ISLNK(info.st_mode):raise ValueError('Symlink in run root')
+            if stat.S_ISREG(info.st_mode):total+=info.st_size
     return total
 
 

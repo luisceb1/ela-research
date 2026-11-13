@@ -1,0 +1,19 @@
+{
+  "evidence": "user-pasted terminal traceback and last heartbeats",
+  "runtime_commit": "59cdcc1e59a4ee6ec0b45e40d3a8aa196e3ed284",
+  "failure_origin": "supervisor root_bytes disk sampling",
+  "exception": "FileNotFoundError",
+  "missing_path": "/home/luisceb/ela-gse252892-retained-run-03/transport-receipts/000232.json.tmp",
+  "last_heartbeat": {
+    "elapsed_seconds": 9592,
+    "phase": "download",
+    "library": "GSM8009878",
+    "raw_body_bytes_this_attempt": 1836727123,
+    "lineage_body_upper_bound_bytes": 3948860671,
+    "sampled_group_rss_bytes": 65073152,
+    "sampled_combined_root_bytes": 5943128721
+  },
+  "heartbeat_is_final_charge": false,
+  "final_ledger_supervision_and_verified_files": "not yet supplied",
+  "biological_result": "none demonstrated"
+}

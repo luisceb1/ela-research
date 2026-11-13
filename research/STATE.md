@@ -1,5 +1,11 @@
 # Current research state — 2026-11-04
 
+## Current local raw attempt: supervisor disk-sampling race — 13 November 2026
+
+This supersedes the earlier pending v3/live-continuation status. Luis's traceback shows the supervisor failed while stat-ing `transport-receipts/000232.json.tmp`, which the worker could atomically rename between the sampler's repeated checks. This is a runner software defect, not an observed resource limit or a new demonstrated network failure. The last heartbeat at 9,592 s reports 1,836,727,123 new body bytes and lineage upper bound 3,948,860,671; these are **not final accounting**. Final supervision/ledger, reservations, verified files and remaining blocks must be inspected before a new continuation. [Diagnosis and fix](../reports/gse252892-disk-sampling-fix-20261113/REPORT.md).
+
+The sampler now uses one non-following metadata snapshot per name, tolerates a disappeared leaf, and retains fail-closed permission/traversal/symlink/missing-root checks. 92 focused controls pass, including six race/error regressions and original scientific-source equality. No live transfer or resource/scientific-setting change; no biological result is demonstrated. Preserve all three roots and consumed proposals. Next: read final host receipts, then prospectively bind any new continuation to verified reusable bytes and the final conservative cumulative charge. Standing local-resource authorization persists; no new contact, cloud purchase or merge.
+
 ## Current local raw attempt: retain complete blocks after v2 EOF — 13 November 2026
 
 This supersedes the v2 preparation/range-support uncertainty below: the user successfully prepared proposal `98a89d95…` and ran it. Initial remote overlap and many ranges succeeded, but one 32 MiB range exhausted three attempts; the worker then cancelled peers. User receipts show **50 complete attempts (one overlap plus 49 blocks), 10 failed**, 1,759,157,246 new bytes and **2,111,084,972 cumulative charged bytes**, cleanup_error null. No fastp/alignment or biological output. The underlying truncation cause remains unknown; no host resource cap was reached. [Failure and continuation](../reports/gse252892-retained-continuation-20261113/REPORT.md).
