@@ -1,0 +1,26 @@
+{
+  "status": "passed",
+  "python": "3.12.14",
+  "patterns": {
+    "test_gse252892_drvfs.py": 10,
+    "test_gse252892_after_interop.py": 8,
+    "test_gse252892_after_sampler.py": 15,
+    "test_gse252892_disk_sampling.py": 6,
+    "test_gse252892_retained_blocks.py": 16,
+    "test_gse252892_range_transport.py": 20,
+    "test_gse252892_range_lineage.py": 6,
+    "test_run_gse252892_local.py": 37,
+    "test_prepare_gse252892_local.py": 7
+  },
+  "discovered": 125,
+  "run": 125,
+  "executed": 125,
+  "passed": 125,
+  "failures": [],
+  "errors": [],
+  "skipped": [],
+  "expected_failures": [],
+  "unexpected_successes": [],
+  "missing_patterns": [],
+  "fail_on_skip": true
+}

@@ -1,5 +1,7 @@
 # Continuation after sampler failure — 13 November 2026
 
+Current status: v4 completed control transfer/fastp but stopped on Windows interop during disk checking. See [final v4 evidence and drvfs continuation](../gse252892-drvfs-continuation-20261113/REPORT.md). Earlier pending-host statements describe that earlier stage.
+
 ## Evidence
 
 The [user terminal record](user-final-v3.json) now supplies final v3 supervision/ledger and verified-file/receipt summaries. Cleanup_error is null after the supervisor race. The first control FASTQ is reported complete: 2,772,553,416 bytes, published MD5 ab0a84e544fa6e2fc1e8c901d0c55675 and recorded SHA256 ddd42a540b6d01ca2405692cd6bf65ae35485c8b5e66f8eda2aec5fc62086bb6. Agent inspection is of terminal text; actual host bytes must be independently rechecked during preparation/worker/copy.

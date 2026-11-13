@@ -1,5 +1,11 @@
 # Current backlog — 2026-11-04
 
+## Current local raw recovery: complete control, WSL interop guard corrected — 13 November 2026
+
+User final v4 receipts establish both complete verified control FASTQs, fastp finished (70,948,578 retained pairs, 246 s), alignment started without completed summary/count. The supervisor failed on WSL Windows-executable interop while checking physical C: space; cleanup_error null. Final settled ledger **5,858,614,698 observed / 5,859,663,274 charged**, 233/233 completed, no active requests. No biological result or resource shortage established. [Evidence and correction](../reports/gse252892-drvfs-continuation-20261113/REPORT.md).
+
+The user's mountinfo identifies physical C: drvfs at /mnt/c with 563,055,382,528 available bytes. A strict mount-identity/statvfs method avoids repeated Windows process startup, retaining original PowerShell fallback only when /mnt/c is absent and the 50 GiB reserve unchanged. A [prospective v5 plan](plans/2026-11-13-gse252892-drvfs-continuation.md), committed before implementation/new transfer, binds final old receipts and copies both fully rehashed control inputs into a fresh root with no control HTTP. Identical fastp/alignment rerun; KD still gated on control canonical >0. Same 14 GB cumulative cap and resource guards across five roots; new 48 h window. 125 focused tests pass. Host prepare/live run pending; old attempts/claims preserved. No cloud purchase/contact/merge, scientific change or reopened closed cycle.
+
 ## Current local raw recovery: verified first input and conservative final charge — 13 November 2026
 
 The user supplied final v3 receipts after the supervisor race: failed/cleanup_error null, first FASTQ **2,772,553,416 bytes with published MD5 and recorded SHA256 verified**, and 232 durable attempt receipts (217 complete/15 failed). Aggregate request state stopped before ID232 finalization; its durable complete receipt must be deduplicated against the active snapshot. ID233's 1 MiB in-flight reservation remains charged: **3,962,492,159 observed versus 3,963,540,735 conservative spent bytes**. [Final evidence and continuation](../reports/gse252892-after-sampler-20261113/REPORT.md). Actual reusable files remain subject to host hash checks; no biological output.

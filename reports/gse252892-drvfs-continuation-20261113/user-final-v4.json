@@ -1,0 +1,26 @@
+{
+  "evidence": "user-pasted final supervision/ledger/verified receipts/fastp log/mountinfo; host bytes not fetched by agent",
+  "plan_sha256": "c7a2fee183c48f5fd8c925bd65402ead0f9e44127df89ea8a690b48944a93528",
+  "failure": "Windows executable interop during C: free-space query",
+  "elapsed_seconds": 8818.04275986,
+  "cleanup_error": null,
+  "peak_group_rss_bytes": 4801024000,
+  "peak_combined_root_bytes": 42411417295,
+  "observed_body_bytes": 5858614698,
+  "conservative_charge_bytes": 5859663274,
+  "uncertain_prior_bytes_charged": 1048576,
+  "new_observed_body_bytes": 1896122539,
+  "requests_started_and_completed": 233,
+  "active_requests": [],
+  "verified_control_input_bytes": [
+    2772553416,
+    2913274103
+  ],
+  "second_sha256": "3dbaa49e5d28084c261921199c25044b7fe9e89129278df037c64e90e7c27354",
+  "fastp_seconds": 246,
+  "fastp_retained_pairs": 70948578,
+  "alignment_summary_and_counts": "absent",
+  "mnt_c_available_bytes": 563055382528,
+  "mount": "9p C:\\134 aname=drvfs;path=C:\\",
+  "independent_validation_of_host_bytes": "pending new prepare/worker checks"
+}

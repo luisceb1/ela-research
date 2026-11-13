@@ -19,6 +19,8 @@ import prepare_gse252892_local as prep
 import gse252892_range_transport as ranged
 import gse252892_retained_blocks as retained
 import gse252892_after_sampler as after_sampler
+import gse252892_after_interop as after_interop
+import gse252892_drvfs as drvfs
 
 ROOT = Path(__file__).resolve().parents[1]
 CAPS = {'transfer_bytes': 14_000_000_000, 'wall_seconds': 172800, 'root_bytes': 100*1024**3,
@@ -26,7 +28,7 @@ CAPS = {'transfer_bytes': 14_000_000_000, 'wall_seconds': 172800, 'root_bytes': 
         'process_as_bytes': 8*1024**3, 'cpus': 2}
 BASE_SHA = '97a578839d72088bab1403b0c9ef6bd9b8e3ff064bbe3008314fb34545b6af26'
 CODE = ['scripts/run_gse252892_local.py', 'scripts/prepare_gse252892_local.py',
-        'scripts/gse252892_range_transport.py', 'scripts/gse252892_retained_blocks.py', 'scripts/gse252892_after_sampler.py',
+        'scripts/gse252892_range_transport.py', 'scripts/gse252892_retained_blocks.py', 'scripts/gse252892_after_sampler.py', 'scripts/gse252892_after_interop.py', 'scripts/gse252892_drvfs.py',
         'research/references/unc13a_targets_sealed.json',
         'reports/local-raw-feasibility-20261112/fastq-manifest.tsv']
 PRIOR_PLAN_SHA='911c5be6f8a470d085ab57279ee8d3ce40bb31edcb990a3064238d9c4b9d9a9f'
@@ -67,6 +69,11 @@ def windows_free():
     if not text.isdigit():
         raise ValueError('Cannot parse physical Windows C: free bytes')
     return int(text)
+
+
+def physical_free():
+    value=drvfs.free_bytes()
+    return windows_free() if value is None else value
 
 
 def check_free(value):
@@ -135,6 +142,10 @@ def after_sampler_record(plan_path,current_files=True):
     return after_sampler.record(plan_path,read_small,recovery_record,ranged.RECOVERY_SETTINGS,BASE_SHA,CAPS['transfer_bytes'],current_files)
 
 
+def after_interop_record(plan_path,current_files=True):
+    return after_interop.record(plan_path,read_small,after_sampler_record,ranged.RECOVERY_SETTINGS,BASE_SHA,CAPS['transfer_bytes'],current_files)
+
+
 def commands(plan, gsm):
     d = Path(plan['run_root'])/gsm
     run = {'GSM8009878':'SRR27477544', 'GSM8009881':'SRR27477541'}[gsm]
@@ -151,7 +162,7 @@ def commands(plan, gsm):
 
 
 def validate_plan(plan, current_files=True):
-    if plan.get('schema') != 'gse252892-after-sampler-v4' or plan.get('caps') != CAPS or plan.get('transport')!=ranged.RECOVERY_SETTINGS:
+    if plan.get('schema') != 'gse252892-drvfs-v5' or plan.get('caps') != CAPS or plan.get('transport')!=ranged.RECOVERY_SETTINGS:
         raise ValueError('Execution schema/caps changed')
     if plan.get('base_sha256') != BASE_SHA or plan['base'].get('execution_enabled') is not False:
         raise ValueError('Expected exact disabled base')
@@ -162,7 +173,7 @@ def validate_plan(plan, current_files=True):
         raise ValueError('Runner/code commit changed')
     if prep.git('status','--porcelain','--untracked-files=all'):
         raise ValueError('Checkout must remain clean')
-    lineage=after_sampler_record(plan['lineage']['prior_plan_path'],current_files=current_files)
+    lineage=after_interop_record(plan['lineage']['prior_plan_path'],current_files=current_files)
     if lineage!=plan['lineage']:raise ValueError('Prior evidence/charge changed')
     root = Path(plan['run_root'])
     if not root.is_absolute() or root == ROOT or ROOT in root.parents or root.is_symlink():
@@ -200,21 +211,21 @@ def prepare(base, fastp, root, output, prior_plan):
         raise ValueError('Base SHA does not match the user-reported descriptor')
     data = read_small(base)
     fastp = Path(fastp).resolve(strict=True)
-    lineage=after_sampler_record(prior_plan)
+    lineage=after_interop_record(prior_plan)
     if any(root==Path(p) or Path(p) in root.parents or root in Path(p).parents for p in lineage['prior_roots']):
         raise ValueError('New root must preserve the prior root')
-    plan = {'schema':'gse252892-after-sampler-v4','prepared_for_review':True,
+    plan = {'schema':'gse252892-drvfs-v5','prepared_for_review':True,
             'base_path':str(base),'base_sha256':BASE_SHA,'base':data,
             'repository_commit':prep.git('rev-parse','HEAD'),'python_executable':sys.executable,
             'fastp':{'path':str(fastp),'sha256':prep.sha256(fastp),'version_output':version(fastp,'fastp 0.23.4')},
             'run_root':str(root),'caps':CAPS.copy(),'transport':ranged.RECOVERY_SETTINGS.copy(),'lineage':lineage,'code_sha256':code_hashes(),
             'endpoint':'fragment/event/library with primary anchor 15; no inference',
-            'protocol':'research/plans/2026-11-13-gse252892-after-sampler.md'}
+            'protocol':'research/plans/2026-11-13-gse252892-drvfs-continuation.md'}
     plan['commands'] = {g:commands(plan,g) for g in prep.SELECTED}
     check_options(fastp,['--detect_adapter_for_pe','--dont_eval_duplication','--thread'])
     check_options(data['tools']['aligner']['path'],['--no-temp-splicesite','--reorder','--no-mixed','--no-discordant','--summary-file'])
     validate_plan(plan)
-    free = windows_free(); check_free(free); plan['windows_free_bytes_at_preparation']=free
+    free = physical_free(); check_free(free); plan['windows_free_bytes_at_preparation']=free
     encoded=(json.dumps(plan,indent=2)+'\n').encode()
     with output.open('xb') as f:f.write(encoded)
     return {'status':'execution_proposal_not_started','output':str(output),
@@ -225,7 +236,7 @@ def prepare(base, fastp, root, output, prior_plan):
             'complete_input_bytes':sum(p['bytes'] for p in lineage['complete_inputs']),
             'retained_complete_blocks':len(lineage['retained_blocks']),
             'retained_complete_block_bytes':sum(p['bytes'] for p in lineage['retained_blocks']),
-            'minimum_new_body_bytes_if_reuse_valid':prep.EXPECTED_INPUT_BYTES-sum(p['bytes'] for p in lineage['complete_inputs'])-sum(p['bytes'] for p in lineage['retained_blocks'])+ranged.RECOVERY_SETTINGS['overlap_bytes'],
+            'minimum_new_body_bytes_if_reuse_valid':prep.EXPECTED_INPUT_BYTES-sum(p['bytes'] for p in lineage['complete_inputs'])-sum(p['bytes'] for p in lineage['retained_blocks'])+(ranged.RECOVERY_SETTINGS['overlap_bytes'] if lineage['retained_blocks'] else 0),
             'raw_bytes_downloaded':0,'caps':CAPS,'transport':ranged.RECOVERY_SETTINGS}
 
 
@@ -450,7 +461,7 @@ def execute(path,accepted_sha,accepted_transfer):
     path=Path(path).resolve()
     if prep.sha256(path)!=accepted_sha or accepted_transfer!=CAPS['transfer_bytes']:
         raise ValueError('Explicit exact descriptor SHA and transfer cap acceptance required')
-    plan=read_small(path);validate_plan(plan,current_files=False);check_free(windows_free())
+    plan=read_small(path);validate_plan(plan,current_files=False);check_free(physical_free())
     root=Path(plan['run_root'])
     if root.exists():raise ValueError('New run root required; no resume/overwrite')
     claim=Path(str(path)+'.claimed.json')
@@ -473,7 +484,7 @@ def execute(path,accepted_sha,accepted_transfer):
                 if rss>CAPS['group_rss_bytes']:raise ValueError('Sampled group RSS cap exceeded')
                 if size>CAPS['root_bytes']:raise ValueError('Sampled root disk cap exceeded')
                 if elapsed-last_windows>=30:
-                    check_free(windows_free());last_windows=elapsed
+                    check_free(physical_free());last_windows=elapsed
                     progress=read_small(root/'progress.json') if (root/'progress.json').exists() else {'phase':'verify_inputs_and_index'}
                     transfer=read_small(root/'transfer-ledger.json') if (root/'transfer-ledger.json').exists() else {}
                     print(json.dumps({'elapsed_seconds':round(elapsed),'progress':progress,'raw_body_bytes_this_attempt':transfer.get('new_observed_body_bytes',0),'lineage_body_upper_bound_bytes':transfer.get('body_upper_bound_bytes',0),'sampled_group_rss_bytes':rss,'sampled_combined_root_bytes':size}),flush=True)
