@@ -1,5 +1,11 @@
 # Current backlog — 2026-11-04
 
+## Current local raw attempt: truncated download and prospective recovery — 13 November 2026
+
+This entry supersedes the historical preparation/execution status below. Luis successfully prepared and explicitly started the v1 proposal `911c5be6…`; its first HTTP response ended after **351,927,726 / 2,772,553,416 bytes**. The worker failed the length/MD5 check before fastp or alignment. This is a transport failure, not a biological negative or a demonstrated host-capacity failure; the underlying cause is unknown. Preserve the consumed proposal, old root, partial and receipts. [Evidence and recovery](../reports/gse252892-range-recovery-20261113/REPORT.md).
+
+Luis also explicitly authorized future substantial local downloads/CPU within his computer's capacity. This does not authorize paid cloud services, contacts or merging these PRs. A [new prospective amendment](plans/2026-11-13-gse252892-range-transport.md), committed before any new live request, keeps the same libraries, targets and scientific operations; only transport changes. The new attempt uses 32 MiB ranges, up to four connections, bounded retries, a **14 GB lineage budget including the old charge**, and a new 48 h window. Old-prefix reuse is conditional on local hash, remote overlap and final complete-file MD5. Software fixtures pass; live range support and successful host execution remain unverified. Next: prepare a separate hash-locked v2 proposal, then run it on the user host under the existing authorization. Existing scientific closures and AD/author waiting status remain unchanged.
+
 ## Local execution preparation blocked at PowerShell discovery — 12 November 2026
 
 Luis's attempt at `ddfd621` passed earlier preparation steps but stopped locating `powershell.exe` through PATH; no execution proposal was written by that attempt and no raw transfer began. [Failure and regression record](../reports/gse252892-bounded-runner-20261112/REPORT.md#preparation-failure-and-discovery-correction). Discovery now also tries the explicit standard Windows path, while actual C: free-space measurement and the 50 GiB reserve remain mandatory. Live success of the fallback is still pending user retry. No library, estimator, cap or stop rule changes; the disabled base descriptor and existing cycle closures are unchanged.

@@ -15,15 +15,20 @@ import urllib.error
 import urllib.request
 
 import prepare_gse252892_local as prep
+import gse252892_range_transport as ranged
 
 ROOT = Path(__file__).resolve().parents[1]
-CAPS = {'transfer_bytes': 14_000_000_000, 'wall_seconds': 43200, 'root_bytes': 100*1024**3,
+CAPS = {'transfer_bytes': 14_000_000_000, 'wall_seconds': 172800, 'root_bytes': 100*1024**3,
         'windows_reserve_bytes': 50*1024**3, 'group_rss_bytes': 6*1024**3,
         'process_as_bytes': 8*1024**3, 'cpus': 2}
 BASE_SHA = '97a578839d72088bab1403b0c9ef6bd9b8e3ff064bbe3008314fb34545b6af26'
 CODE = ['scripts/run_gse252892_local.py', 'scripts/prepare_gse252892_local.py',
+        'scripts/gse252892_range_transport.py',
         'research/references/unc13a_targets_sealed.json',
         'reports/local-raw-feasibility-20261112/fastq-manifest.tsv']
+PRIOR_PLAN_SHA='911c5be6f8a470d085ab57279ee8d3ce40bb31edcb990a3064238d9c4b9d9a9f'
+PRIOR_BYTES=351927726
+PREFIX_SHA='ee7762da8dc57e0ab9878fbf449cb7f933fd7f95c6a32c4e93be5dc2c3c5d2aa'
 
 
 def save(path, value):
@@ -86,6 +91,39 @@ def check_options(path, options):
     if missing:raise ValueError('Required CLI options absent from help: '+','.join(missing))
 
 
+def prior_record(plan_path, current_prefix=True):
+    plan_path=Path(plan_path).resolve()
+    if prep.sha256(plan_path)!=PRIOR_PLAN_SHA:raise ValueError('Prior consumed proposal SHA mismatch')
+    old=read_small(plan_path);root=Path(old['run_root'])
+    paths={name:root/name for name in ['accepted.json','supervision.json','worker-failure.json','transfer-ledger.json']}
+    paths['proposal_claim.json']=Path(str(plan_path)+'.claimed.json')
+    receipt={name:read_small(path) for name,path in paths.items()}
+    sup=receipt['supervision.json'];ledger=receipt['transfer-ledger.json']
+    if old.get('schema')!='gse252892-bounded-v1' or old.get('base_sha256')!=BASE_SHA:
+        raise ValueError('Unexpected prior execution identity')
+    if receipt['accepted.json']['plan_sha256']!=PRIOR_PLAN_SHA or sup['plan_sha256']!=PRIOR_PLAN_SHA or sup['status']!='failed' or sup['cleanup_error'] is not None:
+        raise ValueError('Prior attempt must be failed and cleaned up')
+    if receipt['proposal_claim.json']!={'plan_sha256':PRIOR_PLAN_SHA,'transfer_bytes':CAPS['transfer_bytes']}:
+        raise ValueError('Prior proposal must remain consumed with its accepted budget')
+    if receipt['worker-failure.json']['error']!='Raw length/MD5 mismatch':raise ValueError('Unexpected prior failure')
+    requests=ledger['requests']
+    first=prep.selected_inputs(ROOT/'reports/local-raw-feasibility-20261112/fastq-manifest.tsv')[0]
+    if len(requests)!=1 or requests[0]['url']!=first['url'] or requests[0]['expected_bytes']!=int(first['compressed_bytes']):
+        raise ValueError('Prior source URL/length mismatch')
+    req=requests[0]
+    if ledger['actual_body_bytes']!=PRIOR_BYTES or ledger['body_upper_bound_bytes']!=PRIOR_BYTES or req['actual_bytes']!=PRIOR_BYTES or req['status']!='failed' or req['inflight_max_bytes']!=0 or req['observed_body_prefix_sha256']!=PREFIX_SHA:
+        raise ValueError('Prior transfer charge/prefix record changed')
+    prefix=root/'GSM8009878'/(Path(first['url']).name+'.partial')
+    if current_prefix:
+        if prefix.is_symlink() or prefix.stat().st_size!=PRIOR_BYTES or prep.sha256(prefix)!=PREFIX_SHA:
+            raise ValueError('Prior partial bytes/hash changed')
+        with prefix.open('rb') as f:
+            if f.read(2)!=b'\x1f\x8b':raise ValueError('Prior partial is not a gzip prefix')
+    return {'prior_plan_path':str(plan_path),'prior_plan_sha256':PRIOR_PLAN_SHA,'prior_root':str(root),
+        'prior_charge_bytes':PRIOR_BYTES,'receipt_sha256':{n:prep.sha256(p) for n,p in paths.items()},
+        'prefix':{'path':str(prefix),'bytes':PRIOR_BYTES,'sha256':PREFIX_SHA,'url':first['url']}}
+
+
 def commands(plan, gsm):
     d = Path(plan['run_root'])/gsm
     run = {'GSM8009878':'SRR27477544', 'GSM8009881':'SRR27477541'}[gsm]
@@ -102,7 +140,7 @@ def commands(plan, gsm):
 
 
 def validate_plan(plan, current_files=True):
-    if plan.get('schema') != 'gse252892-bounded-v1' or plan.get('caps') != CAPS:
+    if plan.get('schema') != 'gse252892-range-v2' or plan.get('caps') != CAPS or plan.get('transport')!=ranged.SETTINGS:
         raise ValueError('Execution schema/caps changed')
     if plan.get('base_sha256') != BASE_SHA or plan['base'].get('execution_enabled') is not False:
         raise ValueError('Expected exact disabled base')
@@ -113,6 +151,8 @@ def validate_plan(plan, current_files=True):
         raise ValueError('Runner/code commit changed')
     if prep.git('status','--porcelain','--untracked-files=all'):
         raise ValueError('Checkout must remain clean')
+    lineage=prior_record(plan['lineage']['prior_plan_path'],current_prefix=current_files)
+    if lineage!=plan['lineage']:raise ValueError('Prior evidence/charge changed')
     root = Path(plan['run_root'])
     if not root.is_absolute() or root == ROOT or ROOT in root.parents or root.is_symlink():
         raise ValueError('Run root must be a separate absolute path')
@@ -138,7 +178,7 @@ def validate_plan(plan, current_files=True):
     return rows
 
 
-def prepare(base, fastp, root, output):
+def prepare(base, fastp, root, output, prior_plan):
     base = Path(base).resolve(); root = Path(root).expanduser().resolve()
     output = Path(output).expanduser().resolve()
     if output.exists() or root.exists() or output == root:
@@ -149,13 +189,16 @@ def prepare(base, fastp, root, output):
         raise ValueError('Base SHA does not match the user-reported descriptor')
     data = read_small(base)
     fastp = Path(fastp).resolve(strict=True)
-    plan = {'schema':'gse252892-bounded-v1','prepared_for_review':True,
+    lineage=prior_record(prior_plan)
+    if root==Path(lineage['prior_root']) or Path(lineage['prior_root']) in root.parents:
+        raise ValueError('New root must preserve the prior root')
+    plan = {'schema':'gse252892-range-v2','prepared_for_review':True,
             'base_path':str(base),'base_sha256':BASE_SHA,'base':data,
             'repository_commit':prep.git('rev-parse','HEAD'),'python_executable':sys.executable,
             'fastp':{'path':str(fastp),'sha256':prep.sha256(fastp),'version_output':version(fastp,'fastp 0.23.4')},
-            'run_root':str(root),'caps':CAPS.copy(),'code_sha256':code_hashes(),
+            'run_root':str(root),'caps':CAPS.copy(),'transport':ranged.SETTINGS.copy(),'lineage':lineage,'code_sha256':code_hashes(),
             'endpoint':'fragment/event/library with primary anchor 15; no inference',
-            'protocol':'research/plans/2026-11-12-gse252892-bounded-execution.md'}
+            'protocol':'research/plans/2026-11-13-gse252892-range-transport.md'}
     plan['commands'] = {g:commands(plan,g) for g in prep.SELECTED}
     check_options(fastp,['--detect_adapter_for_pe','--dont_eval_duplication','--thread'])
     check_options(data['tools']['aligner']['path'],['--no-temp-splicesite','--reorder','--no-mixed','--no-discordant','--summary-file'])
@@ -166,7 +209,9 @@ def prepare(base, fastp, root, output):
     return {'status':'execution_proposal_not_started','output':str(output),
             'descriptor_sha256':hashlib.sha256(encoded).hexdigest(),'advertised_input_bytes':prep.EXPECTED_INPUT_BYTES,
             'maximum_transfer_bytes':CAPS['transfer_bytes'],'wall_seconds':CAPS['wall_seconds'],
-            'raw_bytes_downloaded':0,'caps':CAPS}
+            'prior_charge_bytes':PRIOR_BYTES,'prefix_bytes_proposed_for_reuse':PRIOR_BYTES,
+            'minimum_new_body_bytes_if_prefix_valid':prep.EXPECTED_INPUT_BYTES-PRIOR_BYTES+ranged.SETTINGS['overlap_bytes'],
+            'raw_bytes_downloaded':0,'caps':CAPS,'transport':ranged.SETTINGS}
 
 
 class NoRedirect(urllib.request.HTTPRedirectHandler):
@@ -291,7 +336,9 @@ def stage(plan,gsm,ledger,root):
     d=root/gsm;d.mkdir()
     save(root/'progress.json',{'phase':'download','library':gsm})
     for row in plan['base']['input_files']:
-        if row['gsm']==gsm:download(row,d,ledger,root/'transfer-ledger.json')
+        if row['gsm']==gsm:
+            prefix=plan['lineage']['prefix'] if row['url']==plan['lineage']['prefix']['url'] else None
+            ranged.download(row,d,ledger,prefix=prefix)
     cmd=plan['commands'][gsm]
     save(root/'progress.json',{'phase':'fastp','library':gsm})
     with (d/'fastp.log').open('wb') as log:
@@ -320,8 +367,7 @@ def worker(plan_path):
     accepted=read_small(root/'accepted.json')
     if os.getpgrp()!=os.getpid() or accepted['supervisor_pid']!=os.getppid() or accepted['plan_sha256']!=prep.sha256(plan_path) or accepted['transfer_bytes']!=CAPS['transfer_bytes']:
         raise ValueError('Worker requires an active accepting supervisor/process group')
-    ledger={'actual_body_bytes':0,'requests':[]}
-    save(root/'transfer-ledger.json',ledger)
+    ledger=ranged.Budget(root/'transfer-ledger.json',CAPS['transfer_bytes'],plan.get('lineage',{}).get('prior_charge_bytes',0))
     try:
         validate_plan(plan)
         # Inspector is supervised, and this does not transfer genomic inputs.
@@ -395,14 +441,15 @@ def execute(path,accepted_sha,accepted_transfer):
                 elapsed=time.monotonic()-started
                 if elapsed>CAPS['wall_seconds']:raise ValueError('Wall time cap exceeded')
                 rss=group_rss(proc.pid);size=root_bytes(root)
+                if plan.get('lineage'):size+=root_bytes(plan['lineage']['prior_root'])
                 peak_rss=max(peak_rss,rss);peak_disk=max(peak_disk,size)
                 if rss>CAPS['group_rss_bytes']:raise ValueError('Sampled group RSS cap exceeded')
                 if size>CAPS['root_bytes']:raise ValueError('Sampled root disk cap exceeded')
                 if elapsed-last_windows>=30:
                     check_free(windows_free());last_windows=elapsed
                     progress=read_small(root/'progress.json') if (root/'progress.json').exists() else {'phase':'verify_inputs_and_index'}
-                    body=read_small(root/'transfer-ledger.json')['actual_body_bytes'] if (root/'transfer-ledger.json').exists() else 0
-                    print(json.dumps({'elapsed_seconds':round(elapsed),'progress':progress,'raw_body_bytes':body,'sampled_group_rss_bytes':rss,'sampled_root_bytes':size}),flush=True)
+                    transfer=read_small(root/'transfer-ledger.json') if (root/'transfer-ledger.json').exists() else {}
+                    print(json.dumps({'elapsed_seconds':round(elapsed),'progress':progress,'raw_body_bytes_this_attempt':transfer.get('new_observed_body_bytes',0),'lineage_body_upper_bound_bytes':transfer.get('body_upper_bound_bytes',0),'sampled_group_rss_bytes':rss,'sampled_combined_root_bytes':size}),flush=True)
                 time.sleep(0.5)
             if proc.returncode:raise ValueError('Worker failed; inspect worker.log/failure receipt')
             if not (root/'result.json').is_file():raise ValueError('No final result')
@@ -417,7 +464,7 @@ def execute(path,accepted_sha,accepted_transfer):
         except BaseException as exc:
             cleanup_error=str(exc)
         save(root/'supervision.json',{'status':status,'failure':reason,'elapsed_seconds':time.monotonic()-started,
-            'peak_sampled_group_rss_bytes':peak_rss,'peak_sampled_root_bytes':peak_disk,'caps':CAPS,
+            'peak_sampled_group_rss_bytes':peak_rss,'peak_sampled_combined_root_bytes':peak_disk,'caps':CAPS,
             'limitations':'RSS/disk are sampled, not kernel aggregate quotas; uninterruptible I/O/escape not guaranteed controllable',
             'raw_transfer_ledger':'transfer-ledger.json','plan_sha256':accepted_sha,'cleanup_error':cleanup_error})
         if cleanup_error:raise RuntimeError(cleanup_error)
@@ -426,11 +473,11 @@ def execute(path,accepted_sha,accepted_transfer):
 
 def main():
     ap=argparse.ArgumentParser(description=__doc__);sub=ap.add_subparsers(dest='action',required=True)
-    p=sub.add_parser('prepare');p.add_argument('--base-descriptor',type=Path,required=True);p.add_argument('--fastp',type=Path,required=True);p.add_argument('--run-root',type=Path,required=True);p.add_argument('--output',type=Path,required=True)
+    p=sub.add_parser('prepare');p.add_argument('--base-descriptor',type=Path,required=True);p.add_argument('--fastp',type=Path,required=True);p.add_argument('--run-root',type=Path,required=True);p.add_argument('--output',type=Path,required=True);p.add_argument('--prior-plan',type=Path,required=True)
     p=sub.add_parser('execute');p.add_argument('--plan',type=Path,required=True);p.add_argument('--accept-plan-sha256',required=True);p.add_argument('--accept-transfer-bytes',type=int,required=True)
     p=sub.add_parser('_worker');p.add_argument('--plan',type=Path,required=True)
     a=ap.parse_args()
-    if a.action=='prepare':out=prepare(a.base_descriptor,a.fastp,a.run_root,a.output)
+    if a.action=='prepare':out=prepare(a.base_descriptor,a.fastp,a.run_root,a.output,a.prior_plan)
     elif a.action=='execute':out=execute(a.plan,a.accept_plan_sha256,a.accept_transfer_bytes)
     else:worker(a.plan);out={'status':'worker_finished'}
     print(json.dumps(out,indent=2))
