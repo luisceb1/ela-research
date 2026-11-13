@@ -1,0 +1,18 @@
+{
+  "evidence": "user-pasted final supervision and ledger",
+  "plan_sha256": "7a39bc2df33e54d95846bb309292d57aa5f0aa35607427f80c8d4d7aaaadaec0",
+  "status": "failed",
+  "failure": "KeyboardInterrupt",
+  "elapsed_seconds": 98.115128016,
+  "cleanup_error": null,
+  "new_observed_body_bytes": 0,
+  "new_charged_upper_bytes": 0,
+  "request_attempts": 0,
+  "completed_attempts": 0,
+  "active_requests": [],
+  "prior_observed_body_bytes": 5858614698,
+  "prior_charge_bytes": 5859663274,
+  "peak_sampled_combined_root_bytes": 49570563332,
+  "peak_sampled_group_rss_bytes": 901300224,
+  "count_receipt": "none demonstrated"
+}

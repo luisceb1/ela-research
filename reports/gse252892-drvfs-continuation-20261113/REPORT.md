@@ -1,5 +1,7 @@
 # Physical C: measurement and complete-control continuation — 13 November 2026
 
+Current status: v5 was interrupted by the user during fastp with zero new transfer; see [zero-transfer retry](../gse252892-zero-transfer-retry-20261113/REPORT.md). Prior host-pending statements below refer to that earlier stage.
+
 ## Evidence
 
 [User final v4 record](user-final-v4.json): both control FASTQs are reported verified (2,772,553,416 + 2,913,274,103 bytes, published MD5 and recorded SHA256), fastp completed in 246 seconds with 70,948,578 pairs. Alignment started but no final summary/count receipt exists. The supervisor stopped on WSL Windows-executable interop while checking C: availability; cleanup_error null. Peak sampled RSS 4,801,024,000 and sampled combined disk use 42,411,417,295 bytes did not cross existing caps. No memory/disk shortage or biological failure is established.

@@ -21,6 +21,7 @@ import gse252892_retained_blocks as retained
 import gse252892_after_sampler as after_sampler
 import gse252892_after_interop as after_interop
 import gse252892_drvfs as drvfs
+import gse252892_after_interrupt as after_interrupt
 
 ROOT = Path(__file__).resolve().parents[1]
 CAPS = {'transfer_bytes': 14_000_000_000, 'wall_seconds': 172800, 'root_bytes': 100*1024**3,
@@ -28,7 +29,7 @@ CAPS = {'transfer_bytes': 14_000_000_000, 'wall_seconds': 172800, 'root_bytes': 
         'process_as_bytes': 8*1024**3, 'cpus': 2}
 BASE_SHA = '97a578839d72088bab1403b0c9ef6bd9b8e3ff064bbe3008314fb34545b6af26'
 CODE = ['scripts/run_gse252892_local.py', 'scripts/prepare_gse252892_local.py',
-        'scripts/gse252892_range_transport.py', 'scripts/gse252892_retained_blocks.py', 'scripts/gse252892_after_sampler.py', 'scripts/gse252892_after_interop.py', 'scripts/gse252892_drvfs.py',
+        'scripts/gse252892_range_transport.py', 'scripts/gse252892_retained_blocks.py', 'scripts/gse252892_after_sampler.py', 'scripts/gse252892_after_interop.py', 'scripts/gse252892_drvfs.py', 'scripts/gse252892_after_interrupt.py',
         'research/references/unc13a_targets_sealed.json',
         'reports/local-raw-feasibility-20261112/fastq-manifest.tsv']
 PRIOR_PLAN_SHA='911c5be6f8a470d085ab57279ee8d3ce40bb31edcb990a3064238d9c4b9d9a9f'
@@ -146,6 +147,10 @@ def after_interop_record(plan_path,current_files=True):
     return after_interop.record(plan_path,read_small,after_sampler_record,ranged.RECOVERY_SETTINGS,BASE_SHA,CAPS['transfer_bytes'],current_files)
 
 
+def after_interrupt_record(plan_path,current_files=True):
+    return after_interrupt.record(plan_path,read_small,after_interop_record,ranged.RECOVERY_SETTINGS,BASE_SHA,CAPS['transfer_bytes'],current_files)
+
+
 def commands(plan, gsm):
     d = Path(plan['run_root'])/gsm
     run = {'GSM8009878':'SRR27477544', 'GSM8009881':'SRR27477541'}[gsm]
@@ -162,7 +167,7 @@ def commands(plan, gsm):
 
 
 def validate_plan(plan, current_files=True):
-    if plan.get('schema') != 'gse252892-drvfs-v5' or plan.get('caps') != CAPS or plan.get('transport')!=ranged.RECOVERY_SETTINGS:
+    if plan.get('schema') != 'gse252892-interrupt-v6' or plan.get('caps') != CAPS or plan.get('transport')!=ranged.RECOVERY_SETTINGS:
         raise ValueError('Execution schema/caps changed')
     if plan.get('base_sha256') != BASE_SHA or plan['base'].get('execution_enabled') is not False:
         raise ValueError('Expected exact disabled base')
@@ -173,7 +178,7 @@ def validate_plan(plan, current_files=True):
         raise ValueError('Runner/code commit changed')
     if prep.git('status','--porcelain','--untracked-files=all'):
         raise ValueError('Checkout must remain clean')
-    lineage=after_interop_record(plan['lineage']['prior_plan_path'],current_files=current_files)
+    lineage=after_interrupt_record(plan['lineage']['prior_plan_path'],current_files=current_files)
     if lineage!=plan['lineage']:raise ValueError('Prior evidence/charge changed')
     root = Path(plan['run_root'])
     if not root.is_absolute() or root == ROOT or ROOT in root.parents or root.is_symlink():
@@ -211,16 +216,16 @@ def prepare(base, fastp, root, output, prior_plan):
         raise ValueError('Base SHA does not match the user-reported descriptor')
     data = read_small(base)
     fastp = Path(fastp).resolve(strict=True)
-    lineage=after_interop_record(prior_plan)
+    lineage=after_interrupt_record(prior_plan)
     if any(root==Path(p) or Path(p) in root.parents or root in Path(p).parents for p in lineage['prior_roots']):
         raise ValueError('New root must preserve the prior root')
-    plan = {'schema':'gse252892-drvfs-v5','prepared_for_review':True,
+    plan = {'schema':'gse252892-interrupt-v6','prepared_for_review':True,
             'base_path':str(base),'base_sha256':BASE_SHA,'base':data,
             'repository_commit':prep.git('rev-parse','HEAD'),'python_executable':sys.executable,
             'fastp':{'path':str(fastp),'sha256':prep.sha256(fastp),'version_output':version(fastp,'fastp 0.23.4')},
             'run_root':str(root),'caps':CAPS.copy(),'transport':ranged.RECOVERY_SETTINGS.copy(),'lineage':lineage,'code_sha256':code_hashes(),
             'endpoint':'fragment/event/library with primary anchor 15; no inference',
-            'protocol':'research/plans/2026-11-13-gse252892-drvfs-continuation.md'}
+            'protocol':'research/plans/2026-11-13-gse252892-zero-transfer-retry.md'}
     plan['commands'] = {g:commands(plan,g) for g in prep.SELECTED}
     check_options(fastp,['--detect_adapter_for_pe','--dont_eval_duplication','--thread'])
     check_options(data['tools']['aligner']['path'],['--no-temp-splicesite','--reorder','--no-mixed','--no-discordant','--summary-file'])

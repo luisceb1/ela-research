@@ -1,5 +1,11 @@
 # Current backlog — 2026-11-04
 
+## Current local execution: user interruption, zero transfer confirmed — 13 November 2026
+
+User final v5 receipts confirm KeyboardInterrupt at 98.115 s during fastp, cleanup_error null, **zero new observed/charged bytes, zero requests, no active requests**. Both original full control FASTQs remain reusable after rehashing. Existing-output rejection prevented an accidental overwrite. [Final evidence/retry](../reports/gse252892-zero-transfer-retry-20261113/REPORT.md).
+
+A [prospective v6 retry](plans/2026-11-13-gse252892-zero-transfer-retry.md), committed before implementation/new transfer, binds consumed v5 and its exact zero ledger, retains interrupted run05 unchanged in combined disk accounting (six roots with new run06), and reuses original run04 complete inputs. Repeat identical fastp/full alignment/count; no partial processing reuse or control HTTP. Prior **5,859,663,274 charged / 5,858,614,698 observed** retained; same 14 GB cap, methods and resource guards, new 48 h window. 132 focused checks pass. Host retry pending; no biological result, scientific-scope change, contact/cloud purchase/merge or reopened closed cycle. Standing local authorization persists.
+
 ## Current local raw recovery: complete control, WSL interop guard corrected — 13 November 2026
 
 User final v4 receipts establish both complete verified control FASTQs, fastp finished (70,948,578 retained pairs, 246 s), alignment started without completed summary/count. The supervisor failed on WSL Windows-executable interop while checking physical C: space; cleanup_error null. Final settled ledger **5,858,614,698 observed / 5,859,663,274 charged**, 233/233 completed, no active requests. No biological result or resource shortage established. [Evidence and correction](../reports/gse252892-drvfs-continuation-20261113/REPORT.md).
