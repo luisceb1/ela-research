@@ -1,5 +1,11 @@
 # Current backlog — 2026-11-04
 
+## Original metadata archive verified; bounded cycle closed — 14 November 2026
+
+Received original ZIP SHA256 **c8751b9610512791ba40a613449ad332833ff557e8c371f96e118636361e4617** (1,091,994 bytes). [Executed audit](../reports/gse252892-audit-verification-20261114/REPORT.md) passes all1,463 member hashes, seven proposal/base identities/claims, 41 runtime-code hashes and557 embedded file bindings; six-attempt accounting reconciles with the retained1 MiB uncertainty. Final13,006,020,409 observed /13,007,068,985 charged, under14 GB. Original results/supervision equal transcriptions; counts remain106/0/0 control and41/0/3 KD. No discrepancies found in these checks.
+
+Metadata archival verification is complete; raw FASTQs were not replayed or rehashed by the agent, and this is not independent biological validation. Existing low-support/single-background limits and closures stand. No source files deleted/moved; cleanup needs actual host inventory and a retention decision. Keep ZIP/backup, raw FASTQs and index meanwhile. No extra analysis/download/contact/cloud spend/merge.
+
 ## Original audit metadata packaging prepared — 14 November 2026
 
 Luis authorized archival after the completed low-support result. A bounded offline [metadata packager](../reports/gse252892-audit-package-20261114/REPORT.md) binds completed run06/result/ledger and six-root lineage, copies allowlisted plans/counts/QC/failure receipts only, and verifies a SHA256 member manifest. No raw input, analysis, network, source deletion or merge. Ten archive regressions plus six prior scientific/lineage controls pass. The actual Windows ZIP and independent inspection remain pending host execution/upload; completed measurement and all scientific limits are unchanged. Keep originals until archival verification.

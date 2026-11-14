@@ -1,0 +1,11 @@
+{
+  "reports/gse252892-audit-verification-20261114/REPORT.md": "52b0ef13216990b17764e6531f2eddca5e6e9057525b79dd748897ad1bf0dadf",
+  "reports/gse252892-audit-verification-20261114/original/GSM8009878-hisat2-summary.txt": "f46e295de33951222f1c71bf1dc54135698a3b11ae9a9431c728a8c2e21ca414",
+  "reports/gse252892-audit-verification-20261114/original/GSM8009878-junction-counts.json": "a2b9a262a79c918cb9268fbc296233be2d7be5ca74327174342d9caf6931934a",
+  "reports/gse252892-audit-verification-20261114/original/GSM8009881-hisat2-summary.txt": "e770f8954f31642ba1cdcb096f6d3b3f871236e95e4e431806517f287f63689a",
+  "reports/gse252892-audit-verification-20261114/original/GSM8009881-junction-counts.json": "0474cc1bf43fab059ba8f92a94359404fd99b698acc4a0c6e13ce8d63c7aec06",
+  "reports/gse252892-audit-verification-20261114/original/result.json": "cff8f502e7a400d78847ed49b83949b9b561425653a6fa1a32e6a5f42f84c152",
+  "reports/gse252892-audit-verification-20261114/original/supervision.json": "379434f79b7ecde651e7f4f5e890fb99c775d5b12fa36702766126d5ab0a72fe",
+  "reports/gse252892-audit-verification-20261114/original/transfer-ledger.json": "2915f382482aacc4fab58b4673ef632b39c3cdcca6ff3c04de6a1b853c41438b",
+  "reports/gse252892-audit-verification-20261114/verification.json": "501f3ad962071fd99c9d308c6d4652ecdb4995139824646ebba19b0eb983533c"
+}

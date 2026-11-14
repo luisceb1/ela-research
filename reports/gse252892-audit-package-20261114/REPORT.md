@@ -1,3 +1,5 @@
+Current status: the original user metadata ZIP has now been received and verified; see [executed audit](../gse252892-audit-verification-20261114/REPORT.md). Earlier pending-archive statements below describe the prior stage. No raw-data replay was performed.
+
 # Metadata audit package — 14 November 2026
 
 The bounded two-library measurement is closed with [106/0/0 and 41/0/3](../gse252892-local-result-20261114/REPORT.md). Luis authorized preserving the original audit metadata before cleanup. No new analysis, transfer, raw-data replay, cleanup or merge.

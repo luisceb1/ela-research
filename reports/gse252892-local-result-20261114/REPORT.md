@@ -1,3 +1,5 @@
+Current status: the original user metadata ZIP has now been received and verified; see [executed audit](../gse252892-audit-verification-20261114/REPORT.md). Earlier pending-archive statements below describe the prior stage. No raw-data replay was performed.
+
 # GSE252892 complete local measurement — 14 November 2026
 
 ## Evidence and provenance
