@@ -1,0 +1,19 @@
+{
+  "status": "passed",
+  "python": "3.12.14",
+  "patterns": {
+    "test_package_gse252892_audit.py": 10,
+    "test_gse252892_range_lineage.py": 6
+  },
+  "discovered": 16,
+  "run": 16,
+  "executed": 16,
+  "passed": 16,
+  "failures": [],
+  "errors": [],
+  "skipped": [],
+  "expected_failures": [],
+  "unexpected_successes": [],
+  "missing_patterns": [],
+  "fail_on_skip": true
+}

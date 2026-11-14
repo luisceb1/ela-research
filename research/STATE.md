@@ -1,5 +1,9 @@
 # Current research state — 2026-11-04
 
+## Original audit metadata packaging prepared — 14 November 2026
+
+Luis authorized archival after the completed low-support result. A bounded offline [metadata packager](../reports/gse252892-audit-package-20261114/REPORT.md) binds completed run06/result/ledger and six-root lineage, copies allowlisted plans/counts/QC/failure receipts only, and verifies a SHA256 member manifest. No raw input, analysis, network, source deletion or merge. Ten archive regressions plus six prior scientific/lineage controls pass. The actual Windows ZIP and independent inspection remain pending host execution/upload; completed measurement and all scientific limits are unchanged. Keep originals until archival verification.
+
 ## Complete GSE252892 local measurement: low cryptic support — 14 November 2026
 
 User run06 completed both fixed libraries: **control canonical/left/right 106/0/0; TDP-43 KD 41/0/3**, in eligible paired query-groups per event with anchor 15. Canonical control passed; neither cryptic event reaches the historical 20-group **descriptive diagnostic**, which is not an inference gate. Preserve the three KD right-junction groups; zeros are observed non-detections, not biological absence. No effect/ratio/PSI/p-value, causal depth explanation, donor validation or functional recovery. [Exact result, QC and limits](../reports/gse252892-local-result-20261114/REPORT.md).
