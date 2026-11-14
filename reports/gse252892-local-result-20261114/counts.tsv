@@ -1,0 +1,3 @@
+gsm	condition	canonical	cryptic_left	cryptic_right	unit
+GSM8009878	control	106	0	0	paired_query_group_per_event_anchor15
+GSM8009881	TDP43_KD	41	0	3	paired_query_group_per_event_anchor15

@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "source": "user terminal transcription, not independent raw-data replay",
+  "checks": [
+    "paired-read category sums",
+    "unique eligible groups match HISAT2 unique concordant pairs",
+    "rejected groups match multiple concordant pairs",
+    "alignment groups equal unique plus rejected",
+    "fixed per-event support diagnostic flags"
+  ]
+}

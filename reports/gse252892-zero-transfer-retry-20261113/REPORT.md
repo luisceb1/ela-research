@@ -1,3 +1,5 @@
+Current outcome: run06 completed with low cryptic support; see [exact counts and limits](../gse252892-local-result-20261114/REPORT.md). Earlier pending-host wording below is historical.
+
 # Zero-transfer retry after user interruption — 13 November 2026
 
 The [user final receipts](user-interruption.json) confirm KeyboardInterrupt after 98.115 s during fastp, cleanup_error null, **zero new observed/charged transfer, zero requests and no active requests**. Original complete control FASTQs remain available. A second prepare refused existing output/root, correctly preventing overwrite. No completed scientific count is demonstrated.

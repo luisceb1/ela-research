@@ -1,0 +1,20 @@
+{
+  "status": "completed",
+  "failure": null,
+  "elapsed_seconds": 16577.236742248002,
+  "peak_sampled_group_rss_bytes": 4850765824,
+  "peak_sampled_combined_root_bytes": 101471660394,
+  "caps": {
+    "transfer_bytes": 14000000000,
+    "wall_seconds": 172800,
+    "root_bytes": 107374182400,
+    "windows_reserve_bytes": 53687091200,
+    "group_rss_bytes": 6442450944,
+    "process_as_bytes": 8589934592,
+    "cpus": 2
+  },
+  "limitations": "RSS/disk are sampled, not kernel aggregate quotas; uninterruptible I/O/escape not guaranteed controllable",
+  "raw_transfer_ledger": "transfer-ledger.json",
+  "plan_sha256": "61c5f2c73e762ed23d9c940ce7db2b3043713169311e4594d8f87e51d0332369",
+  "cleanup_error": null
+}

@@ -1,5 +1,11 @@
 # Current research state — 2026-11-04
 
+## Complete GSE252892 local measurement: low cryptic support — 14 November 2026
+
+User run06 completed both fixed libraries: **control canonical/left/right 106/0/0; TDP-43 KD 41/0/3**, in eligible paired query-groups per event with anchor 15. Canonical control passed; neither cryptic event reaches the historical 20-group **descriptive diagnostic**, which is not an inference gate. Preserve the three KD right-junction groups; zeros are observed non-detections, not biological absence. No effect/ratio/PSI/p-value, causal depth explanation, donor validation or functional recovery. [Exact result, QC and limits](../reports/gse252892-local-result-20261114/REPORT.md).
+
+Supervision completed without cleanup error in ~4 h 36 min, peak sampled RSS 4,850,765,824 bytes/disk101,471,660,394 bytes; global mapping92.29%/91.59%. Evidence is user-pasted output; agent did not replay raw FASTQs. Host proposal61c5f2c7…/runtime49afddbe…; original plan/final ledger/receipt package remains to be archived. Close this bounded two-library measurement with support insufficient under its fixed diagnostic; no automatic extra libraries or parameter changes. Existing #37/#44/STMN2 closures and AD/author waiting status unchanged. No merge/contact/spend.
+
 ## Current local execution: user interruption, zero transfer confirmed — 13 November 2026
 
 User final v5 receipts confirm KeyboardInterrupt at 98.115 s during fastp, cleanup_error null, **zero new observed/charged bytes, zero requests, no active requests**. Both original full control FASTQs remain reusable after rehashing. Existing-output rejection prevented an accidental overwrite. [Final evidence/retry](../reports/gse252892-zero-transfer-retry-20261113/REPORT.md).
