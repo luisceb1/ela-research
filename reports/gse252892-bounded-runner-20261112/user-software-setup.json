@@ -1,0 +1,10 @@
+{
+  "source": "user-supplied terminal attachment; not remote host inspection",
+  "attachment_sha256": "7c83d130ac45b43cc8da1053427b66068efd6605ab6b84854ab99481193dd314",
+  "host": "Ubuntu-24.04 WSL2",
+  "fastp_reported_version": "0.23.4",
+  "package_reported_version": "0.23.4+dfsg-1",
+  "libisal2_reported_version": "2.31.0-0.1build1",
+  "raw_execution_started": false,
+  "prior_disabled_descriptor_sha256": "97a578839d72088bab1403b0c9ef6bd9b8e3ff064bbe3008314fb34545b6af26"
+}

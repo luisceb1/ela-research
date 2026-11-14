@@ -1,5 +1,13 @@
 # Current research state — 2026-11-04
 
+## Local execution preparation blocked at PowerShell discovery — 12 November 2026
+
+Luis's attempt at `ddfd621` passed earlier preparation steps but stopped locating `powershell.exe` through PATH; no execution proposal was written by that attempt and no raw transfer began. [Failure and regression record](../reports/gse252892-bounded-runner-20261112/REPORT.md#preparation-failure-and-discovery-correction). Discovery now also tries the explicit standard Windows path, while actual C: free-space measurement and the 50 GiB reserve remain mandatory. Live success of the fallback is still pending user retry. No library, estimator, cap or stop rule changes; the disabled base descriptor and existing cycle closures are unchanged.
+
+## Bounded raw executor prepared for review — 12 November 2026
+
+Luis's terminal attachment confirms fastp 0.23.4. A prospective [two-library specification](plans/2026-11-12-gse252892-bounded-execution.md) precedes the [new executor](../reports/gse252892-bounded-runner-20261112/REPORT.md). Preparation performs no raw transfer; execution requires the concrete proposal SHA and explicit 14 GB cap acceptance. Control first; KD only after canonical >0. CPU, sampled memory/disk, wall time, checksums and retained failure receipts are implemented/tested, not benchmarked on the real inputs. Counts are paired query-group/event/library with anchor 15, not assumed interchangeable with recount3 support or an inferential KD effect. The runner is a separate stacked PR on #76, unmerged and unexecuted; no raw transfer is authorized by this entry. Existing closures and waiting communications/access are unchanged.
+
 ## Local disabled descriptor prepared on user host — 12 November 2026
 
 Luis supplied a successful terminal summary from the pinned `4fa5346` preparer: 9 index members, 4 input-file entries and zero raw bytes downloaded; descriptor SHA256 `97a578839d72088bab1403b0c9ef6bd9b8e3ff064bbe3008314fb34545b6af26`. [Receipt and limits](../reports/local-raw-feasibility-20261112/user-prepared-summary.json). Full descriptor bytes have not been inspected by the agent. Resource/assay/runner gates remain unresolved. GEO documents fastp adapter trimming followed by STAR; a future HISAT2 count workflow must document its differences and processing parameters. Local fastp installation/version confirmation is the next setup step. No sequencing transfer or old-pilot activation is authorized by this receipt.

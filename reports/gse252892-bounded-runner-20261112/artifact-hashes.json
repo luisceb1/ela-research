@@ -1,0 +1,8 @@
+{
+  "scripts/run_gse252892_local.py": "7f7b8cddb934c945a10ee38038d15e2694dbcd892025fc64b85eae8ad16e4eb8",
+  "scripts/prepare_gse252892_local.py": "cd21092c55cf23d9698485f192e16b7564e23d1d35c63e05c3c80a326605aba8",
+  "tests/test_run_gse252892_local.py": "52abf236065cac78451cfdca3ee69a99d718a13e528b06a5f67aa3d35552eb74",
+  "research/plans/2026-11-12-gse252892-bounded-execution.md": "f7ea17fbd5f763b698ea50c35e5392be8558b3f42b44e0cde7da4f372683b7e0",
+  "research/references/unc13a_targets_sealed.json": "e35f6e05016b30eab89f8d3aacc2d4ec101840e24e2b6f07159e6c5235d0bc3a",
+  "reports/local-raw-feasibility-20261112/fastq-manifest.tsv": "c29e8b64c5fd8affb399bf7ff19dbc15a51b6aba7f53cf000129c6ca316eaae1"
+}
