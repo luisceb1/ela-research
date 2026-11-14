@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "python": "3.12.14",
+  "patterns": {
+    "test_stmn2_paired_control.py": 20,
+    "test_gse252892_range_lineage.py": 6,
+    "test_gse252892_drvfs.py": 10,
+    "test_gse252892_disk_sampling.py": 6
+  },
+  "discovered": 42,
+  "run": 42,
+  "executed": 42,
+  "passed": 42,
+  "failures": [],
+  "errors": [],
+  "skipped": [],
+  "expected_failures": [],
+  "unexpected_successes": [],
+  "missing_patterns": [],
+  "fail_on_skip": true
+}
