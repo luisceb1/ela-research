@@ -1,0 +1,24 @@
+{
+  "status": "passed",
+  "python": "3.12.14",
+  "patterns": {
+    "test_gse252892_after_sampler.py": 15,
+    "test_gse252892_disk_sampling.py": 6,
+    "test_gse252892_retained_blocks.py": 16,
+    "test_gse252892_range_transport.py": 20,
+    "test_gse252892_range_lineage.py": 6,
+    "test_run_gse252892_local.py": 37,
+    "test_prepare_gse252892_local.py": 7
+  },
+  "discovered": 107,
+  "run": 107,
+  "executed": 107,
+  "passed": 107,
+  "failures": [],
+  "errors": [],
+  "skipped": [],
+  "expected_failures": [],
+  "unexpected_successes": [],
+  "missing_patterns": [],
+  "fail_on_skip": true
+}

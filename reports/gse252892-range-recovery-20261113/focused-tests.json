@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "python": "3.12.14",
+  "patterns": {
+    "test_gse252892_range_transport.py": 20,
+    "test_gse252892_range_lineage.py": 6,
+    "test_run_gse252892_local.py": 37,
+    "test_prepare_gse252892_local.py": 7
+  },
+  "discovered": 70,
+  "run": 70,
+  "executed": 70,
+  "passed": 70,
+  "failures": [],
+  "errors": [],
+  "skipped": [],
+  "expected_failures": [],
+  "unexpected_successes": [],
+  "missing_patterns": [],
+  "fail_on_skip": true
+}

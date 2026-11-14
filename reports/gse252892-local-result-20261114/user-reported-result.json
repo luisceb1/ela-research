@@ -1,0 +1,55 @@
+{
+  "project": "SRP482832",
+  "libraries": [
+    {
+      "counts": {
+        "canonical": 106,
+        "cryptic_left": 0,
+        "cryptic_right": 0
+      },
+      "qc": {
+        "sam_records": 139759296,
+        "alignment_groups": 65478552,
+        "eligible_groups": 61077456,
+        "marked_duplicate_records": 0,
+        "rejected_groups": 4401096
+      },
+      "unit": "contiguous paired query group/event/library; anchor 15",
+      "positive_control_measured": true,
+      "support_at_least_20_groups": {
+        "cryptic_left": false,
+        "cryptic_right": false
+      },
+      "interpretation": "Below-diagnostic support is insufficient, not a biological zero. No effect or ratio.",
+      "gsm": "GSM8009878",
+      "project": "SRP482832",
+      "complete": true
+    },
+    {
+      "counts": {
+        "canonical": 41,
+        "cryptic_left": 0,
+        "cryptic_right": 3
+      },
+      "qc": {
+        "sam_records": 176641092,
+        "alignment_groups": 82407283,
+        "eligible_groups": 76494020,
+        "marked_duplicate_records": 0,
+        "rejected_groups": 5913263
+      },
+      "unit": "contiguous paired query group/event/library; anchor 15",
+      "positive_control_measured": true,
+      "support_at_least_20_groups": {
+        "cryptic_left": false,
+        "cryptic_right": false
+      },
+      "interpretation": "Below-diagnostic support is insufficient, not a biological zero. No effect or ratio.",
+      "gsm": "GSM8009881",
+      "project": "SRP482832",
+      "complete": true
+    }
+  ],
+  "analysis": "technical descriptive counts only",
+  "status": "completed"
+}

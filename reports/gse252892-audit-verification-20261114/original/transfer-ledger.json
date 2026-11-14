@@ -1,0 +1,20 @@
+{
+  "prior_charge_bytes": 5859663274,
+  "prior_observed_body_bytes": 5858614698,
+  "prior_unobserved_bytes_charged": 1048576,
+  "new_observed_body_bytes": 7147405711,
+  "actual_body_bytes": 13006020409,
+  "new_charged_upper_bytes": 7147405711,
+  "body_upper_bound_bytes": 13007068985,
+  "cap_bytes": 14000000000,
+  "request_attempts": 863,
+  "completed_attempts": 863,
+  "active_requests": [],
+  "last_completed": {
+    "id": 862,
+    "status": "complete",
+    "observed_bytes": 8388608,
+    "charged_bytes": 8388608
+  },
+  "receipt_directory": "/home/luisceb/ela-gse252892-interrupt-run-06/transport-receipts"
+}

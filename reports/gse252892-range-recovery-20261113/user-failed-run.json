@@ -1,0 +1,16 @@
+{
+  "status": "failed_partial_not_interpretable",
+  "evidence": "user-supplied terminal output; original host files not fetched by agent",
+  "attachment_sha256": "c966f1f62010673d48beea18b64f5c118864d6e47b91f2e49a8c7d21cbd8480c",
+  "old_plan_sha256": "911c5be6f8a470d085ab57279ee8d3ce40bb31edcb990a3064238d9c4b9d9a9f",
+  "http_status": 200,
+  "expected_first_file_bytes": 2772553416,
+  "observed_and_charged_bytes": 351927726,
+  "observed_prefix_sha256": "ee7762da8dc57e0ab9878fbf449cb7f933fd7f95c6a32c4e93be5dc2c3c5d2aa",
+  "error": "Raw length/MD5 mismatch",
+  "elapsed_seconds": 2098.952085555,
+  "peak_sampled_group_rss_bytes": 38105088,
+  "cleanup_error": null,
+  "fastp_or_alignment_reached": false,
+  "underlying_network_or_server_cause": "unknown"
+}

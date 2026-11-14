@@ -1,0 +1,3 @@
+gsm	condition	paired_reads	concordant_zero	concordant_unique	concordant_multiple	global_alignment_percent
+GSM8009878	control	70948578	5470026	61077456	4401096	92.29
+GSM8009881	TDP43_KD	89969380	7562097	76494020	5913263	91.59

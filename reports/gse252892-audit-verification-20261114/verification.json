@@ -1,0 +1,163 @@
+{
+  "status": "passed",
+  "zip_sha256": "c8751b9610512791ba40a613449ad332833ff557e8c371f96e118636361e4617",
+  "zip_bytes": 1091994,
+  "metadata_members": 1463,
+  "manifest_sha256": "e50ce1807a88f2890e905f4590e03eba882ff08dc7bc10f8ea9f650e8b6a1a09",
+  "metadata_payload_bytes": 1959447,
+  "plan_count": 7,
+  "runtime_code_hash_checks": 41,
+  "distinct_embedded_file_bindings": 557,
+  "plans": [
+    {
+      "member": "plans/ela-gse252892-after-sampler-execution-20261113.json",
+      "sha256": "c7a2fee183c48f5fd8c925bd65402ead0f9e44127df89ea8a690b48944a93528",
+      "runtime_commit": "0ee43bf6dbbdd215c8f4d7c7411c64f759e0117c"
+    },
+    {
+      "member": "plans/ela-gse252892-drvfs-execution-20261113.json",
+      "sha256": "7a39bc2df33e54d95846bb309292d57aa5f0aa35607427f80c8d4d7aaaadaec0",
+      "runtime_commit": "30c7442975cc9fc8c6128a14210bf1ceb005344f"
+    },
+    {
+      "member": "plans/ela-gse252892-execution-20261112.json",
+      "sha256": "911c5be6f8a470d085ab57279ee8d3ce40bb31edcb990a3064238d9c4b9d9a9f",
+      "runtime_commit": "66eb85865719bde68397fa48bc7cfbb26cda5fbc"
+    },
+    {
+      "member": "plans/ela-gse252892-interrupt-execution-20261113.json",
+      "sha256": "61c5f2c73e762ed23d9c940ce7db2b3043713169311e4594d8f87e51d0332369",
+      "runtime_commit": "49afddbe0071f5552860cb474a1544e027646ea5"
+    },
+    {
+      "member": "plans/ela-gse252892-prepared-20261112.json",
+      "sha256": "97a578839d72088bab1403b0c9ef6bd9b8e3ff064bbe3008314fb34545b6af26",
+      "runtime_commit": "4fa5346cadef5f4b66a040dd1fc8818545f26692"
+    },
+    {
+      "member": "plans/ela-gse252892-range-execution-20261113.json",
+      "sha256": "98a89d95c199fb13e90ac5f68c2b33cec1251daf62313d83ec4b4b1fe649af6d",
+      "runtime_commit": "69a33bcc7bb61311b717a5634b642a8245d29d5f"
+    },
+    {
+      "member": "plans/ela-gse252892-retained-execution-20261113.json",
+      "sha256": "e131b017001b8f8f5b877c2aeb1aa4589609f9639f1c5b4093af9de359fac1ca",
+      "runtime_commit": "59cdcc1e59a4ee6ec0b45e40d3a8aa196e3ed284"
+    }
+  ],
+  "runs": [
+    {
+      "run": 1,
+      "status": "failed",
+      "failure": "Worker failed; inspect worker.log/failure receipt",
+      "durable_requests": 0,
+      "durable_statuses": {},
+      "new_observed_bytes": 351927726,
+      "conservative_lineage_bytes": 351927726
+    },
+    {
+      "run": 2,
+      "status": "failed",
+      "failure": "Worker failed; inspect worker.log/failure receipt",
+      "durable_requests": 60,
+      "durable_statuses": {
+        "complete": 50,
+        "failed": 10
+      },
+      "new_observed_bytes": 1759157246,
+      "conservative_lineage_bytes": 2111084972
+    },
+    {
+      "run": 3,
+      "status": "failed",
+      "failure": "[Errno 2] No such file or directory: '/home/luisceb/ela-gse252892-retained-run-03/transport-receipts/000232.json.tmp'",
+      "durable_requests": 232,
+      "durable_statuses": {
+        "complete": 217,
+        "failed": 15
+      },
+      "new_observed_bytes": 1851407187,
+      "conservative_lineage_bytes": 3963540735
+    },
+    {
+      "run": 4,
+      "status": "failed",
+      "failure": "Cannot query real C: free space through /mnt/c/Windows/System32/WindowsPowerShell/v1.0/powershell.exe; verify Windows executable interop in this WSL distribution",
+      "durable_requests": 233,
+      "durable_statuses": {
+        "complete": 226,
+        "failed": 7
+      },
+      "new_observed_bytes": 1896122539,
+      "conservative_lineage_bytes": 5859663274
+    },
+    {
+      "run": 5,
+      "status": "failed",
+      "failure": "KeyboardInterrupt",
+      "durable_requests": 0,
+      "durable_statuses": {},
+      "new_observed_bytes": 0,
+      "conservative_lineage_bytes": 5859663274
+    },
+    {
+      "run": 6,
+      "status": "completed",
+      "failure": null,
+      "durable_requests": 863,
+      "durable_statuses": {
+        "complete": 852,
+        "failed": 11
+      },
+      "new_observed_bytes": 7147405711,
+      "conservative_lineage_bytes": 13007068985
+    }
+  ],
+  "recorded_complete_inputs": [
+    {
+      "gsm": "GSM8009878",
+      "file": "SRR27477544_1.fastq.gz",
+      "bytes": 2772553416,
+      "recorded_md5": "ab0a84e544fa6e2fc1e8c901d0c55675",
+      "recorded_sha256": "ddd42a540b6d01ca2405692cd6bf65ae35485c8b5e66f8eda2aec5fc62086bb6"
+    },
+    {
+      "gsm": "GSM8009878",
+      "file": "SRR27477544_2.fastq.gz",
+      "bytes": 2913274103,
+      "recorded_md5": "017494b464222c58dc7c096e04ab59cb",
+      "recorded_sha256": "3dbaa49e5d28084c261921199c25044b7fe9e89129278df037c64e90e7c27354"
+    },
+    {
+      "gsm": "GSM8009881",
+      "file": "SRR27477541_1.fastq.gz",
+      "bytes": 3531400977,
+      "recorded_md5": "a8349bedaf4d2b453b3a022295f29f4f",
+      "recorded_sha256": "5eba3962dd2cdbdaca2105ce451d60decd106be3336bd82e073ca8f66e86a449"
+    },
+    {
+      "gsm": "GSM8009881",
+      "file": "SRR27477541_2.fastq.gz",
+      "bytes": 3609364535,
+      "recorded_md5": "4f070f2bb19dccc2d861343a1385c675",
+      "recorded_sha256": "bf61fdae165d18f941c309a756e26b9bbf532059268a60ef5196a22e2483fe0f"
+    }
+  ],
+  "counts": {
+    "GSM8009878": {
+      "canonical": 106,
+      "cryptic_left": 0,
+      "cryptic_right": 0
+    },
+    "GSM8009881": {
+      "canonical": 41,
+      "cryptic_left": 0,
+      "cryptic_right": 3
+    }
+  },
+  "final_observed_bytes": 13006020409,
+  "final_conservative_charge_bytes": 13007068985,
+  "uncertain_reservation_carried_bytes": 1048576,
+  "raw_inputs_replayed_or_rehashed": false,
+  "external_independent_review": false
+}
