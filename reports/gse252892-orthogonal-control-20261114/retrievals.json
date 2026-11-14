@@ -1,0 +1,31 @@
+{
+  "selection_committed_before_review": "15ebbbdf51103434c903de0e2b296762ef8a8b81",
+  "calls": [
+    {
+      "order": 1,
+      "type": "open",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12586192/",
+      "outcome": "primary article retrieved; reused study previously inventoried"
+    },
+    {
+      "order": 2,
+      "type": "reference_click",
+      "outcome": "recaptcha; no original reference content read"
+    },
+    {
+      "order": 3,
+      "type": "targeted_search",
+      "query": "Melamed 2019 premature polyadenylation STMN2 TDP-43 human motor neurons RNA sequencing PMC",
+      "outcome": "identified original selected STMN2 paper; incidental other results not reviewed"
+    },
+    {
+      "order": 4,
+      "type": "open",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6348009/",
+      "outcome": "original primary article read"
+    }
+  ],
+  "primary_works_reviewed": 2,
+  "raw_sequencing_bytes_transferred": 0,
+  "origin_HTTP_byte_metering": "not exposed by web service; text retrieval allowance not asserted to be an origin-network cap"
+}

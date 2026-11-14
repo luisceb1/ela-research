@@ -1,5 +1,11 @@
 # Current research state — 2026-11-04
 
+## Orthogonal STMN2 response-control prepared — 14 November 2026
+
+Luis authorized a new control question on the same fixed GSE252892 control/KD libraries. [Prospective selection](plans/2026-11-14-gse252892-orthogonal-control-selection.md) preceded primary review; [execution](plans/2026-11-14-gse252892-stmn2-execution.md) preceded implementation/counts. Sole selected event is the existing sealed STMN2 exon1/cryptic-terminal-exon junction, with canonical control. [Primary-source decision, runner and limits](../reports/gse252892-orthogonal-control-20261114/README.md). This is descriptive orthogonal-marker compatibility, not per-library protein efficacy, independent biological validation, a donor/STMN2-cycle reopening or a change to UNC13A.
+
+The study-specific RNA/3'-end assay limitation remains: a supported junction may be compatible with the known TDP-43-loss response; nondetection/low support is indeterminate and cannot establish KD failure. No effect/ratio/PSI/p-value or alternate-marker tuning. Zero-network runner rehashes existing FASTQs/tools/index, reuses original input paths and old processing options, measures both libraries with a chr8/plus counter using old paired-group filters. Fixed local resource envelope spans all seven roots; prior physical-C/sampler guards retained. Prepare includes read-only intermediate inventory. 42 focused checks pass; actual host prepare/execution/counts remain pending. No cleanup/contact/cloud spend/merge. Closed UNC13A and prior 45-donor cycles remain closed.
+
 ## Original metadata archive verified; bounded cycle closed — 14 November 2026
 
 Received original ZIP SHA256 **c8751b9610512791ba40a613449ad332833ff557e8c371f96e118636361e4617** (1,091,994 bytes). [Executed audit](../reports/gse252892-audit-verification-20261114/REPORT.md) passes all1,463 member hashes, seven proposal/base identities/claims, 41 runtime-code hashes and557 embedded file bindings; six-attempt accounting reconciles with the retained1 MiB uncertainty. Final13,006,020,409 observed /13,007,068,985 charged, under14 GB. Original results/supervision equal transcriptions; counts remain106/0/0 control and41/0/3 KD. No discrepancies found in these checks.
