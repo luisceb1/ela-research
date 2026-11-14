@@ -47,4 +47,3 @@ def count_records(records,targets):
             'positive_control_measured':counts['canonical']>0,
             'support_at_least_20_groups':{k:counts[k]>=20 for k in ('cryptic',)},
             'interpretation':'Below-diagnostic support is insufficient, not a biological zero. No effect or ratio.'}
-

@@ -1,6 +1,6 @@
 {
   "scripts/run_gse252892_stmn2_control.py": "a1a91c4daea408ff56820704c649888ab1e669370a7a3e02ea8777ce8835a8b6",
-  "scripts/stmn2_paired_control_counts.py": "9b1c895c72286c7efb50ee3c8e8d955a6b9b3b29be20c2690d1f8668702c2a79",
+  "scripts/stmn2_paired_control_counts.py": "f0c6bf58b9dcabe5caa5b668b9ad0a994f83f1b925abf0ff756deb17790922e5",
   "tests/test_stmn2_paired_control.py": "7dd84672661302a35caf0c703d95f1d95e99ff9050cec1793df1f50f0b07aedd",
   "research/references/stmn2_targets_sealed.json": "df954f2bf30f90250eadf541e54a18abdfa3d9af841f89849aad65238807bba1",
   "research/references/unc13a_targets_sealed.json": "e35f6e05016b30eab89f8d3aacc2d4ec101840e24e2b6f07159e6c5235d0bc3a"
