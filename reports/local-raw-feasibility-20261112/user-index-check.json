@@ -1,0 +1,19 @@
+{
+  "status": "user_reported_index_hashes_match_record",
+  "date": "2026-11-12",
+  "source": "Luis terminal output in conversation; not agent access to the Windows/WSL filesystem",
+  "reference_record": "reports/hisat2-index-inspection-20261031/verified_index.json",
+  "matched_members": 9,
+  "reported_sha256": {
+    "genome.1.ht2": "75c666c1bdcc6bd346a751e7277d26ce518c1e9a2612c301317248e3a4ee6014",
+    "genome.2.ht2": "ee1502737c1fe27706a91179584f99146102da7eac08ff5f76e9657476af619d",
+    "genome.3.ht2": "d7ecd66f14894242cb5153471028bb4f94bebd920c2c025c08ec24bcb13e6df5",
+    "genome.4.ht2": "2f5112d9a0c0855eea028ea4181e2af9dd261cdadac3eff541415dd5eb4ea413",
+    "genome.5.ht2": "07400123a5033f85fd0152aae0a513771b5f5ba1afe878839bd9624b483fa503",
+    "genome.6.ht2": "4a8f0d36ac6e459bbf682a5979de5e5d4883cd42a22866093d730797c87e35ae",
+    "genome.7.ht2": "7c9fa136d4413fa6173637e883b6998d32e1d675f88cddff9dcbcf331820f4b8",
+    "genome.8.ht2": "7c9fa136d4413fa6173637e883b6998d32e1d675f88cddff9dcbcf331820f4b8",
+    "make_hg38.sh": "9e29e570495a5b237fce579bd5b2059f600ff061cdbc12c2438623e9ffad27d2"
+  },
+  "limits": "No new sequence-equality, reference/assay compatibility, RAM/runtime or biological measurement validation; offline preparer will recheck files on the host."
+}

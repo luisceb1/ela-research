@@ -1,0 +1,16 @@
+[
+  {
+    "source": "GSE252892",
+    "url": "https://www.ebi.ac.uk/ena/portal/api/filereport?accession=PRJNA1063175&result=read_run&fields=study_accession%2Csecondary_study_accession%2Cexperiment_accession%2Crun_accession%2Csample_accession%2Clibrary_strategy%2Clibrary_layout%2Cread_count%2Cbase_count%2Cfastq_ftp%2Cfastq_bytes%2Cfastq_md5&format=tsv",
+    "body_bytes": 4171,
+    "body_sha256": "a7582e8d3b2a19a2b9ff5410285d288a09fb9b61edef7c7808609d4809647f6d",
+    "status": 200
+  },
+  {
+    "source": "GSE299341",
+    "url": "https://www.ebi.ac.uk/ena/portal/api/filereport?accession=PRJNA1273942&result=read_run&fields=study_accession%2Csecondary_study_accession%2Cexperiment_accession%2Crun_accession%2Csample_accession%2Clibrary_strategy%2Clibrary_layout%2Cread_count%2Cbase_count%2Cfastq_ftp%2Cfastq_bytes%2Cfastq_md5&format=tsv",
+    "body_bytes": 32113,
+    "body_sha256": "df3e1983b5f6e407c815bfbd42fb7bb55ada45c368f981f736183a8b426634e2",
+    "status": 200
+  }
+]

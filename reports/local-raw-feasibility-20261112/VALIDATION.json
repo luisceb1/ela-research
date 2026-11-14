@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "scope": "metadata/manifest only; no FASTQ fetched or biological count measured",
+  "requests": 2,
+  "metadata_body_bytes": 36284,
+  "raw_body_bytes": 0,
+  "geo_srx_links_verified_against_original_stageA_bytes": 16,
+  "manifest_files": 52,
+  "unique_fastq_urls": 52,
+  "host_evidence": "user terminal output; not direct filesystem inspection",
+  "provisional_first_control_KD_pair_bytes": 12826593031
+}

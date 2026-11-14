@@ -1,5 +1,17 @@
 # Current research state — 2026-11-04
 
+## Local disabled descriptor prepared on user host — 12 November 2026
+
+Luis supplied a successful terminal summary from the pinned `4fa5346` preparer: 9 index members, 4 input-file entries and zero raw bytes downloaded; descriptor SHA256 `97a578839d72088bab1403b0c9ef6bd9b8e3ff064bbe3008314fb34545b6af26`. [Receipt and limits](../reports/local-raw-feasibility-20261112/user-prepared-summary.json). Full descriptor bytes have not been inspected by the agent. Resource/assay/runner gates remain unresolved. GEO documents fastp adapter trimming followed by STAR; a future HISAT2 count workflow must document its differences and processing parameters. Local fastp installation/version confirmation is the next setup step. No sequencing transfer or old-pilot activation is authorized by this receipt.
+
+## Local index hash check and disabled preparation — 12 November 2026
+
+Luis's nine reported index hashes match the historical record (8 HISAT2 members plus make script). An [offline preparer/runbook](runbooks/2026-11-12-gse252892-offline-preparation.md) rechecks current local files and writes a disabled descriptor for four fixed GSE252892 FASTQs; no raw execution path or transfer is implemented. Existing tool versions are user-reported. See [comparison and limits](../reports/local-raw-feasibility-20261112/user-index-check.json). Full successful host preparation, resource benchmark, assay/reference review and bounded runner remain pending. No old pilot is reactivated.
+
+## Local raw-data feasibility inventory — 12 November 2026
+
+Luis selected a local-computer route and supplied WSL tool/version evidence. A prospectively bounded [inventory](../reports/local-raw-feasibility-20261112/REPORT.md) prefers previously known **GSE252892 for preparation only**: six total-RNA libraries advertise 12 FASTQs / 40,589,186,698 compressed bytes. The provisional first control/KD inputs advertise four files / 12,826,593,031 bytes; no transfer is authorized/executed by the inventory. GSE299341 advertises 40 files / 86,561,386,307 bytes; unresolved processing/efficacy and one 358,774-byte library remain recorded. Two ENA metadata requests used 36,284 bytes; zero raw/count transfers. This is not independent-donor validation, a KD effect or a reopened #37/#44/STMN2 cycle. A separate hash-locked runner and resource/transfer/stop budget must precede any approved raw execution. Current index integrity, primary-to-library depletion linkage and peak local resources remain unverified. AD workspace/dataset access and author replies are unchanged.
+
 ## PR #53 integrated for review — 12 November 2026
 
 The historical subtype-conditioned Ikegami cycle is now included: pooled rho 0.57367, adjusted rank rho 0.31669, stratified two-sided permutation p=0.07825 and marginal bootstrap 95% interval [-0.02342, 0.62758], using the same 35 cases. The fixed prediction was not met; absence of association, subtype heterogeneity and mechanism are not established. This is internal reproduction, not independent validation. No new fit or raw-data acquisition was performed during integration. [Result](../reports/ikegami-subtype-conditioning-20261110/REPORT.md), [integration/validation](../reports/pr53-integration-20261112/REPORT.md).

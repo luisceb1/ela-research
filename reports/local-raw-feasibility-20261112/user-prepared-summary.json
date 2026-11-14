@@ -1,0 +1,12 @@
+{
+  "status": "prepared_disabled",
+  "evidence": "terminal summary supplied by Luis; full descriptor bytes not read by agent",
+  "repository_commit": "4fa5346cadef5f4b66a040dd1fc8818545f26692",
+  "output": "/home/luisceb/ela-gse252892-prepared-20261112.json",
+  "descriptor_sha256": "97a578839d72088bab1403b0c9ef6bd9b8e3ff064bbe3008314fb34545b6af26",
+  "index_members_verified": 9,
+  "input_files": 4,
+  "advertised_raw_input_bytes": 12826593031,
+  "raw_bytes_downloaded": 0,
+  "execution_enabled": false
+}

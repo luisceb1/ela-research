@@ -1,0 +1,114 @@
+[
+  {
+    "gsm": "GSM8009878",
+    "srx": "SRX23148890",
+    "geo_source_sha256": "981d01622427c89d87d80c9b4c5ef2548720edb12b28a475844cdf335cf1fe9d",
+    "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM8009878",
+    "scope": "reused Stage A metadata; SHA256 matches committed library inventory"
+  },
+  {
+    "gsm": "GSM8009879",
+    "srx": "SRX23148891",
+    "geo_source_sha256": "d3a6f912a44ae92492194174fa1d15d7a2ca87ea5eb735a43fed0724b0793fcf",
+    "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM8009879",
+    "scope": "reused Stage A metadata; SHA256 matches committed library inventory"
+  },
+  {
+    "gsm": "GSM8009880",
+    "srx": "SRX23148892",
+    "geo_source_sha256": "d03a079d2efac55110c2e6ff54f1bd1401c42928169245db8dead9ee016d8733",
+    "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM8009880",
+    "scope": "reused Stage A metadata; SHA256 matches committed library inventory"
+  },
+  {
+    "gsm": "GSM8009881",
+    "srx": "SRX23148893",
+    "geo_source_sha256": "cadb93d2fe2537111c19de469422b437649b270cadb074b0956d831b5ec6e18a",
+    "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM8009881",
+    "scope": "reused Stage A metadata; SHA256 matches committed library inventory"
+  },
+  {
+    "gsm": "GSM8009882",
+    "srx": "SRX23148894",
+    "geo_source_sha256": "86160cc6fbe50df1ca4d41acfefd64089cb1346a83b5a17ff549e9d4bf2ca7dc",
+    "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM8009882",
+    "scope": "reused Stage A metadata; SHA256 matches committed library inventory"
+  },
+  {
+    "gsm": "GSM8009883",
+    "srx": "SRX23148895",
+    "geo_source_sha256": "be98d6ababfc954185bc528d1daafe42ad7d5a0ca21f308015b255768f227d43",
+    "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM8009883",
+    "scope": "reused Stage A metadata; SHA256 matches committed library inventory"
+  },
+  {
+    "gsm": "GSM9037603",
+    "srx": "SRX29112919",
+    "geo_source_sha256": "e83a890097262b44babd4e27d7c5f9ecac5198b238f33a8b5fdd73babf775e63",
+    "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM9037603",
+    "scope": "reused Stage A metadata; SHA256 matches committed library inventory"
+  },
+  {
+    "gsm": "GSM9037604",
+    "srx": "SRX29112920",
+    "geo_source_sha256": "7216dd9bdc36dd27e451a2904ce14372769fbe11b2239862899e92c83f24daf3",
+    "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM9037604",
+    "scope": "reused Stage A metadata; SHA256 matches committed library inventory"
+  },
+  {
+    "gsm": "GSM9037605",
+    "srx": "SRX29112921",
+    "geo_source_sha256": "fd7f491ad5f7dcd79f49d59dd7b3b101c7c29717ea4728916bb36294afd8b27b",
+    "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM9037605",
+    "scope": "reused Stage A metadata; SHA256 matches committed library inventory"
+  },
+  {
+    "gsm": "GSM9037606",
+    "srx": "SRX29112922",
+    "geo_source_sha256": "9c057e9f9baeb72ad331fa33bb39d4db535f1962c89ec5cd18345baad3592fe9",
+    "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM9037606",
+    "scope": "reused Stage A metadata; SHA256 matches committed library inventory"
+  },
+  {
+    "gsm": "GSM9037607",
+    "srx": "SRX29112923",
+    "geo_source_sha256": "d223d5f77d998a2f6651cb1645d368926f61c60f52e97fb96976e9a3914a4475",
+    "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM9037607",
+    "scope": "reused Stage A metadata; SHA256 matches committed library inventory"
+  },
+  {
+    "gsm": "GSM9037613",
+    "srx": "SRX29112929",
+    "geo_source_sha256": "27fa425c38bc4e8a22669cb08fbd65979c90ce2d91159ca7ea0a318b0d957aaa",
+    "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM9037613",
+    "scope": "reused Stage A metadata; SHA256 matches committed library inventory"
+  },
+  {
+    "gsm": "GSM9037614",
+    "srx": "SRX29112930",
+    "geo_source_sha256": "1bb5a0d3d66bf284b6d377faa413f33fbabef74cb607aed910e0aa9a4adbc792",
+    "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM9037614",
+    "scope": "reused Stage A metadata; SHA256 matches committed library inventory"
+  },
+  {
+    "gsm": "GSM9037615",
+    "srx": "SRX29112931",
+    "geo_source_sha256": "cc02beebe5678cb5d95dad54b0d66cba655ed6ab22a5750c5d99d59312987cb0",
+    "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM9037615",
+    "scope": "reused Stage A metadata; SHA256 matches committed library inventory"
+  },
+  {
+    "gsm": "GSM9037616",
+    "srx": "SRX29112932",
+    "geo_source_sha256": "257e05aa07443f720a724153c76ebe8e9d7360124dd750ec56897e943b7597dc",
+    "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM9037616",
+    "scope": "reused Stage A metadata; SHA256 matches committed library inventory"
+  },
+  {
+    "gsm": "GSM9037617",
+    "srx": "SRX29112933",
+    "geo_source_sha256": "4571fccc9d305e236fa4e9d9cd2a424bd68666929e4e846864eef8ab03a6e792",
+    "source_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM9037617",
+    "scope": "reused Stage A metadata; SHA256 matches committed library inventory"
+  }
+]
