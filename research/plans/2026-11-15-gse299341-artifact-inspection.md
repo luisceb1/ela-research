@@ -1,0 +1,7 @@
+# Prospective GSE299341 published-artifact inspection — 15 November 2026
+
+Authorized follow-on to the closed six-call documentary review, parent6cf527b08b1ee2d2db0a5520246e88f71bd1d925, PR80. Inspect only NIH-CARD/Neurite-WT-RBP-KD published code and metadata for UMI/dedup scope, two-run relationship, RNA biological units/batches and tiny GSM9037617. Not a new source screen.
+
+Before artifact queries: cap12 connector requests, at most8 small text/code/sample metadata files, each<=500KB and total<=2MB decoded retained payload. Directory/tree responses allowed; no gene/expression/junction counts, BAM/FASTQ, supplement binary or raw downloads. Pin repository commit before file reads. Never execute remote code. Record files/hashes and exact locators; a failed connector is not proof of absent artifacts. No contacts, spending, sequencing execution or merge.
+
+Prediction: published scripts may clarify UMI extraction and technical merging, but RNA culture independence and tiny-library cause may remain unknown. Resolve a gate only with explicit sample/code linkage. Preserve all ten fixed soma libraries, no inferred missing sample IDs or post-hoc exclusions. No numeric effects, target counts or changed seals/diagnostics. End at cap or sufficient decision. If unresolved, close this artifact inspection and name concrete missing evidence; do not automatically extend to more repositories/routes. Author code is documentation, not proof it was executed on deposited runs. Any future execution requires a separate prospective method and resource plan.
