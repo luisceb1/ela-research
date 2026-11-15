@@ -1,3 +1,5 @@
+Current preparation: host snapshot supplied and tested runner implemented; [resource envelope and limits](HOST_AND_RUNNER.md). Earlier pending-capacity wording below is historical. No new raw execution yet.
+
 # STMN2 remaining-library preparation — 15 November 2026
 
 **Metadata verified; raw execution disabled pending actual host capacity and a tested hash-locked runner.** This is the newly authorized internal STMN2 replication question, not independent-donor validation or an UNC13A extension. Prospective [protocol](../../research/plans/2026-11-15-stmn2-remaining-libraries.md) committed9da7748e45e572b7d81e90d219c4d86cfc510842 before the new metadata query.

@@ -1,5 +1,7 @@
 # Current findings and limits
 
+**Remaining STMN2 host capacity supplied; runner implemented — 15 November 2026.** Physical C524,762,062,848bytes, retained62,488,228,452bytes. Prospective new40GBtransfer/200GiBcombined disk/96hwall,2CPU/6GiBsampledRSS/8GiBAS/50GiBphysical reserve; historical transfer preserved separately.120STMN2 tests pass. Actual hash-locked host prepare/execute pending; no raw results. [Execution preparation](../reports/stmn2-remaining-libraries-20261115/HOST_AND_RUNNER.md).
+
 **Authorized STMN2 remaining-library check prepared — 15 November 2026.** Prospectively fixed4libraries GSM8009879/880/882/883,8FASTQs; refreshed ENA metadata agrees with prior checksums/bytes,27,762,593,667compressed bytes. Prediction: both new KD libraries>=20cryptic groups with canonical support; all4retained, no effects/PSI/donor claims or UNC13A extension. Raw execution disabled until actual host capacity and tested descriptor/runner; standing local CPU/download authorization persists. [Metadata evidence and host-readiness step](../reports/stmn2-remaining-libraries-20261115/REPORT.md).
 
 **Critical evidence brief — 15 November 2026.** [Results, limitations and next-data decisions](EVIDENCE_BRIEF_2026-11-15.md) consolidate current evidence without new analyses or claims. Inputs must pass explicit schema/unit/provenance gates before a separately prospective analysis. No outreach scheduled.
