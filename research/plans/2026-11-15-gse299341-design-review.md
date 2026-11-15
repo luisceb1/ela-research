@@ -1,0 +1,11 @@
+# Prospective GSE299341 design review — 15 November 2026
+
+Base main3fbbac9a89bfb4cae25678ed4d059cfbb7860668. Luis authorized this documentary review after closure of GSE252892. Reassess an already inventoried source, not a new discovery or a reopened effect analysis.
+
+Question: can the ten fixed soma libraries GSM9037603–607 and GSM9037613–617 support a separately proposed descriptive UNC13A/STMN2 measurement? Inspect UMI layout/processing, run-to-library relationship, biological-unit/batch mapping, TDP-43 depletion evidence and the tiny GSM9037617 record. Preserve all ten libraries and existing anomalies. Runs, fractions and culture labels are not donors. One WTC11 background cannot validate across human backgrounds.
+
+Use cached GEO/ENA evidence first. At most six web retrieval/search calls for the linked primary publication PMID40737092, its methods/supplements and exact repository records; no unrelated candidate or expanding search. No FASTQ, count matrix, junction-count or effect acquisition. No new contact, cost, execution or merge. Primary-text retrieval only; record inaccessible routes without claiming unavailable content is absent.
+
+Accept for a future protocol only if processing/read layout and run linkage can be specified without guesswork and intervention/control provenance is adequate for a descriptive measurement. Inferential acceptance additionally needs independently established biological units and batch linkage; nominal n alone is insufficient. Unknown efficacy cannot be declared zero or successful from RNA alone. An unresolved anomalous library cannot be silently dropped/replaced. Decision may be pending on exact missing information or discarded for an explicit incompatible design. No hard 200-canonical cutoff, no changes to sealed coordinates or20-group descriptive diagnostic.
+
+Prediction: this documentary review may leave the source pending; no promise of target support. Stop after six calls or a documented decision, whichever comes first. Report evidence/uncertainty separately for each question, exact source locators and known historical byte totals. A clean review does not authorize the 86.56GB raw input or validate biological independence. #37/#44 and earlier donor cycles remain closed.

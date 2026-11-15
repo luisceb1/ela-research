@@ -1,0 +1,8 @@
+# {
+#     "command": "/SAN/vyplab/alb_projects/miniconda3/envs/majiq/bin/voila modulize /SAN/neuroscience/NYGC_Jan2023/pipeline_tdp/majiq/builder/splicegraph.sql /SAN/neuroscience/NYGC_Jan2023/pipeline_tdp/majiq/delta_psi/ctrlSoma-KDSoma.deltapsi.voila -d /SAN/neuroscience/NYGC_Jan2023/pipeline_tdp/majiq/modulizers/ctrlSoma-KDSoma -j 4 --show-all --changing-between-group-dpsi 0.05",
+#     "dpsi_changing_threshold": 0.05,
+#     "dpsi_nonchanging_threshold": 0.95,
+#     "dpsi_probability_changing_threshold": 0.95,
+#     "voila_version": "2.4.dev4+gdd43612"
+# }
+module_id	gene_id	gene_name	seqid	strand	lsv_id	event_id	complex	module_event_combination	denovo	junction_name	junction_coord	event_non_changing	event_changing	junction_changing	ctrlSoma_median_psi	KDSoma_median_psi	KDSoma-ctrlSoma_median_dpsi	KDSoma-ctrlSoma_probability_changing	KDSoma-ctrlSoma_probability_non_changing

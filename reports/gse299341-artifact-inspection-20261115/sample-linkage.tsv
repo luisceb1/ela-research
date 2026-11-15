@@ -1,0 +1,11 @@
+gsm	sample	filestem	guide	replicate_label	condition	author_genes_detected_qc	author_DE_excluded
+GSM9037603	TDP43.6	JR-7961-6	sg100	1	nt_control	26065	false
+GSM9037604	TDP43.7	JR-7961-7	sg100	2	nt_control	23967	false
+GSM9037605	TDP43.8	JR-7961-8	sg100	4	nt_control	24877	false
+GSM9037606	TDP43.9	JR-7961-9	sg100	5	nt_control	26186	false
+GSM9037607	TDP43.10	JR-7961-10	sg100	6	nt_control	25855	false
+GSM9037613	TDP43.16	JR-7961-16	sg200	1	knockdown	25234	false
+GSM9037614	TDP43.17	JR-7961-17	sg200	2	knockdown	25840	false
+GSM9037615	TDP43.18	JR-7961-18	sg200	3	knockdown	25733	false
+GSM9037616	TDP43.19	JR-7961-19	sg200	4	knockdown	28027	false
+GSM9037617	TDP43.20	JR-7961-20	sg200	5	knockdown	7	true

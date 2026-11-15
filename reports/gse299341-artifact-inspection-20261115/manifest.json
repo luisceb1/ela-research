@@ -1,0 +1,57 @@
+{
+  "pinned_commit": "a84e7ec16c5f8db3a47901365085f9de80b6a709",
+  "requests": 10,
+  "file_count": 8,
+  "source_bytes": 36419,
+  "files": [
+    {
+      "path": "RNA/README.md",
+      "bytes": 782,
+      "sha256": "b49ec4081932d537705dec4f72119161d573c4cab0f71e700b8f6f919cd18ab3",
+      "git_blob_sha": "1aae7968f1c77288b7f0b66ce9384759bc8f3f5e"
+    },
+    {
+      "path": "RNA/scripts/align-and-count.sh",
+      "bytes": 3205,
+      "sha256": "2855e323bd8a0796543d4ed8d124de73296625ec0c14fdf9cae3fd3bbe669c73",
+      "git_blob_sha": "0c541ac7961c8fcce2ac6ef2b886241d64f6055e"
+    },
+    {
+      "path": "RNA/scripts/organize-metadata.R",
+      "bytes": 3583,
+      "sha256": "c964662aeb1327591c9e91e2cb3dc27a87558f70287c6b2ce93d356f832ac8b3",
+      "git_blob_sha": "cf97dcf1df376ab641ad1f552dba1df4415d9cc3"
+    },
+    {
+      "path": "RNA/metadata/rna-metadata.csv",
+      "bytes": 5481,
+      "sha256": "ade79991b819b30b2a31c78421cd1b963a804198fc411c6101456ec79a0ca5b3",
+      "git_blob_sha": "bdccff566157a072290c8af182b131a192eb67c2"
+    },
+    {
+      "path": "RNA/metadata/rna-samples.txt",
+      "bytes": 1425,
+      "sha256": "ece496aa96018d4502f928089a8b227b5d1bb6d6528cf5b9ea9fcef51a4b9b0b",
+      "git_blob_sha": "d743ba2a3dff7552d67d55751d354e0dfc702755"
+    },
+    {
+      "path": "RNA/metadata/tdp43.txt",
+      "bytes": 1480,
+      "sha256": "760578b20c19f80784dc5efb542e0d2cf24e6ac49eddddd4c0e41dbb21e3a188",
+      "git_blob_sha": "119084589310dae8b67cb21c09b5b7610a36df6a"
+    },
+    {
+      "path": "RNA/RNA_QC/RNA-metrics-wide.csv",
+      "bytes": 3977,
+      "sha256": "26de22453b45672317e114e3009c2e5a64f526f593ab917aca80a5a7dd74828d",
+      "git_blob_sha": "d5115b6c664b85413288b9c805b1a4f06051e845"
+    },
+    {
+      "path": "RNA/scripts/DESeq2.R",
+      "bytes": 16486,
+      "sha256": "d279bde99b80433ebaecd41e3d65cd4aa170176458157f9daa3714eb2af3ca31",
+      "git_blob_sha": "005e770ad623fa0f880e2cfd2c892fdec254ab24"
+    }
+  ],
+  "validation": "8/8 Git blob hashes and indexed lengths match; ten selected soma labels linked; no remote code executed"
+}
