@@ -1,0 +1,2584 @@
+{
+  "schema": "gse252892-stmn2-response-v1",
+  "source": {
+    "schema": "gse252892-interrupt-v6",
+    "prepared_for_review": true,
+    "base_path": "/home/luisceb/ela-gse252892-prepared-20261112.json",
+    "base_sha256": "97a578839d72088bab1403b0c9ef6bd9b8e3ff064bbe3008314fb34545b6af26",
+    "base": {
+      "status": "prepared_disabled",
+      "execution_enabled": false,
+      "scope": "two fixed libraries for technical measurement only; no matched-culture claim, effect, PSI or inference",
+      "repository_commit": "4fa5346cadef5f4b66a040dd1fc8818545f26692",
+      "repository_root": "/home/luisceb/proyectos/ela-local-20261112",
+      "preparer_sha256": "cd21092c55cf23d9698485f192e16b7564e23d1d35c63e05c3c80a326605aba8",
+      "python": {
+        "executable": "/home/luisceb/proyectos/ela-research-piloto/.venv/bin/python",
+        "version": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+        "pysam": "0.23.3"
+      },
+      "tools": {
+        "aligner": {
+          "path": "/home/luisceb/ela-tools/hisat2-2.2.3/hisat2-align-s",
+          "sha256": "3c88123911d675aebdeab79e3e24f0aa0050c10a1043c30343d96419c6ddfae4",
+          "version_output": "/home/luisceb/ela-tools/hisat2-2.2.3/hisat2-align-s version 2.2.3\n64-bit\nBuilt on LCF-ABOGADO\nMon Nov  2 20:46:13 CET 2026\nCompiler: gcc version 13.3.0 (Ubuntu 13.3.0-6ubuntu2~24.04.1) \nOptions: -O3 -m64 -msse2 -funroll-loops -g3 -std=c++11 -DPOPCNT_CAPABILITY\nSizeof {int, long, long long, void*, size_t, off_t}: {4, 8, 8, 8, 8, 8}\n"
+        },
+        "inspector": {
+          "path": "/home/luisceb/ela-tools/hisat2-2.2.3/hisat2-inspect-s",
+          "sha256": "6a88b48bbdabd7e0906b3d9ea0240c2194baeb23250529735b37a3814614925a",
+          "version_output": "/home/luisceb/ela-tools/hisat2-2.2.3/hisat2-inspect-s version 2.2.3\n64-bit\nBuilt on LCF-ABOGADO\nMon Nov  2 20:46:13 CET 2026\nCompiler: gcc version 13.3.0 (Ubuntu 13.3.0-6ubuntu2~24.04.1) \nOptions: -O3 -m64 -msse2 -funroll-loops -g3 -std=c++11 -DPOPCNT_CAPABILITY\nSizeof {int, long, long long, void*, size_t, off_t}: {4, 8, 8, 8, 8, 8}\n"
+        }
+      },
+      "index_directory": "/home/luisceb/ela-piloto-real-01-index-recovery-01-extracted-01/index/files/hg38",
+      "index_files": [
+        {
+          "name": "make_hg38.sh",
+          "bytes": 1292,
+          "sha256": "9e29e570495a5b237fce579bd5b2059f600ff061cdbc12c2438623e9ffad27d2"
+        },
+        {
+          "name": "genome.8.ht2",
+          "bytes": 8,
+          "sha256": "7c9fa136d4413fa6173637e883b6998d32e1d675f88cddff9dcbcf331820f4b8"
+        },
+        {
+          "name": "genome.5.ht2",
+          "bytes": 1342456349,
+          "sha256": "07400123a5033f85fd0152aae0a513771b5f5ba1afe878839bd9624b483fa503"
+        },
+        {
+          "name": "genome.7.ht2",
+          "bytes": 8,
+          "sha256": "7c9fa136d4413fa6173637e883b6998d32e1d675f88cddff9dcbcf331820f4b8"
+        },
+        {
+          "name": "genome.6.ht2",
+          "bytes": 776249234,
+          "sha256": "4a8f0d36ac6e459bbf682a5979de5e5d4883cd42a22866093d730797c87e35ae"
+        },
+        {
+          "name": "genome.4.ht2",
+          "bytes": 762328946,
+          "sha256": "2f5112d9a0c0855eea028ea4181e2af9dd261cdadac3eff541415dd5eb4ea413"
+        },
+        {
+          "name": "genome.3.ht2",
+          "bytes": 15065,
+          "sha256": "d7ecd66f14894242cb5153471028bb4f94bebd920c2c025c08ec24bcb13e6df5"
+        },
+        {
+          "name": "genome.1.ht2",
+          "bytes": 1020663384,
+          "sha256": "75c666c1bdcc6bd346a751e7277d26ce518c1e9a2612c301317248e3a4ee6014"
+        },
+        {
+          "name": "genome.2.ht2",
+          "bytes": 762328952,
+          "sha256": "ee1502737c1fe27706a91179584f99146102da7eac08ff5f76e9657476af619d"
+        }
+      ],
+      "expected_index_record_sha256": "6012a0469968d2f0356d8cfb983f4a177361781936e03fd6654355aaaf4e2f42",
+      "targets_sha256": "e35f6e05016b30eab89f8d3aacc2d4ec101840e24e2b6f07159e6c5235d0bc3a",
+      "manifest_sha256": "c29e8b64c5fd8affb399bf7ff19dbc15a51b6aba7f53cf000129c6ca316eaae1",
+      "input_files": [
+        {
+          "geo_series": "GSE252892",
+          "gsm": "GSM8009878",
+          "declared_title": "iNeuron, shControl, day 7, RNA-seq, rep 1",
+          "srx": "SRX23148890",
+          "run": "SRR27477544",
+          "strategy": "RNA-Seq",
+          "layout": "PAIRED",
+          "compressed_bytes": "2772553416",
+          "md5": "ab0a84e544fa6e2fc1e8c901d0c55675",
+          "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_1.fastq.gz"
+        },
+        {
+          "geo_series": "GSE252892",
+          "gsm": "GSM8009878",
+          "declared_title": "iNeuron, shControl, day 7, RNA-seq, rep 1",
+          "srx": "SRX23148890",
+          "run": "SRR27477544",
+          "strategy": "RNA-Seq",
+          "layout": "PAIRED",
+          "compressed_bytes": "2913274103",
+          "md5": "017494b464222c58dc7c096e04ab59cb",
+          "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_2.fastq.gz"
+        },
+        {
+          "geo_series": "GSE252892",
+          "gsm": "GSM8009881",
+          "declared_title": "iNeuron, shTDP-43, day 7, RNA-seq, rep 1",
+          "srx": "SRX23148893",
+          "run": "SRR27477541",
+          "strategy": "RNA-Seq",
+          "layout": "PAIRED",
+          "compressed_bytes": "3531400977",
+          "md5": "a8349bedaf4d2b453b3a022295f29f4f",
+          "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/041/SRR27477541/SRR27477541_1.fastq.gz"
+        },
+        {
+          "geo_series": "GSE252892",
+          "gsm": "GSM8009881",
+          "declared_title": "iNeuron, shTDP-43, day 7, RNA-seq, rep 1",
+          "srx": "SRX23148893",
+          "run": "SRR27477541",
+          "strategy": "RNA-Seq",
+          "layout": "PAIRED",
+          "compressed_bytes": "3609364535",
+          "md5": "4f070f2bb19dccc2d861343a1385c675",
+          "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/041/SRR27477541/SRR27477541_2.fastq.gz"
+        }
+      ],
+      "advertised_raw_input_bytes": 12826593031,
+      "raw_bytes_downloaded_by_preparation": 0,
+      "unresolved_before_execution": [
+        "Runner implementation and tests for complete FASTQ processing and junction counts",
+        "Explicit transfer/disk/time limits and stop/cleanup policy",
+        "Verified reference/coordinate and assay/strand/adapter compatibility",
+        "Measured local resource behaviour; virtual disk capacity is not physical free space",
+        "Review of the concrete execution/budget before raw transfer"
+      ],
+      "warning": "This descriptor has no execution command. Do not edit it to enable the old pilot."
+    },
+    "repository_commit": "49afddbe0071f5552860cb474a1544e027646ea5",
+    "python_executable": "/home/luisceb/proyectos/ela-research-piloto/.venv/bin/python",
+    "fastp": {
+      "path": "/usr/bin/fastp",
+      "sha256": "5997fd44730065673fbd383f6910f1e712e8db9a930d81d7ea1ea3c5bde84272",
+      "version_output": "fastp 0.23.4\n"
+    },
+    "run_root": "/home/luisceb/ela-gse252892-interrupt-run-06",
+    "caps": {
+      "transfer_bytes": 14000000000,
+      "wall_seconds": 172800,
+      "root_bytes": 107374182400,
+      "windows_reserve_bytes": 53687091200,
+      "group_rss_bytes": 6442450944,
+      "process_as_bytes": 8589934592,
+      "cpus": 2
+    },
+    "transport": {
+      "chunk_bytes": 8388608,
+      "workers": 2,
+      "attempts": 5,
+      "socket_seconds": 120,
+      "overlap_bytes": 1048576,
+      "backoff_seconds": [
+        2,
+        10,
+        30,
+        60
+      ]
+    },
+    "lineage": {
+      "prior_plan_path": "/home/luisceb/ela-gse252892-drvfs-execution-20261113.json",
+      "prior_plan_sha256": "7a39bc2df33e54d95846bb309292d57aa5f0aa35607427f80c8d4d7aaaadaec0",
+      "prior_root": "/home/luisceb/ela-gse252892-drvfs-run-05",
+      "prior_roots": [
+        "/home/luisceb/ela-gse252892-run-01",
+        "/home/luisceb/ela-gse252892-range-run-02",
+        "/home/luisceb/ela-gse252892-retained-run-03",
+        "/home/luisceb/ela-gse252892-after-sampler-run-04",
+        "/home/luisceb/ela-gse252892-drvfs-run-05"
+      ],
+      "prior_charge_bytes": 5859663274,
+      "prior_observed_body_bytes": 5858614698,
+      "receipt_sha256": {
+        "accepted.json": "34d0a04846e6aebd703c8b9f00a8961243fb229bbc1a821b0ea54d494b16e064",
+        "supervision.json": "1d61486bbae43f22857a808217906bdad670520a37e3e34b9152ea54f6506166",
+        "transfer-ledger.json": "524f095d4224ccd1624776d13b93db2b6a5a2b671cabd40b5cb0a154bc22568b",
+        "proposal_claim.json": "a7ca4790d1e3631ef51936ec9232cdd087451004240ba676a768660ce7fee5e0"
+      },
+      "inherited_v4": {
+        "prior_plan_path": "/home/luisceb/ela-gse252892-after-sampler-execution-20261113.json",
+        "prior_plan_sha256": "c7a2fee183c48f5fd8c925bd65402ead0f9e44127df89ea8a690b48944a93528",
+        "prior_root": "/home/luisceb/ela-gse252892-after-sampler-run-04",
+        "prior_roots": [
+          "/home/luisceb/ela-gse252892-run-01",
+          "/home/luisceb/ela-gse252892-range-run-02",
+          "/home/luisceb/ela-gse252892-retained-run-03",
+          "/home/luisceb/ela-gse252892-after-sampler-run-04"
+        ],
+        "prior_charge_bytes": 5859663274,
+        "prior_observed_body_bytes": 5858614698,
+        "receipt_sha256": {
+          "accepted.json": "556b79b2b020fa373742dc50b1a9fa609c2b6fc5e83cf15785785fa411e29857",
+          "supervision.json": "61828cc08f5c952f220d05f3b24b9dd97f0a9d7070c3a48996842e30bd1f458b",
+          "transfer-ledger.json": "068029a21602e9156d9f389fcf7113243f5f3e08085c0b900adc5d43c9fc23ec",
+          "proposal_claim.json": "f26df8994a3a4623d6bccd354e36986ea5423f41b2b7268198e7093ac43ed009",
+          "SRR27477544_1.fastq.gz.verified.json": "9aece2a804aa4332187f88830c59a3fdbcb3e18a30142ca67e9ca4d0e0ec2887",
+          "SRR27477544_2.fastq.gz.verified.json": "7ca0ee5fca2a2c4780e0c0f619f0474efd34c6524eed050660e48e371d32c509",
+          "fastp.log": "117000021a959b9089754b6eeb81fb9c89001094674c1ba8dd7b184af0e69254",
+          "fastp.json": "9cf274feb7c225dad96524892ef15f7585ee66eeaa6606f7a4442f4b6dbefd98"
+        },
+        "attempt_receipt_sha256": {
+          "000001.json": "d7a22c5b17257ef4dc7b9dbffa782b74151615779b91611323b688934bfea06a",
+          "000002.json": "13b57710f05c57bc7c8874217e991eb8c756218cb5d6b37c8c19fa663fa1b1d4",
+          "000003.json": "045272372a7a4a8f1bfdb984aa04e4d70f4875d9c8ef79f6d6461bc9a9f5ed2c",
+          "000004.json": "e96253ffe3442257ba5ac55ddfe189a000f70283c56552bb0caffa76f55a5776",
+          "000005.json": "32ec6b72b74ac3291cb912db1fb583e52e48211ea7980f4b22c054ede128e752",
+          "000006.json": "a1efe659c53a5c742e907d7e63b597ec24cc7d3637eef90d4eb575d803b01ee9",
+          "000007.json": "f6449a3b941e8768f2c49efc8241d485b49f1aad8160271768e47f2be5503790",
+          "000008.json": "36c8daec65085937406c058d4e14c95eb2f1a239cb2fa588d04bb62a1528c643",
+          "000009.json": "27559272e2546a3147d97e5f3f81cb8072c218bb3c4bb56728cf57c92a58c597",
+          "000010.json": "b5514dc2831d93dda4e8fb7319f132e18bc99455769acf2e329c81cd572dc75d",
+          "000011.json": "f70740fe1c9dd4ad3a87be1f0522b18769db216a1be440806ee17b533f414f7d",
+          "000012.json": "4d7d03ff5cd42bb069d52d2c02b235109d7b44da2d867ff5bb5fd228a41fdd13",
+          "000013.json": "c4a56768eca1fab27a49c436616af38e3f49a93e192e275183d45cb1fc24be55",
+          "000014.json": "854caea99e8592772c37fffd351f16e2fa98445368b0a5c5e6ca17c8a9f345ad",
+          "000015.json": "dd06571a71649fe5f39542b53884b5a758784ef6b4d726926b9b1113ec5d60e2",
+          "000016.json": "b5d0067dd6071e2cae1fa00610e53cd4ea13c494635c379dd71f7d5bd169e463",
+          "000017.json": "c142b0523b308a188a09475977bc55d3927bdc91335fcc4b7ef9a456ad0a43fa",
+          "000018.json": "0bfbe4c05b0fd38f43ede0968689bcbe903dca7c63ca8ac4878acf02d1538e62",
+          "000019.json": "4488039d57a66bf94fa5908fb6b0e9ac235ff26fefdd76c3d1785c1ec0e0a22f",
+          "000020.json": "26b9b6cc54045fe851650efbe4c1f2e79c4c717590dae2b1cf9d1ba3441598cb",
+          "000021.json": "aa02054bc5233efe9a26ad89d49207d0ba226d0ecd6ef7396f373d76a23ab277",
+          "000022.json": "072b4249f31b9f5686c6c39e4e0c7add4b551981230724775b085c9dedafb945",
+          "000023.json": "588a73b07215c2ac8f0bd808b12f8fbed0cb5cb7cbe3bd02b08bd1de3ed148da",
+          "000024.json": "3f41d03d8b738f3ce43f778ecfc7d5c285c8cfbd44707c3d8b48c4abc1a7182b",
+          "000025.json": "ee77f189037eb4c675b789fbd814d8f97090562ffc2cb0fb16443a1349983340",
+          "000026.json": "a4e3ff7d02f0afab79bdbd9717c3f5e9081119ca850a3e3267897068fc60e572",
+          "000027.json": "c58df5bf2917d0092b446613075326e5234b4fe210f10f7d07553117f5b17c18",
+          "000028.json": "722cbb12ed0001dac4b3858ffa0284ea567eced77d1057030fda05024bdd21db",
+          "000029.json": "29137a7f6e6ca8809edbb5c80970fb4cac761c993b1ff6eba12c4cf9017fde57",
+          "000030.json": "b4b41c449906212e9c2c3ea7b79d25962bbd85a68308d8e1aeabdfbe7b0aed4a",
+          "000031.json": "42906bb9737fdc35c7e124d702c11f8f0679e854b7da7aac0337eddd61f5351d",
+          "000032.json": "34927acac2da372f6b8d4e34e0d518f21061be39059bed6fbbc34d8e38f152b4",
+          "000033.json": "96da3657bfb29e711036d008fbe2210c670ea95f4d56322cbaf4e8d168be860c",
+          "000034.json": "5462139bda2484533878fbf6118ecf14154122b9ba0572da2632d788ad7ddba1",
+          "000035.json": "99ecb50cae01e8d4f6dfcbd052ed564e714d70106a3347d20e70f33fda3ffdc1",
+          "000036.json": "59b5bde71b6f2f0ea9fd59ffcf1e3e95655dce1740973b0c3666eb24786a6835",
+          "000037.json": "9f87261ac7d7326b87e37de93b55713fef5071f16cdd18eb1ee07c84d7c65603",
+          "000038.json": "932b721ef3fda2489fe1489e276a019c88cf23ad5ecbe5f3d293ea1fc9af13de",
+          "000039.json": "6675ec961e0548b62a438b6f1404d581cfdee5ceef62b7b2fe6332834949c1c6",
+          "000040.json": "10fb843f088ad6303304bd9638cad944026144f4b7153108e61a3d3d59d1026c",
+          "000041.json": "89b19a2d9b0254f6ef69c06e51a3d4a37aeeb66302409724b126c214216a413f",
+          "000042.json": "3edd76f1d2d94944ca53e67c1fdb900a19e3446c5fa787ab8ab4bfd9b7c27ded",
+          "000043.json": "ace1f13093253c333764629ef93c8bc80405d59a7ba2d4d222f6ee70d8abf4cc",
+          "000044.json": "dc60253a28d4d0727dff4ffbd542baf2b64d9c272f4a067adad0d77c8911b5cc",
+          "000045.json": "8e47dc6dcef6eacca76472705e3dc023e8c9cf2d5591f6b6daaeb62c3fb6077f",
+          "000046.json": "8f5d0f8a77edbd4c4a79d9e85fc5c3c761bc845f1e17f439476cd91b6348b587",
+          "000047.json": "ced02af072922099f06d37254be702a2af2302f70e73ceb8b9d67ed67e2384c1",
+          "000048.json": "f81fe2487e581eff108011b3bf199d6f91e11c0a3a284f6126f6faabfe7296bd",
+          "000049.json": "b3d0b57f335a8f113bb0a1467247584286d605e666be25ac0596a29df8aa5716",
+          "000050.json": "9c288c2059864409cf195bec8caf47c7bfd22fa376eca99067d994ee1cddae82",
+          "000051.json": "725f3803db3c7c0f618f5ed1c3acc870a9679688e07bb59978edc940073591f5",
+          "000052.json": "d3a9341bfe3f0553a2186d3bf8ee8bc2a9c81f5b30c4eda886e9e534666cc1ab",
+          "000053.json": "7db227cbed1b8fc6ad349b1b352e78115aaf947124f39ff9d50b1d44a34ab2c8",
+          "000054.json": "fd84f9ba8b1a25a7f63f6023716560bf3136e112d732f4760308bee3dd797f3a",
+          "000055.json": "bb3082c577139b74cb2731564eb70ab29b032c486dc8790eb14fe01e378e15bb",
+          "000056.json": "e7db28bdb9c5bb16078b5f61d8cf95efa6e5ed586fc4175920e2a4bcdb33177e",
+          "000057.json": "947202d4d0b57f48489291a71b5d297aa2e6de03d1f37cfd01a5db195d1e45ce",
+          "000058.json": "6b2ee960d5c84e4af71868f0bbc19e1e87afda50bc603dcfbb426e7ed7bd96f5",
+          "000059.json": "31c8b44b76d79294e0a43dd78e9039a9790d3c764fdb105d658037f279b5583b",
+          "000060.json": "cbfc5dc5015bf78b543c7603bdb8deeb9469c1e4f59d6fa5c51a7e35cd4dd3c1",
+          "000061.json": "6e7b9135cc2807f836dc31fd50396f1e7dc9e16ef6c33affc9d7c64b0104b493",
+          "000062.json": "db053d8297a7ba3d7073c30889151e3ac29bbe1487d2793083ba4b8586214fc4",
+          "000063.json": "d2aa2fc346af75a6443a01fd31e7680e9a675aee7a264b08383b39ddd743faaa",
+          "000064.json": "619d756a921a17b1929e5cb4615d6bf66ecd1a4eec86daea56a3089afbf23172",
+          "000065.json": "2277ff1631b8a2ff8f9ddc9b31d96fb6036ffb95e8805fe140b5796827762d4a",
+          "000066.json": "95b75850aef7bc281831e7deee0b6a4d829e5dc31ef8be794ef9e6232665fc34",
+          "000067.json": "79b89ea3a83941e439567b428784f8d1344b955115fec12423ccd01639e94cd5",
+          "000068.json": "6d56ea6f66253585d96768f964b669cc8a1d44f3c4008668a5e50487988e8ee1",
+          "000069.json": "bdb23c2be1c0d329aa4df4a20c67432d33d038c07453a6478f23e90e6f3cbdcb",
+          "000070.json": "ec6d8aaddafe956c2a720e9b23f46d9c86317f6beb32b270903dcf1de3027e9b",
+          "000071.json": "0e1959d5179805c2452615030ec83b8a359a3944a4fa6544d24156258e0f4393",
+          "000072.json": "91aab435ef4b7fd95788414be41ba401613d9b46721c9247c675fb8c6bb1292a",
+          "000073.json": "aa642b71571eb63e3ee5df222a149681d2550dbb2864255a629f96a53b364c22",
+          "000074.json": "6fe6f6706e95cd82d409eb682a4179fc308bb507ab1d446b19bc00683a4a917f",
+          "000075.json": "a7a6eeca684c98faf54bda82e07e5b28a11d008aa2cbff4b347bf5dfd49f34c1",
+          "000076.json": "2e7c676310e79228d8470fe171572efc7ea35e309126094d859cf4c94d62fa78",
+          "000077.json": "e512760e13852e9098575f3400716c7068365be0893d5e050d8d35ff70c1d038",
+          "000078.json": "7704790b3328e21a3467b2fe2dce48fc04505c224fe72d7c65508acbc35f7b3f",
+          "000079.json": "5dfb24042c06211eab8e87b6af53a996df82f87bd47a0bbcbdd0719840869d11",
+          "000080.json": "fef95df1aed4205584d9adcabcc2cf744838c7c776478d3268d5d7f4c38eee89",
+          "000081.json": "469bd0ff5c5f9a387bfc807b21f6018ebb76c038a764e5f336c1f88651cf00f9",
+          "000082.json": "136f804ff3be27103bb671b00f250ce13f7b3463733d5690d6e4c8677dab3819",
+          "000083.json": "21b1d94bdf69ba57dc3d372aea316eb6bd4e170d5596c3a94773887bc0eb8688",
+          "000084.json": "257482f8d2b9fa0355ea74e0f236c4519646266c80cc1b45eefe1b59b2bc84ad",
+          "000085.json": "1deb5d0ed8b703adf9d002d3be8a0c14bd50b3f73d5fe477d9b36c3572aca7c8",
+          "000086.json": "16439648fa6ca18af00aeae6bd8f7e9a02659dc8cfa62955c33c98aa49b371aa",
+          "000087.json": "b11ece338cd9bc11b810cbb55932dcffa49456a333274cde227459e1b5bb2cf2",
+          "000088.json": "15c16f66d9f1a0cef6a7cb69260b9418d74faacb65840e814beff18dff4d6ab1",
+          "000089.json": "81abaab02eb843a8ebde52612bfc510a90f6b9e40541be0f5a33ac5ad9e7b239",
+          "000090.json": "819d00269d41fa776a63ca19f1b85e11b6ef6fbcb90bd7d0eb63fe2cbd37b7a2",
+          "000091.json": "967ef8e4a106ba43666d5d92cd399793f76771d97f8dd88ff808e803989f208e",
+          "000092.json": "3e454c9868affd0378ee81a9bd26c08808631c913725341f7d19af3cfc187b9d",
+          "000093.json": "c21799c98ddb1118333156a03a3a2181a417bbb335e05e9b675396286c3c2df5",
+          "000094.json": "cc10872a478bcfa261d86638b8bbc44d0cda67f459460e6448f059fb54e1b856",
+          "000095.json": "fefd61f40fba8d815f5571b59abc63896f3a634ddaee71b53d4fa0da15c90dfd",
+          "000096.json": "6e47643f34df94eaa51316c2e1dc1654fde4a200c599bade0eafad3e4a63f030",
+          "000097.json": "99c457be708fa23c51d09fc638c58162a6c50590f1a3a25bcc128ac87317d0be",
+          "000098.json": "a32a1e0f5468e85b9a5304a1721ef9606557cf4a48d10cb9c56b080f36f9e8e4",
+          "000099.json": "669bd839f50c9b7bb966cbf5fa2c5145e5456a127d9410976f25ad9cda6882ee",
+          "000100.json": "c8e584a60bc0e1e082f79d6ec9427a90f09514919731eb355972bbe0d8cc9f8d",
+          "000101.json": "ebb64e067a60f44391ef5e006c28ada007c3bc7df3d4a8ec8a0b7c6a383143ef",
+          "000102.json": "250e84c82fcec025a090ac31e680fbde2c0473d8ee47bf2f051cfedd891e6f8b",
+          "000103.json": "bcaac2f34b056e91811dfc13c8c2c330c88aa9f16e68e3de6056d28059ef4c97",
+          "000104.json": "ba051daa195f5bd021a475a1bd7bd61ec0a6fa07df00cbfb768996f2cda7d625",
+          "000105.json": "e86a782e820418b37e39a007af1a880d2bd6563d1634acbb994715281e338a62",
+          "000106.json": "cf4296f3d1e49bbba497c1a30fcbdf80923bef3d7721dcc8a79ba7e9b2fca57e",
+          "000107.json": "17a3d0ccc8233384534e01a41608c2b59c5e8b56f698f9023560860c1643d74b",
+          "000108.json": "7fa45130146d00c7dbf13ab84b0280ed547aebb167b4bf461aa461cebcb86b54",
+          "000109.json": "c9f6a70d38751a3e71c2ac67b76cad1d8c05c6bf28ddd27794311e2727fbeb09",
+          "000110.json": "476fd8bb11aa00c969b4361423289ed7731c9ff8dbe5120da6b7dcd2e675ebca",
+          "000111.json": "989180b4a578abf3f2f41232cc647bf56ee5098a9d2fb76576e7139660b75ffa",
+          "000112.json": "c0d20084fa0a623ace71dcc45fcab2e802ae2c5a390dce23ad95d6b86d10445a",
+          "000113.json": "0d5083049fa2965d6ac6accaed19b6c185812b07a440c166541041969aabc2bd",
+          "000114.json": "fd0b64b783ea56fa870a96e2f542048ff690efbb67907f27f3f3ca9a368ca3d2",
+          "000115.json": "0d160e45a2ed4b727d13f7af50b167ebc4be7fbfa2ee307e3ed4ac6e96f848ec",
+          "000116.json": "c4abd573e0b7265b9e5f1da5c90e36c09f96b8f7b88656050a813f7ae42259ad",
+          "000117.json": "b333a7cc3d6a73d4afd0a4ccf305dc44727609b9c5d557055aa9ccc203286a34",
+          "000118.json": "39469de3655b361e2b0ac614ee17568665bac09801a118faa26c31c7f591e7e5",
+          "000119.json": "e46e219dd215d4c9a8678decc88086fc8e6ca3aab75b9a22de850d080d224a39",
+          "000120.json": "bba509f112090643b5aa17c7dfdec42c8d9876d2eaf38c493d0776325201e48c",
+          "000121.json": "f2d03e8d817ae2999513280e96d1f80d68814c8a5bf2e39422ee86bbccc55067",
+          "000122.json": "5c33f2b0cbf5af67de4d2168b49fae8a90aaf9cf80e287941e4065727bf61ca2",
+          "000123.json": "bf921389e22227418ddcee5d9dfb84077248a0f2c75dcafeafb668ad9f60e229",
+          "000124.json": "527c75f4f33a04a3f63cc771ccdc815ad2956c798fcbd2457c5044920a49b68a",
+          "000125.json": "c652a8a93f8f5d9e6fb36faa4974857e621580e151984dbf8c4e5debd6261e86",
+          "000126.json": "7a9883a3035deaa927732a8c914b1abb51efbc85f58d15c80ae170de4553e287",
+          "000127.json": "46128114b36d66d5eb9bc1c05bc4c1dec9d519a80586bbb64f7cb81995d022c4",
+          "000128.json": "6338da95f5deb5669389f81a62e6587e1b74da649f71ec4785ee0bda611d6db1",
+          "000129.json": "18666511f37a8d36273d0c15f71921986941a4534c3c7bfc11c7ccc07b9c53ca",
+          "000130.json": "3065798b1951b77c3b78dedbe5f18313d03d40428d5474d96ce5b491ec1fc54e",
+          "000131.json": "7af9c25867bc4a414a8931ebffc6807b45c87c4e427754330b0c297692fc65e2",
+          "000132.json": "7943415f0a0e756f9088f098ef82160f167c7f50d03e3ab303960bfcd5567d94",
+          "000133.json": "c7c92feec93ec27ba6580f3022d5a306927087edddfc069d5310e0958e434316",
+          "000134.json": "f2b6c4a61f10385585026b2fc42d7e287e89f9bd10a3e0f0ddc17d386c13868d",
+          "000135.json": "4916d4b0ad83166ad8e72629fac6b278217981c867097ac70144e08f6908d037",
+          "000136.json": "f2319559bcb9449a64ff86d339521861c0bbe5160acb81ccbf34758fddbd4070",
+          "000137.json": "d1f81bf288367309deff11c5f96721125936967e70e9e3912a09a5faf31f3b2b",
+          "000138.json": "f8335ff7b68379e201e498f470312a2de7fce18f3c8ef4e386ddc50339b9a1c3",
+          "000139.json": "23ef46eef59df80a81565e61da8ee8664bebed00049b46cbd5d607f52fe8fada",
+          "000140.json": "1b9263b857918ab10d80783740b074579446b851414932360657e5ea5f223f46",
+          "000141.json": "181dba42c9438ca02d771f2d5c1a01c398222bc942f92819cbd93e71fec57603",
+          "000142.json": "35681e2c2a00f343387f71e0d5521d739d6418d85e59328b4245eebcf805c451",
+          "000143.json": "fc8916c763b6e31e47295f8b64a23341b87fc5cbceb980564d5dad2b33175a84",
+          "000144.json": "7609c65593e07e2b3df1060348ff4431c502352e64d2aa13c236b7f61d1fc475",
+          "000145.json": "e66988555b3518b88f13884573e24d554e70b74bcc3078b601e8d829ef035c95",
+          "000146.json": "46a8e6f76c93b19fffdd0017fa8a1d66f697cc7c30e6bbe7d22db737a067e185",
+          "000147.json": "7b5078067ad9973ed41e648d709fc009d43f524c0a716c46ee82d388bdef6f62",
+          "000148.json": "625f58cda5e12250bb9630939790dc8cbaf66b6ed7fd95f0cb10609ed4c1fb59",
+          "000149.json": "c873db80d9390b6c41079b97f3e373fd100e0b3bd9e01a53f06f9d90c9d632f0",
+          "000150.json": "4ceab0a31fc671b4c25db9da3499dffc7903d08dc7d6f93cc174803013599c78",
+          "000151.json": "3dab775f95932a4b434844288cdc6dff3b4320dd90be81eb41d4f66b4142bcf9",
+          "000152.json": "e2ddeb25480cb94c73bd64fa941b487b657ef1d6acddf7a5837ae125ac7a7d6b",
+          "000153.json": "faf956d5e0f0e24a5c6a0deebd7970e72a82c83f29925c2e62b64097ba30c832",
+          "000154.json": "9cef7ab3fe4496a2a006b3a57f26d48c92e4882754558293282c62bcfcf7f10b",
+          "000155.json": "0c51e4c3a9fd8a053e31fdada6ca840a45102a8016362ebdd846617f1d54973c",
+          "000156.json": "27c7d9acbdcbf8bf988fe03f4e6cca702e53925b68243a4a9350b96e1154d4cb",
+          "000157.json": "3f6a098684df829a8d35bf2058fe33e45e19200c0403ba2aae4d754f4781bb40",
+          "000158.json": "f03d7dd80c9170427aaf74549720adb74b03e910403fe80c07b44bb0e603baa5",
+          "000159.json": "20e4513c5cf3db91c5904a3dc1b2cf32f936f231e4065473c68cbe707e093b3a",
+          "000160.json": "4f73e84cb4d99ac5a59142090eee3dd2759ba15ce6dc47c4d5099530f2ac892e",
+          "000161.json": "33d81e482a50a795190523203cc725627883371e6b1b171bd7eafa7910ddcb24",
+          "000162.json": "8fb212ad1bd540c98df89ac21d8a6975bfa26e612bee36610297556b481689be",
+          "000163.json": "67a6bfac8f8b587d9826e5186f93082a24b19cf1ede2bf6f595950ad5b8da041",
+          "000164.json": "12512c380c83e1db4d9b32926488009d57c8fe4805fe97bbd0b980ce43b2016c",
+          "000165.json": "f247dcd7cfdcd4fd11ab265d2122713649b0dd90dc003aa4a728d130af5b0133",
+          "000166.json": "5397f79228652679d425fe1bbb21ef098d64b8ce2c51483794dbadcb63de4911",
+          "000167.json": "878f49373b7647d1edfa28b508d31e1ec735f59d355fbfa2b107bd28577d05a7",
+          "000168.json": "b8b99d16340e771e5f38ae73fb3c0a28d06dca6f6f77f0fbf492fae3f589b3ec",
+          "000169.json": "bf50d10e9de7e55f1f51eb180b12f1a2fca54aafba8f4add66337fff6739ec23",
+          "000170.json": "8de510ba30d5eb95f38d235f2b1a2125ac89e5545aabd5c24ef8793613452604",
+          "000171.json": "fba787a438b44f567c8ecc974b26a95143ce740ed84c279935cb5cba82028ab6",
+          "000172.json": "14bf3d6f22897ab2bde6efead18c8ed0aba2e3305a9976ff2a10ec1d78a47504",
+          "000173.json": "76bc53dadec70f1bdee84a3eced38d9e3c85166a2f6487da0add399a9903915d",
+          "000174.json": "52bb363642eb2d35bc5c040d12a4f743a5dbd9ae67f459560db8260af5210843",
+          "000175.json": "551bf1090080b4b97a5d6904d170695d3a58539379016513cdde7da26577ee78",
+          "000176.json": "13e1e53e94edc128486d32ed2fa5df012e46f3754653eedd8177651c3f7118dd",
+          "000177.json": "969642f16dae4842cd5561aa07938a9b9041bc4e5e17f69e65aba1a58147bee1",
+          "000178.json": "ccccd6d8986425cd183f7b45986740e9cc5e07e010a0597b95199de75884fd7e",
+          "000179.json": "6d8915d0b978dfa2c176a2cf40593274ee2f8aa47b9a4e120a8548cb93ae84ab",
+          "000180.json": "d3d1d8ff4f0b0770f39b2cd55f5f899a95957eb7dc88d392f5e936ad6b441dac",
+          "000181.json": "868673deff7c241813e5e405872972eb4ad723bd75641923255527573ba95fd9",
+          "000182.json": "c667a47fd343c06c3c2d32afdb18f6d72dbcd5c7cece70907293a741b23fa3c5",
+          "000183.json": "e240a47a954c2ab3dfcf4ba281f15a415c03ed97941b9611963429503746e340",
+          "000184.json": "8f9abd70b223fb0707cfdc556c4e135d425f88e9ca9ffa9446ad5a6d342bb20e",
+          "000185.json": "0e5b424693c5e2c19225d80c0dff9cd534ff4cab25563bc19d9720d816a8b472",
+          "000186.json": "0e9adba3540ada71ede0e999ee6f6a747261ea9e1bcc8383522cdab335907a5d",
+          "000187.json": "cfcbee11d1c74bb9a3ac433991185ea98e86ba30797515f3bbbcf3461acfe456",
+          "000188.json": "b8366c90923f4dd2cb194ce889a854a4fcdb842d7409d990b28acce305d9748c",
+          "000189.json": "5824c4342d74f690746f5e7a70f85f347d2c6b90ebcbbf467b50c16e4ef52fe1",
+          "000190.json": "d9e6cafd2bd08f2bab0fbf9b447c2e37bb4958e314c4c66d1551d6874cc2396e",
+          "000191.json": "871ae2e30b614e9d8dcf2e763113ef7dab3b72b22e2cbadd32fd4e756e810510",
+          "000192.json": "499dc1ddbd1ff58ec4ec03af3329f5b2abcdb6b8e3560b68557ffb2fa6a959cb",
+          "000193.json": "77b8a55d6c791443f3c54e94788557409afcf76b382db1a63f4dc55499301dcd",
+          "000194.json": "360502654e6980807e4e8f0cfc640ee53779e2c9ccc38b85c5e7fe7aa86441de",
+          "000195.json": "789f04351678442ef2bc27dfec2fe11ddcbc3dff9591c3e6685c1ab75c6b4663",
+          "000196.json": "935ae8fb483b111f9ed5608ea45b45b33c587dffd64681c036a5f51aa90b0748",
+          "000197.json": "17f4bc97980e80b71a80eca82cf96c291af75e18aac2cc297a5dcf8709b28487",
+          "000198.json": "8477c3d6f8cf18e9eacca918d24d3b2a8ef17155f4604391db50d09f2d9d733e",
+          "000199.json": "1d4be508f589193202145fd04d591e6b5e5530de8ec7eef311de7a1e66a8af62",
+          "000200.json": "1656207d143b2945955af039a9e7b18177eedaceca98feb6cab6b78f05a6b4ca",
+          "000201.json": "be3fb92b37d6b2dae7543ea5fb88530181dce9a72a92cc2de237cf21a8a8edea",
+          "000202.json": "35b47c15786deb6f40e4c032bb927b72f35a734393cc32c593828747f00c546f",
+          "000203.json": "77fa1bdd7a7f403e1d079c7020154d16084e63066b889371c27ebbf9ffae4db3",
+          "000204.json": "69917142e61e807775f87cd4dd293f44738f41a0dc4657466431a0e7d04083b9",
+          "000205.json": "e3943b7db2ca709c04d064a17409593a65d8d6184dd476ea82d5c01b02ca2eda",
+          "000206.json": "41b2a4f7d44a49db8631c95ff3c3fd05723eabfe158e85e6387b67832dd12bd6",
+          "000207.json": "b132214ea99e0e6ddcd744c2900d70dabea4573079780f1d9b7b8143968a3261",
+          "000208.json": "8b9087dcb2b6b01cb51f1f534d329a2b7a8f2f80849d8f8a050b19b971599403",
+          "000209.json": "f762b040360d56dabcc6c633a0056d43ed1a11d2414e6284db936fb015fa6027",
+          "000210.json": "2c0ed41ed6ebeae6bc06571d97be65da6cd2f3d19efbb07c951544ef7fce6ef2",
+          "000211.json": "749c7010c67de78557bf4049d2d8591b3dac162e64ccee7590a6196660247849",
+          "000212.json": "2cabea517ee5b1a1f41df8ed0478af73c5901b3e74ae0ce5f7c206c358530305",
+          "000213.json": "7a7a4f5d25c17f5689645e8590526e632e6594e0b7a1520b4dfee388b2377cb0",
+          "000214.json": "3c4ba2fde02edc53a3e4c04c5963fbea9d57e8dd56a4206ba8fc1180a4c006fd",
+          "000215.json": "55ef4d7171fa98f438db3435847d0936b7cc2a0b4adf664857d6a1fc708ffd71",
+          "000216.json": "1e1dbd25b0d0d3578885777c541d2eb10ca6ddb66e2cfe2d0d5a4c538b02c621",
+          "000217.json": "0a43faa37649c3a21730dd5797d93be73374a2ecc30485301307d4ee034d2c4c",
+          "000218.json": "d1a33dbb0eac2045734913b4f3051b8c7a18163152f9af5951b59679f982387e",
+          "000219.json": "167c0ce1efeae54c1d2aa7d246484f6b83d140911237dbbd83af45d73b6a21c5",
+          "000220.json": "038a9837758b57d9ba35713564f11b6321d8670f01d13a14ed40605c3008697c",
+          "000221.json": "a121d66d205a169e4c85195d9baf472b8b8b2e3e39405e5adcf802a1b07a66dd",
+          "000222.json": "c636238b965e5b82945808b83f945f97a4d139095cbcf5ca8d396e40677741f5",
+          "000223.json": "aa72f6cdf8d31d47fcd4c75dc671212dedb9e43807b10472e2216b75b11e187a",
+          "000224.json": "2e89615ef9c937a1022284135579cbfe68c09f93610e223923ccfb1afb63a2c0",
+          "000225.json": "b5f7cdd5036a01da7c6308b3e24c6205aab0bfd5a7f4b2bd41ce1c276f122cae",
+          "000226.json": "705a0cf67239c8400cca5dadf05c7a36b99490ba17b59ff748dcd6b8c33274f2",
+          "000227.json": "8aaed3f54f62b5bd33f7b618dc500927a6c5a93c7090105292da5d281de5d167",
+          "000228.json": "4076019a79c461a8b4f2ffb5d0bc7a041cae2526f2cf1d478b58522a84a13780",
+          "000229.json": "d197a62d530aada73e653e64719f816cfbdd0a5c23a9bd05ff9efc6aca55ebff",
+          "000230.json": "74f4472f838a1b06ce151a4d08133d9bbc237b5c63c0d15c326250aa8accd38c",
+          "000231.json": "6ad5399137607190b27adca6ec501370f4a5e57d0ce4095179963146a0e84d83",
+          "000232.json": "5ce441bd10e534bb4420928af054ba6676ca90275566cce4bd66e09fa2ffd006",
+          "000233.json": "7bd0a548f462978e6a8d39988bd42f2a3521a4d317c48cdd0b73c12a849ac458"
+        },
+        "inherited_v3": {
+          "prior_plan_path": "/home/luisceb/ela-gse252892-retained-execution-20261113.json",
+          "prior_plan_sha256": "e131b017001b8f8f5b877c2aeb1aa4589609f9639f1c5b4093af9de359fac1ca",
+          "prior_root": "/home/luisceb/ela-gse252892-retained-run-03",
+          "prior_roots": [
+            "/home/luisceb/ela-gse252892-run-01",
+            "/home/luisceb/ela-gse252892-range-run-02",
+            "/home/luisceb/ela-gse252892-retained-run-03"
+          ],
+          "prior_charge_bytes": 3963540735,
+          "prior_observed_body_bytes": 3962492159,
+          "receipt_sha256": {
+            "accepted.json": "d88158354f3ac1265139104fd5949247a7face2f126d1b33c63e40f86dc60b1c",
+            "supervision.json": "9af63360014a49347ff05dff31207df1eb6b1dd7dd5a3c095ca779cdee4aed04",
+            "transfer-ledger.json": "6e3d9cd8d9872a6f3f8267f24547113aa2033f0af9a7ecfc7f7ea8e1a5f7e90b",
+            "proposal_claim.json": "16bb0b1fd667fef7a85334b09c2ee2f3eeca094e69eb3eb67a009042dc7bce18",
+            "first_file_verified.json": "db8d510b35dd910bb415b211540c6164a0c814c285db5da3bab864f885f718bb"
+          },
+          "attempt_receipt_sha256": {
+            "000001.json": "3b5b6e0671a536db9b205aa92ec1adc231f0e6ad1129765fdcd979d4b2b30fc8",
+            "000002.json": "012d3d4ee140fe5c1d2e228a3437aef8f761ffb676eb074343604e82f8886220",
+            "000003.json": "48cf03f123baac1121bb44f358fe9a1d29d8c30818d95e42df4db81fe4b9c438",
+            "000004.json": "6c79058cbb425947827409fefc60eac80ad771fc1ebb2b83ad9bfdcdc6f0ffee",
+            "000005.json": "8658750490d8f3fec9754453fb2255c179ce0454423b7eaacbee1b1e73626c84",
+            "000006.json": "3f7e35bb565c9cdd11739a953667fd6181b98d778ab1711b18dc40f18e0e44cf",
+            "000007.json": "97f1db4bdb815b9c0e6592c8e69c5a72eac99414e0a1970b1b278137fea0eaa8",
+            "000008.json": "d5bd32d24d54213529e549604ab26c552f009b890ef2db8ecdce96758777cf91",
+            "000009.json": "5a4f5b23aa5e3806c952fa8d00d5d2664df302b4ffe023d70812d776fa9d4870",
+            "000010.json": "767577c67c77cce16ec4d37c3918e1c2d2ace58233cc2113d953802e6713f784",
+            "000011.json": "34262c8f7e760ebd015c63e5010b40db0462b7fe15ae5e71f08b9a57eeb2fca4",
+            "000012.json": "347982833eca6468e724be334cea5a740a60bc5e1fbdd4fc99047c02b2a140d2",
+            "000013.json": "dc5638e9ce60aa85fd15958757af4885829a8e32f66e6b91ccb0bb001be3c3d7",
+            "000014.json": "9e46d0df22eaca2c583886d3210dbdc30bfb21d6e564033d752c5a6d3af84f8d",
+            "000015.json": "709e09fa9ace1f06dac0a18667fcfbe304fd5de0fa17eac33ac99365db41b6dc",
+            "000016.json": "93b6573e78bf2bec87523594c7b078b21d1f90179cce3d279e6adce2c1528100",
+            "000017.json": "68aec707798b91ab3e9686072f5ddf9f30ccba5365cbed01a0ea1a05a913f087",
+            "000018.json": "a70655af99d96f8e716837aee932c827c7c936dee57698128551d0e8e0d71869",
+            "000019.json": "fbe6476c58bcc23eb2df5ecf7b321b3b7485b49a87241b12100dd9da30669e1e",
+            "000020.json": "9c26b19c8d7371c4a62a52929b38a043abab182d3bc4bbe5320c89d8ca6f1541",
+            "000021.json": "19c26b5f5faa6ba5fcf1bce4e63f02a26873243c35464bdf823530c46d172406",
+            "000022.json": "01c8e8f822d9b531a80aaa691ee4d247070a75c2f0bcd67b30b22bcd9c36c4a4",
+            "000023.json": "559f6da2d6474477b0df940e79907200ac76880a14499fa239bf5619f84f25ef",
+            "000024.json": "bc28048c3213f67c7e5e7a98c75d9363674f5e2f440a97f4fe397517ae96cd6e",
+            "000025.json": "3824d7a34936c8ceb3003c668019061596392f2fe4ac23f70a364b47ab35002a",
+            "000026.json": "dadb8e5a869600415afbfc994eec6ba8c2b158f676f1109794d4a79270866d0d",
+            "000027.json": "f8cfb952566e0c408690bc8da2fb1d6575bd78ab7e0233bc0a5319c7e6efdecb",
+            "000028.json": "e663f51f58901fed4eb96a19b2fcfddd6bd846dfbed50f033188ed087dd6e8d3",
+            "000029.json": "196470933ad540c547850f1dc9d7cfba6d7d55298d20be7f4d3af2769ff7efff",
+            "000030.json": "1a265a9563f4078cee100c2a488251c3486ffa1f7a34498e46d5ab248e317734",
+            "000031.json": "9156356e1fd384fdcf916d955db52e540fff8aa8bd9cf29d212dfa88970ab113",
+            "000032.json": "78b7cb18b12fe7d79f894779174f78f02b66ba2025b3e0f2c73767015e244307",
+            "000033.json": "1e2cbd219f4b522473f2621f93efc537cd7aeaac64d80db2872bab75ea8f027a",
+            "000034.json": "ceb2f16dde0823cf67ce8d28c1867a3601ef6ce1680a0d9d7419a2a5a13b6031",
+            "000035.json": "76875ed301bebb50d2cb089161156dad62394c95827673756badcf2095b620ee",
+            "000036.json": "5e4f3e67d70052a62a4b4628dd412af67cf760619a2af8e3170ae18c5e38be91",
+            "000037.json": "186518094cc98299b7109fc258d22f404cd755a9969eb0000455f1b44bab07d0",
+            "000038.json": "fa8c508a8a297b2046f86cbc73a0479a3fa887176470110e419e8bc9e13170e5",
+            "000039.json": "d7a0ddab6799edc17ce3581cca6a9147f1e387928f17069cf245aeaa04dd1951",
+            "000040.json": "df1a9a109e730543e95823c635482c60a40494c0d464629aa0ae7e36a91ea560",
+            "000041.json": "68e54fa8b962a7ef435340bede34f6a3b4bab741997619621707c98f074037f8",
+            "000042.json": "883b091fd6b6f15ddbc620e7765a417edc0271030b00dbbc09f7607dff1a4228",
+            "000043.json": "84e09792636178a6bcddb6b819c8ce0fcea0c0a132062278ea5b71ab601fddd5",
+            "000044.json": "8cef40ab42fe00cae6a528dc68fae0801c03944be2ce686df266c962fb477708",
+            "000045.json": "e8261e9774be4dc25eb7a87315308b4c5b6c2724aa92d533784d277b4b0feda8",
+            "000046.json": "907c5eb75bdb8d789ed07e9cf4362923eba262e67cfbcae40b8af617649de787",
+            "000047.json": "a1e16888b46d0f3bca92781535029622f65d03516e7459c8d8729f260ceae78c",
+            "000048.json": "f6b6a9c8a0968f29f680a4ff75b46bdabb319f9ef4a309215ce70ea502d1ecfa",
+            "000049.json": "f5831aacdfb65d85def233b482fa2fafadc9771ceb7da5ed7c20b23ef57ad1dc",
+            "000050.json": "2c58ad30999d29e7babbb24ed9c718fa9d4e0783d1e6dcc951fcdf973987bcb2",
+            "000051.json": "a9304ddd710572cd3c1a80f547d0a5b4fef635707b81c3851003b06d9fdd6d14",
+            "000052.json": "9b5a2b223c769a9ab25aaa3c9472653959db1ee343fdbe8d1e6df51b8719807b",
+            "000053.json": "da50aeff21d747b8dc205ed085bfcfff85c2146febafdeca57bd703ae353adc4",
+            "000054.json": "2da40fe4f7c63a779f9b358e6ec794ee4bb5dbdd3f085265dccb770df89e700d",
+            "000055.json": "14d0de1a98e524ef3854fe9a7e11802f62f94d803635e48c6f76481f8191ce34",
+            "000056.json": "c79cdebee0a6010b1e55a8951520ac38ce7e57d350178a21dae5e59544191fbd",
+            "000057.json": "a93f26fee68ffc4844c51246f31c5393d3bd96ca9b03df44e0cf61a7dddc51ba",
+            "000058.json": "ed2959c04fbd1ddd588aeab48c9bb722dce648fb8813ef892ababdd7c81d304d",
+            "000059.json": "d22c923deca3808b9b564979743bfbf74a792b5d046f740a7e8399ee25b508e8",
+            "000060.json": "2af0f0202e6e45e6f7fa8923e46bb8521b3b784a933f64236f5f15915866f035",
+            "000061.json": "dad2d070d79594fe1f099ad1bd939317e459233390ecbf7502eb5ad3f6492e22",
+            "000062.json": "edc9e06cdb4899ae39aa083bc677a9500afdfb7758942243de74b4474a9699f2",
+            "000063.json": "4f3814e9360909971e01e528e79634eb92ce09a9664439ef76069b37f8d9cf13",
+            "000064.json": "49da7e8c7c3889216abdd9425fdbc8d18a4084506d8750d96b4981d396dd94d3",
+            "000065.json": "8c65aa2f3c24d7e335ae0035b6f22dab0a5aa4ed411e7768444e41496d9570fe",
+            "000066.json": "641922a95c56c4ee22dd65ae5f561152caa51d3e0dec20f0090db48beaf03f1a",
+            "000067.json": "c6d195f3e8fbf5bcd07f468105b31618b19aa8790abba34c33dcf1f855c47b78",
+            "000068.json": "21eb91dfaf74197147a4673b9ab4424fe97040752917500112af7db466d86a8e",
+            "000069.json": "f71ca4c9190b8d31c490f9a2809b6d0e8791e9c2d0c53666fc75f554afcfc0a5",
+            "000070.json": "047da2e4bb21bef828eedc151ef6dad8e68f3358531e97345c3577060fbc55f8",
+            "000071.json": "743d9af3f7b84d8b5f0e454a22d28eee9970c33f1f27a9768cf3d4967b2c60d3",
+            "000072.json": "2a222a0a5c76b3f376e2217a8be75922f1bb5caafe3e342935773e83698d6b88",
+            "000073.json": "4827bc3c634ad022d03151b2c91b527586ddbe8aa011f6ed6c10f8924b9c3dfe",
+            "000074.json": "766ca96c9c51b2d9ffc154055db50af8c8be613b12fee7896dd1eb7250912296",
+            "000075.json": "4022f494dbb586300ecde6571ad28bbbe685e099d8ba0b1802ba258c02824cec",
+            "000076.json": "02efb461113a6cfbc34b21cbb6b172a1df497468166f85b92292b6eb6dc48d11",
+            "000077.json": "8dd9d6792745c23d37c621fb0fc665abbc3ef4779ffd625e62ded75cd81b7e5a",
+            "000078.json": "f3626fd84a19eacbd9aeb9bc35a9b9ddfaee2800fe0018abb895810d5004ec21",
+            "000079.json": "087a38fab0181ec1c947a288e3672aaf429cc5851d3b18b3cb5971809ea1c331",
+            "000080.json": "579a866eb6b221ca8e16f4186d49a5bb7049f279b1786eb48dabf3e9aa0365c8",
+            "000081.json": "95914b7be7ad05d2629c8059d346c3b7f4e04ac1ac9301a0a3ca8a987ee5b07c",
+            "000082.json": "462f65b00b06d51099f4660828286859fa116b70d12986448e8d61af0c1f565d",
+            "000083.json": "e604973fad3b65f1e75254f0800eaccc8c2d5979238ed40a46965ea0795ebca2",
+            "000084.json": "ea707f66438ae53fc49969eecfb9fe0621307c2e1a4b4fd0bf5cab380ebd5423",
+            "000085.json": "183fff7319baa53ab417f881d3b8289470428fa164f485c35255ab8442e3ce3e",
+            "000086.json": "4a7bdc3bb2caa4a2ef5868b6203e0097b362763e20f837d8dd80a46b38530ec8",
+            "000087.json": "2abce2f02a20d79101ee3c95d29a1437f7cbbf23d71bce15ddc7ed8da71a4e21",
+            "000088.json": "843218bc21128cf522e08c416dd2ee4da8128d5d0a361ef6a0e85318d769f0b4",
+            "000089.json": "7df9990e5cb916d0b418c318b74b8b12dc5615ca6087f1e2d2ff11e15f41f670",
+            "000090.json": "c2583184e8da493d51763bedb75cd7f9a9a2560802b1f5a7c36ac997af005208",
+            "000091.json": "8361ab48cbeccea15baa4571a555aec9436cb8a006fcf7405ccafc3e8ef0f308",
+            "000092.json": "c5e383adf9e70471d3379c22514330bc2e63c07e16ae1102bc8ff7494e534348",
+            "000093.json": "956251954ddbd8901bb235018929357838faecf79846dba11a7acf5f34192415",
+            "000094.json": "079b777f33e2c72f1963b1ecfd542b895a62ab0e4a0ec4a426200ca702f8ef05",
+            "000095.json": "2685e5e232dc4dfe7506352e3d3ab82c6b2317030cf6664baa82e01c0d4cde8d",
+            "000096.json": "10ae40c42ec28165c77a2763ccf4cd884f26a484fabcb37ff9193595c6e1c002",
+            "000097.json": "b8fc62c3844044eceff44c64492c1ddae1e0b646c96bf14764d9e7941f6ec94e",
+            "000098.json": "bffb93269027416e8865f75550aab4bd5732a7e3cff96f9a9a5b46cd5353eefb",
+            "000099.json": "bb520d178acfdb131aaab4cc9e48687bad4127b169957f8d13cecbbb8e698c5e",
+            "000100.json": "f34856b775105e99dd0788d634cd2f087d2a9f1a4a8568118f8ce1dbd6f77c7e",
+            "000101.json": "2b9431b7ad4473d34574e69f0d2daee9abf26e10e53d240b913e4f76e848388a",
+            "000102.json": "1f923b7a44502fe33150fabc89412ebccba77de4380d51ebff7b29cc3aec1c61",
+            "000103.json": "8566d8b09939e5cc746bebbca90f4de3172829f8ae54ef09ebdbe8f0bcef83dd",
+            "000104.json": "63f22797a58c656965f06228baf5dc4252d92b101e0f07e2d6a93054a0a575ad",
+            "000105.json": "3f2c86546da8bea58dd67d7000a5c960295364c9ec19d74c8efef73176c7086d",
+            "000106.json": "003a8168c9c8bb45b68e805605046ef08c760faa43cd5022d239960ed6682646",
+            "000107.json": "556db59fb2061e6459310790cb8ad4d2056c83e28da9510ba3b8d92303dfd90f",
+            "000108.json": "0ec27743c0723e48903c36b7a04db826c6e031f46ca0d6f8d6ce7a428c0a9179",
+            "000109.json": "3950b540b9f540725aa7a884d2e2b05d76c47485537d4e7c497fd24f9733ec18",
+            "000110.json": "b4699f8ff3b8fba479479317e9b27cf43d9a9b7fa897e5c996c0858e29b3db64",
+            "000111.json": "b78e978aaee0f23d015d87fec91056ea0bd5627c82e3fb6fea52c9c5c8b3d6b9",
+            "000112.json": "a0dfd5035c35fa24a0f5b6626a9e43cb13cea8892a9c223ab346952a262e3a66",
+            "000113.json": "b577da547864ef81e44ceb0e6e4f7d11a0f263f1df98f7c3b56f39964167babb",
+            "000114.json": "c35ad654e9332974868b3bbb95df751c22992ba65303118cfabdd4c7090314a3",
+            "000115.json": "0d2d358e129b7cf4c61000e93fa8038fd9d30defd1c5367a5d898d02c85b32c6",
+            "000116.json": "3dbb9d8945c43d2d81c978bc7339dac076c0fc5532800c6ae26353f97e82c535",
+            "000117.json": "ba0ee89742fd4e97496d08c3752503b7b52430e7627d65617300101763cfe400",
+            "000118.json": "5102254d1a31e960f75e91c748cdb0c90f8071e67a9cbd0f87560f284b5ae1b6",
+            "000119.json": "d4a4a743e9cb448af4940a415cdcf061a816a2f1423dd57469af46762b12ffb3",
+            "000120.json": "33ac774b6e9c619d43e0534a8d5fa00149ff198c3056e446eff7c287ec5e5b3b",
+            "000121.json": "ce2d44f796e1fbb60818d6f83654cf362fb29e0c55b395eb8bc08366bc6e1060",
+            "000122.json": "b3d260524e8f0c2dcc52ea87eba35b37e234c98233f92e8487e665c56070b06f",
+            "000123.json": "b5352ba9bdb1ba353e76c8c64a068f59b114eaccdc0760d77690f25ec909ed7a",
+            "000124.json": "9fd3d1d2f9ad89167cabf6ea5a7b513085f00c4a8d654753f7d01e17393df8bb",
+            "000125.json": "929d278725b5f00c5ea19f3529ca04b127176d5561c0453e29d5363f5254b2d4",
+            "000126.json": "ab0053bfcdf552ef53dfbe1a5d260630eb1722ce2c535f7b0c4f24e9905e649f",
+            "000127.json": "730d09b51407e44677a3c9730b32ff5878cd3b7577690181602746db68aba7ca",
+            "000128.json": "0a06471ff43c10eed8f6f39249a9b650ae7b866bb7b4a47ce92d7979b2c9f92a",
+            "000129.json": "18426941ea2c543799e873c4ef093a3c25bbc61c6ca6f2e841dc391a6f57fd2f",
+            "000130.json": "651558333b012a4fe12f5e1b120c735b8bc9f0902841808690800fadb506878d",
+            "000131.json": "f147a21162e0291ab5ab518c20c4d45d03321e3b0adcddaa59f4148203c45cc4",
+            "000132.json": "000e9d6dd205fee45f2bfe3b30de7b79acd15f96f4c7a159da8512d8ad0c46c9",
+            "000133.json": "efd8a20cd1cadf5a7014e3484128e26520445426b276a6ff64492e773a84d8aa",
+            "000134.json": "0111a51a1fa65f8896be92cad91ac757defea9fc80f5bcf6eef86417a0dfb1e8",
+            "000135.json": "f7282bb5afe3f7a882cdc2a59604ce23cf1451cb5c32d82c25e695effc689a18",
+            "000136.json": "648c78200e6db290c6c7810581677c2a22a1f7efc9f063ebf11ea5c94c00731a",
+            "000137.json": "666874900d1ed33a896048060b5ba2a5e224704e91528664bc6483c0f300f9bf",
+            "000138.json": "ec9efa5db7a1c4e14f197df9d2ec1aa88043490e3504ee950be71dd3734d3024",
+            "000139.json": "8450593ddb0152ca9b134b51b28f77eb97ed1af28af034e24f5a1439b7a38e20",
+            "000140.json": "22350a55d6fa464883d6debd21d10292ca6834e0fb730afa3507214eee18dd16",
+            "000141.json": "6268754046652700e2a2dd9f696b8002d0802cab9066700dab6767d4afe71bd4",
+            "000142.json": "eb920ab26b45ebd5ea3fd48763ba027c2c63f4caab2cfadf105713c3a86e7afe",
+            "000143.json": "a5694d58c9521bea83a4866285573def0319cad5e9632effbd56aa5bf0c6e755",
+            "000144.json": "a19d03eef831c972404d38defb5db9a98d4728cd9999578424f276c698a46060",
+            "000145.json": "8312bc7f0106ec6710678ab9eb80b3cb58ff6413809d1c5e129adf6b531c2037",
+            "000146.json": "daaa529d5c3bed970f98d564c263628aa247ab59f4eaa1da169ee69d86e06506",
+            "000147.json": "74026c7cfa92c6912af84f9e83997ef7a7c8feb1d1c7555660841edd9503cfa1",
+            "000148.json": "15607c26ecf9b7289005519c7957e89548ed0f84671ebab13826cbf9ee29150a",
+            "000149.json": "28fe693157fe1250bec629426ea758a8595b212acccf142fb26dba064e5c7942",
+            "000150.json": "38c03dbc7d2810163956930e156bde40073bb00a1897d2486adf836c569cb943",
+            "000151.json": "f02e3cffcf38a0685b7aef3a9db7a36313ce9e84468218607ea5a7600f1b96bb",
+            "000152.json": "b4a4c958d6bf04b11edba5726b4492316f33ed9a1d54df7684b8d0dd3d2fb7ef",
+            "000153.json": "1ba6c6e66b16fc32e3e300df77eab06a1e902c3feb52ac2d898538d4bc295cc2",
+            "000154.json": "5d3dcdc4b1b6e74e1abd1ce28f2a41a4f5d67b4eb0d81354eade31912d84608b",
+            "000155.json": "f89689fb29f308412a98a52501588f77808dc9223b9961e88d1b517f7af024bb",
+            "000156.json": "286a6e613c5d31168213f9c22f15436ff2a1762914ee1513f4c843c860ae56a0",
+            "000157.json": "cffef7217dd930d5df8140676f39a4224d1f730cdc8bd5fe13d459083cdc21bc",
+            "000158.json": "a6ed356d4e20497e73565613ae688cd3a6248a6435a27a7b628aab6ed7ea14b7",
+            "000159.json": "c239934a6ed2f2d7da6cc75f4d043616622fb5e17fb5a08c7c88e7df1f23e652",
+            "000160.json": "c3a0be4a1af03ee785f07b866cd683f54180037d0fc56eaeacc2cefa34db39a9",
+            "000161.json": "2e84b6d1156ae1ed16b70091c35841b5b58c731329832d8eb7e03aaebe11aa6b",
+            "000162.json": "7a499acca3386e204bd228d7d3d959a1a6592164be71c89eae97dace1bf9dfc4",
+            "000163.json": "59c4a349d731b25e5dbcc35307ba54ddd71e160523670fc2b814a81fd04e866c",
+            "000164.json": "98fb7511da55ef468030b3cb3a1a85b03051c2352e75ccc69892270efc715006",
+            "000165.json": "30197a1f9f4a001f6865bb1185cdfbfa9db8a196e18385e21c12a505809bbc17",
+            "000166.json": "b64b44e1d93eb804bea606b68e6506b77f6d25a3ea753e01090ee6b7d33bc23f",
+            "000167.json": "f283779d867ca0dfb87f2df79a333b1e7b567fa36adf619054660e74d64becff",
+            "000168.json": "d3efdf19e9cfdf9ca46b27c1a6b9e191e062be78b91455487f77d78d3497818e",
+            "000169.json": "4475e8de58e43463ec471575660792898e6c34bab4fe9cdb942c5c20d228a3a4",
+            "000170.json": "c1794c26b49b258d37c38ac5ee1f0d64306ab43b07e89b51c044b22e2a01229b",
+            "000171.json": "0986a295bfcd443549dc16e973508dcbf4645bb145537c8610720e25978ef074",
+            "000172.json": "a5d1cca0f10ec8313863bb0da2b9cfbbe3e9c4834773b50cfa65f1c6834a4a51",
+            "000173.json": "4dd461e5b433b163b1c335a6a2b4cd164c5e632e8f10def6b79f40675b7555f5",
+            "000174.json": "e6a9386afc84ccd510495898cbb98a7876383881d605cca9f48445c117be71e9",
+            "000175.json": "086e0715946af4c1d7a1ff1fad0e260c9672d3dd93b55756110dae036e9b71cb",
+            "000176.json": "18b9e65f7d51d8342e02c9497198d89eba5e9c3560a7e080e9066a8fdbc0457f",
+            "000177.json": "8696a47f9783a37d05c6bec07848ae1d4e60d8467ef0dd2fe26fb71f9543c3d7",
+            "000178.json": "3cdf29771a9d315bd835b457c3ced47181cc0c48c7928aa768d97f376f64cb70",
+            "000179.json": "fb5122ec4639fd3ea97743eb6b81c2731a4d2975c1cc03e2b59bb5af40c5aa9e",
+            "000180.json": "45b4c07c7e9db834a137ad612aa98b3d749e4acecfc99d4e28329cd3f8e9c32b",
+            "000181.json": "33a74e3ebda8bc9d2b2ebf5d334fa96639f5c15480398b1091d108f23d4b4c97",
+            "000182.json": "f9cfc7b082875549c2325a0d169715c51b81c253fd6493eee49b8fef08feaf68",
+            "000183.json": "83fab7200f3dbe7e93c2092ef81cf53385589e50e89747f90b6c7934d0ab0660",
+            "000184.json": "155fd5ed35586e3949cd2d10370b4033ac733f15d0a1715d99568ce50d651271",
+            "000185.json": "a1e3cce4aadcfab019f5788d0c3a105989af52046af06b47af6216080cc69359",
+            "000186.json": "c91405ec89a3f0bed20497c152c49a8446a4a8a221593af3860f8902d99bd63f",
+            "000187.json": "bafee5c31b9a7cdd9c3d4e63c26d29e9a95c8447bf1089c2d7c805947422b5cb",
+            "000188.json": "7c7882521adfa57d9132f8990f50a824036106fe25e72d1becaba013f6fa3ca7",
+            "000189.json": "a1c858da6b4348530b818a016ccffa447581a51af6654fef780fea1a349bad85",
+            "000190.json": "26dfa511893c66e5e0b5a8ea25c6e5325d5b6a0e430b1ac5221719146f88b918",
+            "000191.json": "e2785da570f068c2912a18fbc003caeefe4ec1943faecebd76b5ce0471cb6848",
+            "000192.json": "957713e0313e7ef93c99ad6daf0a9e02c323b748a374d2816b028ebd7d4fcb6a",
+            "000193.json": "8e71a962e9a03c976700bb94a0237f33195cb9826d71cd8669c9b8fd945e8181",
+            "000194.json": "6f62594a2d2a2e88e3c9deafca18d7d1108264b489a3b6b7bbff47ca2130d66b",
+            "000195.json": "67aa99ba7ea7d1fb42fe8de9d82d45fdda899a53cf9c5fb85b08bcba345fb0dd",
+            "000196.json": "0434b5b57183069f3d0fdc26866b3fa47ac00738450d7e952e6408d3a9e4b618",
+            "000197.json": "4237eda0a1945a20adc39afafda1c5071c2ad364195889c5861f6dbcd632050f",
+            "000198.json": "f255878b07064b6a66015393e06ab7e44ad6c2b728197e5059f1f0c2e540f777",
+            "000199.json": "313501605bc6395adc4ab924577d4820d20d0920b5930cf243dbc30f386f42e7",
+            "000200.json": "c965f6558c238551bf74c0976ff5429f5d176fd8d935472f76e97bf124c65961",
+            "000201.json": "82565fbaa8de0684b28ccae44f2dce7176ecd40e9b507f6aaaf9afbdb833c318",
+            "000202.json": "3424081e6263c5d0ad12e0d39d44883a60793a19d4920e00a0aed08c5bde5b70",
+            "000203.json": "344fb186b2f7f85464060d8de2992d05d1c5228c79606eb2858a5f4c9f2a1ee8",
+            "000204.json": "d77e81a42f7c48ab046a307961d56630c0f1223cbe0fabc0865a0729405ea8b5",
+            "000205.json": "644c468dbd7461800af127ce18b7192d33d5e0d96cf689ff0bf287ee65501922",
+            "000206.json": "e8255e26f131c0eab6758ca56909c5e36e696b430bf44f56e768abe64b11716a",
+            "000207.json": "7e892ab1ad6f5d81cc27f71f8e2c6175682f2519ff270ed28a3414bb07476d5b",
+            "000208.json": "c665e1bc38026ae5b987c4737b6603c74f6f318fba315715d31bc23d9341c7e2",
+            "000209.json": "8b26507faf08e8c96b449245b73e8c1be63ec17320369ca204135e1af920c07c",
+            "000210.json": "951184bba159ecf2f7e655ea663c8bb9c7dff4fffcf3e583df9e6454ebcba4cd",
+            "000211.json": "2d1923f6e93778178c143da574c9ea64d90ff6a2554564135ed14a1a7c2fb597",
+            "000212.json": "34b04052149e7b8b08505dec0f475e0a095718ca458a613c8c7d3261aafa7ae9",
+            "000213.json": "95dcb8d4aaeed9d2861fc49766c5ddf4f775d5a2ab5f7da17c685420ecb74896",
+            "000214.json": "35d15019196d0044a93319e4978e460493f7c9dbd1b0d5e3020e1c01ab9c0e37",
+            "000215.json": "34b0a212e9619e5ff644eeadebb3e7a3d7febd80b32235ef2b40e950f80d5f3a",
+            "000216.json": "a95a464b0b5de4e7b1270bede8eac64a7ec270d08a09e98fa3caa207a5334185",
+            "000217.json": "0cb93a341c621c71ff46e638a3cdceb8acdc07236c798de118df1ebea9646d73",
+            "000218.json": "f6bdf4d96a48412131d3b7edbbb3cb654ab4cbc9daf9576d59db9fa913312a03",
+            "000219.json": "6fa575a8ba7982aa999a31718c9ade95fd6ac802f75bb68f87a855b4f2872be3",
+            "000220.json": "6e880ec5dbc648b5da5b981863218aa3074dd0e5dfcb08b0882deda2f71e326e",
+            "000221.json": "aa8ff5aabe66b84ca616299c79765ab3078362c9ea2586df17f55bc9dc0e3aa1",
+            "000222.json": "b04842eb299247f164d5d7bca382a4537a9605f48dc04f193545fbf04bcce481",
+            "000223.json": "f9c0bde13c72ec3fcbaa674777f1ab1e6a027fddcfbb3c2804c8ace142011be2",
+            "000224.json": "47b66929ac9907ac3fd613c8f352ec33a0f3943c4e7dea075b0bcc5ecb4959d8",
+            "000225.json": "23bbe67ec1a8d004c81226622c87a3853156950e0ac8eb4b0821e40c60078dc2",
+            "000226.json": "44e69accd89a8ced410bd8b9aad9ee56c4e2a00fce39ac29e5159ae61ee50222",
+            "000227.json": "261f72fbe7bea29fc7972e9ad15955fbc11804671cca5e93fd11a488bd61d672",
+            "000228.json": "1e3ff396a0582b236c20280ebb15b742cca74aeb6b73923d7977919ab11147d9",
+            "000229.json": "285184ed9c3f90917174182c865d2f1674df6dc6183da6445340e4dff0eec51c",
+            "000230.json": "265c0b44b99574a48a3440d3d994c44dd92d3164c7ec65db928d8e0c288c8643",
+            "000231.json": "62adf2fcc6d821fa8ec3a626c85672e8fb15cbed37c5ac8344bec9462337c5de",
+            "000232.json": "de6416c382516fb864f165264a970059f44f8975d6640f6d6e517a66f9be2e1a"
+          },
+          "worker_failure_absent": true,
+          "inherited_v2": {
+            "prior_plan_path": "/home/luisceb/ela-gse252892-range-execution-20261113.json",
+            "prior_plan_sha256": "98a89d95c199fb13e90ac5f68c2b33cec1251daf62313d83ec4b4b1fe649af6d",
+            "prior_root": "/home/luisceb/ela-gse252892-range-run-02",
+            "prior_roots": [
+              "/home/luisceb/ela-gse252892-run-01",
+              "/home/luisceb/ela-gse252892-range-run-02"
+            ],
+            "prior_charge_bytes": 2111084972,
+            "receipt_sha256": {
+              "accepted.json": "82655ad9d44e9786530da63eef437bb0d9736a80c715b33ace584c2ad73b33b8",
+              "supervision.json": "d125f3801c1315aa6e1c08583a09a23cb72d62d27d2ca1459b10b4293d9fc380",
+              "worker-failure.json": "cd53bb891160ec1a1de6cdc24958b35db43e70d7fd6d3bda138da1d68c0b997b",
+              "transfer-ledger.json": "a08e1aeb62749c55169287bf18bb715e693f8f534a322780ab645209d924cb98",
+              "proposal_claim.json": "281fe8b54fbda481ce744b2fd85158067d48c95c3e8aae100f2d40f27ed9ae05"
+            },
+            "attempt_receipt_sha256": {
+              "000001.json": "437303e6199b5eaf7e78fc258107f66557ff018d16a4a50206fceab7c61211cb",
+              "000002.json": "b92a7ce43c5e60cd524c5951ced3f9be04b652ae10c348b07b3181073013d583",
+              "000003.json": "1f03c0b0e5e8180f19f2d6d2a1d511994d6538fa55f5213ea86104e86b3ff4d3",
+              "000004.json": "48f3a50953bd82ef39c6f317d2b9d367d66a3247b0211a99283003f3c24b2e41",
+              "000005.json": "dc2a21bfde89df97c809be991cc939e59d086d1ff6e3293131ef46a6c41d3335",
+              "000006.json": "523015ceb61133dd6289654be67ee261c7241d4224e4cac38beed59b271c0147",
+              "000007.json": "6b7a0f992e4a536df266c5f2854b358dc82b05aefb75b9446c821c5306af0fc2",
+              "000008.json": "d5eb81d03a9a8358aaf887f5971ce9d909ffe716a157e2f6e1e4a0310e4b88cc",
+              "000009.json": "5cdd7bdd4381df0b161cf29af60b240685b7fa0a9eea321f37e25d946483330f",
+              "000010.json": "8aa9d64aac32c07f3e727171884310ea779eb6283446433ea15f61c276df9562",
+              "000011.json": "a12d23452661e1ebb0d6beca20504b599eb21baf54f22b0044d856794360e1f5",
+              "000012.json": "505e137d0c452dcf2b198aae722aa79fa17ef959b3a2eb599d0cfff76963ed59",
+              "000013.json": "79cde1ec53f8dba1531386219f4ea24a737a6db7adeb8972522b297e51219fb1",
+              "000014.json": "1237812696b3d2db6b76296b7e56719da427b5ac54f53bbeb0f1c5ff62f12b78",
+              "000015.json": "2d8f8ac50f1ef3851b7126b3494e4679df0160e3b2cc5eed5327bd728a3e3d3f",
+              "000016.json": "a9106935852713425d4a0dfae79342a2eb371dd23d534ab94428a6dd4d7f1be1",
+              "000017.json": "3f4ee4631c268badb2c97100653620a357d119f6aed6c4095403fc78caff9fc9",
+              "000018.json": "c7ea9ab9112b2519d27482c82bcd0b6f6e7440e9af2225f960b13d3895e0d9ad",
+              "000019.json": "0bc05796636265fe050e14b552c4598dcbfefd1466676ad1150ffbd19c621b0c",
+              "000020.json": "4d844462982ae5243d6d5aae8993eac5f6f15101e0eb4084a1caae9b1812600a",
+              "000021.json": "7eed34986c68532b95eff5ec227062e1e85a1ffa2ff18300c8da9c2cd03936b7",
+              "000022.json": "bdf9e8ad3ca9dce910c914c60ea8ce541c659bb8cf5f083ad5859e62eb105b30",
+              "000023.json": "412c80c7361e037eda8e3e01c510264fe218658eccbf907d7f592f68cea31195",
+              "000024.json": "85bd33033f0ae75fd1349f963267337580ff8ab29665ca39b45d05038e96a3ec",
+              "000025.json": "cefab20e725ca5fbb65b4b31779c7cbd190bd9f7b849ebbdf85f50c797eda752",
+              "000026.json": "28560aefc71f9337102fdeb25e162eac13be02deeb9872cf4fe5e640f33da3a5",
+              "000027.json": "9af9672f7a0d7e14286dd73328eec2553c24aa02a81df2cd91e26b6dffb09574",
+              "000028.json": "418c5c41ce189d2a25c719ea1d2487e66095310dfaf004cb4688d42fdd0903af",
+              "000029.json": "5e816cd4dee085d79a557c74e3a8d6bb1df136dae9dd8e1eabf90bedd8a0c588",
+              "000030.json": "2ec1001f26f9fd1688d1cf8dbe09eefbd40b7f86dedb98cc0de4c9930a66347e",
+              "000031.json": "484ee1863df5985e7ad94d86affe5601bc254e01c79d9098cddada6552bace82",
+              "000032.json": "5fc60ce0cb383db911693dc5db1a71b4572afc8dedfc47f5646d5d50b01d6224",
+              "000033.json": "8150f28855de1bfda8dc8ff70a35475363309c5900a2072293546570594bb5be",
+              "000034.json": "0953998ec0bf296f185b9c879ecfa0165208f82a0e0ccbad1383edae6b340a2c",
+              "000035.json": "d2d39d5ebab00b9090df9664111d11d3902f1ac3aee833f3a0301e72de77a230",
+              "000036.json": "1a928dedbe66924dcd304b20170619ff97ea5b5b219cfbe0a6c5bfb6fd16f6e1",
+              "000037.json": "eb0da5dd66d5e1d60e4feb8c93e25f12c4b0f7a5b3c44724af6e1eaed1a59f0e",
+              "000038.json": "544fb922966ba8b817844351f8f8f8a2614d52ee9eb600eea068fd08d0a7afdf",
+              "000039.json": "7cfd5366328130ae30b35005aeabf35d30041f25d4258ed91c614e441b7eed39",
+              "000040.json": "58cf74699affb28db98c314795d994547d4434554927a7e8471b716842cceeae",
+              "000041.json": "0a2f6a3306b9820ff41a64a927030d03aea157dcf1293b5ad49298fa03e5d45a",
+              "000042.json": "68c08a92012c2eca38cce4a5a0c0686e3f4b0e5ff89c9c65062042935ae72d04",
+              "000043.json": "474705ad7bb9d6dc26f36e0fb7f85b347d888be1b6e31e9e5979f8042e6e7be6",
+              "000044.json": "3d2f1b4292af67909a2924ffc194cb35f14c814ef7927805f78c8fe0e10f1084",
+              "000045.json": "9c73c2664f9d54c5cfa9135e2eb9c4b23aba57f0b71aaddeac52d86d12127842",
+              "000046.json": "5973fc2cd4e01d0472746be08cb14bf89ee8cb4ac80a7ab4eb76fa401b7b48c3",
+              "000047.json": "d67e7ba832040ea8d807d6f3a07753e9905af952c0bdc3ca8a465bc02a2b3587",
+              "000048.json": "0cf2c75cc7e888125863cf1ea7785ed3494830ed30646c8e4872824cf31ed993",
+              "000049.json": "1430a75ebfd93225b35fe39cdf448920bf1217d9cc7d353dbd02501ac6c35e77",
+              "000050.json": "c722d3cb56cb0db8e47d5feedc499d55da925db42d85c7fbc9355db0f75c8db2",
+              "000051.json": "4ebfc1d9fe481381ad48173665c0dec5bfd8ca37ace3a2961e0847b2d7faf7c2",
+              "000052.json": "e4b6640db57e6b4e982c8477fe18545a59be56cdc823f12cb76c289652197397",
+              "000053.json": "72b5d5009584571c598dc1ac7665b692f94f93f93e14144df8053ff05756b6b7",
+              "000054.json": "8f806f810a96b9bd6c883699b223365cfb45a0b2fe66008f72533858a1a75c21",
+              "000055.json": "340ba0a376fbb1fe6dedfc9d4ed3b7a39fdadffcc6a2e08982f96c9c81567da4",
+              "000056.json": "135cdea1175c19eaa4ad5c802aaf30020620d789ede5661158540e2143698c4c",
+              "000057.json": "9bec92154e9212164e2623511009ad72cd03b8205afb370aafa8569ea2e73771",
+              "000058.json": "8d9690cb284cc146963054b7ff72cd20469a1e9b8755a06652b7417871dafadd",
+              "000059.json": "02af402896eb3433666491e824e4f55bfccc83efa331230902cf5867fc825d56",
+              "000060.json": "8cec1f4f2b2f40608f2b530beb858d183cc5e566df4664321a5b29cee69a076a"
+            },
+            "inherited_v1": {
+              "prior_plan_path": "/home/luisceb/ela-gse252892-execution-20261112.json",
+              "prior_plan_sha256": "911c5be6f8a470d085ab57279ee8d3ce40bb31edcb990a3064238d9c4b9d9a9f",
+              "prior_root": "/home/luisceb/ela-gse252892-run-01",
+              "prior_charge_bytes": 351927726,
+              "receipt_sha256": {
+                "accepted.json": "d99d757618a4367ab89ed13dfec4355cd418eefacc09f1ef1e665399b4c078b9",
+                "supervision.json": "af7487b74c7f89a2ae1fd7ed733ef25d7d23fff9f94a86dcf25317d5877cf637",
+                "worker-failure.json": "b167c8cd76096306db577ac5cade1c7ce05784ae2cd425fe0129dadbc3532b78",
+                "transfer-ledger.json": "1ccaa08a4f2e113110a9d906bd76dd0d9852a8f173e0854a560bc33cce9c14a3",
+                "proposal_claim.json": "01675fa86c017b798e3241f438be756a71016afc1a884e6d0208590f9eacbd8b"
+              },
+              "prefix": {
+                "path": "/home/luisceb/ela-gse252892-run-01/GSM8009878/SRR27477544_1.fastq.gz.partial",
+                "bytes": 351927726,
+                "sha256": "ee7762da8dc57e0ab9878fbf449cb7f933fd7f95c6a32c4e93be5dc2c3c5d2aa",
+                "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_1.fastq.gz"
+              }
+            },
+            "prefix": {
+              "path": "/home/luisceb/ela-gse252892-run-01/GSM8009878/SRR27477544_1.fastq.gz.partial",
+              "bytes": 351927726,
+              "sha256": "ee7762da8dc57e0ab9878fbf449cb7f933fd7f95c6a32c4e93be5dc2c3c5d2aa",
+              "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_1.fastq.gz"
+            },
+            "retained_blocks": [
+              {
+                "path": "/home/luisceb/ela-gse252892-range-run-02/GSM8009878/SRR27477544_1.fastq.gz.ranges/range-000351927726-000385482157-a1.ok",
+                "start": 351927726,
+                "end": 385482157,
+                "bytes": 33554432,
+                "sha256": "808517697b40dcade8568c8e4fde5b88e8da7731f643cbf8859e605e7327ca73",
+                "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_1.fastq.gz"
+              },
+              {
+                "path": "/home/luisceb/ela-gse252892-range-run-02/GSM8009878/SRR27477544_1.fastq.gz.ranges/range-000385482158-000419036589-a1.ok",
+                "start": 385482158,
+                "end": 419036589,
+                "bytes": 33554432,
+                "sha256": "90b3ac6a23f2decf4ce645adfee07749374ee9d1db3b3a5bd24e580a576c8f86",
+                "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_1.fastq.gz"
+              },
+              {
+                "path": "/home/luisceb/ela-gse252892-range-run-02/GSM8009878/SRR27477544_1.fastq.gz.ranges/range-000419036590-000452591021-a1.ok",
+                "start": 419036590,
+                "end": 452591021,
+                "bytes": 33554432,
+                "sha256": "24dd9d6cb71220f0dbcf57896aa6e2aac09f68ec8f9de8f6c98aedd965a5af6a",
+                "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_1.fastq.gz"
+              },
+              {
+                "path": "/home/luisceb/ela-gse252892-range-run-02/GSM8009878/SRR27477544_1.fastq.gz.ranges/range-000452591022-000486145453-a1.ok",
+                "start": 452591022,
+                "end": 486145453,
+                "bytes": 33554432,
+                "sha256": "b99838f3023a7604ec3b2ad7f58c0eeb535f53183e3b5547d77d8f1ad9385f52",
+                "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_1.fastq.gz"
+              },
+              {
+                "path": "/home/luisceb/ela-gse252892-range-run-02/GSM8009878/SRR27477544_1.fastq.gz.ranges/range-000486145454-000519699885-a1.ok",
+                "start": 486145454,
+                "end": 519699885,
+                "bytes": 33554432,
+                "sha256": "b13ed061887b1967be79a046c06f810acadcb34450be54a07f3461647381826f",
+                "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_1.fastq.gz"
+              },
+              {
+                "path": "/home/luisceb/ela-gse252892-range-run-02/GSM8009878/SRR27477544_1.fastq.gz.ranges/range-000519699886-000553254317-a1.ok",
+                "start": 519699886,
+                "end": 553254317,
+                "bytes": 33554432,
+                "sha256": "01c4580981aa4067ada47f308e401b3314e6103b146edbc8c4661ee370c72ccc",
+                "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_1.fastq.gz"
+              },
+              {
+                "path": "/home/luisceb/ela-gse252892-range-run-02/GSM8009878/SRR27477544_1.fastq.gz.ranges/range-000553254318-000586808749-a1.ok",
+                "start": 553254318,
+                "end": 586808749,
+                "bytes": 33554432,
+                "sha256": "482176d66b4a4860daecd576c8754ece7f6fe04aca4c7aff3d0b59545028d03f",
+                "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_1.fastq.gz"
+              },
+              {
+                "path": "/home/luisceb/ela-gse252892-range-run-02/GSM8009878/SRR27477544_1.fastq.gz.ranges/range-000586808750-000620363181-a1.ok",
+                "start": 586808750,
+                "end": 620363181,
+                "bytes": 33554432,
+                "sha256": "ea03b7866b2d06a5e3eec54ee0fccac81bb49450030e54ba6cf4fd199ee5fa9d",
+                "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_1.fastq.gz"
+              },
+              {
+                "path": "/home/luisceb/ela-gse252892-range-run-02/GSM8009878/SRR27477544_1.fastq.gz.ranges/range-000620363182-000653917613-a1.ok",
+                "start": 620363182,
+                "end": 653917613,
+                "bytes": 33554432,
+                "sha256": "046f45566c1c82a6e721618102332c8846335424abfb269e947ed8c1041a6018",
+                "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_1.fastq.gz"
+              },
+              {
+                "path": "/home/luisceb/ela-gse252892-range-run-02/GSM8009878/SRR27477544_1.fastq.gz.ranges/range-000653917614-000687472045-a1.ok",
+                "start": 653917614,
+                "end": 687472045,
+                "bytes": 33554432,
+                "sha256": "090aee3069b6950e1b54fa9a7aad6397d0182824d3e609f128e62832acfebec4",
+                "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_1.fastq.gz"
+              },
+              {
+                "path": "/home/luisceb/ela-gse252892-range-run-02/GSM8009878/SRR27477544_1.fastq.gz.ranges/range-000687472046-000721026477-a1.ok",
+                "start": 687472046,
+                "end": 721026477,
+                "bytes": 33554432,
+                "sha256": "b1553f6058f239e3147c32ac683fae073f0d9fbcee5668b0a31839bee6c5a6e0",
+                "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_1.fastq.gz"
+              },
+              {
+                "path": "/home/luisceb/ela-gse252892-range-run-02/GSM8009878/SRR27477544_1.fastq.gz.ranges/range-000721026478-000754580909-a1.ok",
+                "start": 721026478,
+                "end": 754580909,
+                "bytes": 33554432,
+                "sha256": "2a7d59244f769ed5b2d170efb29720789374b0147ffa9ac534ec59afaa372e73",
+                "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_1.fastq.gz"
+              },
+              {
+                "path": "/home/luisceb/ela-gse252892-range-run-02/GSM8009878/SRR27477544_1.fastq.gz.ranges/range-000754580910-000788135341-a1.ok",
+                "start": 754580910,
+                "end": 788135341,
+                "bytes": 33554432,
+                "sha256": "abf66e5f29ddeaa6aabe651c307f4a13c1dbe6c90b27122a43d2d368b8f756a8",
+                "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_1.fastq.gz"
+              },
+              {
+                "path": "/home/luisceb/ela-gse252892-range-run-02/GSM8009878/SRR27477544_1.fastq.gz.ranges/range-000788135342-000821689773-a1.ok",
+                "start": 788135342,
+                "end": 821689773,
+                "bytes": 33554432,
+                "sha256": "c65ccb65d2acb7f2fb020cfe1eea482518a47bd21cf6f00e70ed3e622e3d3719",
+                "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_1.fastq.gz"
+              },
+              {
+                "path": "/home/luisceb/ela-gse252892-range-run-02/GSM8009878/SRR27477544_1.fastq.gz.ranges/range-000821689774-000855244205-a1.ok",
+                "start": 821689774,
+                "end": 855244205,
+                "bytes": 33554432,
+                "sha256": "52e6f01f7435909cf55fa5d65e68b71fce9cbd38d1880e8cc95681386aeccb73",
+                "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_1.fastq.gz"
+              },
+              {
+                "path": "/home/luisceb/ela-gse252892-range-run-02/GSM8009878/SRR27477544_1.fastq.gz.ranges/range-000855244206-000888798637-a1.ok",
+                "start": 855244206,
+                "end": 888798637,
+                "bytes": 33554432,
+                "sha256": "be86cdd3911f29d88d503a110af5e007c5dda27c120a57dcebf9c51ebe374c04",
+                "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_1.fastq.gz"
+              },
+              {
+                "path": "/home/luisceb/ela-gse252892-range-run-02/GSM8009878/SRR27477544_1.fastq.gz.ranges/range-000888798638-000922353069-a1.ok",
+                "start": 888798638,
+                "end": 922353069,
+                "bytes": 33554432,
+                "sha256": "b2d16deb7d12f57eb66bbedacd507136f65788e757da36dbcd8839de378a04b9",
+                "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_1.fastq.gz"
+              },
+              {
+                "path": "/home/luisceb/ela-gse252892-range-run-02/GSM8009878/SRR27477544_1.fastq.gz.ranges/range-000922353070-000955907501-a1.ok",
+                "start": 922353070,
+                "end": 955907501,
+                "bytes": 33554432,
+                "sha256": "18d72661279fb11d38419c8719f8a1769e544f6fb2a44f607e21dba511a3aea4",
+                "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_1.fastq.gz"
+              },
+              {
+                "path": "/home/luisceb/ela-gse252892-range-run-02/GSM8009878/SRR27477544_1.fastq.gz.ranges/range-000955907502-000989461933-a1.ok",
+                "start": 955907502,
+                "end": 989461933,
+                "bytes": 33554432,
+                "sha256": "96f4d4110e6a785411cbe907aabfb97c4c0ddc05e7e2cf3771306b65b98d917c",
+                "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_1.fastq.gz"
+              },
+              {
+                "path": "/home/luisceb/ela-gse252892-range-run-02/GSM8009878/SRR27477544_1.fastq.gz.ranges/range-000989461934-001023016365-a1.ok",
+                "start": 989461934,
+                "end": 1023016365,
+                "bytes": 33554432,
+                "sha256": "2c92ca6b27fe4476c597520b379549b011bdab463e5e917be20893fee11fce5d",
+                "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_1.fastq.gz"
+              },
+              {
+                "path": "/home/luisceb/ela-gse252892-range-run-02/GSM8009878/SRR27477544_1.fastq.gz.ranges/range-001023016366-001056570797-a1.ok",
+                "start": 1023016366,
+                "end": 1056570797,
+                "bytes": 33554432,
+                "sha256": "b9e65c4140867c3e4039f881fcac0770dda3be008f70dae40d929ccd54eda129",
+                "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_1.fastq.gz"
+              },
+              {
+                "path": "/home/luisceb/ela-gse252892-range-run-02/GSM8009878/SRR27477544_1.fastq.gz.ranges/range-001056570798-001090125229-a1.ok",
+                "start": 1056570798,
+                "end": 1090125229,
+                "bytes": 33554432,
+                "sha256": "b21a2837dea6758fea6a1fd84db9132b8fdcb8870fc06a7932a5cc4e45b975b9",
+                "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_1.fastq.gz"
+              },
+              {
+                "path": "/home/luisceb/ela-gse252892-range-run-02/GSM8009878/SRR27477544_1.fastq.gz.ranges/range-001090125230-001123679661-a1.ok",
+                "start": 1090125230,
+                "end": 1123679661,
+                "bytes": 33554432,
+                "sha256": "056a7b7f68c34ff37d47d31c5e2620e3880568ee8060b31543d41c447e2ed576",
+                "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_1.fastq.gz"
+              },
+              {
+                "path": "/home/luisceb/ela-gse252892-range-run-02/GSM8009878/SRR27477544_1.fastq.gz.ranges/range-001123679662-001157234093-a1.ok",
+                "start": 1123679662,
+                "end": 1157234093,
+                "bytes": 33554432,
+                "sha256": "1d66f2cea829528ec1c837f6254b9ec82266499f6333ca41413c17129cac14b9",
+                "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_1.fastq.gz"
+              },
+              {
+                "path": "/home/luisceb/ela-gse252892-range-run-02/GSM8009878/SRR27477544_1.fastq.gz.ranges/range-001157234094-001190788525-a1.ok",
+                "start": 1157234094,
+                "end": 1190788525,
+                "bytes": 33554432,
+                "sha256": "05a1dcf04cc94902f7d842e1f2e0906b178b8bcfc98928efad3fd3fbc905c93b",
+                "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_1.fastq.gz"
+              },
+              {
+                "path": "/home/luisceb/ela-gse252892-range-run-02/GSM8009878/SRR27477544_1.fastq.gz.ranges/range-001190788526-001224342957-a2.ok",
+                "start": 1190788526,
+                "end": 1224342957,
+                "bytes": 33554432,
+                "sha256": "946c58bf693e7cee4c8b8bde68a2ee03e47a826c44dfa1501696b008ded75d77",
+                "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_1.fastq.gz"
+              },
+              {
+                "path": "/home/luisceb/ela-gse252892-range-run-02/GSM8009878/SRR27477544_1.fastq.gz.ranges/range-001224342958-001257897389-a1.ok",
+                "start": 1224342958,
+                "end": 1257897389,
+                "bytes": 33554432,
+                "sha256": "f410a58bd4caa9d0b5ffc1aef4a028a6b45c48f693bd74c9eea1045158839bbc",
+                "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_1.fastq.gz"
+              },
+              {
+                "path": "/home/luisceb/ela-gse252892-range-run-02/GSM8009878/SRR27477544_1.fastq.gz.ranges/range-001257897390-001291451821-a1.ok",
+                "start": 1257897390,
+                "end": 1291451821,
+                "bytes": 33554432,
+                "sha256": "6012fb6683fe5fe3921352a6e346a118bf8b233bd7a5d44bc8c85781dcde1b5d",
+                "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_1.fastq.gz"
+              },
+              {
+                "path": "/home/luisceb/ela-gse252892-range-run-02/GSM8009878/SRR27477544_1.fastq.gz.ranges/range-001291451822-001325006253-a1.ok",
+                "start": 1291451822,
+                "end": 1325006253,
+                "bytes": 33554432,
+                "sha256": "e4c9a238922a1a9bf72b360c7d46c7f884baa392eec30c50f6ae70cadd2a86dc",
+                "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_1.fastq.gz"
+              },
+              {
+                "path": "/home/luisceb/ela-gse252892-range-run-02/GSM8009878/SRR27477544_1.fastq.gz.ranges/range-001325006254-001358560685-a1.ok",
+                "start": 1325006254,
+                "end": 1358560685,
+                "bytes": 33554432,
+                "sha256": "7cd4b4ac1890bfcd1d5f94450534efce79bde4157187befe876d4a58a54fd6e1",
+                "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_1.fastq.gz"
+              },
+              {
+                "path": "/home/luisceb/ela-gse252892-range-run-02/GSM8009878/SRR27477544_1.fastq.gz.ranges/range-001358560686-001392115117-a1.ok",
+                "start": 1358560686,
+                "end": 1392115117,
+                "bytes": 33554432,
+                "sha256": "822244b122fb2be782d1605e6c3f6561cb96e8c369c57994b6f98de3454bdc2d",
+                "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_1.fastq.gz"
+              },
+              {
+                "path": "/home/luisceb/ela-gse252892-range-run-02/GSM8009878/SRR27477544_1.fastq.gz.ranges/range-001392115118-001425669549-a1.ok",
+                "start": 1392115118,
+                "end": 1425669549,
+                "bytes": 33554432,
+                "sha256": "407ca81a0b0286d64e6196fc5feb2aec59ec5be163f9acf03e592ef57c23b07f",
+                "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_1.fastq.gz"
+              },
+              {
+                "path": "/home/luisceb/ela-gse252892-range-run-02/GSM8009878/SRR27477544_1.fastq.gz.ranges/range-001425669550-001459223981-a1.ok",
+                "start": 1425669550,
+                "end": 1459223981,
+                "bytes": 33554432,
+                "sha256": "2ac53f8ac9ecea40e3bea2404f95983a939cc199c2fa54cc8c5f4993e5cbd9f0",
+                "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_1.fastq.gz"
+              },
+              {
+                "path": "/home/luisceb/ela-gse252892-range-run-02/GSM8009878/SRR27477544_1.fastq.gz.ranges/range-001459223982-001492778413-a1.ok",
+                "start": 1459223982,
+                "end": 1492778413,
+                "bytes": 33554432,
+                "sha256": "1b28a7e78c87317f204e92559d2b736e300f4a6dfcdaccad36685f47cffadca7",
+                "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_1.fastq.gz"
+              },
+              {
+                "path": "/home/luisceb/ela-gse252892-range-run-02/GSM8009878/SRR27477544_1.fastq.gz.ranges/range-001492778414-001526332845-a1.ok",
+                "start": 1492778414,
+                "end": 1526332845,
+                "bytes": 33554432,
+                "sha256": "7a83ea5e874a46c8edfb4785830327b5e0534e61f38b6874148cd982df665236",
+                "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_1.fastq.gz"
+              },
+              {
+                "path": "/home/luisceb/ela-gse252892-range-run-02/GSM8009878/SRR27477544_1.fastq.gz.ranges/range-001526332846-001559887277-a1.ok",
+                "start": 1526332846,
+                "end": 1559887277,
+                "bytes": 33554432,
+                "sha256": "a719d9248044ba76f480d910d304ea1eac650f4b484a82f4211e50e754e13ad3",
+                "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_1.fastq.gz"
+              },
+              {
+                "path": "/home/luisceb/ela-gse252892-range-run-02/GSM8009878/SRR27477544_1.fastq.gz.ranges/range-001559887278-001593441709-a1.ok",
+                "start": 1559887278,
+                "end": 1593441709,
+                "bytes": 33554432,
+                "sha256": "38f203f75f592fe9cce3686c5c9e96ae79dcdbe46cc70945c511be703e7b6014",
+                "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_1.fastq.gz"
+              },
+              {
+                "path": "/home/luisceb/ela-gse252892-range-run-02/GSM8009878/SRR27477544_1.fastq.gz.ranges/range-001593441710-001626996141-a1.ok",
+                "start": 1593441710,
+                "end": 1626996141,
+                "bytes": 33554432,
+                "sha256": "f8332b0c7bdc8a352d0badec3d4d93993aa67938a392cabe544c97a0c0cc4647",
+                "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_1.fastq.gz"
+              },
+              {
+                "path": "/home/luisceb/ela-gse252892-range-run-02/GSM8009878/SRR27477544_1.fastq.gz.ranges/range-001626996142-001660550573-a1.ok",
+                "start": 1626996142,
+                "end": 1660550573,
+                "bytes": 33554432,
+                "sha256": "ecff90548db0fc4c03eafa4a648508a399963c6bcafb2ac57fde2ace85058a94",
+                "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_1.fastq.gz"
+              },
+              {
+                "path": "/home/luisceb/ela-gse252892-range-run-02/GSM8009878/SRR27477544_1.fastq.gz.ranges/range-001660550574-001694105005-a1.ok",
+                "start": 1660550574,
+                "end": 1694105005,
+                "bytes": 33554432,
+                "sha256": "11fc82a684ece0f00725594669ce071d1777af349dd755b0bd505b7851410348",
+                "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_1.fastq.gz"
+              },
+              {
+                "path": "/home/luisceb/ela-gse252892-range-run-02/GSM8009878/SRR27477544_1.fastq.gz.ranges/range-001694105006-001727659437-a2.ok",
+                "start": 1694105006,
+                "end": 1727659437,
+                "bytes": 33554432,
+                "sha256": "f39d0ba28c7a5a233439a764f199098b3cc111a16f18a406853b3a687c3a7122",
+                "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_1.fastq.gz"
+              },
+              {
+                "path": "/home/luisceb/ela-gse252892-range-run-02/GSM8009878/SRR27477544_1.fastq.gz.ranges/range-001727659438-001761213869-a1.ok",
+                "start": 1727659438,
+                "end": 1761213869,
+                "bytes": 33554432,
+                "sha256": "049e1d9840ea2ccb106e9eb30994e6c179942ea25ea29d2610cf2e927f8caeb9",
+                "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_1.fastq.gz"
+              },
+              {
+                "path": "/home/luisceb/ela-gse252892-range-run-02/GSM8009878/SRR27477544_1.fastq.gz.ranges/range-001761213870-001794768301-a1.ok",
+                "start": 1761213870,
+                "end": 1794768301,
+                "bytes": 33554432,
+                "sha256": "dcae4b8cdad99dc5e672cef812a83636c383943eb2ae2e5e16f3fb39f893d774",
+                "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_1.fastq.gz"
+              },
+              {
+                "path": "/home/luisceb/ela-gse252892-range-run-02/GSM8009878/SRR27477544_1.fastq.gz.ranges/range-001794768302-001828322733-a1.ok",
+                "start": 1794768302,
+                "end": 1828322733,
+                "bytes": 33554432,
+                "sha256": "d41be7d419f5fb837244586d14fcafe0f32130c8010cc1927ae913144e3d1128",
+                "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_1.fastq.gz"
+              },
+              {
+                "path": "/home/luisceb/ela-gse252892-range-run-02/GSM8009878/SRR27477544_1.fastq.gz.ranges/range-001828322734-001861877165-a1.ok",
+                "start": 1828322734,
+                "end": 1861877165,
+                "bytes": 33554432,
+                "sha256": "9315a80e1a48b9c6be8d40da8f7627e3bfc5304f141a7a28b48f3022cc6c1238",
+                "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_1.fastq.gz"
+              },
+              {
+                "path": "/home/luisceb/ela-gse252892-range-run-02/GSM8009878/SRR27477544_1.fastq.gz.ranges/range-001861877166-001895431597-a1.ok",
+                "start": 1861877166,
+                "end": 1895431597,
+                "bytes": 33554432,
+                "sha256": "b8b95055372b51d978ef3dc8f68a5c8e5a0e9f82bd988ff6728bfc7937e33bf2",
+                "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_1.fastq.gz"
+              },
+              {
+                "path": "/home/luisceb/ela-gse252892-range-run-02/GSM8009878/SRR27477544_1.fastq.gz.ranges/range-001895431598-001928986029-a1.ok",
+                "start": 1895431598,
+                "end": 1928986029,
+                "bytes": 33554432,
+                "sha256": "70c001c4c2ee0cc9cfb19da95795575bc57900955701aad7c5d56bd2d6642165",
+                "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_1.fastq.gz"
+              },
+              {
+                "path": "/home/luisceb/ela-gse252892-range-run-02/GSM8009878/SRR27477544_1.fastq.gz.ranges/range-001928986030-001962540461-a1.ok",
+                "start": 1928986030,
+                "end": 1962540461,
+                "bytes": 33554432,
+                "sha256": "ee775bdc7b7f86e57535e5b8117bebe9d0e068520e981a600300c3bea0ea3af5",
+                "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_1.fastq.gz"
+              },
+              {
+                "path": "/home/luisceb/ela-gse252892-range-run-02/GSM8009878/SRR27477544_1.fastq.gz.ranges/range-001996094894-002029649325-a1.ok",
+                "start": 1996094894,
+                "end": 2029649325,
+                "bytes": 33554432,
+                "sha256": "8fa31356d0f1ed4fc0e905db35465483e630fbc9670cc57d98945c352b809c28",
+                "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_1.fastq.gz"
+              }
+            ]
+          },
+          "retained_blocks": [
+            {
+              "path": "/home/luisceb/ela-gse252892-retained-run-03/GSM8009878/SRR27477544_2.fastq.gz.ranges/range-000000000000-000008388607-a1.ok",
+              "start": 0,
+              "end": 8388607,
+              "bytes": 8388608,
+              "sha256": "eadfbe7d360e6681d05acb9eef66c9ceb225be2f229de008b5ca1568b3225bc4",
+              "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_2.fastq.gz"
+            },
+            {
+              "path": "/home/luisceb/ela-gse252892-retained-run-03/GSM8009878/SRR27477544_2.fastq.gz.ranges/range-000008388608-000016777215-a1.ok",
+              "start": 8388608,
+              "end": 16777215,
+              "bytes": 8388608,
+              "sha256": "5f9ae39c8534ebf78ddcf395b2a7eddb4da92da98432cc4ab5254a93cea2cd9b",
+              "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_2.fastq.gz"
+            },
+            {
+              "path": "/home/luisceb/ela-gse252892-retained-run-03/GSM8009878/SRR27477544_2.fastq.gz.ranges/range-000016777216-000025165823-a1.ok",
+              "start": 16777216,
+              "end": 25165823,
+              "bytes": 8388608,
+              "sha256": "81a476b0762f918ec4684dfd81ac2aef7eaaaa86f039f11b52e18e1637bb7771",
+              "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_2.fastq.gz"
+            },
+            {
+              "path": "/home/luisceb/ela-gse252892-retained-run-03/GSM8009878/SRR27477544_2.fastq.gz.ranges/range-000025165824-000033554431-a1.ok",
+              "start": 25165824,
+              "end": 33554431,
+              "bytes": 8388608,
+              "sha256": "49a59ba0e7f1e79222b2dc88e3a679bfab77490dd6a177bdb14e00809e362b9f",
+              "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_2.fastq.gz"
+            },
+            {
+              "path": "/home/luisceb/ela-gse252892-retained-run-03/GSM8009878/SRR27477544_2.fastq.gz.ranges/range-000033554432-000041943039-a1.ok",
+              "start": 33554432,
+              "end": 41943039,
+              "bytes": 8388608,
+              "sha256": "3c61a186ced9f32f533482d1f2307dedf8e3e6c5a8a8ef1bcda3fe5f54d58ad0",
+              "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_2.fastq.gz"
+            },
+            {
+              "path": "/home/luisceb/ela-gse252892-retained-run-03/GSM8009878/SRR27477544_2.fastq.gz.ranges/range-000041943040-000050331647-a1.ok",
+              "start": 41943040,
+              "end": 50331647,
+              "bytes": 8388608,
+              "sha256": "4d69757a8045bbed0a7d7fd8724683c9fa81fc9abba65a34cd66985bcdbc8e62",
+              "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_2.fastq.gz"
+            },
+            {
+              "path": "/home/luisceb/ela-gse252892-retained-run-03/GSM8009878/SRR27477544_2.fastq.gz.ranges/range-000050331648-000058720255-a1.ok",
+              "start": 50331648,
+              "end": 58720255,
+              "bytes": 8388608,
+              "sha256": "5a71ecd7296fc96fa0a6cece1894e37b2ae96645c1f4b049a313f0a05189cb0c",
+              "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_2.fastq.gz"
+            },
+            {
+              "path": "/home/luisceb/ela-gse252892-retained-run-03/GSM8009878/SRR27477544_2.fastq.gz.ranges/range-000058720256-000067108863-a1.ok",
+              "start": 58720256,
+              "end": 67108863,
+              "bytes": 8388608,
+              "sha256": "8f3a714a3361ec39e651b8a39abd585b19c9ff044bce50b37525dabaf97c39e6",
+              "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_2.fastq.gz"
+            },
+            {
+              "path": "/home/luisceb/ela-gse252892-retained-run-03/GSM8009878/SRR27477544_2.fastq.gz.ranges/range-000067108864-000075497471-a1.ok",
+              "start": 67108864,
+              "end": 75497471,
+              "bytes": 8388608,
+              "sha256": "1835a7e5db467392f28f539263cbf5905bc79d418f7eb8e31c6a175169fda454",
+              "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_2.fastq.gz"
+            },
+            {
+              "path": "/home/luisceb/ela-gse252892-retained-run-03/GSM8009878/SRR27477544_2.fastq.gz.ranges/range-000075497472-000083886079-a1.ok",
+              "start": 75497472,
+              "end": 83886079,
+              "bytes": 8388608,
+              "sha256": "e7032beffe5bd761de66eb583efe25064b9b547ca1518f63e2bffb3cc640d136",
+              "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_2.fastq.gz"
+            },
+            {
+              "path": "/home/luisceb/ela-gse252892-retained-run-03/GSM8009878/SRR27477544_2.fastq.gz.ranges/range-000083886080-000092274687-a1.ok",
+              "start": 83886080,
+              "end": 92274687,
+              "bytes": 8388608,
+              "sha256": "96c2dca412e172edba1fe0189dd9b2aca759c60b31a6f767b9e6fb85b6b20434",
+              "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_2.fastq.gz"
+            },
+            {
+              "path": "/home/luisceb/ela-gse252892-retained-run-03/GSM8009878/SRR27477544_2.fastq.gz.ranges/range-000092274688-000100663295-a1.ok",
+              "start": 92274688,
+              "end": 100663295,
+              "bytes": 8388608,
+              "sha256": "3bb5511165ae4b6cce09c0e63cbf5249c68b695a771161ebb0281405cdb5bdc9",
+              "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_2.fastq.gz"
+            },
+            {
+              "path": "/home/luisceb/ela-gse252892-retained-run-03/GSM8009878/SRR27477544_2.fastq.gz.ranges/range-000100663296-000109051903-a1.ok",
+              "start": 100663296,
+              "end": 109051903,
+              "bytes": 8388608,
+              "sha256": "9f4a5c3fc02d2e665abc472e470c5cf69f8eb27061a6c984798c5867a0eb9cd1",
+              "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_2.fastq.gz"
+            },
+            {
+              "path": "/home/luisceb/ela-gse252892-retained-run-03/GSM8009878/SRR27477544_2.fastq.gz.ranges/range-000109051904-000117440511-a1.ok",
+              "start": 109051904,
+              "end": 117440511,
+              "bytes": 8388608,
+              "sha256": "687dc90c8697a8707245914d599659e8840c4ba401e2b37bd3878e3aa6939ea6",
+              "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_2.fastq.gz"
+            },
+            {
+              "path": "/home/luisceb/ela-gse252892-retained-run-03/GSM8009878/SRR27477544_2.fastq.gz.ranges/range-000117440512-000125829119-a1.ok",
+              "start": 117440512,
+              "end": 125829119,
+              "bytes": 8388608,
+              "sha256": "8474dc482173c1866110699e41c9a78ad052d4d3b6e9ecb40095cc2abf6fe875",
+              "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_2.fastq.gz"
+            },
+            {
+              "path": "/home/luisceb/ela-gse252892-retained-run-03/GSM8009878/SRR27477544_2.fastq.gz.ranges/range-000125829120-000134217727-a1.ok",
+              "start": 125829120,
+              "end": 134217727,
+              "bytes": 8388608,
+              "sha256": "b282aebb67fd9fd6a87210d421d7e9977278347c37579552b53d12a853f03509",
+              "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_2.fastq.gz"
+            },
+            {
+              "path": "/home/luisceb/ela-gse252892-retained-run-03/GSM8009878/SRR27477544_2.fastq.gz.ranges/range-000134217728-000142606335-a1.ok",
+              "start": 134217728,
+              "end": 142606335,
+              "bytes": 8388608,
+              "sha256": "890b7358fc8e05f3bc0196076db41c9d5159ee3d5bf0f3ea0e3ff4aea77e4c6a",
+              "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_2.fastq.gz"
+            },
+            {
+              "path": "/home/luisceb/ela-gse252892-retained-run-03/GSM8009878/SRR27477544_2.fastq.gz.ranges/range-000142606336-000150994943-a1.ok",
+              "start": 142606336,
+              "end": 150994943,
+              "bytes": 8388608,
+              "sha256": "67045b6f32b5c8c8a4c1fad8b268463b8c895dd7c19697733b62a2c4f863e3d8",
+              "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_2.fastq.gz"
+            },
+            {
+              "path": "/home/luisceb/ela-gse252892-retained-run-03/GSM8009878/SRR27477544_2.fastq.gz.ranges/range-000150994944-000159383551-a1.ok",
+              "start": 150994944,
+              "end": 159383551,
+              "bytes": 8388608,
+              "sha256": "98348ed8d79330732433d875135d63c195cb390631a27397dc09c0bd9addfa97",
+              "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_2.fastq.gz"
+            },
+            {
+              "path": "/home/luisceb/ela-gse252892-retained-run-03/GSM8009878/SRR27477544_2.fastq.gz.ranges/range-000159383552-000167772159-a1.ok",
+              "start": 159383552,
+              "end": 167772159,
+              "bytes": 8388608,
+              "sha256": "752dfd16e533a29b0e27e2b8ae166f9dc45368a244c07ae4b9d6285bd7460730",
+              "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_2.fastq.gz"
+            },
+            {
+              "path": "/home/luisceb/ela-gse252892-retained-run-03/GSM8009878/SRR27477544_2.fastq.gz.ranges/range-000167772160-000176160767-a1.ok",
+              "start": 167772160,
+              "end": 176160767,
+              "bytes": 8388608,
+              "sha256": "37df9414c879828472f2eceee5c700c590a346990aac90d7ebafeec98a2798c4",
+              "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_2.fastq.gz"
+            },
+            {
+              "path": "/home/luisceb/ela-gse252892-retained-run-03/GSM8009878/SRR27477544_2.fastq.gz.ranges/range-000176160768-000184549375-a1.ok",
+              "start": 176160768,
+              "end": 184549375,
+              "bytes": 8388608,
+              "sha256": "5c506c1e9397a04be8e5239aa9f520de43eda3c930bb9fefab392ace4b989226",
+              "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_2.fastq.gz"
+            },
+            {
+              "path": "/home/luisceb/ela-gse252892-retained-run-03/GSM8009878/SRR27477544_2.fastq.gz.ranges/range-000184549376-000192937983-a1.ok",
+              "start": 184549376,
+              "end": 192937983,
+              "bytes": 8388608,
+              "sha256": "c8c51c12d017528a494034b4a7483b5fabab510a7c2eca5b44ebde47c496c758",
+              "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_2.fastq.gz"
+            },
+            {
+              "path": "/home/luisceb/ela-gse252892-retained-run-03/GSM8009878/SRR27477544_2.fastq.gz.ranges/range-000192937984-000201326591-a1.ok",
+              "start": 192937984,
+              "end": 201326591,
+              "bytes": 8388608,
+              "sha256": "30bee963f2d72b1e1de6ff012be5f3f4224ba57744c6f025158fdfb87c852ebe",
+              "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_2.fastq.gz"
+            },
+            {
+              "path": "/home/luisceb/ela-gse252892-retained-run-03/GSM8009878/SRR27477544_2.fastq.gz.ranges/range-000201326592-000209715199-a1.ok",
+              "start": 201326592,
+              "end": 209715199,
+              "bytes": 8388608,
+              "sha256": "82785c6e58c4b900146a894ed78f1d2aeead181c196eff3c18ead9b2406af223",
+              "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_2.fastq.gz"
+            },
+            {
+              "path": "/home/luisceb/ela-gse252892-retained-run-03/GSM8009878/SRR27477544_2.fastq.gz.ranges/range-000209715200-000218103807-a1.ok",
+              "start": 209715200,
+              "end": 218103807,
+              "bytes": 8388608,
+              "sha256": "61ff1d3e06077e670526f01ad607577bff53e33f7dbac0892f0c8f9d5630d2e3",
+              "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_2.fastq.gz"
+            },
+            {
+              "path": "/home/luisceb/ela-gse252892-retained-run-03/GSM8009878/SRR27477544_2.fastq.gz.ranges/range-000218103808-000226492415-a1.ok",
+              "start": 218103808,
+              "end": 226492415,
+              "bytes": 8388608,
+              "sha256": "0efbed10295d3695602267768e3064522ff7ff1d97c84b7a63f4b9b38259b8a8",
+              "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_2.fastq.gz"
+            },
+            {
+              "path": "/home/luisceb/ela-gse252892-retained-run-03/GSM8009878/SRR27477544_2.fastq.gz.ranges/range-000226492416-000234881023-a1.ok",
+              "start": 226492416,
+              "end": 234881023,
+              "bytes": 8388608,
+              "sha256": "5cb332e7db34689cf6bb53100cffb8ff9f9c9df6d2b625711321f95bd0482aa7",
+              "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_2.fastq.gz"
+            },
+            {
+              "path": "/home/luisceb/ela-gse252892-retained-run-03/GSM8009878/SRR27477544_2.fastq.gz.ranges/range-000234881024-000243269631-a1.ok",
+              "start": 234881024,
+              "end": 243269631,
+              "bytes": 8388608,
+              "sha256": "016d65a28ff5d9a34d6f4a192d0bed133c7b422852c9042c0c84e234e1395d69",
+              "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_2.fastq.gz"
+            },
+            {
+              "path": "/home/luisceb/ela-gse252892-retained-run-03/GSM8009878/SRR27477544_2.fastq.gz.ranges/range-000243269632-000251658239-a1.ok",
+              "start": 243269632,
+              "end": 251658239,
+              "bytes": 8388608,
+              "sha256": "1559e2b0ba0eab964825917b77d2fa9279bca9e18ff9476e28f156bcc427a90c",
+              "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_2.fastq.gz"
+            },
+            {
+              "path": "/home/luisceb/ela-gse252892-retained-run-03/GSM8009878/SRR27477544_2.fastq.gz.ranges/range-000251658240-000260046847-a1.ok",
+              "start": 251658240,
+              "end": 260046847,
+              "bytes": 8388608,
+              "sha256": "d27d417c6fa584ba0be3ee80a4178ac88cb51362ac297844bc8c19f04a586f19",
+              "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_2.fastq.gz"
+            },
+            {
+              "path": "/home/luisceb/ela-gse252892-retained-run-03/GSM8009878/SRR27477544_2.fastq.gz.ranges/range-000260046848-000268435455-a1.ok",
+              "start": 260046848,
+              "end": 268435455,
+              "bytes": 8388608,
+              "sha256": "8f743ad129a160290aed0cacb2b892c7be1d213c9751e1885a39a377ee8a257e",
+              "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_2.fastq.gz"
+            },
+            {
+              "path": "/home/luisceb/ela-gse252892-retained-run-03/GSM8009878/SRR27477544_2.fastq.gz.ranges/range-000268435456-000276824063-a1.ok",
+              "start": 268435456,
+              "end": 276824063,
+              "bytes": 8388608,
+              "sha256": "d921f4f982c7f5b8cffe1e1482279b28b9b200585b3207c9ab6a369661d08b84",
+              "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_2.fastq.gz"
+            },
+            {
+              "path": "/home/luisceb/ela-gse252892-retained-run-03/GSM8009878/SRR27477544_2.fastq.gz.ranges/range-000276824064-000285212671-a1.ok",
+              "start": 276824064,
+              "end": 285212671,
+              "bytes": 8388608,
+              "sha256": "4559df17d4ea5f5bd6a87773305add238894413eecb5830faf67642f7e32e33b",
+              "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_2.fastq.gz"
+            },
+            {
+              "path": "/home/luisceb/ela-gse252892-retained-run-03/GSM8009878/SRR27477544_2.fastq.gz.ranges/range-000285212672-000293601279-a1.ok",
+              "start": 285212672,
+              "end": 293601279,
+              "bytes": 8388608,
+              "sha256": "ababd068dd1a942a487269ea894282592d0f183733601858988cb73be9bb7283",
+              "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_2.fastq.gz"
+            },
+            {
+              "path": "/home/luisceb/ela-gse252892-retained-run-03/GSM8009878/SRR27477544_2.fastq.gz.ranges/range-000293601280-000301989887-a1.ok",
+              "start": 293601280,
+              "end": 301989887,
+              "bytes": 8388608,
+              "sha256": "62008018a8bba863a15f64cd0b6a2851f2e07a266b721dc7d34bc90792fff48f",
+              "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_2.fastq.gz"
+            },
+            {
+              "path": "/home/luisceb/ela-gse252892-retained-run-03/GSM8009878/SRR27477544_2.fastq.gz.ranges/range-000301989888-000310378495-a1.ok",
+              "start": 301989888,
+              "end": 310378495,
+              "bytes": 8388608,
+              "sha256": "183b126f3b2120133f62e99e287795407ad53c8221fed0ccbd728507796884d9",
+              "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_2.fastq.gz"
+            },
+            {
+              "path": "/home/luisceb/ela-gse252892-retained-run-03/GSM8009878/SRR27477544_2.fastq.gz.ranges/range-000310378496-000318767103-a1.ok",
+              "start": 310378496,
+              "end": 318767103,
+              "bytes": 8388608,
+              "sha256": "8f25f682bfd6fb61427421c21f7e3227671893ec1d3c049d76b195df2a5b917c",
+              "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_2.fastq.gz"
+            },
+            {
+              "path": "/home/luisceb/ela-gse252892-retained-run-03/GSM8009878/SRR27477544_2.fastq.gz.ranges/range-000318767104-000327155711-a1.ok",
+              "start": 318767104,
+              "end": 327155711,
+              "bytes": 8388608,
+              "sha256": "7dc9e4ddcc851d2caadaa81e4daf5dfe4548eef0d169be962bff725ac0d8e1ce",
+              "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_2.fastq.gz"
+            },
+            {
+              "path": "/home/luisceb/ela-gse252892-retained-run-03/GSM8009878/SRR27477544_2.fastq.gz.ranges/range-000327155712-000335544319-a1.ok",
+              "start": 327155712,
+              "end": 335544319,
+              "bytes": 8388608,
+              "sha256": "dfb99bff03ccb24ad3c411c4d76f6ba16ed87e78576d6eb43eafe84bfaa2556f",
+              "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_2.fastq.gz"
+            },
+            {
+              "path": "/home/luisceb/ela-gse252892-retained-run-03/GSM8009878/SRR27477544_2.fastq.gz.ranges/range-000335544320-000343932927-a1.ok",
+              "start": 335544320,
+              "end": 343932927,
+              "bytes": 8388608,
+              "sha256": "860579d6f816621e53228e15015cc60f13e1dee633e8fd9e430a239171cbeb9e",
+              "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_2.fastq.gz"
+            },
+            {
+              "path": "/home/luisceb/ela-gse252892-retained-run-03/GSM8009878/SRR27477544_2.fastq.gz.ranges/range-000343932928-000352321535-a1.ok",
+              "start": 343932928,
+              "end": 352321535,
+              "bytes": 8388608,
+              "sha256": "058839d41a7b53d31c05ba014ff0107650a61a2ad03444da3508ae5eb91cf20e",
+              "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_2.fastq.gz"
+            },
+            {
+              "path": "/home/luisceb/ela-gse252892-retained-run-03/GSM8009878/SRR27477544_2.fastq.gz.ranges/range-000352321536-000360710143-a1.ok",
+              "start": 352321536,
+              "end": 360710143,
+              "bytes": 8388608,
+              "sha256": "51b81f1603c01ed117326f77ef573df8e68c954abf2d0f0f6cac0282d036183a",
+              "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_2.fastq.gz"
+            },
+            {
+              "path": "/home/luisceb/ela-gse252892-retained-run-03/GSM8009878/SRR27477544_2.fastq.gz.ranges/range-000360710144-000369098751-a1.ok",
+              "start": 360710144,
+              "end": 369098751,
+              "bytes": 8388608,
+              "sha256": "0344dd83125e5f6aba8550261d7803a1cb0df4cc2708793d93c298f0ceec8371",
+              "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_2.fastq.gz"
+            },
+            {
+              "path": "/home/luisceb/ela-gse252892-retained-run-03/GSM8009878/SRR27477544_2.fastq.gz.ranges/range-000369098752-000377487359-a1.ok",
+              "start": 369098752,
+              "end": 377487359,
+              "bytes": 8388608,
+              "sha256": "b48474bf56ed82a74b01442d627fb6f81ea75ea823c9ea71ef3f667b9ed97a70",
+              "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_2.fastq.gz"
+            },
+            {
+              "path": "/home/luisceb/ela-gse252892-retained-run-03/GSM8009878/SRR27477544_2.fastq.gz.ranges/range-000377487360-000385875967-a1.ok",
+              "start": 377487360,
+              "end": 385875967,
+              "bytes": 8388608,
+              "sha256": "ae7c4601186a7c27654d743191271ec0fd329079e8e44e5ec7dd2d9f42e935cb",
+              "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_2.fastq.gz"
+            },
+            {
+              "path": "/home/luisceb/ela-gse252892-retained-run-03/GSM8009878/SRR27477544_2.fastq.gz.ranges/range-000385875968-000394264575-a1.ok",
+              "start": 385875968,
+              "end": 394264575,
+              "bytes": 8388608,
+              "sha256": "f8423a6d1370b5398dc7cf815bb74ff84953bf968c48bf593836f5158e99cdcf",
+              "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_2.fastq.gz"
+            },
+            {
+              "path": "/home/luisceb/ela-gse252892-retained-run-03/GSM8009878/SRR27477544_2.fastq.gz.ranges/range-000394264576-000402653183-a1.ok",
+              "start": 394264576,
+              "end": 402653183,
+              "bytes": 8388608,
+              "sha256": "7d7d1feccdf11d4a803982e00451b27c3197b4e4afa6cab45ef4266cc659b4d0",
+              "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_2.fastq.gz"
+            },
+            {
+              "path": "/home/luisceb/ela-gse252892-retained-run-03/GSM8009878/SRR27477544_2.fastq.gz.ranges/range-000402653184-000411041791-a1.ok",
+              "start": 402653184,
+              "end": 411041791,
+              "bytes": 8388608,
+              "sha256": "5781e81bedc0376b6ed24d79e1348cec263f71342b57382e483b6b2cb9ebf318",
+              "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_2.fastq.gz"
+            },
+            {
+              "path": "/home/luisceb/ela-gse252892-retained-run-03/GSM8009878/SRR27477544_2.fastq.gz.ranges/range-000411041792-000419430399-a1.ok",
+              "start": 411041792,
+              "end": 419430399,
+              "bytes": 8388608,
+              "sha256": "eafe57e8f5eeee2a8e7eca56d1e62114df70d20c9c995ee9e3f21e56296ae350",
+              "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_2.fastq.gz"
+            },
+            {
+              "path": "/home/luisceb/ela-gse252892-retained-run-03/GSM8009878/SRR27477544_2.fastq.gz.ranges/range-000419430400-000427819007-a1.ok",
+              "start": 419430400,
+              "end": 427819007,
+              "bytes": 8388608,
+              "sha256": "2d034551cfba4ff5ecc0f0aba73baf6fbb980694e7428c5bace344b0a8e2d1ff",
+              "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_2.fastq.gz"
+            },
+            {
+              "path": "/home/luisceb/ela-gse252892-retained-run-03/GSM8009878/SRR27477544_2.fastq.gz.ranges/range-000427819008-000436207615-a1.ok",
+              "start": 427819008,
+              "end": 436207615,
+              "bytes": 8388608,
+              "sha256": "4951903294864ad89aec4fada9bcba55e9a4694118ba68ccf4928fa95a45205e",
+              "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_2.fastq.gz"
+            },
+            {
+              "path": "/home/luisceb/ela-gse252892-retained-run-03/GSM8009878/SRR27477544_2.fastq.gz.ranges/range-000436207616-000444596223-a1.ok",
+              "start": 436207616,
+              "end": 444596223,
+              "bytes": 8388608,
+              "sha256": "cf25197cfee9d9b9804108615dcf2309730f1f09be5595d3ba2dcf7ff123c1eb",
+              "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_2.fastq.gz"
+            },
+            {
+              "path": "/home/luisceb/ela-gse252892-retained-run-03/GSM8009878/SRR27477544_2.fastq.gz.ranges/range-000444596224-000452984831-a1.ok",
+              "start": 444596224,
+              "end": 452984831,
+              "bytes": 8388608,
+              "sha256": "c5846ee9de9b5e9c1ec8eb4b3126c1bed138c949734579033a0715e432d743d6",
+              "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_2.fastq.gz"
+            },
+            {
+              "path": "/home/luisceb/ela-gse252892-retained-run-03/GSM8009878/SRR27477544_2.fastq.gz.ranges/range-000452984832-000461373439-a1.ok",
+              "start": 452984832,
+              "end": 461373439,
+              "bytes": 8388608,
+              "sha256": "aac6a05cf79e2872699c4ad214d0585504948ee615218e2797b9ce53b48b86e1",
+              "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_2.fastq.gz"
+            },
+            {
+              "path": "/home/luisceb/ela-gse252892-retained-run-03/GSM8009878/SRR27477544_2.fastq.gz.ranges/range-000461373440-000469762047-a1.ok",
+              "start": 461373440,
+              "end": 469762047,
+              "bytes": 8388608,
+              "sha256": "059ae21fe6f5617be0a6d30f6efd2760172b5019320c20b385302961af31625a",
+              "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_2.fastq.gz"
+            },
+            {
+              "path": "/home/luisceb/ela-gse252892-retained-run-03/GSM8009878/SRR27477544_2.fastq.gz.ranges/range-000469762048-000478150655-a1.ok",
+              "start": 469762048,
+              "end": 478150655,
+              "bytes": 8388608,
+              "sha256": "f5bd9c8e1405944fefcd18d0f377cc818bb499352c738f073808a89ad29798f7",
+              "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_2.fastq.gz"
+            },
+            {
+              "path": "/home/luisceb/ela-gse252892-retained-run-03/GSM8009878/SRR27477544_2.fastq.gz.ranges/range-000478150656-000486539263-a1.ok",
+              "start": 478150656,
+              "end": 486539263,
+              "bytes": 8388608,
+              "sha256": "c7c243cb70843cc270dad0976acfc4e801f0a62722001595c23df70573480a2f",
+              "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_2.fastq.gz"
+            },
+            {
+              "path": "/home/luisceb/ela-gse252892-retained-run-03/GSM8009878/SRR27477544_2.fastq.gz.ranges/range-000486539264-000494927871-a1.ok",
+              "start": 486539264,
+              "end": 494927871,
+              "bytes": 8388608,
+              "sha256": "9f7f9e9793c39c8593ae17eb7ca18ccd55e1b4068a58d642d2c32882fa2dbd1c",
+              "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_2.fastq.gz"
+            },
+            {
+              "path": "/home/luisceb/ela-gse252892-retained-run-03/GSM8009878/SRR27477544_2.fastq.gz.ranges/range-000494927872-000503316479-a1.ok",
+              "start": 494927872,
+              "end": 503316479,
+              "bytes": 8388608,
+              "sha256": "d2377881a6b75c4e3e976dc918f843a8672dba9fa3663f36e96699f9cedefcd1",
+              "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_2.fastq.gz"
+            },
+            {
+              "path": "/home/luisceb/ela-gse252892-retained-run-03/GSM8009878/SRR27477544_2.fastq.gz.ranges/range-000503316480-000511705087-a1.ok",
+              "start": 503316480,
+              "end": 511705087,
+              "bytes": 8388608,
+              "sha256": "7113eb25b33c1ad0a4fbfdea04669989a2d6834044fa7b4985f33e3e83162225",
+              "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_2.fastq.gz"
+            },
+            {
+              "path": "/home/luisceb/ela-gse252892-retained-run-03/GSM8009878/SRR27477544_2.fastq.gz.ranges/range-000511705088-000520093695-a1.ok",
+              "start": 511705088,
+              "end": 520093695,
+              "bytes": 8388608,
+              "sha256": "6c947a415111e92ff7f1dcc3cfe4fa1baedfaf66b89ed5acc70cd1e668319dc3",
+              "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_2.fastq.gz"
+            },
+            {
+              "path": "/home/luisceb/ela-gse252892-retained-run-03/GSM8009878/SRR27477544_2.fastq.gz.ranges/range-000520093696-000528482303-a1.ok",
+              "start": 520093696,
+              "end": 528482303,
+              "bytes": 8388608,
+              "sha256": "b0548fb0fae7a5b7852162eaab023f36e24715086fe942ac62218816bc1ebb6b",
+              "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_2.fastq.gz"
+            },
+            {
+              "path": "/home/luisceb/ela-gse252892-retained-run-03/GSM8009878/SRR27477544_2.fastq.gz.ranges/range-000528482304-000536870911-a1.ok",
+              "start": 528482304,
+              "end": 536870911,
+              "bytes": 8388608,
+              "sha256": "1f4d5628ca34815536c252e461e79fd69ae247936fd1f9acc10a3853e52190c7",
+              "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_2.fastq.gz"
+            },
+            {
+              "path": "/home/luisceb/ela-gse252892-retained-run-03/GSM8009878/SRR27477544_2.fastq.gz.ranges/range-000536870912-000545259519-a1.ok",
+              "start": 536870912,
+              "end": 545259519,
+              "bytes": 8388608,
+              "sha256": "75b7db06ed95fe76fddaf83bef4e85f813e6d8663bcabee551dc6142712e3949",
+              "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_2.fastq.gz"
+            },
+            {
+              "path": "/home/luisceb/ela-gse252892-retained-run-03/GSM8009878/SRR27477544_2.fastq.gz.ranges/range-000545259520-000553648127-a1.ok",
+              "start": 545259520,
+              "end": 553648127,
+              "bytes": 8388608,
+              "sha256": "6b74bfb10eefb715fca7bc13029305bd11266fd64bff3fd485ebbe73327caa0b",
+              "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_2.fastq.gz"
+            },
+            {
+              "path": "/home/luisceb/ela-gse252892-retained-run-03/GSM8009878/SRR27477544_2.fastq.gz.ranges/range-000553648128-000562036735-a1.ok",
+              "start": 553648128,
+              "end": 562036735,
+              "bytes": 8388608,
+              "sha256": "c52090379ce2f6d116c44ede05e8721c2bfefb9fbe4839466fcba69f88e3cff7",
+              "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_2.fastq.gz"
+            },
+            {
+              "path": "/home/luisceb/ela-gse252892-retained-run-03/GSM8009878/SRR27477544_2.fastq.gz.ranges/range-000562036736-000570425343-a1.ok",
+              "start": 562036736,
+              "end": 570425343,
+              "bytes": 8388608,
+              "sha256": "ebe02917b81e0a6adc7384ed41207bf860fc1cac66217b7c893e886b50773ef2",
+              "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_2.fastq.gz"
+            },
+            {
+              "path": "/home/luisceb/ela-gse252892-retained-run-03/GSM8009878/SRR27477544_2.fastq.gz.ranges/range-000570425344-000578813951-a1.ok",
+              "start": 570425344,
+              "end": 578813951,
+              "bytes": 8388608,
+              "sha256": "710c99bd190a4cb8ad56ee7ba851d04cc986c91a6de304c8dd6684631487259d",
+              "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_2.fastq.gz"
+            },
+            {
+              "path": "/home/luisceb/ela-gse252892-retained-run-03/GSM8009878/SRR27477544_2.fastq.gz.ranges/range-000578813952-000587202559-a1.ok",
+              "start": 578813952,
+              "end": 587202559,
+              "bytes": 8388608,
+              "sha256": "133caf339997d59f8dee34cb45bed7db7a1cd0c7161e20cd326efc4aedde73d5",
+              "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_2.fastq.gz"
+            },
+            {
+              "path": "/home/luisceb/ela-gse252892-retained-run-03/GSM8009878/SRR27477544_2.fastq.gz.ranges/range-000587202560-000595591167-a1.ok",
+              "start": 587202560,
+              "end": 595591167,
+              "bytes": 8388608,
+              "sha256": "1d9a79cf3ef86ba776a2007e78c2cbb628ecc410f2bc3a2796e148c4e140b825",
+              "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_2.fastq.gz"
+            },
+            {
+              "path": "/home/luisceb/ela-gse252892-retained-run-03/GSM8009878/SRR27477544_2.fastq.gz.ranges/range-000595591168-000603979775-a1.ok",
+              "start": 595591168,
+              "end": 603979775,
+              "bytes": 8388608,
+              "sha256": "04d715a9f3b5ee1b936fd9f324466103d3ac0a73f3e2753811b1c1892f511069",
+              "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_2.fastq.gz"
+            },
+            {
+              "path": "/home/luisceb/ela-gse252892-retained-run-03/GSM8009878/SRR27477544_2.fastq.gz.ranges/range-000603979776-000612368383-a1.ok",
+              "start": 603979776,
+              "end": 612368383,
+              "bytes": 8388608,
+              "sha256": "f9f95e6fe6000d9840552c56d75944aec726e053b02b2cc60cc77a63f6c44dc6",
+              "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_2.fastq.gz"
+            },
+            {
+              "path": "/home/luisceb/ela-gse252892-retained-run-03/GSM8009878/SRR27477544_2.fastq.gz.ranges/range-000612368384-000620756991-a1.ok",
+              "start": 612368384,
+              "end": 620756991,
+              "bytes": 8388608,
+              "sha256": "27d241971cad29df204a9e158ec18c636e9a086c1e1f8efc5212c3b86e35e9d2",
+              "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_2.fastq.gz"
+            },
+            {
+              "path": "/home/luisceb/ela-gse252892-retained-run-03/GSM8009878/SRR27477544_2.fastq.gz.ranges/range-000620756992-000629145599-a1.ok",
+              "start": 620756992,
+              "end": 629145599,
+              "bytes": 8388608,
+              "sha256": "87d0f5bd46d71950bd556cddd1134fcdd4b40e95a30ba1c468e6dc0a258df721",
+              "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_2.fastq.gz"
+            },
+            {
+              "path": "/home/luisceb/ela-gse252892-retained-run-03/GSM8009878/SRR27477544_2.fastq.gz.ranges/range-000629145600-000637534207-a1.ok",
+              "start": 629145600,
+              "end": 637534207,
+              "bytes": 8388608,
+              "sha256": "a56f3d0b6c48b60b94ae201500350761b0c3a1590fe6ef122dde63c3565fdb4d",
+              "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_2.fastq.gz"
+            },
+            {
+              "path": "/home/luisceb/ela-gse252892-retained-run-03/GSM8009878/SRR27477544_2.fastq.gz.ranges/range-000637534208-000645922815-a1.ok",
+              "start": 637534208,
+              "end": 645922815,
+              "bytes": 8388608,
+              "sha256": "ee22dc01997993195c18b174a2a8c31cbde14ad3e90adc8b8833274285262f2f",
+              "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_2.fastq.gz"
+            },
+            {
+              "path": "/home/luisceb/ela-gse252892-retained-run-03/GSM8009878/SRR27477544_2.fastq.gz.ranges/range-000645922816-000654311423-a1.ok",
+              "start": 645922816,
+              "end": 654311423,
+              "bytes": 8388608,
+              "sha256": "86f160d863cd7b999f59b7207b48732081341340b69b896da2ef1ccc55a5c169",
+              "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_2.fastq.gz"
+            },
+            {
+              "path": "/home/luisceb/ela-gse252892-retained-run-03/GSM8009878/SRR27477544_2.fastq.gz.ranges/range-000654311424-000662700031-a1.ok",
+              "start": 654311424,
+              "end": 662700031,
+              "bytes": 8388608,
+              "sha256": "043e2dd786e3dd80c35ed2b8d6a66fe88e3ac9e0ce79a54aff233f6681d78d9e",
+              "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_2.fastq.gz"
+            },
+            {
+              "path": "/home/luisceb/ela-gse252892-retained-run-03/GSM8009878/SRR27477544_2.fastq.gz.ranges/range-000662700032-000671088639-a1.ok",
+              "start": 662700032,
+              "end": 671088639,
+              "bytes": 8388608,
+              "sha256": "b5f3ccb5ec404779ecdeab3eafc53b6441c0f71a4c394cfbaa55a441a7779a0f",
+              "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_2.fastq.gz"
+            },
+            {
+              "path": "/home/luisceb/ela-gse252892-retained-run-03/GSM8009878/SRR27477544_2.fastq.gz.ranges/range-000671088640-000679477247-a1.ok",
+              "start": 671088640,
+              "end": 679477247,
+              "bytes": 8388608,
+              "sha256": "6fce397641daf28a4a843dcee15a07e6fa15218f3de850dac3cc4d6d49053322",
+              "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_2.fastq.gz"
+            },
+            {
+              "path": "/home/luisceb/ela-gse252892-retained-run-03/GSM8009878/SRR27477544_2.fastq.gz.ranges/range-000679477248-000687865855-a1.ok",
+              "start": 679477248,
+              "end": 687865855,
+              "bytes": 8388608,
+              "sha256": "daa2dc0c2fa8e1aec2e0036b08958b0c560e070ce23a37d632d8da1b97b66213",
+              "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_2.fastq.gz"
+            },
+            {
+              "path": "/home/luisceb/ela-gse252892-retained-run-03/GSM8009878/SRR27477544_2.fastq.gz.ranges/range-000687865856-000696254463-a1.ok",
+              "start": 687865856,
+              "end": 696254463,
+              "bytes": 8388608,
+              "sha256": "5bd6f26695bb151c75e79e97fdff2e93c3742dabf59fe708f73b84637a518571",
+              "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_2.fastq.gz"
+            },
+            {
+              "path": "/home/luisceb/ela-gse252892-retained-run-03/GSM8009878/SRR27477544_2.fastq.gz.ranges/range-000696254464-000704643071-a1.ok",
+              "start": 696254464,
+              "end": 704643071,
+              "bytes": 8388608,
+              "sha256": "9ecf941508fa237cabd5ef30de3bb37a9f522a93ceedead06e3bc7ae0940dd4c",
+              "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_2.fastq.gz"
+            },
+            {
+              "path": "/home/luisceb/ela-gse252892-retained-run-03/GSM8009878/SRR27477544_2.fastq.gz.ranges/range-000704643072-000713031679-a1.ok",
+              "start": 704643072,
+              "end": 713031679,
+              "bytes": 8388608,
+              "sha256": "502880dbc921e7d49fe4dfe1a070da19448a763b3f4a453e5f149aeab187690c",
+              "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_2.fastq.gz"
+            },
+            {
+              "path": "/home/luisceb/ela-gse252892-retained-run-03/GSM8009878/SRR27477544_2.fastq.gz.ranges/range-000713031680-000721420287-a1.ok",
+              "start": 713031680,
+              "end": 721420287,
+              "bytes": 8388608,
+              "sha256": "98f95fc5b159d525787a97fc4eb45000a43d4a1b6295ca803d80f0eecc5e7d13",
+              "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_2.fastq.gz"
+            },
+            {
+              "path": "/home/luisceb/ela-gse252892-retained-run-03/GSM8009878/SRR27477544_2.fastq.gz.ranges/range-000721420288-000729808895-a1.ok",
+              "start": 721420288,
+              "end": 729808895,
+              "bytes": 8388608,
+              "sha256": "d19e1bb3952622c9f5b8994c1b9be41b06972e6ae13aa4151b30ec49e5bbb04c",
+              "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_2.fastq.gz"
+            },
+            {
+              "path": "/home/luisceb/ela-gse252892-retained-run-03/GSM8009878/SRR27477544_2.fastq.gz.ranges/range-000729808896-000738197503-a1.ok",
+              "start": 729808896,
+              "end": 738197503,
+              "bytes": 8388608,
+              "sha256": "56c55e23bd16523b1d524c9abdb3d4107b445f03c4ce30ea77e44e113428ab68",
+              "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_2.fastq.gz"
+            },
+            {
+              "path": "/home/luisceb/ela-gse252892-retained-run-03/GSM8009878/SRR27477544_2.fastq.gz.ranges/range-000738197504-000746586111-a1.ok",
+              "start": 738197504,
+              "end": 746586111,
+              "bytes": 8388608,
+              "sha256": "2e3620ba60f1497ef703dbdf54274e3b8361eab5e8e1e2a2093b95ca0ba689a8",
+              "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_2.fastq.gz"
+            },
+            {
+              "path": "/home/luisceb/ela-gse252892-retained-run-03/GSM8009878/SRR27477544_2.fastq.gz.ranges/range-000746586112-000754974719-a1.ok",
+              "start": 746586112,
+              "end": 754974719,
+              "bytes": 8388608,
+              "sha256": "c72100bacaa0b4029de4ed78b9c3356afed4bb022a01d42a93a808547a25b64e",
+              "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_2.fastq.gz"
+            },
+            {
+              "path": "/home/luisceb/ela-gse252892-retained-run-03/GSM8009878/SRR27477544_2.fastq.gz.ranges/range-000754974720-000763363327-a1.ok",
+              "start": 754974720,
+              "end": 763363327,
+              "bytes": 8388608,
+              "sha256": "4c283dbd0c06a45ea9b1b492ba6252f1ad7739a1efea4b368ef39070005b6a18",
+              "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_2.fastq.gz"
+            },
+            {
+              "path": "/home/luisceb/ela-gse252892-retained-run-03/GSM8009878/SRR27477544_2.fastq.gz.ranges/range-000763363328-000771751935-a1.ok",
+              "start": 763363328,
+              "end": 771751935,
+              "bytes": 8388608,
+              "sha256": "fa3fd3d3b9c8c006f98b0b1d324a00751f34da7e243dadbbf89e2a0af89a80c4",
+              "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_2.fastq.gz"
+            },
+            {
+              "path": "/home/luisceb/ela-gse252892-retained-run-03/GSM8009878/SRR27477544_2.fastq.gz.ranges/range-000771751936-000780140543-a1.ok",
+              "start": 771751936,
+              "end": 780140543,
+              "bytes": 8388608,
+              "sha256": "112bc6623d2d4a38898700e3033d2647b8cd78cb9a462ff35afbdcf534977448",
+              "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_2.fastq.gz"
+            },
+            {
+              "path": "/home/luisceb/ela-gse252892-retained-run-03/GSM8009878/SRR27477544_2.fastq.gz.ranges/range-000780140544-000788529151-a1.ok",
+              "start": 780140544,
+              "end": 788529151,
+              "bytes": 8388608,
+              "sha256": "cf81869f490d8f0ab9b9a5ba9025391091800f34a9824cccecfb75a4e7ca2ce7",
+              "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_2.fastq.gz"
+            },
+            {
+              "path": "/home/luisceb/ela-gse252892-retained-run-03/GSM8009878/SRR27477544_2.fastq.gz.ranges/range-000788529152-000796917759-a1.ok",
+              "start": 788529152,
+              "end": 796917759,
+              "bytes": 8388608,
+              "sha256": "dcfae6378079420c9fff673cb9ad9297834b54cb9dca88d53ec29ffb723177e4",
+              "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_2.fastq.gz"
+            },
+            {
+              "path": "/home/luisceb/ela-gse252892-retained-run-03/GSM8009878/SRR27477544_2.fastq.gz.ranges/range-000796917760-000805306367-a1.ok",
+              "start": 796917760,
+              "end": 805306367,
+              "bytes": 8388608,
+              "sha256": "11201eaa72a0ce687a6500401d64c1d41120e46fd76f6a41b29d48a62043d5f1",
+              "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_2.fastq.gz"
+            },
+            {
+              "path": "/home/luisceb/ela-gse252892-retained-run-03/GSM8009878/SRR27477544_2.fastq.gz.ranges/range-000805306368-000813694975-a1.ok",
+              "start": 805306368,
+              "end": 813694975,
+              "bytes": 8388608,
+              "sha256": "ba6886d207858f7f88fe2b3fc282f0413fd849a025b367eebcc7058f861c8e9b",
+              "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_2.fastq.gz"
+            },
+            {
+              "path": "/home/luisceb/ela-gse252892-retained-run-03/GSM8009878/SRR27477544_2.fastq.gz.ranges/range-000813694976-000822083583-a1.ok",
+              "start": 813694976,
+              "end": 822083583,
+              "bytes": 8388608,
+              "sha256": "ce0037183d0480376b68bca5d95df3c70658a145d3075642601936717de630a2",
+              "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_2.fastq.gz"
+            },
+            {
+              "path": "/home/luisceb/ela-gse252892-retained-run-03/GSM8009878/SRR27477544_2.fastq.gz.ranges/range-000822083584-000830472191-a1.ok",
+              "start": 822083584,
+              "end": 830472191,
+              "bytes": 8388608,
+              "sha256": "2d2b3e3586938d7a340b171197cdd8e58984f61908217ceea9014a9f972b142c",
+              "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_2.fastq.gz"
+            },
+            {
+              "path": "/home/luisceb/ela-gse252892-retained-run-03/GSM8009878/SRR27477544_2.fastq.gz.ranges/range-000830472192-000838860799-a1.ok",
+              "start": 830472192,
+              "end": 838860799,
+              "bytes": 8388608,
+              "sha256": "d1b6b0edf80e9051d3ac0c64e4bd34608c578dc08f79b347dddcbb7b622692a5",
+              "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_2.fastq.gz"
+            },
+            {
+              "path": "/home/luisceb/ela-gse252892-retained-run-03/GSM8009878/SRR27477544_2.fastq.gz.ranges/range-000838860800-000847249407-a1.ok",
+              "start": 838860800,
+              "end": 847249407,
+              "bytes": 8388608,
+              "sha256": "188356eef39c55acbcf3ecb337259c374a16315ad09207d321e853752e3ec2bf",
+              "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_2.fastq.gz"
+            },
+            {
+              "path": "/home/luisceb/ela-gse252892-retained-run-03/GSM8009878/SRR27477544_2.fastq.gz.ranges/range-000847249408-000855638015-a1.ok",
+              "start": 847249408,
+              "end": 855638015,
+              "bytes": 8388608,
+              "sha256": "bb0f1dcf09fdf91bb06d1ecd1ce9e0f5c9de853be52c7acaf44c0fb6d0da7cc7",
+              "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_2.fastq.gz"
+            },
+            {
+              "path": "/home/luisceb/ela-gse252892-retained-run-03/GSM8009878/SRR27477544_2.fastq.gz.ranges/range-000855638016-000864026623-a1.ok",
+              "start": 855638016,
+              "end": 864026623,
+              "bytes": 8388608,
+              "sha256": "1f5408722be459407009e43075ef76203018936e973fab4b389183aac07a3d8a",
+              "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_2.fastq.gz"
+            },
+            {
+              "path": "/home/luisceb/ela-gse252892-retained-run-03/GSM8009878/SRR27477544_2.fastq.gz.ranges/range-000864026624-000872415231-a1.ok",
+              "start": 864026624,
+              "end": 872415231,
+              "bytes": 8388608,
+              "sha256": "fb6514cf9b14a5f36feca71ab5c6ac95cf130b74e8cefbdd27729cc219744984",
+              "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_2.fastq.gz"
+            },
+            {
+              "path": "/home/luisceb/ela-gse252892-retained-run-03/GSM8009878/SRR27477544_2.fastq.gz.ranges/range-000872415232-000880803839-a1.ok",
+              "start": 872415232,
+              "end": 880803839,
+              "bytes": 8388608,
+              "sha256": "b2a3c52b6d75ea1f817f96396fdf75aec7e9a7b20a12f5e1a1e4abd02080ecf7",
+              "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_2.fastq.gz"
+            },
+            {
+              "path": "/home/luisceb/ela-gse252892-retained-run-03/GSM8009878/SRR27477544_2.fastq.gz.ranges/range-000880803840-000889192447-a1.ok",
+              "start": 880803840,
+              "end": 889192447,
+              "bytes": 8388608,
+              "sha256": "bfa1a4d54826ce0c2fcdbd2b55a121c4817f1b526abc3fdfa5998123b3cdd091",
+              "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_2.fastq.gz"
+            },
+            {
+              "path": "/home/luisceb/ela-gse252892-retained-run-03/GSM8009878/SRR27477544_2.fastq.gz.ranges/range-000889192448-000897581055-a1.ok",
+              "start": 889192448,
+              "end": 897581055,
+              "bytes": 8388608,
+              "sha256": "5dae9b922e8e12edc886f5d2e57a50a9e8f78ecc402233e9f403bef360447ecc",
+              "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_2.fastq.gz"
+            },
+            {
+              "path": "/home/luisceb/ela-gse252892-retained-run-03/GSM8009878/SRR27477544_2.fastq.gz.ranges/range-000897581056-000905969663-a1.ok",
+              "start": 897581056,
+              "end": 905969663,
+              "bytes": 8388608,
+              "sha256": "9c2229fc2c818a9c87ac22402d2c4d92568695255d029e3c6cf9bbbf803166ae",
+              "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_2.fastq.gz"
+            },
+            {
+              "path": "/home/luisceb/ela-gse252892-retained-run-03/GSM8009878/SRR27477544_2.fastq.gz.ranges/range-000905969664-000914358271-a1.ok",
+              "start": 905969664,
+              "end": 914358271,
+              "bytes": 8388608,
+              "sha256": "dc714c30c85c1c2a8cadc1e775eb73a0fa058088e0b11fd3f893b3042369c2d3",
+              "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_2.fastq.gz"
+            },
+            {
+              "path": "/home/luisceb/ela-gse252892-retained-run-03/GSM8009878/SRR27477544_2.fastq.gz.ranges/range-000914358272-000922746879-a1.ok",
+              "start": 914358272,
+              "end": 922746879,
+              "bytes": 8388608,
+              "sha256": "4126e4efc443a79b81430ac4e2c495af10ec78c8aa19e28c510e57b1c7ab2450",
+              "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_2.fastq.gz"
+            },
+            {
+              "path": "/home/luisceb/ela-gse252892-retained-run-03/GSM8009878/SRR27477544_2.fastq.gz.ranges/range-000922746880-000931135487-a1.ok",
+              "start": 922746880,
+              "end": 931135487,
+              "bytes": 8388608,
+              "sha256": "6f2e315426fc13d080a8442513dba4d9d7aada1973fac71a8125a9c968f9ccde",
+              "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_2.fastq.gz"
+            },
+            {
+              "path": "/home/luisceb/ela-gse252892-retained-run-03/GSM8009878/SRR27477544_2.fastq.gz.ranges/range-000931135488-000939524095-a1.ok",
+              "start": 931135488,
+              "end": 939524095,
+              "bytes": 8388608,
+              "sha256": "9b86636f6eabec7e46db72116bb137057c7ddfea531a07aa3e4e5eebbeea445d",
+              "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_2.fastq.gz"
+            },
+            {
+              "path": "/home/luisceb/ela-gse252892-retained-run-03/GSM8009878/SRR27477544_2.fastq.gz.ranges/range-000939524096-000947912703-a1.ok",
+              "start": 939524096,
+              "end": 947912703,
+              "bytes": 8388608,
+              "sha256": "82cd1696ac1f9181fe45bb33bc1d9b7e12a493e3bb14b5a40cb4bb9c11fb694b",
+              "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_2.fastq.gz"
+            },
+            {
+              "path": "/home/luisceb/ela-gse252892-retained-run-03/GSM8009878/SRR27477544_2.fastq.gz.ranges/range-000947912704-000956301311-a1.ok",
+              "start": 947912704,
+              "end": 956301311,
+              "bytes": 8388608,
+              "sha256": "464a504a1c6de5955898a376449fb749c02119b684ae43bd14e6fc89c53ef549",
+              "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_2.fastq.gz"
+            },
+            {
+              "path": "/home/luisceb/ela-gse252892-retained-run-03/GSM8009878/SRR27477544_2.fastq.gz.ranges/range-000956301312-000964689919-a1.ok",
+              "start": 956301312,
+              "end": 964689919,
+              "bytes": 8388608,
+              "sha256": "a47803a36d77e3ad79d3d602c4c058a4d5eaac0d9523934a309b2127250fdd32",
+              "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_2.fastq.gz"
+            },
+            {
+              "path": "/home/luisceb/ela-gse252892-retained-run-03/GSM8009878/SRR27477544_2.fastq.gz.ranges/range-000964689920-000973078527-a1.ok",
+              "start": 964689920,
+              "end": 973078527,
+              "bytes": 8388608,
+              "sha256": "82dcd313d7a44fb45bb281d91d5b554a09ba30454bea366a28cf9fe0dc64ca98",
+              "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_2.fastq.gz"
+            },
+            {
+              "path": "/home/luisceb/ela-gse252892-retained-run-03/GSM8009878/SRR27477544_2.fastq.gz.ranges/range-000973078528-000981467135-a1.ok",
+              "start": 973078528,
+              "end": 981467135,
+              "bytes": 8388608,
+              "sha256": "ab3f252d3b2074bc6a043d05821146e339a58b59b23f397571130f2af6adce01",
+              "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_2.fastq.gz"
+            },
+            {
+              "path": "/home/luisceb/ela-gse252892-retained-run-03/GSM8009878/SRR27477544_2.fastq.gz.ranges/range-000981467136-000989855743-a1.ok",
+              "start": 981467136,
+              "end": 989855743,
+              "bytes": 8388608,
+              "sha256": "e0ec29988f52b8818fe6acf27671e7280d00210b35f00776f820e15e4f30a31d",
+              "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_2.fastq.gz"
+            },
+            {
+              "path": "/home/luisceb/ela-gse252892-retained-run-03/GSM8009878/SRR27477544_2.fastq.gz.ranges/range-000989855744-000998244351-a1.ok",
+              "start": 989855744,
+              "end": 998244351,
+              "bytes": 8388608,
+              "sha256": "812d7fcd5ad4d3ff26feeadd5bd327c1c8ad07fcdf4594f50f4acc8f0932eae5",
+              "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_2.fastq.gz"
+            },
+            {
+              "path": "/home/luisceb/ela-gse252892-retained-run-03/GSM8009878/SRR27477544_2.fastq.gz.ranges/range-000998244352-001006632959-a1.ok",
+              "start": 998244352,
+              "end": 1006632959,
+              "bytes": 8388608,
+              "sha256": "c0a1525e734c156d6d72f4e4cc677897ca885d61adef9a8c69c512499148017e",
+              "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_2.fastq.gz"
+            },
+            {
+              "path": "/home/luisceb/ela-gse252892-retained-run-03/GSM8009878/SRR27477544_2.fastq.gz.ranges/range-001006632960-001015021567-a1.ok",
+              "start": 1006632960,
+              "end": 1015021567,
+              "bytes": 8388608,
+              "sha256": "b9842a94040269d9c03eebfef5938ccc8862e54c0c31715e2a1ba85ad69fbf1d",
+              "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_2.fastq.gz"
+            },
+            {
+              "path": "/home/luisceb/ela-gse252892-retained-run-03/GSM8009878/SRR27477544_2.fastq.gz.ranges/range-001015021568-001023410175-a1.ok",
+              "start": 1015021568,
+              "end": 1023410175,
+              "bytes": 8388608,
+              "sha256": "3529a5e61ce06719a053969ec6a22c77ac4a47f0da727079f77e9d9d8388a533",
+              "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_2.fastq.gz"
+            },
+            {
+              "path": "/home/luisceb/ela-gse252892-retained-run-03/GSM8009878/SRR27477544_2.fastq.gz.ranges/range-001023410176-001031798783-a1.ok",
+              "start": 1023410176,
+              "end": 1031798783,
+              "bytes": 8388608,
+              "sha256": "1f65e4f63dcae2c17ee9be6a07bab287f3d41ccf28d91d5620fcdec53d771c0f",
+              "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_2.fastq.gz"
+            }
+          ],
+          "complete_inputs": [
+            {
+              "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_1.fastq.gz",
+              "path": "/home/luisceb/ela-gse252892-retained-run-03/GSM8009878/SRR27477544_1.fastq.gz",
+              "bytes": 2772553416,
+              "md5": "ab0a84e544fa6e2fc1e8c901d0c55675",
+              "sha256": "ddd42a540b6d01ca2405692cd6bf65ae35485c8b5e66f8eda2aec5fc62086bb6"
+            }
+          ]
+        },
+        "complete_inputs": [
+          {
+            "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_1.fastq.gz",
+            "path": "/home/luisceb/ela-gse252892-after-sampler-run-04/GSM8009878/SRR27477544_1.fastq.gz",
+            "bytes": 2772553416,
+            "md5": "ab0a84e544fa6e2fc1e8c901d0c55675",
+            "sha256": "ddd42a540b6d01ca2405692cd6bf65ae35485c8b5e66f8eda2aec5fc62086bb6"
+          },
+          {
+            "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_2.fastq.gz",
+            "path": "/home/luisceb/ela-gse252892-after-sampler-run-04/GSM8009878/SRR27477544_2.fastq.gz",
+            "bytes": 2913274103,
+            "md5": "017494b464222c58dc7c096e04ab59cb",
+            "sha256": "3dbaa49e5d28084c261921199c25044b7fe9e89129278df037c64e90e7c27354"
+          }
+        ],
+        "retained_blocks": [],
+        "worker_and_count_receipts_absent": true
+      },
+      "complete_inputs": [
+        {
+          "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_1.fastq.gz",
+          "path": "/home/luisceb/ela-gse252892-after-sampler-run-04/GSM8009878/SRR27477544_1.fastq.gz",
+          "bytes": 2772553416,
+          "md5": "ab0a84e544fa6e2fc1e8c901d0c55675",
+          "sha256": "ddd42a540b6d01ca2405692cd6bf65ae35485c8b5e66f8eda2aec5fc62086bb6"
+        },
+        {
+          "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_2.fastq.gz",
+          "path": "/home/luisceb/ela-gse252892-after-sampler-run-04/GSM8009878/SRR27477544_2.fastq.gz",
+          "bytes": 2913274103,
+          "md5": "017494b464222c58dc7c096e04ab59cb",
+          "sha256": "3dbaa49e5d28084c261921199c25044b7fe9e89129278df037c64e90e7c27354"
+        }
+      ],
+      "retained_blocks": [],
+      "zero_transfer_interruption": true
+    },
+    "code_sha256": {
+      "scripts/run_gse252892_local.py": "0fc6a7a69a5758c7980d22eddcafb78bb8d16596529f83975aca83b437c6a2cf",
+      "scripts/prepare_gse252892_local.py": "cd21092c55cf23d9698485f192e16b7564e23d1d35c63e05c3c80a326605aba8",
+      "scripts/gse252892_range_transport.py": "c05b20dadade749f1d137249ff289bb77770424d5618498ea4fed085dbac4649",
+      "scripts/gse252892_retained_blocks.py": "7465277502a742674cd6a88a30d4747f798601e2db51440645dff1860f488d0e",
+      "scripts/gse252892_after_sampler.py": "9d15774273546f6cc4cca1b490f1665cd2699e2fb57094cd26b72d0e44e5fad2",
+      "scripts/gse252892_after_interop.py": "bfd0233681af3c3699699397e3731807650760ba490f08697d9500275a492107",
+      "scripts/gse252892_drvfs.py": "1eeab298f0342f4b40a46b0a62e2e035c06461df30703a52b225123f467406d3",
+      "scripts/gse252892_after_interrupt.py": "7ac52ae677a3a7469ea3890abcc132516b608c58518cdd8db244dd670f90e534",
+      "research/references/unc13a_targets_sealed.json": "e35f6e05016b30eab89f8d3aacc2d4ec101840e24e2b6f07159e6c5235d0bc3a",
+      "reports/local-raw-feasibility-20261112/fastq-manifest.tsv": "c29e8b64c5fd8affb399bf7ff19dbc15a51b6aba7f53cf000129c6ca316eaae1"
+    },
+    "endpoint": "fragment/event/library with primary anchor 15; no inference",
+    "protocol": "research/plans/2026-11-13-gse252892-zero-transfer-retry.md",
+    "commands": {
+      "GSM8009878": {
+        "fastp": [
+          "/usr/bin/fastp",
+          "-i",
+          "/home/luisceb/ela-gse252892-interrupt-run-06/GSM8009878/SRR27477544_1.fastq.gz",
+          "-I",
+          "/home/luisceb/ela-gse252892-interrupt-run-06/GSM8009878/SRR27477544_2.fastq.gz",
+          "-o",
+          "/home/luisceb/ela-gse252892-interrupt-run-06/GSM8009878/trimmed_1.fq",
+          "-O",
+          "/home/luisceb/ela-gse252892-interrupt-run-06/GSM8009878/trimmed_2.fq",
+          "--detect_adapter_for_pe",
+          "--dont_eval_duplication",
+          "--thread",
+          "2",
+          "--json",
+          "/home/luisceb/ela-gse252892-interrupt-run-06/GSM8009878/fastp.json",
+          "--html",
+          "/home/luisceb/ela-gse252892-interrupt-run-06/GSM8009878/fastp.html"
+        ],
+        "align": [
+          "/home/luisceb/ela-tools/hisat2-2.2.3/hisat2-align-s",
+          "-x",
+          "/home/luisceb/ela-piloto-real-01-index-recovery-01-extracted-01/index/files/hg38/genome",
+          "-1",
+          "/home/luisceb/ela-gse252892-interrupt-run-06/GSM8009878/trimmed_1.fq",
+          "-2",
+          "/home/luisceb/ela-gse252892-interrupt-run-06/GSM8009878/trimmed_2.fq",
+          "-S",
+          "/dev/stdout",
+          "--no-mixed",
+          "--no-discordant",
+          "--fr",
+          "-p",
+          "2",
+          "--seed",
+          "0",
+          "-k",
+          "2",
+          "--reorder",
+          "--no-unal",
+          "--no-temp-splicesite",
+          "--summary-file",
+          "/home/luisceb/ela-gse252892-interrupt-run-06/GSM8009878/hisat2-summary.txt"
+        ],
+        "plain_files": [
+          "/home/luisceb/ela-gse252892-interrupt-run-06/GSM8009878/trimmed_1.fq",
+          "/home/luisceb/ela-gse252892-interrupt-run-06/GSM8009878/trimmed_2.fq"
+        ]
+      },
+      "GSM8009881": {
+        "fastp": [
+          "/usr/bin/fastp",
+          "-i",
+          "/home/luisceb/ela-gse252892-interrupt-run-06/GSM8009881/SRR27477541_1.fastq.gz",
+          "-I",
+          "/home/luisceb/ela-gse252892-interrupt-run-06/GSM8009881/SRR27477541_2.fastq.gz",
+          "-o",
+          "/home/luisceb/ela-gse252892-interrupt-run-06/GSM8009881/trimmed_1.fq",
+          "-O",
+          "/home/luisceb/ela-gse252892-interrupt-run-06/GSM8009881/trimmed_2.fq",
+          "--detect_adapter_for_pe",
+          "--dont_eval_duplication",
+          "--thread",
+          "2",
+          "--json",
+          "/home/luisceb/ela-gse252892-interrupt-run-06/GSM8009881/fastp.json",
+          "--html",
+          "/home/luisceb/ela-gse252892-interrupt-run-06/GSM8009881/fastp.html"
+        ],
+        "align": [
+          "/home/luisceb/ela-tools/hisat2-2.2.3/hisat2-align-s",
+          "-x",
+          "/home/luisceb/ela-piloto-real-01-index-recovery-01-extracted-01/index/files/hg38/genome",
+          "-1",
+          "/home/luisceb/ela-gse252892-interrupt-run-06/GSM8009881/trimmed_1.fq",
+          "-2",
+          "/home/luisceb/ela-gse252892-interrupt-run-06/GSM8009881/trimmed_2.fq",
+          "-S",
+          "/dev/stdout",
+          "--no-mixed",
+          "--no-discordant",
+          "--fr",
+          "-p",
+          "2",
+          "--seed",
+          "0",
+          "-k",
+          "2",
+          "--reorder",
+          "--no-unal",
+          "--no-temp-splicesite",
+          "--summary-file",
+          "/home/luisceb/ela-gse252892-interrupt-run-06/GSM8009881/hisat2-summary.txt"
+        ],
+        "plain_files": [
+          "/home/luisceb/ela-gse252892-interrupt-run-06/GSM8009881/trimmed_1.fq",
+          "/home/luisceb/ela-gse252892-interrupt-run-06/GSM8009881/trimmed_2.fq"
+        ]
+      }
+    },
+    "windows_free_bytes_at_preparation": 556004630528
+  },
+  "source_record": {
+    "path": "/home/luisceb/ela-gse252892-interrupt-execution-20261113.json",
+    "sha256": "61c5f2c73e762ed23d9c940ce7db2b3043713169311e4594d8f87e51d0332369",
+    "metadata_sha256": {
+      "result.json": "cff8f502e7a400d78847ed49b83949b9b561425653a6fa1a32e6a5f42f84c152",
+      "supervision.json": "379434f79b7ecde651e7f4f5e890fb99c775d5b12fa36702766126d5ab0a72fe",
+      "transfer-ledger.json": "2915f382482aacc4fab58b4673ef632b39c3cdcca6ff3c04de6a1b853c41438b"
+    },
+    "inputs": [
+      {
+        "gsm": "GSM8009878",
+        "path": "/home/luisceb/ela-gse252892-interrupt-run-06/GSM8009878/SRR27477544_1.fastq.gz",
+        "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_1.fastq.gz",
+        "receipt_sha256": "47545bd1c3633c4582e9ce6b652dd510c0289f0e9539e4125919ab507c904998",
+        "bytes": 2772553416,
+        "md5": "ab0a84e544fa6e2fc1e8c901d0c55675",
+        "sha256": "ddd42a540b6d01ca2405692cd6bf65ae35485c8b5e66f8eda2aec5fc62086bb6"
+      },
+      {
+        "gsm": "GSM8009878",
+        "path": "/home/luisceb/ela-gse252892-interrupt-run-06/GSM8009878/SRR27477544_2.fastq.gz",
+        "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_2.fastq.gz",
+        "receipt_sha256": "006085e0400dacadf59f3afeb8936e70b9e7789edb2fd991a4a8d0676b21e786",
+        "bytes": 2913274103,
+        "md5": "017494b464222c58dc7c096e04ab59cb",
+        "sha256": "3dbaa49e5d28084c261921199c25044b7fe9e89129278df037c64e90e7c27354"
+      },
+      {
+        "gsm": "GSM8009881",
+        "path": "/home/luisceb/ela-gse252892-interrupt-run-06/GSM8009881/SRR27477541_1.fastq.gz",
+        "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/041/SRR27477541/SRR27477541_1.fastq.gz",
+        "receipt_sha256": "306966051b22ae32ccbfa8e1ad292b30575c67d424a36f5b08068706ce13bce8",
+        "bytes": 3531400977,
+        "md5": "a8349bedaf4d2b453b3a022295f29f4f",
+        "sha256": "5eba3962dd2cdbdaca2105ce451d60decd106be3336bd82e073ca8f66e86a449"
+      },
+      {
+        "gsm": "GSM8009881",
+        "path": "/home/luisceb/ela-gse252892-interrupt-run-06/GSM8009881/SRR27477541_2.fastq.gz",
+        "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/041/SRR27477541/SRR27477541_2.fastq.gz",
+        "receipt_sha256": "e27fc159c93a1a041fb3f2834a579c70ce7a715893248b521d8788325c9a3c83",
+        "bytes": 3609364535,
+        "md5": "4f070f2bb19dccc2d861343a1385c675",
+        "sha256": "bf61fdae165d18f941c309a756e26b9bbf532059268a60ef5196a22e2483fe0f"
+      }
+    ],
+    "prior_roots": [
+      "/home/luisceb/ela-gse252892-run-01",
+      "/home/luisceb/ela-gse252892-range-run-02",
+      "/home/luisceb/ela-gse252892-retained-run-03",
+      "/home/luisceb/ela-gse252892-after-sampler-run-04",
+      "/home/luisceb/ela-gse252892-drvfs-run-05",
+      "/home/luisceb/ela-gse252892-interrupt-run-06"
+    ]
+  },
+  "inputs": [
+    {
+      "gsm": "GSM8009878",
+      "path": "/home/luisceb/ela-gse252892-interrupt-run-06/GSM8009878/SRR27477544_1.fastq.gz",
+      "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_1.fastq.gz",
+      "receipt_sha256": "47545bd1c3633c4582e9ce6b652dd510c0289f0e9539e4125919ab507c904998",
+      "bytes": 2772553416,
+      "md5": "ab0a84e544fa6e2fc1e8c901d0c55675",
+      "sha256": "ddd42a540b6d01ca2405692cd6bf65ae35485c8b5e66f8eda2aec5fc62086bb6"
+    },
+    {
+      "gsm": "GSM8009878",
+      "path": "/home/luisceb/ela-gse252892-interrupt-run-06/GSM8009878/SRR27477544_2.fastq.gz",
+      "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_2.fastq.gz",
+      "receipt_sha256": "006085e0400dacadf59f3afeb8936e70b9e7789edb2fd991a4a8d0676b21e786",
+      "bytes": 2913274103,
+      "md5": "017494b464222c58dc7c096e04ab59cb",
+      "sha256": "3dbaa49e5d28084c261921199c25044b7fe9e89129278df037c64e90e7c27354"
+    },
+    {
+      "gsm": "GSM8009881",
+      "path": "/home/luisceb/ela-gse252892-interrupt-run-06/GSM8009881/SRR27477541_1.fastq.gz",
+      "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/041/SRR27477541/SRR27477541_1.fastq.gz",
+      "receipt_sha256": "306966051b22ae32ccbfa8e1ad292b30575c67d424a36f5b08068706ce13bce8",
+      "bytes": 3531400977,
+      "md5": "a8349bedaf4d2b453b3a022295f29f4f",
+      "sha256": "5eba3962dd2cdbdaca2105ce451d60decd106be3336bd82e073ca8f66e86a449"
+    },
+    {
+      "gsm": "GSM8009881",
+      "path": "/home/luisceb/ela-gse252892-interrupt-run-06/GSM8009881/SRR27477541_2.fastq.gz",
+      "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/041/SRR27477541/SRR27477541_2.fastq.gz",
+      "receipt_sha256": "e27fc159c93a1a041fb3f2834a579c70ce7a715893248b521d8788325c9a3c83",
+      "bytes": 3609364535,
+      "md5": "4f070f2bb19dccc2d861343a1385c675",
+      "sha256": "bf61fdae165d18f941c309a756e26b9bbf532059268a60ef5196a22e2483fe0f"
+    }
+  ],
+  "run_root": "/home/luisceb/ela-gse252892-stmn2-control-01",
+  "python_executable": "/home/luisceb/proyectos/ela-research-piloto/.venv/bin/python",
+  "repository_commit": "acff06335ca1283b079c35ab0830a284e6d23258",
+  "caps": {
+    "transfer_bytes": 14000000000,
+    "wall_seconds": 172800,
+    "root_bytes": 107374182400,
+    "windows_reserve_bytes": 53687091200,
+    "group_rss_bytes": 6442450944,
+    "process_as_bytes": 8589934592,
+    "cpus": 2,
+    "network_bytes": 0
+  },
+  "fastp": {
+    "path": "/usr/bin/fastp",
+    "sha256": "5997fd44730065673fbd383f6910f1e712e8db9a930d81d7ea1ea3c5bde84272",
+    "version_output": "fastp 0.23.4\n"
+  },
+  "code_sha256": {
+    "scripts/run_gse252892_local.py": "0fc6a7a69a5758c7980d22eddcafb78bb8d16596529f83975aca83b437c6a2cf",
+    "scripts/prepare_gse252892_local.py": "cd21092c55cf23d9698485f192e16b7564e23d1d35c63e05c3c80a326605aba8",
+    "scripts/gse252892_range_transport.py": "c05b20dadade749f1d137249ff289bb77770424d5618498ea4fed085dbac4649",
+    "scripts/gse252892_retained_blocks.py": "7465277502a742674cd6a88a30d4747f798601e2db51440645dff1860f488d0e",
+    "scripts/gse252892_after_sampler.py": "9d15774273546f6cc4cca1b490f1665cd2699e2fb57094cd26b72d0e44e5fad2",
+    "scripts/gse252892_after_interop.py": "bfd0233681af3c3699699397e3731807650760ba490f08697d9500275a492107",
+    "scripts/gse252892_drvfs.py": "1eeab298f0342f4b40a46b0a62e2e035c06461df30703a52b225123f467406d3",
+    "scripts/gse252892_after_interrupt.py": "7ac52ae677a3a7469ea3890abcc132516b608c58518cdd8db244dd670f90e534",
+    "research/references/unc13a_targets_sealed.json": "e35f6e05016b30eab89f8d3aacc2d4ec101840e24e2b6f07159e6c5235d0bc3a",
+    "reports/local-raw-feasibility-20261112/fastq-manifest.tsv": "c29e8b64c5fd8affb399bf7ff19dbc15a51b6aba7f53cf000129c6ca316eaae1",
+    "scripts/stmn2_paired_control_counts.py": "f0c6bf58b9dcabe5caa5b668b9ad0a994f83f1b925abf0ff756deb17790922e5",
+    "scripts/run_gse252892_stmn2_control.py": "a1a91c4daea408ff56820704c649888ab1e669370a7a3e02ea8777ce8835a8b6",
+    "research/references/stmn2_targets_sealed.json": "df954f2bf30f90250eadf541e54a18abdfa3d9af841f89849aad65238807bba1",
+    "reports/gse252892-audit-verification-20261114/verification.json": "501f3ad962071fd99c9d308c6d4652ecdb4995139824646ebba19b0eb983533c"
+  },
+  "targets_sha256": "df954f2bf30f90250eadf541e54a18abdfa3d9af841f89849aad65238807bba1",
+  "protocol": "research/plans/2026-11-14-gse252892-stmn2-execution.md",
+  "commands": {
+    "GSM8009878": {
+      "fastp": [
+        "/usr/bin/fastp",
+        "-i",
+        "/home/luisceb/ela-gse252892-interrupt-run-06/GSM8009878/SRR27477544_1.fastq.gz",
+        "-I",
+        "/home/luisceb/ela-gse252892-interrupt-run-06/GSM8009878/SRR27477544_2.fastq.gz",
+        "-o",
+        "/home/luisceb/ela-gse252892-stmn2-control-01/GSM8009878/trimmed_1.fq",
+        "-O",
+        "/home/luisceb/ela-gse252892-stmn2-control-01/GSM8009878/trimmed_2.fq",
+        "--detect_adapter_for_pe",
+        "--dont_eval_duplication",
+        "--thread",
+        "2",
+        "--json",
+        "/home/luisceb/ela-gse252892-stmn2-control-01/GSM8009878/fastp.json",
+        "--html",
+        "/home/luisceb/ela-gse252892-stmn2-control-01/GSM8009878/fastp.html"
+      ],
+      "align": [
+        "/home/luisceb/ela-tools/hisat2-2.2.3/hisat2-align-s",
+        "-x",
+        "/home/luisceb/ela-piloto-real-01-index-recovery-01-extracted-01/index/files/hg38/genome",
+        "-1",
+        "/home/luisceb/ela-gse252892-stmn2-control-01/GSM8009878/trimmed_1.fq",
+        "-2",
+        "/home/luisceb/ela-gse252892-stmn2-control-01/GSM8009878/trimmed_2.fq",
+        "-S",
+        "/dev/stdout",
+        "--no-mixed",
+        "--no-discordant",
+        "--fr",
+        "-p",
+        "2",
+        "--seed",
+        "0",
+        "-k",
+        "2",
+        "--reorder",
+        "--no-unal",
+        "--no-temp-splicesite",
+        "--summary-file",
+        "/home/luisceb/ela-gse252892-stmn2-control-01/GSM8009878/hisat2-summary.txt"
+      ],
+      "plain_files": [
+        "/home/luisceb/ela-gse252892-stmn2-control-01/GSM8009878/trimmed_1.fq",
+        "/home/luisceb/ela-gse252892-stmn2-control-01/GSM8009878/trimmed_2.fq"
+      ]
+    },
+    "GSM8009881": {
+      "fastp": [
+        "/usr/bin/fastp",
+        "-i",
+        "/home/luisceb/ela-gse252892-interrupt-run-06/GSM8009881/SRR27477541_1.fastq.gz",
+        "-I",
+        "/home/luisceb/ela-gse252892-interrupt-run-06/GSM8009881/SRR27477541_2.fastq.gz",
+        "-o",
+        "/home/luisceb/ela-gse252892-stmn2-control-01/GSM8009881/trimmed_1.fq",
+        "-O",
+        "/home/luisceb/ela-gse252892-stmn2-control-01/GSM8009881/trimmed_2.fq",
+        "--detect_adapter_for_pe",
+        "--dont_eval_duplication",
+        "--thread",
+        "2",
+        "--json",
+        "/home/luisceb/ela-gse252892-stmn2-control-01/GSM8009881/fastp.json",
+        "--html",
+        "/home/luisceb/ela-gse252892-stmn2-control-01/GSM8009881/fastp.html"
+      ],
+      "align": [
+        "/home/luisceb/ela-tools/hisat2-2.2.3/hisat2-align-s",
+        "-x",
+        "/home/luisceb/ela-piloto-real-01-index-recovery-01-extracted-01/index/files/hg38/genome",
+        "-1",
+        "/home/luisceb/ela-gse252892-stmn2-control-01/GSM8009881/trimmed_1.fq",
+        "-2",
+        "/home/luisceb/ela-gse252892-stmn2-control-01/GSM8009881/trimmed_2.fq",
+        "-S",
+        "/dev/stdout",
+        "--no-mixed",
+        "--no-discordant",
+        "--fr",
+        "-p",
+        "2",
+        "--seed",
+        "0",
+        "-k",
+        "2",
+        "--reorder",
+        "--no-unal",
+        "--no-temp-splicesite",
+        "--summary-file",
+        "/home/luisceb/ela-gse252892-stmn2-control-01/GSM8009881/hisat2-summary.txt"
+      ],
+      "plain_files": [
+        "/home/luisceb/ela-gse252892-stmn2-control-01/GSM8009881/trimmed_1.fq",
+        "/home/luisceb/ela-gse252892-stmn2-control-01/GSM8009881/trimmed_2.fq"
+      ]
+    }
+  }
+}

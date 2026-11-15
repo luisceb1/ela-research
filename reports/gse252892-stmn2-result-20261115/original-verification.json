@@ -1,0 +1,92 @@
+{
+  "status": "passed",
+  "archive_sha256": "7cbfa8d652ab35178717813e47fd2c66c6c71ff5612b359ff29da05b693756db",
+  "archive_bytes": 125916,
+  "metadata_members": 16,
+  "metadata_bytes": 397177,
+  "plan_sha256": "8379c7e56c0546623fac80c732935f29113f17e048b8625d85e1163e3f61b557",
+  "runtime_commit": "acff06335ca1283b079c35ab0830a284e6d23258",
+  "runtime_file_hashes_checked": 14,
+  "prior_archive_sha256": "c8751b9610512791ba40a613449ad332833ff557e8c371f96e118636361e4617",
+  "source_input_receipts_checked": 4,
+  "checks": [
+    "exact original aggregate result/supervision match terminal transcriptions",
+    "proposal/claim/acceptance/supervision identity",
+    "runtime hashes, sealed targets, commands and fixed envelope",
+    "embedded source proposal and original run06 metadata/input receipts",
+    "per-library results, support flags, fastp QC/command and HISAT2 group totals",
+    "fastp non-command fields and count QC equal original prior run06",
+    "completed worker, reported zero network and sampled resources below caps"
+  ],
+  "limitations": [
+    "No raw FASTQ, binary or index replay/rehash by this verifier.",
+    "Network and resource evidence is recorded metadata, not independent system telemetry.",
+    "No independent biological replication or protein efficacy inference."
+  ],
+  "members": {
+    "GSM8009878/fastp.json": {
+      "bytes": 112225,
+      "sha256": "a05f3f344eb2071eca9c3bca4f7254309b5d499a441c82706fbd454595ec9bb1"
+    },
+    "GSM8009878/fastp.log": {
+      "bytes": 1702,
+      "sha256": "dd4a69cc59928ef8f4f7aadee6cefba4517c8a78e0bb03278e8d3e64db3df9a4"
+    },
+    "GSM8009878/hisat2-summary.txt": {
+      "bytes": 257,
+      "sha256": "f46e295de33951222f1c71bf1dc54135698a3b11ae9a9431c728a8c2e21ca414"
+    },
+    "GSM8009878/hisat2.log": {
+      "bytes": 257,
+      "sha256": "f46e295de33951222f1c71bf1dc54135698a3b11ae9a9431c728a8c2e21ca414"
+    },
+    "GSM8009878/stmn2-counts.json": {
+      "bytes": 601,
+      "sha256": "b15a16688cdf81c9497be127e12a7b5a9aa76911c988c666889a133b510f95ed"
+    },
+    "GSM8009881/fastp.json": {
+      "bytes": 112708,
+      "sha256": "7e270b9c79bbdac785bdbf666b5ee65ff4acdb0266403a42e15171fdc50c1643"
+    },
+    "GSM8009881/fastp.log": {
+      "bytes": 1700,
+      "sha256": "654a128e550e0bcf58c4d9213aec6f251a4df6c3608d58bc45458fc0bfa0e255"
+    },
+    "GSM8009881/hisat2-summary.txt": {
+      "bytes": 257,
+      "sha256": "e770f8954f31642ba1cdcb096f6d3b3f871236e95e4e431806517f287f63689a"
+    },
+    "GSM8009881/hisat2.log": {
+      "bytes": 257,
+      "sha256": "e770f8954f31642ba1cdcb096f6d3b3f871236e95e4e431806517f287f63689a"
+    },
+    "GSM8009881/stmn2-counts.json": {
+      "bytes": 601,
+      "sha256": "3623e04cd0036e690f73e71bdd7bf501f949347bcb2fb910d66c26b11fee67e1"
+    },
+    "accepted.json": {
+      "bytes": 135,
+      "sha256": "91172ee2158d85be67b22daaea3a0b0b6046b72738df15000ae824aaf81292f4"
+    },
+    "ela-gse252892-stmn2-control-20261114.json": {
+      "bytes": 164070,
+      "sha256": "8379c7e56c0546623fac80c732935f29113f17e048b8625d85e1163e3f61b557"
+    },
+    "ela-gse252892-stmn2-control-20261114.json.claimed.json": {
+      "bytes": 103,
+      "sha256": "2fe6710fa58c7763cb509032715a733f96105f1cd27a1566943819c15239d82b"
+    },
+    "result.json": {
+      "bytes": 1597,
+      "sha256": "72ff19516ec5370b899ac9de2c0d646c4299d20e2a54f990742d536300ab6a51"
+    },
+    "supervision.json": {
+      "bytes": 673,
+      "sha256": "3126be5adddfd54fd66c2b6f695fe80e0d9214adb8576970b688f2cb8742c8a5"
+    },
+    "worker.log": {
+      "bytes": 34,
+      "sha256": "7963909ff4d8c8d2ba781402476be30d56b257a08047f7394aa1ef1fb625637e"
+    }
+  }
+}
