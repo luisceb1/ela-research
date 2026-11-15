@@ -1,3 +1,5 @@
+Subsequent authorized artifact review: [updated evidence and limits](../gse299341-artifact-inspection-20261115/REPORT.md). Earlier unresolved-status statements below are historical and superseded only where explicitly resolved.
+
 # GSE299341 bounded design review — 15 November 2026
 
 ## Decision
