@@ -1,0 +1,33 @@
+{
+  "decision": "rejected_for_per_library_count_reproduction",
+  "header_fields": [
+    "module_id",
+    "gene_id",
+    "gene_name",
+    "seqid",
+    "strand",
+    "lsv_id",
+    "event_id",
+    "complex",
+    "module_event_combination",
+    "denovo",
+    "junction_name",
+    "junction_coord",
+    "event_non_changing",
+    "event_changing",
+    "junction_changing",
+    "ctrlSoma_median_psi",
+    "KDSoma_median_psi",
+    "KDSoma-ctrlSoma_median_dpsi",
+    "KDSoma-ctrlSoma_probability_changing",
+    "KDSoma-ctrlSoma_probability_non_changing"
+  ],
+  "field_count": 20,
+  "per_library_count_fields": false,
+  "per_library_ids": false,
+  "coordinate_conversion": "not established; no conversion performed",
+  "target_rows_inspected": false,
+  "whole_file_verified": false,
+  "source_prefix_bytes": 65536,
+  "reason": "condition-level PSI/dPSI/probability schema; raw support and sample linkage unavailable"
+}

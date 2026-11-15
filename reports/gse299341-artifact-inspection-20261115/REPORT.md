@@ -1,3 +1,5 @@
+Subsequent authorized schema inspection **rejected the exact table for per-library count reproduction**; [decision](../gse299341-junction-schema-20261115/REPORT.md). The indexed-file lead below is historical and is no longer an untested recommendation.
+
 # GSE299341 published-artifact inspection — 15 November 2026
 
 ## Decision and scope
