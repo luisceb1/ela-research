@@ -1,5 +1,7 @@
 # Current backlog — 2026-11-04
 
+GSE299341 bounded design review completed — 15 November 2026. Full primary methods now accessible: R2 has8-nt UMI followed by6-nt linker; study-level western/IF depletion evidence documented. Source remains pending, not selected: exact run relationship/dedup scope, RNA biological-unit/batch mapping and tiny GSM9037617 unresolved. Six-call cap reached, no raw/count downloads or effects. Do not reuse GSE252892 processing unchanged or infer RNA replicates from imaging/proteomics n. Next possible task is separately scoped author-code/sample-sheet inspection, not86.56GB raw acquisition. No execution/contact/spend/merge; prior cycles remain closed. [Evidence and decision](../reports/gse299341-design-review-20261115/REPORT.md).
+
 ## STMN2 orthogonal control completed: supported KD response — 15 November 2026
 
 User reports completed zero-network run: **STMN2 canonical/cryptic1945/3 control,253/727 TDP-43 KD**. Both canonical controls pass; the fixed cryptic>=20 descriptive diagnostic is true for KD727 and false for control3. [Counts, consistency and limits](../reports/gse252892-stmn2-result-20261115/REPORT.md). This meets the prospective sole-marker prediction for an orthogonal splice response compatible with TDP-43 loss, not protein depletion efficacy, specificity, a normalized/causal effect, donor validation or functional recovery. Generic below-diagnostic warning text is conditional; it does not override the true KD support flag.
