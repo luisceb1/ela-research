@@ -1,0 +1,8 @@
+{
+  "url": "https://www.ebi.ac.uk/ena/portal/api/filereport?accession=SRP482832&result=read_run&fields=run_accession%2Cexperiment_accession%2Clibrary_strategy%2Clibrary_layout%2Cfastq_ftp%2Cfastq_bytes%2Cfastq_md5&format=tsv",
+  "body_bytes": 3411,
+  "raw_fastq_bytes": 0,
+  "status": 200,
+  "sha256": "484b4a0637716179fda4c7b017e628ecdb498dc11c26b4763ae8ff382ab6f610",
+  "comparison": "all8file URLs/bytes/MD5 and4run/SRX/layout/strategy match prior inventory"
+}
