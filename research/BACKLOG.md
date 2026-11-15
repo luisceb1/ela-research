@@ -1,5 +1,11 @@
 # Current backlog — 2026-11-04
 
+## STMN2 orthogonal control completed: supported KD response — 15 November 2026
+
+User reports completed zero-network run: **STMN2 canonical/cryptic1945/3 control,253/727 TDP-43 KD**. Both canonical controls pass; the fixed cryptic>=20 descriptive diagnostic is true for KD727 and false for control3. [Counts, consistency and limits](../reports/gse252892-stmn2-result-20261115/REPORT.md). This meets the prospective sole-marker prediction for an orthogonal splice response compatible with TDP-43 loss, not protein depletion efficacy, specificity, a normalized/causal effect, donor validation or functional recovery. Generic below-diagnostic warning text is conditional; it does not override the true KD support flag.
+
+Same-library QC/mapping totals exactly match prior UNC13A processing; no count/filter/threshold/estimator changes. UNC13A remains106/0/0 and41/0/3, low-support outcome unexplained, not replaced or pooled with STMN2. One library/condition/single background; no ratio/PSI/p-value. No additional marker or reopening of earlier45-donor cycles. Supervision clean,~1 h42 min, network0; original new metadata package remains pending upload/audit. Record is user terminal transcription, not agent FASTQ replay. Sole-marker measurement closed; preserve sources pending archival/retention. No cleanup/contact/spend/merge.
+
 ## Orthogonal STMN2 response-control prepared — 14 November 2026
 
 Luis authorized a new control question on the same fixed GSE252892 control/KD libraries. [Prospective selection](plans/2026-11-14-gse252892-orthogonal-control-selection.md) preceded primary review; [execution](plans/2026-11-14-gse252892-stmn2-execution.md) preceded implementation/counts. Sole selected event is the existing sealed STMN2 exon1/cryptic-terminal-exon junction, with canonical control. [Primary-source decision, runner and limits](../reports/gse252892-orthogonal-control-20261114/README.md). This is descriptive orthogonal-marker compatibility, not per-library protein efficacy, independent biological validation, a donor/STMN2-cycle reopening or a change to UNC13A.

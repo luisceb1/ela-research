@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "source": "user terminal transcriptions; not original host metadata bytes or agent raw-data replay",
+  "checks": [
+    "reported QC equals prior same-library UNC13A QC exactly",
+    "paired-read category sums",
+    "unique/multiple alignments equal eligible/rejected groups",
+    "eligible+rejected equal alignment groups",
+    "fixed cryptic>=20 diagnostic flags"
+  ]
+}

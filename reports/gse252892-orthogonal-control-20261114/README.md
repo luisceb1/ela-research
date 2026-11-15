@@ -1,3 +1,5 @@
+Current outcome: the host measurement completed with supported KD STMN2 cryptic response; see [15 November result](../gse252892-stmn2-result-20261115/REPORT.md). Earlier pending-execution statements below are historical.
+
 # Orthogonal STMN2 splice-response control — 14 November 2026
 
 ## Outcome of this preparation cycle

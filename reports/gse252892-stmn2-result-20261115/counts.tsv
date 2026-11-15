@@ -1,0 +1,3 @@
+gsm	condition	canonical	cryptic	cryptic_support_ge20	unit
+GSM8009878	control	1945	3	false	paired_query_group_event_anchor15
+GSM8009881	TDP43_KD	253	727	true	paired_query_group_event_anchor15

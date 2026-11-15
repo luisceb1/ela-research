@@ -1,0 +1,55 @@
+{
+  "project": "SRP482832",
+  "gene": "STMN2",
+  "analysis": "orthogonal descriptive splice response only; no protein efficacy/effect/PSI",
+  "libraries": [
+    {
+      "counts": {
+        "canonical": 1945,
+        "cryptic": 3
+      },
+      "qc": {
+        "sam_records": 139759296,
+        "alignment_groups": 65478552,
+        "eligible_groups": 61077456,
+        "marked_duplicate_records": 0,
+        "rejected_groups": 4401096
+      },
+      "unit": "contiguous paired query group/event/library; anchor 15",
+      "positive_control_measured": true,
+      "support_at_least_20_groups": {
+        "cryptic": false
+      },
+      "interpretation": "Below-diagnostic support is insufficient, not a biological zero. No effect or ratio.",
+      "gsm": "GSM8009878",
+      "project": "SRP482832",
+      "gene": "STMN2",
+      "complete": true
+    },
+    {
+      "counts": {
+        "canonical": 253,
+        "cryptic": 727
+      },
+      "qc": {
+        "sam_records": 176641092,
+        "alignment_groups": 82407283,
+        "eligible_groups": 76494020,
+        "marked_duplicate_records": 0,
+        "rejected_groups": 5913263
+      },
+      "unit": "contiguous paired query group/event/library; anchor 15",
+      "positive_control_measured": true,
+      "support_at_least_20_groups": {
+        "cryptic": true
+      },
+      "interpretation": "Below-diagnostic support is insufficient, not a biological zero. No effect or ratio.",
+      "gsm": "GSM8009881",
+      "project": "SRP482832",
+      "gene": "STMN2",
+      "complete": true
+    }
+  ],
+  "network_bytes": 0,
+  "status": "completed"
+}
