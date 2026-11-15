@@ -1,0 +1,45 @@
+Detecting adapter sequence for read1...
+No adapter detected for read1
+
+Detecting adapter sequence for read2...
+No adapter detected for read2
+
+Read1 before filtering:
+total reads: 90525531
+total bases: 6789414825
+Q20 bases: 6673318007(98.29%)
+Q30 bases: 6468506526(95.2734%)
+
+Read2 before filtering:
+total reads: 90525531
+total bases: 6789414825
+Q20 bases: 6582758111(96.9562%)
+Q30 bases: 6354532330(93.5947%)
+
+Read1 after filtering:
+total reads: 89969380
+total bases: 6716779000
+Q20 bases: 6608907543(98.394%)
+Q30 bases: 6409719679(95.4285%)
+
+Read2 after filtering:
+total reads: 89969380
+total bases: 6716779000
+Q20 bases: 6532051367(97.2498%)
+Q30 bases: 6310930641(93.9577%)
+
+Filtering result:
+reads passed filter: 179938760
+reads failed due to low quality: 1092348
+reads failed due to too many N: 19954
+reads failed due to too short: 0
+reads with adapter trimmed: 3174588
+bases trimmed due to adapters: 61884912
+
+Insert size peak (evaluated by paired-end reads): 119
+
+JSON report: /home/luisceb/ela-gse252892-stmn2-control-01/GSM8009881/fastp.json
+HTML report: /home/luisceb/ela-gse252892-stmn2-control-01/GSM8009881/fastp.html
+
+/usr/bin/fastp -i /home/luisceb/ela-gse252892-interrupt-run-06/GSM8009881/SRR27477541_1.fastq.gz -I /home/luisceb/ela-gse252892-interrupt-run-06/GSM8009881/SRR27477541_2.fastq.gz -o /home/luisceb/ela-gse252892-stmn2-control-01/GSM8009881/trimmed_1.fq -O /home/luisceb/ela-gse252892-stmn2-control-01/GSM8009881/trimmed_2.fq --detect_adapter_for_pe --dont_eval_duplication --thread 2 --json /home/luisceb/ela-gse252892-stmn2-control-01/GSM8009881/fastp.json --html /home/luisceb/ela-gse252892-stmn2-control-01/GSM8009881/fastp.html 
+fastp v0.23.4, time used: 305 seconds
