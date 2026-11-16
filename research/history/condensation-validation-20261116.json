@@ -1,0 +1,45 @@
+{
+  "zip_sha256": "998c9a2657a73e9050113f585bffabc363c53612848a77a85adfd0c8be5da6ab",
+  "incoming_base": "c9f0dde3a8d5e1cb080227aeab1eb08713237d7d",
+  "integration_base": "4dad800cc6541a5ef4dd70caca48c76d668a5b83",
+  "space_corrections": [
+    {
+      "path": "docs/CURRENT_FINDINGS.md",
+      "claude_replacements_rebased": 7,
+      "numeric_sequence_unchanged": true,
+      "commit_hashes_retained": true
+    },
+    {
+      "path": "docs/EVIDENCE_BRIEF_2026-11-15.md",
+      "claude_replacements_rebased": 4,
+      "numeric_sequence_unchanged": true,
+      "commit_hashes_retained": true
+    }
+  ],
+  "archives": {
+    "research/history/BACKLOG-before-condensation-20261116-main-4dad800.md": "28c50189a1ef088bba6e898ac9acffe7bec675c11512cc81b23ad38a70d10c49",
+    "research/history/BACKLOG-before-condensation-20261116.md": "5f8306e12f8d94640e6604c640538adc49d9c66c245ce45e536c6ef658806f71",
+    "research/history/STATE-before-condensation-20261116-main-4dad800.md": "c918e3e6e2534bf42cb8361f83bd4c15d7b7672e0576ad73f4227794315f9323",
+    "research/history/STATE-before-condensation-20261116.md": "366ce3c842f95b057746c2f35aff8e0fb4d3027b8670db1d1e0544a931ba94bd"
+  },
+  "checks": [
+    "four archived copies exactly match pinned commits",
+    "existing November3 archives unchanged in incoming ZIP",
+    "current-document numeric sequences unchanged after rebase (operational notice checked separately)",
+    "latest six-library STMN2 result/audit retained",
+    "current STATE/BACKLOG relative links resolve",
+    "prior GSE299341 pending lead superseded, issues remain closed",
+    "PR83 prepared/not executed and recommended pause explicitly recorded"
+  ],
+  "current_pages": {
+    "research/STATE.md": {
+      "words": 490,
+      "lines": 28
+    },
+    "research/BACKLOG.md": {
+      "words": 421,
+      "lines": 27
+    }
+  },
+  "spacing_integration_note": "Additional damaged current-main paragraphs were spaced using protected inline-code/link segments; digit-token sequence verified after every pass. Only existing numeric values retained; operational PR83 notice is separately identified."
+}
