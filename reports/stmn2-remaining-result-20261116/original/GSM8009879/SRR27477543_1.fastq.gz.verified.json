@@ -1,0 +1,11 @@
+{
+  "path": "/home/luisceb/ela-stmn2-restantes-run-01/GSM8009879/SRR27477543_1.fastq.gz",
+  "bytes": 3977066052,
+  "md5": "dd93c177d9ddfc8ae56398ded376a118",
+  "sha256": "06bdc377101b00b28101419e2e056cbdf5565a5689c0aa4dab624d7b2d2a901f",
+  "status": "verified_complete",
+  "reused_complete_block_bytes": 0,
+  "reused_prefix_bytes": 0,
+  "range_blocks": 475,
+  "remote_overlap_bytes": 0
+}

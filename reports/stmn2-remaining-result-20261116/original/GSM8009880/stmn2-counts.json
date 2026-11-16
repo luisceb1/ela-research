@@ -1,0 +1,23 @@
+{
+  "counts": {
+    "canonical": 2438,
+    "cryptic": 0
+  },
+  "qc": {
+    "sam_records": 174279828,
+    "alignment_groups": 81751742,
+    "eligible_groups": 76363570,
+    "marked_duplicate_records": 0,
+    "rejected_groups": 5388172
+  },
+  "unit": "contiguous paired query group/event/library; anchor 15",
+  "positive_control_measured": true,
+  "support_at_least_20_groups": {
+    "cryptic": false
+  },
+  "interpretation": "Below-diagnostic support is insufficient, not a biological zero. No effect or ratio.",
+  "gsm": "GSM8009880",
+  "project": "SRP482832",
+  "gene": "STMN2",
+  "complete": true
+}

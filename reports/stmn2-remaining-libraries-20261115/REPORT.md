@@ -1,4 +1,4 @@
-Subsequent outcome: [four-library measurement completed, prediction met; original new metadata audit pending](../stmn2-remaining-result-20261116/REPORT.md). Preparation-pending statements below are historical.
+Subsequent outcome: [four-library measurement completed, prediction met; original new metadata audit passed: 3,404files,16runtime hashes,3,369request receipts and8input-coverage/receipt bindings; metadata coherence only, no raw replay](../stmn2-remaining-result-20261116/REPORT.md). Preparation-pending statements below are historical.
 
 Current preparation: host snapshot supplied and tested runner implemented; [resource envelope and limits](HOST_AND_RUNNER.md). Earlier pending-capacity wording below is historical. No new raw execution yet.
 
