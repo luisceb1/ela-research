@@ -1,0 +1,7 @@
+gsm	condition	phase	canonical	cryptic	cryptic_at_least_20
+GSM8009878	control	known_discovery	1945	3	False
+GSM8009879	control	prospective_remaining	2806	5	False
+GSM8009880	control	prospective_remaining	2438	0	False
+GSM8009881	KD	known_discovery	253	727	True
+GSM8009882	KD	prospective_remaining	173	551	True
+GSM8009883	KD	prospective_remaining	140	556	True

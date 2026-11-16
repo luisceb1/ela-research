@@ -1,0 +1,20 @@
+{
+  "status": "completed",
+  "failure": null,
+  "elapsed_seconds": 28558.903944495,
+  "plan_sha256": "0c6e43df6f2b1d5c8474d27c61701e8a487533567e15ac92ae581b93b9ee6462",
+  "caps": {
+    "transfer_bytes": 40000000000,
+    "wall_seconds": 345600,
+    "root_bytes": 214748364800,
+    "windows_reserve_bytes": 53687091200,
+    "group_rss_bytes": 6442450944,
+    "process_as_bytes": 8589934592,
+    "cpus": 2
+  },
+  "transfer_bytes": 40000000000,
+  "peak_sampled_group_rss_bytes": 4845395968,
+  "peak_sampled_combined_root_bytes": 125128870308,
+  "cleanup_error": null,
+  "limitations": "Sampled RSS/disk are not kernel quotas; uninterruptible I/O limits persist."
+}

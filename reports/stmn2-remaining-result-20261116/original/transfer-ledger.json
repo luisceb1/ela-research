@@ -1,0 +1,20 @@
+{
+  "prior_charge_bytes": 0,
+  "prior_observed_body_bytes": 0,
+  "prior_unobserved_bytes_charged": 0,
+  "new_observed_body_bytes": 27766421869,
+  "actual_body_bytes": 27766421869,
+  "new_charged_upper_bytes": 27766421869,
+  "body_upper_bound_bytes": 27766421869,
+  "cap_bytes": 40000000000,
+  "request_attempts": 3369,
+  "completed_attempts": 3369,
+  "active_requests": [],
+  "last_completed": {
+    "id": 3369,
+    "status": "complete",
+    "observed_bytes": 6263953,
+    "charged_bytes": 6263953
+  },
+  "receipt_directory": "/home/luisceb/ela-stmn2-restantes-run-01/transport-receipts"
+}

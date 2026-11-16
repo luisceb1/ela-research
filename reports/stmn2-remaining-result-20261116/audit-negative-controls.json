@@ -1,0 +1,17 @@
+{
+  "scope": "software integrity fixtures only; no biological data simulation",
+  "checks": [
+    {
+      "fixture": "result_count_changed",
+      "rejected": true
+    },
+    {
+      "fixture": "receipt_charge_changed",
+      "rejected": true
+    },
+    {
+      "fixture": "completed_range_changed",
+      "rejected": true
+    }
+  ]
+}

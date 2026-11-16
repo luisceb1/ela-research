@@ -1,0 +1,106 @@
+{
+  "status": "metadata_verified_execution_disabled",
+  "libraries": 4,
+  "files": 8,
+  "advertised_compressed_bytes": 27762593667,
+  "input_files": [
+    {
+      "geo_series": "GSE252892",
+      "gsm": "GSM8009879",
+      "declared_title": "iNeuron, shControl, day 7, RNA-seq, rep 2",
+      "srx": "SRX23148891",
+      "run": "SRR27477543",
+      "strategy": "RNA-Seq",
+      "layout": "PAIRED",
+      "compressed_bytes": "3977066052",
+      "md5": "dd93c177d9ddfc8ae56398ded376a118",
+      "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/043/SRR27477543/SRR27477543_1.fastq.gz"
+    },
+    {
+      "geo_series": "GSE252892",
+      "gsm": "GSM8009879",
+      "declared_title": "iNeuron, shControl, day 7, RNA-seq, rep 2",
+      "srx": "SRX23148891",
+      "run": "SRR27477543",
+      "strategy": "RNA-Seq",
+      "layout": "PAIRED",
+      "compressed_bytes": "4238436281",
+      "md5": "fd20bf36e59d997956bad27313f06d82",
+      "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/043/SRR27477543/SRR27477543_2.fastq.gz"
+    },
+    {
+      "geo_series": "GSE252892",
+      "gsm": "GSM8009880",
+      "declared_title": "iNeuron, shControl, day 7, RNA-seq, rep 3",
+      "srx": "SRX23148892",
+      "run": "SRR27477542",
+      "strategy": "RNA-Seq",
+      "layout": "PAIRED",
+      "compressed_bytes": "3448786708",
+      "md5": "d468af83409832d4a2307a4a1a2bc3d9",
+      "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/042/SRR27477542/SRR27477542_1.fastq.gz"
+    },
+    {
+      "geo_series": "GSE252892",
+      "gsm": "GSM8009880",
+      "declared_title": "iNeuron, shControl, day 7, RNA-seq, rep 3",
+      "srx": "SRX23148892",
+      "run": "SRR27477542",
+      "strategy": "RNA-Seq",
+      "layout": "PAIRED",
+      "compressed_bytes": "3659654232",
+      "md5": "87f9b64ae36cb805d77e41d5511f45ff",
+      "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/042/SRR27477542/SRR27477542_2.fastq.gz"
+    },
+    {
+      "geo_series": "GSE252892",
+      "gsm": "GSM8009882",
+      "declared_title": "iNeuron, shTDP-43, day 7, RNA-seq, rep 2",
+      "srx": "SRX23148894",
+      "run": "SRR27477540",
+      "strategy": "RNA-Seq",
+      "layout": "PAIRED",
+      "compressed_bytes": "2929350836",
+      "md5": "4ef5235d945a5858846897b048ba298d",
+      "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/040/SRR27477540/SRR27477540_1.fastq.gz"
+    },
+    {
+      "geo_series": "GSE252892",
+      "gsm": "GSM8009882",
+      "declared_title": "iNeuron, shTDP-43, day 7, RNA-seq, rep 2",
+      "srx": "SRX23148894",
+      "run": "SRR27477540",
+      "strategy": "RNA-Seq",
+      "layout": "PAIRED",
+      "compressed_bytes": "3109122340",
+      "md5": "27561b424baeaa1323325fe135d554ce",
+      "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/040/SRR27477540/SRR27477540_2.fastq.gz"
+    },
+    {
+      "geo_series": "GSE252892",
+      "gsm": "GSM8009883",
+      "declared_title": "iNeuron, shTDP-43, day 7, RNA-seq, rep 3",
+      "srx": "SRX23148895",
+      "run": "SRR27477539",
+      "strategy": "RNA-Seq",
+      "layout": "PAIRED",
+      "compressed_bytes": "3147521969",
+      "md5": "d7d9234cc555521cded67b2d94c4c814",
+      "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/039/SRR27477539/SRR27477539_1.fastq.gz"
+    },
+    {
+      "geo_series": "GSE252892",
+      "gsm": "GSM8009883",
+      "declared_title": "iNeuron, shTDP-43, day 7, RNA-seq, rep 3",
+      "srx": "SRX23148895",
+      "run": "SRR27477539",
+      "strategy": "RNA-Seq",
+      "layout": "PAIRED",
+      "compressed_bytes": "3252655249",
+      "md5": "26070a383db92ef045077fc81a067da9",
+      "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/039/SRR27477539/SRR27477539_2.fastq.gz"
+    }
+  ],
+  "raw_fastq_bytes_downloaded": 0,
+  "host_readiness": "not yet inspected; no execution descriptor"
+}
