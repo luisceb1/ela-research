@@ -1,3 +1,5 @@
+Subsequent outcome: [four-library measurement completed, prediction met; original new metadata audit pending](../stmn2-remaining-result-20261116/REPORT.md). Preparation-pending statements below are historical.
+
 Current preparation: host snapshot supplied and tested runner implemented; [resource envelope and limits](HOST_AND_RUNNER.md). Earlier pending-capacity wording below is historical. No new raw execution yet.
 
 # STMN2 remaining-library preparation — 15 November 2026

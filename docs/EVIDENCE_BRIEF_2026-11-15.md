@@ -1,4 +1,6 @@
 # ELA research: critical evidence brief and next-data decisions
+
+**Update16November2026:** the separately prospective four-library STMN2 check completed with its descriptive prediction met (new KD551/556cryptic groups, controls5/0). [Full six-library record and limits](../reports/stmn2-remaining-result-20261116/REPORT.md). This adds internal library-level repetition, not independent biological units or a cause for UNC13A low support. Original new metadata audit pending. The dated evidence snapshot below preserves what was known before this follow-on.
 _As of15November2026; repository evidence snapshot73ffb3b46aac56023a285a60d2168566a991b148. Prepared for potential future external review; not sent. This is a synthesis of existing evidence, not a new experiment, literature search or independent expert endorsement._
 
 ## What the current evidence supports

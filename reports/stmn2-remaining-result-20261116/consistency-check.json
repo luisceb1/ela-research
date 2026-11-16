@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "source": "user terminal transcriptions, not original host metadata or raw replay",
+  "prediction_met": true,
+  "checks": [
+    "fixed four-library order and completion",
+    "group/SAM QC identities",
+    "canonical/support flag consistency",
+    "reported successful supervision within sampled caps",
+    "settled ledger within new cap"
+  ],
+  "new_observed_bytes": 27766421869,
+  "historical_plus_new_observed_bytes": 40772442278,
+  "historical_plus_new_charged_bytes": 40773490854,
+  "observed_minus_advertised_input_bytes": 3828202
+}
