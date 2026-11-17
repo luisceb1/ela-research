@@ -4,7 +4,7 @@ Only actionable or explicitly conditional work belongs here. [STATE](STATE.md) g
 
 ## Prepared technical contribution
 
-Minimal six-library STMN2 replay was authorized on 17 November: [guide](../reproduction/stmn2-six-libraries/README.md), [validation record](../reports/stmn2-minimal-replay-20261117/REPORT.md). Preparation/software checks only; actual clean-environment FASTQ replay is pending a suitable native-Linux host, fixed local inputs and explicit resource decision. No raw execution scheduled; no biological cycle reopened.
+Minimal six-library STMN2 replay was authorized on 17 November: [guide](../reproduction/stmn2-six-libraries/README.md), [validation record](../reports/stmn2-minimal-replay-20261117/REPORT.md). Luis selected execution on his PC; local inputs/tools were reported in `Ubuntu-24.04`. A [bounded WSL extension](plans/2026-11-17-stmn2-wsl-replay.md) now prepares verified C:-backed VHD admission and physical-host reserve monitoring. Real host admission and input hashes remain pending before the hash-bound run. No real FASTQ replay or biological cycle reopened.
 
 ## Conditional work — no new execution scheduled
 

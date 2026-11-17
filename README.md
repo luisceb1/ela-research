@@ -21,7 +21,7 @@ Read [Current findings](docs/CURRENT_FINDINGS.md) for the qualifications, source
 
 ## Minimal STMN2 replay
 
-The [six-library reproduction guide](reproduction/stmn2-six-libraries/README.md) provides exact local FASTQ/index identities, a path-map template, an offline count/QC comparator and a supervised native-Linux replay entry point. It does not require historical host paths or failed-run directories. **Prepared and software-tested; clean-environment replay on real FASTQs remains pending.** Checking archived JSON is not raw-data reproduction.
+The [six-library reproduction guide](reproduction/stmn2-six-libraries/README.md) provides exact local FASTQ/index identities, a path-map template, an offline count/QC comparator and a supervised replay entry point for native Linux or verified C:-backed WSL2. It does not require historical host paths or failed-run directories. **Prepared and software-tested; clean-environment replay on real FASTQs remains pending.** Checking archived JSON is not raw-data reproduction.
 
 ## Reproduce the software checks
 

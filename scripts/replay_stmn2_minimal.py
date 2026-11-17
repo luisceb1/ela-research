@@ -17,12 +17,14 @@ import sys
 import time
 
 import stmn2_paired_control_counts as counter
+import stmn2_replay_host as host
 
 ROOT = Path(__file__).resolve().parents[1]
 MANIFEST = 'reproduction/stmn2-six-libraries/manifest.json'
 TARGET = 'research/references/stmn2_targets_sealed.json'
 CODE = [MANIFEST, TARGET, 'scripts/replay_stmn2_minimal.py',
-        'scripts/stmn2_paired_control_counts.py']
+        'scripts/stmn2_paired_control_counts.py', 'scripts/stmn2_replay_host.py',
+        'scripts/gse252892_drvfs.py']
 TARGETS = {'canonical': [79611214, 79636801], 'cryptic': [79611214, 79616821]}
 CAPS = dict(wall_seconds=96*3600, cpus=2, process_as_bytes=8*1024**3,
             group_rss_bytes=6*1024**3, output_bytes=100*1024**3,
@@ -152,15 +154,10 @@ def git(*args):
     return subprocess.check_output(['git', '-C', str(ROOT), *args], text=True).strip()
 
 
-def native_linux():
-    if sys.platform != 'linux' or 'microsoft' in Path('/proc/sys/kernel/osrelease').read_text().lower():
-        raise ValueError('Native Linux required; guest filesystem space does not certify WSL host space')
-
-
 def inspect(inputs, index_dir, tools, run_root, full=True):
     """Bind local files; never search, copy or download sources."""
     ref = reference()
-    native_linux()
+    placement = host.placement(Path(run_root).resolve().parent)
     if git('status', '--porcelain', '--untracked-files=all'):
         raise ValueError('Clean checkout required')
     import pysam
@@ -210,7 +207,8 @@ def inspect(inputs, index_dir, tools, run_root, full=True):
         h = sha(p)
         checked_tools[key] = dict(path=str(p), sha256=h, version=version,
                                   historical_build_match=h == ref['historical_tools'][key])
-    plan = dict(schema='stmn2-minimal-replay-v1', repository_commit=git('rev-parse', 'HEAD'),
+    plan = dict(schema='stmn2-minimal-replay-v2', repository_commit=git('rev-parse', 'HEAD'),
+                host=placement,
                 python_executable=sys.executable, pysam_version=pysam.__version__,
                 code_sha256={p: sha(ROOT/p) for p in CODE}, caps=CAPS,
                 inputs=records, index_dir=str(index_dir), tools=checked_tools,
@@ -233,6 +231,7 @@ def free_check(parent, admission=False):
     threshold = CAPS['admission_free_bytes'] if admission else CAPS['reserve_bytes']
     if shutil.disk_usage(parent).free < threshold:
         raise ValueError('Insufficient filesystem free reserve')
+    return host.check(parent, threshold, admission)
 
 
 def prepare(paths, index_dir, fastp, aligner, run_root, output):
@@ -242,9 +241,11 @@ def prepare(paths, index_dir, fastp, aligner, run_root, output):
     # Check destination refusal before reading large files; never overwrite an input.
     free_check(root.parent, admission=True)
     plan = inspect(read(paths), index_dir, dict(fastp=fastp, aligner=aligner), root)
+    physical = free_check(root.parent, admission=True)
     write_new(output, plan)
     return dict(status='prepared_not_executed', plan=str(output), plan_sha256=sha(output),
                 libraries=6, local_input_bytes=sum(r['bytes'] for r in plan['inputs']),
+                host=plan['host'], physical_c_available_bytes=physical,
                 caps=CAPS, historical_build_matches={k: v['historical_build_match'] for k, v in plan['tools'].items()})
 
 
@@ -354,7 +355,8 @@ def execute(path, accepted_sha):
     root = Path(plan['run_root'])
     if root.exists() or root == path or root in path.parents:
         raise ValueError('Fresh output root; plan outside output required; no resume')
-    free_check(root.parent, admission=True)
+    physical = free_check(root.parent, admission=True)
+    minimum_physical = physical
     write_new(str(path)+'.claimed.json', dict(plan_sha256=accepted_sha))
     root.mkdir()
     write_new(root/'accepted.json', dict(plan_sha256=accepted_sha, supervisor_pid=os.getpid()))
@@ -371,7 +373,9 @@ def execute(path, accepted_sha):
                 if (time.monotonic()-started > CAPS['wall_seconds'] or rss > CAPS['group_rss_bytes']
                         or disk > CAPS['output_bytes']):
                     raise ValueError('Replay resource cap exceeded')
-                free_check(root)
+                physical = free_check(root)
+                if physical is not None:
+                    minimum_physical = physical if minimum_physical is None else min(minimum_physical, physical)
                 if proc.poll() is not None:
                     break
                 time.sleep(0.5)
@@ -393,6 +397,7 @@ def execute(path, accepted_sha):
                   cleanup_error=cleanup_error, plan_sha256=accepted_sha,
                   elapsed_seconds=time.monotonic()-started, caps=CAPS,
                   peak_sampled_group_rss_bytes=peak_rss, peak_sampled_output_bytes=peak_disk,
+                  host=plan['host'], minimum_sampled_physical_c_available_bytes=minimum_physical,
                   raw_execution_reported=not failure and not cleanup_error,
                   note='Local unsigned execution record; sampled limits are not aggregate kernel quotas; no independent host attestation or network telemetry.'))
         if cleanup_error:
@@ -409,6 +414,8 @@ def main():
     a = sub.add_parser('prepare')
     for name in ('paths', 'index-dir', 'fastp', 'aligner', 'run-root', 'output'):
         a.add_argument('--'+name, type=Path, required=True)
+    a = sub.add_parser('check-host')
+    a.add_argument('--output-parent', type=Path, required=True)
     a = sub.add_parser('run')
     a.add_argument('--plan', type=Path, required=True)
     a.add_argument('--accept-plan-sha256', required=True)
@@ -416,7 +423,13 @@ def main():
     a.add_argument('--plan', type=Path, required=True)
     args = p.parse_args()
     try:
-        if args.action == 'compare':
+        if args.action == 'check-host':
+            parent = args.output_parent.expanduser().resolve(strict=True)
+            out = dict(status='host_admitted_no_inputs_verified', host=host.placement(parent),
+                       physical_c_available_bytes=free_check(parent, admission=True),
+                       guest_available_bytes=shutil.disk_usage(parent).free,
+                       raw_replay_verified=False)
+        elif args.action == 'compare':
             out = compare(args.results)
             write_new(args.output, out)
         elif args.action == 'prepare':

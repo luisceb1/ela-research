@@ -16,7 +16,7 @@ Original metadata audits establish provenance/accounting coherence, not agent FA
 
 ## Pending inputs / prepared work
 
-- **Minimal STMN2 technical replay:** Luis authorized a portable preparation, count/QC comparator and updated README on 17 November. [Guide](../reproduction/stmn2-six-libraries/README.md), [preparation evidence](../reports/stmn2-minimal-replay-20261117/REPORT.md). No real FASTQ replay or new biological result; native-Linux execution remains pending. #83 stays paused.
+- **Minimal STMN2 technical replay:** Luis selected replay on his PC on 17 November. The twelve FASTQs, hg38 index and fixed tool versions were located in `Ubuntu-24.04`, a different WSL distribution from the first checks. PySAM 0.23.3 was installed in a dedicated environment. These are user-supplied terminal observations, not independently verified input hashes. [WSL extension plan](plans/2026-11-17-stmn2-wsl-replay.md), [guide](../reproduction/stmn2-six-libraries/README.md). WSL admission/control code is prepared; real host admission, raw hash preparation and actual replay remain pending. #83 stays paused; no new biological result.
 
 - **#37 and #44 issues are closed.** Scientific questions remain conditional: usable independent junction data/unit map for #37; cell→culture→differentiation, units and timing for K26 strict v1. No automatic reopening.
 - **AD Workbench:** request acknowledged; active workspace/data access not verified. Require a user-verified file inventory, not inference from email.

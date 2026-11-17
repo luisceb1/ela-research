@@ -1,0 +1,27 @@
+{
+  "status": "passed",
+  "python": "3.12.14",
+  "patterns": {
+    "test_*.py": 1385
+  },
+  "discovered": 1385,
+  "run": 1385,
+  "executed": 1385,
+  "passed": 1385,
+  "failures": [],
+  "errors": [],
+  "skipped": [],
+  "expected_failures": [],
+  "unexpected_successes": [],
+  "missing_patterns": [],
+  "fail_on_skip": true,
+  "scope": "Linux-side software fixtures; no actual WSL or real FASTQ replay",
+  "compileall": "passed",
+  "archived_comparison": {
+    "status": "records_match",
+    "raw_replay_verified": false,
+    "libraries": 6,
+    "differences": 0
+  },
+  "unchanged_scientific_counter_sha256": "f0c6bf58b9dcabe5caa5b668b9ad0a994f83f1b925abf0ff756deb17790922e5"
+}
