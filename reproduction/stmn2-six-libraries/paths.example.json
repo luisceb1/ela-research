@@ -1,0 +1,14 @@
+{
+  "SRR27477544_1.fastq.gz": "/absolute/path/to/SRR27477544_1.fastq.gz",
+  "SRR27477544_2.fastq.gz": "/absolute/path/to/SRR27477544_2.fastq.gz",
+  "SRR27477543_1.fastq.gz": "/absolute/path/to/SRR27477543_1.fastq.gz",
+  "SRR27477543_2.fastq.gz": "/absolute/path/to/SRR27477543_2.fastq.gz",
+  "SRR27477542_1.fastq.gz": "/absolute/path/to/SRR27477542_1.fastq.gz",
+  "SRR27477542_2.fastq.gz": "/absolute/path/to/SRR27477542_2.fastq.gz",
+  "SRR27477541_1.fastq.gz": "/absolute/path/to/SRR27477541_1.fastq.gz",
+  "SRR27477541_2.fastq.gz": "/absolute/path/to/SRR27477541_2.fastq.gz",
+  "SRR27477540_1.fastq.gz": "/absolute/path/to/SRR27477540_1.fastq.gz",
+  "SRR27477540_2.fastq.gz": "/absolute/path/to/SRR27477540_2.fastq.gz",
+  "SRR27477539_1.fastq.gz": "/absolute/path/to/SRR27477539_1.fastq.gz",
+  "SRR27477539_2.fastq.gz": "/absolute/path/to/SRR27477539_2.fastq.gz"
+}

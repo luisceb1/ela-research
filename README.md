@@ -6,10 +6,11 @@ Independent, AI-assisted research on the transcriptomic consequences of nuclear 
 
 ## Start with the current evidence
 
-The current reviewed baseline is **11 November 2026**, after integration of PRs [#57](https://github.com/luisceb1/ela-research/pull/57) and [#58](https://github.com/luisceb1/ela-research/pull/58). Older reports preserve the work and its errors; later corrections take precedence. This is not a certification of the entire historical archive.
+Current status: **17 November 2026**, including the six-library STMN2 result completed on 16 November. Read [STATE](research/STATE.md) for the concise evidence and limits. Older reports preserve the work and its errors; later corrections take precedence. This is not a certification of the entire historical archive.
 
 | Question | Supported result | Main limitation |
 |---|---|---|
+| Does the measured STMN2 event have support in GSE252892 KD libraries? | Canonical/cryptic counts: controls 1945/3, 2806/5, 2438/0; KD 253/727, 173/551, 140/556 | One WA01/H1 background; culture/differentiation independence and protein efficacy unverified; no donor-level validation or functional recovery |
 | Can public junction counts measure the documented STMN2 event? | The retained junction is supported by literature and genome-chain checks; four cervical ALS libraries with ≥20 cryptic reads map to four donors | A local junction-use proxy, not a calibrated molecular fraction or functional assay |
 | Does STMN2 differ between tissues from the same donor? | In 45 eligible ALS donor pairs: cervical higher/tied/lower in 24/14/7; median local-ratio difference +0.368 percentage points | Exploratory, same cohort; composition, batch, selection and unequal coverage remain unresolved |
 | Is UNC13A coverage sufficient in the examined data? | Canonical junction coverage is about 22–26 times lower in cervical cord than motor cortex under five library-depth denominators | Unpaired descriptive comparison; the cryptic-read threshold was not reached; this does not exclude all public RNA-seq or greater depth |
@@ -17,6 +18,10 @@ The current reviewed baseline is **11 November 2026**, after integration of PRs 
 | Was isolated UNC13A correction tested after a measured functional deficit? | In the six UNC13A-specific experiments inspected, treatment after a documented baseline deficit could not be established | Bounded documentary review; absent documentation does not establish absent deficit; multi-target row M-a has two rule readings |
 
 Read [Current findings](docs/CURRENT_FINDINGS.md) for the qualifications, source links and closed/open boundaries. The [English guide](docs/ENGLISH_GUIDE.md) links seven translated reports, their original Spanish texts, scripts, outputs and source manifests.
+
+## Minimal STMN2 replay
+
+The [six-library reproduction guide](reproduction/stmn2-six-libraries/README.md) provides exact local FASTQ/index identities, a path-map template, an offline count/QC comparator and a supervised native-Linux replay entry point. It does not require historical host paths or failed-run directories. **Prepared and software-tested; clean-environment replay on real FASTQs remains pending.** Checking archived JSON is not raw-data reproduction.
 
 ## Reproduce the software checks
 
@@ -36,7 +41,7 @@ For real-data reproduction, follow the selected report's commands, exact input U
 
 The STMN2 cycle on these 45 donors is closed. More fits on the same donors are not independent replication. Further progress requires discriminating composition/QC evidence or an independent cohort with verified design and usable event coverage.
 
-UNC13A [#37](https://github.com/luisceb1/ela-research/issues/37) and functional reproduction [#44](https://github.com/luisceb1/ela-research/issues/44) remain subject to their documented data/design gates. See [Current findings](docs/CURRENT_FINDINGS.md#what-would-enable-further-work). No fresh external-access or mailbox check is implied by this documentation update.
+Issues [#37](https://github.com/luisceb1/ela-research/issues/37) and [#44](https://github.com/luisceb1/ela-research/issues/44) are closed; the underlying scientific questions remain conditional on usable independent data or design metadata. [#83](https://github.com/luisceb1/ela-research/pull/83) remains draft and paused. AD Workbench access is unverified and author inputs remain pending. See [Current findings](docs/CURRENT_FINDINGS.md#what-would-enable-further-work). No fresh external-access or mailbox check is implied by this documentation update.
 
 ## Documentation and provenance
 

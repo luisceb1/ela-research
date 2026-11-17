@@ -1,0 +1,6 @@
+et_xmlfile==2.0.0
+numpy==2.3.4
+openpyxl==3.1.5
+pyarrow==26.0.1
+pysam==0.23.3
+scipy==1.17.0

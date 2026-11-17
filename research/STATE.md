@@ -1,4 +1,4 @@
-# Current research state — 16 November 2026
+# Current research state — 17 November 2026
 
 Public-source study of TDP-43 loss, STMN2 and UNC13A. Read [AGENTS](../AGENTS.md), [protocol](PROTOCOL.md), [evidence brief](../docs/EVIDENCE_BRIEF_2026-11-15.md). This page supersedes historical instructions and adds no analysis. Full previous versions: [history](history/README.md).
 
@@ -15,6 +15,8 @@ Public-source study of TDP-43 loss, STMN2 and UNC13A. Read [AGENTS](../AGENTS.md
 Original metadata audits establish provenance/accounting coherence, not agent FASTQ replay or independent host telemetry. Preserve low/nonzero controls and historical transfer uncertainty.
 
 ## Pending inputs / prepared work
+
+- **Minimal STMN2 technical replay:** Luis authorized a portable preparation, count/QC comparator and updated README on 17 November. [Guide](../reproduction/stmn2-six-libraries/README.md), [preparation evidence](../reports/stmn2-minimal-replay-20261117/REPORT.md). No real FASTQ replay or new biological result; native-Linux execution remains pending. #83 stays paused.
 
 - **#37 and #44 issues are closed.** Scientific questions remain conditional: usable independent junction data/unit map for #37; cell→culture→differentiation, units and timing for K26 strict v1. No automatic reopening.
 - **AD Workbench:** request acknowledged; active workspace/data access not verified. Require a user-verified file inventory, not inference from email.

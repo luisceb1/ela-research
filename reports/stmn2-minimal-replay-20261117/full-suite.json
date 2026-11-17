@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "python": "3.12.14",
+  "patterns": {
+    "test_*.py": 1375
+  },
+  "discovered": 1375,
+  "run": 1375,
+  "executed": 1375,
+  "passed": 1375,
+  "failures": [],
+  "errors": [],
+  "skipped": [],
+  "expected_failures": [],
+  "unexpected_successes": [],
+  "missing_patterns": [],
+  "fail_on_skip": true
+}

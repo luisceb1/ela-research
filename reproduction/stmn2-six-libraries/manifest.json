@@ -1,0 +1,403 @@
+{
+  "schema": "stmn2-six-library-reference-v1",
+  "series": "GSE252892",
+  "project": "SRP482832",
+  "gene": "STMN2",
+  "unit": "contiguous paired query group/event/library; anchor 15",
+  "biological_limit": "One WA01/H1 background; culture/differentiation independence unverified. Technical replay only.",
+  "inputs": [
+    {
+      "gsm": "GSM8009878",
+      "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_1.fastq.gz",
+      "bytes": 2772553416,
+      "md5": "ab0a84e544fa6e2fc1e8c901d0c55675",
+      "sha256": "ddd42a540b6d01ca2405692cd6bf65ae35485c8b5e66f8eda2aec5fc62086bb6",
+      "filename": "SRR27477544_1.fastq.gz",
+      "run": "SRR27477544",
+      "mate": 1
+    },
+    {
+      "gsm": "GSM8009878",
+      "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/044/SRR27477544/SRR27477544_2.fastq.gz",
+      "bytes": 2913274103,
+      "md5": "017494b464222c58dc7c096e04ab59cb",
+      "sha256": "3dbaa49e5d28084c261921199c25044b7fe9e89129278df037c64e90e7c27354",
+      "filename": "SRR27477544_2.fastq.gz",
+      "run": "SRR27477544",
+      "mate": 2
+    },
+    {
+      "gsm": "GSM8009879",
+      "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/043/SRR27477543/SRR27477543_1.fastq.gz",
+      "bytes": 3977066052,
+      "md5": "dd93c177d9ddfc8ae56398ded376a118",
+      "sha256": "06bdc377101b00b28101419e2e056cbdf5565a5689c0aa4dab624d7b2d2a901f",
+      "filename": "SRR27477543_1.fastq.gz",
+      "run": "SRR27477543",
+      "mate": 1
+    },
+    {
+      "gsm": "GSM8009879",
+      "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/043/SRR27477543/SRR27477543_2.fastq.gz",
+      "bytes": 4238436281,
+      "md5": "fd20bf36e59d997956bad27313f06d82",
+      "sha256": "5750f66221a293a00e5a0418b1f2fcf7c87f8e20d9b81d04acc93c6d1d915430",
+      "filename": "SRR27477543_2.fastq.gz",
+      "run": "SRR27477543",
+      "mate": 2
+    },
+    {
+      "gsm": "GSM8009880",
+      "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/042/SRR27477542/SRR27477542_1.fastq.gz",
+      "bytes": 3448786708,
+      "md5": "d468af83409832d4a2307a4a1a2bc3d9",
+      "sha256": "1514b70bff9bd9d7e7a365cdf3f9d637e734093da9f7968443ad459206a4cbee",
+      "filename": "SRR27477542_1.fastq.gz",
+      "run": "SRR27477542",
+      "mate": 1
+    },
+    {
+      "gsm": "GSM8009880",
+      "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/042/SRR27477542/SRR27477542_2.fastq.gz",
+      "bytes": 3659654232,
+      "md5": "87f9b64ae36cb805d77e41d5511f45ff",
+      "sha256": "8c22d0cf07cdb6f792cd0b1a9fac86c8c28120aa8dcba9b074adc369cf5e60a8",
+      "filename": "SRR27477542_2.fastq.gz",
+      "run": "SRR27477542",
+      "mate": 2
+    },
+    {
+      "gsm": "GSM8009881",
+      "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/041/SRR27477541/SRR27477541_1.fastq.gz",
+      "bytes": 3531400977,
+      "md5": "a8349bedaf4d2b453b3a022295f29f4f",
+      "sha256": "5eba3962dd2cdbdaca2105ce451d60decd106be3336bd82e073ca8f66e86a449",
+      "filename": "SRR27477541_1.fastq.gz",
+      "run": "SRR27477541",
+      "mate": 1
+    },
+    {
+      "gsm": "GSM8009881",
+      "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/041/SRR27477541/SRR27477541_2.fastq.gz",
+      "bytes": 3609364535,
+      "md5": "4f070f2bb19dccc2d861343a1385c675",
+      "sha256": "bf61fdae165d18f941c309a756e26b9bbf532059268a60ef5196a22e2483fe0f",
+      "filename": "SRR27477541_2.fastq.gz",
+      "run": "SRR27477541",
+      "mate": 2
+    },
+    {
+      "gsm": "GSM8009882",
+      "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/040/SRR27477540/SRR27477540_1.fastq.gz",
+      "bytes": 2929350836,
+      "md5": "4ef5235d945a5858846897b048ba298d",
+      "sha256": "252a7bb310c058eeab464a308bc0d3e7860fed5b44d68097ce61a1e2cf41c8fc",
+      "filename": "SRR27477540_1.fastq.gz",
+      "run": "SRR27477540",
+      "mate": 1
+    },
+    {
+      "gsm": "GSM8009882",
+      "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/040/SRR27477540/SRR27477540_2.fastq.gz",
+      "bytes": 3109122340,
+      "md5": "27561b424baeaa1323325fe135d554ce",
+      "sha256": "e91119c7a27e9080213767a983192a0d2a434c76c0d98aca69cc8e97d9670627",
+      "filename": "SRR27477540_2.fastq.gz",
+      "run": "SRR27477540",
+      "mate": 2
+    },
+    {
+      "gsm": "GSM8009883",
+      "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/039/SRR27477539/SRR27477539_1.fastq.gz",
+      "bytes": 3147521969,
+      "md5": "d7d9234cc555521cded67b2d94c4c814",
+      "sha256": "9e62e359f3643eafa64a6bf3747bb107c382a91668a6f2cc1921b1f79fae3d5a",
+      "filename": "SRR27477539_1.fastq.gz",
+      "run": "SRR27477539",
+      "mate": 1
+    },
+    {
+      "gsm": "GSM8009883",
+      "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/039/SRR27477539/SRR27477539_2.fastq.gz",
+      "bytes": 3252655249,
+      "md5": "26070a383db92ef045077fc81a067da9",
+      "sha256": "aa3f9c8e53d997785975cd86a91a4829cff381b1f04a5137c4244cb2e276d4dc",
+      "filename": "SRR27477539_2.fastq.gz",
+      "run": "SRR27477539",
+      "mate": 2
+    }
+  ],
+  "index_files": [
+    {
+      "name": "genome.8.ht2",
+      "bytes": 8,
+      "sha256": "7c9fa136d4413fa6173637e883b6998d32e1d675f88cddff9dcbcf331820f4b8"
+    },
+    {
+      "name": "genome.5.ht2",
+      "bytes": 1342456349,
+      "sha256": "07400123a5033f85fd0152aae0a513771b5f5ba1afe878839bd9624b483fa503"
+    },
+    {
+      "name": "genome.7.ht2",
+      "bytes": 8,
+      "sha256": "7c9fa136d4413fa6173637e883b6998d32e1d675f88cddff9dcbcf331820f4b8"
+    },
+    {
+      "name": "genome.6.ht2",
+      "bytes": 776249234,
+      "sha256": "4a8f0d36ac6e459bbf682a5979de5e5d4883cd42a22866093d730797c87e35ae"
+    },
+    {
+      "name": "genome.4.ht2",
+      "bytes": 762328946,
+      "sha256": "2f5112d9a0c0855eea028ea4181e2af9dd261cdadac3eff541415dd5eb4ea413"
+    },
+    {
+      "name": "genome.3.ht2",
+      "bytes": 15065,
+      "sha256": "d7ecd66f14894242cb5153471028bb4f94bebd920c2c025c08ec24bcb13e6df5"
+    },
+    {
+      "name": "genome.1.ht2",
+      "bytes": 1020663384,
+      "sha256": "75c666c1bdcc6bd346a751e7277d26ce518c1e9a2612c301317248e3a4ee6014"
+    },
+    {
+      "name": "genome.2.ht2",
+      "bytes": 762328952,
+      "sha256": "ee1502737c1fe27706a91179584f99146102da7eac08ff5f76e9657476af619d"
+    }
+  ],
+  "historical_tools": {
+    "fastp": "5997fd44730065673fbd383f6910f1e712e8db9a930d81d7ea1ea3c5bde84272",
+    "aligner": "3c88123911d675aebdeab79e3e24f0aa0050c10a1043c30343d96419c6ddfae4"
+  },
+  "libraries": [
+    {
+      "gsm": "GSM8009878",
+      "condition": "control",
+      "expected": {
+        "counts": {
+          "canonical": 1945,
+          "cryptic": 3
+        },
+        "qc": {
+          "sam_records": 139759296,
+          "alignment_groups": 65478552,
+          "eligible_groups": 61077456,
+          "marked_duplicate_records": 0,
+          "rejected_groups": 4401096
+        },
+        "unit": "contiguous paired query group/event/library; anchor 15",
+        "positive_control_measured": true,
+        "support_at_least_20_groups": {
+          "cryptic": false
+        },
+        "interpretation": "Below-diagnostic support is insufficient, not a biological zero. No effect or ratio.",
+        "gsm": "GSM8009878",
+        "project": "SRP482832",
+        "gene": "STMN2",
+        "complete": true
+      }
+    },
+    {
+      "gsm": "GSM8009879",
+      "condition": "control",
+      "expected": {
+        "counts": {
+          "canonical": 2806,
+          "cryptic": 5
+        },
+        "qc": {
+          "sam_records": 199140914,
+          "alignment_groups": 93469089,
+          "eligible_groups": 87367721,
+          "marked_duplicate_records": 0,
+          "rejected_groups": 6101368
+        },
+        "unit": "contiguous paired query group/event/library; anchor 15",
+        "positive_control_measured": true,
+        "support_at_least_20_groups": {
+          "cryptic": false
+        },
+        "interpretation": "Below-diagnostic support is insufficient, not a biological zero. No effect or ratio.",
+        "gsm": "GSM8009879",
+        "project": "SRP482832",
+        "gene": "STMN2",
+        "complete": true
+      }
+    },
+    {
+      "gsm": "GSM8009880",
+      "condition": "control",
+      "expected": {
+        "counts": {
+          "canonical": 2438,
+          "cryptic": 0
+        },
+        "qc": {
+          "sam_records": 174279828,
+          "alignment_groups": 81751742,
+          "eligible_groups": 76363570,
+          "marked_duplicate_records": 0,
+          "rejected_groups": 5388172
+        },
+        "unit": "contiguous paired query group/event/library; anchor 15",
+        "positive_control_measured": true,
+        "support_at_least_20_groups": {
+          "cryptic": false
+        },
+        "interpretation": "Below-diagnostic support is insufficient, not a biological zero. No effect or ratio.",
+        "gsm": "GSM8009880",
+        "project": "SRP482832",
+        "gene": "STMN2",
+        "complete": true
+      }
+    },
+    {
+      "gsm": "GSM8009881",
+      "condition": "KD",
+      "expected": {
+        "counts": {
+          "canonical": 253,
+          "cryptic": 727
+        },
+        "qc": {
+          "sam_records": 176641092,
+          "alignment_groups": 82407283,
+          "eligible_groups": 76494020,
+          "marked_duplicate_records": 0,
+          "rejected_groups": 5913263
+        },
+        "unit": "contiguous paired query group/event/library; anchor 15",
+        "positive_control_measured": true,
+        "support_at_least_20_groups": {
+          "cryptic": true
+        },
+        "interpretation": "Below-diagnostic support is insufficient, not a biological zero. No effect or ratio.",
+        "gsm": "GSM8009881",
+        "project": "SRP482832",
+        "gene": "STMN2",
+        "complete": true
+      }
+    },
+    {
+      "gsm": "GSM8009882",
+      "condition": "KD",
+      "expected": {
+        "counts": {
+          "canonical": 173,
+          "cryptic": 551
+        },
+        "qc": {
+          "sam_records": 145942254,
+          "alignment_groups": 68169948,
+          "eligible_groups": 63368769,
+          "marked_duplicate_records": 0,
+          "rejected_groups": 4801179
+        },
+        "unit": "contiguous paired query group/event/library; anchor 15",
+        "positive_control_measured": true,
+        "support_at_least_20_groups": {
+          "cryptic": true
+        },
+        "interpretation": "Below-diagnostic support is insufficient, not a biological zero. No effect or ratio.",
+        "gsm": "GSM8009882",
+        "project": "SRP482832",
+        "gene": "STMN2",
+        "complete": true
+      }
+    },
+    {
+      "gsm": "GSM8009883",
+      "condition": "KD",
+      "expected": {
+        "counts": {
+          "canonical": 140,
+          "cryptic": 556
+        },
+        "qc": {
+          "sam_records": 157020644,
+          "alignment_groups": 73760202,
+          "eligible_groups": 69010082,
+          "marked_duplicate_records": 0,
+          "rejected_groups": 4750120
+        },
+        "unit": "contiguous paired query group/event/library; anchor 15",
+        "positive_control_measured": true,
+        "support_at_least_20_groups": {
+          "cryptic": true
+        },
+        "interpretation": "Below-diagnostic support is insufficient, not a biological zero. No effect or ratio.",
+        "gsm": "GSM8009883",
+        "project": "SRP482832",
+        "gene": "STMN2",
+        "complete": true
+      }
+    }
+  ],
+  "sources": [
+    {
+      "path": "reports/gse252892-stmn2-result-20261115/original/ela-gse252892-stmn2-control-20261114.json",
+      "sha256": "8379c7e56c0546623fac80c732935f29113f17e048b8625d85e1163e3f61b557"
+    },
+    {
+      "path": "reports/stmn2-remaining-result-20261116/original/ela-stmn2-restantes-plan-20261115.json",
+      "sha256": "0c6e43df6f2b1d5c8474d27c61701e8a487533567e15ac92ae581b93b9ee6462"
+    },
+    {
+      "path": "reports/gse252892-stmn2-result-20261115/original/result.json",
+      "sha256": "72ff19516ec5370b899ac9de2c0d646c4299d20e2a54f990742d536300ab6a51"
+    },
+    {
+      "path": "reports/stmn2-remaining-result-20261116/original/result.json",
+      "sha256": "69a10c8455182480a17d83f85bbc8ff91351abc6c185f08c5f218905385b34fd"
+    },
+    {
+      "path": "reports/hisat2-index-inspection-20261031/verified_index.json",
+      "sha256": "6012a0469968d2f0356d8cfb983f4a177361781936e03fd6654355aaaf4e2f42"
+    },
+    {
+      "path": "research/references/stmn2_targets_sealed.json",
+      "sha256": "df954f2bf30f90250eadf541e54a18abdfa3d9af841f89849aad65238807bba1"
+    },
+    {
+      "path": "scripts/stmn2_paired_control_counts.py",
+      "sha256": "f0c6bf58b9dcabe5caa5b668b9ad0a994f83f1b925abf0ff756deb17790922e5"
+    },
+    {
+      "path": "reports/stmn2-remaining-result-20261116/original/GSM8009879/SRR27477543_1.fastq.gz.verified.json",
+      "sha256": "d13d3c8843a66e4b0721a2555ee20e1e9340febf8f6b679f76e901c79271502c"
+    },
+    {
+      "path": "reports/stmn2-remaining-result-20261116/original/GSM8009879/SRR27477543_2.fastq.gz.verified.json",
+      "sha256": "03a1140600e606382b235a4e9e85f5b68d8efad816fce56a78a5bfb1d07b2d47"
+    },
+    {
+      "path": "reports/stmn2-remaining-result-20261116/original/GSM8009880/SRR27477542_1.fastq.gz.verified.json",
+      "sha256": "ff369b787e75e54c4449df4476f6d14f46915af95afa592695a39ae0e85b8ca5"
+    },
+    {
+      "path": "reports/stmn2-remaining-result-20261116/original/GSM8009880/SRR27477542_2.fastq.gz.verified.json",
+      "sha256": "eff70a9a2f24ff752116e556166e4b12b01b48052606d63b98f6e87fdd313bea"
+    },
+    {
+      "path": "reports/stmn2-remaining-result-20261116/original/GSM8009882/SRR27477540_1.fastq.gz.verified.json",
+      "sha256": "38af5287c50b33996a062d45cf0507215239f9e750e182f4fc074b3e204151d0"
+    },
+    {
+      "path": "reports/stmn2-remaining-result-20261116/original/GSM8009882/SRR27477540_2.fastq.gz.verified.json",
+      "sha256": "8cdde1597e5848dbc1d1494af899fdd80ecb5de767d36368e6eb555e70f0cd8f"
+    },
+    {
+      "path": "reports/stmn2-remaining-result-20261116/original/GSM8009883/SRR27477539_1.fastq.gz.verified.json",
+      "sha256": "92ff59a7f7792936b7b86a3a239350e487796f135ed4c25b98f97be5e81bb1eb"
+    },
+    {
+      "path": "reports/stmn2-remaining-result-20261116/original/GSM8009883/SRR27477539_2.fastq.gz.verified.json",
+      "sha256": "2aa863f42966422a69817d7204c8ad8fa9b20456270a2b83de0be73f1eed174e"
+    }
+  ],
+  "provenance_note": "Raw SHA256 values are archived host-reported complete-file digests, not rehashed by this preparation session. Length/MD5 come from original source manifests. URLs identify sources; no downloader is provided."
+}
