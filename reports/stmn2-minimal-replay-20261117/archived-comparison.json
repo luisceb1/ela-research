@@ -1,0 +1,103 @@
+{
+  "status": "records_match",
+  "raw_replay_verified": false,
+  "missing_libraries": [],
+  "differences": [],
+  "supplied": [
+    {
+      "path": "/workspace/scratch/7e7b56b7b050/ela-research/reports/gse252892-stmn2-result-20261115/original/result.json",
+      "sha256": "72ff19516ec5370b899ac9de2c0d646c4299d20e2a54f990742d536300ab6a51"
+    },
+    {
+      "path": "/workspace/scratch/7e7b56b7b050/ela-research/reports/stmn2-remaining-result-20261116/original/result.json",
+      "sha256": "69a10c8455182480a17d83f85bbc8ff91351abc6c185f08c5f218905385b34fd"
+    }
+  ],
+  "libraries": [
+    {
+      "gsm": "GSM8009878",
+      "counts": {
+        "canonical": 1945,
+        "cryptic": 3
+      },
+      "qc": {
+        "sam_records": 139759296,
+        "alignment_groups": 65478552,
+        "eligible_groups": 61077456,
+        "marked_duplicate_records": 0,
+        "rejected_groups": 4401096
+      }
+    },
+    {
+      "gsm": "GSM8009879",
+      "counts": {
+        "canonical": 2806,
+        "cryptic": 5
+      },
+      "qc": {
+        "sam_records": 199140914,
+        "alignment_groups": 93469089,
+        "eligible_groups": 87367721,
+        "marked_duplicate_records": 0,
+        "rejected_groups": 6101368
+      }
+    },
+    {
+      "gsm": "GSM8009880",
+      "counts": {
+        "canonical": 2438,
+        "cryptic": 0
+      },
+      "qc": {
+        "sam_records": 174279828,
+        "alignment_groups": 81751742,
+        "eligible_groups": 76363570,
+        "marked_duplicate_records": 0,
+        "rejected_groups": 5388172
+      }
+    },
+    {
+      "gsm": "GSM8009881",
+      "counts": {
+        "canonical": 253,
+        "cryptic": 727
+      },
+      "qc": {
+        "sam_records": 176641092,
+        "alignment_groups": 82407283,
+        "eligible_groups": 76494020,
+        "marked_duplicate_records": 0,
+        "rejected_groups": 5913263
+      }
+    },
+    {
+      "gsm": "GSM8009882",
+      "counts": {
+        "canonical": 173,
+        "cryptic": 551
+      },
+      "qc": {
+        "sam_records": 145942254,
+        "alignment_groups": 68169948,
+        "eligible_groups": 63368769,
+        "marked_duplicate_records": 0,
+        "rejected_groups": 4801179
+      }
+    },
+    {
+      "gsm": "GSM8009883",
+      "counts": {
+        "canonical": 140,
+        "cryptic": 556
+      },
+      "qc": {
+        "sam_records": 157020644,
+        "alignment_groups": 73760202,
+        "eligible_groups": 69010082,
+        "marked_duplicate_records": 0,
+        "rejected_groups": 4750120
+      }
+    }
+  ],
+  "limitation": "JSON agreement only; no independent execution or biological replication established."
+}

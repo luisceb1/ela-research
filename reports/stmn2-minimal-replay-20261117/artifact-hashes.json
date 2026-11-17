@@ -1,0 +1,8 @@
+{
+  "scripts/replay_stmn2_minimal.py": "2244cdcd85fc5c14c1cc5997790d130d3e3482b35dfaed27fc2d1f5569d7cc77",
+  "scripts/stmn2_paired_control_counts.py": "f0c6bf58b9dcabe5caa5b668b9ad0a994f83f1b925abf0ff756deb17790922e5",
+  "research/references/stmn2_targets_sealed.json": "df954f2bf30f90250eadf541e54a18abdfa3d9af841f89849aad65238807bba1",
+  "reproduction/stmn2-six-libraries/manifest.json": "4f885bd70aa9bb9d8d795bd3036ab683ef0fb4efdcf10a3774e5739311a60ee5",
+  "reproduction/stmn2-six-libraries/paths.example.json": "5fc958bb3827b0ffd0f4d07ca80267543f47ba6f56ea34e952a1fdd2138d41fa",
+  "tests/test_replay_stmn2_minimal.py": "34b6933e1ac1326fbc2a1c26e932e0b746cef0289c72ea60358bbbcdabfab866"
+}
