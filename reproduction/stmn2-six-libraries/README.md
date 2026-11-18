@@ -1,6 +1,10 @@
 # Minimal six-library STMN2 technical replay
 
-**Prepared, not yet replayed on real FASTQs in a clean environment.** This entry
+**Local replay completed; supplied evidence audited on 18 November 2026.**
+[Result and limits](../../reports/stmn2-real-replay-20261118/REPORT.md): all six
+libraries match exactly in counts/QC on the same PC, with a fresh code worktree
+and dedicated environment reusing the original local files. This is not an
+independent host or biological replication. This entry
 point measures exactly the existing GSE252892 STMN2 targets with the original
 counter. It does not need historical run directories, consumed proposals,
 transport ledgers or the original user's home directory.
@@ -51,10 +55,11 @@ records return exit 1; malformed, duplicate, unexpected or invalid records retur
 exit 2. Output is never overwritten. A standalone matching JSON cannot establish
 whether the caller actually ran the pipeline.
 
-## Later real-data replay prerequisites
+## Prerequisites for any future real-data replay
 
-Real replay has not been started or scheduled by this preparation. Use a clean
-checkout of the reviewed PR commit and a dedicated environment:
+A completed local run is documented above; no repeat is scheduled. Any future
+execution requires a new plan and fresh outputs. Use a clean checkout of the
+reviewed commit and a dedicated environment:
 
 - Native Linux or verified WSL2 as described below, Python 3.11 or 3.12, PySAM **0.23.3** (the existing
   [pinned requirement](../../research/requirements-pe-contract.txt)).
@@ -95,7 +100,8 @@ python scripts/replay_stmn2_minimal.py check-host --output-parent "$HOME"
 Passing `check-host` verifies admission only, not raw files, tools, or Windows
 behavior in other environments. Linux-side mocked tests are not real WSL validation.
 The [Ubuntu-24.04 path example](paths.ubuntu-24.04.example.json) reflects Luis's
-reported file locations on 17 November; those files still require exact hashes.
+reported file locations on 17 November. The completed run reports successful
+exact-hash checking; every future plan still requires its own checks.
 It is optional, host-specific input mapping, not a new source or verified result.
 
 Copy [paths.example.json](paths.example.json) outside the checkout and replace

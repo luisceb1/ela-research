@@ -1,0 +1,62 @@
+[
+  {
+    "case": "wrong-plan",
+    "outcome": "refused",
+    "reason": "Unexpected original plan hash"
+  },
+  {
+    "case": "changed-count",
+    "outcome": "refused",
+    "reason": "Exact count/QC comparison failed"
+  },
+  {
+    "case": "changed-qc",
+    "outcome": "refused",
+    "reason": "Exact count/QC comparison failed"
+  },
+  {
+    "case": "per-library-conflict",
+    "outcome": "refused",
+    "reason": "Per-library record mismatch: GSM8009878"
+  },
+  {
+    "case": "failed-supervisor",
+    "outcome": "refused",
+    "reason": "Failed/incomplete supervision"
+  },
+  {
+    "case": "exceeded-rss",
+    "outcome": "refused",
+    "reason": "Exceeded recorded group_rss_bytes"
+  },
+  {
+    "case": "insufficient-physical-space",
+    "outcome": "refused",
+    "reason": "Physical reserve not met"
+  },
+  {
+    "case": "wrong-claim",
+    "outcome": "refused",
+    "reason": "Plan receipt mismatch"
+  },
+  {
+    "case": "changed-fastp-command",
+    "outcome": "refused",
+    "reason": "fastp command mismatch"
+  },
+  {
+    "case": "changed-fastp-pairs",
+    "outcome": "refused",
+    "reason": "Preprocessing/alignment pair mismatch"
+  },
+  {
+    "case": "missing-log",
+    "outcome": "refused",
+    "reason": "'ela-stmn2-replay-01/GSM8009878/fastp.log'"
+  },
+  {
+    "case": "unsafe-member",
+    "outcome": "refused",
+    "reason": "Unsafe or duplicate archive path"
+  }
+]

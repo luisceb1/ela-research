@@ -1,4 +1,4 @@
-# Current research state — 17 November 2026
+# Current research state — 18 November 2026
 
 Public-source study of TDP-43 loss, STMN2 and UNC13A. Read [AGENTS](../AGENTS.md), [protocol](PROTOCOL.md), [evidence brief](../docs/EVIDENCE_BRIEF_2026-11-15.md). This page supersedes historical instructions and adds no analysis. Full previous versions: [history](history/README.md).
 
@@ -14,9 +14,9 @@ Public-source study of TDP-43 loss, STMN2 and UNC13A. Read [AGENTS](../AGENTS.md
 
 Original metadata audits establish provenance/accounting coherence, not agent FASTQ replay or independent host telemetry. Preserve low/nonzero controls and historical transfer uncertainty.
 
-## Pending inputs / prepared work
+## Technical replay closure / pending inputs
 
-- **Minimal STMN2 technical replay:** Luis selected replay on his PC on 17 November. The twelve FASTQs, hg38 index and fixed tool versions were located in `Ubuntu-24.04`, a different WSL distribution from the first checks. PySAM 0.23.3 was installed in a dedicated environment. These are user-supplied terminal observations, not independently verified input hashes. [WSL extension plan](plans/2026-11-17-stmn2-wsl-replay.md), [guide](../reproduction/stmn2-six-libraries/README.md). WSL admission/control code is prepared; real host admission, raw hash preparation and actual replay remain pending. #83 stays paused; no new biological result.
+- **Minimal STMN2 technical replay completed locally:** the supplied 18 November bundle supports all six fixed libraries matching 12 event counts and 30 QC fields, with successful supervision and no cleanup error. Fresh code worktree/dedicated environment on the same PC and original inputs; no independent host or biological replication. [Evidence audit and limits](../reports/stmn2-real-replay-20261118/REPORT.md), [guide](../reproduction/stmn2-six-libraries/README.md). Actual raw files are not in the received bundle for agent rehashing. Runtime 7 h 1 min 55 s; original plan/code/source bindings checked. This technical task is closed; no repeat or deletion scheduled. #83 stays paused.
 
 - **#37 and #44 issues are closed.** Scientific questions remain conditional: usable independent junction data/unit map for #37; cell→culture→differentiation, units and timing for K26 strict v1. No automatic reopening.
 - **AD Workbench:** request acknowledged; active workspace/data access not verified. Require a user-verified file inventory, not inference from email.
