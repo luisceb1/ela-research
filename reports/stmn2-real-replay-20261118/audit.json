@@ -1,0 +1,164 @@
+{
+  "status": "supplied_replay_records_consistent",
+  "archive_sha256": "8a86442368c7e2db37bc579d98b279545085dcc695ce16b509a6e16aae1e0532",
+  "plan_sha256": "423ccc524120b098c6ed1e7f8b98b76522487c369048d952509e78f0cecb9dd4",
+  "execution_commit": "b72c877acf02b62fc34ef6a170e7142a9889de69",
+  "file_count": 43,
+  "member_sha256": {
+    "ela-stmn2-replay-01/GSM8009878/fastp.html": "10b91dbc5d62d3824de57b8b40d6d03041fee1f360029411eb9efa1b840a0fd8",
+    "ela-stmn2-replay-01/GSM8009878/fastp.json": "2f47065c81dda09468d765b0a39d53cfa2088d25dd67d7bb4565fd5e57e54f50",
+    "ela-stmn2-replay-01/GSM8009878/fastp.log": "f2a880719cc34fc980887db5077fea029e478d038e86293337210972cfedcaa8",
+    "ela-stmn2-replay-01/GSM8009878/hisat2-summary.txt": "f46e295de33951222f1c71bf1dc54135698a3b11ae9a9431c728a8c2e21ca414",
+    "ela-stmn2-replay-01/GSM8009878/hisat2.log": "f46e295de33951222f1c71bf1dc54135698a3b11ae9a9431c728a8c2e21ca414",
+    "ela-stmn2-replay-01/GSM8009878/stmn2-counts.json": "b15a16688cdf81c9497be127e12a7b5a9aa76911c988c666889a133b510f95ed",
+    "ela-stmn2-replay-01/GSM8009879/fastp.html": "ac8de91bc98faf21a08ddfdb620070294bd1b44eeb5cfbd54b3d80cac1c3fa75",
+    "ela-stmn2-replay-01/GSM8009879/fastp.json": "49fc0d6f325ac943a10f41c3376f7de230f8414764fd7e7fb2e5fbaea882c347",
+    "ela-stmn2-replay-01/GSM8009879/fastp.log": "f44e84fbbea831bd94ecd731bb57d4fa99e14b7a4cc4c55b5c4159f8fb4b8daa",
+    "ela-stmn2-replay-01/GSM8009879/hisat2-summary.txt": "a303f1b4b9cf8e1a4725099834645ec9f9490a4eb41a1c699a3705c5104e8257",
+    "ela-stmn2-replay-01/GSM8009879/hisat2.log": "a303f1b4b9cf8e1a4725099834645ec9f9490a4eb41a1c699a3705c5104e8257",
+    "ela-stmn2-replay-01/GSM8009879/stmn2-counts.json": "501d49737592b78cd5fadc313479b88076fcf5e36ed8898ec477eef0299e7a2d",
+    "ela-stmn2-replay-01/GSM8009880/fastp.html": "dd3622893e5635c5af8b67d49bd54b5d622f341be88d1c54f30dd44ece77db76",
+    "ela-stmn2-replay-01/GSM8009880/fastp.json": "2b6fa7c9f0c14217246c25a16bc75cf266500b152d46ffd9c54458583645ee0d",
+    "ela-stmn2-replay-01/GSM8009880/fastp.log": "473eeb6bd3f1a4c3949883bae5154e974263f433c3d6bb47db376054a4b4683e",
+    "ela-stmn2-replay-01/GSM8009880/hisat2-summary.txt": "b4c1f856ebbd48aab94d13de816fd811c511800ce87b5e045ed7ef1410da01f2",
+    "ela-stmn2-replay-01/GSM8009880/hisat2.log": "b4c1f856ebbd48aab94d13de816fd811c511800ce87b5e045ed7ef1410da01f2",
+    "ela-stmn2-replay-01/GSM8009880/stmn2-counts.json": "b3bb7b6ec8461a5bb0dac798e580d6c36149f4ed58c04e3d27b3082657d3b4ce",
+    "ela-stmn2-replay-01/GSM8009881/fastp.html": "aa82b87f2f0104027f2cb0e78a91d603f1233f6c03bcb65c28ae383858a41524",
+    "ela-stmn2-replay-01/GSM8009881/fastp.json": "9b6016c8efb26269b253227e5ee70c7af2dcf5114e24aec99e2991a21fc7d40b",
+    "ela-stmn2-replay-01/GSM8009881/fastp.log": "907365531a7fa000612fd419e743cdaf2026d6160e328d144b4a4478a59fa696",
+    "ela-stmn2-replay-01/GSM8009881/hisat2-summary.txt": "e770f8954f31642ba1cdcb096f6d3b3f871236e95e4e431806517f287f63689a",
+    "ela-stmn2-replay-01/GSM8009881/hisat2.log": "e770f8954f31642ba1cdcb096f6d3b3f871236e95e4e431806517f287f63689a",
+    "ela-stmn2-replay-01/GSM8009881/stmn2-counts.json": "3623e04cd0036e690f73e71bdd7bf501f949347bcb2fb910d66c26b11fee67e1",
+    "ela-stmn2-replay-01/GSM8009882/fastp.html": "0c96af8e81a675a8c5e090d7ed9adc7b96dd39224554b480abdb90798bcec593",
+    "ela-stmn2-replay-01/GSM8009882/fastp.json": "46b229b11700749c2e05fac34edf8d35e97845ce48504347a3751f4982b35736",
+    "ela-stmn2-replay-01/GSM8009882/fastp.log": "239a45a2d28580e1b9dfc4ca557be2ee7a7bb28f2d8326112118e0f5c1183db8",
+    "ela-stmn2-replay-01/GSM8009882/hisat2-summary.txt": "d254cfbe73c0039f9b4ac0f1157b34f975eda442b4e820b649efc7cdf83e1ad1",
+    "ela-stmn2-replay-01/GSM8009882/hisat2.log": "d254cfbe73c0039f9b4ac0f1157b34f975eda442b4e820b649efc7cdf83e1ad1",
+    "ela-stmn2-replay-01/GSM8009882/stmn2-counts.json": "0c7f7e57310e8a0bfbe3e5b709f604d2b054be6215d078017722f4aac5e7ae33",
+    "ela-stmn2-replay-01/GSM8009883/fastp.html": "d32c243d841f4924093f2eb0da1caa1edab6dcf8d7d0392de07c131ed07aabd0",
+    "ela-stmn2-replay-01/GSM8009883/fastp.json": "9b3c626628884682be4544f241ee8b8d565ec48c8ee0ef83bdd2ece13ef79d64",
+    "ela-stmn2-replay-01/GSM8009883/fastp.log": "5b1ad5638f8365542ecf8049a26febd623e9899c12d7faee407f3f070949e931",
+    "ela-stmn2-replay-01/GSM8009883/hisat2-summary.txt": "a2f52cbcfec99aa6c9b592fdf5aa311bd09446aff916111287060ed00dc0304f",
+    "ela-stmn2-replay-01/GSM8009883/hisat2.log": "a2f52cbcfec99aa6c9b592fdf5aa311bd09446aff916111287060ed00dc0304f",
+    "ela-stmn2-replay-01/GSM8009883/stmn2-counts.json": "e14ce3450b84f60c5ee0b783ff1c2943f8589ae936d02dfcdf018e6f641636ba",
+    "ela-stmn2-replay-01/accepted.json": "ab40bc41350101175628e23f9ad89329c1c120df6c53040fa3b4278bddb41b1c",
+    "ela-stmn2-replay-01/comparison.json": "2501bd3b7fe8f6c6df9f3244823f35d8e051e9af3b14e002f4f31e44e2641cb3",
+    "ela-stmn2-replay-01/result.json": "74621ab7f15ef565118a2a494467b1a340e06924165c5870edbd877db93bce1a",
+    "ela-stmn2-replay-01/supervision.json": "20ff7f9d69d1ea496758dfd8d66a1191c1c9458c8361e01646ca06691037ca76",
+    "ela-stmn2-replay-01/worker.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "ela-stmn2-replay-plan-01.json": "423ccc524120b098c6ed1e7f8b98b76522487c369048d952509e78f0cecb9dd4",
+    "ela-stmn2-replay-plan-01.json.claimed.json": "3ebbd4bf978d98626443c02b501d93229e8cc2e01b5c24467e8c107c0912d719"
+  },
+  "input_identities_in_plan": 12,
+  "index_identities_in_manifest": 8,
+  "historical_tool_builds_match": true,
+  "exact_count_fields_matched": 12,
+  "exact_qc_fields_matched": 30,
+  "libraries": [
+    {
+      "gsm": "GSM8009878",
+      "counts": {
+        "canonical": 1945,
+        "cryptic": 3
+      },
+      "qc": {
+        "sam_records": 139759296,
+        "alignment_groups": 65478552,
+        "eligible_groups": 61077456,
+        "marked_duplicate_records": 0,
+        "rejected_groups": 4401096
+      },
+      "aligned_input_pairs": 70948578
+    },
+    {
+      "gsm": "GSM8009879",
+      "counts": {
+        "canonical": 2806,
+        "cryptic": 5
+      },
+      "qc": {
+        "sam_records": 199140914,
+        "alignment_groups": 93469089,
+        "eligible_groups": 87367721,
+        "marked_duplicate_records": 0,
+        "rejected_groups": 6101368
+      },
+      "aligned_input_pairs": 101632860
+    },
+    {
+      "gsm": "GSM8009880",
+      "counts": {
+        "canonical": 2438,
+        "cryptic": 0
+      },
+      "qc": {
+        "sam_records": 174279828,
+        "alignment_groups": 81751742,
+        "eligible_groups": 76363570,
+        "marked_duplicate_records": 0,
+        "rejected_groups": 5388172
+      },
+      "aligned_input_pairs": 88548116
+    },
+    {
+      "gsm": "GSM8009881",
+      "counts": {
+        "canonical": 253,
+        "cryptic": 727
+      },
+      "qc": {
+        "sam_records": 176641092,
+        "alignment_groups": 82407283,
+        "eligible_groups": 76494020,
+        "marked_duplicate_records": 0,
+        "rejected_groups": 5913263
+      },
+      "aligned_input_pairs": 89969380
+    },
+    {
+      "gsm": "GSM8009882",
+      "counts": {
+        "canonical": 173,
+        "cryptic": 551
+      },
+      "qc": {
+        "sam_records": 145942254,
+        "alignment_groups": 68169948,
+        "eligible_groups": 63368769,
+        "marked_duplicate_records": 0,
+        "rejected_groups": 4801179
+      },
+      "aligned_input_pairs": 74864266
+    },
+    {
+      "gsm": "GSM8009883",
+      "counts": {
+        "canonical": 140,
+        "cryptic": 556
+      },
+      "qc": {
+        "sam_records": 157020644,
+        "alignment_groups": 73760202,
+        "eligible_groups": 69010082,
+        "marked_duplicate_records": 0,
+        "rejected_groups": 4750120
+      },
+      "aligned_input_pairs": 80434979
+    }
+  ],
+  "supervision": {
+    "status": "records_match",
+    "failure": null,
+    "cleanup_error": null,
+    "elapsed_seconds": 25314.576766791997,
+    "peak_sampled_group_rss_bytes": 4797501440,
+    "peak_sampled_output_bytes": 44068567914,
+    "minimum_sampled_physical_c_available_bytes": 457662414848,
+    "raw_execution_reported": true
+  },
+  "limitations": [
+    "Supplied unsigned host records, not independent execution attestation.",
+    "Actual FASTQs, index and installed binaries are not present for agent rehashing.",
+    "Same operator, machine and biological inputs; no independent biological replication."
+  ]
+}

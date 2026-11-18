@@ -186,12 +186,10 @@ class PreparationTests(unittest.TestCase):
                 replay.prepare(mapping, self.index, self.tools['fastp'], self.tools['aligner'], self.output, out)
         self.assertFalse(self.output.exists())
 
-    def test_wrong_version_and_wsl_refused(self):
+    def test_wrong_version_refused(self):
         Path(self.tools['fastp']).write_text('#!/bin/sh\necho fastp 0.23.40\n')
         with self.assertRaises(ValueError):
             self.inspect()
-        with patch.object(Path, 'read_text', return_value='6.6.87-microsoft-standard-WSL2'), self.assertRaises(ValueError):
-            replay.native_linux()
 
     def test_worker_processes_all_six_despite_zero_canonical(self):
         plan = self.inspect()
@@ -263,7 +261,7 @@ class PreparationTests(unittest.TestCase):
         replay.write_new(path, self.inspect())
         fake = unittest.mock.Mock(pid=99999999, returncode=None)
         fake.poll.return_value = None
-        with patch.object(replay, 'validate'), patch.object(replay, 'free_check'), \
+        with patch.object(replay, 'validate'), patch.object(replay, 'free_check', return_value=None), \
                 patch.object(replay.subprocess, 'Popen', return_value=fake), \
                 patch.object(replay, 'group_rss', return_value=replay.CAPS['group_rss_bytes']+1), \
                 patch.object(replay, 'stop_group') as stop, self.assertRaisesRegex(ValueError, 'resource cap'):
@@ -273,6 +271,28 @@ class PreparationTests(unittest.TestCase):
         self.assertEqual(record['status'], 'failed')
         self.assertFalse(record['raw_execution_reported'])
         self.assertTrue(Path(str(path)+'.claimed.json').exists())
+
+    def test_changed_host_identity_refuses_plan(self):
+        plan = self.inspect()
+        with patch.object(replay.host, 'placement', return_value={'kind': 'changed'}), self.assertRaises(ValueError):
+            replay.validate(plan)
+
+    def test_host_telemetry_loss_stops_worker_and_preserves_failure(self):
+        path = self.root/'host-failure-plan.json'
+        replay.write_new(path, self.inspect())
+        fake = unittest.mock.Mock(pid=99999999, returncode=None)
+        with patch.object(replay, 'validate'), \
+                patch.object(replay.shutil, 'disk_usage', return_value=unittest.mock.Mock(free=200*1024**3)), \
+                patch.object(replay.host, 'check', side_effect=[200*1024**3, ValueError('Host telemetry lost')]), \
+                patch.object(replay.subprocess, 'Popen', return_value=fake), \
+                patch.object(replay, 'group_rss', return_value=0), \
+                patch.object(replay, 'stop_group') as stop, self.assertRaisesRegex(ValueError, 'telemetry lost'):
+            replay.execute(path, replay.sha(path))
+        stop.assert_called_once_with(fake)
+        record = replay.read(self.output/'supervision.json')
+        self.assertEqual(record['status'], 'failed')
+        self.assertEqual(record['failure'], 'Host telemetry lost')
+        self.assertFalse(record['raw_execution_reported'])
 
 
 if __name__ == '__main__':

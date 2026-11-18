@@ -1,6 +1,10 @@
 # Minimal six-library STMN2 technical replay
 
-**Prepared, not yet replayed on real FASTQs in a clean environment.** This entry
+**Local replay completed; supplied evidence audited on 18 November 2026.**
+[Result and limits](../../reports/stmn2-real-replay-20261118/REPORT.md): all six
+libraries match exactly in counts/QC on the same PC, with a fresh code worktree
+and dedicated environment reusing the original local files. This is not an
+independent host or biological replication. This entry
 point measures exactly the existing GSE252892 STMN2 targets with the original
 counter. It does not need historical run directories, consumed proposals,
 transport ledgers or the original user's home directory.
@@ -51,12 +55,13 @@ records return exit 1; malformed, duplicate, unexpected or invalid records retur
 exit 2. Output is never overwritten. A standalone matching JSON cannot establish
 whether the caller actually ran the pipeline.
 
-## Later real-data replay prerequisites
+## Prerequisites for any future real-data replay
 
-Real replay has not been started or scheduled by this preparation. Use a clean
-checkout of the reviewed PR commit and a dedicated environment:
+A completed local run is documented above; no repeat is scheduled. Any future
+execution requires a new plan and fresh outputs. Use a clean checkout of the
+reviewed commit and a dedicated environment:
 
-- Native Linux, Python 3.11 or 3.12, PySAM **0.23.3** (the existing
+- Native Linux or verified WSL2 as described below, Python 3.11 or 3.12, PySAM **0.23.3** (the existing
   [pinned requirement](../../research/requirements-pe-contract.txt)).
 - **fastp 0.23.4** and the native **hisat2-align-s 2.2.3** binary, rather than the
   `hisat2` wrapper. A different build with the same version is recorded as
@@ -72,10 +77,32 @@ checkout of the reviewed PR commit and a dedicated environment:
   outside the new output root. Extra free RAM is needed for the OS and other apps;
   the worker's sampled RSS limit is 6 GiB and each process's AS limit is 8 GiB.
 
-**This portable entry point rejects WSL.** Guest free space does not establish
-physical host drive capacity. The historical WSL executors remain preserved;
-this guide does not claim that a portable replay can already run on Luis's WSL
-machine or introduce a host-space assumption to make it pass.
+**WSL2 admission is limited to a verified distribution VHD on C:.** The current
+user's Windows WSL registry must identify exactly the named version-2 distribution,
+an existing VHD and its C: base path without reparse-point ancestors. Output must
+be on the distribution's root ext4 filesystem. Missing interop, other host drives,
+unverified drvfs mappings and other output mounts are refused. Native Linux keeps
+its existing guest-space rules. The historical executors remain unchanged.
+
+WSL prepare/run admission requires **150 GiB free on both guest and physical C:**,
+plus **7 GiB available guest RAM** for the 6 GiB worker cap and headroom. This is
+not a memory reservation. Physical C: space is sampled through the existing
+verified drvfs mapping alongside the guest reserve every 0.5 s, and its observed
+minimum is recorded. Telemetry loss or either free reserve below 50 GiB stops the
+worker. Concurrent host use and VHD growth can still outrun sampled checks.
+
+Before hashing inputs, check the real host without alignment or output creation:
+
+```sh
+python scripts/replay_stmn2_minimal.py check-host --output-parent "$HOME"
+```
+
+Passing `check-host` verifies admission only, not raw files, tools, or Windows
+behavior in other environments. Linux-side mocked tests are not real WSL validation.
+The [Ubuntu-24.04 path example](paths.ubuntu-24.04.example.json) reflects Luis's
+reported file locations on 17 November. The completed run reports successful
+exact-hash checking; every future plan still requires its own checks.
+It is optional, host-specific input mapping, not a new source or verified result.
 
 Copy [paths.example.json](paths.example.json) outside the checkout and replace
 the twelve values with absolute local paths. The files may live in different
@@ -124,7 +151,7 @@ is allowed. Repeating a consumed plan is refused, even after failure.
 
 The supervisor enforces 96 h wall and two CPU affinity slots with an 8 GiB
 per-process AS limit. It samples group RSS (6 GiB), new output size (100 GiB)
-and free filesystem reserve (50 GiB) every 0.5 s. Sampling is not an aggregate
+and free filesystem reserve (50 GiB, both guest and host on WSL) every 0.5 s. Sampling is not an aggregate
 kernel quota, external disk use can change capacity, and uninterruptible I/O can
 prevent timely termination. A cleanup error fails the replay explicitly.
 No network transfer is implemented; this is **not OS network isolation or measured

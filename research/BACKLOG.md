@@ -1,10 +1,10 @@
-# Current backlog — 17 November 2026
+# Current backlog — 18 November 2026
 
 Only actionable or explicitly conditional work belongs here. [STATE](STATE.md) gives current evidence; [history](history/README.md) preserves earlier instructions, which authorize no executions.
 
-## Prepared technical contribution
+## Completed technical contribution
 
-Minimal six-library STMN2 replay was authorized on 17 November: [guide](../reproduction/stmn2-six-libraries/README.md), [validation record](../reports/stmn2-minimal-replay-20261117/REPORT.md). Preparation/software checks only; actual clean-environment FASTQ replay is pending a suitable native-Linux host, fixed local inputs and explicit resource decision. No raw execution scheduled; no biological cycle reopened.
+Minimal six-library STMN2 replay completed locally; the [18 November evidence audit](../reports/stmn2-real-replay-20261118/REPORT.md) reconciles the supplied plan/code/receipts, all six libraries and preprocessing/alignment QC. Exact agreement in 12 event counts and 30 QC fields; no recorded supervisor/cleanup failure. Same PC and original biological inputs; not independent-host or donor replication. Task closed, without another replay or source deletion. ADWB/author metadata gates and the #83 pause remain unchanged.
 
 ## Conditional work — no new execution scheduled
 

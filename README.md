@@ -6,7 +6,7 @@ Independent, AI-assisted research on the transcriptomic consequences of nuclear 
 
 ## Start with the current evidence
 
-Current status: **17 November 2026**, including the six-library STMN2 result completed on 16 November. Read [STATE](research/STATE.md) for the concise evidence and limits. Older reports preserve the work and its errors; later corrections take precedence. This is not a certification of the entire historical archive.
+Current status: **18 November 2026**, including the audit of a completed local six-library STMN2 FASTQ replay. Read [STATE](research/STATE.md) for the concise evidence and limits. Older reports preserve the work and its errors; later corrections take precedence. This is not a certification of the entire historical archive.
 
 | Question | Supported result | Main limitation |
 |---|---|---|
@@ -21,7 +21,7 @@ Read [Current findings](docs/CURRENT_FINDINGS.md) for the qualifications, source
 
 ## Minimal STMN2 replay
 
-The [six-library reproduction guide](reproduction/stmn2-six-libraries/README.md) provides exact local FASTQ/index identities, a path-map template, an offline count/QC comparator and a supervised native-Linux replay entry point. It does not require historical host paths or failed-run directories. **Prepared and software-tested; clean-environment replay on real FASTQs remains pending.** Checking archived JSON is not raw-data reproduction.
+The [six-library reproduction guide](reproduction/stmn2-six-libraries/README.md) provides exact local FASTQ/index identities, a path-map template, an offline count/QC comparator and a supervised replay entry point for native Linux or verified C:-backed WSL2. It does not require historical host paths or failed-run directories. **Local FASTQ replay completed with exact agreement in 12 event counts and 30 QC fields**, according to the [audited supplied host records](reports/stmn2-real-replay-20261118/REPORT.md). The fresh worktree/environment reused the same PC and original inputs; reproduction on another host remains untested. Checking archived JSON alone is not raw-data reproduction.
 
 ## Reproduce the software checks
 
