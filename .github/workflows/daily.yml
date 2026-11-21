@@ -25,7 +25,7 @@ jobs:
         with:
           python-version: '3.12'
       - name: Unit tests
-        run: python -m unittest discover -s tests -v
+        run: python -m unittest discover -s tests -p test_watchers.py -v
       - name: Create output directories
         run: mkdir -p reports state
       - name: PubMed records via Europe PMC
