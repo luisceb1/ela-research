@@ -2,6 +2,10 @@
 
 Only actionable or explicitly conditional work belongs here. [STATE](STATE.md) gives current evidence; [history](history/README.md) preserves earlier instructions, which authorize no executions.
 
+## GSE304550 follow-up — 22 November 2026
+
+The [eight-library Figure 5F reanalysis](../reports/alessandrini-5f-20261122/REPORT.md) is complete. Check the M85/M86 culture or differentiation map and search for per-library junction inputs for scramble and UPF1 KD. Assess a within-batch difference of differences with the fixed junction definitions once the four arms and biological units are verified. Keep an external validation on separate libraries as the next scientific gate.
+
 ## Completed technical contribution
 
 Minimal six-library STMN2 replay completed locally; the [18 November evidence audit](../reports/stmn2-real-replay-20261118/REPORT.md) reconciles the supplied plan/code/receipts, all six libraries and preprocessing/alignment QC. Exact agreement in 12 event counts and 30 QC fields; no recorded supervisor/cleanup failure. Same PC and original biological inputs; not independent-host or donor replication. Task closed, without another replay or source deletion. ADWB/author metadata gates and the #83 pause remain unchanged.
