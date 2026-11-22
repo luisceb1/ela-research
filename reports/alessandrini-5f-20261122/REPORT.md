@@ -23,6 +23,8 @@ These are the original study libraries reprocessed using an alternative aligner 
 
 ## Next experiment
 
+The [factorial input audit](FACTORIAL_INPUT_AUDIT.md) verifies the eight missing run accessions, transfer size, and unresolved differentiation map.
+
 Recover the study's per-library differentiation map and junction inputs where accessible. The strongest next question within GSE304550 is the within-batch difference of differences: compare the effect of UPF1 KD in the TDP-43 KD background against its effect in the scramble background. GEO records both missing arms in each batch with two libraries per arm. Check the metadata and inexpensive junction sources before committing to a transfer. Apply the same locked counter to all arms if needed. Report per-library coverage and both edges. Follow any reproducible contrast with a different dataset and verified biological units.
 
 ## Sources
