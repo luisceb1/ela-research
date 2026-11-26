@@ -22,3 +22,7 @@ Total: 10,349,969,475 bytes. This is not a biological pair. Exact input URLs, si
 - A low or missing measurement is a technical/coverage outcome, not biological absence. Do not infer a treatment effect or extend to the seven remaining libraries automatically.
 
 No Hetzner execution has been dispatched. The existing validated disposable lifecycle is retained; the new measurement pipeline has not yet been enabled.
+
+## Operator authorization and execution implementation — 26 November 2026
+
+Luis expressly approved the technical-only alternative after being told the biological-unit gate remains pending. The pilot is limited to the two prespecified libraries, not the remaining seven. The new workflow uses the already-tested disposable lifecycle and exact existing UNC13A counter, validates the sealed manifest, mate MD5/length and observed SHA-256, index and software identity. It requires the combined EUR gross server + IPv4 hourly rate to be no more than EUR 0.32 (six nominal lease hours no more than EUR 1.92; not a hard provider cap). Each library has its own three-hour expiry and 138-minute remote timeout, with separate independent deletion verification. The second runs only if the first and its cleanup succeed. Zero canonical support stops automatic continuation; cryptic support is descriptive only. No retry, biological effect, or automatic extension. The single launch marker is activated only by addition on main; PR checks cannot provision a server. The run and actual cost/evidence will be reported separately.
