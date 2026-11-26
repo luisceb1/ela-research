@@ -2,9 +2,9 @@
 
 Only actionable or explicitly conditional work belongs here. [STATE](STATE.md) gives current evidence; [history](history/README.md) preserves earlier instructions, which authorize no executions.
 
-## GSE304550 follow-up — 22 November 2026
+## GSE304550 follow-up — 26 November 2026
 
-The [eight-library Figure 5F reanalysis](../reports/alessandrini-5f-20261122/REPORT.md) is complete. Check the M85/M86 culture or differentiation map and search for per-library junction inputs for scramble and UPF1 KD. Assess a within-batch difference of differences with the fixed junction definitions once the four arms and biological units are verified. Keep an external validation on separate libraries as the next scientific gate.
+The [four-arm factorial reanalysis](../reports/gse304550-factorial-20261126/REPORT.md) is complete at the user-reported count level. Collect full local logs, command records and source provenance for technical closure, and resolve the M85/M86 differentiation map and publication denominator. Independent validation remains conditional on a separate eligible dataset with verified units and compatible data. No additional transfer or cloud execution is scheduled by this result.
 
 ## Completed technical contribution
 
