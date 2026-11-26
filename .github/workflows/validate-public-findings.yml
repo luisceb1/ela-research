@@ -1,0 +1,45 @@
+name: Validate public findings catalog
+on:
+  push:
+    paths:
+      - 'publications/catalog.json'
+      - '.github/workflows/validate-public-findings.yml'
+  pull_request:
+    paths:
+      - 'publications/catalog.json'
+      - '.github/workflows/validate-public-findings.yml'
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate public editorial metadata
+        run: |
+          python - <<'PY'
+          import datetime, json, re
+          from pathlib import Path
+          from urllib.parse import urlparse
+
+          catalog = json.loads(Path('publications/catalog.json').read_text())
+          assert catalog['version'] == 1
+          assert isinstance(catalog['entries'], list) and len(catalog['entries']) <= 200
+          seen = set()
+          for entry in catalog['entries']:
+              slug = entry['id']
+              assert re.fullmatch(r'[a-z0-9]+(?:-[a-z0-9]+)*', slug) and slug not in seen
+              seen.add(slug)
+              assert datetime.date.fromisoformat(entry['date']).isoformat() == entry['date']
+              assert entry['status'] in ('reproduced', 'partial', 'refuted', 'pending')
+              for field in ('title', 'question', 'result', 'limitations'):
+                  for language in ('es', 'en'):
+                      assert isinstance(entry[field][language], str) and 0 < len(entry[field][language].strip()) <= 2000
+              report = entry['report']
+              assert re.fullmatch(r'(reports|docs)/[a-zA-Z0-9_.\-/]+\.md', report)
+              assert '..' not in Path(report).parts and Path(report).is_file()
+              source = urlparse(entry['source'])
+              assert source.scheme == 'https' and source.netloc
+              assert entry.get('visual') in (None, 'datos')
+          print(f'Validated {len(seen)} bilingual public entries')
+          PY
