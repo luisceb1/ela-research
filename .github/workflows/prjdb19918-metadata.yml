@@ -1,0 +1,61 @@
+name: PRJDB19918 public metadata intake
+on:
+  pull_request:
+    paths:
+      - '.github/workflows/prjdb19918-metadata.yml'
+      - 'research/plans/2026-11-26-tanaka-source-intake.md'
+permissions:
+  contents: read
+jobs:
+  metadata:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - name: Retrieve bounded public ENA metadata
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import csv
+          import hashlib
+          import io
+          import json
+          import urllib.parse
+          import urllib.request
+
+          endpoint = "https://www.ebi.ac.uk/ena/portal/api/filereport"
+          base = ["run_accession", "experiment_accession", "sample_accession",
+                  "library_layout", "instrument_platform", "instrument_model",
+                  "fastq_bytes", "read_count"]
+          variants = [base + ["sample_title", "experiment_title", "library_name"], base]
+          cap = 1024 * 1024
+          for fields in variants:
+              query = urllib.parse.urlencode({
+                  "accession": "PRJDB19918", "result": "read_run",
+                  "fields": ",".join(fields), "format": "tsv", "limit": "100"})
+              try:
+                  req = urllib.request.Request(endpoint + "?" + query,
+                      headers={"User-Agent": "ELA-research/metadata-intake"})
+                  with urllib.request.urlopen(req, timeout=25) as resp:
+                      content = resp.read(cap + 1)
+                  if len(content) > cap:
+                      raise ValueError("metadata response exceeds cap")
+                  table = csv.DictReader(io.StringIO(content.decode("utf-8")), delimiter="\t")
+                  if not set(base).issubset(table.fieldnames or []):
+                      raise ValueError("unexpected metadata schema")
+                  rows = list(table)
+                  if not rows or len(rows) >= 100:
+                      raise ValueError("empty or potentially truncated metadata result")
+              except Exception as exc:
+                  print("METADATA_ATTEMPT_FAILED " + str(type(exc).__name__))
+                  continue
+              print("METADATA_RECEIPT " + json.dumps({
+                  "accession": "PRJDB19918", "sha256": hashlib.sha256(content).hexdigest(),
+                  "bytes": len(content), "columns": table.fieldnames, "rows": len(rows)}))
+              for row in rows:
+                  # Print JSON to avoid interpreting service-provided text as workflow commands.
+                  print("METADATA_ROW " + json.dumps(row, ensure_ascii=True))
+              break
+          else:
+              print("METADATA_PENDING: no usable run metadata")
+              raise SystemExit(1)
+          PY
