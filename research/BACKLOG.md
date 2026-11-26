@@ -1,4 +1,4 @@
-# Current backlog — 18 November 2026
+# Current backlog — 26 November 2026
 
 Only actionable or explicitly conditional work belongs here. [STATE](STATE.md) gives current evidence; [history](history/README.md) preserves earlier instructions, which authorize no executions.
 
@@ -7,6 +7,8 @@ Only actionable or explicitly conditional work belongs here. [STATE](STATE.md) g
 The [four-arm factorial reanalysis](../reports/gse304550-factorial-20261126/REPORT.md) is complete at the user-reported count level. Host archive audit reconciles all counts and logs. Collect local scripts and remaining raw/index/binary provenance for technical closure, and resolve the M85/M86 differentiation map and publication denominator. Independent validation remains conditional on a separate eligible dataset with verified units and compatible data. No additional transfer or cloud execution is scheduled by this result.
 
 ## Completed technical contribution
+
+- Independent-host STMN2 fixed pilot closed: 7/7 numerical fields match for one control library; evidence and resource cleanup verified. [Pilot closure](../reports/stmn2-hetzner-pilot-20261126/REPORT.md). No additional cloud library or repeat is scheduled; further paid execution requires a separate decision. The local six-library coverage and scientific data gates remain distinct.
 
 Minimal six-library STMN2 replay completed locally; the [18 November evidence audit](../reports/stmn2-real-replay-20261118/REPORT.md) reconciles the supplied plan/code/receipts, all six libraries and preprocessing/alignment QC. Exact agreement in 12 event counts and 30 QC fields; no recorded supervisor/cleanup failure. Same PC and original biological inputs; not independent-host or donor replication. Task closed, without another replay or source deletion. ADWB/author metadata gates and the #83 pause remain unchanged.
 

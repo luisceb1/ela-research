@@ -1,5 +1,7 @@
 # One-library independent-host technical replay
 
+**Closed — 26 November 2026.** [Result and evidence receipt](../../reports/stmn2-hetzner-pilot-20261126/REPORT.md): seven of seven locked numerical fields match for the single library, both jobs and cleanup checks succeeded, no further execution scheduled. The prospective text below is retained unchanged.
+
 Prospective decision, 26 November 2026. The GSE304550 original counter
 could not be located; the SRA file is retained locally. For the first real
 cloud test, select the pre-existing, fully documented control GSM8009878

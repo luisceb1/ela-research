@@ -3,8 +3,8 @@
 **Local replay completed; supplied evidence audited on 18 November 2026.**
 [Result and limits](../../reports/stmn2-real-replay-20261118/REPORT.md): all six
 libraries match exactly in counts/QC on the same PC, with a fresh code worktree
-and dedicated environment reusing the original local files. This is not an
-independent host or biological replication. This entry
+and dedicated environment reusing the original local files. This local run is not an
+independent-host or biological replication. The [26 November cloud pilot](../../reports/stmn2-hetzner-pilot-20261126/REPORT.md) subsequently reproduced all seven numerical fields on a different host for one of these libraries only. This entry
 point measures exactly the existing GSE252892 STMN2 targets with the original
 counter. It does not need historical run directories, consumed proposals,
 transport ledgers or the original user's home directory.

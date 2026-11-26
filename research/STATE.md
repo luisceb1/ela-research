@@ -1,6 +1,10 @@
-# Current research state — 18 November 2026
+# Current research state — 26 November 2026
 
 Public-source study of TDP-43 loss, STMN2 and UNC13A. Read [AGENTS](../AGENTS.md), [protocol](PROTOCOL.md), [evidence brief](../docs/EVIDENCE_BRIEF_2026-11-15.md). This page supersedes historical instructions and adds no analysis. Full previous versions: [history](history/README.md).
+
+## Independent-host STMN2 pilot closed — 26 November 2026
+
+One locked control library (GSM8009878) reproduced all 7 numerical fields exactly on a disposable Hetzner host; both jobs succeeded, ZIP hash verified and both cleanup checks confirmed no matching resources remain. Workflow 1 h 40 min 43 s. This establishes technical transferability for one library, not all six or biological replication. [Pilot closure](../reports/stmn2-hetzner-pilot-20261126/REPORT.md). No further execution scheduled.
 
 ## GSE304550 update — 26 November 2026
 
@@ -20,7 +24,7 @@ Original metadata audits establish provenance/accounting coherence, not agent FA
 
 ## Technical replay closure / pending inputs
 
-- **Minimal STMN2 technical replay completed locally:** the supplied 18 November bundle supports all six fixed libraries matching 12 event counts and 30 QC fields, with successful supervision and no cleanup error. Fresh code worktree/dedicated environment on the same PC and original inputs; no independent host or biological replication. [Evidence audit and limits](../reports/stmn2-real-replay-20261118/REPORT.md), [guide](../reproduction/stmn2-six-libraries/README.md). Actual raw files are not in the received bundle for agent rehashing. Runtime 7 h 1 min 55 s; original plan/code/source bindings checked. This technical task is closed; no repeat or deletion scheduled. #83 stays paused.
+- **Minimal STMN2 technical replay completed locally:** the supplied 18 November bundle supports all six fixed libraries matching 12 event counts and 30 QC fields, with successful supervision and no cleanup error. Fresh code worktree/dedicated environment on the same PC and original inputs; no independent host was used in that local run. The subsequent cloud pilot covers one library only; neither is biological replication. [Evidence audit and limits](../reports/stmn2-real-replay-20261118/REPORT.md), [guide](../reproduction/stmn2-six-libraries/README.md). Actual raw files are not in the received bundle for agent rehashing. Runtime 7 h 1 min 55 s; original plan/code/source bindings checked. This technical task is closed; no repeat or deletion scheduled. #83 stays paused.
 
 - **#37 and #44 issues are closed.** Scientific questions remain conditional: usable independent junction data/unit map for #37; cell→culture→differentiation, units and timing for K26 strict v1. No automatic reopening.
 - **AD Workbench:** request acknowledged; active workspace/data access not verified. Require a user-verified file inventory, not inference from email.
