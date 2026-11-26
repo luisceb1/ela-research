@@ -2,6 +2,29 @@
   "version": 1,
   "entries": [
     {
+      "id": "cross-study-proteomics-audit-20261126",
+      "date": "2026-11-26",
+      "status": "pending",
+      "title": {
+        "es": "PFKP, STMN2 y UNC13A: auditoría comparativa de proteómica",
+        "en": "PFKP, STMN2 and UNC13A: comparative proteomics audit"
+      },
+      "question": {
+        "es": "¿Coinciden los resultados de abundancia proteica de tres estudios publicados?",
+        "en": "Do protein-abundance observations agree across three published studies?"
+      },
+      "result": {
+        "es": "Guise informa una reducción relativa de PFKP del 68,1% en neuronas motoras humanas. Feneberg obtiene cuatro estimaciones negativas (6,9–15,7% de reducción), ninguna significativa tras corregir por comparaciones múltiples. Chan obtiene una reducción descriptiva del 4,4% para PFKP y publica una reducción de STMN2 del 56,1% en un modelo celular (q=0,0003472). La evidencia proteica de UNC13A es inconclusa.",
+        "en": "Guise reports 68.1% lower relative PFKP abundance in human motor neurons. Feneberg's four estimates are lower (6.9–15.7% reductions), none significant after multiple-testing correction. Chan's descriptive PFKP estimate is 4.4% lower; the study reports 56.1% lower STMN2 in a cellular model (q=0.0003472). UNC13A protein evidence is inconclusive."
+      },
+      "limitations": {
+        "es": "Auditoría de tablas publicadas, no réplica biológica independiente. Las medidas, tejidos y unidades experimentales difieren; la concordancia de dirección no confirma la magnitud ni la significación. No hay inferencia causal, validación clínica ni evidencia terapéutica.",
+        "en": "Audit of published tables, not independent biological replication. Measurements, tissues and experimental units differ; directional agreement does not confirm effect magnitude or statistical significance. No causal inference, clinical validation or therapeutic evidence."
+      },
+      "report": "reports/cross-study-proteomics-audit-20261126/REPORT.md",
+      "source": "https://doi.org/10.1016/j.celrep.2023.113636"
+    },
+    {
       "id": "integrated-evidence-audit-20261126",
       "date": "2026-11-26",
       "status": "partial",
