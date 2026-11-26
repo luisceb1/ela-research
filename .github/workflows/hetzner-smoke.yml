@@ -1,0 +1,41 @@
+name: Hetzner disposable compute smoke test
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: hetzner-disposable-smoke
+  cancel-in-progress: false
+jobs:
+  pilot:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check credential and run synthetic test
+        env:
+          HCLOUD_TOKEN: ${{ secrets.HETZNER_ELA_PILOT_TOKEN }}
+        run: |
+          test -n "$HCLOUD_TOKEN"
+          python infrastructure/hetzner/smoke.py run --name "ela-smoke-$GITHUB_RUN_ID-$GITHUB_RUN_ATTEMPT"
+      - uses: actions/upload-artifact@v4
+        if: success()
+        with:
+          name: synthetic-hetzner-benchmark
+          path: hetzner-smoke.json
+          if-no-files-found: error
+          retention-days: 7
+  verify-cleanup:
+    if: ${{ always() && github.ref == 'refs/heads/main' }}
+    needs: pilot
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify and recover cleanup independently
+        env:
+          HCLOUD_TOKEN: ${{ secrets.HETZNER_ELA_PILOT_TOKEN }}
+        run: |
+          test -n "$HCLOUD_TOKEN"
+          python infrastructure/hetzner/smoke.py cleanup --name "ela-smoke-$GITHUB_RUN_ID-$GITHUB_RUN_ATTEMPT"
