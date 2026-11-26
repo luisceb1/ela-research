@@ -2,6 +2,10 @@
 
 See the [prospective plan](../../research/plans/2026-11-26-tanaka-source-intake.md). Metadata retrieval only; no new molecular measurements.
 
+## Technical pilot closed — 26 November 2026
+
+See [pilot closure](PILOT_CLOSURE.md). Subsequently authorized two-library cloud run completed successfully with verified cleanup and insufficient cryptic support in both libraries. The seven remaining libraries are not scheduled; independent-unit and source gates remain unresolved. Earlier status statements below are historical.
+
 ## Evidence
 
 A standard public GitHub runner retrieved the official ENA read-run file report successfully: [run 45809243690](https://github.com/luisceb1/ela-research/actions/runs/45809243690), execution commit `60a9dd26f7ba702f7599131af62aab643279936f`, 8 s total. The runner reported 6,338 bytes and SHA-256 `7b0b9c2ed6a74054aba2efa3fe3d031b80ed97e386de0d209e5317ddeb4c7cbb`; [parsed rows and receipt](metadata.json) preserve the logged metadata, not a byte-identical copy of the TSV.

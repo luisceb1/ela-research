@@ -6,6 +6,10 @@ Public-source study of TDP-43 loss, STMN2 and UNC13A. Read [AGENTS](../AGENTS.md
 
 One locked control library (GSM8009878) reproduced all 7 numerical fields exactly on a disposable Hetzner host; both jobs succeeded, ZIP hash verified and both cleanup checks confirmed no matching resources remain. Workflow 1 h 40 min 43 s. This establishes technical transferability for one library, not all six or biological replication. [Pilot closure](../reports/stmn2-hetzner-pilot-20261126/REPORT.md). No further execution scheduled.
 
+## PRJDB19918 technical pilot closed — 26 November 2026
+
+Both fixed Tanaka libraries completed on Hetzner, with verified input receipts and independent cleanup. UNC13A canonical/left/right: control **79/0/0**, KD **56/2/0**. Neither cryptic edge reaches 20 groups; insufficient support, not biological absence. Independent culture units and author supplement remain unresolved. No extension to the other seven libraries or retry scheduled. [Pilot closure](../reports/prjdb19918-metadata-intake-20261126/PILOT_CLOSURE.md).
+
 ## GSE304550 update — 26 November 2026
 
 All 16 four-arm libraries were processed locally and reported. Predefined descriptive difference-of-differences (M85/M86): UNC13A **+16.64 / +3.81 pp**, PFKP **+20.13 / +8.70 pp**. Both edge definitions agree in direction. Eight new libraries show zero selected UNC13A cryptic support with positive skipping support; five new libraries used validated NCBI SRA after ENA failures. All 112 counts, 16 archived host logs and recorded commands reconcile. Current-host audit: 15 recoverable log hashes match archive, 8/8 hg38 shard and HISAT2 aligner digests match sealed reference, and five SRA files have current SHA-256 fingerprints. Original FASTQ byte identities and executed counter/downloader remain unresolved; no further local scan scheduled. Culture pairing and published denominator comparison remain unresolved; independent biological validation is pending. [Factorial report and counts](../reports/gse304550-factorial-20261126/REPORT.md). [Original eight-library report](../reports/alessandrini-5f-20261122/REPORT.md).
