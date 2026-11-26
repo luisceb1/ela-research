@@ -2,6 +2,26 @@
 
 **26 November 2026 — Independent ALS research project — Documentary evidence audit**
 
+## Updated conclusion — five-study comparison (26 November 2026)
+
+The five-study audit now shows **mixed PFKP direction**: Guise reports −68.1% relative abundance in human spinal motor neurons; Feneberg and Chan have smaller negative estimates, but Spiteri has positive estimates in three of four bulk tissue regions and Aly has small positive synaptic-pool ratios. Spiteri's STMN2 and UNC13A estimates are negative across four regions, none significant after correction. Aly has positive STMN2 ratios and lower UNC13A in pooled synaptic material (−48.72% sporadic ALS, −29.27% C9orf72 ALS); the sporadic source q=0.040951 is not donor-level significance. Different endpoints and units; no independent quantitative replication or clinical inference.
+
+The additional [Spiteri and Aly supplementary-table audit](SPITERI_ALY.md) records exact source rows, native contrast estimates, adjusted p-values, source hashes and the corrected Aly workbook. The new evidence supersedes any suggestion of uniform PFKP direction beyond the original three-study comparison. No additional computation on raw samples or independent biological experiment was conducted.
+
+| Study | PFKP | STMN2 | UNC13A |
+|---|---|---|---|
+| Guise 2024 | −68.1%, author BH flag true | Lower detection; BH flags false | Not identified in inspected target rows |
+| Feneberg 2025 | Four negative estimates, none FDR-significant | Not located | Mixed estimates, none FDR-significant |
+| Chan 2026 | −4.4%, descriptive | −56.1%, source q=0.0003472, cellular model | −17.1%, descriptive |
+| Spiteri 2025 | Three positive regional diff estimates; one slightly negative; all adjusted p>0.05 | Four negative regional estimates, all adjusted p>0.05 | Four negative regional estimates, all adjusted p>0.05 |
+| Aly 2023 | +2.89% sALS, +1.63% C9, median-corrected pool ratios | +16.35%, +8.97%, pooled | −48.72%, −29.27%, pooled; sALS source q=0.040951 |
+
+Spiteri's combined source contrast equals the sum of four regional contrasts in these target rows; neither the combined nor regional native diff is converted into a percentage. Four regions are repeated observations of 15 donors, not 60 independent donors. Aly has one pooled sample per condition (10 donors per pool) with two technical replicates. Its reported source q is not a test across independent donors. The three-study audit below is retained in its original scope, including its historical decision and source provenance; this update and the linked supplement take precedence for the broader comparison.
+
+---
+
+## Original three-study audit (historical scope)
+
 ## Executive conclusion
 
 The three audited publications support different levels of evidence, not a single replicated result. PFKP has a marked author-reported reduction in postmortem spinal motor neurons in Guise et al.; point estimates in Feneberg et al. and Chan et al. are also lower than their respective controls, but considerably smaller and without confirmed differential significance in the inspected tables. STMN2 has a strong published protein-level result in the Chan cellular model and lower detection in Guise's ALS neurons, but the latter does not establish a quantitative reduction. UNC13A remains unresolved across these proteomic datasets. None of these observations constitutes clinical validation.
