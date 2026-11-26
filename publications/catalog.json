@@ -1,0 +1,52 @@
+{
+  "version": 1,
+  "entries": [
+    {
+      "id": "stmn2-six-library-replay",
+      "date": "2026-11-18",
+      "status": "reproduced",
+      "title": {
+        "es": "STMN2: reproducción computacional de seis muestras",
+        "en": "STMN2: computational replay of six samples"
+      },
+      "question": {
+        "es": "¿Coinciden los resultados del nuevo punto de entrada con los resultados de referencia?",
+        "en": "Do the results from the new entry point match the reference results?"
+      },
+      "result": {
+        "es": "Coincidieron los 12 conteos de eventos y los 30 campos de control de calidad. En las tres muestras con TDP‑43 reducida predominó la unión críptica entre las dos uniones estudiadas.",
+        "en": "All 12 event counts and 30 quality-control fields matched. The cryptic junction predominated among the two junctions examined in all three reduced-TDP‑43 samples."
+      },
+      "limitations": {
+        "es": "Reproducción computacional en el mismo equipo y con los mismos datos históricos. Las seis muestras pertenecen a un único experimento.",
+        "en": "Computational replay on the same computer using the same historical inputs. All six samples belong to one experiment."
+      },
+      "report": "reports/stmn2-real-replay-20261118/REPORT.md",
+      "source": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE252892",
+      "visual": "datos"
+    },
+    {
+      "id": "unc13a-keuss-4d-reanalysis",
+      "date": "2026-11-12",
+      "status": "partial",
+      "title": {
+        "es": "UNC13A: reanálisis de la figura 4d de Keuss",
+        "en": "UNC13A: reanalysis of Keuss Fig. 4d"
+      },
+      "question": {
+        "es": "¿Se reproduce la dirección del efecto publicado con los datos disponibles?",
+        "en": "Can the direction of the published effect be reproduced using the available data?"
+      },
+      "result": {
+        "es": "El reanálisis de las mismas observaciones recuperó la dirección del efecto. Dos de los tres intervalos de sensibilidad incluyeron el cero al omitir un bloque cada vez.",
+        "en": "The reanalysis of the same observations recovered the direction of the effect. Two of the three sensitivity intervals included zero when one block was left out at a time."
+      },
+      "limitations": {
+        "es": "Reproducción computacional condicional. La independencia biológica de las observaciones no quedó establecida y el resultado estadístico depende del modelo.",
+        "en": "Conditional computational reproduction. Biological independence of the observations was not established, and the statistical result depends on the model."
+      },
+      "report": "reports/k26-conditional-replay-20261111/REPORT.md",
+      "source": "https://doi.org/10.1038/s41586-026-11256-2"
+    }
+  ]
+}
