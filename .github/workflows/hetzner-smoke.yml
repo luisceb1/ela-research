@@ -20,11 +20,11 @@ jobs:
           test -n "$HCLOUD_TOKEN"
           python infrastructure/hetzner/smoke.py run --name "ela-smoke-$GITHUB_RUN_ID-$GITHUB_RUN_ATTEMPT"
       - uses: actions/upload-artifact@v4
-        if: success()
+        if: ${{ !cancelled() }}
         with:
           name: synthetic-hetzner-benchmark
           path: hetzner-smoke.json
-          if-no-files-found: error
+          if-no-files-found: warn
           retention-days: 7
   verify-cleanup:
     if: ${{ always() && github.ref == 'refs/heads/main' }}
