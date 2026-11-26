@@ -1,0 +1,26 @@
+name: Hetzner smoke test expiry check
+on:
+  schedule:
+    - cron: '17,47 * * * *'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: hetzner-expiry-check
+  cancel-in-progress: false
+jobs:
+  expire:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - name: Remove expired pilot resources
+        env:
+          HCLOUD_TOKEN: ${{ secrets.HETZNER_ELA_PILOT_TOKEN }}
+        run: |
+          if [ -z "$HCLOUD_TOKEN" ]; then
+            echo "Pilot token not configured; no resources contacted."
+            exit 0
+          fi
+          python infrastructure/hetzner/smoke.py expire
