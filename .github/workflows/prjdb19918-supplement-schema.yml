@@ -1,7 +1,7 @@
 name: PRJDB19918 supplement schema gate
 on:
   pull_request:
-    types: [synchronize]
+    types: [opened]
     paths:
       - '.github/workflows/prjdb19918-supplement-schema.yml'
 permissions:
