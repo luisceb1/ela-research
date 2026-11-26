@@ -106,11 +106,11 @@ def cleanup(cloud, name=None, now=None):
     print("Cleanup verified: no matching pilot resources remain.", flush=True)
 
 
-def labels_for(name, now):
+def labels_for(name, now, lease_seconds=LEASE_SECONDS):
     if not NAME.fullmatch(name):
         raise ValueError("Invalid pilot run name")
     return {"managed-by": OWNER, "run-name": name,
-            "expires-at": str(now + LEASE_SECONDS)}
+            "expires-at": str(now + lease_seconds)}
 
 
 def check_price(cloud):
@@ -162,12 +162,12 @@ if __name__ == '__main__':
 """
 
 
-def run(cloud, name, output):
+def run(cloud, name, output, workload=None, lease_seconds=LEASE_SECONDS):
     if any(resource for kind in ("servers", "primary_ips", "ssh_keys")
            for resource in cloud.managed(kind)):
         raise RuntimeError("A managed pilot resource exists. Clean it up first.")
     check_price(cloud)
-    labels = labels_for(name, int(time.time()))
+    labels = labels_for(name, int(time.time()), lease_seconds)
     start = time.monotonic()
     try:
         with tempfile.TemporaryDirectory() as directory:
@@ -200,6 +200,9 @@ def run(cloud, name, output):
                 result = subprocess.run(ssh + ["true"], capture_output=True, timeout=15)
                 return result.returncode == 0
             wait_until(ready, 180)
+            if workload is not None:
+                workload(ssh, output)
+                return
             result = subprocess.run(ssh + ["cloud-init status --wait >/dev/null && python3 -"],
                                     input=BENCHMARK, text=True, capture_output=True,
                                     timeout=240, check=True)
