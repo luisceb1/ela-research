@@ -86,17 +86,23 @@ def cleanup(cloud, name=None, now=None):
             resource_id = resource["id"]
             path = f"/{kind}/{resource_id}"
             if kind == "primary_ips":
-                # Do not remove an address assigned to any remaining server.
-                if resource.get("assignee_id") is not None:
-                    continue
+                # Server deletion and automatic IP deletion can settle separately.
+                def detached_or_gone():
+                    current = cloud.request("GET", path, missing_ok=True)
+                    return current is None or current.get("primary_ip", current).get("assignee_id") is None
+
+                wait_until(detached_or_gone, 90)
             cloud.request("DELETE", path, missing_ok=True)
             wait_until(lambda: cloud.request("GET", path, missing_ok=True) is None, 60)
-    remaining = [
-        kind for kind in ("servers", "primary_ips", "ssh_keys")
-        for item in cloud.managed(kind) if owned(item, name, now)
-    ]
-    if remaining:
-        raise RuntimeError(f"Cleanup incomplete: {', '.join(remaining)}")
+
+    def no_remaining():
+        return not any(
+            owned(item, name, now)
+            for kind in ("servers", "primary_ips", "ssh_keys")
+            for item in cloud.managed(kind)
+        )
+
+    wait_until(no_remaining, 60)
     print("Cleanup verified: no matching pilot resources remain.", flush=True)
 
 
