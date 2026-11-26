@@ -7,6 +7,10 @@ Public-source study of TDP-43 loss, STMN2 and UNC13A. Read [AGENTS](../AGENTS.md
 [Critical evidence review](../reports/integrated-evidence-audit-20261126/REPORT.md) preserves technical reproduction, insufficient support, discrepancies and failed predictions. The local GSE304550 UNC13A direction differs from the original Fig. 5F account under non-equivalent measures; PFKP agrees qualitatively. No inferred mechanism, new analysis, execution or independent biological validation.
 
 
+## Comparative proteomics audit — 26 November 2026
+
+**Comparative proteomics audit — 26 November 2026.** Guise reports lower PFKP relative abundance in human spinal motor neurons (−68.1%; author BH flag true); all four Feneberg bulk tissue/fraction estimates are lower (−6.9% to −15.7%) but none FDR-significant; Chan's cellular model yields a descriptive −4.4%. Chan's published STMN2 protein change is −56.1% (source q=0.0003472); UNC13A protein evidence is inconclusive. Different endpoints and biological units; no pooled effect, independent quantitative replication or clinical inference. [Report](../reports/cross-study-proteomics-audit-20261126/REPORT.md). Documentary audit closed; no additional processing scheduled.
+
 ## 2025 SALS motor-neuron cohort: UNC13A supplement — 26 November 2026
 
 Supplementary Table 7 reports a significant SALS/control LeafCutter cluster annotated to UNC13A (adjusted (P=0.0156)); its table does not provide member-junction coordinates. UNC13A is not listed in Table 8's specified overlap with TDP-43-knockdown-responsive genes. The article says the cohort's UNC13A site differs from previously reported sites. This is a published cluster-level association, not an exact match to the canonical cryptic exon or a project reproduction. Revisit only if event-level junction data and verified biological units become available. [Supplement audit](../reports/unc13a-sals-motor-neuron-supplement-20261126/REPORT.md).
