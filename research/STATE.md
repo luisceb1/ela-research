@@ -4,7 +4,7 @@ Public-source study of TDP-43 loss, STMN2 and UNC13A. Read [AGENTS](../AGENTS.md
 
 ## GSE304550 update — 26 November 2026
 
-All 16 four-arm libraries were processed locally and reported. Predefined descriptive difference-of-differences (M85/M86): UNC13A **+16.64 / +3.81 pp**, PFKP **+20.13 / +8.70 pp**. Both edge definitions agree in direction. Eight new libraries show zero selected UNC13A cryptic support with positive skipping support; five new libraries used validated NCBI SRA after ENA failures. Culture pairing, published denominator comparison and complete local logs remain unresolved; independent biological validation is pending. [Factorial report and counts](../reports/gse304550-factorial-20261126/REPORT.md). [Original eight-library report](../reports/alessandrini-5f-20261122/REPORT.md).
+All 16 four-arm libraries were processed locally and reported. Predefined descriptive difference-of-differences (M85/M86): UNC13A **+16.64 / +3.81 pp**, PFKP **+20.13 / +8.70 pp**. Both edge definitions agree in direction. Eight new libraries show zero selected UNC13A cryptic support with positive skipping support; five new libraries used validated NCBI SRA after ENA failures. All 112 counts, 16 host logs and recorded commands reconcile; raw/index/binary hashes and local scripts remain outstanding. Culture pairing and published denominator comparison remain unresolved; independent biological validation is pending. [Factorial report and counts](../reports/gse304550-factorial-20261126/REPORT.md). [Original eight-library report](../reports/alessandrini-5f-20261122/REPORT.md).
 
 ## Current evidence
 
