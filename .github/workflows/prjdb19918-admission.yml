@@ -1,0 +1,83 @@
+name: PRJDB19918 fixed input and design admission
+on:
+  pull_request:
+    types: [synchronize]
+    paths:
+      - '.github/workflows/prjdb19918-admission.yml'
+permissions:
+  contents: read
+jobs:
+  admission:
+    runs-on: ubuntu-latest
+    timeout-minutes: 4
+    steps:
+      - name: Retrieve fixed public metadata and publisher supplement link
+        run: |
+          python3 - <<'PY'
+          import concurrent.futures, csv, hashlib, io, json, re, urllib.request, urllib.parse
+          import xml.etree.ElementTree as ET
+          from html.parser import HTMLParser
+          RUNS={f"DRR63171{i}" for i in range(1,10)}
+          SAMPLES={f"SAMD008589{i}" for i in range(13,22)}
+          def fetch(url,cap,timeout=20):
+              req=urllib.request.Request(url,headers={"User-Agent":"ELA-research/public-metadata-admission"})
+              with urllib.request.urlopen(req,timeout=timeout) as r:
+                  data=r.read(cap+1)
+              if len(data)>cap: raise ValueError("response exceeds cap")
+              return data
+          def seal(data):
+              return {"bytes":len(data),"sha256":hashlib.sha256(data).hexdigest()}
+          fields="run_accession,experiment_accession,sample_accession,library_layout,instrument_platform,fastq_bytes,fastq_md5,fastq_ftp,library_name"
+          try:
+              endpoint="https://www.ebi.ac.uk/ena/portal/api/filereport?"
+              query=urllib.parse.urlencode({"accession":"PRJDB19918","result":"read_run","fields":fields,"format":"tsv","limit":"100"})
+              raw=fetch(endpoint+query,1024*1024)
+              rows=[r for r in csv.DictReader(io.StringIO(raw.decode()),delimiter="\t") if r["run_accession"] in RUNS]
+              print("INPUT_RECEIPT "+json.dumps(seal(raw)))
+              if len(rows)!=9 or {r["run_accession"] for r in rows}!=RUNS: raise ValueError("fixed run roster mismatch")
+              for row in sorted(rows,key=lambda r:r["run_accession"]):
+                  if row["library_layout"]!="PAIRED" or row["instrument_platform"]!="ILLUMINA": raise ValueError("assay mismatch")
+                  sizes=row["fastq_bytes"].split(";"); md5s=row["fastq_md5"].split(";"); urls=row["fastq_ftp"].split(";")
+                  if not (len(sizes)==len(md5s)==len(urls)==2 and all(x.isdigit() and int(x)>0 for x in sizes) and all(re.fullmatch(r"[0-9a-f]{32}",x) for x in md5s) and all(x.startswith("ftp.sra.ebi.ac.uk/vol1/fastq/") for x in urls)): raise ValueError("missing mate identity")
+                  print("INPUT_ROW "+json.dumps(row))
+          except Exception as e:
+              print("INPUT_PENDING "+type(e).__name__+": "+str(e)[:160])
+          def sample(acc):
+              try:
+                  data=fetch("https://www.ebi.ac.uk/ena/browser/api/xml/"+acc,128*1024,15)
+                  root=ET.fromstring(data)
+                  attrs=[]
+                  for x in root.iter("SAMPLE_ATTRIBUTE"):
+                      key=x.findtext("TAG","")
+                      if re.search(r"replicate|differentiat|batch|culture|source name|cell line|cell type|treatment|condition",key,re.I):
+                          attrs.append({"tag":key[:120],"value":x.findtext("VALUE","")[:160]})
+                  return {"sample":acc,"status":"returned",**seal(data),"technical_attributes":attrs}
+              except Exception as e:
+                  return {"sample":acc,"status":"pending","error":type(e).__name__}
+          with concurrent.futures.ThreadPoolExecutor(max_workers=3) as ex:
+              for result in ex.map(sample,sorted(SAMPLES)):
+                  print("SAMPLE_RECEIPT "+json.dumps(result))
+          class Links(HTMLParser):
+              def __init__(self):
+                  super().__init__(); self.current=None; self.links=[]
+              def handle_starttag(self,tag,attrs):
+                  if tag=="a":
+                      self.current=[dict(attrs).get("href",""),""]
+              def handle_data(self,data):
+                  if self.current: self.current[1]+=data
+              def handle_endtag(self,tag):
+                  if tag=="a" and self.current:
+                      self.links.append(self.current);self.current=None
+          primary="https://www.nature.com/articles/s42003-025-08463-4"
+          try:
+              html=fetch(primary,2*1024*1024,25)
+              p=Links();p.feed(html.decode("utf-8",errors="replace"))
+              print("PUBLISHER_RECEIPT "+json.dumps(seal(html)))
+              for href,label in p.links:
+                  if re.search(r"Supplementary Data\s*1\b|Reporting Summary",label,re.I):
+                      resolved=urllib.parse.urljoin(primary,href)
+                      if urllib.parse.urlparse(resolved).hostname in {"www.nature.com","static-content.springer-cdn.net","media.springernature.com","link.springer.com"}:
+                          print("PUBLISHER_LINK "+json.dumps({"label":label.strip()[:100],"url":resolved}))
+          except Exception as e:
+              print("PUBLISHER_PENDING "+type(e).__name__+": "+str(e)[:160])
+          PY
