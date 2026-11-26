@@ -6,6 +6,11 @@ Public-source study of TDP-43 loss, STMN2 and UNC13A. Read [AGENTS](../AGENTS.md
 
 [Critical evidence review](../reports/integrated-evidence-audit-20261126/REPORT.md) preserves technical reproduction, insufficient support, discrepancies and failed predictions. The local GSE304550 UNC13A direction differs from the original Fig. 5F account under non-equivalent measures; PFKP agrees qualitatively. No inferred mechanism, new analysis, execution or independent biological validation.
 
+
+## 2025 SALS motor-neuron cohort: UNC13A supplement — 26 November 2026
+
+Supplementary Table 7 reports a significant SALS/control LeafCutter cluster annotated to UNC13A (adjusted (P=0.0156)); its table does not provide member-junction coordinates. UNC13A is not listed in Table 8's specified overlap with TDP-43-knockdown-responsive genes. The article says the cohort's UNC13A site differs from previously reported sites. This is a published cluster-level association, not an exact match to the canonical cryptic exon or a project reproduction. Revisit only if event-level junction data and verified biological units become available. [Supplement audit](../reports/unc13a-sals-motor-neuron-supplement-20261126/REPORT.md).
+
 ## Independent-host STMN2 pilot closed — 26 November 2026
 
 One locked control library (GSM8009878) reproduced all 7 numerical fields exactly on a disposable Hetzner host; both jobs succeeded, ZIP hash verified and both cleanup checks confirmed no matching resources remain. Workflow 1 h 40 min 43 s. This establishes technical transferability for one library, not all six or biological replication. [Pilot closure](../reports/stmn2-hetzner-pilot-20261126/REPORT.md). No further execution scheduled.
