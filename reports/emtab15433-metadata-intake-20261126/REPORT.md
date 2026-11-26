@@ -13,3 +13,20 @@ The bounded [metadata job](https://github.com/luisceb1/ela-research/actions/runs
 | Compatible per-library splice-junction evidence | Not verified |
 
 **Decision: pending, not admitted.** The smallest useful next input is the public SDRF and accompanying design/assay documentation, or an identifiable compatible per-library junction table. [SDRF file link](https://www.ebi.ac.uk/biostudies/files/E-MTAB-15433/E-MTAB-15433.sdrf.txt). No raw data, new analysis, Hetzner resources, contact or additional cost. This source is promising only at the catalogue stage; its availability does not repair the Tanaka coverage gap or imply independent replication.
+
+## User-supplied public SDRF — 26 November 2026
+
+The user supplied the listed SDRF in a ZIP (22,072 bytes; SHA-256 `9aaf50651992a0bb9a395bb49ccdcf61313ae039478bae6ea658240a9dda1270`). Archive integrity passed; the single SDRF member is exactly 21,932 bytes, consistent with the official catalogue, SHA-256 `42d89abbb3ad6dc4de0ba5eb4623ce7a598c0eb93911a8c85e581ee0873a5fde`. The [parsed audit](sdrf_audit.json) preserves the technical sample mapping without raw sequence data or personal identifiers. The original user-supplied archive remains privately retained.
+
+All 32 rows have 39 columns. They resolve to 16 unique source, extract and assay names, 16 distinct ENA runs/experiments and 16 BioSamples; each source has two distinct mate URIs and one consistent run, condition and derived gene file. All 16 derived filenames reconcile with the official catalogue. The manifest identifies paired-end, second-strand libraries in WTC-11 lower motor neurons, with eight control and eight TDP-43 KD libraries. The declared culture condition is shared.
+
+| Label group | Condition | Libraries |
+|---|---|---:|
+| A | control | 4 |
+| B | control | 4 |
+| C | TDP-43 KD | 4 |
+| D | TDP-43 KD | 4 |
+
+There is no explicit culture/differentiation/batch or replicate field. These condition-exclusive letter codes cannot establish experimental independence, pairing or batch equivalence. If they correspond to independent preparations or condition-confounded batches, those possibilities entail different interpretations; neither is inferred from names. A BioSample or file is not automatically a biological replicate.
+
+**Decision:** technical manifest recovered and reconciled; scientific admission still pending. No per-library junction counts identified, no raw acquisition or inference authorized. The remaining concrete questions are the meaning of A/B/C/D, the biological preparation map, and availability of per-library splice-junction counts with reference/count convention. The user reports effective AD Workbench and Target ALS access remains unavailable. No data transfers, communications or additional expense.
