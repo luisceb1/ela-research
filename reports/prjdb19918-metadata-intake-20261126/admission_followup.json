@@ -1,0 +1,120 @@
+{
+  "schema": "prjdb19918-admission-followup-v1",
+  "input_manifest": "input_manifest.json",
+  "input_manifest_verified": {
+    "paired_libraries": 9,
+    "mates": 18,
+    "bytes": 51762852725,
+    "all_md5_and_public_paths_present": true,
+    "raw_bytes_acquired": 0
+  },
+  "design": {
+    "sample_receipts": [
+      {
+        "sample": "SAMD00858913",
+        "status": "returned",
+        "technical_attributes": [],
+        "bytes": 3657,
+        "sha256": "2880f054bca3b02afa68f5d067367986aec088f5051f1f723576083cc1692b99"
+      },
+      {
+        "sample": "SAMD00858914",
+        "status": "returned",
+        "technical_attributes": [],
+        "bytes": 3657,
+        "sha256": "3999fe246dffa3935174408cbd0e6940c27df1b9946205228c09433a6bdc2893"
+      },
+      {
+        "sample": "SAMD00858915",
+        "status": "returned",
+        "technical_attributes": [],
+        "bytes": 3657,
+        "sha256": "1b86394d4b23468816c9a8a71151112045b2648c0e1b1b6d45424731e1f78438"
+      },
+      {
+        "sample": "SAMD00858916",
+        "status": "returned",
+        "technical_attributes": [],
+        "bytes": 3657,
+        "sha256": "c27e4248ec4b1e8d00094811de394778f3192c14090ad4826740e8f0fcae8d8a"
+      },
+      {
+        "sample": "SAMD00858917",
+        "status": "returned",
+        "technical_attributes": [],
+        "bytes": 3654,
+        "sha256": "623886d150bf7a3c5ed156596cdc517317daa1e2dcd4c0b8d702c33532320da2"
+      },
+      {
+        "sample": "SAMD00858918",
+        "status": "returned",
+        "technical_attributes": [],
+        "bytes": 3654,
+        "sha256": "c863f0f774125ddd3a76d4bfbaad4664ee2fee8e20698b99839c415f339e23a4"
+      },
+      {
+        "sample": "SAMD00858919",
+        "status": "returned",
+        "technical_attributes": [],
+        "bytes": 3654,
+        "sha256": "78e212d2817e11b622fef2ab137f1c2d55b45614a6923318bb3b9dd7ab60c18c"
+      },
+      {
+        "sample": "SAMD00858920",
+        "status": "returned",
+        "technical_attributes": [],
+        "bytes": 3654,
+        "sha256": "cd7230f96729af6d9d90be09ae50d8ec95279d1620a5c58c1a28ab7e5d48052d"
+      },
+      {
+        "sample": "SAMD00858921",
+        "status": "returned",
+        "technical_attributes": [],
+        "bytes": 3654,
+        "sha256": "5a05fac72eacf465e30f8a931e45f32f81847f5faa80034e81b443565e6719ca"
+      }
+    ],
+    "repeat_receipts_match": true,
+    "independent_cultures_or_differentiations_verified": false,
+    "pairing_verified": false,
+    "bio_samples_distinct": 9,
+    "notes": "Both parsers returned no selected technical attributes; absence of a selected field is not proof that no sample information exists."
+  },
+  "publisher": {
+    "run_id": 45811037613,
+    "job_id": 139878683663,
+    "commit": "eb9d8d4242296d2523f38956a5484f8691cfb1e2",
+    "html_receipt": {
+      "bytes": 571013,
+      "sha256": "e2824edb779f9ed0324aff06bcab48d9f8618641928dc5344416d867e237cea1"
+    },
+    "spreadsheet_result": [
+      "no unique linked spreadsheet"
+    ],
+    "reporting_summary_result": [
+      "no unique linked reporting summary"
+    ],
+    "schema_verified": false,
+    "notes": "Publisher HTML retrieved, but no unique downloadable linked spreadsheet or reporting summary resolved; not evidence of unavailable source."
+  },
+  "decision": "pending for scientific replication; no paid execution approved under the conditional gate",
+  "provisional_pilot": {
+    "selection_rule": "smallest ENA advertised compressed input per condition, before inspecting target counts",
+    "libraries": [
+      {
+        "label": "SCR2",
+        "run": "DRR631712",
+        "bytes": 5482638623
+      },
+      {
+        "label": "KD1",
+        "run": "DRR631715",
+        "bytes": 4867330852
+      }
+    ],
+    "total_compressed_bytes": 10349969475,
+    "estimated_server_cost_eur_if_two_three_hour_leases_at_historical_rate": 1.611,
+    "not_invoice": true,
+    "authorization": "requires explicit scope approval for technical-only coverage pilot if scientific admission remains unresolved"
+  }
+}
