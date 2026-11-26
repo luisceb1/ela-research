@@ -6,6 +6,10 @@ Only actionable or explicitly conditional work belongs here. [STATE](STATE.md) g
 
 The [four-arm factorial reanalysis](../reports/gse304550-factorial-20261126/REPORT.md) is complete at the user-reported count level. Host archive audit reconciles all counts and logs. The bounded current-host provenance audit is closed: 15 recovered logs agree with the archive, 8/8 index shards and the aligner agree with the sealed reference, and five retained SRA files have current SHA-256 fingerprints. Original FASTQ byte identities and executed counter/downloader remain unresolved; revisit only if concrete originals become available, without further routine local scanning. Resolve the M85/M86 differentiation map and publication denominator. Independent validation remains conditional on a separate eligible dataset with verified units and compatible data. No additional transfer or cloud execution is scheduled by this result.
 
+## PRJDB19918 closure — 26 November 2026
+
+[Technical pilot](../reports/prjdb19918-metadata-intake-20261126/PILOT_CLOSURE.md) completed with positive canonical controls and insufficient cryptic support. Keep the remaining seven libraries unselected for execution; revisit only on concrete independent-unit or compatible source evidence and a separate decision. No repeat, further cloud spend or new analysis scheduled.
+
 ## Completed technical contribution
 
 - Independent-host STMN2 fixed pilot closed: 7/7 numerical fields match for one control library; evidence and resource cleanup verified. [Pilot closure](../reports/stmn2-hetzner-pilot-20261126/REPORT.md). No additional cloud library or repeat is scheduled; further paid execution requires a separate decision. The local six-library coverage and scientific data gates remain distinct.

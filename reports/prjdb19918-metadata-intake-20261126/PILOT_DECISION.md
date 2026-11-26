@@ -26,3 +26,7 @@ No Hetzner execution has been dispatched. The existing validated disposable life
 ## Operator authorization and execution implementation — 26 November 2026
 
 Luis expressly approved the technical-only alternative after being told the biological-unit gate remains pending. The pilot is limited to the two prespecified libraries, not the remaining seven. The new workflow uses the already-tested disposable lifecycle and exact existing UNC13A counter, validates the sealed manifest, mate MD5/length and observed SHA-256, index and software identity. It requires the combined EUR gross server + IPv4 hourly rate to be no more than EUR 0.32 (six nominal lease hours no more than EUR 1.92; not a hard provider cap). Each library has its own three-hour expiry and 138-minute remote timeout, with separate independent deletion verification. The second runs only if the first and its cleanup succeed. Zero canonical support stops automatic continuation; cryptic support is descriptive only. No retry, biological effect, or automatic extension. The single launch marker is activated only by addition on main; PR checks cannot provision a server. The run and actual cost/evidence will be reported separately.
+
+## Completion — 26 November 2026
+
+[Closure](PILOT_CLOSURE.md): both fixed libraries completed; independent cleanup verified; cryptic support below the predefined diagnostic. No automatic extension, retry or biological inference.

@@ -1,0 +1,311 @@
+{
+  "schema": "prjdb19918-technical-pilot-closure-v1",
+  "run": 45812661932,
+  "commit": "8afb8b4627e86868ef58db7f1690676db7ce0566",
+  "workflow": {
+    "started": "2026-11-26T11:40:14Z",
+    "completed": "2026-11-26T14:15:11Z",
+    "elapsed_seconds": 9297,
+    "conclusion": "success"
+  },
+  "cleanup": {
+    "control": "2026-11-26T13:04:13.5859098Z",
+    "final": "2026-11-26T14:15:08.8398211Z",
+    "scope": "matching pilot resources only"
+  },
+  "artifact_digests": {
+    "15118864732": "ee2928998437912291e515a86a500f7c6cbf654bfee825a8c938261b5a13765d",
+    "15127440808": "da9e4afeaba02e987deb2a49fae5d26211a34ddc78a86e8b9174402612e4c4a1"
+  },
+  "results": [
+    {
+      "file": "prjdb19918-15118864732.zip",
+      "result": {
+        "counts": {
+          "canonical": 79,
+          "cryptic_left": 0,
+          "cryptic_right": 0
+        },
+        "qc": {
+          "sam_records": 105763652,
+          "alignment_groups": 49746599,
+          "eligible_groups": 46611372,
+          "marked_duplicate_records": 0,
+          "rejected_groups": 3135227
+        },
+        "unit": "contiguous paired query group/event/library; anchor 15",
+        "positive_control_measured": true,
+        "support_at_least_20_groups": {
+          "cryptic_left": false,
+          "cryptic_right": false
+        },
+        "interpretation": "Below-diagnostic support is insufficient, not a biological zero. No effect or ratio.",
+        "run": "DRR631712",
+        "sample": "SAMD00858914",
+        "condition": "scramble",
+        "gene": "UNC13A",
+        "complete": true,
+        "scope": "technical coverability only; not biological replication"
+      },
+      "timing": {
+        "total_seconds": 4930.186843465
+      },
+      "price": {
+        "currency": "EUR",
+        "server_rate_gross": "0.2684990000000000",
+        "ipv4_rate_gross": "0.0009680000000000",
+        "combined_rate_gross": "0.2694670000000000",
+        "nominal_six_hours_eur": "1.6168020000000000",
+        "not_hard_billing_cap": true
+      },
+      "receipts": [
+        {
+          "mate": 1,
+          "bytes": 2718269282,
+          "md5": "6226f880a304a022551d8fac94bbafa5",
+          "sha256": "774280a2ec71e842b36b7e47ca956150a887e121e4f831e6a9267cbc42103ad2"
+        },
+        {
+          "mate": 2,
+          "bytes": 2764369341,
+          "md5": "90cbe78b8dc444bff225512c40aea9a1",
+          "sha256": "488bce141d857b887b33e41710dd9fab44b64a858f5a8d3eae05c0e4e49e9941"
+        }
+      ],
+      "plan": {
+        "run": "DRR631712",
+        "sample": "SAMD00858914",
+        "commit": "8afb8b4627e86868ef58db7f1690676db7ce0566",
+        "manifest_sha256": "668591eb1e0127d742f2bc748cffb29558b97c8161766674cce8af75d6d0a0a3",
+        "reference_sha256": "e35f6e05016b30eab89f8d3aacc2d4ec101840e24e2b6f07159e6c5235d0bc3a",
+        "counter_sha256": "0fc6a7a69a5758c7980d22eddcafb78bb8d16596529f83975aca83b437c6a2cf"
+      },
+      "tools": {
+        "fastp": {
+          "sha256": "5997fd44730065673fbd383f6910f1e712e8db9a930d81d7ea1ea3c5bde84272",
+          "historical_build_match": true
+        },
+        "aligner": {
+          "sha256": "796e8702449527d1ba26c7b1e359b4a334eaa469efd819c3b710d9944e49bb43",
+          "historical_build_match": false
+        }
+      },
+      "members": [
+        {
+          "name": "build.log",
+          "sha256": "a2625ed7fc4eb83ba664e8e468538c499a8c7887725225736ba9e3ba83c98b6a",
+          "bytes": 49877
+        },
+        {
+          "name": "fastp.json",
+          "sha256": "aececf9dcab4122289d511bbd0781088dbf69ec52752b0931974175d3296e2f0",
+          "bytes": 119911
+        },
+        {
+          "name": "execution.log",
+          "sha256": "3a3c08aad2d2e4785675d4324b4be4a13e0179a00659de1210c7da2512b6436a",
+          "bytes": 19209
+        },
+        {
+          "name": "fastp.log",
+          "sha256": "fa98e35a3257c90c1f1eb3512bf5a6a97d3c677d7ae7222982bc222015f1dfea",
+          "bytes": 1538
+        },
+        {
+          "name": "hisat2-summary.txt",
+          "sha256": "8b419b5208c76af42017b7049cededf541cee2dc2f5a7e1229d7ba514898a5fe",
+          "bytes": 257
+        },
+        {
+          "name": "hisat2.log",
+          "sha256": "8b419b5208c76af42017b7049cededf541cee2dc2f5a7e1229d7ba514898a5fe",
+          "bytes": 257
+        },
+        {
+          "name": "input-receipts.json",
+          "sha256": "7243590560c1a75f9554cfc288d00aa62b861066ef39badfe0833300c8e7dac2",
+          "bytes": 701
+        },
+        {
+          "name": "plan.json",
+          "sha256": "48e400cc945edf067c2648330494d05836fe5a37fdf4a36fdfc6ca498fe30bad",
+          "bytes": 3556
+        },
+        {
+          "name": "price.json",
+          "sha256": "b43bf02e93ce8a3ad58672496df943eb59d35f42fe163417c9b6a399a5713c4e",
+          "bytes": 240
+        },
+        {
+          "name": "result.json",
+          "sha256": "106438c853ae0b2688ee0b401505ef7415d71495dde72a1c93f7d14b7b606a59",
+          "bytes": 760
+        },
+        {
+          "name": "timing.json",
+          "sha256": "c410a373afe7a385a2de0f6cdaa86c1cba1fe1972a7b20764a5c43d3636fb44d",
+          "bytes": 38
+        },
+        {
+          "name": "tools.json",
+          "sha256": "bbce95d0e3c1caa4b8f06ad7825ecf606cf0b44412b9545df70e7adfa3f68fed",
+          "bytes": 848
+        }
+      ]
+    },
+    {
+      "file": "prjdb19918-15127440808.zip",
+      "result": {
+        "counts": {
+          "canonical": 56,
+          "cryptic_left": 2,
+          "cryptic_right": 0
+        },
+        "qc": {
+          "sam_records": 94041900,
+          "alignment_groups": 44355379,
+          "eligible_groups": 41689808,
+          "marked_duplicate_records": 0,
+          "rejected_groups": 2665571
+        },
+        "unit": "contiguous paired query group/event/library; anchor 15",
+        "positive_control_measured": true,
+        "support_at_least_20_groups": {
+          "cryptic_left": false,
+          "cryptic_right": false
+        },
+        "interpretation": "Below-diagnostic support is insufficient, not a biological zero. No effect or ratio.",
+        "run": "DRR631715",
+        "sample": "SAMD00858917",
+        "condition": "tdp43_kd",
+        "gene": "UNC13A",
+        "complete": true,
+        "scope": "technical coverability only; not biological replication"
+      },
+      "timing": {
+        "total_seconds": 4161.207505046999
+      },
+      "price": {
+        "currency": "EUR",
+        "server_rate_gross": "0.2684990000000000",
+        "ipv4_rate_gross": "0.0009680000000000",
+        "combined_rate_gross": "0.2694670000000000",
+        "nominal_six_hours_eur": "1.6168020000000000",
+        "not_hard_billing_cap": true
+      },
+      "receipts": [
+        {
+          "mate": 1,
+          "bytes": 2408511326,
+          "md5": "a8b1c8cd9e9a103d5e5cdf3d87e7ee62",
+          "sha256": "1d3e1baa54acf5bf61cb88be24e798a42d9c90d95528d38a97f4f2edc91662fa"
+        },
+        {
+          "mate": 2,
+          "bytes": 2458819526,
+          "md5": "6b5669707600962d5a75f74df5f1f24d",
+          "sha256": "5d1c7405430f73121ec4d8fe90aa86bfa209ef30c17d601690c3659fdfbad04c"
+        }
+      ],
+      "plan": {
+        "run": "DRR631715",
+        "sample": "SAMD00858917",
+        "commit": "8afb8b4627e86868ef58db7f1690676db7ce0566",
+        "manifest_sha256": "668591eb1e0127d742f2bc748cffb29558b97c8161766674cce8af75d6d0a0a3",
+        "reference_sha256": "e35f6e05016b30eab89f8d3aacc2d4ec101840e24e2b6f07159e6c5235d0bc3a",
+        "counter_sha256": "0fc6a7a69a5758c7980d22eddcafb78bb8d16596529f83975aca83b437c6a2cf"
+      },
+      "tools": {
+        "fastp": {
+          "sha256": "5997fd44730065673fbd383f6910f1e712e8db9a930d81d7ea1ea3c5bde84272",
+          "historical_build_match": true
+        },
+        "aligner": {
+          "sha256": "7e087649f10f50246bf77a7fbcfe6e0c42d84e781b8e39a584fa4d0f659a745c",
+          "historical_build_match": false
+        }
+      },
+      "members": [
+        {
+          "name": "build.log",
+          "sha256": "a2625ed7fc4eb83ba664e8e468538c499a8c7887725225736ba9e3ba83c98b6a",
+          "bytes": 49877
+        },
+        {
+          "name": "fastp.json",
+          "sha256": "1bd201cf8c4fc5b4b911bec7a6dd9d9c2029f96e1bb46e9caba56127a8c93e2d",
+          "bytes": 119368
+        },
+        {
+          "name": "execution.log",
+          "sha256": "436ef8f8be03f110e15b54c4471d46e337a5878eeede0c7fe03bf568d6700709",
+          "bytes": 19209
+        },
+        {
+          "name": "fastp.log",
+          "sha256": "b7626065f4bf0353882b2dba8181b5e28effbe7247f04b71d1aefa5f50c26aaf",
+          "bytes": 1535
+        },
+        {
+          "name": "hisat2-summary.txt",
+          "sha256": "a7f547e4b8158977e4e50b2bf245852e2729650718d3b8ee96bdc408ae184bb4",
+          "bytes": 257
+        },
+        {
+          "name": "hisat2.log",
+          "sha256": "a7f547e4b8158977e4e50b2bf245852e2729650718d3b8ee96bdc408ae184bb4",
+          "bytes": 257
+        },
+        {
+          "name": "input-receipts.json",
+          "sha256": "3cc233cf2486f0477e28cef8c42abe72c93be207a404eb24c06d1da2525b3b3b",
+          "bytes": 701
+        },
+        {
+          "name": "plan.json",
+          "sha256": "90b73e9cda8ec31b5375333ccabd5e8b03b561113a4cbe93e39ecd4be4d9c544",
+          "bytes": 3556
+        },
+        {
+          "name": "price.json",
+          "sha256": "b43bf02e93ce8a3ad58672496df943eb59d35f42fe163417c9b6a399a5713c4e",
+          "bytes": 240
+        },
+        {
+          "name": "result.json",
+          "sha256": "117d5854af2f7cbd40c4cddaaf5743daf8f19b52989e58f30cb74c1da966b487",
+          "bytes": 759
+        },
+        {
+          "name": "timing.json",
+          "sha256": "49658d3395373d3343910d12566150d2089ab71b50158377af9993e6a11fd1f9",
+          "bytes": 41
+        },
+        {
+          "name": "tools.json",
+          "sha256": "b2aa338b26f6a8f10e1183f52b04998916067144606eff950115dc1149f73e77",
+          "bytes": 848
+        }
+      ]
+    }
+  ],
+  "verification": [
+    {
+      "run": "DRR631712",
+      "matched": true,
+      "qc": true
+    },
+    {
+      "run": "DRR631715",
+      "matched": true,
+      "qc": true
+    }
+  ],
+  "estimate": {
+    "combined_hourly_eur": 0.269467,
+    "prorated_workflow_eur": 0.6958985275,
+    "rounded_two_hours_each_eur": 1.077868,
+    "invoice_verified": false
+  },
+  "decision": "Technical success; cryptic coverage below prespecified diagnostic in both libraries; no biological inference or automatic extension."
+}
