@@ -1,5 +1,9 @@
 # Registro maestro de evidencia — actualizado 01/11/2026
 
+## Independent-host technical contribution — 26 November 2026
+
+The fixed STMN2 single-library cloud pilot is closed with 7/7 numerical fields matching the pre-existing reference and verified cleanup. [Pilot closure](../reports/stmn2-hetzner-pilot-20261126/REPORT.md). This is technical portability for one already measured library, not biological replication or a change to UNC13A/PFKP evidence. STATE and BACKLOG govern next decisions.
+
 ## Incorporación issue #37 — 03/11/2026
 
 PR #36 fusionada en 9076802. Selección posterior prefijada de tres familias (Seddighi/Irwin/Baughn): ninguna aceptada para el contraste directo UNC13A con unidades verificables. `reports/source-gate-issue37-20261103/REPORT.md`, tabla y fuentes; búsqueda cerrada. Puerta pendiente única: manifiesto concreto Seddighi/ADWB, sin contactos o descarga automática.

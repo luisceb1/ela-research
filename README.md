@@ -6,7 +6,7 @@ Independent, AI-assisted research on the transcriptomic consequences of nuclear 
 
 ## Start with the current evidence
 
-Current status: **18 November 2026**, including the audit of a completed local six-library STMN2 FASTQ replay. Read [STATE](research/STATE.md) for the concise evidence and limits. Older reports preserve the work and its errors; later corrections take precedence. This is not a certification of the entire historical archive.
+Current status: **26 November 2026**, including the completed local six-library STMN2 FASTQ replay audit and the fixed independent-host pilot for one library. Read [STATE](research/STATE.md) for the concise evidence and limits. Older reports preserve the work and its errors; later corrections take precedence. This is not a certification of the entire historical archive.
 
 | Question | Supported result | Main limitation |
 |---|---|---|
@@ -21,7 +21,7 @@ Read [Current findings](docs/CURRENT_FINDINGS.md) for the qualifications, source
 
 ## Minimal STMN2 replay
 
-The [six-library reproduction guide](reproduction/stmn2-six-libraries/README.md) provides exact local FASTQ/index identities, a path-map template, an offline count/QC comparator and a supervised replay entry point for native Linux or verified C:-backed WSL2. It does not require historical host paths or failed-run directories. **Local FASTQ replay completed with exact agreement in 12 event counts and 30 QC fields**, according to the [audited supplied host records](reports/stmn2-real-replay-20261118/REPORT.md). The fresh worktree/environment reused the same PC and original inputs; reproduction on another host remains untested. Checking archived JSON alone is not raw-data reproduction.
+The [six-library reproduction guide](reproduction/stmn2-six-libraries/README.md) provides exact local FASTQ/index identities, a path-map template, an offline count/QC comparator and a supervised replay entry point for native Linux or verified C:-backed WSL2. It does not require historical host paths or failed-run directories. **Local FASTQ replay completed with exact agreement in 12 event counts and 30 QC fields**, according to the [audited supplied host records](reports/stmn2-real-replay-20261118/REPORT.md). The fresh worktree/environment reused the same PC and original inputs. A subsequent [independent-host technical pilot](reports/stmn2-hetzner-pilot-20261126/REPORT.md) reproduced all seven fixed fields for one control library on Hetzner, with verified cleanup. Portability of the other five libraries and independent biological replication remain untested. Checking archived JSON alone is not raw-data reproduction.
 
 ## Reproduce the software checks
 

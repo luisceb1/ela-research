@@ -1,0 +1,178 @@
+{
+  "schema": "stmn2-independent-host-pilot-closure-v1",
+  "date": "2026-11-26",
+  "run": {
+    "id": 45786109911,
+    "attempt": 1,
+    "commit": "9be7390f824abc5da97d303eca87f6d9f94cc019",
+    "url": "https://github.com/luisceb1/ela-research/actions/runs/45786109911",
+    "conclusion": "success",
+    "started_at": "2026-11-26T08:47:12Z",
+    "updated_at": "2026-11-26T10:27:55Z",
+    "elapsed_seconds": 6043,
+    "jobs": [
+      {
+        "name": "pilot",
+        "id": 139793160539,
+        "conclusion": "success",
+        "cleanup_confirmation_utc": "2026-11-26T10:27:33.7353377Z"
+      },
+      {
+        "name": "verify-cleanup",
+        "id": 139845694073,
+        "conclusion": "success",
+        "cleanup_confirmation_utc": "2026-11-26T10:27:52.6333808Z"
+      }
+    ]
+  },
+  "artifact": {
+    "id": 15105979984,
+    "url": "https://github.com/luisceb1/ela-research/actions/runs/45786109911/artifacts/15105979984",
+    "bytes": 52618,
+    "sha256": "2db0740d4e3af3bcfa42e3c101b4afe66e8f15fbc6d44d2000811b99f5ba1bd1",
+    "zip_integrity_verified": true,
+    "github_digest_match": true,
+    "expires_at": "2026-12-03T10:27:33Z",
+    "members": [
+      {
+        "name": "build.log",
+        "bytes": 49877,
+        "sha256": "a2625ed7fc4eb83ba664e8e468538c499a8c7887725225736ba9e3ba83c98b6a"
+      },
+      {
+        "name": "execution.log",
+        "bytes": 19236,
+        "sha256": "0adbe4f4e85b41df0321fb5415cab712a2e7e87e7568641e50ad01dc7a77b177"
+      },
+      {
+        "name": "fastp.json",
+        "bytes": 112075,
+        "sha256": "74988c977c9c0ad149e176c7d007f6aac91358e7716adfaca1dca92d658122ca"
+      },
+      {
+        "name": "comparison.json",
+        "bytes": 1651,
+        "sha256": "7d6de22e29cecd7ecca9cf8a5ef350465b83335af403c0a1134fa747d6b5090a"
+      },
+      {
+        "name": "fastp.log",
+        "bytes": 1510,
+        "sha256": "974e7d23750a94934dea2d938607e7ef63493e096036cdd81c4734baa7122484"
+      },
+      {
+        "name": "hisat2-summary.txt",
+        "bytes": 257,
+        "sha256": "f46e295de33951222f1c71bf1dc54135698a3b11ae9a9431c728a8c2e21ca414"
+      },
+      {
+        "name": "hisat2.log",
+        "bytes": 257,
+        "sha256": "f46e295de33951222f1c71bf1dc54135698a3b11ae9a9431c728a8c2e21ca414"
+      },
+      {
+        "name": "plan.json",
+        "bytes": 4123,
+        "sha256": "0ed3155f1f66abf16a93eedd7281b367f039b984ac2852343a7591015631ea06"
+      },
+      {
+        "name": "stmn2-counts.json",
+        "bytes": 601,
+        "sha256": "b15a16688cdf81c9497be127e12a7b5a9aa76911c988c666889a133b510f95ed"
+      },
+      {
+        "name": "tools.json",
+        "bytes": 848,
+        "sha256": "f5f654ed99210f274ef50799a6cd044031b938f4852d13d5df5bbf4728af251d"
+      }
+    ]
+  },
+  "verification": {
+    "locked_manifest_expected_matches": true,
+    "observed_matches_expected": true,
+    "standalone_counts_match": true,
+    "numeric_fields_matched": 7,
+    "scope": "same existing library on different compute host; archived evidence verification only"
+  },
+  "comparison": {
+    "exact_record_match": true,
+    "gsm": "GSM8009878",
+    "expected": {
+      "counts": {
+        "canonical": 1945,
+        "cryptic": 3
+      },
+      "qc": {
+        "sam_records": 139759296,
+        "alignment_groups": 65478552,
+        "eligible_groups": 61077456,
+        "marked_duplicate_records": 0,
+        "rejected_groups": 4401096
+      },
+      "unit": "contiguous paired query group/event/library; anchor 15",
+      "positive_control_measured": true,
+      "support_at_least_20_groups": {
+        "cryptic": false
+      },
+      "interpretation": "Below-diagnostic support is insufficient, not a biological zero. No effect or ratio.",
+      "gsm": "GSM8009878",
+      "project": "SRP482832",
+      "gene": "STMN2",
+      "complete": true
+    },
+    "observed": {
+      "counts": {
+        "canonical": 1945,
+        "cryptic": 3
+      },
+      "qc": {
+        "sam_records": 139759296,
+        "alignment_groups": 65478552,
+        "eligible_groups": 61077456,
+        "marked_duplicate_records": 0,
+        "rejected_groups": 4401096
+      },
+      "unit": "contiguous paired query group/event/library; anchor 15",
+      "positive_control_measured": true,
+      "support_at_least_20_groups": {
+        "cryptic": false
+      },
+      "interpretation": "Below-diagnostic support is insufficient, not a biological zero. No effect or ratio.",
+      "gsm": "GSM8009878",
+      "project": "SRP482832",
+      "gene": "STMN2",
+      "complete": true
+    },
+    "replay_seconds": 3535.8409456340005,
+    "total_seconds": 5875.694863636,
+    "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+    "pysam_version": "0.23.3",
+    "interpretation": "Technical replay of existing human RNA-seq; no independent biological replication."
+  },
+  "tools": {
+    "fastp": {
+      "sha256": "5997fd44730065673fbd383f6910f1e712e8db9a930d81d7ea1ea3c5bde84272",
+      "historical_build_match": true
+    },
+    "aligner": {
+      "sha256": "2e7a043d927b96b8166fffda67c184af5c1d040b4ce14370cfbdb3944e0d4fbb",
+      "historical_build_match": false
+    }
+  },
+  "cost": {
+    "gross_server_eur_per_hour": 0.268499,
+    "estimated_prorated_server_eur": 0.45,
+    "estimated_two_hours_server_eur": 0.54,
+    "ipv4_excluded": true,
+    "invoice_verified": false
+  },
+  "cleanup": {
+    "log_statement": "Cleanup verified: no matching pilot resources remain.",
+    "independent_job_confirmed": true,
+    "scope": "matching pilot resources only"
+  },
+  "limitations": [
+    "No independent biological replication",
+    "No new analysis or additional execution",
+    "Raw input/index bytes not rehashed by closure auditor"
+  ]
+}
