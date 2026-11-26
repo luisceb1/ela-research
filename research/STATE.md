@@ -2,6 +2,10 @@
 
 Public-source study of TDP-43 loss, STMN2 and UNC13A. Read [AGENTS](../AGENTS.md), [protocol](PROTOCOL.md), [evidence brief](../docs/EVIDENCE_BRIEF_2026-11-15.md). This page supersedes historical instructions and adds no analysis. Full previous versions: [history](history/README.md).
 
+## Integrated documentary audit — 26 November 2026
+
+[Critical evidence review](../reports/integrated-evidence-audit-20261126/REPORT.md) preserves technical reproduction, insufficient support, discrepancies and failed predictions. The local GSE304550 UNC13A direction differs from the original Fig. 5F account under non-equivalent measures; PFKP agrees qualitatively. No inferred mechanism, new analysis, execution or independent biological validation.
+
 ## Independent-host STMN2 pilot closed — 26 November 2026
 
 One locked control library (GSM8009878) reproduced all 7 numerical fields exactly on a disposable Hetzner host; both jobs succeeded, ZIP hash verified and both cleanup checks confirmed no matching resources remain. Workflow 1 h 40 min 43 s. This establishes technical transferability for one library, not all six or biological replication. [Pilot closure](../reports/stmn2-hetzner-pilot-20261126/REPORT.md). No further execution scheduled.
