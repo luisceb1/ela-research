@@ -2,6 +2,29 @@
   "version": 1,
   "entries": [
     {
+      "id": "integrated-evidence-audit-20261126",
+      "date": "2026-11-26",
+      "status": "partial",
+      "title": {
+        "es": "Auditoría crítica: STMN2, UNC13A y PFKP",
+        "en": "Critical evidence audit: STMN2, UNC13A and PFKP"
+      },
+      "question": {
+        "es": "¿Qué resultados se reproducen y cuáles requieren cautela al compararlos con la literatura científica?",
+        "en": "Which results reproduce, and which require caution when compared with the scientific literature?"
+      },
+      "result": {
+        "es": "STMN2 mostró repetición descriptiva en seis bibliotecas y coincidencia técnica en otro servidor para una de ellas. Los pilotos de UNC13A tuvieron soporte local insuficiente. En GSE304550, PFKP concuerda cualitativamente con el artículo y UNC13A presenta una discrepancia entre medidas no equivalentes. El reanálisis de Keuss recupera la dirección, pero no la banda de significación publicada.",
+        "en": "STMN2 showed descriptive repetition in six libraries and technical agreement on a different host for one library. UNC13A pilots had insufficient local support. In GSE304550, PFKP agrees qualitatively with the paper, whereas UNC13A shows a discrepancy between non-equivalent measures. The Keuss replay recovers the direction but not the published significance band."
+      },
+      "limitations": {
+        "es": "Auditoría documental dirigida, no revisión sistemática ni por pares. Reutiliza los datos originales; las unidades biológicas y algunas fuentes metodológicas siguen sin verificar. No demuestra un mecanismo nuevo, rescate neuronal completo ni eficacia clínica.",
+        "en": "Targeted documentary audit, not a systematic or peer review. Original datasets are reused; biological units and some methodological sources remain unverified. No new mechanism, complete neuronal rescue or clinical efficacy is demonstrated."
+      },
+      "report": "reports/integrated-evidence-audit-20261126/REPORT.md",
+      "source": "https://doi.org/10.1016/j.neuron.2025.11.001"
+    },
+    {
       "id": "stmn2-six-library-replay",
       "date": "2026-11-18",
       "status": "reproduced",
