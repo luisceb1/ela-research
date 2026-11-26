@@ -1,0 +1,114 @@
+name: PRJDB19918 publisher and biosample verification
+on:
+  pull_request:
+    types: [synchronize]
+    paths:
+      - '.github/workflows/prjdb19918-publisher.yml'
+permissions:
+  contents: read
+jobs:
+  publisher:
+    runs-on: ubuntu-latest
+    timeout-minutes: 4
+    steps:
+      - name: Inspect exact publisher links, schema, and technical sample attributes
+        run: |
+          python3 - <<'PY'
+          import concurrent.futures, csv, hashlib, io, json, re, urllib.request, urllib.parse, zipfile, subprocess, tempfile, shutil
+          import xml.etree.ElementTree as ET
+          from html.parser import HTMLParser
+          def fetch(url,cap,timeout=20):
+              req=urllib.request.Request(url,headers={"User-Agent":"ELA-research/public-source-gate"})
+              with urllib.request.urlopen(req,timeout=timeout) as r: d=r.read(cap+1)
+              if len(d)>cap: raise ValueError("response cap")
+              return d
+          def seal(d): return {"bytes":len(d),"sha256":hashlib.sha256(d).hexdigest()}
+          def local(tag): return tag.rsplit("}",1)[-1].lower()
+          def sample(acc):
+              try:
+                  d=fetch("https://www.ebi.ac.uk/ena/browser/api/xml/"+acc,128*1024,12)
+                  root=ET.fromstring(d); result=[]
+                  for node in root.iter():
+                      key=node.get("attribute_name") or node.get("name") or ""
+                      value=node.text or ""
+                      if local(node.tag)=="sample_attribute":
+                          key=next((x.text or "" for x in node if local(x.tag)=="tag"),"")
+                          value=next((x.text or "" for x in node if local(x.tag)=="value"),"")
+                      if re.search(r"replicate|differentiat|batch|culture|source name|cell line|cell type|treatment|condition",key,re.I):
+                          result.append({"tag":key[:100],"value":value[:160]})
+                  return {"sample":acc,"status":"returned","technical_attributes":result,**seal(d)}
+              except Exception as e: return {"sample":acc,"status":"pending","error":type(e).__name__}
+          with concurrent.futures.ThreadPoolExecutor(max_workers=3) as pool:
+              for x in pool.map(sample,[f"SAMD008589{i}" for i in range(13,22)]):
+                  print("UNIT_RECEIPT "+json.dumps(x))
+          class P(HTMLParser):
+              def __init__(self):
+                  super().__init__(); self.heading=None;self.last_heading="";self.anchor=None;self.links=[];self.body=[]
+              def handle_starttag(self,tag,attrs):
+                  if tag in ("h2","h3","h4"): self.heading=""
+                  if tag=="a": self.anchor=[dict(attrs).get("href",""),"",self.last_heading]
+              def handle_data(self,d):
+                  if self.heading is not None: self.heading+=d
+                  if self.anchor: self.anchor[1]+=d
+              def handle_endtag(self,tag):
+                  if tag in ("h2","h3","h4") and self.heading is not None:
+                      self.last_heading=self.heading.strip();self.heading=None
+                  if tag=="a" and self.anchor:
+                      self.links.append(self.anchor);self.anchor=None
+          base="https://www.nature.com/articles/s42003-025-08463-4"
+          try:
+              html=fetch(base,2*1024*1024,25);p=P();p.feed(html.decode("utf-8",errors="replace"))
+              print("HTML_RECEIPT "+json.dumps(seal(html)))
+              links=[]
+              for href,label,heading in p.links:
+                  url=urllib.parse.urljoin(base,href)
+                  if "MOESM" in url and re.search(r"\.(xlsx|csv|tsv|pdf)(?:$|\?)",url,re.I) and urllib.parse.urlparse(url).hostname in {"www.nature.com","static-content.springer-cdn.net","media.springernature.com","link.springer.com"}:
+                      x={"label":label.strip()[:150],"heading":heading[:150],"url":url}
+                      links.append(x);print("FILE_LINK "+json.dumps(x))
+              def choose(pattern,extension):
+                  return list({x["url"] for x in links if re.search(pattern,x["label"]+" "+x["heading"],re.I) and re.search(extension,x["url"],re.I)})
+              chosen=choose(r"Supplementary Data\s*1\b",r"\.(xlsx|csv|tsv)(?:$|\?)")
+              if len(chosen)==1:
+                  d=fetch(chosen[0],4*1024*1024)
+                  print("DATA1_RECEIPT "+json.dumps({"url":chosen[0],**seal(d)}))
+                  if ".xlsx" in chosen[0]:
+                      ns="{http://schemas.openxmlformats.org/spreadsheetml/2006/main}"
+                      with zipfile.ZipFile(io.BytesIO(d)) as z:
+                          ss=[]
+                          if "xl/sharedStrings.xml" in z.namelist() and z.getinfo("xl/sharedStrings.xml").file_size<=2*1024*1024:
+                              root=ET.fromstring(z.read("xl/sharedStrings.xml"));ss=["".join(t.text or "" for t in x.iter(ns+"t")) for x in root.iter(ns+"si")]
+                          for name in [s for s in z.namelist() if re.fullmatch(r"xl/worksheets/sheet\d+\.xml",s)][:12]:
+                              with z.open(name) as f:
+                                  for _,row in ET.iterparse(f,events=("end",)):
+                                      if row.tag!=ns+"row":continue
+                                      cols=[]
+                                      for cell in row.findall(ns+"c"):
+                                          v=cell.findtext(ns+"v","")
+                                          if cell.get("t")=="s" and v.isdigit() and int(v)<len(ss):v=ss[int(v)]
+                                          elif cell.get("t")=="inlineStr":v="".join(x.text or "" for x in cell.iter(ns+"t"))
+                                          else:v="[non-string]"
+                                          cols.append(v[:160])
+                                      print("DATA1_HEADER "+json.dumps({"sheet":name,"columns":cols[:80]}));break
+                  else:
+                      delimiter="\t" if ".tsv" in chosen[0] else ","
+                      print("DATA1_HEADER "+json.dumps({"columns":next(csv.reader(io.StringIO(d.decode("utf-8-sig")),delimiter=delimiter))[:80]}))
+              else: print("DATA1_PENDING no unique linked spreadsheet")
+              summaries=choose(r"Reporting Summary",r"\.pdf(?:$|\?)")
+              if len(summaries)==1:
+                  d=fetch(summaries[0],4*1024*1024)
+                  print("REPORTING_RECEIPT "+json.dumps({"url":summaries[0],**seal(d)}))
+                  if shutil.which("pdftotext"):
+                      with tempfile.NamedTemporaryFile(suffix=".pdf") as f:
+                          f.write(d);f.flush()
+                          txt=subprocess.check_output(["pdftotext","-layout",f.name,"-"],timeout=15).decode(errors="replace")
+                      norm=" ".join(txt.split())
+                      # Record a small literal excerpt, not the full document.
+                      m=re.search(r"independent differentiation|independently differentiated|independent cultures|biological replicates",norm,re.I)
+                      if m:
+                          words=norm[max(0,m.start()-30):m.end()+95].split()[:23]
+                          print("REPORTING_EXCERPT "+json.dumps(" ".join(words)))
+                      else: print("REPORTING_PENDING no explicit unit phrase detected")
+                  else: print("REPORTING_PENDING PDF text tool unavailable")
+              else: print("REPORTING_PENDING no unique linked reporting summary")
+          except Exception as e: print("PUBLISHER_GATE_PENDING "+type(e).__name__+": "+str(e)[:160])
+          PY

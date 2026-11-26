@@ -1,7 +1,7 @@
 name: PRJDB19918 fixed input and design admission
 on:
   pull_request:
-    types: [synchronize]
+    types: [opened]
     paths:
       - '.github/workflows/prjdb19918-admission.yml'
 permissions:

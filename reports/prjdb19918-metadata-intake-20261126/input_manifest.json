@@ -1,0 +1,279 @@
+{
+  "schema": "prjdb19918-ena-paired-input-v1",
+  "scope": "metadata only; no raw data acquired",
+  "source_receipt": {
+    "bytes": 6363,
+    "sha256": "311be0c6f6dbed533da98ef56fa203b3b8ffc41dce926adc3a96384eda37058e"
+  },
+  "run": {
+    "id": 45810760349,
+    "job": 139877701452,
+    "commit": "012d957a96d3d41aec42bf13ba865b271b664a89"
+  },
+  "libraries": [
+    {
+      "run": "DRR631711",
+      "experiment": "DRX612037",
+      "sample": "SAMD00858913",
+      "label": "SCR1",
+      "condition": "scramble",
+      "mates": [
+        {
+          "mate": 1,
+          "bytes": 2802031979,
+          "md5": "0cdb86f06f8876599484d0f890641b30",
+          "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/DRR631/DRR631711/DRR631711_1.fastq.gz"
+        },
+        {
+          "mate": 2,
+          "bytes": 2851429225,
+          "md5": "cb13b88baf52daea134c4fe2d27d3833",
+          "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/DRR631/DRR631711/DRR631711_2.fastq.gz"
+        }
+      ]
+    },
+    {
+      "run": "DRR631712",
+      "experiment": "DRX612038",
+      "sample": "SAMD00858914",
+      "label": "SCR2",
+      "condition": "scramble",
+      "mates": [
+        {
+          "mate": 1,
+          "bytes": 2718269282,
+          "md5": "6226f880a304a022551d8fac94bbafa5",
+          "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/DRR631/DRR631712/DRR631712_1.fastq.gz"
+        },
+        {
+          "mate": 2,
+          "bytes": 2764369341,
+          "md5": "90cbe78b8dc444bff225512c40aea9a1",
+          "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/DRR631/DRR631712/DRR631712_2.fastq.gz"
+        }
+      ]
+    },
+    {
+      "run": "DRR631713",
+      "experiment": "DRX612039",
+      "sample": "SAMD00858915",
+      "label": "SCR3",
+      "condition": "scramble",
+      "mates": [
+        {
+          "mate": 1,
+          "bytes": 3372211659,
+          "md5": "7182a5a34d11d95a75d5bf791f4b0e5f",
+          "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/DRR631/DRR631713/DRR631713_1.fastq.gz"
+        },
+        {
+          "mate": 2,
+          "bytes": 3437467982,
+          "md5": "68f55950eefecdcc0a681943d7d7f3f0",
+          "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/DRR631/DRR631713/DRR631713_2.fastq.gz"
+        }
+      ]
+    },
+    {
+      "run": "DRR631714",
+      "experiment": "DRX612040",
+      "sample": "SAMD00858916",
+      "label": "SCR4",
+      "condition": "scramble",
+      "mates": [
+        {
+          "mate": 1,
+          "bytes": 3398558077,
+          "md5": "0aadbb04114cddfabbf5529a355548f7",
+          "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/DRR631/DRR631714/DRR631714_1.fastq.gz"
+        },
+        {
+          "mate": 2,
+          "bytes": 3473443461,
+          "md5": "b489a05ce0f028f0dd74fdaebc7009d9",
+          "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/DRR631/DRR631714/DRR631714_2.fastq.gz"
+        }
+      ]
+    },
+    {
+      "run": "DRR631715",
+      "experiment": "DRX612041",
+      "sample": "SAMD00858917",
+      "label": "KD1",
+      "condition": "tdp43_kd",
+      "mates": [
+        {
+          "mate": 1,
+          "bytes": 2408511326,
+          "md5": "a8b1c8cd9e9a103d5e5cdf3d87e7ee62",
+          "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/DRR631/DRR631715/DRR631715_1.fastq.gz"
+        },
+        {
+          "mate": 2,
+          "bytes": 2458819526,
+          "md5": "6b5669707600962d5a75f74df5f1f24d",
+          "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/DRR631/DRR631715/DRR631715_2.fastq.gz"
+        }
+      ]
+    },
+    {
+      "run": "DRR631716",
+      "experiment": "DRX612042",
+      "sample": "SAMD00858918",
+      "label": "KD2",
+      "condition": "tdp43_kd",
+      "mates": [
+        {
+          "mate": 1,
+          "bytes": 2944525732,
+          "md5": "51df58d159cbe71a09541633089513be",
+          "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/DRR631/DRR631716/DRR631716_1.fastq.gz"
+        },
+        {
+          "mate": 2,
+          "bytes": 3003949611,
+          "md5": "4f7dc5f68677752cc3ffe4d013a5a126",
+          "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/DRR631/DRR631716/DRR631716_2.fastq.gz"
+        }
+      ]
+    },
+    {
+      "run": "DRR631717",
+      "experiment": "DRX612043",
+      "sample": "SAMD00858919",
+      "label": "KD3",
+      "condition": "tdp43_kd",
+      "mates": [
+        {
+          "mate": 1,
+          "bytes": 2637230088,
+          "md5": "9480490012fc46bacf7ceec56bc2d52e",
+          "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/DRR631/DRR631717/DRR631717_1.fastq.gz"
+        },
+        {
+          "mate": 2,
+          "bytes": 2682233034,
+          "md5": "5367bcce73605656b5465b189299d995",
+          "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/DRR631/DRR631717/DRR631717_2.fastq.gz"
+        }
+      ]
+    },
+    {
+      "run": "DRR631718",
+      "experiment": "DRX612044",
+      "sample": "SAMD00858920",
+      "label": "KD4",
+      "condition": "tdp43_kd",
+      "mates": [
+        {
+          "mate": 1,
+          "bytes": 2537750482,
+          "md5": "9e5d810a9e0e1ae10b414b9e5b1b7e70",
+          "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/DRR631/DRR631718/DRR631718_1.fastq.gz"
+        },
+        {
+          "mate": 2,
+          "bytes": 2581443328,
+          "md5": "43dca53ca57ca9d0b045e2089f788933",
+          "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/DRR631/DRR631718/DRR631718_2.fastq.gz"
+        }
+      ]
+    },
+    {
+      "run": "DRR631719",
+      "experiment": "DRX612045",
+      "sample": "SAMD00858921",
+      "label": "KD5",
+      "condition": "tdp43_kd",
+      "mates": [
+        {
+          "mate": 1,
+          "bytes": 2818369804,
+          "md5": "cd011c3c299beca616e2f706f433e3ac",
+          "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/DRR631/DRR631719/DRR631719_1.fastq.gz"
+        },
+        {
+          "mate": 2,
+          "bytes": 2872238788,
+          "md5": "704d40c15b5d3a0c8ec13f894d3c9e2c",
+          "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/DRR631/DRR631719/DRR631719_2.fastq.gz"
+        }
+      ]
+    }
+  ],
+  "sample_receipts": [
+    {
+      "sample": "SAMD00858913",
+      "status": "returned",
+      "bytes": 3657,
+      "sha256": "2880f054bca3b02afa68f5d067367986aec088f5051f1f723576083cc1692b99",
+      "technical_attributes": []
+    },
+    {
+      "sample": "SAMD00858914",
+      "status": "returned",
+      "bytes": 3657,
+      "sha256": "3999fe246dffa3935174408cbd0e6940c27df1b9946205228c09433a6bdc2893",
+      "technical_attributes": []
+    },
+    {
+      "sample": "SAMD00858915",
+      "status": "returned",
+      "bytes": 3657,
+      "sha256": "1b86394d4b23468816c9a8a71151112045b2648c0e1b1b6d45424731e1f78438",
+      "technical_attributes": []
+    },
+    {
+      "sample": "SAMD00858916",
+      "status": "returned",
+      "bytes": 3657,
+      "sha256": "c27e4248ec4b1e8d00094811de394778f3192c14090ad4826740e8f0fcae8d8a",
+      "technical_attributes": []
+    },
+    {
+      "sample": "SAMD00858917",
+      "status": "returned",
+      "bytes": 3654,
+      "sha256": "623886d150bf7a3c5ed156596cdc517317daa1e2dcd4c0b8d702c33532320da2",
+      "technical_attributes": []
+    },
+    {
+      "sample": "SAMD00858918",
+      "status": "returned",
+      "bytes": 3654,
+      "sha256": "c863f0f774125ddd3a76d4bfbaad4664ee2fee8e20698b99839c415f339e23a4",
+      "technical_attributes": []
+    },
+    {
+      "sample": "SAMD00858919",
+      "status": "returned",
+      "bytes": 3654,
+      "sha256": "78e212d2817e11b622fef2ab137f1c2d55b45614a6923318bb3b9dd7ab60c18c",
+      "technical_attributes": []
+    },
+    {
+      "sample": "SAMD00858920",
+      "status": "returned",
+      "bytes": 3654,
+      "sha256": "cd7230f96729af6d9d90be09ae50d8ec95279d1620a5c58c1a28ab7e5d48052d",
+      "technical_attributes": []
+    },
+    {
+      "sample": "SAMD00858921",
+      "status": "returned",
+      "bytes": 3654,
+      "sha256": "5a05fac72eacf465e30f8a931e45f32f81847f5faa80034e81b443565e6719ca",
+      "technical_attributes": []
+    }
+  ],
+  "publisher_receipt": {
+    "bytes": 571015,
+    "sha256": "aafbead61f384bb1e40ba93e4fad926d00e6aa7775154afe674499178539bef9"
+  },
+  "publisher_links": [
+    {
+      "label": "Nature Portfolio Reporting Summary",
+      "url": "https://www.nature.com/articles/s42003-025-08463-4#MOESM15"
+    }
+  ]
+}
