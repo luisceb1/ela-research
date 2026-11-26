@@ -2,6 +2,8 @@
 
 Operational status: [concise STATE](../research/STATE.md). Additional UNC13A PR #83 is prepared but unexecuted; recommendation is to pause pending a decision-changing scientific question. No result is claimed for that PR.
 
+**Integrated evidence review — 26 November 2026.** [Critical audit](../reports/integrated-evidence-audit-20261126/REPORT.md) compares the existing results with selected primary publications. STMN2 is a technical reproduction of known biology; UNC13A low support is inconclusive; the GSE304550 UNC13A discrepancy involves non-equivalent measures, while PFKP agrees qualitatively. Keuss remains a partial statistical reproduction. No new analysis or independent biological validation.
+
 **Independent-host STMN2 technical pilot closed — 26 November 2026.** All seven locked numerical fields agree for one existing control library on a disposable Hetzner host; both Actions jobs and artifact integrity checks passed, including independent cleanup verification. Same biological input; no independent biological replication or additional scientific result. [Pilot closure](../reports/stmn2-hetzner-pilot-20261126/REPORT.md).
 
 **PRJDB19918 technical pilot closed — 26 November 2026.** Two fixed Tanaka libraries completed in Hetzner with verified input receipts, artifact integrity and independent resource cleanup. UNC13A canonical/left/right 79/0/0 control and 56/2/0 KD; both below the cryptic-support diagnostic. Not independent biological replication; units remain unresolved. No extension scheduled. [Closure](../reports/prjdb19918-metadata-intake-20261126/PILOT_CLOSURE.md).
