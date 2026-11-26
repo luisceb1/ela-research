@@ -25,6 +25,29 @@
       "source": "https://doi.org/10.1016/j.neuron.2025.11.001"
     },
     {
+      "id": "unc13a-sals-motor-neuron-cluster",
+      "date": "2026-11-26",
+      "status": "partial",
+      "title": {
+        "es": "UNC13A: clúster significativo en neuronas motoras SALS",
+        "en": "UNC13A: significant cluster in SALS motor neurons"
+      },
+      "question": {
+        "es": "¿El clúster del estudio de neuronas motoras SALS corresponde al exón críptico clásico asociado a TDP-43?",
+        "en": "Does the cluster in the SALS motor-neuron study match the canonical TDP-43-associated cryptic exon?"
+      },
+      "result": {
+        "es": "La Tabla suplementaria 7 informa un clúster de LeafCutter anotado a UNC13A con P ajustada = 0,0156. La tabla no da las coordenadas de sus uniones; el artículo indica que el sitio difiere de sitios descritos antes.",
+        "en": "Supplementary Table 7 reports a LeafCutter cluster annotated to UNC13A with adjusted P = 0.0156. The table gives no member-junction coordinates; the article says its site differs from previously reported sites."
+      },
+      "limitations": {
+        "es": "La UNC13A no figura en la lista de solapamiento específica de la Tabla 8. Esto no prueba ausencia biológica ni identifica el evento con el exón críptico clásico. Es una revisión documental del resultado publicado, no una reproducción computacional, validación funcional ni evidencia clínica.",
+        "en": "UNC13A is not listed in Table 8's specified overlap. This does not prove biological absence or identify the event with the canonical cryptic exon. This is a documentary review of a published result, not computational reproduction, functional validation or clinical evidence."
+      },
+      "report": "reports/unc13a-sals-motor-neuron-supplement-20261126/REPORT.md",
+      "source": "https://doi.org/10.1038/s41593-025-02118-7"
+    },
+    {
       "id": "stmn2-six-library-replay",
       "date": "2026-11-18",
       "status": "reproduced",

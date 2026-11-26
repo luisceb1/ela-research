@@ -10,6 +10,12 @@ The [four-arm factorial reanalysis](../reports/gse304550-factorial-20261126/REPO
 
 [Technical pilot](../reports/prjdb19918-metadata-intake-20261126/PILOT_CLOSURE.md) completed with positive canonical controls and insufficient cryptic support. Keep the remaining seven libraries unselected for execution; revisit only on concrete independent-unit or compatible source evidence and a separate decision. No repeat, further cloud spend or new analysis scheduled.
 
+## Conditional literature follow-up — UNC13A
+
+| Published SALS motor-neuron cohort, UNC13A | Supplementary Table 7 reports an UNC13A-annotated differential-splicing cluster (adjusted (P=0.0156)). | Exact junction coordinates are absent from the inspected table; UNC13A is not listed in Table 8's defined TDP-43-knockdown overlap. Not an exact-event confirmation or project reproduction. Revisit only with event-level counts/coordinates and verified biological units. [Audit](../reports/unc13a-sals-motor-neuron-supplement-20261126/REPORT.md). |
+
+No additional source search, data access request, or analysis is scheduled. The article's linked clinical and sequencing data are described as controlled-access; use them only if access and permissions are independently available and the source supplies the event-level data needed for the question.
+
 ## Completed technical contribution
 
 - Independent-host STMN2 fixed pilot closed: 7/7 numerical fields match for one control library; evidence and resource cleanup verified. [Pilot closure](../reports/stmn2-hetzner-pilot-20261126/REPORT.md). No additional cloud library or repeat is scheduled; further paid execution requires a separate decision. The local six-library coverage and scientific data gates remain distinct.
