@@ -6,20 +6,20 @@
       "date": "2026-11-26",
       "status": "pending",
       "title": {
-        "es": "PFKP, STMN2 y UNC13A: auditoría comparativa de proteómica",
-        "en": "PFKP, STMN2 and UNC13A: comparative proteomics audit"
+        "es": "PFKP, STMN2 y UNC13A: auditoría comparativa de cinco estudios proteómicos",
+        "en": "PFKP, STMN2 and UNC13A: five-study proteomics audit"
       },
       "question": {
-        "es": "¿Coinciden los resultados de abundancia proteica de tres estudios publicados?",
-        "en": "Do protein-abundance observations agree across three published studies?"
+        "es": "¿Coinciden los resultados de abundancia proteica de cinco estudios publicados?",
+        "en": "Do protein-abundance observations agree across five published studies?"
       },
       "result": {
-        "es": "Guise informa una reducción relativa de PFKP del 68,1% en neuronas motoras humanas. Feneberg obtiene cuatro estimaciones negativas (6,9–15,7% de reducción), ninguna significativa tras corregir por comparaciones múltiples. Chan obtiene una reducción descriptiva del 4,4% para PFKP y publica una reducción de STMN2 del 56,1% en un modelo celular (q=0,0003472). La evidencia proteica de UNC13A es inconclusa.",
-        "en": "Guise reports 68.1% lower relative PFKP abundance in human motor neurons. Feneberg's four estimates are lower (6.9–15.7% reductions), none significant after multiple-testing correction. Chan's descriptive PFKP estimate is 4.4% lower; the study reports 56.1% lower STMN2 in a cellular model (q=0.0003472). UNC13A protein evidence is inconclusive."
+        "es": "PFKP no presenta una dirección uniforme: Guise informa −68,1% en neuronas motoras humanas; Feneberg y Chan estiman descensos menores; Spiteri obtiene estimaciones positivas en tres de cuatro regiones y Aly pequeños aumentos en muestras sinápticas agrupadas. STMN2 disminuye en las cuatro regiones de Spiteri (sin significación corregida), pero aumenta en los grupos de Aly. UNC13A desciende en Spiteri sin significación corregida y en Aly (−48,72% en ELA esporádica y −29,27% en ELA C9orf72).",
+        "en": "PFKP direction is mixed: Guise reports −68.1% in human motor neurons; Feneberg and Chan show smaller decreases; Spiteri has positive estimates in three of four regions, and Aly small increases in pooled synaptic fractions. STMN2 decreases in all four Spiteri regions (not significant after correction) but increases in Aly pools. UNC13A decreases in Spiteri without corrected significance and in Aly (−48.72% sporadic ALS, −29.27% C9orf72 ALS)."
       },
       "limitations": {
-        "es": "Auditoría de tablas publicadas, no réplica biológica independiente. Las medidas, tejidos y unidades experimentales difieren; la concordancia de dirección no confirma la magnitud ni la significación. No hay inferencia causal, validación clínica ni evidencia terapéutica.",
-        "en": "Audit of published tables, not independent biological replication. Measurements, tissues and experimental units differ; directional agreement does not confirm effect magnitude or statistical significance. No causal inference, clinical validation or therapeutic evidence."
+        "es": "Auditoría de tablas publicadas, no réplica biológica independiente. Spiteri estudia cuatro regiones de los mismos 15 donantes; Aly agrupa diez donantes por condición con dos réplicas técnicas, por lo que su q=0,040951 para UNC13A esporádica no demuestra significación entre donantes. No se combinan magnitudes de medidas diferentes ni se infiere causalidad o eficacia clínica.",
+        "en": "Audit of published tables, not independent biological replication. Spiteri studied four regions from the same 15 donors; Aly pooled ten donors per condition with two technical replicates, so its sporadic UNC13A q=0.040951 is not donor-level significance. No pooling of incompatible magnitudes, causal inference or clinical efficacy claim."
       },
       "report": "reports/cross-study-proteomics-audit-20261126/REPORT.md",
       "source": "https://doi.org/10.1016/j.celrep.2023.113636"

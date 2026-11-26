@@ -8,7 +8,7 @@ Independent, AI-assisted research on the transcriptomic consequences of nuclear 
 
 [Integrated evidence review and critical audit (26 November 2026)](reports/integrated-evidence-audit-20261126/REPORT.md) compares existing results with the primary literature, including the UNC13A measurement discrepancy in GSE304550 and the partial Keuss reproduction.
 
-[Comparative proteomics evidence audit (26 November 2026)](reports/cross-study-proteomics-audit-20261126/REPORT.md) compares the Guise, Feneberg and Chan studies, retaining discordant magnitudes, non-significant contrasts and unresolved protein evidence.
+[Comparative proteomics evidence audit (26 November 2026)](reports/cross-study-proteomics-audit-20261126/REPORT.md) compares five studies (Guise, Feneberg, Chan, Spiteri and Aly), retaining mixed PFKP direction, non-significant contrasts and the limits of pooled UNC13A evidence.
 
 Current status: **26 November 2026**, including the completed local six-library STMN2 FASTQ replay audit and the fixed independent-host pilot for one library. Read [STATE](research/STATE.md) for the concise evidence and limits. Older reports preserve the work and its errors; later corrections take precedence. This is not a certification of the entire historical archive.
 

@@ -4,7 +4,7 @@ Only actionable or explicitly conditional work belongs here. [STATE](STATE.md) g
 
 ## Conditional proteomic evidence follow-up
 
-[Comparative audit](../reports/cross-study-proteomics-audit-20261126/REPORT.md) completed. Do not rerun closed aggregate-table comparisons. Consider distinct published human protein evidence only when compatible endpoints, donor-level units and uncertainty are documented; no new execution, contact or spending authorized. PFKP direction agrees descriptively, not quantitatively or statistically across studies; STMN2 model evidence and inconclusive UNC13A remain distinct.
+[Five-study comparative audit](../reports/cross-study-proteomics-audit-20261126/REPORT.md) completed, including [Spiteri and Aly](../reports/cross-study-proteomics-audit-20261126/SPITERI_ALY.md). PFKP has mixed direction across studies, and UNC13A has additional descriptive human tissue support without donor-level confirmation from pooled data. Do not repeat closed aggregate-table comparisons. Revisit only with genuinely distinct compatible cell-specific human protein evidence, verified biological units and reported uncertainty. No new execution, contact or spending authorized.
 
 ## GSE304550 follow-up — 26 November 2026
 
