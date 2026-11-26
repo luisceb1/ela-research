@@ -6,6 +6,8 @@ Independent, AI-assisted research on the transcriptomic consequences of nuclear 
 
 ## Start with the current evidence
 
+[Integrated evidence review and critical audit (26 November 2026)](reports/integrated-evidence-audit-20261126/REPORT.md) compares existing results with the primary literature, including the UNC13A measurement discrepancy in GSE304550 and the partial Keuss reproduction.
+
 Current status: **26 November 2026**, including the completed local six-library STMN2 FASTQ replay audit and the fixed independent-host pilot for one library. Read [STATE](research/STATE.md) for the concise evidence and limits. Older reports preserve the work and its errors; later corrections take precedence. This is not a certification of the entire historical archive.
 
 | Question | Supported result | Main limitation |
