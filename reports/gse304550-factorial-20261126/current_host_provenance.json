@@ -1,0 +1,528 @@
+{
+  "schema": "gse304550-host-provenance-audit-v1",
+  "date": "2026-11-26",
+  "source": {
+    "type": "user-supplied current-host digest receipt",
+    "generated_utc": "2026-11-26T11:06:56.977634+00:00",
+    "sha256": "db0d46905a9064969a0ae6fef525fe027a024c2da3834910a7d96c63a5174886",
+    "private_original_retained": true,
+    "hash_large": true
+  },
+  "scope": {
+    "searched_analysis_roots": 5,
+    "tool_directory_depth_limit_notes": 6,
+    "candidates": 69,
+    "hashed": 69,
+    "fastq_candidates": 0,
+    "script_candidates": 0,
+    "archived_primary_log_count": 16,
+    "current_log_count": 15,
+    "current_log_matches": 15,
+    "missing_current_log_run": "SRR34876669",
+    "index_shards": 8,
+    "index_reference_matches": 8,
+    "index_bytes": 4664041946,
+    "sra_files": 5,
+    "sra_bytes": 37716180855,
+    "small_hashes_stable_across_v2_v3": 56,
+    "paths_sizes_mtimes_stable_across_v2_v3": true,
+    "hisat2_align_s_reference_match": true
+  },
+  "reference": {
+    "repo_commit": "6dc1c1c6c14cd92c20c550f66bbb7384cf1f5a1a",
+    "index_and_aligner": "reproduction/stmn2-six-libraries/manifest.json",
+    "log_digests": "reports/gse304550-factorial-20261126/alignment_qc.csv"
+  },
+  "files": [
+    {
+      "kind": "current_path_tool_candidate",
+      "run": null,
+      "name": "vdb-validate",
+      "bytes": 106536,
+      "sha256": "c90db0a1fe9776160ac58882c98cdf681bba35a6b6992bf4c88c6919ecd5d253"
+    },
+    {
+      "kind": "current_path_tool_candidate",
+      "run": null,
+      "name": "sratools",
+      "bytes": 293504,
+      "sha256": "db018633f98c93e3eab1657f4d35cb4d1818bff7b102da008e646bbc05a0b550"
+    },
+    {
+      "kind": "historical_receipt_candidate",
+      "run": "SRR34876656",
+      "name": "command.txt",
+      "bytes": 632,
+      "sha256": "dfd0a2a8193db408b66ea4dc7e248cd9d1552806d3cf602d109ee0f52785facf"
+    },
+    {
+      "kind": "historical_receipt_candidate",
+      "run": "SRR34876656",
+      "name": "hisat2.log",
+      "bytes": 634,
+      "sha256": "944c3adb696fdd87554bb2ff2a193f00233471af21612c0c1bcbdddb48bf004f"
+    },
+    {
+      "kind": "historical_receipt_candidate",
+      "run": "SRR34876656",
+      "name": "junctions.tsv",
+      "bytes": 464,
+      "sha256": "1c3b0b3e8ec437a4f7850e5d345b42cf9fc2e75fadbe9bbf25757a4ed0f827e7"
+    },
+    {
+      "kind": "historical_receipt_candidate",
+      "run": "SRR34876656",
+      "name": "source.txt",
+      "bytes": 158,
+      "sha256": "cd9c32aa81bda26d5440be8675ec073ac5bab6af163d4e710da4c75ee9e4ca99"
+    },
+    {
+      "kind": "historical_receipt_candidate",
+      "run": "SRR34876657",
+      "name": "command.txt",
+      "bytes": 632,
+      "sha256": "93245a1533fa75c0e37c19d149392dfc42045836cfbbb0eb0693b9d520155255"
+    },
+    {
+      "kind": "historical_receipt_candidate",
+      "run": "SRR34876657",
+      "name": "hisat2.log",
+      "bytes": 634,
+      "sha256": "b3d6902e6e21dcaedca0d7daad6f7c1f45ae2df4abee4c261bf540a1f9e5ee83"
+    },
+    {
+      "kind": "historical_receipt_candidate",
+      "run": "SRR34876657",
+      "name": "junctions.tsv",
+      "bytes": 464,
+      "sha256": "4357d56f4d265f2e1853ad3ea327e948e4772e1aac3009f8923e8d3eb6886ed0"
+    },
+    {
+      "kind": "historical_receipt_candidate",
+      "run": "SRR34876657",
+      "name": "source.txt",
+      "bytes": 158,
+      "sha256": "5d19e25d200209c294df1090549ba64620dfee46a5783375af2b4823cfe1af3e"
+    },
+    {
+      "kind": "historical_receipt_candidate",
+      "run": "SRR34876662",
+      "name": "command.txt",
+      "bytes": 632,
+      "sha256": "dc1ee390f9b514b8f1568cfcd5caa633e1f0a46a70e7699f53b6d92f121d8363"
+    },
+    {
+      "kind": "historical_receipt_candidate",
+      "run": "SRR34876662",
+      "name": "hisat2.log",
+      "bytes": 634,
+      "sha256": "08a3ba649ac96d7e7cd809bee661955fdde1e778cb761e8ba878fb18eddc52fd"
+    },
+    {
+      "kind": "historical_receipt_candidate",
+      "run": "SRR34876662",
+      "name": "junctions.tsv",
+      "bytes": 464,
+      "sha256": "707cb1324a0f6c12dcc226f70c8042fcdbb36785c3535d2e38c416340704dce8"
+    },
+    {
+      "kind": "historical_receipt_candidate",
+      "run": "SRR34876662",
+      "name": "source.txt",
+      "bytes": 158,
+      "sha256": "ded84149761d650b392a3a36c324998ce24e735c9ec72b1db67a9db31ec3125f"
+    },
+    {
+      "kind": "historical_receipt_candidate",
+      "run": "SRR34876663",
+      "name": "command.txt",
+      "bytes": 632,
+      "sha256": "beecf847eb0b07c18dbe1e7d810465d9d7fd6dea16ec94a285bce1c8b75b8d6f"
+    },
+    {
+      "kind": "historical_receipt_candidate",
+      "run": "SRR34876663",
+      "name": "hisat2.log",
+      "bytes": 634,
+      "sha256": "41dc28974e7ee12cd0001c3a36e139f4565b1822aae8e46bb4fb18413a1502aa"
+    },
+    {
+      "kind": "historical_receipt_candidate",
+      "run": "SRR34876663",
+      "name": "junctions.tsv",
+      "bytes": 465,
+      "sha256": "11ae196c2e52fcf73a32cd85dcfdb763e686885ad46b88107a11d5a47947633d"
+    },
+    {
+      "kind": "historical_receipt_candidate",
+      "run": "SRR34876663",
+      "name": "source.txt",
+      "bytes": 306,
+      "sha256": "5193d75612a90682a3c65ca85fd94949d369bcb8b46084f998a613085897c502"
+    },
+    {
+      "kind": "historical_receipt_candidate",
+      "run": "SRR34876664",
+      "name": "command.txt",
+      "bytes": 608,
+      "sha256": "b27d8d79083709caae0a563dbb5450ae2b562c7584cb6d3f377add6b0d6b13b3"
+    },
+    {
+      "kind": "historical_receipt_candidate",
+      "run": "SRR34876664",
+      "name": "hisat2.log",
+      "bytes": 634,
+      "sha256": "5c8347953c09dcc9b058f3f0b3d93a6a808855e697d18cbaabee11bea3b39c7d"
+    },
+    {
+      "kind": "historical_receipt_candidate",
+      "run": "SRR34876664",
+      "name": "junctions.tsv",
+      "bytes": 465,
+      "sha256": "8527cf2d22bee7e67fa50730092a423b497258c51b379af94c6ec1a1148bff88"
+    },
+    {
+      "kind": "historical_receipt_candidate",
+      "run": "SRR34876664",
+      "name": "source.txt",
+      "bytes": 212,
+      "sha256": "251ca4529d7aa35ab2f8eb77817dcc7cbd72979a172473fe6c8c7fe6b8ad508c"
+    },
+    {
+      "kind": "historical_receipt_candidate",
+      "run": "SRR34876665",
+      "name": "command.txt",
+      "bytes": 624,
+      "sha256": "cf3dc04485514d3e0b29b6469c7f390c504a3065f0ebf44a2df55447de057153"
+    },
+    {
+      "kind": "historical_receipt_candidate",
+      "run": "SRR34876665",
+      "name": "hisat2.log",
+      "bytes": 634,
+      "sha256": "3090286d515b7b60e050eecffc11d597890c678de6eb0316d61bdcb3a340f950"
+    },
+    {
+      "kind": "historical_receipt_candidate",
+      "run": "SRR34876665",
+      "name": "junctions.tsv",
+      "bytes": 464,
+      "sha256": "88cc13398590fd6412d646951816154204a7e1dca82dacd12463be28365e3413"
+    },
+    {
+      "kind": "historical_receipt_candidate",
+      "run": "SRR34876670",
+      "name": "command.txt",
+      "bytes": 624,
+      "sha256": "842bb43c860d70cc55a6df729da2d23e14c14f1ca5a478e743aa5bcbf0f8b25f"
+    },
+    {
+      "kind": "historical_receipt_candidate",
+      "run": "SRR34876670",
+      "name": "hisat2.log",
+      "bytes": 634,
+      "sha256": "e6a7f5501a580272026d5e08a10fa0588b09db8f75e5b84d58f66a1e7046faae"
+    },
+    {
+      "kind": "historical_receipt_candidate",
+      "run": "SRR34876670",
+      "name": "junctions.tsv",
+      "bytes": 465,
+      "sha256": "28fb92b6a40be1bb3fb6545babfcb727c95b74be06592a3469eb1c56c331b5a5"
+    },
+    {
+      "kind": "historical_receipt_candidate",
+      "run": "SRR34876671",
+      "name": "command.txt",
+      "bytes": 624,
+      "sha256": "0db040e8f267f6ffdd050018e37dd8ccec4b6dbbb1f3fe6e23af9286b38d6315"
+    },
+    {
+      "kind": "historical_receipt_candidate",
+      "run": "SRR34876671",
+      "name": "hisat2.log",
+      "bytes": 634,
+      "sha256": "03b1d2bdc4df201508cfa1ebd01a1b44ba6383c240a6ae2a42c5696a7cf547ca"
+    },
+    {
+      "kind": "historical_receipt_candidate",
+      "run": "SRR34876671",
+      "name": "junctions.tsv",
+      "bytes": 465,
+      "sha256": "bff5dfdfef9f9d323e5d99a0dafdddd665c2184a095d2ce884680221cd9c21a2"
+    },
+    {
+      "kind": "historical_receipt_candidate",
+      "run": "SRR34876658",
+      "name": "command.txt",
+      "bytes": 624,
+      "sha256": "6a38ebe51eabfe60d08fce62b73f880d8f58a789186b1ddbcc3342708688cd64"
+    },
+    {
+      "kind": "historical_receipt_candidate",
+      "run": "SRR34876658",
+      "name": "hisat2.log",
+      "bytes": 634,
+      "sha256": "4b4ef7d1b332dce5bcbe17de97fd04646b6c770f5c04b9f0511ee275517f183b"
+    },
+    {
+      "kind": "historical_receipt_candidate",
+      "run": "SRR34876658",
+      "name": "junctions.tsv",
+      "bytes": 470,
+      "sha256": "a195abe20e91e61651244bc94da9574d5583f8743c0790aa9093c912c9f1cf74"
+    },
+    {
+      "kind": "historical_receipt_candidate",
+      "run": "SRR34876659",
+      "name": "command.txt",
+      "bytes": 624,
+      "sha256": "6be1ec0ee87c186cfb1d5ef89dee8637cc142b248f98af80c4ab1b32560c7986"
+    },
+    {
+      "kind": "historical_receipt_candidate",
+      "run": "SRR34876659",
+      "name": "hisat2.log",
+      "bytes": 634,
+      "sha256": "3a1e726fe724a419b01d58402b53f6cdfa2972f57fd40ea983018c444411a32a"
+    },
+    {
+      "kind": "historical_receipt_candidate",
+      "run": "SRR34876659",
+      "name": "junctions.tsv",
+      "bytes": 470,
+      "sha256": "d1783910dea306be7b5483c9b7e023485b9ccff7d8da5c1d102d8866f177bff7"
+    },
+    {
+      "kind": "historical_receipt_candidate",
+      "run": "SRR34876660",
+      "name": "command.txt",
+      "bytes": 624,
+      "sha256": "5bb0a582f42509a064298c13ef675119e79c391da5062065af504e9a49f21800"
+    },
+    {
+      "kind": "historical_receipt_candidate",
+      "run": "SRR34876660",
+      "name": "hisat2.log",
+      "bytes": 634,
+      "sha256": "bc5a3b3abe40a1221a5ed819a6f95da1e33573a32bc48ef0f6144307fbf87c4c"
+    },
+    {
+      "kind": "historical_receipt_candidate",
+      "run": "SRR34876660",
+      "name": "junctions.tsv",
+      "bytes": 469,
+      "sha256": "50d2ea83fad648d23090b6df041a7300a44819fe5d9be440288ee6e515a0fe80"
+    },
+    {
+      "kind": "historical_receipt_candidate",
+      "run": "SRR34876661",
+      "name": "command.txt",
+      "bytes": 624,
+      "sha256": "358fbc1c342d05a8f203d1667e93d2656886e15b7c866a123a00d0af933a79c8"
+    },
+    {
+      "kind": "historical_receipt_candidate",
+      "run": "SRR34876661",
+      "name": "hisat2.log",
+      "bytes": 634,
+      "sha256": "e72f4b1f67fb37f321aa42e26420b7876d0fe6216277680d0943096a16011a59"
+    },
+    {
+      "kind": "historical_receipt_candidate",
+      "run": "SRR34876661",
+      "name": "junctions.tsv",
+      "bytes": 469,
+      "sha256": "e55f762253d6de0f782cf7a7c4f5addc099090bcbf9e1461f0b98620daddd618"
+    },
+    {
+      "kind": "historical_receipt_candidate",
+      "run": "SRR34876666",
+      "name": "command.txt",
+      "bytes": 624,
+      "sha256": "5274ccc404c1ca5faeea729876c884ea84aea3be679318dbf8dcc5f38cfcec25"
+    },
+    {
+      "kind": "historical_receipt_candidate",
+      "run": "SRR34876666",
+      "name": "hisat2.log",
+      "bytes": 634,
+      "sha256": "f3cd46b9d590dd4d492c211e1649151302c03aeb472386b4b18aa806bfe41e51"
+    },
+    {
+      "kind": "historical_receipt_candidate",
+      "run": "SRR34876666",
+      "name": "junctions.tsv",
+      "bytes": 473,
+      "sha256": "c502f47578a2d7aeed0c0c4ec27283e696ed6cb94769437623ac922fd977e92e"
+    },
+    {
+      "kind": "historical_receipt_candidate",
+      "run": "SRR34876667",
+      "name": "command.txt",
+      "bytes": 624,
+      "sha256": "de57a9adde552a7e2314df25bcca7a2dfb0d56cfef3a18876d8edc6247b030f3"
+    },
+    {
+      "kind": "historical_receipt_candidate",
+      "run": "SRR34876667",
+      "name": "hisat2.log",
+      "bytes": 634,
+      "sha256": "dd918bcddd4a4033524e0525383885b14c58ac715d58293944e7d91ade92e863"
+    },
+    {
+      "kind": "historical_receipt_candidate",
+      "run": "SRR34876667",
+      "name": "junctions.tsv",
+      "bytes": 472,
+      "sha256": "1554ca05dc953985725b25637251aaf6b8312bd4ae9a74b26d0537132bf9d10d"
+    },
+    {
+      "kind": "historical_receipt_candidate",
+      "run": "SRR34876668",
+      "name": "command.txt",
+      "bytes": 624,
+      "sha256": "72f36863bf10fda903ed18e87a8e0b6811714b1dc38daeb6508ec2f71d9f0002"
+    },
+    {
+      "kind": "historical_receipt_candidate",
+      "run": "SRR34876668",
+      "name": "hisat2.log",
+      "bytes": 634,
+      "sha256": "6f5d4572d3259c0b04acf30fbe309dc837bf2d7368c5be1f3519470bb66568ff"
+    },
+    {
+      "kind": "historical_receipt_candidate",
+      "run": "SRR34876668",
+      "name": "junctions.tsv",
+      "bytes": 469,
+      "sha256": "799236e7bb3de0b4c47a8802e4d6d7481c1a200f453184a9479c544218e1a619"
+    },
+    {
+      "kind": "index_candidate",
+      "run": null,
+      "name": "genome.1.ht2",
+      "bytes": 1020663384,
+      "sha256": "75c666c1bdcc6bd346a751e7277d26ce518c1e9a2612c301317248e3a4ee6014"
+    },
+    {
+      "kind": "index_candidate",
+      "run": null,
+      "name": "genome.2.ht2",
+      "bytes": 762328952,
+      "sha256": "ee1502737c1fe27706a91179584f99146102da7eac08ff5f76e9657476af619d"
+    },
+    {
+      "kind": "index_candidate",
+      "run": null,
+      "name": "genome.3.ht2",
+      "bytes": 15065,
+      "sha256": "d7ecd66f14894242cb5153471028bb4f94bebd920c2c025c08ec24bcb13e6df5"
+    },
+    {
+      "kind": "index_candidate",
+      "run": null,
+      "name": "genome.4.ht2",
+      "bytes": 762328946,
+      "sha256": "2f5112d9a0c0855eea028ea4181e2af9dd261cdadac3eff541415dd5eb4ea413"
+    },
+    {
+      "kind": "index_candidate",
+      "run": null,
+      "name": "genome.5.ht2",
+      "bytes": 1342456349,
+      "sha256": "07400123a5033f85fd0152aae0a513771b5f5ba1afe878839bd9624b483fa503"
+    },
+    {
+      "kind": "index_candidate",
+      "run": null,
+      "name": "genome.6.ht2",
+      "bytes": 776249234,
+      "sha256": "4a8f0d36ac6e459bbf682a5979de5e5d4883cd42a22866093d730797c87e35ae"
+    },
+    {
+      "kind": "index_candidate",
+      "run": null,
+      "name": "genome.7.ht2",
+      "bytes": 8,
+      "sha256": "7c9fa136d4413fa6173637e883b6998d32e1d675f88cddff9dcbcf331820f4b8"
+    },
+    {
+      "kind": "index_candidate",
+      "run": null,
+      "name": "genome.8.ht2",
+      "bytes": 8,
+      "sha256": "7c9fa136d4413fa6173637e883b6998d32e1d675f88cddff9dcbcf331820f4b8"
+    },
+    {
+      "kind": "sra_candidate",
+      "run": "SRR34876656",
+      "name": "SRR34876656.sra",
+      "bytes": 7515844424,
+      "sha256": "88383b9001b089f0d35ef7779020dee75389dc9bfe58bfe380b798e878eac44e"
+    },
+    {
+      "kind": "sra_candidate",
+      "run": "SRR34876657",
+      "name": "SRR34876657.sra",
+      "bytes": 6604120261,
+      "sha256": "8b8df5c22483a2b030b1c7c6544d9046a80c0401e3eae5a4803fa821cfde3ca4"
+    },
+    {
+      "kind": "sra_candidate",
+      "run": "SRR34876662",
+      "name": "SRR34876662.sra",
+      "bytes": 6124416114,
+      "sha256": "417f5c239fedd0b90889f94516b29dee8219841520deb4f791183d4a787f5c1b"
+    },
+    {
+      "kind": "sra_candidate",
+      "run": "SRR34876663",
+      "name": "SRR34876663.sra",
+      "bytes": 8147879831,
+      "sha256": "9dc5538e6bd0bc6d475cf78a3a2032adf8eef1942a42a4fcbf18d857892c0500"
+    },
+    {
+      "kind": "sra_candidate",
+      "run": "SRR34876664",
+      "name": "SRR34876664.sra",
+      "bytes": 9323920225,
+      "sha256": "9575c501fd7a102c57f747d8977310e152c5d733467266dcec65681074b06530"
+    },
+    {
+      "kind": "tool_candidate",
+      "run": null,
+      "name": "hisat2",
+      "bytes": 20172,
+      "sha256": "5e864784ac20d0bd195a577ab022c9f1fe124017be85b831e31e925befc795c1"
+    },
+    {
+      "kind": "tool_candidate",
+      "run": null,
+      "name": "hisat2-align-s",
+      "bytes": 13161768,
+      "sha256": "3c88123911d675aebdeab79e3e24f0aa0050c10a1043c30343d96419c6ddfae4"
+    },
+    {
+      "kind": "tool_candidate",
+      "run": null,
+      "name": "hisat2-build",
+      "bytes": 2807,
+      "sha256": "8d5b7e4b3c70d474a95149580cd7b73428b73d9070f7e1ce9f626f1448088c7a"
+    },
+    {
+      "kind": "tool_candidate",
+      "run": null,
+      "name": "hisat2-inspect",
+      "bytes": 3184,
+      "sha256": "cd8855604dfc02d885a6f4874380674cc021a913a7134ffa76055cf6cf9cdb09"
+    }
+  ],
+  "limitations": [
+    "Host-generated receipt, no direct access to raw files by closure auditor.",
+    "Current identity is not proof of historical use or input origin; no prior SRA byte digests for comparison.",
+    "No historical FASTQ or standalone counter/downloader located in searched roots; no global absence claim.",
+    "No remaining local log detected for SRR34876669; earlier archive contains it; collector's run-name detection may omit its prefixed directory.",
+    "No raw replay, new analysis, download, VM, cost, or biological replication."
+  ]
+}

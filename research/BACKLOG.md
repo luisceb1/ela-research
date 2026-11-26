@@ -4,7 +4,7 @@ Only actionable or explicitly conditional work belongs here. [STATE](STATE.md) g
 
 ## GSE304550 follow-up — 26 November 2026
 
-The [four-arm factorial reanalysis](../reports/gse304550-factorial-20261126/REPORT.md) is complete at the user-reported count level. Host archive audit reconciles all counts and logs. Collect local scripts and remaining raw/index/binary provenance for technical closure, and resolve the M85/M86 differentiation map and publication denominator. Independent validation remains conditional on a separate eligible dataset with verified units and compatible data. No additional transfer or cloud execution is scheduled by this result.
+The [four-arm factorial reanalysis](../reports/gse304550-factorial-20261126/REPORT.md) is complete at the user-reported count level. Host archive audit reconciles all counts and logs. The bounded current-host provenance audit is closed: 15 recovered logs agree with the archive, 8/8 index shards and the aligner agree with the sealed reference, and five retained SRA files have current SHA-256 fingerprints. Original FASTQ byte identities and executed counter/downloader remain unresolved; revisit only if concrete originals become available, without further routine local scanning. Resolve the M85/M86 differentiation map and publication denominator. Independent validation remains conditional on a separate eligible dataset with verified units and compatible data. No additional transfer or cloud execution is scheduled by this result.
 
 ## Completed technical contribution
 
