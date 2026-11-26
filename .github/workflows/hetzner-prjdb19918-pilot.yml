@@ -1,0 +1,88 @@
+name: Hetzner fixed PRJDB19918 two-library technical pilot
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'infrastructure/hetzner/prjdb19918-launch.json'
+permissions:
+  contents: read
+concurrency:
+  group: hetzner-disposable-smoke
+  cancel-in-progress: false
+jobs:
+  pilot-control:
+    if: github.ref == 'refs/heads/main' && github.run_attempt == 1
+    runs-on: ubuntu-latest
+    timeout-minutes: 165
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+          fetch-depth: 2
+      - name: Verify one-time launch marker and fixed roster
+        env:
+          BEFORE: ${{ github.event.before }}
+        run: |
+          test "$(git diff --name-status "$BEFORE" HEAD -- infrastructure/hetzner/prjdb19918-launch.json | cut -f1)" = A
+          python3 - <<'PY'
+          import json
+          p=json.load(open("infrastructure/hetzner/prjdb19918-launch.json"))
+          assert p=={"scope":"technical_only","runs":["DRR631712","DRR631715"],"automatic_extension":False}
+          PY
+      - name: Run authorized control library
+        env:
+          HCLOUD_TOKEN: ${{ secrets.HETZNER_ELA_PILOT_TOKEN }}
+        run: python infrastructure/hetzner/prjdb19918_pilot.py "ela-smoke-$GITHUB_RUN_ID-$GITHUB_RUN_ATTEMPT" DRR631712 pilot-control
+      - uses: actions/upload-artifact@v4
+        if: ${{ !cancelled() }}
+        with:
+          name: prjdb19918-control-technical
+          path: pilot-control/
+          if-no-files-found: warn
+          retention-days: 7
+  verify-control:
+    needs: pilot-control
+    if: ${{ always() && github.ref == 'refs/heads/main' && github.run_attempt == 1 }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Independently verify control deletion
+        env:
+          HCLOUD_TOKEN: ${{ secrets.HETZNER_ELA_PILOT_TOKEN }}
+        run: python infrastructure/hetzner/smoke.py cleanup --name "ela-smoke-$GITHUB_RUN_ID-$GITHUB_RUN_ATTEMPT"
+  pilot-kd:
+    needs: [pilot-control, verify-control]
+    if: ${{ success() && github.ref == 'refs/heads/main' && github.run_attempt == 1 }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 165
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Run authorized KD library
+        env:
+          HCLOUD_TOKEN: ${{ secrets.HETZNER_ELA_PILOT_TOKEN }}
+        run: python infrastructure/hetzner/prjdb19918_pilot.py "ela-smoke-$GITHUB_RUN_ID-$GITHUB_RUN_ATTEMPT" DRR631715 pilot-kd
+      - uses: actions/upload-artifact@v4
+        if: ${{ !cancelled() }}
+        with:
+          name: prjdb19918-kd-technical
+          path: pilot-kd/
+          if-no-files-found: warn
+          retention-days: 7
+  verify-cleanup:
+    needs: [pilot-control, verify-control, pilot-kd]
+    if: ${{ always() && github.ref == 'refs/heads/main' && github.run_attempt == 1 }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Independently verify final deletion
+        env:
+          HCLOUD_TOKEN: ${{ secrets.HETZNER_ELA_PILOT_TOKEN }}
+        run: python infrastructure/hetzner/smoke.py cleanup --name "ela-smoke-$GITHUB_RUN_ID-$GITHUB_RUN_ATTEMPT"
