@@ -1,0 +1,122 @@
+{
+  "schema": "emtab15433-metadata-intake-v1",
+  "date": "2026-11-26",
+  "source_receipt": {
+    "bytes": 17183,
+    "sha256": "cfe2bac1213466d94f6517e0601163d8d5e0ab67f65e1a3c333370723ab72752"
+  },
+  "run_id": 45845146376,
+  "job_id": 139996753422,
+  "execution_commit": "5c02e918535e0ac10d11aa4b43d583cbdad34ea1",
+  "files": [
+    {
+      "path": "tdp43kd_C2_S10_quant.genes.sf",
+      "size": 2339920,
+      "type": "file"
+    },
+    {
+      "path": "control_A3_S3_quant.genes.sf",
+      "size": 2335628,
+      "type": "file"
+    },
+    {
+      "path": "tdp43kd_D1_S13_quant.genes.sf",
+      "size": 2338758,
+      "type": "file"
+    },
+    {
+      "path": "tdp43kd_C1_S9_quant.genes.sf",
+      "size": 2337097,
+      "type": "file"
+    },
+    {
+      "path": "tdp43kd_C3_S11_quant.genes.sf",
+      "size": 2329680,
+      "type": "file"
+    },
+    {
+      "path": "control_B1_S5_quant.genes.sf",
+      "size": 2330257,
+      "type": "file"
+    },
+    {
+      "path": "tdp43kd_D4_S16_quant.genes.sf",
+      "size": 2331150,
+      "type": "file"
+    },
+    {
+      "path": "tdp43kd_C4_S12_quant.genes.sf",
+      "size": 2329622,
+      "type": "file"
+    },
+    {
+      "path": "control_B2_S6_quant.genes.sf",
+      "size": 2323876,
+      "type": "file"
+    },
+    {
+      "path": "control_A4_S4_quant.genes.sf",
+      "size": 2322958,
+      "type": "file"
+    },
+    {
+      "path": "control_B3_S7_quant.genes.sf",
+      "size": 2317361,
+      "type": "file"
+    },
+    {
+      "path": "control_A1_S1_quant.genes.sf",
+      "size": 2335460,
+      "type": "file"
+    },
+    {
+      "path": "tdp43kd_D2_S14_quant.genes.sf",
+      "size": 2337267,
+      "type": "file"
+    },
+    {
+      "path": "control_B4_S8_quant.genes.sf",
+      "size": 2322789,
+      "type": "file"
+    },
+    {
+      "path": "control_A2_S2_quant.genes.sf",
+      "size": 2329760,
+      "type": "file"
+    },
+    {
+      "path": "tdp43kd_D3_S15_quant.genes.sf",
+      "size": 2335850,
+      "type": "file"
+    },
+    {
+      "path": "E-MTAB-15433.idf.txt",
+      "size": 5787,
+      "type": "file"
+    },
+    {
+      "path": "E-MTAB-15433.sdrf.txt",
+      "size": 21932,
+      "type": "file"
+    }
+  ],
+  "counts": {
+    "control_gene_quant_files": 8,
+    "kd_gene_quant_files": 8
+  },
+  "sdrf": {
+    "listed": true,
+    "bytes": 21932,
+    "retrieved": false,
+    "attempts": [
+      "URLError",
+      "URLError"
+    ]
+  },
+  "decision": "pending; no verified independent units or per-library junction data",
+  "limits": [
+    "Filenames are not experimental units",
+    "Gene quantification is not junction support",
+    "No target values or raw reads accessed"
+  ]
+}
