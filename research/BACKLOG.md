@@ -1,6 +1,10 @@
-# Current backlog — 26 November 2026
+# Current backlog — 27 November 2026
 
 Only actionable or explicitly conditional work belongs here. [STATE](STATE.md) gives current evidence; [history](history/README.md) preserves earlier instructions, which authorize no executions.
+
+## PFKP context audit closed — 27 November 2026
+
+[Closure and component audits](../reports/pfkp-context-audit-20261127/REPORT.md) document donor-coverage failure, new RNA/protein observations and unresolved context differences. No more PFKP source screens or re-fits scheduled. Revisit only with genuinely discriminating compatible donor-level cell-specific RNA/protein data, a corrected Krach full cohort, or the complete MAXOMOD human RNA contrasts. UNC13A is the next priority, conditional on qualifying independent source data or author/data-access clarification; no automatic reopening of closed tasks.
 
 ## Conditional proteomic evidence follow-up
 

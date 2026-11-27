@@ -10,7 +10,9 @@ Independent, AI-assisted research on the transcriptomic consequences of nuclear 
 
 [Comparative proteomics evidence audit (26 November 2026)](reports/cross-study-proteomics-audit-20261126/REPORT.md) compares five studies (Guise, Feneberg, Chan, Spiteri and Aly), retaining mixed PFKP direction, non-significant contrasts and the limits of pooled UNC13A evidence.
 
-Current status: **26 November 2026**, including the completed local six-library STMN2 FASTQ replay audit and the fixed independent-host pilot for one library. Read [STATE](research/STATE.md) for the concise evidence and limits. Older reports preserve the work and its errors; later corrections take precedence. This is not a certification of the entire historical archive.
+[PFKP context-specific evidence audit and cycle closure (27 November 2026)](reports/pfkp-context-audit-20261127/REPORT.md) records the donor-coverage failure, contrasting RNA and protein observations and limitations of the new analyses. No uniform direction or comparable independent protein replication established.
+
+Current status: **27 November 2026**, including the completed local six-library STMN2 FASTQ replay audit and the fixed independent-host pilot for one library. Read [STATE](research/STATE.md) for the concise evidence and limits. Older reports preserve the work and its errors; later corrections take precedence. This is not a certification of the entire historical archive.
 
 | Question | Supported result | Main limitation |
 |---|---|---|

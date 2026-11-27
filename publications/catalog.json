@@ -2,6 +2,29 @@
   "version": 1,
   "entries": [
     {
+      "id": "pfkp-context-audit-20261127",
+      "date": "2026-11-27",
+      "status": "pending",
+      "title": {
+        "es": "PFKP: resultados dependientes del contexto y cierre del ciclo",
+        "en": "PFKP: context-specific evidence and cycle closure"
+      },
+      "question": {
+        "es": "¿Se reproduce una reducción selectiva de PFKP en motoneuronas humanas y concuerdan las mediciones de ARN y proteína?",
+        "en": "Does a selective PFKP decrease reproduce in human motor neurons, and do RNA and protein measurements agree?"
+      },
+      "result": {
+        "es": "Takeuchi: ARN en motoneuronas −3,51% (p ajustada 0,99994). Krach: −14,73% de ARN en un subconjunto exploratorio de 12 casos y 8 controles. NeuroLINCS C9orf72 iPSC: ARN +50,46% (no significativo), proteína +39,56% (FDR de origen 0,000045). MAXOMOD: proteína cortical −0,56% varones y −1,67% mujeres, sin significación; ARN no disponible en la tabla filtrada. El descenso proteico de Guise (−68,1%) sigue sin replicación comparable. Ciclo cerrado.",
+        "en": "Takeuchi: motor-neuron RNA −3.51% (adjusted p 0.99994). Krach: RNA −14.73% in an exploratory subset of 12 ALS and 8 controls. NeuroLINCS C9orf72 iPSC: RNA +50.46% (not significant), protein +39.56% (source FDR 0.000045). MAXOMOD: cortical protein −0.56% male and −1.67% female, not significant; RNA unavailable in the filtered table. Guise's protein decrease (−68.1%) remains without comparable replication. Cycle closed."
+      },
+      "limitations": {
+        "es": "GSE330130 no cumple el criterio de cobertura entre donantes: un único control aporta el 95,1% de sus motoneuronas capturadas; no se inspeccionó PFKP. La matriz de Krach es incompleta. NeuroLINCS no demuestra correlación individual ARN-proteína. No se combinan medidas de contextos diferentes ni se establece una alteración uniforme, mecanismo, funcionalidad o beneficio clínico.",
+        "en": "GSE330130 failed donor coverage: one control contributed 95.1% of captured control motor neurons; PFKP was not inspected. Krach's matrix is incomplete. NeuroLINCS does not establish individual RNA–protein correlation. Incompatible contexts are not pooled; no uniform alteration, mechanism, functionality or clinical benefit is established."
+      },
+      "report": "reports/pfkp-context-audit-20261127/REPORT.md",
+      "source": "https://doi.org/10.1016/j.isci.2021.103221"
+    },
+    {
       "id": "cross-study-proteomics-audit-20261126",
       "date": "2026-11-26",
       "status": "pending",
