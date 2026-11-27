@@ -1,6 +1,10 @@
-# Current research state — 26 November 2026
+# Current research state — 27 November 2026
 
 Public-source study of TDP-43 loss, STMN2 and UNC13A. Read [AGENTS](../AGENTS.md), [protocol](PROTOCOL.md), [evidence brief](../docs/EVIDENCE_BRIEF_2026-11-15.md). This page supersedes historical instructions and adds no analysis. Full previous versions: [history](history/README.md).
+
+## PFKP context-specific evidence cycle closed — 27 November 2026
+
+PFKP context audit closed: GSE330130 failed the donor-coverage gate (95.1% of control motor-neuron nuclei from one donor; no target inspection). Takeuchi MN RNA −3.51% (padj 0.99994); exploratory Krach matched subset −14.73% RNA (12 ALS/8 controls; one deposited ALS missing). NeuroLINCS day-18 C9orf72 iPSC replication cohort RNA +50.46% (padj 0.84148), protein +39.56% (source FDR 0.0000450387); no donor-level correlation. MAXOMOD bulk PFC protein −0.56% male and −1.67% female, both non-significant; RNA target absent from filtered table, not a null. Manzo reports positive RNA contrasts; Guise −68.1% human MN protein remains unreplicated in comparable evidence. No uniform PFKP direction, selective decline, mechanistic or clinical conclusion. No new processing scheduled. [Closure and reproducibility records](../reports/pfkp-context-audit-20261127/REPORT.md).
 
 ## Integrated documentary audit — 26 November 2026
 
